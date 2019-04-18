@@ -40,4 +40,4 @@ Filling in that checklist could still be long and tedious so a way to facilitate
 
 #### Further developments
 
-Other off-shoot of this project could include developing toolboxes / packages / plug-ins for the main neuroimaging software (SPM, FSL, AFNI, Freesurfer) that would take some processing batch file as input (e.g matlabbatch.mat for SPM) and would output json files that could be used on the COBIDAS checklist website to automatically generate methods section (in a similar way to [what fMRIprep does](https://fmriprep.readthedocs.io/en/stable/citing.html))
+Other off-shoot of this project could include developing toolboxes / packages / plug-ins for the main neuroimaging software (SPM, FSL, AFNI, Freesurfer) that would take a processing batch file as input (e.g matlabbatch.mat for SPM or design.fsf for FSL) and output json files that could be used on the proposed COBIDAS checklist website to automatically generate methods section (in a similar way to [fMRIprep](https://fmriprep.readthedocs.io/en/stable/citing.html))
