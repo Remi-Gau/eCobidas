@@ -3,7 +3,7 @@
 This repository is a first step in trying to turn the report published by the Committee on Best Practices in Data Analysis and Sharing (COBIDAS) of OHBM into an easy to use checklist to improve methods and results reporting in neuroimaging.
 
 This repository should be a place where:
-1. issues and ideas around reaching that goal are discussed,
+1. issues and ideas around reaching this goal are discussed;
 2. plans on how to get to this goal are designed and implemented.
 
 ## How to reach us
