@@ -26,7 +26,7 @@ One possible reason for this might be the unwieldy nature of the report. Anticip
 
 **The short term goal of this project is to make this checklist easier to use**.
 
-One way would be to turn it into a website that people can simply click their way through.
+One way to achieve this may be to turn the checklist into a website that users can click through and provide the information requested by COBIDAS.
 
 Ideally this would generate a small text file (for example a json file) that summarize what option was chosen for each item of the checklist.
 
