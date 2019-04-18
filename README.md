@@ -4,7 +4,7 @@ This repository is a first step in trying to turn the report published by the Co
 
 This repository should be a place where:
 1. issues and ideas around reaching this goal are discussed;
-2. plans on how to get to this goal are designed and implemented.
+2. plans for how to reach this goal may be designed and implemented.
 
 ## How to reach us
 [The github repository of this project can be found here](https://github.com/Remi-Gau/COBIDAS_chckls)
