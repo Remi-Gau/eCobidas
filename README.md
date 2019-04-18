@@ -11,7 +11,7 @@ This repository should be a place where:
 
 Come and join us on the `cobidas_checklist` channel at [![slack_brainhack_3](https://user-images.githubusercontent.com/6297454/47951457-5b37b780-df61-11e8-9d77-7b5a4c7af875.png)](https://brainhack-slack-invite.herokuapp.com/).
 
-Otherwise you can open a new issue if there is something you would like to discuss directly here.
+Otherwise you can open a new issue on the repository itself if there is something you would like to discuss directly here.
 
 ## Project Description
 In 2012, in a [review of the methods and results reporting of more than 200 fMRI paper](https://www.ncbi.nlm.nih.gov/pubmed/22796459) the author found that "_Although many journals urge authors to describe their methods to a level of detail such that independent investigators can fully reproduce their efforts, the results described here suggest that few studies meet this criterion._"
