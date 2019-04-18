@@ -28,7 +28,7 @@ One possible reason for this might be the unwieldy nature of the report. Anticip
 
 One way to achieve this may be to turn the checklist into a website that users can click through and provide the information requested by COBIDAS.
 
-Ideally this would generate a small text file (for example a json file) that summarize what option was chosen for each item of the checklist.
+Ideally this would generate a small text file (for example a json file) that summarizes the response provided for each item of the checklist.
 
 This machine readable file could then be used to automatically generate part of the methods section of an article.
 
