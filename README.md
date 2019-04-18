@@ -24,7 +24,7 @@ One possible reason for this might be the unwieldy nature of the report. Anticip
 
 ### Short term goal
 
-**The short term goal of this project is to make this checklist easier to use**.
+**The short term goal of this project is to make the Appendix D checklist easier to use**.
 
 One way to achieve this may be to turn the checklist into a website that users can click through and provide the information requested by COBIDAS.
 
