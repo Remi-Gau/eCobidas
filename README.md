@@ -1,6 +1,6 @@
 # COBIDAS checklist
 
-This repository is a first step in trying to turn the report published by the Committee on Best Practices in Data Analysis and Sharing (COBIDAS) of OHBM into an easy to use checklist to improve methods and results reporting in neuroimaging.
+This repository is a first step in trying to turn the report published by the Committee on Best Practices in Data Analysis and Sharing (COBIDAS) of OHBM into a practical tool for improving methods and results reporting in neuroimaging.
 
 This repository should be a place where:
 1. issues and ideas around reaching this goal are discussed;
