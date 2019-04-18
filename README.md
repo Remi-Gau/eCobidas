@@ -16,7 +16,7 @@ Otherwise you can open a new issue on the repository itself if there is somethin
 ## Project Description
 In 2012, in a [review of the methods and results reporting of more than 200 fMRI paper](https://www.ncbi.nlm.nih.gov/pubmed/22796459) the author found that "_Although many journals urge authors to describe their methods to a level of detail such that independent investigators can fully reproduce their efforts, the results described here suggest that few studies meet this criterion._"
 
-A few years ago, in order to improve replicability in f/MRI research, the Committee on Best Practices in Data Analysis and Sharing ([COBIDAS](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728)) of OHBM released a [report](https://www.biorxiv.org/content/10.1101/054262v2) to promote best practices for methods and results reporting. This was recently followed by a [similar initiative for EEG and MEG](https://osf.io/a8dhx/).
+In order to address this issue of replicability in f/MRI research, [COBIDAS](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728) released a [guidelines](https://www.biorxiv.org/content/10.1101/054262v2) for best practices in reporting of methods and results. This was soon followed by a [similar initiative for EEG and MEG](https://osf.io/a8dhx/).
 
 Contrary to what the most optimistic people might have thought, these guidelines do not seem to have been widely adopted and anecdotal evidence ([see that twitter poll and thread](https://treeverse.app/view/Xf3jfvIZ)) suggests that, even among people who know about the report, few of them use it to write or review papers.
 
