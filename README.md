@@ -34,7 +34,7 @@ This machine readable file could then be used to automatically generate part of 
 
 #### Extensions
 
-Filling in that checklist could still be long and tedious so a way to facilitate this further would be read as much metadata as possible from existing standards like:
+The process of filling in an online checklist could be simplified if available metadata was drawn in from machine readable files created in the fulfilment of existing standards, for example:
 1. the [Brain imaging data structure](http://bids.neuroimaging.io/)  used for that study (for example with respect to the data acquisition and experimental design).
 2. the [NIDM results](http://nidm.nidash.org/specs/nidm-results_130.html) of any mass-univariate analysis performed for this study.
 
