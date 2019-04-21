@@ -26,7 +26,7 @@ Contrary to what the most optimistic people might have thought, these guidelines
 
 One possible reason for this might have the unwieldy nature of the report. Anticipating on this issue, the authors of the report had included a checklist that still ended up taking almost 30 of the 70 pages of the whole document. Anyone who has used this checklist tends to agree that it is a great resource but that it is a bit cumbersome to use.
 
-So the short term goal of this project is to facilitate the use of this checklist. But, if done right, this could also in the long-term enhances the adoption of emerging neuroimaging standards (BIDS, fMRIprep, NIDM...), facilitate data sharing and pre-registration, help with peer-review...
+So the short term goal of this project is to facilitate the use of this checklist. But, if done right, this could also in the long term enhance the adoption of emerging neuroimaging standards (BIDS, fMRIprep, NIDM...), facilitate data sharing and pre-registration, help with peer-review...
 
 
 ## Short term goal
@@ -35,15 +35,9 @@ So the short term goal of this project is to facilitate the use of this checklis
 
 One way would be to turn it into a website that people can simply click their way through.
 
-Ideally this would generate a small text file (for example a json file) that summarize what option was chosen for each item of the checklist.
+Ideally this would generate a small text file (for example a json file) that summarizes what option was chosen for each item of the checklist.
 
 This machine readable file could then be used to automatically generate part of the methods section of an article.
-
-### Requirements
-
-The implementation of this project should remain flexible enough to:
-- accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g new multivariate analysis, high-resolution fMRI...),
-- easily fork the project and convert it to create a checklist-website for a different field
 
 ### Extensions (intermediate goals)
 
@@ -52,6 +46,12 @@ Filling in that checklist could still be long and tedious so a way to facilitate
 2. the [NIDM results](http://nidm.nidash.org/specs/nidm-results_130.html) of any mass-univariate analysis performed for this study.
 
 In a similar way, data processed with some standardized pipelines (e.g fMRIprep) could facilitate filling in the checklist: ticking the box corresponding to that pipeline would automatically populate all the relevant fields.
+
+### Requirements
+
+The implementation of this project should remain flexible enough to:
+- accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g new multivariate analysis, high-resolution fMRI...),
+- easily fork the project and convert it to create a checklist-website for a different field.
 
 
 ## Further developments (long term goals)
@@ -65,12 +65,12 @@ Other off-shoot of this project could include developing toolboxes / packages / 
 Though more challenging, it could be imagined that pipeline-creating-tools like (nipype, PORCUPINE, GIRAFFE) could also generate COBIDAS-json file.
 
 ### Link to journal specific checklists
-As some journals start having submission methods checklist (e.g elife, nature communications...), filling in the COBIDAS checklist once could reduce 'the submission paperwork' by writing part of the method section of the article AND generating the appropriate submission checklist for a given journal.
+As some journals start having submission-checklists (e.g elife, nature communications...), filling in the COBIDAS checklist once could reduce 'the submission paperwork' by writing part of the method section of the article AND generating the appropriate submission-checklist for a given journal.
 
 If the process is made sufficiently seamless, this could in return potentially incentivize more journals to adopt submission-checklists.
 
 
-## Potential application ("pie in the sky" goals)
+## Potential applications ("pie in the sky" goals)
 
 This checklist could:
 
@@ -78,14 +78,14 @@ This checklist could:
 
 2. facilitate data sharing
 
-If the json file it creates is accepted by neuroimaging databases (e.g neurovault) as metadata inputs this could reduces friction for data sharing: users wouldn't have to fill several times the same information (when pre-registering, when writing their methods, eventually when submitting to a journal if it has a checklist of its own, when sharing data). For example most of the metadata fields from [neurovault](https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv) are already present in the 
+If the json file it creates is accepted by neuroimaging databases (e.g neurovault) as metadata input, this could reduces friction for data sharing. Users wouldn't have to fill several times the same information (when pre-registering, when writing their methods, when submitting to a journal if it has a checklist of its own, when sharing data). For example the metadata fields from [neurovault](https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv) are already present in the COBIDAS checklist.
 
-3. help make peer-review more objective:
+3. help make peer-review more objective
 
-Reviewers could use the website to systematically cross-check that all the required methods and results information are present for a given paper. COBIDAS-json files could help editors visualize agreement across reviewer’s json file.
+Reviewers could use the website to systematically cross-check that all the required methods and results information are present for a given paper. A tool to compare COBIDAS-json files could help editors visualize agreement across reviewers' json file.
 
 
-## References and preparation material
+## References
 
 Jeanette Mumford has a [30 min video](https://www.youtube.com/watch?v=bsM4KowO5Vc&t=175s) explaining the background behind the COBIDAS report and giving a run through of the checklist.
 
