@@ -51,7 +51,7 @@ In a similar way, data processed with some standardized pipelines (e.g fMRIprep)
 
 The implementation of this project should remain flexible enough to:
 - accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g new multivariate analysis, high-resolution fMRI...),
-- easily fork the project and convert it to create a checklist-website for a different field.
+- easily fork the project and convert it to create a checklist-website for a different field. In practice, this will also most likely involve mean a deployment through a container technology like [docker](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#containers).
 
 
 ## Further developments (long term goals)
@@ -93,6 +93,6 @@ The COBIDAS report:
 - [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)
 - [for EEG and MEG](https://osf.io/a8dhx/)
 
-A [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS checklist (thanks to [Cass]!!!(https://github.com/cassgvp))
+A [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS checklist (thanks to [Cass](https://github.com/cassgvp)!!!)
 
 More ideas about this project are being added to this [google slide document](https://docs.google.com/presentation/d/17VOSLJQq6NpkCOFPR4iyEJngamugIqAfNBru0ohJbMo/edit?usp=sharing)
