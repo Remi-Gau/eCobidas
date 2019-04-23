@@ -58,7 +58,7 @@ The COBIDAS report:
 - [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)
 - [for EEG and MEG](https://osf.io/a8dhx/)
 
-A [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS checklist (thanks to [Cass]!!!(https://github.com/cassgvp))
+A [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS checklist (thanks to [Cass](https://github.com/cassgvp)!!!)
 
 [The secret lives of experiments: methods reporting in the fMRI literature](https://www.ncbi.nlm.nih.gov/pubmed/22796459)
 
