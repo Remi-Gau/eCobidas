@@ -1,12 +1,12 @@
-# Improving the COBIDAS cheklist for better neuroimaging methods and results reporting
+# Improving the COBIDAS checklist for better neuroimaging methods and results reporting
 
 Remi Gau ([ORCID](https://orcid.org/0000-0002-1535-9767
 ))
 
 ## Project Description
-In 2012, in his review of the methods and results reporting of more than 200 fMRI paper, [Joshua Carp wrote](https://www.ncbi.nlm.nih.gov/pubmed/22796459): "_Although many journals urge authors to describe their methods to a level of detail such that independent investigators can fully reproduce their efforts, the results described here suggest that few studies meet this criterion._"
+In 2012, in his review of the methods and results reporting of more than 200 fMRI papers, [Joshua Carp wrote](https://www.ncbi.nlm.nih.gov/pubmed/22796459): "_Although many journals urge authors to describe their methods to a level of detail such that independent investigators can fully reproduce their efforts, the results described here suggest that few studies meet this criterion._"
 
-A few years ago, in order to improve the situation with  respect to [reproducibility](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#reproducible-neuroimaging-tools) in f/MRI research, the Committee on Best Practices in Data Analysis and Sharing ([COBIDAS](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728)) of OHBM released a [report](https://www.biorxiv.org/content/10.1101/054262v2) to promote best practices for methods and results reporting. This was recently followed by a [similar initiative for EEG and MEG](https://osf.io/a8dhx/).
+A few years ago, in order to improve the situation with respect to [reproducibility](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#reproducible-neuroimaging-tools) in f/MRI research, the Committee on Best Practices in Data Analysis and Sharing ([COBIDAS](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728)) of OHBM released a [report](https://www.biorxiv.org/content/10.1101/054262v2) to promote best practices for methods and results reporting. This was recently followed by a [similar initiative for EEG and MEG](https://osf.io/a8dhx/).
 
 So far these guidelines do not seem to have been widely adopted and anecdotal evidence ([see that twitter poll and thread](https://treeverse.app/view/Xf3jfvIZ)) suggests that even among people who know about the report few of them use it to write or review papers. One likely reason for this might be the unwieldy nature of the report. Anyone who has used this checklist tends to agree that it is a great resource but that it is a bit cumbersome to interpret and apply.
 
@@ -18,7 +18,7 @@ So the short term goal of this project is to facilitate the use of this checklis
 
 One way to achieve this may be to turn the checklist into a website that users can click through and provide the information requested by COBIDAS. Ideally this would generate a small text file (for example a json file) that summarizes what option was chosen for each item of the checklist. This machine readable file could then be used to automatically generate part of the methods section of an article.
 
-A side branch of this project includes developing toolboxes  for the main neuroimaging software (SPM, FSL...) that given a processing batch file as input (e.g matlabbatch.mat for SPM or design.fsf for FSL) creates an output json file readable by the COBIDAS checklist website.
+A side branch of this project includes developing plugins for the main neuroimaging software toolboxes (SPM, FSL, AFNI). Such a plugin would receive processing batch files as input (e.g matlabbatch.mat for SPM or design.fsf for FSL) and would create output files (e.g. in json format) readable by the COBIDAS checklist website, which in turn would be able to display the neuroimage processing pipeline and/or generate part of the methods section for an article.
 
 Other potential goals (interaction with BIDS and NIDM, further integration with main neuroimaging softwares) and potential applications (improving data-sharing and peer-review) of this project are described in this [repository](https://github.com/Remi-Gau/COBIDAS_chckls).
 
@@ -26,7 +26,7 @@ Other potential goals (interaction with BIDS and NIDM, further integration with 
 
 The implementation of this project should remain flexible enough to:
 - accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g new multivariate analysis, high-resolution MRI...),
-- easily fork the project and convert it to create a checklist-website for a different field. In practice, this will most likely involve mean a deployment through a container technology like [docker](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#containers).
+- easily fork the project and convert it to create a checklist-website for a different field. In practice, this will most likely involve a deployment through a container technology like [docker](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#containers).
 
 
 ## Skills required to participate
