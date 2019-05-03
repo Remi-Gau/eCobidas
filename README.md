@@ -18,7 +18,7 @@ Otherwise you can open a new issue on the repository itself if there is somethin
 
 ## Project Description
 
-In 2012, in a [review of the methods and results reporting of more than 200 fMRI paper](https://www.ncbi.nlm.nih.gov/pubmed/22796459) the author found that "_Although many journals urge authors to describe their methods to a level of detail such that independent investigators can fully reproduce their efforts, the results described here suggest that few studies meet this criterion._"
+In 2012, in a [review of the methods and results reporting of more than 200 fMRI papers](https://www.ncbi.nlm.nih.gov/pubmed/22796459) the author found that "_Although many journals urge authors to describe their methods to a level of detail such that independent investigators can fully reproduce their efforts, the results described here suggest that few studies meet this criterion._"
 
 A few years ago, in order to improve reproducibility in f/MRI research, the Committee on Best Practices in Data Analysis and Sharing ([COBIDAS](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728)) of OHBM released a [report](https://www.biorxiv.org/content/10.1101/054262v2) to promote best practices for methods and results reporting. This was recently followed by a [similar initiative for EEG and MEG](https://osf.io/a8dhx/).
 
@@ -26,43 +26,56 @@ Contrary to what the most optimistic people might have thought, these guidelines
 
 One possible reason for this might be the unwieldy nature of the report. Anticipating this issue, the authors of the guidelines included a checklist (Appendix D) that still ended up taking almost 30 of the 70 pages of the whole document. Anyone who has used this checklist tends to agree that it is a great resource but that it is a bit cumbersome to interpret and apply.
 
-So the short term goal of this project is to facilitate the use of this checklist. But, if done right, this could also in the long term enhance the adoption of emerging neuroimaging standards (BIDS, fMRIprep, NIDM...), facilitate data sharing and pre-registration, help with peer-review...
+So the goal of this project is to facilitate the use of this checklist. But, if done right, this could also in the long term enhance the adoption of emerging neuroimaging standards (BIDS, fMRIprep, NIDM...), facilitate data sharing and pre-registration, help with peer-review...
 
 
 ## Short term goal
 
-**The short term goal of this project is to make the Appendix D checklist easier to use**.
+**The short term goal of this project is to make the COBIDAS report easier to use: we want to create a website with a clickable checklist that generates a json file at the end.**
 
-One way to achieve this may be to turn the checklist into a website that users can click through and provide the information requested by COBIDAS.
+By turning the checklist into a website users could more rapidly click through it and provide more of the information requested by the COBIDAS report. This would generate a small text file (a json file) that summarizes what option was chosen for each item of the checklist. This machine readable file could then be used to automatically generate part of the methods section of an article.
 
-Ideally this would generate a small text file (for example a json file) that summarizes what option was chosen for each item of the checklist.
+### Milestones
 
-This machine readable file could then be used to automatically generate part of the methods section of an article.
+- Discuss conceptual and structural details of the COBIDAS-json file.
 
-### Extensions (intermediate goals)
+- Create a template of the COBIDAS-json file
 
-The process of filling in an online checklist could be simplified if available metadata was drawn in from machine readable files created in the fulfilment of existing standards, for example:
-1. the [Brain imaging data structure](http://bids.neuroimaging.io/)  used for that study (for example with respect to the data acquisition and experimental design).
-2. the [NIDM results](http://nidm.nidash.org/specs/nidm-results_130.html) of any mass-univariate analysis performed for this study.
-
-In a similar way, data processed with some standardized pipelines (e.g fMRIprep) could facilitate filling in the checklist: ticking the box corresponding to that pipeline would automatically populate all the relevant fields.
+- Create a proof of concept website that can:
+  - given a template COBIDAS-json file generates a checklist to clicked through by users,
+  - outputs a populated COBIDAS-json file once the user is done,
+  - generate a method section using a populated COBIDAS-json file.
 
 ### Requirements
 
-The implementation of this project should remain flexible enough to:
-- accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g new multivariate analysis, high-resolution fMRI...),
-- easily fork the project and convert it to create a checklist-website for a different field. In practice, this will also most likely involve mean a deployment through a container technology like [docker](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#containers).
+  The implementation of this project should remain flexible enough to:
+  - accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g new multivariate analysis, high-resolution MRI...),
+  - easily fork the project and convert it to create a checklist-website for a different field. In practice, this will involve a deployment through a container technology like [docker](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#containers).
+
+### Extensions (intermediate goals)
+
+The process of filling in an online checklist can be simplified if of the required information can be directly accessed from the metadata in some of the existing standards for data and results curation like:
+1. the brain imaging data structure ([BIDS](http://bids.neuroimaging.io/)) used for that study,
+2. the [NIDM results](http://nidm.nidash.org/specs/nidm-results_130.html) of any mass-univariate analysis performed for this study.
+
+BIDS is an emerging standard to organize neuroimaging data (MRI, fMRI, EEG...) and its associated metadata regarding acquisition (e.g repetition time, echo time, slice order...), experimental design (number of subjects, conditions, stimulus onsets...). This allows to automate methods section generation like is done by the `reports module` of [pybids](https://github.com/bids-standard/pybids/tree/master/bids/reports).
+
+NIDM results is a way to present and package mass-univariate fMRI results in a software independent way. This way it can for example facilitate reading FSL results through SPM or facilitate data sharing (e.g NIDM results is supported by the data sharing platform neurovault and this greatly facilitate uploading your results there). NIDM contains many metadata with a correspondance in the COBIDAS checlist (see [here](https://media.nature.com/original/nature-assets/sdata/2016/sdata2016102/extref/sdata2016102-s1.pdf)).
+
+For BIDS and NIDM results, machine reading through a data set organized as BIDS and and NIDM results could automatically fill part of the COBIDAS checklist.
+
+In a similar way, data processed with some standardized pipelines (e.g fMRIprep) could facilitate filling in the checklist: ticking the box corresponding to that pipeline would automatically populate all the relevant fields in the COBIDAS-json file.
 
 
 ## Further developments (long term goals)
 
 ### Link to main neuroimaging software
 
-Other off-shoot of this project could include developing toolboxes / packages / plug-ins for the main neuroimaging software (SPM, FSL, AFNI, Freesurfer) that would take a processing batch file as input (e.g matlabbatch.mat for SPM or design.fsf for FSL) and output json files that could be used on the proposed COBIDAS checklist website to automatically generate methods section (in a similar way to [fMRIprep](https://fmriprep.readthedocs.io/en/stable/citing.html))
+A side branch of this project includes developing plugins for the main neuroimaging software toolboxes (SPM, FSL, AFNI). Such a plugin would receive processing batch files as input (e.g matlabbatch.mat for SPM or design.fsf for FSL) and would create output files (e.g. in json format) readable by the COBIDAS checklist website, which in turn would be able to display the neuroimage processing pipeline and/or generate part of the methods section for an article with the appropriate references (in a similar way to [fMRIprep](https://fmriprep.readthedocs.io/en/stable/citing.html)).
 
 ### Link to processing pipelines
 
-Though more challenging, it could be imagined that pipeline-creating-tools like (nipype, PORCUPINE, GIRAFFE) could also generate COBIDAS-json file.
+Though more challenging, it could be imagined that pipeline-creating-tools like ([nipype](https://nipype.readthedocs.io/en/latest/), [PORCUPINE](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006064), [GIRAFFE](https://giraffe.tools/porcupine/TimVanMourik/GiraffePlayground/master)) could also generate COBIDAS-json file.
 
 ### Link to journal specific checklists
 As some journals start having submission-checklists (e.g elife, nature communications...), filling in the COBIDAS checklist once could reduce 'the submission paperwork' by writing part of the method section of the article AND generating the appropriate submission-checklist for a given journal.
