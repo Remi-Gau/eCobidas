@@ -1,7 +1,6 @@
 # Improving the COBIDAS checklist for better neuroimaging methods and results reporting
 
-Remi Gau ([ORCID](https://orcid.org/0000-0002-1535-9767
-))
+Remi Gau ([ORCID](https://orcid.org/0000-0002-1535-9767))
 
 ## Project Description
 In 2012, in his review of the methods and results reporting of more than 200 fMRI papers, [Joshua Carp wrote](https://www.ncbi.nlm.nih.gov/pubmed/22796459): "_Although many journals urge authors to describe their methods to a level of detail such that independent investigators can fully reproduce their efforts, the results described here suggest that few studies meet this criterion._"
@@ -12,29 +11,23 @@ So far these guidelines do not seem to have been widely adopted and anecdotal ev
 
 So the short term goal of this project is to facilitate the use of this checklist. But, if done right, this could also in the long term enhance the adoption of emerging neuroimaging standards ([the Brain imaging data structure](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#the-brain-imaging-data-structure-bids), fMRIprep, NIDM...), facilitate data sharing and pre-registration, help with peer-review...
 
-### Short term goals
+### Short term goal
 
-**The short term goal of this project is to make the Appendix D checklist easier to use**.
+**The short term goal of this project is to make the COBIDAS report easier to use: we want to create a website with a clickable checklist that generates a json file at the end.**
 
-One way to achieve this may be to turn the checklist into a website that users can click through and provide the information requested by COBIDAS. Ideally this would generate a small text file (for example a json file) that summarizes what option was chosen for each item of the checklist. This machine readable file could then be used to automatically generate part of the methods section of an article.
+By turning the checklist into a website users could more rapidly click through it and provide more of the information requested by the COBIDAS report. This would generate a small text file (a json file) that summarizes what option was chosen for each item of the checklist. This machine readable file could then be used to automatically generate part of the methods section of an article.
 
-A side branch of this project includes developing plugins for the main neuroimaging software toolboxes (SPM, FSL, AFNI). Such a plugin would receive processing batch files as input (e.g matlabbatch.mat for SPM or design.fsf for FSL) and would create output files (e.g. in json format) readable by the COBIDAS checklist website, which in turn would be able to display the neuroimage processing pipeline and/or generate part of the methods section for an article.
-
-Other potential goals (interaction with BIDS and NIDM, further integration with main neuroimaging softwares) and potential applications (improving data-sharing and peer-review) of this project are described in this [repository](https://github.com/Remi-Gau/COBIDAS_chckls).
-
-#### Requirements
-
-The implementation of this project should remain flexible enough to:
-- accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g new multivariate analysis, high-resolution MRI...),
-- easily fork the project and convert it to create a checklist-website for a different field. In practice, this will most likely involve a deployment through a container technology like [docker](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#containers).
+Other potential goals (e.g. interaction with BIDS and NIDM, further integration with main neuroimaging softwares...) and potential applications (improving data-sharing and peer-review) of this project are described in this [repository](https://github.com/Remi-Gau/COBIDAS_chckls).
 
 
 ## Skills required to participate
 
+One or more of those:
+
 - To be enthusiastic about reproducibility
-- Familiarity with the COBIDAS report for f/MRI, MEEG (not necessary)
-- To know about web design (not necessary)
-- Familiarity with one or more of the main neuroimaging software for [fMRI](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#neuroimaging) (SPM, FSL...) or for [M/EEG](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#main-eeg-and-meg-softwares) (Fieldtrip, EEGlab...) (not necessary)
+- Familiarity with the COBIDAS report for f/MRI, MEEG,
+- To know something about web design,
+- Familiarity with one or more of the main neuroimaging software for [fMRI](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#neuroimaging) (SPM, FSL...) or for [M/EEG](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#main-eeg-and-meg-softwares) (Fieldtrip, EEGlab...)
 
 
 ## Milestones
@@ -43,11 +36,10 @@ The implementation of this project should remain flexible enough to:
 
 - Create a template of the COBIDAS-json file
 
-- Create a proof of concept website that
-  - generates a checklist to by users from an empty template COBIDAS-json file,
-  - a method section when given a populated COBIDAS-json file.
-
-- Create a proof of concept toolbox for SPM or FSL that generates filled in COBIDAS-json file.
+- Create a proof of concept website that can:
+  - given a template COBIDAS-json file generates a checklist to clicked through by users,
+  - outputs a populated COBIDAS-json file once the user is done,
+  - generate a method section using a populated COBIDAS-json file.
 
 
 ## Preparation material
