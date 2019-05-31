@@ -11,7 +11,8 @@ This repository should be a place where:
 
 [The github repository of this project can be found here](https://github.com/Remi-Gau/COBIDAS_chckls)
 
-Come and join us on the `cobidas_checklist` channel at [![slack_brainhack_3](https://user-images.githubusercontent.com/6297454/47951457-5b37b780-df61-11e8-9d77-7b5a4c7af875.png)](https://brainhack-slack-invite.herokuapp.com/).
+Come and join us on the `cobidas_checklist` channel on the [brainhack mattermost](https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist).
+
 
 Otherwise you can open a new issue on the repository itself if there is something you would like to discuss directly here.
 
