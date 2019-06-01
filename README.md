@@ -67,6 +67,8 @@ For BIDS and NIDM results, machine reading through a data set organized as BIDS 
 
 In a similar way, data processed with some standardized pipelines (e.g fMRIprep) could facilitate filling in the checklist: ticking the box corresponding to that pipeline would automatically populate all the relevant fields in the COBIDAS-json file.
 
+One can also imagine that pointing to a folder containing source MRI data (e.g DICOM) could allow the extraction of several of the information required by the COBIDAS checlist.
+
 
 ## Further developments (long term goals)
 
