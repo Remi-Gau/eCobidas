@@ -47,4 +47,3 @@ Data Scientist Mettagetta wiorks for Big Pharma. They are performing a metanalys
 ###Sustained Participation
 ###Network Participantion
 ###Leadership
-
