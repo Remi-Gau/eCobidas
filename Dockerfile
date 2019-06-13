@@ -37,7 +37,8 @@ RUN ln -sf $NVM_DIR/versions/node/$NODE_VERSION/bin/npm /usr/bin/npm
 
 # create COBIDAS folder and download schema-UI
 RUN git clone https://github.com/Remi-Gau/schema-ui.git cobidas/
-# RUN git checkout COBIDAS
+WORKDIR cobidas/
+RUN git checkout COBIDAS
 
 EXPOSE 8080
 

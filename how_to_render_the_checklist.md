@@ -12,4 +12,9 @@
 
 Done by following documentation from [this](https://nodejs.org/de/docs/guides/nodejs-docker-webapp/) and [this](https://gist.github.com/remarkablemark/aacf14c29b3f01d6900d13137b21db3a).
 
-- create the docker image by running: `docker `
+- create the docker image by running:
+
+work in progress ...
+
+docker build -t cobidas-checklist/node-web-app:0.0.1 .
+docker run -it --rm -p 49160:8080 cobidas-checklist/node-web-app:0.0.1
