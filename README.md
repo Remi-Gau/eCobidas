@@ -36,7 +36,7 @@ See [here](goals.md) to for more information on our short and long term goals as
 
 ## Implementation
 
-So far most of the work is being done on spreadsheets hosted on this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
+So far most of the work is being done on spreadsheets hosted on this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing) but you also find recent updates in the [xlsx folder](xlsx).
 
 At the moment we are looking into using the [schema-standardization](https://github.com/ReproNim/schema-standardization) and [schema-ui](https://github.com/ReproNim/schema-ui) initiatives from [ReproNim](http://www.repronim.org/) to structure and render the checklist.
 
@@ -51,6 +51,6 @@ The COBIDAS report:
 - [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)
 - [for EEG and MEG](https://osf.io/a8dhx/)
 
-A [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS checklist (thanks to [Cass](https://github.com/cassgvp)!!!)
+The original [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS checklist (thanks to [Cass](https://github.com/cassgvp)!!!)
 
-More ideas about this project are being added to this [google slide document](https://docs.google.com/presentation/d/17VOSLJQq6NpkCOFPR4iyEJngamugIqAfNBru0ohJbMo/edit?usp=sharing)
+Presentation slides made about this project can be found in the [presentations folder](presentations) and [here](presentations/links.md).
