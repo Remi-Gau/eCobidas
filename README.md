@@ -42,6 +42,12 @@ At the moment we are looking into using the [schema-standardization](https://git
 
 See here for more information.
 
+## How to contribute
+
+We are looking for people to give us feedback or help us move forward and implement all of this.
+
+To learn more about the contributors see [here](contributors.md).
+
 
 ## References
 
