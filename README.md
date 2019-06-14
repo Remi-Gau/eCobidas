@@ -34,6 +34,13 @@ By turning the checklist into a website users could more rapidly click through i
 See [here](goals.md) to for more information on our short and long term goals as well as possible extension to the project.
 
 
+## Implementation
+
+At the moment we are looking into using the [schema-standardization](https://github.com/ReproNim/schema-standardization) and [schema-ui](https://github.com/ReproNim/schema-ui) initiatives from [ReproNim](http://www.repronim.org/) to structure and render the checklist.
+
+See here for more information.
+
+
 ## References
 
 Jeanette Mumford has a [30 min video](https://www.youtube.com/watch?v=bsM4KowO5Vc&t=175s) explaining the background behind the COBIDAS report and giving a run through of the checklist.
