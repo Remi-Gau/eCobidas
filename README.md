@@ -1,6 +1,6 @@
 # COBIDAS checklist
 
-This repository is a first step in trying to turn the report published by the Committee on Best Practices in Data Analysis and Sharing (COBIDAS) of OHBM into a practical tool for improving methods and results reporting in neuroimaging.
+This repository host the work turning the report published by the Committee on Best Practices in Data Analysis and Sharing (COBIDAS) of the organization for human brain mapping (OHBM) into a practical tool for improving methods and results reporting in neuroimaging.
 
 This repository should be a place where:
 1. issues and ideas around reaching this goal are discussed;
@@ -9,10 +9,11 @@ This repository should be a place where:
 
 ## How to reach us
 
-[The github repository of this project can be found here](https://github.com/Remi-Gau/COBIDAS_chckls)
+If you want to kept posted about the progress of the project, you can join our [google group](https://groups.google.com/d/forum/cobidas-checklist).
 
-Come and join us on the `cobidas_checklist` channel on the [brainhack mattermost](https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist).
+From more frequent updates and behind the scenes, come and join us on the `cobidas_checklist` channel on the brainhack mattermost.
 
+<a href="https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist"><img src="http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png" width=100px /> Join our channel </a>
 
 Otherwise you can open a new issue on the repository itself if there is something you would like to discuss directly here.
 
