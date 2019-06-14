@@ -36,6 +36,8 @@ See [here](goals.md) to for more information on our short and long term goals as
 
 ## Implementation
 
+So far most of the work is being done on spreadsheets hosted on this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
+
 At the moment we are looking into using the [schema-standardization](https://github.com/ReproNim/schema-standardization) and [schema-ui](https://github.com/ReproNim/schema-ui) initiatives from [ReproNim](http://www.repronim.org/) to structure and render the checklist.
 
 See here for more information.
