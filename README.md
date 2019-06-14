@@ -40,6 +40,8 @@ So far most of the work is being done on spreadsheets hosted on this [google dri
 
 At the moment we are looking into using the [schema-standardization](https://github.com/ReproNim/schema-standardization) and [schema-ui](https://github.com/ReproNim/schema-ui) initiatives from [ReproNim](http://www.repronim.org/) to structure and render the checklist.
 
+See one example [here](https://schema-ui.anisha.pizza/#/).
+
 See here for more information.
 
 ## How to contribute
