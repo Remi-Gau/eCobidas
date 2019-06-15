@@ -1,6 +1,6 @@
 # How to render the checklist
 
-This is a quick "how to" to render the checklist. If you want details on how implementation scroll down to the relevant section below
+This is a quick "how to" to render the checklist. If you want details on implementation, scroll down to the relevant section below
 
 ## How to
 
