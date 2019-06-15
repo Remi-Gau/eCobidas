@@ -39,4 +39,4 @@ Server-ui can be set to get info from another repo by modifying its `schema-ui/s
 
 A cobidas activity set was created in the schema-standardization repo in the folder `schema-standardization/activity-sets/cobidas`.
 
-This point to the cobidas activity defined in `schema-standardization/activities/COBIDAS` where the items of the checklist are themselves defined.
+This points to the cobidas activity defined in `schema-standardization/activities/COBIDAS` where the items of the checklist are themselves defined.
