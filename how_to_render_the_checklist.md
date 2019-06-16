@@ -7,23 +7,40 @@ This is a quick "how to" to render the checklist. If you want details on impleme
 ### Manually
 
 - Install [npm](https://www.npmjs.com/get-npm) or better install [node version manager](https://github.com/nvm-sh/nvm) to help you deal with different version of node.js.
+
+
 - Clone the schema user interface [forked repository](https://github.com/Remi-Gau/schema-ui)
-- Step inside the schema-ui directory and run `npm install`
-- Run `npm run dev`
+- Step inside the schema-ui directory, checkout the COBIDAS development branch and install the dependencies
+- Run the whole thing
+
+```
+git clone https://github.com/Remi-Gau/schema-ui
+cd schema-ui
+git checkout COBIDAS
+npm install
+npm run dev
+```
+
 - Open your browser and go to [localhost:8080](localhost:8080)
 
 ### With docker
 
+Tim Van Mourik very kindly dockerised the whole thing (see this [PR](https://github.com/Remi-Gau/schema-ui/pull/2)).
+
 If you are new to docker you might want to check [this](https://the-turing-way.netlify.com/reproducible_environments/06/containers#Containers_section) first.
 
-**work in progress**
+On top of installing docker, you will need to install [docker-compose](https://docs.docker.com/compose/) too.
 
-Done by following documentation from [this](https://nodejs.org/de/docs/guides/nodejs-docker-webapp/) and [this](https://gist.github.com/remarkablemark/aacf14c29b3f01d6900d13137b21db3a).
+The following set of commands should get you running:
 
-- create the docker image by running: `docker build -t cobidas-checklist/node-web-app:0.0.1 .`
+```
+git clone https://github.com/Remi-Gau/schema-ui
+cd schema-ui
+git checkout COBIDAS
+docker-compose up
+```
 
-- create the docker image by running: `docker run -it --rm -p 49160:8080 cobidas-checklist/node-web-app:0.0.1`
-
+Then open your browser and go to [http://0.0.0.0:8080/](http://0.0.0.0:8080/)
 
 ## Implementation
 
