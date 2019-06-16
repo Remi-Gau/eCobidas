@@ -42,7 +42,7 @@ At the moment we are looking into using the [schema-standardization](https://git
 
 See one example [here](https://schema-ui.anisha.pizza/#/).
 
-See here for more information.
+See [here](how_to_render_the_checklist.md) for more information.
 
 ## How to contribute
 
