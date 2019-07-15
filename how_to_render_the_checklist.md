@@ -31,7 +31,7 @@ To make things easier, can can also use [docker-compose](https://docs.docker.com
 ```
 docker-compose up
 ```
-Then open your browser and go to [http://0.0.0.0:8080/](http://0.0.0.0:8080/)
+Then open your browser and go to [http://0.0.0.0:8080/](http://0.0.0.0:8080/) or [localhost:8080/](localhost:8080/)
 
 [@TimVanMourik](https://github.com/TimVanMourik) dockerised this app in [this PR](https://github.com/Remi-Gau/schema-ui/pull/2).
 
