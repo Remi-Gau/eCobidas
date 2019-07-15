@@ -40,7 +40,7 @@ git checkout COBIDAS
 docker-compose up
 ```
 
-Then open your browser and go to [http://0.0.0.0:8080/](http://0.0.0.0:8080/)
+Then open your browser and go to [http://0.0.0.0:8080/](http://0.0.0.0:8080/) or [localhost:8080/](localhost:8080/)
 
 ## Implementation
 
