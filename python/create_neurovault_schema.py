@@ -5,17 +5,19 @@ import csv
 # where the metadata from neurovault are described
 input_file = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
 
+# where the files will be written (the local repo of the schema-standardization)
 output_dir = '/home/remi/github/schema-standardization'
 
+# placeholder to insert in all instances of the remote repo
 remote_repo = 'https://raw.githubusercontent.com/Remi-Gau/schema-standardization/'
 
+# to which branch of schema-standardization the ui will be pointed to
 branch_name  = 'neurovault'
 
 
 # activity set names
 activity_set_schema_filename = 'cobidas_schema.jsonld'
 activity_set_context_filename = 'cobidas_context.jsonld'
-
 activity_set_folder_name = 'cobidas'
 
 
@@ -58,8 +60,6 @@ nv_set_context_json = {
 }
 
 
-
-
 Section = ''
 # loop through rows of the csv file and create corresponding jsonld for each item
 with open(input_file, 'r') as csvfile:
@@ -72,18 +72,23 @@ with open(input_file, 'r') as csvfile:
             # detect if this is a new section
             if row[1]!=Section:
 
+                # update section name
                 Section=row[1]
 
-                activity_folder_name = 'Neurovault_' + row[1]
+                # where the items of this section will be stored
+                activity_folder_name = 'Neurovault_' + Section
 
-                activity_schema_name = 'Neurovault_' + row[1] + '_schema'
+                # nmaes of this section schema and its corresponding jsonld files
+                activity_schema_name = 'Neurovault_' + Section + '_schema'
 
                 activity_schema_filename = activity_schema_name + '.jsonld'
 
-                activity_context_filename = 'Neurovault_' + row[1] + '_context.jsonld'
+                activity_context_filename = 'Neurovault_' + Section + '_context.jsonld'
+
 
                 print(activity_schema_name)
 
+                # create dir for this section
                 if not os.path.exists(os.path.join(output_dir, 'activities', activity_folder_name)):
                     os.makedirs(os.path.join(output_dir, 'activities', activity_folder_name))
 
@@ -117,13 +122,14 @@ with open(input_file, 'r') as csvfile:
                     }
                 }
 
+                # update the json content of the activity set schema and context wrt this new activity
                 nv_set_schema_json['variableMap'].append(
                     {'variableName': activity_schema_name,'isAbout': activity_schema_name}
                     )
 
                 nv_set_schema_json['ui']['order'].append(activity_schema_name)
                 nv_set_schema_json['ui']['visibility'][activity_schema_name] = True
-                nv_set_schema_json['ui']['activity_display_name'][activity_schema_name] = 'Neurovault - ' + row[1]
+                nv_set_schema_json['ui']['activity_display_name'][activity_schema_name] = 'Neurovault - ' + Section
 
                 nv_set_context_json['@context'][activity_schema_name] = {
                     '@id': 'activity_path:' + activity_folder_name + '/' + activity_schema_filename,
@@ -133,7 +139,7 @@ with open(input_file, 'r') as csvfile:
             print('   ' + row[2])
 
 
-
+            # update the json content of the activity schema and context wrt this new item
             nv_schema_json['ui']['order'].append(row[2])
 
             nv_context_json['@context'][row[2]] = {
@@ -141,7 +147,7 @@ with open(input_file, 'r') as csvfile:
                 '@type': '@id'
             }
 
-            # write activity jsonld
+            # save activity jsonld with every new item
             with open(os.path.join(output_dir, 'activities', activity_folder_name, activity_schema_filename), 'w') as ff:
                 json.dump(nv_schema_json, ff, sort_keys=False, indent=4)
 
@@ -149,8 +155,7 @@ with open(input_file, 'r') as csvfile:
                 json.dump(nv_context_json, ff, sort_keys=False, indent=4)
 
 
-
-
+            # define jsonld for this item
             item_json = {
                 '@context': [ remote_repo + branch_name + '/contexts/generic.jsonld',
                     remote_repo + branch_name + '/activities/' + activity_folder_name + '/' + activity_context_filename
@@ -165,7 +170,7 @@ with open(input_file, 'r') as csvfile:
                 'question': row[3],
             }
 
-            # now we define the answers
+            # now we define the answers for this item
             if row[4]=='Boolean':
 
                 item_json['ui'] = {
