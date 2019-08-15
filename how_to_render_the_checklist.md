@@ -6,12 +6,25 @@ This is a quick "how to" to render the checklist. If you want details on impleme
 
 ### Manually
 
-- Install [npm](https://www.npmjs.com/get-npm) or better install [node version manager](https://github.com/nvm-sh/nvm) to help you deal with different version of node.js.
+-   Install [npm](https://www.npmjs.com/get-npm)
+
+-   or better install [node version manager](https://github.com/nvm-sh/nvm) to help you deal with different version of node.js.
+
+If you are running linux go for:
+
+`curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash`
+
+Then close your terminal and reopen it then run
+
+```
+nvm install node
+nvm install 9
+```
 
 
-- Clone the schema user interface [forked repository](https://github.com/Remi-Gau/schema-ui)
-- Step inside the schema-ui directory, checkout the COBIDAS development branch and install the dependencies
-- Run the whole thing
+-   Clone the schema user interface [forked repository](https://github.com/Remi-Gau/schema-ui)
+-   Step inside the schema-ui directory, checkout the COBIDAS development branch and install the dependencies
+-   Run the whole thing
 
 ```
 git clone https://github.com/Remi-Gau/schema-ui
@@ -21,7 +34,7 @@ npm install
 npm run dev
 ```
 
-- Open your browser and go to [localhost:8080](localhost:8080)
+-   Open your browser and go to [localhost:8080](localhost:8080)
 
 ### With docker
 
