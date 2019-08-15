@@ -2,17 +2,17 @@
 
 ## Contributors
 
-The following individuals have contributed to the developement of this tool (in alphabetical order by last name).
+The following individuals have contributed to the development of this tool (in alphabetical order by last name).
 If you contributed to the COBIDAS Checklist and your name is not listed, please add it (via PR).
 
-* [Federico Adolfi](Federico-Adolfi)
-* [Rémi Gau](#Rémi-Gau) [@Remi-Gau](https://twitter.com/RemiGau)
-* [Cassandra Gould van Praag](#Cassandra-Gould-van-Praag) [@cassgvp](https://twitter.com/cassgvp)
-* [Mary Miedema](Mary-Miedema)
-* [Ilona Ruotsalainen](#Ilona-Ruotsalainen) [@IRuotsa](https://twitter.com/IRuotsa)
-* [Cristina Scarpazza](Cristina-Scarpazza)
-* [Angie Tepper](Angie-Tepper)
-* [Martina G. Vilas](Martina-G.-Vilas)
+*   [Federico Adolfi](Federico-Adolfi)
+*   [Rémi Gau](#Rémi-Gau) [@Remi-Gau](https://twitter.com/RemiGau)
+*   [Cassandra Gould van Praag](#Cassandra-Gould-van-Praag) [@cassgvp](https://twitter.com/cassgvp)
+*   [Mary Miedema](Mary-Miedema)
+*   [Ilona Ruotsalainen](#Ilona-Ruotsalainen) [@IRuotsa](https://twitter.com/IRuotsa)
+*   [Cristina Scarpazza](Cristina-Scarpazza)
+*   [Angie Tepper](Angie-Tepper)
+*   [Martina G. Vilas](Martina-G.-Vilas)
 
 ## Contributor biographies
 
