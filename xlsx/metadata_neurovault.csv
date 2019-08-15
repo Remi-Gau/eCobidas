@@ -86,4 +86,4 @@ fmrimethods.org,GroupModeling,group_repeated_measures_method,"If multiple measur
 fmrimethods.org,GroupInference,group_statistic_type,"Type of statistic that is the basis of the inference; e.g. “Z”,“T”,”F”,”X2”,“PostProb”,
 “NonparametricP”,“MonteCarloP”",char,2
 fmrimethods.org,GroupInference,group_statistic_parameters,"Parameters of the null distribution of the test statisic, typically degrees of freedom (should be clear from the test statistic what these are).",float,
-fmrimethods.org,GroupInference,group_smoothness_fwhm,Noise smoothness for statistical inference; this is the estimated smoothness used with Random Field Theory or a simulation-based inference method.,,1
+fmrimethods.org,GroupInference,group_smoothness_fwhm,Noise smoothness for statistical inference; this is the estimated smoothness used with Random Field Theory or a simulation-based inference method.,float,1

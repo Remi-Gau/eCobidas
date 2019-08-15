@@ -3,7 +3,28 @@
 This is a quick "how to" to render the checklist. If you want details on implementation, scroll down to the relevant section below
 
 ## How to
-- Clone the schema user interface [forked repository](https://github.com/Remi-Gau/schema-ui) and checkout the COBIDAS development branch
+
+### Manually
+
+-   Install [npm](https://www.npmjs.com/get-npm)
+
+-   or better install [node version manager](https://github.com/nvm-sh/nvm) to help you deal with different version of node.js.
+
+If you are running linux go for:
+
+`curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash`
+
+Then close your terminal and reopen it then run
+
+```
+nvm install node
+nvm install 9
+```
+
+-   Clone the schema user interface [forked repository](https://github.com/Remi-Gau/schema-ui)
+-   Step inside the schema-ui directory, checkout the COBIDAS development branch and install the dependencies
+-   Run the whole thing
+
 ```
 git clone https://github.com/Remi-Gau/schema-ui
 cd schema-ui
@@ -18,7 +39,9 @@ git checkout COBIDAS
 npm install
 npm run dev
 ```
-- Open your browser and go to [localhost:8080](localhost:8080)
+
+-   Open your browser and go to [localhost:8080](localhost:8080)
+
 
 ### Run with docker or docker-compose
 If you are new to docker you might want to check [this](https://the-turing-way.netlify.com/reproducible_environments/06/containers#Containers_section) first.
