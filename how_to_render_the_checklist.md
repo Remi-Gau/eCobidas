@@ -8,14 +8,14 @@ This is a quick "how to" to render the checklist. If you want details on impleme
 -   Step inside the schema-ui directory, checkout the COBIDAS development branch and install the dependencies
 
 ```
-git clone https://github.com/Remi-Gau/schema-ui
+git clone https://github.com/Remi-Gau/cobidas-ui
 cd schema-ui
 git checkout COBIDAS
 ```
 
 ### Run Locally
 
-- Install [npm](https://www.npmjs.com/get-npm) or better install [node version manager](https://github.com/nvm-sh/nvm) to help you deal with different version of node.js.
+-   Install [npm](https://www.npmjs.com/get-npm) or better install [node version manager](https://github.com/nvm-sh/nvm) to help you deal with different version of node.js.
 
 If you are running linux go for:
 
@@ -28,8 +28,8 @@ nvm install node
 nvm install 9
 ```
 
-- Step inside the `schema-ui` directory and install the dependencies
-- Run the development server
+-   Step inside the `cobidas-ui` directory and install the dependencies
+-   Run the development server
 ```
 npm install
 npm run dev
@@ -42,9 +42,12 @@ npm run dev
 
 If you are new to docker you might want to check [this](https://the-turing-way.netlify.com/reproducible_environments/06/containers#Containers_section) first.
 
+Maybe more, please check
+
 ```
-docker build -t cobidas .
-docker run -v .:/code cobidas -p 8080:8080 [maybe more, please check]
+this_dir=`pwd`
+docker build -t cobidas-checklist:0.0.1 .
+docker run -it --rm -p 8080:8080 -v $this_dir:/code cobidas-checklist:0.0.1
 ```
 
 To make things easier, can can also use [docker-compose](https://docs.docker.com/compose), which load the docker configuration from the `docker-compose.yml` file. In that case, the only things you need to do is to run:
@@ -61,7 +64,7 @@ Then open your browser and go to [http://0.0.0.0:8080/](http://0.0.0.0:8080/) or
 
 Just some quick details on how the rendering is done at the moment.
 
-This relies on the schema-ui repository [forked here for development](https://github.com/Remi-Gau/schema-ui): the work is done on the COBIDAS branch of this repo, so make sure you checkout this branch before you decide to serve the checklist.
+This relies on the schema-ui repository [forked here for development](https://github.com/Remi-Gau/cobidas-ui): the work is done on the COBIDAS branch of this repo, so make sure you checkout this branch before you decide to serve the checklist.
 
 The server-ui can be used to render different questionnaires following the [schema-standardization work](https://github.com/ReproNim/schema-standardization) done by ReproNim. For the purpose of development, this repository was also forked [here](https://github.com/Remi-Gau/schema-standardization). There too the dev work is done on the COBIDAS branch.
 
