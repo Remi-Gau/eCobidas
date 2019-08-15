@@ -22,7 +22,7 @@ Otherwise you can open a new issue on the repository itself if there is somethin
 
 Poor methods and results description hinders the reproducibility and the replicability of research. It also makes it hard to compare new and old results and generally increases inefficiency in the research process. This project is built on the hope that improving methods and results reporting could improve neuroimaging research.
 
-See [here](why_this_project.md) to for more background information.
+See [here](./why_this_project.md) to for more background information.
 
 
 ## Goals
@@ -31,7 +31,7 @@ See [here](why_this_project.md) to for more background information.
 
 By turning the checklist into a website users could more rapidly click through it and provide more of the information requested by the COBIDAS report. This would generate a small text file (a json file) that summarizes what option was chosen for each item of the checklist. This machine readable file could then be used to automatically generate part of the methods section of an article.
 
-See [here](goals.md) to for more information on our short and long term goals as well as possible extension to the project.
+See [here](./goals.md) to for more information on our short and long term goals as well as possible extension to the project.
 
 
 ## Implementation
@@ -42,13 +42,13 @@ At the moment we are looking into using the [schema-standardization](https://git
 
 See one example [here](https://schema-ui.anisha.pizza/#/).
 
-See [here](how_to_render_the_checklist.md) for more information.
+See [here](./how_to_render_the_checklist.md) for more information.
 
 ## How to contribute
 
 We are looking for people to give us feedback or help us move forward and implement all of this.
 
-To learn more about the contributors see [here](contributors.md).
+To learn more about the contributors see [here](./contributors.md).
 
 
 ## References
@@ -61,4 +61,4 @@ The COBIDAS report:
 
 The original [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS checklist (thanks to [Cass](https://github.com/cassgvp)!!!)
 
-Presentation slides made about this project can be found in the [presentations folder](presentations) and [here](presentations/links.md).
+Presentation slides made about this project can be found in the [presentations folder](./presentations) and [here](./presentations/links.md).

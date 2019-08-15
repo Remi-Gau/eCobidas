@@ -4,11 +4,18 @@ This is a quick "how to" to render the checklist. If you want details on impleme
 
 ## How to
 
-### Manually
+-   Clone the schema user interface [forked repository](https://github.com/Remi-Gau/cobidas-ui)
+-   Step inside the schema-ui directory, checkout the COBIDAS development branch and install the dependencies
 
--   Install [npm](https://www.npmjs.com/get-npm)
+```
+git clone https://github.com/Remi-Gau/schema-ui
+cd schema-ui
+git checkout COBIDAS
+```
 
--   or better install [node version manager](https://github.com/nvm-sh/nvm) to help you deal with different version of node.js.
+### Run Locally
+
+- Install [npm](https://www.npmjs.com/get-npm) or better install [node version manager](https://github.com/nvm-sh/nvm) to help you deal with different version of node.js.
 
 If you are running linux go for:
 
@@ -21,18 +28,6 @@ nvm install node
 nvm install 9
 ```
 
--   Clone the schema user interface [forked repository](https://github.com/Remi-Gau/schema-ui)
--   Step inside the schema-ui directory, checkout the COBIDAS development branch and install the dependencies
--   Run the whole thing
-
-```
-git clone https://github.com/Remi-Gau/schema-ui
-cd schema-ui
-git checkout COBIDAS
-```
-
-### Run Locally
-- Install [npm](https://www.npmjs.com/get-npm) or better install [node version manager](https://github.com/nvm-sh/nvm) to help you deal with different version of node.js.
 - Step inside the `schema-ui` directory and install the dependencies
 - Run the development server
 ```
@@ -44,19 +39,22 @@ npm run dev
 
 
 ### Run with docker or docker-compose
+
 If you are new to docker you might want to check [this](https://the-turing-way.netlify.com/reproducible_environments/06/containers#Containers_section) first.
+
 ```
 docker build -t cobidas .
 docker run -v .:/code cobidas -p 8080:8080 [maybe more, please check]
 ```
 
 To make things easier, can can also use [docker-compose](https://docs.docker.com/compose), which load the docker configuration from the `docker-compose.yml` file. In that case, the only things you need to do is to run:
+
 ```
 docker-compose up
 ```
 Then open your browser and go to [http://0.0.0.0:8080/](http://0.0.0.0:8080/) or [localhost:8080/](localhost:8080/)
 
-[@TimVanMourik](https://github.com/TimVanMourik) dockerised this app in [this PR](https://github.com/Remi-Gau/schema-ui/pull/2).
+[@TimVanMourik](https://github.com/TimVanMourik) dockerised this app in [this PR](https://github.com/Remi-Gau/cobidas-ui/pull/2).
 
 
 ## Implementation
@@ -69,7 +67,7 @@ The server-ui can be used to render different questionnaires following the [sche
 
 ### In practice
 
-Server-ui can be set to get info from another repo by modifying its `schema-ui/src/config.js` file (e.g see [here](https://github.com/Remi-Gau/schema-ui/blob/COBIDAS/src/config.js)).
+Server-ui can be set to get info from another repo by modifying its `schema-ui/src/config.js` file (e.g see [here](https://github.com/Remi-Gau/cobidas-ui/blob/COBIDAS/src/config.js)).
 
 A cobidas activity set was created in the schema-standardization repo in the folder `schema-standardization/activity-sets/cobidas`.
 
