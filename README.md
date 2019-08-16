@@ -31,14 +31,18 @@ See [here](./why_this_project.md) to for more background information.
 
 By turning the checklist into a website users could more rapidly click through it and provide more of the information requested by the COBIDAS report. This would generate a small text file (a json file) that summarizes what option was chosen for each item of the checklist. This machine readable file could then be used to automatically generate part of the methods section of an article.
 
-See [here](./goals.md) to for more information on our short and long term goals as well as possible extension to the project.
+See [here](./goals.md) for more information on our short and long term goals as well as possible extension to the project.
+
+While we are still in development we are also using the [list of required inputs](./xlsx/metadata_neurovault.csv) from [neurovault](https://www.neurovault.org/) to work on the user interface.
 
 
 ## Implementation
 
-So far most of the work is being done on spreadsheets hosted on this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing) but you also find recent updates in the [xlsx folder](xlsx).
+So far most of the work is being done on spreadsheets hosted on this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing) but you also find recent updates in the [xlsx folder](./xlsx/me).
 
 At the moment we are looking into using the [schema-standardization](https://github.com/ReproNim/schema-standardization) and [schema-ui](https://github.com/ReproNim/schema-ui) initiatives from [ReproNim](http://www.repronim.org/) to structure and render the checklist.
+
+So far we have one [script](./python/create_neurovault_schema.py) to turn the neurovault [list of required inputs](./xlsx/metadata_neurovault.csv) into a schema that can then be render with the schema-ui.
 
 See one example [here](https://schema-ui.anisha.pizza/#/).
 
@@ -47,6 +51,7 @@ See [here](./how_to_render_the_checklist.md) for more information.
 Click on the image below to see how the checklist would function.
 
 [![the checklist](img/Screenshot from 2019-08-15 22-53-59.png)](https://drive.google.com/file/d/1zT-oxxVESq0nSUvyU3iM1gzIxAt-6XOc/view)
+
 
 ## How to contribute
 
