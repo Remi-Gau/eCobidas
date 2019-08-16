@@ -1,6 +1,6 @@
 # COBIDAS checklist
 
-This repository host the work turning the report published by the Committee on Best Practices in Data Analysis and Sharing (COBIDAS) of the organization for human brain mapping (OHBM) into a practical tool for improving methods and results reporting in neuroimaging.
+This repository host the work turning the report published by the Committee on Best Practices in Data Analysis and Sharing (COBIDAS) of the organization for human brain mapping (OHBM) into a practical tool for improving methods and results reporting in neuroimaging and EEG/MEG.
 
 This repository should be a place where:
 1. issues and ideas around reaching this goal are discussed;
@@ -20,12 +20,12 @@ Otherwise you can open a new issue on the repository itself if there is somethin
 
 ## Why this project
 
-Poor methods and results description hinders the reproducibility and the replicability of research. It also makes it hard to compare new and old results and generally increases inefficiency in the research process. This project is built on the hope that improving methods and results reporting could improve neuroimaging research.
+Poor methods and results description hinders the reproducibility and the replicability of research. It also makes it hard to compare new and old results and generally increases inefficiency in the research process. This project is built on the hope that improving methods and results reporting could improve our research.
 
 See [here](./why_this_project.md) to for more background information.
 
 
-## Goals
+## Goals and roadmap
 
 **The short term goal of this project is to make the COBIDAS report easier to use: we want to create a website with a clickable checklist that generates a json file at the end.**
 
@@ -48,7 +48,7 @@ See [here](./how_to_render_the_checklist.md) for more information.
 
 We are looking for people to give us feedback or help us move forward and implement all of this.
 
-To learn more about the contributors see [here](./contributors.md).
+To learn more about the contributors and how to contribute see [here](./contributors.md).
 
 
 ## References

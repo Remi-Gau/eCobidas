@@ -11,7 +11,7 @@
 -   Identify high-priority items to report based on Carp 2012 to make sure users do better than 50% of the papers out there
 
 -   Create a proof of concept website that can:
-  - given a template spreasheet / COBIDAS-json file generates a checklist to clicked through by users,
+  - given a template spreadsheet file generates a checklist to clicked through by users,
   - outputs a populated COBIDAS-json file once the user is done,
   - generate a method section using a populated COBIDAS-json file.
 
@@ -19,7 +19,7 @@
 
   The implementation of this project should remain flexible enough to:
   - accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g new multivariate analysis, high-resolution MRI...),
-  - easily fork the project and convert it to create a checklist-website for a different field. In practice, this will involve a deployment through a container technology like [docker](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#containers).
+  - easily fork the project and convert it to create a checklist-website for a different field.
 
 ## Extensions (intermediate goals)
 
@@ -29,7 +29,7 @@ The process of filling in an online checklist can be simplified if of the requir
 
 BIDS is an emerging standard to organize neuroimaging data (MRI, fMRI, EEG...) and its associated metadata regarding acquisition (e.g repetition time, echo time, slice order...), experimental design (number of subjects, conditions, stimulus onsets...). This allows to automate methods section generation like is done by the `reports module` of [pybids](https://github.com/bids-standard/pybids/tree/master/bids/reports).
 
-NIDM results is a way to present and package mass-univariate fMRI results in a software independent way. This way it can for example facilitate reading FSL results through SPM or facilitate data sharing (e.g NIDM results is supported by the data sharing platform neurovault and this greatly facilitate uploading your results there). NIDM contains many metadata with a correspondance in the COBIDAS checlist (see [here](https://media.nature.com/original/nature-assets/sdata/2016/sdata2016102/extref/sdata2016102-s1.pdf)).
+NIDM results is a way to present and package mass-univariate fMRI results in a software independent way. This way it can for example facilitate reading FSL results through SPM or facilitate data sharing (e.g NIDM results is supported by the data sharing platform neurovault and this greatly facilitate uploading your results there). NIDM contains many metadata with a correspondence in the COBIDAS checlist (see [here](https://media.nature.com/original/nature-assets/sdata/2016/sdata2016102/extref/sdata2016102-s1.pdf)).
 
 For BIDS and NIDM results, machine reading through a data set organized as BIDS and and NIDM results could automatically fill part of the COBIDAS checklist.
 
