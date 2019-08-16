@@ -44,6 +44,10 @@ See one example [here](https://schema-ui.anisha.pizza/#/).
 
 See [here](./how_to_render_the_checklist.md) for more information.
 
+Click on the image below to see how the checklist would function.
+
+[![the checklist](img/Screenshot from 2019-08-15 22-53-59.png)](https://drive.google.com/file/d/1zT-oxxVESq0nSUvyU3iM1gzIxAt-6XOc/view)
+
 ## How to contribute
 
 We are looking for people to give us feedback or help us move forward and implement all of this.
