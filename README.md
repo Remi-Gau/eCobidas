@@ -50,7 +50,7 @@ See [here](./how_to_render_the_checklist.md) for more information.
 
 Click on the image below to see how the checklist would function.
 
-[![](./img/LandingPAae.png)](https://drive.google.com/file/d/1zT-oxxVESq0nSUvyU3iM1gzIxAt-6XOc/view)
+[![](./img/LandingPage.png)](https://drive.google.com/file/d/1zT-oxxVESq0nSUvyU3iM1gzIxAt-6XOc/view)
 
 
 ## How to contribute
