@@ -34,9 +34,10 @@ If you contributed to the COBIDAS Checklist and your name is not listed, please 
 *   [Kristina Wiebels](#Kristina-Wiebels)
 
 
-
-sanu
-anisha
+Also a big shout to many of the people on the Repronim team for their continuous insight on how to structure and render this project.
+- [Sanu Ann Abraham](https://github.com/sanuann)
+- [Satrajit Ghosh](https://github.com/satra)
+- [Anisha Keshavan](https://github.com/akeshavan)
 
 
 ## Contributions
