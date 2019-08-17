@@ -1,8 +1,14 @@
+# this script takes the content of the metadata csv file from neurvovault and turns
+# it into a Repronim compliant schema
+
+# tested with python 3.7
+
 import json
 import os
 import csv
 
-# where the metadata from neurovault are described
+# where the metadata from neurovault are described. Can be downloaded from here:v
+# https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv
 input_file = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
 
 # where the files will be written (the local repo of the schema-standardization)
@@ -69,7 +75,7 @@ with open(input_file, 'r') as csvfile:
         # to skip the header
         if row[2]!='Item':
 
-            # detect if this is a new section
+            # detect if this is a new section if so it will create a new activity
             if row[1]!=Section:
 
                 # update section name
@@ -78,7 +84,7 @@ with open(input_file, 'r') as csvfile:
                 # where the items of this section will be stored
                 activity_folder_name = 'Neurovault_' + Section
 
-                # nmaes of this section schema and its corresponding jsonld files
+                # names of this section schema and its corresponding jsonld files
                 activity_schema_name = 'Neurovault_' + Section + '_schema'
 
                 activity_schema_filename = activity_schema_name + '.jsonld'
