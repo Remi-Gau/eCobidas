@@ -124,7 +124,8 @@ with open(input_file, 'r') as csvfile:
                     'preamble': 'How did you design/analyse your study?',
                     'ui': {
                         'order': [],
-                        'shuffle': False
+                        'shuffle': False,
+                        'allow': ["skipped"]
                     }
                 }
 
@@ -208,12 +209,12 @@ with open(input_file, 'r') as csvfile:
                 options = row[4][1:-2].replace("'", "").split(',')
 
                 item_json['ui'] = {
-                    'inputType': 'radio'
+                    'inputType': 'select'
                     }
 
                 item_json['responseOptions'] = {
-                    '@type': 'xsd:anyURI',
-                    'multipleChoice': False,
+                    "type": "xsd:string",
+                    'multipleChoice': True,
                     'schema:minValue': 0,
                     'schema:maxValue': len(options)-1,
                     'choices': []

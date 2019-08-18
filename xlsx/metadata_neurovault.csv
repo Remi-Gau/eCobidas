@@ -1,5 +1,5 @@
 Source,Section,Item,Verbose description,Format,"Priority (1=required, 2=recommended,3=optional)"
-fmrimethods.org,ExperimentalDesign,type_of_design,"Blocked, event-related, hybrid, or other","['blocked','event_related','hybrid block/event','other']",1
+fmrimethods.org,ExperimentalDesign,type_of_design,"Blocked, event-related, hybrid, or other","['blocked','event_related','hybrid block/event','Other']",1
 fmrimethods.org,ExperimentalDesign,number_of_imaging_runs,Number of imaging runs acquired,int,2
 fmrimethods.org,ExperimentalDesign,number_of_experimental_units,"Number of blocks, trials or experimental units per imaging run",int,2
 fmrimethods.org,ExperimentalDesign,length_of_runs,Length of each imaging run in seconds,float,2
@@ -54,7 +54,7 @@ fmrimethods.org,IntersubjectRegistration,interpolation_method,Interpolation meth
 fmrimethods.org,IntersubjectRegistration,object_image_type,What type of image was used to determine the transformation to the atlas?,char,1
 fmrimethods.org,IntersubjectRegistration,functional_coregistered_to_structural,Were the functional images coregistered to the subject's structural image?,Boolean,2
 fmrimethods.org,IntersubjectRegistration,functional_coregistration_method,Method used to coregister functional to structural images,char,3
-fmrimethods.org,IntersubjectRegistration,coordinate_space,Name of coordinate space for registration target,"['MNI','Talairach','MNI2Tal','other']",1
+fmrimethods.org,IntersubjectRegistration,coordinate_space,Name of coordinate space for registration target,"['MNI','Talairach','MNI2Tal','Other']",1
 fmrimethods.org,IntersubjectRegistration,target_template_image,Name of target template image,char,2
 fmrimethods.org,IntersubjectRegistration,target_resolution,Voxel size of target template in millimeters,float,1
 fmrimethods.org,IntersubjectRegistration,used_smoothing,Was spatial smoothing applied?,Boolean,1
