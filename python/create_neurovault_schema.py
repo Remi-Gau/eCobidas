@@ -3,22 +3,37 @@
 
 # tested with python 3.7
 
-import json
-import os
-import csv
+## -----------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
+# modify the following lines to match your needs
 
-# where the metadata from neurovault are described. Can be downloaded from here:v
+# where the metadata from neurovault are described. It is in xlsx folder of this repos
+# but it can also be downloaded from here:
 # https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv
 input_file = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
 
-# where the files will be written (the local repo of the schema-standardization)
+# where the files will be written on your machine: the local repository
+# corresponding to the remote where of the schema-standardization will be hosted
 output_dir = '/home/remi/github/schema-standardization'
 
-# placeholder to insert in all instances of the remote repo
+# Placeholder to insert in all instances of the remote repo that will host the schema representation
+# Most likely you just need to replace Remi-Gau in the following line by your github username
 remote_repo = 'https://raw.githubusercontent.com/Remi-Gau/schema-standardization/'
 
-# to which branch of schema-standardization the ui will be pointed to
+# to which branch of schema-standardization the user interface will be pointed to
+# In the end the cobidas-UI repository will be reading the schema from the URL that that
+# starts with: remote_repo + branch_name
 branch_name  = 'neurovault'
+
+
+## -----------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
+
+import json
+import os
+import csv
 
 
 # activity set names
