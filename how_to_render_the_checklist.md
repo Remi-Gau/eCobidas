@@ -2,7 +2,7 @@
 
 The prototype app for this checklist can be found here: https://cobidas-checklist.herokuapp.com/
 
-The first step of the implementation involves taking a spreadsheet that contains all the items of the checklist and turning that into a representation that can efficiently link the metadata about each item to the data imputed by the user.
+The first step of the implementation involves taking a spreadsheet that contains all the items of the checklist and turning that into a representation that can efficiently link the metadata about each item to the data imputed by the user. Basically it means turning your 'dumb' spreadsheet into an equivalent but 'smarter' representation of it: in this case a bunch hierarchically organized json files that link to each other.
 
 So far most of the work is being done on spreadsheets hosted on this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing) but you also find recent updates in the [xlsx folder](./xlsx/me).
 
