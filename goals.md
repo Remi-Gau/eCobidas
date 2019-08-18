@@ -11,9 +11,9 @@
 -   Identify high-priority items to report based on Carp 2012 to make sure users do better than 50% of the papers out there :heavy_check_mark: :smiley:
 
 -   Create a proof of concept website that can:
-  - given a template spreadsheet file generates a checklist to clicked through by users, :heavy_check_mark: :smiley:
-  - outputs a populated COBIDAS-json file once the user is done, :heavy_check_mark: :smiley:
-  - generate a method section using a populated COBIDAS-json file.
+  * given a template spreadsheet file generates a checklist to clicked through by users, :heavy_check_mark: :smiley:
+  * outputs a populated COBIDAS-json file once the user is done, :heavy_check_mark: :smiley:
+  * generate a method section using a populated COBIDAS-json file.
 
 ## Requirements
 
