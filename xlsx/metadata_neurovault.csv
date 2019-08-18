@@ -17,7 +17,7 @@ fmrimethods.org,Participants,inclusion_exclusion_criteria,"Additional inclusion/
 fmrimethods.org,Participants,number_of_rejected_subjects,Number of subjects scanned but rejected from analysis,int,2
 fmrimethods.org,Participants,group_comparison,Was this study a comparison between subject groups?,Boolean,1
 fmrimethods.org,Participants,group_description,A description of the groups being compared,char,2
-fmrimethods.org,MRI_acquisition,scanner_make,Manufacturer of MRI scanner,char,1
+fmrimethods.org,MRI_acquisition,scanner_make,Manufacturer of MRI scanner,"['Siemens','Philips','General Electric',’Other’]",1
 fmrimethods.org,MRI_acquisition,scanner_model,Model of MRI scanner,char,1
 fmrimethods.org,MRI_acquisition,field_strength,Field strength of MRI scanner (in Tesla),float,1
 fmrimethods.org,MRI_acquisition,pulse_sequence,Description of pulse sequence used for fMRI,char,1
@@ -26,31 +26,31 @@ fmrimethods.org,MRI_acquisition,field_of_view,Imaging field of view in millimete
 fmrimethods.org,MRI_acquisition,matrix_size,Matrix size for MRI acquisition,int,2
 fmrimethods.org,MRI_acquisition,slice_thickness,Distance between slices (includes skip or distance factor) in millimeters,float,1
 fmrimethods.org,MRI_acquisition,skip_factor,The size of the skipped area between slices in millimeters,float,2
-fmrimethods.org,MRI_acquisition,acquisition_orientation,The orientation of slices,char,2
+fmrimethods.org,MRI_acquisition,acquisition_orientation,The orientation of slices,"['axial','sagittal','frontal',’Other’]",2
 fmrimethods.org,MRI_acquisition,order_of_acquisition,"Order of acquisition of slices (ascending, descending, or interleaved)","['ascending','descending','interleaved']",3
 fmrimethods.org,MRI_acquisition,repetition_time,Repetition time (TR) in milliseconds,float,1
 fmrimethods.org,MRI_acquisition,echo_time,Echo time (TE) in milliseconds,float,1
 fmrimethods.org,MRI_acquisition,flip_angle,Flip angle in degrees,float,2
-fmrimethods.org,Preprocessing,software_package,"If a single software package was used for all analyses, specify that here",char,1
+fmrimethods.org,Preprocessing,software_package,"If a single software package was used for all analyses, specify that here","['SPM','FSL','Freesurfer','Brain voyager','Other']",1
 fmrimethods.org,Preprocessing,software_version,Version of software package used,char,1
 fmrimethods.org,Preprocessing,order_of_preprocessing_operations,Specify order of preprocessing operations,char,2
 fmrimethods.org,Preprocessing,quality_control,Describe quality control measures,char,3
 fmrimethods.org,Preprocessing,used_b0_unwarping,Was B0 distortion correction used?,Boolean,2
-fmrimethods.org,Preprocessing,b0_unwarping_software,Specify software used for distortion correction if different from the main package,char,3
+fmrimethods.org,Preprocessing,b0_unwarping_software,Specify software used for distortion correction if different from the main package,"['SPM','FSL','Freesurfer','Brain voyager','Other']",3
 fmrimethods.org,Preprocessing,used_slice_timing_correction,Was slice timing correction used?,Boolean,1
 fmrimethods.org,Preprocessing,slice_timing_correction_software,Specify software used for slice timing correction if different from the main package,char,3
 fmrimethods.org,Preprocessing,used_motion_correction,Was motion correction used?,Boolean,1
-fmrimethods.org,Preprocessing,motion_correction_software,Specify software used for motion correction if different from the main package,char,3
+fmrimethods.org,Preprocessing,motion_correction_software,Specify software used for motion correction if different from the main package,"['SPM','FSL','Freesurfer','Brain voyager','Other']",3
 fmrimethods.org,Preprocessing,motion_correction_reference,Reference scan used for motion correction,char,3
-fmrimethods.org,Preprocessing,motion_correction_metric,Similarity metric used for motion correction,char,3
-fmrimethods.org,Preprocessing,motion_correction_interpolation,Interpolation method used for motion correction,char,3
+fmrimethods.org,Preprocessing,motion_correction_metric,Similarity metric used for motion correction,"['Mutual information','Normalised mutual information','Entropy correlation coefficient','Normalised cross-correlation','Other’]",3
+fmrimethods.org,Preprocessing,motion_correction_interpolation,Interpolation method used for motion correction,"['Nearest neighbour','trilinear','2nd degree spline','2nd degree spline','3rd degree spline','4th degree spline','Fourrier interpolation','Other']",3
 fmrimethods.org,Preprocessing,used_motion_susceptibiity_correction,Was motion-susceptibility correction used?,Boolean,3
 fmrimethods.org,IntersubjectRegistration,used_intersubject_registration,Were subjects registered to a common stereotactic space?,Boolean,1
-fmrimethods.org,IntersubjectRegistration,intersubject_registration_software,Specify software used for intersubject registration if different from main package,char,2
+fmrimethods.org,IntersubjectRegistration,intersubject_registration_software,Specify software used for intersubject registration if different from main package,"['SPM','FSL','Freesurfer','Brain voyager','ANTs','Other']",2
 fmrimethods.org,IntersubjectRegistration,intersubject_transformation_type,Was linear or nonlinear registration used?,"['linear','nonlinear']",1
 fmrimethods.org,IntersubjectRegistration,nonlinear_transform_type,"If nonlinear registration was used, describe transform method",char,2
 fmrimethods.org,IntersubjectRegistration,transform_similarity_metric,Similarity metric used for intersubject registration,char,3
-fmrimethods.org,IntersubjectRegistration,interpolation_method,Interpolation method used for intersubject registration,char,2
+fmrimethods.org,IntersubjectRegistration,interpolation_method,Interpolation method used for intersubject registration,"['Nearest neighbour','trilinear','2nd degree spline','2nd degree spline','3rd degree spline','4th degree spline','Fourrier interpolation','Other']",2
 fmrimethods.org,IntersubjectRegistration,object_image_type,What type of image was used to determine the transformation to the atlas?,char,1
 fmrimethods.org,IntersubjectRegistration,functional_coregistered_to_structural,Were the functional images coregistered to the subject's structural image?,Boolean,2
 fmrimethods.org,IntersubjectRegistration,functional_coregistration_method,Method used to coregister functional to structural images,char,3
@@ -63,7 +63,7 @@ fmrimethods.org,IntersubjectRegistration,smoothing_fwhm,The full-width at half-m
 fmrimethods.org,IntersubjectRegistration,resampled_voxel_size,"Voxel size in mm of the resampled, atlas-space images",float,
 fmrimethods.org,IndividualSubjectModeling,intrasubject_model_type,"Type of model used (e.g., regression)",char,1
 fmrimethods.org,IndividualSubjectModeling,intrasubject_estimation_type,"Estimation method used for model (e.g., OLS, generalized least squares)",char,1
-fmrimethods.org,IndividualSubjectModeling,intrasubject_modeling_software,Software used for intrasubject modeling if different from overall package,char,2
+fmrimethods.org,IndividualSubjectModeling,intrasubject_modeling_software,Software used for intrasubject modeling if different from overall package,"['SPM','FSL','Freesurfer','Brain voyager','Other']",2
 fmrimethods.org,IndividualSubjectModeling,hemodynamic_response_function,Nature of HRF model,char,2
 fmrimethods.org,IndividualSubjectModeling,used_temporal_derivatives,Were temporal derivatives included?,Boolean,2
 fmrimethods.org,IndividualSubjectModeling,used_dispersion_derivatives,Were dispersion derivatives included?,Boolean,3
@@ -78,7 +78,7 @@ fmrimethods.org,IndividualSubjectModeling,contrast_definition,"Exactly what term
 fmrimethods.org,IndividualSubjectModeling,contrast_definition_cogatlas,Link to Cognitive Atlas definition of this contrast,char,3
 fmrimethods.org,GroupModeling,group_model_type,"Type of group model used (e.g., regression)",char,1
 fmrimethods.org,GroupModeling,group_estimation_type,"Estimation method used for group model (e.g., OLS, generalized least squares)",char,1
-fmrimethods.org,GroupModeling,group_modeling_software,Software used for group modeling if different from overall package,char,2
+fmrimethods.org,GroupModeling,group_modeling_software,Software used for group modeling if different from overall package,"['SPM','FSL','Freesurfer','Brain voyager','Other']",2
 fmrimethods.org,GroupModeling,group_inference_type,Type of inference for group model,"['random/mixed effects','fixed effects']",1
 fmrimethods.org,GroupModeling,group_model_multilevel,"If more than 2-levels, describe the levels and assumptions of the model (e.g. are variances assumed equal between groups)",char,3
 fmrimethods.org,GroupModeling,group_repeated_measures,Was this a repeated measures design at the group level?,Boolean,1
