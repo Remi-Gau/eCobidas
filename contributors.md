@@ -16,11 +16,14 @@ See below our list of contributors and what they helped on
 The following have contributed to the development of this tool (in alphabetical order by last name).
 If you contributed to the COBIDAS Checklist and your name is not listed, please add it (via pull request or get in touch if you don't know how to do this).
 
+*   [Sanu Ann Abraham](#Sanu-Ann-Abraham)
 *   [Federico Adolfi](#Federico-Adolfi)
 *   [James Bartlett](#James-Bartlett)
 *   [Rémi Gau](#Rémi-Gau)
+*   [Satrajit Ghosh](#Satrajit-Ghosh)
 *   [Cassandra Gould van Praag](#Cassandra-Gould-van-Praag)
 *   [Ruud Hortensius](#Ruud-Hortensius)
+*   [Anisha Keshavan](#Anisha-Keshavan)
 *   [Mary Miedema](#Mary-Miedema)
 *   [Tim Van Mourik](#Tim-Van-Mourik)
 *   [Ilona Ruotsalainen](#Ilona-Ruotsalainen)
@@ -32,12 +35,7 @@ If you contributed to the COBIDAS Checklist and your name is not listed, please 
 *   [Angie Tepper](#Angie-Tepper)
 *   [Martina G. Vilas](#Martina-G.-Vilas)
 *   [Kristina Wiebels](#Kristina-Wiebels)
-
-
-Also a big shout to many of the people on the Repronim team for their continuous insight on how to structure and render this project.
-- [Sanu Ann Abraham](https://github.com/sanuann)
-- [Satrajit Ghosh](https://github.com/satra)
-- [Anisha Keshavan](https://github.com/akeshavan)
+*   You might be next :-)
 
 
 ## Contributions
@@ -64,10 +62,18 @@ Also a big shout to many of the people on the Repronim team for their continuous
 -   Martina G. Vilas
 -   Federico Adolfi
 
+### ReproNim schema
+-   Sanu Ann Abraham
+-   Anisha Keshavan
+-   Rémi Gau
+-   Satrajit Ghosh
+
 ### User interface
 -   Federico Adolfi
 -   Rémi Gau
 -   Tim Van Mourik
+-   Sanu Ann Abraham
+-   Anisha Keshavan
 
 ### Meta-analysis use case
 -   Cristina Scarpazza
@@ -91,6 +97,14 @@ Also a big shout to many of the people on the Repronim team for their continuous
 
 
 ## Who's who on the COBIDAS Checklist Team
+
+### Sanu Ann Abraham
+
+Website:
+
+Twitter:
+
+Github: https://github.com/sanuann
 
 ### Federico Adolfi
 
@@ -118,6 +132,14 @@ Twitter: [@Remi-Gau](https://twitter.com/RemiGau)
 
 Github: https://github.com/Remi-Gau
 
+### Satrajit Ghosh
+
+Website:
+
+Twitter: [@satra_](https://twitter.com/satra_)
+
+Github: https://github.com/satra
+
 ### Cassandra Gould van Praag
 
 I am a postdoc at the University of Oxford Department of Psychiatry in the [Psychopharmacology and Emotion Research Laboratory](https://www.psych.ox.ac.uk/research/psychopharmacology-and-emotion-research-laboratory). I support (f)MRI research across the [Oxford Health Biomedical Research Centre Experimental Medicine theme](https://oxfordhealthbrc.nihr.ac.uk/research/clinical-research-infrastructure-and-experimental-medicine/), where I help researchers design, execute and analyse awesome experimental medicine investigations. I am passionate about bringing inexperienced researchers into the world of programming and Open Research through excellent documentation and accessible resources.
@@ -135,6 +157,14 @@ Website:
 Twitter: [@ruudhortensius](https://twitter.com/ruudhortensius)
 
 Github:
+
+### Anisha Keshavan
+
+Website:
+
+Twitter: [@akeshavan_](https://twitter.com/akeshavan_)
+
+Github:https://github.com/akeshavan
 
 ### Eduard Klapwijk
 
