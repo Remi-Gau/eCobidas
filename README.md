@@ -14,7 +14,7 @@ This repository host the work turning the report published by the Committee on B
 
 This repository is a place where:
 1. issues and ideas around reaching this goal are discussed;
-2. plans for how to reach this goal may be designed and implemented.
+2. plans for how to reach this goal are designed and implemented.
 
 
 ## How to reach us
