@@ -246,10 +246,10 @@ with open(input_file, 'r') as csvfile:
             # response is some integer
             elif row[4]=='int':
                     item_json['ui'] = {
-                        'inputType': 'text'
+                        'inputType': 'number'
                     }
                     item_json['responseOptions'] = {
-                        'type': 'xsd:int',
+                        'type': 'xsd:integer',
                     }
 
 
