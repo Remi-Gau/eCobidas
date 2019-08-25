@@ -24,7 +24,7 @@ remote_repo = 'https://raw.githubusercontent.com/Remi-Gau/schema-standardization
 # to which branch of schema-standardization the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: remote_repo + branch_name
-branch_name  = 'neurovault'
+branch_name  = 'neurovault-dev'
 
 
 ## -----------------------------------------------------------------------------
@@ -136,9 +136,11 @@ with open(input_file, 'r') as csvfile:
                     'schema:description': 'COBIDAS design checklist schema',
                     'schema:schemaVersion': version,
                     'schema:version': version,
+                    'variableMap': [],
                     'preamble': 'How did you design/analyse your study?',
                     'ui': {
                         'order': [],
+                        'visibility': {},
                         'shuffle': False,
                         'allow': ["skipped"]
                     }
@@ -162,12 +164,24 @@ with open(input_file, 'r') as csvfile:
 
 
             # update the json content of the activity schema and context wrt this new item
-            nv_schema_json['ui']['order'].append(row[2])
-
             nv_context_json['@context'][row[2]] = {
                 '@id': 'item_path:'+row[2]+'.jsonld',
                 '@type': '@id'
             }
+
+            nv_schema_json['ui']['order'].append(row[2])
+
+            nv_schema_json['variableMap'].append(
+                {'variableName': row[2],'isAbout': row[2]}
+                )
+
+            # branchic logic: visibility
+            if row[6]=='1':
+                nv_schema_json['ui']['visibility'][row[2]] = True
+            else:
+                nv_schema_json['ui']['visibility'][row[2]] = row[6] + ' === 1'
+
+
 
             # save activity jsonld with every new item
             with open(os.path.join(output_dir, 'activities', activity_folder_name, activity_schema_filename), 'w') as ff:
@@ -246,14 +260,14 @@ with open(input_file, 'r') as csvfile:
             # response is some integer
             elif row[4]=='int':
                     item_json['ui'] = {
-                        'inputType': 'text'
+                        'inputType': 'number'
                     }
                     item_json['responseOptions'] = {
-                        'type': 'xsd:int',
+                        'type': 'xsd:integer',
                     }
 
 
-            # response is some integer
+            # response is some float
             elif row[4]=='float':
                         item_json['ui'] = {
                             'inputType': 'text'
