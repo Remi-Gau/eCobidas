@@ -11,7 +11,7 @@
 # where the metadata from neurovault are described. It is in xlsx folder of this repos
 # but it can also be downloaded from here:
 # https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv
-input_file = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault-test.csv'
+input_file = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
 
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the schema-standardization will be hosted
@@ -24,7 +24,10 @@ remote_repo = 'https://raw.githubusercontent.com/Remi-Gau/schema-standardization
 # to which branch of schema-standardization the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: remote_repo + branch_name
-branch_name  = 'neurovault-test'
+branch_name  = 'neurovault'
+
+
+ReproNim_repo = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/'
 
 
 ## -----------------------------------------------------------------------------
@@ -53,16 +56,17 @@ if not os.path.exists(os.path.join(output_dir, 'activity-sets', activity_set_fol
 
 # define the activity set neurovault_schema.jsonld
 nv_set_schema_json = {
-    '@context': [ remote_repo + branch_name + '/contexts/generic.jsonld',
+    '@context': [ ReproNim_repo + 'contexts/generic',
         remote_repo + branch_name + '/activity-sets/' + activity_set_folder_name + '/' + activity_set_context_filename
     ],
-    '@type': remote_repo + branch_name + '/schemas/ActivitySet.jsonld',
+    '@type': ReproNim_repo + 'schemas/ActivitySet',
     '@id': 'cobidas_schema',
     'skos:prefLabel': 'neurovault as a COBIDAS POC',
     'skos:altLabel': 'neurovault_COBIDAS_POC',
     'schema:description': 'neurovault as a COBIDAS checklist proof of concept',
     'schema:schemaVersion': version,
     'schema:version': version,
+    'schema:about': remote_repo + branch_name + '/activity-sets/' + '/README.md',
     'variableMap': [],
     'ui': {
         'order': [],
@@ -126,10 +130,10 @@ with open(input_file, 'r') as csvfile:
                     }
 
                 nv_schema_json = {
-                    '@context': [ remote_repo + branch_name + '/contexts/generic.jsonld',
+                    '@context': [ ReproNim_repo + 'contexts/generic',
                         remote_repo + branch_name + '/activities/' + activity_folder_name + '/' + activity_context_filename
                     ],
-                    '@type': remote_repo + branch_name + '/schemas/Activity.jsonld',
+                    '@type': ReproNim_repo + 'schemas/Activity',
                     '@id': activity_schema_name,
                     'skos:prefLabel': 'COBIDAS design checklist',
                     'skos:altLabel': 'cobidas_design_schema',
@@ -137,7 +141,7 @@ with open(input_file, 'r') as csvfile:
                     'schema:schemaVersion': version,
                     'schema:version': version,
                     'variableMap': [],
-                    'preamble': 'How did you design / analyse your study?',
+                    'preamble': 'How did you design/analyse your study?',
                     'ui': {
                         'order': [],
                         'visibility': {},
@@ -193,10 +197,10 @@ with open(input_file, 'r') as csvfile:
 
             # define jsonld for this item
             item_json = {
-                '@context': [ remote_repo + branch_name + '/contexts/generic.jsonld',
+                '@context': [ ReproNim_repo + 'contexts/generic',
                     remote_repo + branch_name + '/activities/' + activity_folder_name + '/' + activity_context_filename
                 ],
-                '@type': remote_repo + branch_name + '/schemas/Field.jsonld',
+                '@type': ReproNim_repo + 'schemas/Field',
                 '@id': row[2],
                 'skos:prefLabel': row[2],
                 'skos:altLabel': row[2],
