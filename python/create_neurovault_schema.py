@@ -11,7 +11,7 @@
 # where the metadata from neurovault are described. It is in xlsx folder of this repos
 # but it can also be downloaded from here:
 # https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv
-input_file = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
+input_file = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault-test.csv'
 
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the schema-standardization will be hosted
@@ -24,7 +24,7 @@ remote_repo = 'https://raw.githubusercontent.com/Remi-Gau/schema-standardization
 # to which branch of schema-standardization the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: remote_repo + branch_name
-branch_name  = 'neurovault-dev'
+branch_name  = 'neurovault-test'
 
 
 ## -----------------------------------------------------------------------------
@@ -137,7 +137,7 @@ with open(input_file, 'r') as csvfile:
                     'schema:schemaVersion': version,
                     'schema:version': version,
                     'variableMap': [],
-                    'preamble': 'How did you design/analyse your study?',
+                    'preamble': 'How did you design / analyse your study?',
                     'ui': {
                         'order': [],
                         'visibility': {},
