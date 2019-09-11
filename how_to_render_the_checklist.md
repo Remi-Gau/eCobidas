@@ -24,8 +24,20 @@ There are 3 repositories needed to "render" this checklist:
 -   this [fork of the ReproNim schema-standardization repository](https://github.com/Remi-Gau/schema-standardization) that hosts the schema representation of the checklist
 -   the [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui) that does the actual rendering the checklist app by reading the schema hosted by the previous repository. There is a general explanation of how the app works in this [issue](https://github.com/ReproNim/schema-ui/issues/4).
 
-You will need to fork and clone each of them if you want to work on the checklist on your own.
+You will need to fork and clone each of them if you want to work on the checklist on your own. If you want some stable versions of the repositories this table gives you link to the most recent ones.
 
+| Repositories                                                                            | Used version                                                                     |
+|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| [COBIDAS checklist repository](https://github.com/Remi-Gau/COBIDAS_chckls/)             | [v0.0.1](https://github.com/Remi-Gau/COBIDAS_chckls/releases/tag/v0.0.1)         |
+| [schema-standardization repository](https://github.com/Remi-Gau/schema-standardization) | [v0.0.1](https://github.com/Remi-Gau/schema-standardization/releases/tag/v0.0.1) |
+| [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui)                         | [v0.0.1](https://github.com/Remi-Gau/cobidas-ui/releases/tag/v0.0.1)             |
+
+___
+
+**WARNING**
+
+If you are trying to render the checklist and it does not work, it could mean that some of the schema references could point to URI whose content might have changed. The best in this case is to git rebase the most recent changes on the master branch on the ReproNim schema-standardization repository onto the branch you are trying to render.
+____
 
 ## How to
 
