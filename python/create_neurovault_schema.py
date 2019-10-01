@@ -61,12 +61,12 @@ nv_set_schema_json = {
     ],
     '@type': ReproNim_repo + 'schemas/ActivitySet',
     '@id': 'cobidas_schema',
-    'skos:prefLabel': 'neurovault as a COBIDAS POC',
-    'skos:altLabel': 'neurovault_COBIDAS_POC',
-    'schema:description': 'neurovault as a COBIDAS checklist proof of concept',
-    'schema:schemaVersion': version,
-    'schema:version': version,
-    'schema:about': remote_repo + branch_name + '/activity-sets/' + '/README.md',
+    'prefLabel': 'neurovault as a COBIDAS POC',
+    'altLabel': 'neurovault_COBIDAS_POC',
+    'description': 'neurovault as a COBIDAS checklist proof of concept',
+    'schemaVersion': version,
+    'version': version,
+    'about': remote_repo + branch_name + '/activity-sets/' + '/README.md',
     'variableMap': [],
     'ui': {
         'order': [],
@@ -135,11 +135,11 @@ with open(input_file, 'r') as csvfile:
                     ],
                     '@type': ReproNim_repo + 'schemas/Activity',
                     '@id': activity_schema_name,
-                    'skos:prefLabel': 'COBIDAS design checklist',
-                    'skos:altLabel': 'cobidas_design_schema',
-                    'schema:description': 'COBIDAS design checklist schema',
-                    'schema:schemaVersion': version,
-                    'schema:version': version,
+                    'prefLabel': 'COBIDAS design checklist',
+                    'altLabel': 'cobidas_design_schema',
+                    'description': 'COBIDAS design checklist schema',
+                    'schemaVersion': version,
+                    'version': version,
                     'variableMap': [],
                     'preamble': 'How did you design/analyse your study?',
                     'ui': {
@@ -202,11 +202,11 @@ with open(input_file, 'r') as csvfile:
                 ],
                 '@type': ReproNim_repo + 'schemas/Field',
                 '@id': row[2],
-                'skos:prefLabel': row[2],
-                'skos:altLabel': row[2],
-                'schema:description': row[2],
-                'schema:schemaVersion': version,
-                'schema:version': version,
+                'prefLabel': row[2],
+                'altLabel': row[2],
+                'description': row[2],
+                'schemaVersion': version,
+                'version': version,
                 'question': row[3],
             }
 
@@ -219,18 +219,18 @@ with open(input_file, 'r') as csvfile:
                 item_json['responseOptions'] = {
                     '@type': 'xsd:anyURI',
                     'multipleChoice': False,
-                    'schema:minValue': 0,
-                    'schema:maxValue': 1,
+                    'minValue': 0,
+                    'maxValue': 1,
                     'choices': [
                         {
-                        '@type': 'schema:Boolean',
-                        'schema:name': 'no',
-                        'schema:value': 0,
+                        '@type': 'Boolean',
+                        'name': 'no',
+                        'value': 0,
                         },
                         {
-                        '@type': 'schema:Boolean',
-                        'schema:name': 'yes',
-                        'schema:value': 1,
+                        '@type': 'Boolean',
+                        'name': 'yes',
+                        'value': 1,
                         }
                     ]
                 }
@@ -246,18 +246,18 @@ with open(input_file, 'r') as csvfile:
                     }
 
                 item_json['responseOptions'] = {
-                    "type": "xsd:string",
+                    "dataType": "xsd:string",
                     'multipleChoice': True,
-                    'schema:minValue': 0,
-                    'schema:maxValue': len(options)-1,
+                    'minValue': 0,
+                    'maxValue': len(options)-1,
                     'choices': []
                     }
 
                 for i, opt in enumerate(options):
 
                     item_json['responseOptions']['choices'].append({
-                            'schema:name': {'en': opt},
-                            'schema:value': i,
+                            'name': {'en': opt},
+                            'value': i,
                             })
 
 
