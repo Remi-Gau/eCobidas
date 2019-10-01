@@ -19,8 +19,8 @@ What follows is a quick "how to" if you want to render the checklist.
 There are 3 repositories needed to "render" this checklist:
 
 -   this [COBIDAS_chckls repository](https://github.com/Remi-Gau/COBIDAS_chckls/) where you are currently reading this. It contains:
-    - the [neurovault spreadsheet](./xlsx/metadata_neurovault.csv)
-    - the python [script](./python/create_neurovault_schema.py) to turn that spreadsheet into a Repronim schema (basically a bunch hierarchically organized json files that link to each other).
+-   the [neurovault spreadsheet](./xlsx/metadata_neurovault.csv)
+-   the python [script](./python/create_neurovault_schema.py) to turn that spreadsheet into a Repronim schema (basically a bunch hierarchically organized json files that link to each other).
 -   this [fork of the ReproNim schema-standardization repository](https://github.com/Remi-Gau/schema-standardization) that hosts the schema representation of the checklist
 -   the [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui) that does the actual rendering the checklist app by reading the schema hosted by the previous repository. There is a general explanation of how the app works in this [issue](https://github.com/ReproNim/schema-ui/issues/4).
 

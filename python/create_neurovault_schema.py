@@ -274,7 +274,7 @@ with open(input_file, 'r') as csvfile:
             # response is some float
             elif row[4]=='float':
                         item_json['ui'] = {
-                            'inputType': 'text'
+                            'inputType': 'float'
                         }
                         item_json['responseOptions'] = {
                             'type': 'xsd:float',
