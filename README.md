@@ -71,6 +71,7 @@ Jeanette Mumford has a [30 min video](https://www.youtube.com/watch?v=bsM4KowO5V
 The COBIDAS report:
 - [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)
 - [for EEG and MEG](https://osf.io/a8dhx/)
+- MEEG report presentation at [OHBM 2019](https://www.pathlms.com/ohbm/courses/12238/sections/15843/video_presentations/138196)
 
 The original [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS checklist (thanks to [Cass](https://github.com/cassgvp)!!!)
 
