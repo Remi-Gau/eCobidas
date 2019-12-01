@@ -24,14 +24,14 @@ OUTPUT_DIR = '/home/remi/github/schema-standardization'
 
 # Placeholder to insert in all instances of the remote repo that will host the schema representation
 # Most likely you just need to replace Remi-Gau in the following line by your github username
-REMOTE_REPO = 'https://raw.githubusercontent.com/Remi-Gau/schema-standardization/'
+REMOTE_REPO = 'https://raw.githubusercontent.com/Remi-Gau/reproschema/'
 
 # to which branch of schema-standardization the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: REMOTE_REPO + BRANCH_NAME
-BRANCH_NAME = 'neurovault'
+BRANCH_NAME = 'eCOBIDAS'
 
-REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/schema-standardization/master/'
+REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
 
 
 ## -----------------------------------------------------------------------------
@@ -39,8 +39,8 @@ REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/schema-standardizati
 ## -----------------------------------------------------------------------------
 
 # activity set names
-ACTIVITY_SET_SCHEMA_FILENAME = 'cobidas_schema.jsonld'
-ACTIVITY_SET_CONTEXT_FILENAME = 'cobidas_context.jsonld'
+ACTIVITY_SET_SCHEMA_FILENAME = 'Cobidas_schema'
+ACTIVITY_SET_CONTEXT_FILENAME = 'Cobidas_context'
 ACTIVITY_SET_FOLDER_NAME = 'cobidas'
 
 
@@ -48,25 +48,25 @@ ACTIVITY_SET_FOLDER_NAME = 'cobidas'
 VERSION = '0.0.1'
 
 # make output directories
-if not os.path.exists(os.path.join(OUTPUT_DIR, 'activity-sets', ACTIVITY_SET_FOLDER_NAME)):
-    os.makedirs(os.path.join(OUTPUT_DIR, 'activity-sets', ACTIVITY_SET_FOLDER_NAME))
+if not os.path.exists(os.path.join(OUTPUT_DIR, 'protocols', ACTIVITY_SET_FOLDER_NAME)):
+    os.makedirs(os.path.join(OUTPUT_DIR, 'protocols', ACTIVITY_SET_FOLDER_NAME))
 
 
 # define the activity set neurovault_schema.jsonld
 NV_SET_SCHEMA_JSON = {
     '@context': [REPRONIM_REPO + 'contexts/generic',
-                 REMOTE_REPO + BRANCH_NAME + '/activity-sets/'
+                 REMOTE_REPO + BRANCH_NAME + '/protocols/'
                  + ACTIVITY_SET_FOLDER_NAME + '/'
                  + ACTIVITY_SET_CONTEXT_FILENAME
                 ],
     '@type': 'reproschema:ActivitySet',
     '@id': 'cobidas_schema',
-    'skos:prefLabel': 'neurovault as a COBIDAS POC',
-    'skos:altLabel': 'neurovault_COBIDAS_POC',
+    'skos:prefLabel': 'eCOBIDAS proof of concept',
+    'skos:altLabel': 'eCOBIDAS_POC',
     'schema:description': 'neurovault as a COBIDAS checklist proof of concept',
-    'schema:schemaVERSION': VERSION,
-    'schema:VERSION': VERSION,
-    'about': REMOTE_REPO + BRANCH_NAME + '/activity-sets/' + '/README.md',
+    'schema:schemaVersion': VERSION,
+    'schema:version': VERSION,
+    'about': REMOTE_REPO + BRANCH_NAME + '/protocols/README.md',
     'variableMap': [],
     'ui': {
         'order': [],
@@ -79,7 +79,7 @@ NV_SET_SCHEMA_JSON = {
 # define the activity set neurovault_context.jsonld
 NV_SET_CONTEXT_JSON = {
     '@context': {
-        '@VERSION': 1.1,
+        '@version': 1.1,
         'activity_path': REMOTE_REPO + BRANCH_NAME + '/activities/',
     }
 }
@@ -101,14 +101,14 @@ with open(INPUT_FILE, 'r') as csvfile:
                 SECTION = row[1]
 
                 # where the items of this SECTION will be stored
-                activity_folder_name = 'Neurovault_' + SECTION
+                activity_folder_name = 'Cobidas' + SECTION
 
                 # names of this SECTION schema and its corresponding jsonld files
-                activity_schema_name = 'Neurovault_' + SECTION + '_schema'
+                activity_schema_name = 'Cobidas' + SECTION + '_schema'
 
-                activity_schema_filename = activity_schema_name + '.jsonld'
+                activity_schema_filename = activity_schema_name
 
-                activity_context_filename = 'Neurovault_' + SECTION + '_context.jsonld'
+                activity_context_filename = 'Cobidas' + SECTION + '_context'
 
 
                 print(activity_schema_name)
@@ -129,7 +129,7 @@ with open(INPUT_FILE, 'r') as csvfile:
                 # neurovault_context.jsonld
                 nv_context_json = {
                     '@context': {
-                        '@VERSION': 1.1,
+                        '@version': 1.1,
                         'item_path': REMOTE_REPO + BRANCH_NAME + '/activities/'
                                      + activity_folder_name + '/items/',
                         }
@@ -143,13 +143,13 @@ with open(INPUT_FILE, 'r') as csvfile:
                                 ],
                     '@type': 'reproschema:Activity',
                     '@id': activity_schema_name,
-                    'skos:prefLabel': 'COBIDAS design checklist',
-                    'skos:altLabel': 'cobidas_design_schema',
-                    'schema:description': 'COBIDAS design checklist schema',
-                    'schema:schemaVERSION': VERSION,
-                    'schema:VERSION': VERSION,
+                    'skos:prefLabel': 'Cobidas' + SECTION,
+                    'skos:altLabel': 'Cobidas' + SECTION,
+                    'schema:description': 'Cobidas' + SECTION,
+                    'schema:schemaVersion': VERSION,
+                    'schema:version': VERSION,
                     'variableMap': [],
-                    'preamble': 'How did you design/analyse your study?',
+                    'preamble': ' ',
                     'ui': {
                         'order': [],
                         'visibility': {},
@@ -165,7 +165,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
                 NV_SET_SCHEMA_JSON['ui']['order'].append(activity_schema_name)
                 NV_SET_SCHEMA_JSON['ui']['visibility'][activity_schema_name] = True
-                NV_SET_SCHEMA_JSON['ui']['activity_display_name'][activity_schema_name] = 'Neurovault - ' + SECTION
+                NV_SET_SCHEMA_JSON['ui']['activity_display_name'][activity_schema_name] = SECTION + '_schema' # TO DO: add space when upercase
 
                 NV_SET_CONTEXT_JSON['@context'][activity_schema_name] = {
                     '@id': 'activity_path:' + activity_folder_name + '/' + activity_schema_filename,
@@ -177,7 +177,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
             # update the json content of the activity schema and context wrt this new item
             nv_context_json['@context'][row[2]] = {
-                '@id': 'item_path:' + row[2] + '.jsonld',
+                '@id': 'item_path:' + row[2],
                 '@type': '@id'
             }
 
@@ -217,8 +217,8 @@ with open(INPUT_FILE, 'r') as csvfile:
                 'skos:prefLabel': row[2],
                 'skos:altLabel': row[2],
                 'schema:description': row[2],
-                'schema:schemaVERSION': VERSION,
-                'schema:VERSION': VERSION,
+                'schema:schemaVersion': VERSION,
+                'schema:version': VERSION,
                 'question': row[3],
             }
 
@@ -312,16 +312,15 @@ with open(INPUT_FILE, 'r') as csvfile:
 
 
             # write item jsonld
-            with open(os.path.join(OUTPUT_DIR, 'activities', activity_folder_name, 'items', row[2]
-                                   + '.jsonld'), 'w') as ff:
+            with open(os.path.join(OUTPUT_DIR, 'activities', activity_folder_name, 'items', row[2]), 'w') as ff:
                 json.dump(item_json, ff, sort_keys=False, indent=4)
 
 
 # write activity set jsonld
-with open(os.path.join(OUTPUT_DIR, 'activity-sets', ACTIVITY_SET_FOLDER_NAME,
+with open(os.path.join(OUTPUT_DIR, 'protocols', ACTIVITY_SET_FOLDER_NAME,
                        ACTIVITY_SET_SCHEMA_FILENAME), 'w') as ff:
     json.dump(NV_SET_SCHEMA_JSON, ff, sort_keys=False, indent=4)
 
-with open(os.path.join(OUTPUT_DIR, 'activity-sets', ACTIVITY_SET_FOLDER_NAME,
+with open(os.path.join(OUTPUT_DIR, 'protocols', ACTIVITY_SET_FOLDER_NAME,
                        ACTIVITY_SET_CONTEXT_FILENAME), 'w') as ff:
     json.dump(NV_SET_CONTEXT_JSON, ff, sort_keys=False, indent=4)
