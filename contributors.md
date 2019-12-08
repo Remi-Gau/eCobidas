@@ -35,6 +35,7 @@ If you contributed to the COBIDAS Checklist and your name is not listed, please 
 *   [Angie Tepper](#Angie-Tepper)
 *   [Martina G. Vilas](#Martina-G.-Vilas)
 *   [Kristina Wiebels](#Kristina-Wiebels)
+*   [David Moreau](#David-Moreau)
 *   You might be next :-)
 
 
@@ -77,6 +78,7 @@ If you contributed to the COBIDAS Checklist and your name is not listed, please 
 
 ### Meta-analysis use case
 -   Cristina Scarpazza
+-   David Moreau
 
 ### fMRI pre-registration use case
 -   Zsuzsika Sjoerds
@@ -181,6 +183,14 @@ Website:
 Twitter:
 
 Github: https://github.com/m-miedema
+
+### David Moreau
+
+Website: braindynamicslab.com
+
+Twitter: [@davidwmoreau](https://twitter.com/davidwmoreau)
+
+Github: https://github.com/davidmoreau
 
 ### Tom Nichols
 
