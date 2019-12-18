@@ -17,11 +17,22 @@ You will need to fork and clone each of them if you want to work on the checklis
 | [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui)                         | [v0.0.1](https://github.com/Remi-Gau/cobidas-ui/releases/tag/v0.0.1)             |
 
 
-## Spreadsheet
+## Spreadsheet work
 
-So far most of the work is being done on spreadsheets hosted on this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing) and we try to keep a back up in the [xlsx folder](./xlsx/me).
+So far most of the work is being done on spreadsheets hosted on this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing) and we try to keep a back up in the [xlsx folder](./xlsx/).
 
-## How is the schema organized
+The MRI spreadsheet is accessible [here](https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing)
+
+The MEEG spreadsheet is accessible [here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
+
+The MRI part is the most advanced at this moment but we are looking for people to help with the MEEG part.
+
+### Spreadsheet content and organization
+
+See the dedicated [document](./spreadsheet_content.md)
+
+
+## How is the Repronim schema organized
 
 The first step to create the checklist involves taking a spreadsheet that contains all the items and turning that into a representation that can efficiently link the metadata about each item to the data imputed by the user. Basically it means turning your 'dumb' spreadsheet into an equivalent but 'smarter' representation of it: in this case a bunch hierarchically organized json files that link to each other.
 
