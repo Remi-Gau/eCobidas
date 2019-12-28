@@ -129,6 +129,16 @@
         "ideas",
         "infra"
       ]
+    },
+    {
+      "login": "davidmoreau",
+      "name": "David Moreau",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/23465867?v=4",
+      "profile": "https://github.com/davidmoreau",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
