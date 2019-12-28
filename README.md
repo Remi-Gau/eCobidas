@@ -58,7 +58,9 @@ On top of the inherent [advantages](https://github.com/ReproNim/schema-standardi
 -   its use simplifies the rendering of the checklist by using the [schema-ui](https://github.com/ReproNim/schema-ui) made for it,
 -   this representation allows specification of user interface option that can simplify the user experience: it allows us to specify a branching logic that will prevent users to be presented with items that are not relevant to them (e.g answer PET related when they have only run an fMRI study).
 
-See [here](./how_to_render_the_checklist.md) for more information.
+See [here](./general_organization.md) for more information about how this whole project is organized
+
+See [here](./how_to_render_the_checklist.md) for more information on how to work on the checklist on your own computer.
 
 ## How to contribute
 
