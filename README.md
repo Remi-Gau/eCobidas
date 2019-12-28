@@ -64,11 +64,6 @@ See [here](./how_to_render_the_checklist.md) for more information on how to work
 
 ## How to contribute
 
-We are looking for people to give us feedback or help us move forward and implement all of this.
-
-To learn more about the contributors and how to contribute see [here](./contributors.md).
-
-
 ## References
 
 Jeanette Mumford has a [30 min video](https://www.youtube.com/watch?v=bsM4KowO5Vc&t=175s) explaining the background behind the COBIDAS report and giving a run through of the checklist.
@@ -118,3 +113,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+
+### How to contribute
+
+We are looking for people to give us feedback or help us move forward and implement all of this.
+
+To learn more about the contributors and how to contribute see [here](./contributors.md).
