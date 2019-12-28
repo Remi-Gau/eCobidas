@@ -21,6 +21,20 @@
         "tool",
         "talk"
       ]
+    },
+    {
+      "login": "cassgvp",
+      "name": "cassgvp",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/43407869?v=4",
+      "profile": "https://github.com/cassgvp",
+      "contributions": [
+        "code",
+        "design",
+        "content",
+        "ideas",
+        "infra",
+        "talk"
+      ]
     }
   ],
   "contributorsPerLine": 7,
