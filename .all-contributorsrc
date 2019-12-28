@@ -94,6 +94,17 @@
         "design",
         "infra"
       ]
+    },
+    {
+      "login": "satra",
+      "name": "Satrajit Ghosh",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/184063?v=4",
+      "profile": "http://satra.cogitatum.org",
+      "contributions": [
+        "code",
+        "design",
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
