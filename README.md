@@ -1,6 +1,6 @@
 # COBIDAS checklist
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 -   [How to reach us](#How-to-reach-us)
@@ -96,6 +96,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/sanuann"><img src="https://avatars3.githubusercontent.com/u/5114945?v=4" width="100px;" alt=""/><br /><sub><b>Sanu Ann Abraham</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=sanuann" title="Code">💻</a> <a href="#design-sanuann" title="Design">🎨</a> <a href="#infra-sanuann" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="http://www.nisox.org"><img src="https://avatars3.githubusercontent.com/u/5155907?v=4" width="100px;" alt=""/><br /><sub><b>Thomas Nichols</b></sub></a><br /><a href="#design-nicholst" title="Design">🎨</a> <a href="#content-nicholst" title="Content">🖋</a> <a href="#ideas-nicholst" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://anisha.pizza"><img src="https://avatars0.githubusercontent.com/u/972008?v=4" width="100px;" alt=""/><br /><sub><b>Anisha Keshavan</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=akeshavan" title="Code">💻</a> <a href="#design-akeshavan" title="Design">🎨</a> <a href="#infra-akeshavan" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://satra.cogitatum.org"><img src="https://avatars2.githubusercontent.com/u/184063?v=4" width="100px;" alt=""/><br /><sub><b>Satrajit Ghosh</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=satra" title="Code">💻</a> <a href="#design-satra" title="Design">🎨</a> <a href="#infra-satra" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>
 
