@@ -149,6 +149,19 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "angietep",
+      "name": "angietep",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/35610800?v=4",
+      "profile": "https://github.com/angietep",
+      "contributions": [
+        "code",
+        "design",
+        "content",
+        "ideas",
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
