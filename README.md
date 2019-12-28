@@ -58,14 +58,11 @@ On top of the inherent [advantages](https://github.com/ReproNim/schema-standardi
 -   its use simplifies the rendering of the checklist by using the [schema-ui](https://github.com/ReproNim/schema-ui) made for it,
 -   this representation allows specification of user interface option that can simplify the user experience: it allows us to specify a branching logic that will prevent users to be presented with items that are not relevant to them (e.g answer PET related when they have only run an fMRI study).
 
-See [here](./how_to_render_the_checklist.md) for more information.
+See [here](./general_organization.md) for more information about how this whole project is organized
+
+See [here](./how_to_render_the_checklist.md) for more information on how to work on the checklist on your own computer.
 
 ## How to contribute
-
-We are looking for people to give us feedback or help us move forward and implement all of this.
-
-To learn more about the contributors and how to contribute see [here](./contributors.md).
-
 
 ## References
 
@@ -116,3 +113,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+
+### How to contribute
+
+We are looking for people to give us feedback or help us move forward and implement all of this.
+
+To learn more about the contributors and how to contribute see [here](./contributions.md).
