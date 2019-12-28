@@ -119,4 +119,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 We are looking for people to give us feedback or help us move forward and implement all of this.
 
-To learn more about the contributors and how to contribute see [here](./contributors.md).
+To learn more about the contributors and how to contribute see [here](./contributions.md).
