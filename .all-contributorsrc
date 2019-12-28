@@ -105,6 +105,17 @@
         "design",
         "infra"
       ]
+    },
+    {
+      "login": "TimVanMourik",
+      "name": "Tim van Mourik",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6152205?v=4",
+      "profile": "https://github.com/TimVanMourik",
+      "contributions": [
+        "code",
+        "design",
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
