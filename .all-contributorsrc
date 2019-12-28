@@ -116,6 +116,19 @@
         "design",
         "infra"
       ]
+    },
+    {
+      "login": "m-miedema",
+      "name": "m-miedema",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/39968233?v=4",
+      "profile": "https://github.com/m-miedema",
+      "contributions": [
+        "code",
+        "design",
+        "content",
+        "ideas",
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
