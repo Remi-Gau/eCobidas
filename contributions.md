@@ -6,17 +6,128 @@ You can check the current [kanban](https://github.com/Remi-Gau/COBIDAS_chckls/pr
 
 But if you see other ways in which you could contribute, feel free to open an issue.
 
-See below our list of contributors and what they helped on
 
-
-
-## Who's who on the COBIDAS Checklist Team
+# Who's who on the COBIDAS Checklist Team
 
 The following have contributed to the development of this tool (in alphabetical order by last name).
 If you contributed to the COBIDAS Checklist and your name is not listed, please add it (via pull request or get in touch if you don't know how to do this).
 
-Legend (source:
-[https://github.com/kentcdodds/all-contributors](https://github.com/kentcdodds/all-contributors))
+
+*   Sanu Ann Abraham
+<a href="https://github.com/sanuann"><img src="img/github.png" width=20px />
+
+
+*   Federico Adolfi
+<a href="https://github.com/fedeadolfi"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/fedeadolfi"><img src="img/twitter.png" width=20px />
+
+
+*   James Bartlett
+<a href="https://twitter.com/JamesEBartlett"><img src="img/twitter.png" width=20px />
+<a href="https://bartlettje.github.io/BartlettJE.github.io/"><img src="img/www.png" width=20px />
+
+
+*   Rémi Gau
+<a href="https://github.com/Remi-Gau"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/RemiGau"><img src="img/twitter.png" width=20px />
+<a href="https://remi-gau.github.io/"><img src="img/www.png" width=20px />
+
+I am a post doc at the Université Catholique de Louvain la Neuve in Belgium. I investigate on multisensory integration and mostly rely on high-resolution fMRI for my work. I also have a small thing for open-transparent-reproducible science.
+
+
+*   Satrajit Ghosh
+<a href="https://github.com/satra"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/satra_"><img src="img/twitter.png" width=20px />
+
+
+*   Cassandra Gould van Praag
+<a href="https://github.com/cassgvp"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/cassgvp"><img src="img/twitter.png" width=20px />
+
+I am a postdoc at the University of Oxford Department of Psychiatry in the [Psychopharmacology and Emotion Research Laboratory](https://www.psych.ox.ac.uk/research/psychopharmacology-and-emotion-research-laboratory). I support (f)MRI research across the [Oxford Health Biomedical Research Centre Experimental Medicine theme](https://oxfordhealthbrc.nihr.ac.uk/research/clinical-research-infrastructure-and-experimental-medicine/), where I help researchers design, execute and analyse awesome experimental medicine investigations. I am passionate about bringing inexperienced researchers into the world of programming and Open Research through excellent documentation and accessible resources.
+
+
+*   Ruud Hortensius
+<a href="https://twitter.com/ruudhortensius"><img src="img/twitter.png" width=20px />
+
+
+*   Anisha Keshavan
+<a href="https://github.com/akeshavan"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/akeshavan_"><img src="img/twitter.png" width=20px />
+<a href="https://anisha.pizza/#/"><img src="img/www.png" width=20px />
+
+
+*   Mary Miedema
+<a href="https://github.com/m-miedema"><img src="img/github.png" width=20px />
+
+
+*   David Moreau
+<a href="https://github.com/davidmoreau"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/davidwmoreau"><img src="img/twitter.png" width=20px />
+<a href="https://www.braindynamicslab.com/"><img src="img/www.png" width=20px />
+
+
+*   Tim Van Mourik
+<a href="https://github.com/TimVanMourik"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/tim_van_mourik"><img src="img/twitter.png" width=20px />
+<a href="https://timvanmourik.com/"><img src="img/www.png" width=20px />
+
+
+*   Ilona Ruotsalainen
+<a href="https://github.com/joyswe"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/IRuotsa"><img src="img/twitter.png" width=20px />
+
+I am PhD student at the University of Jyväskylä, Finland.
+
+
+*   Cristina Scarpazza
+
+
+*   Jeremy Simon
+<a href="https://twitter.com/jeremycsimon13"><img src="img/twitter.png" width=20px />
+
+
+*   Eduard Klapwijk
+<a href="https://twitter.com/etklapwijk"><img src="img/twitter.png" width=20px />
+
+
+*   Tom Nichols
+<a href="https://github.com/akeshavan"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/nicholst"><img src="img/twitter.png" width=20px />
+<a href="http://www.nisox.org/"><img src="img/www.png" width=20px />
+
+
+*   Zsuzsika Sjoerds
+<a href="https://github.com/zsjoerds"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/zsjoerds"><img src="img/twitter.png" width=20px />
+
+
+*   Angie Tepper
+<a href="https://github.com/angietep"><img src="img/github.png" width=20px />
+
+
+*   Martina G. Vilas
+<a href="https://github.com/martinagvilas"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/martinagvilas"><img src="img/twitter.png" width=20px />
+
+
+*   Kristina Wiebels
+<a href="https://github.com/kwiebels"><img src="img/github.png" width=20px />
+<a href="https://twitter.com/k_wiebels"><img src="img/twitter.png" width=20px />
+
+
+
+## Core team
+
+TBD
+
+
+## Contributions
+
+### Legend
+
+source:
+[https://github.com/kentcdodds/all-contributors](https://github.com/kentcdodds/all-contributors)
 
 | Emoji | Represents                                                                  |
 |:------|:----------------------------------------------------------------------------|
@@ -40,144 +151,6 @@ Legend (source:
 | ✅     | Tutorials                                                                   |
 | 📢    | Talks                                                                       |
 | 📹    | Videos                                                                      |
-
-
-
-
-*   [Sanu Ann Abraham](#Sanu-Ann-Abraham)
-Github: https://github.com/sanuann
-
-*   [Federico Adolfi](#Federico-Adolfi)
-Twitter: [@fedeadolfi](https://twitter.com/fedeadolfi)
-Github: https://github.com/fedeadolfi
-
-
-*   [James Bartlett](#James-Bartlett)
-
-Website: https://bartlettje.github.io/BartlettJE.github.io/
-
-Twitter: [@JamesEBartlett](https://twitter.com/JamesEBartlett)
-
-
-*   [Rémi Gau](#Rémi-Gau)
-I am a post doc at the Université Catholique de Louvain la Neuve in Belgium. I investigate on multisensory integration and mostly rely on high-resolution fMRI for my work. I also have a small thing for open-transparent-reproducible science.
-
-Website: https://remi-gau.github.io/
-
-Twitter: [@Remi-Gau](https://twitter.com/RemiGau)
-
-Github: https://github.com/Remi-Gau
-
-
-
-*   [Satrajit Ghosh](#Satrajit-Ghosh)
-
-Twitter: [@satra_](https://twitter.com/satra_)
-
-Github: https://github.com/satra
-
-
-*   [Cassandra Gould van Praag](#Cassandra-Gould-van-Praag)
-
-I am a postdoc at the University of Oxford Department of Psychiatry in the [Psychopharmacology and Emotion Research Laboratory](https://www.psych.ox.ac.uk/research/psychopharmacology-and-emotion-research-laboratory). I support (f)MRI research across the [Oxford Health Biomedical Research Centre Experimental Medicine theme](https://oxfordhealthbrc.nihr.ac.uk/research/clinical-research-infrastructure-and-experimental-medicine/), where I help researchers design, execute and analyse awesome experimental medicine investigations. I am passionate about bringing inexperienced researchers into the world of programming and Open Research through excellent documentation and accessible resources.
-
-Website:
-
-Twitter: [@cassgvp](https://twitter.com/cassgvp)
-
-Github: https://github.com/cassgvp
-
-
-*   [Ruud Hortensius](#Ruud-Hortensius)
-
-Twitter: [@ruudhortensius](https://twitter.com/ruudhortensius)
-
-*   [Anisha Keshavan](#Anisha-Keshavan)
-
-Twitter: [@akeshavan_](https://twitter.com/akeshavan_)
-Github:https://github.com/akeshavan
-
-*   [Mary Miedema](#Mary-Miedema)
-
-Github: https://github.com/m-miedema
-
-
-*   [Tim Van Mourik](#Tim-Van-Mourik)
-*   [Ilona Ruotsalainen](#Ilona-Ruotsalainen)
-
-I am PhD student at the University of Jyväskylä, Finland.
-
-Website:
-
-Twitter: [@IRuotsa](https://twitter.com/IRuotsa)
-
-Github: https://github.com/joyswe
-
-
-*   [Cristina Scarpazza](Cristina-Scarpazza)
-*   [Jeremy Simon](#Jeremy-Simon)
-Twitter: [@jeremycsimon13](https://twitter.com/jeremycsimon13)
-
-
-
-
-
-*   [Eduard Klapwijk](#Eduard-Klapwijk)
-
-Twitter: [@etklapwijk](https://twitter.com/etklapwijk)
-
-
-*   [Tom Nichols](#Tom-Nichols)
-Website: http://www.nisox.org/
-
-Twitter: [@ten_photos](https://twitter.com/ten_photos)
-
-Github: https://github.com/nicholst
-
-
-
-*   [Zsuzsika Sjoerds](#Zsuzsika-Sjoerds)
-
-Twitter: [@zsjoerds](https://twitter.com/zsjoerds)
-
-Github: https://github.com/zsjoerds
-
-
-*   [Angie Tepper](#Angie-Tepper)
-
-Github: https://github.com/angietep
-
-*   [Martina G. Vilas](#Martina-G.-Vilas)
-
-Twitter: [@martinagvilas](https://twitter.com/martinagvilas)
-
-Github: https://github.com/martinagvilas
-
-
-*   [Kristina Wiebels](#Kristina-Wiebels)
-
-
-Twitter: [@k_wiebels](https://twitter.com/k_wiebels)
-
-Github: https://github.com/kwiebels
-
-
-*   [David Moreau](#David-Moreau)
-
-Website: braindynamicslab.com
-
-Twitter: [@davidwmoreau](https://twitter.com/davidwmoreau)
-
-Github: https://github.com/davidmoreau
-
-
-
-## Core team
-
-TBD
-
-
-## Contributions
 
 Below is a more precise breakdown of who contributed to what
 
