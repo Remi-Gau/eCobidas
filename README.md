@@ -1,6 +1,6 @@
 # COBIDAS checklist
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 -   [How to reach us](#How-to-reach-us)
@@ -102,6 +102,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/TimVanMourik"><img src="https://avatars1.githubusercontent.com/u/6152205?v=4" width="100px;" alt=""/><br /><sub><b>Tim van Mourik</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=TimVanMourik" title="Code">💻</a> <a href="#design-TimVanMourik" title="Design">🎨</a> <a href="#infra-TimVanMourik" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/m-miedema"><img src="https://avatars3.githubusercontent.com/u/39968233?v=4" width="100px;" alt=""/><br /><sub><b>m-miedema</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=m-miedema" title="Code">💻</a> <a href="#design-m-miedema" title="Design">🎨</a> <a href="#content-m-miedema" title="Content">🖋</a> <a href="#ideas-m-miedema" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-m-miedema" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/davidmoreau"><img src="https://avatars0.githubusercontent.com/u/23465867?v=4" width="100px;" alt=""/><br /><sub><b>David Moreau</b></sub></a><br /><a href="#content-davidmoreau" title="Content">🖋</a> <a href="#ideas-davidmoreau" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://zsjoerds.com"><img src="https://avatars0.githubusercontent.com/u/11489467?v=4" width="100px;" alt=""/><br /><sub><b>Zsuzsika Sjoerds</b></sub></a><br /><a href="#content-zsjoerds" title="Content">🖋</a> <a href="#ideas-zsjoerds" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
