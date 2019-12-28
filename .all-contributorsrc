@@ -61,6 +61,17 @@
         "ideas",
         "infra"
       ]
+    },
+    {
+      "login": "sanuann",
+      "name": "Sanu Ann Abraham",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5114945?v=4",
+      "profile": "https://github.com/sanuann",
+      "contributions": [
+        "code",
+        "design",
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
