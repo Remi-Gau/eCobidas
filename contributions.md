@@ -36,8 +36,8 @@ I am a post doc at the Université Catholique de Louvain la Neuve in Belgium. I 
 
 
 *   Satrajit Ghosh
-<a href="https://github.com/satra"><img src="img/github.png" width=20px /><a/> 
-<a href="https://twitter.com/satra_"><img src="img/twitter.png" width=20px /><a/> 
+<a href="https://github.com/satra"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/satra_"><img src="img/twitter.png" width=20px /><a/>
 
 
 *   Cassandra Gould van Praag
@@ -151,6 +151,9 @@ source:
 | ✅     | Tutorials                                                                   |
 | 📢    | Talks                                                                       |
 | 📹    | Videos                                                                      |
+
+___
+___
 
 Below is a more precise breakdown of who contributed to what
 
