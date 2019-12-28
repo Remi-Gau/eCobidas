@@ -1,0 +1,32 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "remi-gau",
+      "name": "Remi Gau",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6961185?v=4",
+      "profile": "https://remi-gau.github.io/",
+      "contributions": [
+        "code",
+        "design",
+        "content",
+        "ideas",
+        "infra",
+        "maintenance",
+        "projectManagement",
+        "tool",
+        "talk"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "COBIDAS_chckls",
+  "projectOwner": "Remi-Gau",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
