@@ -3,12 +3,17 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
--   [How to reach us](#How-to-reach-us)
--   [Why this project](#Why-this-project)
--   [Goals and roadmap](#Goals-and-roadmap)
--   [Implementation](#Implementation)
--   [How to contribute](#How-to-contribute)
--   [References](#References)
+<!-- TOC -->
+
+- [How to reach us](#how-to-reach-us)
+- [Why this project](#why-this-project)
+- [Goals and roadmap](#goals-and-roadmap)
+- [Implementation](#implementation)
+- [References](#references)
+- [Contributors ✨](#contributors-)
+  - [How to contribute](#how-to-contribute)
+
+<!-- /TOC -->
 
 
 The prototype app for this checklist can be found here: https://cobidas-checklist.herokuapp.com/
@@ -61,8 +66,6 @@ On top of the inherent [advantages](https://github.com/ReproNim/schema-standardi
 See [here](./general_organization.md) for more information about how this whole project is organized
 
 See [here](./how_to_render_the_checklist.md) for more information on how to work on the checklist on your own computer.
-
-## How to contribute
 
 ## References
 

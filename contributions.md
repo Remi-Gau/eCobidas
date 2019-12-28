@@ -14,68 +14,68 @@ If you contributed to the COBIDAS Checklist and your name is not listed, please 
 
 
 *   Sanu Ann Abraham
-<a href="https://github.com/sanuann"><img src="img/github.png" width=20px />
+<a href="https://github.com/sanuann"><img src="img/github.png" width=20px /> <a/>
 
 
 *   Federico Adolfi
-<a href="https://github.com/fedeadolfi"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/fedeadolfi"><img src="img/twitter.png" width=20px />
+<a href="https://github.com/fedeadolfi"><img src="img/github.png" width=20px /> <a/>
+<a href="https://twitter.com/fedeadolfi"><img src="img/twitter.png" width=20px /> <a/>
 
 
 *   James Bartlett
-<a href="https://twitter.com/JamesEBartlett"><img src="img/twitter.png" width=20px />
-<a href="https://bartlettje.github.io/BartlettJE.github.io/"><img src="img/www.png" width=20px />
+<a href="https://twitter.com/JamesEBartlett"><img src="img/twitter.png" width=20px /> <a/>
+<a href="https://bartlettje.github.io/BartlettJE.github.io/"><img src="img/www.png" width=20px /> <a/>
 
 
 *   Rémi Gau
-<a href="https://github.com/Remi-Gau"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/RemiGau"><img src="img/twitter.png" width=20px />
-<a href="https://remi-gau.github.io/"><img src="img/www.png" width=20px />
+<a href="https://github.com/Remi-Gau"><img src="img/github.png" width=20px /> <a/> <a/>
+<a href="https://twitter.com/RemiGau"><img src="img/twitter.png" width=20px /> <a/>
+<a href="https://remi-gau.github.io/"><img src="img/www.png" width=20px /> <a/>
 
 I am a post doc at the Université Catholique de Louvain la Neuve in Belgium. I investigate on multisensory integration and mostly rely on high-resolution fMRI for my work. I also have a small thing for open-transparent-reproducible science.
 
 
 *   Satrajit Ghosh
-<a href="https://github.com/satra"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/satra_"><img src="img/twitter.png" width=20px />
+<a href="https://github.com/satra"><img src="img/github.png" width=20px /><a/> 
+<a href="https://twitter.com/satra_"><img src="img/twitter.png" width=20px /><a/> 
 
 
 *   Cassandra Gould van Praag
-<a href="https://github.com/cassgvp"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/cassgvp"><img src="img/twitter.png" width=20px />
+<a href="https://github.com/cassgvp"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/cassgvp"><img src="img/twitter.png" width=20px /><a/>
 
 I am a postdoc at the University of Oxford Department of Psychiatry in the [Psychopharmacology and Emotion Research Laboratory](https://www.psych.ox.ac.uk/research/psychopharmacology-and-emotion-research-laboratory). I support (f)MRI research across the [Oxford Health Biomedical Research Centre Experimental Medicine theme](https://oxfordhealthbrc.nihr.ac.uk/research/clinical-research-infrastructure-and-experimental-medicine/), where I help researchers design, execute and analyse awesome experimental medicine investigations. I am passionate about bringing inexperienced researchers into the world of programming and Open Research through excellent documentation and accessible resources.
 
 
 *   Ruud Hortensius
-<a href="https://twitter.com/ruudhortensius"><img src="img/twitter.png" width=20px />
+<a href="https://twitter.com/ruudhortensius"><img src="img/twitter.png" width=20px /><a/>
 
 
 *   Anisha Keshavan
-<a href="https://github.com/akeshavan"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/akeshavan_"><img src="img/twitter.png" width=20px />
-<a href="https://anisha.pizza/#/"><img src="img/www.png" width=20px />
+<a href="https://github.com/akeshavan"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/akeshavan_"><img src="img/twitter.png" width=20px /><a/>
+<a href="https://anisha.pizza/#/"><img src="img/www.png" width=20px /><a/>
 
 
 *   Mary Miedema
-<a href="https://github.com/m-miedema"><img src="img/github.png" width=20px />
+<a href="https://github.com/m-miedema"><img src="img/github.png" width=20px /><a/>
 
 
 *   David Moreau
-<a href="https://github.com/davidmoreau"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/davidwmoreau"><img src="img/twitter.png" width=20px />
-<a href="https://www.braindynamicslab.com/"><img src="img/www.png" width=20px />
+<a href="https://github.com/davidmoreau"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/davidwmoreau"><img src="img/twitter.png" width=20px /><a/>
+<a href="https://www.braindynamicslab.com/"><img src="img/www.png" width=20px /><a/>
 
 
 *   Tim Van Mourik
-<a href="https://github.com/TimVanMourik"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/tim_van_mourik"><img src="img/twitter.png" width=20px />
-<a href="https://timvanmourik.com/"><img src="img/www.png" width=20px />
+<a href="https://github.com/TimVanMourik"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/tim_van_mourik"><img src="img/twitter.png" width=20px /><a/>
+<a href="https://timvanmourik.com/"><img src="img/www.png" width=20px /><a/>
 
 
 *   Ilona Ruotsalainen
-<a href="https://github.com/joyswe"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/IRuotsa"><img src="img/twitter.png" width=20px />
+<a href="https://github.com/joyswe"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/IRuotsa"><img src="img/twitter.png" width=20px /><a/>
 
 I am PhD student at the University of Jyväskylä, Finland.
 
@@ -84,36 +84,36 @@ I am PhD student at the University of Jyväskylä, Finland.
 
 
 *   Jeremy Simon
-<a href="https://twitter.com/jeremycsimon13"><img src="img/twitter.png" width=20px />
+<a href="https://twitter.com/jeremycsimon13"><img src="img/twitter.png" width=20px /><a/>
 
 
 *   Eduard Klapwijk
-<a href="https://twitter.com/etklapwijk"><img src="img/twitter.png" width=20px />
+<a href="https://twitter.com/etklapwijk"><img src="img/twitter.png" width=20px /><a/>
 
 
 *   Tom Nichols
-<a href="https://github.com/akeshavan"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/nicholst"><img src="img/twitter.png" width=20px />
-<a href="http://www.nisox.org/"><img src="img/www.png" width=20px />
+<a href="https://github.com/akeshavan"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/nicholst"><img src="img/twitter.png" width=20px /><a/>
+<a href="http://www.nisox.org/"><img src="img/www.png" width=20px /><a/>
 
 
 *   Zsuzsika Sjoerds
-<a href="https://github.com/zsjoerds"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/zsjoerds"><img src="img/twitter.png" width=20px />
+<a href="https://github.com/zsjoerds"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/zsjoerds"><img src="img/twitter.png" width=20px /><a/>
 
 
 *   Angie Tepper
-<a href="https://github.com/angietep"><img src="img/github.png" width=20px />
+<a href="https://github.com/angietep"><img src="img/github.png" width=20px /><a/>
 
 
 *   Martina G. Vilas
-<a href="https://github.com/martinagvilas"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/martinagvilas"><img src="img/twitter.png" width=20px />
+<a href="https://github.com/martinagvilas"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/martinagvilas"><img src="img/twitter.png" width=20px /><a/>
 
 
 *   Kristina Wiebels
-<a href="https://github.com/kwiebels"><img src="img/github.png" width=20px />
-<a href="https://twitter.com/k_wiebels"><img src="img/twitter.png" width=20px />
+<a href="https://github.com/kwiebels"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/k_wiebels"><img src="img/twitter.png" width=20px /><a/>
 
 
 
