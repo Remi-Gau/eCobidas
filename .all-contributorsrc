@@ -48,6 +48,19 @@
         "ideas",
         "infra"
       ]
+    },
+    {
+      "login": "fedeadolfi",
+      "name": "Federico Adolfi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/26678283?v=4",
+      "profile": "https://github.com/fedeadolfi",
+      "contributions": [
+        "code",
+        "design",
+        "content",
+        "ideas",
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
