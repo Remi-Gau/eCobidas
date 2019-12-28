@@ -1,8 +1,0 @@
-Source,Section,Item,Verbose description,Format,"Priority (1=required, 2=recommended,3=optional)",Visibility
-fmrimethods.org,ExperimentalDesign,type_of_design,"Blocked, event-related, hybrid, or other","['blocked','event_related','hybrid block/event','Other']",1,1
-fmrimethods.org,Participants,number_of_subjects,Number of subjects entering into the analysis,int,1,1
-fmrimethods.org,MRI_acquisition,scanner_make,Manufacturer of MRI scanner,"['Siemens','Philips','General Electric',’Other’]",1,1
-fmrimethods.org,Preprocessing,software_package,"If a single software package was used for all analyses, specify that here","['SPM','FSL','Freesurfer','Brain voyager','Other']",1,1
-fmrimethods.org,IntersubjectRegistration,used_intersubject_registration,Were subjects registered to a common stereotactic space?,Boolean,1,1
-fmrimethods.org,IndividualSubjectModeling,intrasubject_model_type,Type of group model used,"['Regression','Other']",1,1
-fmrimethods.org,GroupModeling,group_model_type,Type of group model used,"['Regression','Other']",1,1
