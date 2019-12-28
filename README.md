@@ -1,6 +1,6 @@
 # COBIDAS checklist
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 -   [How to reach us](#How-to-reach-us)
@@ -94,6 +94,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/joyswe"><img src="https://avatars1.githubusercontent.com/u/47354027?v=4" width="100px;" alt=""/><br /><sub><b>joyswe</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=joyswe" title="Code">💻</a> <a href="#design-joyswe" title="Design">🎨</a> <a href="#content-joyswe" title="Content">🖋</a> <a href="#ideas-joyswe" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-joyswe" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/fedeadolfi"><img src="https://avatars3.githubusercontent.com/u/26678283?v=4" width="100px;" alt=""/><br /><sub><b>Federico Adolfi</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=fedeadolfi" title="Code">💻</a> <a href="#design-fedeadolfi" title="Design">🎨</a> <a href="#content-fedeadolfi" title="Content">🖋</a> <a href="#ideas-fedeadolfi" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-fedeadolfi" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/sanuann"><img src="https://avatars3.githubusercontent.com/u/5114945?v=4" width="100px;" alt=""/><br /><sub><b>Sanu Ann Abraham</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=sanuann" title="Code">💻</a> <a href="#design-sanuann" title="Design">🎨</a> <a href="#infra-sanuann" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://anisha.pizza"><img src="https://avatars0.githubusercontent.com/u/972008?v=4" width="100px;" alt=""/><br /><sub><b>Anisha Keshavan</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=akeshavan" title="Code">💻</a> <a href="#design-akeshavan" title="Design">🎨</a> <a href="#infra-akeshavan" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>
 
