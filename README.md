@@ -1,6 +1,6 @@
 # COBIDAS checklist
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 -   [How to reach us](#How-to-reach-us)
@@ -92,6 +92,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://remi-gau.github.io/"><img src="https://avatars3.githubusercontent.com/u/6961185?v=4" width="100px;" alt=""/><br /><sub><b>Remi Gau</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=remi-gau" title="Code">💻</a> <a href="#design-remi-gau" title="Design">🎨</a> <a href="#content-remi-gau" title="Content">🖋</a> <a href="#ideas-remi-gau" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-remi-gau" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-remi-gau" title="Maintenance">🚧</a> <a href="#projectManagement-remi-gau" title="Project Management">📆</a> <a href="#tool-remi-gau" title="Tools">🔧</a> <a href="#talk-remi-gau" title="Talks">📢</a></td>
     <td align="center"><a href="https://github.com/cassgvp"><img src="https://avatars2.githubusercontent.com/u/43407869?v=4" width="100px;" alt=""/><br /><sub><b>cassgvp</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=cassgvp" title="Code">💻</a> <a href="#design-cassgvp" title="Design">🎨</a> <a href="#content-cassgvp" title="Content">🖋</a> <a href="#ideas-cassgvp" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-cassgvp" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#talk-cassgvp" title="Talks">📢</a></td>
     <td align="center"><a href="https://github.com/joyswe"><img src="https://avatars1.githubusercontent.com/u/47354027?v=4" width="100px;" alt=""/><br /><sub><b>joyswe</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=joyswe" title="Code">💻</a> <a href="#design-joyswe" title="Design">🎨</a> <a href="#content-joyswe" title="Content">🖋</a> <a href="#ideas-joyswe" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-joyswe" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://github.com/fedeadolfi"><img src="https://avatars3.githubusercontent.com/u/26678283?v=4" width="100px;" alt=""/><br /><sub><b>Federico Adolfi</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=fedeadolfi" title="Code">💻</a> <a href="#design-fedeadolfi" title="Design">🎨</a> <a href="#content-fedeadolfi" title="Content">🖋</a> <a href="#ideas-fedeadolfi" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-fedeadolfi" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>
 
