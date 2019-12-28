@@ -1,4 +1,4 @@
-# Improving the COBIDAS checklist for better neuroimaging methods and results reporting
+O# Improving the COBIDAS checklist for better neuroimaging methods and results reporting
 
 Remi Gau ([ORCID](https://orcid.org/0000-0002-1535-9767))
 

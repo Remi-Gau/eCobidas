@@ -1,43 +1,13 @@
 # How the checklist is rendered
 
-The prototype app for this checklist can be found here: https://cobidas-checklist.herokuapp.com/
+First make sure you understand how the different part of this project are organized by reading the [general organization](./general_organization.md) document.
 
-The first step of the implementation involves taking a spreadsheet that contains all the items of the checklist and turning that into a representation that can efficiently link the metadata about each item to the data imputed by the user. Basically it means turning your 'dumb' spreadsheet into an equivalent but 'smarter' representation of it: in this case a bunch hierarchically organized json files that link to each other.
-
-So far most of the work is being done on spreadsheets hosted on this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing) but you also find recent updates in the [xlsx folder](./xlsx/me).
-
-In terms of choice of representation we are currently using the [schema-standardization](https://github.com/ReproNim/schema-standardization) initiative from [ReproNim](http://www.repronim.org/) to do this. On top of the inherent [advantages](https://github.com/ReproNim/schema-standardization#30-advantages-of-current-representation) of this schema representation:
--   its use simplifies the rendering of the checklist by using the [schema-ui](https://github.com/ReproNim/schema-ui) made for it,
--   this representation allows specification of user interface option that can simplify the user experience: it allows us to specify a branching logic that will prevent users to be presented with items that are not relevant to them (e.g answer PET related when they have only run an fMRI study).
-
-So far we have a [script](./python/create_neurovault_schema.py) to turn the neurovault [list of required inputs](./xlsx/metadata_neurovault.csv) into a schema that can then be render with the schema-ui.
-
-What follows is a quick "how to" if you want to render the checklist.
-
-## General organization
-
-There are 3 repositories needed to "render" this checklist:
-
--   this [COBIDAS_chckls repository](https://github.com/Remi-Gau/COBIDAS_chckls/) where you are currently reading this. It contains:
--   the [neurovault spreadsheet](./xlsx/metadata_neurovault.csv)
--   the python [script](./python/create_neurovault_schema.py) to turn that spreadsheet into a Repronim schema (basically a bunch hierarchically organized json files that link to each other).
--   this [fork of the ReproNim schema-standardization repository](https://github.com/Remi-Gau/schema-standardization) that hosts the schema representation of the checklist
--   the [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui) that does the actual rendering the checklist app by reading the schema hosted by the previous repository. There is a general explanation of how the app works in this [issue](https://github.com/ReproNim/schema-ui/issues/4).
-
-You will need to fork and clone each of them if you want to work on the checklist on your own. If you want some stable versions of the repositories this table gives you link to the most recent ones.
-
-| Repositories                                                                            | Used version                                                                     |
-|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [COBIDAS checklist repository](https://github.com/Remi-Gau/COBIDAS_chckls/)             | [v0.0.1](https://github.com/Remi-Gau/COBIDAS_chckls/releases/tag/v0.0.1)         |
-| [schema-standardization repository](https://github.com/Remi-Gau/schema-standardization) | [v0.0.1](https://github.com/Remi-Gau/schema-standardization/releases/tag/v0.0.1) |
-| [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui)                         | [v0.0.1](https://github.com/Remi-Gau/cobidas-ui/releases/tag/v0.0.1)             |
-
-___
 
 **WARNING**
 
 If you are trying to render the checklist and it does not work, it could mean that some of the schema references could point to URI whose content might have changed. The best in this case is to git rebase the most recent changes on the master branch on the ReproNim schema-standardization repository onto the branch you are trying to render.
 ____
+
 
 ## How to
 
