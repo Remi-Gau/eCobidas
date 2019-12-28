@@ -175,6 +175,16 @@
         "ideas",
         "infra"
       ]
+    },
+    {
+      "login": "kwiebels",
+      "name": "Kristina Wiebels",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/13459206?v=4",
+      "profile": "https://github.com/kwiebels",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
