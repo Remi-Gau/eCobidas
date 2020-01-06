@@ -1,19 +1,5 @@
 # Goals
 
-## Milestones (short term goals)
-
--   Discuss conceptual and structural details of the spreadsheet, COBIDAS-json file, branching logic of the checklist.
-
--   Create a spreadsheet where each item of the checklist has been properly atomized
-
--   Define use-case to simplify user experience
-
--   Identify high-priority items to report based on Carp 2012 to make sure users do better than 50% of the papers out there :heavy_check_mark: :smiley:
-
--   Create a proof of concept website that can:
-    - given a template spreadsheet file generates a checklist to clicked through by users, :heavy_check_mark: :smiley:
-    - outputs a populated COBIDAS-json file once the user is done, :heavy_check_mark: :smiley:
-    - generate a method section using a populated COBIDAS-json file.
 
 ## Requirements
 
@@ -21,8 +7,53 @@
   - accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g new multivariate analysis, high-resolution MRI...),
   - easily fork the project and convert it to create a checklist-website for a different field.
 
+
+## Milestones (short term goals)
+
+**The short term goal of this project is to make the COBIDAS report easier to use: we want to create a website with a clickable checklist that, at the end, automatically generates most of the method section of a f/MRI or EEG / MEEG paper.**
+
+### MRI COBIDAS
+
+So far the short goals of the MRI app have been:
+
+-   Create a proof of concept website that can:
+    - given a template spreadsheet file generates a checklist to clicked through by users, :heavy_check_mark: :smiley:
+    - outputs a populated JSON file once the user is done, :heavy_check_mark: :smiley:
+    - generate a method section using this JSON file.
+
+By working on those first step, a proof of concept app has been put together. There is now work to be done to extend what this app can do so we can have a first release that could be used for a typical fMRI study with:
+-   a single functional task
+-   one anatomical scan
+-   using mass uni-variate analysis
+
+To reach that first milestone we still need to work on the following isues:
+-   Identify high-priority items that at least include those from [Carp 2012](https://www.ncbi.nlm.nih.gov/pubmed/22796459) to make sure users do better than 50% of the papers reported in this study
+-   Create a version of the spreadsheet where each of those high priority items has been properly atomized (i.e it is only composed of a single question)
+-   Identify ways in which the user experience can be improved, mostly by finding ways to minimize the time users have to spend using the app.
+
+### MEEG COBIDAS
+
+The MRI version is currently ahead and the work done there can pave the way for the MEEG version.
+
+The main short term goals for the MEEG version are:
+
+-   Identify overlaps between the MEEG and the f/MRI spreadsheet and merge them
+-   Identify high-priority items in the checklist
+-   Create a version of the spreadsheet where each of those high priority items has been properly atomized (i.e it is only composed of a single question)
+-   For each item:
+  -  Give it an item name
+  -  Create a specific unambiguous question
+  -  Identify the response type expected
+  -  Create a response choice list where needed
+  -  Check if the item can be extracted from a BIDS data set
+
+
 ## Extensions (intermediate goals)
 
+### Extended checklists
+In the near future we want to be able to extend those checklists so they include all the items listed in the COBIDAS reports.
+
+### Links with BIDS and NIDM
 The process of filling in an online checklist can be simplified if of the required information can be directly accessed from the metadata in some of the existing standards for data and results curation like:
 1. the brain imaging data structure ([BIDS](http://bids.neuroimaging.io/)) used for that study,
 2. the [NIDM results](http://nidm.nidash.org/specs/nidm-results_130.html) of any mass-univariate analysis performed for this study.
@@ -41,6 +72,8 @@ One can also imagine that pointing to a folder containing source MRI data (e.g D
 ## Further developments (long term goals)
 
 ### Link to main neuroimaging software
+
+Another potential way to improve users experience is to only expose users to items or response choices that are relevant to them. For example if SPM was used to do slice timing correction, there is no reason to ask users what type of interpolation was used at this preprocessing step as SPM does not give users the possibility to choose that parameter. So finding out what are the choice options for each item for the main neuroimaging software could prove to help users navigate the app.
 
 A side branch of this project includes developing plugins for the main neuroimaging software toolboxes (SPM, FSL, AFNI). Such a plugin would receive processing batch files as input (e.g matlabbatch.mat for SPM or design.fsf for FSL) and would create output files (e.g. in json format) readable by the COBIDAS checklist website, which in turn would be able to display the neuroimage processing pipeline and/or generate part of the methods section for an article with the appropriate references (in a similar way to [fMRIprep](https://fmriprep.readthedocs.io/en/stable/citing.html)).
 
