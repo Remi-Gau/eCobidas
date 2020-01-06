@@ -2,9 +2,37 @@
 
 With have a lot of work to do and many ways in which you can contribute to this project.
 
-You can check the current [kanban](https://github.com/Remi-Gau/COBIDAS_chckls/projects/2) board to see what issues we are working on at the moment.
+Before you jump in make sure you familiarize yourself with:
+- the [motivations](./why_this_project.md) of this project
+- the [different short and long term goals](./goals.md)
+- the [general organization of the project](./general_organization.md)
 
-But if you see other ways in which you could contribute, feel free to open an issue.
+At this stage most of the work requires to interact with the checklists in their spreadsheet versions:
+- their content is described [here](./spreadsheet_content.md).
+- you can find them in this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing).
+- the MRI spreadsheet is accessible [here](https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing)
+- the MEEG spreadsheet is accessible [here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
+
+Below is list of the different tasks that you can contribute to. These are mostly related to the short term goals of the project. If however you feel more interested to start hacking at some of the issues related to long term goals, feel free to do so.
+
+## General 'to do list' common for the f/MRI and MEEG app
+-   Identify high-priority items that will be in the next release of the app.
+-   For each item:
+  -  Give it an item name
+  -  Create a specific unambiguous question
+  -  Add details and explanation to that item, possibly with examples and/or links to other resources to best guide users
+  -  Identify the response type expected
+  -  Create a response choice list where needed
+  -  Assess whether there is way to not expose users to that item (or some of the response choice for that item) if it is not relevant to them
+    - by answering another question that would select which following items to show (e.g. 'which preprocessing steps were used?')
+    - if some response choice are not available for that item based on some previous answer
+- Create a boilerplate method section corresponding to a single item or a set of items.
+
+
+## 'To do list' for the f/MRI
+-   For the `acquisition` section create a new schema activity to group all the items that will be found for any MRI sequences
+
+You can check the current [kanban](https://github.com/Remi-Gau/COBIDAS_chckls/projects/2) board
 
 
 # Who's who on the COBIDAS Checklist Team
