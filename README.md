@@ -5,13 +5,14 @@
 
 <!-- TOC -->
 
-- [How to reach us](#how-to-reach-us)
-- [Why this project](#why-this-project)
-- [Goals and roadmap](#goals-and-roadmap)
-- [Implementation](#implementation)
-- [References](#references)
-- [Contributors ✨](#contributors-)
+- [COBIDAS checklist](#cobidas-checklist)
+  - [How to reach us](#how-to-reach-us)
   - [How to contribute](#how-to-contribute)
+  - [Why this project](#why-this-project)
+  - [Goals and roadmap](#goals-and-roadmap)
+  - [Implementation](#implementation)
+  - [References](#references)
+  - [Contributors ✨](#contributors-)
 
 <!-- /TOC -->
 
@@ -35,6 +36,13 @@ Otherwise you can open a new issue on the repository itself if there is somethin
 
 There is also an [OSF project](https://osf.io/anvqy/) to centralize all the information and repos.
 
+## How to contribute
+
+We are looking for people to give us feedback or help us move forward and implement all of this.
+
+To learn more about the contributors and how to contribute see [here](./contributions.md).
+
+
 ## Why this project
 
 Poor methods and results description hinders the reproducibility and the replicability of research. It also makes it hard to compare new and old results and generally increases inefficiency in the research process. This project is built on the hope that improving methods and results reporting could improve our research.
@@ -44,7 +52,7 @@ See [here](./why_this_project.md) to for more background information.
 
 ## Goals and roadmap
 
-**The short term goal of this project is to make the COBIDAS report easier to use: we want to create a website with a clickable checklist that automatically generates a method section at the end.**
+**The short term goal of this project is to make the COBIDAS report easier to use: we want to create a website with a clickable checklist that, at the end, automatically generates most of the method section of a f/MRI or EEG / MEEG paper.**
 
 By turning the checklist into a website users could more rapidly click through it and provide more of the information requested by the COBIDAS report. This would generate a small text file (a json file) that summarizes what option was chosen for each item of the checklist. This machine readable file could then be used to automatically generate part of the methods section of an article.
 
@@ -66,6 +74,8 @@ On top of the inherent [advantages](https://github.com/ReproNim/schema-standardi
 See [here](./general_organization.md) for more information about how this whole project is organized
 
 See [here](./how_to_render_the_checklist.md) for more information on how to work on the checklist on your own computer.
+
+
 
 ## References
 
@@ -102,7 +112,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/TimVanMourik"><img src="https://avatars1.githubusercontent.com/u/6152205?v=4" width="100px;" alt=""/><br /><sub><b>Tim van Mourik</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=TimVanMourik" title="Code">💻</a> <a href="#design-TimVanMourik" title="Design">🎨</a> <a href="#infra-TimVanMourik" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/m-miedema"><img src="https://avatars3.githubusercontent.com/u/39968233?v=4" width="100px;" alt=""/><br /><sub><b>m-miedema</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=m-miedema" title="Code">💻</a> <a href="#design-m-miedema" title="Design">🎨</a> <a href="#content-m-miedema" title="Content">🖋</a> <a href="#ideas-m-miedema" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-m-miedema" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/davidmoreau"><img src="https://avatars0.githubusercontent.com/u/23465867?v=4" width="100px;" alt=""/><br /><sub><b>David Moreau</b></sub></a><br /><a href="#content-davidmoreau" title="Content">🖋</a> <a href="#ideas-davidmoreau" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://zsjoerds.com"><img src="https://avatars0.githubusercontent.com/u/11489467?v=4" width="100px;" alt=""/><br /><sub><b>Zsuzsika Sjoerds</b></sub></a><br /><a href="#content-zsjoerds" title="Content">🖋</a> <a href="#ideas-zsjoerds" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://zsjoerds.com"><img src="https://avatars0.githubusercontent.com/u/11489467?v=4" width="100px;" alt=""/><br /><sub><b>Zsuzsika Sjoerds</b></sub></a><br /><a href="#content-zsjoerds" title="Coonentent">🖋</a> <a href="#ideas-zsjoerds" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/angietep"><img src="https://avatars1.githubusercontent.com/u/35610800?v=4" width="100px;" alt=""/><br /><sub><b>angietep</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=angietep" title="Code">💻</a> <a href="#design-angietep" title="Design">🎨</a> <a href="#content-angietep" title="Content">🖋</a> <a href="#ideas-angietep" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-angietep" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="http://martinagvilas.github.io"><img src="https://avatars2.githubusercontent.com/u/37339384?v=4" width="100px;" alt=""/><br /><sub><b>Martina G. Vilas</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=martinagvilas" title="Code">💻</a> <a href="#design-martinagvilas" title="Design">🎨</a> <a href="#content-martinagvilas" title="Content">🖋</a> <a href="#ideas-martinagvilas" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-martinagvilas" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
@@ -116,10 +126,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-
-
-### How to contribute
-
-We are looking for people to give us feedback or help us move forward and implement all of this.
-
-To learn more about the contributors and how to contribute see [here](./contributions.md).
