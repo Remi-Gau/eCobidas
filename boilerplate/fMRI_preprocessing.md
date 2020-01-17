@@ -26,4 +26,70 @@ Functional data was slice time corrected using 3dTshift from AFNI v16.2.07 [11, 
 
 Physiological noise regressors were extracted applying CompCor [18]. Principal components were estimated for the two CompCor variants: temporal (tCompCor) and anatomical (aCompCor). A mask to exclude signal with cortical origin was obtained by eroding the brain mask, ensuring it only contained subcortical structures. Six tCompCor components were then calculated including only the top 5% variable voxels within that subcortical mask. For aCompCor, six components were calculated within the intersection of the subcortical mask and the union of CSF and WM masks calculated in T1w space, after their projection to the native space of each functional run. Frame-wise displacement [19] was calculated for each functional run using the implementation of Nipype. ICA-based Automatic Removal Of Motion Artifacts (AROMA) was used to generate aggressive noise regressors as well as to create a variant of data that is non-aggressively denoised [20].
 
-Many internal operations of FMRIPREP use Nilearn [22, RRID:SCR_001362], principally within the BOLD-processing workflow. For more details of the pipeline see https://fmriprep.readthedocs.io/en/latest/workflows.html. 
+Many internal operations of FMRIPREP use Nilearn [22, RRID:SCR_001362], principally within the BOLD-processing workflow. For more details of the pipeline see https://fmriprep.readthedocs.io/en/latest/workflows.html.
+
+
+## SPM references
+
+- spm_realign
+
+Friston KJ, Ashburner J, Frith CD, Poline J-B, Heather JD & Frackowiak RSJ (1995) Spatial registration and normalization of images Hum. Brain Map. 2:165-189
+
+- spm_coreg
+
+```
+% Mutual Information
+% -------------------------------------------------------------------------
+% Collignon, Maes, Delaere, Vandermeulen, Suetens & Marchal (1995).
+% "Automated multi-modality image registration based on information theory".
+% In Bizais, Barillot & Di Paola, editors, Proc. Information Processing
+% in Medical Imaging, pages 263--274, Dordrecht, The Netherlands, 1995.
+% Kluwer Academic Publishers.
+%
+% Wells III, Viola, Atsumi, Nakajima & Kikinis (1996).
+% "Multi-modal volume registration by maximisation of mutual information".
+% Medical Image Analysis, 1(1):35-51, 1996.
+%
+% Entropy Correlation Coefficient
+% -------------------------------------------------------------------------
+% Maes, Collignon, Vandermeulen, Marchal & Suetens (1997).
+% "Multimodality image registration by maximisation of mutual
+% information". IEEE Transactions on Medical Imaging 16(2):187-198
+%
+% Normalised Mutual Information
+% -------------------------------------------------------------------------
+% Studholme, Hill & Hawkes (1998).
+% "A normalized entropy measure of 3-D medical image alignment".
+% in Proc. Medical Imaging 1998, vol. 3338, San Diego, CA, pp. 132-143.             
+%
+% Optimisation
+% -------------------------------------------------------------------------
+% Press, Teukolsky, Vetterling & Flannery (1992).
+% "Numerical Recipes in C (Second Edition)".
+% Published by Cambridge.
+```
+
+
+
+- spm_normalize
+
+K.J. Friston, J. Ashburner, C.D. Frith, J.-B. Poline, J.D. Heather, and R.S.J. Frackowiak Spatial Registration and Normalization of Images. Human Brain Mapping 2:165-189, 1995.
+
+J. Ashburner, P. Neelin, D.L. Collins, A.C. Evans and K.J. Friston, Incorporating Prior Knowledge into Image Registration. NeuroImage 6:344-352, 1997.
+
+J. Ashburner and K.J. Friston. Nonlinear spatial normalization using basis functions. Human Brain Mapping, 7(4):254-266, 1999.
+
+
+
+- spm_spm
+
+```
+% References:
+%
+% Statistical Parametric Maps in Functional Imaging: A General Linear
+% Approach. Friston KJ, Holmes AP, Worsley KJ, Poline JB, Frith CD,
+% Frackowiak RSJ. (1995) Human Brain Mapping 2:189-210.
+%
+% Analysis of fMRI Time-Series Revisited - Again. Worsley KJ, Friston KJ.
+% (1995) NeuroImage 2:173-181.
+```
