@@ -1,6 +1,6 @@
 # COBIDAS checklist
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- TOC -->
@@ -108,6 +108,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/kwiebels"><img src="https://avatars1.githubusercontent.com/u/13459206?v=4" width="100px;" alt=""/><br /><sub><b>Kristina Wiebels</b></sub></a><br /><a href="#content-kwiebels" title="Content">🖋</a> <a href="#ideas-kwiebels" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/johalgermissen"><img src="https://avatars1.githubusercontent.com/u/36693723?v=4" width="100px;" alt=""/><br /><sub><b>Johannes Algermissen</b></sub></a><br /><a href="#content-johalgermissen" title="Content">🖋</a> <a href="#ideas-johalgermissen" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
