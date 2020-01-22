@@ -1,6 +1,6 @@
 # Contributing
 
-With have a lot of work to do and many ways in which you can contribute to this project.
+We have a lot of work to do and many ways in which you can contribute to this project.
 
 You can check the current [kanban](https://github.com/Remi-Gau/COBIDAS_chckls/projects/2) board to see what issues we are working on at the moment.
 
@@ -115,6 +115,9 @@ I am PhD student at the University of Jyväskylä, Finland.
 <a href="https://github.com/kwiebels"><img src="img/github.png" width=20px /><a/>
 <a href="https://twitter.com/k_wiebels"><img src="img/twitter.png" width=20px /><a/>
 
+*   Dorien Huijser
+<a href="https://github.com/DorienHuijser"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/DorienHuijser"><img src="img/twitter.png" width=20px /><a/>
 
 
 ## Core team
