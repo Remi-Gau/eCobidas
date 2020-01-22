@@ -2,7 +2,7 @@
 
 With have a lot of work to do and many ways in which you can contribute to this project.
 
-Before you jump in make sure you familiarize yourself with:
+Before you jump in you can familiarize yourself with:
 - the [motivations](./why_this_project.md) of this project
 - the [different short and long term goals](./goals.md)
 - the [general organization of the project](./general_organization.md)
@@ -18,7 +18,7 @@ Below is list of the different tasks that you can contribute to. These are mostl
 ## General 'to do list' common for the f/MRI and MEEG app
 -   Identify high-priority items that will be in the next release of the app.
 -   For each item:
-  -  Give it an item name
+  -  Give it a unique item name (a formula in the MRI spreadsheet should automatically take care of that)
   -  Create a specific unambiguous question
   -  Add details and explanation to that item, possibly with examples and/or links to other resources to best guide users
   -  Identify the response type expected
@@ -26,7 +26,7 @@ Below is list of the different tasks that you can contribute to. These are mostl
   -  Assess whether there is way to not expose users to that item (or some of the response choice for that item) if it is not relevant to them
     - by answering another question that would select which following items to show (e.g. 'which preprocessing steps were used?')
     - if some response choice are not available for that item based on some previous answer
-- Create a boilerplate method section corresponding to a single item or a set of items.
+-   Create a boilerplate method section corresponding to a single item or a set of items.
 
 
 ## 'To do list' for the f/MRI

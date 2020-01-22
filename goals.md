@@ -89,6 +89,9 @@ As some journals start having submission-checklists (e.g elife, nature communica
 If the process is made sufficiently seamless, this could in return potentially incentivize more journals to adopt submission-checklists.
 
 
+### Link to neurolex
+Try to see if list of choices presented to users on some items or if the terminology used by the checklist in general can be linked to the neurolex "ontology".
+
 ## Potential applications ("pie in the sky" goals)
 
 This checklist could:
