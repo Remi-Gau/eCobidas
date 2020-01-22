@@ -22,6 +22,12 @@ If you contributed to the COBIDAS Checklist and your name is not listed, please 
 <a href="https://twitter.com/fedeadolfi"><img src="img/twitter.png" width=20px /> <a/>
 
 
+*   Johannes Algermissen
+<a href="https://github.com/johalgermissen"><img src="img/github.png" width=20px /> <a/>
+<a href="https://twitter.com/johalgermissen"><img src="img/twitter.png" width=20px /> <a/>
+
+I am a PhD student at the Donders Institute at Radboud University, Nijmegen, the Netherlands. I work on human reinforcement learning and decision making using fMRI and EEG. With respect to open science, I am particularly interested in pre-registration and standardizing methods reports.
+
 *   James Bartlett
 <a href="https://twitter.com/JamesEBartlett"><img src="img/twitter.png" width=20px /> <a/>
 <a href="https://bartlettje.github.io/BartlettJE.github.io/"><img src="img/www.png" width=20px /> <a/>
