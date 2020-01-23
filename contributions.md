@@ -153,6 +153,9 @@ I am PhD student at the University of Jyväskylä, Finland.
 <a href="https://github.com/DorienHuijser"><img src="img/github.png" width=20px /><a/>
 <a href="https://twitter.com/DorienHuijser"><img src="img/twitter.png" width=20px /><a/>
 
+*   Wouter Weeda
+<a href="https://github.com/wdweeda"><img src="img/github.png" width=20px /><a/>
+<a href="https://twitter.com/weedawouter"><img src="img/twitter.png" width=20px /><a/>
 
 ## Core team
 
