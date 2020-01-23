@@ -4,34 +4,34 @@
 ## Requirements
 
   The implementation of this project should remain flexible enough to:
-  - accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g new multivariate analysis, high-resolution MRI...),
+  - accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g. new multivariate analysis, high-resolution MRI...),
   - easily fork the project and convert it to create a checklist-website for a different field.
 
 
 ## Milestones (short term goals)
 
-**The short term goal of this project is to make the COBIDAS report easier to use: we want to create a website with a clickable checklist that, at the end, automatically generates most of the method section of a f/MRI or EEG / MEEG paper.**
+**The short term goal of this project is to make the COBIDAS report easier to use: we want to create a website with a clickable checklist that, at the end, automatically generates most of the method section of a (f)MRI or (i)EEG / MEG paper.**
 
 ### MRI COBIDAS
 
 So far the short goals of the MRI app have been:
 
 -   Create a proof of concept website that can:
-    - given a template spreadsheet file generates a checklist to clicked through by users, :heavy_check_mark: :smiley:
+    - can generate a checklist to clicked through by users, given a template spreadsheet file, :heavy_check_mark: :smiley:
     - outputs a populated JSON file once the user is done, :heavy_check_mark: :smiley:
     - generate a method section using this JSON file.
 
-By working on those first step, a proof of concept app has been put together. There is now work to be done to extend what this app can do so we can have a first release that could be used for a typical fMRI study with:
+By working on those first steps, a proof of concept app has been put together. There is now work to be done to extend what this app can do so we can have a first release that could be used for a typical fMRI study with:
 -   a single functional task
 -   one anatomical scan
 -   using mass uni-variate analysis
 
-To reach that first milestone we still need to work on the following isues:
+To reach that first milestone we still need to work on the following issues:
 -   Identify high-priority items that at least include those from [Carp 2012](https://www.ncbi.nlm.nih.gov/pubmed/22796459) to make sure users do better than 50% of the papers reported in this study
--   Create a version of the spreadsheet where each of those high priority items has been properly atomized (i.e it is only composed of a single question)
+-   Create a version of the spreadsheet where each of those high priority items has been properly atomized (i.e. it is only composed of a single question)
 -   Identify ways in which the user experience can be improved, mostly by finding ways to minimize the time users have to spend using the app.
 
-### MEEG COBIDAS
+### M/EEG COBIDAS
 
 The MRI version is currently ahead and the work done there can pave the way for the MEEG version.
 
@@ -60,13 +60,13 @@ The process of filling in an online checklist can be simplified if of the requir
 
 BIDS is an emerging standard to organize neuroimaging data (MRI, fMRI, EEG...) and its associated metadata regarding acquisition (e.g repetition time, echo time, slice order...), experimental design (number of subjects, conditions, stimulus onsets...). This allows to automate methods section generation like is done by the `reports module` of [pybids](https://github.com/bids-standard/pybids/tree/master/bids/reports).
 
-NIDM results is a way to present and package mass-univariate fMRI results in a software independent way. This way it can for example facilitate reading FSL results through SPM or facilitate data sharing (e.g NIDM results is supported by the data sharing platform neurovault and this greatly facilitate uploading your results there). NIDM contains many metadata with a correspondence in the COBIDAS checlist (see [here](https://media.nature.com/original/nature-assets/sdata/2016/sdata2016102/extref/sdata2016102-s1.pdf)).
+NIDM results is a way to present and package mass-univariate fMRI results in a software independent way. This way it can for example facilitate reading FSL results through SPM or facilitate data sharing (e.g NIDM results is supported by the data sharing platform neurovault and this greatly facilitate uploading your results there). NIDM contains many metadata with a correspondence in the COBIDAS checklist (see [here](https://media.nature.com/original/nature-assets/sdata/2016/sdata2016102/extref/sdata2016102-s1.pdf)).
 
 For BIDS and NIDM results, machine reading through a data set organized as BIDS and and NIDM results could automatically fill part of the COBIDAS checklist.
 
 In a similar way, data processed with some standardized pipelines (e.g fMRIprep) could facilitate filling in the checklist: ticking the box corresponding to that pipeline would automatically populate all the relevant fields in the COBIDAS-json file.
 
-One can also imagine that pointing to a folder containing source MRI data (e.g DICOM) could allow the extraction of several of the information required by the COBIDAS checlist.
+One can also imagine that pointing to a folder containing source MRI data (e.g DICOM) could allow the extraction of several of the information required by the COBIDAS checklist.
 
 
 ## Further developments (long term goals)
@@ -102,7 +102,7 @@ This checklist could:
 
 3. facilitate data sharing
 
-If the json file it creates is accepted by neuroimaging databases (e.g neurovault) as metadata input, this could reduces friction for data sharing. Users wouldn't have to fill several times the same information (when pre-registering, when writing their methods, when submitting to a journal if it has a checklist of its own, when sharing data). For example the metadata fields from [neurovault](https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv) are already present in the COBIDAS checklist.
+If the json file it creates is accepted by neuroimaging databases (e.g. neurovault) as metadata input, this could reduces friction for data sharing. Users wouldn't have to fill several times the same information (when pre-registering, when writing their methods, when submitting to a journal if it has a checklist of its own, when sharing data). For example the metadata fields from [neurovault](https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv) are already present in the COBIDAS checklist.
 
 4. help make peer-review more objective
 
