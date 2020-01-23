@@ -1,2 +1,4 @@
 /schema_template/*/neurovault/*
 .~lock*
+
+boilerplate/.DS_Store
