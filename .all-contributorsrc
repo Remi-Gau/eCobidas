@@ -205,6 +205,16 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "wdweeda",
+      "name": "Wouter Weeda",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6614351?v=4",
+      "profile": "https://github.com/wdweeda",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
