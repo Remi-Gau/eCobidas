@@ -6,9 +6,9 @@ There are 3 repositories behind this checklist:
   - the [neurovault spreadsheet](./xlsx/metadata_neurovault.csv)
   - the python [script](./python/create_neurovault_schema.py) to turn that spreadsheet into a Repronim schema (basically a bunch hierarchically organized json files that link to each other).
 2.  this [fork of the ReproNim schema-standardization repository](https://github.com/Remi-Gau/schema-standardization) that hosts the schema representation of the checklist
-3.  the [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui) that does the actual rendering the checklist app by reading the schema hosted by the previous repository. There is a general explanation of how the app works in this [issue](https://github.com/ReproNim/schema-ui/issues/4). The prototype app for this checklist can be, for now, found here: https://cobidas-checklist.herokuapp.com/
+3.  the [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui) that does the actual rendering of the checklist app by reading the schema hosted by the previous repository. There is a general explanation of how the app works in this [issue](https://github.com/ReproNim/schema-ui/issues/4). The prototype app for this checklist can be, for now, found here: https://cobidas-checklist.herokuapp.com/
 
-You will need to fork and clone each of them if you want to work on the checklist on your own. If you want some stable versions of the repositories this table gives you link to the most recent ones.
+You will need to fork and clone each of them if you want to work on the checklist on your own. If you want some stable versions of the repositories this table gives you a link to the most recent ones.
 
 | Repositories                                                                            | Used version                                                                     |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
@@ -19,13 +19,13 @@ You will need to fork and clone each of them if you want to work on the checklis
 
 ## Spreadsheet work
 
-So far most of the work is being done on spreadsheets hosted on this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing) and we try to keep a back up in the [xlsx folder](./xlsx/).
+So far most of the work is being done in spreadsheets hosted on this [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing) and we try to keep a back-up in the [xlsx folder](./xlsx/).
 
 The MRI spreadsheet is accessible [here](https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing)
 
-The MEEG spreadsheet is accessible [here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
+The M/EEG spreadsheet is accessible [here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
 
-The MRI part is the most advanced at this moment but we are looking for people to help with the MEEG part.
+The MRI part is the most advanced at this moment but we are looking for people to help with the M/EEG part.
 
 ### Spreadsheet content and organization
 
@@ -42,8 +42,8 @@ In terms of choice of representation we are using the [schema-standardization](h
 
 The repronim schema is organized in a hierarchical manner with 3 levels.
 
-1. The lowest level is the `item level` where there is one question for each item with a expected format for the user interface: is this yes / no question (boolean), a multiple choice, a float or an integer...
-2. The second level is the `activity level` that contains a set of items. In the original repronim project this would constitute usually a questionnaire: like all the items of the Edinburgh handedness inventory would constitute one activity. In the COBIDAS case, it seems that we will most likely use this level to define some 'big' section of a method section (e.g preprocessing, design, participants...)
+1. The lowest level is the `item level` where there is one question for each item with an expected format for the user interface: is this yes / no question (boolean), a multiple choice, a float or an integer...
+2. The second level is the `activity level` that contains a set of items. In the original repronim project this would constitute usually a questionnaire: like all the items of the Edinburgh handedness inventory would constitute one activity. In the COBIDAS case, it seems that we will most likely use this level to define some 'big' section of a method section (e.g. preprocessing, design, participants...)
 3. The highest level is the `activity_set` or protocol level that originally define a set of activities to be included in a given study. At the moment this level is underused in the COBIDAS checklist but could be used to define activity sets for different use case: fMRI, MEEG, pre-registration...
 
 
