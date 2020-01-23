@@ -1,6 +1,6 @@
 # COBIDAS checklist
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-17-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- TOC -->
@@ -110,6 +110,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/kwiebels"><img src="https://avatars1.githubusercontent.com/u/13459206?v=4" width="100px;" alt=""/><br /><sub><b>Kristina Wiebels</b></sub></a><br /><a href="#content-kwiebels" title="Content">🖋</a> <a href="#ideas-kwiebels" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/johalgermissen"><img src="https://avatars1.githubusercontent.com/u/36693723?v=4" width="100px;" alt=""/><br /><sub><b>Johannes Algermissen</b></sub></a><br /><a href="#content-johalgermissen" title="Content">🖋</a> <a href="#ideas-johalgermissen" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/DorienHuijser"><img src="https://avatars1.githubusercontent.com/u/58177697?v=4" width="100px;" alt=""/><br /><sub><b>Dorien Huijser</b></sub></a><br /><a href="#content-DorienHuijser" title="Content">🖋</a> <a href="#ideas-DorienHuijser" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/wdweeda"><img src="https://avatars0.githubusercontent.com/u/6614351?v=4" width="100px;" alt=""/><br /><sub><b>Wouter Weeda</b></sub></a><br /><a href="#content-wdweeda" title="Content">🖋</a> <a href="#ideas-wdweeda" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
