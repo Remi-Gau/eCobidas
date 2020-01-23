@@ -3,45 +3,20 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+The main aim of this project is to improve reporting methods and results of (f)MRI and (i)EEG/MEG in order to increase transparency and reproducibility. We aim to do this by developing a practical tool based on the COBIDAS checklist that allows users to easily fill in the necessary fields and provide computer readable output that can then be used to for example generate parts of the methods section or to fill in fields when uploading images to Neurovault. 
+
 <!-- TOC -->
 
 - [COBIDAS checklist](#cobidas-checklist)
-  - [How to reach us](#how-to-reach-us)
-  - [How to contribute](#how-to-contribute)
   - [Why this project](#why-this-project)
   - [Goals and roadmap](#goals-and-roadmap)
   - [Implementation](#implementation)
+  - [How to reach us](#how-to-reach-us)
+  - [How to contribute](#how-to-contribute)
   - [References](#references)
   - [Contributors ✨](#contributors-)
 
 <!-- /TOC -->
-
-
-The prototype app for this checklist can be found here: https://cobidas-checklist.herokuapp.com/
-
-This repository host the work turning the report published by the Committee on Best Practices in Data Analysis and Sharing (COBIDAS) of the organization for human brain mapping (OHBM) into a practical tool for improving methods and results reporting in neuroimaging and EEG/MEG.
-
-This repository is a place where:
-1. issues and ideas around reaching this goal are discussed;
-2. plans for how to reach this goal are designed and implemented.
-
-
-## How to reach us
-
-If you want to be kept posted about the progress of the project, you can join our [google group](https://groups.google.com/d/forum/cobidas-checklist).
-
-From more frequent updates and behind the scenes, come and join us on the `cobidas_checklist` channel on the brainhack mattermost. <a href="https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist"><img src="http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png" width=100px /> Join our channel </a>
-
-Otherwise you can open a new issue on the repository itself if there is something you would like to discuss directly here.
-
-There is also an [OSF project](https://osf.io/anvqy/) to centralize all the information and repos.
-
-## How to contribute
-
-We are looking for people to give us feedback or help us move forward and implement all of this.
-
-To learn more about the contributors and how to contribute see [here](./contributions.md).
-
 
 ## Why this project
 
@@ -52,14 +27,22 @@ See [here](./why_this_project.md) to for more background information.
 
 ## Goals and roadmap
 
-**The short term goal of this project is to make the COBIDAS report easier to use: we want to create a website with a clickable checklist that, at the end, automatically generates most of the method section of a f/MRI or EEG / MEEG paper.**
+This repository hosts the work turning the report published by the Committee on Best Practices in Data Analysis and Sharing (COBIDAS) of the organization for human brain mapping (OHBM) into a practical tool for improving methods and results reporting in neuroimaging and (i)EEG/MEG.
 
 By turning the checklist into a website users could more rapidly click through it and provide more of the information requested by the COBIDAS report. This would generate a small text file (a json file) that summarizes what option was chosen for each item of the checklist. This machine readable file could then be used to automatically generate part of the methods section of an article.
+
+This repository is a place where:
+1. issues and ideas around reaching this goal are discussed;
+2. plans for how to reach this goal are designed and implemented.
 
 See [here](./goals.md) for more information on our short and long term goals as well as possible extension to the project. If you are interested by any of those get in touch. Many of them do not necessarily require super-advanced technical skills (except maybe a certain love for working with spreadsheet and wanting them to be super organized) :wink:.
 
 We are still in development so we are currently using the [list of required inputs](./xlsx/metadata_neurovault.csv) from [neurovault](https://www.neurovault.org/) to work on the user interface.
 
+
+**The short term goal of this project is to make the COBIDAS report easier to use: we want to create a website with a clickable checklist that, at the end, automatically generates most of the method section of a f/MRI or EEG / MEEG paper.**
+
+**The prototype app for this checklist can be found here: https://cobidas-checklist.herokuapp.com/**
 
 ## Implementation
 
@@ -75,6 +58,23 @@ See [here](./general_organization.md) for more information about how this whole 
 
 See [here](./how_to_render_the_checklist.md) for more information on how to work on the checklist on your own computer.
 
+
+## How to reach us
+
+If you want to be kept posted about the progress of the project, you can join our [google group](https://groups.google.com/d/forum/cobidas-checklist).
+
+From more frequent updates and behind the scenes, come and join us on the `cobidas_checklist` channel on the brainhack mattermost. <a href="https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist"><img src="http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png" width=100px /> Join our channel </a>
+
+Otherwise you can open a new issue on the repository itself if there is something you would like to discuss directly here.
+
+There is also an [OSF project](https://osf.io/anvqy/) to centralize all the information and repos.
+
+
+## How to contribute
+
+We are looking for people to give us feedback or help us move forward and implement all of this.
+
+To learn more about the contributors and how to contribute see [here](./contributions.md).
 
 
 ## References
