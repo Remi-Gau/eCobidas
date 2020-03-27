@@ -1,5 +1,5 @@
 
-![checklist](img/checklist.jpg)
+![checklist](https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/img/checklist.jpg)
 
 # COBIDAS guidelines checklist
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
