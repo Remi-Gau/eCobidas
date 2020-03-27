@@ -1,4 +1,7 @@
-# COBIDAS checklist
+
+![checklist](img/checklist.jpg)
+
+# COBIDAS guidelines checklist
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -16,7 +19,7 @@
 
 <!-- /TOC -->
 
-The main aim of this project is to improve reporting methods and results of (f)MRI and (i)EEG/MEG in order to increase transparency and reproducibility. We aim to do this by developing a practical tool based on the COBIDAS checklist that allows users to easily fill in the necessary fields and provide computer readable output that can then be used to for example generate parts of the methods section or to fill in fields when uploading images to Neurovault. 
+The main aim of this project is to improve reporting methods and results of (f)MRI and (i)EEG/MEG in order to increase transparency and reproducibility. We aim to do this by developing a practical tool based on the COBIDAS checklist that allows users to easily fill in the necessary fields and provide computer readable output that can then be used to for example generate parts of the methods section or to fill in fields when uploading images to Neurovault.
 
 ## Why this project
 
