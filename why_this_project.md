@@ -11,3 +11,10 @@ A [recent survey from ISMRM](https://ismrm.github.io/rrsg/QuestionnaireSummary/)
 One possible reason for this might be the unwieldy nature of the report. Anticipating this issue, the authors of the guidelines included a checklist (Appendix D) that still ended up taking almost 30 of the 70 pages of the whole document. Anyone who has used this checklist tends to agree that it is a great resource but that it is a bit cumbersome to interpret and apply.
 
 So the goal of this project is to facilitate the use of this checklist. But, if done right, this could also in the long term enhance the adoption of emerging neuroimaging standards (BIDS, fMRIprep, NIDM...), facilitate data sharing and pre-registration, help with peer-review...
+
+## Similar projects
+
+Other checklists:
+-   [Checklist for Artifical Intelligence in Medical Imaging](https://claim.shinyapps.io/CLAIM/)
+-   [Consensus on the reporting and experimental design of clinical and cognitive-beharioural neurofeedback studies](https://crednf.shinyapps.io/CREDnf/)
+-   [Transparency Checklist](http://www.shinyapps.org/apps/TransparencyChecklist/)

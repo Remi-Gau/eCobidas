@@ -84,13 +84,18 @@ To learn more about the contributors and how to contribute see [here](./contribu
 Jeanette Mumford has a [30 min video](https://www.youtube.com/watch?v=bsM4KowO5Vc&t=175s) explaining the background behind the COBIDAS report and giving a run through of the checklist.
 
 The COBIDAS report:
-- [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)
-- [for EEG and MEG](https://osf.io/a8dhx/)
-- MEEG report presentation at [OHBM 2019](https://www.pathlms.com/ohbm/courses/12238/sections/15843/video_presentations/138196)
+-   [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)
+-   [for EEG and MEG](https://osf.io/a8dhx/)
+-   MEEG report presentation at [OHBM 2019](https://www.pathlms.com/ohbm/courses/12238/sections/15843/video_presentations/138196)
 
 The original [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS checklist (thanks to [Cass](https://github.com/cassgvp)!!!)
 
 Presentation slides made about this project can be found in the [presentations folder](./presentations) and [here](./presentations/links.md).
+
+Other checklists:
+-   [Checklist for Artifical Intelligence in Medical Imaging](https://claim.shinyapps.io/CLAIM/)
+-   [Consensus on the reporting and experimental design of clinical and cognitive-beharioural neurofeedback studies](https://crednf.shinyapps.io/CREDnf/)
+-   [Transparency Checklist](http://www.shinyapps.org/apps/TransparencyChecklist/)
 
 ## Contributors ✨
 
