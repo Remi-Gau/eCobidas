@@ -19,14 +19,14 @@ import csv
 INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
 
 # where the files will be written on your machine: the local repository
-# corresponding to the remote where of the schema-standardization will be hosted
-OUTPUT_DIR = '/home/remi/github/schema-standardization'
+# corresponding to the remote where of the reproschema will be hosted
+OUTPUT_DIR = '/home/remi/github/reproschema'
 
 # Placeholder to insert in all instances of the remote repo that will host the schema representation
 # Most likely you just need to replace Remi-Gau in the following line by your github username
 REMOTE_REPO = 'https://raw.githubusercontent.com/Remi-Gau/reproschema/'
 
-# to which branch of schema-standardization the user interface will be pointed to
+# to which branch of reproschema the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: REMOTE_REPO + BRANCH_NAME
 BRANCH_NAME = 'eCOBIDAS'
