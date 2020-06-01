@@ -39,25 +39,25 @@ REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
 ## -----------------------------------------------------------------------------
 
 # activity set names
-ACTIVITY_SET_SCHEMA_FILENAME = 'Cobidas_schema'
-ACTIVITY_SET_CONTEXT_FILENAME = 'Cobidas_context'
-ACTIVITY_SET_FOLDER_NAME = 'cobidas'
+PROTOCOL_SCHEMA_FILENAME = 'Cobidas_schema'
+PROTOCOL_CONTEXT_FILENAME = 'Cobidas_context'
+PROTOCOL_FOLDER_NAME = 'cobidas'
 
 
 # VERSION
 VERSION = '0.0.1'
 
 # make output directories
-if not os.path.exists(os.path.join(OUTPUT_DIR, 'protocols', ACTIVITY_SET_FOLDER_NAME)):
-    os.makedirs(os.path.join(OUTPUT_DIR, 'protocols', ACTIVITY_SET_FOLDER_NAME))
+if not os.path.exists(os.path.join(OUTPUT_DIR, 'protocols', PROTOCOL_FOLDER_NAME)):
+    os.makedirs(os.path.join(OUTPUT_DIR, 'protocols', PROTOCOL_FOLDER_NAME))
 
 
 # define the activity set neurovault_schema.jsonld
-NV_SET_SCHEMA_JSON = {
+PROTOCOL_SCHEMA_JSON = {
     '@context': [REPRONIM_REPO + 'contexts/generic',
                  REMOTE_REPO + BRANCH_NAME + '/protocols/'
-                 + ACTIVITY_SET_FOLDER_NAME + '/'
-                 + ACTIVITY_SET_CONTEXT_FILENAME
+                 + PROTOCOL_FOLDER_NAME + '/'
+                 + PROTOCOL_CONTEXT_FILENAME
                 ],
     '@type': 'reproschema:ActivitySet',
     '@id': 'cobidas_schema',
@@ -77,7 +77,7 @@ NV_SET_SCHEMA_JSON = {
 }
 
 # define the activity set neurovault_context.jsonld
-NV_SET_CONTEXT_JSON = {
+PROTOCOL_CONTEXT_JSON = {
     '@context': {
         '@version': 1.1,
         'activity_path': REMOTE_REPO + BRANCH_NAME + '/activities/',
@@ -88,8 +88,8 @@ NV_SET_CONTEXT_JSON = {
 SECTION = ''
 # loop through rows of the csv file and create corresponding jsonld for each item
 with open(INPUT_FILE, 'r') as csvfile:
-    NV_METADATA = csv.reader(csvfile)
-    for row in NV_METADATA:
+    PROTOCOL_METADATA = csv.reader(csvfile)
+    for row in PROTOCOL_METADATA:
 
         # to skip the header
         if row[2] != 'Item':
@@ -127,7 +127,7 @@ with open(INPUT_FILE, 'r') as csvfile:
                 # define the base json content for the activity:
                 # neurovault_schema.jsonld
                 # neurovault_context.jsonld
-                nv_context_json = {
+                protocol_context_json = {
                     '@context': {
                         '@version': 1.1,
                         'item_path': REMOTE_REPO + BRANCH_NAME + '/activities/'
@@ -135,7 +135,7 @@ with open(INPUT_FILE, 'r') as csvfile:
                         }
                     }
 
-                nv_schema_json = {
+                protocol_schema_json = {
                     '@context': [REPRONIM_REPO + 'contexts/generic',
                                  REMOTE_REPO + BRANCH_NAME + '/activities/'
                                  + activity_folder_name + '/'
@@ -159,15 +159,15 @@ with open(INPUT_FILE, 'r') as csvfile:
                 }
 
                 # update the json content of activity set schema and context wrt this new activity
-                NV_SET_SCHEMA_JSON['variableMap'].append(
+                PROTOCOL_SCHEMA_JSON['variableMap'].append(
                     {'variableName': activity_schema_name, 'isAbout': activity_schema_name}
                     )
 
-                NV_SET_SCHEMA_JSON['ui']['order'].append(activity_schema_name)
-                NV_SET_SCHEMA_JSON['ui']['visibility'][activity_schema_name] = True
-                NV_SET_SCHEMA_JSON['ui']['activity_display_name'][activity_schema_name] = SECTION + '_schema' # TO DO: add space when upercase
+                PROTOCOL_SCHEMA_JSON['ui']['order'].append(activity_schema_name)
+                PROTOCOL_SCHEMA_JSON['ui']['visibility'][activity_schema_name] = True
+                PROTOCOL_SCHEMA_JSON['ui']['activity_display_name'][activity_schema_name] = SECTION + '_schema' # TO DO: add space when upercase
 
-                NV_SET_CONTEXT_JSON['@context'][activity_schema_name] = {
+                PROTOCOL_CONTEXT_JSON['@context'][activity_schema_name] = {
                     '@id': 'activity_path:' + activity_folder_name + '/' + activity_schema_filename,
                     '@type': '@id'
                     }
@@ -176,33 +176,33 @@ with open(INPUT_FILE, 'r') as csvfile:
 
 
             # update the json content of the activity schema and context wrt this new item
-            nv_context_json['@context'][row[2]] = {
+            protocol_context_json['@context'][row[2]] = {
                 '@id': 'item_path:' + row[2],
                 '@type': '@id'
             }
 
-            nv_schema_json['ui']['order'].append(row[2])
+            protocol_schema_json['ui']['order'].append(row[2])
 
-            nv_schema_json['variableMap'].append(
+            protocol_schema_json['variableMap'].append(
                 {'variableName': row[2], 'isAbout': row[2]}
                 )
 
             # branchic logic: visibility
             if row[6] == '1':
-                nv_schema_json['ui']['visibility'][row[2]] = True
+                protocol_schema_json['ui']['visibility'][row[2]] = True
             else:
-                nv_schema_json['ui']['visibility'][row[2]] = row[6] + ' === 1'
+                protocol_schema_json['ui']['visibility'][row[2]] = row[6] + ' === 1'
 
 
 
             # save activity jsonld with every new item
             with open(os.path.join(OUTPUT_DIR, 'activities', activity_folder_name,
                                    activity_schema_filename), 'w') as ff:
-                json.dump(nv_schema_json, ff, sort_keys=False, indent=4)
+                json.dump(protocol_schema_json, ff, sort_keys=False, indent=4)
 
             with open(os.path.join(OUTPUT_DIR, 'activities', activity_folder_name,
                                    activity_context_filename), 'w') as ff:
-                json.dump(nv_context_json, ff, sort_keys=False, indent=4)
+                json.dump(protocol_context_json, ff, sort_keys=False, indent=4)
 
 
             # define jsonld for this item
@@ -317,10 +317,10 @@ with open(INPUT_FILE, 'r') as csvfile:
 
 
 # write activity set jsonld
-with open(os.path.join(OUTPUT_DIR, 'protocols', ACTIVITY_SET_FOLDER_NAME,
-                       ACTIVITY_SET_SCHEMA_FILENAME), 'w') as ff:
-    json.dump(NV_SET_SCHEMA_JSON, ff, sort_keys=False, indent=4)
+with open(os.path.join(OUTPUT_DIR, 'protocols', PROTOCOL_FOLDER_NAME,
+                       PROTOCOL_SCHEMA_FILENAME), 'w') as ff:
+    json.dump(PROTOCOL_SCHEMA_JSON, ff, sort_keys=False, indent=4)
 
-with open(os.path.join(OUTPUT_DIR, 'protocols', ACTIVITY_SET_FOLDER_NAME,
-                       ACTIVITY_SET_CONTEXT_FILENAME), 'w') as ff:
-    json.dump(NV_SET_CONTEXT_JSON, ff, sort_keys=False, indent=4)
+with open(os.path.join(OUTPUT_DIR, 'protocols', PROTOCOL_FOLDER_NAME,
+                       PROTOCOL_CONTEXT_FILENAME), 'w') as ff:
+    json.dump(PROTOCOL_CONTEXT_JSON, ff, sort_keys=False, indent=4)
