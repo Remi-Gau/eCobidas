@@ -59,7 +59,7 @@ PROTOCOL_SCHEMA_JSON = {
                  + PROTOCOL_FOLDER_NAME + '/'
                  + PROTOCOL_CONTEXT_FILENAME
                 ],
-    '@type': 'reproschema:ActivitySet',
+    '@type': 'reproschema:Protocol',
     '@id': 'cobidas_schema',
     'skos:prefLabel': 'eCOBIDAS proof of concept',
     'schema:description': 'neurovault as a COBIDAS checklist proof of concept',
