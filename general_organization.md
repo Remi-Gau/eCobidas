@@ -4,7 +4,7 @@ There are 3 repositories behind this checklist:
 
 1.  this [COBIDAS_chckls repository](https://github.com/Remi-Gau/COBIDAS_chckls/) where you are currently reading this. It contains:
     -   the [neurovault spreadsheet](./xlsx/metadata_neurovault.csv)
-    -   the python [script](./python/create_neurovault_schema.py) to turn that spreadsheet into a Repronim schema (basically a bunch hierarchically organized json files that link to each other).
+    -   the python [script](./python/create_ecobidas_schema.py) to turn that spreadsheet into a Repronim schema (basically a bunch hierarchically organized json files that link to each other).
 2.  this [fork of the ReproNim reproschema repository](https://github.com/Remi-Gau/reproschema) that hosts the schema representation of the checklist
 3.  the [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui) that does the actual rendering of the checklist app by reading the schema hosted by the previous repository. There is a general explanation of how the app works in this [issue](https://github.com/ReproNim/schema-ui/issues/4). The prototype app for this checklist can be, for now, found [here](https://cobidas-checklist.herokuapp.com/)
 
@@ -44,4 +44,4 @@ The repronim schema is organized in a hierarchical manner with 3 levels.
 2.  The second level is the `activity level` that contains a set of items. In the original repronim project this would constitute usually a questionnaire: like all the items of the Edinburgh handedness inventory would constitute one activity. In the COBIDAS case, it seems that we will most likely use this level to define some 'big' section of a method section (e.g. preprocessing, design, participants...)
 3.  The highest level is the `activity_set` or protocol level that originally define a set of activities to be included in a given study. At the moment this level is underused in the COBIDAS checklist but could be used to define activity sets for different use case: fMRI, MEEG, pre-registration...
 
-So far we have a [script](./python/create_neurovault_schema.py) to turn the neurovault [list of required inputs](./xlsx/metadata_neurovault.csv) into a schema that can then be render with the schema-ui.
+So far we have a [script](./python/create_ecobidas_schema.py) to turn the neurovault [list of required inputs](./xlsx/metadata_neurovault.csv) into a schema that can then be render with the schema-ui.

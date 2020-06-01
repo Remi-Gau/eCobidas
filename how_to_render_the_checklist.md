@@ -13,13 +13,13 @@ ____
 
 ### Turn the spreadsheet into the schema
 
-This can be done by running the `create_neurovault_schema.py` [python script](./python/create_neurovault_schema.py) but first make sure you modify the lines in the header so that the script matches your need:
+This can be done by running the `create_ecobidas_schema.py` [python script](./python/create_ecobidas_schema.py) but first make sure you modify the lines in the header so that the script matches your need:
 -   you will need to change the URL of the repository where the schema will be hosted (currently set to `https://raw.githubusercontent.com/Remi-Gau/reproschema/`)
 -   you can also specify on which branch of this repository the schema will be hosted (currently set to `neurovault`).
 Then running the following should do it (if you are using python 3.7 in this case and assuming you are in the `python` directory of this repo):
 
 ```
-python3.7 create_neurovault_schema.py
+python3.7 create_ecobidas_schema.py
 ```
 
 ### Making the new schema available to the cobidas-ui
