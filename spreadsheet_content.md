@@ -22,9 +22,9 @@ The first few columns are only there to try in the future to create a unique cod
 ## Filtering
 The following columns can be used to filter which item to display, using the arrow at the top of the cells.
 
-| include_item |	neurovault_or_carp | mandatory |
-|-|-|-|
-| items that include items from `neurovault_or_carp` and some more | items that have their counterpart in the neurovault metadata list and/or that were surveyed by [Carp in 2012](https://drive.google.com/file/d/1TBSxC52kXVERl9JmfbBPC7uCas4QN_vg/view?usp=sharing) |  items labelled as mandatory in the original COBIDAS report |
+| include_item                                                     | neurovault_or_carp                                                                                                                                                                                | mandatory                                                  |
+|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
+| items that include items from `neurovault_or_carp` and some more | items that have their counterpart in the neurovault metadata list and/or that were surveyed by [Carp in 2012](https://drive.google.com/file/d/1TBSxC52kXVERl9JmfbBPC7uCas4QN_vg/view?usp=sharing) | items labelled as mandatory in the original COBIDAS report |
 
 {>>Some of the choices for the items to include have been made in a pretty arbitrary and one sided manner. This should be discussed further before moving on.<<}
 
@@ -72,12 +72,12 @@ Those columns are then used to create each `item_name`.
 
 The type of answer expected must specified for each item in the column `format`.
 
-- char: a text answer is expected
-- boolean: a yes / no answer is expected
-- float: a numeric answer (with decimals where necessary) is expected, e.g., "123.45"
-- int: an integer is expected (i.e., whole numbers)
-- choice: the user must choose one answer from a list. The last option is always other and opens up the possibility to give a text answer
-- multiple choice: several options can be chosen from the list
+-   char: a text answer is expected
+-   boolean: a yes / no answer is expected
+-   float: a numeric answer (with decimals where necessary) is expected, e.g., "123.45"
+-   int: an integer is expected (i.e., whole numbers)
+-   choice: the user must choose one answer from a list. The last option is always other and opens up the possibility to give a text answer
+-   multiple choice: several options can be chosen from the list
 
 | format               | choice_levels                                             |
 |----------------------|-----------------------------------------------------------|
@@ -90,16 +90,16 @@ The `visibility` column lists the conditions that have to be fulfilled for each 
 
 If only an `item_name` is listed, then a positive answer must have been given to the question corresponding to that `item_name`. Otherwise, a specific choice must have been made on a previous question. For example:
 
-| visibility |
-|------------|
-|     operation performed = brain extraction. If the user selected the brain extraction method as the operation performed, show this question       |
+| visibility                                                                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------------|
+| operation performed = brain extraction. If the user selected the brain extraction method as the operation performed, show this question |
 
 
 ## Default options
 
 Later on, it will be useful to know if some of the most commonly used software either have
-- a "default" for some COBIDAS items (ideally, this default should be the one at the top of the choice list when the user has specified their software).
-- a more restricted list of choices for some items (ideally, the number of possibilities shown to choose from should be restricted as well). For example, SPM only allows 6 degrees of freedom with a set cost function for realignment, so there is no reason to ask the user for that info if they have done the realignment with SPM.
+-   a "default" for some COBIDAS items (ideally, this default should be the one at the top of the choice list when the user has specified their software).
+-   a more restricted list of choices for some items (ideally, the number of possibilities shown to choose from should be restricted as well). For example, SPM only allows 6 degrees of freedom with a set cost function for realignment, so there is no reason to ask the user for that info if they have done the realignment with SPM.
 
 This could significantly speed things up for users
 
@@ -124,9 +124,9 @@ These column list if the different items can be found (and where) in  other sour
 ## Comparison to Carp 2012
 This is for future reference: it lists the percentage of studies that reported each item according to [Carp, 2012](https://drive.google.com/file/d/1TBSxC52kXVERl9JmfbBPC7uCas4QN_vg/view?usp=sharing). This could help figure out in which order items should be presented to users (e.g., most reported items first and go down the priority list).
 
-| in_Carp2012	| % of studies that informed it	| % of studies that informed it (structural)|
-|-|-| - |
-| item name used in [Carp, 2012](https://drive.google.com/file/d/1TBSxC52kXVERl9JmfbBPC7uCas4QN_vg/view?usp=sharing)  | If the number is bold, it was approximately extracted from one of the figures of [Carp, 2012](https://drive.google.com/file/d/1TBSxC52kXVERl9JmfbBPC7uCas4QN_vg/view?usp=sharing) (because it was not reported in the text of the article)   | Same, but for the structural data  |
+| in_Carp2012                                                                                                        | % of studies that informed it                                                                                                                                                                                                              | % of studies that informed it (structural) |
+|--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
+| item name used in [Carp, 2012](https://drive.google.com/file/d/1TBSxC52kXVERl9JmfbBPC7uCas4QN_vg/view?usp=sharing) | If the number is bold, it was approximately extracted from one of the figures of [Carp, 2012](https://drive.google.com/file/d/1TBSxC52kXVERl9JmfbBPC7uCas4QN_vg/view?usp=sharing) (because it was not reported in the text of the article) | Same, but for the structural data          |
 
 
 **This could prove useful later but is low priority at the moment so these columns are hidden most of the time.**

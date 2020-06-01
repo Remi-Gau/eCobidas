@@ -4,25 +4,32 @@
 
 This checklist could:
 
-1. provide comprehensive descriptions of the analysis pipelines used in published papers, both human- and machine-readible (use the app to **document** pipelines)
+1.  provide comprehensive descriptions of the analysis pipelines used in published papers, both human- and machine-readible (use the app to **document** pipelines)
 
-2. facilitate pre-registration and registered reports (use the app to **create** pipelines)
+2.  facilitate pre-registration and registered reports (use the app to **create** pipelines)
 
-3. facilitate systematic literature reviews and meta-analyses (use the app to **read** pipelines)
+3.  facilitate systematic literature reviews and meta-analyses (use the app to **read** pipelines)
 
-4. facilitate data sharing (use the app to **standardize** the report of information)
+4.  facilitate data sharing (use the app to **standardize** the report of information)
 
 If the json file it creates is accepted by neuroimaging databases (e.g neurovault) as metadata input, this could reduces friction for data sharing. Users wouldn't have to fill several times the same information (when pre-registering, when writing their methods, when submitting to a journal if it has a checklist of its own, when sharing data). For example the metadata fields from [neurovault](https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv) are already present in the COBIDAS checklist.
 
-5. help make peer-review more objective (use the app to **check** pipelines)
+5.  help make peer-review more objective (use the app to **check** pipelines)
 
-Reviewers could use the website to systematically cross-check that all the required methods and results information are present for a given paper. A tool to compare COBIDAS-json files could help editors visualize agreement across reviewers' json file. For an example for human data published, see this paper by [Aczel et al. 2020](https://www.nature.com/articles/s41562-019-0772-6) and the respective [shinyapp](http://www.shinyapps.org/apps/TransparencyChecklist/).
+Reviewers could use the website to systematically cross-check that all the required methods and results information are present for a given paper. A tool to compare COBIDAS-json files could help editors visualize agreement across reviewers' json file.
+
+For an example, see this paper by [Aczel et al. 2020](https://www.nature.com/articles/s41562-019-0772-6) and the respective [shinyapp](http://www.shinyapps.org/apps/TransparencyChecklist/).
+
+Similar checklists aso exist for other subfields in neuroimaging:
+-   [Checklist for Artifical Intelligence in Medical Imaging](https://claim.shinyapps.io/CLAIM/)
+-   [Consensus on the reporting and experimental design of clinical and cognitive-beharioural neurofeedback studies](https://crednf.shinyapps.io/CREDnf/)
+
 
 ## Requirements for the implementation
 
-  The implementation of this project should remain flexible enough to:
-  - accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g. new multivariate analysis, high-resolution MRI...),
-  - easily fork the project and convert it to create a checklist-website for a different field.
+The implementation of this project should remain flexible enough to:
+-   accommodate the inclusion of new items in the checklist as new neuroimaging methods mature (e.g. new multivariate analysis, high-resolution MRI...),
+-   easily fork the project and convert it to create a checklist-website for a different field.
 
 
 ## Milestones (short term goals)
@@ -34,9 +41,9 @@ Reviewers could use the website to systematically cross-check that all the requi
 So far the short goals of the MRI app have been:
 
 -   Create a proof of concept website that can:
-    - can generate a checklist to clicked through by users, given a template spreadsheet file, :heavy_check_mark: :smiley:
-    - outputs a populated JSON file once the user is done, :heavy_check_mark: :smiley:
-    - generate a method section using this JSON file.
+    -   can generate a checklist to clicked through by users, given a template spreadsheet file, :heavy_check_mark: :smiley:
+    -   outputs a populated JSON file once the user is done, :heavy_check_mark: :smiley:
+    -   generate a method section using this JSON file.
 
 By working on those first steps, a proof of concept app has been put together. There is now work to be done to extend what this app can do so we can have a first release that could be used for a typical fMRI study with:
 -   a single functional task
@@ -60,18 +67,18 @@ The main short term goals for the MEEG version are:
 -   Identify high-priority items in the checklist (similar to Carp 2012 for fMRI, e.g. [Luck & Gaspelin 2015](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.12639))
 -   Create a version of the spreadsheet where each of those high priority items has been properly atomized (i.e it is only composed of a single question)
 -   For each item:
-  -  Give it an item name
-  -  Create a specific unambiguous question
-  -  Identify the response type expected (based on exemplary software)
-      - Determine which softwares are considered in the examples
-  -  Create a response choice list where needed
-  -  Check if the item can be extracted from a BIDS data set
+    -   Give it an item name
+    -   Create a specific unambiguous question
+    -   Identify the response type expected (based on exemplary software)
+    -   Determine which softwares are considered in the examples
+    -   Create a response choice list where needed
+    -   Check if the item can be extracted from a BIDS data set
 
 
 ## Extensions (intermediate goals)
 
 ### Extended checklists
-Right now, the [prototype](https://cobidas-checklist.herokuapp.com/) contains some of questions from the COBIDAS reports. 
+Right now, the [prototype](https://cobidas-checklist.herokuapp.com/) contains some of questions from the COBIDAS reports.
 In the near future, we want to be able to extend those checklists so they include **all** the items listed in the COBIDAS reports. Also, it will create human-readible method sections as outputs.
 
 ### Links with BIDS and NIDM
@@ -120,14 +127,14 @@ Try to see if list of choices presented to users on some items or if the termino
 
 This checklist could:
 
-1. facilitate pre-registration and registered reports
+1.  facilitate pre-registration and registered reports
 
-2. facilitate systematic literature reviews and meta-analysis
+2.  facilitate systematic literature reviews and meta-analysis
 
-3. facilitate data sharing
+3.  facilitate data sharing
 
 If the json file it creates is accepted by neuroimaging databases (e.g. neurovault) as metadata input, this could reduces friction for data sharing. Users wouldn't have to fill several times the same information (when pre-registering, when writing their methods, when submitting to a journal if it has a checklist of its own, when sharing data). For example the metadata fields from [neurovault](https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv) are already present in the COBIDAS checklist.
 
-4. help make peer-review more objective
+4.  help make peer-review more objective
 
 Reviewers could use the website to systematically cross-check that all the required methods and results information are present for a given paper. A tool to compare COBIDAS-json files could help editors visualize agreement across reviewers' json file.

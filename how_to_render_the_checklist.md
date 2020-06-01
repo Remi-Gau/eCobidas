@@ -5,7 +5,7 @@ First make sure you understand how the different part of this project are organi
 
 **WARNING**
 
-If you are trying to render the checklist and it does not work, it could mean that some of the schema references could point to URI whose content might have changed. The best in this case is to git rebase the most recent changes on the master branch on the ReproNim schema-standardization repository onto the branch you are trying to render.
+If you are trying to render the checklist and it does not work, it could mean that some of the schema references could point to URI whose content might have changed. The best in this case is to git rebase the most recent changes on the master branch on the ReproNim reproschema repository onto the branch you are trying to render.
 ____
 
 
@@ -14,7 +14,7 @@ ____
 ### Turn the spreadsheet into the schema
 
 This can be done by running the `create_neurovault_schema.py` [python script](./python/create_neurovault_schema.py) but first make sure you modify the lines in the header so that the script matches your need:
--   you will need to change the URL of the repository where the schema will be hosted (currently set to `https://raw.githubusercontent.com/Remi-Gau/schema-standardization/`)
+-   you will need to change the URL of the repository where the schema will be hosted (currently set to `https://raw.githubusercontent.com/Remi-Gau/reproschema/`)
 -   you can also specify on which branch of this repository the schema will be hosted (currently set to `neurovault`).
 Then running the following should do it (if you are using python 3.7 in this case and assuming you are in the `python` directory of this repo):
 
@@ -24,7 +24,7 @@ python3.7 create_neurovault_schema.py
 
 ### Making the new schema available to the cobidas-ui
 
-If the previous step went smoothly you now need to make the newly created files available on the remote of your schema-standardization repository so that the cobidas-ui repository can 'see' them. This you can do by committing the files newly created on your local schema-standardization repository and pushing them the remote. For example if the schema is hosted on the `neurovault` branch of your `origin` remote repository, the following should do the trick (assuming that you are already on the `neurovault` branch of your local repo):
+If the previous step went smoothly you now need to make the newly created files available on the remote of your reproschema repository so that the cobidas-ui repository can 'see' them. This you can do by committing the files newly created on your local reproschema repository and pushing them the remote. For example if the schema is hosted on the `neurovault` branch of your `origin` remote repository, the following should do the trick (assuming that you are already on the `neurovault` branch of your local repo):
 
 ```
 git add --all
