@@ -1,0 +1,28 @@
+Section	Item	Verbose description	Format	Priority	Visibility
+Manuscript information	manuscript_title	Manuscript title	char	1	1
+Manuscript information	author_name	Corresponding author name	char	1	1
+Manuscript information	author_email	Corresponding author email	char	1	1
+Pre-Experiment	prereg	Was the protocol or analysis preregistered?	boolean	1	1
+Pre-Experiment	sampling_plan	Does the manuscript describe the sampling plan and/or justify the sample size used?	boolean	1	1
+Control groups	control_group	Did the experiment include at least one control group or control condition?	boolean	1	1
+Control groups	double_blind	Was a double-blind appropriate in the present experiment?	"['no','yes but no double blind used','yes and a double blind was used’]"	1	1
+Control groups	rater_blind	Were those who rate the outcomes blinded to group assignment?	"['yes','no','N/A as only one group’]"	1	1
+Control groups	analyst_blind	Were those who analysed the data blinded to group assignment?	"['yes','no','N/A as only one group’]"	1	1
+Control groups	participant_blind	Were any measures taken to examine to what extend participants and experimenters remained blind?	"['yes','no','N/A’]"	1	1
+Control groups	efficacy	Is this a clinical efficacy study?	"['no','yes and a standard of care was used as benchmark','yes and a standard of care was not used as benchmark’]"	1	1
+Control measures	psychosocial	Were data collected on psychosocial factors?	boolean	1	1
+Control measures	strategy_provided	Does the manuscript report whether participants were provided with a strategy?	boolean	1	1
+Control measures	strategy_used	Does the manuscript describe the strategies that participants reported using?	boolean	1	1
+Control measures	processing	Does the manuscript report the methods used for online-data processing and artifact correction?	boolean	1	1
+Control measures	artifacts_effect	Does the manuscript report condition and/or group effects for artifacts?	boolean	1	1
+Feedback specifications	feature_extraction	Does the manuscript report how the online-feature extraction was defined?	boolean	1	1
+Feedback specifications	reinforcement_schedule	Does the manuscript report and justify the reinforcement schedule?	boolean	1	1
+Feedback specifications	feedback	Does the manuscript report the feedback modality and content?	boolean	1	1
+Feedback specifications	brain_activity	Does the manuscript report all brain activity variable(s) and/or contrasts used for feedback, as displayed to experimental participants?	boolean	1	1
+Feedback specifications	hardware	Does the manuscript report the hardware and software used?	boolean	1	1
+Outcome measures - Brain	regulation_feedback	Does the manuscript report neurofeedback regulation success based on the feedback signal?	boolean	1	1
+Outcome measures - Brain	regulation_blocks	Does the manuscript plot within-session and between-session regulation blocks of feedback variable(s), as well as pre-to-post resting baselines or contrasts?	"['yes','no','partially’]"	1	1
+Outcome measures - Brain	compare	Does the manuscript statistically compare the experimental condition/group to the control condition(s)/group(s) (not only each group to baseline measures)?	"['yes','no','N/A as only one group’]"	1	1
+Outcome measures - Behaviour	clinical_significance	Does the manuscript report measures of clinical or behavioural significance and describe whether they were reached?	"['yes','no','N/A the study does not behavioural or cognitve measures’]"	1	1
+Outcome measures - Behaviour	regulation_success	Does the manuscript compare regulation success and behavioural outcomes?	"['yes','no','N/A the study does not behavioural or cognitve measures’]"	1	1
+Data storage	open_data	Does the manuscript include a link to any open access materials, analysis scripts, code, raw data, or final values?	boolean	1	1

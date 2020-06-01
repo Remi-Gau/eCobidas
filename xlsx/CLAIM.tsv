@@ -1,0 +1,52 @@
+Section	Sub-section	Item	Verbose description	Format	Priority	Visibility
+manuscript_information	Manuscript information	manuscript_title	Manuscript title	char	1	1
+manuscript_information	Manuscript information	author_name	Corresponding author name	char	1	1
+manuscript_information	Manuscript information	author_email	Corresponding author email	char	1	1
+title_abstract_intro	Title or Abstract	identification	Identification as a study of AI methodology, specifying the category of technology used (eg, deep learning) in title or abstract.	boolean	1	1
+title_abstract_intro	Abstract	structured summary	Structured summary of study design, methods, results, and conclusions.	boolean	1	1
+title_abstract_intro	Introduction	background	Scientific and clinical background, including the intended use and clinical role of the AI approach	boolean	1	1
+title_abstract_intro	Introduction	objectives	Study objectives	boolean	1	1
+title_abstract_intro	Introduction	hypothesis	Study hypotheses	boolean	1	1
+methods	Study Design	prospective retrospective	Prospective or retrospective study.	"['Prospective','retrospective']"	1	1
+methods	Study Design	goal	Study goal, such as model creation, exploratory study, feasibility study, noninferiority trial.	boolean	1	1
+methods	Data	data_source	Data sources.	boolean	1	1
+methods	Data	data_deposited	Data deposited.	boolean	1	1
+methods	Data	code_deposited	Software/code deposited.	boolean	1	1
+methods	Data	eligibility	Eligibility criteria: how, where, and when potentially eligible participants or studies were identified (eg, symptoms, results from previous tests, inclusion in registry, patient-care setting, location, dates).	"['yes','no','partially’]"	1	1
+methods	Data	preprocessing	Data preprocessing steps.	boolean	1	1
+methods	Data	data_subset	Selection of data subsets, if applicable.	"['yes','no','N/A’]"	1	1
+methods	Data	data_elements	Definitions of data elements, with references to common data elements.	"['yes','no','N/A’]"	1	1
+methods	Data	deidentification	De-identification methods.	"['yes','no','N/A’]"	1	1
+methods	Data	missing_data	How missing data were handled.	"['yes','no','N/A’]"	1	1
+methods	Ground truth	ground_truth	Definition of ground truth reference standard, in sufficient detail to allow replication.	"['yes','no','N/A’]"	1	1
+methods	Ground truth	reference_rationale	Rationale for choosing the reference standard (if alternatives exist).	"['yes','no','N/A’]"	1	1
+methods	Ground truth	annotation	Source of ground truth annotations; qualifications and preparation of annotators.	"['yes','no','N/A’]"	1	1
+methods	Ground truth	annotation_tool	Annotation tools.	"['yes','no','N/A’]"	1	1
+methods	Ground truth	rater_variability	Measurement of inter- and intrarater variability; methods to mitigate variability and/or resolve discrepancies.	"['yes','no','N/A’]"	1	1
+methods	Data partitions	sample_size	Intended sample size and how it was determined.	boolean	1	1
+methods	Data partitions	partition_assignement	How data were assigned to partitions; specify proportions.	"['yes','no','N/A’]"	1	1
+methods	Data partitions	partition_level	Level at which partitions are disjoint (eg, image, study, patient, institution)	"['yes','no','N/A’]"	1	1
+methods	Model	model	Detailed description of model, including inputs, outputs, all intermediate layers and connections.	"['yes','no','N/A’]"		
+methods	Model	libraries	Software libraries, frameworks, and packages.	boolean		
+methods	Model	model_parameters	Initialization of model parameters (eg, randomization, transfer learning).	boolean		
+methods	Training	training	Details of training approach, including data augmentation, hyperparameters, number of models trained.	boolean		
+methods	Training	model_selection	Method of selecting the final model.	"['yes','no','N/A’]"		
+methods	Training	ensembling	Ensembling techniques, if applicable.	"['yes','no','N/A’]"		
+methods	Evaluation	metrics	Metrics of model performance.	boolean		
+methods	Evaluation	statistical_measure	Statistical measures of significance or model evidence and uncertainty (eg, confidence or credible intervals).	boolean		
+methods	Evaluation	robustness	Robustness or sensitivity analysis.	boolean		
+methods	Evaluation	interpretability	Methods for explainability or interpretability (eg, saliency maps) and how they were validated.	"['yes','no','N/A’]"		
+methods	Evaluation	validation	Validation or testing on external data.	boolean		
+results	data	participants_flow	Flow of participants or cases, using a diagram to indicate inclusion and exclusion.	"['yes','no','partially’]"		
+results	data	demographics	Demographic and clinical characteristics of cases in each partition.	"['yes','no','partially’]"		
+results	data	performance_metrics	Performance metrics for optimal model(s) on all data partitions	boolean		
+results	data	performance_benchmark	Benchmark performance against current standards.	boolean		
+results	data	accuracy	Estimates of diagnostic accuracy and their precision (such as 95% confidence intervals).	"['yes','no','N/A’]"		
+results	data	failure analysis	Failure analysis of incorrectly classified cases.	"['yes','no','N/A’]"		
+discussion	discussion	summary	Summary of results.	"['yes','no','partially’]"		
+discussion	discussion	limitation	Study limitations, including potential bias, statistical uncertainty, and generalizability.	"['yes','no','partially’]"		
+discussion	discussion	implications	Implications for practice, including the intended use and/or clinical role.	boolean		
+other	other	study registration number	Registration number and name of registry for study that generated raw data.	boolean		
+other	other	machine learning registration number	Registration number and name of registry for reported Machine Learning study.	boolean		
+other	other	study protocol	Where the full study protocol can be accessed.	"['yes','no','N/A’]"		
+other	other	funding	Sources of funding and other support; role of funders.	boolean		
