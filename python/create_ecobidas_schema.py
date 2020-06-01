@@ -65,7 +65,7 @@ PROTOCOL_SCHEMA_JSON = {
     'schema:description': 'neurovault as a COBIDAS checklist proof of concept',
     'schema:schemaVersion': VERSION,
     'schema:version': VERSION,
-    'about': REMOTE_REPO + BRANCH_NAME + '/protocols/README.md',
+    'landingPage': REMOTE_REPO + BRANCH_NAME + '/protocols/README.md',
     'variableMap': [],
     'ui': {
         'order': [],
