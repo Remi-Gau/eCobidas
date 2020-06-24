@@ -1,0 +1,26 @@
+{
+    "@context": [ "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/protocols/VoicePilot/VoicePilot_context"
+    ],
+    "@type": "reproschema:Protocol",
+    "@id": "old cobidas checklist",
+    "prefLabel": "old cobidas checklist",
+    "schema:description": "old cobidas checklist",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "landingPage": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/schema/heroku/protocols/cobidas/README.md",
+    "schema:image": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/img/checklist.jpg",
+    "ui": {
+        "addProperties": [
+                {"isAbout": "Thankyou_schema",
+                "variableName": "Thankyou_schema",
+                "prefLabel": {"en": "ThankYou"}
+                }
+        ],
+        "order": [
+            "Thankyou_schema"
+        ],
+        "shuffle": false,
+        "allow": ["autoAdvance", "disableBack", "allowExport"]
+    }
+}
