@@ -169,21 +169,36 @@ with open(INPUT_FILE, 'r') as csvfile:
         # to skip the header
         if row[ITEM_COL] != 'Item':
 
-
-
             item_name = row[ITEM_COL]
 
             question = row[QUESTION_COL]
 
-            # branchic logic: visibility
-            if row[VISIBILITY_COL] == '1':
-                visibility = True
-            else:
-                visibility = row[VISIBILITY_COL] + ' === 1'
-
             response_type = row[RESPONSE_TYPE_COL]
 
-            response_choices = row[CHOICE_COL][1:-2].replace("'", "").split(',')
+            response_choices = row[CHOICE_COL].split('|')
+
+            # branchic logic: visibility
+            if row[VISIBILITY_COL] == '1':
+
+                visibility = True
+
+            else:
+
+                visibility = row[VISIBILITY_COL]
+
+                # vis_conditions = row[CHOICE_COL].split(',')
+                #
+                # for i, cdt in enumerate(vis_conditions):
+                #
+                #     visibility['choices'].append({
+                #         'schema:name': opt,
+                #         'schema:value': i,
+                #         '@type': 'schema:option'
+                #         })
+
+
+
+
 
 
             # detect if this is a new SECTION if so it will create a new activity
@@ -231,7 +246,7 @@ with open(INPUT_FILE, 'r') as csvfile:
                     'variableName': activity_schema_name,
                     'isAbout': activity_schema_name,
                     "prefLabel": {
-                    "en": activity_schema_name
+                    "en": activity_schema_name.replace("_"," ")
                     }
                 }
 
