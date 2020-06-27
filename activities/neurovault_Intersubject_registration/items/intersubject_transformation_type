@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Intersubject_registration/neurovault_Intersubject_registration_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "intersubject_transformation_type",
+    "prefLabel": "intersubject_transformation_type",
+    "schema:description": "intersubject_transformation_type",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Was linear or nonlinear registration used?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "linear",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "nonlinear",
+                "schema:value": 1,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

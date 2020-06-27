@@ -1,0 +1,34 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/",
+        "neurovault_Experimental_design": {
+            "@id": "activity_path:neurovault_Experimental_design/neurovault_Experimental_design_schema",
+            "@type": "@id"
+        },
+        "neurovault_Participants": {
+            "@id": "activity_path:neurovault_Participants/neurovault_Participants_schema",
+            "@type": "@id"
+        },
+        "neurovault_MRI_acquisition": {
+            "@id": "activity_path:neurovault_MRI_acquisition/neurovault_MRI_acquisition_schema",
+            "@type": "@id"
+        },
+        "neurovault_Preprocessing": {
+            "@id": "activity_path:neurovault_Preprocessing/neurovault_Preprocessing_schema",
+            "@type": "@id"
+        },
+        "neurovault_Intersubject_registration": {
+            "@id": "activity_path:neurovault_Intersubject_registration/neurovault_Intersubject_registration_schema",
+            "@type": "@id"
+        },
+        "neurovault_Individual_ subject_modeling": {
+            "@id": "activity_path:neurovault_Individual_ subject_modeling/neurovault_Individual_ subject_modeling_schema",
+            "@type": "@id"
+        },
+        "neurovault_Group_modeling": {
+            "@id": "activity_path:neurovault_Group_modeling/neurovault_Group_modeling_schema",
+            "@type": "@id"
+        }
+    }
+}

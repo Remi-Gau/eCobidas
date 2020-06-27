@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Experimental_design/neurovault_Experimental_design_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "length_of_trials",
+    "prefLabel": "length_of_trials",
+    "schema:description": "length_of_trials",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Length of individual trials in seconds"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

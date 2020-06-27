@@ -1,0 +1,71 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Experimental_design/neurovault_Experimental_design_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "neurovault_Experimental_design",
+    "skos:prefLabel": "neurovault_Experimental_design",
+    "schema:description": "neurovault_Experimental_design",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "type_of_design",
+            "number_of_imaging_runs",
+            "number_of_experimental_units",
+            "length_of_runs",
+            "length_of_blocks",
+            "length_of_trials",
+            "optimization",
+            "optimization_method"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "type_of_design",
+                "isAbout": "type_of_design",
+                "isVis": true
+            },
+            {
+                "variableName": "number_of_imaging_runs",
+                "isAbout": "number_of_imaging_runs",
+                "isVis": true
+            },
+            {
+                "variableName": "number_of_experimental_units",
+                "isAbout": "number_of_experimental_units",
+                "isVis": true
+            },
+            {
+                "variableName": "length_of_runs",
+                "isAbout": "length_of_runs",
+                "isVis": true
+            },
+            {
+                "variableName": "length_of_blocks",
+                "isAbout": "length_of_blocks",
+                "isVis": true
+            },
+            {
+                "variableName": "length_of_trials",
+                "isAbout": "length_of_trials",
+                "isVis": true
+            },
+            {
+                "variableName": "optimization",
+                "isAbout": "optimization",
+                "isVis": true
+            },
+            {
+                "variableName": "optimization_method",
+                "isAbout": "optimization_method",
+                "isVis": "optimization == 1"
+            }
+        ]
+    }
+}

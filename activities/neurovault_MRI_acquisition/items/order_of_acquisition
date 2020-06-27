@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_MRI_acquisition/neurovault_MRI_acquisition_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "order_of_acquisition",
+    "prefLabel": "order_of_acquisition",
+    "schema:description": "order_of_acquisition",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Order of acquisition of slices (ascending, descending, or interleaved)"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "ascending",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "descending",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "interleaved",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

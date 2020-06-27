@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Experimental_design/neurovault_Experimental_design_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "optimization_method",
+    "prefLabel": "optimization_method",
+    "schema:description": "optimization_method",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "What method was used for optimization?"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

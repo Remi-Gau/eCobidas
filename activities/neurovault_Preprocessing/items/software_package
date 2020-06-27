@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Preprocessing/neurovault_Preprocessing_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "software_package",
+    "prefLabel": "software_package",
+    "schema:description": "software_package",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "If a single software package was used for all analyses, specify that here"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "SPM",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "FSL",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Freesurfer",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Brain voyager",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

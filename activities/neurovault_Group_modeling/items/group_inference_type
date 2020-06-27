@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Group_modeling/neurovault_Group_modeling_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "group_inference_type",
+    "prefLabel": "group_inference_type",
+    "schema:description": "group_inference_type",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Type of inference for group model"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "random/mixed effects",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "fixed effects",
+                "schema:value": 1,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

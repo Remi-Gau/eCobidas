@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Group_modeling/neurovault_Group_modeling_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "group_model_multilevel",
+    "prefLabel": "group_model_multilevel",
+    "schema:description": "group_model_multilevel",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "If more than 2-levels, describe the levels and assumptions of the model (e.g. are variances assumed equal between groups)"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

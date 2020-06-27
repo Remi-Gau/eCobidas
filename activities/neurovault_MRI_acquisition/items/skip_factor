@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_MRI_acquisition/neurovault_MRI_acquisition_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "skip_factor",
+    "prefLabel": "skip_factor",
+    "schema:description": "skip_factor",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "The size of the skipped area between slices in millimeters"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

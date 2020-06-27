@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Experimental_design/neurovault_Experimental_design_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "number_of_imaging_runs",
+    "prefLabel": "number_of_imaging_runs",
+    "schema:description": "number_of_imaging_runs",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "Number of imaging runs acquired"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

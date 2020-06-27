@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Preprocessing/neurovault_Preprocessing_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "motion_correction_metric",
+    "prefLabel": "motion_correction_metric",
+    "schema:description": "motion_correction_metric",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Similarity metric used for motion correction"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "Mutual information",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Normalised mutual information",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Entropy correlation coefficient",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Normalised cross-correlation",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Individual_ subject_modeling/neurovault_Individual_ subject_modeling_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "intrasubject_estimation_type",
+    "prefLabel": "intrasubject_estimation_type",
+    "schema:description": "intrasubject_estimation_type",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Estimation method used for model"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "OLS",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "generalized least squares",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

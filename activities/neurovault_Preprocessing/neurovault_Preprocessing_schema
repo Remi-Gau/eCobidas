@@ -1,0 +1,107 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Preprocessing/neurovault_Preprocessing_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "neurovault_Preprocessing",
+    "skos:prefLabel": "neurovault_Preprocessing",
+    "schema:description": "neurovault_Preprocessing",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "software_package",
+            "software_version",
+            "order_of_preprocessing_operations",
+            "quality_control",
+            "used_b0_unwarping",
+            "b0_unwarping_software",
+            "used_slice_timing_correction",
+            "slice_timing_correction_software",
+            "used_motion_correction",
+            "motion_correction_software",
+            "motion_correction_reference",
+            "motion_correction_metric",
+            "motion_correction_interpolation",
+            "used_motion_susceptibiity_correction"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "software_package",
+                "isAbout": "software_package",
+                "isVis": true
+            },
+            {
+                "variableName": "software_version",
+                "isAbout": "software_version",
+                "isVis": true
+            },
+            {
+                "variableName": "order_of_preprocessing_operations",
+                "isAbout": "order_of_preprocessing_operations",
+                "isVis": true
+            },
+            {
+                "variableName": "quality_control",
+                "isAbout": "quality_control",
+                "isVis": true
+            },
+            {
+                "variableName": "used_b0_unwarping",
+                "isAbout": "used_b0_unwarping",
+                "isVis": true
+            },
+            {
+                "variableName": "b0_unwarping_software",
+                "isAbout": "b0_unwarping_software",
+                "isVis": "used_b0_unwarping == 1"
+            },
+            {
+                "variableName": "used_slice_timing_correction",
+                "isAbout": "used_slice_timing_correction",
+                "isVis": true
+            },
+            {
+                "variableName": "slice_timing_correction_software",
+                "isAbout": "slice_timing_correction_software",
+                "isVis": "used_slice_timing_correction  == 1"
+            },
+            {
+                "variableName": "used_motion_correction",
+                "isAbout": "used_motion_correction",
+                "isVis": true
+            },
+            {
+                "variableName": "motion_correction_software",
+                "isAbout": "motion_correction_software",
+                "isVis": "used_motion_correction  == 1"
+            },
+            {
+                "variableName": "motion_correction_reference",
+                "isAbout": "motion_correction_reference",
+                "isVis": "used_motion_correction  == 1"
+            },
+            {
+                "variableName": "motion_correction_metric",
+                "isAbout": "motion_correction_metric",
+                "isVis": "used_motion_correction  == 1"
+            },
+            {
+                "variableName": "motion_correction_interpolation",
+                "isAbout": "motion_correction_interpolation",
+                "isVis": "used_motion_correction  == 1"
+            },
+            {
+                "variableName": "used_motion_susceptibiity_correction",
+                "isAbout": "used_motion_susceptibiity_correction",
+                "isVis": true
+            }
+        ]
+    }
+}

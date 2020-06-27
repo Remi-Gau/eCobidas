@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Individual_ subject_modeling/neurovault_Individual_ subject_modeling_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "high_pass_filter_method",
+    "prefLabel": "high_pass_filter_method",
+    "schema:description": "high_pass_filter_method",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Describe method used for high pass filtering"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

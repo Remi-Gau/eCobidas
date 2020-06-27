@@ -1,0 +1,113 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Individual_ subject_modeling/neurovault_Individual_ subject_modeling_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "neurovault_Individual_ subject_modeling",
+    "skos:prefLabel": "neurovault_Individual_ subject_modeling",
+    "schema:description": "neurovault_Individual_ subject_modeling",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "intrasubject_model_type",
+            "intrasubject_estimation_type",
+            "intrasubject_modeling_software",
+            "hemodynamic_response_function",
+            "used_temporal_derivatives",
+            "used_dispersion_derivatives",
+            "used_motion_regressors",
+            "used_reaction_time_regressor",
+            "used_orthogonalization",
+            "orthogonalization_description",
+            "used_high_pass_filter",
+            "high_pass_filter_method",
+            "autocorrelation_model",
+            "contrast_definition",
+            "contrast_definition_cogatlas"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "intrasubject_model_type",
+                "isAbout": "intrasubject_model_type",
+                "isVis": true
+            },
+            {
+                "variableName": "intrasubject_estimation_type",
+                "isAbout": "intrasubject_estimation_type",
+                "isVis": true
+            },
+            {
+                "variableName": "intrasubject_modeling_software",
+                "isAbout": "intrasubject_modeling_software",
+                "isVis": true
+            },
+            {
+                "variableName": "hemodynamic_response_function",
+                "isAbout": "hemodynamic_response_function",
+                "isVis": true
+            },
+            {
+                "variableName": "used_temporal_derivatives",
+                "isAbout": "used_temporal_derivatives",
+                "isVis": true
+            },
+            {
+                "variableName": "used_dispersion_derivatives",
+                "isAbout": "used_dispersion_derivatives",
+                "isVis": true
+            },
+            {
+                "variableName": "used_motion_regressors",
+                "isAbout": "used_motion_regressors",
+                "isVis": true
+            },
+            {
+                "variableName": "used_reaction_time_regressor",
+                "isAbout": "used_reaction_time_regressor",
+                "isVis": true
+            },
+            {
+                "variableName": "used_orthogonalization",
+                "isAbout": "used_orthogonalization",
+                "isVis": true
+            },
+            {
+                "variableName": "orthogonalization_description",
+                "isAbout": "orthogonalization_description",
+                "isVis": "used_orthogonalization == 1"
+            },
+            {
+                "variableName": "used_high_pass_filter",
+                "isAbout": "used_high_pass_filter",
+                "isVis": true
+            },
+            {
+                "variableName": "high_pass_filter_method",
+                "isAbout": "high_pass_filter_method",
+                "isVis": "used_high_pass_filter == 1"
+            },
+            {
+                "variableName": "autocorrelation_model",
+                "isAbout": "autocorrelation_model",
+                "isVis": true
+            },
+            {
+                "variableName": "contrast_definition",
+                "isAbout": "contrast_definition",
+                "isVis": true
+            },
+            {
+                "variableName": "contrast_definition_cogatlas",
+                "isAbout": "contrast_definition_cogatlas",
+                "isVis": true
+            }
+        ]
+    }
+}

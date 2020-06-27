@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Individual_ subject_modeling/neurovault_Individual_ subject_modeling_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "contrast_definition_cogatlas",
+    "prefLabel": "contrast_definition_cogatlas",
+    "schema:description": "contrast_definition_cogatlas",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Link to Cognitive Atlas definition of this contrast"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}
