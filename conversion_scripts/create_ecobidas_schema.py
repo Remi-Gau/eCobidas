@@ -95,9 +95,8 @@ PROTOCOL_CONTEXT_JSON = {
 
 
 
+def define_activity_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file):
 
-def define_new_activity(REMOTE_REPO, BRANCH, activity_dir, REPRONIM_REPO, activity_context_file, activity_schema_name, PROTOCOL, SECTION, VERSION):
-    # define the base json content for the activity:
     context = {
         '@context': {
             '@version': 1.1,
@@ -106,12 +105,22 @@ def define_new_activity(REMOTE_REPO, BRANCH, activity_dir, REPRONIM_REPO, activi
             }
         }
 
+    at_context = [REPRONIM_REPO + 'contexts/generic',
+                 REMOTE_REPO + BRANCH + '/activities/'
+                 + activity_dir + '/'
+                 + activity_context_file
+                ]
+
+    return context, at_context
+
+
+
+def define_new_activity(at_context, activity_schema_name, PROTOCOL, SECTION, VERSION):
+
+    # define the base json content for the activity:
+
     schema = {
-        '@context': [REPRONIM_REPO + 'contexts/generic',
-                     REMOTE_REPO + BRANCH + '/activities/'
-                     + activity_dir + '/'
-                     + activity_context_file
-                    ],
+        '@context': at_context,
         '@type': 'reproschema:Activity',
         '@id': activity_schema_name,
         'skos:prefLabel': PROTOCOL + SECTION,
@@ -126,16 +135,16 @@ def define_new_activity(REMOTE_REPO, BRANCH, activity_dir, REPRONIM_REPO, activi
             'addProperties': [],
         }
     }
-    return context, schema
+    return schema
 
-def define_new_item(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file, item_name, question, VERSION):
+
+
+def define_new_item(at_context, item_name, question, VERSION):
+
     # define jsonld for this item
+
     schema = {
-        '@context': [REPRONIM_REPO + 'contexts/generic',
-                     REMOTE_REPO + BRANCH + '/activities/'
-                     + activity_dir + '/'
-                     + activity_context_file
-                    ],
+        '@context': at_context,
         '@type': 'reproschema:Field',
         '@id': item_name,
         'skos:prefLabel': item_name,
@@ -191,12 +200,18 @@ with open(INPUT_FILE, 'r') as csvfile:
                     os.makedirs(os.path.join(OUTPUT_DIR, 'activities',
                                              activity_dir, 'items'))
 
+                activity_context_json, activity_at_context = define_activity_context(REPRONIM_REPO,
+                                                                REMOTE_REPO,
+                                                                BRANCH, activity_dir,
+                                                                activity_context_file)
 
-                activity_context_json, activity_schema_json = define_new_activity(REMOTE_REPO, BRANCH, activity_dir, REPRONIM_REPO, activity_context_file, activity_schema_name, PROTOCOL, SECTION, VERSION)
+                activity_schema_json = define_new_activity(activity_at_context,
+                                            activity_schema_name,
+                                            PROTOCOL, SECTION, VERSION)
 
 
                 # update the content of the protool schema and context wrt this new activity
-                to_append_to_protocol_schema = {
+                append_to_protocol = {
                     'variableName': activity_schema_name,
                     'isAbout': activity_schema_name,
                     "prefLabel": {
@@ -251,7 +266,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
 
             # Create new item
-            item_schema = define_new_item(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file, item_name, question, VERSION)
+            item_schema_json = define_new_item(activity_at_context, item_name, question, VERSION)
 
             # now we define the answers for this item
             if row[RESPONSE_TYPE_COL]  == 'Boolean':
