@@ -29,7 +29,7 @@ REMOTE_REPO = 'https://raw.githubusercontent.com/Remi-Gau/reproschema/'
 # to which branch of reproschema the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: REMOTE_REPO + BRANCH_NAME
-BRANCH_NAME = 'eCOBIDAS'
+BRANCH_NAME = 'remi-test'
 
 REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
 
@@ -39,10 +39,19 @@ REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
 ## -----------------------------------------------------------------------------
 
 # activity set names
-PROTOCOL_SCHEMA_FILENAME = 'Cobidas_schema'
-PROTOCOL_CONTEXT_FILENAME = 'Cobidas_context'
-PROTOCOL_FOLDER_NAME = 'cobidas'
+PROTOCOL_NAME = 'cobidas_'
 
+# CSV column
+SECTION_COLUMN = 1
+ITEM_COLUMN = 2
+RESPONSE_TYPE_COLUMN = 4
+QUESTION_COLUMN = 3
+VISIBILITY_COLUMN = 6
+
+# protocol names
+PROTOCOL_SCHEMA_FILENAME = PROTOCOL_NAME + 'schema'
+PROTOCOL_CONTEXT_FILENAME = PROTOCOL_NAME +  'context'
+PROTOCOL_FOLDER_NAME = PROTOCOL_NAME[0:-1]
 
 # VERSION
 VERSION = '0.0.1'
@@ -60,9 +69,9 @@ PROTOCOL_SCHEMA_JSON = {
                  + PROTOCOL_CONTEXT_FILENAME
                 ],
     '@type': 'reproschema:Protocol',
-    '@id': 'cobidas_schema',
-    'skos:prefLabel': 'eCOBIDAS proof of concept',
-    'schema:description': 'neurovault as a COBIDAS checklist proof of concept',
+    '@id': PROTOCOL_SCHEMA_FILENAME,
+    'skos:prefLabel': PROTOCOL_SCHEMA_FILENAME,
+    'schema:description': PROTOCOL_SCHEMA_FILENAME,
     'schema:schemaVersion': VERSION,
     'schema:version': VERSION,
     'landingPage': REMOTE_REPO + BRANCH_NAME + '/protocols/README.md',
@@ -91,23 +100,23 @@ with open(INPUT_FILE, 'r') as csvfile:
     for row in PROTOCOL_METADATA:
 
         # to skip the header
-        if row[2] != 'Item':
+        if row[ITEM_COLUMN] != 'Item':
 
             # detect if this is a new SECTION if so it will create a new activity
-            if row[1] != SECTION:
+            if row[SECTION_COLUMN] != SECTION:
 
                 # update SECTION name
-                SECTION = row[1]
+                SECTION = row[SECTION_COLUMN]
 
                 # where the items of this SECTION will be stored
-                activity_folder_name = 'Cobidas' + SECTION
+                activity_folder_name = PROTOCOL_NAME + SECTION
 
                 # names of this SECTION schema and its corresponding jsonld files
-                activity_schema_name = 'Cobidas' + SECTION + '_schema'
+                activity_schema_name = PROTOCOL_NAME + SECTION + '_schema'
 
                 activity_schema_filename = activity_schema_name
 
-                activity_context_filename = 'Cobidas' + SECTION + '_context'
+                activity_context_filename = PROTOCOL_NAME + SECTION + '_context'
 
 
                 print(activity_schema_name)
@@ -142,8 +151,8 @@ with open(INPUT_FILE, 'r') as csvfile:
                                 ],
                     '@type': 'reproschema:Activity',
                     '@id': activity_schema_name,
-                    'skos:prefLabel': 'Cobidas' + SECTION,
-                    'schema:description': 'Cobidas' + SECTION,
+                    'skos:prefLabel': PROTOCOL_NAME + SECTION,
+                    'schema:description': PROTOCOL_NAME + SECTION,
                     'schema:schemaVersion': VERSION,
                     'schema:version': VERSION,
                     'variableMap': [],
@@ -170,26 +179,26 @@ with open(INPUT_FILE, 'r') as csvfile:
                     '@type': '@id'
                     }
 
-            print('   ' + row[2])
+            print('   ' + row[ITEM_COLUMN])
 
 
             # update the json content of the activity schema and context wrt this new item
-            protocol_context_json['@context'][row[2]] = {
-                '@id': 'item_path:' + row[2],
+            protocol_context_json['@context'][row[ITEM_COLUMN]] = {
+                '@id': 'item_path:' + row[ITEM_COLUMN],
                 '@type': '@id'
             }
 
-            protocol_schema_json['ui']['order'].append(row[2])
+            protocol_schema_json['ui']['order'].append(row[ITEM_COLUMN])
 
             protocol_schema_json['variableMap'].append(
-                {'variableName': row[2], 'isAbout': row[2]}
+                {'variableName': row[ITEM_COLUMN], 'isAbout': row[ITEM_COLUMN]}
                 )
 
             # branchic logic: visibility
-            if row[6] == '1':
-                protocol_schema_json['ui']['visibility'][row[2]] = True
+            if row[VISIBILITY_COLUMN] == '1':
+                protocol_schema_json['ui']['visibility'][row[ITEM_COLUMN]] = True
             else:
-                protocol_schema_json['ui']['visibility'][row[2]] = row[6] + ' === 1'
+                protocol_schema_json['ui']['visibility'][row[ITEM_COLUMN]] = row[VISIBILITY_COLUMN] + ' === 1'
 
 
 
@@ -211,16 +220,16 @@ with open(INPUT_FILE, 'r') as csvfile:
                              + activity_context_filename
                             ],
                 '@type': 'reproschema:Field',
-                '@id': row[2],
-                'skos:prefLabel': row[2],
-                'schema:description': row[2],
+                '@id': row[ITEM_COLUMN],
+                'skos:prefLabel': row[ITEM_COLUMN],
+                'schema:description': row[ITEM_COLUMN],
                 'schema:schemaVersion': VERSION,
                 'schema:version': VERSION,
-                'question': row[3],
+                'question': row[QUESTION_COLUMN],
             }
 
             # now we define the answers for this item
-            if row[4] == 'Boolean':
+            if row[RESPONSE_TYPE_COLUMN]  == 'Boolean':
 
                 item_json['ui'] = {
                     'inputType': 'radio'
@@ -245,10 +254,10 @@ with open(INPUT_FILE, 'r') as csvfile:
                 }
 
             # if we have multiple choices
-            elif row[4][0] == '[':
+            elif row[RESPONSE_TYPE_COLUMN][0] == '[':
 
                 # we get all the possible options and add them to the possible responses
-                options = row[4][1:-2].replace("'", "").split(',')
+                options = row[RESPONSE_TYPE_COLUMN][1:-2].replace("'", "").split(',')
 
                 item_json['ui'] = {
                     'inputType': 'select'
@@ -271,7 +280,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
 
             # response is some integer
-            elif row[4] == 'int':
+            elif row[RESPONSE_TYPE_COLUMN]  == 'int':
                 item_json['ui'] = {
                     'inputType': 'number'
                 }
@@ -281,7 +290,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
 
             # response is some float
-            elif row[4] == 'float':
+            elif row[RESPONSE_TYPE_COLUMN]  == 'float':
                 item_json['ui'] = {
                     'inputType': 'float'
                 }
@@ -291,7 +300,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
 
             # input requires some typed answer
-            elif row[4] == 'char':
+            elif row[RESPONSE_TYPE_COLUMN]  == 'char':
                 item_json['ui'] = {
                     'inputType': 'text'
                     }
@@ -309,7 +318,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
 
             # write item jsonld
-            with open(os.path.join(OUTPUT_DIR, 'activities', activity_folder_name, 'items', row[2]), 'w') as ff:
+            with open(os.path.join(OUTPUT_DIR, 'activities', activity_folder_name, 'items', row[ITEM_COLUMN]), 'w') as ff:
                 json.dump(item_json, ff, sort_keys=False, indent=4)
 
 
