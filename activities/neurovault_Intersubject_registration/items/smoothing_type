@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Intersubject_registration/neurovault_Intersubject_registration_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "smoothing_type",
+    "prefLabel": "smoothing_type",
+    "schema:description": "smoothing_type",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Describe the type of smoothing applied"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

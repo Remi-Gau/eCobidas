@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Intersubject_registration/neurovault_Intersubject_registration_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "resampled_voxel_size",
+    "prefLabel": "resampled_voxel_size",
+    "schema:description": "resampled_voxel_size",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Voxel size in mm of the resampled, atlas-space images"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

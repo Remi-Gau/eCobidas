@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Intersubject_registration/neurovault_Intersubject_registration_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "transform_similarity_metric",
+    "prefLabel": "transform_similarity_metric",
+    "schema:description": "transform_similarity_metric",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Similarity metric used for intersubject registration"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

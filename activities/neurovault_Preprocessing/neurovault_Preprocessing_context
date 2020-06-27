@@ -1,0 +1,62 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Preprocessing/items/",
+        "software_package": {
+            "@id": "item_path:software_package",
+            "@type": "@id"
+        },
+        "software_version": {
+            "@id": "item_path:software_version",
+            "@type": "@id"
+        },
+        "order_of_preprocessing_operations": {
+            "@id": "item_path:order_of_preprocessing_operations",
+            "@type": "@id"
+        },
+        "quality_control": {
+            "@id": "item_path:quality_control",
+            "@type": "@id"
+        },
+        "used_b0_unwarping": {
+            "@id": "item_path:used_b0_unwarping",
+            "@type": "@id"
+        },
+        "b0_unwarping_software": {
+            "@id": "item_path:b0_unwarping_software",
+            "@type": "@id"
+        },
+        "used_slice_timing_correction": {
+            "@id": "item_path:used_slice_timing_correction",
+            "@type": "@id"
+        },
+        "slice_timing_correction_software": {
+            "@id": "item_path:slice_timing_correction_software",
+            "@type": "@id"
+        },
+        "used_motion_correction": {
+            "@id": "item_path:used_motion_correction",
+            "@type": "@id"
+        },
+        "motion_correction_software": {
+            "@id": "item_path:motion_correction_software",
+            "@type": "@id"
+        },
+        "motion_correction_reference": {
+            "@id": "item_path:motion_correction_reference",
+            "@type": "@id"
+        },
+        "motion_correction_metric": {
+            "@id": "item_path:motion_correction_metric",
+            "@type": "@id"
+        },
+        "motion_correction_interpolation": {
+            "@id": "item_path:motion_correction_interpolation",
+            "@type": "@id"
+        },
+        "used_motion_susceptibiity_correction": {
+            "@id": "item_path:used_motion_susceptibiity_correction",
+            "@type": "@id"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Experimental_design/neurovault_Experimental_design_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "number_of_experimental_units",
+    "prefLabel": "number_of_experimental_units",
+    "schema:description": "number_of_experimental_units",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "Number of blocks, trials or experimental units per imaging run"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

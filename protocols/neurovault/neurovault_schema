@@ -1,0 +1,80 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/protocols/neurovault/neurovault_context"
+    ],
+    "@type": "reproschema:Protocol",
+    "@id": "neurovault_schema",
+    "prefLabel": "neurovault_schema",
+    "schema:description": "neurovault_schema",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "landingPage": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/protocols/neurovault/README.md",
+    "ui": {
+        "allow": [
+            "autoAdvance",
+            "allowExport"
+        ],
+        "shuffle": false,
+        "order": [
+            "neurovault_Experimental_design",
+            "neurovault_Participants",
+            "neurovault_MRI_acquisition",
+            "neurovault_Preprocessing",
+            "neurovault_Intersubject_registration",
+            "neurovault_Individual_ subject_modeling",
+            "neurovault_Group_modeling"
+        ],
+        "addProperties": [
+            {
+                "variableName": "neurovault_Experimental_design",
+                "isAbout": "neurovault_Experimental_design",
+                "prefLabel": {
+                    "en": "neurovault Experimental design"
+                }
+            },
+            {
+                "variableName": "neurovault_Participants",
+                "isAbout": "neurovault_Participants",
+                "prefLabel": {
+                    "en": "neurovault Participants"
+                }
+            },
+            {
+                "variableName": "neurovault_MRI_acquisition",
+                "isAbout": "neurovault_MRI_acquisition",
+                "prefLabel": {
+                    "en": "neurovault MRI acquisition"
+                }
+            },
+            {
+                "variableName": "neurovault_Preprocessing",
+                "isAbout": "neurovault_Preprocessing",
+                "prefLabel": {
+                    "en": "neurovault Preprocessing"
+                }
+            },
+            {
+                "variableName": "neurovault_Intersubject_registration",
+                "isAbout": "neurovault_Intersubject_registration",
+                "prefLabel": {
+                    "en": "neurovault Intersubject registration"
+                }
+            },
+            {
+                "variableName": "neurovault_Individual_ subject_modeling",
+                "isAbout": "neurovault_Individual_ subject_modeling",
+                "prefLabel": {
+                    "en": "neurovault Individual  subject modeling"
+                }
+            },
+            {
+                "variableName": "neurovault_Group_modeling",
+                "isAbout": "neurovault_Group_modeling",
+                "prefLabel": {
+                    "en": "neurovault Group modeling"
+                }
+            }
+        ]
+    }
+}

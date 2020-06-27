@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_MRI_acquisition/neurovault_MRI_acquisition_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "echo_time",
+    "prefLabel": "echo_time",
+    "schema:description": "echo_time",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Echo time (TE) in milliseconds"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

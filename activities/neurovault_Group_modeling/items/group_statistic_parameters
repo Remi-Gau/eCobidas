@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Group_modeling/neurovault_Group_modeling_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "group_statistic_parameters",
+    "prefLabel": "group_statistic_parameters",
+    "schema:description": "group_statistic_parameters",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Parameters of the null distribution of the test statisic, typically degrees of freedom (should be clear from the test statistic what these are)."
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

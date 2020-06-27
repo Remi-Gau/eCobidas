@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_MRI_acquisition/neurovault_MRI_acquisition_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "field_of_view",
+    "prefLabel": "field_of_view",
+    "schema:description": "field_of_view",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Imaging field of view in millimeters"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

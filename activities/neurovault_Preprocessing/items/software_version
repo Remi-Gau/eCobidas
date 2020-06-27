@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Preprocessing/neurovault_Preprocessing_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "software_version",
+    "prefLabel": "software_version",
+    "schema:description": "software_version",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Version of software package used"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

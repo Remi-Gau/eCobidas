@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Experimental_design/neurovault_Experimental_design_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "length_of_runs",
+    "prefLabel": "length_of_runs",
+    "schema:description": "length_of_runs",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Length of each imaging run in seconds"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Experimental_design/items/",
+        "type_of_design": {
+            "@id": "item_path:type_of_design",
+            "@type": "@id"
+        },
+        "number_of_imaging_runs": {
+            "@id": "item_path:number_of_imaging_runs",
+            "@type": "@id"
+        },
+        "number_of_experimental_units": {
+            "@id": "item_path:number_of_experimental_units",
+            "@type": "@id"
+        },
+        "length_of_runs": {
+            "@id": "item_path:length_of_runs",
+            "@type": "@id"
+        },
+        "length_of_blocks": {
+            "@id": "item_path:length_of_blocks",
+            "@type": "@id"
+        },
+        "length_of_trials": {
+            "@id": "item_path:length_of_trials",
+            "@type": "@id"
+        },
+        "optimization": {
+            "@id": "item_path:optimization",
+            "@type": "@id"
+        },
+        "optimization_method": {
+            "@id": "item_path:optimization_method",
+            "@type": "@id"
+        }
+    }
+}

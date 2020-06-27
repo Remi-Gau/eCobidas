@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Participants/neurovault_Participants_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "number_of_rejected_subjects",
+    "prefLabel": "number_of_rejected_subjects",
+    "schema:description": "number_of_rejected_subjects",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "Number of subjects scanned but rejected from analysis"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

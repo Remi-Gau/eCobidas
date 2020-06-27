@@ -1,0 +1,42 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_MRI_acquisition/neurovault_MRI_acquisition_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "acquisition_orientation",
+    "prefLabel": "acquisition_orientation",
+    "schema:description": "acquisition_orientation",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "The orientation of slices"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "axial",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "sagittal",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "frontal",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}
