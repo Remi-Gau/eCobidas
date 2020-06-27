@@ -1,4 +1,4 @@
-Source,Form Name,Variable / Field Name,Field Label,Field Type,"Choices, Calculations, OR Slider Labels","Priority (1=required, 2=recommended,3=optional)",Branching Logic (Show field only if...)
+Source,Section,Item,Field Label,Field Type,"Choices, Calculations, OR Slider Labels","Priority (1=required, 2=recommended,3=optional)",Branching Logic (Show field only if...)
 fmrimethods.org,ExperimentalDesign,type_of_design,"Blocked, event-related, hybrid, or other",dropdown,"0, blocked | 1, event_related | 2, hybrid block/event | 3, Other",1,1
 fmrimethods.org,ExperimentalDesign,number_of_imaging_runs,Number of imaging runs acquired,int,,2,1
 fmrimethods.org,ExperimentalDesign,number_of_experimental_units,"Number of blocks, trials or experimental units per imaging run",int,,2,1
