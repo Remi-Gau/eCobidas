@@ -147,11 +147,14 @@ def define_new_item(at_context, item_name, question, VERSION):
         '@context': at_context,
         '@type': 'reproschema:Field',
         '@id': item_name,
-        'skos:prefLabel': item_name,
+        'prefLabel': item_name,
         'schema:description': item_name,
         'schema:schemaVersion': VERSION,
         'schema:version': VERSION,
-        'question': question,
+        'ui': {},
+        'question': {
+            'en': question
+            },
     }
     return schema
 
@@ -166,9 +169,22 @@ with open(INPUT_FILE, 'r') as csvfile:
         # to skip the header
         if row[ITEM_COL] != 'Item':
 
+
+
             item_name = row[ITEM_COL]
 
             question = row[QUESTION_COL]
+
+            # branchic logic: visibility
+            if row[VISIBILITY_COL] == '1':
+                visibility = True
+            else:
+                visibility = row[VISIBILITY_COL] + ' === 1'
+
+            response_type = row[RESPONSE_TYPE_COL]
+
+            response_choices = row[CHOICE_COL][1:-2].replace("'", "").split(',')
+
 
             # detect if this is a new SECTION if so it will create a new activity
             if row[SECTION_COL] != SECTION:
@@ -220,7 +236,7 @@ with open(INPUT_FILE, 'r') as csvfile:
                 }
 
                 PROTOCOL_SCHEMA_JSON['ui']['order'].append(activity_schema_name)
-                PROTOCOL_SCHEMA_JSON['ui']['addProperties'].append(to_append_to_protocol_schema)
+                PROTOCOL_SCHEMA_JSON['ui']['addProperties'].append(append_to_protocol)
 
                 PROTOCOL_CONTEXT_JSON['@context'][activity_schema_name] = {
                     '@id': 'activity_path:' + activity_dir + '/' + activity_schema_file,
@@ -228,25 +244,19 @@ with open(INPUT_FILE, 'r') as csvfile:
                     }
 
 
-            print('   ' + row[ITEM_COL])
+            print('   ' + item_name)
 
 
             # update the json content of the activity schema and context wrt this new item
 
-            # branchic logic: visibility
-            if row[VISIBILITY_COL] == '1':
-                visibility = True
-            else:
-                visibility = row[VISIBILITY_COL] + ' === 1'
-
-            to_append_to_activity_schema = {
+            append_to_activity = {
                 'variableName': item_name,
                 'isAbout': item_name,
                 "isVis": visibility
             }
 
             activity_schema_json['ui']['order'].append(item_name)
-            activity_schema_json['ui']['addProperties'].append(to_append_to_activity_schema)
+            activity_schema_json['ui']['addProperties'].append(append_to_activity)
 
             activity_context_json['@context'][item_name] = {
                 '@id': 'item_path:' + item_name,
@@ -269,97 +279,73 @@ with open(INPUT_FILE, 'r') as csvfile:
             item_schema_json = define_new_item(activity_at_context, item_name, question, VERSION)
 
             # now we define the answers for this item
-            if row[RESPONSE_TYPE_COL]  == 'Boolean':
-
-                item_schema['ui'] = {
-                    'inputType': 'radio'
-                }
-                item_schema['responseOptions'] = {
-                    '@type': 'xsd:anyURI',
+            if response_type  == 'boolean':
+                inputType = {'inputType': 'radio'}
+                responseOptions = {
                     'multipleChoice': False,
-                    'minValue': 0,
-                    'maxValue': 1,
                     'choices': [
                         {
-                            '@type': 'Boolean',
-                            'name': 'no',
-                            'value': 0,
+                            'schema:value': 0,
+                            'schema:name': 'No',
+                            '@type': 'schema:option'
                         },
                         {
-                            '@type': 'Boolean',
-                            'name': 'yes',
-                            'value': 1,
+                            'schema:value': 1,
+                            'schema:name': 'Yes',
+                            '@type': 'schema:option'
+                        },
+                        {
+                            'schema:value': 9,
+                            'schema:name': 'Unknown',
+                            '@type': 'schema:option'
                         }
                     ]
                 }
 
             # if we have multiple choices
-            elif row[RESPONSE_TYPE_COL][0] == '[':
+            elif response_type == 'dropdown':
+                inputType = {'inputType': 'select'}
 
-                # we get all the possible options and add them to the possible responses
-                options = row[RESPONSE_TYPE_COL][1:-2].replace("'", "").split(',')
-
-                item_schema['ui'] = {
-                    'inputType': 'select'
-                    }
-
-                item_schema['responseOptions'] = {
-                    "dataType": "xsd:string",
-                    'multipleChoice': True,
-                    'minValue': 0,
-                    'maxValue': len(options)-1,
+                responseOptions = {
                     'choices': []
                     }
 
-                for i, opt in enumerate(options):
+                for i, opt in enumerate(response_choices):
 
-                    item_schema['responseOptions']['choices'].append({
-                        'name': {'en': opt},
-                        'value': i,
+                    responseOptions['choices'].append({
+                        'schema:name': opt,
+                        'schema:value': i,
+                        '@type': 'schema:option'
                         })
 
 
             # response is some integer
-            elif row[RESPONSE_TYPE_COL]  == 'int':
-                item_schema['ui'] = {
-                    'inputType': 'number'
-                }
-                item_schema['responseOptions'] = {
-                    'type': 'xsd:integer',
-                }
-
+            elif response_type  == 'int':
+                inputType = {'inputType': 'number'}
+                responseOptions = {'valueType': 'xsd:integer'}
 
             # response is some float
-            elif row[RESPONSE_TYPE_COL]  == 'float':
-                item_schema['ui'] = {
-                    'inputType': 'float'
-                }
-                item_schema['responseOptions'] = {
-                    'type': 'xsd:float',
-                }
-
+            elif response_type  == 'float':
+                inputType = {'inputType': 'float'}
+                responseOptions = {'valueType': 'xsd:float'}
 
             # input requires some typed answer
-            elif row[RESPONSE_TYPE_COL]  == 'char':
-                item_schema['ui'] = {
-                    'inputType': 'text'
-                    }
-                item_schema['responseOptions'] = {
-                    'type': 'xsd:string'
-                    }
+            elif response_type  == 'char':
+                inputType = {'inputType': 'text'}
+                responseOptions = {'type': 'xsd:string'}
 
             else:
-                item_schema['ui'] = {
-                    'inputType': 'text'
-                    }
-                item_schema['responseOptions'] = {
-                    'type': 'xsd:string'
-                    }
+                inputType = {'inputType': 'text'}
+                responseOptions = {'type': 'xsd:string'}
+
+
+            item_schema_json['ui'] = inputType
+            item_schema_json['responseOptions'] = responseOptions
 
 
             # write item schema
             with open(os.path.join(OUTPUT_DIR, 'activities', activity_dir, 'items', row[ITEM_COL]), 'w') as ff:
-                json.dump(item_schema, ff, sort_keys=False, indent=4)
+                json.dump(item_schema_json, ff, sort_keys=False, indent=4)
 
 
 # write activity set jsonld
