@@ -93,6 +93,60 @@ PROTOCOL_CONTEXT_JSON = {
 }
 
 
+
+
+def define_new_activity(REMOTE_REPO, BRANCH, activity_dir, REPRONIM_REPO, activity_context_file, activity_schema_name, PROTOCOL, SECTION, VERSION):
+    # define the base json content for the activity:
+    context = {
+        '@context': {
+            '@version': 1.1,
+            'item_path': REMOTE_REPO + BRANCH + '/activities/'
+                         + activity_dir + '/items/',
+            }
+        }
+
+    schema = {
+        '@context': [REPRONIM_REPO + 'contexts/generic',
+                     REMOTE_REPO + BRANCH + '/activities/'
+                     + activity_dir + '/'
+                     + activity_context_file
+                    ],
+        '@type': 'reproschema:Activity',
+        '@id': activity_schema_name,
+        'skos:prefLabel': PROTOCOL + SECTION,
+        'schema:description': PROTOCOL + SECTION,
+        'schema:schemaVersion': VERSION,
+        'schema:version': VERSION,
+        'preamble': ' ',
+        'ui': {
+            'order': [],
+            'shuffle': False,
+            'allow': ["skipped"],
+            'addProperties': [],
+        }
+    }
+    return context, schema
+
+def define_new_item(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file, item_name, question, VERSION):
+    # define jsonld for this item
+    schema = {
+        '@context': [REPRONIM_REPO + 'contexts/generic',
+                     REMOTE_REPO + BRANCH + '/activities/'
+                     + activity_dir + '/'
+                     + activity_context_file
+                    ],
+        '@type': 'reproschema:Field',
+        '@id': item_name,
+        'skos:prefLabel': item_name,
+        'schema:description': item_name,
+        'schema:schemaVersion': VERSION,
+        'schema:version': VERSION,
+        'question': question,
+    }
+    return schema
+
+
+
 SECTION = ''
 # loop through rows of the csv file and create corresponding jsonld for each item
 with open(INPUT_FILE, 'r') as csvfile:
@@ -132,16 +186,7 @@ with open(INPUT_FILE, 'r') as csvfile:
                                              activity_folder_name, 'items'))
 
 
-                # define the base json content for the activity:
-                # neurovault_schema.jsonld
-                # neurovault_context.jsonld
-                protocol_context_json = {
-                    '@context': {
-                        '@version': 1.1,
-                        'item_path': REMOTE_REPO + BRANCH_NAME + '/activities/'
-                                     + activity_folder_name + '/items/',
-                        }
-                    }
+                activity_context_json, activity_schema_json = define_new_activity(REMOTE_REPO, BRANCH, activity_dir, REPRONIM_REPO, activity_context_file, activity_schema_name, PROTOCOL, SECTION, VERSION)
 
                 protocol_schema_json = {
                     '@context': [REPRONIM_REPO + 'contexts/generic',
@@ -212,21 +257,8 @@ with open(INPUT_FILE, 'r') as csvfile:
                 json.dump(protocol_context_json, ff, sort_keys=False, indent=4)
 
 
-            # define jsonld for this item
-            item_json = {
-                '@context': [REPRONIM_REPO + 'contexts/generic',
-                             REMOTE_REPO + BRANCH_NAME + '/activities/'
-                             + activity_folder_name + '/'
-                             + activity_context_filename
-                            ],
-                '@type': 'reproschema:Field',
-                '@id': row[ITEM_COLUMN],
-                'skos:prefLabel': row[ITEM_COLUMN],
-                'schema:description': row[ITEM_COLUMN],
-                'schema:schemaVersion': VERSION,
-                'schema:version': VERSION,
-                'question': row[QUESTION_COLUMN],
-            }
+            # Create new item
+            item_schema = define_new_item(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file, item_name, question, VERSION)
 
             # now we define the answers for this item
             if row[RESPONSE_TYPE_COLUMN]  == 'Boolean':
