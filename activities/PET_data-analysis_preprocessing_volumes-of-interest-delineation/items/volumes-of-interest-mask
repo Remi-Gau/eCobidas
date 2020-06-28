@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "volumes-of-interest-mask",
+    "prefLabel": "volumes-of-interest-mask",
+    "schema:description": "volumes-of-interest-mask",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Volumes of interest mask"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

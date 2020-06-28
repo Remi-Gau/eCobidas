@@ -1,0 +1,40 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiotracer/PET_radioligand_radiotracer_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "tracer-radionuclide",
+    "prefLabel": "tracer-radionuclide",
+    "schema:description": "tracer-radionuclide",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Tracer radionuclide"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "carbon-11",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "fluorine-18",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

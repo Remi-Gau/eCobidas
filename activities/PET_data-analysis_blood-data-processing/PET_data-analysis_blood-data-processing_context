@@ -1,0 +1,34 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_blood-data-processing/items/",
+        "sampling-method": {
+            "@id": "item_path:sampling-method",
+            "@type": "@id"
+        },
+        "delay-time-correction": {
+            "@id": "item_path:delay-time-correction",
+            "@type": "@id"
+        },
+        "dispersion-correction": {
+            "@id": "item_path:dispersion-correction",
+            "@type": "@id"
+        },
+        "metabolite-correction": {
+            "@id": "item_path:metabolite-correction",
+            "@type": "@id"
+        },
+        "fitting": {
+            "@id": "item_path:fitting",
+            "@type": "@id"
+        },
+        "fitting-description": {
+            "@id": "item_path:fitting-description",
+            "@type": "@id"
+        },
+        "blood-data-processing-interpolation": {
+            "@id": "item_path:blood-data-processing-interpolation",
+            "@type": "@id"
+        }
+    }
+}

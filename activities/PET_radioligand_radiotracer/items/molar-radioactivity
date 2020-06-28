@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiotracer/PET_radioligand_radiotracer_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "molar-radioactivity",
+    "prefLabel": "molar-radioactivity",
+    "schema:description": "molar-radioactivity",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Molar radioactivity"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_plasma/PET_radioligand_plasma_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "data:-labels",
+    "prefLabel": "data:-labels",
+    "schema:description": "data:-labels",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Data: labels"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "sampleStartTime",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "sampleDuration",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "activity",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "activitySD",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

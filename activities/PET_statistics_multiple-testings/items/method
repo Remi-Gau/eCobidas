@@ -1,0 +1,70 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_multiple-testings/PET_statistics_multiple-testings_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "method",
+    "prefLabel": "method",
+    "schema:description": "method",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Method"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "Familywise Error: Random Field Theory",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": " Familywise Error: Permutation",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": " Familywise Error: Monte Carlo",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": " Familywise Error: Bonferroni",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "False Discovery Rate: Benjamini & Hochberg",
+                "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "False Discovery Rate: Positive FDR",
+                "schema:value": 5,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "False Discovery Rate: Local FDR",
+                "schema:value": 6,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "False Discovery Rate: Cluster-level FDR",
+                "schema:value": 7,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "None/Uncorrected",
+                "schema:value": 8,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

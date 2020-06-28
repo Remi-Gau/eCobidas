@@ -1,0 +1,50 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "outcome-measure",
+    "prefLabel": "outcome-measure",
+    "schema:description": "outcome-measure",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Outcome measure"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "BPND",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "K1",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "k2",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "R1",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

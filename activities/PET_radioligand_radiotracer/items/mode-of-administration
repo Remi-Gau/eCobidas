@@ -1,0 +1,45 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiotracer/PET_radioligand_radiotracer_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "mode-of-administration",
+    "prefLabel": "mode-of-administration",
+    "schema:description": "mode-of-administration",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Mode of administration"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "bolus",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "infusion",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "bolus-infusion ",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

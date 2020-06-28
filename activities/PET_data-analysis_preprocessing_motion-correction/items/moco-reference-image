@@ -1,0 +1,35 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_motion-correction/PET_data-analysis_preprocessing_motion-correction_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "moco-reference-image",
+    "prefLabel": "moco-reference-image",
+    "schema:description": "moco-reference-image",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "MoCo reference image"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "Summed PET image",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 1,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

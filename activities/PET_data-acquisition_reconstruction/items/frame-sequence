@@ -1,0 +1,65 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "frame-sequence",
+    "prefLabel": "frame-sequence",
+    "schema:description": "frame-sequence",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Frame-Sequence"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "6x10",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "3x20",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "6x30",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "5x60",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "5x120",
+                "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "8x300",
+                "schema:value": 5,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "3x600 (36 frames)",
+                "schema:value": 6,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 7,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

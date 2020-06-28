@@ -1,0 +1,65 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "PET_data-analysis_blood-data-processing",
+    "skos:prefLabel": "PET_data-analysis_blood-data-processing",
+    "schema:description": "PET_data-analysis_blood-data-processing",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "sampling-method",
+            "delay-time-correction",
+            "dispersion-correction",
+            "metabolite-correction",
+            "fitting",
+            "fitting-description",
+            "blood-data-processing-interpolation"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "sampling-method",
+                "isAbout": "sampling-method",
+                "isVis": ""
+            },
+            {
+                "variableName": "delay-time-correction",
+                "isAbout": "delay-time-correction",
+                "isVis": ""
+            },
+            {
+                "variableName": "dispersion-correction",
+                "isAbout": "dispersion-correction",
+                "isVis": ""
+            },
+            {
+                "variableName": "metabolite-correction",
+                "isAbout": "metabolite-correction",
+                "isVis": ""
+            },
+            {
+                "variableName": "fitting",
+                "isAbout": "fitting",
+                "isVis": ""
+            },
+            {
+                "variableName": "fitting-description",
+                "isAbout": "fitting-description",
+                "isVis": "fitting-description == 1"
+            },
+            {
+                "variableName": "blood-data-processing-interpolation",
+                "isAbout": "blood-data-processing-interpolation",
+                "isVis": ""
+            }
+        ]
+    }
+}

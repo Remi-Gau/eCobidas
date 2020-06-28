@@ -1,0 +1,40 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiotracer/PET_radioligand_radiotracer_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "specific-radioactivity-units",
+    "prefLabel": "specific-radioactivity-units",
+    "schema:description": "specific-radioactivity-units",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Specific radioactivity units"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "Bq/g",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "GBq/mg",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

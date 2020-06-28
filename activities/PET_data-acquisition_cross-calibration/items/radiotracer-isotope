@@ -1,0 +1,40 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "radiotracer-isotope",
+    "prefLabel": "radiotracer-isotope",
+    "schema:description": "radiotracer-isotope",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Radiotracer-isotope"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "carbon-11",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "fluorine-18",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

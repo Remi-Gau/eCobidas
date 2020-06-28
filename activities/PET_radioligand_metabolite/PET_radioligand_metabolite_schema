@@ -1,0 +1,71 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_metabolite/PET_radioligand_metabolite_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "PET_radioligand_metabolite",
+    "skos:prefLabel": "PET_radioligand_metabolite",
+    "schema:description": "PET_radioligand_metabolite",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "radiolabeled-parent-compound-fraction",
+            "data:labels",
+            "parent-fraction-units",
+            "parent-fraction-measurement-error",
+            "metabolite-analysis-timepoints",
+            "fraction-of-radiometabolite-needing-quantitation",
+            "error-on-above-measurement",
+            "radiolabeled-metabolite-fractions"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "radiolabeled-parent-compound-fraction",
+                "isAbout": "radiolabeled-parent-compound-fraction",
+                "isVis": ""
+            },
+            {
+                "variableName": "data:labels",
+                "isAbout": "data:labels",
+                "isVis": ""
+            },
+            {
+                "variableName": "parent-fraction-units",
+                "isAbout": "parent-fraction-units",
+                "isVis": ""
+            },
+            {
+                "variableName": "parent-fraction-measurement-error",
+                "isAbout": "parent-fraction-measurement-error",
+                "isVis": ""
+            },
+            {
+                "variableName": "metabolite-analysis-timepoints",
+                "isAbout": "metabolite-analysis-timepoints",
+                "isVis": ""
+            },
+            {
+                "variableName": "fraction-of-radiometabolite-needing-quantitation",
+                "isAbout": "fraction-of-radiometabolite-needing-quantitation",
+                "isVis": ""
+            },
+            {
+                "variableName": "error-on-above-measurement",
+                "isAbout": "error-on-above-measurement",
+                "isVis": ""
+            },
+            {
+                "variableName": "radiolabeled-metabolite-fractions",
+                "isAbout": "radiolabeled-metabolite-fractions",
+                "isVis": ""
+            }
+        ]
+    }
+}

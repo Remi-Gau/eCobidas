@@ -1,0 +1,59 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_motion-correction/PET_data-analysis_preprocessing_motion-correction_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "PET_data-analysis_preprocessing_motion-correction",
+    "skos:prefLabel": "PET_data-analysis_preprocessing_motion-correction",
+    "schema:description": "PET_data-analysis_preprocessing_motion-correction",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "moco-reference-image",
+            "moco-cost-function",
+            "moco-interpolation",
+            "moco-smoothing",
+            "moco-quality-control",
+            "moco-software"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "moco-reference-image",
+                "isAbout": "moco-reference-image",
+                "isVis": ""
+            },
+            {
+                "variableName": "moco-cost-function",
+                "isAbout": "moco-cost-function",
+                "isVis": ""
+            },
+            {
+                "variableName": "moco-interpolation",
+                "isAbout": "moco-interpolation",
+                "isVis": ""
+            },
+            {
+                "variableName": "moco-smoothing",
+                "isAbout": "moco-smoothing",
+                "isVis": ""
+            },
+            {
+                "variableName": "moco-quality-control",
+                "isAbout": "moco-quality-control",
+                "isVis": ""
+            },
+            {
+                "variableName": "moco-software",
+                "isAbout": "moco-software",
+                "isVis": ""
+            }
+        ]
+    }
+}

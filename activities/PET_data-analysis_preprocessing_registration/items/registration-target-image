@@ -1,0 +1,35 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "registration-target-image",
+    "prefLabel": "registration-target-image",
+    "schema:description": "registration-target-image",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Registration target image"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "Summed PET Image",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 1,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

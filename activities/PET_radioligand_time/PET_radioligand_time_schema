@@ -1,0 +1,83 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_time/PET_radioligand_time_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "PET_radioligand_time",
+    "skos:prefLabel": "PET_radioligand_time",
+    "schema:description": "PET_radioligand_time",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "date-of-scan",
+            "scan-start",
+            "scan-start-units",
+            "injection-start",
+            "injection-start-units",
+            "injection-end",
+            "injection-end-units",
+            "frame-times:-labels",
+            "frame-times:-units",
+            "frame-times:-values"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "date-of-scan",
+                "isAbout": "date-of-scan",
+                "isVis": ""
+            },
+            {
+                "variableName": "scan-start",
+                "isAbout": "scan-start",
+                "isVis": ""
+            },
+            {
+                "variableName": "scan-start-units",
+                "isAbout": "scan-start-units",
+                "isVis": ""
+            },
+            {
+                "variableName": "injection-start",
+                "isAbout": "injection-start",
+                "isVis": ""
+            },
+            {
+                "variableName": "injection-start-units",
+                "isAbout": "injection-start-units",
+                "isVis": ""
+            },
+            {
+                "variableName": "injection-end",
+                "isAbout": "injection-end",
+                "isVis": ""
+            },
+            {
+                "variableName": "injection-end-units",
+                "isAbout": "injection-end-units",
+                "isVis": ""
+            },
+            {
+                "variableName": "frame-times:-labels",
+                "isAbout": "frame-times:-labels",
+                "isVis": ""
+            },
+            {
+                "variableName": "frame-times:-units",
+                "isAbout": "frame-times:-units",
+                "isVis": ""
+            },
+            {
+                "variableName": "frame-times:-values",
+                "isAbout": "frame-times:-values",
+                "isVis": ""
+            }
+        ]
+    }
+}

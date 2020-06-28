@@ -1,0 +1,45 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiotracer/PET_radioligand_radiotracer_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "moles-tracer-injected-units",
+    "prefLabel": "moles-tracer-injected-units",
+    "schema:description": "moles-tracer-injected-units",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Moles tracer injected units"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "moles",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "micromoles",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "nanomoles",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

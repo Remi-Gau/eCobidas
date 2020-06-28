@@ -1,0 +1,77 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
+    "skos:prefLabel": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
+    "schema:description": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "volumes-of-interest-obtained-from",
+            "volumes-of-interest-operational-criteria",
+            "volumes-of-interest-mask",
+            "volumes-of-interest-procedure",
+            "volumes-of-interest",
+            "volumes-of-interest-software",
+            "partial-volume-correction-technique",
+            "partial-volume-correction-assumptions",
+            "partial-volume-correction-software"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "volumes-of-interest-obtained-from",
+                "isAbout": "volumes-of-interest-obtained-from",
+                "isVis": ""
+            },
+            {
+                "variableName": "volumes-of-interest-operational-criteria",
+                "isAbout": "volumes-of-interest-operational-criteria",
+                "isVis": ""
+            },
+            {
+                "variableName": "volumes-of-interest-mask",
+                "isAbout": "volumes-of-interest-mask",
+                "isVis": ""
+            },
+            {
+                "variableName": "volumes-of-interest-procedure",
+                "isAbout": "volumes-of-interest-procedure",
+                "isVis": ""
+            },
+            {
+                "variableName": "volumes-of-interest",
+                "isAbout": "volumes-of-interest",
+                "isVis": ""
+            },
+            {
+                "variableName": "volumes-of-interest-software",
+                "isAbout": "volumes-of-interest-software",
+                "isVis": ""
+            },
+            {
+                "variableName": "partial-volume-correction-technique",
+                "isAbout": "partial-volume-correction-technique",
+                "isVis": ""
+            },
+            {
+                "variableName": "partial-volume-correction-assumptions",
+                "isAbout": "partial-volume-correction-assumptions",
+                "isVis": ""
+            },
+            {
+                "variableName": "partial-volume-correction-software",
+                "isAbout": "partial-volume-correction-software",
+                "isVis": ""
+            }
+        ]
+    }
+}

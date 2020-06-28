@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_power-analysis/PET_statistics_power-analysis_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "number-of-subjects-needed",
+    "prefLabel": "number-of-subjects-needed",
+    "schema:description": "number-of-subjects-needed",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "number"
+    },
+    "question": {
+        "en": "Number of Subjects Needed"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

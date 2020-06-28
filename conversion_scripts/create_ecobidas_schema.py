@@ -1,11 +1,13 @@
+import json
+import os
+import csv
+
 # This script takes the content of the a csv file and turns it into a reproschema
 # protocol.
 # This scripts loops through the items of the csv and creates a new reproschema
 # activity with every new checklist "section" it encouters: this new activity
 # will be added to the protocol.
 # Every new item encountered is added to the current activity.
-#
-#
 
 # -----------------------------------------------------------------------------
 #                                   TO DO
@@ -14,25 +16,19 @@
 # - automate the choice of from radio to dropdown menu if the number of
 # response_choices goes above a certain number
 # - allow for several condition checks for visibility
-#
-# -----------------------------------------------------------------------------
-# -----------------------------------------------------------------------------
-# -----------------------------------------------------------------------------
-
-import json
-import os
-import csv
-
+# - allow for mandatory items
 
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS
 # -----------------------------------------------------------------------------
 # modify the following lines to match your needs
 
-# where the metadata from neurovault are described. It is in xlsx dir of this repos
+# where the checklist csv is. It is in xlsx dir of this repo
 # but it can also be downloaded from here:
-# https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv
-INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
+# https://github.com/NeuroVault/NeuroVault/blob/master/xlsx/
+
+# INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
+INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv'
 
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the reproschema will be hosted
@@ -45,21 +41,38 @@ REMOTE_REPO = 'https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/'
 # to which branch of reproschema the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: REMOTE_REPO + BRANCH
-BRANCH = 'neurovault'
+# BRANCH = 'master'
+# BRANCH = 'neurovault'
+BRANCH = 'PET'
 
 REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
 
 # Protocol name
-PROTOCOL = 'neurovault_'
+# PROTOCOL = 'neurovault_'
+PROTOCOL = 'PET_'
 
 # CSV column
-SECTION_COL = 1
-ITEM_COL = 2
-QUESTION_COL = 3
-RESPONSE_TYPE_COL = 4
-CHOICE_COL = 5
-MANDATORY_COL = 6
-VISIBILITY_COL = 7
+# --------------------
+# Neurovaut
+# SECTION_COL = 1
+# ITEM_COL = 2
+# QUESTION_COL = 3
+# RESPONSE_TYPE_COL = 4
+# CHOICE_COL = 5
+# MANDATORY_COL = 6
+# VISIBILITY_COL = 7
+# --------------------
+
+# --------------------
+# PET
+SECTION_COL = 4
+ITEM_COL = 5
+QUESTION_COL = 7
+RESPONSE_TYPE_COL = 9
+CHOICE_COL = 10
+MANDATORY_COL = 11
+VISIBILITY_COL = 12
+# --------------------
 
 # VERSION
 VERSION = '0.0.1'
@@ -67,6 +80,7 @@ VERSION = '0.0.1'
 # -----------------------------------------------------------------------------
 #                                   FUNCTIONS
 # -----------------------------------------------------------------------------
+
 
 def define_activity_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file):
 
@@ -118,7 +132,10 @@ def define_new_item(at_context, item_name, question, VERSION):
         'schema:description': item_name,
         'schema:schemaVersion': VERSION,
         'schema:version': VERSION,
-        'ui': {},
+        'ui': {
+            'allow': ["skipped"],
+            'inputType': []
+        },
         'question': {
             'en': question
             },
@@ -129,7 +146,7 @@ def define_response_choice(response_type, response_choices):
     # now we define the answers for this item
     if response_type == 'boolean':
 
-        inputType = {'inputType': 'radio'}
+        inputType = 'radio'
 
         responseOptions = {
             'multipleChoice': False,
@@ -152,42 +169,109 @@ def define_response_choice(response_type, response_choices):
             ]
         }
 
-    # if we have multiple choices
-    elif response_type == 'dropdown':
+    # if we have multiple choices with a radio item
+    elif response_type == 'radio':
 
-        inputType = {'inputType': 'select'}
+        inputType = 'radio'
 
         responseOptions = {'choices': []}
 
-        for i, opt in enumerate(response_choices):
+        responseOptions = list_responses_options(responseOptions, response_choices)
 
-            responseOptions['choices'].append({
-                'schema:name': opt,
-                'schema:value': i,
-                '@type': 'schema:option'
+    # if we have a dropdown menu
+    elif response_type == 'dropdown':
+
+        inputType = 'select'
+
+        responseOptions = {'choices': []}
+
+        responseOptions = list_responses_options(responseOptions, response_choices)
+
+    # response is date
+    elif response_type == 'date':
+        inputType = 'date'
+        responseOptions = {'valueType': 'xsd:date'}
+
+    # response is time range
+    elif response_type == 'time range':
+        inputType = 'timeRange'
+        responseOptions = {'valueType': 'datetime'}
+
+    # response is slider
+    elif response_type == 'slider':
+        inputType = 'slider'
+        responseOptions = {
+            'valueType': 'xsd:integer',
+            'schema:minValue': 0,
+            'schema:maxValue': 6,
+            'choices': [
+                {
+                    'schema:name': 'Not at all',
+                    'schema:value': 0,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 1,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 2,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 3,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 4,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 5,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:name': 'Completely',
+                    'schema:value': 6,
+                    '@type': 'schema:option'
                 }
-            )
+            ]
+        }
 
-    # response is some integer
+    # response is integer
     elif response_type == 'int':
-        inputType = {'inputType': 'number'}
+        inputType = 'number'
         responseOptions = {'valueType': 'xsd:integer'}
 
-    # response is some float
+    # response is float
     elif response_type == 'float':
-        inputType = {'inputType': 'float'}
+        inputType = 'float'
         responseOptions = {'valueType': 'xsd:float'}
 
-    # input requires some typed answer
+    # input requires typed answer
     elif response_type == 'char':
-        inputType = {'inputType': 'text'}
+        inputType = 'text'
         responseOptions = {'type': 'xsd:string'}
 
     else:
-        inputType = {'inputType': 'text'}
+        inputType = 'text'
         responseOptions = {'type': 'xsd:string'}
 
     return inputType, responseOptions
+
+
+def list_responses_options(responseOptions, response_choices):
+
+    for i, opt in enumerate(response_choices):
+
+        responseOptions['choices'].append({
+            'schema:name': opt,
+            'schema:value': i,
+            '@type': 'schema:option'
+            }
+        )
+
+    return responseOptions
 
 
 # -----------------------------------------------------------------------------
@@ -319,7 +403,7 @@ with open(INPUT_FILE, 'r') as csvfile:
                     # for the name displayed by the UI for this acivity we simply reuse the
                     # activity name
                     "prefLabel": {
-                        "en": activity_schema_name.replace("_", " ")
+                        "en": activity_schema_name.replace(PROTOCOL, "").replace("_", ": ").replace("-", " ")
                     }
                 }
 
@@ -366,7 +450,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
             inputType, responseOptions = define_response_choice(response_type, response_choices)
 
-            item_schema_json['ui'] = inputType
+            item_schema_json['ui']['inputType'] = inputType
             item_schema_json['responseOptions'] = responseOptions
 
             # write item schema
