@@ -94,21 +94,26 @@ INCLUDE_COL = []
 # MANDATORY_COL = 11
 # VISIBILITY_COL = 12
 
-# CSV_INFO = pd.DataFrame(
-#     {'label': ['section', 'item', 'question', 'resp_type', 'choice', 'mandatory', 'vis'],
-#     'col': [4, 5, 7, 9, 10, 11, 12]
-#     }
-# )
 
 # COBIDAS MRI
-INCLUDE_COL = 13
-MANDATORY_COL = 15
-SECTION_COL = 18
-ITEM_COL = 24
-QUESTION_COL = 26
-RESPONSE_TYPE_COL = 28
-CHOICE_COL = 29
-VISIBILITY_COL = 30
+CSV_INFO = {
+    'section':
+        {'col': 18, 'name': ""},
+    'item':
+        {'col': 24, 'name': "Item"},
+    'question':
+        {'col': 3, 'name': ""},
+    'resp_type':
+        {'col': 28, 'name': ""},
+    'choice':
+        {'col': 29, 'name': ""},
+    'mandatory':
+        {'col': 15, 'name': ""},
+    'include':
+        {'col': 13, 'name': ""},
+    'vis':
+        {'col': 30, 'name': ""}
+}
 
 # --------------------
 # VERSION
@@ -166,24 +171,17 @@ with open(INPUT_FILE, 'r') as csvfile:
     PROTOCOL_METADATA = csv.reader(csvfile)
     for row in PROTOCOL_METADATA:
 
-        item_name, question, response_type, response_choices, visibility = get_item_info(
-                                                                            row,
-                                                                            ITEM_COL,
-                                                                            QUESTION_COL,
-                                                                            RESPONSE_TYPE_COL,
-                                                                            CHOICE_COL,
-                                                                            VISIBILITY_COL,
-                                                                            INCLUDE_COL)
+        item_info = get_item_info(row, CSV_INFO)
 
-        if item_name != []:
+        if item_info['name'] != []:
 
             # -------------------------------------------------------------------
             # detect if this is a new section if so it will create a new activity
             # -------------------------------------------------------------------
-            if row[SECTION_COL] != section:
+            if row[CSV_INFO['section']['col']] != section:
 
                 # update section name
-                section = row[SECTION_COL]
+                section = row[CSV_INFO['section']['col']]
 
                 # where the items of this section will be stored
                 activity_dir = PROTOCOL + section
@@ -203,16 +201,14 @@ with open(INPUT_FILE, 'r') as csvfile:
                     os.makedirs(os.path.join(OUTPUT_DIR, 'activities',
                                              activity_dir, 'items'))
 
-                activity_context_json, activity_at_context = define_activity_context(
-                                                                REPRONIM_REPO,
-                                                                REMOTE_REPO,
-                                                                BRANCH, activity_dir,
-                                                                activity_context_file)
+                activity_at_context = define_activity_context(REPRONIM_REPO,
+                                                              REMOTE_REPO,
+                                                              BRANCH, activity_dir,
+                                                              activity_context_file)
 
-                activity_schema_json = define_new_activity(
-                                        activity_at_context,
-                                        activity_schema_name,
-                                        PROTOCOL, section, VERSION)
+                activity_schema_json = define_new_activity(activity_at_context,
+                                                           activity_schema_name,
+                                                           PROTOCOL, section, VERSION)
 
                 # update the content of the protool schema and context wrt this new activity
                 append_to_protocol = {
@@ -236,45 +232,36 @@ with open(INPUT_FILE, 'r') as csvfile:
                 print(activity_schema_name)
 
             # -------------------------------------------------------------------
-            # update the content of the activity schema and context with new item
+            # update the content of the activity schema with new item
             # -------------------------------------------------------------------
             append_to_activity = {
-                'variableName': item_name,
-                'isAbout': item_name,
-                "isVis": visibility
+                'variableName': item_info['name'],
+                'isAbout': item_info['name'],
+                "isVis": item_info['visibility']
             }
 
-            activity_schema_json['ui']['order'].append(item_name)
+            activity_schema_json['ui']['order'].append(item_info['name'])
             activity_schema_json['ui']['addProperties'].append(append_to_activity)
 
-            activity_context_json['@context'][item_name] = {
-                '@id': 'item_path:' + item_name,
-                '@type': '@id'
-            }
-
-            # save activity schema and context with every new item
+            # save activity schema with every new item
             with open(os.path.join(OUTPUT_DIR, 'activities', activity_dir,
                                    activity_schema_file), 'w') as ff:
                 json.dump(activity_schema_json, ff, sort_keys=False, indent=4)
 
-            with open(os.path.join(OUTPUT_DIR, 'activities', activity_dir,
-                                   activity_context_file), 'w') as ff:
-                json.dump(activity_context_json, ff, sort_keys=False, indent=4)
-
             # -------------------------------------------------------------------
             # Create new item
             # -------------------------------------------------------------------
-            print('   ' + item_name)
+            print('   ' + item_info['name'])
 
-            if question == "":
+            if item_info['visibility'] == "":
                 warnings.warn("No question for this item.", UserWarning)
             else:
-                print('       ' + question)
-            print('       ' + response_type)
-            
-            item_schema_json = define_new_item(activity_at_context, item_name, question, VERSION)
+                print('       ' + item_info['question'])
+            print('       ' + item_info['resp_type'])
 
-            inputType, responseOptions = define_response_choice(response_type, response_choices)
+            item_schema_json = define_new_item(activity_at_context, item_info['name'], item_info['question'], VERSION)
+
+            inputType, responseOptions = define_response_choice(item_info['resp_type'], item_info['choices'])
 
             item_schema_json['ui']['inputType'] = inputType
             item_schema_json['responseOptions'] = responseOptions
@@ -283,8 +270,7 @@ with open(INPUT_FILE, 'r') as csvfile:
             with open(os.path.join(
                 OUTPUT_DIR, 'activities',
                 activity_dir, 'items',
-                    row[ITEM_COL]), 'w') as ff:
-
+                    row[CSV_INFO['item']['col']]), 'w') as ff:
                 json.dump(item_schema_json, ff, sort_keys=False, indent=4)
 
 # write protocol jsonld

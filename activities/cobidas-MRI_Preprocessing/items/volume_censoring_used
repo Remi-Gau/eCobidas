@@ -1,7 +1,14 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/cobidas-MRI_Preprocessing_context"
+        [
+            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        ],
+        {
+            "@context": {
+                "@version": 1.1,
+                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/items/"
+            }
+        }
     ],
     "@type": "reproschema:Field",
     "@id": "volume_censoring_used",
@@ -16,7 +23,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Was volume censoring applied (a.k.a. \u201cscrubbing\u201d or \u201cde-spiking\u201d)?"
+        "en": "#REF!"
     },
     "responseOptions": {
         "multipleChoice": false,

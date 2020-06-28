@@ -1,7 +1,14 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Acquisition/cobidas-MRI_Acquisition_context"
+        [
+            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        ],
+        {
+            "@context": {
+                "@version": 1.1,
+                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Acquisition/items/"
+            }
+        }
     ],
     "@type": "reproschema:Field",
     "@id": "repetition_time",
@@ -16,7 +23,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Specify the repetition time (in milliseconds)"
+        "en": "02"
     },
     "responseOptions": {
         "valueType": "xsd:float"

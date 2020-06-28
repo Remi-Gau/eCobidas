@@ -1,7 +1,14 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Results/cobidas-MRI_Results_context"
+        [
+            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        ],
+        {
+            "@context": {
+                "@version": 1.1,
+                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Results/items/"
+            }
+        }
     ],
     "@type": "reproschema:Field",
     "@id": "units_of_reported_results",
@@ -16,7 +23,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Unit used to report results"
+        "en": "#REF!"
     },
     "responseOptions": {
         "choices": [

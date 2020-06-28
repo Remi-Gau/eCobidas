@@ -1,7 +1,14 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Statistical Modeling & Inference/cobidas-MRI_Statistical Modeling & Inference_context"
+        [
+            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        ],
+        {
+            "@context": {
+                "@version": 1.1,
+                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Statistical Modeling & Inference/items/"
+            }
+        }
     ],
     "@type": "reproschema:Field",
     "@id": "spatial_region_modeled",
@@ -16,7 +23,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": ""
+        "en": "#REF!"
     },
     "responseOptions": {
         "type": "xsd:string"

@@ -1,7 +1,14 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Experimental Design/cobidas-MRI_Experimental Design_context"
+        [
+            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        ],
+        {
+            "@context": {
+                "@version": 1.1,
+                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Experimental Design/items/"
+            }
+        }
     ],
     "@type": "reproschema:Field",
     "@id": "rest_or_task",
@@ -16,7 +23,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Was it task based MRI or resting state MRI?"
+        "en": "01"
     },
     "responseOptions": {
         "multipleChoice": false,

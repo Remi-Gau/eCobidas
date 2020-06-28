@@ -1,7 +1,14 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/cobidas-MRI_Preprocessing_context"
+        [
+            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        ],
+        {
+            "@context": {
+                "@version": 1.1,
+                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/items/"
+            }
+        }
     ],
     "@type": "reproschema:Field",
     "@id": "moco_dof",
@@ -16,7 +23,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Number of degrees of freedom for the motion correction"
+        "en": "#REF!"
     },
     "responseOptions": {
         "choices": [

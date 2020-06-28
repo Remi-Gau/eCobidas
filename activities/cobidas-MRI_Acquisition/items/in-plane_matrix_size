@@ -1,7 +1,14 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Acquisition/cobidas-MRI_Acquisition_context"
+        [
+            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        ],
+        {
+            "@context": {
+                "@version": 1.1,
+                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Acquisition/items/"
+            }
+        }
     ],
     "@type": "reproschema:Field",
     "@id": "in-plane_matrix_size",
@@ -16,7 +23,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Specify the in-plane matrix size"
+        "en": "02"
     },
     "responseOptions": {
         "type": "xsd:string"

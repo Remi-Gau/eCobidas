@@ -9,13 +9,10 @@ def define_activity_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, ac
         }
 
     at_context = [
-        REPRONIM_REPO + 'contexts/generic',
-        REMOTE_REPO + BRANCH + '/activities/'
-        + activity_dir + '/'
-        + activity_context_file
+        REPRONIM_REPO + 'contexts/generic'
         ]
 
-    return context, at_context
+    return at_context, context
 
 
 def define_new_activity(at_context, activity_schema_name, PROTOCOL, section, VERSION):
@@ -38,37 +35,48 @@ def define_new_activity(at_context, activity_schema_name, PROTOCOL, section, VER
         }
 
 
-def get_item_info(row, ITEM_COL, QUESTION_COL, RESPONSE_TYPE_COL, CHOICE_COL, VISIBILITY_COL, INCLUDE_COL):
+def get_item_info(row, CSV_INFO):
 
-    item_name = []
+    mandatory_col = CSV_INFO['mandatory']['col']
+
     question = "QUESTION MISSING"
     response_type = "UNKNOWN"
     response_choices = []
     visibility = True
 
-    INCLUDE = True
+    item_col = CSV_INFO['item']['col']
+    item_col_name = CSV_INFO['item']['name']
+    item_name = []
+
     # we want to skip the header and only include items with 1 in the include column (if it exists)
-    if row[ITEM_COL] == 'Item' or (INCLUDE_COL != [] and row[INCLUDE_COL] != "1"):
+    INCLUDE = True
+    incl_col = CSV_INFO['include']['col']
+    if row[item_col] == item_col_name or (incl_col != [] and row[incl_col] != "1"):
         INCLUDE = False
 
         print('   skipping item')
 
     if INCLUDE:
 
-        item_name = row[ITEM_COL].replace("\n", "")
+        item_name = row[item_col].replace("\n", "")
 
-        question = row[QUESTION_COL].replace("\n", "")
+        question_col = CSV_INFO['question']['col']
+        question = row[question_col].replace("\n", "")
 
-        response_type = row[RESPONSE_TYPE_COL]
+        resp_type_col = CSV_INFO['resp_type']['col']
+        response_type = row[resp_type_col]
 
-        response_choices = row[CHOICE_COL].split(' | ')
+        choice_col = CSV_INFO['choice']['col']
+        response_choices = row[choice_col].split(' | ')
+
+        vis_col = CSV_INFO['vis']['col']
 
         # branchic logic: visibility
-        if row[VISIBILITY_COL] != '1':
+        if row[vis_col] != '1':
 
-            visibility = row[VISIBILITY_COL]
+            visibility = row[vis_col]
 
-            # vis_conditions = row[CHOICE_COL].split(',')
+            # vis_conditions = row[choice_col].split(',')
             #
             # for i, cdt in enumerate(vis_conditions):
             #
@@ -78,7 +86,13 @@ def get_item_info(row, ITEM_COL, QUESTION_COL, RESPONSE_TYPE_COL, CHOICE_COL, VI
             #         '@type': 'schema:option'
             #         })
 
-    return item_name, question, response_type, response_choices, visibility
+    return {
+        'name': item_name,
+        'question': question,
+        'resp_type': response_type,
+        'choices': response_choices,
+        'visibility': visibility
+    }
 
 
 def define_new_item(at_context, item_name, question, VERSION):

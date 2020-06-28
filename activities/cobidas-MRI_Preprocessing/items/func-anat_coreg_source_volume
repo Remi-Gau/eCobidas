@@ -1,7 +1,14 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/cobidas-MRI_Preprocessing_context"
+        [
+            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        ],
+        {
+            "@context": {
+                "@version": 1.1,
+                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/items/"
+            }
+        }
     ],
     "@type": "reproschema:Field",
     "@id": "func-anat_coreg_source_volume",
@@ -16,7 +23,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Source volume used for the functional - anatomical coregistration"
+        "en": "#REF!"
     },
     "responseOptions": {
         "type": "xsd:string"

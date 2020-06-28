@@ -1,7 +1,14 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Experimental Design/cobidas-MRI_Experimental Design_context"
+        [
+            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+        ],
+        {
+            "@context": {
+                "@version": 1.1,
+                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Experimental Design/items/"
+            }
+        }
     ],
     "@type": "reproschema:Field",
     "@id": "pseudo-random",
@@ -16,7 +23,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Describe how and the criteria used to constrain the orders/timings"
+        "en": ""
     },
     "responseOptions": {
         "type": "xsd:string"
