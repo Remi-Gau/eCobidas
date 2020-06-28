@@ -80,14 +80,13 @@ MANDATORY_COL = 11
 VISIBILITY_COL = 12
 # --------------------
 
-
-
 # VERSION
 VERSION = '0.0.1'
 
 # -----------------------------------------------------------------------------
 #                                   FUNCTIONS
 # -----------------------------------------------------------------------------
+
 
 def define_activity_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file):
 
@@ -225,40 +224,39 @@ def define_response_choice(response_type, response_choices):
             'valueType': 'xsd:integer',
             'schema:minValue': 0,
             'schema:maxValue': 6,
-            'choices': [{
-                'schema:name': 'Not at all',
-                'schema:value': 0,
-                '@type': 'schema:option'
-            },
-            {
-                'schema:value': 1,
-                '@type': 'schema:option'
-            },
-            {
-                'schema:value': 2,
-                '@type': 'schema:option'
-            },
-            {
-                'schema:value': 3,
-                '@type': 'schema:option'
-            },
-            {
-                'schema:value': 4,
-                '@type': 'schema:option'
-            },
-            {
-                'schema:value': 5,
-                '@type': 'schema:option'
-            },
-            {
-                'schema:name': 'Completely',
-                'schema:value': 6,
-                '@type': 'schema:option'
-            }]
+            'choices': [
+                {
+                    'schema:name': 'Not at all',
+                    'schema:value': 0,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 1,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 2,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 3,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 4,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 5,
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:name': 'Completely',
+                    'schema:value': 6,
+                    '@type': 'schema:option'
+                }
+            ]
         }
-
-
-
 
     # response is integer
     elif response_type == 'int':
