@@ -189,7 +189,7 @@ def define_response_choice(response_type, response_choices):
                 }
             )
 
-    # if we have multiple choices
+    # if we have a dropdown menu
     elif response_type == 'dropdown':
 
         inputType = {'inputType': 'select'}
@@ -205,17 +205,62 @@ def define_response_choice(response_type, response_choices):
                 }
             )
 
-    # response is some integer
+    # response is date
+    elif response_type == 'date':
+        inputType = {'inputType': 'date'}
+        responseOptions = {'valueType': 'xsd:date'}
+
+    # response is time range
+    elif response_type == 'time range':
+        inputType = {'inputType': 'datetime'}
+        responseOptions = {'valueType': 'datetime'}
+
+    # response is slider
+    elif response_type == 'slider':
+        inputType = {'inputType': 'slider'}
+        responseOptions = {
+            "valueType": "xsd:integer",
+            "schema:minValue": 0,
+            "schema:maxValue": 6,
+            "choices": [{
+                "schema:name": "Not at all",
+                "schema:value": 0
+            },
+            {
+                "schema:value": 1
+            },
+            {
+                "schema:value": 2
+            },
+            {
+                "schema:value": 3
+            },
+            {
+                "schema:value": 4
+            },
+            {
+                "schema:value": 5
+            },
+            {
+                "schema:name": "Completely",
+                "schema:value": 6
+            }]
+        }
+
+
+
+
+    # response is integer
     elif response_type == 'int':
         inputType = {'inputType': 'number'}
         responseOptions = {'valueType': 'xsd:integer'}
 
-    # response is some float
+    # response is float
     elif response_type == 'float':
         inputType = {'inputType': 'float'}
         responseOptions = {'valueType': 'xsd:float'}
 
-    # input requires some typed answer
+    # input requires typed answer
     elif response_type == 'char':
         inputType = {'inputType': 'text'}
         responseOptions = {'type': 'xsd:string'}

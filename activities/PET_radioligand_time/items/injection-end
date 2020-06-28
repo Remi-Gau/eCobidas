@@ -10,12 +10,12 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "datetime"
     },
     "question": {
         "en": "Injection end"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "valueType": "datetime"
     }
 }

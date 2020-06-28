@@ -10,12 +10,39 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "slider"
     },
     "question": {
         "en": "Plasma to whole blood ratio"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "valueType": "xsd:integer",
+        "schema:minValue": 0,
+        "schema:maxValue": 6,
+        "choices": [
+            {
+                "schema:name": "Not at all",
+                "schema:value": 0
+            },
+            {
+                "schema:value": 1
+            },
+            {
+                "schema:value": 2
+            },
+            {
+                "schema:value": 3
+            },
+            {
+                "schema:value": 4
+            },
+            {
+                "schema:value": 5
+            },
+            {
+                "schema:name": "Completely",
+                "schema:value": 6
+            }
+        ]
     }
 }
