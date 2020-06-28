@@ -5,28 +5,31 @@ from utils import define_activity_context, define_new_activity, get_item_info, d
 # import pandas as pd
 import warnings
 
+'''
 # This script takes the content of the a csv file and turns it into a reproschema
 # protocol.
 # This scripts loops through the items of the csv and creates a new reproschema
 # activity with every new checklist "section" it encouters: this new activity
 # will be added to the protocol.
 # Every new item encountered is added to the current activity.
+'''
 
-# -----------------------------------------------------------------------------
-#                                   TO DO
-# -----------------------------------------------------------------------------
-#
-# - automate the choice of from radio to dropdown menu if the number of
-# response_choices goes above a certain number
-# - allow for several condition checks for visibility
-# - allow for mandatory items
+'''
+-----------------------------------------------------------------------------
+                                  TO DO
+-----------------------------------------------------------------------------
+
+- automate the choice of from radio to dropdown menu if the number of
+   response_choices goes above a certain number
+- allow for several condition checks for visibility
+- allow for mandatory items
+'''
 
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS
 # -----------------------------------------------------------------------------
 # modify the following lines to match your needs
 
-# ----------------------------------------
 REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
 
 # ----------------------------------------
@@ -107,12 +110,10 @@ RESPONSE_TYPE_COL = 28
 CHOICE_COL = 29
 VISIBILITY_COL = 30
 
-
 # --------------------
 # VERSION
 
 VERSION = '0.0.1'
-
 
 # -----------------------------------------------------------------------------
 #                                   START
@@ -197,10 +198,8 @@ with open(INPUT_FILE, 'r') as csvfile:
                 # create dir for this section
                 if not os.path.exists(os.path.join(OUTPUT_DIR, 'activities',
                                                    activity_dir)):
-                    os.makedirs(os.path.join(OUTPUT_DIR, 'activities', activity_dir))
-
-                if not os.path.exists(os.path.join(OUTPUT_DIR, 'activities',
-                                                   activity_dir, 'items')):
+                    os.makedirs(os.path.join(OUTPUT_DIR, 'activities',
+                                             activity_dir))
                     os.makedirs(os.path.join(OUTPUT_DIR, 'activities',
                                              activity_dir, 'items'))
 
