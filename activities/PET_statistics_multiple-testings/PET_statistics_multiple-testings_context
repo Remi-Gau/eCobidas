@@ -1,7 +1,7 @@
 {
     "@context": {
         "@version": 1.1,
-        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_multiple-testings/items/",
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_statistics_multiple-testings/items/",
         "method": {
             "@id": "item_path:method",
             "@type": "@id"

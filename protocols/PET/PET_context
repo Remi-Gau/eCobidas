@@ -1,7 +1,7 @@
 {
     "@context": {
         "@version": 1.1,
-        "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/",
+        "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/",
         "PET_radioligand_radiotracer": {
             "@id": "activity_path:PET_radioligand_radiotracer/PET_radioligand_radiotracer_schema",
             "@type": "@id"

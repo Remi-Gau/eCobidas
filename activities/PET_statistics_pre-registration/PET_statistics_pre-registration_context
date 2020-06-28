@@ -1,7 +1,7 @@
 {
     "@context": {
         "@version": 1.1,
-        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_pre-registration/items/",
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_statistics_pre-registration/items/",
         "link": {
             "@id": "item_path:link",
             "@type": "@id"

@@ -1,7 +1,7 @@
 {
     "@context": {
         "@version": 1.1,
-        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/items/",
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_preprocessing_registration/items/",
         "registration-reference-image": {
             "@id": "item_path:registration-reference-image",
             "@type": "@id"
