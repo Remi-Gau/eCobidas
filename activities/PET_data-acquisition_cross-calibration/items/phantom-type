@@ -10,12 +10,33 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
         "en": "Phantom type"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "Uniform cylinder",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "ACR",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "EARL ",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

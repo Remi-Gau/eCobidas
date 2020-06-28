@@ -10,12 +10,33 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
         "en": "Mode of administration"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "bolus",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "infusion",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "bolus-infusion ",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

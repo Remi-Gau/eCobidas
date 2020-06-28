@@ -10,12 +10,33 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
         "en": "Moles tracer injected units"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "moles",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "micromoles",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "nanomoles",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

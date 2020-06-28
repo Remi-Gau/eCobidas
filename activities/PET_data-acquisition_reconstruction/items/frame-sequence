@@ -10,12 +10,53 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
         "en": "Frame-Sequence"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "6x10",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "3x20",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "6x30",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "5x60",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "5x120",
+                "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "8x300",
+                "schema:value": 5,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "3x600 (36 frames)",
+                "schema:value": 6,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 7,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

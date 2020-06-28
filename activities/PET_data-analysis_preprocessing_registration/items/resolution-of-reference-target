@@ -10,12 +10,28 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
         "en": "Resolution of reference-target"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": " 1 x 1 x 1",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "2 x 2 x 2",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

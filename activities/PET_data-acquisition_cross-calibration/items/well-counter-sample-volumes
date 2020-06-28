@@ -10,12 +10,28 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
         "en": "Well counter sample volumes"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "mL",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "\u00b5L",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

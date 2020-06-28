@@ -173,6 +173,22 @@ def define_response_choice(response_type, response_choices):
             ]
         }
 
+    # if we have multiple choices with a radio item
+    elif response_type == 'radio':
+
+        inputType = {'inputType': 'radio'}
+
+        responseOptions = {'choices': []}
+
+        for i, opt in enumerate(response_choices):
+
+            responseOptions['choices'].append({
+                'schema:name': opt,
+                'schema:value': i,
+                '@type': 'schema:option'
+                }
+            )
+
     # if we have multiple choices
     elif response_type == 'dropdown':
 

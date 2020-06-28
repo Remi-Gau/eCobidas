@@ -10,12 +10,28 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
         "en": "Level of analysis"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "region",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "voxel",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "region+voxel",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
     }
 }
