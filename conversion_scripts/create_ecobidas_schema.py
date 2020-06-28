@@ -117,7 +117,7 @@ def define_new_activity(at_context, activity_schema_name, PROTOCOL, SECTION, VER
 
     # define the base json content for the activity:
 
-    schema = {
+    return {
         '@context': at_context,
         '@type': 'reproschema:Activity',
         '@id': activity_schema_name,
@@ -133,14 +133,14 @@ def define_new_activity(at_context, activity_schema_name, PROTOCOL, SECTION, VER
             'addProperties': []
             }
         }
-    return schema
+    }
 
 
 def define_new_item(at_context, item_name, question, VERSION):
 
     # define jsonld for this item
 
-    schema = {
+    return {
         '@context': at_context,
         '@type': 'reproschema:Field',
         '@id': item_name,
@@ -153,7 +153,6 @@ def define_new_item(at_context, item_name, question, VERSION):
             'en': question
             },
     }
-    return schema
 
 
 SECTION = ''
