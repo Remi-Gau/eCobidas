@@ -212,7 +212,7 @@ def define_response_choice(response_type, response_choices):
 
     # response is time range
     elif response_type == 'time range':
-        inputType = {'inputType': 'datetime'}
+        inputType = {'inputType': 'timeRange'}
         responseOptions = {'valueType': 'datetime'}
 
     # response is slider
