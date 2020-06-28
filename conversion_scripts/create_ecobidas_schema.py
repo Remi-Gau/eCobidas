@@ -124,9 +124,7 @@ def define_activity_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, ac
 
 
 def define_new_activity(at_context, activity_schema_name, PROTOCOL, SECTION, VERSION):
-
-    # define the base json content for the activity:
-
+    # define the base json content for the activity
     return {
         '@context': at_context,
         '@type': 'reproschema:Activity',
@@ -143,13 +141,10 @@ def define_new_activity(at_context, activity_schema_name, PROTOCOL, SECTION, VER
             'addProperties': []
             }
         }
-    }
 
 
 def define_new_item(at_context, item_name, question, VERSION):
-
     # define jsonld for this item
-
     return {
         '@context': at_context,
         '@type': 'reproschema:Field',
@@ -162,7 +157,7 @@ def define_new_item(at_context, item_name, question, VERSION):
         'question': {
             'en': question
             },
-    }
+        }
 
 
 SECTION = ''
