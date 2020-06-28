@@ -8,9 +8,9 @@ import os
 import csv
 
 
-## -----------------------------------------------------------------------------
-## -----------------------------------------------------------------------------
-## -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # modify the following lines to match your needs
 
 # where the metadata from neurovault are described. It is in xlsx dir of this repos
@@ -34,9 +34,9 @@ BRANCH = 'neurovault'
 REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
 
 
-## -----------------------------------------------------------------------------
-## -----------------------------------------------------------------------------
-## -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
 # activity set names
 PROTOCOL = 'neurovault_'
@@ -52,7 +52,7 @@ VISIBILITY_COL = 7
 
 # protocol names
 PROTOCOL_SCHEMA_FILE = PROTOCOL + 'schema'
-PROTOCOL_CONTEXT_FILE = PROTOCOL +  'context'
+PROTOCOL_CONTEXT_FILE = PROTOCOL + 'context'
 PROTOCOL_DIR = PROTOCOL[0:-1]
 
 # VERSION
@@ -68,15 +68,14 @@ PROTOCOL_SCHEMA_JSON = {
     '@context': [REPRONIM_REPO + 'contexts/generic',
                  REMOTE_REPO + BRANCH + '/protocols/'
                  + PROTOCOL_DIR + '/'
-                 + PROTOCOL_CONTEXT_FILE
-                ],
+                 + PROTOCOL_CONTEXT_FILE],
     '@type': 'reproschema:Protocol',
     '@id': PROTOCOL_SCHEMA_FILE,
     'prefLabel': PROTOCOL_SCHEMA_FILE,
     'schema:description': PROTOCOL_SCHEMA_FILE,
     'schema:schemaVersion': VERSION,
     'schema:version': VERSION,
-    'landingPage': REMOTE_REPO + BRANCH + '/protocols/'+ PROTOCOL[0:-1] +'/README.md',
+    'landingPage': REMOTE_REPO + BRANCH + '/protocols/' + PROTOCOL[0:-1] + '/README.md',
     'ui': {
         'allow': ["autoAdvance", "allowExport"],
         'shuffle': False,
@@ -94,25 +93,24 @@ PROTOCOL_CONTEXT_JSON = {
 }
 
 
-
 def define_activity_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file):
 
     context = {
         '@context': {
             '@version': 1.1,
             'item_path': REMOTE_REPO + BRANCH + '/activities/'
-                         + activity_dir + '/items/',
+            + activity_dir + '/items/'
             }
         }
 
-    at_context = [REPRONIM_REPO + 'contexts/generic',
-                 REMOTE_REPO + BRANCH + '/activities/'
-                 + activity_dir + '/'
-                 + activity_context_file
-                ]
+    at_context = [
+        REPRONIM_REPO + 'contexts/generic',
+        REMOTE_REPO + BRANCH + '/activities/'
+        + activity_dir + '/'
+        + activity_context_file
+        ]
 
     return context, at_context
-
 
 
 def define_new_activity(at_context, activity_schema_name, PROTOCOL, SECTION, VERSION):
@@ -132,11 +130,10 @@ def define_new_activity(at_context, activity_schema_name, PROTOCOL, SECTION, VER
             'order': [],
             'shuffle': False,
             'allow': ["skipped"],
-            'addProperties': [],
+            'addProperties': []
+            }
         }
-    }
     return schema
-
 
 
 def define_new_item(at_context, item_name, question, VERSION):
@@ -157,7 +154,6 @@ def define_new_item(at_context, item_name, question, VERSION):
             },
     }
     return schema
-
 
 
 SECTION = ''
@@ -196,11 +192,6 @@ with open(INPUT_FILE, 'r') as csvfile:
                 #         '@type': 'schema:option'
                 #         })
 
-
-
-
-
-
             # detect if this is a new SECTION if so it will create a new activity
             if row[SECTION_COL] != SECTION:
 
@@ -217,9 +208,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
                 activity_context_file = PROTOCOL + SECTION + '_context'
 
-
                 print(activity_schema_name)
-
 
                 # create dir for this SECTION
                 if not os.path.exists(os.path.join(OUTPUT_DIR, 'activities',
@@ -231,22 +220,23 @@ with open(INPUT_FILE, 'r') as csvfile:
                     os.makedirs(os.path.join(OUTPUT_DIR, 'activities',
                                              activity_dir, 'items'))
 
-                activity_context_json, activity_at_context = define_activity_context(REPRONIM_REPO,
+                activity_context_json, activity_at_context = define_activity_context(
+                                                                REPRONIM_REPO,
                                                                 REMOTE_REPO,
                                                                 BRANCH, activity_dir,
                                                                 activity_context_file)
 
-                activity_schema_json = define_new_activity(activity_at_context,
-                                            activity_schema_name,
-                                            PROTOCOL, SECTION, VERSION)
-
+                activity_schema_json = define_new_activity(
+                                        activity_at_context,
+                                        activity_schema_name,
+                                        PROTOCOL, SECTION, VERSION)
 
                 # update the content of the protool schema and context wrt this new activity
                 append_to_protocol = {
                     'variableName': activity_schema_name,
                     'isAbout': activity_schema_name,
                     "prefLabel": {
-                    "en": activity_schema_name.replace("_"," ")
+                        "en": activity_schema_name.replace("_", " ")
                     }
                 }
 
@@ -256,11 +246,9 @@ with open(INPUT_FILE, 'r') as csvfile:
                 PROTOCOL_CONTEXT_JSON['@context'][activity_schema_name] = {
                     '@id': 'activity_path:' + activity_dir + '/' + activity_schema_file,
                     '@type': '@id'
-                    }
-
+                }
 
             print('   ' + item_name)
-
 
             # update the json content of the activity schema and context wrt this new item
 
@@ -278,7 +266,6 @@ with open(INPUT_FILE, 'r') as csvfile:
                 '@type': '@id'
             }
 
-
             # save activity jsonld with every new item
             with open(os.path.join(OUTPUT_DIR, 'activities', activity_dir,
                                    activity_schema_file), 'w') as ff:
@@ -288,13 +275,11 @@ with open(INPUT_FILE, 'r') as csvfile:
                                    activity_context_file), 'w') as ff:
                 json.dump(activity_context_json, ff, sort_keys=False, indent=4)
 
-
-
             # Create new item
             item_schema_json = define_new_item(activity_at_context, item_name, question, VERSION)
 
             # now we define the answers for this item
-            if response_type  == 'boolean':
+            if response_type == 'boolean':
                 inputType = {'inputType': 'radio'}
                 responseOptions = {
                     'multipleChoice': False,
@@ -323,7 +308,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
                 responseOptions = {
                     'choices': []
-                    }
+                }
 
                 for i, opt in enumerate(response_choices):
 
@@ -331,21 +316,21 @@ with open(INPUT_FILE, 'r') as csvfile:
                         'schema:name': opt,
                         'schema:value': i,
                         '@type': 'schema:option'
-                        })
-
+                        }
+                    )
 
             # response is some integer
-            elif response_type  == 'int':
+            elif response_type == 'int':
                 inputType = {'inputType': 'number'}
                 responseOptions = {'valueType': 'xsd:integer'}
 
             # response is some float
-            elif response_type  == 'float':
+            elif response_type == 'float':
                 inputType = {'inputType': 'float'}
                 responseOptions = {'valueType': 'xsd:float'}
 
             # input requires some typed answer
-            elif response_type  == 'char':
+            elif response_type == 'char':
                 inputType = {'inputType': 'text'}
                 responseOptions = {'type': 'xsd:string'}
 
@@ -353,15 +338,16 @@ with open(INPUT_FILE, 'r') as csvfile:
                 inputType = {'inputType': 'text'}
                 responseOptions = {'type': 'xsd:string'}
 
-
             item_schema_json['ui'] = inputType
             item_schema_json['responseOptions'] = responseOptions
 
-
             # write item schema
-            with open(os.path.join(OUTPUT_DIR, 'activities', activity_dir, 'items', row[ITEM_COL]), 'w') as ff:
-                json.dump(item_schema_json, ff, sort_keys=False, indent=4)
+            with open(os.path.join(
+                OUTPUT_DIR, 'activities',
+                activity_dir, 'items',
+                    row[ITEM_COL]), 'w') as ff:
 
+                json.dump(item_schema_json, ff, sort_keys=False, indent=4)
 
 # write activity set jsonld
 with open(os.path.join(OUTPUT_DIR, 'protocols', PROTOCOL_DIR,
