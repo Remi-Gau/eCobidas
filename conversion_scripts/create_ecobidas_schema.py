@@ -1,8 +1,8 @@
 # This script takes the content of the a csv file and turns it into a reproschema
 # protocol.
-# This scripts loops through the items of the csv and creates a new reproschema 
-# activity with every new checklist "section" it encouters: this new activity 
-# will be added to the protocol. 
+# This scripts loops through the items of the csv and creates a new reproschema
+# activity with every new checklist "section" it encouters: this new activity
+# will be added to the protocol.
 # Every new item encountered is added to the current activity.
 #
 #
@@ -123,6 +123,7 @@ def define_new_item(at_context, item_name, question, VERSION):
             'en': question
             },
         }
+
 
 def define_response_choice(response_type, response_choices):
     # now we define the answers for this item
