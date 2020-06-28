@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "other_nuisance_regressors",
+    "prefLabel": "other_nuisance_regressors",
+    "schema:description": "other_nuisance_regressors",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Any other nuisance regressors, and whether they were entered as interactions"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

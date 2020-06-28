@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "anatomical_image_intensity_correction",
+    "prefLabel": "anatomical_image_intensity_correction",
+    "schema:description": "anatomical_image_intensity_correction",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Specify the type of intensity correction of the anatomical image"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

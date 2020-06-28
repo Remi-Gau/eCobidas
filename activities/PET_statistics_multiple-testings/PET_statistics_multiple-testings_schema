@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_statistics_multiple-testings/PET_statistics_multiple-testings_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "PET_statistics_multiple-testings",
+    "@id": "PET_statistics_multiple-testings_schema",
     "skos:prefLabel": "PET_statistics_multiple-testings",
     "schema:description": "PET_statistics_multiple-testings",
     "schema:schemaVersion": "0.0.1",

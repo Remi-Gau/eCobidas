@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "tissue_definition",
+    "prefLabel": "tissue_definition",
+    "schema:description": "tissue_definition",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Tissue definition to create the nuisance regressor"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "a priori seed",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "automatic segmentation",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "spatial regression",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

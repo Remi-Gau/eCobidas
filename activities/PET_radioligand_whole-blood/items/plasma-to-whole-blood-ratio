@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_whole-blood/PET_radioligand_whole-blood_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "plasma-to-whole-blood-ratio",
     "prefLabel": "plasma-to-whole-blood-ratio",

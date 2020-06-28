@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "PET_data-analysis_blood-data-processing",
+    "@id": "PET_data-analysis_blood-data-processing_schema",
     "skos:prefLabel": "PET_data-analysis_blood-data-processing",
     "schema:description": "PET_data-analysis_blood-data-processing",
     "schema:schemaVersion": "0.0.1",

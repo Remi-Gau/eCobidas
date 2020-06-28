@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "stc_interpolation",
+    "prefLabel": "stc_interpolation",
+    "schema:description": "stc_interpolation",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Interpolation method used for the slice timing"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "sinc",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "3rd degree spline",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

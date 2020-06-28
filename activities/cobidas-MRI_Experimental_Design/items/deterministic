@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "deterministic",
+    "prefLabel": "deterministic",
+    "schema:description": "deterministic",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Specify inter-trial distritbution and blocklength"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "pulse_sequence_type",
+    "prefLabel": "pulse_sequence_type",
+    "schema:description": "pulse_sequence_type",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Description of the pulse sequence used"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "Gradient echo",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Spin echo",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Mutliband gradient echo",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "MPRAGE",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "MP2RAGE",
+                "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "FLASH",
+                "schema:value": 5,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 7,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

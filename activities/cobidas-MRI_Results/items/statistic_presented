@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "statistic_presented",
+    "prefLabel": "statistic_presented",
+    "schema:description": "statistic_presented",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": ""
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "T",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "F",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Z",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

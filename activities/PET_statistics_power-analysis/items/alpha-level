@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_statistics_power-analysis/PET_statistics_power-analysis_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "alpha-level",
     "prefLabel": "alpha-level",

@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_plasma/PET_radioligand_plasma_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "data:-hematocrit-value",
     "prefLabel": "data:-hematocrit-value",

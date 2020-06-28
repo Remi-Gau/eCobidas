@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_whole-blood/PET_radioligand_whole-blood_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "whole-blood-radioactivity-units",
     "prefLabel": "whole-blood-radioactivity-units",
@@ -28,6 +25,11 @@
             {
                 "schema:name": "Other",
                 "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
                 "@type": "schema:option"
             }
         ]

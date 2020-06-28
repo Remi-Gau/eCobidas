@@ -1,0 +1,74 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas-MRI_Results_schema",
+    "skos:prefLabel": "cobidas-MRI_Results",
+    "schema:description": "cobidas-MRI_Results",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "units_of_reported_results",
+            "contrast_and_effect",
+            "xyz_coordinate",
+            "coordinate_system",
+            "statistic_presented",
+            "cluster-size",
+            "type_of_inference",
+            "spatial_smoothness_of_noise",
+            "resel_count"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "units_of_reported_results",
+                "isAbout": "units_of_reported_results",
+                "isVis": true
+            },
+            {
+                "variableName": "contrast_and_effect",
+                "isAbout": "contrast_and_effect",
+                "isVis": true
+            },
+            {
+                "variableName": "xyz_coordinate",
+                "isAbout": "xyz_coordinate",
+                "isVis": true
+            },
+            {
+                "variableName": "coordinate_system",
+                "isAbout": "coordinate_system",
+                "isVis": true
+            },
+            {
+                "variableName": "statistic_presented",
+                "isAbout": "statistic_presented",
+                "isVis": true
+            },
+            {
+                "variableName": "cluster-size",
+                "isAbout": "cluster-size",
+                "isVis": true
+            },
+            {
+                "variableName": "type_of_inference",
+                "isAbout": "type_of_inference",
+                "isVis": true
+            },
+            {
+                "variableName": "spatial_smoothness_of_noise",
+                "isAbout": "spatial_smoothness_of_noise",
+                "isVis": true
+            },
+            {
+                "variableName": "resel_count",
+                "isAbout": "resel_count",
+                "isVis": true
+            }
+        ]
+    }
+}

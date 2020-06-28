@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "gender",
+    "prefLabel": "gender",
+    "schema:description": "gender",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Percentage of men in the study"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

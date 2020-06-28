@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Group_modeling/neurovault_Group_modeling_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "neurovault_Group_modeling",
+    "@id": "neurovault_Group_modeling_schema",
     "skos:prefLabel": "neurovault_Group_modeling",
     "schema:description": "neurovault_Group_modeling",
     "schema:schemaVersion": "0.0.1",

@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Preprocessing/neurovault_Preprocessing_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "software_package",
     "prefLabel": "software_package",
@@ -10,6 +7,9 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
+        "allow": [
+            "skipped"
+        ],
         "inputType": "select"
     },
     "question": {
@@ -40,6 +40,11 @@
             {
                 "schema:name": "Other",
                 "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 6,
                 "@type": "schema:option"
             }
         ]

@@ -1,0 +1,32 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "smoothing_type",
+    "prefLabel": "smoothing_type",
+    "schema:description": "smoothing_type",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Describe the type of smoothing applied"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "gaussian",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

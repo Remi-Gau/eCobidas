@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "registration-interpolation",
     "prefLabel": "registration-interpolation",
@@ -58,6 +55,11 @@
             {
                 "schema:name": "Other",
                 "schema:value": 7,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 9,
                 "@type": "schema:option"
             }
         ]

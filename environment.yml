@@ -1,0 +1,5 @@
+name: cobidas
+dependencies:
+  - python=3.7
+  - pip:
+    - reproschema

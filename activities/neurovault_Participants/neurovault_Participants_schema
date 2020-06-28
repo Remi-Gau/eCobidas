@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Participants/neurovault_Participants_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "neurovault_Participants",
+    "@id": "neurovault_Participants_schema",
     "skos:prefLabel": "neurovault_Participants",
     "schema:description": "neurovault_Participants",
     "schema:schemaVersion": "0.0.1",

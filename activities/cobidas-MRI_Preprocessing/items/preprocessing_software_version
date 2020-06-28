@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "preprocessing_software_version",
+    "prefLabel": "preprocessing_software_version",
+    "schema:description": "preprocessing_software_version",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Version of software package used"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

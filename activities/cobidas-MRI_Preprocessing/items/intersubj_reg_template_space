@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_template_space",
+    "prefLabel": "intersubj_reg_template_space",
+    "schema:description": "intersubj_reg_template_space",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Name of coordinate space for registration target"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "MNI",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Talairach",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "fsaverage",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "FS_LR",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 5,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

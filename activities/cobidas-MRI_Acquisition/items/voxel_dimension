@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "voxel_dimension",
+    "prefLabel": "voxel_dimension",
+    "schema:description": "voxel_dimension",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Specify the voxel dimensions (in millimeters)"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

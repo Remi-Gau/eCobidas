@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "bet_parameters",
+    "prefLabel": "bet_parameters",
+    "schema:description": "bet_parameters",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Parameters used for the brain extraction"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "resampled_voxel_size",
+    "prefLabel": "resampled_voxel_size",
+    "schema:description": "resampled_voxel_size",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Voxel size in mm of the resampled, atlas-space images"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

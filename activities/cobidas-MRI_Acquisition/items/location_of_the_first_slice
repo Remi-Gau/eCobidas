@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "location_of_the_first_slice",
+    "prefLabel": "location_of_the_first_slice",
+    "schema:description": "location_of_the_first_slice",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Location of the first slice"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

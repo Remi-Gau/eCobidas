@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_radiotracer/PET_radioligand_radiotracer_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "PET_radioligand_radiotracer",
+    "@id": "PET_radioligand_radiotracer_schema",
     "skos:prefLabel": "PET_radioligand_radiotracer",
     "schema:description": "PET_radioligand_radiotracer",
     "schema:schemaVersion": "0.0.1",

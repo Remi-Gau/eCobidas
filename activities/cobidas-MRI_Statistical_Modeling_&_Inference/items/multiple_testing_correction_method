@@ -1,0 +1,32 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "multiple_testing_correction_method",
+    "prefLabel": "multiple_testing_correction_method",
+    "schema:description": "multiple_testing_correction_method",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "What method was used for multiple comparison correction?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "thun",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

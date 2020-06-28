@@ -19,8 +19,20 @@ This can be done by running the `create_ecobidas_schema.py` [python script](./py
 Then running the following should do it (if you are using python 3.7 in this case and assuming you are in the `python` directory of this repo):
 
 ```
+conda env create --file environment.yml
+```
+
+```
+pip install reproschema requests_cache
+```
+
+```
 python3.7 create_ecobidas_schema.py
 ```
+
+python tests/jsonParser.py
+reproschema -l DEBUG validate activities
+
 
 ### Making the new schema available to the cobidas-ui
 

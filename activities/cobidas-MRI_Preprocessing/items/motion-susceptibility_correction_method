@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "motion-susceptibility_correction_method",
+    "prefLabel": "motion-susceptibility_correction_method",
+    "schema:description": "motion-susceptibility_correction_method",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Software version used for the motion-susceptibility correction"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

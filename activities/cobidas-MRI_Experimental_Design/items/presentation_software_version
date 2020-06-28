@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "presentation_software_version",
+    "prefLabel": "presentation_software_version",
+    "schema:description": "presentation_software_version",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "What was the software version used for stimuli presentation?"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

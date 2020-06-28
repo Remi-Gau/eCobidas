@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "PET_data-acquisition_reconstruction",
+    "@id": "PET_data-acquisition_reconstruction_schema",
     "skos:prefLabel": "PET_data-acquisition_reconstruction",
     "schema:description": "PET_data-acquisition_reconstruction",
     "schema:schemaVersion": "0.0.1",

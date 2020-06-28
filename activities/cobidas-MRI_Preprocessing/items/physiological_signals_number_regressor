@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "physiological_signals_number_regressor",
+    "prefLabel": "physiological_signals_number_regressor",
+    "schema:description": "physiological_signals_number_regressor",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "number"
+    },
+    "question": {
+        "en": "number of computed regressors"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_statistics_multiple-testings/PET_statistics_multiple-testings_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "method",
     "prefLabel": "method",
@@ -63,6 +60,11 @@
             {
                 "schema:name": "None/Uncorrected",
                 "schema:value": 8,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 10,
                 "@type": "schema:option"
             }
         ]

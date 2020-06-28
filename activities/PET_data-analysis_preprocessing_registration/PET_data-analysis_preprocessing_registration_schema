@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "PET_data-analysis_preprocessing_registration",
+    "@id": "PET_data-analysis_preprocessing_registration_schema",
     "skos:prefLabel": "PET_data-analysis_preprocessing_registration",
     "schema:description": "PET_data-analysis_preprocessing_registration",
     "schema:schemaVersion": "0.0.1",

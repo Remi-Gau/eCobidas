@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "quality_control_reports",
+    "prefLabel": "quality_control_reports",
+    "schema:description": "quality_control_reports",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Describe quality control measures"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}
