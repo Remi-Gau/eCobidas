@@ -1,17 +1,7 @@
 {
-    "@context": [
-        [
-            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
-        ],
-        {
-            "@context": {
-                "@version": 1.1,
-                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Acquisition/items/"
-            }
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "cobidas-MRI_Acquisition",
+    "@id": "cobidas-MRI_Acquisition_schema",
     "skos:prefLabel": "cobidas-MRI_Acquisition",
     "schema:description": "cobidas-MRI_Acquisition",
     "schema:schemaVersion": "0.0.1",

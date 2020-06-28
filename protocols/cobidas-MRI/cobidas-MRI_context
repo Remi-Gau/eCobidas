@@ -2,8 +2,8 @@
     "@context": {
         "@version": 1.1,
         "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/",
-        "cobidas-MRI_Experimental Design": {
-            "@id": "activity_path:cobidas-MRI_Experimental Design/cobidas-MRI_Experimental Design_schema",
+        "cobidas-MRI_Experimental_Design": {
+            "@id": "activity_path:cobidas-MRI_Experimental_Design/cobidas-MRI_Experimental_Design_schema",
             "@type": "@id"
         },
         "cobidas-MRI_Acquisition": {
@@ -14,8 +14,8 @@
             "@id": "activity_path:cobidas-MRI_Preprocessing/cobidas-MRI_Preprocessing_schema",
             "@type": "@id"
         },
-        "cobidas-MRI_Statistical Modeling & Inference": {
-            "@id": "activity_path:cobidas-MRI_Statistical Modeling & Inference/cobidas-MRI_Statistical Modeling & Inference_schema",
+        "cobidas-MRI_Statistical_Modeling_&_Inference": {
+            "@id": "activity_path:cobidas-MRI_Statistical_Modeling_&_Inference/cobidas-MRI_Statistical_Modeling_&_Inference_schema",
             "@type": "@id"
         },
         "cobidas-MRI_Results": {

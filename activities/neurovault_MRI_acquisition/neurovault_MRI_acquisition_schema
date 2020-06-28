@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_MRI_acquisition/neurovault_MRI_acquisition_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "neurovault_MRI_acquisition",
+    "@id": "neurovault_MRI_acquisition_schema",
     "skos:prefLabel": "neurovault_MRI_acquisition",
     "schema:description": "neurovault_MRI_acquisition",
     "schema:schemaVersion": "0.0.1",

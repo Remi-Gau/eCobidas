@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_whole-blood/PET_radioligand_whole-blood_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "PET_radioligand_whole-blood",
+    "@id": "PET_radioligand_whole-blood_schema",
     "skos:prefLabel": "PET_radioligand_whole-blood",
     "schema:description": "PET_radioligand_whole-blood",
     "schema:schemaVersion": "0.0.1",

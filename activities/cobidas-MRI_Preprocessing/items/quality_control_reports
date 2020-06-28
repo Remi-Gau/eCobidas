@@ -1,15 +1,5 @@
 {
-    "@context": [
-        [
-            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
-        ],
-        {
-            "@context": {
-                "@version": 1.1,
-                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/items/"
-            }
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "quality_control_reports",
     "prefLabel": "quality_control_reports",
@@ -23,7 +13,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "#REF!"
+        "en": "Describe quality control measures"
     },
     "responseOptions": {
         "type": "xsd:string"

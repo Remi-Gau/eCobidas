@@ -1,15 +1,5 @@
 {
-    "@context": [
-        [
-            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
-        ],
-        {
-            "@context": {
-                "@version": 1.1,
-                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/items/"
-            }
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "non-rigid_registration",
     "prefLabel": "non-rigid_registration",
@@ -23,7 +13,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "#REF!"
+        "en": "Was non-rigid registration applied?"
     },
     "responseOptions": {
         "multipleChoice": false,

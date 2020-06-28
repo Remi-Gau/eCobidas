@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_time/PET_radioligand_time_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "PET_radioligand_time",
+    "@id": "PET_radioligand_time_schema",
     "skos:prefLabel": "PET_radioligand_time",
     "schema:description": "PET_radioligand_time",
     "schema:schemaVersion": "0.0.1",

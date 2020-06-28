@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Experimental_design/neurovault_Experimental_design_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "neurovault_Experimental_design",
+    "@id": "neurovault_Experimental_design_schema",
     "skos:prefLabel": "neurovault_Experimental_design",
     "schema:description": "neurovault_Experimental_design",
     "schema:schemaVersion": "0.0.1",

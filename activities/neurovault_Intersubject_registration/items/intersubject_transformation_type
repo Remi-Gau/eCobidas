@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Intersubject_registration/neurovault_Intersubject_registration_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "intersubject_transformation_type",
     "prefLabel": "intersubject_transformation_type",
@@ -10,6 +7,9 @@
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
     "ui": {
+        "allow": [
+            "skipped"
+        ],
         "inputType": "select"
     },
     "question": {
@@ -25,6 +25,11 @@
             {
                 "schema:name": "nonlinear",
                 "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
                 "@type": "schema:option"
             }
         ]

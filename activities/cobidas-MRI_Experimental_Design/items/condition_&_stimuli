@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "condition_&_stimuli",
+    "prefLabel": "condition_&_stimuli",
+    "schema:description": "condition_&_stimuli",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Clearly describe each condition and the stimuli used."
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

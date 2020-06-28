@@ -37,10 +37,6 @@ REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
 # but it can also be downloaded from here:
 # https://github.com/NeuroVault/NeuroVault/blob/master/xlsx/
 
-# INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
-# INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv'
-INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/COBIDAS_MRI - clean.csv'
-
 # ----------------------------------------
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the reproschema will be hosted
@@ -63,46 +59,62 @@ REMOTE_REPO = 'https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/'
 BRANCH = 'remi-MRI'
 
 # ----------------------------------------
-# Protocol name
-
-# PROTOCOL = 'neurovault_'
-PROTOCOL = 'PET_'
-PROTOCOL = 'cobidas-MRI_'
-
-INCLUDE_COL = []
-
-# ----------------------------------------
-# CSV column
-
+# Protocol info
 
 # Neurovaut
-# SECTION_COL = 1
-# ITEM_COL = 2
-# QUESTION_COL = 3
-# RESPONSE_TYPE_COL = 4
-# CHOICE_COL = 5
-# MANDATORY_COL = 6
-# VISIBILITY_COL = 7
-
+# INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
+# PROTOCOL = 'neurovault_'
+# CSV_INFO = {
+#     'section':
+#         {'col': 1, 'name': ""},
+#     'item':
+#         {'col': 2, 'name': "Item"},
+#     'question':
+#         {'col': 3, 'name': ""},
+#     'resp_type':
+#         {'col': 4, 'name': ""},
+#     'choice':
+#         {'col': 5, 'name': ""},
+#     'mandatory':
+#         {'col': 6, 'name': ""},
+#     'include':
+#         {'col': [], 'name': ""},
+#     'vis':
+#         {'col': 7, 'name': ""}
+# }
 
 # PET
-# SECTION_COL = 4
-# ITEM_COL = 5
-# QUESTION_COL = 7
-# RESPONSE_TYPE_COL = 9
-# CHOICE_COL = 10
-# MANDATORY_COL = 11
-# VISIBILITY_COL = 12
-
+# INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv'
+# PROTOCOL = 'PET_'
+# CSV_INFO = {
+#     'section':
+#         {'col': 4, 'name': ""},
+#     'item':
+#         {'col': 5, 'name': "Item"},
+#     'question':
+#         {'col': 7, 'name': ""},
+#     'resp_type':
+#         {'col': 9, 'name': ""},
+#     'choice':
+#         {'col': 10, 'name': ""},
+#     'mandatory':
+#         {'col': 11, 'name': ""},
+#     'include':
+#         {'col': [], 'name': ""},
+#     'vis':
+#         {'col': 12, 'name': ""}
+# }
 
 # COBIDAS MRI
+INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/COBIDAS_MRI - clean.csv'
+PROTOCOL = 'cobidas-MRI_'
 CSV_INFO = {
     'section':
         {'col': 18, 'name': ""},
     'item':
         {'col': 24, 'name': "Item"},
     'question':
-        {'col': 3, 'name': ""},
+        {'col': 26, 'name': ""},
     'resp_type':
         {'col': 28, 'name': ""},
     'choice':
@@ -164,7 +176,7 @@ PROTOCOL_CONTEXT_JSON = {
 
 # Initiliaze this variable as we will need to check if we got to a new section while
 # looping through items
-section = ''
+this_section = ''
 
 # loop through rows of the csv file and create corresponding jsonld for each item
 with open(INPUT_FILE, 'r') as csvfile:
@@ -178,10 +190,11 @@ with open(INPUT_FILE, 'r') as csvfile:
             # -------------------------------------------------------------------
             # detect if this is a new section if so it will create a new activity
             # -------------------------------------------------------------------
-            if row[CSV_INFO['section']['col']] != section:
+            if row[CSV_INFO['section']['col']] != this_section:
 
                 # update section name
-                section = row[CSV_INFO['section']['col']]
+                this_section = row[CSV_INFO['section']['col']]
+                section = this_section.replace(" ", "_")
 
                 # where the items of this section will be stored
                 activity_dir = PROTOCOL + section
@@ -201,13 +214,13 @@ with open(INPUT_FILE, 'r') as csvfile:
                     os.makedirs(os.path.join(OUTPUT_DIR, 'activities',
                                              activity_dir, 'items'))
 
-                activity_at_context = define_activity_context(REPRONIM_REPO,
+                activity_at_context, activity_context = define_activity_context(REPRONIM_REPO,
                                                               REMOTE_REPO,
                                                               BRANCH, activity_dir,
                                                               activity_context_file)
 
-                activity_schema_json = define_new_activity(activity_at_context,
-                                                           activity_schema_name,
+                activity_schema = define_new_activity(activity_at_context,
+                                                           activity_schema_file,
                                                            PROTOCOL, section, VERSION)
 
                 # update the content of the protool schema and context wrt this new activity
@@ -240,13 +253,13 @@ with open(INPUT_FILE, 'r') as csvfile:
                 "isVis": item_info['visibility']
             }
 
-            activity_schema_json['ui']['order'].append(item_info['name'])
-            activity_schema_json['ui']['addProperties'].append(append_to_activity)
+            activity_schema['ui']['order'].append(item_info['name'])
+            activity_schema['ui']['addProperties'].append(append_to_activity)
 
             # save activity schema with every new item
             with open(os.path.join(OUTPUT_DIR, 'activities', activity_dir,
                                    activity_schema_file), 'w') as ff:
-                json.dump(activity_schema_json, ff, sort_keys=False, indent=4)
+                json.dump(activity_schema, ff, sort_keys=False, indent=4)
 
             # -------------------------------------------------------------------
             # Create new item

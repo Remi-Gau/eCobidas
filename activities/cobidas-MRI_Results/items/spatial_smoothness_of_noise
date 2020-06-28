@@ -1,15 +1,5 @@
 {
-    "@context": [
-        [
-            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
-        ],
-        {
-            "@context": {
-                "@version": 1.1,
-                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Results/items/"
-            }
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "spatial_smoothness_of_noise",
     "prefLabel": "spatial_smoothness_of_noise",
@@ -23,7 +13,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "#REF!"
+        "en": "Noise smoothness for statistical inference (FWHM)"
     },
     "responseOptions": {
         "type": "xsd:string"

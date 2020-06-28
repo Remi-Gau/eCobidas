@@ -1,0 +1,67 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "group_level_model_type",
+    "prefLabel": "group_level_model_type",
+    "schema:description": "group_level_model_type",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Type of group model used"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "Mass Univariate",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Multivariate",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Mass Multivariate",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Local Multivariate",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Multivariate",
+                "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "inter-subjective predictive",
+                "schema:value": 5,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Multivariate inter-subject predictive",
+                "schema:value": 6,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Representational Similarity Analysis",
+                "schema:value": 7,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 9,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

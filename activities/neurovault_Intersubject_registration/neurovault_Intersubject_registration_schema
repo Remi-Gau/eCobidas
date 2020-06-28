@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Intersubject_registration/neurovault_Intersubject_registration_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "neurovault_Intersubject_registration",
+    "@id": "neurovault_Intersubject_registration_schema",
     "skos:prefLabel": "neurovault_Intersubject_registration",
     "schema:description": "neurovault_Intersubject_registration",
     "schema:schemaVersion": "0.0.1",

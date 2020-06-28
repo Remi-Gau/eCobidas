@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/protocols/PET/PET_context"
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/protocols/PET/PET_context"
     ],
     "@type": "reproschema:Protocol",
     "@id": "PET_schema",
@@ -9,7 +9,7 @@
     "schema:description": "PET_schema",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "landingPage": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/protocols/PET/README.md",
+    "landingPage": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/protocols/PET/README.md",
     "ui": {
         "allow": [
             "autoAdvance",

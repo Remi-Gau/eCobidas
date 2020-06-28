@@ -8,19 +8,17 @@ def define_activity_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, ac
             }
         }
 
-    at_context = [
-        REPRONIM_REPO + 'contexts/generic'
-        ]
+    at_context = REPRONIM_REPO + 'contexts/generic'
 
     return at_context, context
 
 
-def define_new_activity(at_context, activity_schema_name, PROTOCOL, section, VERSION):
+def define_new_activity(at_context, activity_schema_file, PROTOCOL, section, VERSION):
     # define the base json content for the activity
     return {
         '@context': at_context,
         '@type': 'reproschema:Activity',
-        '@id': activity_schema_name,
+        '@id': activity_schema_file,
         'skos:prefLabel': PROTOCOL + section,
         'schema:description': PROTOCOL + section,
         'schema:schemaVersion': VERSION,
@@ -39,6 +37,7 @@ def get_item_info(row, CSV_INFO):
 
     mandatory_col = CSV_INFO['mandatory']['col']
 
+    item_name = []
     question = "QUESTION MISSING"
     response_type = "UNKNOWN"
     response_choices = []
@@ -46,15 +45,17 @@ def get_item_info(row, CSV_INFO):
 
     item_col = CSV_INFO['item']['col']
     item_col_name = CSV_INFO['item']['name']
-    item_name = []
 
     # we want to skip the header and only include items with 1 in the include column (if it exists)
     INCLUDE = True
     incl_col = CSV_INFO['include']['col']
     if row[item_col] == item_col_name or (incl_col != [] and row[incl_col] != "1"):
+
         INCLUDE = False
 
         print('   skipping item')
+
+        return {'name': item_name}
 
     if INCLUDE:
 

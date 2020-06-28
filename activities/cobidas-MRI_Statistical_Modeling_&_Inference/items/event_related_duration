@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "event_related_duration",
+    "prefLabel": "event_related_duration",
+    "schema:description": "event_related_duration",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "float"
+    },
+    "question": {
+        "en": "What duration was used to model each event?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

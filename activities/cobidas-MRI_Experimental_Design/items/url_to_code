@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "url_to_code",
+    "prefLabel": "url_to_code",
+    "schema:description": "url_to_code",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Specify the URL of the experiment code if possible"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

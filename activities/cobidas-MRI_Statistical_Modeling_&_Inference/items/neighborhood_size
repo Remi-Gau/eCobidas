@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "neighborhood_size",
+    "prefLabel": "neighborhood_size",
+    "schema:description": "neighborhood_size",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Neighborhood size used to form clusters"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "6",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "18",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "26",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

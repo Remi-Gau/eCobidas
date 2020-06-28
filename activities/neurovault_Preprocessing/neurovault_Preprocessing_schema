@@ -1,10 +1,7 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/neurovault_Preprocessing/neurovault_Preprocessing_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "neurovault_Preprocessing",
+    "@id": "neurovault_Preprocessing_schema",
     "skos:prefLabel": "neurovault_Preprocessing",
     "schema:description": "neurovault_Preprocessing",
     "schema:schemaVersion": "0.0.1",

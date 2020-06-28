@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "source_of_anatomical_roi",
+    "prefLabel": "source_of_anatomical_roi",
+    "schema:description": "source_of_anatomical_roi",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "If a small-volume correction mask is defined anatomically, provide named anatomical regions from a publicly available ROI atlas"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

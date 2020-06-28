@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "variables_recorded",
+    "prefLabel": "variables_recorded",
+    "schema:description": "variables_recorded",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "What variables were recorded?"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

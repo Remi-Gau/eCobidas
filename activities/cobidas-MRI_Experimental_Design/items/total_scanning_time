@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "total_scanning_time",
+    "prefLabel": "total_scanning_time",
+    "schema:description": "total_scanning_time",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "float"
+    },
+    "question": {
+        "en": "What was the total scanning time?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

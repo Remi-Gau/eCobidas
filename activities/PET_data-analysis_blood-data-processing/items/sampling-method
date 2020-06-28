@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "sampling-method",
     "prefLabel": "sampling-method",
@@ -48,6 +45,11 @@
             {
                 "schema:name": "Other",
                 "schema:value": 5,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 7,
                 "@type": "schema:option"
             }
         ]

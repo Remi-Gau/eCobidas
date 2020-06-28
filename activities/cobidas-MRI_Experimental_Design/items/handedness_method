@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "handedness_method",
+    "prefLabel": "handedness_method",
+    "schema:description": "handedness_method",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Were there any screening criteria for handiness?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "self report",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "EHI",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

@@ -1,15 +1,5 @@
 {
-    "@context": [
-        [
-            "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
-        ],
-        {
-            "@context": {
-                "@version": 1.1,
-                "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/items/"
-            }
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "denoising_used",
     "prefLabel": "denoising_used",
@@ -23,7 +13,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": ""
+        "en": "Was any kind of denoising performed or were any nuisance covariate included in the subject level model?"
     },
     "responseOptions": {
         "multipleChoice": false,

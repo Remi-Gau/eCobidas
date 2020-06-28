@@ -1,7 +1,7 @@
 {
     "@context": {
         "@version": 1.1,
-        "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/neurovault/activities/",
+        "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/",
         "neurovault_Experimental_design": {
             "@id": "activity_path:neurovault_Experimental_design/neurovault_Experimental_design_schema",
             "@type": "@id"
@@ -22,8 +22,8 @@
             "@id": "activity_path:neurovault_Intersubject_registration/neurovault_Intersubject_registration_schema",
             "@type": "@id"
         },
-        "neurovault_Individual_ subject_modeling": {
-            "@id": "activity_path:neurovault_Individual_ subject_modeling/neurovault_Individual_ subject_modeling_schema",
+        "neurovault_Individual__subject_modeling": {
+            "@id": "activity_path:neurovault_Individual__subject_modeling/neurovault_Individual__subject_modeling_schema",
             "@type": "@id"
         },
         "neurovault_Group_modeling": {

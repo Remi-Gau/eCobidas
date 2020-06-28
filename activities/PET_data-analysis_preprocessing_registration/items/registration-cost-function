@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "registration-cost-function",
     "prefLabel": "registration-cost-function",
@@ -43,6 +40,11 @@
             {
                 "schema:name": "Other",
                 "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 6,
                 "@type": "schema:option"
             }
         ]

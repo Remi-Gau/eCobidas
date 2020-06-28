@@ -17,18 +17,18 @@
         ],
         "shuffle": false,
         "order": [
-            "cobidas-MRI_Experimental Design",
+            "cobidas-MRI_Experimental_Design",
             "cobidas-MRI_Acquisition",
             "cobidas-MRI_Preprocessing",
-            "cobidas-MRI_Statistical Modeling & Inference",
+            "cobidas-MRI_Statistical_Modeling_&_Inference",
             "cobidas-MRI_Results"
         ],
         "addProperties": [
             {
-                "variableName": "cobidas-MRI_Experimental Design",
-                "isAbout": "cobidas-MRI_Experimental Design",
+                "variableName": "cobidas-MRI_Experimental_Design",
+                "isAbout": "cobidas-MRI_Experimental_Design",
                 "prefLabel": {
-                    "en": "Experimental Design"
+                    "en": "Experimental: Design"
                 }
             },
             {
@@ -46,10 +46,10 @@
                 }
             },
             {
-                "variableName": "cobidas-MRI_Statistical Modeling & Inference",
-                "isAbout": "cobidas-MRI_Statistical Modeling & Inference",
+                "variableName": "cobidas-MRI_Statistical_Modeling_&_Inference",
+                "isAbout": "cobidas-MRI_Statistical_Modeling_&_Inference",
                 "prefLabel": {
-                    "en": "Statistical Modeling & Inference"
+                    "en": "Statistical: Modeling: &: Inference"
                 }
             },
             {

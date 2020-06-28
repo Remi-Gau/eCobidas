@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_metabolite/PET_radioligand_metabolite_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "fraction-of-radiometabolite-needing-quantitation",
     "prefLabel": "fraction-of-radiometabolite-needing-quantitation",
@@ -28,6 +25,11 @@
             {
                 "schema:name": "percentage",
                 "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
                 "@type": "schema:option"
             }
         ]
