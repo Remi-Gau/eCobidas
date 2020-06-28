@@ -122,6 +122,47 @@ def define_new_activity(at_context, activity_schema_name, PROTOCOL, section, VER
         }
 
 
+def get_item_info(row, ITEM_COL, QUESTION_COL, RESPONSE_TYPE_COL, CHOICE_COL, VISIBILITY_COL): 
+    
+    item_name = []
+    question = []
+    response_type = []
+    response_choices = []
+    visibility = []
+    
+    # to skip the header
+    if row[ITEM_COL] != 'Item':
+
+        item_name = row[ITEM_COL]
+
+        question = row[QUESTION_COL]
+
+        response_type = row[RESPONSE_TYPE_COL]
+
+        response_choices = row[CHOICE_COL].split(' | ')
+
+        # branchic logic: visibility
+        if row[VISIBILITY_COL] == '1':
+
+            visibility = True
+
+        else:
+
+            visibility = row[VISIBILITY_COL]
+
+            # vis_conditions = row[CHOICE_COL].split(',')
+            #
+            # for i, cdt in enumerate(vis_conditions):
+            #
+            #     visibility['choices'].append({
+            #         'schema:name': opt,
+            #         'schema:value': i,
+            #         '@type': 'schema:option'
+            #         })
+
+    return item_name, question, response_type, response_choices, visibility
+
+
 def define_new_item(at_context, item_name, question, VERSION):
     # define jsonld for this item
     return {
@@ -325,35 +366,9 @@ with open(INPUT_FILE, 'r') as csvfile:
     PROTOCOL_METADATA = csv.reader(csvfile)
     for row in PROTOCOL_METADATA:
 
-        # to skip the header
-        if row[ITEM_COL] != 'Item':
+        item_name, question, response_type, response_choices, visibility = get_item_info(row, ITEM_COL, QUESTION_COL, RESPONSE_TYPE_COL, CHOICE_COL, VISIBILITY_COL)
 
-            item_name = row[ITEM_COL]
-
-            question = row[QUESTION_COL]
-
-            response_type = row[RESPONSE_TYPE_COL]
-
-            response_choices = row[CHOICE_COL].split(' | ')
-
-            # branchic logic: visibility
-            if row[VISIBILITY_COL] == '1':
-
-                visibility = True
-
-            else:
-
-                visibility = row[VISIBILITY_COL]
-
-                # vis_conditions = row[CHOICE_COL].split(',')
-                #
-                # for i, cdt in enumerate(vis_conditions):
-                #
-                #     visibility['choices'].append({
-                #         'schema:name': opt,
-                #         'schema:value': i,
-                #         '@type': 'schema:option'
-                #         })
+        if item_name != []:
 
             # -------------------------------------------------------------------
             # detect if this is a new section if so it will create a new activity
@@ -377,13 +392,13 @@ with open(INPUT_FILE, 'r') as csvfile:
 
                 # create dir for this section
                 if not os.path.exists(os.path.join(OUTPUT_DIR, 'activities',
-                                                   activity_dir)):
+                                                    activity_dir)):
                     os.makedirs(os.path.join(OUTPUT_DIR, 'activities', activity_dir))
 
                 if not os.path.exists(os.path.join(OUTPUT_DIR, 'activities',
-                                                   activity_dir, 'items')):
+                                                    activity_dir, 'items')):
                     os.makedirs(os.path.join(OUTPUT_DIR, 'activities',
-                                             activity_dir, 'items'))
+                                                activity_dir, 'items'))
 
                 activity_context_json, activity_at_context = define_activity_context(
                                                                 REPRONIM_REPO,
@@ -436,11 +451,11 @@ with open(INPUT_FILE, 'r') as csvfile:
 
             # save activity schema and context with every new item
             with open(os.path.join(OUTPUT_DIR, 'activities', activity_dir,
-                                   activity_schema_file), 'w') as ff:
+                                    activity_schema_file), 'w') as ff:
                 json.dump(activity_schema_json, ff, sort_keys=False, indent=4)
 
             with open(os.path.join(OUTPUT_DIR, 'activities', activity_dir,
-                                   activity_context_file), 'w') as ff:
+                                    activity_context_file), 'w') as ff:
                 json.dump(activity_context_json, ff, sort_keys=False, indent=4)
 
             # -------------------------------------------------------------------
