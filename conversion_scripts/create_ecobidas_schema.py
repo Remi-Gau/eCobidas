@@ -182,14 +182,7 @@ def define_response_choice(response_type, response_choices):
 
         responseOptions = {'choices': []}
 
-        for i, opt in enumerate(response_choices):
-
-            responseOptions['choices'].append({
-                'schema:name': opt,
-                'schema:value': i,
-                '@type': 'schema:option'
-                }
-            )
+        responseOptions = list_responses_options(responseOptions, response_choices)
 
     # if we have a dropdown menu
     elif response_type == 'dropdown':
@@ -198,14 +191,7 @@ def define_response_choice(response_type, response_choices):
 
         responseOptions = {'choices': []}
 
-        for i, opt in enumerate(response_choices):
-
-            responseOptions['choices'].append({
-                'schema:name': opt,
-                'schema:value': i,
-                '@type': 'schema:option'
-                }
-            )
+        responseOptions = list_responses_options(responseOptions, response_choices)
 
     # response is date
     elif response_type == 'date':
@@ -279,6 +265,19 @@ def define_response_choice(response_type, response_choices):
 
     return inputType, responseOptions
 
+
+def list_responses_options(responseOptions, response_choices):
+
+    for i, opt in enumerate(response_choices):
+
+        responseOptions['choices'].append({
+            'schema:name': opt,
+            'schema:value': i,
+            '@type': 'schema:option'
+            }
+        )
+
+    return responseOptions
 
 # -----------------------------------------------------------------------------
 #                                   START
