@@ -43,7 +43,7 @@ REMOTE_REPO = 'https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/'
 # starts with: REMOTE_REPO + BRANCH
 # BRANCH = 'master'
 # BRANCH = 'neurovault'
-BRANCH = 'PET'
+BRANCH = 'master'
 
 REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
 

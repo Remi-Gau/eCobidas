@@ -1,7 +1,7 @@
 {
     "@context": {
         "@version": 1.1,
-        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_metabolite/items/",
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_metabolite/items/",
         "radiolabeled-parent-compound-fraction": {
             "@id": "item_path:radiolabeled-parent-compound-fraction",
             "@type": "@id"

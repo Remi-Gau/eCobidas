@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_whole-blood/PET_radioligand_whole-blood_context"
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_whole-blood/PET_radioligand_whole-blood_context"
     ],
     "@type": "reproschema:Field",
     "@id": "whole-blood-radioactivity",
