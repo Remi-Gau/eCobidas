@@ -408,7 +408,7 @@ with open(INPUT_FILE, 'r') as csvfile:
                     # for the name displayed by the UI for this acivity we simply reuse the
                     # activity name
                     "prefLabel": {
-                        "en": activity_schema_name.replace("_", " ")
+                        "en": activity_schema_name.replace(PROTOCOL, "").replace("_", ": ").replace("-", " ")
                     }
                 }
 
