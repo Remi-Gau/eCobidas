@@ -1,0 +1,77 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "PET_data-acquisition_reconstruction",
+    "skos:prefLabel": "PET_data-acquisition_reconstruction",
+    "schema:description": "PET_data-acquisition_reconstruction",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "acquisition-mode",
+            "reconstruction-method",
+            "parameters",
+            "recon-filter-type",
+            "attenuation-correction",
+            "postrecon-filter-size",
+            "pet-voxel-size",
+            "matrix-size",
+            "frame-sequence"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "acquisition-mode",
+                "isAbout": "acquisition-mode",
+                "isVis": ""
+            },
+            {
+                "variableName": "reconstruction-method",
+                "isAbout": "reconstruction-method",
+                "isVis": ""
+            },
+            {
+                "variableName": "parameters",
+                "isAbout": "parameters",
+                "isVis": ""
+            },
+            {
+                "variableName": "recon-filter-type",
+                "isAbout": "recon-filter-type",
+                "isVis": ""
+            },
+            {
+                "variableName": "attenuation-correction",
+                "isAbout": "attenuation-correction",
+                "isVis": ""
+            },
+            {
+                "variableName": "postrecon-filter-size",
+                "isAbout": "postrecon-filter-size",
+                "isVis": ""
+            },
+            {
+                "variableName": "pet-voxel-size",
+                "isAbout": "pet-voxel-size",
+                "isVis": ""
+            },
+            {
+                "variableName": "matrix-size",
+                "isAbout": "matrix-size",
+                "isVis": ""
+            },
+            {
+                "variableName": "frame-sequence",
+                "isAbout": "frame-sequence",
+                "isVis": ""
+            }
+        ]
+    }
+}

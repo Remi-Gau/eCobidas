@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_whole-blood/PET_radioligand_whole-blood_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "plasma-to-whole-blood-ratio",
+    "prefLabel": "plasma-to-whole-blood-ratio",
+    "schema:description": "plasma-to-whole-blood-ratio",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Plasma to whole blood ratio"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

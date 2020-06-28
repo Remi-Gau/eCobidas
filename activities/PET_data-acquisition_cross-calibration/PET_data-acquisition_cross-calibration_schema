@@ -1,0 +1,131 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "PET_data-acquisition_cross-calibration",
+    "skos:prefLabel": "PET_data-acquisition_cross-calibration",
+    "schema:description": "PET_data-acquisition_cross-calibration",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "phantom-type",
+            "phantom-volume",
+            "radiotracer-isotope",
+            "phantom-activity",
+            "activity-time",
+            "residual-activity",
+            "residual-activity-time",
+            "phantom-acquisition-time",
+            "well-counter-sample-volumes",
+            "well-counter-measurement-time",
+            "well-counter-read",
+            "blood-sampling-device-read",
+            "blood-sampling-device-measurement-time",
+            "experiment-date",
+            "pet-system-used",
+            "imaging-center-site",
+            "imaging-department",
+            "phantom-data"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "phantom-type",
+                "isAbout": "phantom-type",
+                "isVis": ""
+            },
+            {
+                "variableName": "phantom-volume",
+                "isAbout": "phantom-volume",
+                "isVis": ""
+            },
+            {
+                "variableName": "radiotracer-isotope",
+                "isAbout": "radiotracer-isotope",
+                "isVis": ""
+            },
+            {
+                "variableName": "phantom-activity",
+                "isAbout": "phantom-activity",
+                "isVis": ""
+            },
+            {
+                "variableName": "activity-time",
+                "isAbout": "activity-time",
+                "isVis": ""
+            },
+            {
+                "variableName": "residual-activity",
+                "isAbout": "residual-activity",
+                "isVis": ""
+            },
+            {
+                "variableName": "residual-activity-time",
+                "isAbout": "residual-activity-time",
+                "isVis": ""
+            },
+            {
+                "variableName": "phantom-acquisition-time",
+                "isAbout": "phantom-acquisition-time",
+                "isVis": ""
+            },
+            {
+                "variableName": "well-counter-sample-volumes",
+                "isAbout": "well-counter-sample-volumes",
+                "isVis": ""
+            },
+            {
+                "variableName": "well-counter-measurement-time",
+                "isAbout": "well-counter-measurement-time",
+                "isVis": ""
+            },
+            {
+                "variableName": "well-counter-read",
+                "isAbout": "well-counter-read",
+                "isVis": ""
+            },
+            {
+                "variableName": "blood-sampling-device-read",
+                "isAbout": "blood-sampling-device-read",
+                "isVis": ""
+            },
+            {
+                "variableName": "blood-sampling-device-measurement-time",
+                "isAbout": "blood-sampling-device-measurement-time",
+                "isVis": ""
+            },
+            {
+                "variableName": "experiment-date",
+                "isAbout": "experiment-date",
+                "isVis": ""
+            },
+            {
+                "variableName": "pet-system-used",
+                "isAbout": "pet-system-used",
+                "isVis": ""
+            },
+            {
+                "variableName": "imaging-center-site",
+                "isAbout": "imaging-center-site",
+                "isVis": ""
+            },
+            {
+                "variableName": "imaging-department",
+                "isAbout": "imaging-department",
+                "isVis": ""
+            },
+            {
+                "variableName": "phantom-data",
+                "isAbout": "phantom-data",
+                "isVis": ""
+            }
+        ]
+    }
+}

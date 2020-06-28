@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "fitting-description",
+    "prefLabel": "fitting-description",
+    "schema:description": "fitting-description",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Fitting description"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

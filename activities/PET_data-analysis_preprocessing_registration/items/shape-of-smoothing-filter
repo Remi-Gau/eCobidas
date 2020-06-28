@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "shape-of-smoothing-filter",
+    "prefLabel": "shape-of-smoothing-filter",
+    "schema:description": "shape-of-smoothing-filter",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Shape of smoothing filter"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

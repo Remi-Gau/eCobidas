@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_multiple-testings/PET_statistics_multiple-testings_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "number-of-tests",
+    "prefLabel": "number-of-tests",
+    "schema:description": "number-of-tests",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "Number of Tests"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

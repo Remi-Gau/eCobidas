@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_time/PET_radioligand_time_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "scan-start",
+    "prefLabel": "scan-start",
+    "schema:description": "scan-start",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Scan start"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_metabolite/PET_radioligand_metabolite_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "radiolabeled-metabolite-fractions",
+    "prefLabel": "radiolabeled-metabolite-fractions",
+    "schema:description": "radiolabeled-metabolite-fractions",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Radiolabeled metabolite fractions"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

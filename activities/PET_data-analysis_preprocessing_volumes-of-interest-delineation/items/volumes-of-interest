@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "volumes-of-interest",
+    "prefLabel": "volumes-of-interest",
+    "schema:description": "volumes-of-interest",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Volumes of interest"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

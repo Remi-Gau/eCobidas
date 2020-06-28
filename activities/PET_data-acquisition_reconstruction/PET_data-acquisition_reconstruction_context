@@ -1,0 +1,42 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_reconstruction/items/",
+        "acquisition-mode": {
+            "@id": "item_path:acquisition-mode",
+            "@type": "@id"
+        },
+        "reconstruction-method": {
+            "@id": "item_path:reconstruction-method",
+            "@type": "@id"
+        },
+        "parameters": {
+            "@id": "item_path:parameters",
+            "@type": "@id"
+        },
+        "recon-filter-type": {
+            "@id": "item_path:recon-filter-type",
+            "@type": "@id"
+        },
+        "attenuation-correction": {
+            "@id": "item_path:attenuation-correction",
+            "@type": "@id"
+        },
+        "postrecon-filter-size": {
+            "@id": "item_path:postrecon-filter-size",
+            "@type": "@id"
+        },
+        "pet-voxel-size": {
+            "@id": "item_path:pet-voxel-size",
+            "@type": "@id"
+        },
+        "matrix-size": {
+            "@id": "item_path:matrix-size",
+            "@type": "@id"
+        },
+        "frame-sequence": {
+            "@id": "item_path:frame-sequence",
+            "@type": "@id"
+        }
+    }
+}

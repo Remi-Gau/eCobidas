@@ -2,3 +2,5 @@
 .~lock*
 
 boilerplate/.DS_Store
+
+.vscode/*

@@ -1,0 +1,53 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_power-analysis/PET_statistics_power-analysis_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "PET_statistics_power-analysis",
+    "skos:prefLabel": "PET_statistics_power-analysis",
+    "schema:description": "PET_statistics_power-analysis",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "alpha-level",
+            "power",
+            "effect-size",
+            "variance-assumption",
+            "number-of-subjects-needed"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "alpha-level",
+                "isAbout": "alpha-level",
+                "isVis": ""
+            },
+            {
+                "variableName": "power",
+                "isAbout": "power",
+                "isVis": ""
+            },
+            {
+                "variableName": "effect-size",
+                "isAbout": "effect-size",
+                "isVis": ""
+            },
+            {
+                "variableName": "variance-assumption",
+                "isAbout": "variance-assumption",
+                "isVis": ""
+            },
+            {
+                "variableName": "number-of-subjects-needed",
+                "isAbout": "number-of-subjects-needed",
+                "isVis": ""
+            }
+        ]
+    }
+}

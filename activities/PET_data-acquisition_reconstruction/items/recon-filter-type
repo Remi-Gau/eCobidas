@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "recon-filter-type",
+    "prefLabel": "recon-filter-type",
+    "schema:description": "recon-filter-type",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Recon-filter-type"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

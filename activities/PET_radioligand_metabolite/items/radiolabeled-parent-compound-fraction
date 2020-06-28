@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_metabolite/PET_radioligand_metabolite_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "radiolabeled-parent-compound-fraction",
+    "prefLabel": "radiolabeled-parent-compound-fraction",
+    "schema:description": "radiolabeled-parent-compound-fraction",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Radiolabeled Parent compound fraction"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

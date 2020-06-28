@@ -29,10 +29,12 @@ import csv
 # -----------------------------------------------------------------------------
 # modify the following lines to match your needs
 
-# where the metadata from neurovault are described. It is in xlsx dir of this repos
+# where the checklist csv is. It is in xlsx dir of this repo
 # but it can also be downloaded from here:
-# https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv
-INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
+# https://github.com/NeuroVault/NeuroVault/blob/master/xlsx/
+
+# INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
+INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv'
 
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the reproschema will be hosted
@@ -45,21 +47,40 @@ REMOTE_REPO = 'https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/'
 # to which branch of reproschema the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: REMOTE_REPO + BRANCH
-BRANCH = 'neurovault'
+# BRANCH = 'master'
+# BRANCH = 'neurovault'
+BRANCH = 'PET'
 
 REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
 
 # Protocol name
-PROTOCOL = 'neurovault_'
+# PROTOCOL = 'neurovault_'
+PROTOCOL = 'PET_'
 
 # CSV column
-SECTION_COL = 1
-ITEM_COL = 2
-QUESTION_COL = 3
-RESPONSE_TYPE_COL = 4
-CHOICE_COL = 5
-MANDATORY_COL = 6
-VISIBILITY_COL = 7
+# --------------------
+# Neurovaut
+# SECTION_COL = 1
+# ITEM_COL = 2
+# QUESTION_COL = 3
+# RESPONSE_TYPE_COL = 4
+# CHOICE_COL = 5
+# MANDATORY_COL = 6
+# VISIBILITY_COL = 7
+# --------------------
+
+# --------------------
+# PET
+SECTION_COL = 4
+ITEM_COL = 5
+QUESTION_COL = 7
+RESPONSE_TYPE_COL = 9
+CHOICE_COL = 10
+MANDATORY_COL = 11
+VISIBILITY_COL = 12
+# --------------------
+
+
 
 # VERSION
 VERSION = '0.0.1'

@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "registration-cost-function",
+    "prefLabel": "registration-cost-function",
+    "schema:description": "registration-cost-function",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Registration cost function"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_plasma/PET_radioligand_plasma_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "data:-hematocrit-value",
+    "prefLabel": "data:-hematocrit-value",
+    "schema:description": "data:-hematocrit-value",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Data: hematocrit value"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

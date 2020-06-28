@@ -1,0 +1,101 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "PET_data-analysis_preprocessing_registration",
+    "skos:prefLabel": "PET_data-analysis_preprocessing_registration",
+    "schema:description": "PET_data-analysis_preprocessing_registration",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "registration-reference-image",
+            "registration-target-image",
+            "registration-cost-function",
+            "registration-interpolation",
+            "registration-smoothing",
+            "resolution-of-reference-target",
+            "registration-quality-control",
+            "registration-software",
+            "smoothing-target-image",
+            "size-of-smoothing-filter",
+            "shape-of-smoothing-filter",
+            "justification-for-smoothing-size",
+            "space-of-smoothing"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "registration-reference-image",
+                "isAbout": "registration-reference-image",
+                "isVis": ""
+            },
+            {
+                "variableName": "registration-target-image",
+                "isAbout": "registration-target-image",
+                "isVis": ""
+            },
+            {
+                "variableName": "registration-cost-function",
+                "isAbout": "registration-cost-function",
+                "isVis": ""
+            },
+            {
+                "variableName": "registration-interpolation",
+                "isAbout": "registration-interpolation",
+                "isVis": ""
+            },
+            {
+                "variableName": "registration-smoothing",
+                "isAbout": "registration-smoothing",
+                "isVis": ""
+            },
+            {
+                "variableName": "resolution-of-reference-target",
+                "isAbout": "resolution-of-reference-target",
+                "isVis": ""
+            },
+            {
+                "variableName": "registration-quality-control",
+                "isAbout": "registration-quality-control",
+                "isVis": ""
+            },
+            {
+                "variableName": "registration-software",
+                "isAbout": "registration-software",
+                "isVis": ""
+            },
+            {
+                "variableName": "smoothing-target-image",
+                "isAbout": "smoothing-target-image",
+                "isVis": ""
+            },
+            {
+                "variableName": "size-of-smoothing-filter",
+                "isAbout": "size-of-smoothing-filter",
+                "isVis": ""
+            },
+            {
+                "variableName": "shape-of-smoothing-filter",
+                "isAbout": "shape-of-smoothing-filter",
+                "isVis": ""
+            },
+            {
+                "variableName": "justification-for-smoothing-size",
+                "isAbout": "justification-for-smoothing-size",
+                "isVis": ""
+            },
+            {
+                "variableName": "space-of-smoothing",
+                "isAbout": "space-of-smoothing",
+                "isVis": ""
+            }
+        ]
+    }
+}

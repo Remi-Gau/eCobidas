@@ -1,0 +1,21 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_metabolite/PET_radioligand_metabolite_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "error-on-above-measurement",
+    "prefLabel": "error-on-above-measurement",
+    "schema:description": "error-on-above-measurement",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Error on above measurement"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

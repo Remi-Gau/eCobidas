@@ -1,0 +1,102 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiotracer/items/",
+        "tracer-radionuclide": {
+            "@id": "item_path:tracer-radionuclide",
+            "@type": "@id"
+        },
+        "tracer-molecular-weight": {
+            "@id": "item_path:tracer-molecular-weight",
+            "@type": "@id"
+        },
+        "molecular-weight-unit": {
+            "@id": "item_path:molecular-weight-unit",
+            "@type": "@id"
+        },
+        "time-of-injection": {
+            "@id": "item_path:time-of-injection",
+            "@type": "@id"
+        },
+        "injected-radioactivity": {
+            "@id": "item_path:injected-radioactivity",
+            "@type": "@id"
+        },
+        "injected-radioactivity-unit": {
+            "@id": "item_path:injected-radioactivity-unit",
+            "@type": "@id"
+        },
+        "injected-tracer-mass": {
+            "@id": "item_path:injected-tracer-mass",
+            "@type": "@id"
+        },
+        "moles-tracer-injected": {
+            "@id": "item_path:moles-tracer-injected",
+            "@type": "@id"
+        },
+        "moles-tracer-injected-units": {
+            "@id": "item_path:moles-tracer-injected-units",
+            "@type": "@id"
+        },
+        "injected-tracer-mass-units": {
+            "@id": "item_path:injected-tracer-mass-units",
+            "@type": "@id"
+        },
+        "bodyweight": {
+            "@id": "item_path:bodyweight",
+            "@type": "@id"
+        },
+        "bodyweight-units": {
+            "@id": "item_path:bodyweight-units",
+            "@type": "@id"
+        },
+        "molar-radioactivity": {
+            "@id": "item_path:molar-radioactivity",
+            "@type": "@id"
+        },
+        "molar-radioactivity-units": {
+            "@id": "item_path:molar-radioactivity-units",
+            "@type": "@id"
+        },
+        "molar-radioactivity-measurement-time": {
+            "@id": "item_path:molar-radioactivity-measurement-time",
+            "@type": "@id"
+        },
+        "specific-radioactivity": {
+            "@id": "item_path:specific-radioactivity",
+            "@type": "@id"
+        },
+        "specific-radioactivity-units": {
+            "@id": "item_path:specific-radioactivity-units",
+            "@type": "@id"
+        },
+        "specific-radioactivity-measurement-time": {
+            "@id": "item_path:specific-radioactivity-measurement-time",
+            "@type": "@id"
+        },
+        "radiochemical-purity-units": {
+            "@id": "item_path:radiochemical-purity-units",
+            "@type": "@id"
+        },
+        "injected-volume": {
+            "@id": "item_path:injected-volume",
+            "@type": "@id"
+        },
+        "formulation": {
+            "@id": "item_path:formulation",
+            "@type": "@id"
+        },
+        "purity": {
+            "@id": "item_path:purity",
+            "@type": "@id"
+        },
+        "mode-of-administration": {
+            "@id": "item_path:mode-of-administration",
+            "@type": "@id"
+        },
+        "infusion-speed": {
+            "@id": "item_path:infusion-speed",
+            "@type": "@id"
+        }
+    }
+}
