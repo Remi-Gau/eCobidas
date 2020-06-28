@@ -1,6 +1,8 @@
 import json
 import os
 import csv
+# import pandas as pd
+import warnings
 
 # This script takes the content of the a csv file and turns it into a reproschema
 # protocol.
@@ -23,36 +25,52 @@ import csv
 # -----------------------------------------------------------------------------
 # modify the following lines to match your needs
 
+# ----------------------------------------
+REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
+
+# ----------------------------------------
 # where the checklist csv is. It is in xlsx dir of this repo
 # but it can also be downloaded from here:
 # https://github.com/NeuroVault/NeuroVault/blob/master/xlsx/
 
 # INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
-INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv'
+# INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv'
+INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/COBIDAS_MRI - clean.csv'
 
+# ----------------------------------------
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the reproschema will be hosted
+
 OUTPUT_DIR = '/home/remi/github/COBIDAS_chckls'
 
+# ----------------------------------------
 # Placeholder to insert in all instances of the remote repo that will host the schema representation
 # Most likely you just need to replace Remi-Gau in the following line by your github username
+
 REMOTE_REPO = 'https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/'
 
+# ----------------------------------------
 # to which branch of reproschema the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: REMOTE_REPO + BRANCH
+
 # BRANCH = 'master'
 # BRANCH = 'neurovault'
-BRANCH = 'master'
+BRANCH = 'remi-MRI'
 
-REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
-
+# ----------------------------------------
 # Protocol name
+
 # PROTOCOL = 'neurovault_'
 PROTOCOL = 'PET_'
+PROTOCOL = 'cobidas-MRI_'
 
+INCLUDE_COL = []
+
+# ----------------------------------------
 # CSV column
-# --------------------
+
+
 # Neurovaut
 # SECTION_COL = 1
 # ITEM_COL = 2
@@ -61,20 +79,36 @@ PROTOCOL = 'PET_'
 # CHOICE_COL = 5
 # MANDATORY_COL = 6
 # VISIBILITY_COL = 7
-# --------------------
 
-# --------------------
+
 # PET
-SECTION_COL = 4
-ITEM_COL = 5
-QUESTION_COL = 7
-RESPONSE_TYPE_COL = 9
-CHOICE_COL = 10
-MANDATORY_COL = 11
-VISIBILITY_COL = 12
-# --------------------
+# SECTION_COL = 4
+# ITEM_COL = 5
+# QUESTION_COL = 7
+# RESPONSE_TYPE_COL = 9
+# CHOICE_COL = 10
+# MANDATORY_COL = 11
+# VISIBILITY_COL = 12
 
+# CSV_INFO = pd.DataFrame(
+#     {'label': ['section', 'item', 'question', 'resp_type', 'choice', 'mandatory', 'vis'],
+#     'col': [4, 5, 7, 9, 10, 11, 12]
+#     }
+# )
+
+# COBIDAS MRI
+SECTION_COL = 18
+ITEM_COL = 24
+QUESTION_COL = 26
+RESPONSE_TYPE_COL = 27
+CHOICE_COL = 28
+MANDATORY_COL = 15
+VISIBILITY_COL = 29
+INCLUDE_COL = 13
+
+# --------------------
 # VERSION
+
 VERSION = '0.0.1'
 
 # -----------------------------------------------------------------------------
@@ -122,31 +156,33 @@ def define_new_activity(at_context, activity_schema_name, PROTOCOL, section, VER
         }
 
 
-def get_item_info(row, ITEM_COL, QUESTION_COL, RESPONSE_TYPE_COL, CHOICE_COL, VISIBILITY_COL): 
+def get_item_info(row, ITEM_COL, QUESTION_COL, RESPONSE_TYPE_COL, CHOICE_COL, VISIBILITY_COL, INCLUDE_COL): 
     
     item_name = []
-    question = []
-    response_type = []
+    question = "QUESTION MISSING"
+    response_type = "UNKNOWN"
     response_choices = []
-    visibility = []
+    visibility = True
+
+    INCLUDE = True
+    # we want to skip the header and only include items with 1 in the include column (if it exists)
+    if row[ITEM_COL] == 'Item' or ( INCLUDE_COL != [] and row[INCLUDE_COL] != "1" ):
+        INCLUDE = False
+
+        print('   skipping item')
     
-    # to skip the header
-    if row[ITEM_COL] != 'Item':
+    if INCLUDE:
 
-        item_name = row[ITEM_COL]
+        item_name = row[ITEM_COL].replace("\n","")
 
-        question = row[QUESTION_COL]
+        question = row[QUESTION_COL].replace("\n","")
 
         response_type = row[RESPONSE_TYPE_COL]
 
         response_choices = row[CHOICE_COL].split(' | ')
 
         # branchic logic: visibility
-        if row[VISIBILITY_COL] == '1':
-
-            visibility = True
-
-        else:
+        if row[VISIBILITY_COL] != '1':
 
             visibility = row[VISIBILITY_COL]
 
@@ -312,6 +348,13 @@ def list_responses_options(responseOptions, response_choices):
             }
         )
 
+    responseOptions['choices'].append({
+            'schema:name': 'other',
+            'schema:value': response_choices.count + 1,
+            '@type': 'schema:option'
+            }
+        )
+
     return responseOptions
 
 
@@ -366,7 +409,14 @@ with open(INPUT_FILE, 'r') as csvfile:
     PROTOCOL_METADATA = csv.reader(csvfile)
     for row in PROTOCOL_METADATA:
 
-        item_name, question, response_type, response_choices, visibility = get_item_info(row, ITEM_COL, QUESTION_COL, RESPONSE_TYPE_COL, CHOICE_COL, VISIBILITY_COL)
+        item_name, question, response_type, response_choices, visibility = get_item_info(
+                                                                            row, 
+                                                                            ITEM_COL, 
+                                                                            QUESTION_COL, 
+                                                                            RESPONSE_TYPE_COL, 
+                                                                            CHOICE_COL, 
+                                                                            VISIBILITY_COL, 
+                                                                            INCLUDE_COL)
 
         if item_name != []:
 
@@ -387,8 +437,6 @@ with open(INPUT_FILE, 'r') as csvfile:
                 activity_schema_file = activity_schema_name + '_schema'
 
                 activity_context_file = PROTOCOL + section + '_context'
-
-                print(activity_schema_name)
 
                 # create dir for this section
                 if not os.path.exists(os.path.join(OUTPUT_DIR, 'activities',
@@ -430,7 +478,7 @@ with open(INPUT_FILE, 'r') as csvfile:
                     '@type': '@id'
                 }
 
-            print('   ' + item_name)
+                print(activity_schema_name)
 
             # -------------------------------------------------------------------
             # update the content of the activity schema and context with new item
@@ -461,6 +509,12 @@ with open(INPUT_FILE, 'r') as csvfile:
             # -------------------------------------------------------------------
             # Create new item
             # -------------------------------------------------------------------
+            print('   ' + item_name)
+            if question == "":
+                warnings.warn("No question for this item.", UserWarning) 
+            else:
+                print('       ' + question)                    
+            
             item_schema_json = define_new_item(activity_at_context, item_name, question, VERSION)
 
             inputType, responseOptions = define_response_choice(response_type, response_choices)

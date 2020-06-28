@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Statistical Modeling & Inference/cobidas-MRI_Statistical Modeling & Inference_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "tfce_used",
+    "prefLabel": "tfce_used",
+    "schema:description": "tfce_used",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Was threshold-free Cluster Enhancement (TFCE) used?"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

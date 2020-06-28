@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Experimental Design/cobidas-MRI_Experimental Design_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "randomization",
+    "prefLabel": "randomization",
+    "schema:description": "randomization",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Was the block or event ordering deterministic or randomized? "
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/cobidas-MRI_Preprocessing_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "moco_reference",
+    "prefLabel": "moco_reference",
+    "schema:description": "moco_reference",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Reference scan used for motion correction"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

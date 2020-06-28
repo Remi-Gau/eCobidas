@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/cobidas-MRI_Preprocessing_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "physiological_signals",
+    "prefLabel": "physiological_signals",
+    "schema:description": "physiological_signals",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Physiological signals included as nuisance regressors"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

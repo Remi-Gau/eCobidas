@@ -1,0 +1,42 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Results/items/",
+        "units_of_reported_results": {
+            "@id": "item_path:units_of_reported_results",
+            "@type": "@id"
+        },
+        "contrast_and_effect": {
+            "@id": "item_path:contrast_and_effect",
+            "@type": "@id"
+        },
+        "xyz_coordinate": {
+            "@id": "item_path:xyz_coordinate",
+            "@type": "@id"
+        },
+        "coordinate_system": {
+            "@id": "item_path:coordinate_system",
+            "@type": "@id"
+        },
+        "statistic_presented": {
+            "@id": "item_path:statistic_presented",
+            "@type": "@id"
+        },
+        "cluster-size": {
+            "@id": "item_path:cluster-size",
+            "@type": "@id"
+        },
+        "type_of_inference": {
+            "@id": "item_path:type_of_inference",
+            "@type": "@id"
+        },
+        "spatial_smoothness_of_noise": {
+            "@id": "item_path:spatial_smoothness_of_noise",
+            "@type": "@id"
+        },
+        "resel_count": {
+            "@id": "item_path:resel_count",
+            "@type": "@id"
+        }
+    }
+}

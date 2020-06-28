@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Acquisition/cobidas-MRI_Acquisition_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "field_of_view",
+    "prefLabel": "field_of_view",
+    "schema:description": "field_of_view",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Specify the field of view"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

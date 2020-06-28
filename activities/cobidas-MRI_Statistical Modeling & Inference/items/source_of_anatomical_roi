@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Statistical Modeling & Inference/cobidas-MRI_Statistical Modeling & Inference_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "source_of_anatomical_roi",
+    "prefLabel": "source_of_anatomical_roi",
+    "schema:description": "source_of_anatomical_roi",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "If a small-volume correction mask is defined anatomically, provide named anatomical regions from a publicly available ROI atlas"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

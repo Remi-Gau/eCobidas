@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Statistical Modeling & Inference/cobidas-MRI_Statistical Modeling & Inference_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "contrast_definition",
+    "prefLabel": "contrast_definition",
+    "schema:description": "contrast_definition",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Exactly what terms are subtracted from what? Define these in terms of task or stimulus conditions (e.g., 'one-back task with objects versus zero-back task with objects') instead of underlying psychological concepts (e.g., 'working memory')."
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

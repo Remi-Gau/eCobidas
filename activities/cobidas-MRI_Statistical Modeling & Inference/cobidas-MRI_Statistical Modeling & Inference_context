@@ -1,0 +1,166 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Statistical Modeling & Inference/items/",
+        "spatial_region_modeled": {
+            "@id": "item_path:spatial_region_modeled",
+            "@type": "@id"
+        },
+        "event_related_duration": {
+            "@id": "item_path:event_related_duration",
+            "@type": "@id"
+        },
+        "event_related_parametric_modulation": {
+            "@id": "item_path:event_related_parametric_modulation",
+            "@type": "@id"
+        },
+        "base_line_model": {
+            "@id": "item_path:base_line_model",
+            "@type": "@id"
+        },
+        "hemodynamic_response_function_basis_set": {
+            "@id": "item_path:hemodynamic_response_function_basis_set",
+            "@type": "@id"
+        },
+        "time_derivative": {
+            "@id": "item_path:time_derivative",
+            "@type": "@id"
+        },
+        "dispersion_derivative": {
+            "@id": "item_path:dispersion_derivative",
+            "@type": "@id"
+        },
+        "high-pass_filter_used": {
+            "@id": "item_path:high-pass_filter_used",
+            "@type": "@id"
+        },
+        "high-pass_filter_type": {
+            "@id": "item_path:high-pass_filter_type",
+            "@type": "@id"
+        },
+        "high-pass_filter_cutoff": {
+            "@id": "item_path:high-pass_filter_cutoff",
+            "@type": "@id"
+        },
+        "movement_regressors_included": {
+            "@id": "item_path:movement_regressors_included",
+            "@type": "@id"
+        },
+        "other_nuisance_regressors": {
+            "@id": "item_path:other_nuisance_regressors",
+            "@type": "@id"
+        },
+        "orthogonalization": {
+            "@id": "item_path:orthogonalization",
+            "@type": "@id"
+        },
+        "orthogonalization_description": {
+            "@id": "item_path:orthogonalization_description",
+            "@type": "@id"
+        },
+        "subject_level_model_type": {
+            "@id": "item_path:subject_level_model_type",
+            "@type": "@id"
+        },
+        "subject_level_software": {
+            "@id": "item_path:subject_level_software",
+            "@type": "@id"
+        },
+        "group_level_model_type": {
+            "@id": "item_path:group_level_model_type",
+            "@type": "@id"
+        },
+        "group_level_software": {
+            "@id": "item_path:group_level_software",
+            "@type": "@id"
+        },
+        "drift_model": {
+            "@id": "item_path:drift_model",
+            "@type": "@id"
+        },
+        "autocorrelation_model": {
+            "@id": "item_path:autocorrelation_model",
+            "@type": "@id"
+        },
+        "model_type": {
+            "@id": "item_path:model_type",
+            "@type": "@id"
+        },
+        "subject_level_estimation_type": {
+            "@id": "item_path:subject_level_estimation_type",
+            "@type": "@id"
+        },
+        "group_level_estimation_type": {
+            "@id": "item_path:group_level_estimation_type",
+            "@type": "@id"
+        },
+        "group_model_variance_structures": {
+            "@id": "item_path:group_model_variance_structures",
+            "@type": "@id"
+        },
+        "repeated_measure": {
+            "@id": "item_path:repeated_measure",
+            "@type": "@id"
+        },
+        "repeated_measure_method": {
+            "@id": "item_path:repeated_measure_method",
+            "@type": "@id"
+        },
+        "contrast_definition": {
+            "@id": "item_path:contrast_definition",
+            "@type": "@id"
+        },
+        "definition_cog_atlas": {
+            "@id": "item_path:definition_cog_atlas",
+            "@type": "@id"
+        },
+        "type": {
+            "@id": "item_path:type",
+            "@type": "@id"
+        },
+        "source_of_anatomical_roi": {
+            "@id": "item_path:source_of_anatomical_roi",
+            "@type": "@id"
+        },
+        "source_of_functional_roi": {
+            "@id": "item_path:source_of_functional_roi",
+            "@type": "@id"
+        },
+        "statistic_type": {
+            "@id": "item_path:statistic_type",
+            "@type": "@id"
+        },
+        "level": {
+            "@id": "item_path:level",
+            "@type": "@id"
+        },
+        "cluster_size": {
+            "@id": "item_path:cluster_size",
+            "@type": "@id"
+        },
+        "tfce_used": {
+            "@id": "item_path:tfce_used",
+            "@type": "@id"
+        },
+        "cluster-forming_threshold": {
+            "@id": "item_path:cluster-forming_threshold",
+            "@type": "@id"
+        },
+        "neighborhood_size": {
+            "@id": "item_path:neighborhood_size",
+            "@type": "@id"
+        },
+        "use_of_non-default_tfce_parameters": {
+            "@id": "item_path:use_of_non-default_tfce_parameters",
+            "@type": "@id"
+        },
+        "p_\u00advalue_computation": {
+            "@id": "item_path:p_\u00advalue_computation",
+            "@type": "@id"
+        },
+        "multiple_testing_correction_method": {
+            "@id": "item_path:multiple_testing_correction_method",
+            "@type": "@id"
+        }
+    }
+}

@@ -1,0 +1,287 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Experimental Design/cobidas-MRI_Experimental Design_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "cobidas-MRI_Experimental Design",
+    "skos:prefLabel": "cobidas-MRI_Experimental Design",
+    "schema:description": "cobidas-MRI_Experimental Design",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "group_comparison",
+            "subjects_excluded",
+            "reason_for_exclusion",
+            "mean_age",
+            "age_standard_deviation",
+            "age_mininum",
+            "age_maximum",
+            "subjects_scanned_but_rejected",
+            "subjects_included_in_analysis",
+            "gender",
+            "handedness",
+            "handedness_method",
+            "exclusion_criteria",
+            "exclusion_criteria_description",
+            "matching_strategy",
+            "ethical_approval",
+            "rest_or_task",
+            "design_type",
+            "condition_&_stimuli",
+            "number_experimental_units",
+            "block_duration",
+            "trial_duration",
+            "intertrial_interval_type",
+            "intertrial_interval_range",
+            "intertrial_interval_distribution",
+            "total_scanning_time",
+            "number_of_functional_runs",
+            "duration_of_each_run",
+            "design_optimization_used",
+            "design_optimization_method",
+            "presentation_software_name",
+            "presentation_software_version",
+            "url_to_code",
+            "condition",
+            "instructions",
+            "stimuli",
+            "randomization",
+            "deterministic",
+            "pseudo-random",
+            "stimulus_presentation",
+            "response_collection",
+            "scanner_syncrhonisation",
+            "run_order",
+            "variables_recorded"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "group_comparison",
+                "isAbout": "group_comparison",
+                "isVis": ""
+            },
+            {
+                "variableName": "subjects_excluded",
+                "isAbout": "subjects_excluded",
+                "isVis": ""
+            },
+            {
+                "variableName": "reason_for_exclusion",
+                "isAbout": "reason_for_exclusion",
+                "isVis": ""
+            },
+            {
+                "variableName": "mean_age",
+                "isAbout": "mean_age",
+                "isVis": ""
+            },
+            {
+                "variableName": "age_standard_deviation",
+                "isAbout": "age_standard_deviation",
+                "isVis": ""
+            },
+            {
+                "variableName": "age_mininum",
+                "isAbout": "age_mininum",
+                "isVis": ""
+            },
+            {
+                "variableName": "age_maximum",
+                "isAbout": "age_maximum",
+                "isVis": ""
+            },
+            {
+                "variableName": "subjects_scanned_but_rejected",
+                "isAbout": "subjects_scanned_but_rejected",
+                "isVis": ""
+            },
+            {
+                "variableName": "subjects_included_in_analysis",
+                "isAbout": "subjects_included_in_analysis",
+                "isVis": ""
+            },
+            {
+                "variableName": "gender",
+                "isAbout": "gender",
+                "isVis": ""
+            },
+            {
+                "variableName": "handedness",
+                "isAbout": "handedness",
+                "isVis": ""
+            },
+            {
+                "variableName": "handedness_method",
+                "isAbout": "handedness_method",
+                "isVis": "self report | EHI"
+            },
+            {
+                "variableName": "exclusion_criteria",
+                "isAbout": "exclusion_criteria",
+                "isVis": ""
+            },
+            {
+                "variableName": "exclusion_criteria_description",
+                "isAbout": "exclusion_criteria_description",
+                "isVis": ""
+            },
+            {
+                "variableName": "matching_strategy",
+                "isAbout": "matching_strategy",
+                "isVis": ""
+            },
+            {
+                "variableName": "ethical_approval",
+                "isAbout": "ethical_approval",
+                "isVis": ""
+            },
+            {
+                "variableName": "rest_or_task",
+                "isAbout": "rest_or_task",
+                "isVis": ""
+            },
+            {
+                "variableName": "design_type",
+                "isAbout": "design_type",
+                "isVis": "block design | event related design | mixed"
+            },
+            {
+                "variableName": "condition_&_stimuli",
+                "isAbout": "condition_&_stimuli",
+                "isVis": ""
+            },
+            {
+                "variableName": "number_experimental_units",
+                "isAbout": "number_experimental_units",
+                "isVis": ""
+            },
+            {
+                "variableName": "block_duration",
+                "isAbout": "block_duration",
+                "isVis": ""
+            },
+            {
+                "variableName": "trial_duration",
+                "isAbout": "trial_duration",
+                "isVis": ""
+            },
+            {
+                "variableName": "intertrial_interval_type",
+                "isAbout": "intertrial_interval_type",
+                "isVis": ""
+            },
+            {
+                "variableName": "intertrial_interval_range",
+                "isAbout": "intertrial_interval_range",
+                "isVis": ""
+            },
+            {
+                "variableName": "intertrial_interval_distribution",
+                "isAbout": "intertrial_interval_distribution",
+                "isVis": ""
+            },
+            {
+                "variableName": "total_scanning_time",
+                "isAbout": "total_scanning_time",
+                "isVis": ""
+            },
+            {
+                "variableName": "number_of_functional_runs",
+                "isAbout": "number_of_functional_runs",
+                "isVis": ""
+            },
+            {
+                "variableName": "duration_of_each_run",
+                "isAbout": "duration_of_each_run",
+                "isVis": ""
+            },
+            {
+                "variableName": "design_optimization_used",
+                "isAbout": "design_optimization_used",
+                "isVis": ""
+            },
+            {
+                "variableName": "design_optimization_method",
+                "isAbout": "design_optimization_method",
+                "isVis": ""
+            },
+            {
+                "variableName": "presentation_software_name",
+                "isAbout": "presentation_software_name",
+                "isVis": "Psychtoolbox | psychopy | e prime | presentation | cogent"
+            },
+            {
+                "variableName": "presentation_software_version",
+                "isAbout": "presentation_software_version",
+                "isVis": ""
+            },
+            {
+                "variableName": "url_to_code",
+                "isAbout": "url_to_code",
+                "isVis": ""
+            },
+            {
+                "variableName": "condition",
+                "isAbout": "condition",
+                "isVis": ""
+            },
+            {
+                "variableName": "instructions",
+                "isAbout": "instructions",
+                "isVis": ""
+            },
+            {
+                "variableName": "stimuli",
+                "isAbout": "stimuli",
+                "isVis": ""
+            },
+            {
+                "variableName": "randomization",
+                "isAbout": "randomization",
+                "isVis": "deterministic | random | pseudorandom"
+            },
+            {
+                "variableName": "deterministic",
+                "isAbout": "deterministic",
+                "isVis": ""
+            },
+            {
+                "variableName": "pseudo-random",
+                "isAbout": "pseudo-random",
+                "isVis": ""
+            },
+            {
+                "variableName": "stimulus_presentation",
+                "isAbout": "stimulus_presentation",
+                "isVis": "back projection | in\u00ad room display | goggles"
+            },
+            {
+                "variableName": "response_collection",
+                "isAbout": "response_collection",
+                "isVis": "button boxes"
+            },
+            {
+                "variableName": "scanner_syncrhonisation",
+                "isAbout": "scanner_syncrhonisation",
+                "isVis": "scanner TTL | manual synch "
+            },
+            {
+                "variableName": "run_order",
+                "isAbout": "run_order",
+                "isVis": ""
+            },
+            {
+                "variableName": "variables_recorded",
+                "isAbout": "variables_recorded",
+                "isVis": "button press | response time"
+            }
+        ]
+    }
+}

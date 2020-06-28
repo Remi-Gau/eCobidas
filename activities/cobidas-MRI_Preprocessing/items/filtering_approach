@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Preprocessing/cobidas-MRI_Preprocessing_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "filtering_approach",
+    "prefLabel": "filtering_approach",
+    "schema:description": "filtering_approach",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Filtering approach"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

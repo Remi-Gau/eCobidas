@@ -1,0 +1,110 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Acquisition/items/",
+        "make": {
+            "@id": "item_path:make",
+            "@type": "@id"
+        },
+        "model": {
+            "@id": "item_path:model",
+            "@type": "@id"
+        },
+        "field_strength": {
+            "@id": "item_path:field_strength",
+            "@type": "@id"
+        },
+        "receive_coil": {
+            "@id": "item_path:receive_coil",
+            "@type": "@id"
+        },
+        "pulse_sequence_type": {
+            "@id": "item_path:pulse_sequence_type",
+            "@type": "@id"
+        },
+        "imaging_type": {
+            "@id": "item_path:imaging_type",
+            "@type": "@id"
+        },
+        "number_of_shots": {
+            "@id": "item_path:number_of_shots",
+            "@type": "@id"
+        },
+        "partial_fourrier_scheme": {
+            "@id": "item_path:partial_fourrier_scheme",
+            "@type": "@id"
+        },
+        "echo_time": {
+            "@id": "item_path:echo_time",
+            "@type": "@id"
+        },
+        "repetition_time": {
+            "@id": "item_path:repetition_time",
+            "@type": "@id"
+        },
+        "flip_angle": {
+            "@id": "item_path:flip_angle",
+            "@type": "@id"
+        },
+        "voxel_dimension": {
+            "@id": "item_path:voxel_dimension",
+            "@type": "@id"
+        },
+        "number_of_volumes": {
+            "@id": "item_path:number_of_volumes",
+            "@type": "@id"
+        },
+        "inversion_time": {
+            "@id": "item_path:inversion_time",
+            "@type": "@id"
+        },
+        "field_of_view": {
+            "@id": "item_path:field_of_view",
+            "@type": "@id"
+        },
+        "in-plane_matrix_size": {
+            "@id": "item_path:in-plane_matrix_size",
+            "@type": "@id"
+        },
+        "number_of_slices": {
+            "@id": "item_path:number_of_slices",
+            "@type": "@id"
+        },
+        "slice_thickness": {
+            "@id": "item_path:slice_thickness",
+            "@type": "@id"
+        },
+        "interslice_gap": {
+            "@id": "item_path:interslice_gap",
+            "@type": "@id"
+        },
+        "slice_orientation": {
+            "@id": "item_path:slice_orientation",
+            "@type": "@id"
+        },
+        "parallel_imaging_method": {
+            "@id": "item_path:parallel_imaging_method",
+            "@type": "@id"
+        },
+        "acceleration_factor": {
+            "@id": "item_path:acceleration_factor",
+            "@type": "@id"
+        },
+        "slice_timing": {
+            "@id": "item_path:slice_timing",
+            "@type": "@id"
+        },
+        "location_of_the_first_slice": {
+            "@id": "item_path:location_of_the_first_slice",
+            "@type": "@id"
+        },
+        "brain_coverage": {
+            "@id": "item_path:brain_coverage",
+            "@type": "@id"
+        },
+        "motion_monitoring": {
+            "@id": "item_path:motion_monitoring",
+            "@type": "@id"
+        }
+    }
+}

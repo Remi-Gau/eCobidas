@@ -1,0 +1,179 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/cobidas-MRI_Acquisition/cobidas-MRI_Acquisition_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "cobidas-MRI_Acquisition",
+    "skos:prefLabel": "cobidas-MRI_Acquisition",
+    "schema:description": "cobidas-MRI_Acquisition",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "make",
+            "model",
+            "field_strength",
+            "receive_coil",
+            "pulse_sequence_type",
+            "imaging_type",
+            "number_of_shots",
+            "partial_fourrier_scheme",
+            "echo_time",
+            "repetition_time",
+            "flip_angle",
+            "voxel_dimension",
+            "number_of_volumes",
+            "inversion_time",
+            "field_of_view",
+            "in-plane_matrix_size",
+            "number_of_slices",
+            "slice_thickness",
+            "interslice_gap",
+            "slice_orientation",
+            "parallel_imaging_method",
+            "acceleration_factor",
+            "slice_timing",
+            "location_of_the_first_slice",
+            "brain_coverage",
+            "motion_monitoring"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "make",
+                "isAbout": "make",
+                "isVis": "Siemens | Philips | General Electric"
+            },
+            {
+                "variableName": "model",
+                "isAbout": "model",
+                "isVis": ""
+            },
+            {
+                "variableName": "field_strength",
+                "isAbout": "field_strength",
+                "isVis": ""
+            },
+            {
+                "variableName": "receive_coil",
+                "isAbout": "receive_coil",
+                "isVis": "standard: receive coil | non-standard openfield"
+            },
+            {
+                "variableName": "pulse_sequence_type",
+                "isAbout": "pulse_sequence_type",
+                "isVis": "Gradient echo | Spin echo | Mutliband gradient echo | MPRAGE | MP2RAGE | FLASH"
+            },
+            {
+                "variableName": "imaging_type",
+                "isAbout": "imaging_type",
+                "isVis": "echo planar | spiral | 3D"
+            },
+            {
+                "variableName": "number_of_shots",
+                "isAbout": "number_of_shots",
+                "isVis": ""
+            },
+            {
+                "variableName": "partial_fourrier_scheme",
+                "isAbout": "partial_fourrier_scheme",
+                "isVis": ""
+            },
+            {
+                "variableName": "echo_time",
+                "isAbout": "echo_time",
+                "isVis": ""
+            },
+            {
+                "variableName": "repetition_time",
+                "isAbout": "repetition_time",
+                "isVis": ""
+            },
+            {
+                "variableName": "flip_angle",
+                "isAbout": "flip_angle",
+                "isVis": ""
+            },
+            {
+                "variableName": "voxel_dimension",
+                "isAbout": "voxel_dimension",
+                "isVis": ""
+            },
+            {
+                "variableName": "number_of_volumes",
+                "isAbout": "number_of_volumes",
+                "isVis": ""
+            },
+            {
+                "variableName": "inversion_time",
+                "isAbout": "inversion_time",
+                "isVis": ""
+            },
+            {
+                "variableName": "field_of_view",
+                "isAbout": "field_of_view",
+                "isVis": ""
+            },
+            {
+                "variableName": "in-plane_matrix_size",
+                "isAbout": "in-plane_matrix_size",
+                "isVis": ""
+            },
+            {
+                "variableName": "number_of_slices",
+                "isAbout": "number_of_slices",
+                "isVis": ""
+            },
+            {
+                "variableName": "slice_thickness",
+                "isAbout": "slice_thickness",
+                "isVis": ""
+            },
+            {
+                "variableName": "interslice_gap",
+                "isAbout": "interslice_gap",
+                "isVis": ""
+            },
+            {
+                "variableName": "slice_orientation",
+                "isAbout": "slice_orientation",
+                "isVis": "axial | sagittal | coronal | oblique"
+            },
+            {
+                "variableName": "parallel_imaging_method",
+                "isAbout": "parallel_imaging_method",
+                "isVis": "GRAPPA | SENSE"
+            },
+            {
+                "variableName": "acceleration_factor",
+                "isAbout": "acceleration_factor",
+                "isVis": ""
+            },
+            {
+                "variableName": "slice_timing",
+                "isAbout": "slice_timing",
+                "isVis": "interleaved ascending | interleaved descending | sequential ascending | sequential descending"
+            },
+            {
+                "variableName": "location_of_the_first_slice",
+                "isAbout": "location_of_the_first_slice",
+                "isVis": ""
+            },
+            {
+                "variableName": "brain_coverage",
+                "isAbout": "brain_coverage",
+                "isVis": "cerebrum+cerebellum+brainstem | cerebrum+cerebellum | cerebrum"
+            },
+            {
+                "variableName": "motion_monitoring",
+                "isAbout": "motion_monitoring",
+                "isVis": ""
+            }
+        ]
+    }
+}
