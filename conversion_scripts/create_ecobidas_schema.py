@@ -219,31 +219,38 @@ def define_response_choice(response_type, response_choices):
     elif response_type == 'slider':
         inputType = {'inputType': 'slider'}
         responseOptions = {
-            "valueType": "xsd:integer",
-            "schema:minValue": 0,
-            "schema:maxValue": 6,
-            "choices": [{
-                "schema:name": "Not at all",
-                "schema:value": 0
+            'valueType': 'xsd:integer',
+            'schema:minValue': 0,
+            'schema:maxValue': 6,
+            'choices': [{
+                'schema:name': 'Not at all',
+                'schema:value': 0,
+                '@type': 'schema:option'
             },
             {
-                "schema:value": 1
+                'schema:value': 1,
+                '@type': 'schema:option'
             },
             {
-                "schema:value": 2
+                'schema:value': 2,
+                '@type': 'schema:option'
             },
             {
-                "schema:value": 3
+                'schema:value': 3,
+                '@type': 'schema:option'
             },
             {
-                "schema:value": 4
+                'schema:value': 4,
+                '@type': 'schema:option'
             },
             {
-                "schema:value": 5
+                'schema:value': 5,
+                '@type': 'schema:option'
             },
             {
-                "schema:name": "Completely",
-                "schema:value": 6
+                'schema:name': 'Completely',
+                'schema:value': 6,
+                '@type': 'schema:option'
             }]
         }
 
