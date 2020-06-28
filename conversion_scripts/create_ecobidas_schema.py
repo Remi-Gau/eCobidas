@@ -350,7 +350,7 @@ def list_responses_options(responseOptions, response_choices):
         )
 
     responseOptions['choices'].append({
-            'schema:name': 'other',
+            'schema:name': 'Other',
             'schema:value': len(response_choices) + 1,
             '@type': 'schema:option'
             }

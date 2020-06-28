@@ -26,7 +26,7 @@
                 "@type": "schema:option"
             },
             {
-                "schema:name": "other",
+                "schema:name": "Other",
                 "schema:value": 2,
                 "@type": "schema:option"
             }

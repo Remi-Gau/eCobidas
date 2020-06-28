@@ -61,7 +61,7 @@
                 "@type": "schema:option"
             },
             {
-                "schema:name": "other",
+                "schema:name": "Other",
                 "schema:value": 9,
                 "@type": "schema:option"
             }
