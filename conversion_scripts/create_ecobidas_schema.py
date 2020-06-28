@@ -1,6 +1,18 @@
 # this script takes the content of the metadata csv file from neurvovault and turns
 # it into a Repronim compliant schema
 
+# -----------------------------------------------------------------------------
+#                                   TO DO
+# -----------------------------------------------------------------------------
+#
+# - automate the choice of from radio to dropdown menu if the number of
+# response_choices goes above a certain number
+# - allow for several condition checks for visitbility
+#
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+
 # tested with python 3.7
 
 import json
@@ -33,12 +45,7 @@ BRANCH = 'neurovault'
 
 REPRONIM_REPO = 'https://raw.githubusercontent.com/ReproNim/reproschema/master/'
 
-
-# -----------------------------------------------------------------------------
-# -----------------------------------------------------------------------------
-# -----------------------------------------------------------------------------
-
-# activity set names
+# Protocol name
 PROTOCOL = 'neurovault_'
 
 # CSV column
@@ -50,18 +57,21 @@ CHOICE_COL = 5
 MANDATORY_COL = 6
 VISIBILITY_COL = 7
 
+# VERSION
+VERSION = '0.0.1'
+
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+
 # protocol names
 PROTOCOL_SCHEMA_FILE = PROTOCOL + 'schema'
 PROTOCOL_CONTEXT_FILE = PROTOCOL + 'context'
 PROTOCOL_DIR = PROTOCOL[0:-1]
 
-# VERSION
-VERSION = '0.0.1'
-
-# make output directories
+# create output directories
 if not os.path.exists(os.path.join(OUTPUT_DIR, 'protocols', PROTOCOL_DIR)):
     os.makedirs(os.path.join(OUTPUT_DIR, 'protocols', PROTOCOL_DIR))
-
 
 # define the jsonld for the schema protocol
 PROTOCOL_SCHEMA_JSON = {
@@ -75,7 +85,7 @@ PROTOCOL_SCHEMA_JSON = {
     'schema:description': PROTOCOL_SCHEMA_FILE,
     'schema:schemaVersion': VERSION,
     'schema:version': VERSION,
-    'landingPage': REMOTE_REPO + BRANCH + '/protocols/' + PROTOCOL[0:-1] + '/README.md',
+    'landingPage': REMOTE_REPO + BRANCH + '/protocols/' + PROTOCOL_DIR + '/README.md',
     'ui': {
         'allow': ["autoAdvance", "allowExport"],
         'shuffle': False,
@@ -170,7 +180,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
             response_type = row[RESPONSE_TYPE_COL]
 
-            response_choices = row[CHOICE_COL].split('|')
+            response_choices = row[CHOICE_COL].split(' | ')
 
             # branchic logic: visibility
             if row[VISIBILITY_COL] == '1':
@@ -234,6 +244,8 @@ with open(INPUT_FILE, 'r') as csvfile:
                 append_to_protocol = {
                     'variableName': activity_schema_name,
                     'isAbout': activity_schema_name,
+                    # for the name displayed by the UI for this acivity we simply reuse the
+                    # activity name
                     "prefLabel": {
                         "en": activity_schema_name.replace("_", " ")
                     }
@@ -305,9 +317,7 @@ with open(INPUT_FILE, 'r') as csvfile:
             elif response_type == 'dropdown':
                 inputType = {'inputType': 'select'}
 
-                responseOptions = {
-                    'choices': []
-                }
+                responseOptions = {'choices': []}
 
                 for i, opt in enumerate(response_choices):
 
@@ -348,7 +358,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
                 json.dump(item_schema_json, ff, sort_keys=False, indent=4)
 
-# write activity set jsonld
+# write protocol jsonld
 with open(os.path.join(OUTPUT_DIR, 'protocols', PROTOCOL_DIR,
                        PROTOCOL_SCHEMA_FILE), 'w') as ff:
     json.dump(PROTOCOL_SCHEMA_JSON, ff, sort_keys=False, indent=4)
