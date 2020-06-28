@@ -21,7 +21,7 @@ import csv
 
 
 # -----------------------------------------------------------------------------
-# -----------------------------------------------------------------------------
+#                                   PARAMETERS
 # -----------------------------------------------------------------------------
 # modify the following lines to match your needs
 
@@ -61,7 +61,132 @@ VISIBILITY_COL = 7
 VERSION = '0.0.1'
 
 # -----------------------------------------------------------------------------
+#                                   FUNCTIONS
 # -----------------------------------------------------------------------------
+
+def define_activity_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file):
+
+    context = {
+        '@context': {
+            '@version': 1.1,
+            'item_path': REMOTE_REPO + BRANCH + '/activities/'
+            + activity_dir + '/items/'
+            }
+        }
+
+    at_context = [
+        REPRONIM_REPO + 'contexts/generic',
+        REMOTE_REPO + BRANCH + '/activities/'
+        + activity_dir + '/'
+        + activity_context_file
+        ]
+
+    return context, at_context
+
+
+def define_new_activity(at_context, activity_schema_name, PROTOCOL, section, VERSION):
+    # define the base json content for the activity
+    return {
+        '@context': at_context,
+        '@type': 'reproschema:Activity',
+        '@id': activity_schema_name,
+        'skos:prefLabel': PROTOCOL + section,
+        'schema:description': PROTOCOL + section,
+        'schema:schemaVersion': VERSION,
+        'schema:version': VERSION,
+        'preamble': ' ',
+        'ui': {
+            'order': [],
+            'shuffle': False,
+            'allow': ["skipped"],
+            'addProperties': []
+            }
+        }
+
+
+def define_new_item(at_context, item_name, question, VERSION):
+    # define jsonld for this item
+    return {
+        '@context': at_context,
+        '@type': 'reproschema:Field',
+        '@id': item_name,
+        'prefLabel': item_name,
+        'schema:description': item_name,
+        'schema:schemaVersion': VERSION,
+        'schema:version': VERSION,
+        'ui': {},
+        'question': {
+            'en': question
+            },
+        }
+
+def define_response_choice(response_type, response_choices):
+    # now we define the answers for this item
+    if response_type == 'boolean':
+
+        inputType = {'inputType': 'radio'}
+
+        responseOptions = {
+            'multipleChoice': False,
+            'choices': [
+                {
+                    'schema:value': 0,
+                    'schema:name': 'No',
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 1,
+                    'schema:name': 'Yes',
+                    '@type': 'schema:option'
+                },
+                {
+                    'schema:value': 9,
+                    'schema:name': 'Unknown',
+                    '@type': 'schema:option'
+                }
+            ]
+        }
+
+    # if we have multiple choices
+    elif response_type == 'dropdown':
+
+        inputType = {'inputType': 'select'}
+
+        responseOptions = {'choices': []}
+
+        for i, opt in enumerate(response_choices):
+
+            responseOptions['choices'].append({
+                'schema:name': opt,
+                'schema:value': i,
+                '@type': 'schema:option'
+                }
+            )
+
+    # response is some integer
+    elif response_type == 'int':
+        inputType = {'inputType': 'number'}
+        responseOptions = {'valueType': 'xsd:integer'}
+
+    # response is some float
+    elif response_type == 'float':
+        inputType = {'inputType': 'float'}
+        responseOptions = {'valueType': 'xsd:float'}
+
+    # input requires some typed answer
+    elif response_type == 'char':
+        inputType = {'inputType': 'text'}
+        responseOptions = {'type': 'xsd:string'}
+
+    else:
+        inputType = {'inputType': 'text'}
+        responseOptions = {'type': 'xsd:string'}
+
+    return inputType, responseOptions
+
+
+# -----------------------------------------------------------------------------
+#                                   START
 # -----------------------------------------------------------------------------
 
 # protocol names
@@ -102,65 +227,10 @@ PROTOCOL_CONTEXT_JSON = {
     }
 }
 
+# Initiliaze this variable as we will need to check if we got to a new section while
+# looping through items
+section = ''
 
-def define_activity_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file):
-
-    context = {
-        '@context': {
-            '@version': 1.1,
-            'item_path': REMOTE_REPO + BRANCH + '/activities/'
-            + activity_dir + '/items/'
-            }
-        }
-
-    at_context = [
-        REPRONIM_REPO + 'contexts/generic',
-        REMOTE_REPO + BRANCH + '/activities/'
-        + activity_dir + '/'
-        + activity_context_file
-        ]
-
-    return context, at_context
-
-
-def define_new_activity(at_context, activity_schema_name, PROTOCOL, SECTION, VERSION):
-    # define the base json content for the activity
-    return {
-        '@context': at_context,
-        '@type': 'reproschema:Activity',
-        '@id': activity_schema_name,
-        'skos:prefLabel': PROTOCOL + SECTION,
-        'schema:description': PROTOCOL + SECTION,
-        'schema:schemaVersion': VERSION,
-        'schema:version': VERSION,
-        'preamble': ' ',
-        'ui': {
-            'order': [],
-            'shuffle': False,
-            'allow': ["skipped"],
-            'addProperties': []
-            }
-        }
-
-
-def define_new_item(at_context, item_name, question, VERSION):
-    # define jsonld for this item
-    return {
-        '@context': at_context,
-        '@type': 'reproschema:Field',
-        '@id': item_name,
-        'prefLabel': item_name,
-        'schema:description': item_name,
-        'schema:schemaVersion': VERSION,
-        'schema:version': VERSION,
-        'ui': {},
-        'question': {
-            'en': question
-            },
-        }
-
-
-SECTION = ''
 # loop through rows of the csv file and create corresponding jsonld for each item
 with open(INPUT_FILE, 'r') as csvfile:
     PROTOCOL_METADATA = csv.reader(csvfile)
@@ -196,25 +266,27 @@ with open(INPUT_FILE, 'r') as csvfile:
                 #         '@type': 'schema:option'
                 #         })
 
-            # detect if this is a new SECTION if so it will create a new activity
-            if row[SECTION_COL] != SECTION:
+            # -------------------------------------------------------------------
+            # detect if this is a new section if so it will create a new activity
+            # -------------------------------------------------------------------
+            if row[SECTION_COL] != section:
 
-                # update SECTION name
-                SECTION = row[SECTION_COL]
+                # update section name
+                section = row[SECTION_COL]
 
-                # where the items of this SECTION will be stored
-                activity_dir = PROTOCOL + SECTION
+                # where the items of this section will be stored
+                activity_dir = PROTOCOL + section
 
-                # names of this SECTION schema and its corresponding jsonld files
-                activity_schema_name = PROTOCOL + SECTION
+                # names of this section schema and its corresponding jsonld files
+                activity_schema_name = PROTOCOL + section
 
                 activity_schema_file = activity_schema_name + '_schema'
 
-                activity_context_file = PROTOCOL + SECTION + '_context'
+                activity_context_file = PROTOCOL + section + '_context'
 
                 print(activity_schema_name)
 
-                # create dir for this SECTION
+                # create dir for this section
                 if not os.path.exists(os.path.join(OUTPUT_DIR, 'activities',
                                                    activity_dir)):
                     os.makedirs(os.path.join(OUTPUT_DIR, 'activities', activity_dir))
@@ -233,7 +305,7 @@ with open(INPUT_FILE, 'r') as csvfile:
                 activity_schema_json = define_new_activity(
                                         activity_at_context,
                                         activity_schema_name,
-                                        PROTOCOL, SECTION, VERSION)
+                                        PROTOCOL, section, VERSION)
 
                 # update the content of the protool schema and context wrt this new activity
                 append_to_protocol = {
@@ -256,8 +328,9 @@ with open(INPUT_FILE, 'r') as csvfile:
 
             print('   ' + item_name)
 
-            # update the json content of the activity schema and context wrt this new item
-
+            # -------------------------------------------------------------------
+            # update the content of the activity schema and context with new item
+            # -------------------------------------------------------------------
             append_to_activity = {
                 'variableName': item_name,
                 'isAbout': item_name,
@@ -272,7 +345,7 @@ with open(INPUT_FILE, 'r') as csvfile:
                 '@type': '@id'
             }
 
-            # save activity jsonld with every new item
+            # save activity schema and context with every new item
             with open(os.path.join(OUTPUT_DIR, 'activities', activity_dir,
                                    activity_schema_file), 'w') as ff:
                 json.dump(activity_schema_json, ff, sort_keys=False, indent=4)
@@ -281,66 +354,12 @@ with open(INPUT_FILE, 'r') as csvfile:
                                    activity_context_file), 'w') as ff:
                 json.dump(activity_context_json, ff, sort_keys=False, indent=4)
 
+            # -------------------------------------------------------------------
             # Create new item
+            # -------------------------------------------------------------------
             item_schema_json = define_new_item(activity_at_context, item_name, question, VERSION)
 
-            # now we define the answers for this item
-            if response_type == 'boolean':
-                inputType = {'inputType': 'radio'}
-                responseOptions = {
-                    'multipleChoice': False,
-                    'choices': [
-                        {
-                            'schema:value': 0,
-                            'schema:name': 'No',
-                            '@type': 'schema:option'
-                        },
-                        {
-                            'schema:value': 1,
-                            'schema:name': 'Yes',
-                            '@type': 'schema:option'
-                        },
-                        {
-                            'schema:value': 9,
-                            'schema:name': 'Unknown',
-                            '@type': 'schema:option'
-                        }
-                    ]
-                }
-
-            # if we have multiple choices
-            elif response_type == 'dropdown':
-                inputType = {'inputType': 'select'}
-
-                responseOptions = {'choices': []}
-
-                for i, opt in enumerate(response_choices):
-
-                    responseOptions['choices'].append({
-                        'schema:name': opt,
-                        'schema:value': i,
-                        '@type': 'schema:option'
-                        }
-                    )
-
-            # response is some integer
-            elif response_type == 'int':
-                inputType = {'inputType': 'number'}
-                responseOptions = {'valueType': 'xsd:integer'}
-
-            # response is some float
-            elif response_type == 'float':
-                inputType = {'inputType': 'float'}
-                responseOptions = {'valueType': 'xsd:float'}
-
-            # input requires some typed answer
-            elif response_type == 'char':
-                inputType = {'inputType': 'text'}
-                responseOptions = {'type': 'xsd:string'}
-
-            else:
-                inputType = {'inputType': 'text'}
-                responseOptions = {'type': 'xsd:string'}
+            inputType, responseOptions = define_response_choice(response_type, response_choices)
 
             item_schema_json['ui'] = inputType
             item_schema_json['responseOptions'] = responseOptions
