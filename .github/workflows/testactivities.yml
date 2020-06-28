@@ -1,0 +1,29 @@
+name: Test cobidas activities
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: '*'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools
+        pip install reproschema requests_cache
+    - name: JSON linter
+      run: |
+        python tests/jsonParser.py
+    - name: Test with pyshacl
+      run: |
+        reproschema -l DEBUG validate activities
