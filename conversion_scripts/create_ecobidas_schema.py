@@ -139,7 +139,10 @@ def define_new_item(at_context, item_name, question, VERSION):
         'schema:description': item_name,
         'schema:schemaVersion': VERSION,
         'schema:version': VERSION,
-        'ui': {},
+        'ui': {
+            'allow': ["skipped"],
+            'inputType': []
+        },
         'question': {
             'en': question
             },
@@ -150,7 +153,7 @@ def define_response_choice(response_type, response_choices):
     # now we define the answers for this item
     if response_type == 'boolean':
 
-        inputType = {'inputType': 'radio'}
+        inputType = 'radio'
 
         responseOptions = {
             'multipleChoice': False,
@@ -176,7 +179,7 @@ def define_response_choice(response_type, response_choices):
     # if we have multiple choices with a radio item
     elif response_type == 'radio':
 
-        inputType = {'inputType': 'radio'}
+        inputType = 'radio'
 
         responseOptions = {'choices': []}
 
@@ -192,7 +195,7 @@ def define_response_choice(response_type, response_choices):
     # if we have a dropdown menu
     elif response_type == 'dropdown':
 
-        inputType = {'inputType': 'select'}
+        inputType = 'select'
 
         responseOptions = {'choices': []}
 
@@ -207,17 +210,17 @@ def define_response_choice(response_type, response_choices):
 
     # response is date
     elif response_type == 'date':
-        inputType = {'inputType': 'date'}
+        inputType = 'date'
         responseOptions = {'valueType': 'xsd:date'}
 
     # response is time range
     elif response_type == 'time range':
-        inputType = {'inputType': 'timeRange'}
+        inputType = 'timeRange'
         responseOptions = {'valueType': 'datetime'}
 
     # response is slider
     elif response_type == 'slider':
-        inputType = {'inputType': 'slider'}
+        inputType = 'slider'
         responseOptions = {
             'valueType': 'xsd:integer',
             'schema:minValue': 0,
@@ -259,21 +262,21 @@ def define_response_choice(response_type, response_choices):
 
     # response is integer
     elif response_type == 'int':
-        inputType = {'inputType': 'number'}
+        inputType = 'number'
         responseOptions = {'valueType': 'xsd:integer'}
 
     # response is float
     elif response_type == 'float':
-        inputType = {'inputType': 'float'}
+        inputType = 'float'
         responseOptions = {'valueType': 'xsd:float'}
 
     # input requires typed answer
     elif response_type == 'char':
-        inputType = {'inputType': 'text'}
+        inputType = 'text'
         responseOptions = {'type': 'xsd:string'}
 
     else:
-        inputType = {'inputType': 'text'}
+        inputType = 'text'
         responseOptions = {'type': 'xsd:string'}
 
     return inputType, responseOptions
@@ -455,7 +458,7 @@ with open(INPUT_FILE, 'r') as csvfile:
 
             inputType, responseOptions = define_response_choice(response_type, response_choices)
 
-            item_schema_json['ui'] = inputType
+            item_schema_json['ui']['inputType'] = inputType
             item_schema_json['responseOptions'] = responseOptions
 
             # write item schema
