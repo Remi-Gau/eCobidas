@@ -13,12 +13,38 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "If nonlinear registration was used, describe transform method"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "B\u00ad-splines",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "stationary velocity field",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "momentum",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "non\u00adparametric displacement field",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 5,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

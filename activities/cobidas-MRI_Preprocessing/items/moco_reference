@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Reference scan used for motion correction"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "first image",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "middle image",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "mean image (2 pass)",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

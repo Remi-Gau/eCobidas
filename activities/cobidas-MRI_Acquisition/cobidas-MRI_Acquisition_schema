@@ -47,132 +47,132 @@
             {
                 "variableName": "make",
                 "isAbout": "make",
-                "isVis": "Siemens | Philips | General Electric"
+                "isVis": true
             },
             {
                 "variableName": "model",
                 "isAbout": "model",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "field_strength",
                 "isAbout": "field_strength",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "receive_coil",
                 "isAbout": "receive_coil",
-                "isVis": "standard: receive coil | non-standard openfield"
+                "isVis": true
             },
             {
                 "variableName": "pulse_sequence_type",
                 "isAbout": "pulse_sequence_type",
-                "isVis": "Gradient echo | Spin echo | Mutliband gradient echo | MPRAGE | MP2RAGE | FLASH"
+                "isVis": true
             },
             {
                 "variableName": "imaging_type",
                 "isAbout": "imaging_type",
-                "isVis": "echo planar | spiral | 3D"
+                "isVis": true
             },
             {
                 "variableName": "number_of_shots",
                 "isAbout": "number_of_shots",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "partial_fourrier_scheme",
                 "isAbout": "partial_fourrier_scheme",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "echo_time",
                 "isAbout": "echo_time",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "repetition_time",
                 "isAbout": "repetition_time",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "flip_angle",
                 "isAbout": "flip_angle",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "voxel_dimension",
                 "isAbout": "voxel_dimension",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "number_of_volumes",
                 "isAbout": "number_of_volumes",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "inversion_time",
                 "isAbout": "inversion_time",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "field_of_view",
                 "isAbout": "field_of_view",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "in-plane_matrix_size",
                 "isAbout": "in-plane_matrix_size",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "number_of_slices",
                 "isAbout": "number_of_slices",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "slice_thickness",
                 "isAbout": "slice_thickness",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "interslice_gap",
                 "isAbout": "interslice_gap",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "slice_orientation",
                 "isAbout": "slice_orientation",
-                "isVis": "axial | sagittal | coronal | oblique"
+                "isVis": true
             },
             {
                 "variableName": "parallel_imaging_method",
                 "isAbout": "parallel_imaging_method",
-                "isVis": "GRAPPA | SENSE"
+                "isVis": true
             },
             {
                 "variableName": "acceleration_factor",
                 "isAbout": "acceleration_factor",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "slice_timing",
                 "isAbout": "slice_timing",
-                "isVis": "interleaved ascending | interleaved descending | sequential ascending | sequential descending"
+                "isVis": true
             },
             {
                 "variableName": "location_of_the_first_slice",
                 "isAbout": "location_of_the_first_slice",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "brain_coverage",
                 "isAbout": "brain_coverage",
-                "isVis": "cerebrum+cerebellum+brainstem | cerebrum+cerebellum | cerebrum"
+                "isVis": true
             },
             {
                 "variableName": "motion_monitoring",
                 "isAbout": "motion_monitoring",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Neighborhood size used to form clusters"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "6",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "18",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "26",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

@@ -13,12 +13,28 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Physiological signals included as nuisance regressors"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "heart rate variability",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "respiration",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

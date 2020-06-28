@@ -13,12 +13,38 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Specigy the slice orientation"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "axial",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "sagittal",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "coronal",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "oblique",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 5,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

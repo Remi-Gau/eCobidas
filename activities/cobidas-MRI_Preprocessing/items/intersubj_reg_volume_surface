@@ -13,12 +13,28 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Was the registration volume or surface based?"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "surface",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "volume",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

@@ -97,14 +97,15 @@ INCLUDE_COL = []
 # )
 
 # COBIDAS MRI
+INCLUDE_COL = 13
+MANDATORY_COL = 15
 SECTION_COL = 18
 ITEM_COL = 24
 QUESTION_COL = 26
-RESPONSE_TYPE_COL = 27
-CHOICE_COL = 28
-MANDATORY_COL = 15
-VISIBILITY_COL = 29
-INCLUDE_COL = 13
+RESPONSE_TYPE_COL = 28
+CHOICE_COL = 29
+VISIBILITY_COL = 30
+
 
 # --------------------
 # VERSION
@@ -156,8 +157,8 @@ def define_new_activity(at_context, activity_schema_name, PROTOCOL, section, VER
         }
 
 
-def get_item_info(row, ITEM_COL, QUESTION_COL, RESPONSE_TYPE_COL, CHOICE_COL, VISIBILITY_COL, INCLUDE_COL): 
-    
+def get_item_info(row, ITEM_COL, QUESTION_COL, RESPONSE_TYPE_COL, CHOICE_COL, VISIBILITY_COL, INCLUDE_COL):
+
     item_name = []
     question = "QUESTION MISSING"
     response_type = "UNKNOWN"
@@ -166,16 +167,16 @@ def get_item_info(row, ITEM_COL, QUESTION_COL, RESPONSE_TYPE_COL, CHOICE_COL, VI
 
     INCLUDE = True
     # we want to skip the header and only include items with 1 in the include column (if it exists)
-    if row[ITEM_COL] == 'Item' or ( INCLUDE_COL != [] and row[INCLUDE_COL] != "1" ):
+    if row[ITEM_COL] == 'Item' or (INCLUDE_COL != [] and row[INCLUDE_COL] != "1"):
         INCLUDE = False
 
         print('   skipping item')
-    
+
     if INCLUDE:
 
-        item_name = row[ITEM_COL].replace("\n","")
+        item_name = row[ITEM_COL].replace("\n", "")
 
-        question = row[QUESTION_COL].replace("\n","")
+        question = row[QUESTION_COL].replace("\n", "")
 
         response_type = row[RESPONSE_TYPE_COL]
 
@@ -350,7 +351,7 @@ def list_responses_options(responseOptions, response_choices):
 
     responseOptions['choices'].append({
             'schema:name': 'other',
-            'schema:value': response_choices.count + 1,
+            'schema:value': len(response_choices) + 1,
             '@type': 'schema:option'
             }
         )
@@ -410,12 +411,12 @@ with open(INPUT_FILE, 'r') as csvfile:
     for row in PROTOCOL_METADATA:
 
         item_name, question, response_type, response_choices, visibility = get_item_info(
-                                                                            row, 
-                                                                            ITEM_COL, 
-                                                                            QUESTION_COL, 
-                                                                            RESPONSE_TYPE_COL, 
-                                                                            CHOICE_COL, 
-                                                                            VISIBILITY_COL, 
+                                                                            row,
+                                                                            ITEM_COL,
+                                                                            QUESTION_COL,
+                                                                            RESPONSE_TYPE_COL,
+                                                                            CHOICE_COL,
+                                                                            VISIBILITY_COL,
                                                                             INCLUDE_COL)
 
         if item_name != []:
@@ -440,13 +441,13 @@ with open(INPUT_FILE, 'r') as csvfile:
 
                 # create dir for this section
                 if not os.path.exists(os.path.join(OUTPUT_DIR, 'activities',
-                                                    activity_dir)):
+                                                   activity_dir)):
                     os.makedirs(os.path.join(OUTPUT_DIR, 'activities', activity_dir))
 
                 if not os.path.exists(os.path.join(OUTPUT_DIR, 'activities',
-                                                    activity_dir, 'items')):
+                                                   activity_dir, 'items')):
                     os.makedirs(os.path.join(OUTPUT_DIR, 'activities',
-                                                activity_dir, 'items'))
+                                             activity_dir, 'items'))
 
                 activity_context_json, activity_at_context = define_activity_context(
                                                                 REPRONIM_REPO,
@@ -499,21 +500,23 @@ with open(INPUT_FILE, 'r') as csvfile:
 
             # save activity schema and context with every new item
             with open(os.path.join(OUTPUT_DIR, 'activities', activity_dir,
-                                    activity_schema_file), 'w') as ff:
+                                   activity_schema_file), 'w') as ff:
                 json.dump(activity_schema_json, ff, sort_keys=False, indent=4)
 
             with open(os.path.join(OUTPUT_DIR, 'activities', activity_dir,
-                                    activity_context_file), 'w') as ff:
+                                   activity_context_file), 'w') as ff:
                 json.dump(activity_context_json, ff, sort_keys=False, indent=4)
 
             # -------------------------------------------------------------------
             # Create new item
             # -------------------------------------------------------------------
             print('   ' + item_name)
+
             if question == "":
-                warnings.warn("No question for this item.", UserWarning) 
+                warnings.warn("No question for this item.", UserWarning)
             else:
-                print('       ' + question)                    
+                print('       ' + question)
+            print('       ' + response_type)
             
             item_schema_json = define_new_item(activity_at_context, item_name, question, VERSION)
 

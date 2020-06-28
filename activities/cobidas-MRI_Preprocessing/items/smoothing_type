@@ -13,12 +13,23 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Describe the type of smoothing applied"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "gaussian",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

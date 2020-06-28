@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Tissue definition to create the nuisance regressor"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "a priori seed",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "automatic segmentation",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "spatial regression",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

@@ -13,12 +13,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "number"
     },
     "question": {
         "en": "Number of subjects excluded after consenting but before data acquisition"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "valueType": "xsd:integer"
     }
 }

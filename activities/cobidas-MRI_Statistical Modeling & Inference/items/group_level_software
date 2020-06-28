@@ -13,12 +13,43 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Software used for the group level model"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "SPM",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "FSL",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Freesurfer",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Brain voyager",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "AFNI",
+                "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 6,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

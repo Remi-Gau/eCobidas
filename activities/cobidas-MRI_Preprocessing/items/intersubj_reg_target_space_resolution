@@ -13,12 +13,38 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Voxel size of target template in millimeters"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "2 mm",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "3 mm",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "fsaverage5",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "32k_FS_LR",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 5,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

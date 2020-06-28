@@ -13,12 +13,53 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Interpolation method used for intersubject registration"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "Nearest neighbour",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "trilinear",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "2nd degree spline",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "2nd degree spline",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "3rd degree spline",
+                "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "4th degree spline",
+                "schema:value": 5,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Fourrier interpolation",
+                "schema:value": 6,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 8,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

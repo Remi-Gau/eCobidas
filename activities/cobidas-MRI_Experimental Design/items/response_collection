@@ -13,12 +13,23 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "How were responses collected?"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "button boxes",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

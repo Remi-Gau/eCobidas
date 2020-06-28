@@ -13,12 +13,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "number"
     },
     "question": {
         "en": "number of computed regressors"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "valueType": "xsd:integer"
     }
 }

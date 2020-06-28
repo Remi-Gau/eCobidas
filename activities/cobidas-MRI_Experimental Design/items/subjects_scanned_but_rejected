@@ -13,12 +13,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "number"
     },
     "question": {
         "en": "Number of subjects scanned but rejected from analysis"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "valueType": "xsd:integer"
     }
 }

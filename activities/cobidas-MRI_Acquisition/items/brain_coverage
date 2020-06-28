@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "What was the brain coverage ?"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "cerebrum+cerebellum+brainstem",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "cerebrum+cerebellum",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "cerebrum",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

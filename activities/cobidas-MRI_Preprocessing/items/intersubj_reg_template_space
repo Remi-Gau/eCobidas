@@ -13,12 +13,38 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Name of coordinate space for registration target"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "MNI",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Talairach",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "fsaverage",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "FS_LR",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 5,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
         "en": "What type of design was used?"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "block design",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "event related design",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "mixed",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

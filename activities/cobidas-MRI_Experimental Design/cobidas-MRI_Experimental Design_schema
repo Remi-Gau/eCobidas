@@ -65,222 +65,222 @@
             {
                 "variableName": "group_comparison",
                 "isAbout": "group_comparison",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "subjects_excluded",
                 "isAbout": "subjects_excluded",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "reason_for_exclusion",
                 "isAbout": "reason_for_exclusion",
-                "isVis": ""
+                "isVis": "subjects excluded"
             },
             {
                 "variableName": "mean_age",
                 "isAbout": "mean_age",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "age_standard_deviation",
                 "isAbout": "age_standard_deviation",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "age_mininum",
                 "isAbout": "age_mininum",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "age_maximum",
                 "isAbout": "age_maximum",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "subjects_scanned_but_rejected",
                 "isAbout": "subjects_scanned_but_rejected",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "subjects_included_in_analysis",
                 "isAbout": "subjects_included_in_analysis",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "gender",
                 "isAbout": "gender",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "handedness",
                 "isAbout": "handedness",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "handedness_method",
                 "isAbout": "handedness_method",
-                "isVis": "self report | EHI"
+                "isVis": "handedness"
             },
             {
                 "variableName": "exclusion_criteria",
                 "isAbout": "exclusion_criteria",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "exclusion_criteria_description",
                 "isAbout": "exclusion_criteria_description",
-                "isVis": ""
+                "isVis": "exclusion criteria"
             },
             {
                 "variableName": "matching_strategy",
                 "isAbout": "matching_strategy",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "ethical_approval",
                 "isAbout": "ethical_approval",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "rest_or_task",
                 "isAbout": "rest_or_task",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "design_type",
                 "isAbout": "design_type",
-                "isVis": "block design | event related design | mixed"
+                "isVis": true
             },
             {
                 "variableName": "condition_&_stimuli",
                 "isAbout": "condition_&_stimuli",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "number_experimental_units",
                 "isAbout": "number_experimental_units",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "block_duration",
                 "isAbout": "block_duration",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "trial_duration",
                 "isAbout": "trial_duration",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "intertrial_interval_type",
                 "isAbout": "intertrial_interval_type",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "intertrial_interval_range",
                 "isAbout": "intertrial_interval_range",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "intertrial_interval_distribution",
                 "isAbout": "intertrial_interval_distribution",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "total_scanning_time",
                 "isAbout": "total_scanning_time",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "number_of_functional_runs",
                 "isAbout": "number_of_functional_runs",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "duration_of_each_run",
                 "isAbout": "duration_of_each_run",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "design_optimization_used",
                 "isAbout": "design_optimization_used",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "design_optimization_method",
                 "isAbout": "design_optimization_method",
-                "isVis": ""
+                "isVis": "design optimization used"
             },
             {
                 "variableName": "presentation_software_name",
                 "isAbout": "presentation_software_name",
-                "isVis": "Psychtoolbox | psychopy | e prime | presentation | cogent"
+                "isVis": true
             },
             {
                 "variableName": "presentation_software_version",
                 "isAbout": "presentation_software_version",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "url_to_code",
                 "isAbout": "url_to_code",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "condition",
                 "isAbout": "condition",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "instructions",
                 "isAbout": "instructions",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "stimuli",
                 "isAbout": "stimuli",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "randomization",
                 "isAbout": "randomization",
-                "isVis": "deterministic | random | pseudorandom"
+                "isVis": true
             },
             {
                 "variableName": "deterministic",
                 "isAbout": "deterministic",
-                "isVis": ""
+                "isVis": "randomization==deterministic"
             },
             {
                 "variableName": "pseudo-random",
                 "isAbout": "pseudo-random",
-                "isVis": ""
+                "isVis": "randomization==pseudorandom"
             },
             {
                 "variableName": "stimulus_presentation",
                 "isAbout": "stimulus_presentation",
-                "isVis": "back projection | in\u00ad room display | goggles"
+                "isVis": true
             },
             {
                 "variableName": "response_collection",
                 "isAbout": "response_collection",
-                "isVis": "button boxes"
+                "isVis": true
             },
             {
                 "variableName": "scanner_syncrhonisation",
                 "isAbout": "scanner_syncrhonisation",
-                "isVis": "scanner TTL | manual synch "
+                "isVis": true
             },
             {
                 "variableName": "run_order",
                 "isAbout": "run_order",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "variables_recorded",
                 "isAbout": "variables_recorded",
-                "isVis": "button press | response time"
+                "isVis": true
             }
         ]
     }

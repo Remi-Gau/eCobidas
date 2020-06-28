@@ -13,12 +13,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "number"
     },
     "question": {
         "en": "Pamaters of parallel imaging method (acceleration factor)"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "valueType": "xsd:integer"
     }
 }

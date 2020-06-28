@@ -13,12 +13,38 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Similarity metric used for motion correction"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "Mutual information",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Normalised mutual information",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Entropy correlation coefficient",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Normalised cross-correlation",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 5,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

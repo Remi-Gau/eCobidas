@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "What type of mass univariate model was ued at the group level?"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "fixed effect",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "random effect",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "mixed effect",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

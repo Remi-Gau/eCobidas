@@ -13,12 +13,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "float"
     },
     "question": {
         "en": "Percentage of right handed in the study"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "valueType": "xsd:float"
     }
 }

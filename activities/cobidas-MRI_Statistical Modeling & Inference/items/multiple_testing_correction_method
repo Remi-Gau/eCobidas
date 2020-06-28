@@ -13,12 +13,23 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "What method was used for multiple comparison correction?"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "thun",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

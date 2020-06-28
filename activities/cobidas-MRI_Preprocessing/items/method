@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "method used for physiological noise correction"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "CompCor",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "ICA\u00adFIX",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "ICA\u00adAROMA",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

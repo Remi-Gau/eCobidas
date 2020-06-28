@@ -13,12 +13,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "float"
     },
     "question": {
         "en": "Field strength of MRI scanner (in Tesla)"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "valueType": "xsd:float"
     }
 }

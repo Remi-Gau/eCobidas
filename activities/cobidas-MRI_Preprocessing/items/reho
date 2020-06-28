@@ -13,12 +13,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "float"
     },
     "question": {
         "en": ""
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "valueType": "xsd:float"
     }
 }

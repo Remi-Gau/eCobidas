@@ -61,202 +61,202 @@
             {
                 "variableName": "spatial_region_modeled",
                 "isAbout": "spatial_region_modeled",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "event_related_duration",
                 "isAbout": "event_related_duration",
-                "isVis": ""
+                "isVis": "if design includes events"
             },
             {
                 "variableName": "event_related_parametric_modulation",
                 "isAbout": "event_related_parametric_modulation",
-                "isVis": ""
+                "isVis": "if design includes events"
             },
             {
                 "variableName": "base_line_model",
                 "isAbout": "base_line_model",
-                "isVis": ""
+                "isVis": "if design includes blocks"
             },
             {
                 "variableName": "hemodynamic_response_function_basis_set",
                 "isAbout": "hemodynamic_response_function_basis_set",
-                "isVis": "Canonical | smooth basis (e.g. SPM \u201cinformed\u201d or Fourier basis\u037e FSL\u2019s FLOBS) | Finite Impulse Response"
+                "isVis": true
             },
             {
                 "variableName": "time_derivative",
                 "isAbout": "time_derivative",
-                "isVis": ""
+                "isVis": "hemodynamic response function basis set"
             },
             {
                 "variableName": "dispersion_derivative",
                 "isAbout": "dispersion_derivative",
-                "isVis": ""
+                "isVis": "hemodynamic response function basis set"
             },
             {
                 "variableName": "high-pass_filter_used",
                 "isAbout": "high-pass_filter_used",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "high-pass_filter_type",
                 "isAbout": "high-pass_filter_type",
-                "isVis": "SPM: DCT basis | FSL: ??? | AFNI: ???"
+                "isVis": true
             },
             {
                 "variableName": "high-pass_filter_cutoff",
                 "isAbout": "high-pass_filter_cutoff",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "movement_regressors_included",
                 "isAbout": "movement_regressors_included",
-                "isVis": "None | 6 regressors | 6 temporal derivatives | 6 regressors\u00b2 + 6 temporal derivatives\u00b2 | Framewise displacement"
+                "isVis": true
             },
             {
                 "variableName": "other_nuisance_regressors",
                 "isAbout": "other_nuisance_regressors",
-                "isVis": "GM | WM | CSF | global | reaction time"
+                "isVis": true
             },
             {
                 "variableName": "orthogonalization",
                 "isAbout": "orthogonalization",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "orthogonalization_description",
                 "isAbout": "orthogonalization_description",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "subject_level_model_type",
                 "isAbout": "subject_level_model_type",
-                "isVis": "Mass Univariate | Multivariate | Mass Multivariate | Local Multivariate | Multivariate | Representational Similarity Analysis"
+                "isVis": true
             },
             {
                 "variableName": "subject_level_software",
                 "isAbout": "subject_level_software",
-                "isVis": "SPM | FSL | Freesurfer | Brain voyager | AFNI"
+                "isVis": true
             },
             {
                 "variableName": "group_level_model_type",
                 "isAbout": "group_level_model_type",
-                "isVis": "Mass Univariate | Multivariate | Mass Multivariate | Local Multivariate | Multivariate | inter-subjective predictive | Multivariate inter-subject predictive | Representational Similarity Analysis"
+                "isVis": true
             },
             {
                 "variableName": "group_level_software",
                 "isAbout": "group_level_software",
-                "isVis": "SPM | FSL | Freesurfer | Brain voyager | AFNI"
+                "isVis": true
             },
             {
                 "variableName": "drift_model",
                 "isAbout": "drift_model",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "autocorrelation_model",
                 "isAbout": "autocorrelation_model",
-                "isVis": "SPM: global approximate AR(1) | SPM: FAST | FSL: locally regularized autocorrelation function | AFNI: ARMA | none"
+                "isVis": true
             },
             {
                 "variableName": "model_type",
                 "isAbout": "model_type",
-                "isVis": "fixed effect | random effect | mixed effect"
+                "isVis": true
             },
             {
                 "variableName": "subject_level_estimation_type",
                 "isAbout": "subject_level_estimation_type",
-                "isVis": "OLS | generalized least squares | weighted least squares | Global weighted least squares"
+                "isVis": true
             },
             {
                 "variableName": "group_level_estimation_type",
                 "isAbout": "group_level_estimation_type",
-                "isVis": "OLS | generalized least squares | weighted least squares | Global weighted least squares"
+                "isVis": true
             },
             {
                 "variableName": "group_model_variance_structures",
                 "isAbout": "group_model_variance_structures",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "repeated_measure",
                 "isAbout": "repeated_measure",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "repeated_measure_method",
                 "isAbout": "repeated_measure_method",
-                "isVis": ""
+                "isVis": "repeated measure"
             },
             {
                 "variableName": "contrast_definition",
                 "isAbout": "contrast_definition",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "definition_cog_atlas",
                 "isAbout": "definition_cog_atlas",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "type",
                 "isAbout": "type",
-                "isVis": "whole brain | small volume correction | functional ROI analysis | anatomical ROI analysis"
+                "isVis": true
             },
             {
                 "variableName": "source_of_anatomical_roi",
                 "isAbout": "source_of_anatomical_roi",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "source_of_functional_roi",
                 "isAbout": "source_of_functional_roi",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "statistic_type",
                 "isAbout": "statistic_type",
-                "isVis": "Z | T | F | X2 | PostProb | NonparametricP | MonteCarloP"
+                "isVis": true
             },
             {
                 "variableName": "level",
                 "isAbout": "level",
-                "isVis": "voxel\u00adwise | cluster-wise | set"
+                "isVis": true
             },
             {
                 "variableName": "cluster_size",
                 "isAbout": "cluster_size",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "tfce_used",
                 "isAbout": "tfce_used",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "cluster-forming_threshold",
                 "isAbout": "cluster-forming_threshold",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "neighborhood_size",
                 "isAbout": "neighborhood_size",
-                "isVis": "6 | 18 | 26"
+                "isVis": true
             },
             {
                 "variableName": "use_of_non-default_tfce_parameters",
                 "isAbout": "use_of_non-default_tfce_parameters",
-                "isVis": ""
+                "isVis": "tfce used"
             },
             {
                 "variableName": "p_\u00advalue_computation",
                 "isAbout": "p_\u00advalue_computation",
-                "isVis": "parametric | non-parametric"
+                "isVis": true
             },
             {
                 "variableName": "multiple_testing_correction_method",
                 "isAbout": "multiple_testing_correction_method",
-                "isVis": "thun"
+                "isVis": true
             }
         ]
     }

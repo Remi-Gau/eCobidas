@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "At what level was the inference made?"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "voxel\u00adwise",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "cluster-wise",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "set",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

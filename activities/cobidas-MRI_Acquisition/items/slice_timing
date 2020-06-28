@@ -13,12 +13,38 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Specify the slice acquisition order"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "interleaved ascending",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "interleaved descending",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "sequential ascending",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "sequential descending",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 5,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

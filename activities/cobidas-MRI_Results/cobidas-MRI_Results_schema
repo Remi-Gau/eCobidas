@@ -30,47 +30,47 @@
             {
                 "variableName": "units_of_reported_results",
                 "isAbout": "units_of_reported_results",
-                "isVis": "beta values | percent signal change"
+                "isVis": true
             },
             {
                 "variableName": "contrast_and_effect",
                 "isAbout": "contrast_and_effect",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "xyz_coordinate",
                 "isAbout": "xyz_coordinate",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "coordinate_system",
                 "isAbout": "coordinate_system",
-                "isVis": "MNI | Talairach"
+                "isVis": true
             },
             {
                 "variableName": "statistic_presented",
                 "isAbout": "statistic_presented",
-                "isVis": "T | F | Z"
+                "isVis": true
             },
             {
                 "variableName": "cluster-size",
                 "isAbout": "cluster-size",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "type_of_inference",
                 "isAbout": "type_of_inference",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "spatial_smoothness_of_noise",
                 "isAbout": "spatial_smoothness_of_noise",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "resel_count",
                 "isAbout": "resel_count",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

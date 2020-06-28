@@ -13,12 +13,28 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": ""
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "parametric",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "non-parametric",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

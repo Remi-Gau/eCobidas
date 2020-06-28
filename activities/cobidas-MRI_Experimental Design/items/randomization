@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
         "en": "Was the block or event ordering deterministic or randomized? "
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "deterministic",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "random",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "pseudorandom",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

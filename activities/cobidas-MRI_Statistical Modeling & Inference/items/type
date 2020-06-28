@@ -13,12 +13,38 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Search region used"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "whole brain",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "small volume correction",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "functional ROI analysis",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "anatomical ROI analysis",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 5,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

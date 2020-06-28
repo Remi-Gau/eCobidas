@@ -13,12 +13,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "number"
     },
     "question": {
         "en": "Specify the number of volumes"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "valueType": "xsd:integer"
     }
 }

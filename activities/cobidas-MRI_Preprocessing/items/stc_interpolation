@@ -13,12 +13,28 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Interpolation method used for the slice timing"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "sinc",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "3rd degree spline",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

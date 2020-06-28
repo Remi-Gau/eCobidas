@@ -13,12 +13,28 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Were there any screening criteria for handiness?"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "self report",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "EHI",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

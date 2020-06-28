@@ -13,12 +13,23 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Number of degrees of freedom for the motion correction"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "6 (rigid body transformation)",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 2,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

@@ -13,12 +13,38 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Estimation method used for subject level model"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "OLS",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "generalized least squares",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "weighted least squares",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Global weighted least squares",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 5,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

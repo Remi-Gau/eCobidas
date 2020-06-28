@@ -13,12 +13,48 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Type of subject model used"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "Mass Univariate",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Multivariate",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Mass Multivariate",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Local Multivariate",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Multivariate",
+                "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Representational Similarity Analysis",
+                "schema:value": 5,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 7,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

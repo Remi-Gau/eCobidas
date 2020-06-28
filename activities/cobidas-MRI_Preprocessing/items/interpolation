@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Interpolation used for volume censoring"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "none",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "spline",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "spectral estimation",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

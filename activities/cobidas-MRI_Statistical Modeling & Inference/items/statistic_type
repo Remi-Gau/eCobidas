@@ -13,12 +13,53 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Type of statistic that is the basis of the inference"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "Z",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "T",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "F",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "X2",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "PostProb",
+                "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "NonparametricP",
+                "schema:value": 5,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "MonteCarloP",
+                "schema:value": 6,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 8,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

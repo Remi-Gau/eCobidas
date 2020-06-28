@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Specify the presentation hardware "
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "back projection",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "in\u00ad room display",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "goggles",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

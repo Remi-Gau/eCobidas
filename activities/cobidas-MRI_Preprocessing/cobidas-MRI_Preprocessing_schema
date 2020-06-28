@@ -109,257 +109,257 @@
             {
                 "variableName": "preprocessing_software",
                 "isAbout": "preprocessing_software",
-                "isVis": "SPM | FSL | Freesurfer | Brain voyager | AFNI"
+                "isVis": "single preprocessing software"
             },
             {
                 "variableName": "preprocessing_software_version",
                 "isAbout": "preprocessing_software_version",
-                "isVis": ""
+                "isVis": "single preprocessing software"
             },
             {
                 "variableName": "operation_performed",
                 "isAbout": "operation_performed",
-                "isVis": "brain extraction | anatomical image segmentation | realignment | slice timing correction | functional-anatomical coregistration | normalization (intersubject coregistration) | smoothing"
+                "isVis": true
             },
             {
                 "variableName": "order_of_operation",
                 "isAbout": "order_of_operation",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "t1_stabilization",
                 "isAbout": "t1_stabilization",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "bet_software",
                 "isAbout": "bet_software",
-                "isVis": "SPM | FSL | Freesurfer | Brain voyager"
+                "isVis": "~single preprocessing software, operation performed = brain extraction"
             },
             {
                 "variableName": "bet_version",
                 "isAbout": "bet_version",
-                "isVis": ""
+                "isVis": "~single preprocessing software, operation performed = brain extraction"
             },
             {
                 "variableName": "bet_method",
                 "isAbout": "bet_method",
-                "isVis": ""
+                "isVis": "operation performed = brain extraction"
             },
             {
                 "variableName": "bet_parameters",
                 "isAbout": "bet_parameters",
-                "isVis": ""
+                "isVis": "operation performed = brain extraction"
             },
             {
                 "variableName": "bet_manual_edit",
                 "isAbout": "bet_manual_edit",
-                "isVis": ""
+                "isVis": "operation performed = brain extraction"
             },
             {
                 "variableName": "segmentation_software",
                 "isAbout": "segmentation_software",
-                "isVis": "SPM | FSL | Freesurfer | Brain voyager"
+                "isVis": "operation performed = segmentation used"
             },
             {
                 "variableName": "segmentation_version",
                 "isAbout": "segmentation_version",
-                "isVis": ""
+                "isVis": "operation performed = segmentation used"
             },
             {
                 "variableName": "segmentation_method",
                 "isAbout": "segmentation_method",
-                "isVis": ""
+                "isVis": "operation performed = segmentation used"
             },
             {
                 "variableName": "segmentation_parameters",
                 "isAbout": "segmentation_parameters",
-                "isVis": ""
+                "isVis": "operation performed = segmentation used"
             },
             {
                 "variableName": "stc_software",
                 "isAbout": "stc_software",
-                "isVis": "SPM | FSL | Freesurfer | Brain voyager | AFNI"
+                "isVis": "~single preprocessing software, operation performed = stc"
             },
             {
                 "variableName": "stc_version",
                 "isAbout": "stc_version",
-                "isVis": ""
+                "isVis": "~single preprocessing software, operation performed = stc"
             },
             {
                 "variableName": "stc_method",
                 "isAbout": "stc_method",
-                "isVis": ""
+                "isVis": "operation performed = stc"
             },
             {
                 "variableName": "stc_reference",
                 "isAbout": "stc_reference",
-                "isVis": ""
+                "isVis": "operation performed = stc"
             },
             {
                 "variableName": "stc_interpolation",
                 "isAbout": "stc_interpolation",
-                "isVis": "sinc | 3rd degree spline"
+                "isVis": "operation performed = stc"
             },
             {
                 "variableName": "moco_software",
                 "isAbout": "moco_software",
-                "isVis": "SPM | FSL | Freesurfer | Brain voyager | AFNI"
+                "isVis": "~single preprocessing software, operation performed = moco"
             },
             {
                 "variableName": "moco_version",
                 "isAbout": "moco_version",
-                "isVis": ""
+                "isVis": "~single preprocessing software, operation performed = moco"
             },
             {
                 "variableName": "non-rigid_registration",
                 "isAbout": "non-rigid_registration",
-                "isVis": ""
+                "isVis": "operation performed = moco"
             },
             {
                 "variableName": "moco_dof",
                 "isAbout": "moco_dof",
-                "isVis": "6 (rigid body transformation)"
+                "isVis": "operation performed = moco"
             },
             {
                 "variableName": "motion-susceptibility_correction_used",
                 "isAbout": "motion-susceptibility_correction_used",
-                "isVis": ""
+                "isVis": "operation performed = moco"
             },
             {
                 "variableName": "motion-susceptibility_correction_software",
                 "isAbout": "motion-susceptibility_correction_software",
-                "isVis": "SPM | FSL | Freesurfer | Brain voyager | AFNI"
+                "isVis": "~single preprocessing software, operation performed = moco"
             },
             {
                 "variableName": "motion-susceptibility_correction_method",
                 "isAbout": "motion-susceptibility_correction_method",
-                "isVis": ""
+                "isVis": "~single preprocessing software, operation performed = moco"
             },
             {
                 "variableName": "moco_reference",
                 "isAbout": "moco_reference",
-                "isVis": "first image | middle image | mean image (2 pass)"
+                "isVis": "operation performed = moco"
             },
             {
                 "variableName": "moco_cost_function",
                 "isAbout": "moco_cost_function",
-                "isVis": "Mutual information | Normalised mutual information | Entropy correlation coefficient | Normalised cross-correlation"
+                "isVis": "operation performed = moco"
             },
             {
                 "variableName": "moco_interpolation",
                 "isAbout": "moco_interpolation",
-                "isVis": "Nearest neighbour | trilinear | 2nd degree spline | 2nd degree spline | 3rd degree spline | 4th degree spline | Fourrier interpolation"
+                "isVis": "operation performed = moco"
             },
             {
                 "variableName": "moco_parameters",
                 "isAbout": "moco_parameters",
-                "isVis": "use of slice\u00ad-to-\u00advolume registration methods | moco integrated with slice time correction | image transformations were combined to allow a single interpolation"
+                "isVis": "operation performed = moco"
             },
             {
                 "variableName": "func-anat_coreg_software",
                 "isAbout": "func-anat_coreg_software",
-                "isVis": "SPM | FSL | Freesurfer | Brain voyager | AFNI"
+                "isVis": "~single preprocessing software, operation performed = func-anat coreg"
             },
             {
                 "variableName": "func-anat_coreg_version",
                 "isAbout": "func-anat_coreg_version",
-                "isVis": ""
+                "isVis": "~single preprocessing software, operation performed = func-anat coreg"
             },
             {
                 "variableName": "func-anat_coreg_method",
                 "isAbout": "func-anat_coreg_method",
-                "isVis": ""
+                "isVis": "operation performed = func-anat coreg"
             },
             {
                 "variableName": "func-anat_coreg_target_volume",
                 "isAbout": "func-anat_coreg_target_volume",
-                "isVis": ""
+                "isVis": "operation performed = func-anat coreg"
             },
             {
                 "variableName": "func-anat_coreg_source_volume",
                 "isAbout": "func-anat_coreg_source_volume",
-                "isVis": ""
+                "isVis": "operation performed = func-anat coreg"
             },
             {
                 "variableName": "func-anat_coreg_dof",
                 "isAbout": "func-anat_coreg_dof",
-                "isVis": ""
+                "isVis": "operation performed = func-anat coreg"
             },
             {
                 "variableName": "func-anat_coreg_cost_function",
                 "isAbout": "func-anat_coreg_cost_function",
-                "isVis": "correlation ratio | mutual information | boundary-based registration"
+                "isVis": "operation performed = func-anat coreg"
             },
             {
                 "variableName": "func-anat_coreg_interpolation_method",
                 "isAbout": "func-anat_coreg_interpolation_method",
-                "isVis": "Nearest neighbour | trilinear | 2nd degree spline | 2nd degree spline | 3rd degree spline | 4th degree spline | Fourrier interpolation"
+                "isVis": "operation performed = func-anat coreg"
             },
             {
                 "variableName": "intersubj_reg_software",
                 "isAbout": "intersubj_reg_software",
-                "isVis": "SPM | FSL | Freesurfer | Brain voyager | AFNI"
+                "isVis": "~single preprocessing software, operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_version",
                 "isAbout": "intersubj_reg_version",
-                "isVis": ""
+                "isVis": "~single preprocessing software, operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_method",
                 "isAbout": "intersubj_reg_method",
-                "isVis": "FSL flirt followed by fnirt | FreeSurfer | Caret | Workbench"
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_volume_surface",
                 "isAbout": "intersubj_reg_volume_surface",
-                "isVis": "surface | volume"
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_source_image_modality",
                 "isAbout": "intersubj_reg_source_image_modality",
-                "isVis": "T1 | T2*"
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_preprocessing",
                 "isAbout": "intersubj_reg_preprocessing",
-                "isVis": ""
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_template_space",
                 "isAbout": "intersubj_reg_template_space",
-                "isVis": "MNI | Talairach | fsaverage | FS_LR"
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_target_space_modality",
                 "isAbout": "intersubj_reg_target_space_modality",
-                "isVis": "T1 | T2*"
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_target_space_resolution",
                 "isAbout": "intersubj_reg_target_space_resolution",
-                "isVis": "2 mm | 3 mm | fsaverage5 | 32k_FS_LR"
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_target_image",
                 "isAbout": "intersubj_reg_target_image",
-                "isVis": ""
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_extra",
                 "isAbout": "intersubj_reg_extra",
-                "isVis": ""
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "warp_choice",
                 "isAbout": "warp_choice",
-                "isVis": "rigid | non-linear"
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "non_linear_type",
                 "isAbout": "non_linear_type",
-                "isVis": "B\u00ad-splines | stationary velocity field | momentum | non\u00adparametric displacement field"
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "regularization_used",
@@ -369,182 +369,182 @@
             {
                 "variableName": "regularization_parameters",
                 "isAbout": "regularization_parameters",
-                "isVis": ""
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_interpolation",
                 "isAbout": "intersubj_reg_interpolation",
-                "isVis": "Nearest neighbour | trilinear | 2nd degree spline | 2nd degree spline | 3rd degree spline | 4th degree spline | Fourrier interpolation"
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_cost_function",
                 "isAbout": "intersubj_reg_cost_function",
-                "isVis": "correlation ratio | mutual information | boundary-based registration"
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "intersubj_reg_masking",
                 "isAbout": "intersubj_reg_masking",
-                "isVis": ""
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "resampled_voxel_size",
                 "isAbout": "resampled_voxel_size",
-                "isVis": ""
+                "isVis": "operation performed = intersubj reg"
             },
             {
                 "variableName": "anatomical_image_intensity_correction",
                 "isAbout": "anatomical_image_intensity_correction",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "functional_image_intensity_correction",
                 "isAbout": "functional_image_intensity_correction",
-                "isVis": ""
+                "isVis": "stc_method = 'interleaved' or 'other'"
             },
             {
                 "variableName": "intensity_normalization",
                 "isAbout": "intensity_normalization",
-                "isVis": "scan by scan | run wide"
+                "isVis": true
             },
             {
                 "variableName": "denoising_used",
                 "isAbout": "denoising_used",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "noise_sources_included",
                 "isAbout": "noise_sources_included",
-                "isVis": "physiological | motion | tissue specific signal"
+                "isVis": "denoising used"
             },
             {
                 "variableName": "physio_noise_corr_software",
                 "isAbout": "physio_noise_corr_software",
-                "isVis": ""
+                "isVis": "noise sources included==physiological"
             },
             {
                 "variableName": "physio_noise_corr_version",
                 "isAbout": "physio_noise_corr_version",
-                "isVis": ""
+                "isVis": "noise sources included==physiological"
             },
             {
                 "variableName": "method",
                 "isAbout": "method",
-                "isVis": "CompCor | ICA\u00adFIX | ICA\u00adAROMA"
+                "isVis": "noise sources included==physiological"
             },
             {
                 "variableName": "motion_parameters",
                 "isAbout": "motion_parameters",
-                "isVis": "1st temporal derivatives | Volterra kernel expansion"
+                "isVis": "noise sources included==motion"
             },
             {
                 "variableName": "tissue_signals",
                 "isAbout": "tissue_signals",
-                "isVis": "whole brain | gray matter | white matter | ventricles"
+                "isVis": "noise sources included==tissue specific signal"
             },
             {
                 "variableName": "tissue_definition",
                 "isAbout": "tissue_definition",
-                "isVis": "a priori seed | automatic segmentation | spatial regression"
+                "isVis": "noise sources included==tissue specific signal"
             },
             {
                 "variableName": "tissue_signal_definition",
                 "isAbout": "tissue_signal_definition",
-                "isVis": "mean of voxels | first singular vector"
+                "isVis": "noise sources included==tissue specific signal"
             },
             {
                 "variableName": "physiological_signals",
                 "isAbout": "physiological_signals",
-                "isVis": "heart rate variability | respiration"
+                "isVis": "noise sources included==physiological"
             },
             {
                 "variableName": "physiological_signals_model",
                 "isAbout": "physiological_signals_model",
-                "isVis": "RETROICOR | cardiac and/or respiratory response functions"
+                "isVis": "noise sources included==physiological"
             },
             {
                 "variableName": "physiological_signals_number_regressor",
                 "isAbout": "physiological_signals_number_regressor",
-                "isVis": ""
+                "isVis": "noise sources included==physiological"
             },
             {
                 "variableName": "volume_censoring_used",
                 "isAbout": "volume_censoring_used",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "volume_censoring_software",
                 "isAbout": "volume_censoring_software",
-                "isVis": ""
+                "isVis": "volume censoring used"
             },
             {
                 "variableName": "volume_censoring_version",
                 "isAbout": "volume_censoring_version",
-                "isVis": ""
+                "isVis": "volume censoring used"
             },
             {
                 "variableName": "volume_censoring_method",
                 "isAbout": "volume_censoring_method",
-                "isVis": ""
+                "isVis": "volume censoring used"
             },
             {
                 "variableName": "volume_censoring_criteria",
                 "isAbout": "volume_censoring_criteria",
-                "isVis": "frame-by-frame displacement threshold | percentage BOLD change | DVARS"
+                "isVis": "volume censoring used"
             },
             {
                 "variableName": "interpolation",
                 "isAbout": "interpolation",
-                "isVis": "none | spline | spectral estimation"
+                "isVis": "volume censoring used"
             },
             {
                 "variableName": "alff_falff",
                 "isAbout": "alff_falff",
-                "isVis": "Lower and upper band pass frequencies"
+                "isVis": true
             },
             {
                 "variableName": "reho",
                 "isAbout": "reho",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "similarity_measure",
                 "isAbout": "similarity_measure",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "smoothing_software",
                 "isAbout": "smoothing_software",
-                "isVis": "SPM | FSL | Freesurfer | Brain voyager | AFNI"
+                "isVis": "~single preprocessing software, operation performed = smoothing"
             },
             {
                 "variableName": "smoothing_version",
                 "isAbout": "smoothing_version",
-                "isVis": ""
+                "isVis": "~single preprocessing software, operation performed = smoothing"
             },
             {
                 "variableName": "smoothing_type",
                 "isAbout": "smoothing_type",
-                "isVis": "gaussian"
+                "isVis": "operation performed = smoothing"
             },
             {
                 "variableName": "smoothing_size",
                 "isAbout": "smoothing_size",
-                "isVis": ""
+                "isVis": "operation performed = smoothing"
             },
             {
                 "variableName": "filtering_approach",
                 "isAbout": "filtering_approach",
-                "isVis": "fixed kernel | iterative smoothing until fixed FWHM"
+                "isVis": true
             },
             {
                 "variableName": "smoothing_target_space",
                 "isAbout": "smoothing_target_space",
-                "isVis": "native volume | native surface | MNI volume | template surface"
+                "isVis": true
             },
             {
                 "variableName": "quality_control_reports",
                 "isAbout": "quality_control_reports",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

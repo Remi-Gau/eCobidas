@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Nature of HRF model"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "Canonical",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "smooth basis (e.g. SPM \u201cinformed\u201d or Fourier basis\u037e FSL\u2019s FLOBS)",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Finite Impulse Response",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }

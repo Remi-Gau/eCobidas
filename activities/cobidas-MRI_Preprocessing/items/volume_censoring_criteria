@@ -13,12 +13,33 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Criteria used for volume censoring"
     },
     "responseOptions": {
-        "type": "xsd:string"
+        "choices": [
+            {
+                "schema:name": "frame-by-frame displacement threshold",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "percentage BOLD change",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "DVARS",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
     }
 }
