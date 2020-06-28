@@ -1,11 +1,13 @@
+import json
+import os
+import csv
+
 # This script takes the content of the a csv file and turns it into a reproschema
 # protocol.
 # This scripts loops through the items of the csv and creates a new reproschema
 # activity with every new checklist "section" it encouters: this new activity
 # will be added to the protocol.
 # Every new item encountered is added to the current activity.
-#
-#
 
 # -----------------------------------------------------------------------------
 #                                   TO DO
@@ -14,15 +16,7 @@
 # - automate the choice of from radio to dropdown menu if the number of
 # response_choices goes above a certain number
 # - allow for several condition checks for visibility
-#
-# -----------------------------------------------------------------------------
-# -----------------------------------------------------------------------------
-# -----------------------------------------------------------------------------
-
-import json
-import os
-import csv
-
+# - allow for mandatory items
 
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS
@@ -278,6 +272,7 @@ def list_responses_options(responseOptions, response_choices):
         )
 
     return responseOptions
+
 
 # -----------------------------------------------------------------------------
 #                                   START
