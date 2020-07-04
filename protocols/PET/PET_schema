@@ -43,140 +43,140 @@
                 "variableName": "PET_data-acquisition_info",
                 "isAbout": "PET_data-acquisition_info",
                 "prefLabel": {
-                    "en": "data acquisition: info"
+                    "en": "Info"
                 }
             },
             {
                 "variableName": "PET_radioligand_radiotracer",
                 "isAbout": "PET_radioligand_radiotracer",
                 "prefLabel": {
-                    "en": "radioligand: radiotracer"
+                    "en": "Radiotracer"
                 }
             },
             {
                 "variableName": "PET_radioligand_radiochem",
                 "isAbout": "PET_radioligand_radiochem",
                 "prefLabel": {
-                    "en": "radioligand: radiochem"
+                    "en": "Radiochem"
                 }
             },
             {
                 "variableName": "PET_radioligand_time",
                 "isAbout": "PET_radioligand_time",
                 "prefLabel": {
-                    "en": "radioligand: time"
+                    "en": "Time"
                 }
             },
             {
                 "variableName": "PET_data-acquisition_reconstruction",
                 "isAbout": "PET_data-acquisition_reconstruction",
                 "prefLabel": {
-                    "en": "data acquisition: reconstruction"
+                    "en": "Reconstruction"
                 }
             },
             {
                 "variableName": "PET_radioligand_continuous-blood",
                 "isAbout": "PET_radioligand_continuous-blood",
                 "prefLabel": {
-                    "en": "radioligand: continuous blood"
+                    "en": "Continuous blood"
                 }
             },
             {
                 "variableName": "PET_radioligand_discrete-blood",
                 "isAbout": "PET_radioligand_discrete-blood",
                 "prefLabel": {
-                    "en": "radioligand: discrete blood"
+                    "en": "Discrete blood"
                 }
             },
             {
                 "variableName": "PET_radioligand_metabolite",
                 "isAbout": "PET_radioligand_metabolite",
                 "prefLabel": {
-                    "en": "radioligand: metabolite"
+                    "en": "Metabolite"
                 }
             },
             {
                 "variableName": "PET_radioligand_plasma",
                 "isAbout": "PET_radioligand_plasma",
                 "prefLabel": {
-                    "en": "radioligand: plasma"
+                    "en": "Plasma"
                 }
             },
             {
                 "variableName": "PET_radioligand_whole-blood",
                 "isAbout": "PET_radioligand_whole-blood",
                 "prefLabel": {
-                    "en": "radioligand: whole blood"
+                    "en": "Whole blood"
                 }
             },
             {
                 "variableName": "PET_data-acquisition_cross-calibration",
                 "isAbout": "PET_data-acquisition_cross-calibration",
                 "prefLabel": {
-                    "en": "data acquisition: cross calibration"
+                    "en": "Cross-calibration"
                 }
             },
             {
                 "variableName": "PET_data-acquisition_external-motion-correction",
                 "isAbout": "PET_data-acquisition_external-motion-correction",
                 "prefLabel": {
-                    "en": "data acquisition: external motion correction"
+                    "en": "External Motion Correction"
                 }
             },
             {
                 "variableName": "PET_data-analysis_blood-data-processing",
                 "isAbout": "PET_data-analysis_blood-data-processing",
                 "prefLabel": {
-                    "en": "data analysis: blood data processing"
+                    "en": "Blood Data Processing"
                 }
             },
             {
                 "variableName": "PET_data-analysis_kinetic-modeling",
                 "isAbout": "PET_data-analysis_kinetic-modeling",
                 "prefLabel": {
-                    "en": "data analysis: kinetic modeling"
+                    "en": "Kinetic Modeling"
                 }
             },
             {
                 "variableName": "PET_data-analysis_preprocessing_motion-correction",
                 "isAbout": "PET_data-analysis_preprocessing_motion-correction",
                 "prefLabel": {
-                    "en": "data analysis: preprocessing: motion correction"
+                    "en": "Motion Correction"
                 }
             },
             {
                 "variableName": "PET_data-analysis_preprocessing_registration",
                 "isAbout": "PET_data-analysis_preprocessing_registration",
                 "prefLabel": {
-                    "en": "data analysis: preprocessing: registration"
+                    "en": "Registration"
                 }
             },
             {
                 "variableName": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
                 "isAbout": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
                 "prefLabel": {
-                    "en": "data analysis: preprocessing: volumes of interest delineation"
+                    "en": "Volumes of interest delineation"
                 }
             },
             {
                 "variableName": "PET_statistics_multiple-testings",
                 "isAbout": "PET_statistics_multiple-testings",
                 "prefLabel": {
-                    "en": "statistics: multiple testings"
+                    "en": "Multiple Testings"
                 }
             },
             {
                 "variableName": "PET_statistics_power-analysis",
                 "isAbout": "PET_statistics_power-analysis",
                 "prefLabel": {
-                    "en": "statistics: power analysis"
+                    "en": "Power Analysis"
                 }
             },
             {
                 "variableName": "PET_statistics_pre-registration",
                 "isAbout": "PET_statistics_pre-registration",
                 "prefLabel": {
-                    "en": "statistics: pre registration"
+                    "en": "Pre-registration"
                 }
             }
         ]
