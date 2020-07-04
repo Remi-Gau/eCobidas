@@ -3,6 +3,8 @@ def define_new_activity(
 ):
     # define the base json content for the activity
 
+    from activity import define_at_context
+
     activity = {
         "name": protocol["name"] + section,
         "pref_label": row[CSV_INFO["act_pref_label"]["col"]],
@@ -22,6 +24,15 @@ def define_new_activity(
         }
     }
 
+    activity = define_at_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity)
+
+    activity = define_activity_schema(activity, protocol, section, VERSION)
+
+    return activity
+
+
+def define_at_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity):
+
     activity["at_context"] = [
         REPRONIM_REPO + "contexts/generic",
         REMOTE_REPO
@@ -31,6 +42,11 @@ def define_new_activity(
         + "/"
         + activity["context_file"],
     ]
+
+    return activity
+
+
+def define_activity_schema(activity, protocol, section, VERSION):
 
     activity["schema"] = {
         "@context": activity["at_context"],
@@ -50,4 +66,3 @@ def define_new_activity(
     }
 
     return activity
-

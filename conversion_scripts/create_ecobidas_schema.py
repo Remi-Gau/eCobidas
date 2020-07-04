@@ -204,7 +204,7 @@ with open(INPUT_FILE, "r") as csvfile:
                 "@type": "@id",
             }
 
-            # save activity schema with every new item
+            # save activity schema and context with every new item
             with open(
                 os.path.join(
                     OUTPUT_DIR, "activities", activity["name"], activity["schema_file"]

@@ -43,4 +43,3 @@ def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
     }
 
     return protocol
-
