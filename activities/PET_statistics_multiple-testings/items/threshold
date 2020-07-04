@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_multiple-testings/PET_statistics_multiple-testings_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "threshold",
     "prefLabel": "threshold",

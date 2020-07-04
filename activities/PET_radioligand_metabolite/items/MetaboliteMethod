@@ -1,0 +1,45 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_metabolite/PET_radioligand_metabolite_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "MetaboliteMethod",
+    "prefLabel": "MetaboliteMethod",
+    "schema:description": "MetaboliteMethod",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Method used to measure metabolites"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "HPLC",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Fraction Collector",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "SPE",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

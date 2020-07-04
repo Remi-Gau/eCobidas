@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "registration-cost-function",
     "prefLabel": "registration-cost-function",
@@ -10,43 +13,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "select"
+        "inputType": "float"
     },
     "question": {
         "en": "Registration cost function"
     },
     "responseOptions": {
-        "choices": [
-            {
-                "schema:name": "Mutual information",
-                "schema:value": 0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Normalised mutual information",
-                "schema:value": 1,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Entropy correlation coefficient",
-                "schema:value": 2,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Normalised cross-correlation",
-                "schema:value": 3,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 4,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 6,
-                "@type": "schema:option"
-            }
-        ]
+        "valueType": "xsd:float"
     }
 }

@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-acquisition_cross-calibration_schema",
     "skos:prefLabel": "PET_data-acquisition_cross-calibration",
@@ -9,6 +12,8 @@
     "preamble": " ",
     "ui": {
         "order": [
+            "blood-sampling-device-read",
+            "blood-sampling-device-measurement-time",
             "phantom-type",
             "phantom-volume",
             "radiotracer-isotope",
@@ -20,12 +25,6 @@
             "well-counter-sample-volumes",
             "well-counter-measurement-time",
             "well-counter-read",
-            "blood-sampling-device-read",
-            "blood-sampling-device-measurement-time",
-            "experiment-date",
-            "pet-system-used",
-            "imaging-center-site",
-            "imaging-department",
             "phantom-data"
         ],
         "shuffle": false,
@@ -34,94 +33,74 @@
         ],
         "addProperties": [
             {
-                "variableName": "phantom-type",
-                "isAbout": "phantom-type",
-                "isVis": ""
-            },
-            {
-                "variableName": "phantom-volume",
-                "isAbout": "phantom-volume",
-                "isVis": ""
-            },
-            {
-                "variableName": "radiotracer-isotope",
-                "isAbout": "radiotracer-isotope",
-                "isVis": ""
-            },
-            {
-                "variableName": "phantom-activity",
-                "isAbout": "phantom-activity",
-                "isVis": ""
-            },
-            {
-                "variableName": "activity-time",
-                "isAbout": "activity-time",
-                "isVis": ""
-            },
-            {
-                "variableName": "residual-activity",
-                "isAbout": "residual-activity",
-                "isVis": ""
-            },
-            {
-                "variableName": "residual-activity-time",
-                "isAbout": "residual-activity-time",
-                "isVis": ""
-            },
-            {
-                "variableName": "phantom-acquisition-time",
-                "isAbout": "phantom-acquisition-time",
-                "isVis": ""
-            },
-            {
-                "variableName": "well-counter-sample-volumes",
-                "isAbout": "well-counter-sample-volumes",
-                "isVis": ""
-            },
-            {
-                "variableName": "well-counter-measurement-time",
-                "isAbout": "well-counter-measurement-time",
-                "isVis": ""
-            },
-            {
-                "variableName": "well-counter-read",
-                "isAbout": "well-counter-read",
-                "isVis": ""
-            },
-            {
                 "variableName": "blood-sampling-device-read",
-                "isAbout": "blood-sampling-device-read",
-                "isVis": ""
+                "isAbout": "item_path:blood-sampling-device-read",
+                "isVis": true
             },
             {
                 "variableName": "blood-sampling-device-measurement-time",
-                "isAbout": "blood-sampling-device-measurement-time",
-                "isVis": ""
+                "isAbout": "item_path:blood-sampling-device-measurement-time",
+                "isVis": true
             },
             {
-                "variableName": "experiment-date",
-                "isAbout": "experiment-date",
-                "isVis": ""
+                "variableName": "phantom-type",
+                "isAbout": "item_path:phantom-type",
+                "isVis": true
             },
             {
-                "variableName": "pet-system-used",
-                "isAbout": "pet-system-used",
-                "isVis": ""
+                "variableName": "phantom-volume",
+                "isAbout": "item_path:phantom-volume",
+                "isVis": true
             },
             {
-                "variableName": "imaging-center-site",
-                "isAbout": "imaging-center-site",
-                "isVis": ""
+                "variableName": "radiotracer-isotope",
+                "isAbout": "item_path:radiotracer-isotope",
+                "isVis": true
             },
             {
-                "variableName": "imaging-department",
-                "isAbout": "imaging-department",
-                "isVis": ""
+                "variableName": "phantom-activity",
+                "isAbout": "item_path:phantom-activity",
+                "isVis": true
+            },
+            {
+                "variableName": "activity-time",
+                "isAbout": "item_path:activity-time",
+                "isVis": true
+            },
+            {
+                "variableName": "residual-activity",
+                "isAbout": "item_path:residual-activity",
+                "isVis": true
+            },
+            {
+                "variableName": "residual-activity-time",
+                "isAbout": "item_path:residual-activity-time",
+                "isVis": true
+            },
+            {
+                "variableName": "phantom-acquisition-time",
+                "isAbout": "item_path:phantom-acquisition-time",
+                "isVis": true
+            },
+            {
+                "variableName": "well-counter-sample-volumes",
+                "isAbout": "item_path:well-counter-sample-volumes",
+                "isVis": true
+            },
+            {
+                "variableName": "well-counter-measurement-time",
+                "isAbout": "item_path:well-counter-measurement-time",
+                "isVis": true
+            },
+            {
+                "variableName": "well-counter-read",
+                "isAbout": "item_path:well-counter-read",
+                "isVis": true
             },
             {
                 "variableName": "phantom-data",
-                "isAbout": "phantom-data",
-                "isVis": ""
+                "isAbout": "item_path:phantom-data",
+                "isVis": true
             }
         ]
     }

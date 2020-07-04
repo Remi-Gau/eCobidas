@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "volumes-of-interest-obtained-from",
     "prefLabel": "volumes-of-interest-obtained-from",
@@ -24,12 +27,7 @@
             },
             {
                 "schema:name": "Other",
-                "schema:value": 1,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 3,
+                "schema:value": 2,
                 "@type": "schema:option"
             }
         ]

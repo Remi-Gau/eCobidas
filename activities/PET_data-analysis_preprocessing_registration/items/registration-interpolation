@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "registration-interpolation",
     "prefLabel": "registration-interpolation",
@@ -10,58 +13,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "select"
+        "inputType": "float"
     },
     "question": {
         "en": "Registration interpolation"
     },
     "responseOptions": {
-        "choices": [
-            {
-                "schema:name": "Nearest neighbour",
-                "schema:value": 0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "trilinear",
-                "schema:value": 1,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "2nd degree spline",
-                "schema:value": 2,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "2nd degree spline",
-                "schema:value": 3,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "3rd degree spline",
-                "schema:value": 4,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "4th degree spline",
-                "schema:value": 5,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Fourrier interpolation",
-                "schema:value": 6,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 7,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 9,
-                "@type": "schema:option"
-            }
-        ]
+        "valueType": "xsd:float"
     }
 }

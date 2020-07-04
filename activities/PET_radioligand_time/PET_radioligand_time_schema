@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_time/PET_radioligand_time_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_time_schema",
     "skos:prefLabel": "PET_radioligand_time",
@@ -9,16 +12,13 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "date-of-scan",
-            "scan-start",
-            "scan-start-units",
-            "injection-start",
-            "injection-start-units",
-            "injection-end",
-            "injection-end-units",
-            "frame-times:-labels",
-            "frame-times:-units",
-            "frame-times:-values"
+            "ScanDate",
+            "TimeZero",
+            "ScanStart",
+            "InjectionStart",
+            "InjectionEnd",
+            "FrameTimesStart",
+            "FrameDuration"
         ],
         "shuffle": false,
         "allow": [
@@ -26,54 +26,39 @@
         ],
         "addProperties": [
             {
-                "variableName": "date-of-scan",
-                "isAbout": "date-of-scan",
-                "isVis": ""
+                "variableName": "ScanDate",
+                "isAbout": "item_path:ScanDate",
+                "isVis": true
             },
             {
-                "variableName": "scan-start",
-                "isAbout": "scan-start",
-                "isVis": ""
+                "variableName": "TimeZero",
+                "isAbout": "item_path:TimeZero",
+                "isVis": true
             },
             {
-                "variableName": "scan-start-units",
-                "isAbout": "scan-start-units",
-                "isVis": ""
+                "variableName": "ScanStart",
+                "isAbout": "item_path:ScanStart",
+                "isVis": true
             },
             {
-                "variableName": "injection-start",
-                "isAbout": "injection-start",
-                "isVis": ""
+                "variableName": "InjectionStart",
+                "isAbout": "item_path:InjectionStart",
+                "isVis": true
             },
             {
-                "variableName": "injection-start-units",
-                "isAbout": "injection-start-units",
-                "isVis": ""
+                "variableName": "InjectionEnd",
+                "isAbout": "item_path:InjectionEnd",
+                "isVis": true
             },
             {
-                "variableName": "injection-end",
-                "isAbout": "injection-end",
-                "isVis": ""
+                "variableName": "FrameTimesStart",
+                "isAbout": "item_path:FrameTimesStart",
+                "isVis": true
             },
             {
-                "variableName": "injection-end-units",
-                "isAbout": "injection-end-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "frame-times:-labels",
-                "isAbout": "frame-times:-labels",
-                "isVis": ""
-            },
-            {
-                "variableName": "frame-times:-units",
-                "isAbout": "frame-times:-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "frame-times:-values",
-                "isAbout": "frame-times:-values",
-                "isVis": ""
+                "variableName": "FrameDuration",
+                "isAbout": "item_path:FrameDuration",
+                "isVis": true
             }
         ]
     }

@@ -1,0 +1,62 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/items/",
+        "registration-reference-image": {
+            "@id": "item_path:registration-reference-image",
+            "@type": "@id"
+        },
+        "registration-target-image": {
+            "@id": "item_path:registration-target-image",
+            "@type": "@id"
+        },
+        "registration-cost-function": {
+            "@id": "item_path:registration-cost-function",
+            "@type": "@id"
+        },
+        "registration-interpolation": {
+            "@id": "item_path:registration-interpolation",
+            "@type": "@id"
+        },
+        "registration-smoothing": {
+            "@id": "item_path:registration-smoothing",
+            "@type": "@id"
+        },
+        "resolution-of-reference-target": {
+            "@id": "item_path:resolution-of-reference-target",
+            "@type": "@id"
+        },
+        "registration-quality-control": {
+            "@id": "item_path:registration-quality-control",
+            "@type": "@id"
+        },
+        "registration-software": {
+            "@id": "item_path:registration-software",
+            "@type": "@id"
+        },
+        "registration-software-version": {
+            "@id": "item_path:registration-software-version",
+            "@type": "@id"
+        },
+        "smoothing-target-image": {
+            "@id": "item_path:smoothing-target-image",
+            "@type": "@id"
+        },
+        "shape-of-smoothing-filter": {
+            "@id": "item_path:shape-of-smoothing-filter",
+            "@type": "@id"
+        },
+        "size-of-smoothing-filter": {
+            "@id": "item_path:size-of-smoothing-filter",
+            "@type": "@id"
+        },
+        "justification-for-smoothing-size": {
+            "@id": "item_path:justification-for-smoothing-size",
+            "@type": "@id"
+        },
+        "space-of-smoothing": {
+            "@id": "item_path:space-of-smoothing",
+            "@type": "@id"
+        }
+    }
+}

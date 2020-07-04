@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_blood-data-processing_schema",
     "skos:prefLabel": "PET_data-analysis_blood-data-processing",
@@ -11,8 +14,6 @@
         "order": [
             "sampling-method",
             "delay-time-correction",
-            "dispersion-correction",
-            "metabolite-correction",
             "fitting",
             "fitting-description",
             "blood-data-processing-interpolation"
@@ -24,38 +25,28 @@
         "addProperties": [
             {
                 "variableName": "sampling-method",
-                "isAbout": "sampling-method",
-                "isVis": ""
+                "isAbout": "item_path:sampling-method",
+                "isVis": true
             },
             {
                 "variableName": "delay-time-correction",
-                "isAbout": "delay-time-correction",
-                "isVis": ""
-            },
-            {
-                "variableName": "dispersion-correction",
-                "isAbout": "dispersion-correction",
-                "isVis": ""
-            },
-            {
-                "variableName": "metabolite-correction",
-                "isAbout": "metabolite-correction",
-                "isVis": ""
+                "isAbout": "item_path:delay-time-correction",
+                "isVis": true
             },
             {
                 "variableName": "fitting",
-                "isAbout": "fitting",
-                "isVis": ""
+                "isAbout": "item_path:fitting",
+                "isVis": true
             },
             {
                 "variableName": "fitting-description",
-                "isAbout": "fitting-description",
+                "isAbout": "item_path:fitting-description",
                 "isVis": "fitting-description == 1"
             },
             {
                 "variableName": "blood-data-processing-interpolation",
-                "isAbout": "blood-data-processing-interpolation",
-                "isVis": ""
+                "isAbout": "item_path:blood-data-processing-interpolation",
+                "isVis": true
             }
         ]
     }

@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_multiple-testings/PET_statistics_multiple-testings_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_statistics_multiple-testings_schema",
     "skos:prefLabel": "PET_statistics_multiple-testings",
@@ -20,18 +23,18 @@
         "addProperties": [
             {
                 "variableName": "method",
-                "isAbout": "method",
-                "isVis": ""
+                "isAbout": "item_path:method",
+                "isVis": true
             },
             {
                 "variableName": "threshold",
-                "isAbout": "threshold",
-                "isVis": ""
+                "isAbout": "item_path:threshold",
+                "isVis": true
             },
             {
                 "variableName": "number-of-tests",
-                "isAbout": "number-of-tests",
-                "isVis": ""
+                "isAbout": "item_path:number-of-tests",
+                "isVis": true
             }
         ]
     }

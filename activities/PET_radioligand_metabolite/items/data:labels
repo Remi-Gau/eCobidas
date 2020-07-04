@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_metabolite/PET_radioligand_metabolite_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "data:labels",
     "prefLabel": "data:labels",
@@ -39,12 +42,7 @@
             },
             {
                 "schema:name": "Other",
-                "schema:value": 4,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 6,
+                "schema:value": 5,
                 "@type": "schema:option"
             }
         ]

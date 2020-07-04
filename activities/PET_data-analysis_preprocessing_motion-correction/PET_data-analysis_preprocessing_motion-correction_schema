@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_motion-correction/PET_data-analysis_preprocessing_motion-correction_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_motion-correction_schema",
     "skos:prefLabel": "PET_data-analysis_preprocessing_motion-correction",
@@ -14,7 +17,8 @@
             "moco-interpolation",
             "moco-smoothing",
             "moco-quality-control",
-            "moco-software"
+            "moco-software",
+            "moco-software-version"
         ],
         "shuffle": false,
         "allow": [
@@ -23,33 +27,38 @@
         "addProperties": [
             {
                 "variableName": "moco-reference-image",
-                "isAbout": "moco-reference-image",
-                "isVis": ""
+                "isAbout": "item_path:moco-reference-image",
+                "isVis": true
             },
             {
                 "variableName": "moco-cost-function",
-                "isAbout": "moco-cost-function",
-                "isVis": ""
+                "isAbout": "item_path:moco-cost-function",
+                "isVis": true
             },
             {
                 "variableName": "moco-interpolation",
-                "isAbout": "moco-interpolation",
-                "isVis": ""
+                "isAbout": "item_path:moco-interpolation",
+                "isVis": true
             },
             {
                 "variableName": "moco-smoothing",
-                "isAbout": "moco-smoothing",
-                "isVis": ""
+                "isAbout": "item_path:moco-smoothing",
+                "isVis": true
             },
             {
                 "variableName": "moco-quality-control",
-                "isAbout": "moco-quality-control",
-                "isVis": ""
+                "isAbout": "item_path:moco-quality-control",
+                "isVis": true
             },
             {
                 "variableName": "moco-software",
-                "isAbout": "moco-software",
-                "isVis": ""
+                "isAbout": "item_path:moco-software",
+                "isVis": true
+            },
+            {
+                "variableName": "moco-software-version",
+                "isAbout": "item_path:moco-software-version",
+                "isVis": true
             }
         ]
     }

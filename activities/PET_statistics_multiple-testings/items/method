@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_multiple-testings/PET_statistics_multiple-testings_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "method",
     "prefLabel": "method",
@@ -23,17 +26,17 @@
                 "@type": "schema:option"
             },
             {
-                "schema:name": " Familywise Error: Permutation",
+                "schema:name": "Familywise Error: Permutation",
                 "schema:value": 1,
                 "@type": "schema:option"
             },
             {
-                "schema:name": " Familywise Error: Monte Carlo",
+                "schema:name": "Familywise Error: Monte Carlo",
                 "schema:value": 2,
                 "@type": "schema:option"
             },
             {
-                "schema:name": " Familywise Error: Bonferroni",
+                "schema:name": "Familywise Error: Bonferroni",
                 "schema:value": 3,
                 "@type": "schema:option"
             },

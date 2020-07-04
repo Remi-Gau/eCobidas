@@ -1,0 +1,50 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_metabolite/items/",
+        "MetaboliteAvail": {
+            "@id": "item_path:MetaboliteAvail",
+            "@type": "@id"
+        },
+        "MetaboliteMethod": {
+            "@id": "item_path:MetaboliteMethod",
+            "@type": "@id"
+        },
+        "radiolabeled-parent-compound-fraction": {
+            "@id": "item_path:radiolabeled-parent-compound-fraction",
+            "@type": "@id"
+        },
+        "data:labels": {
+            "@id": "item_path:data:labels",
+            "@type": "@id"
+        },
+        "parent-fraction-units": {
+            "@id": "item_path:parent-fraction-units",
+            "@type": "@id"
+        },
+        "parent-fraction-measurement-error": {
+            "@id": "item_path:parent-fraction-measurement-error",
+            "@type": "@id"
+        },
+        "metabolite-analysis-timepoints": {
+            "@id": "item_path:metabolite-analysis-timepoints",
+            "@type": "@id"
+        },
+        "fraction-of-radiometabolite-needing-quantitation": {
+            "@id": "item_path:fraction-of-radiometabolite-needing-quantitation",
+            "@type": "@id"
+        },
+        "error-on-above-measurement": {
+            "@id": "item_path:error-on-above-measurement",
+            "@type": "@id"
+        },
+        "radiolabeled-metabolite-fractions": {
+            "@id": "item_path:radiolabeled-metabolite-fractions",
+            "@type": "@id"
+        },
+        "MetaboliteRecoveryCorrectionApplied": {
+            "@id": "item_path:MetaboliteRecoveryCorrectionApplied",
+            "@type": "@id"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_external-motion-correction/items/",
+        "hardware": {
+            "@id": "item_path:hardware",
+            "@type": "@id"
+        },
+        "external-moco-software": {
+            "@id": "item_path:external-moco-software",
+            "@type": "@id"
+        },
+        "external-moco-software-version": {
+            "@id": "item_path:external-moco-software-version",
+            "@type": "@id"
+        }
+    }
+}

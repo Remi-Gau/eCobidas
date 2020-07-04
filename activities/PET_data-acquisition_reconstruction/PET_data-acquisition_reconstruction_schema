@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-acquisition_reconstruction_schema",
     "skos:prefLabel": "PET_data-acquisition_reconstruction",
@@ -9,15 +12,25 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "acquisition-mode",
-            "reconstruction-method",
-            "parameters",
-            "recon-filter-type",
-            "attenuation-correction",
-            "postrecon-filter-size",
+            "AcquisitionMode",
+            "ImageDecayCorrected",
+            "ImageDecayCorrectionTime",
+            "ReconMethodName",
+            "ReconMethodParameterLabels",
+            "ReconFilterType",
+            "AttenuationCorrection",
+            "ReconFilterSize",
             "pet-voxel-size",
             "matrix-size",
-            "frame-sequence"
+            "frame-sequence",
+            "ScaleFactor",
+            "ScatterFraction",
+            "DecayCorrectionFactor",
+            "PromptRate",
+            "RandomRate",
+            "SinglesRate",
+            "data:-labels",
+            "AttenuationCorrectionMethodReference"
         ],
         "shuffle": false,
         "allow": [
@@ -25,49 +38,99 @@
         ],
         "addProperties": [
             {
-                "variableName": "acquisition-mode",
-                "isAbout": "acquisition-mode",
-                "isVis": ""
+                "variableName": "AcquisitionMode",
+                "isAbout": "item_path:AcquisitionMode",
+                "isVis": true
             },
             {
-                "variableName": "reconstruction-method",
-                "isAbout": "reconstruction-method",
-                "isVis": ""
+                "variableName": "ImageDecayCorrected",
+                "isAbout": "item_path:ImageDecayCorrected",
+                "isVis": true
             },
             {
-                "variableName": "parameters",
-                "isAbout": "parameters",
-                "isVis": ""
+                "variableName": "ImageDecayCorrectionTime",
+                "isAbout": "item_path:ImageDecayCorrectionTime",
+                "isVis": "ImageDecayCorrected == 1"
             },
             {
-                "variableName": "recon-filter-type",
-                "isAbout": "recon-filter-type",
-                "isVis": ""
+                "variableName": "ReconMethodName",
+                "isAbout": "item_path:ReconMethodName",
+                "isVis": true
             },
             {
-                "variableName": "attenuation-correction",
-                "isAbout": "attenuation-correction",
-                "isVis": ""
+                "variableName": "ReconMethodParameterLabels",
+                "isAbout": "item_path:ReconMethodParameterLabels",
+                "isVis": true
             },
             {
-                "variableName": "postrecon-filter-size",
-                "isAbout": "postrecon-filter-size",
-                "isVis": ""
+                "variableName": "ReconFilterType",
+                "isAbout": "item_path:ReconFilterType",
+                "isVis": true
+            },
+            {
+                "variableName": "AttenuationCorrection",
+                "isAbout": "item_path:AttenuationCorrection",
+                "isVis": true
+            },
+            {
+                "variableName": "ReconFilterSize",
+                "isAbout": "item_path:ReconFilterSize",
+                "isVis": true
             },
             {
                 "variableName": "pet-voxel-size",
-                "isAbout": "pet-voxel-size",
-                "isVis": ""
+                "isAbout": "item_path:pet-voxel-size",
+                "isVis": true
             },
             {
                 "variableName": "matrix-size",
-                "isAbout": "matrix-size",
-                "isVis": ""
+                "isAbout": "item_path:matrix-size",
+                "isVis": true
             },
             {
                 "variableName": "frame-sequence",
-                "isAbout": "frame-sequence",
-                "isVis": ""
+                "isAbout": "item_path:frame-sequence",
+                "isVis": true
+            },
+            {
+                "variableName": "ScaleFactor",
+                "isAbout": "item_path:ScaleFactor",
+                "isVis": true
+            },
+            {
+                "variableName": "ScatterFraction",
+                "isAbout": "item_path:ScatterFraction",
+                "isVis": true
+            },
+            {
+                "variableName": "DecayCorrectionFactor",
+                "isAbout": "item_path:DecayCorrectionFactor",
+                "isVis": true
+            },
+            {
+                "variableName": "PromptRate",
+                "isAbout": "item_path:PromptRate",
+                "isVis": true
+            },
+            {
+                "variableName": "RandomRate",
+                "isAbout": "item_path:RandomRate",
+                "isVis": true
+            },
+            {
+                "variableName": "SinglesRate",
+                "isAbout": "item_path:SinglesRate",
+                "isVis": true
+            },
+            {
+                "variableName": "data:-labels",
+                "isAbout": "item_path:data:-labels",
+                "isVis": true
+            },
+            {
+                "variableName": "AttenuationCorrectionMethodReference",
+                "isAbout": "item_path:AttenuationCorrectionMethodReference",
+                "isVis": true
             }
         ]
     }

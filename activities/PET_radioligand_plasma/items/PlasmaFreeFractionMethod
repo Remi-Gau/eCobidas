@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_plasma/PET_radioligand_plasma_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "PlasmaFreeFractionMethod",
+    "prefLabel": "PlasmaFreeFractionMethod",
+    "schema:description": "PlasmaFreeFractionMethod",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Method used to estimate free fraction."
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

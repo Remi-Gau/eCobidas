@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "volumes-of-interest-procedure",
     "prefLabel": "volumes-of-interest-procedure",
@@ -10,7 +13,7 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Volumes of interest procedure"
@@ -34,12 +37,7 @@
             },
             {
                 "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 5,
+                "schema:value": 4,
                 "@type": "schema:option"
             }
         ]

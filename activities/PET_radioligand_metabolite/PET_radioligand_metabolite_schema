@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_metabolite/PET_radioligand_metabolite_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_metabolite_schema",
     "skos:prefLabel": "PET_radioligand_metabolite",
@@ -9,6 +12,8 @@
     "preamble": " ",
     "ui": {
         "order": [
+            "MetaboliteAvail",
+            "MetaboliteMethod",
             "radiolabeled-parent-compound-fraction",
             "data:labels",
             "parent-fraction-units",
@@ -16,7 +21,8 @@
             "metabolite-analysis-timepoints",
             "fraction-of-radiometabolite-needing-quantitation",
             "error-on-above-measurement",
-            "radiolabeled-metabolite-fractions"
+            "radiolabeled-metabolite-fractions",
+            "MetaboliteRecoveryCorrectionApplied"
         ],
         "shuffle": false,
         "allow": [
@@ -24,44 +30,59 @@
         ],
         "addProperties": [
             {
+                "variableName": "MetaboliteAvail",
+                "isAbout": "item_path:MetaboliteAvail",
+                "isVis": true
+            },
+            {
+                "variableName": "MetaboliteMethod",
+                "isAbout": "item_path:MetaboliteMethod",
+                "isVis": "MetaboliteAvail == 1"
+            },
+            {
                 "variableName": "radiolabeled-parent-compound-fraction",
-                "isAbout": "radiolabeled-parent-compound-fraction",
-                "isVis": ""
+                "isAbout": "item_path:radiolabeled-parent-compound-fraction",
+                "isVis": true
             },
             {
                 "variableName": "data:labels",
-                "isAbout": "data:labels",
-                "isVis": ""
+                "isAbout": "item_path:data:labels",
+                "isVis": true
             },
             {
                 "variableName": "parent-fraction-units",
-                "isAbout": "parent-fraction-units",
-                "isVis": ""
+                "isAbout": "item_path:parent-fraction-units",
+                "isVis": true
             },
             {
                 "variableName": "parent-fraction-measurement-error",
-                "isAbout": "parent-fraction-measurement-error",
-                "isVis": ""
+                "isAbout": "item_path:parent-fraction-measurement-error",
+                "isVis": true
             },
             {
                 "variableName": "metabolite-analysis-timepoints",
-                "isAbout": "metabolite-analysis-timepoints",
-                "isVis": ""
+                "isAbout": "item_path:metabolite-analysis-timepoints",
+                "isVis": true
             },
             {
                 "variableName": "fraction-of-radiometabolite-needing-quantitation",
-                "isAbout": "fraction-of-radiometabolite-needing-quantitation",
-                "isVis": ""
+                "isAbout": "item_path:fraction-of-radiometabolite-needing-quantitation",
+                "isVis": true
             },
             {
                 "variableName": "error-on-above-measurement",
-                "isAbout": "error-on-above-measurement",
-                "isVis": ""
+                "isAbout": "item_path:error-on-above-measurement",
+                "isVis": true
             },
             {
                 "variableName": "radiolabeled-metabolite-fractions",
-                "isAbout": "radiolabeled-metabolite-fractions",
-                "isVis": ""
+                "isAbout": "item_path:radiolabeled-metabolite-fractions",
+                "isVis": true
+            },
+            {
+                "variableName": "MetaboliteRecoveryCorrectionApplied",
+                "isAbout": "item_path:MetaboliteRecoveryCorrectionApplied",
+                "isVis": "MetaboliteAvail == 1"
             }
         ]
     }

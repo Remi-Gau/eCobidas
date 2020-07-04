@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_registration_schema",
     "skos:prefLabel": "PET_data-analysis_preprocessing_registration",
@@ -17,9 +20,10 @@
             "resolution-of-reference-target",
             "registration-quality-control",
             "registration-software",
+            "registration-software-version",
             "smoothing-target-image",
-            "size-of-smoothing-filter",
             "shape-of-smoothing-filter",
+            "size-of-smoothing-filter",
             "justification-for-smoothing-size",
             "space-of-smoothing"
         ],
@@ -30,68 +34,73 @@
         "addProperties": [
             {
                 "variableName": "registration-reference-image",
-                "isAbout": "registration-reference-image",
-                "isVis": ""
+                "isAbout": "item_path:registration-reference-image",
+                "isVis": true
             },
             {
                 "variableName": "registration-target-image",
-                "isAbout": "registration-target-image",
-                "isVis": ""
+                "isAbout": "item_path:registration-target-image",
+                "isVis": true
             },
             {
                 "variableName": "registration-cost-function",
-                "isAbout": "registration-cost-function",
-                "isVis": ""
+                "isAbout": "item_path:registration-cost-function",
+                "isVis": true
             },
             {
                 "variableName": "registration-interpolation",
-                "isAbout": "registration-interpolation",
-                "isVis": ""
+                "isAbout": "item_path:registration-interpolation",
+                "isVis": true
             },
             {
                 "variableName": "registration-smoothing",
-                "isAbout": "registration-smoothing",
-                "isVis": ""
+                "isAbout": "item_path:registration-smoothing",
+                "isVis": true
             },
             {
                 "variableName": "resolution-of-reference-target",
-                "isAbout": "resolution-of-reference-target",
-                "isVis": ""
+                "isAbout": "item_path:resolution-of-reference-target",
+                "isVis": true
             },
             {
                 "variableName": "registration-quality-control",
-                "isAbout": "registration-quality-control",
-                "isVis": ""
+                "isAbout": "item_path:registration-quality-control",
+                "isVis": true
             },
             {
                 "variableName": "registration-software",
-                "isAbout": "registration-software",
-                "isVis": ""
+                "isAbout": "item_path:registration-software",
+                "isVis": true
+            },
+            {
+                "variableName": "registration-software-version",
+                "isAbout": "item_path:registration-software-version",
+                "isVis": true
             },
             {
                 "variableName": "smoothing-target-image",
-                "isAbout": "smoothing-target-image",
-                "isVis": ""
-            },
-            {
-                "variableName": "size-of-smoothing-filter",
-                "isAbout": "size-of-smoothing-filter",
-                "isVis": ""
+                "isAbout": "item_path:smoothing-target-image",
+                "isVis": true
             },
             {
                 "variableName": "shape-of-smoothing-filter",
-                "isAbout": "shape-of-smoothing-filter",
-                "isVis": ""
+                "isAbout": "item_path:shape-of-smoothing-filter",
+                "isVis": true
+            },
+            {
+                "variableName": "size-of-smoothing-filter",
+                "isAbout": "item_path:size-of-smoothing-filter",
+                "isVis": true
             },
             {
                 "variableName": "justification-for-smoothing-size",
-                "isAbout": "justification-for-smoothing-size",
-                "isVis": ""
+                "isAbout": "item_path:justification-for-smoothing-size",
+                "isVis": true
             },
             {
                 "variableName": "space-of-smoothing",
-                "isAbout": "space-of-smoothing",
-                "isVis": ""
+                "isAbout": "item_path:space-of-smoothing",
+                "isVis": true
             }
         ]
     }

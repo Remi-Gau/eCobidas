@@ -1,0 +1,41 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_discrete-blood/PET_radioligand_discrete-blood_context"
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "PET_radioligand_discrete-blood_schema",
+    "skos:prefLabel": "PET_radioligand_discrete-blood",
+    "schema:description": "PET_radioligand_discrete-blood",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "DiscreteBloodAvail",
+            "DiscreteBloodHaematocrit",
+            "DiscreteBloodDensity"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "DiscreteBloodAvail",
+                "isAbout": "item_path:DiscreteBloodAvail",
+                "isVis": true
+            },
+            {
+                "variableName": "DiscreteBloodHaematocrit",
+                "isAbout": "item_path:DiscreteBloodHaematocrit",
+                "isVis": "DiscreteBloodAvail == 1"
+            },
+            {
+                "variableName": "DiscreteBloodDensity",
+                "isAbout": "item_path:DiscreteBloodDensity",
+                "isVis": "DiscreteBloodAvail == 1"
+            }
+        ]
+    }
+}

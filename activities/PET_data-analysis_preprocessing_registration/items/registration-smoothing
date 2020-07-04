@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "registration-smoothing",
     "prefLabel": "registration-smoothing",
@@ -10,28 +13,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "select"
+        "inputType": "float"
     },
     "question": {
         "en": "Registration smoothing"
     },
     "responseOptions": {
-        "choices": [
-            {
-                "schema:name": "5mm FWHM",
-                "schema:value": 0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 1,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
-            }
-        ]
+        "valueType": "xsd:float"
     }
 }

@@ -1,0 +1,40 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_context"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "AcquisitionMode",
+    "prefLabel": "AcquisitionMode",
+    "schema:description": "AcquisitionMode",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Acquisition mode"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": "frame mode",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "list mode ",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiotracer/PET_radioligand_radiotracer_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_radiotracer_schema",
     "skos:prefLabel": "PET_radioligand_radiotracer",
@@ -9,30 +12,15 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "tracer-radionuclide",
-            "tracer-molecular-weight",
-            "molecular-weight-unit",
-            "time-of-injection",
-            "injected-radioactivity",
-            "injected-radioactivity-unit",
-            "injected-tracer-mass",
-            "moles-tracer-injected",
-            "moles-tracer-injected-units",
-            "injected-tracer-mass-units",
-            "bodyweight",
-            "bodyweight-units",
-            "molar-radioactivity",
-            "molar-radioactivity-units",
-            "molar-radioactivity-measurement-time",
-            "specific-radioactivity",
-            "specific-radioactivity-units",
-            "specific-radioactivity-measurement-time",
-            "radiochemical-purity-units",
-            "injected-volume",
-            "formulation",
-            "purity",
-            "mode-of-administration",
-            "infusion-speed"
+            "PharmaceuticalDoseRegimen",
+            "TracerName",
+            "TracerRadLex",
+            "TracerSNOMED",
+            "PharmaceuticalName",
+            "TracerRadionuclide",
+            "TracerMolecularWeight",
+            "PharmaceuticalDoseTime",
+            "PharmaceuticalDoseAmount"
         ],
         "shuffle": false,
         "allow": [
@@ -40,124 +28,49 @@
         ],
         "addProperties": [
             {
-                "variableName": "tracer-radionuclide",
-                "isAbout": "tracer-radionuclide",
-                "isVis": ""
+                "variableName": "PharmaceuticalDoseRegimen",
+                "isAbout": "item_path:PharmaceuticalDoseRegimen",
+                "isVis": true
             },
             {
-                "variableName": "tracer-molecular-weight",
-                "isAbout": "tracer-molecular-weight",
-                "isVis": ""
+                "variableName": "TracerName",
+                "isAbout": "item_path:TracerName",
+                "isVis": true
             },
             {
-                "variableName": "molecular-weight-unit",
-                "isAbout": "molecular-weight-unit",
-                "isVis": ""
+                "variableName": "TracerRadLex",
+                "isAbout": "item_path:TracerRadLex",
+                "isVis": true
             },
             {
-                "variableName": "time-of-injection",
-                "isAbout": "time-of-injection",
-                "isVis": ""
+                "variableName": "TracerSNOMED",
+                "isAbout": "item_path:TracerSNOMED",
+                "isVis": true
             },
             {
-                "variableName": "injected-radioactivity",
-                "isAbout": "injected-radioactivity",
-                "isVis": ""
+                "variableName": "PharmaceuticalName",
+                "isAbout": "item_path:PharmaceuticalName",
+                "isVis": true
             },
             {
-                "variableName": "injected-radioactivity-unit",
-                "isAbout": "injected-radioactivity-unit",
-                "isVis": ""
+                "variableName": "TracerRadionuclide",
+                "isAbout": "item_path:TracerRadionuclide",
+                "isVis": true
             },
             {
-                "variableName": "injected-tracer-mass",
-                "isAbout": "injected-tracer-mass",
-                "isVis": ""
+                "variableName": "TracerMolecularWeight",
+                "isAbout": "item_path:TracerMolecularWeight",
+                "isVis": true
             },
             {
-                "variableName": "moles-tracer-injected",
-                "isAbout": "moles-tracer-injected",
-                "isVis": ""
+                "variableName": "PharmaceuticalDoseTime",
+                "isAbout": "item_path:PharmaceuticalDoseTime",
+                "isVis": true
             },
             {
-                "variableName": "moles-tracer-injected-units",
-                "isAbout": "moles-tracer-injected-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "injected-tracer-mass-units",
-                "isAbout": "injected-tracer-mass-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "bodyweight",
-                "isAbout": "bodyweight",
-                "isVis": ""
-            },
-            {
-                "variableName": "bodyweight-units",
-                "isAbout": "bodyweight-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "molar-radioactivity",
-                "isAbout": "molar-radioactivity",
-                "isVis": ""
-            },
-            {
-                "variableName": "molar-radioactivity-units",
-                "isAbout": "molar-radioactivity-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "molar-radioactivity-measurement-time",
-                "isAbout": "molar-radioactivity-measurement-time",
-                "isVis": ""
-            },
-            {
-                "variableName": "specific-radioactivity",
-                "isAbout": "specific-radioactivity",
-                "isVis": ""
-            },
-            {
-                "variableName": "specific-radioactivity-units",
-                "isAbout": "specific-radioactivity-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "specific-radioactivity-measurement-time",
-                "isAbout": "specific-radioactivity-measurement-time",
-                "isVis": ""
-            },
-            {
-                "variableName": "radiochemical-purity-units",
-                "isAbout": "radiochemical-purity-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "injected-volume",
-                "isAbout": "injected-volume",
-                "isVis": ""
-            },
-            {
-                "variableName": "formulation",
-                "isAbout": "formulation",
-                "isVis": ""
-            },
-            {
-                "variableName": "purity",
-                "isAbout": "purity",
-                "isVis": ""
-            },
-            {
-                "variableName": "mode-of-administration",
-                "isAbout": "mode-of-administration",
-                "isVis": ""
-            },
-            {
-                "variableName": "infusion-speed",
-                "isAbout": "infusion-speed",
-                "isVis": ""
+                "variableName": "PharmaceuticalDoseAmount",
+                "isAbout": "item_path:PharmaceuticalDoseAmount",
+                "isVis": true
             }
         ]
     }

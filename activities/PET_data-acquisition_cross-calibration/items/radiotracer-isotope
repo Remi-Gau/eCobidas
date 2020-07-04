@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "radiotracer-isotope",
     "prefLabel": "radiotracer-isotope",
@@ -10,7 +13,7 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Radiotracer-isotope"
@@ -28,13 +31,18 @@
                 "@type": "schema:option"
             },
             {
-                "schema:name": "Other",
+                "schema:name": "Nitrogen-13",
                 "schema:value": 2,
                 "@type": "schema:option"
             },
             {
+                "schema:name": "Oxygen-15",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
                 "schema:name": "Other",
-                "schema:value": 4,
+                "schema:value": 5,
                 "@type": "schema:option"
             }
         ]
