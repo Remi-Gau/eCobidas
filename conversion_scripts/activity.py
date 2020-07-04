@@ -3,8 +3,6 @@ def define_new_activity(
 ):
     # define the base json content for the activity
 
-    from activity import define_at_context
-
     activity = {
         "name": protocol["name"] + section,
         "pref_label": row[CSV_INFO["act_pref_label"]["col"]],
@@ -63,6 +61,25 @@ def define_activity_schema(activity, protocol, section, VERSION):
             "allow": ["skipped"],
             "addProperties": [],
         },
+    }
+
+    return activity
+
+
+def update_activity(activity, item_info):
+    # update the content of the activity schema with new item
+    append_to_activity = {
+        "variableName": item_info["name"],
+        "isAbout": "item_path:" + item_info["name"],
+        "isVis": item_info["visibility"],
+    }
+
+    activity["schema"]["ui"]["order"].append(item_info["name"])
+    activity["schema"]["ui"]["addProperties"].append(append_to_activity)
+
+    activity["context"]["@context"][item_info["name"]] = {
+        "@id": "item_path:" + item_info["name"],
+        "@type": "@id",
     }
 
     return activity

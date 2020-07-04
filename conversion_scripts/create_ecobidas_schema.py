@@ -1,14 +1,9 @@
 import json
 import os
 import csv
-from protocol import define_new_protocol
-from activity import define_new_activity
-from item import (
-    get_item_info,
-    define_new_item,
-    define_response_choice,
-    list_responses_options,
-)
+from protocol import define_new_protocol, update_protocol
+from activity import define_new_activity, update_activity
+from item import get_item_info, define_new_item
 
 # import pandas as pd
 import warnings
@@ -165,44 +160,11 @@ with open(INPUT_FILE, "r") as csvfile:
                         )
                     )
 
-                # update the content of the protool schema and context wrt this new activity
-                append_to_protocol = {
-                    "variableName": activity["name"],
-                    "isAbout": activity["name"],
-                    # for the name displayed by the UI for this activity we simply reuse the
-                    # activity name
-                    "prefLabel": {"en": activity["pref_label"]},
-                }
-
-                protocol["schema"]["ui"]["order"].append(activity["name"])
-                protocol["schema"]["ui"]["addProperties"].append(append_to_protocol)
-
-                protocol["context"]["@context"][activity["name"]] = {
-                    "@id": "activity_path:"
-                    + activity["name"]
-                    + "/"
-                    + activity["schema_file"],
-                    "@type": "@id",
-                }
+                protocol = update_protocol(activity, protocol)
 
                 print(activity["name"])
 
-            # -------------------------------------------------------------------
-            # update the content of the activity schema with new item
-            # -------------------------------------------------------------------
-            append_to_activity = {
-                "variableName": item_info["name"],
-                "isAbout": "item_path:" + item_info["name"],
-                "isVis": item_info["visibility"],
-            }
-
-            activity["schema"]["ui"]["order"].append(item_info["name"])
-            activity["schema"]["ui"]["addProperties"].append(append_to_activity)
-
-            activity["context"]["@context"][item_info["name"]] = {
-                "@id": "item_path:" + item_info["name"],
-                "@type": "@id",
-            }
+            activity = update_activity(activity, item_info)
 
             # save activity schema and context with every new item
             with open(
@@ -225,26 +187,10 @@ with open(INPUT_FILE, "r") as csvfile:
             # Create new item
             # -------------------------------------------------------------------
             print("   " + item_info["name"])
-
-            if item_info["visibility"] == "":
-                warnings.warn("No question for this item.", UserWarning)
-            else:
-                print("       " + item_info["question"])
+            print("       " + item_info["question"])
             print("       " + item_info["resp_type"])
 
-            item_schema = define_new_item(
-                activity["at_context"],
-                item_info["name"],
-                item_info["question"],
-                VERSION,
-            )
-
-            inputType, responseOptions = define_response_choice(
-                item_info["resp_type"], item_info["choices"]
-            )
-
-            item_schema["ui"]["inputType"] = inputType
-            item_schema["responseOptions"] = responseOptions
+            item_schema = define_new_item(activity["at_context"], item_info, VERSION)
 
             # write item schema
             with open(

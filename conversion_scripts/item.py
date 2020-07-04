@@ -1,7 +1,5 @@
 def get_item_info(row, CSV_INFO):
 
-    from item import get_visibility
-
     mandatory_col = CSV_INFO["mandatory"]["col"]
 
     item_name = []
@@ -16,8 +14,6 @@ def get_item_info(row, CSV_INFO):
     INCLUDE = True
     incl_col = CSV_INFO["include"]["col"]
     if row[item_col] == item_col_name or (incl_col != [] and row[incl_col] != "1"):
-
-        INCLUDE = False
 
         print("   skipping item")
 
@@ -53,7 +49,7 @@ def get_visibility(row, CSV_INFO):
 
     visibility = True
 
-    if row[vis_col] != "1":
+    if row[CSV_INFO["vis"]["col"]] != "1":
 
         visibility = row[CSV_INFO["vis"]["col"]]
 
@@ -70,19 +66,29 @@ def get_visibility(row, CSV_INFO):
     return visibility
 
 
-def define_new_item(at_context, item_name, question, VERSION):
+def define_new_item(at_context, item_info, VERSION):
     # define jsonld for this item
-    return {
+
+    item_schema = {
         "@context": at_context,
         "@type": "reproschema:Field",
-        "@id": item_name,
-        "prefLabel": item_name,
-        "schema:description": item_name,
+        "@id": item_info["name"],
+        "prefLabel": item_info["name"],
+        "schema:description": item_info["name"],
         "schema:schemaVersion": VERSION,
         "schema:version": VERSION,
         "ui": {"allow": ["skipped"], "inputType": []},
-        "question": {"en": question},
+        "question": {"en": item_info["question"]},
     }
+
+    inputType, responseOptions = define_response_choice(
+        item_info["resp_type"], item_info["choices"]
+    )
+
+    item_schema["ui"]["inputType"] = inputType
+    item_schema["responseOptions"] = responseOptions
+
+    return item_schema
 
 
 def define_response_choice(response_type, response_choices):
