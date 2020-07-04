@@ -1,11 +1,6 @@
 def get_item_info(row, CSV_INFO):
 
-    mandatory_col = CSV_INFO["mandatory"]["col"]
-
     item_name = []
-    question = "QUESTION MISSING"
-    response_type = "UNKNOWN"
-    response_choices = []
 
     item_col = CSV_INFO["item"]["col"]
     item_col_name = CSV_INFO["item"]["name"]
@@ -19,20 +14,20 @@ def get_item_info(row, CSV_INFO):
 
         return {"name": item_name}
 
-    if INCLUDE:
+    item_name = row[item_col].replace("\n", "")
 
-        item_name = row[item_col].replace("\n", "")
+    question_col = CSV_INFO["question"]["col"]
+    question = row[question_col].replace("\n", "")
 
-        question_col = CSV_INFO["question"]["col"]
-        question = row[question_col].replace("\n", "")
+    resp_type_col = CSV_INFO["resp_type"]["col"]
+    response_type = row[resp_type_col]
 
-        resp_type_col = CSV_INFO["resp_type"]["col"]
-        response_type = row[resp_type_col]
+    choice_col = CSV_INFO["choice"]["col"]
+    response_choices = row[choice_col].split(" | ")
 
-        choice_col = CSV_INFO["choice"]["col"]
-        response_choices = row[choice_col].split(" | ")
+    visibility = get_visibility(row, CSV_INFO)
 
-        visibility = get_visibility(row, CSV_INFO)
+    mandatory = get_mandatory(row, CSV_INFO)
 
     return {
         "name": item_name,
@@ -44,8 +39,6 @@ def get_item_info(row, CSV_INFO):
 
 
 def get_visibility(row, CSV_INFO):
-
-    # branchic logic: visibility
 
     visibility = True
 
@@ -64,6 +57,17 @@ def get_visibility(row, CSV_INFO):
         #         })
 
     return visibility
+
+
+def get_mandatory(row, CSV_INFO):
+
+    mandatory = False
+
+    if row[CSV_INFO["mandatory"]["col"]] == "1":
+
+        mandatory = True
+
+    return mandatory
 
 
 def define_new_item(at_context, item_info, VERSION):
@@ -177,11 +181,7 @@ def slider_response(response_choices, min_label, max_label):
 
     min = float(response_choices[0])
     max = float(response_choices[1])
-    if len(response_choices) == 3:
-        steps = float(response_choices[2]) + 1
-    else:
-        steps = 101
-
+    steps = float(response_choices[2]) + 1 if len(response_choices) == 3 else 101
     responseOptions = {
         "valueType": "xsd:integer",
         "schema:minValue": min,
