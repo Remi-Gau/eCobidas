@@ -1,0 +1,42 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_plasma/items/",
+        "PlasmaAvail": {
+            "@id": "item_path:PlasmaAvail",
+            "@type": "@id"
+        },
+        "PlasmaFreeFraction": {
+            "@id": "item_path:PlasmaFreeFraction",
+            "@type": "@id"
+        },
+        "error-of-free-fraction-measurement": {
+            "@id": "item_path:error-of-free-fraction-measurement",
+            "@type": "@id"
+        },
+        "PlasmaFreeFractionMethod": {
+            "@id": "item_path:PlasmaFreeFractionMethod",
+            "@type": "@id"
+        },
+        "data:-decay-corrected": {
+            "@id": "item_path:data:-decay-corrected",
+            "@type": "@id"
+        },
+        "data:-decay-correction-time": {
+            "@id": "item_path:data:-decay-correction-time",
+            "@type": "@id"
+        },
+        "data:-type": {
+            "@id": "item_path:data:-type",
+            "@type": "@id"
+        },
+        "data:-units": {
+            "@id": "item_path:data:-units",
+            "@type": "@id"
+        },
+        "data:-hematocrit-value": {
+            "@id": "item_path:data:-hematocrit-value",
+            "@type": "@id"
+        }
+    }
+}

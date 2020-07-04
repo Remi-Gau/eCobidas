@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_time/PET_radioligand_time_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_time_schema",
     "skos:prefLabel": "PET_radioligand_time",
@@ -24,37 +27,37 @@
         "addProperties": [
             {
                 "variableName": "ScanDate",
-                "isAbout": "ScanDate",
+                "isAbout": "item_path:ScanDate",
                 "isVis": true
             },
             {
                 "variableName": "TimeZero",
-                "isAbout": "TimeZero",
+                "isAbout": "item_path:TimeZero",
                 "isVis": true
             },
             {
                 "variableName": "ScanStart",
-                "isAbout": "ScanStart",
+                "isAbout": "item_path:ScanStart",
                 "isVis": true
             },
             {
                 "variableName": "InjectionStart",
-                "isAbout": "InjectionStart",
+                "isAbout": "item_path:InjectionStart",
                 "isVis": true
             },
             {
                 "variableName": "InjectionEnd",
-                "isAbout": "InjectionEnd",
+                "isAbout": "item_path:InjectionEnd",
                 "isVis": true
             },
             {
                 "variableName": "FrameTimesStart",
-                "isAbout": "FrameTimesStart",
+                "isAbout": "item_path:FrameTimesStart",
                 "isVis": true
             },
             {
                 "variableName": "FrameDuration",
-                "isAbout": "FrameDuration",
+                "isAbout": "item_path:FrameDuration",
                 "isVis": true
             }
         ]

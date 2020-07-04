@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_info/PET_data-acquisition_info_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-acquisition_info_schema",
     "skos:prefLabel": "PET_data-acquisition_info",
@@ -26,47 +29,47 @@
         "addProperties": [
             {
                 "variableName": "Modality",
-                "isAbout": "Modality",
+                "isAbout": "item_path:Modality",
                 "isVis": true
             },
             {
                 "variableName": "Manufacturer",
-                "isAbout": "Manufacturer",
+                "isAbout": "item_path:Manufacturer",
                 "isVis": true
             },
             {
                 "variableName": "ManufacturersModelName",
-                "isAbout": "ManufacturersModelName",
+                "isAbout": "item_path:ManufacturersModelName",
                 "isVis": true
             },
             {
                 "variableName": "Anaesthesia",
-                "isAbout": "Anaesthesia",
+                "isAbout": "item_path:Anaesthesia",
                 "isVis": true
             },
             {
                 "variableName": "BodyPart",
-                "isAbout": "BodyPart",
+                "isAbout": "item_path:BodyPart",
                 "isVis": true
             },
             {
                 "variableName": "Unit",
-                "isAbout": "Unit",
+                "isAbout": "item_path:Unit",
                 "isVis": true
             },
             {
                 "variableName": "experiment-date",
-                "isAbout": "experiment-date",
+                "isAbout": "item_path:experiment-date",
                 "isVis": true
             },
             {
                 "variableName": "imaging-center-site",
-                "isAbout": "imaging-center-site",
+                "isAbout": "item_path:imaging-center-site",
                 "isVis": true
             },
             {
                 "variableName": "imaging-department",
-                "isAbout": "imaging-department",
+                "isAbout": "item_path:imaging-department",
                 "isVis": true
             }
         ]

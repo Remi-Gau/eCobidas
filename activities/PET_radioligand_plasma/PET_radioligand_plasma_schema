@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_plasma/PET_radioligand_plasma_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_plasma_schema",
     "skos:prefLabel": "PET_radioligand_plasma",
@@ -26,47 +29,47 @@
         "addProperties": [
             {
                 "variableName": "PlasmaAvail",
-                "isAbout": "PlasmaAvail",
+                "isAbout": "item_path:PlasmaAvail",
                 "isVis": true
             },
             {
                 "variableName": "PlasmaFreeFraction",
-                "isAbout": "PlasmaFreeFraction",
+                "isAbout": "item_path:PlasmaFreeFraction",
                 "isVis": "PlasmaAvail == 1"
             },
             {
                 "variableName": "error-of-free-fraction-measurement",
-                "isAbout": "error-of-free-fraction-measurement",
+                "isAbout": "item_path:error-of-free-fraction-measurement",
                 "isVis": ""
             },
             {
                 "variableName": "PlasmaFreeFractionMethod",
-                "isAbout": "PlasmaFreeFractionMethod",
+                "isAbout": "item_path:PlasmaFreeFractionMethod",
                 "isVis": "PlasmaAvail == 1"
             },
             {
                 "variableName": "data:-decay-corrected",
-                "isAbout": "data:-decay-corrected",
+                "isAbout": "item_path:data:-decay-corrected",
                 "isVis": true
             },
             {
                 "variableName": "data:-decay-correction-time",
-                "isAbout": "data:-decay-correction-time",
+                "isAbout": "item_path:data:-decay-correction-time",
                 "isVis": true
             },
             {
                 "variableName": "data:-type",
-                "isAbout": "data:-type",
+                "isAbout": "item_path:data:-type",
                 "isVis": true
             },
             {
                 "variableName": "data:-units",
-                "isAbout": "data:-units",
+                "isAbout": "item_path:data:-units",
                 "isVis": true
             },
             {
                 "variableName": "data:-hematocrit-value",
-                "isAbout": "data:-hematocrit-value",
+                "isAbout": "item_path:data:-hematocrit-value",
                 "isVis": true
             }
         ]

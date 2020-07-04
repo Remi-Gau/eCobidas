@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiochem/PET_radioligand_radiochem_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "InfusionSpeed",
     "prefLabel": "InfusionSpeed",

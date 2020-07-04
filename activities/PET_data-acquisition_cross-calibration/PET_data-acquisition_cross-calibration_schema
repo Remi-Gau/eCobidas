@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-acquisition_cross-calibration_schema",
     "skos:prefLabel": "PET_data-acquisition_cross-calibration",
@@ -31,72 +34,72 @@
         "addProperties": [
             {
                 "variableName": "blood-sampling-device-read",
-                "isAbout": "blood-sampling-device-read",
+                "isAbout": "item_path:blood-sampling-device-read",
                 "isVis": true
             },
             {
                 "variableName": "blood-sampling-device-measurement-time",
-                "isAbout": "blood-sampling-device-measurement-time",
+                "isAbout": "item_path:blood-sampling-device-measurement-time",
                 "isVis": true
             },
             {
                 "variableName": "phantom-type",
-                "isAbout": "phantom-type",
+                "isAbout": "item_path:phantom-type",
                 "isVis": true
             },
             {
                 "variableName": "phantom-volume",
-                "isAbout": "phantom-volume",
+                "isAbout": "item_path:phantom-volume",
                 "isVis": true
             },
             {
                 "variableName": "radiotracer-isotope",
-                "isAbout": "radiotracer-isotope",
+                "isAbout": "item_path:radiotracer-isotope",
                 "isVis": true
             },
             {
                 "variableName": "phantom-activity",
-                "isAbout": "phantom-activity",
+                "isAbout": "item_path:phantom-activity",
                 "isVis": true
             },
             {
                 "variableName": "activity-time",
-                "isAbout": "activity-time",
+                "isAbout": "item_path:activity-time",
                 "isVis": true
             },
             {
                 "variableName": "residual-activity",
-                "isAbout": "residual-activity",
+                "isAbout": "item_path:residual-activity",
                 "isVis": true
             },
             {
                 "variableName": "residual-activity-time",
-                "isAbout": "residual-activity-time",
+                "isAbout": "item_path:residual-activity-time",
                 "isVis": true
             },
             {
                 "variableName": "phantom-acquisition-time",
-                "isAbout": "phantom-acquisition-time",
+                "isAbout": "item_path:phantom-acquisition-time",
                 "isVis": true
             },
             {
                 "variableName": "well-counter-sample-volumes",
-                "isAbout": "well-counter-sample-volumes",
+                "isAbout": "item_path:well-counter-sample-volumes",
                 "isVis": true
             },
             {
                 "variableName": "well-counter-measurement-time",
-                "isAbout": "well-counter-measurement-time",
+                "isAbout": "item_path:well-counter-measurement-time",
                 "isVis": true
             },
             {
                 "variableName": "well-counter-read",
-                "isAbout": "well-counter-read",
+                "isAbout": "item_path:well-counter-read",
                 "isVis": true
             },
             {
                 "variableName": "phantom-data",
-                "isAbout": "phantom-data",
+                "isAbout": "item_path:phantom-data",
                 "isVis": true
             }
         ]

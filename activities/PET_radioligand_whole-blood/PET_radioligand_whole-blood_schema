@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_whole-blood/PET_radioligand_whole-blood_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_whole-blood_schema",
     "skos:prefLabel": "PET_radioligand_whole-blood",
@@ -19,12 +22,12 @@
         "addProperties": [
             {
                 "variableName": "whole-blood-radioactivity",
-                "isAbout": "whole-blood-radioactivity",
+                "isAbout": "item_path:whole-blood-radioactivity",
                 "isVis": "MetaboliteAvail == 1"
             },
             {
                 "variableName": "plasma-to-whole-blood-ratio",
-                "isAbout": "plasma-to-whole-blood-ratio",
+                "isAbout": "item_path:plasma-to-whole-blood-ratio",
                 "isVis": true
             }
         ]

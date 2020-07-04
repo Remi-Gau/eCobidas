@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_continuous-blood/PET_radioligand_continuous-blood_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_continuous-blood_schema",
     "skos:prefLabel": "PET_radioligand_continuous-blood",
@@ -23,32 +26,32 @@
         "addProperties": [
             {
                 "variableName": "ContinuousBloodAvail",
-                "isAbout": "ContinuousBloodAvail",
+                "isAbout": "item_path:ContinuousBloodAvail",
                 "isVis": true
             },
             {
                 "variableName": "ContinuousBloodWithdrawalRate",
-                "isAbout": "ContinuousBloodWithdrawalRate",
+                "isAbout": "item_path:ContinuousBloodWithdrawalRate",
                 "isVis": "ContinuousBloodAvail == 1"
             },
             {
                 "variableName": "ContinuousBloodTubingType",
-                "isAbout": "ContinuousBloodTubingType",
+                "isAbout": "item_path:ContinuousBloodTubingType",
                 "isVis": "ContinuousBloodAvail == 1"
             },
             {
                 "variableName": "ContinuousBloodTubingLength",
-                "isAbout": "ContinuousBloodTubingLength",
+                "isAbout": "item_path:ContinuousBloodTubingLength",
                 "isVis": "ContinuousBloodAvail == 1"
             },
             {
                 "variableName": "ContinuousBloodDispersionConstant",
-                "isAbout": "ContinuousBloodDispersionConstant",
+                "isAbout": "item_path:ContinuousBloodDispersionConstant",
                 "isVis": "ContinuousBloodAvail == 1"
             },
             {
                 "variableName": "ContinuousBloodDispersionCorrected",
-                "isAbout": "ContinuousBloodDispersionCorrected",
+                "isAbout": "item_path:ContinuousBloodDispersionCorrected",
                 "isVis": "ContinuousBloodAvail == 1"
             }
         ]

@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_pre-registration/PET_statistics_pre-registration_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_statistics_pre-registration_schema",
     "skos:prefLabel": "PET_statistics_pre-registration",
@@ -18,7 +21,7 @@
         "addProperties": [
             {
                 "variableName": "link",
-                "isAbout": "link",
+                "isAbout": "item_path:link",
                 "isVis": true
             }
         ]

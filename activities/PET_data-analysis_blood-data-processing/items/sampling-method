@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "sampling-method",
     "prefLabel": "sampling-method",

@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
     "skos:prefLabel": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
@@ -27,52 +30,52 @@
         "addProperties": [
             {
                 "variableName": "volumes-of-interest-obtained-from",
-                "isAbout": "volumes-of-interest-obtained-from",
+                "isAbout": "item_path:volumes-of-interest-obtained-from",
                 "isVis": true
             },
             {
                 "variableName": "volumes-of-interest-operational-criteria",
-                "isAbout": "volumes-of-interest-operational-criteria",
+                "isAbout": "item_path:volumes-of-interest-operational-criteria",
                 "isVis": true
             },
             {
                 "variableName": "volumes-of-interest-mask",
-                "isAbout": "volumes-of-interest-mask",
+                "isAbout": "item_path:volumes-of-interest-mask",
                 "isVis": true
             },
             {
                 "variableName": "volumes-of-interest-procedure",
-                "isAbout": "volumes-of-interest-procedure",
+                "isAbout": "item_path:volumes-of-interest-procedure",
                 "isVis": true
             },
             {
                 "variableName": "volumes-of-interest",
-                "isAbout": "volumes-of-interest",
+                "isAbout": "item_path:volumes-of-interest",
                 "isVis": true
             },
             {
                 "variableName": "volumes-of-interest-software",
-                "isAbout": "volumes-of-interest-software",
+                "isAbout": "item_path:volumes-of-interest-software",
                 "isVis": true
             },
             {
                 "variableName": "partial-volume-correction-technique",
-                "isAbout": "partial-volume-correction-technique",
+                "isAbout": "item_path:partial-volume-correction-technique",
                 "isVis": true
             },
             {
                 "variableName": "partial-volume-correction-assumptions",
-                "isAbout": "partial-volume-correction-assumptions",
+                "isAbout": "item_path:partial-volume-correction-assumptions",
                 "isVis": true
             },
             {
                 "variableName": "partial-volume-correction-software",
-                "isAbout": "partial-volume-correction-software",
+                "isAbout": "item_path:partial-volume-correction-software",
                 "isVis": true
             },
             {
                 "variableName": "partial-volume-correction-software-version",
-                "isAbout": "partial-volume-correction-software-version",
+                "isAbout": "item_path:partial-volume-correction-software-version",
                 "isVis": true
             }
         ]

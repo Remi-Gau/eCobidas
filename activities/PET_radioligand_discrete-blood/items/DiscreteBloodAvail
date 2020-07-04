@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_discrete-blood/PET_radioligand_discrete-blood_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "DiscreteBloodAvail",
     "prefLabel": "DiscreteBloodAvail",

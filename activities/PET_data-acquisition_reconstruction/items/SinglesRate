@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "SinglesRate",
     "prefLabel": "SinglesRate",

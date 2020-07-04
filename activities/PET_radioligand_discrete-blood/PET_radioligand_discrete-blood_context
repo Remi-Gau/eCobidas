@@ -1,0 +1,18 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_discrete-blood/items/",
+        "DiscreteBloodAvail": {
+            "@id": "item_path:DiscreteBloodAvail",
+            "@type": "@id"
+        },
+        "DiscreteBloodHaematocrit": {
+            "@id": "item_path:DiscreteBloodHaematocrit",
+            "@type": "@id"
+        },
+        "DiscreteBloodDensity": {
+            "@id": "item_path:DiscreteBloodDensity",
+            "@type": "@id"
+        }
+    }
+}

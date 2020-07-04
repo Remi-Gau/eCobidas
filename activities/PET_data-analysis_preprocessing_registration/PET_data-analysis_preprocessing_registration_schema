@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_registration_schema",
     "skos:prefLabel": "PET_data-analysis_preprocessing_registration",
@@ -31,72 +34,72 @@
         "addProperties": [
             {
                 "variableName": "registration-reference-image",
-                "isAbout": "registration-reference-image",
+                "isAbout": "item_path:registration-reference-image",
                 "isVis": true
             },
             {
                 "variableName": "registration-target-image",
-                "isAbout": "registration-target-image",
+                "isAbout": "item_path:registration-target-image",
                 "isVis": true
             },
             {
                 "variableName": "registration-cost-function",
-                "isAbout": "registration-cost-function",
+                "isAbout": "item_path:registration-cost-function",
                 "isVis": true
             },
             {
                 "variableName": "registration-interpolation",
-                "isAbout": "registration-interpolation",
+                "isAbout": "item_path:registration-interpolation",
                 "isVis": true
             },
             {
                 "variableName": "registration-smoothing",
-                "isAbout": "registration-smoothing",
+                "isAbout": "item_path:registration-smoothing",
                 "isVis": true
             },
             {
                 "variableName": "resolution-of-reference-target",
-                "isAbout": "resolution-of-reference-target",
+                "isAbout": "item_path:resolution-of-reference-target",
                 "isVis": true
             },
             {
                 "variableName": "registration-quality-control",
-                "isAbout": "registration-quality-control",
+                "isAbout": "item_path:registration-quality-control",
                 "isVis": true
             },
             {
                 "variableName": "registration-software",
-                "isAbout": "registration-software",
+                "isAbout": "item_path:registration-software",
                 "isVis": true
             },
             {
                 "variableName": "registration-software-version",
-                "isAbout": "registration-software-version",
+                "isAbout": "item_path:registration-software-version",
                 "isVis": true
             },
             {
                 "variableName": "smoothing-target-image",
-                "isAbout": "smoothing-target-image",
+                "isAbout": "item_path:smoothing-target-image",
                 "isVis": true
             },
             {
                 "variableName": "shape-of-smoothing-filter",
-                "isAbout": "shape-of-smoothing-filter",
+                "isAbout": "item_path:shape-of-smoothing-filter",
                 "isVis": true
             },
             {
                 "variableName": "size-of-smoothing-filter",
-                "isAbout": "size-of-smoothing-filter",
+                "isAbout": "item_path:size-of-smoothing-filter",
                 "isVis": true
             },
             {
                 "variableName": "justification-for-smoothing-size",
-                "isAbout": "justification-for-smoothing-size",
+                "isAbout": "item_path:justification-for-smoothing-size",
                 "isVis": true
             },
             {
                 "variableName": "space-of-smoothing",
-                "isAbout": "space-of-smoothing",
+                "isAbout": "item_path:space-of-smoothing",
                 "isVis": true
             }
         ]

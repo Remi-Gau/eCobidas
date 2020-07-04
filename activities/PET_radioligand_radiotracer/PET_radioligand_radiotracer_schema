@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiotracer/PET_radioligand_radiotracer_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_radiotracer_schema",
     "skos:prefLabel": "PET_radioligand_radiotracer",
@@ -26,47 +29,47 @@
         "addProperties": [
             {
                 "variableName": "PharmaceuticalDoseRegimen",
-                "isAbout": "PharmaceuticalDoseRegimen",
+                "isAbout": "item_path:PharmaceuticalDoseRegimen",
                 "isVis": true
             },
             {
                 "variableName": "TracerName",
-                "isAbout": "TracerName",
+                "isAbout": "item_path:TracerName",
                 "isVis": true
             },
             {
                 "variableName": "TracerRadLex",
-                "isAbout": "TracerRadLex",
+                "isAbout": "item_path:TracerRadLex",
                 "isVis": true
             },
             {
                 "variableName": "TracerSNOMED",
-                "isAbout": "TracerSNOMED",
+                "isAbout": "item_path:TracerSNOMED",
                 "isVis": true
             },
             {
                 "variableName": "PharmaceuticalName",
-                "isAbout": "PharmaceuticalName",
+                "isAbout": "item_path:PharmaceuticalName",
                 "isVis": true
             },
             {
                 "variableName": "TracerRadionuclide",
-                "isAbout": "TracerRadionuclide",
+                "isAbout": "item_path:TracerRadionuclide",
                 "isVis": true
             },
             {
                 "variableName": "TracerMolecularWeight",
-                "isAbout": "TracerMolecularWeight",
+                "isAbout": "item_path:TracerMolecularWeight",
                 "isVis": true
             },
             {
                 "variableName": "PharmaceuticalDoseTime",
-                "isAbout": "PharmaceuticalDoseTime",
+                "isAbout": "item_path:PharmaceuticalDoseTime",
                 "isVis": true
             },
             {
                 "variableName": "PharmaceuticalDoseAmount",
-                "isAbout": "PharmaceuticalDoseAmount",
+                "isAbout": "item_path:PharmaceuticalDoseAmount",
                 "isVis": true
             }
         ]

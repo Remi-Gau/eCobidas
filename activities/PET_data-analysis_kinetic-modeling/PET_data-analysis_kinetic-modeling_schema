@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_context"
+    ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_kinetic-modeling_schema",
     "skos:prefLabel": "PET_data-analysis_kinetic-modeling",
@@ -24,37 +27,37 @@
         "addProperties": [
             {
                 "variableName": "model",
-                "isAbout": "model",
+                "isAbout": "item_path:model",
                 "isVis": true
             },
             {
                 "variableName": "reference-volume",
-                "isAbout": "reference-volume",
+                "isAbout": "item_path:reference-volume",
                 "isVis": true
             },
             {
                 "variableName": "outcome-measure",
-                "isAbout": "outcome-measure",
+                "isAbout": "item_path:outcome-measure",
                 "isVis": true
             },
             {
                 "variableName": "weighting",
-                "isAbout": "weighting",
+                "isAbout": "item_path:weighting",
                 "isVis": true
             },
             {
                 "variableName": "level-of-analysis",
-                "isAbout": "level-of-analysis",
+                "isAbout": "item_path:level-of-analysis",
                 "isVis": true
             },
             {
                 "variableName": "kinetic-modelling-software",
-                "isAbout": "kinetic-modelling-software",
+                "isAbout": "item_path:kinetic-modelling-software",
                 "isVis": true
             },
             {
                 "variableName": "kinetic-modelling-software-version",
-                "isAbout": "kinetic-modelling-software-version",
+                "isAbout": "item_path:kinetic-modelling-software-version",
                 "isVis": true
             }
         ]

@@ -1,5 +1,8 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiotracer/PET_radioligand_radiotracer_context"
+    ],
     "@type": "reproschema:Field",
     "@id": "PharmaceuticalDoseRegimen",
     "prefLabel": "PharmaceuticalDoseRegimen",
