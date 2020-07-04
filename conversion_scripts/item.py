@@ -78,10 +78,14 @@ def define_new_item(at_context, item_name, question, VERSION):
 
 def define_response_choice(response_type, response_choices):
     # now we define the answers for this item
+
+    # default (also valid for "char" input type)
+    inputType = "text"
+    responseOptions = {"type": "xsd:string"}
+
     if response_type == "boolean":
 
         inputType = "radio"
-
         responseOptions = {
             "multipleChoice": False,
             "choices": [
@@ -95,18 +99,14 @@ def define_response_choice(response_type, response_choices):
     elif response_type == "radio":
 
         inputType = "radio"
-
         responseOptions = {"choices": []}
-
         responseOptions = list_responses_options(responseOptions, response_choices)
 
     # if we have a dropdown menu
     elif response_type == "dropdown":
 
         inputType = "select"
-
         responseOptions = {"choices": []}
-
         responseOptions = list_responses_options(responseOptions, response_choices)
 
     # response is date
@@ -120,31 +120,9 @@ def define_response_choice(response_type, response_choices):
         responseOptions = {"valueType": "datetime"}
 
     # response is slider
-
     elif response_type == "slider":
         inputType = "slider"
-        responseOptions = {
-            "valueType": "xsd:integer",
-            "schema:minValue": 0,
-            "schema:maxValue": 6,
-            "choices": [
-                {
-                    "schema:name": "Not at all",
-                    "schema:value": 0,
-                    "@type": "schema:option",
-                },
-                {"schema:value": 1, "@type": "schema:option"},
-                {"schema:value": 2, "@type": "schema:option"},
-                {"schema:value": 3, "@type": "schema:option"},
-                {"schema:value": 4, "@type": "schema:option"},
-                {"schema:value": 5, "@type": "schema:option"},
-                {
-                    "schema:name": "Completely",
-                    "schema:value": 6,
-                    "@type": "schema:option",
-                },
-            ],
-        }
+        responseOptions = slider_response(response_choices, "min", "max")
 
     # response is integer
     elif response_type == "int":
@@ -155,15 +133,6 @@ def define_response_choice(response_type, response_choices):
     elif response_type == "float":
         inputType = "float"
         responseOptions = {"valueType": "xsd:float"}
-
-    # input requires typed answer
-    elif response_type == "char":
-        inputType = "text"
-        responseOptions = {"type": "xsd:string"}
-
-    else:
-        inputType = "text"
-        responseOptions = {"type": "xsd:string"}
 
     return inputType, responseOptions
 
@@ -183,5 +152,32 @@ def list_responses_options(responseOptions, response_choices):
             "@type": "schema:option",
         }
     )
+
+    return responseOptions
+
+
+def slider_response(response_choices, min_label, max_label):
+
+    from numpy import linspace
+
+    min = float(response_choices[0])
+    max = float(response_choices[1])
+    if len(response_choices) == 3:
+        steps = float(response_choices[2]) + 1
+    else:
+        steps = 101
+
+    responseOptions = {
+        "valueType": "xsd:integer",
+        "schema:minValue": min,
+        "schema:maxValue": max,
+        "choices": [],
+    }
+
+    for i in linspace(min, max, steps):
+        responseOptions["choices"].append({"schema:value": i, "@type": "schema:option"})
+
+    responseOptions["choices"][0]["schema:name"] = min_label
+    responseOptions["choices"][-1]["schema:name"] = max_label
 
     return responseOptions

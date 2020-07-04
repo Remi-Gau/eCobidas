@@ -38,25 +38,25 @@ REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/master/"
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the reproschema will be hosted
 
-# OUTPUT_DIR = "/home/remi/github/COBIDAS_chckls"
-OUTPUT_DIR = "/home/remi/github/cobidas-PET"
+OUTPUT_DIR = "/home/remi/github/COBIDAS_chckls"
+# OUTPUT_DIR = "/home/remi/github/cobidas-PET"
 
 # ----------------------------------------
 # Placeholder to insert in all instances of the remote repo that will host the schema representation
 # Most likely you just need to replace Remi-Gau in the following line by your github username
 
-# REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/"
-REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-PET/"
+REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/"
+# REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-PET/"
 
 # ----------------------------------------
 # to which branch of reproschema the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: REMOTE_REPO + BRANCH
 
-BRANCH = "master"
+# BRANCH = "master"
 # BRANCH = 'neurovault'
 # BRANCH = "remi-MRI"
-# BRANCH = "PET"
+BRANCH = "PET"
 
 # ----------------------------------------
 # Protocol info
@@ -232,7 +232,7 @@ with open(INPUT_FILE, "r") as csvfile:
                 print("       " + item_info["question"])
             print("       " + item_info["resp_type"])
 
-            item_schema_json = define_new_item(
+            item_schema = define_new_item(
                 activity["at_context"],
                 item_info["name"],
                 item_info["question"],
@@ -243,8 +243,8 @@ with open(INPUT_FILE, "r") as csvfile:
                 item_info["resp_type"], item_info["choices"]
             )
 
-            item_schema_json["ui"]["inputType"] = inputType
-            item_schema_json["responseOptions"] = responseOptions
+            item_schema["ui"]["inputType"] = inputType
+            item_schema["responseOptions"] = responseOptions
 
             # write item schema
             with open(
@@ -257,7 +257,7 @@ with open(INPUT_FILE, "r") as csvfile:
                 ),
                 "w",
             ) as ff:
-                json.dump(item_schema_json, ff, sort_keys=False, indent=4)
+                json.dump(item_schema, ff, sort_keys=False, indent=4)
 
 # write protocol jsonld
 with open(
