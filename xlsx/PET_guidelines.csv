@@ -1,133 +1,163 @@
-row fomarting,,,,Activity,Item,duplicate,Question,Details or unit or response example,Field Type,Example of Permissible Values,Data entry,Branching Logic (Show field only if...)
-FALSE,Radioligand,Radiotracer,,radioligand_radiotracer,tracer-radionuclide,0,Tracer radionuclide,,dropdown,carbon-11 | fluorine-18 | Other,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,tracer-molecular-weight,0,Tracer molecular weight,,float,,Recommended,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,molecular-weight-unit,0,Molecular weight unit,,dropdown, Da | Other,Recommended,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,time-of-injection,0,Time of injection,,char,Time string (hh:mm:ss) | injection time | scan start,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,injected-radioactivity,0,Injected radioactivity,,float,,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,injected-radioactivity-unit,0,Injected radioactivity unit,,dropdown,MBq | Other,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,injected-tracer-mass,0,Injected tracer mass,,float,,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,moles-tracer-injected,0,Moles tracer injected,,float,,Recommended,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,moles-tracer-injected-units,0,Moles tracer injected units,,dropdown,moles | micromoles | nanomoles | Other,Recommended,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,injected-tracer-mass-units,0,Injected tracer mass units,,dropdown,µg | mg | g  | Other,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,bodyweight,0,Bodyweight,,float,,Recommended,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,bodyweight-units,0,Bodyweight units,,dropdown,kg  | Other,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,molar-radioactivity,0,Molar radioactivity,,float,,Recommended,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,molar-radioactivity-units,0,Molar radioactivity units,,dropdown,GBq/µmol  | Other,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,molar-radioactivity-measurement-time,0,Molar radioactivity measurement time,,char,Time string (hh:mm:ss) | injection time | scan start,Recommended,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,specific-radioactivity,0,Specific radioactivity,,float,,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,specific-radioactivity-units,0,Specific radioactivity units,,dropdown,Bq/g | GBq/mg | Other,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,specific-radioactivity-measurement-time,0,Specific radioactivity measurement time,,char,Time string (hh:mm:ss) | injection time | scan start,Recommended,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,radiochemical-purity-units,0,Radiochemical purity units,,dropdown,percent  | Other,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,injected-volume,0,Injected volume,mL,float,,Recommended,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,formulation,0,Formulation,,char,,Recommended,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,purity,0,Purity,,float,,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,mode-of-administration,0,Mode of administration,,dropdown,bolus | infusion | bolus-infusion  | Other,Mandatory,
-TRUE,Radioligand,Radiotracer,,radioligand_radiotracer,infusion-speed,0,Infusion speed,,dropdown,mL/s | unitless (Kbol)  | Other,Recommended,
-FALSE,Radioligand,Time,,radioligand_time,date-of-scan,0,Date of scan,,date,,Recommended,
-TRUE,Radioligand,Time,,radioligand_time,scan-start,0,Scan start,,time range,,Recommended,
-TRUE,Radioligand,Time,,radioligand_time,scan-start-units,0,Scan start units,,char,"""hh:mm:ss""",Recommended,
-TRUE,Radioligand,Time,,radioligand_time,injection-start,0,Injection start,,time range,,Mandatory,
-TRUE,Radioligand,Time,,radioligand_time,injection-start-units,0,Injection start units,,char,"""hh:mm:ss""",Recommended,
-TRUE,Radioligand,Time,,radioligand_time,injection-end,0,Injection end,,time range,,Recommended,
-TRUE,Radioligand,Time,,radioligand_time,injection-end-units,0,Injection end units,,char,"""hh:mm:ss""",Recommended,
-TRUE,Radioligand,Time,,radioligand_time,frame-times:-labels,0,Frame times: labels,frameStart | frameEnd | Other,char,,Mandatory,
-TRUE,Radioligand,Time,,radioligand_time,frame-times:-units,0,Frame times: units,s | s | Other,char,,Mandatory,
-TRUE,Radioligand,Time,,radioligand_time,frame-times:-values,0,Frame times: values,,char,,Mandatory,
-FALSE,Radioligand,Plasma,,radioligand_plasma,plasma-free-fraction,0,Plasma free fraction,,slider,0 | 1,Recommended,
-TRUE,Radioligand,Plasma,,radioligand_plasma,error-of-free-fraction-measurement,0,Error of free fraction measurement,,float,,Recommended,
-TRUE,Radioligand,Plasma,,radioligand_plasma,data:-decay-corrected,0,Data: decay-corrected,,boolean,,Mandatory,
-TRUE,Radioligand,Plasma,,radioligand_plasma,data:-decay-correction-time,0,Data: decay correction time,,dropdown,scan start  | Other,Mandatory,
-TRUE,Radioligand,Plasma,,radioligand_plasma,data:-type,0,Data: type,,dropdown,radioactivity  | Other,Mandatory,
-TRUE,Radioligand,Plasma,,radioligand_plasma,data:-labels,0,Data: labels,,dropdown,sampleStartTime | sampleDuration | activity | activitySD | Other,Mandatory,
-TRUE,Radioligand,Plasma,,radioligand_plasma,data:-units,0,Data: units,,dropdown,s | kBq/mL | kBq/mL | Other,Mandatory,
-TRUE,Radioligand,Plasma,,radioligand_plasma,data:-hematocrit-value,0,Data: hematocrit value,,float,,Recommended,
-FALSE,Radioligand,Whole blood,,radioligand_whole-blood,whole-blood-radioactivity,0,Whole blood radioactivity,,char,,Recommended,
-TRUE,Radioligand,Whole blood,,radioligand_whole-blood,whole-blood-radioactivity-units,0,Whole blood radioactivity units,,dropdown,MBq  | Other,Recommended,
-TRUE,Radioligand,Whole blood,,radioligand_whole-blood,plasma-to-whole-blood-ratio,0,Plasma to whole blood ratio,,slider,0 | 1,Recommended,
-FALSE,Radioligand,Metabolite,,radioligand_metabolite,radiolabeled-parent-compound-fraction,0,Radiolabeled Parent compound fraction,,slider,0 | 1,Mandatory,
-TRUE,Radioligand,Metabolite,,radioligand_metabolite,data:labels,0,Data:labels,,dropdown,sampleStartTime | sampleDuration | parentFraction | parentFraction SD | Other,Mandatory,
-TRUE,Radioligand,Metabolite,,radioligand_metabolite,parent-fraction-units,0,Parent fraction units,,dropdown,s | fraction | fraction | Other,Mandatory,
-TRUE,Radioligand,Metabolite,,radioligand_metabolite,parent-fraction-measurement-error,0,Parent fraction measurement error,,float,,Recommended,
-TRUE,Radioligand,Metabolite,,radioligand_metabolite,metabolite-analysis-timepoints,0,Metabolite analysis timepoints,seconds or minutes after scan start,char,,Mandatory,
-TRUE,Radioligand,Metabolite,,radioligand_metabolite,fraction-of-radiometabolite-needing-quantitation,0,Fraction of radiometabolite needing quantitation,,dropdown,fraction | percentage,Mandatory,
-TRUE,Radioligand,Metabolite,,radioligand_metabolite,error-on-above-measurement,0,Error on above measurement,,char,,Recommended,
-TRUE,Radioligand,Metabolite,,radioligand_metabolite,radiolabeled-metabolite-fractions,0,Radiolabeled metabolite fractions,(M1 | M2 | M3…),slider,0 | 1,Recommended,
-FALSE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,phantom-type,0,Phantom type,,dropdown,Uniform cylinder | ACR | EARL  | Other,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,phantom-volume,0,Phantom volume,mL,float,,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,radiotracer-isotope,0,Radiotracer-isotope,,dropdown,carbon-11 | fluorine-18 | Other,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,phantom-activity,0,Phantom activity,MBq,float,,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,activity-time,0,Activity time,,time range,,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,residual-activity,0,Residual activity,MBq,float,,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,residual-activity-time,0,Residual activity time,,time range,,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,phantom-acquisition-time,0,Phantom acquisition time,,time range,,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,well-counter-sample-volumes,0,Well counter sample volumes,,dropdown,mL | µL | Other,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,well-counter-measurement-time,0,Well counter measurement time,,time range,,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,well-counter-read,0,Well counter read,,dropdown,count per second | counts per minute,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,blood-sampling-device-read,0,Blood sampling device read,,dropdown,count per second | counts per minute,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,blood-sampling-device-measurement-time,0,Blood sampling device measurement time,,time range,,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,experiment-date,0,Experiment date,,date,,Recommended,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,pet-system-used,0,PET system used,,char,,Mandatory,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,imaging-center-site,0,Imaging center-site,,char,,Mandatory,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,imaging-department,0,Imaging department,,char,,Mandatory,
-TRUE,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,phantom-data,0,Phantom data,,char,,Recommended,
-FALSE,Data Acquisition,External Motion Correction,,data-acquisition_external-motion-correction,hardware-,0,Hardware ,,char,,Mandatory,
-TRUE,Data Acquisition,External Motion Correction,,data-acquisition_external-motion-correction,external-moco-software,0,External MoCo software,,char,,Mandatory,
-FALSE,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,acquisition-mode,0,Acquisition mode,,dropdown,frame mode | list mode  | Other,Mandatory,
-TRUE,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,reconstruction-method,0,Reconstruction method,,dropdown,3D-OP-OSEM | Other,Mandatory,
-TRUE,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,parameters,0,Parameters,,dropdown,subsets | iterations | Other,Mandatory,
-TRUE,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,recon-filter-type,0,Recon-filter-type,,dropdown,none | gaussian | Other,Mandatory,
-TRUE,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,attenuation-correction,0,Attenuation correction,,dropdown,Dixon MRAC | CTAC | Other,Mandatory,
-TRUE,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,postrecon-filter-size,0,Postrecon-filter-size,mm FWHM,dropdown,1 x 1 x 1 | 2 x 2 x 2 | Other,Mandatory,
-TRUE,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,pet-voxel-size,0,PET voxel size,mm,dropdown,1 x 1 x 1 | 2 x 2 x 2 | Other,Mandatory,
-TRUE,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,matrix-size,0,Matrix Size,,dropdown,256 x 256 x 207 | Other,Mandatory,
-TRUE,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,frame-sequence,0,Frame-Sequence,,dropdown,6x10 | 3x20 | 6x30 | 5x60 | 5x120 | 8x300 | 3x600 (36 frames) | Other,Mandatory,
-FALSE,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,moco-reference-image,0,MoCo reference image,,dropdown,Summed PET image | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,moco-cost-function,0,MoCo cost function,,dropdown,Mutual information | Normalised mutual information | Entropy correlation coefficient | Normalised cross-correlation | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,moco-interpolation,0,MoCo interpolation,,dropdown,Nearest neighbour | trilinear | 2nd degree spline | 2nd degree spline | 3rd degree spline | 4th degree spline | Fourrier interpolation | Other,Recommended,
-TRUE,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,moco-smoothing,0,MoCo smoothing,10 mm FWHM,char,,Mandatory,
-TRUE,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,moco-quality-control,0,MoCo quality control,Less than 3mm movement.,char,,Recommended,
-TRUE,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,moco-software,0,MoCo software,IR (provide specific citation),char,,Mandatory,
-FALSE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,registration-reference-image,0,Registration reference image,,dropdown,MP-RAGE T1 | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,registration-target-image,0,Registration target image,,dropdown,Summed PET Image | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,registration-cost-function,0,Registration cost function,,dropdown,Mutual information | Normalised mutual information | Entropy correlation coefficient | Normalised cross-correlation | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,registration-interpolation,0,Registration interpolation,,dropdown,Nearest neighbour | trilinear | 2nd degree spline | 2nd degree spline | 3rd degree spline | 4th degree spline | Fourrier interpolation | Other,Recommended,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,registration-smoothing,0,Registration smoothing,,dropdown,5mm FWHM | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,resolution-of-reference-target,0,Resolution of reference-target,mm,dropdown, 1 x 1 x 1 | 2 x 2 x 2 | Other,Recommended,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,registration-quality-control,0,Registration quality control,,dropdown,Visual Assessment | Other,Recommended,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,registration-software,0,Registration software,,dropdown,FreeSurfer (function: mri_vol2vol) | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,smoothing-target-image,0,Smoothing target image,,dropdown,4D PET Image | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,size-of-smoothing-filter,0,Size of smoothing filter,,dropdown,6mm FWHM | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,shape-of-smoothing-filter,0,Shape of smoothing filter,,dropdown,3D Gaussian | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,justification-for-smoothing-size,0,Justification for smoothing size,Chosen to reflect the size of the amygdala.,char,,Recommended,
-TRUE,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,space-of-smoothing,0,Space of smoothing,,dropdown,MP-RAGE T1 | Other,Mandatory,
-FALSE,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,volumes-of-interest-obtained-from,0,Volumes of interest obtained from,,dropdown,MP-RAGE T1 | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,volumes-of-interest-operational-criteria,0,Volumes of interest operational criteria,The amygdala was defined as the region bounded dorsally.,char,,Recommended,
-TRUE,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,volumes-of-interest-mask,0,Volumes of interest mask,gray matter mask | Other,char,,Mandatory,
-TRUE,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,volumes-of-interest-procedure,0,Volumes of interest procedure,,dropdown,automatic | manual | semi-automatic | Other,Mandatory,
-TRUE,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,volumes-of-interest,0,Volumes of interest,Amygdala | Thalamus | Putamen | Other,char,,Mandatory,
-TRUE,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,volumes-of-interest-software,0,Volumes of interest software,PVELab (Svarer et al. 2005) | Other,char,,Mandatory,
-TRUE,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,partial-volume-correction-technique,0,Partial volume correction technique,Muller-Gartner | Other,char,,Mandatory,
-TRUE,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,partial-volume-correction-assumptions,0,Partial volume correction assumptions,80% gray matter threshold | PSF of 4 mm,char,,Mandatory,
-TRUE,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,partial-volume-correction-software,0,Partial volume correction software,FreeSurfer (function: mri_gtmpvc) | Other,char,,Mandatory,
-FALSE,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,sampling-method,0,Sampling Method,,dropdown,online system | manual | venous | arterial | image derived | Other,Mandatory,
-TRUE,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,delay-time-correction,0,Delay time correction,,boolean,,Recommended,
-TRUE,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,dispersion-correction,0,Dispersion correction,,boolean,,Recommended,
-TRUE,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,metabolite-correction,0,Metabolite correction,,boolean,,Mandatory,
-TRUE,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,fitting,0,Fitting,,boolean,,Mandatory,
-TRUE,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,fitting-description,0,Fitting description,,char,,Mandatory,fitting-description == 1
-TRUE,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,blood-data-processing-interpolation,0,Blood data processing interpolation,,char,,Mandatory,
-FALSE,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,model,0,Model,,char,SRTM (provide specific citation),Mandatory,
-TRUE,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,reference-volume,0,Reference volume,Cerebellum without vermis.,char,,Mandatory,
-TRUE,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,outcome-measure,0,Outcome measure,,dropdown,BPND | K1 | k2 | R1 | Other,Mandatory,
-TRUE,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,weighting,0,Weighting,,dropdown,equal weighting | Other,Mandatory,
-TRUE,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,level-of-analysis,0,Level of analysis,,dropdown,region | voxel | region+voxel,Mandatory,
-TRUE,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,kinetic-modelling-software,0,Kinetic modelling software,,dropdown,PMOD v. 2.9 | Other,Mandatory,
-FALSE,Statistics,Power Analysis,,statistics_power-analysis,alpha-level,0,Alpha level,,slider,0 | 1,Mandatory,
-TRUE,Statistics,Power Analysis,,statistics_power-analysis,power,0,Power,,slider,0 | 100,Mandatory,
-TRUE,Statistics,Power Analysis,,statistics_power-analysis,effect-size,0,Effect Size,0.5,float,,Mandatory,
-TRUE,Statistics,Power Analysis,,statistics_power-analysis,variance-assumption,0,Variance Assumption,0.1,float,,Mandatory,
-TRUE,Statistics,Power Analysis,,statistics_power-analysis,number-of-subjects-needed,0,Number of Subjects Needed,,int,,Mandatory,
-FALSE,Statistics,Multiple Testings,,statistics_multiple-testings,method,0,Method,,dropdown,Familywise Error: Random Field Theory |  Familywise Error: Permutation |  Familywise Error: Monte Carlo |  Familywise Error: Bonferroni | False Discovery Rate: Benjamini & Hochberg | False Discovery Rate: Positive FDR | False Discovery Rate: Local FDR | False Discovery Rate: Cluster-level FDR | None/Uncorrected,Mandatory,
-TRUE,Statistics,Multiple Testings,,statistics_multiple-testings,threshold,0,Threshold,,slider,0 | 1,Mandatory,
-TRUE,Statistics,Multiple Testings,,statistics_multiple-testings,number-of-tests,0,Number of Tests,,int,,Mandatory,
-FALSE,Statistics,Pre-registration,,statistics_pre-registration,link,0,Link,"Fill out protocol on e.g.,www.AsPredicted.org and provide link in the publication. ",char,,Recommended,
+0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
+fomarting,order,,,,Activity,Activity pref label,Item,duplicate,Question,Details or unit or response example,Field Type,Choices,Unit,Data status,Branching Logic (Show field only if...),BIDS_status,BIDS_file,BIDS_key,BIDS_key for unit,,include
+FALSE,1,Data Acquisition,Info,,data-acquisition_info,Info,Modality,0,Modality,,radio, pet | petmr | petct ,,1,1,1,_pet.json,Modality,,,1
+TRUE,1,Data Acquisition,Info,,data-acquisition_info,Info,Manufacturer,0,Scanner manufacturer,Scanner manufacturer,char,,,1,1,1,_pet.json,Manufacturer,,,1
+TRUE,1,Data Acquisition,Info,,data-acquisition_info,Info,ManufacturersModelName,0,PET scanner model name,PET scanner model name,char, Siemens ,,1,1,1,_pet.json,ManufacturersModelName,,,1
+TRUE,1,Data Acquisition,Info,,data-acquisition_info,Info,Anaesthesia,0,"Details of anaesthesia used, if any.","Details of anaesthesia used, if any.",char,,,3,1,1,_pet.json,Anaesthesia,,,1
+TRUE,1,Data Acquisition,Info,,data-acquisition_info,Info,BodyPart,0,Name of the organ / body region scanned.,Name of the organ / body region scanned.,dropdown, brain | neck | torso | cardiac | gut | hip | leg | knee | foot | hand | arm | lung ,,2,1,1,_pet.json,BodyPart,,,1
+TRUE,1,Data Acquisition,Info,,data-acquisition_info,Info,Unit,0,Unit of the image file,Unit of the image file; please see BIDS main spec section 6. SI unit for radioactivity (Becquerel) should be used.,char,,,1,1,1,_pet.json,Unit,,,1
+TRUE,1,Data Acquisition,Info,,data-acquisition_info,Info,experiment-date,0,Experiment date,,date,,YYYY-MM-DD,2,1,0,,,,,1
+TRUE,1,Data Acquisition,Info,,data-acquisition_info,Info,imaging-center-site,0,Imaging center-site,,char,,,1,1,0,,,,,1
+TRUE,1,Data Acquisition,Info,,data-acquisition_info,Info,imaging-department,0,Imaging department,,char,,,1,1,0,,,,,1
+FALSE,2,Radioligand,Radiotracer,,radioligand_radiotracer,Radiotracer,PharmaceuticalDoseRegimen,0,Details of the pharmaceutical dose regimen.,Details of the pharmaceutical dose regimen. Either adequate description or short-code relating to regimen documented elsewhere.,radio," single IV bolus | single oral bolus | 
+ IV infusion 
+",,2,1,1,_pet.json,PharmaceuticalDoseRegimen,,,1
+TRUE,2,Radioligand,Radiotracer,,radioligand_radiotracer,Radiotracer,TracerName,0,Name of the tracer compound used,Name of the tracer compound used,dropdown, CIMBI-36 | raclopride ,,1,1,1,_pet.json,TracerName,,,1
+TRUE,2,Radioligand,Radiotracer,,radioligand_radiotracer,Radiotracer,TracerRadLex,0,ID of the tracer compound from the RadLex Ontology.,ID of the tracer compound from the RadLex Ontology. http://bioportal.bioontology.org/ontologies/RADLEX?p=classes&conceptid=root,char,,,2,1,1,_pet.json,TracerRadLex,,,1
+TRUE,2,Radioligand,Radiotracer,,radioligand_radiotracer,Radiotracer,TracerSNOMED,0,ID of the tracer compound from the SNOMED Ontology,ID of the tracer compound from the SNOMED Ontology (subclass of Radioactive isotope). http://purl.bioontology.org/ontology/SNOMEDCT/89457008,char,,,2,1,1,_pet.json,TracerSNOMED,,,1
+TRUE,2,Radioligand,Radiotracer,,radioligand_radiotracer,Radiotracer,PharmaceuticalName,0,Name of pharmaceutical coadministered with tracer.,Name of pharmaceutical coadministered with tracer.,char,,,3,1,1,_pet.json,PharmaceuticalName,,,1
+TRUE,2,Radioligand,Radiotracer,,radioligand_radiotracer,Radiotracer,TracerRadionuclide,0,Radioisotope labelling tracer.,Radioisotope labelling tracer.,radio,carbon-11 | fluorine-18 | Nitrogen-13 | Oxygen-15,,1,1,1,_pet.json,TracerRadionuclide,,,1
+TRUE,2,Radioligand,Radiotracer,,radioligand_radiotracer,Radiotracer,TracerMolecularWeight,0,Accurate molecular weight of the tracer used.,Accurate molecular weight of the tracer used.,float,,Da | g/mol,2,1,1,_pet.json,TracerMolecularWeight,TracerMolecularWeightUnit,,1
+TRUE,2,Radioligand,Radiotracer,,radioligand_radiotracer,Radiotracer,PharmaceuticalDoseTime,0,"Time of administration of pharmaceutical dose, relative to time zero","Time of administration of pharmaceutical dose, relative to time zero (please see below). For an infusion, this should be a vector with two elements specifying the start and end of the infusion period. For more complex dose regimens, the regimen description should be complete enough to enable unambiguous interpretation of the DoseTime vector. Unit format of the specified pharmaceutical dose time should be seconds..",char,injection time | scan start,hh:mm:ss,2,1,1,_pet.json,PharmaceuticalDoseTime,,,1
+TRUE,2,Radioligand,Radiotracer,,radioligand_radiotracer,Radiotracer,PharmaceuticalDoseAmount,0,Dose amount of pharmaceutical coadministered with tracer.,Dose amount of pharmaceutical coadministered with tracer.,float,, mg | mg/kg | µg | µg/kg,3,1,1,_pet.json,PharmaceuticalDoseAmount,PharmaceuticalDoseUnit,,1
+FALSE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,ModeOfAdministration,0,Mode of administration of the injection.,Mode of administration of the injection.,radio," single IV bolus | single oral bolus | 
+ IV infusion 
+",,1,1,1,_pet.json,ModeOfAdministration,,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,InfusionSpeed,0,Infusion speed,"If given, infusion speed.",float,,ml/s | unitless (Kbol) ,2,1,1,_pet.json,InfusionSpeed,InfusionSpeedUnit,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,InjectedRadioactivity,0,Injected radioactivity,,float,,MBq,1,1,1,_pet.json,InjectedRadioactivity,InjectedRadioactivityUnit,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,InjectedMass,0,Total mass of radiolabeled compound injected into subject.,Total mass of radiolabeled compound injected into subject.,float,,µg | mg | g ,1,1,1,_pet.json,InjectedMass,InjectedMassUnit,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,moles-tracer-injected,0,Moles tracer injected,,float,,moles | micromoles | nanomoles,2,1,0,,,,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,bodyweight,0,Bodyweight,,float,,kg ,2,1,0,,,,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,MolarActivity,0,Molar activity of compound injected.,Molar activity of compound injected.,float,,GBq/µmol ,2,1,1,_pet.json,MolarActivity,MolarActivityUnit,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,MolarActivityMeasTime,0,Time to which molar radioactivity measurement above applies.,Time to which molar radioactivity measurement above applies.,char,injection time | scan start,hh:mm:ss,2,1,1,_pet.json,MolarActivityMeasTime,,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,SpecificRadioactivity,0,Specific radioactivity,,float,,Bq/g | GBq/mg,1,1,1,_pet.json,SpecificRadioactivity,,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,SpecificRadioactivityMeasTime,0,Specific radioactivity measurement time,,char,injection time | scan start,hh:mm:ss,2,1,1,_pet.json,SpecificRadioactivityMeasTime,,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,Purity,0,Purity of the radiolabeled compound.,Purity of the radiolabeled compound.,float,,percent | fraction,2,1,1,_pet.json,Purity,PurityUnit,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,InjectedVolume,0,Injected volume,,float,,ml,2,1,1,_pet.json,InjectedVolume,InjectedVolumeUnit,,1
+TRUE,3,Radioligand,Radiochem,,radioligand_radiochem,Radiochem,formulation,0,Formulation,,char,,,2,1,1,_pet.json,,,,1
+FALSE,4,Radioligand,Time,,radioligand_time,Time,ScanDate,0,Date of scan,,date,,YYYY:MM:DD,2,1,1,_pet.json,ScanDate,,,1
+TRUE,4,Radioligand,Time,,radioligand_time,Time,TimeZero,0,Time zero to which all scan and/or blood measurements have been adjusted to.,Time zero to which all scan and/or blood measurements have been adjusted to. This should be equal to InjectionStart or ScanStart.,time range,,hh:mm:ss,1,1,1,_pet.json,TimeZero,,,1
+TRUE,4,Radioligand,Time,,radioligand_time,Time,ScanStart,0,Time of start of scan wrt TimeZero.,Time of start of scan wrt TimeZero.,time range,,s,1,1,1,_pet.json,ScanStart,,,1
+TRUE,4,Radioligand,Time,,radioligand_time,Time,InjectionStart,0,Time of start of injection wrt TimeZero.,Time of start of injection wrt TimeZero.,time range,,s,1,1,1,_pet.json,InjectionStart,,,1
+TRUE,4,Radioligand,Time,,radioligand_time,Time,InjectionEnd,0,Time of end of injection wrt TimeZero.,Time of end of injection wrt TimeZero.,time range,,s,2,1,1,_pet.json,InjectionEnd,,,1
+TRUE,4,Radioligand,Time,,radioligand_time,Time,FrameTimesStart,0,Start times for all frames relative to TimeZero,Start times for all frames relative to TimeZero,char,,s,1,1,1,_pet.json,FrameTimesStart,,,1
+TRUE,4,Radioligand,Time,,radioligand_time,Time,FrameDuration,0,Time duration of each frame,Time duration of each frame,char,,s,1,1,1,_pet.json,FrameDuration,,,1
+FALSE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,AcquisitionMode,0,Acquisition mode,Type of acquisition of the PET data.,radio,frame mode | list mode ,,1,1,1,_pet.json,AcquisitionMode,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,ImageDecayCorrected,0,Specify whether the image data have been decay-corrected.,Boolean flag specifying whether the image data have been decay-corrected.,boolean,,,1,1,1,_pet.json,ImageDecayCorrected,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,ImageDecayCorrectionTime,0,Point in time from which the decay correction was applied wrt TimeZero,Point in time from which the decay correction was applied wrt TimeZero,float,,,1,ImageDecayCorrected == 1,1,_pet.json,ImageDecayCorrectionTime,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,ReconMethodName,0,Reconstruction method,Reconstruction method or algorithm.,dropdown,3D-OP-OSEM,,1,1,1,_pet.json,ReconMethodName,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,ReconMethodParameterLabels,0,"Names, value, units of reconstruction parameters.","Names, value, units of reconstruction parameters.",dropdown,subsets | iterations,,1,1,1,_pet.json,ReconMethodParameterLabels,ReconMethodParameterValues,ReconMethodParameterUnit,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,ReconFilterType,0,Recon-filter-type,Type of post-recon smoothing.,dropdown,none | gaussian | Shepp | Z filter,,1,1,1,_pet.json,ReconFilterType,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,AttenuationCorrection,0,Attenuation correction,Short description of the attenuation correction method used.,dropdown,Dixon MRAC | CTAC,,1,1,1,_pet.json,AttenuationCorrection,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,ReconFilterSize,0,Postrecon-filter-size,Kernel size of post-recon filter (FWHM).,dropdown,1 x 1 x 1 | 2 x 2 x 2,mm,1,1,1,_pet.json,ReconFilterSize,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,pet-voxel-size,0,PET voxel size,,dropdown,1 x 1 x 1 | 2 x 2 x 2,mm,1,1,0,,,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,matrix-size,0,Matrix Size,,char,256 x 256 x 207,,1,1,0,,,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,frame-sequence,0,Frame-Sequence,,dropdown,6x10 | 3x20 | 6x30 | 5x60 | 5x120 | 8x300 | 3x600 (36 frames),,1,1,0,,,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,ScaleFactor,,Scale factor for each frame,Scale factor for each frame,array,,,2,1,1,_pet.json,ScaleFactor,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,ScatterFraction,,Scatter fraction for each frame,Scatter fraction for each frame,array,,,2,1,1,_pet.json,ScatterFraction,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,DecayCorrectionFactor,,Decay correction factor for each frame,Decay correction factor for each frame,array,,,2,1,1,_pet.json,DecayCorrectionFactor,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,PromptRate,,Prompt rate for each frame,Prompt rate for each frame,array,,,2,1,1,_pet.json,PromptRate,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,RandomRate,,Random rate for each frame,Random rate for each frame,array,,,2,1,1,_pet.json,RandomRate,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,SinglesRate,,Singles rate for each frame,Singles rate for each frame,array,,,2,1,1,_pet.json,SinglesRate,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,data:-labels,0,Data: labels,,dropdown,sampleStartTime | sampleDuration | activity | activitySD,,1,1,0,,,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,AttenuationCorrectionMethodReference,,Reference paper for the attenuation correction method used.,Reference paper for the attenuation correction method used.,char,,,2,1,1,_pet.json,AttenuationCorrectionMethodReference,,,1
+FALSE,6,Radioligand,Continuous blood,,radioligand_continuous-blood,Continuous blood,ContinuousBloodAvail,0,Boolean that specifies if continuous blood measurements are available.,Boolean that specifies if continuous blood measurements are available.,boolean,,,1,1,1,_pet.json,ContinuousBloodAvail,,,1
+TRUE,6,Radioligand,Continuous blood,,radioligand_continuous-blood,Continuous blood,ContinuousBloodWithdrawalRate,0,The rate at which the blood was withdrawn from the subject.,The rate at which the blood was withdrawn from the subject.,float,ml/s,,2,ContinuousBloodAvail == 1,1,_pet.json,ContinuousBloodWithdrawalRate,,,1
+TRUE,6,Radioligand,Continuous blood,,radioligand_continuous-blood,Continuous blood,ContinuousBloodTubingType,0,"Description of the type of tubing used, ideally including the material and (internal) diameter.","Description of the type of tubing used, ideally including the material and (internal) diameter.",char,,,2,ContinuousBloodAvail == 1,1,_pet.json,ContinuousBloodTubingType,,,1
+TRUE,6,Radioligand,Continuous blood,,radioligand_continuous-blood,Continuous blood,ContinuousBloodTubingLength,0,"The length of the blood tubing, from the subject to the detector.","The length of the blood tubing, from the subject to the detector.",float,cm,,2,ContinuousBloodAvail == 1,1,_pet.json,ContinuousBloodTubingLength,,,1
+TRUE,6,Radioligand,Continuous blood,,radioligand_continuous-blood,Continuous blood,ContinuousBloodDispersionConstant,0,External dispersion time constant resulting from tubing.,External dispersion time constant resulting from tubing.,float,s,,2,ContinuousBloodAvail == 1,1,_pet.json,ContinuousBloodDispersionConstant,,,1
+TRUE,6,Radioligand,Continuous blood,,radioligand_continuous-blood,Continuous blood,ContinuousBloodDispersionCorrected,0,Dispersion correction,Boolean flag specifying whether the continuous blood,boolean,,,1,ContinuousBloodAvail == 1,1,_pet.json,ContinuousBloodDispersionCorrected,,,1
+FALSE,6,Radioligand,Discrete blood,,radioligand_discrete-blood,Discrete blood,DiscreteBloodAvail,0,Boolean that specifies if discrete blood measurements are available.,Boolean that specifies if discrete blood measurements are available.,boolean,,,1,1,1,_pet.json,DiscreteBloodAvail,,,1
+TRUE,6,Radioligand,Discrete blood,,radioligand_discrete-blood,Discrete blood,DiscreteBloodHaematocrit,0,"Measured haematocrit, i.e. the volume of erythrocytes divided by the volume of whole blood.","Measured haematocrit, i.e. the volume of erythrocytes divided by the volume of whole blood.",slider,0 | 1,,2,DiscreteBloodAvail == 1,1,_pet.json,DiscreteBloodHaematocrit,,,1
+TRUE,6,Radioligand,Discrete blood,,radioligand_discrete-blood,Discrete blood,DiscreteBloodDensity,0,Measured blood density.,Measured blood density.,float,g/ml,,2,DiscreteBloodAvail == 1,1,_pet.json,DiscreteBloodDensity,,,1
+FALSE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,MetaboliteAvail,0,Boolean that specifies if metabolite measurements are available.,Boolean that specifies if metabolite measurements are available.,boolean,,,1,1,1,_pet.json,MetaboliteAvail,,,1
+TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,MetaboliteMethod,0,Method used to measure metabolites,Method used to measure metabolites,radio,HPLC | Fraction Collector | SPE,,1,MetaboliteAvail == 1,1,_pet.json,MetaboliteMethod,,,1
+TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,radiolabeled-parent-compound-fraction,0,Radiolabeled Parent compound fraction,,slider,0 | 1,,1,1,0,,,,,1
+TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,data:labels,0,Data:labels,,dropdown,sampleStartTime | sampleDuration | parentFraction | parentFraction SD,,1,1,0,,,,,1
+TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,parent-fraction-units,0,Parent fraction units,,radio,s | fraction | fraction,,1,1,0,,,,,1
+TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,parent-fraction-measurement-error,0,Parent fraction measurement error,,float,,,2,1,0,,,,,1
+TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,metabolite-analysis-timepoints,0,Metabolite analysis timepoints,seconds or minutes after scan start,char,,,1,1,0,,,,,1
+TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,fraction-of-radiometabolite-needing-quantitation,0,Fraction of radiometabolite needing quantitation,,dropdown,fraction | percentage,,1,1,0,,,,,1
+TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,error-on-above-measurement,0,Error on above measurement,,char,,,2,1,0,,,,,1
+TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,radiolabeled-metabolite-fractions,0,Radiolabeled metabolite fractions,(M1 | M2 | M3…),slider,0 | 1,,2,1,0,,,,,1
+TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,MetaboliteRecoveryCorrectionApplied,0,Metabolite correction,"Metabolite recovery correction from the HPLC, for tracers where it changes with time postinjection. If “true” please include recovery fractions from the HPLC as a column in the table with blood data (section 2.2)",boolean,,,1,MetaboliteAvail == 1,0,,MetaboliteRecoveryCorrectionApplied,,,1
+FALSE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,PlasmaAvail,0,Boolean that specifies if plasma measurements are available.,"Boolean that specifies if plasma measurements are available. If this is false, all of the plasma fields should be excluded",boolean,,,,1,1,_pet.json,PlasmaAvail,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,PlasmaFreeFraction,0,"Measured free fraction in plasma, i.e. concentration of free compound in plasma divided by total concentration of compound in plasma.","Measured free fraction in plasma, i.e. concentration of free compound in plasma divided by total concentration of compound in plasma.",slider,0 | 1,,2,PlasmaAvail == 1,1,_pet.json,PlasmaFreeFraction,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,error-of-free-fraction-measurement,0,Error of free fraction measurement,,float,,,2,,0,,,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,PlasmaFreeFractionMethod,0,Method used to estimate free fraction.,Method used to estimate free fraction.,char,,,2,PlasmaAvail == 1,1,_pet.json,PlasmaFreeFractionMethod,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data:-decay-corrected,0,Data: decay-corrected,,boolean,,,1,1,0,,,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data:-decay-correction-time,0,Data: decay correction time,,dropdown,scan start ,,1,1,0,,,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data:-type,0,Data: type,,dropdown,radioactivity ,,1,1,0,,,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data:-units,0,Data: units,,dropdown,,s | kBq/mL,1,1,0,,,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data:-hematocrit-value,0,Data: hematocrit value,,float,,,2,1,0,,,,,1
+FALSE,6,Radioligand,Whole blood,,radioligand_whole-blood,Whole blood,whole-blood-radioactivity,0,Whole blood radioactivity,,char,,MBq ,2,MetaboliteAvail == 1,0,,,,,1
+TRUE,6,Radioligand,Whole blood,,radioligand_whole-blood,Whole blood,plasma-to-whole-blood-ratio,0,Plasma to whole blood ratio,,slider,0 | 1,,2,1,0,,,,,1
+FALSE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,blood-sampling-device-read,0,Blood sampling device read,,radio,count per second | counts per minute,,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,blood-sampling-device-measurement-time,0,Blood sampling device measurement time,,time range,,hh:mm:ss,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,phantom-type,0,Phantom type,,dropdown,Uniform cylinder | ACR | EARL ,,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,phantom-volume,0,Phantom volume,,float,,ml,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,radiotracer-isotope,0,Radiotracer-isotope,,radio,carbon-11 | fluorine-18 | Nitrogen-13 | Oxygen-15,,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,phantom-activity,0,Phantom activity,,float,,MBq,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,activity-time,0,Activity time,,time range,,hh:mm:ss,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,residual-activity,0,Residual activity,,float,,MBq,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,residual-activity-time,0,Residual activity time,,time range,,hh:mm:ss,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,phantom-acquisition-time,0,Phantom acquisition time,,time range,,hh:mm:ss,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,well-counter-sample-volumes,0,Well counter sample volumes,,float,,ml | µl,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,well-counter-measurement-time,0,Well counter measurement time,,time range,,hh:mm:ss,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,well-counter-read,0,Well counter read,,radio,count per second | counts per minute,,2,1,0,,,,,1
+TRUE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,phantom-data,0,Phantom data,,char,,,2,1,0,,,,,1
+FALSE,8,Data Acquisition,External Motion Correction,,data-acquisition_external-motion-correction,External Motion Correction,hardware,0,Hardware,,char,,,1,1,0,,,,,1
+TRUE,8,Data Acquisition,External Motion Correction,,data-acquisition_external-motion-correction,External Motion Correction,external-moco-software,0,External MoCo software,,char,,,1,1,0,,,,,1
+TRUE,8,Data Acquisition,External Motion Correction,,data-acquisition_external-motion-correction,External Motion Correction,external-moco-software-version,0,External MoCo software version,,char,,,1,1,0,,,,,1
+FALSE,80,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,Blood Data Processing,sampling-method,0,Sampling Method,,radio,online system | manual | venous | arterial | image derived,,1,1,,,,,,1
+TRUE,80,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,Blood Data Processing,delay-time-correction,0,Delay time correction,,boolean,,,2,1,,,,,,1
+TRUE,80,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,Blood Data Processing,fitting,0,Fitting,,boolean,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,Blood Data Processing,fitting-description,0,Fitting description,,char,,,1,fitting-description == 1,,,,,,1
+TRUE,80,Data Analysis,Blood Data Processing,,data-analysis_blood-data-processing,Blood Data Processing,blood-data-processing-interpolation,0,Blood data processing interpolation,,char,,,1,1,,,,,,1
+FALSE,80,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,Kinetic Modeling,model,0,Model,,char,SRTM (provide specific citation),,1,1,,,,,,1
+TRUE,80,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,Kinetic Modeling,reference-volume,0,Reference volume,Cerebellum without vermis.,char,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,Kinetic Modeling,outcome-measure,0,Outcome measure,,dropdown,BPND | K1 | k2 | R1,,1,1,,,,,,1
+TRUE,80,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,Kinetic Modeling,weighting,0,Weighting,,dropdown,equal weighting,,1,1,,,,,,1
+TRUE,80,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,Kinetic Modeling,level-of-analysis,0,Level of analysis,,dropdown,region | voxel | region+voxel,,1,1,,,,,,1
+TRUE,80,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,Kinetic Modeling,kinetic-modelling-software,0,Kinetic modelling software,,dropdown,PMOD v. 2.9,,1,1,,,,,,1
+TRUE,80,Data Analysis,Kinetic Modeling,,data-analysis_kinetic-modeling,Kinetic Modeling,kinetic-modelling-software-version,0,Kinetic modelling software version,,char,,,1,1,,,,,,1
+FALSE,80,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,Motion Correction,moco-reference-image,0,MoCo reference image,,dropdown,Summed PET image,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,Motion Correction,moco-cost-function,0,MoCo cost function,,dropdown,Mutual information | Normalised mutual information | Entropy correlation coefficient | Normalised cross-correlation,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,Motion Correction,moco-interpolation,0,MoCo interpolation,,float,Nearest neighbour | trilinear | 2nd degree spline | 2nd degree spline | 3rd degree spline | 4th degree spline | Fourrier interpolation,,2,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,Motion Correction,moco-smoothing,0,MoCo smoothing,10 mm FWHM,char,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,Motion Correction,moco-quality-control,0,MoCo quality control,Less than 3mm movement.,char,,,2,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,Motion Correction,moco-software,0,MoCo software,IR (provide specific citation),char,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Motion Correction,data-analysis_preprocessing_motion-correction,Motion Correction,moco-software-version,0,MoCo software version,,char,,,1,1,,,,,,1
+FALSE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,registration-reference-image,0,Registration reference image,,dropdown,MP-RAGE T1,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,registration-target-image,0,Registration target image,,dropdown,Summed PET Image,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,registration-cost-function,0,Registration cost function,,float,Mutual information | Normalised mutual information | Entropy correlation coefficient | Normalised cross-correlation,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,registration-interpolation,0,Registration interpolation,,float,Nearest neighbour | trilinear | 2nd degree spline | 2nd degree spline | 3rd degree spline | 4th degree spline | Fourrier interpolation,,2,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,registration-smoothing,0,Registration smoothing,FWHM,float,,mm,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,resolution-of-reference-target,0,Resolution of reference-target,,dropdown, 1 x 1 x 1 | 2 x 2 x 2,mm,2,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,registration-quality-control,0,Registration quality control,Visual Assessment,char,,,2,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,registration-software,0,Registration software,FreeSurfer (function: mri_vol2vol),dropdown,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,registration-software-version,0,Registration software version,,dropdown,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,smoothing-target-image,0,Smoothing target image,,dropdown,4D PET Image,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,shape-of-smoothing-filter,0,Shape of smoothing filter,,dropdown,3D Gaussian,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,size-of-smoothing-filter,0,Size of smoothing filter,FWHM,float,,mm,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,justification-for-smoothing-size,0,Justification for smoothing size,Chosen to reflect the size of the amygdala.,char,,,2,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Registration,data-analysis_preprocessing_registration,Registration,space-of-smoothing,0,Space of smoothing,,dropdown,MP-RAGE T1,,1,1,,,,,,1
+FALSE,80,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,Volumes of interest delineation,volumes-of-interest-obtained-from,0,Volumes of interest obtained from,,dropdown,MP-RAGE T1,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,Volumes of interest delineation,volumes-of-interest-operational-criteria,0,Volumes of interest operational criteria,The amygdala was defined as the region bounded dorsally.,char,,,2,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,Volumes of interest delineation,volumes-of-interest-mask,0,Volumes of interest mask,gray matter mask | Other,char,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,Volumes of interest delineation,volumes-of-interest-procedure,0,Volumes of interest procedure,,radio,automatic | manual | semi-automatic,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,Volumes of interest delineation,volumes-of-interest,0,Volumes of interest,Amygdala | Thalamus | Putamen | Other,char,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,Volumes of interest delineation,volumes-of-interest-software,0,Volumes of interest software,PVELab (Svarer et al. 2005) | Other,char,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,Volumes of interest delineation,partial-volume-correction-technique,0,Partial volume correction technique,Muller-Gartner | Other,char,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,Volumes of interest delineation,partial-volume-correction-assumptions,0,Partial volume correction assumptions,80% gray matter threshold | PSF of 4 mm,char,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,Volumes of interest delineation,partial-volume-correction-software,0,Partial volume correction software,FreeSurfer (function: mri_gtmpvc) | Other,char,,,1,1,,,,,,1
+TRUE,80,Data Analysis,Preprocessing,Volumes of interest delineation,data-analysis_preprocessing_volumes-of-interest-delineation,Volumes of interest delineation,partial-volume-correction-software-version,0,Partial volume correction software version,,char,,,1,1,,,,,,1
+FALSE,90,Statistics,Multiple Testings,,statistics_multiple-testings,Multiple Testings,method,0,Method,,dropdown,Familywise Error: Random Field Theory | Familywise Error: Permutation | Familywise Error: Monte Carlo | Familywise Error: Bonferroni | False Discovery Rate: Benjamini & Hochberg | False Discovery Rate: Positive FDR | False Discovery Rate: Local FDR | False Discovery Rate: Cluster-level FDR | None/Uncorrected,,1,1,,,,,,1
+TRUE,90,Statistics,Multiple Testings,,statistics_multiple-testings,Multiple Testings,threshold,0,Threshold,,slider,0 | 1,,1,1,,,,,,1
+TRUE,90,Statistics,Multiple Testings,,statistics_multiple-testings,Multiple Testings,number-of-tests,0,Number of Tests,,int,,,1,1,,,,,,1
+FALSE,90,Statistics,Power Analysis,,statistics_power-analysis,Power Analysis,alpha-level,0,Alpha level,,slider,0 | 1,,1,1,,,,,,1
+TRUE,90,Statistics,Power Analysis,,statistics_power-analysis,Power Analysis,power,0,Power,,slider,0 | 100,,1,1,,,,,,1
+TRUE,90,Statistics,Power Analysis,,statistics_power-analysis,Power Analysis,effect-size,0,Effect Size,,float,,,1,1,,,,,,1
+TRUE,90,Statistics,Power Analysis,,statistics_power-analysis,Power Analysis,variance-assumption,0,Variance Assumption,,float,,,1,1,,,,,,1
+TRUE,90,Statistics,Power Analysis,,statistics_power-analysis,Power Analysis,number-of-subjects-needed,0,Number of Subjects Needed,,int,,,1,1,,,,,,1
+FALSE,90,Statistics,Pre-registration,,statistics_pre-registration,Pre-registration,link,0,Link,"Fill out protocol on e.g.,www.AsPredicted.org and provide link in the publication. ",char,,,2,1,,,,,,1
