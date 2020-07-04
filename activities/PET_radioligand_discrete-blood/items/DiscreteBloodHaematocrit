@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "DiscreteBloodHaematocrit",
+    "prefLabel": "DiscreteBloodHaematocrit",
+    "schema:description": "DiscreteBloodHaematocrit",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "slider"
+    },
+    "question": {
+        "en": "Measured haematocrit, i.e. the volume of erythrocytes divided by the volume of whole blood."
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "schema:minValue": 0,
+        "schema:maxValue": 6,
+        "choices": [
+            {
+                "schema:name": "Not at all",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:value": 5,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Completely",
+                "schema:value": 6,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

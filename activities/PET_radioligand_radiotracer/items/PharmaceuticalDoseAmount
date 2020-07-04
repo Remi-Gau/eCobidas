@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "PharmaceuticalDoseAmount",
+    "prefLabel": "PharmaceuticalDoseAmount",
+    "schema:description": "PharmaceuticalDoseAmount",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Dose amount of pharmaceutical coadministered with tracer."
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

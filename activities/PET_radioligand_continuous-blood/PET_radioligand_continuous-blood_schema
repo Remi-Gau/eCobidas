@@ -1,0 +1,56 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "PET_radioligand_continuous-blood_schema",
+    "skos:prefLabel": "PET_radioligand_continuous-blood",
+    "schema:description": "PET_radioligand_continuous-blood",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "ContinuousBloodAvail",
+            "ContinuousBloodWithdrawalRate",
+            "ContinuousBloodTubingType",
+            "ContinuousBloodTubingLength",
+            "ContinuousBloodDispersionConstant",
+            "ContinuousBloodDispersionCorrected"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "ContinuousBloodAvail",
+                "isAbout": "ContinuousBloodAvail",
+                "isVis": ""
+            },
+            {
+                "variableName": "ContinuousBloodWithdrawalRate",
+                "isAbout": "ContinuousBloodWithdrawalRate",
+                "isVis": "ContinuousBloodAvail == 1"
+            },
+            {
+                "variableName": "ContinuousBloodTubingType",
+                "isAbout": "ContinuousBloodTubingType",
+                "isVis": "ContinuousBloodAvail == 1"
+            },
+            {
+                "variableName": "ContinuousBloodTubingLength",
+                "isAbout": "ContinuousBloodTubingLength",
+                "isVis": "ContinuousBloodAvail == 1"
+            },
+            {
+                "variableName": "ContinuousBloodDispersionConstant",
+                "isAbout": "ContinuousBloodDispersionConstant",
+                "isVis": "ContinuousBloodAvail == 1"
+            },
+            {
+                "variableName": "ContinuousBloodDispersionCorrected",
+                "isAbout": "ContinuousBloodDispersionCorrected",
+                "isVis": "ContinuousBloodAvail == 1"
+            }
+        ]
+    }
+}

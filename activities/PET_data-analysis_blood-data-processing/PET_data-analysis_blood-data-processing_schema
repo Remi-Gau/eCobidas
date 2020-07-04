@@ -11,8 +11,6 @@
         "order": [
             "sampling-method",
             "delay-time-correction",
-            "dispersion-correction",
-            "metabolite-correction",
             "fitting",
             "fitting-description",
             "blood-data-processing-interpolation"
@@ -30,16 +28,6 @@
             {
                 "variableName": "delay-time-correction",
                 "isAbout": "delay-time-correction",
-                "isVis": ""
-            },
-            {
-                "variableName": "dispersion-correction",
-                "isAbout": "dispersion-correction",
-                "isVis": ""
-            },
-            {
-                "variableName": "metabolite-correction",
-                "isAbout": "metabolite-correction",
                 "isVis": ""
             },
             {

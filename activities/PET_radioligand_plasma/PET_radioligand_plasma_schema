@@ -9,12 +9,13 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "plasma-free-fraction",
+            "PlasmaAvail",
+            "PlasmaFreeFraction",
             "error-of-free-fraction-measurement",
+            "PlasmaFreeFractionMethod",
             "data:-decay-corrected",
             "data:-decay-correction-time",
             "data:-type",
-            "data:-labels",
             "data:-units",
             "data:-hematocrit-value"
         ],
@@ -24,14 +25,24 @@
         ],
         "addProperties": [
             {
-                "variableName": "plasma-free-fraction",
-                "isAbout": "plasma-free-fraction",
+                "variableName": "PlasmaAvail",
+                "isAbout": "PlasmaAvail",
                 "isVis": ""
+            },
+            {
+                "variableName": "PlasmaFreeFraction",
+                "isAbout": "PlasmaFreeFraction",
+                "isVis": "PlasmaAvail == 1"
             },
             {
                 "variableName": "error-of-free-fraction-measurement",
                 "isAbout": "error-of-free-fraction-measurement",
                 "isVis": ""
+            },
+            {
+                "variableName": "PlasmaFreeFractionMethod",
+                "isAbout": "PlasmaFreeFractionMethod",
+                "isVis": "PlasmaAvail == 1"
             },
             {
                 "variableName": "data:-decay-corrected",
@@ -46,11 +57,6 @@
             {
                 "variableName": "data:-type",
                 "isAbout": "data:-type",
-                "isVis": ""
-            },
-            {
-                "variableName": "data:-labels",
-                "isAbout": "data:-labels",
                 "isVis": ""
             },
             {

@@ -9,6 +9,8 @@
     "preamble": " ",
     "ui": {
         "order": [
+            "MetaboliteAvail",
+            "MetaboliteMethod",
             "radiolabeled-parent-compound-fraction",
             "data:labels",
             "parent-fraction-units",
@@ -16,13 +18,24 @@
             "metabolite-analysis-timepoints",
             "fraction-of-radiometabolite-needing-quantitation",
             "error-on-above-measurement",
-            "radiolabeled-metabolite-fractions"
+            "radiolabeled-metabolite-fractions",
+            "MetaboliteRecoveryCorrectionApplied"
         ],
         "shuffle": false,
         "allow": [
             "skipped"
         ],
         "addProperties": [
+            {
+                "variableName": "MetaboliteAvail",
+                "isAbout": "MetaboliteAvail",
+                "isVis": ""
+            },
+            {
+                "variableName": "MetaboliteMethod",
+                "isAbout": "MetaboliteMethod",
+                "isVis": "MetaboliteAvail == 1"
+            },
             {
                 "variableName": "radiolabeled-parent-compound-fraction",
                 "isAbout": "radiolabeled-parent-compound-fraction",
@@ -62,6 +75,11 @@
                 "variableName": "radiolabeled-metabolite-fractions",
                 "isAbout": "radiolabeled-metabolite-fractions",
                 "isVis": ""
+            },
+            {
+                "variableName": "MetaboliteRecoveryCorrectionApplied",
+                "isAbout": "MetaboliteRecoveryCorrectionApplied",
+                "isVis": "MetaboliteAvail == 1"
             }
         ]
     }

@@ -10,33 +10,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "select"
+        "inputType": "float"
     },
     "question": {
         "en": "Well counter sample volumes"
     },
     "responseOptions": {
-        "choices": [
-            {
-                "schema:name": "mL",
-                "schema:value": 0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "\u00b5L",
-                "schema:value": 1,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 2,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 4,
-                "@type": "schema:option"
-            }
-        ]
+        "valueType": "xsd:float"
     }
 }

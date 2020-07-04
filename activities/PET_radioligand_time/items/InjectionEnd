@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "InjectionEnd",
+    "prefLabel": "InjectionEnd",
+    "schema:description": "InjectionEnd",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "timeRange"
+    },
+    "question": {
+        "en": "Time of end of injection wrt TimeZero."
+    },
+    "responseOptions": {
+        "valueType": "datetime"
+    }
+}

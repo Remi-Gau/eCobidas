@@ -14,7 +14,8 @@
             "moco-interpolation",
             "moco-smoothing",
             "moco-quality-control",
-            "moco-software"
+            "moco-software",
+            "moco-software-version"
         ],
         "shuffle": false,
         "allow": [
@@ -49,6 +50,11 @@
             {
                 "variableName": "moco-software",
                 "isAbout": "moco-software",
+                "isVis": ""
+            },
+            {
+                "variableName": "moco-software-version",
+                "isAbout": "moco-software-version",
                 "isVis": ""
             }
         ]

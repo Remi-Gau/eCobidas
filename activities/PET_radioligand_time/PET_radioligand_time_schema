@@ -9,16 +9,13 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "date-of-scan",
-            "scan-start",
-            "scan-start-units",
-            "injection-start",
-            "injection-start-units",
-            "injection-end",
-            "injection-end-units",
-            "frame-times:-labels",
-            "frame-times:-units",
-            "frame-times:-values"
+            "ScanDate",
+            "TimeZero",
+            "ScanStart",
+            "InjectionStart",
+            "InjectionEnd",
+            "FrameTimesStart",
+            "FrameDuration"
         ],
         "shuffle": false,
         "allow": [
@@ -26,53 +23,38 @@
         ],
         "addProperties": [
             {
-                "variableName": "date-of-scan",
-                "isAbout": "date-of-scan",
+                "variableName": "ScanDate",
+                "isAbout": "ScanDate",
                 "isVis": ""
             },
             {
-                "variableName": "scan-start",
-                "isAbout": "scan-start",
+                "variableName": "TimeZero",
+                "isAbout": "TimeZero",
                 "isVis": ""
             },
             {
-                "variableName": "scan-start-units",
-                "isAbout": "scan-start-units",
+                "variableName": "ScanStart",
+                "isAbout": "ScanStart",
                 "isVis": ""
             },
             {
-                "variableName": "injection-start",
-                "isAbout": "injection-start",
+                "variableName": "InjectionStart",
+                "isAbout": "InjectionStart",
                 "isVis": ""
             },
             {
-                "variableName": "injection-start-units",
-                "isAbout": "injection-start-units",
+                "variableName": "InjectionEnd",
+                "isAbout": "InjectionEnd",
                 "isVis": ""
             },
             {
-                "variableName": "injection-end",
-                "isAbout": "injection-end",
+                "variableName": "FrameTimesStart",
+                "isAbout": "FrameTimesStart",
                 "isVis": ""
             },
             {
-                "variableName": "injection-end-units",
-                "isAbout": "injection-end-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "frame-times:-labels",
-                "isAbout": "frame-times:-labels",
-                "isVis": ""
-            },
-            {
-                "variableName": "frame-times:-units",
-                "isAbout": "frame-times:-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "frame-times:-values",
-                "isAbout": "frame-times:-values",
+                "variableName": "FrameDuration",
+                "isAbout": "FrameDuration",
                 "isVis": ""
             }
         ]

@@ -10,7 +10,7 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Parent fraction units"
@@ -34,12 +34,7 @@
             },
             {
                 "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 5,
+                "schema:value": 4,
                 "@type": "schema:option"
             }
         ]

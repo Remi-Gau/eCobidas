@@ -1,0 +1,74 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "PET_data-acquisition_info_schema",
+    "skos:prefLabel": "PET_data-acquisition_info",
+    "schema:description": "PET_data-acquisition_info",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "Modality",
+            "Manufacturer",
+            "ManufacturersModelName",
+            "Anaesthesia",
+            "BodyPart",
+            "Unit",
+            "experiment-date",
+            "imaging-center-site",
+            "imaging-department"
+        ],
+        "shuffle": false,
+        "allow": [
+            "skipped"
+        ],
+        "addProperties": [
+            {
+                "variableName": "Modality",
+                "isAbout": "Modality",
+                "isVis": ""
+            },
+            {
+                "variableName": "Manufacturer",
+                "isAbout": "Manufacturer",
+                "isVis": ""
+            },
+            {
+                "variableName": "ManufacturersModelName",
+                "isAbout": "ManufacturersModelName",
+                "isVis": ""
+            },
+            {
+                "variableName": "Anaesthesia",
+                "isAbout": "Anaesthesia",
+                "isVis": ""
+            },
+            {
+                "variableName": "BodyPart",
+                "isAbout": "BodyPart",
+                "isVis": ""
+            },
+            {
+                "variableName": "Unit",
+                "isAbout": "Unit",
+                "isVis": ""
+            },
+            {
+                "variableName": "experiment-date",
+                "isAbout": "experiment-date",
+                "isVis": ""
+            },
+            {
+                "variableName": "imaging-center-site",
+                "isAbout": "imaging-center-site",
+                "isVis": ""
+            },
+            {
+                "variableName": "imaging-department",
+                "isAbout": "imaging-department",
+                "isVis": ""
+            }
+        ]
+    }
+}

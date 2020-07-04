@@ -10,7 +10,6 @@
     "ui": {
         "order": [
             "whole-blood-radioactivity",
-            "whole-blood-radioactivity-units",
             "plasma-to-whole-blood-ratio"
         ],
         "shuffle": false,
@@ -21,12 +20,7 @@
             {
                 "variableName": "whole-blood-radioactivity",
                 "isAbout": "whole-blood-radioactivity",
-                "isVis": ""
-            },
-            {
-                "variableName": "whole-blood-radioactivity-units",
-                "isAbout": "whole-blood-radioactivity-units",
-                "isVis": ""
+                "isVis": "MetaboliteAvail == 1"
             },
             {
                 "variableName": "plasma-to-whole-blood-ratio",

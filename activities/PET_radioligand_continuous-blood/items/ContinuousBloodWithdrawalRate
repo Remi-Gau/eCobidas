@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "ContinuousBloodWithdrawalRate",
+    "prefLabel": "ContinuousBloodWithdrawalRate",
+    "schema:description": "ContinuousBloodWithdrawalRate",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "float"
+    },
+    "question": {
+        "en": "The rate at which the blood was withdrawn from the subject."
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

@@ -1,13 +1,37 @@
 {
     "@context": {
         "@version": 1.1,
-        "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/activities/",
+        "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/",
+        "PET_data-acquisition_info": {
+            "@id": "activity_path:PET_data-acquisition_info/PET_data-acquisition_info_schema",
+            "@type": "@id"
+        },
         "PET_radioligand_radiotracer": {
             "@id": "activity_path:PET_radioligand_radiotracer/PET_radioligand_radiotracer_schema",
             "@type": "@id"
         },
+        "PET_radioligand_radiochem": {
+            "@id": "activity_path:PET_radioligand_radiochem/PET_radioligand_radiochem_schema",
+            "@type": "@id"
+        },
         "PET_radioligand_time": {
             "@id": "activity_path:PET_radioligand_time/PET_radioligand_time_schema",
+            "@type": "@id"
+        },
+        "PET_data-acquisition_reconstruction": {
+            "@id": "activity_path:PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_schema",
+            "@type": "@id"
+        },
+        "PET_radioligand_continuous-blood": {
+            "@id": "activity_path:PET_radioligand_continuous-blood/PET_radioligand_continuous-blood_schema",
+            "@type": "@id"
+        },
+        "PET_radioligand_discrete-blood": {
+            "@id": "activity_path:PET_radioligand_discrete-blood/PET_radioligand_discrete-blood_schema",
+            "@type": "@id"
+        },
+        "PET_radioligand_metabolite": {
+            "@id": "activity_path:PET_radioligand_metabolite/PET_radioligand_metabolite_schema",
             "@type": "@id"
         },
         "PET_radioligand_plasma": {
@@ -18,10 +42,6 @@
             "@id": "activity_path:PET_radioligand_whole-blood/PET_radioligand_whole-blood_schema",
             "@type": "@id"
         },
-        "PET_radioligand_metabolite": {
-            "@id": "activity_path:PET_radioligand_metabolite/PET_radioligand_metabolite_schema",
-            "@type": "@id"
-        },
         "PET_data-acquisition_cross-calibration": {
             "@id": "activity_path:PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_schema",
             "@type": "@id"
@@ -30,8 +50,12 @@
             "@id": "activity_path:PET_data-acquisition_external-motion-correction/PET_data-acquisition_external-motion-correction_schema",
             "@type": "@id"
         },
-        "PET_data-acquisition_reconstruction": {
-            "@id": "activity_path:PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_schema",
+        "PET_data-analysis_blood-data-processing": {
+            "@id": "activity_path:PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_schema",
+            "@type": "@id"
+        },
+        "PET_data-analysis_kinetic-modeling": {
+            "@id": "activity_path:PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_schema",
             "@type": "@id"
         },
         "PET_data-analysis_preprocessing_motion-correction": {
@@ -46,20 +70,12 @@
             "@id": "activity_path:PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
             "@type": "@id"
         },
-        "PET_data-analysis_blood-data-processing": {
-            "@id": "activity_path:PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_schema",
-            "@type": "@id"
-        },
-        "PET_data-analysis_kinetic-modeling": {
-            "@id": "activity_path:PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_schema",
+        "PET_statistics_multiple-testings": {
+            "@id": "activity_path:PET_statistics_multiple-testings/PET_statistics_multiple-testings_schema",
             "@type": "@id"
         },
         "PET_statistics_power-analysis": {
             "@id": "activity_path:PET_statistics_power-analysis/PET_statistics_power-analysis_schema",
-            "@type": "@id"
-        },
-        "PET_statistics_multiple-testings": {
-            "@id": "activity_path:PET_statistics_multiple-testings/PET_statistics_multiple-testings_schema",
             "@type": "@id"
         },
         "PET_statistics_pre-registration": {

@@ -10,28 +10,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "select"
+        "inputType": "text"
     },
     "question": {
         "en": "Registration quality control"
     },
     "responseOptions": {
-        "choices": [
-            {
-                "schema:name": "Visual Assessment",
-                "schema:value": 0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 1,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
-            }
-        ]
+        "type": "xsd:string"
     }
 }

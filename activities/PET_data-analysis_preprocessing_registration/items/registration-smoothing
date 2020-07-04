@@ -10,28 +10,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "select"
+        "inputType": "float"
     },
     "question": {
         "en": "Registration smoothing"
     },
     "responseOptions": {
-        "choices": [
-            {
-                "schema:name": "5mm FWHM",
-                "schema:value": 0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 1,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
-            }
-        ]
+        "valueType": "xsd:float"
     }
 }

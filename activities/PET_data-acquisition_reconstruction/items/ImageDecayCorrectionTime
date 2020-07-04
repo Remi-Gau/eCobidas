@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "ImageDecayCorrectionTime",
+    "prefLabel": "ImageDecayCorrectionTime",
+    "schema:description": "ImageDecayCorrectionTime",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Point in time from which the decay correction was applied wrt TimeZero"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

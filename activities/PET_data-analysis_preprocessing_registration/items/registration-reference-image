@@ -24,12 +24,7 @@
             },
             {
                 "schema:name": "Other",
-                "schema:value": 1,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 3,
+                "schema:value": 2,
                 "@type": "schema:option"
             }
         ]

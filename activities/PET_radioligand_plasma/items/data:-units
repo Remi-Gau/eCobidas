@@ -18,28 +18,13 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "s",
+                "schema:name": "",
                 "schema:value": 0,
                 "@type": "schema:option"
             },
             {
-                "schema:name": "kBq/mL",
-                "schema:value": 1,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "kBq/mL",
+                "schema:name": "Other",
                 "schema:value": 2,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 5,
                 "@type": "schema:option"
             }
         ]

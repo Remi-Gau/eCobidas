@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "PharmaceuticalName",
+    "prefLabel": "PharmaceuticalName",
+    "schema:description": "PharmaceuticalName",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Name of pharmaceutical coadministered with tracer."
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

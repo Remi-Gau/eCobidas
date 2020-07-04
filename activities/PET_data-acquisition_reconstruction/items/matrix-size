@@ -10,28 +10,12 @@
         "allow": [
             "skipped"
         ],
-        "inputType": "select"
+        "inputType": "text"
     },
     "question": {
         "en": "Matrix Size"
     },
     "responseOptions": {
-        "choices": [
-            {
-                "schema:name": "256 x 256 x 207",
-                "schema:value": 0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 1,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
-            }
-        ]
+        "type": "xsd:string"
     }
 }

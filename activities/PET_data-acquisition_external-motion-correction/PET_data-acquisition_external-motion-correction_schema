@@ -9,8 +9,9 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "hardware-",
-            "external-moco-software"
+            "hardware",
+            "external-moco-software",
+            "external-moco-software-version"
         ],
         "shuffle": false,
         "allow": [
@@ -18,13 +19,18 @@
         ],
         "addProperties": [
             {
-                "variableName": "hardware-",
-                "isAbout": "hardware-",
+                "variableName": "hardware",
+                "isAbout": "hardware",
                 "isVis": ""
             },
             {
                 "variableName": "external-moco-software",
                 "isAbout": "external-moco-software",
+                "isVis": ""
+            },
+            {
+                "variableName": "external-moco-software-version",
+                "isAbout": "external-moco-software-version",
                 "isVis": ""
             }
         ]

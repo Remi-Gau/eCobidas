@@ -9,15 +9,25 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "acquisition-mode",
-            "reconstruction-method",
-            "parameters",
-            "recon-filter-type",
-            "attenuation-correction",
-            "postrecon-filter-size",
+            "AcquisitionMode",
+            "ImageDecayCorrected",
+            "ImageDecayCorrectionTime",
+            "ReconMethodName",
+            "ReconMethodParameterLabels",
+            "ReconFilterType",
+            "AttenuationCorrection",
+            "ReconFilterSize",
             "pet-voxel-size",
             "matrix-size",
-            "frame-sequence"
+            "frame-sequence",
+            "ScaleFactor",
+            "ScatterFraction",
+            "DecayCorrectionFactor",
+            "PromptRate",
+            "RandomRate",
+            "SinglesRate",
+            "data:-labels",
+            "AttenuationCorrectionMethodReference"
         ],
         "shuffle": false,
         "allow": [
@@ -25,33 +35,43 @@
         ],
         "addProperties": [
             {
-                "variableName": "acquisition-mode",
-                "isAbout": "acquisition-mode",
+                "variableName": "AcquisitionMode",
+                "isAbout": "AcquisitionMode",
                 "isVis": ""
             },
             {
-                "variableName": "reconstruction-method",
-                "isAbout": "reconstruction-method",
+                "variableName": "ImageDecayCorrected",
+                "isAbout": "ImageDecayCorrected",
                 "isVis": ""
             },
             {
-                "variableName": "parameters",
-                "isAbout": "parameters",
+                "variableName": "ImageDecayCorrectionTime",
+                "isAbout": "ImageDecayCorrectionTime",
+                "isVis": "ImageDecayCorrected == 1"
+            },
+            {
+                "variableName": "ReconMethodName",
+                "isAbout": "ReconMethodName",
                 "isVis": ""
             },
             {
-                "variableName": "recon-filter-type",
-                "isAbout": "recon-filter-type",
+                "variableName": "ReconMethodParameterLabels",
+                "isAbout": "ReconMethodParameterLabels",
                 "isVis": ""
             },
             {
-                "variableName": "attenuation-correction",
-                "isAbout": "attenuation-correction",
+                "variableName": "ReconFilterType",
+                "isAbout": "ReconFilterType",
                 "isVis": ""
             },
             {
-                "variableName": "postrecon-filter-size",
-                "isAbout": "postrecon-filter-size",
+                "variableName": "AttenuationCorrection",
+                "isAbout": "AttenuationCorrection",
+                "isVis": ""
+            },
+            {
+                "variableName": "ReconFilterSize",
+                "isAbout": "ReconFilterSize",
                 "isVis": ""
             },
             {
@@ -67,6 +87,46 @@
             {
                 "variableName": "frame-sequence",
                 "isAbout": "frame-sequence",
+                "isVis": ""
+            },
+            {
+                "variableName": "ScaleFactor",
+                "isAbout": "ScaleFactor",
+                "isVis": ""
+            },
+            {
+                "variableName": "ScatterFraction",
+                "isAbout": "ScatterFraction",
+                "isVis": ""
+            },
+            {
+                "variableName": "DecayCorrectionFactor",
+                "isAbout": "DecayCorrectionFactor",
+                "isVis": ""
+            },
+            {
+                "variableName": "PromptRate",
+                "isAbout": "PromptRate",
+                "isVis": ""
+            },
+            {
+                "variableName": "RandomRate",
+                "isAbout": "RandomRate",
+                "isVis": ""
+            },
+            {
+                "variableName": "SinglesRate",
+                "isAbout": "SinglesRate",
+                "isVis": ""
+            },
+            {
+                "variableName": "data:-labels",
+                "isAbout": "data:-labels",
+                "isVis": ""
+            },
+            {
+                "variableName": "AttenuationCorrectionMethodReference",
+                "isAbout": "AttenuationCorrectionMethodReference",
                 "isVis": ""
             }
         ]

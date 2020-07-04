@@ -39,12 +39,7 @@
             },
             {
                 "schema:name": "Other",
-                "schema:value": 4,
-                "@type": "schema:option"
-            },
-            {
-                "schema:name": "Other",
-                "schema:value": 6,
+                "schema:value": 5,
                 "@type": "schema:option"
             }
         ]

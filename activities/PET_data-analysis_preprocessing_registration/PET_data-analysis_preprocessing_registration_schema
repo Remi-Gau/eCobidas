@@ -17,9 +17,10 @@
             "resolution-of-reference-target",
             "registration-quality-control",
             "registration-software",
+            "registration-software-version",
             "smoothing-target-image",
-            "size-of-smoothing-filter",
             "shape-of-smoothing-filter",
+            "size-of-smoothing-filter",
             "justification-for-smoothing-size",
             "space-of-smoothing"
         ],
@@ -69,18 +70,23 @@
                 "isVis": ""
             },
             {
+                "variableName": "registration-software-version",
+                "isAbout": "registration-software-version",
+                "isVis": ""
+            },
+            {
                 "variableName": "smoothing-target-image",
                 "isAbout": "smoothing-target-image",
                 "isVis": ""
             },
             {
-                "variableName": "size-of-smoothing-filter",
-                "isAbout": "size-of-smoothing-filter",
+                "variableName": "shape-of-smoothing-filter",
+                "isAbout": "shape-of-smoothing-filter",
                 "isVis": ""
             },
             {
-                "variableName": "shape-of-smoothing-filter",
-                "isAbout": "shape-of-smoothing-filter",
+                "variableName": "size-of-smoothing-filter",
+                "isAbout": "size-of-smoothing-filter",
                 "isVis": ""
             },
             {

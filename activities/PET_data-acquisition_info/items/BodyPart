@@ -1,0 +1,87 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "BodyPart",
+    "prefLabel": "BodyPart",
+    "schema:description": "BodyPart",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Name of the organ / body region scanned."
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": " brain",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "neck",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "torso",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "cardiac",
+                "schema:value": 3,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "gut",
+                "schema:value": 4,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "hip",
+                "schema:value": 5,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "leg",
+                "schema:value": 6,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "knee",
+                "schema:value": 7,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "foot",
+                "schema:value": 8,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "hand",
+                "schema:value": 9,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "arm",
+                "schema:value": 10,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "lung ",
+                "schema:value": 11,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 13,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

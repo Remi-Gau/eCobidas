@@ -14,7 +14,8 @@
             "outcome-measure",
             "weighting",
             "level-of-analysis",
-            "kinetic-modelling-software"
+            "kinetic-modelling-software",
+            "kinetic-modelling-software-version"
         ],
         "shuffle": false,
         "allow": [
@@ -49,6 +50,11 @@
             {
                 "variableName": "kinetic-modelling-software",
                 "isAbout": "kinetic-modelling-software",
+                "isVis": ""
+            },
+            {
+                "variableName": "kinetic-modelling-software-version",
+                "isAbout": "kinetic-modelling-software-version",
                 "isVis": ""
             }
         ]

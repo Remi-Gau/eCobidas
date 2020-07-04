@@ -17,7 +17,8 @@
             "volumes-of-interest-software",
             "partial-volume-correction-technique",
             "partial-volume-correction-assumptions",
-            "partial-volume-correction-software"
+            "partial-volume-correction-software",
+            "partial-volume-correction-software-version"
         ],
         "shuffle": false,
         "allow": [
@@ -67,6 +68,11 @@
             {
                 "variableName": "partial-volume-correction-software",
                 "isAbout": "partial-volume-correction-software",
+                "isVis": ""
+            },
+            {
+                "variableName": "partial-volume-correction-software-version",
+                "isAbout": "partial-volume-correction-software-version",
                 "isVis": ""
             }
         ]

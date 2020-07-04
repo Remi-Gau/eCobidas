@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "TracerRadLex",
+    "prefLabel": "TracerRadLex",
+    "schema:description": "TracerRadLex",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "text"
+    },
+    "question": {
+        "en": "ID of the tracer compound from the RadLex Ontology."
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

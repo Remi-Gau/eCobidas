@@ -9,30 +9,15 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "tracer-radionuclide",
-            "tracer-molecular-weight",
-            "molecular-weight-unit",
-            "time-of-injection",
-            "injected-radioactivity",
-            "injected-radioactivity-unit",
-            "injected-tracer-mass",
-            "moles-tracer-injected",
-            "moles-tracer-injected-units",
-            "injected-tracer-mass-units",
-            "bodyweight",
-            "bodyweight-units",
-            "molar-radioactivity",
-            "molar-radioactivity-units",
-            "molar-radioactivity-measurement-time",
-            "specific-radioactivity",
-            "specific-radioactivity-units",
-            "specific-radioactivity-measurement-time",
-            "radiochemical-purity-units",
-            "injected-volume",
-            "formulation",
-            "purity",
-            "mode-of-administration",
-            "infusion-speed"
+            "PharmaceuticalDoseRegimen",
+            "TracerName",
+            "TracerRadLex",
+            "TracerSNOMED",
+            "PharmaceuticalName",
+            "TracerRadionuclide",
+            "TracerMolecularWeight",
+            "PharmaceuticalDoseTime",
+            "PharmaceuticalDoseAmount"
         ],
         "shuffle": false,
         "allow": [
@@ -40,123 +25,48 @@
         ],
         "addProperties": [
             {
-                "variableName": "tracer-radionuclide",
-                "isAbout": "tracer-radionuclide",
+                "variableName": "PharmaceuticalDoseRegimen",
+                "isAbout": "PharmaceuticalDoseRegimen",
                 "isVis": ""
             },
             {
-                "variableName": "tracer-molecular-weight",
-                "isAbout": "tracer-molecular-weight",
+                "variableName": "TracerName",
+                "isAbout": "TracerName",
                 "isVis": ""
             },
             {
-                "variableName": "molecular-weight-unit",
-                "isAbout": "molecular-weight-unit",
+                "variableName": "TracerRadLex",
+                "isAbout": "TracerRadLex",
                 "isVis": ""
             },
             {
-                "variableName": "time-of-injection",
-                "isAbout": "time-of-injection",
+                "variableName": "TracerSNOMED",
+                "isAbout": "TracerSNOMED",
                 "isVis": ""
             },
             {
-                "variableName": "injected-radioactivity",
-                "isAbout": "injected-radioactivity",
+                "variableName": "PharmaceuticalName",
+                "isAbout": "PharmaceuticalName",
                 "isVis": ""
             },
             {
-                "variableName": "injected-radioactivity-unit",
-                "isAbout": "injected-radioactivity-unit",
+                "variableName": "TracerRadionuclide",
+                "isAbout": "TracerRadionuclide",
                 "isVis": ""
             },
             {
-                "variableName": "injected-tracer-mass",
-                "isAbout": "injected-tracer-mass",
+                "variableName": "TracerMolecularWeight",
+                "isAbout": "TracerMolecularWeight",
                 "isVis": ""
             },
             {
-                "variableName": "moles-tracer-injected",
-                "isAbout": "moles-tracer-injected",
+                "variableName": "PharmaceuticalDoseTime",
+                "isAbout": "PharmaceuticalDoseTime",
                 "isVis": ""
             },
             {
-                "variableName": "moles-tracer-injected-units",
-                "isAbout": "moles-tracer-injected-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "injected-tracer-mass-units",
-                "isAbout": "injected-tracer-mass-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "bodyweight",
-                "isAbout": "bodyweight",
-                "isVis": ""
-            },
-            {
-                "variableName": "bodyweight-units",
-                "isAbout": "bodyweight-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "molar-radioactivity",
-                "isAbout": "molar-radioactivity",
-                "isVis": ""
-            },
-            {
-                "variableName": "molar-radioactivity-units",
-                "isAbout": "molar-radioactivity-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "molar-radioactivity-measurement-time",
-                "isAbout": "molar-radioactivity-measurement-time",
-                "isVis": ""
-            },
-            {
-                "variableName": "specific-radioactivity",
-                "isAbout": "specific-radioactivity",
-                "isVis": ""
-            },
-            {
-                "variableName": "specific-radioactivity-units",
-                "isAbout": "specific-radioactivity-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "specific-radioactivity-measurement-time",
-                "isAbout": "specific-radioactivity-measurement-time",
-                "isVis": ""
-            },
-            {
-                "variableName": "radiochemical-purity-units",
-                "isAbout": "radiochemical-purity-units",
-                "isVis": ""
-            },
-            {
-                "variableName": "injected-volume",
-                "isAbout": "injected-volume",
-                "isVis": ""
-            },
-            {
-                "variableName": "formulation",
-                "isAbout": "formulation",
-                "isVis": ""
-            },
-            {
-                "variableName": "purity",
-                "isAbout": "purity",
-                "isVis": ""
-            },
-            {
-                "variableName": "mode-of-administration",
-                "isAbout": "mode-of-administration",
-                "isVis": ""
-            },
-            {
-                "variableName": "infusion-speed",
-                "isAbout": "infusion-speed",
+                "variableName": "PharmaceuticalDoseAmount",
+                "isAbout": "PharmaceuticalDoseAmount",
                 "isVis": ""
             }
         ]

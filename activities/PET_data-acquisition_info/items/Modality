@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "Modality",
+    "prefLabel": "Modality",
+    "schema:description": "Modality",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Modality"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": " pet",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "petmr",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "petct ",
+                "schema:value": 2,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 4,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}

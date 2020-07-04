@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/protocols/PET/PET_context"
+        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/protocols/PET/PET_context"
     ],
     "@type": "reproschema:Protocol",
     "@id": "PET_schema",
@@ -9,7 +9,7 @@
     "schema:description": "PET_schema",
     "schema:schemaVersion": "0.0.1",
     "schema:version": "0.0.1",
-    "landingPage": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-MRI/protocols/PET/README.md",
+    "landingPage": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/protocols/PET/README.md",
     "ui": {
         "allow": [
             "autoAdvance",
@@ -17,24 +17,35 @@
         ],
         "shuffle": false,
         "order": [
+            "PET_data-acquisition_info",
             "PET_radioligand_radiotracer",
+            "PET_radioligand_radiochem",
             "PET_radioligand_time",
+            "PET_data-acquisition_reconstruction",
+            "PET_radioligand_continuous-blood",
+            "PET_radioligand_discrete-blood",
+            "PET_radioligand_metabolite",
             "PET_radioligand_plasma",
             "PET_radioligand_whole-blood",
-            "PET_radioligand_metabolite",
             "PET_data-acquisition_cross-calibration",
             "PET_data-acquisition_external-motion-correction",
-            "PET_data-acquisition_reconstruction",
+            "PET_data-analysis_blood-data-processing",
+            "PET_data-analysis_kinetic-modeling",
             "PET_data-analysis_preprocessing_motion-correction",
             "PET_data-analysis_preprocessing_registration",
             "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
-            "PET_data-analysis_blood-data-processing",
-            "PET_data-analysis_kinetic-modeling",
-            "PET_statistics_power-analysis",
             "PET_statistics_multiple-testings",
+            "PET_statistics_power-analysis",
             "PET_statistics_pre-registration"
         ],
         "addProperties": [
+            {
+                "variableName": "PET_data-acquisition_info",
+                "isAbout": "PET_data-acquisition_info",
+                "prefLabel": {
+                    "en": "data acquisition: info"
+                }
+            },
             {
                 "variableName": "PET_radioligand_radiotracer",
                 "isAbout": "PET_radioligand_radiotracer",
@@ -43,10 +54,45 @@
                 }
             },
             {
+                "variableName": "PET_radioligand_radiochem",
+                "isAbout": "PET_radioligand_radiochem",
+                "prefLabel": {
+                    "en": "radioligand: radiochem"
+                }
+            },
+            {
                 "variableName": "PET_radioligand_time",
                 "isAbout": "PET_radioligand_time",
                 "prefLabel": {
                     "en": "radioligand: time"
+                }
+            },
+            {
+                "variableName": "PET_data-acquisition_reconstruction",
+                "isAbout": "PET_data-acquisition_reconstruction",
+                "prefLabel": {
+                    "en": "data acquisition: reconstruction"
+                }
+            },
+            {
+                "variableName": "PET_radioligand_continuous-blood",
+                "isAbout": "PET_radioligand_continuous-blood",
+                "prefLabel": {
+                    "en": "radioligand: continuous blood"
+                }
+            },
+            {
+                "variableName": "PET_radioligand_discrete-blood",
+                "isAbout": "PET_radioligand_discrete-blood",
+                "prefLabel": {
+                    "en": "radioligand: discrete blood"
+                }
+            },
+            {
+                "variableName": "PET_radioligand_metabolite",
+                "isAbout": "PET_radioligand_metabolite",
+                "prefLabel": {
+                    "en": "radioligand: metabolite"
                 }
             },
             {
@@ -64,13 +110,6 @@
                 }
             },
             {
-                "variableName": "PET_radioligand_metabolite",
-                "isAbout": "PET_radioligand_metabolite",
-                "prefLabel": {
-                    "en": "radioligand: metabolite"
-                }
-            },
-            {
                 "variableName": "PET_data-acquisition_cross-calibration",
                 "isAbout": "PET_data-acquisition_cross-calibration",
                 "prefLabel": {
@@ -85,10 +124,17 @@
                 }
             },
             {
-                "variableName": "PET_data-acquisition_reconstruction",
-                "isAbout": "PET_data-acquisition_reconstruction",
+                "variableName": "PET_data-analysis_blood-data-processing",
+                "isAbout": "PET_data-analysis_blood-data-processing",
                 "prefLabel": {
-                    "en": "data acquisition: reconstruction"
+                    "en": "data analysis: blood data processing"
+                }
+            },
+            {
+                "variableName": "PET_data-analysis_kinetic-modeling",
+                "isAbout": "PET_data-analysis_kinetic-modeling",
+                "prefLabel": {
+                    "en": "data analysis: kinetic modeling"
                 }
             },
             {
@@ -113,17 +159,10 @@
                 }
             },
             {
-                "variableName": "PET_data-analysis_blood-data-processing",
-                "isAbout": "PET_data-analysis_blood-data-processing",
+                "variableName": "PET_statistics_multiple-testings",
+                "isAbout": "PET_statistics_multiple-testings",
                 "prefLabel": {
-                    "en": "data analysis: blood data processing"
-                }
-            },
-            {
-                "variableName": "PET_data-analysis_kinetic-modeling",
-                "isAbout": "PET_data-analysis_kinetic-modeling",
-                "prefLabel": {
-                    "en": "data analysis: kinetic modeling"
+                    "en": "statistics: multiple testings"
                 }
             },
             {
@@ -131,13 +170,6 @@
                 "isAbout": "PET_statistics_power-analysis",
                 "prefLabel": {
                     "en": "statistics: power analysis"
-                }
-            },
-            {
-                "variableName": "PET_statistics_multiple-testings",
-                "isAbout": "PET_statistics_multiple-testings",
-                "prefLabel": {
-                    "en": "statistics: multiple testings"
                 }
             },
             {

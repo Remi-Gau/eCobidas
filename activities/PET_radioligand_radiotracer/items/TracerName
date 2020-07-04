@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "TracerName",
+    "prefLabel": "TracerName",
+    "schema:description": "TracerName",
+    "schema:schemaVersion": "0.0.1",
+    "schema:version": "0.0.1",
+    "ui": {
+        "allow": [
+            "skipped"
+        ],
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Name of the tracer compound used"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "schema:name": " CIMBI-36",
+                "schema:value": 0,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "raclopride ",
+                "schema:value": 1,
+                "@type": "schema:option"
+            },
+            {
+                "schema:name": "Other",
+                "schema:value": 3,
+                "@type": "schema:option"
+            }
+        ]
+    }
+}
