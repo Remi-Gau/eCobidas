@@ -1,9 +1,9 @@
 import json
 import os
 import csv
-from utils import (
-    define_new_protocol,
-    define_new_activity,
+from protocol import define_new_protocol
+from activity import define_new_activity
+from item import (
     get_item_info,
     define_new_item,
     define_response_choice,
