@@ -177,11 +177,7 @@ def slider_response(response_choices, min_label, max_label):
 
     min = float(response_choices[0])
     max = float(response_choices[1])
-    if len(response_choices) == 3:
-        steps = float(response_choices[2]) + 1
-    else:
-        steps = 101
-
+    steps = float(response_choices[2]) + 1 if len(response_choices) == 3 else 101
     responseOptions = {
         "valueType": "xsd:integer",
         "schema:minValue": min,
