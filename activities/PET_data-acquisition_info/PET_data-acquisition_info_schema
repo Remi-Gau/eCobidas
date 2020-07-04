@@ -27,47 +27,47 @@
             {
                 "variableName": "Modality",
                 "isAbout": "Modality",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "Manufacturer",
                 "isAbout": "Manufacturer",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "ManufacturersModelName",
                 "isAbout": "ManufacturersModelName",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "Anaesthesia",
                 "isAbout": "Anaesthesia",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "BodyPart",
                 "isAbout": "BodyPart",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "Unit",
                 "isAbout": "Unit",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "experiment-date",
                 "isAbout": "experiment-date",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "imaging-center-site",
                 "isAbout": "imaging-center-site",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "imaging-department",
                 "isAbout": "imaging-department",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

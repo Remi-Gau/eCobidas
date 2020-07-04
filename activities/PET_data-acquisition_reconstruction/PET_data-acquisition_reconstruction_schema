@@ -37,12 +37,12 @@
             {
                 "variableName": "AcquisitionMode",
                 "isAbout": "AcquisitionMode",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "ImageDecayCorrected",
                 "isAbout": "ImageDecayCorrected",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "ImageDecayCorrectionTime",
@@ -52,82 +52,82 @@
             {
                 "variableName": "ReconMethodName",
                 "isAbout": "ReconMethodName",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "ReconMethodParameterLabels",
                 "isAbout": "ReconMethodParameterLabels",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "ReconFilterType",
                 "isAbout": "ReconFilterType",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "AttenuationCorrection",
                 "isAbout": "AttenuationCorrection",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "ReconFilterSize",
                 "isAbout": "ReconFilterSize",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "pet-voxel-size",
                 "isAbout": "pet-voxel-size",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "matrix-size",
                 "isAbout": "matrix-size",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "frame-sequence",
                 "isAbout": "frame-sequence",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "ScaleFactor",
                 "isAbout": "ScaleFactor",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "ScatterFraction",
                 "isAbout": "ScatterFraction",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "DecayCorrectionFactor",
                 "isAbout": "DecayCorrectionFactor",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "PromptRate",
                 "isAbout": "PromptRate",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "RandomRate",
                 "isAbout": "RandomRate",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "SinglesRate",
                 "isAbout": "SinglesRate",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "data:-labels",
                 "isAbout": "data:-labels",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "AttenuationCorrectionMethodReference",
                 "isAbout": "AttenuationCorrectionMethodReference",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

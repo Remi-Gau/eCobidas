@@ -32,72 +32,72 @@
             {
                 "variableName": "blood-sampling-device-read",
                 "isAbout": "blood-sampling-device-read",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "blood-sampling-device-measurement-time",
                 "isAbout": "blood-sampling-device-measurement-time",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "phantom-type",
                 "isAbout": "phantom-type",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "phantom-volume",
                 "isAbout": "phantom-volume",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "radiotracer-isotope",
                 "isAbout": "radiotracer-isotope",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "phantom-activity",
                 "isAbout": "phantom-activity",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "activity-time",
                 "isAbout": "activity-time",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "residual-activity",
                 "isAbout": "residual-activity",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "residual-activity-time",
                 "isAbout": "residual-activity-time",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "phantom-acquisition-time",
                 "isAbout": "phantom-acquisition-time",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "well-counter-sample-volumes",
                 "isAbout": "well-counter-sample-volumes",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "well-counter-measurement-time",
                 "isAbout": "well-counter-measurement-time",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "well-counter-read",
                 "isAbout": "well-counter-read",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "phantom-data",
                 "isAbout": "phantom-data",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

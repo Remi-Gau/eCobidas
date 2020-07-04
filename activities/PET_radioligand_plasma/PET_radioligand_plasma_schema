@@ -27,7 +27,7 @@
             {
                 "variableName": "PlasmaAvail",
                 "isAbout": "PlasmaAvail",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "PlasmaFreeFraction",
@@ -47,27 +47,27 @@
             {
                 "variableName": "data:-decay-corrected",
                 "isAbout": "data:-decay-corrected",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "data:-decay-correction-time",
                 "isAbout": "data:-decay-correction-time",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "data:-type",
                 "isAbout": "data:-type",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "data:-units",
                 "isAbout": "data:-units",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "data:-hematocrit-value",
                 "isAbout": "data:-hematocrit-value",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

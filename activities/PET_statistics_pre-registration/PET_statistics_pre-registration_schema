@@ -19,7 +19,7 @@
             {
                 "variableName": "link",
                 "isAbout": "link",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

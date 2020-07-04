@@ -31,67 +31,67 @@
             {
                 "variableName": "ModeOfAdministration",
                 "isAbout": "ModeOfAdministration",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "InfusionSpeed",
                 "isAbout": "InfusionSpeed",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "InjectedRadioactivity",
                 "isAbout": "InjectedRadioactivity",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "InjectedMass",
                 "isAbout": "InjectedMass",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "moles-tracer-injected",
                 "isAbout": "moles-tracer-injected",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "bodyweight",
                 "isAbout": "bodyweight",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "MolarActivity",
                 "isAbout": "MolarActivity",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "MolarActivityMeasTime",
                 "isAbout": "MolarActivityMeasTime",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "SpecificRadioactivity",
                 "isAbout": "SpecificRadioactivity",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "SpecificRadioactivityMeasTime",
                 "isAbout": "SpecificRadioactivityMeasTime",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "Purity",
                 "isAbout": "Purity",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "InjectedVolume",
                 "isAbout": "InjectedVolume",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "formulation",
                 "isAbout": "formulation",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

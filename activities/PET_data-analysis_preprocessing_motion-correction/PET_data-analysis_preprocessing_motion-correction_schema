@@ -25,37 +25,37 @@
             {
                 "variableName": "moco-reference-image",
                 "isAbout": "moco-reference-image",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "moco-cost-function",
                 "isAbout": "moco-cost-function",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "moco-interpolation",
                 "isAbout": "moco-interpolation",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "moco-smoothing",
                 "isAbout": "moco-smoothing",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "moco-quality-control",
                 "isAbout": "moco-quality-control",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "moco-software",
                 "isAbout": "moco-software",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "moco-software-version",
                 "isAbout": "moco-software-version",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

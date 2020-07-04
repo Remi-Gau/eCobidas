@@ -32,72 +32,72 @@
             {
                 "variableName": "registration-reference-image",
                 "isAbout": "registration-reference-image",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "registration-target-image",
                 "isAbout": "registration-target-image",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "registration-cost-function",
                 "isAbout": "registration-cost-function",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "registration-interpolation",
                 "isAbout": "registration-interpolation",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "registration-smoothing",
                 "isAbout": "registration-smoothing",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "resolution-of-reference-target",
                 "isAbout": "resolution-of-reference-target",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "registration-quality-control",
                 "isAbout": "registration-quality-control",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "registration-software",
                 "isAbout": "registration-software",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "registration-software-version",
                 "isAbout": "registration-software-version",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "smoothing-target-image",
                 "isAbout": "smoothing-target-image",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "shape-of-smoothing-filter",
                 "isAbout": "shape-of-smoothing-filter",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "size-of-smoothing-filter",
                 "isAbout": "size-of-smoothing-filter",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "justification-for-smoothing-size",
                 "isAbout": "justification-for-smoothing-size",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "space-of-smoothing",
                 "isAbout": "space-of-smoothing",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

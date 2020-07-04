@@ -29,7 +29,7 @@
             {
                 "variableName": "MetaboliteAvail",
                 "isAbout": "MetaboliteAvail",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "MetaboliteMethod",
@@ -39,42 +39,42 @@
             {
                 "variableName": "radiolabeled-parent-compound-fraction",
                 "isAbout": "radiolabeled-parent-compound-fraction",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "data:labels",
                 "isAbout": "data:labels",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "parent-fraction-units",
                 "isAbout": "parent-fraction-units",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "parent-fraction-measurement-error",
                 "isAbout": "parent-fraction-measurement-error",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "metabolite-analysis-timepoints",
                 "isAbout": "metabolite-analysis-timepoints",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "fraction-of-radiometabolite-needing-quantitation",
                 "isAbout": "fraction-of-radiometabolite-needing-quantitation",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "error-on-above-measurement",
                 "isAbout": "error-on-above-measurement",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "radiolabeled-metabolite-fractions",
                 "isAbout": "radiolabeled-metabolite-fractions",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "MetaboliteRecoveryCorrectionApplied",

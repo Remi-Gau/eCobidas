@@ -25,7 +25,7 @@
             {
                 "variableName": "plasma-to-whole-blood-ratio",
                 "isAbout": "plasma-to-whole-blood-ratio",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

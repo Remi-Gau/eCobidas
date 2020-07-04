@@ -21,17 +21,17 @@
             {
                 "variableName": "method",
                 "isAbout": "method",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "threshold",
                 "isAbout": "threshold",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "number-of-tests",
                 "isAbout": "number-of-tests",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

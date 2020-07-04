@@ -24,7 +24,7 @@
             {
                 "variableName": "ContinuousBloodAvail",
                 "isAbout": "ContinuousBloodAvail",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "ContinuousBloodWithdrawalRate",

@@ -21,7 +21,7 @@
             {
                 "variableName": "DiscreteBloodAvail",
                 "isAbout": "DiscreteBloodAvail",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "DiscreteBloodHaematocrit",

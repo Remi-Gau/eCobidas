@@ -21,17 +21,17 @@
             {
                 "variableName": "hardware",
                 "isAbout": "hardware",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "external-moco-software",
                 "isAbout": "external-moco-software",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "external-moco-software-version",
                 "isAbout": "external-moco-software-version",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

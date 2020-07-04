@@ -25,37 +25,37 @@
             {
                 "variableName": "model",
                 "isAbout": "model",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "reference-volume",
                 "isAbout": "reference-volume",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "outcome-measure",
                 "isAbout": "outcome-measure",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "weighting",
                 "isAbout": "weighting",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "level-of-analysis",
                 "isAbout": "level-of-analysis",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "kinetic-modelling-software",
                 "isAbout": "kinetic-modelling-software",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "kinetic-modelling-software-version",
                 "isAbout": "kinetic-modelling-software-version",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

@@ -23,17 +23,17 @@
             {
                 "variableName": "sampling-method",
                 "isAbout": "sampling-method",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "delay-time-correction",
                 "isAbout": "delay-time-correction",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "fitting",
                 "isAbout": "fitting",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "fitting-description",
@@ -43,7 +43,7 @@
             {
                 "variableName": "blood-data-processing-interpolation",
                 "isAbout": "blood-data-processing-interpolation",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

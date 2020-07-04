@@ -27,47 +27,47 @@
             {
                 "variableName": "PharmaceuticalDoseRegimen",
                 "isAbout": "PharmaceuticalDoseRegimen",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "TracerName",
                 "isAbout": "TracerName",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "TracerRadLex",
                 "isAbout": "TracerRadLex",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "TracerSNOMED",
                 "isAbout": "TracerSNOMED",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "PharmaceuticalName",
                 "isAbout": "PharmaceuticalName",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "TracerRadionuclide",
                 "isAbout": "TracerRadionuclide",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "TracerMolecularWeight",
                 "isAbout": "TracerMolecularWeight",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "PharmaceuticalDoseTime",
                 "isAbout": "PharmaceuticalDoseTime",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "PharmaceuticalDoseAmount",
                 "isAbout": "PharmaceuticalDoseAmount",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

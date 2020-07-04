@@ -25,37 +25,37 @@
             {
                 "variableName": "ScanDate",
                 "isAbout": "ScanDate",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "TimeZero",
                 "isAbout": "TimeZero",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "ScanStart",
                 "isAbout": "ScanStart",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "InjectionStart",
                 "isAbout": "InjectionStart",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "InjectionEnd",
                 "isAbout": "InjectionEnd",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "FrameTimesStart",
                 "isAbout": "FrameTimesStart",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "FrameDuration",
                 "isAbout": "FrameDuration",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }

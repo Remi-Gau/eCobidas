@@ -23,27 +23,27 @@
             {
                 "variableName": "alpha-level",
                 "isAbout": "alpha-level",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "power",
                 "isAbout": "power",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "effect-size",
                 "isAbout": "effect-size",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "variance-assumption",
                 "isAbout": "variance-assumption",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "number-of-subjects-needed",
                 "isAbout": "number-of-subjects-needed",
-                "isVis": ""
+                "isVis": true
             }
         ]
     }
