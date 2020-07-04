@@ -1,11 +1,10 @@
 def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
+    # define the jsonld for the schema protocol
 
-    # protocol names
     protocol["schema_file"] = protocol["name"] + "schema"
     protocol["context_file"] = protocol["name"] + "context"
     protocol["dir"] = protocol["name"][0:-1]
 
-    # define the jsonld for the schema protocol
     protocol["schema"] = {
         "@context": [
             REPRONIM_REPO + "contexts/generic",
@@ -46,64 +45,46 @@ def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
     return protocol
 
 
-def define_activity_context(
-    REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file
+def define_new_activity(
+    protocol, section, row, CSV_INFO, REMOTE_REPO, BRANCH, REPRONIM_REPO, VERSION
 ):
-    # """Validate a directory containing JSONLD documents
+    # define the base json content for the activity
 
-    # .. warning:: This assumes every file in the directory can be read by a json parser.
+    activity = {
+        "name": protocol["name"] + section,
+        "pref_label": row[CSV_INFO["act_pref_label"]["col"]],
+    }
 
-    # Parameters
-    # ----------
-    # directory: str
-    #     Path to directory to walk for validation
-    # shape_dir: str
-    #     Path containing validation SHACL shape files
-    # started : bool
-    #     Whether an http server exists or not
-    # http_kwargs : dict
-    #     Keyword arguments for the http server. Valid keywords are: port, path
-    #     and tmpdir
+    activity["schema_file"] = activity["name"] + "_schema"
+    activity["context_file"] = activity["name"] + "_context"
 
-    # Returns
-    # -------
-    # conforms: bool
-    #     Whether the document is conformant with the shape. Raises an exception
-    #     if any document is non-conformant.
-
-    # """
-    context = {
+    activity["context"] = {
         "@context": {
             "@version": 1.1,
             "item_path": REMOTE_REPO
             + BRANCH
             + "/activities/"
-            + activity_dir
+            + activity["name"]
             + "/items/",
         }
     }
 
-    at_context = [
+    activity["at_context"] = [
         REPRONIM_REPO + "contexts/generic",
         REMOTE_REPO
         + BRANCH
         + "/activities/"
-        + activity_dir
+        + activity["name"]
         + "/"
-        + activity_context_file,
+        + activity["context_file"],
     ]
 
-    return at_context, context
-
-
-def define_new_activity(at_context, activity_schema_file, protocol, section, VERSION):
-    # define the base json content for the activity
-    return {
-        "@context": at_context,
+    activity["schema"] = {
+        "@context": activity["at_context"],
         "@type": "reproschema:Activity",
-        "@id": activity_schema_file,
-        "skos:prefLabel": protocol + section,
-        "schema:description": protocol + section,
+        "@id": activity["schema_file"],
+        "skos:prefLabel": protocol["name"] + section,
+        "schema:description": protocol["name"] + section,
         "schema:schemaVersion": VERSION,
         "schema:version": VERSION,
         "preamble": " ",
@@ -114,6 +95,8 @@ def define_new_activity(at_context, activity_schema_file, protocol, section, VER
             "addProperties": [],
         },
     }
+
+    return activity
 
 
 def get_item_info(row, CSV_INFO):

@@ -2,13 +2,12 @@ import json
 import os
 import csv
 from utils import (
-    define_activity_context,
+    define_new_protocol,
     define_new_activity,
     get_item_info,
     define_new_item,
     define_response_choice,
     list_responses_options,
-    define_new_protocol,
 )
 
 # import pandas as pd
@@ -142,61 +141,51 @@ with open(INPUT_FILE, "r") as csvfile:
                 this_section = row[CSV_INFO["section"]["col"]]
                 section = this_section.replace(" ", "_")
 
-                activity_pref_label = row[CSV_INFO["act_pref_label"]["col"]]
-
-                # where the items of this section will be stored
-                activity_dir = protocol["name"] + section
-
-                # names of this section schema and its corresponding jsonld files
-                activity_schema_name = protocol["name"] + section
-
-                activity_schema_file = activity_schema_name + "_schema"
-
-                activity_context_file = protocol["name"] + section + "_context"
-
-                # create dir for this section
-                if not os.path.exists(
-                    os.path.join(OUTPUT_DIR, "activities", activity_dir)
-                ):
-                    os.makedirs(os.path.join(OUTPUT_DIR, "activities", activity_dir))
-                    os.makedirs(
-                        os.path.join(OUTPUT_DIR, "activities", activity_dir, "items")
-                    )
-
-                activity_at_context, activity_context = define_activity_context(
-                    REPRONIM_REPO,
+                activity = define_new_activity(
+                    protocol,
+                    section,
+                    row,
+                    CSV_INFO,
                     REMOTE_REPO,
                     BRANCH,
-                    activity_dir,
-                    activity_context_file,
-                )
-
-                activity_schema = define_new_activity(
-                    activity_at_context,
-                    activity_schema_file,
-                    protocol["name"],
-                    section,
+                    REPRONIM_REPO,
                     VERSION,
                 )
 
+                # create dir for this section
+                if not os.path.exists(
+                    os.path.join(OUTPUT_DIR, "activities", activity["name"])
+                ):
+                    os.makedirs(
+                        os.path.join(OUTPUT_DIR, "activities", activity["name"])
+                    )
+                    os.makedirs(
+                        os.path.join(
+                            OUTPUT_DIR, "activities", activity["name"], "items"
+                        )
+                    )
+
                 # update the content of the protool schema and context wrt this new activity
                 append_to_protocol = {
-                    "variableName": activity_schema_name,
-                    "isAbout": activity_schema_name,
+                    "variableName": activity["name"],
+                    "isAbout": activity["name"],
                     # for the name displayed by the UI for this activity we simply reuse the
                     # activity name
-                    "prefLabel": {"en": activity_pref_label},
+                    "prefLabel": {"en": activity["pref_label"]},
                 }
 
-                protocol["schema"]["ui"]["order"].append(activity_schema_name)
+                protocol["schema"]["ui"]["order"].append(activity["name"])
                 protocol["schema"]["ui"]["addProperties"].append(append_to_protocol)
 
-                protocol["context"]["@context"][activity_schema_name] = {
-                    "@id": "activity_path:" + activity_dir + "/" + activity_schema_file,
+                protocol["context"]["@context"][activity["name"]] = {
+                    "@id": "activity_path:"
+                    + activity["name"]
+                    + "/"
+                    + activity["schema_file"],
                     "@type": "@id",
                 }
 
-                print(activity_schema_name)
+                print(activity["name"])
 
             # -------------------------------------------------------------------
             # update the content of the activity schema with new item
@@ -207,10 +196,10 @@ with open(INPUT_FILE, "r") as csvfile:
                 "isVis": item_info["visibility"],
             }
 
-            activity_schema["ui"]["order"].append(item_info["name"])
-            activity_schema["ui"]["addProperties"].append(append_to_activity)
+            activity["schema"]["ui"]["order"].append(item_info["name"])
+            activity["schema"]["ui"]["addProperties"].append(append_to_activity)
 
-            activity_context["@context"][item_info["name"]] = {
+            activity["context"]["@context"][item_info["name"]] = {
                 "@id": "item_path:" + item_info["name"],
                 "@type": "@id",
             }
@@ -218,19 +207,19 @@ with open(INPUT_FILE, "r") as csvfile:
             # save activity schema with every new item
             with open(
                 os.path.join(
-                    OUTPUT_DIR, "activities", activity_dir, activity_schema_file
+                    OUTPUT_DIR, "activities", activity["name"], activity["schema_file"]
                 ),
                 "w",
             ) as ff:
-                json.dump(activity_schema, ff, sort_keys=False, indent=4)
+                json.dump(activity["schema"], ff, sort_keys=False, indent=4)
 
             with open(
                 os.path.join(
-                    OUTPUT_DIR, "activities", activity_dir, activity_context_file
+                    OUTPUT_DIR, "activities", activity["name"], activity["context_file"]
                 ),
                 "w",
             ) as ff:
-                json.dump(activity_context, ff, sort_keys=False, indent=4)
+                json.dump(activity["context"], ff, sort_keys=False, indent=4)
 
             # -------------------------------------------------------------------
             # Create new item
@@ -244,7 +233,10 @@ with open(INPUT_FILE, "r") as csvfile:
             print("       " + item_info["resp_type"])
 
             item_schema_json = define_new_item(
-                activity_at_context, item_info["name"], item_info["question"], VERSION
+                activity["at_context"],
+                item_info["name"],
+                item_info["question"],
+                VERSION,
             )
 
             inputType, responseOptions = define_response_choice(
@@ -259,7 +251,7 @@ with open(INPUT_FILE, "r") as csvfile:
                 os.path.join(
                     OUTPUT_DIR,
                     "activities",
-                    activity_dir,
+                    activity["name"],
                     "items",
                     row[CSV_INFO["item"]["col"]],
                 ),
