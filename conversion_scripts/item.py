@@ -1,12 +1,13 @@
 def get_item_info(row, CSV_INFO):
 
+    from item import get_visibility
+
     mandatory_col = CSV_INFO["mandatory"]["col"]
 
     item_name = []
     question = "QUESTION MISSING"
     response_type = "UNKNOWN"
     response_choices = []
-    visibility = True
 
     item_col = CSV_INFO["item"]["col"]
     item_col_name = CSV_INFO["item"]["name"]
@@ -35,22 +36,7 @@ def get_item_info(row, CSV_INFO):
         choice_col = CSV_INFO["choice"]["col"]
         response_choices = row[choice_col].split(" | ")
 
-        vis_col = CSV_INFO["vis"]["col"]
-
-        # branchic logic: visibility
-        if row[vis_col] != "1":
-
-            visibility = row[vis_col]
-
-            # vis_conditions = row[choice_col].split(',')
-            #
-            # for i, cdt in enumerate(vis_conditions):
-            #
-            #     visibility['choices'].append({
-            #         'schema:name': opt,
-            #         'schema:value': i,
-            #         '@type': 'schema:option'
-            #         })
+        visibility = get_visibility(row, CSV_INFO)
 
     return {
         "name": item_name,
@@ -59,6 +45,29 @@ def get_item_info(row, CSV_INFO):
         "choices": response_choices,
         "visibility": visibility,
     }
+
+
+def get_visibility(row, CSV_INFO):
+
+    # branchic logic: visibility
+
+    visibility = True
+
+    if row[vis_col] != "1":
+
+        visibility = row[CSV_INFO["vis"]["col"]]
+
+        # vis_conditions = row[choice_col].split(',')
+        #
+        # for i, cdt in enumerate(vis_conditions):
+        #
+        #     visibility['choices'].append({
+        #         'schema:name': opt,
+        #         'schema:value': i,
+        #         '@type': 'schema:option'
+        #         })
+
+    return visibility
 
 
 def define_new_item(at_context, item_name, question, VERSION):
