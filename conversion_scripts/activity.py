@@ -50,3 +50,4 @@ def define_new_activity(
     }
 
     return activity
+
