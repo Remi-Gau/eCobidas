@@ -1,3 +1,51 @@
+def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
+
+    # protocol names
+    protocol["schema_file"] = protocol["name"] + "schema"
+    protocol["context_file"] = protocol["name"] + "context"
+    protocol["dir"] = protocol["name"][0:-1]
+
+    # define the jsonld for the schema protocol
+    protocol["schema"] = {
+        "@context": [
+            REPRONIM_REPO + "contexts/generic",
+            REMOTE_REPO
+            + BRANCH
+            + "/protocols/"
+            + protocol["dir"]
+            + "/"
+            + protocol["context_file"],
+        ],
+        "@type": "reproschema:Protocol",
+        "@id": protocol["schema_file"],
+        "prefLabel": protocol["schema_file"],
+        "schema:description": protocol["schema_file"],
+        "schema:schemaVersion": VERSION,
+        "schema:version": VERSION,
+        "landingPage": REMOTE_REPO
+        + BRANCH
+        + "/protocols/"
+        + protocol["dir"]
+        + "/README.md",
+        "ui": {
+            "allow": ["autoAdvance", "allowExport"],
+            "shuffle": False,
+            "order": [],
+            "addProperties": [],
+        },
+    }
+
+    # define the jsonld for the context associated to this protocol
+    protocol["context"] = {
+        "@context": {
+            "@version": 1.1,
+            "activity_path": REMOTE_REPO + BRANCH + "/activities/",
+        }
+    }
+
+    return protocol
+
+
 def define_activity_context(
     REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file
 ):
@@ -48,14 +96,14 @@ def define_activity_context(
     return at_context, context
 
 
-def define_new_activity(at_context, activity_schema_file, PROTOCOL, section, VERSION):
+def define_new_activity(at_context, activity_schema_file, protocol, section, VERSION):
     # define the base json content for the activity
     return {
         "@context": at_context,
         "@type": "reproschema:Activity",
         "@id": activity_schema_file,
-        "skos:prefLabel": PROTOCOL + section,
-        "schema:description": PROTOCOL + section,
+        "skos:prefLabel": protocol + section,
+        "schema:description": protocol + section,
         "schema:schemaVersion": VERSION,
         "schema:version": VERSION,
         "preamble": " ",

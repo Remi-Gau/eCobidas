@@ -8,6 +8,7 @@ from utils import (
     define_new_item,
     define_response_choice,
     list_responses_options,
+    define_new_protocol,
 )
 
 # import pandas as pd
@@ -63,7 +64,7 @@ BRANCH = "master"
 
 # Neurovaut
 # INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv"
-# PROTOCOL = "neurovault_"
+# protocol = {"name": "neurovault_"}
 # CSV_INFO = {
 #     "section": {"col": 1, "name": ""},
 #     "item": {"col": 2, "name": "Item"},
@@ -77,7 +78,7 @@ BRANCH = "master"
 
 # PET
 INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv"
-PROTOCOL = "PET_"
+protocol = {"name": "PET_"}
 CSV_INFO = {
     "section": {"col": 5, "name": "Activity"},
     "act_pref_label": {"col": 6, "name": "Activity pref label"},
@@ -92,7 +93,7 @@ CSV_INFO = {
 
 # COBIDAS MRI
 # INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/COBIDAS_MRI - clean.csv"
-# PROTOCOL = "cobidas-MRI_"
+# protocol = {"name": "cobidas-MRI_"}
 # CSV_INFO = {
 #     "section": {"col": 18, "name": ""},
 #     "item": {"col": 24, "name": "Item"},
@@ -113,50 +114,13 @@ VERSION = "0.0.1"
 #                                   START
 # -----------------------------------------------------------------------------
 
-# protocol names
-PROTOCOL_SCHEMA_FILE = PROTOCOL + "schema"
-PROTOCOL_CONTEXT_FILE = PROTOCOL + "context"
-PROTOCOL_DIR = PROTOCOL[0:-1]
+protocol = define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION)
 
 # create output directories
-if not os.path.exists(os.path.join(OUTPUT_DIR, "protocols", PROTOCOL_DIR)):
-    os.makedirs(os.path.join(OUTPUT_DIR, "protocols", PROTOCOL_DIR))
+if not os.path.exists(os.path.join(OUTPUT_DIR, "protocols", protocol["dir"])):
+    os.makedirs(os.path.join(OUTPUT_DIR, "protocols", protocol["dir"]))
 
-# define the jsonld for the schema protocol
-PROTOCOL_SCHEMA_JSON = {
-    "@context": [
-        REPRONIM_REPO + "contexts/generic",
-        REMOTE_REPO
-        + BRANCH
-        + "/protocols/"
-        + PROTOCOL_DIR
-        + "/"
-        + PROTOCOL_CONTEXT_FILE,
-    ],
-    "@type": "reproschema:Protocol",
-    "@id": PROTOCOL_SCHEMA_FILE,
-    "prefLabel": PROTOCOL_SCHEMA_FILE,
-    "schema:description": PROTOCOL_SCHEMA_FILE,
-    "schema:schemaVersion": VERSION,
-    "schema:version": VERSION,
-    "landingPage": REMOTE_REPO + BRANCH + "/protocols/" + PROTOCOL_DIR + "/README.md",
-    "ui": {
-        "allow": ["autoAdvance", "allowExport"],
-        "shuffle": False,
-        "order": [],
-        "addProperties": [],
-    },
-}
-
-# define the jsonld for the context associated to this protocol
-PROTOCOL_CONTEXT_JSON = {
-    "@context": {
-        "@version": 1.1,
-        "activity_path": REMOTE_REPO + BRANCH + "/activities/",
-    }
-}
-
-# Initiliaze this variable as we will need to check if we got to a new section while
+# Initialize this variable as we will need to check if we got to a new section while
 # looping through items
 this_section = ""
 
@@ -181,14 +145,14 @@ with open(INPUT_FILE, "r") as csvfile:
                 activity_pref_label = row[CSV_INFO["act_pref_label"]["col"]]
 
                 # where the items of this section will be stored
-                activity_dir = PROTOCOL + section
+                activity_dir = protocol["name"] + section
 
                 # names of this section schema and its corresponding jsonld files
-                activity_schema_name = PROTOCOL + section
+                activity_schema_name = protocol["name"] + section
 
                 activity_schema_file = activity_schema_name + "_schema"
 
-                activity_context_file = PROTOCOL + section + "_context"
+                activity_context_file = protocol["name"] + section + "_context"
 
                 # create dir for this section
                 if not os.path.exists(
@@ -210,7 +174,7 @@ with open(INPUT_FILE, "r") as csvfile:
                 activity_schema = define_new_activity(
                     activity_at_context,
                     activity_schema_file,
-                    PROTOCOL,
+                    protocol["name"],
                     section,
                     VERSION,
                 )
@@ -224,10 +188,10 @@ with open(INPUT_FILE, "r") as csvfile:
                     "prefLabel": {"en": activity_pref_label},
                 }
 
-                PROTOCOL_SCHEMA_JSON["ui"]["order"].append(activity_schema_name)
-                PROTOCOL_SCHEMA_JSON["ui"]["addProperties"].append(append_to_protocol)
+                protocol["schema"]["ui"]["order"].append(activity_schema_name)
+                protocol["schema"]["ui"]["addProperties"].append(append_to_protocol)
 
-                PROTOCOL_CONTEXT_JSON["@context"][activity_schema_name] = {
+                protocol["context"]["@context"][activity_schema_name] = {
                     "@id": "activity_path:" + activity_dir + "/" + activity_schema_file,
                     "@type": "@id",
                 }
@@ -305,11 +269,12 @@ with open(INPUT_FILE, "r") as csvfile:
 
 # write protocol jsonld
 with open(
-    os.path.join(OUTPUT_DIR, "protocols", PROTOCOL_DIR, PROTOCOL_SCHEMA_FILE), "w"
+    os.path.join(OUTPUT_DIR, "protocols", protocol["dir"], protocol["schema_file"]), "w"
 ) as ff:
-    json.dump(PROTOCOL_SCHEMA_JSON, ff, sort_keys=False, indent=4)
+    json.dump(protocol["schema"], ff, sort_keys=False, indent=4)
 
 with open(
-    os.path.join(OUTPUT_DIR, "protocols", PROTOCOL_DIR, PROTOCOL_CONTEXT_FILE), "w"
+    os.path.join(OUTPUT_DIR, "protocols", protocol["dir"], protocol["context_file"]),
+    "w",
 ) as ff:
-    json.dump(PROTOCOL_CONTEXT_JSON, ff, sort_keys=False, indent=4)
+    json.dump(protocol["context"], ff, sort_keys=False, indent=4)
