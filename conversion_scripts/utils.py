@@ -35,7 +35,15 @@ def define_activity_context(
         }
     }
 
-    at_context = REPRONIM_REPO + "contexts/generic"
+    at_context = [
+        REPRONIM_REPO + "contexts/generic",
+        REMOTE_REPO
+        + BRANCH
+        + "/activities/"
+        + activity_dir
+        + "/"
+        + activity_context_file,
+    ]
 
     return at_context, context
 

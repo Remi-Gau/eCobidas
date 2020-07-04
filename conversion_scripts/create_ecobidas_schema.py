@@ -38,83 +38,71 @@ REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/master/"
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the reproschema will be hosted
 
-OUTPUT_DIR = "/home/remi/github/COBIDAS_chckls"
+# OUTPUT_DIR = "/home/remi/github/COBIDAS_chckls"
+OUTPUT_DIR = "/home/remi/github/cobidas-PET"
 
 # ----------------------------------------
 # Placeholder to insert in all instances of the remote repo that will host the schema representation
 # Most likely you just need to replace Remi-Gau in the following line by your github username
 
-REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/"
+# REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/"
+REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-PET/"
 
 # ----------------------------------------
 # to which branch of reproschema the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: REMOTE_REPO + BRANCH
 
-# BRANCH = 'master'
+BRANCH = "master"
 # BRANCH = 'neurovault'
-BRANCH = "remi-MRI"
+# BRANCH = "remi-MRI"
+# BRANCH = "PET"
 
 # ----------------------------------------
 # Protocol info
 
 # Neurovaut
-# INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv'
-# PROTOCOL = 'neurovault_'
+# INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv"
+# PROTOCOL = "neurovault_"
 # CSV_INFO = {
-#     'section':
-#         {'col': 1, 'name': ""},
-#     'item':
-#         {'col': 2, 'name': "Item"},
-#     'question':
-#         {'col': 3, 'name': ""},
-#     'resp_type':
-#         {'col': 4, 'name': ""},
-#     'choice':
-#         {'col': 5, 'name': ""},
-#     'mandatory':
-#         {'col': 6, 'name': ""},
-#     'include':
-#         {'col': [], 'name': ""},
-#     'vis':
-#         {'col': 7, 'name': ""}
+#     "section": {"col": 1, "name": ""},
+#     "item": {"col": 2, "name": "Item"},
+#     "question": {"col": 3, "name": ""},
+#     "resp_type": {"col": 4, "name": ""},
+#     "choice": {"col": 5, "name": ""},
+#     "mandatory": {"col": 6, "name": ""},
+#     "include": {"col": [], "name": ""},
+#     "vis": {"col": 7, "name": ""},
 # }
 
 # PET
-# INPUT_FILE = '/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv'
-# PROTOCOL = 'PET_'
-# CSV_INFO = {
-#     'section':
-#         {'col': 4, 'name': ""},
-#     'item':
-#         {'col': 5, 'name': "Item"},
-#     'question':
-#         {'col': 7, 'name': ""},
-#     'resp_type':
-#         {'col': 9, 'name': ""},
-#     'choice':
-#         {'col': 10, 'name': ""},
-#     'mandatory':
-#         {'col': 11, 'name': ""},
-#     'include':
-#         {'col': [], 'name': ""},
-#     'vis':
-#         {'col': 12, 'name': ""}
-# }
+INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv"
+PROTOCOL = "PET_"
+CSV_INFO = {
+    "section": {"col": 5, "name": "Activity"},
+    "act_pref_label": {"col": 6, "name": "Activity pref label"},
+    "item": {"col": 7, "name": "Item"},
+    "question": {"col": 9, "name": ""},
+    "resp_type": {"col": 11, "name": ""},
+    "choice": {"col": 12, "name": ""},
+    "mandatory": {"col": 14, "name": ""},
+    "include": {"col": 21, "name": ""},
+    "vis": {"col": 15, "name": ""},
+}
 
 # COBIDAS MRI
-INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/COBIDAS_MRI - clean.csv"
-PROTOCOL = "cobidas-MRI_"
-CSV_INFO = {
-    "section": {"col": 18, "name": ""},
-    "item": {"col": 24, "name": "Item"},
-    "question": {"col": 26, "name": ""},
-    "resp_type": {"col": 28, "name": ""},
-    "choice": {"col": 29, "name": ""},
-    "mandatory": {"col": 15, "name": ""},
-    "include": {"col": 13, "name": ""},
-    "vis": {"col": 30, "name": ""},
-}
+# INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/COBIDAS_MRI - clean.csv"
+# PROTOCOL = "cobidas-MRI_"
+# CSV_INFO = {
+#     "section": {"col": 18, "name": ""},
+#     "item": {"col": 24, "name": "Item"},
+#     "question": {"col": 26, "name": ""},
+#     "resp_type": {"col": 28, "name": ""},
+#     "choice": {"col": 29, "name": ""},
+#     "mandatory": {"col": 15, "name": ""},
+#     "include": {"col": 13, "name": ""},
+#     "vis": {"col": 30, "name": ""},
+# }
 
 # --------------------
 # VERSION
@@ -190,6 +178,8 @@ with open(INPUT_FILE, "r") as csvfile:
                 this_section = row[CSV_INFO["section"]["col"]]
                 section = this_section.replace(" ", "_")
 
+                activity_pref_label = row[CSV_INFO["act_pref_label"]["col"]]
+
                 # where the items of this section will be stored
                 activity_dir = PROTOCOL + section
 
@@ -229,13 +219,9 @@ with open(INPUT_FILE, "r") as csvfile:
                 append_to_protocol = {
                     "variableName": activity_schema_name,
                     "isAbout": activity_schema_name,
-                    # for the name displayed by the UI for this acivity we simply reuse the
+                    # for the name displayed by the UI for this activity we simply reuse the
                     # activity name
-                    "prefLabel": {
-                        "en": activity_schema_name.replace(PROTOCOL, "")
-                        .replace("_", ": ")
-                        .replace("-", " ")
-                    },
+                    "prefLabel": {"en": activity_pref_label},
                 }
 
                 PROTOCOL_SCHEMA_JSON["ui"]["order"].append(activity_schema_name)
@@ -253,12 +239,17 @@ with open(INPUT_FILE, "r") as csvfile:
             # -------------------------------------------------------------------
             append_to_activity = {
                 "variableName": item_info["name"],
-                "isAbout": item_info["name"],
+                "isAbout": "item_path:" + item_info["name"],
                 "isVis": item_info["visibility"],
             }
 
             activity_schema["ui"]["order"].append(item_info["name"])
             activity_schema["ui"]["addProperties"].append(append_to_activity)
+
+            activity_context["@context"][item_info["name"]] = {
+                "@id": "item_path:" + item_info["name"],
+                "@type": "@id",
+            }
 
             # save activity schema with every new item
             with open(
@@ -268,6 +259,14 @@ with open(INPUT_FILE, "r") as csvfile:
                 "w",
             ) as ff:
                 json.dump(activity_schema, ff, sort_keys=False, indent=4)
+
+            with open(
+                os.path.join(
+                    OUTPUT_DIR, "activities", activity_dir, activity_context_file
+                ),
+                "w",
+            ) as ff:
+                json.dump(activity_context, ff, sort_keys=False, indent=4)
 
             # -------------------------------------------------------------------
             # Create new item
