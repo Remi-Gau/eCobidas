@@ -14,17 +14,6 @@ import warnings
 # Every new item encountered is added to the current activity.
 '''
 
-'''
------------------------------------------------------------------------------
-                                  TO DO
------------------------------------------------------------------------------
-
-- automate the choice of from radio to dropdown menu if the number of
-   response_choices goes above a certain number
-- allow for several condition checks for visibility
-- allow for mandatory items
-'''
-
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS
 # -----------------------------------------------------------------------------

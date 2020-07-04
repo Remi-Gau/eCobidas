@@ -1,5 +1,27 @@
 def define_activity_context(REPRONIM_REPO, REMOTE_REPO, BRANCH, activity_dir, activity_context_file):
+    # """Validate a directory containing JSONLD documents
 
+    # .. warning:: This assumes every file in the directory can be read by a json parser.
+
+    # Parameters
+    # ----------
+    # directory: str
+    #     Path to directory to walk for validation
+    # shape_dir: str
+    #     Path containing validation SHACL shape files
+    # started : bool
+    #     Whether an http server exists or not
+    # http_kwargs : dict
+    #     Keyword arguments for the http server. Valid keywords are: port, path
+    #     and tmpdir
+
+    # Returns
+    # -------
+    # conforms: bool
+    #     Whether the document is conformant with the shape. Raises an exception
+    #     if any document is non-conformant.
+
+    # """
     context = {
         '@context': {
             '@version': 1.1,
