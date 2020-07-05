@@ -5,9 +5,6 @@ from protocol import define_new_protocol, update_protocol
 from activity import define_new_activity, update_activity
 from item import get_item_info, define_new_item
 
-# import pandas as pd
-import warnings
-
 """
 # This script takes the content of the a csv file and turns it into a reproschema
 # protocol.
@@ -22,7 +19,8 @@ import warnings
 # -----------------------------------------------------------------------------
 # modify the following lines to match your needs
 
-REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/master/"
+# REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/master/"
+REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/"
 
 # ----------------------------------------
 # where the checklist csv is. It is in xlsx dir of this repo
@@ -51,7 +49,8 @@ REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/"
 # BRANCH = "master"
 # BRANCH = 'neurovault'
 # BRANCH = "remi-MRI"
-BRANCH = "PET"
+# BRANCH = "PET"
+BRANCH = "remi-reproschema_ref1"
 
 # ----------------------------------------
 # Protocol info
@@ -175,14 +174,6 @@ with open(INPUT_FILE, "r") as csvfile:
             ) as ff:
                 json.dump(activity["schema"], ff, sort_keys=False, indent=4)
 
-            with open(
-                os.path.join(
-                    OUTPUT_DIR, "activities", activity["name"], activity["context_file"]
-                ),
-                "w",
-            ) as ff:
-                json.dump(activity["context"], ff, sort_keys=False, indent=4)
-
             # -------------------------------------------------------------------
             # Create new item
             # -------------------------------------------------------------------
@@ -190,7 +181,7 @@ with open(INPUT_FILE, "r") as csvfile:
             print("       " + item_info["question"])
             print("       " + item_info["resp_type"])
 
-            item_schema = define_new_item(activity["at_context"], item_info, VERSION)
+            item_schema = define_new_item(item_info, REPRONIM_REPO, VERSION)
 
             # write item schema
             with open(
@@ -210,9 +201,3 @@ with open(
     os.path.join(OUTPUT_DIR, "protocols", protocol["dir"], protocol["schema_file"]), "w"
 ) as ff:
     json.dump(protocol["schema"], ff, sort_keys=False, indent=4)
-
-with open(
-    os.path.join(OUTPUT_DIR, "protocols", protocol["dir"], protocol["context_file"]),
-    "w",
-) as ff:
-    json.dump(protocol["context"], ff, sort_keys=False, indent=4)

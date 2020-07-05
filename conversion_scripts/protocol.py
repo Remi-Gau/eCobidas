@@ -8,12 +8,7 @@ def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
     protocol["schema"] = {
         "@context": [
             REPRONIM_REPO + "contexts/generic",
-            REMOTE_REPO
-            + BRANCH
-            + "/protocols/"
-            + protocol["dir"]
-            + "/"
-            + protocol["context_file"],
+            {"activity_path": REMOTE_REPO + BRANCH + "/activities/"},
         ],
         "@type": "reproschema:Protocol",
         "@id": protocol["schema_file"],
@@ -21,25 +16,14 @@ def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
         "schema:description": protocol["schema_file"],
         "schema:schemaVersion": VERSION,
         "schema:version": VERSION,
-        "landingPage": REMOTE_REPO
-        + BRANCH
-        + "/protocols/"
-        + protocol["dir"]
-        + "/README.md",
+        "landingPage": {"@id": "README.md", "@language": "en"},
+        # "image": "mit_voice_pilot_applet_image.svg?sanitize=true",
         "ui": {
-            "allow": ["autoAdvance", "allowExport"],
+            "allow": ["reproschema:AutoAdvance", "reproschema:AllowExport"],
             "shuffle": False,
             "order": [],
             "addProperties": [],
         },
-    }
-
-    # define the jsonld for the context associated to this protocol
-    protocol["context"] = {
-        "@context": {
-            "@version": 1.1,
-            "activity_path": REMOTE_REPO + BRANCH + "/activities/",
-        }
     }
 
     return protocol
@@ -47,21 +31,20 @@ def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
 
 def update_protocol(activity, protocol):
 
+    activity["URI"] = (
+        "activity_path:" + activity["name"] + "/" + activity["schema_file"]
+    )
+
     # update the content of the protool schema and context wrt this new activity
     append_to_protocol = {
         "variableName": activity["name"],
-        "isAbout": activity["name"],
+        "isAbout": activity["URI"],
         # for the name displayed by the UI for this activity we simply reuse the
         # activity name
         "prefLabel": {"en": activity["pref_label"]},
     }
 
-    protocol["schema"]["ui"]["order"].append(activity["name"])
+    protocol["schema"]["ui"]["order"].append(activity["URI"])
     protocol["schema"]["ui"]["addProperties"].append(append_to_protocol)
-
-    protocol["context"]["@context"][activity["name"]] = {
-        "@id": "activity_path:" + activity["name"] + "/" + activity["schema_file"],
-        "@type": "@id",
-    }
 
     return protocol

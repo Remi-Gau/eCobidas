@@ -70,18 +70,18 @@ def get_mandatory(row, CSV_INFO):
     return mandatory
 
 
-def define_new_item(at_context, item_info, VERSION):
+def define_new_item(item_info, REPRONIM_REPO, VERSION):
     # define jsonld for this item
 
     item_schema = {
-        "@context": at_context,
+        "@context": REPRONIM_REPO + "contexts/generic",
         "@type": "reproschema:Field",
         "@id": item_info["name"],
         "prefLabel": item_info["name"],
         "schema:description": item_info["name"],
         "schema:schemaVersion": VERSION,
         "schema:version": VERSION,
-        "ui": {"allow": ["skipped"], "inputType": []},
+        "ui": {"allow": ["reproschema:Skipped"], "inputType": []},
         "question": {"en": item_info["question"]},
     }
 
@@ -179,9 +179,9 @@ def slider_response(response_choices, min_label, max_label):
 
     from numpy import linspace
 
-    min = float(response_choices[0])
-    max = float(response_choices[1])
-    steps = float(response_choices[2]) + 1 if len(response_choices) == 3 else 101
+    min = int(response_choices[0])
+    max = int(response_choices[1])
+    steps = int(response_choices[2]) + 1 if len(response_choices) == 3 else 101
     responseOptions = {
         "valueType": "xsd:integer",
         "schema:minValue": min,
