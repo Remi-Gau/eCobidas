@@ -1,8 +1,5 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_time/PET_radioligand_time_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "InjectionStart",
     "prefLabel": "InjectionStart",
@@ -11,7 +8,7 @@
     "schema:version": "0.0.1",
     "ui": {
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "inputType": "timeRange"
     },

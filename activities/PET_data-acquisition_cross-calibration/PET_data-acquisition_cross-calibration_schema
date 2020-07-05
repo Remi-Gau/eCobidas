@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_data-acquisition_cross-calibration/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-acquisition_cross-calibration_schema",
@@ -12,24 +14,24 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "blood-sampling-device-read",
-            "blood-sampling-device-measurement-time",
-            "phantom-type",
-            "phantom-volume",
-            "radiotracer-isotope",
-            "phantom-activity",
-            "activity-time",
-            "residual-activity",
-            "residual-activity-time",
-            "phantom-acquisition-time",
-            "well-counter-sample-volumes",
-            "well-counter-measurement-time",
-            "well-counter-read",
-            "phantom-data"
+            "item_path:blood-sampling-device-read",
+            "item_path:blood-sampling-device-measurement-time",
+            "item_path:phantom-type",
+            "item_path:phantom-volume",
+            "item_path:radiotracer-isotope",
+            "item_path:phantom-activity",
+            "item_path:activity-time",
+            "item_path:residual-activity",
+            "item_path:residual-activity-time",
+            "item_path:phantom-acquisition-time",
+            "item_path:well-counter-sample-volumes",
+            "item_path:well-counter-measurement-time",
+            "item_path:well-counter-read",
+            "item_path:phantom-data"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {

@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiochem/PET_radioligand_radiochem_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_radioligand_radiochem/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_radiochem_schema",
@@ -12,23 +14,23 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "ModeOfAdministration",
-            "InfusionSpeed",
-            "InjectedRadioactivity",
-            "InjectedMass",
-            "moles-tracer-injected",
-            "bodyweight",
-            "MolarActivity",
-            "MolarActivityMeasTime",
-            "SpecificRadioactivity",
-            "SpecificRadioactivityMeasTime",
-            "Purity",
-            "InjectedVolume",
-            "formulation"
+            "item_path:ModeOfAdministration",
+            "item_path:InfusionSpeed",
+            "item_path:InjectedRadioactivity",
+            "item_path:InjectedMass",
+            "item_path:moles-tracer-injected",
+            "item_path:bodyweight",
+            "item_path:MolarActivity",
+            "item_path:MolarActivityMeasTime",
+            "item_path:SpecificRadioactivity",
+            "item_path:SpecificRadioactivityMeasTime",
+            "item_path:Purity",
+            "item_path:InjectedVolume",
+            "item_path:formulation"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {

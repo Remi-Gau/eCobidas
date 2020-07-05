@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_info/PET_data-acquisition_info_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_data-acquisition_info/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-acquisition_info_schema",
@@ -12,19 +14,19 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "Modality",
-            "Manufacturer",
-            "ManufacturersModelName",
-            "Anaesthesia",
-            "BodyPart",
-            "Unit",
-            "experiment-date",
-            "imaging-center-site",
-            "imaging-department"
+            "item_path:Modality",
+            "item_path:Manufacturer",
+            "item_path:ManufacturersModelName",
+            "item_path:Anaesthesia",
+            "item_path:BodyPart",
+            "item_path:Unit",
+            "item_path:experiment-date",
+            "item_path:imaging-center-site",
+            "item_path:imaging-department"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {

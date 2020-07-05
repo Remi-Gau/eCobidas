@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_power-analysis/PET_statistics_power-analysis_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_statistics_power-analysis/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_statistics_power-analysis_schema",
@@ -12,15 +14,15 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "alpha-level",
-            "power",
-            "effect-size",
-            "variance-assumption",
-            "number-of-subjects-needed"
+            "item_path:alpha-level",
+            "item_path:power",
+            "item_path:effect-size",
+            "item_path:variance-assumption",
+            "item_path:number-of-subjects-needed"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {

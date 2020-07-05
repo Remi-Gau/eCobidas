@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_data-analysis_kinetic-modeling/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_kinetic-modeling_schema",
@@ -12,17 +14,17 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "model",
-            "reference-volume",
-            "outcome-measure",
-            "weighting",
-            "level-of-analysis",
-            "kinetic-modelling-software",
-            "kinetic-modelling-software-version"
+            "item_path:model",
+            "item_path:reference-volume",
+            "item_path:outcome-measure",
+            "item_path:weighting",
+            "item_path:level-of-analysis",
+            "item_path:kinetic-modelling-software",
+            "item_path:kinetic-modelling-software-version"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {

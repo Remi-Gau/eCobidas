@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_data-analysis_blood-data-processing/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_blood-data-processing_schema",
@@ -12,15 +14,15 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "sampling-method",
-            "delay-time-correction",
-            "fitting",
-            "fitting-description",
-            "blood-data-processing-interpolation"
+            "item_path:sampling-method",
+            "item_path:delay-time-correction",
+            "item_path:fitting",
+            "item_path:fitting-description",
+            "item_path:blood-data-processing-interpolation"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {

@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_motion-correction/PET_data-analysis_preprocessing_motion-correction_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_data-analysis_preprocessing_motion-correction/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_motion-correction_schema",
@@ -12,17 +14,17 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "moco-reference-image",
-            "moco-cost-function",
-            "moco-interpolation",
-            "moco-smoothing",
-            "moco-quality-control",
-            "moco-software",
-            "moco-software-version"
+            "item_path:moco-reference-image",
+            "item_path:moco-cost-function",
+            "item_path:moco-interpolation",
+            "item_path:moco-smoothing",
+            "item_path:moco-quality-control",
+            "item_path:moco-software",
+            "item_path:moco-software-version"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {

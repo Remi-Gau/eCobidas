@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_plasma/PET_radioligand_plasma_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_radioligand_plasma/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_plasma_schema",
@@ -12,19 +14,19 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "PlasmaAvail",
-            "PlasmaFreeFraction",
-            "error-of-free-fraction-measurement",
-            "PlasmaFreeFractionMethod",
-            "data:-decay-corrected",
-            "data:-decay-correction-time",
-            "data:-type",
-            "data:-units",
-            "data:-hematocrit-value"
+            "item_path:PlasmaAvail",
+            "item_path:PlasmaFreeFraction",
+            "item_path:error-of-free-fraction-measurement",
+            "item_path:PlasmaFreeFractionMethod",
+            "item_path:data:-decay-corrected",
+            "item_path:data:-decay-correction-time",
+            "item_path:data:-type",
+            "item_path:data:-units",
+            "item_path:data:-hematocrit-value"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {

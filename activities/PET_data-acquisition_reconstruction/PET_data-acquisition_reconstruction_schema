@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_data-acquisition_reconstruction/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-acquisition_reconstruction_schema",
@@ -12,29 +14,29 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "AcquisitionMode",
-            "ImageDecayCorrected",
-            "ImageDecayCorrectionTime",
-            "ReconMethodName",
-            "ReconMethodParameterLabels",
-            "ReconFilterType",
-            "AttenuationCorrection",
-            "ReconFilterSize",
-            "pet-voxel-size",
-            "matrix-size",
-            "frame-sequence",
-            "ScaleFactor",
-            "ScatterFraction",
-            "DecayCorrectionFactor",
-            "PromptRate",
-            "RandomRate",
-            "SinglesRate",
-            "data:-labels",
-            "AttenuationCorrectionMethodReference"
+            "item_path:AcquisitionMode",
+            "item_path:ImageDecayCorrected",
+            "item_path:ImageDecayCorrectionTime",
+            "item_path:ReconMethodName",
+            "item_path:ReconMethodParameterLabels",
+            "item_path:ReconFilterType",
+            "item_path:AttenuationCorrection",
+            "item_path:ReconFilterSize",
+            "item_path:pet-voxel-size",
+            "item_path:matrix-size",
+            "item_path:frame-sequence",
+            "item_path:ScaleFactor",
+            "item_path:ScatterFraction",
+            "item_path:DecayCorrectionFactor",
+            "item_path:PromptRate",
+            "item_path:RandomRate",
+            "item_path:SinglesRate",
+            "item_path:data:-labels",
+            "item_path:AttenuationCorrectionMethodReference"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {

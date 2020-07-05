@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_time/PET_radioligand_time_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_radioligand_time/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_time_schema",
@@ -12,17 +14,17 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "ScanDate",
-            "TimeZero",
-            "ScanStart",
-            "InjectionStart",
-            "InjectionEnd",
-            "FrameTimesStart",
-            "FrameDuration"
+            "item_path:ScanDate",
+            "item_path:TimeZero",
+            "item_path:ScanStart",
+            "item_path:InjectionStart",
+            "item_path:InjectionEnd",
+            "item_path:FrameTimesStart",
+            "item_path:FrameDuration"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {

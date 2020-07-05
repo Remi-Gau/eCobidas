@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
@@ -12,20 +14,20 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "volumes-of-interest-obtained-from",
-            "volumes-of-interest-operational-criteria",
-            "volumes-of-interest-mask",
-            "volumes-of-interest-procedure",
-            "volumes-of-interest",
-            "volumes-of-interest-software",
-            "partial-volume-correction-technique",
-            "partial-volume-correction-assumptions",
-            "partial-volume-correction-software",
-            "partial-volume-correction-software-version"
+            "item_path:volumes-of-interest-obtained-from",
+            "item_path:volumes-of-interest-operational-criteria",
+            "item_path:volumes-of-interest-mask",
+            "item_path:volumes-of-interest-procedure",
+            "item_path:volumes-of-interest",
+            "item_path:volumes-of-interest-software",
+            "item_path:partial-volume-correction-technique",
+            "item_path:partial-volume-correction-assumptions",
+            "item_path:partial-volume-correction-software",
+            "item_path:partial-volume-correction-software-version"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {

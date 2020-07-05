@@ -1,7 +1,9 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_whole-blood/PET_radioligand_whole-blood_context"
+        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_radioligand_whole-blood/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_whole-blood_schema",
@@ -12,12 +14,12 @@
     "preamble": " ",
     "ui": {
         "order": [
-            "whole-blood-radioactivity",
-            "plasma-to-whole-blood-ratio"
+            "item_path:whole-blood-radioactivity",
+            "item_path:plasma-to-whole-blood-ratio"
         ],
         "shuffle": false,
         "allow": [
-            "skipped"
+            "reproschema:Skipped"
         ],
         "addProperties": [
             {
