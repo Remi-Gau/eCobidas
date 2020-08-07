@@ -1,62 +1,57 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_preprocessing_motion-correction/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_motion-correction_schema",
     "prefLabel": "PET_data-analysis_preprocessing_motion-correction",
     "description": "PET_data-analysis_preprocessing_motion-correction",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:moco-reference-image",
-            "item_path:moco-cost-function",
-            "item_path:moco-interpolation",
-            "item_path:moco-smoothing",
-            "item_path:moco-quality-control",
-            "item_path:moco-software",
-            "item_path:moco-software-version"
+            "items/moco-reference-image",
+            "items/moco-cost-function",
+            "items/moco-interpolation",
+            "items/moco-smoothing",
+            "items/moco-quality-control",
+            "items/moco-software",
+            "items/moco-software-version"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "moco-reference-image",
-                "isAbout": "item_path:moco-reference-image",
+                "isAbout": "items/moco-reference-image",
                 "isVis": true
             },
             {
                 "variableName": "moco-cost-function",
-                "isAbout": "item_path:moco-cost-function",
+                "isAbout": "items/moco-cost-function",
                 "isVis": true
             },
             {
                 "variableName": "moco-interpolation",
-                "isAbout": "item_path:moco-interpolation",
+                "isAbout": "items/moco-interpolation",
                 "isVis": true
             },
             {
                 "variableName": "moco-smoothing",
-                "isAbout": "item_path:moco-smoothing",
+                "isAbout": "items/moco-smoothing",
                 "isVis": true
             },
             {
                 "variableName": "moco-quality-control",
-                "isAbout": "item_path:moco-quality-control",
+                "isAbout": "items/moco-quality-control",
                 "isVis": true
             },
             {
                 "variableName": "moco-software",
-                "isAbout": "item_path:moco-software",
+                "isAbout": "items/moco-software",
                 "isVis": true
             },
             {
                 "variableName": "moco-software-version",
-                "isAbout": "item_path:moco-software-version",
+                "isAbout": "items/moco-software-version",
                 "isVis": true
             }
         ]

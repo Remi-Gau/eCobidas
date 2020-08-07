@@ -1,104 +1,99 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_preprocessing_registration/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_registration_schema",
     "prefLabel": "PET_data-analysis_preprocessing_registration",
     "description": "PET_data-analysis_preprocessing_registration",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:registration-reference-image",
-            "item_path:registration-target-image",
-            "item_path:registration-cost-function",
-            "item_path:registration-interpolation",
-            "item_path:registration-smoothing",
-            "item_path:resolution-of-reference-target",
-            "item_path:registration-quality-control",
-            "item_path:registration-software",
-            "item_path:registration-software-version",
-            "item_path:smoothing-target-image",
-            "item_path:shape-of-smoothing-filter",
-            "item_path:size-of-smoothing-filter",
-            "item_path:justification-for-smoothing-size",
-            "item_path:space-of-smoothing"
+            "items/registration-reference-image",
+            "items/registration-target-image",
+            "items/registration-cost-function",
+            "items/registration-interpolation",
+            "items/registration-smoothing",
+            "items/resolution-of-reference-target",
+            "items/registration-quality-control",
+            "items/registration-software",
+            "items/registration-software-version",
+            "items/smoothing-target-image",
+            "items/shape-of-smoothing-filter",
+            "items/size-of-smoothing-filter",
+            "items/justification-for-smoothing-size",
+            "items/space-of-smoothing"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "registration-reference-image",
-                "isAbout": "item_path:registration-reference-image",
+                "isAbout": "items/registration-reference-image",
                 "isVis": true
             },
             {
                 "variableName": "registration-target-image",
-                "isAbout": "item_path:registration-target-image",
+                "isAbout": "items/registration-target-image",
                 "isVis": true
             },
             {
                 "variableName": "registration-cost-function",
-                "isAbout": "item_path:registration-cost-function",
+                "isAbout": "items/registration-cost-function",
                 "isVis": true
             },
             {
                 "variableName": "registration-interpolation",
-                "isAbout": "item_path:registration-interpolation",
+                "isAbout": "items/registration-interpolation",
                 "isVis": true
             },
             {
                 "variableName": "registration-smoothing",
-                "isAbout": "item_path:registration-smoothing",
+                "isAbout": "items/registration-smoothing",
                 "isVis": true
             },
             {
                 "variableName": "resolution-of-reference-target",
-                "isAbout": "item_path:resolution-of-reference-target",
+                "isAbout": "items/resolution-of-reference-target",
                 "isVis": true
             },
             {
                 "variableName": "registration-quality-control",
-                "isAbout": "item_path:registration-quality-control",
+                "isAbout": "items/registration-quality-control",
                 "isVis": true
             },
             {
                 "variableName": "registration-software",
-                "isAbout": "item_path:registration-software",
+                "isAbout": "items/registration-software",
                 "isVis": true
             },
             {
                 "variableName": "registration-software-version",
-                "isAbout": "item_path:registration-software-version",
+                "isAbout": "items/registration-software-version",
                 "isVis": true
             },
             {
                 "variableName": "smoothing-target-image",
-                "isAbout": "item_path:smoothing-target-image",
+                "isAbout": "items/smoothing-target-image",
                 "isVis": true
             },
             {
                 "variableName": "shape-of-smoothing-filter",
-                "isAbout": "item_path:shape-of-smoothing-filter",
+                "isAbout": "items/shape-of-smoothing-filter",
                 "isVis": true
             },
             {
                 "variableName": "size-of-smoothing-filter",
-                "isAbout": "item_path:size-of-smoothing-filter",
+                "isAbout": "items/size-of-smoothing-filter",
                 "isVis": true
             },
             {
                 "variableName": "justification-for-smoothing-size",
-                "isAbout": "item_path:justification-for-smoothing-size",
+                "isAbout": "items/justification-for-smoothing-size",
                 "isVis": true
             },
             {
                 "variableName": "space-of-smoothing",
-                "isAbout": "item_path:space-of-smoothing",
+                "isAbout": "items/space-of-smoothing",
                 "isVis": true
             }
         ]

@@ -1,68 +1,63 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/neurovault_Experimental_design/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "neurovault_Experimental_design_schema",
     "prefLabel": "neurovault_Experimental_design",
     "description": "neurovault_Experimental_design",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:type_of_design",
-            "item_path:number_of_imaging_runs",
-            "item_path:number_of_experimental_units",
-            "item_path:length_of_runs",
-            "item_path:length_of_blocks",
-            "item_path:length_of_trials",
-            "item_path:optimization",
-            "item_path:optimization_method"
+            "items/type_of_design",
+            "items/number_of_imaging_runs",
+            "items/number_of_experimental_units",
+            "items/length_of_runs",
+            "items/length_of_blocks",
+            "items/length_of_trials",
+            "items/optimization",
+            "items/optimization_method"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "type_of_design",
-                "isAbout": "item_path:type_of_design",
+                "isAbout": "items/type_of_design",
                 "isVis": true
             },
             {
                 "variableName": "number_of_imaging_runs",
-                "isAbout": "item_path:number_of_imaging_runs",
+                "isAbout": "items/number_of_imaging_runs",
                 "isVis": true
             },
             {
                 "variableName": "number_of_experimental_units",
-                "isAbout": "item_path:number_of_experimental_units",
+                "isAbout": "items/number_of_experimental_units",
                 "isVis": true
             },
             {
                 "variableName": "length_of_runs",
-                "isAbout": "item_path:length_of_runs",
+                "isAbout": "items/length_of_runs",
                 "isVis": true
             },
             {
                 "variableName": "length_of_blocks",
-                "isAbout": "item_path:length_of_blocks",
+                "isAbout": "items/length_of_blocks",
                 "isVis": true
             },
             {
                 "variableName": "length_of_trials",
-                "isAbout": "item_path:length_of_trials",
+                "isAbout": "items/length_of_trials",
                 "isVis": true
             },
             {
                 "variableName": "optimization",
-                "isAbout": "item_path:optimization",
+                "isAbout": "items/optimization",
                 "isVis": true
             },
             {
                 "variableName": "optimization_method",
-                "isAbout": "item_path:optimization_method",
+                "isAbout": "items/optimization_method",
                 "isVis": "optimization == 1"
             }
         ]

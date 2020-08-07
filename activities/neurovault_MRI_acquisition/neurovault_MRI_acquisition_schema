@@ -1,104 +1,99 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/neurovault_MRI_acquisition/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "neurovault_MRI_acquisition_schema",
     "prefLabel": "neurovault_MRI_acquisition",
     "description": "neurovault_MRI_acquisition",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:scanner_make",
-            "item_path:scanner_model",
-            "item_path:field_strength",
-            "item_path:pulse_sequence",
-            "item_path:parallel_imaging",
-            "item_path:field_of_view",
-            "item_path:matrix_size",
-            "item_path:slice_thickness",
-            "item_path:skip_factor",
-            "item_path:acquisition_orientation",
-            "item_path:order_of_acquisition",
-            "item_path:repetition_time",
-            "item_path:echo_time",
-            "item_path:flip_angle"
+            "items/scanner_make",
+            "items/scanner_model",
+            "items/field_strength",
+            "items/pulse_sequence",
+            "items/parallel_imaging",
+            "items/field_of_view",
+            "items/matrix_size",
+            "items/slice_thickness",
+            "items/skip_factor",
+            "items/acquisition_orientation",
+            "items/order_of_acquisition",
+            "items/repetition_time",
+            "items/echo_time",
+            "items/flip_angle"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "scanner_make",
-                "isAbout": "item_path:scanner_make",
+                "isAbout": "items/scanner_make",
                 "isVis": true
             },
             {
                 "variableName": "scanner_model",
-                "isAbout": "item_path:scanner_model",
+                "isAbout": "items/scanner_model",
                 "isVis": true
             },
             {
                 "variableName": "field_strength",
-                "isAbout": "item_path:field_strength",
+                "isAbout": "items/field_strength",
                 "isVis": true
             },
             {
                 "variableName": "pulse_sequence",
-                "isAbout": "item_path:pulse_sequence",
+                "isAbout": "items/pulse_sequence",
                 "isVis": true
             },
             {
                 "variableName": "parallel_imaging",
-                "isAbout": "item_path:parallel_imaging",
+                "isAbout": "items/parallel_imaging",
                 "isVis": true
             },
             {
                 "variableName": "field_of_view",
-                "isAbout": "item_path:field_of_view",
+                "isAbout": "items/field_of_view",
                 "isVis": true
             },
             {
                 "variableName": "matrix_size",
-                "isAbout": "item_path:matrix_size",
+                "isAbout": "items/matrix_size",
                 "isVis": true
             },
             {
                 "variableName": "slice_thickness",
-                "isAbout": "item_path:slice_thickness",
+                "isAbout": "items/slice_thickness",
                 "isVis": true
             },
             {
                 "variableName": "skip_factor",
-                "isAbout": "item_path:skip_factor",
+                "isAbout": "items/skip_factor",
                 "isVis": true
             },
             {
                 "variableName": "acquisition_orientation",
-                "isAbout": "item_path:acquisition_orientation",
+                "isAbout": "items/acquisition_orientation",
                 "isVis": true
             },
             {
                 "variableName": "order_of_acquisition",
-                "isAbout": "item_path:order_of_acquisition",
+                "isAbout": "items/order_of_acquisition",
                 "isVis": true
             },
             {
                 "variableName": "repetition_time",
-                "isAbout": "item_path:repetition_time",
+                "isAbout": "items/repetition_time",
                 "isVis": true
             },
             {
                 "variableName": "echo_time",
-                "isAbout": "item_path:echo_time",
+                "isAbout": "items/echo_time",
                 "isVis": true
             },
             {
                 "variableName": "flip_angle",
-                "isAbout": "item_path:flip_angle",
+                "isAbout": "items/flip_angle",
                 "isVis": true
             }
         ]

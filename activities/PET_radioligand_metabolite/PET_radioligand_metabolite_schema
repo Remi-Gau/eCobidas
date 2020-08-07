@@ -1,86 +1,81 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_metabolite/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_metabolite_schema",
     "prefLabel": "PET_radioligand_metabolite",
     "description": "PET_radioligand_metabolite",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:MetaboliteAvail",
-            "item_path:MetaboliteMethod",
-            "item_path:radiolabeled-parent-compound-fraction",
-            "item_path:dataLabels",
-            "item_path:parent-fraction-units",
-            "item_path:parent-fraction-measurement-error",
-            "item_path:metabolite-analysis-timepoints",
-            "item_path:fraction-of-radiometabolite-needing-quantitation",
-            "item_path:error-on-above-measurement",
-            "item_path:radiolabeled-metabolite-fractions",
-            "item_path:MetaboliteRecoveryCorrectionApplied"
+            "items/MetaboliteAvail",
+            "items/MetaboliteMethod",
+            "items/radiolabeled-parent-compound-fraction",
+            "items/dataLabels",
+            "items/parent-fraction-units",
+            "items/parent-fraction-measurement-error",
+            "items/metabolite-analysis-timepoints",
+            "items/fraction-of-radiometabolite-needing-quantitation",
+            "items/error-on-above-measurement",
+            "items/radiolabeled-metabolite-fractions",
+            "items/MetaboliteRecoveryCorrectionApplied"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "MetaboliteAvail",
-                "isAbout": "item_path:MetaboliteAvail",
+                "isAbout": "items/MetaboliteAvail",
                 "isVis": true
             },
             {
                 "variableName": "MetaboliteMethod",
-                "isAbout": "item_path:MetaboliteMethod",
+                "isAbout": "items/MetaboliteMethod",
                 "isVis": "MetaboliteAvail == 1"
             },
             {
                 "variableName": "radiolabeled-parent-compound-fraction",
-                "isAbout": "item_path:radiolabeled-parent-compound-fraction",
+                "isAbout": "items/radiolabeled-parent-compound-fraction",
                 "isVis": true
             },
             {
                 "variableName": "dataLabels",
-                "isAbout": "item_path:dataLabels",
+                "isAbout": "items/dataLabels",
                 "isVis": true
             },
             {
                 "variableName": "parent-fraction-units",
-                "isAbout": "item_path:parent-fraction-units",
+                "isAbout": "items/parent-fraction-units",
                 "isVis": true
             },
             {
                 "variableName": "parent-fraction-measurement-error",
-                "isAbout": "item_path:parent-fraction-measurement-error",
+                "isAbout": "items/parent-fraction-measurement-error",
                 "isVis": true
             },
             {
                 "variableName": "metabolite-analysis-timepoints",
-                "isAbout": "item_path:metabolite-analysis-timepoints",
+                "isAbout": "items/metabolite-analysis-timepoints",
                 "isVis": true
             },
             {
                 "variableName": "fraction-of-radiometabolite-needing-quantitation",
-                "isAbout": "item_path:fraction-of-radiometabolite-needing-quantitation",
+                "isAbout": "items/fraction-of-radiometabolite-needing-quantitation",
                 "isVis": true
             },
             {
                 "variableName": "error-on-above-measurement",
-                "isAbout": "item_path:error-on-above-measurement",
+                "isAbout": "items/error-on-above-measurement",
                 "isVis": true
             },
             {
                 "variableName": "radiolabeled-metabolite-fractions",
-                "isAbout": "item_path:radiolabeled-metabolite-fractions",
+                "isAbout": "items/radiolabeled-metabolite-fractions",
                 "isVis": true
             },
             {
                 "variableName": "MetaboliteRecoveryCorrectionApplied",
-                "isAbout": "item_path:MetaboliteRecoveryCorrectionApplied",
+                "isAbout": "items/MetaboliteRecoveryCorrectionApplied",
                 "isVis": "MetaboliteAvail == 1"
             }
         ]

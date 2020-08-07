@@ -1,98 +1,93 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_radiochem/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_radiochem_schema",
     "prefLabel": "PET_radioligand_radiochem",
     "description": "PET_radioligand_radiochem",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:ModeOfAdministration",
-            "item_path:InfusionSpeed",
-            "item_path:InjectedRadioactivity",
-            "item_path:InjectedMass",
-            "item_path:moles-tracer-injected",
-            "item_path:bodyweight",
-            "item_path:MolarActivity",
-            "item_path:MolarActivityMeasTime",
-            "item_path:SpecificRadioactivity",
-            "item_path:SpecificRadioactivityMeasTime",
-            "item_path:Purity",
-            "item_path:InjectedVolume",
-            "item_path:formulation"
+            "items/ModeOfAdministration",
+            "items/InfusionSpeed",
+            "items/InjectedRadioactivity",
+            "items/InjectedMass",
+            "items/moles-tracer-injected",
+            "items/bodyweight",
+            "items/MolarActivity",
+            "items/MolarActivityMeasTime",
+            "items/SpecificRadioactivity",
+            "items/SpecificRadioactivityMeasTime",
+            "items/Purity",
+            "items/InjectedVolume",
+            "items/formulation"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "ModeOfAdministration",
-                "isAbout": "item_path:ModeOfAdministration",
+                "isAbout": "items/ModeOfAdministration",
                 "isVis": true
             },
             {
                 "variableName": "InfusionSpeed",
-                "isAbout": "item_path:InfusionSpeed",
+                "isAbout": "items/InfusionSpeed",
                 "isVis": true
             },
             {
                 "variableName": "InjectedRadioactivity",
-                "isAbout": "item_path:InjectedRadioactivity",
+                "isAbout": "items/InjectedRadioactivity",
                 "isVis": true
             },
             {
                 "variableName": "InjectedMass",
-                "isAbout": "item_path:InjectedMass",
+                "isAbout": "items/InjectedMass",
                 "isVis": true
             },
             {
                 "variableName": "moles-tracer-injected",
-                "isAbout": "item_path:moles-tracer-injected",
+                "isAbout": "items/moles-tracer-injected",
                 "isVis": true
             },
             {
                 "variableName": "bodyweight",
-                "isAbout": "item_path:bodyweight",
+                "isAbout": "items/bodyweight",
                 "isVis": true
             },
             {
                 "variableName": "MolarActivity",
-                "isAbout": "item_path:MolarActivity",
+                "isAbout": "items/MolarActivity",
                 "isVis": true
             },
             {
                 "variableName": "MolarActivityMeasTime",
-                "isAbout": "item_path:MolarActivityMeasTime",
+                "isAbout": "items/MolarActivityMeasTime",
                 "isVis": true
             },
             {
                 "variableName": "SpecificRadioactivity",
-                "isAbout": "item_path:SpecificRadioactivity",
+                "isAbout": "items/SpecificRadioactivity",
                 "isVis": true
             },
             {
                 "variableName": "SpecificRadioactivityMeasTime",
-                "isAbout": "item_path:SpecificRadioactivityMeasTime",
+                "isAbout": "items/SpecificRadioactivityMeasTime",
                 "isVis": true
             },
             {
                 "variableName": "Purity",
-                "isAbout": "item_path:Purity",
+                "isAbout": "items/Purity",
                 "isVis": true
             },
             {
                 "variableName": "InjectedVolume",
-                "isAbout": "item_path:InjectedVolume",
+                "isAbout": "items/InjectedVolume",
                 "isVis": true
             },
             {
                 "variableName": "formulation",
-                "isAbout": "item_path:formulation",
+                "isAbout": "items/formulation",
                 "isVis": true
             }
         ]

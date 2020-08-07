@@ -1,50 +1,45 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_statistics_power-analysis/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_statistics_power-analysis_schema",
     "prefLabel": "PET_statistics_power-analysis",
     "description": "PET_statistics_power-analysis",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:alpha-level",
-            "item_path:power",
-            "item_path:effect-size",
-            "item_path:variance-assumption",
-            "item_path:number-of-subjects-needed"
+            "items/alpha-level",
+            "items/power",
+            "items/effect-size",
+            "items/variance-assumption",
+            "items/number-of-subjects-needed"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "alpha-level",
-                "isAbout": "item_path:alpha-level",
+                "isAbout": "items/alpha-level",
                 "isVis": true
             },
             {
                 "variableName": "power",
-                "isAbout": "item_path:power",
+                "isAbout": "items/power",
                 "isVis": true
             },
             {
                 "variableName": "effect-size",
-                "isAbout": "item_path:effect-size",
+                "isAbout": "items/effect-size",
                 "isVis": true
             },
             {
                 "variableName": "variance-assumption",
-                "isAbout": "item_path:variance-assumption",
+                "isAbout": "items/variance-assumption",
                 "isVis": true
             },
             {
                 "variableName": "number-of-subjects-needed",
-                "isAbout": "item_path:number-of-subjects-needed",
+                "isAbout": "items/number-of-subjects-needed",
                 "isVis": true
             }
         ]

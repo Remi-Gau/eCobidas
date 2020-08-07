@@ -6,10 +6,7 @@ def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
     protocol["dir"] = protocol["name"][0:-1]
 
     protocol["schema"] = {
-        "@context": [
-            REPRONIM_REPO + "contexts/generic",
-            {"activity_path": REMOTE_REPO + BRANCH + "/activities/"},
-        ],
+        "@context": REPRONIM_REPO + "contexts/generic",
         "@type": "reproschema:Protocol",
         "@id": protocol["schema_file"],
         "prefLabel": protocol["schema_file"],
@@ -31,9 +28,7 @@ def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
 
 def update_protocol(activity, protocol):
 
-    activity["URI"] = (
-        "activity_path:" + activity["name"] + "/" + activity["schema_file"]
-    )
+    activity["URI"] = "../../" + activity["name"] + "/" + activity["schema_file"]
 
     # update the content of the protool schema and context wrt this new activity
     append_to_protocol = {

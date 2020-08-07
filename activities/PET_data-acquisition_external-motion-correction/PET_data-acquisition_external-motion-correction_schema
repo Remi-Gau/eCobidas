@@ -1,38 +1,33 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-acquisition_external-motion-correction/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_data-acquisition_external-motion-correction_schema",
     "prefLabel": "PET_data-acquisition_external-motion-correction",
     "description": "PET_data-acquisition_external-motion-correction",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:hardware",
-            "item_path:external-moco-software",
-            "item_path:external-moco-software-version"
+            "items/hardware",
+            "items/external-moco-software",
+            "items/external-moco-software-version"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "hardware",
-                "isAbout": "item_path:hardware",
+                "isAbout": "items/hardware",
                 "isVis": true
             },
             {
                 "variableName": "external-moco-software",
-                "isAbout": "item_path:external-moco-software",
+                "isAbout": "items/external-moco-software",
                 "isVis": true
             },
             {
                 "variableName": "external-moco-software-version",
-                "isAbout": "item_path:external-moco-software-version",
+                "isAbout": "items/external-moco-software-version",
                 "isVis": true
             }
         ]

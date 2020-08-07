@@ -1,62 +1,57 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_time/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_time_schema",
     "prefLabel": "PET_radioligand_time",
     "description": "PET_radioligand_time",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:ScanDate",
-            "item_path:TimeZero",
-            "item_path:ScanStart",
-            "item_path:InjectionStart",
-            "item_path:InjectionEnd",
-            "item_path:FrameTimesStart",
-            "item_path:FrameDuration"
+            "items/ScanDate",
+            "items/TimeZero",
+            "items/ScanStart",
+            "items/InjectionStart",
+            "items/InjectionEnd",
+            "items/FrameTimesStart",
+            "items/FrameDuration"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "ScanDate",
-                "isAbout": "item_path:ScanDate",
+                "isAbout": "items/ScanDate",
                 "isVis": true
             },
             {
                 "variableName": "TimeZero",
-                "isAbout": "item_path:TimeZero",
+                "isAbout": "items/TimeZero",
                 "isVis": true
             },
             {
                 "variableName": "ScanStart",
-                "isAbout": "item_path:ScanStart",
+                "isAbout": "items/ScanStart",
                 "isVis": true
             },
             {
                 "variableName": "InjectionStart",
-                "isAbout": "item_path:InjectionStart",
+                "isAbout": "items/InjectionStart",
                 "isVis": true
             },
             {
                 "variableName": "InjectionEnd",
-                "isAbout": "item_path:InjectionEnd",
+                "isAbout": "items/InjectionEnd",
                 "isVis": true
             },
             {
                 "variableName": "FrameTimesStart",
-                "isAbout": "item_path:FrameTimesStart",
+                "isAbout": "items/FrameTimesStart",
                 "isVis": true
             },
             {
                 "variableName": "FrameDuration",
-                "isAbout": "item_path:FrameDuration",
+                "isAbout": "items/FrameDuration",
                 "isVis": true
             }
         ]

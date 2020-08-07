@@ -1,56 +1,51 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_continuous-blood/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_continuous-blood_schema",
     "prefLabel": "PET_radioligand_continuous-blood",
     "description": "PET_radioligand_continuous-blood",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:ContinuousBloodAvail",
-            "item_path:ContinuousBloodWithdrawalRate",
-            "item_path:ContinuousBloodTubingType",
-            "item_path:ContinuousBloodTubingLength",
-            "item_path:ContinuousBloodDispersionConstant",
-            "item_path:ContinuousBloodDispersionCorrected"
+            "items/ContinuousBloodAvail",
+            "items/ContinuousBloodWithdrawalRate",
+            "items/ContinuousBloodTubingType",
+            "items/ContinuousBloodTubingLength",
+            "items/ContinuousBloodDispersionConstant",
+            "items/ContinuousBloodDispersionCorrected"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "ContinuousBloodAvail",
-                "isAbout": "item_path:ContinuousBloodAvail",
+                "isAbout": "items/ContinuousBloodAvail",
                 "isVis": true
             },
             {
                 "variableName": "ContinuousBloodWithdrawalRate",
-                "isAbout": "item_path:ContinuousBloodWithdrawalRate",
+                "isAbout": "items/ContinuousBloodWithdrawalRate",
                 "isVis": "ContinuousBloodAvail == 1"
             },
             {
                 "variableName": "ContinuousBloodTubingType",
-                "isAbout": "item_path:ContinuousBloodTubingType",
+                "isAbout": "items/ContinuousBloodTubingType",
                 "isVis": "ContinuousBloodAvail == 1"
             },
             {
                 "variableName": "ContinuousBloodTubingLength",
-                "isAbout": "item_path:ContinuousBloodTubingLength",
+                "isAbout": "items/ContinuousBloodTubingLength",
                 "isVis": "ContinuousBloodAvail == 1"
             },
             {
                 "variableName": "ContinuousBloodDispersionConstant",
-                "isAbout": "item_path:ContinuousBloodDispersionConstant",
+                "isAbout": "items/ContinuousBloodDispersionConstant",
                 "isVis": "ContinuousBloodAvail == 1"
             },
             {
                 "variableName": "ContinuousBloodDispersionCorrected",
-                "isAbout": "item_path:ContinuousBloodDispersionCorrected",
+                "isAbout": "items/ContinuousBloodDispersionCorrected",
                 "isVis": "ContinuousBloodAvail == 1"
             }
         ]

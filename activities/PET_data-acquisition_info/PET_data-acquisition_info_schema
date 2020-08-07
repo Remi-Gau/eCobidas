@@ -1,74 +1,69 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-acquisition_info/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_data-acquisition_info_schema",
     "prefLabel": "PET_data-acquisition_info",
     "description": "PET_data-acquisition_info",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:Modality",
-            "item_path:Manufacturer",
-            "item_path:ManufacturersModelName",
-            "item_path:Anaesthesia",
-            "item_path:BodyPart",
-            "item_path:Unit",
-            "item_path:experiment-date",
-            "item_path:imaging-center-site",
-            "item_path:imaging-department"
+            "items/Modality",
+            "items/Manufacturer",
+            "items/ManufacturersModelName",
+            "items/Anaesthesia",
+            "items/BodyPart",
+            "items/Unit",
+            "items/experiment-date",
+            "items/imaging-center-site",
+            "items/imaging-department"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "Modality",
-                "isAbout": "item_path:Modality",
+                "isAbout": "items/Modality",
                 "isVis": true
             },
             {
                 "variableName": "Manufacturer",
-                "isAbout": "item_path:Manufacturer",
+                "isAbout": "items/Manufacturer",
                 "isVis": true
             },
             {
                 "variableName": "ManufacturersModelName",
-                "isAbout": "item_path:ManufacturersModelName",
+                "isAbout": "items/ManufacturersModelName",
                 "isVis": true
             },
             {
                 "variableName": "Anaesthesia",
-                "isAbout": "item_path:Anaesthesia",
+                "isAbout": "items/Anaesthesia",
                 "isVis": true
             },
             {
                 "variableName": "BodyPart",
-                "isAbout": "item_path:BodyPart",
+                "isAbout": "items/BodyPart",
                 "isVis": true
             },
             {
                 "variableName": "Unit",
-                "isAbout": "item_path:Unit",
+                "isAbout": "items/Unit",
                 "isVis": true
             },
             {
                 "variableName": "experiment-date",
-                "isAbout": "item_path:experiment-date",
+                "isAbout": "items/experiment-date",
                 "isVis": true
             },
             {
                 "variableName": "imaging-center-site",
-                "isAbout": "item_path:imaging-center-site",
+                "isAbout": "items/imaging-center-site",
                 "isVis": true
             },
             {
                 "variableName": "imaging-department",
-                "isAbout": "item_path:imaging-department",
+                "isAbout": "items/imaging-department",
                 "isVis": true
             }
         ]
