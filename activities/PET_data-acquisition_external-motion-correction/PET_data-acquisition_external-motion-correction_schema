@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
         {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_data-acquisition_external-motion-correction/items/"
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-acquisition_external-motion-correction/items/"
         }
     ],
     "@type": "reproschema:Activity",

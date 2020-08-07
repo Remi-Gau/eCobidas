@@ -45,11 +45,11 @@ REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/"
 # In the end the cobidas-UI repository will be reading the schema from the URL that that
 # starts with: REMOTE_REPO + BRANCH
 
-# BRANCH = "master"
+BRANCH = "master"
 # BRANCH = 'neurovault'
 # BRANCH = "remi-MRI"
 # BRANCH = "PET"
-BRANCH = "remi-reproschema_ref1"
+# BRANCH = "remi-reproschema_ref1"
 
 # ----------------------------------------
 # Protocol info

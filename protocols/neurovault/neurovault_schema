@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
         {
-            "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/"
+            "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/"
         }
     ],
     "@type": "reproschema:Protocol",

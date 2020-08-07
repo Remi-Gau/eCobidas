@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
         {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/neurovault_Experimental_design/items/"
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/neurovault_Experimental_design/items/"
         }
     ],
     "@type": "reproschema:Activity",

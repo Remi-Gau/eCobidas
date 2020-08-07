@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
         {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_radioligand_plasma/items/"
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_plasma/items/"
         }
     ],
     "@type": "reproschema:Activity",

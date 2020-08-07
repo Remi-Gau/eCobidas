@@ -2,7 +2,7 @@
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
         {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_statistics_multiple-testings/items/"
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_statistics_multiple-testings/items/"
         }
     ],
     "@type": "reproschema:Activity",
