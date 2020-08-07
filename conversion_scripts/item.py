@@ -81,7 +81,7 @@ def define_new_item(item_info, REPRONIM_REPO, VERSION):
         "description": item_info["name"],
         "schemaVersion": VERSION,
         "version": VERSION,
-        "ui": {"allow": ["reproschema:Skipped"], "inputType": []},
+        "ui": {"inputType": []},
         "question": {"en": item_info["question"]},
     }
 

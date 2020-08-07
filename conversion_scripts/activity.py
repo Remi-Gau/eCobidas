@@ -39,12 +39,7 @@ def define_activity_schema(
         "schemaVersion": VERSION,
         "version": VERSION,
         "preamble": " ",
-        "ui": {
-            "order": [],
-            "shuffle": False,
-            "allow": ["reproschema:Skipped"],
-            "addProperties": [],
-        },
+        "ui": {"order": [], "shuffle": False, "addProperties": []},
     }
 
     return activity
