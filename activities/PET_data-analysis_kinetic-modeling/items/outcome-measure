@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "outcome-measure",
     "prefLabel": "outcome-measure",
-    "schema:description": "outcome-measure",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "outcome-measure",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,29 +15,29 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "BPND",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "BPND",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "K1",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "K1",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "k2",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "k2",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "R1",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "R1",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 5,
+                "@type": "option"
             }
         ]
     }

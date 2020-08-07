@@ -1,16 +1,16 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
         {
             "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_radioligand_time/items/"
         }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_time_schema",
-    "skos:prefLabel": "PET_radioligand_time",
-    "schema:description": "PET_radioligand_time",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_radioligand_time",
+    "description": "PET_radioligand_time",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
@@ -23,9 +23,6 @@
             "item_path:FrameDuration"
         ],
         "shuffle": false,
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "ScanDate",

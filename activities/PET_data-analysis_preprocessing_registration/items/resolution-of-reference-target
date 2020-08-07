@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "resolution-of-reference-target",
     "prefLabel": "resolution-of-reference-target",
-    "schema:description": "resolution-of-reference-target",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "resolution-of-reference-target",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,19 +15,19 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": " 1 x 1 x 1",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": " 1 x 1 x 1",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "2 x 2 x 2",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "2 x 2 x 2",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
             }
         ]
     }

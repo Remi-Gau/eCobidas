@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "threshold",
     "prefLabel": "threshold",
-    "schema:description": "threshold",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "threshold",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "slider"
     },
     "question": {
@@ -17,414 +14,54 @@
     },
     "responseOptions": {
         "valueType": "xsd:integer",
-        "schema:minValue": 0,
-        "schema:maxValue": 1,
+        "minValue": 1,
+        "maxValue": 11,
         "choices": [
             {
-                "schema:value": 0.0,
-                "@type": "schema:option",
-                "schema:name": "min"
+                "value": 1,
+                "@type": "option",
+                "name": "min"
             },
             {
-                "schema:value": 0.01,
-                "@type": "schema:option"
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:value": 0.02,
-                "@type": "schema:option"
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:value": 0.03,
-                "@type": "schema:option"
+                "value": 4,
+                "@type": "option"
             },
             {
-                "schema:value": 0.04,
-                "@type": "schema:option"
+                "value": 5,
+                "@type": "option"
             },
             {
-                "schema:value": 0.05,
-                "@type": "schema:option"
+                "value": 6,
+                "@type": "option"
             },
             {
-                "schema:value": 0.06,
-                "@type": "schema:option"
+                "value": 7,
+                "@type": "option"
             },
             {
-                "schema:value": 0.07,
-                "@type": "schema:option"
+                "value": 8,
+                "@type": "option"
             },
             {
-                "schema:value": 0.08,
-                "@type": "schema:option"
+                "value": 9,
+                "@type": "option"
             },
             {
-                "schema:value": 0.09,
-                "@type": "schema:option"
+                "value": 10,
+                "@type": "option"
             },
             {
-                "schema:value": 0.1,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.11,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.12,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.13,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.14,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.15,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.16,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.17,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.18,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.19,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.2,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.21,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.22,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.23,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.24,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.25,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.26,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.27,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.28,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.29,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.3,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.31,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.32,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.33,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.34,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.35000000000000003,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.36,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.37,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.38,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.39,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.4,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.41000000000000003,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.42,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.43,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.44,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.45,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.46,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.47000000000000003,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.48,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.49,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.5,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.51,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.52,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.53,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.54,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.55,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.56,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.5700000000000001,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.58,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.59,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.6,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.61,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.62,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.63,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.64,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.65,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.66,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.67,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.68,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.6900000000000001,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.7000000000000001,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.71,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.72,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.73,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.74,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.75,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.76,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.77,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.78,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.79,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.8,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.81,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.8200000000000001,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.8300000000000001,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.84,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.85,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.86,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.87,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.88,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.89,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.9,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.91,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.92,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.93,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.9400000000000001,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.9500000000000001,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.96,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.97,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.98,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 0.99,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 1.0,
-                "@type": "schema:option",
-                "schema:name": "max"
+                "value": 11,
+                "@type": "option",
+                "name": "max"
             }
         ]
     }

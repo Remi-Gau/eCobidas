@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "registration-reference-image",
     "prefLabel": "registration-reference-image",
-    "schema:description": "registration-reference-image",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "registration-reference-image",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,14 +15,14 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "MP-RAGE T1",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "MP-RAGE T1",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
             }
         ]
     }

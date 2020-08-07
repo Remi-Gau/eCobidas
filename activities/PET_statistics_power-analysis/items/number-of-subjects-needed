@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "number-of-subjects-needed",
     "prefLabel": "number-of-subjects-needed",
-    "schema:description": "number-of-subjects-needed",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "number-of-subjects-needed",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "number"
     },
     "question": {

@@ -1,16 +1,16 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
         {
             "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_radioligand_metabolite/items/"
         }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_metabolite_schema",
-    "skos:prefLabel": "PET_radioligand_metabolite",
-    "schema:description": "PET_radioligand_metabolite",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_radioligand_metabolite",
+    "description": "PET_radioligand_metabolite",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
@@ -27,9 +27,6 @@
             "item_path:MetaboliteRecoveryCorrectionApplied"
         ],
         "shuffle": false,
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "MetaboliteAvail",

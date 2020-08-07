@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "radiotracer-isotope",
     "prefLabel": "radiotracer-isotope",
-    "schema:description": "radiotracer-isotope",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "radiotracer-isotope",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "radio"
     },
     "question": {
@@ -18,29 +15,29 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "carbon-11",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "carbon-11",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "fluorine-18",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "fluorine-18",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "Nitrogen-13",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "Nitrogen-13",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Oxygen-15",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Oxygen-15",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 5,
+                "@type": "option"
             }
         ]
     }

@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "ReconFilterType",
     "prefLabel": "ReconFilterType",
-    "schema:description": "ReconFilterType",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "ReconFilterType",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,29 +15,29 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "none",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "none",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "gaussian",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "gaussian",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "Shepp",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "Shepp",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Z filter",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Z filter",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 5,
+                "@type": "option"
             }
         ]
     }

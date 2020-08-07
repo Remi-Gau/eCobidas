@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "power",
     "prefLabel": "power",
-    "schema:description": "power",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "power",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "slider"
     },
     "question": {
@@ -17,414 +14,54 @@
     },
     "responseOptions": {
         "valueType": "xsd:integer",
-        "schema:minValue": 0,
-        "schema:maxValue": 100,
+        "minValue": 1,
+        "maxValue": 11,
         "choices": [
             {
-                "schema:value": 0.0,
-                "@type": "schema:option",
-                "schema:name": "min"
+                "value": 1,
+                "@type": "option",
+                "name": "min"
             },
             {
-                "schema:value": 1.0,
-                "@type": "schema:option"
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:value": 2.0,
-                "@type": "schema:option"
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:value": 3.0,
-                "@type": "schema:option"
+                "value": 4,
+                "@type": "option"
             },
             {
-                "schema:value": 4.0,
-                "@type": "schema:option"
+                "value": 5,
+                "@type": "option"
             },
             {
-                "schema:value": 5.0,
-                "@type": "schema:option"
+                "value": 6,
+                "@type": "option"
             },
             {
-                "schema:value": 6.0,
-                "@type": "schema:option"
+                "value": 7,
+                "@type": "option"
             },
             {
-                "schema:value": 7.0,
-                "@type": "schema:option"
+                "value": 8,
+                "@type": "option"
             },
             {
-                "schema:value": 8.0,
-                "@type": "schema:option"
+                "value": 9,
+                "@type": "option"
             },
             {
-                "schema:value": 9.0,
-                "@type": "schema:option"
+                "value": 10,
+                "@type": "option"
             },
             {
-                "schema:value": 10.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 11.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 12.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 13.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 14.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 15.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 16.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 17.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 18.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 19.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 20.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 21.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 22.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 23.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 24.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 25.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 26.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 27.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 28.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 29.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 30.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 31.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 32.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 33.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 34.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 35.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 36.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 37.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 38.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 39.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 40.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 41.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 42.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 43.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 44.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 45.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 46.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 47.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 48.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 49.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 50.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 51.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 52.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 53.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 54.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 55.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 56.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 57.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 58.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 59.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 60.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 61.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 62.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 63.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 64.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 65.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 66.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 67.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 68.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 69.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 70.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 71.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 72.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 73.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 74.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 75.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 76.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 77.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 78.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 79.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 80.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 81.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 82.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 83.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 84.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 85.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 86.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 87.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 88.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 89.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 90.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 91.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 92.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 93.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 94.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 95.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 96.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 97.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 98.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 99.0,
-                "@type": "schema:option"
-            },
-            {
-                "schema:value": 100.0,
-                "@type": "schema:option",
-                "schema:name": "max"
+                "value": 11,
+                "@type": "option",
+                "name": "max"
             }
         ]
     }

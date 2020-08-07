@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "frame-sequence",
     "prefLabel": "frame-sequence",
-    "schema:description": "frame-sequence",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "frame-sequence",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,44 +15,44 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "6x10",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "6x10",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "3x20",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "3x20",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "6x30",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "6x30",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "5x60",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "5x60",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "5x120",
-                "schema:value": 4,
-                "@type": "schema:option"
+                "name": "5x120",
+                "value": 4,
+                "@type": "option"
             },
             {
-                "schema:name": "8x300",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "8x300",
+                "value": 5,
+                "@type": "option"
             },
             {
-                "schema:name": "3x600 (36 frames)",
-                "schema:value": 6,
-                "@type": "schema:option"
+                "name": "3x600 (36 frames)",
+                "value": 6,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 8,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 8,
+                "@type": "option"
             }
         ]
     }

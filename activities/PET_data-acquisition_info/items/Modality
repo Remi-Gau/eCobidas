@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "Modality",
     "prefLabel": "Modality",
-    "schema:description": "Modality",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "Modality",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "radio"
     },
     "question": {
@@ -18,24 +15,24 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": " pet",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": " pet",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "petmr",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "petmr",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "petct ",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "petct ",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 4,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
             }
         ]
     }

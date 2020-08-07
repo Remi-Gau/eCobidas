@@ -1,16 +1,16 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
         {
             "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_data-acquisition_external-motion-correction/items/"
         }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-acquisition_external-motion-correction_schema",
-    "skos:prefLabel": "PET_data-acquisition_external-motion-correction",
-    "schema:description": "PET_data-acquisition_external-motion-correction",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_data-acquisition_external-motion-correction",
+    "description": "PET_data-acquisition_external-motion-correction",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
@@ -19,9 +19,6 @@
             "item_path:external-moco-software-version"
         ],
         "shuffle": false,
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "hardware",

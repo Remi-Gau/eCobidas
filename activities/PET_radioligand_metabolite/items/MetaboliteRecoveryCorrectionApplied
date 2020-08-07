@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "MetaboliteRecoveryCorrectionApplied",
     "prefLabel": "MetaboliteRecoveryCorrectionApplied",
-    "schema:description": "MetaboliteRecoveryCorrectionApplied",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "MetaboliteRecoveryCorrectionApplied",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "radio"
     },
     "question": {
@@ -19,19 +16,19 @@
         "multipleChoice": false,
         "choices": [
             {
-                "schema:value": 0,
-                "schema:name": "No",
-                "@type": "schema:option"
+                "value": 0,
+                "name": "No",
+                "@type": "option"
             },
             {
-                "schema:value": 1,
-                "schema:name": "Yes",
-                "@type": "schema:option"
+                "value": 1,
+                "name": "Yes",
+                "@type": "option"
             },
             {
-                "schema:value": 9,
-                "schema:name": "Unknown",
-                "@type": "schema:option"
+                "value": 9,
+                "name": "Unknown",
+                "@type": "option"
             }
         ]
     }

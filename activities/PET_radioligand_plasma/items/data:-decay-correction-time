@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "data:-decay-correction-time",
     "prefLabel": "data:-decay-correction-time",
-    "schema:description": "data:-decay-correction-time",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "data:-decay-correction-time",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,14 +15,14 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "scan start ",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "scan start ",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
             }
         ]
     }

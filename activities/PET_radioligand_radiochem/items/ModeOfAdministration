@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "ModeOfAdministration",
     "prefLabel": "ModeOfAdministration",
-    "schema:description": "ModeOfAdministration",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "ModeOfAdministration",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "radio"
     },
     "question": {
@@ -18,24 +15,24 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": " single IV bolus",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": " single IV bolus",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "single oral bolus",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "single oral bolus",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "\n IV infusion \n",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "\n IV infusion \n",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 4,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
             }
         ]
     }

@@ -1,15 +1,12 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "method",
     "prefLabel": "method",
-    "schema:description": "method",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "method",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,54 +15,54 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "Familywise Error: Random Field Theory",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "Familywise Error: Random Field Theory",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "Familywise Error: Permutation",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "Familywise Error: Permutation",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "Familywise Error: Monte Carlo",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "Familywise Error: Monte Carlo",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Familywise Error: Bonferroni",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Familywise Error: Bonferroni",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "False Discovery Rate: Benjamini & Hochberg",
-                "schema:value": 4,
-                "@type": "schema:option"
+                "name": "False Discovery Rate: Benjamini & Hochberg",
+                "value": 4,
+                "@type": "option"
             },
             {
-                "schema:name": "False Discovery Rate: Positive FDR",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "False Discovery Rate: Positive FDR",
+                "value": 5,
+                "@type": "option"
             },
             {
-                "schema:name": "False Discovery Rate: Local FDR",
-                "schema:value": 6,
-                "@type": "schema:option"
+                "name": "False Discovery Rate: Local FDR",
+                "value": 6,
+                "@type": "option"
             },
             {
-                "schema:name": "False Discovery Rate: Cluster-level FDR",
-                "schema:value": 7,
-                "@type": "schema:option"
+                "name": "False Discovery Rate: Cluster-level FDR",
+                "value": 7,
+                "@type": "option"
             },
             {
-                "schema:name": "None/Uncorrected",
-                "schema:value": 8,
-                "@type": "schema:option"
+                "name": "None/Uncorrected",
+                "value": 8,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 10,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 10,
+                "@type": "option"
             }
         ]
     }

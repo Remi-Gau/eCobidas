@@ -1,16 +1,16 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
         {
             "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/items/"
         }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
-    "skos:prefLabel": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
-    "schema:description": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
+    "description": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
@@ -26,9 +26,6 @@
             "item_path:partial-volume-correction-software-version"
         ],
         "shuffle": false,
-        "allow": [
-            "reproschema:Skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "volumes-of-interest-obtained-from",

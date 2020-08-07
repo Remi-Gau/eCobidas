@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/contexts/generic",
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
         {
             "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/"
         }
@@ -8,9 +8,9 @@
     "@type": "reproschema:Protocol",
     "@id": "PET_schema",
     "prefLabel": "PET_schema",
-    "schema:description": "PET_schema",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "PET_schema",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "landingPage": {
         "@id": "README.md",
         "@language": "en"
