@@ -1,21 +1,21 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "data:-decay-correction-time",
-    "prefLabel": "data:-decay-correction-time",
-    "description": "data:-decay-correction-time",
+    "@id": "data_type",
+    "prefLabel": "data_type",
+    "description": "data_type",
     "schemaVersion": "0.0.1",
     "version": "0.0.1",
     "ui": {
         "inputType": "select"
     },
     "question": {
-        "en": "Data: decay correction time"
+        "en": "Data: type"
     },
     "responseOptions": {
         "choices": [
             {
-                "name": "scan start ",
+                "name": "radioactivity ",
                 "value": 0,
                 "@type": "option"
             },

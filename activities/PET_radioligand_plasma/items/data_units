@@ -1,33 +1,27 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "data:-decay-corrected",
-    "prefLabel": "data:-decay-corrected",
-    "description": "data:-decay-corrected",
+    "@id": "data_units",
+    "prefLabel": "data_units",
+    "description": "data_units",
     "schemaVersion": "0.0.1",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
-        "en": "Data: decay-corrected"
+        "en": "Data: units"
     },
     "responseOptions": {
-        "multipleChoice": false,
         "choices": [
             {
+                "name": "",
                 "value": 0,
-                "name": "No",
                 "@type": "option"
             },
             {
-                "value": 1,
-                "name": "Yes",
-                "@type": "option"
-            },
-            {
-                "value": 9,
-                "name": "Unknown",
+                "name": "Other",
+                "value": 2,
                 "@type": "option"
             }
         ]

@@ -1,9 +1,9 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "data:labels",
-    "prefLabel": "data:labels",
-    "description": "data:labels",
+    "@id": "dataLabels",
+    "prefLabel": "dataLabels",
+    "description": "dataLabels",
     "schemaVersion": "0.0.1",
     "version": "0.0.1",
     "ui": {

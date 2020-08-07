@@ -31,7 +31,7 @@
             "item_path:PromptRate",
             "item_path:RandomRate",
             "item_path:SinglesRate",
-            "item_path:data:-labels",
+            "item_path:data_labels",
             "item_path:AttenuationCorrectionMethodReference"
         ],
         "shuffle": false,
@@ -122,8 +122,8 @@
                 "isVis": true
             },
             {
-                "variableName": "data:-labels",
-                "isAbout": "item_path:data:-labels",
+                "variableName": "data_labels",
+                "isAbout": "item_path:data_labels",
                 "isVis": true
             },
             {

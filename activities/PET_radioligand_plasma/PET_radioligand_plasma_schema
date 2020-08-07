@@ -18,11 +18,11 @@
             "item_path:PlasmaFreeFraction",
             "item_path:error-of-free-fraction-measurement",
             "item_path:PlasmaFreeFractionMethod",
-            "item_path:data:-decay-corrected",
-            "item_path:data:-decay-correction-time",
-            "item_path:data:-type",
-            "item_path:data:-units",
-            "item_path:data:-hematocrit-value"
+            "item_path:data_decay-corrected",
+            "item_path:data_decay-correction-time",
+            "item_path:data_type",
+            "item_path:data_units",
+            "item_path:data_hematocrit-value"
         ],
         "shuffle": false,
         "addProperties": [
@@ -47,28 +47,28 @@
                 "isVis": "PlasmaAvail == 1"
             },
             {
-                "variableName": "data:-decay-corrected",
-                "isAbout": "item_path:data:-decay-corrected",
+                "variableName": "data_decay-corrected",
+                "isAbout": "item_path:data_decay-corrected",
                 "isVis": true
             },
             {
-                "variableName": "data:-decay-correction-time",
-                "isAbout": "item_path:data:-decay-correction-time",
+                "variableName": "data_decay-correction-time",
+                "isAbout": "item_path:data_decay-correction-time",
                 "isVis": true
             },
             {
-                "variableName": "data:-type",
-                "isAbout": "item_path:data:-type",
+                "variableName": "data_type",
+                "isAbout": "item_path:data_type",
                 "isVis": true
             },
             {
-                "variableName": "data:-units",
-                "isAbout": "item_path:data:-units",
+                "variableName": "data_units",
+                "isAbout": "item_path:data_units",
                 "isVis": true
             },
             {
-                "variableName": "data:-hematocrit-value",
-                "isAbout": "item_path:data:-hematocrit-value",
+                "variableName": "data_hematocrit-value",
+                "isAbout": "item_path:data_hematocrit-value",
                 "isVis": true
             }
         ]
