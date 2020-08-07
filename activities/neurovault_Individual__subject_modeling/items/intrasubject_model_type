@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intrasubject_model_type",
+    "prefLabel": "intrasubject_model_type",
+    "description": "intrasubject_model_type",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Type of group model used"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "Regression",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
+            }
+        ]
+    }
+}

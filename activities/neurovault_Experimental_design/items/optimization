@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "optimization",
+    "prefLabel": "optimization",
+    "description": "optimization",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Was the design optimized for efficiency"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "value": 0,
+                "name": "No",
+                "@type": "option"
+            },
+            {
+                "value": 1,
+                "name": "Yes",
+                "@type": "option"
+            },
+            {
+                "value": 9,
+                "name": "Unknown",
+                "@type": "option"
+            }
+        ]
+    }
+}

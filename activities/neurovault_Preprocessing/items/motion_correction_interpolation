@@ -1,0 +1,59 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "motion_correction_interpolation",
+    "prefLabel": "motion_correction_interpolation",
+    "description": "motion_correction_interpolation",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Interpolation method used for motion correction"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "Nearest neighbour",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "trilinear",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "2nd degree spline",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "3rd degree spline",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "4th degree spline",
+                "value": 4,
+                "@type": "option"
+            },
+            {
+                "name": "Fourrier interpolation",
+                "value": 5,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 6,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 8,
+                "@type": "option"
+            }
+        ]
+    }
+}

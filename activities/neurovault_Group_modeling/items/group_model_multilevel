@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "group_model_multilevel",
+    "prefLabel": "group_model_multilevel",
+    "description": "group_model_multilevel",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "If more than 2-levels, describe the levels and assumptions of the model (e.g. are variances assumed equal between groups)"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

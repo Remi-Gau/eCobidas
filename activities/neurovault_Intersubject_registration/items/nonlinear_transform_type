@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "nonlinear_transform_type",
+    "prefLabel": "nonlinear_transform_type",
+    "description": "nonlinear_transform_type",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "If nonlinear registration was used, describe transform method"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

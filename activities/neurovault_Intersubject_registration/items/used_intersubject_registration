@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "used_intersubject_registration",
+    "prefLabel": "used_intersubject_registration",
+    "description": "used_intersubject_registration",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Were subjects registered to a common stereotactic space?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "value": 0,
+                "name": "No",
+                "@type": "option"
+            },
+            {
+                "value": 1,
+                "name": "Yes",
+                "@type": "option"
+            },
+            {
+                "value": 9,
+                "name": "Unknown",
+                "@type": "option"
+            }
+        ]
+    }
+}

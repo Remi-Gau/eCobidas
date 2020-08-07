@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "transform_similarity_metric",
+    "prefLabel": "transform_similarity_metric",
+    "description": "transform_similarity_metric",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Similarity metric used for intersubject registration"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

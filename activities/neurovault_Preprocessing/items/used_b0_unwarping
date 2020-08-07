@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "used_b0_unwarping",
+    "prefLabel": "used_b0_unwarping",
+    "description": "used_b0_unwarping",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Was B0 distortion correction used?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "value": 0,
+                "name": "No",
+                "@type": "option"
+            },
+            {
+                "value": 1,
+                "name": "Yes",
+                "@type": "option"
+            },
+            {
+                "value": 9,
+                "name": "Unknown",
+                "@type": "option"
+            }
+        ]
+    }
+}

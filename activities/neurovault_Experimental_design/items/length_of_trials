@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "length_of_trials",
+    "prefLabel": "length_of_trials",
+    "description": "length_of_trials",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Length of individual trials in seconds"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

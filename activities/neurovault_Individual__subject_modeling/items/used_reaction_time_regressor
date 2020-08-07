@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "used_reaction_time_regressor",
+    "prefLabel": "used_reaction_time_regressor",
+    "description": "used_reaction_time_regressor",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Was a reaction time regressor included?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "value": 0,
+                "name": "No",
+                "@type": "option"
+            },
+            {
+                "value": 1,
+                "name": "Yes",
+                "@type": "option"
+            },
+            {
+                "value": 9,
+                "name": "Unknown",
+                "@type": "option"
+            }
+        ]
+    }
+}

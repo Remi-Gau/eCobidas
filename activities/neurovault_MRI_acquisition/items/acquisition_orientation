@@ -1,0 +1,44 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "acquisition_orientation",
+    "prefLabel": "acquisition_orientation",
+    "description": "acquisition_orientation",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "The orientation of slices"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "axial",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "sagittal",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "frontal",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 5,
+                "@type": "option"
+            }
+        ]
+    }
+}

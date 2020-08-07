@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "b0_unwarping_software",
+    "prefLabel": "b0_unwarping_software",
+    "description": "b0_unwarping_software",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Specify software used for distortion correction if different from the main package"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "SPM",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "FSL",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Freesurfer",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Brain voyager",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 6,
+                "@type": "option"
+            }
+        ]
+    }
+}

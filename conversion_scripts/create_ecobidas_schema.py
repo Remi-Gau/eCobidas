@@ -55,33 +55,34 @@ BRANCH = "remi-reproschema_ref1"
 # Protocol info
 
 # Neurovaut
-# INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv"
-# protocol = {"name": "neurovault_"}
-# CSV_INFO = {
-#     "section": {"col": 1, "name": ""},
-#     "item": {"col": 2, "name": "Item"},
-#     "question": {"col": 3, "name": ""},
-#     "resp_type": {"col": 4, "name": ""},
-#     "choice": {"col": 5, "name": ""},
-#     "mandatory": {"col": 6, "name": ""},
-#     "include": {"col": [], "name": ""},
-#     "vis": {"col": 7, "name": ""},
-# }
+INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv"
+protocol = {"name": "neurovault_"}
+CSV_INFO = {
+    "section": {"col": 1, "name": "Section"},
+    "act_pref_label": {"col": 1, "name": "Section"},
+    "item": {"col": 2, "name": "Item"},
+    "question": {"col": 3, "name": "Field Label"},
+    "resp_type": {"col": 4, "name": "Field type"},
+    "choice": {"col": 5, "name": "Choices"},
+    "mandatory": {"col": 6, "name": ""},
+    "include": {"col": [], "name": ""},
+    "vis": {"col": 7, "name": ""},
+}
 
 # PET
-INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv"
-protocol = {"name": "PET_"}
-CSV_INFO = {
-    "section": {"col": 5, "name": "Activity"},
-    "act_pref_label": {"col": 6, "name": "Activity pref label"},
-    "item": {"col": 7, "name": "Item"},
-    "question": {"col": 9, "name": ""},
-    "resp_type": {"col": 11, "name": ""},
-    "choice": {"col": 12, "name": ""},
-    "mandatory": {"col": 14, "name": ""},
-    "include": {"col": 21, "name": ""},
-    "vis": {"col": 15, "name": ""},
-}
+# INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv"
+# protocol = {"name": "PET_"}
+# CSV_INFO = {
+#     "section": {"col": 5, "name": "Activity"},
+#     "act_pref_label": {"col": 6, "name": "Activity pref label"},
+#     "item": {"col": 7, "name": "Item"},
+#     "question": {"col": 9, "name": ""},
+#     "resp_type": {"col": 11, "name": ""},
+#     "choice": {"col": 12, "name": ""},
+#     "mandatory": {"col": 14, "name": ""},
+#     "include": {"col": 21, "name": ""},
+#     "vis": {"col": 15, "name": ""},
+# }
 
 # COBIDAS MRI
 # INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/COBIDAS_MRI - clean.csv"

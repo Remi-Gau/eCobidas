@@ -1,0 +1,44 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "type_of_design",
+    "prefLabel": "type_of_design",
+    "description": "type_of_design",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Blocked, event-related, hybrid, or other"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "blocked",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "event related",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "hybrid block/event",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 5,
+                "@type": "option"
+            }
+        ]
+    }
+}

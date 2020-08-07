@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "motion_correction_metric",
+    "prefLabel": "motion_correction_metric",
+    "description": "motion_correction_metric",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Similarity metric used for motion correction"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "Mutual information",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "Normalised mutual information",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Entropy correlation coefficient",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Normalised cross-correlation",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 6,
+                "@type": "option"
+            }
+        ]
+    }
+}

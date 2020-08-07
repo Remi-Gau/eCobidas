@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "group_inference_type",
+    "prefLabel": "group_inference_type",
+    "description": "group_inference_type",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Type of inference for group model"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "random/mixed effects",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "fixed effects",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
+            }
+        ]
+    }
+}

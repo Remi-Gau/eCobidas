@@ -1,0 +1,64 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "group_statistic_type",
+    "prefLabel": "group_statistic_type",
+    "description": "group_statistic_type",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Type of statistic that is the basis of the inference"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "Z",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "T",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "F",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "chi2",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "Postetior probability",
+                "value": 4,
+                "@type": "option"
+            },
+            {
+                "name": "Non parametric",
+                "value": 5,
+                "@type": "option"
+            },
+            {
+                "name": "Monte Carlo",
+                "value": 6,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 7,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 9,
+                "@type": "option"
+            }
+        ]
+    }
+}

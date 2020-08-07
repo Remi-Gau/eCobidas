@@ -1,0 +1,39 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "group_estimation_type",
+    "prefLabel": "group_estimation_type",
+    "description": "group_estimation_type",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Estimation method used for model"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "OLS",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "generalized least squares",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
+            }
+        ]
+    }
+}

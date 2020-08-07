@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "autocorrelation_model",
+    "prefLabel": "autocorrelation_model",
+    "description": "autocorrelation_model",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "What autocorrelation model was used (or 'none' of none was used)"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

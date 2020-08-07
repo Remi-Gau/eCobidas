@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "used_motion_correction",
+    "prefLabel": "used_motion_correction",
+    "description": "used_motion_correction",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Was motion correction used?"
+    },
+    "responseOptions": {
+        "multipleChoice": false,
+        "choices": [
+            {
+                "value": 0,
+                "name": "No",
+                "@type": "option"
+            },
+            {
+                "value": 1,
+                "name": "Yes",
+                "@type": "option"
+            },
+            {
+                "value": 9,
+                "name": "Unknown",
+                "@type": "option"
+            }
+        ]
+    }
+}

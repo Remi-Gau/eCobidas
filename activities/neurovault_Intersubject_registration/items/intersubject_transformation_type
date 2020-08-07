@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubject_transformation_type",
+    "prefLabel": "intersubject_transformation_type",
+    "description": "intersubject_transformation_type",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Was linear or nonlinear registration used?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "linear",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "nonlinear",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
+            }
+        ]
+    }
+}

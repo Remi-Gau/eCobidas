@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "field_of_view",
+    "prefLabel": "field_of_view",
+    "description": "field_of_view",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Imaging field of view in millimeters"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

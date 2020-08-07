@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "functional_coregistration_method",
+    "prefLabel": "functional_coregistration_method",
+    "description": "functional_coregistration_method",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Method used to coregister functional to structural images"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

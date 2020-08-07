@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "number_of_experimental_units",
+    "prefLabel": "number_of_experimental_units",
+    "description": "number_of_experimental_units",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "Number of blocks, trials or experimental units per imaging run"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/remi-reproschema_ref1/activities/neurovault_Intersubject_registration/items/"
+        }
+    ],
+    "@type": "reproschema:Activity",
+    "@id": "neurovault_Intersubject_registration_schema",
+    "prefLabel": "neurovault_Intersubject_registration",
+    "description": "neurovault_Intersubject_registration",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "item_path:used_intersubject_registration",
+            "item_path:intersubject_registration_software",
+            "item_path:intersubject_transformation_type",
+            "item_path:nonlinear_transform_type",
+            "item_path:transform_similarity_metric",
+            "item_path:interpolation_method",
+            "item_path:object_image_type",
+            "item_path:functional_coregistered_to_structural",
+            "item_path:functional_coregistration_method",
+            "item_path:coordinate_space",
+            "item_path:target_template_image",
+            "item_path:target_resolution",
+            "item_path:used_smoothing",
+            "item_path:smoothing_type",
+            "item_path:smoothing_fwhm",
+            "item_path:resampled_voxel_size"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "used_intersubject_registration",
+                "isAbout": "item_path:used_intersubject_registration",
+                "isVis": true
+            },
+            {
+                "variableName": "intersubject_registration_software",
+                "isAbout": "item_path:intersubject_registration_software",
+                "isVis": "used_intersubject_registration == 1"
+            },
+            {
+                "variableName": "intersubject_transformation_type",
+                "isAbout": "item_path:intersubject_transformation_type",
+                "isVis": "used_intersubject_registration == 1"
+            },
+            {
+                "variableName": "nonlinear_transform_type",
+                "isAbout": "item_path:nonlinear_transform_type",
+                "isVis": "used_intersubject_registration == 1"
+            },
+            {
+                "variableName": "transform_similarity_metric",
+                "isAbout": "item_path:transform_similarity_metric",
+                "isVis": "used_intersubject_registration == 1"
+            },
+            {
+                "variableName": "interpolation_method",
+                "isAbout": "item_path:interpolation_method",
+                "isVis": "used_intersubject_registration == 1"
+            },
+            {
+                "variableName": "object_image_type",
+                "isAbout": "item_path:object_image_type",
+                "isVis": "used_intersubject_registration == 1"
+            },
+            {
+                "variableName": "functional_coregistered_to_structural",
+                "isAbout": "item_path:functional_coregistered_to_structural",
+                "isVis": true
+            },
+            {
+                "variableName": "functional_coregistration_method",
+                "isAbout": "item_path:functional_coregistration_method",
+                "isVis": "functional_coregistered_to_structural == 1"
+            },
+            {
+                "variableName": "coordinate_space",
+                "isAbout": "item_path:coordinate_space",
+                "isVis": true
+            },
+            {
+                "variableName": "target_template_image",
+                "isAbout": "item_path:target_template_image",
+                "isVis": true
+            },
+            {
+                "variableName": "target_resolution",
+                "isAbout": "item_path:target_resolution",
+                "isVis": true
+            },
+            {
+                "variableName": "used_smoothing",
+                "isAbout": "item_path:used_smoothing",
+                "isVis": true
+            },
+            {
+                "variableName": "smoothing_type",
+                "isAbout": "item_path:smoothing_type",
+                "isVis": "used_smoothing == 1"
+            },
+            {
+                "variableName": "smoothing_fwhm",
+                "isAbout": "item_path:smoothing_fwhm",
+                "isVis": "used_smoothing == 1"
+            },
+            {
+                "variableName": "resampled_voxel_size",
+                "isAbout": "item_path:resampled_voxel_size",
+                "isVis": true
+            }
+        ]
+    }
+}

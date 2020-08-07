@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "proportion_male_subjects",
+    "prefLabel": "proportion_male_subjects",
+    "description": "proportion_male_subjects",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "The proportion of subjects who were male"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}
