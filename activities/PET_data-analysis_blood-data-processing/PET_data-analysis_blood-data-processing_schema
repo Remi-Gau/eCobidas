@@ -1,50 +1,45 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_blood-data-processing/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_blood-data-processing_schema",
     "prefLabel": "PET_data-analysis_blood-data-processing",
     "description": "PET_data-analysis_blood-data-processing",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:sampling-method",
-            "item_path:delay-time-correction",
-            "item_path:fitting",
-            "item_path:fitting-description",
-            "item_path:blood-data-processing-interpolation"
+            "items/sampling-method",
+            "items/delay-time-correction",
+            "items/fitting",
+            "items/fitting-description",
+            "items/blood-data-processing-interpolation"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "sampling-method",
-                "isAbout": "item_path:sampling-method",
+                "isAbout": "items/sampling-method",
                 "isVis": true
             },
             {
                 "variableName": "delay-time-correction",
-                "isAbout": "item_path:delay-time-correction",
+                "isAbout": "items/delay-time-correction",
                 "isVis": true
             },
             {
                 "variableName": "fitting",
-                "isAbout": "item_path:fitting",
+                "isAbout": "items/fitting",
                 "isVis": true
             },
             {
                 "variableName": "fitting-description",
-                "isAbout": "item_path:fitting-description",
+                "isAbout": "items/fitting-description",
                 "isVis": "fitting-description == 1"
             },
             {
                 "variableName": "blood-data-processing-interpolation",
-                "isAbout": "item_path:blood-data-processing-interpolation",
+                "isAbout": "items/blood-data-processing-interpolation",
                 "isVis": true
             }
         ]

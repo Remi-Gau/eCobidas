@@ -19,7 +19,7 @@ from item import get_item_info, define_new_item
 # -----------------------------------------------------------------------------
 # modify the following lines to match your needs
 
-REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/master/"
+REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/"
 
 # ----------------------------------------
 # where the checklist csv is. It is in xlsx dir of this repo
@@ -30,19 +30,21 @@ REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/master/"
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the reproschema will be hosted
 
-# OUTPUT_DIR = "/home/remi/github/COBIDAS_chckls"
-OUTPUT_DIR = "/home/remi/github/cobidas-PET"
+OUTPUT_DIR = "/home/remi/github/COBIDAS_chckls"
+# OUTPUT_DIR = "/home/remi/github/cobidas-PET"
+# OUTPUT_DIR = "/home/remi/github/cobidas"
 
 # ----------------------------------------
 # Placeholder to insert in all instances of the remote repo that will host the schema representation
 # Most likely you just need to replace Remi-Gau in the following line by your github username
 
-# REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/"
-REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-PET/"
+REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/"
+# REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-PET/"
+# REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas/"
 
 # ----------------------------------------
 # to which branch of reproschema the user interface will be pointed to
-# In the end the cobidas-UI repository will be reading the schema from the URL that that
+# In the end the cobidas-UI repository will be reading the schema from the URL that
 # starts with: REMOTE_REPO + BRANCH
 
 BRANCH = "master"
@@ -101,7 +103,7 @@ CSV_INFO = {
 # --------------------
 # VERSION
 
-VERSION = "0.0.1"
+VERSION = "1.0.0-rc1"
 
 # -----------------------------------------------------------------------------
 #                                   START

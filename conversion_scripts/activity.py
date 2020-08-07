@@ -22,16 +22,7 @@ def define_activity_schema(
 ):
 
     activity["schema"] = {
-        "@context": [
-            REPRONIM_REPO + "contexts/generic",
-            {
-                "item_path": REMOTE_REPO
-                + BRANCH
-                + "/activities/"
-                + activity["name"]
-                + "/items/"
-            },
-        ],
+        "@context": REPRONIM_REPO + "contexts/generic",
         "@type": "reproschema:Activity",
         "@id": activity["schema_file"],
         "prefLabel": protocol["name"] + section,
@@ -48,7 +39,7 @@ def define_activity_schema(
 def update_activity(activity, item_info):
     # update the content of the activity schema with new item
 
-    item_info["URI"] = "item_path:" + item_info["name"]
+    item_info["URI"] = "items/" + item_info["name"]
 
     append_to_activity = {
         "variableName": item_info["name"],

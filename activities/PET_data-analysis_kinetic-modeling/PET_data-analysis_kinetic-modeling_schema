@@ -1,62 +1,57 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_kinetic-modeling/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_kinetic-modeling_schema",
     "prefLabel": "PET_data-analysis_kinetic-modeling",
     "description": "PET_data-analysis_kinetic-modeling",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:model",
-            "item_path:reference-volume",
-            "item_path:outcome-measure",
-            "item_path:weighting",
-            "item_path:level-of-analysis",
-            "item_path:kinetic-modelling-software",
-            "item_path:kinetic-modelling-software-version"
+            "items/model",
+            "items/reference-volume",
+            "items/outcome-measure",
+            "items/weighting",
+            "items/level-of-analysis",
+            "items/kinetic-modelling-software",
+            "items/kinetic-modelling-software-version"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "model",
-                "isAbout": "item_path:model",
+                "isAbout": "items/model",
                 "isVis": true
             },
             {
                 "variableName": "reference-volume",
-                "isAbout": "item_path:reference-volume",
+                "isAbout": "items/reference-volume",
                 "isVis": true
             },
             {
                 "variableName": "outcome-measure",
-                "isAbout": "item_path:outcome-measure",
+                "isAbout": "items/outcome-measure",
                 "isVis": true
             },
             {
                 "variableName": "weighting",
-                "isAbout": "item_path:weighting",
+                "isAbout": "items/weighting",
                 "isVis": true
             },
             {
                 "variableName": "level-of-analysis",
-                "isAbout": "item_path:level-of-analysis",
+                "isAbout": "items/level-of-analysis",
                 "isVis": true
             },
             {
                 "variableName": "kinetic-modelling-software",
-                "isAbout": "item_path:kinetic-modelling-software",
+                "isAbout": "items/kinetic-modelling-software",
                 "isVis": true
             },
             {
                 "variableName": "kinetic-modelling-software-version",
-                "isAbout": "item_path:kinetic-modelling-software-version",
+                "isAbout": "items/kinetic-modelling-software-version",
                 "isVis": true
             }
         ]

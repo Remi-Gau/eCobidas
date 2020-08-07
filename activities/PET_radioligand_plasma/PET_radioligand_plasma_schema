@@ -1,74 +1,69 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_plasma/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_plasma_schema",
     "prefLabel": "PET_radioligand_plasma",
     "description": "PET_radioligand_plasma",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:PlasmaAvail",
-            "item_path:PlasmaFreeFraction",
-            "item_path:error-of-free-fraction-measurement",
-            "item_path:PlasmaFreeFractionMethod",
-            "item_path:data_decay-corrected",
-            "item_path:data_decay-correction-time",
-            "item_path:data_type",
-            "item_path:data_units",
-            "item_path:data_hematocrit-value"
+            "items/PlasmaAvail",
+            "items/PlasmaFreeFraction",
+            "items/error-of-free-fraction-measurement",
+            "items/PlasmaFreeFractionMethod",
+            "items/data_decay-corrected",
+            "items/data_decay-correction-time",
+            "items/data_type",
+            "items/data_units",
+            "items/data_hematocrit-value"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "PlasmaAvail",
-                "isAbout": "item_path:PlasmaAvail",
+                "isAbout": "items/PlasmaAvail",
                 "isVis": true
             },
             {
                 "variableName": "PlasmaFreeFraction",
-                "isAbout": "item_path:PlasmaFreeFraction",
+                "isAbout": "items/PlasmaFreeFraction",
                 "isVis": "PlasmaAvail == 1"
             },
             {
                 "variableName": "error-of-free-fraction-measurement",
-                "isAbout": "item_path:error-of-free-fraction-measurement",
+                "isAbout": "items/error-of-free-fraction-measurement",
                 "isVis": ""
             },
             {
                 "variableName": "PlasmaFreeFractionMethod",
-                "isAbout": "item_path:PlasmaFreeFractionMethod",
+                "isAbout": "items/PlasmaFreeFractionMethod",
                 "isVis": "PlasmaAvail == 1"
             },
             {
                 "variableName": "data_decay-corrected",
-                "isAbout": "item_path:data_decay-corrected",
+                "isAbout": "items/data_decay-corrected",
                 "isVis": true
             },
             {
                 "variableName": "data_decay-correction-time",
-                "isAbout": "item_path:data_decay-correction-time",
+                "isAbout": "items/data_decay-correction-time",
                 "isVis": true
             },
             {
                 "variableName": "data_type",
-                "isAbout": "item_path:data_type",
+                "isAbout": "items/data_type",
                 "isVis": true
             },
             {
                 "variableName": "data_units",
-                "isAbout": "item_path:data_units",
+                "isAbout": "items/data_units",
                 "isVis": true
             },
             {
                 "variableName": "data_hematocrit-value",
-                "isAbout": "item_path:data_hematocrit-value",
+                "isAbout": "items/data_hematocrit-value",
                 "isVis": true
             }
         ]

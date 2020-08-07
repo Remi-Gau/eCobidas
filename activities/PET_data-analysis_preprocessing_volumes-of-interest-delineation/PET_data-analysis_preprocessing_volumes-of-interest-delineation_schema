@@ -1,80 +1,75 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
     "prefLabel": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
     "description": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:volumes-of-interest-obtained-from",
-            "item_path:volumes-of-interest-operational-criteria",
-            "item_path:volumes-of-interest-mask",
-            "item_path:volumes-of-interest-procedure",
-            "item_path:volumes-of-interest",
-            "item_path:volumes-of-interest-software",
-            "item_path:partial-volume-correction-technique",
-            "item_path:partial-volume-correction-assumptions",
-            "item_path:partial-volume-correction-software",
-            "item_path:partial-volume-correction-software-version"
+            "items/volumes-of-interest-obtained-from",
+            "items/volumes-of-interest-operational-criteria",
+            "items/volumes-of-interest-mask",
+            "items/volumes-of-interest-procedure",
+            "items/volumes-of-interest",
+            "items/volumes-of-interest-software",
+            "items/partial-volume-correction-technique",
+            "items/partial-volume-correction-assumptions",
+            "items/partial-volume-correction-software",
+            "items/partial-volume-correction-software-version"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "volumes-of-interest-obtained-from",
-                "isAbout": "item_path:volumes-of-interest-obtained-from",
+                "isAbout": "items/volumes-of-interest-obtained-from",
                 "isVis": true
             },
             {
                 "variableName": "volumes-of-interest-operational-criteria",
-                "isAbout": "item_path:volumes-of-interest-operational-criteria",
+                "isAbout": "items/volumes-of-interest-operational-criteria",
                 "isVis": true
             },
             {
                 "variableName": "volumes-of-interest-mask",
-                "isAbout": "item_path:volumes-of-interest-mask",
+                "isAbout": "items/volumes-of-interest-mask",
                 "isVis": true
             },
             {
                 "variableName": "volumes-of-interest-procedure",
-                "isAbout": "item_path:volumes-of-interest-procedure",
+                "isAbout": "items/volumes-of-interest-procedure",
                 "isVis": true
             },
             {
                 "variableName": "volumes-of-interest",
-                "isAbout": "item_path:volumes-of-interest",
+                "isAbout": "items/volumes-of-interest",
                 "isVis": true
             },
             {
                 "variableName": "volumes-of-interest-software",
-                "isAbout": "item_path:volumes-of-interest-software",
+                "isAbout": "items/volumes-of-interest-software",
                 "isVis": true
             },
             {
                 "variableName": "partial-volume-correction-technique",
-                "isAbout": "item_path:partial-volume-correction-technique",
+                "isAbout": "items/partial-volume-correction-technique",
                 "isVis": true
             },
             {
                 "variableName": "partial-volume-correction-assumptions",
-                "isAbout": "item_path:partial-volume-correction-assumptions",
+                "isAbout": "items/partial-volume-correction-assumptions",
                 "isVis": true
             },
             {
                 "variableName": "partial-volume-correction-software",
-                "isAbout": "item_path:partial-volume-correction-software",
+                "isAbout": "items/partial-volume-correction-software",
                 "isVis": true
             },
             {
                 "variableName": "partial-volume-correction-software-version",
-                "isAbout": "item_path:partial-volume-correction-software-version",
+                "isAbout": "items/partial-volume-correction-software-version",
                 "isVis": true
             }
         ]

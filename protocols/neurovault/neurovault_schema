@@ -1,16 +1,11 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Protocol",
     "@id": "neurovault_schema",
     "prefLabel": "neurovault_schema",
     "description": "neurovault_schema",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "landingPage": {
         "@id": "README.md",
         "@language": "en"
@@ -22,60 +17,60 @@
         ],
         "shuffle": false,
         "order": [
-            "activity_path:neurovault_Experimental_design/neurovault_Experimental_design_schema",
-            "activity_path:neurovault_Participants/neurovault_Participants_schema",
-            "activity_path:neurovault_MRI_acquisition/neurovault_MRI_acquisition_schema",
-            "activity_path:neurovault_Preprocessing/neurovault_Preprocessing_schema",
-            "activity_path:neurovault_Intersubject_registration/neurovault_Intersubject_registration_schema",
-            "activity_path:neurovault_Individual__subject_modeling/neurovault_Individual__subject_modeling_schema",
-            "activity_path:neurovault_Group_modeling/neurovault_Group_modeling_schema"
+            "../../neurovault_Experimental_design/neurovault_Experimental_design_schema",
+            "../../neurovault_Participants/neurovault_Participants_schema",
+            "../../neurovault_MRI_acquisition/neurovault_MRI_acquisition_schema",
+            "../../neurovault_Preprocessing/neurovault_Preprocessing_schema",
+            "../../neurovault_Intersubject_registration/neurovault_Intersubject_registration_schema",
+            "../../neurovault_Individual__subject_modeling/neurovault_Individual__subject_modeling_schema",
+            "../../neurovault_Group_modeling/neurovault_Group_modeling_schema"
         ],
         "addProperties": [
             {
                 "variableName": "neurovault_Experimental_design",
-                "isAbout": "activity_path:neurovault_Experimental_design/neurovault_Experimental_design_schema",
+                "isAbout": "../../neurovault_Experimental_design/neurovault_Experimental_design_schema",
                 "prefLabel": {
                     "en": "Experimental_design"
                 }
             },
             {
                 "variableName": "neurovault_Participants",
-                "isAbout": "activity_path:neurovault_Participants/neurovault_Participants_schema",
+                "isAbout": "../../neurovault_Participants/neurovault_Participants_schema",
                 "prefLabel": {
                     "en": "Participants"
                 }
             },
             {
                 "variableName": "neurovault_MRI_acquisition",
-                "isAbout": "activity_path:neurovault_MRI_acquisition/neurovault_MRI_acquisition_schema",
+                "isAbout": "../../neurovault_MRI_acquisition/neurovault_MRI_acquisition_schema",
                 "prefLabel": {
                     "en": "MRI_acquisition"
                 }
             },
             {
                 "variableName": "neurovault_Preprocessing",
-                "isAbout": "activity_path:neurovault_Preprocessing/neurovault_Preprocessing_schema",
+                "isAbout": "../../neurovault_Preprocessing/neurovault_Preprocessing_schema",
                 "prefLabel": {
                     "en": "Preprocessing"
                 }
             },
             {
                 "variableName": "neurovault_Intersubject_registration",
-                "isAbout": "activity_path:neurovault_Intersubject_registration/neurovault_Intersubject_registration_schema",
+                "isAbout": "../../neurovault_Intersubject_registration/neurovault_Intersubject_registration_schema",
                 "prefLabel": {
                     "en": "Intersubject_registration"
                 }
             },
             {
                 "variableName": "neurovault_Individual__subject_modeling",
-                "isAbout": "activity_path:neurovault_Individual__subject_modeling/neurovault_Individual__subject_modeling_schema",
+                "isAbout": "../../neurovault_Individual__subject_modeling/neurovault_Individual__subject_modeling_schema",
                 "prefLabel": {
                     "en": "Individual_ subject_modeling"
                 }
             },
             {
                 "variableName": "neurovault_Group_modeling",
-                "isAbout": "activity_path:neurovault_Group_modeling/neurovault_Group_modeling_schema",
+                "isAbout": "../../neurovault_Group_modeling/neurovault_Group_modeling_schema",
                 "prefLabel": {
                     "en": "Group_modeling"
                 }

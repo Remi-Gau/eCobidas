@@ -1,74 +1,69 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_radiotracer/items/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_radiotracer_schema",
     "prefLabel": "PET_radioligand_radiotracer",
     "description": "PET_radioligand_radiotracer",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "preamble": " ",
     "ui": {
         "order": [
-            "item_path:PharmaceuticalDoseRegimen",
-            "item_path:TracerName",
-            "item_path:TracerRadLex",
-            "item_path:TracerSNOMED",
-            "item_path:PharmaceuticalName",
-            "item_path:TracerRadionuclide",
-            "item_path:TracerMolecularWeight",
-            "item_path:PharmaceuticalDoseTime",
-            "item_path:PharmaceuticalDoseAmount"
+            "items/PharmaceuticalDoseRegimen",
+            "items/TracerName",
+            "items/TracerRadLex",
+            "items/TracerSNOMED",
+            "items/PharmaceuticalName",
+            "items/TracerRadionuclide",
+            "items/TracerMolecularWeight",
+            "items/PharmaceuticalDoseTime",
+            "items/PharmaceuticalDoseAmount"
         ],
         "shuffle": false,
         "addProperties": [
             {
                 "variableName": "PharmaceuticalDoseRegimen",
-                "isAbout": "item_path:PharmaceuticalDoseRegimen",
+                "isAbout": "items/PharmaceuticalDoseRegimen",
                 "isVis": true
             },
             {
                 "variableName": "TracerName",
-                "isAbout": "item_path:TracerName",
+                "isAbout": "items/TracerName",
                 "isVis": true
             },
             {
                 "variableName": "TracerRadLex",
-                "isAbout": "item_path:TracerRadLex",
+                "isAbout": "items/TracerRadLex",
                 "isVis": true
             },
             {
                 "variableName": "TracerSNOMED",
-                "isAbout": "item_path:TracerSNOMED",
+                "isAbout": "items/TracerSNOMED",
                 "isVis": true
             },
             {
                 "variableName": "PharmaceuticalName",
-                "isAbout": "item_path:PharmaceuticalName",
+                "isAbout": "items/PharmaceuticalName",
                 "isVis": true
             },
             {
                 "variableName": "TracerRadionuclide",
-                "isAbout": "item_path:TracerRadionuclide",
+                "isAbout": "items/TracerRadionuclide",
                 "isVis": true
             },
             {
                 "variableName": "TracerMolecularWeight",
-                "isAbout": "item_path:TracerMolecularWeight",
+                "isAbout": "items/TracerMolecularWeight",
                 "isVis": true
             },
             {
                 "variableName": "PharmaceuticalDoseTime",
-                "isAbout": "item_path:PharmaceuticalDoseTime",
+                "isAbout": "items/PharmaceuticalDoseTime",
                 "isVis": true
             },
             {
                 "variableName": "PharmaceuticalDoseAmount",
-                "isAbout": "item_path:PharmaceuticalDoseAmount",
+                "isAbout": "items/PharmaceuticalDoseAmount",
                 "isVis": true
             }
         ]

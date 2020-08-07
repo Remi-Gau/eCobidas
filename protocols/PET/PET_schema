@@ -1,16 +1,11 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        {
-            "activity_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/"
-        }
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Protocol",
     "@id": "PET_schema",
     "prefLabel": "PET_schema",
     "description": "PET_schema",
-    "schemaVersion": "0.0.1",
-    "version": "0.0.1",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "1.0.0-rc1",
     "landingPage": {
         "@id": "README.md",
         "@language": "en"
@@ -22,164 +17,164 @@
         ],
         "shuffle": false,
         "order": [
-            "activity_path:PET_data-acquisition_info/PET_data-acquisition_info_schema",
-            "activity_path:PET_radioligand_radiotracer/PET_radioligand_radiotracer_schema",
-            "activity_path:PET_radioligand_radiochem/PET_radioligand_radiochem_schema",
-            "activity_path:PET_radioligand_time/PET_radioligand_time_schema",
-            "activity_path:PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_schema",
-            "activity_path:PET_radioligand_continuous-blood/PET_radioligand_continuous-blood_schema",
-            "activity_path:PET_radioligand_discrete-blood/PET_radioligand_discrete-blood_schema",
-            "activity_path:PET_radioligand_metabolite/PET_radioligand_metabolite_schema",
-            "activity_path:PET_radioligand_plasma/PET_radioligand_plasma_schema",
-            "activity_path:PET_radioligand_whole-blood/PET_radioligand_whole-blood_schema",
-            "activity_path:PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_schema",
-            "activity_path:PET_data-acquisition_external-motion-correction/PET_data-acquisition_external-motion-correction_schema",
-            "activity_path:PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_schema",
-            "activity_path:PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_schema",
-            "activity_path:PET_data-analysis_preprocessing_motion-correction/PET_data-analysis_preprocessing_motion-correction_schema",
-            "activity_path:PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_schema",
-            "activity_path:PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
-            "activity_path:PET_statistics_multiple-testings/PET_statistics_multiple-testings_schema",
-            "activity_path:PET_statistics_power-analysis/PET_statistics_power-analysis_schema",
-            "activity_path:PET_statistics_pre-registration/PET_statistics_pre-registration_schema"
+            "../../PET_data-acquisition_info/PET_data-acquisition_info_schema",
+            "../../PET_radioligand_radiotracer/PET_radioligand_radiotracer_schema",
+            "../../PET_radioligand_radiochem/PET_radioligand_radiochem_schema",
+            "../../PET_radioligand_time/PET_radioligand_time_schema",
+            "../../PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_schema",
+            "../../PET_radioligand_continuous-blood/PET_radioligand_continuous-blood_schema",
+            "../../PET_radioligand_discrete-blood/PET_radioligand_discrete-blood_schema",
+            "../../PET_radioligand_metabolite/PET_radioligand_metabolite_schema",
+            "../../PET_radioligand_plasma/PET_radioligand_plasma_schema",
+            "../../PET_radioligand_whole-blood/PET_radioligand_whole-blood_schema",
+            "../../PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_schema",
+            "../../PET_data-acquisition_external-motion-correction/PET_data-acquisition_external-motion-correction_schema",
+            "../../PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_schema",
+            "../../PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_schema",
+            "../../PET_data-analysis_preprocessing_motion-correction/PET_data-analysis_preprocessing_motion-correction_schema",
+            "../../PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_schema",
+            "../../PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
+            "../../PET_statistics_multiple-testings/PET_statistics_multiple-testings_schema",
+            "../../PET_statistics_power-analysis/PET_statistics_power-analysis_schema",
+            "../../PET_statistics_pre-registration/PET_statistics_pre-registration_schema"
         ],
         "addProperties": [
             {
                 "variableName": "PET_data-acquisition_info",
-                "isAbout": "activity_path:PET_data-acquisition_info/PET_data-acquisition_info_schema",
+                "isAbout": "../../PET_data-acquisition_info/PET_data-acquisition_info_schema",
                 "prefLabel": {
                     "en": "Info"
                 }
             },
             {
                 "variableName": "PET_radioligand_radiotracer",
-                "isAbout": "activity_path:PET_radioligand_radiotracer/PET_radioligand_radiotracer_schema",
+                "isAbout": "../../PET_radioligand_radiotracer/PET_radioligand_radiotracer_schema",
                 "prefLabel": {
                     "en": "Radiotracer"
                 }
             },
             {
                 "variableName": "PET_radioligand_radiochem",
-                "isAbout": "activity_path:PET_radioligand_radiochem/PET_radioligand_radiochem_schema",
+                "isAbout": "../../PET_radioligand_radiochem/PET_radioligand_radiochem_schema",
                 "prefLabel": {
                     "en": "Radiochem"
                 }
             },
             {
                 "variableName": "PET_radioligand_time",
-                "isAbout": "activity_path:PET_radioligand_time/PET_radioligand_time_schema",
+                "isAbout": "../../PET_radioligand_time/PET_radioligand_time_schema",
                 "prefLabel": {
                     "en": "Time"
                 }
             },
             {
                 "variableName": "PET_data-acquisition_reconstruction",
-                "isAbout": "activity_path:PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_schema",
+                "isAbout": "../../PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_schema",
                 "prefLabel": {
                     "en": "Reconstruction"
                 }
             },
             {
                 "variableName": "PET_radioligand_continuous-blood",
-                "isAbout": "activity_path:PET_radioligand_continuous-blood/PET_radioligand_continuous-blood_schema",
+                "isAbout": "../../PET_radioligand_continuous-blood/PET_radioligand_continuous-blood_schema",
                 "prefLabel": {
                     "en": "Continuous blood"
                 }
             },
             {
                 "variableName": "PET_radioligand_discrete-blood",
-                "isAbout": "activity_path:PET_radioligand_discrete-blood/PET_radioligand_discrete-blood_schema",
+                "isAbout": "../../PET_radioligand_discrete-blood/PET_radioligand_discrete-blood_schema",
                 "prefLabel": {
                     "en": "Discrete blood"
                 }
             },
             {
                 "variableName": "PET_radioligand_metabolite",
-                "isAbout": "activity_path:PET_radioligand_metabolite/PET_radioligand_metabolite_schema",
+                "isAbout": "../../PET_radioligand_metabolite/PET_radioligand_metabolite_schema",
                 "prefLabel": {
                     "en": "Metabolite"
                 }
             },
             {
                 "variableName": "PET_radioligand_plasma",
-                "isAbout": "activity_path:PET_radioligand_plasma/PET_radioligand_plasma_schema",
+                "isAbout": "../../PET_radioligand_plasma/PET_radioligand_plasma_schema",
                 "prefLabel": {
                     "en": "Plasma"
                 }
             },
             {
                 "variableName": "PET_radioligand_whole-blood",
-                "isAbout": "activity_path:PET_radioligand_whole-blood/PET_radioligand_whole-blood_schema",
+                "isAbout": "../../PET_radioligand_whole-blood/PET_radioligand_whole-blood_schema",
                 "prefLabel": {
                     "en": "Whole blood"
                 }
             },
             {
                 "variableName": "PET_data-acquisition_cross-calibration",
-                "isAbout": "activity_path:PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_schema",
+                "isAbout": "../../PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_schema",
                 "prefLabel": {
                     "en": "Cross-calibration"
                 }
             },
             {
                 "variableName": "PET_data-acquisition_external-motion-correction",
-                "isAbout": "activity_path:PET_data-acquisition_external-motion-correction/PET_data-acquisition_external-motion-correction_schema",
+                "isAbout": "../../PET_data-acquisition_external-motion-correction/PET_data-acquisition_external-motion-correction_schema",
                 "prefLabel": {
                     "en": "External Motion Correction"
                 }
             },
             {
                 "variableName": "PET_data-analysis_blood-data-processing",
-                "isAbout": "activity_path:PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_schema",
+                "isAbout": "../../PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_schema",
                 "prefLabel": {
                     "en": "Blood Data Processing"
                 }
             },
             {
                 "variableName": "PET_data-analysis_kinetic-modeling",
-                "isAbout": "activity_path:PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_schema",
+                "isAbout": "../../PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_schema",
                 "prefLabel": {
                     "en": "Kinetic Modeling"
                 }
             },
             {
                 "variableName": "PET_data-analysis_preprocessing_motion-correction",
-                "isAbout": "activity_path:PET_data-analysis_preprocessing_motion-correction/PET_data-analysis_preprocessing_motion-correction_schema",
+                "isAbout": "../../PET_data-analysis_preprocessing_motion-correction/PET_data-analysis_preprocessing_motion-correction_schema",
                 "prefLabel": {
                     "en": "Motion Correction"
                 }
             },
             {
                 "variableName": "PET_data-analysis_preprocessing_registration",
-                "isAbout": "activity_path:PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_schema",
+                "isAbout": "../../PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_schema",
                 "prefLabel": {
                     "en": "Registration"
                 }
             },
             {
                 "variableName": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
-                "isAbout": "activity_path:PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
+                "isAbout": "../../PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
                 "prefLabel": {
                     "en": "Volumes of interest delineation"
                 }
             },
             {
                 "variableName": "PET_statistics_multiple-testings",
-                "isAbout": "activity_path:PET_statistics_multiple-testings/PET_statistics_multiple-testings_schema",
+                "isAbout": "../../PET_statistics_multiple-testings/PET_statistics_multiple-testings_schema",
                 "prefLabel": {
                     "en": "Multiple Testings"
                 }
             },
             {
                 "variableName": "PET_statistics_power-analysis",
-                "isAbout": "activity_path:PET_statistics_power-analysis/PET_statistics_power-analysis_schema",
+                "isAbout": "../../PET_statistics_power-analysis/PET_statistics_power-analysis_schema",
                 "prefLabel": {
                     "en": "Power Analysis"
                 }
             },
             {
                 "variableName": "PET_statistics_pre-registration",
-                "isAbout": "activity_path:PET_statistics_pre-registration/PET_statistics_pre-registration_schema",
+                "isAbout": "../../PET_statistics_pre-registration/PET_statistics_pre-registration_schema",
                 "prefLabel": {
                     "en": "Pre-registration"
                 }
