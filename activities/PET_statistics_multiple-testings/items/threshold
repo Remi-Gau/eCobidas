@@ -1,18 +1,12 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_multiple-testings/PET_statistics_multiple-testings_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "threshold",
     "prefLabel": "threshold",
-    "schema:description": "threshold",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "threshold",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "slider"
     },
     "question": {
@@ -20,38 +14,54 @@
     },
     "responseOptions": {
         "valueType": "xsd:integer",
-        "schema:minValue": 0,
-        "schema:maxValue": 6,
+        "minValue": 1,
+        "maxValue": 11,
         "choices": [
             {
-                "schema:name": "Not at all",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "value": 1,
+                "@type": "option",
+                "name": "min"
             },
             {
-                "schema:value": 1,
-                "@type": "schema:option"
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:value": 2,
-                "@type": "schema:option"
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:value": 3,
-                "@type": "schema:option"
+                "value": 4,
+                "@type": "option"
             },
             {
-                "schema:value": 4,
-                "@type": "schema:option"
+                "value": 5,
+                "@type": "option"
             },
             {
-                "schema:value": 5,
-                "@type": "schema:option"
+                "value": 6,
+                "@type": "option"
             },
             {
-                "schema:name": "Completely",
-                "schema:value": 6,
-                "@type": "schema:option"
+                "value": 7,
+                "@type": "option"
+            },
+            {
+                "value": 8,
+                "@type": "option"
+            },
+            {
+                "value": 9,
+                "@type": "option"
+            },
+            {
+                "value": 10,
+                "@type": "option"
+            },
+            {
+                "value": 11,
+                "@type": "option",
+                "name": "max"
             }
         ]
     }

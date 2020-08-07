@@ -1,18 +1,12 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "well-counter-read",
     "prefLabel": "well-counter-read",
-    "schema:description": "well-counter-read",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "well-counter-read",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "radio"
     },
     "question": {
@@ -21,19 +15,19 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "count per second",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "count per second",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "counts per minute",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "counts per minute",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
             }
         ]
     }

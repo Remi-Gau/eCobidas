@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "repetition_time",
     "prefLabel": "repetition_time",
-    "schema:description": "repetition_time",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "repetition_time",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "float"
     },
     "question": {

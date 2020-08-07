@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "functional_coregistration_method",
     "prefLabel": "functional_coregistration_method",
-    "schema:description": "functional_coregistration_method",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "functional_coregistration_method",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "text"
     },
     "question": {

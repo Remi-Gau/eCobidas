@@ -1,36 +1,35 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_context"
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_preprocessing_registration/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_registration_schema",
-    "skos:prefLabel": "PET_data-analysis_preprocessing_registration",
-    "schema:description": "PET_data-analysis_preprocessing_registration",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_data-analysis_preprocessing_registration",
+    "description": "PET_data-analysis_preprocessing_registration",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "registration-reference-image",
-            "registration-target-image",
-            "registration-cost-function",
-            "registration-interpolation",
-            "registration-smoothing",
-            "resolution-of-reference-target",
-            "registration-quality-control",
-            "registration-software",
-            "registration-software-version",
-            "smoothing-target-image",
-            "shape-of-smoothing-filter",
-            "size-of-smoothing-filter",
-            "justification-for-smoothing-size",
-            "space-of-smoothing"
+            "item_path:registration-reference-image",
+            "item_path:registration-target-image",
+            "item_path:registration-cost-function",
+            "item_path:registration-interpolation",
+            "item_path:registration-smoothing",
+            "item_path:resolution-of-reference-target",
+            "item_path:registration-quality-control",
+            "item_path:registration-software",
+            "item_path:registration-software-version",
+            "item_path:smoothing-target-image",
+            "item_path:shape-of-smoothing-filter",
+            "item_path:size-of-smoothing-filter",
+            "item_path:justification-for-smoothing-size",
+            "item_path:space-of-smoothing"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "registration-reference-image",

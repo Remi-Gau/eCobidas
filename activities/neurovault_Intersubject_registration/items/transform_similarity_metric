@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "transform_similarity_metric",
     "prefLabel": "transform_similarity_metric",
-    "schema:description": "transform_similarity_metric",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "transform_similarity_metric",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "text"
     },
     "question": {

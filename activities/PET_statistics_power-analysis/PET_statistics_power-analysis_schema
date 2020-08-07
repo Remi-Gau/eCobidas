@@ -1,27 +1,26 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_power-analysis/PET_statistics_power-analysis_context"
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_statistics_power-analysis/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_statistics_power-analysis_schema",
-    "skos:prefLabel": "PET_statistics_power-analysis",
-    "schema:description": "PET_statistics_power-analysis",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_statistics_power-analysis",
+    "description": "PET_statistics_power-analysis",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "alpha-level",
-            "power",
-            "effect-size",
-            "variance-assumption",
-            "number-of-subjects-needed"
+            "item_path:alpha-level",
+            "item_path:power",
+            "item_path:effect-size",
+            "item_path:variance-assumption",
+            "item_path:number-of-subjects-needed"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "alpha-level",

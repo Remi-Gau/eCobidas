@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "coordinate_space",
     "prefLabel": "coordinate_space",
-    "schema:description": "coordinate_space",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "coordinate_space",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,29 +15,29 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "MNI",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "MNI",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "Talairach",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "Talairach",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "MNI2Tal",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "MNI2Tal",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 5,
+                "@type": "option"
             }
         ]
     }

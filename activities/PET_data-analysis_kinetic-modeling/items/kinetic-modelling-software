@@ -1,18 +1,12 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "kinetic-modelling-software",
     "prefLabel": "kinetic-modelling-software",
-    "schema:description": "kinetic-modelling-software",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "kinetic-modelling-software",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -21,14 +15,14 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "PMOD v. 2.9",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "PMOD v. 2.9",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
             }
         ]
     }

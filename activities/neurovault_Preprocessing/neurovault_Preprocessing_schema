@@ -1,102 +1,104 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/neurovault_Preprocessing/items/"
+        }
+    ],
     "@type": "reproschema:Activity",
     "@id": "neurovault_Preprocessing_schema",
-    "skos:prefLabel": "neurovault_Preprocessing",
-    "schema:description": "neurovault_Preprocessing",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "neurovault_Preprocessing",
+    "description": "neurovault_Preprocessing",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "software_package",
-            "software_version",
-            "order_of_preprocessing_operations",
-            "quality_control",
-            "used_b0_unwarping",
-            "b0_unwarping_software",
-            "used_slice_timing_correction",
-            "slice_timing_correction_software",
-            "used_motion_correction",
-            "motion_correction_software",
-            "motion_correction_reference",
-            "motion_correction_metric",
-            "motion_correction_interpolation",
-            "used_motion_susceptibiity_correction"
+            "item_path:software_package",
+            "item_path:software_version",
+            "item_path:order_of_preprocessing_operations",
+            "item_path:quality_control",
+            "item_path:used_b0_unwarping",
+            "item_path:b0_unwarping_software",
+            "item_path:used_slice_timing_correction",
+            "item_path:slice_timing_correction_software",
+            "item_path:used_motion_correction",
+            "item_path:motion_correction_software",
+            "item_path:motion_correction_reference",
+            "item_path:motion_correction_metric",
+            "item_path:motion_correction_interpolation",
+            "item_path:used_motion_susceptibiity_correction"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "software_package",
-                "isAbout": "software_package",
+                "isAbout": "item_path:software_package",
                 "isVis": true
             },
             {
                 "variableName": "software_version",
-                "isAbout": "software_version",
+                "isAbout": "item_path:software_version",
                 "isVis": true
             },
             {
                 "variableName": "order_of_preprocessing_operations",
-                "isAbout": "order_of_preprocessing_operations",
+                "isAbout": "item_path:order_of_preprocessing_operations",
                 "isVis": true
             },
             {
                 "variableName": "quality_control",
-                "isAbout": "quality_control",
+                "isAbout": "item_path:quality_control",
                 "isVis": true
             },
             {
                 "variableName": "used_b0_unwarping",
-                "isAbout": "used_b0_unwarping",
+                "isAbout": "item_path:used_b0_unwarping",
                 "isVis": true
             },
             {
                 "variableName": "b0_unwarping_software",
-                "isAbout": "b0_unwarping_software",
+                "isAbout": "item_path:b0_unwarping_software",
                 "isVis": "used_b0_unwarping == 1"
             },
             {
                 "variableName": "used_slice_timing_correction",
-                "isAbout": "used_slice_timing_correction",
+                "isAbout": "item_path:used_slice_timing_correction",
                 "isVis": true
             },
             {
                 "variableName": "slice_timing_correction_software",
-                "isAbout": "slice_timing_correction_software",
+                "isAbout": "item_path:slice_timing_correction_software",
                 "isVis": "used_slice_timing_correction  == 1"
             },
             {
                 "variableName": "used_motion_correction",
-                "isAbout": "used_motion_correction",
+                "isAbout": "item_path:used_motion_correction",
                 "isVis": true
             },
             {
                 "variableName": "motion_correction_software",
-                "isAbout": "motion_correction_software",
+                "isAbout": "item_path:motion_correction_software",
                 "isVis": "used_motion_correction  == 1"
             },
             {
                 "variableName": "motion_correction_reference",
-                "isAbout": "motion_correction_reference",
+                "isAbout": "item_path:motion_correction_reference",
                 "isVis": "used_motion_correction  == 1"
             },
             {
                 "variableName": "motion_correction_metric",
-                "isAbout": "motion_correction_metric",
+                "isAbout": "item_path:motion_correction_metric",
                 "isVis": "used_motion_correction  == 1"
             },
             {
                 "variableName": "motion_correction_interpolation",
-                "isAbout": "motion_correction_interpolation",
+                "isAbout": "item_path:motion_correction_interpolation",
                 "isVis": "used_motion_correction  == 1"
             },
             {
                 "variableName": "used_motion_susceptibiity_correction",
-                "isAbout": "used_motion_susceptibiity_correction",
+                "isAbout": "item_path:used_motion_susceptibiity_correction",
                 "isVis": true
             }
         ]

@@ -1,18 +1,12 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "phantom-type",
     "prefLabel": "phantom-type",
-    "schema:description": "phantom-type",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "phantom-type",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -21,24 +15,24 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "Uniform cylinder",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "Uniform cylinder",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "ACR",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "ACR",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "EARL ",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "EARL ",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 4,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
             }
         ]
     }

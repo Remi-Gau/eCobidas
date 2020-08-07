@@ -70,18 +70,18 @@ def get_mandatory(row, CSV_INFO):
     return mandatory
 
 
-def define_new_item(at_context, item_info, VERSION):
+def define_new_item(item_info, REPRONIM_REPO, VERSION):
     # define jsonld for this item
 
     item_schema = {
-        "@context": at_context,
+        "@context": REPRONIM_REPO + "contexts/generic",
         "@type": "reproschema:Field",
         "@id": item_info["name"],
         "prefLabel": item_info["name"],
-        "schema:description": item_info["name"],
-        "schema:schemaVersion": VERSION,
-        "schema:version": VERSION,
-        "ui": {"allow": ["skipped"], "inputType": []},
+        "description": item_info["name"],
+        "schemaVersion": VERSION,
+        "version": VERSION,
+        "ui": {"inputType": []},
         "question": {"en": item_info["question"]},
     }
 
@@ -108,9 +108,9 @@ def define_response_choice(response_type, response_choices):
         responseOptions = {
             "multipleChoice": False,
             "choices": [
-                {"schema:value": 0, "schema:name": "No", "@type": "schema:option"},
-                {"schema:value": 1, "schema:name": "Yes", "@type": "schema:option"},
-                {"schema:value": 9, "schema:name": "Unknown", "@type": "schema:option"},
+                {"value": 0, "name": "No", "@type": "option"},
+                {"value": 1, "name": "Yes", "@type": "option"},
+                {"value": 9, "name": "Unknown", "@type": "option"},
             ],
         }
 
@@ -160,16 +160,10 @@ def list_responses_options(responseOptions, response_choices):
 
     for i, opt in enumerate(response_choices):
 
-        responseOptions["choices"].append(
-            {"schema:name": opt, "schema:value": i, "@type": "schema:option"}
-        )
+        responseOptions["choices"].append({"name": opt, "value": i, "@type": "option"})
 
     responseOptions["choices"].append(
-        {
-            "schema:name": "Other",
-            "schema:value": len(response_choices) + 1,
-            "@type": "schema:option",
-        }
+        {"name": "Other", "value": len(response_choices) + 1, "@type": "option"}
     )
 
     return responseOptions
@@ -179,20 +173,23 @@ def slider_response(response_choices, min_label, max_label):
 
     from numpy import linspace
 
-    min = float(response_choices[0])
-    max = float(response_choices[1])
-    steps = float(response_choices[2]) + 1 if len(response_choices) == 3 else 101
+    # min = int(response_choices[0])
+    # max = int(response_choices[1])
+    # steps = int(response_choices[2]) + 1 if len(response_choices) == 3 else 11
+    min = 1
+    max = 11
+    steps = 11
     responseOptions = {
         "valueType": "xsd:integer",
-        "schema:minValue": min,
-        "schema:maxValue": max,
+        "minValue": min,
+        "maxValue": max,
         "choices": [],
     }
 
     for i in linspace(min, max, steps):
-        responseOptions["choices"].append({"schema:value": i, "@type": "schema:option"})
+        responseOptions["choices"].append({"value": int(i), "@type": "option"})
 
-    responseOptions["choices"][0]["schema:name"] = min_label
-    responseOptions["choices"][-1]["schema:name"] = max_label
+    responseOptions["choices"][0]["name"] = min_label
+    responseOptions["choices"][-1]["name"] = max_label
 
     return responseOptions

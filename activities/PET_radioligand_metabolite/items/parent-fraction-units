@@ -1,18 +1,12 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_metabolite/PET_radioligand_metabolite_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "parent-fraction-units",
     "prefLabel": "parent-fraction-units",
-    "schema:description": "parent-fraction-units",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "parent-fraction-units",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "radio"
     },
     "question": {
@@ -21,24 +15,24 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "s",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "s",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "fraction",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "fraction",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "fraction",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "fraction",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 4,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
             }
         ]
     }

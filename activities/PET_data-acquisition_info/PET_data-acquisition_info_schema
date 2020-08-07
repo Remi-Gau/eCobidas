@@ -1,31 +1,30 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_info/PET_data-acquisition_info_context"
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-acquisition_info/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-acquisition_info_schema",
-    "skos:prefLabel": "PET_data-acquisition_info",
-    "schema:description": "PET_data-acquisition_info",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_data-acquisition_info",
+    "description": "PET_data-acquisition_info",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "Modality",
-            "Manufacturer",
-            "ManufacturersModelName",
-            "Anaesthesia",
-            "BodyPart",
-            "Unit",
-            "experiment-date",
-            "imaging-center-site",
-            "imaging-department"
+            "item_path:Modality",
+            "item_path:Manufacturer",
+            "item_path:ManufacturersModelName",
+            "item_path:Anaesthesia",
+            "item_path:BodyPart",
+            "item_path:Unit",
+            "item_path:experiment-date",
+            "item_path:imaging-center-site",
+            "item_path:imaging-department"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "Modality",

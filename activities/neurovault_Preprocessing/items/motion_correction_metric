@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "motion_correction_metric",
     "prefLabel": "motion_correction_metric",
-    "schema:description": "motion_correction_metric",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "motion_correction_metric",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,34 +15,34 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "Mutual information",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "Mutual information",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "Normalised mutual information",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "Normalised mutual information",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "Entropy correlation coefficient",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "Entropy correlation coefficient",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Normalised cross-correlation",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Normalised cross-correlation",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 4,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 6,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 6,
+                "@type": "option"
             }
         ]
     }

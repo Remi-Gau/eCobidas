@@ -1,33 +1,32 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_metabolite/PET_radioligand_metabolite_context"
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_metabolite/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_metabolite_schema",
-    "skos:prefLabel": "PET_radioligand_metabolite",
-    "schema:description": "PET_radioligand_metabolite",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_radioligand_metabolite",
+    "description": "PET_radioligand_metabolite",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "MetaboliteAvail",
-            "MetaboliteMethod",
-            "radiolabeled-parent-compound-fraction",
-            "data:labels",
-            "parent-fraction-units",
-            "parent-fraction-measurement-error",
-            "metabolite-analysis-timepoints",
-            "fraction-of-radiometabolite-needing-quantitation",
-            "error-on-above-measurement",
-            "radiolabeled-metabolite-fractions",
-            "MetaboliteRecoveryCorrectionApplied"
+            "item_path:MetaboliteAvail",
+            "item_path:MetaboliteMethod",
+            "item_path:radiolabeled-parent-compound-fraction",
+            "item_path:data:labels",
+            "item_path:parent-fraction-units",
+            "item_path:parent-fraction-measurement-error",
+            "item_path:metabolite-analysis-timepoints",
+            "item_path:fraction-of-radiometabolite-needing-quantitation",
+            "item_path:error-on-above-measurement",
+            "item_path:radiolabeled-metabolite-fractions",
+            "item_path:MetaboliteRecoveryCorrectionApplied"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "MetaboliteAvail",

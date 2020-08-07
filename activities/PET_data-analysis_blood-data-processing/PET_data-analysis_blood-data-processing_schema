@@ -1,27 +1,26 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_context"
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_blood-data-processing/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_blood-data-processing_schema",
-    "skos:prefLabel": "PET_data-analysis_blood-data-processing",
-    "schema:description": "PET_data-analysis_blood-data-processing",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_data-analysis_blood-data-processing",
+    "description": "PET_data-analysis_blood-data-processing",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "sampling-method",
-            "delay-time-correction",
-            "fitting",
-            "fitting-description",
-            "blood-data-processing-interpolation"
+            "item_path:sampling-method",
+            "item_path:delay-time-correction",
+            "item_path:fitting",
+            "item_path:fitting-description",
+            "item_path:blood-data-processing-interpolation"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "sampling-method",

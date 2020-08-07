@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "optimization_method",
     "prefLabel": "optimization_method",
-    "schema:description": "optimization_method",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "optimization_method",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "text"
     },
     "question": {

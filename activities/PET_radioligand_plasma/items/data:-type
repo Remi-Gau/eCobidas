@@ -1,18 +1,12 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_plasma/PET_radioligand_plasma_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "data:-type",
     "prefLabel": "data:-type",
-    "schema:description": "data:-type",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "data:-type",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -21,14 +15,14 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "radioactivity ",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "radioactivity ",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
             }
         ]
     }

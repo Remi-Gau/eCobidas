@@ -1,18 +1,12 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "ReconMethodParameterLabels",
     "prefLabel": "ReconMethodParameterLabels",
-    "schema:description": "ReconMethodParameterLabels",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "ReconMethodParameterLabels",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -21,19 +15,19 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "subsets",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "subsets",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "iterations",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "iterations",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
             }
         ]
     }

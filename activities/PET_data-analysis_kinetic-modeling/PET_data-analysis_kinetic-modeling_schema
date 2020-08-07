@@ -1,29 +1,28 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_context"
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_kinetic-modeling/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_kinetic-modeling_schema",
-    "skos:prefLabel": "PET_data-analysis_kinetic-modeling",
-    "schema:description": "PET_data-analysis_kinetic-modeling",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_data-analysis_kinetic-modeling",
+    "description": "PET_data-analysis_kinetic-modeling",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "model",
-            "reference-volume",
-            "outcome-measure",
-            "weighting",
-            "level-of-analysis",
-            "kinetic-modelling-software",
-            "kinetic-modelling-software-version"
+            "item_path:model",
+            "item_path:reference-volume",
+            "item_path:outcome-measure",
+            "item_path:weighting",
+            "item_path:level-of-analysis",
+            "item_path:kinetic-modelling-software",
+            "item_path:kinetic-modelling-software-version"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "model",

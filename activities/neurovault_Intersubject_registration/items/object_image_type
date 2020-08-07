@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "object_image_type",
     "prefLabel": "object_image_type",
-    "schema:description": "object_image_type",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "object_image_type",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "text"
     },
     "question": {

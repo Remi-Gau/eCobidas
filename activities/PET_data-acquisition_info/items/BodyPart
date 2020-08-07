@@ -1,18 +1,12 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_info/PET_data-acquisition_info_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "BodyPart",
     "prefLabel": "BodyPart",
-    "schema:description": "BodyPart",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "BodyPart",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -21,69 +15,69 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": " brain",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": " brain",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "neck",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "neck",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "torso",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "torso",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "cardiac",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "cardiac",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "gut",
-                "schema:value": 4,
-                "@type": "schema:option"
+                "name": "gut",
+                "value": 4,
+                "@type": "option"
             },
             {
-                "schema:name": "hip",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "hip",
+                "value": 5,
+                "@type": "option"
             },
             {
-                "schema:name": "leg",
-                "schema:value": 6,
-                "@type": "schema:option"
+                "name": "leg",
+                "value": 6,
+                "@type": "option"
             },
             {
-                "schema:name": "knee",
-                "schema:value": 7,
-                "@type": "schema:option"
+                "name": "knee",
+                "value": 7,
+                "@type": "option"
             },
             {
-                "schema:name": "foot",
-                "schema:value": 8,
-                "@type": "schema:option"
+                "name": "foot",
+                "value": 8,
+                "@type": "option"
             },
             {
-                "schema:name": "hand",
-                "schema:value": 9,
-                "@type": "schema:option"
+                "name": "hand",
+                "value": 9,
+                "@type": "option"
             },
             {
-                "schema:name": "arm",
-                "schema:value": 10,
-                "@type": "schema:option"
+                "name": "arm",
+                "value": 10,
+                "@type": "option"
             },
             {
-                "schema:name": "lung ",
-                "schema:value": 11,
-                "@type": "schema:option"
+                "name": "lung ",
+                "value": 11,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 13,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 13,
+                "@type": "option"
             }
         ]
     }

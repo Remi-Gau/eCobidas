@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "scanner_make",
     "prefLabel": "scanner_make",
-    "schema:description": "scanner_make",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "scanner_make",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,29 +15,29 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "Siemens",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "Siemens",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "Philips ",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "Philips ",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "General Electric",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "General Electric",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 5,
+                "@type": "option"
             }
         ]
     }

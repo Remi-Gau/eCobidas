@@ -1,31 +1,30 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_radiotracer/PET_radioligand_radiotracer_context"
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_radiotracer/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_radiotracer_schema",
-    "skos:prefLabel": "PET_radioligand_radiotracer",
-    "schema:description": "PET_radioligand_radiotracer",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_radioligand_radiotracer",
+    "description": "PET_radioligand_radiotracer",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "PharmaceuticalDoseRegimen",
-            "TracerName",
-            "TracerRadLex",
-            "TracerSNOMED",
-            "PharmaceuticalName",
-            "TracerRadionuclide",
-            "TracerMolecularWeight",
-            "PharmaceuticalDoseTime",
-            "PharmaceuticalDoseAmount"
+            "item_path:PharmaceuticalDoseRegimen",
+            "item_path:TracerName",
+            "item_path:TracerRadLex",
+            "item_path:TracerSNOMED",
+            "item_path:PharmaceuticalName",
+            "item_path:TracerRadionuclide",
+            "item_path:TracerMolecularWeight",
+            "item_path:PharmaceuticalDoseTime",
+            "item_path:PharmaceuticalDoseAmount"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "PharmaceuticalDoseRegimen",

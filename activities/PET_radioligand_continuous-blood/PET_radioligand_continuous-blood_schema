@@ -1,28 +1,27 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_radioligand_continuous-blood/PET_radioligand_continuous-blood_context"
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_radioligand_continuous-blood/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_radioligand_continuous-blood_schema",
-    "skos:prefLabel": "PET_radioligand_continuous-blood",
-    "schema:description": "PET_radioligand_continuous-blood",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_radioligand_continuous-blood",
+    "description": "PET_radioligand_continuous-blood",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "ContinuousBloodAvail",
-            "ContinuousBloodWithdrawalRate",
-            "ContinuousBloodTubingType",
-            "ContinuousBloodTubingLength",
-            "ContinuousBloodDispersionConstant",
-            "ContinuousBloodDispersionCorrected"
+            "item_path:ContinuousBloodAvail",
+            "item_path:ContinuousBloodWithdrawalRate",
+            "item_path:ContinuousBloodTubingType",
+            "item_path:ContinuousBloodTubingLength",
+            "item_path:ContinuousBloodDispersionConstant",
+            "item_path:ContinuousBloodDispersionCorrected"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "ContinuousBloodAvail",

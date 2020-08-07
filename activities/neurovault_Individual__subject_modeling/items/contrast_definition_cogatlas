@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "contrast_definition_cogatlas",
     "prefLabel": "contrast_definition_cogatlas",
-    "schema:description": "contrast_definition_cogatlas",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "contrast_definition_cogatlas",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "text"
     },
     "question": {

@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "type_of_design",
     "prefLabel": "type_of_design",
-    "schema:description": "type_of_design",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "type_of_design",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,29 +15,29 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "blocked",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "blocked",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "event related",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "event related",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "hybrid block/event",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "hybrid block/event",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 5,
+                "@type": "option"
             }
         ]
     }

@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "length_of_trials",
     "prefLabel": "length_of_trials",
-    "schema:description": "length_of_trials",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "length_of_trials",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "float"
     },
     "question": {

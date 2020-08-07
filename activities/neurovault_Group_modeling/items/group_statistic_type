@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "group_statistic_type",
     "prefLabel": "group_statistic_type",
-    "schema:description": "group_statistic_type",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "group_statistic_type",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,49 +15,49 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "Z",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "Z",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "T",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "T",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "F",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "F",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "chi2",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "chi2",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "Postetior probability",
-                "schema:value": 4,
-                "@type": "schema:option"
+                "name": "Postetior probability",
+                "value": 4,
+                "@type": "option"
             },
             {
-                "schema:name": "Non parametric",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "Non parametric",
+                "value": 5,
+                "@type": "option"
             },
             {
-                "schema:name": "Monte Carlo",
-                "schema:value": 6,
-                "@type": "schema:option"
+                "name": "Monte Carlo",
+                "value": 6,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 7,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 7,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 9,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 9,
+                "@type": "option"
             }
         ]
     }

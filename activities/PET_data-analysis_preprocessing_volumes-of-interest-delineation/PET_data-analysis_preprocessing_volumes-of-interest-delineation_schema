@@ -1,32 +1,31 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_context"
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
-    "skos:prefLabel": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
-    "schema:description": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
+    "description": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "volumes-of-interest-obtained-from",
-            "volumes-of-interest-operational-criteria",
-            "volumes-of-interest-mask",
-            "volumes-of-interest-procedure",
-            "volumes-of-interest",
-            "volumes-of-interest-software",
-            "partial-volume-correction-technique",
-            "partial-volume-correction-assumptions",
-            "partial-volume-correction-software",
-            "partial-volume-correction-software-version"
+            "item_path:volumes-of-interest-obtained-from",
+            "item_path:volumes-of-interest-operational-criteria",
+            "item_path:volumes-of-interest-mask",
+            "item_path:volumes-of-interest-procedure",
+            "item_path:volumes-of-interest",
+            "item_path:volumes-of-interest-software",
+            "item_path:partial-volume-correction-technique",
+            "item_path:partial-volume-correction-assumptions",
+            "item_path:partial-volume-correction-software",
+            "item_path:partial-volume-correction-software-version"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "volumes-of-interest-obtained-from",

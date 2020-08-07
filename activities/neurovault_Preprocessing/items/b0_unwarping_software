@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "b0_unwarping_software",
     "prefLabel": "b0_unwarping_software",
-    "schema:description": "b0_unwarping_software",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "b0_unwarping_software",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,34 +15,34 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "SPM",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "SPM",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "FSL",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "FSL",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "Freesurfer",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "Freesurfer",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Brain voyager",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Brain voyager",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 4,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 6,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 6,
+                "@type": "option"
             }
         ]
     }

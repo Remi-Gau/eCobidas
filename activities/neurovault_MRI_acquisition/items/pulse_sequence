@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "pulse_sequence",
     "prefLabel": "pulse_sequence",
-    "schema:description": "pulse_sequence",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "pulse_sequence",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "text"
     },
     "question": {

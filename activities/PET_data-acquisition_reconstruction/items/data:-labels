@@ -1,18 +1,12 @@
 {
-    "@context": [
-        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_context"
-    ],
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "data:-labels",
     "prefLabel": "data:-labels",
-    "schema:description": "data:-labels",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "data:-labels",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -21,29 +15,29 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "sampleStartTime",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "sampleStartTime",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "sampleDuration",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "sampleDuration",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "activity",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "activity",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "activitySD",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "activitySD",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 5,
+                "@type": "option"
             }
         ]
     }

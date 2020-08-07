@@ -1,24 +1,110 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/neurovault_Individual__subject_modeling/items/"
+        }
+    ],
     "@type": "reproschema:Activity",
     "@id": "neurovault_Individual__subject_modeling_schema",
-    "skos:prefLabel": "neurovault_Individual__subject_modeling",
-    "schema:description": "neurovault_Individual__subject_modeling",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "neurovault_Individual__subject_modeling",
+    "description": "neurovault_Individual__subject_modeling",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "contrast_definition_cogatlas"
+            "item_path:intrasubject_model_type",
+            "item_path:intrasubject_estimation_type",
+            "item_path:intrasubject_modeling_software",
+            "item_path:hemodynamic_response_function",
+            "item_path:used_temporal_derivatives",
+            "item_path:used_dispersion_derivatives",
+            "item_path:used_motion_regressors",
+            "item_path:used_reaction_time_regressor",
+            "item_path:used_orthogonalization",
+            "item_path:orthogonalization_description",
+            "item_path:used_high_pass_filter",
+            "item_path:high_pass_filter_method",
+            "item_path:autocorrelation_model",
+            "item_path:contrast_definition",
+            "item_path:contrast_definition_cogatlas"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
+                "variableName": "intrasubject_model_type",
+                "isAbout": "item_path:intrasubject_model_type",
+                "isVis": true
+            },
+            {
+                "variableName": "intrasubject_estimation_type",
+                "isAbout": "item_path:intrasubject_estimation_type",
+                "isVis": true
+            },
+            {
+                "variableName": "intrasubject_modeling_software",
+                "isAbout": "item_path:intrasubject_modeling_software",
+                "isVis": true
+            },
+            {
+                "variableName": "hemodynamic_response_function",
+                "isAbout": "item_path:hemodynamic_response_function",
+                "isVis": true
+            },
+            {
+                "variableName": "used_temporal_derivatives",
+                "isAbout": "item_path:used_temporal_derivatives",
+                "isVis": true
+            },
+            {
+                "variableName": "used_dispersion_derivatives",
+                "isAbout": "item_path:used_dispersion_derivatives",
+                "isVis": true
+            },
+            {
+                "variableName": "used_motion_regressors",
+                "isAbout": "item_path:used_motion_regressors",
+                "isVis": true
+            },
+            {
+                "variableName": "used_reaction_time_regressor",
+                "isAbout": "item_path:used_reaction_time_regressor",
+                "isVis": true
+            },
+            {
+                "variableName": "used_orthogonalization",
+                "isAbout": "item_path:used_orthogonalization",
+                "isVis": true
+            },
+            {
+                "variableName": "orthogonalization_description",
+                "isAbout": "item_path:orthogonalization_description",
+                "isVis": "used_orthogonalization == 1"
+            },
+            {
+                "variableName": "used_high_pass_filter",
+                "isAbout": "item_path:used_high_pass_filter",
+                "isVis": true
+            },
+            {
+                "variableName": "high_pass_filter_method",
+                "isAbout": "item_path:high_pass_filter_method",
+                "isVis": "used_high_pass_filter == 1"
+            },
+            {
+                "variableName": "autocorrelation_model",
+                "isAbout": "item_path:autocorrelation_model",
+                "isVis": true
+            },
+            {
+                "variableName": "contrast_definition",
+                "isAbout": "item_path:contrast_definition",
+                "isVis": true
+            },
+            {
                 "variableName": "contrast_definition_cogatlas",
-                "isAbout": "contrast_definition_cogatlas",
+                "isAbout": "item_path:contrast_definition_cogatlas",
                 "isVis": true
             }
         ]

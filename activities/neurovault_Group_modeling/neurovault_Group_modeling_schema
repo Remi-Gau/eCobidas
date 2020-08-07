@@ -1,78 +1,80 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/neurovault_Group_modeling/items/"
+        }
+    ],
     "@type": "reproschema:Activity",
     "@id": "neurovault_Group_modeling_schema",
-    "skos:prefLabel": "neurovault_Group_modeling",
-    "schema:description": "neurovault_Group_modeling",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "neurovault_Group_modeling",
+    "description": "neurovault_Group_modeling",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "group_model_type",
-            "group_estimation_type",
-            "group_modeling_software",
-            "group_inference_type",
-            "group_model_multilevel",
-            "group_repeated_measures",
-            "group_repeated_measures_method",
-            "group_statistic_type",
-            "group_statistic_parameters",
-            "group_smoothness_fwhm"
+            "item_path:group_model_type",
+            "item_path:group_estimation_type",
+            "item_path:group_modeling_software",
+            "item_path:group_inference_type",
+            "item_path:group_model_multilevel",
+            "item_path:group_repeated_measures",
+            "item_path:group_repeated_measures_method",
+            "item_path:group_statistic_type",
+            "item_path:group_statistic_parameters",
+            "item_path:group_smoothness_fwhm"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "group_model_type",
-                "isAbout": "group_model_type",
+                "isAbout": "item_path:group_model_type",
                 "isVis": true
             },
             {
                 "variableName": "group_estimation_type",
-                "isAbout": "group_estimation_type",
+                "isAbout": "item_path:group_estimation_type",
                 "isVis": true
             },
             {
                 "variableName": "group_modeling_software",
-                "isAbout": "group_modeling_software",
+                "isAbout": "item_path:group_modeling_software",
                 "isVis": true
             },
             {
                 "variableName": "group_inference_type",
-                "isAbout": "group_inference_type",
+                "isAbout": "item_path:group_inference_type",
                 "isVis": true
             },
             {
                 "variableName": "group_model_multilevel",
-                "isAbout": "group_model_multilevel",
+                "isAbout": "item_path:group_model_multilevel",
                 "isVis": true
             },
             {
                 "variableName": "group_repeated_measures",
-                "isAbout": "group_repeated_measures",
+                "isAbout": "item_path:group_repeated_measures",
                 "isVis": true
             },
             {
                 "variableName": "group_repeated_measures_method",
-                "isAbout": "group_repeated_measures_method",
+                "isAbout": "item_path:group_repeated_measures_method",
                 "isVis": "group_repeated_measures == 1"
             },
             {
                 "variableName": "group_statistic_type",
-                "isAbout": "group_statistic_type",
+                "isAbout": "item_path:group_statistic_type",
                 "isVis": true
             },
             {
                 "variableName": "group_statistic_parameters",
-                "isAbout": "group_statistic_parameters",
+                "isAbout": "item_path:group_statistic_parameters",
                 "isVis": true
             },
             {
                 "variableName": "group_smoothness_fwhm",
-                "isAbout": "group_smoothness_fwhm",
+                "isAbout": "item_path:group_smoothness_fwhm",
                 "isVis": true
             }
         ]

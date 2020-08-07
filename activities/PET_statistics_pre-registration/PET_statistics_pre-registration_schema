@@ -1,23 +1,22 @@
 {
     "@context": [
         "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
-        "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/PET/activities/PET_statistics_pre-registration/PET_statistics_pre-registration_context"
+        {
+            "item_path": "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/activities/PET_statistics_pre-registration/items/"
+        }
     ],
     "@type": "reproschema:Activity",
     "@id": "PET_statistics_pre-registration_schema",
-    "skos:prefLabel": "PET_statistics_pre-registration",
-    "schema:description": "PET_statistics_pre-registration",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "prefLabel": "PET_statistics_pre-registration",
+    "description": "PET_statistics_pre-registration",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
-            "link"
+            "item_path:link"
         ],
         "shuffle": false,
-        "allow": [
-            "skipped"
-        ],
         "addProperties": [
             {
                 "variableName": "link",

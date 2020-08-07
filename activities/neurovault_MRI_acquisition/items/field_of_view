@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "field_of_view",
     "prefLabel": "field_of_view",
-    "schema:description": "field_of_view",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "field_of_view",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "float"
     },
     "question": {

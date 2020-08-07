@@ -3,13 +3,10 @@
     "@type": "reproschema:Field",
     "@id": "acquisition_orientation",
     "prefLabel": "acquisition_orientation",
-    "schema:description": "acquisition_orientation",
-    "schema:schemaVersion": "0.0.1",
-    "schema:version": "0.0.1",
+    "description": "acquisition_orientation",
+    "schemaVersion": "0.0.1",
+    "version": "0.0.1",
     "ui": {
-        "allow": [
-            "skipped"
-        ],
         "inputType": "select"
     },
     "question": {
@@ -18,29 +15,29 @@
     "responseOptions": {
         "choices": [
             {
-                "schema:name": "axial",
-                "schema:value": 0,
-                "@type": "schema:option"
+                "name": "axial",
+                "value": 0,
+                "@type": "option"
             },
             {
-                "schema:name": "sagittal",
-                "schema:value": 1,
-                "@type": "schema:option"
+                "name": "sagittal",
+                "value": 1,
+                "@type": "option"
             },
             {
-                "schema:name": "frontal",
-                "schema:value": 2,
-                "@type": "schema:option"
+                "name": "frontal",
+                "value": 2,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 3,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
             },
             {
-                "schema:name": "Other",
-                "schema:value": 5,
-                "@type": "schema:option"
+                "name": "Other",
+                "value": 5,
+                "@type": "option"
             }
         ]
     }
