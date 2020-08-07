@@ -59,7 +59,7 @@ TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstr
 TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,PromptRate,,Prompt rate for each frame,Prompt rate for each frame,array,,,2,1,1,_pet.json,PromptRate,,,1
 TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,RandomRate,,Random rate for each frame,Random rate for each frame,array,,,2,1,1,_pet.json,RandomRate,,,1
 TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,SinglesRate,,Singles rate for each frame,Singles rate for each frame,array,,,2,1,1,_pet.json,SinglesRate,,,1
-TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,data:-labels,0,Data: labels,,dropdown,sampleStartTime | sampleDuration | activity | activitySD,,1,1,0,,,,,1
+TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,data_labels,0,Data: labels,,dropdown,sampleStartTime | sampleDuration | activity | activitySD,,1,1,0,,,,,1
 TRUE,5,Data Acquisition,Reconstruction,,data-acquisition_reconstruction,Reconstruction,AttenuationCorrectionMethodReference,,Reference paper for the attenuation correction method used.,Reference paper for the attenuation correction method used.,char,,,2,1,1,_pet.json,AttenuationCorrectionMethodReference,,,1
 FALSE,6,Radioligand,Continuous blood,,radioligand_continuous-blood,Continuous blood,ContinuousBloodAvail,0,Boolean that specifies if continuous blood measurements are available.,Boolean that specifies if continuous blood measurements are available.,boolean,,,1,1,1,_pet.json,ContinuousBloodAvail,,,1
 TRUE,6,Radioligand,Continuous blood,,radioligand_continuous-blood,Continuous blood,ContinuousBloodWithdrawalRate,0,The rate at which the blood was withdrawn from the subject.,The rate at which the blood was withdrawn from the subject.,float,ml/s,,2,ContinuousBloodAvail == 1,1,_pet.json,ContinuousBloodWithdrawalRate,,,1
@@ -73,7 +73,7 @@ TRUE,6,Radioligand,Discrete blood,,radioligand_discrete-blood,Discrete blood,Dis
 FALSE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,MetaboliteAvail,0,Boolean that specifies if metabolite measurements are available.,Boolean that specifies if metabolite measurements are available.,boolean,,,1,1,1,_pet.json,MetaboliteAvail,,,1
 TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,MetaboliteMethod,0,Method used to measure metabolites,Method used to measure metabolites,radio,HPLC | Fraction Collector | SPE,,1,MetaboliteAvail == 1,1,_pet.json,MetaboliteMethod,,,1
 TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,radiolabeled-parent-compound-fraction,0,Radiolabeled Parent compound fraction,,slider,0 | 1,,1,1,0,,,,,1
-TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,data:labels,0,Data:labels,,dropdown,sampleStartTime | sampleDuration | parentFraction | parentFraction SD,,1,1,0,,,,,1
+TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,dataLabels,0,Data:labels,,dropdown,sampleStartTime | sampleDuration | parentFraction | parentFraction SD,,1,1,0,,,,,1
 TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,parent-fraction-units,0,Parent fraction units,,radio,s | fraction | fraction,,1,1,0,,,,,1
 TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,parent-fraction-measurement-error,0,Parent fraction measurement error,,float,,,2,1,0,,,,,1
 TRUE,6,Radioligand,Metabolite,,radioligand_metabolite,Metabolite,metabolite-analysis-timepoints,0,Metabolite analysis timepoints,seconds or minutes after scan start,char,,,1,1,0,,,,,1
@@ -85,11 +85,11 @@ FALSE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,PlasmaAvail,0,Boolean that
 TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,PlasmaFreeFraction,0,"Measured free fraction in plasma, i.e. concentration of free compound in plasma divided by total concentration of compound in plasma.","Measured free fraction in plasma, i.e. concentration of free compound in plasma divided by total concentration of compound in plasma.",slider,0 | 1,,2,PlasmaAvail == 1,1,_pet.json,PlasmaFreeFraction,,,1
 TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,error-of-free-fraction-measurement,0,Error of free fraction measurement,,float,,,2,,0,,,,,1
 TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,PlasmaFreeFractionMethod,0,Method used to estimate free fraction.,Method used to estimate free fraction.,char,,,2,PlasmaAvail == 1,1,_pet.json,PlasmaFreeFractionMethod,,,1
-TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data:-decay-corrected,0,Data: decay-corrected,,boolean,,,1,1,0,,,,,1
-TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data:-decay-correction-time,0,Data: decay correction time,,dropdown,scan start ,,1,1,0,,,,,1
-TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data:-type,0,Data: type,,dropdown,radioactivity ,,1,1,0,,,,,1
-TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data:-units,0,Data: units,,dropdown,,s | kBq/mL,1,1,0,,,,,1
-TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data:-hematocrit-value,0,Data: hematocrit value,,float,,,2,1,0,,,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data_decay-corrected,0,Data: decay-corrected,,boolean,,,1,1,0,,,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data_decay-correction-time,0,Data: decay correction time,,dropdown,scan start ,,1,1,0,,,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data_type,0,Data: type,,dropdown,radioactivity ,,1,1,0,,,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data_units,0,Data: units,,dropdown,,s | kBq/mL,1,1,0,,,,,1
+TRUE,6,Radioligand,Plasma,,radioligand_plasma,Plasma,data_hematocrit-value,0,Data: hematocrit value,,float,,,2,1,0,,,,,1
 FALSE,6,Radioligand,Whole blood,,radioligand_whole-blood,Whole blood,whole-blood-radioactivity,0,Whole blood radioactivity,,char,,MBq ,2,MetaboliteAvail == 1,0,,,,,1
 TRUE,6,Radioligand,Whole blood,,radioligand_whole-blood,Whole blood,plasma-to-whole-blood-ratio,0,Plasma to whole blood ratio,,slider,0 | 1,,2,1,0,,,,,1
 FALSE,7,Data Acquisition,Cross-calibration,,data-acquisition_cross-calibration,Cross-calibration,blood-sampling-device-read,0,Blood sampling device read,,radio,count per second | counts per minute,,2,1,0,,,,,1

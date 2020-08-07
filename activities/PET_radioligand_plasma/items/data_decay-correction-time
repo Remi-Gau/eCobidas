@@ -1,21 +1,21 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "data:-units",
-    "prefLabel": "data:-units",
-    "description": "data:-units",
+    "@id": "data_decay-correction-time",
+    "prefLabel": "data_decay-correction-time",
+    "description": "data_decay-correction-time",
     "schemaVersion": "0.0.1",
     "version": "0.0.1",
     "ui": {
         "inputType": "select"
     },
     "question": {
-        "en": "Data: units"
+        "en": "Data: decay correction time"
     },
     "responseOptions": {
         "choices": [
             {
-                "name": "",
+                "name": "scan start ",
                 "value": 0,
                 "@type": "option"
             },

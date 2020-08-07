@@ -1,27 +1,33 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "data:-type",
-    "prefLabel": "data:-type",
-    "description": "data:-type",
+    "@id": "data_decay-corrected",
+    "prefLabel": "data_decay-corrected",
+    "description": "data_decay-corrected",
     "schemaVersion": "0.0.1",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
-        "en": "Data: type"
+        "en": "Data: decay-corrected"
     },
     "responseOptions": {
+        "multipleChoice": false,
         "choices": [
             {
-                "name": "radioactivity ",
                 "value": 0,
+                "name": "No",
                 "@type": "option"
             },
             {
-                "name": "Other",
-                "value": 2,
+                "value": 1,
+                "name": "Yes",
+                "@type": "option"
+            },
+            {
+                "value": 9,
+                "name": "Unknown",
                 "@type": "option"
             }
         ]

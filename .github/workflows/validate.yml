@@ -1,0 +1,44 @@
+name: Test cobidas activities
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: "*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Checks that our JSON are valid
+      - name: Check for syntax errors
+        run: |
+          npm install -g jsonlint
+          grep -r  "@context" activities | cut -d: -f1 | xargs -I fname jsonlint -q fname
+          grep -r  "@context" protocols | cut -d: -f1 | xargs -I fname jsonlint -q fname
+
+      # Checks that the schemas are valid
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools
+          pip install reproschema requests_cache
+
+      - name: Test with pyshacl
+        run: |
+          reproschema -l DEBUG validate activities
+          reproschema -l DEBUG validate protocols
