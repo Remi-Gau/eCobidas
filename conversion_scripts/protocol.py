@@ -13,9 +13,9 @@ def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
         "@type": "reproschema:Protocol",
         "@id": protocol["schema_file"],
         "prefLabel": protocol["schema_file"],
-        "schema:description": protocol["schema_file"],
-        "schema:schemaVersion": VERSION,
-        "schema:version": VERSION,
+        "description": protocol["schema_file"],
+        "schemaVersion": VERSION,
+        "version": VERSION,
         "landingPage": {"@id": "README.md", "@language": "en"},
         # "image": "mit_voice_pilot_applet_image.svg?sanitize=true",
         "ui": {

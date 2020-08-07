@@ -19,8 +19,7 @@ from item import get_item_info, define_new_item
 # -----------------------------------------------------------------------------
 # modify the following lines to match your needs
 
-# REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/master/"
-REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/refactor-1.0/"
+REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/master/"
 
 # ----------------------------------------
 # where the checklist csv is. It is in xlsx dir of this repo
