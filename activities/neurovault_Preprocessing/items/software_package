@@ -5,45 +5,12 @@
     "prefLabel": "software_package",
     "description": "software_package",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "If a single software package was used for all analyses, specify that here"
     },
-    "responseOptions": {
-        "choices": [
-            {
-                "name": "SPM",
-                "value": 0,
-                "@type": "option"
-            },
-            {
-                "name": "FSL",
-                "value": 1,
-                "@type": "option"
-            },
-            {
-                "name": "Freesurfer",
-                "value": 2,
-                "@type": "option"
-            },
-            {
-                "name": "Brain voyager",
-                "value": 3,
-                "@type": "option"
-            },
-            {
-                "name": "Other",
-                "value": 4,
-                "@type": "option"
-            },
-            {
-                "name": "Other",
-                "value": 6,
-                "@type": "option"
-            }
-        ]
-    }
+    "responseOptions": "../mriSoftwareValueConstraints"
 }

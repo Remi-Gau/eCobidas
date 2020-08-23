@@ -5,9 +5,9 @@
     "prefLabel": "group_estimation_type",
     "description": "group_estimation_type",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Estimation method used for model"
@@ -28,12 +28,9 @@
                 "name": "Other",
                 "value": 2,
                 "@type": "option"
-            },
-            {
-                "name": "Other",
-                "value": 4,
-                "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 2
     }
 }

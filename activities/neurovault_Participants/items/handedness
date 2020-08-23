@@ -5,9 +5,9 @@
     "prefLabel": "handedness",
     "description": "handedness",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Handedness of subjects"
@@ -31,9 +31,11 @@
             },
             {
                 "name": "Other",
-                "value": 4,
+                "value": 3,
                 "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 3
     }
 }

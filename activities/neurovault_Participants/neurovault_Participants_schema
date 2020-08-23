@@ -5,7 +5,7 @@
     "prefLabel": "neurovault_Participants",
     "description": "neurovault_Participants",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [

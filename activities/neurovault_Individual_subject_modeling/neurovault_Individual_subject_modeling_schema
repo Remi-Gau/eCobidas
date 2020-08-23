@@ -1,0 +1,107 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "neurovault_Individual_subject_modeling_schema",
+    "prefLabel": "neurovault_Individual_subject_modeling",
+    "description": "neurovault_Individual_subject_modeling",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/intrasubject_model_type",
+            "items/intrasubject_estimation_type",
+            "items/intrasubject_modeling_software",
+            "items/hemodynamic_response_function",
+            "items/used_temporal_derivatives",
+            "items/used_dispersion_derivatives",
+            "items/used_motion_regressors",
+            "items/used_reaction_time_regressor",
+            "items/used_orthogonalization",
+            "items/orthogonalization_description",
+            "items/used_high_pass_filter",
+            "items/high_pass_filter_method",
+            "items/autocorrelation_model",
+            "items/contrast_definition",
+            "items/contrast_definition_cogatlas"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "intrasubject_model_type",
+                "isAbout": "items/intrasubject_model_type",
+                "isVis": true
+            },
+            {
+                "variableName": "intrasubject_estimation_type",
+                "isAbout": "items/intrasubject_estimation_type",
+                "isVis": true
+            },
+            {
+                "variableName": "intrasubject_modeling_software",
+                "isAbout": "items/intrasubject_modeling_software",
+                "isVis": true
+            },
+            {
+                "variableName": "hemodynamic_response_function",
+                "isAbout": "items/hemodynamic_response_function",
+                "isVis": true
+            },
+            {
+                "variableName": "used_temporal_derivatives",
+                "isAbout": "items/used_temporal_derivatives",
+                "isVis": true
+            },
+            {
+                "variableName": "used_dispersion_derivatives",
+                "isAbout": "items/used_dispersion_derivatives",
+                "isVis": true
+            },
+            {
+                "variableName": "used_motion_regressors",
+                "isAbout": "items/used_motion_regressors",
+                "isVis": true
+            },
+            {
+                "variableName": "used_reaction_time_regressor",
+                "isAbout": "items/used_reaction_time_regressor",
+                "isVis": true
+            },
+            {
+                "variableName": "used_orthogonalization",
+                "isAbout": "items/used_orthogonalization",
+                "isVis": true
+            },
+            {
+                "variableName": "orthogonalization_description",
+                "isAbout": "items/orthogonalization_description",
+                "isVis": "used_orthogonalization == 1"
+            },
+            {
+                "variableName": "used_high_pass_filter",
+                "isAbout": "items/used_high_pass_filter",
+                "isVis": true
+            },
+            {
+                "variableName": "high_pass_filter_method",
+                "isAbout": "items/high_pass_filter_method",
+                "isVis": "used_high_pass_filter == 1"
+            },
+            {
+                "variableName": "autocorrelation_model",
+                "isAbout": "items/autocorrelation_model",
+                "isVis": true
+            },
+            {
+                "variableName": "contrast_definition",
+                "isAbout": "items/contrast_definition",
+                "isVis": true
+            },
+            {
+                "variableName": "contrast_definition_cogatlas",
+                "isAbout": "items/contrast_definition_cogatlas",
+                "isVis": true
+            }
+        ]
+    }
+}

@@ -5,31 +5,12 @@
     "prefLabel": "group_repeated_measures",
     "description": "group_repeated_measures",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
         "en": "Was this a repeated measures design at the group level?"
     },
-    "responseOptions": {
-        "multipleChoice": false,
-        "choices": [
-            {
-                "value": 0,
-                "name": "No",
-                "@type": "option"
-            },
-            {
-                "value": 1,
-                "name": "Yes",
-                "@type": "option"
-            },
-            {
-                "value": 9,
-                "name": "Unknown",
-                "@type": "option"
-            }
-        ]
-    }
+    "responseOptions": "../booleanValueConstraints"
 }

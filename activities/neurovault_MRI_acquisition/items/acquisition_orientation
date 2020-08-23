@@ -5,9 +5,9 @@
     "prefLabel": "acquisition_orientation",
     "description": "acquisition_orientation",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "The orientation of slices"
@@ -33,12 +33,9 @@
                 "name": "Other",
                 "value": 3,
                 "@type": "option"
-            },
-            {
-                "name": "Other",
-                "value": 5,
-                "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 3
     }
 }

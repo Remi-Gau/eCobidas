@@ -5,7 +5,7 @@
     "prefLabel": "neurovault_Group_modeling",
     "description": "neurovault_Group_modeling",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
@@ -15,10 +15,7 @@
             "items/group_inference_type",
             "items/group_model_multilevel",
             "items/group_repeated_measures",
-            "items/group_repeated_measures_method",
-            "items/group_statistic_type",
-            "items/group_statistic_parameters",
-            "items/group_smoothness_fwhm"
+            "items/group_repeated_measures_method"
         ],
         "shuffle": false,
         "addProperties": [
@@ -56,21 +53,6 @@
                 "variableName": "group_repeated_measures_method",
                 "isAbout": "items/group_repeated_measures_method",
                 "isVis": "group_repeated_measures == 1"
-            },
-            {
-                "variableName": "group_statistic_type",
-                "isAbout": "items/group_statistic_type",
-                "isVis": true
-            },
-            {
-                "variableName": "group_statistic_parameters",
-                "isAbout": "items/group_statistic_parameters",
-                "isVis": true
-            },
-            {
-                "variableName": "group_smoothness_fwhm",
-                "isAbout": "items/group_smoothness_fwhm",
-                "isVis": true
             }
         ]
     }

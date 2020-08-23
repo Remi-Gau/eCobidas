@@ -5,7 +5,7 @@
     "prefLabel": "functional_coregistration_method",
     "description": "functional_coregistration_method",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },

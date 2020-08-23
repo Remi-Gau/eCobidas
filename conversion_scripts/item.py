@@ -137,7 +137,7 @@ def define_response_choice(response_type, response_choices):
     # if we have a dropdown menu
     elif response_type == "dropdown":
 
-        inputType = "select"
+        inputType = "radio"  # "select"
         responseOptions = {"choices": []}
         responseOptions = list_responses_options(responseOptions, response_choices)
 

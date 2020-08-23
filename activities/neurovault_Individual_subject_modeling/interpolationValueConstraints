@@ -1,0 +1,59 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@id": "interpolationValueConstraints",
+    "@type": "reproschema:ResponseOption",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 7,
+    "multipleChoice": false,
+    "choices": [
+        {
+            "name": {
+                "en": "Nearest neighbour"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "Trilinear"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "2nd degree spline"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "3rd degree spline"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "4th degree spline"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "Fourrier interpolation"
+            },
+            "value": 5
+        },
+        {
+            "name": {
+                "en": "sinc interpolation"
+            },
+            "value": 6
+        },
+        {
+            "name": {
+                "en": "Other"
+            },
+            "value": 7
+        }
+    ]
+}

@@ -5,9 +5,9 @@
     "prefLabel": "group_inference_type",
     "description": "group_inference_type",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Type of inference for group model"
@@ -15,7 +15,7 @@
     "responseOptions": {
         "choices": [
             {
-                "name": "random/mixed effects",
+                "name": "random / mixed effects",
                 "value": 0,
                 "@type": "option"
             },
@@ -26,9 +26,11 @@
             },
             {
                 "name": "Other",
-                "value": 3,
+                "value": 2,
                 "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 2
     }
 }

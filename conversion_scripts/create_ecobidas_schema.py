@@ -41,16 +41,17 @@ OUTPUT_DIR = "/home/remi/github/cobidas_chckls"
 # Placeholder to insert in all instances of the remote repo that will host the schema representation
 # Most likely you just need to replace Remi-Gau in the following line by your github username
 
-# REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas_chckls/"
+REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas_chckls/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-PET/"
-REMOTE_REPO = "https://raw.githubusercontent.com/ohbm/cobidas/"
+# REMOTE_REPO = "https://raw.githubusercontent.com/ohbm/cobidas/"
 
 # ----------------------------------------
 # to which branch of reproschema the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that
 # starts with: REMOTE_REPO + BRANCH
 
-BRANCH = "master"
+# BRANCH = "master"
+BRANCH = "remi-dev"
 # BRANCH = 'neurovault'
 # BRANCH = "PET"
 
@@ -61,15 +62,15 @@ BRANCH = "master"
 INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
 protocol = {"name": "neurovault_"}
 CSV_INFO = {
-    "section": {"col": 1, "name": "Section"},
-    "act_pref_label": {"col": 1, "name": "Section"},
-    "item": {"col": 2, "name": "Item"},
-    "question": {"col": 3, "name": "Field Label"},
-    "resp_type": {"col": 4, "name": "Field type"},
-    "choice": {"col": 5, "name": "Choices"},
-    "mandatory": {"col": 6, "name": ""},
-    "include": {"col": [], "name": ""},
-    "vis": {"col": 7, "name": ""},
+    "section": {"col": 4, "name": "activity"},
+    "act_pref_label": {"col": 5, "name": "activity_pref_label"},
+    "item": {"col": 6, "name": "item"},
+    "question": {"col": 9, "name": "question"},
+    "resp_type": {"col": 11, "name": "field_type"},
+    "choice": {"col": 12, "name": "choices"},
+    "mandatory": {"col": 7, "name": "mandatory"},
+    "include": {"col": 3, "name": "include"},
+    "vis": {"col": 8, "name": "visibility"},
 }
 
 # PET
@@ -223,3 +224,10 @@ with open(
     os.path.join(OUTPUT_DIR, "protocols", protocol["dir"], protocol["schema_file"]), "w"
 ) as ff:
     json.dump(protocol["schema"], ff, sort_keys=False, indent=4)
+
+print(
+    "https://www.repronim.org/reproschema-ui/#/?url="
+    + os.path.join(
+        REMOTE_REPO, BRANCH, "protocols", protocol["dir"], protocol["schema_file"]
+    )
+)

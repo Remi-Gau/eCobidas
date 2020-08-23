@@ -5,7 +5,7 @@
     "prefLabel": "resampled_voxel_size",
     "description": "resampled_voxel_size",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "float"
     },
