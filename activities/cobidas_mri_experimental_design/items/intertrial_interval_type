@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intertrial_interval_type",
+    "prefLabel": "intertrial_interval_type",
+    "description": "intertrial_interval_type",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Provide the timing structure of the events in the task, whether a random / jittered pattern or a regular arrangement\u037e any jittering of block onsets"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

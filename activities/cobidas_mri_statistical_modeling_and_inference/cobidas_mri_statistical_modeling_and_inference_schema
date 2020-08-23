@@ -1,0 +1,245 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_mri_statistical_modeling_and_inference_schema",
+    "prefLabel": "cobidas_mri_statistical_modeling_and_inference",
+    "description": "cobidas_mri_statistical_modeling_and_inference",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/event_related_duration",
+            "items/event_related_parametric_modulation",
+            "items/base_line_model",
+            "items/hemodynamic_response_function_basis_set",
+            "items/time_derivative",
+            "items/dispersion_derivative",
+            "items/high-pass_filter_used",
+            "items/high-pass_filter_type",
+            "items/high-pass_filter_cutoff",
+            "items/movement_regressors_included",
+            "items/other_nuisance_regressors",
+            "items/orthogonalization",
+            "items/orthogonalization_description",
+            "items/subject_level_model_type",
+            "items/subject_level_software",
+            "items/group_level_model_type",
+            "items/group_level_software",
+            "items/drift_model",
+            "items/autocorrelation_model",
+            "items/group_model_type",
+            "items/subject_level_estimation_type",
+            "items/group_level_estimation_type",
+            "items/group_model_variance_structures",
+            "items/repeated_measure",
+            "items/repeated_measure_method",
+            "items/contrast_definition",
+            "items/definition_cog_atlas",
+            "items/type",
+            "items/source_of_anatomical_roi",
+            "items/source_of_functional_roi",
+            "items/statistic_type",
+            "items/level",
+            "items/cluster_size",
+            "items/tfce_used",
+            "items/cluster-forming_threshold",
+            "items/neighborhood_size",
+            "items/use_of_non-default_tfce_parameters",
+            "items/multiple_testing_correction_method"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "event_related_duration",
+                "isAbout": "items/event_related_duration",
+                "isVis": "if_design_includes_events"
+            },
+            {
+                "variableName": "event_related_parametric_modulation",
+                "isAbout": "items/event_related_parametric_modulation",
+                "isVis": "if_design_includes_events"
+            },
+            {
+                "variableName": "base_line_model",
+                "isAbout": "items/base_line_model",
+                "isVis": "if_design_includes_blocks"
+            },
+            {
+                "variableName": "hemodynamic_response_function_basis_set",
+                "isAbout": "items/hemodynamic_response_function_basis_set",
+                "isVis": true
+            },
+            {
+                "variableName": "time_derivative",
+                "isAbout": "items/time_derivative",
+                "isVis": "hemodynamic_response_function_basis_set"
+            },
+            {
+                "variableName": "dispersion_derivative",
+                "isAbout": "items/dispersion_derivative",
+                "isVis": "hemodynamic_response_function_basis_set"
+            },
+            {
+                "variableName": "high-pass_filter_used",
+                "isAbout": "items/high-pass_filter_used",
+                "isVis": true
+            },
+            {
+                "variableName": "high-pass_filter_type",
+                "isAbout": "items/high-pass_filter_type",
+                "isVis": true
+            },
+            {
+                "variableName": "high-pass_filter_cutoff",
+                "isAbout": "items/high-pass_filter_cutoff",
+                "isVis": true
+            },
+            {
+                "variableName": "movement_regressors_included",
+                "isAbout": "items/movement_regressors_included",
+                "isVis": true
+            },
+            {
+                "variableName": "other_nuisance_regressors",
+                "isAbout": "items/other_nuisance_regressors",
+                "isVis": true
+            },
+            {
+                "variableName": "orthogonalization",
+                "isAbout": "items/orthogonalization",
+                "isVis": true
+            },
+            {
+                "variableName": "orthogonalization_description",
+                "isAbout": "items/orthogonalization_description",
+                "isVis": true
+            },
+            {
+                "variableName": "subject_level_model_type",
+                "isAbout": "items/subject_level_model_type",
+                "isVis": true
+            },
+            {
+                "variableName": "subject_level_software",
+                "isAbout": "items/subject_level_software",
+                "isVis": true
+            },
+            {
+                "variableName": "group_level_model_type",
+                "isAbout": "items/group_level_model_type",
+                "isVis": true
+            },
+            {
+                "variableName": "group_level_software",
+                "isAbout": "items/group_level_software",
+                "isVis": true
+            },
+            {
+                "variableName": "drift_model",
+                "isAbout": "items/drift_model",
+                "isVis": true
+            },
+            {
+                "variableName": "autocorrelation_model",
+                "isAbout": "items/autocorrelation_model",
+                "isVis": true
+            },
+            {
+                "variableName": "group_model_type",
+                "isAbout": "items/group_model_type",
+                "isVis": true
+            },
+            {
+                "variableName": "subject_level_estimation_type",
+                "isAbout": "items/subject_level_estimation_type",
+                "isVis": true
+            },
+            {
+                "variableName": "group_level_estimation_type",
+                "isAbout": "items/group_level_estimation_type",
+                "isVis": true
+            },
+            {
+                "variableName": "group_model_variance_structures",
+                "isAbout": "items/group_model_variance_structures",
+                "isVis": true
+            },
+            {
+                "variableName": "repeated_measure",
+                "isAbout": "items/repeated_measure",
+                "isVis": true
+            },
+            {
+                "variableName": "repeated_measure_method",
+                "isAbout": "items/repeated_measure_method",
+                "isVis": "repeated_measure == 1"
+            },
+            {
+                "variableName": "contrast_definition",
+                "isAbout": "items/contrast_definition",
+                "isVis": true
+            },
+            {
+                "variableName": "definition_cog_atlas",
+                "isAbout": "items/definition_cog_atlas",
+                "isVis": true
+            },
+            {
+                "variableName": "type",
+                "isAbout": "items/type",
+                "isVis": true
+            },
+            {
+                "variableName": "source_of_anatomical_roi",
+                "isAbout": "items/source_of_anatomical_roi",
+                "isVis": true
+            },
+            {
+                "variableName": "source_of_functional_roi",
+                "isAbout": "items/source_of_functional_roi",
+                "isVis": true
+            },
+            {
+                "variableName": "statistic_type",
+                "isAbout": "items/statistic_type",
+                "isVis": true
+            },
+            {
+                "variableName": "level",
+                "isAbout": "items/level",
+                "isVis": true
+            },
+            {
+                "variableName": "cluster_size",
+                "isAbout": "items/cluster_size",
+                "isVis": true
+            },
+            {
+                "variableName": "tfce_used",
+                "isAbout": "items/tfce_used",
+                "isVis": true
+            },
+            {
+                "variableName": "cluster-forming_threshold",
+                "isAbout": "items/cluster-forming_threshold",
+                "isVis": true
+            },
+            {
+                "variableName": "neighborhood_size",
+                "isAbout": "items/neighborhood_size",
+                "isVis": true
+            },
+            {
+                "variableName": "use_of_non-default_tfce_parameters",
+                "isAbout": "items/use_of_non-default_tfce_parameters",
+                "isVis": "tfce_used == 1"
+            },
+            {
+                "variableName": "multiple_testing_correction_method",
+                "isAbout": "items/multiple_testing_correction_method",
+                "isVis": true
+            }
+        ]
+    }
+}

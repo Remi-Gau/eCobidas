@@ -5,7 +5,7 @@
     "prefLabel": "PET_radioligand_plasma",
     "description": "PET_radioligand_plasma",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
@@ -13,11 +13,11 @@
             "items/PlasmaFreeFraction",
             "items/error-of-free-fraction-measurement",
             "items/PlasmaFreeFractionMethod",
-            "items/data_decay-corrected",
-            "items/data_decay-correction-time",
-            "items/data_type",
-            "items/data_units",
-            "items/data_hematocrit-value"
+            "items/decay-corrected",
+            "items/decay-correction-time",
+            "items/plasma-data-type",
+            "items/plasma-data-units",
+            "items/hematocrit-value"
         ],
         "shuffle": false,
         "addProperties": [
@@ -34,7 +34,7 @@
             {
                 "variableName": "error-of-free-fraction-measurement",
                 "isAbout": "items/error-of-free-fraction-measurement",
-                "isVis": ""
+                "isVis": true
             },
             {
                 "variableName": "PlasmaFreeFractionMethod",
@@ -42,28 +42,28 @@
                 "isVis": "PlasmaAvail == 1"
             },
             {
-                "variableName": "data_decay-corrected",
-                "isAbout": "items/data_decay-corrected",
+                "variableName": "decay-corrected",
+                "isAbout": "items/decay-corrected",
                 "isVis": true
             },
             {
-                "variableName": "data_decay-correction-time",
-                "isAbout": "items/data_decay-correction-time",
+                "variableName": "decay-correction-time",
+                "isAbout": "items/decay-correction-time",
                 "isVis": true
             },
             {
-                "variableName": "data_type",
-                "isAbout": "items/data_type",
+                "variableName": "plasma-data-type",
+                "isAbout": "items/plasma-data-type",
                 "isVis": true
             },
             {
-                "variableName": "data_units",
-                "isAbout": "items/data_units",
+                "variableName": "plasma-data-units",
+                "isAbout": "items/plasma-data-units",
                 "isVis": true
             },
             {
-                "variableName": "data_hematocrit-value",
-                "isAbout": "items/data_hematocrit-value",
+                "variableName": "hematocrit-value",
+                "isAbout": "items/hematocrit-value",
                 "isVis": true
             }
         ]

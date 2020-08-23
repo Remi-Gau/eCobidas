@@ -5,9 +5,9 @@
     "prefLabel": "frame-sequence",
     "description": "frame-sequence",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Frame-Sequence"
@@ -51,9 +51,11 @@
             },
             {
                 "name": "Other",
-                "value": 8,
+                "value": 7,
                 "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 7
     }
 }

@@ -1,0 +1,46 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_target_space_resolution",
+    "prefLabel": "intersubj_reg_target_space_resolution",
+    "description": "intersubj_reg_target_space_resolution",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Voxel size of target template in millimeters"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "2 mm",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "3 mm",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "fsaverage5",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "32k_FS_LR",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 4
+    }
+}

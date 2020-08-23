@@ -5,7 +5,7 @@
     "prefLabel": "PET_data-acquisition_reconstruction",
     "description": "PET_data-acquisition_reconstruction",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
@@ -26,7 +26,7 @@
             "items/PromptRate",
             "items/RandomRate",
             "items/SinglesRate",
-            "items/data_labels",
+            "items/reconstruction-data-labels",
             "items/AttenuationCorrectionMethodReference"
         ],
         "shuffle": false,
@@ -117,8 +117,8 @@
                 "isVis": true
             },
             {
-                "variableName": "data_labels",
-                "isAbout": "items/data_labels",
+                "variableName": "reconstruction-data-labels",
+                "isAbout": "items/reconstruction-data-labels",
                 "isVis": true
             },
             {

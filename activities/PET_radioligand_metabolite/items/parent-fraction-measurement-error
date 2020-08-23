@@ -5,7 +5,7 @@
     "prefLabel": "parent-fraction-measurement-error",
     "description": "parent-fraction-measurement-error",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "float"
     },

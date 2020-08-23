@@ -5,7 +5,7 @@
     "prefLabel": "blood-sampling-device-measurement-time",
     "description": "blood-sampling-device-measurement-time",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "timeRange"
     },

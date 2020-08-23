@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "tfce_used",
+    "prefLabel": "tfce_used",
+    "description": "tfce_used",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Was threshold-free Cluster Enhancement (TFCE) used?"
+    },
+    "responseOptions": "../../../response_options/booleanValueConstraints"
+}

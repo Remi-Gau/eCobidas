@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "func-anat_coreg_software",
+    "prefLabel": "func-anat_coreg_software",
+    "description": "func-anat_coreg_software",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Software used for the functional - anatomical coregistration"
+    },
+    "responseOptions": "../../../response_options/mriSoftwareValueConstraints"
+}

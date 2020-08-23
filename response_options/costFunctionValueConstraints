@@ -1,0 +1,53 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@id": "costFunctionValueConstraints",
+    "@type": "reproschema:ResponseOption",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 6,
+    "multipleChoice": false,
+    "choices": [
+        {
+            "name": {
+                "en": "Mutual information"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "Normalised mutual information"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "Entropy correlation coefficient"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "Normalised cross-correlation"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "Correlation ratio"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "Boundary-based registration"
+            },
+            "value": 5
+        },
+        {
+            "name": {
+                "en": "Other"
+            },
+            "value": 6
+        }
+    ]
+}

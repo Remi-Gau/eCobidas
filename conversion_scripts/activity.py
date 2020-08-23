@@ -28,7 +28,7 @@ def define_activity_schema(
         "prefLabel": protocol["name"] + section,
         "description": protocol["name"] + section,
         "schemaVersion": VERSION,
-        "version": VERSION,
+        "version": "0.0.1",
         "preamble": " ",
         "ui": {"order": [], "shuffle": False, "addProperties": []},
     }

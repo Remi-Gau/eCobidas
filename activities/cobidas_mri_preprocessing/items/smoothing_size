@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "smoothing_size",
+    "prefLabel": "smoothing_size",
+    "description": "smoothing_size",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "The full-width at half-maximum of the smoothing kernel in millimeters"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

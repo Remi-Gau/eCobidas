@@ -5,45 +5,12 @@
     "prefLabel": "motion_correction_metric",
     "description": "motion_correction_metric",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Similarity metric used for motion correction"
     },
-    "responseOptions": {
-        "choices": [
-            {
-                "name": "Mutual information",
-                "value": 0,
-                "@type": "option"
-            },
-            {
-                "name": "Normalised mutual information",
-                "value": 1,
-                "@type": "option"
-            },
-            {
-                "name": "Entropy correlation coefficient",
-                "value": 2,
-                "@type": "option"
-            },
-            {
-                "name": "Normalised cross-correlation",
-                "value": 3,
-                "@type": "option"
-            },
-            {
-                "name": "Other",
-                "value": 4,
-                "@type": "option"
-            },
-            {
-                "name": "Other",
-                "value": 6,
-                "@type": "option"
-            }
-        ]
-    }
+    "responseOptions": "../../../response_options/costFunctionValueConstraints"
 }

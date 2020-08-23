@@ -5,9 +5,9 @@
     "prefLabel": "fraction-of-radiometabolite-needing-quantitation",
     "description": "fraction-of-radiometabolite-needing-quantitation",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Fraction of radiometabolite needing quantitation"
@@ -26,9 +26,11 @@
             },
             {
                 "name": "Other",
-                "value": 3,
+                "value": 2,
                 "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 2
     }
 }

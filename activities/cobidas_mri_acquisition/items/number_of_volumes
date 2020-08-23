@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "number_of_volumes",
+    "prefLabel": "number_of_volumes",
+    "description": "number_of_volumes",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "Specify the number of volumes"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

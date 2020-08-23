@@ -1,10 +1,3 @@
-import json
-import os
-import csv
-from protocol import define_new_protocol, update_protocol
-from activity import define_new_activity, update_activity
-from item import get_item_info, define_new_item
-
 """
 # This script takes the content of the a csv file and turns it into a reproschema
 # protocol.
@@ -13,6 +6,13 @@ from item import get_item_info, define_new_item
 # will be added to the protocol.
 # Every new item encountered is added to the current activity.
 """
+
+import json
+import os
+import csv
+from protocol import define_new_protocol, update_protocol
+from activity import define_new_activity, update_activity
+from item import get_item_info, define_new_item
 
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS
@@ -30,7 +30,9 @@ REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the reproschema will be hosted
 
-OUTPUT_DIR = "/home/remi/github/COBIDAS_chckls"
+INPUT_DIR = "/home/remi/github/cobidas_chckls"
+
+OUTPUT_DIR = "/home/remi/github/cobidas_chckls"
 # OUTPUT_DIR = "/home/remi/github/cobidas-PET"
 # OUTPUT_DIR = "/home/remi/github/cobidas"
 
@@ -38,67 +40,70 @@ OUTPUT_DIR = "/home/remi/github/COBIDAS_chckls"
 # Placeholder to insert in all instances of the remote repo that will host the schema representation
 # Most likely you just need to replace Remi-Gau in the following line by your github username
 
-REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/"
+REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas_chckls/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-PET/"
-# REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas/"
+# REMOTE_REPO = "https://raw.githubusercontent.com/ohbm/cobidas/"
 
 # ----------------------------------------
 # to which branch of reproschema the user interface will be pointed to
 # In the end the cobidas-UI repository will be reading the schema from the URL that
 # starts with: REMOTE_REPO + BRANCH
 
-BRANCH = "master"
+# BRANCH = "master"
+BRANCH = "remi-dev"
 # BRANCH = 'neurovault'
-# BRANCH = "remi-MRI"
 # BRANCH = "PET"
-# BRANCH = "remi-reproschema_ref1"
 
 # ----------------------------------------
 # Protocol info
 
 # Neurovaut
-# INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/metadata_neurovault.csv"
+# INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
 # protocol = {"name": "neurovault_"}
 # CSV_INFO = {
-#     "section": {"col": 1, "name": "Section"},
-#     "act_pref_label": {"col": 1, "name": "Section"},
-#     "item": {"col": 2, "name": "Item"},
-#     "question": {"col": 3, "name": "Field Label"},
-#     "resp_type": {"col": 4, "name": "Field type"},
-#     "choice": {"col": 5, "name": "Choices"},
-#     "mandatory": {"col": 6, "name": ""},
-#     "include": {"col": [], "name": ""},
-#     "vis": {"col": 7, "name": ""},
+#     "section": {"col": 4, "name": "activity"},
+#     "act_pref_label": {"col": 5, "name": "activity_pref_label"},
+#     "item": {"col": 6, "name": "item"},
+#     "question": {"col": 9, "name": "question"},
+#     "resp_type": {"col": 11, "name": "field_type"},
+#     "choice": {"col": 12, "name": "choices"},
+#     "mandatory": {"col": 7, "name": "mandatory"},
+#     "include": {"col": 3, "name": "include"},
+#     "vis": {"col": 8, "name": "visibility"},
+#     "preamble": {"col": 10, "name": "details"},
 # }
 
 # PET
-INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/PET_guidelines.csv"
-protocol = {"name": "PET_"}
-CSV_INFO = {
-    "section": {"col": 5, "name": "Activity"},
-    "act_pref_label": {"col": 6, "name": "Activity pref label"},
-    "item": {"col": 7, "name": "Item"},
-    "question": {"col": 9, "name": ""},
-    "resp_type": {"col": 11, "name": ""},
-    "choice": {"col": 12, "name": ""},
-    "mandatory": {"col": 14, "name": ""},
-    "include": {"col": 21, "name": ""},
-    "vis": {"col": 15, "name": ""},
-}
+# INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/PET_guidelines.csv"
+# protocol = {"name": "PET_"}
+# CSV_INFO = {
+#     "section": {"col": 7, "name": "activity"},
+#     "act_pref_label": {"col": 8, "name": "activity_pref_label"},
+#     "item": {"col": 9, "name": "item"},
+#     "question": {"col": 12, "name": "question"},
+#     "resp_type": {"col": 14, "name": "field_type"},
+#     "choice": {"col": 15, "name": "choices"},
+#     "mandatory": {"col": 10, "name": "mandatory"},
+#     "include": {"col": 6, "name": "include"},
+#     "vis": {"col": 11, "name": "visibility"},
+#     "preamble": {"col": 13, "name": "details"},
+# }
 
 # COBIDAS MRI
-# INPUT_FILE = "/home/remi/github/COBIDAS_chckls/xlsx/COBIDAS_MRI - clean.csv"
-# protocol = {"name": "cobidas-MRI_"}
-# CSV_INFO = {
-#     "section": {"col": 18, "name": ""},
-#     "item": {"col": 24, "name": "Item"},
-#     "question": {"col": 26, "name": ""},
-#     "resp_type": {"col": 28, "name": ""},
-#     "choice": {"col": 29, "name": ""},
-#     "mandatory": {"col": 15, "name": ""},
-#     "include": {"col": 13, "name": ""},
-#     "vis": {"col": 30, "name": ""},
-# }
+INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/COBIDAS_MRI - clean.csv"
+protocol = {"name": "cobidas_mri_"}
+CSV_INFO = {
+    "section": {"col": 6, "name": "activity"},
+    "act_pref_label": {"col": 7, "name": "activity_pref_label"},
+    "item": {"col": 13, "name": "item"},
+    "question": {"col": 17, "name": "question"},
+    "resp_type": {"col": 19, "name": "field_type"},
+    "choice": {"col": 20, "name": "choices"},
+    "mandatory": {"col": 15, "name": "mandatory"},
+    "include": {"col": 3, "name": "include"},
+    "vis": {"col": 21, "name": "visibility"},
+    "preamble": {"col": 18, "name": "details"},
+}
 
 # --------------------
 # VERSION
@@ -115,11 +120,10 @@ protocol = define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VER
 if not os.path.exists(os.path.join(OUTPUT_DIR, "protocols", protocol["dir"])):
     os.makedirs(os.path.join(OUTPUT_DIR, "protocols", protocol["dir"]))
 
-# Initialize this variable as we will need to check if we got to a new section while
-# looping through items
+# to check if we got to a new section while looping through items
 this_section = ""
 
-# loop through rows of the csv file and create corresponding jsonld for each item
+# loop through rows of the csv file to create a jsonld for each item
 with open(INPUT_FILE, "r") as csvfile:
     PROTOCOL_METADATA = csv.reader(csvfile)
     for row in PROTOCOL_METADATA:
@@ -203,3 +207,10 @@ with open(
     os.path.join(OUTPUT_DIR, "protocols", protocol["dir"], protocol["schema_file"]), "w"
 ) as ff:
     json.dump(protocol["schema"], ff, sort_keys=False, indent=4)
+
+print(
+    "https://www.repronim.org/reproschema-ui/#/?url="
+    + os.path.join(
+        REMOTE_REPO, BRANCH, "protocols", protocol["dir"], protocol["schema_file"]
+    )
+)

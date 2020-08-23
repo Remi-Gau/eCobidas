@@ -5,12 +5,12 @@
     "prefLabel": "InjectionStart",
     "description": "InjectionStart",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "timeRange"
     },
     "question": {
-        "en": "Time of start of injection wrt TimeZero."
+        "en": "Time of start of injection wrt TimeZero"
     },
     "responseOptions": {
         "valueType": "datetime"

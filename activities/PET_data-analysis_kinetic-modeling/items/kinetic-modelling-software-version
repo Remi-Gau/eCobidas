@@ -5,7 +5,7 @@
     "prefLabel": "kinetic-modelling-software-version",
     "description": "kinetic-modelling-software-version",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },

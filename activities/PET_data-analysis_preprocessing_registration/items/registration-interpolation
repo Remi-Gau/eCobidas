@@ -5,14 +5,12 @@
     "prefLabel": "registration-interpolation",
     "description": "registration-interpolation",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "float"
+        "inputType": "radio"
     },
     "question": {
         "en": "Registration interpolation"
     },
-    "responseOptions": {
-        "valueType": "xsd:float"
-    }
+    "responseOptions": "../../../response_options/interpolationValueConstraints"
 }

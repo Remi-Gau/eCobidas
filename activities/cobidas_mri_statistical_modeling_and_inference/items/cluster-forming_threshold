@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "cluster-forming_threshold",
+    "prefLabel": "cluster-forming_threshold",
+    "description": "cluster-forming_threshold",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "What was the cluster forming threshold used?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

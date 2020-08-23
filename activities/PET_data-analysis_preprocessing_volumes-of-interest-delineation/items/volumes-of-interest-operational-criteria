@@ -5,7 +5,7 @@
     "prefLabel": "volumes-of-interest-operational-criteria",
     "description": "volumes-of-interest-operational-criteria",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },

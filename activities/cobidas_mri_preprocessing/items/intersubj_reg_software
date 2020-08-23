@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_software",
+    "prefLabel": "intersubj_reg_software",
+    "description": "intersubj_reg_software",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Software used for intersubject registration"
+    },
+    "responseOptions": "../../../response_options/mriSoftwareValueConstraints"
+}

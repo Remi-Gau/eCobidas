@@ -5,7 +5,7 @@
     "prefLabel": "number-of-tests",
     "description": "number-of-tests",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "number"
     },

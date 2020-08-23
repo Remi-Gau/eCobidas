@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "func-anat_coreg_dof",
+    "prefLabel": "func-anat_coreg_dof",
+    "description": "func-anat_coreg_dof",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Number of degrees of freedom for the functional - anatomical coregistration"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

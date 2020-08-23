@@ -25,6 +25,8 @@ def get_item_info(row, CSV_INFO):
     choice_col = CSV_INFO["choice"]["col"]
     response_choices = row[choice_col].split(" | ")
 
+    preamble = CSV_INFO["preamble"]["col"]
+
     visibility = get_visibility(row, CSV_INFO)
 
     mandatory = get_mandatory(row, CSV_INFO)
@@ -35,6 +37,8 @@ def get_item_info(row, CSV_INFO):
         "resp_type": response_type,
         "choices": response_choices,
         "visibility": visibility,
+        "preamble": preamble,
+        "mandatory": mandatory,
     }
 
 
@@ -80,7 +84,7 @@ def define_new_item(item_info, REPRONIM_REPO, VERSION):
         "prefLabel": item_info["name"],
         "description": item_info["name"],
         "schemaVersion": VERSION,
-        "version": VERSION,
+        "version": "0.0.1",
         "ui": {"inputType": []},
         "question": {"en": item_info["question"]},
     }
@@ -105,14 +109,27 @@ def define_response_choice(response_type, response_choices):
     if response_type == "boolean":
 
         inputType = "radio"
-        responseOptions = {
-            "multipleChoice": False,
-            "choices": [
-                {"value": 0, "name": "No", "@type": "option"},
-                {"value": 1, "name": "Yes", "@type": "option"},
-                {"value": 9, "name": "Unknown", "@type": "option"},
-            ],
-        }
+        responseOptions = "../../../response_options/booleanValueConstraints"
+
+    if response_type == "mri_software":
+
+        inputType = "radio"
+        responseOptions = "../../../response_options/mriSoftwareValueConstraints"
+
+    if response_type == "interpolation":
+
+        inputType = "radio"
+        responseOptions = "../../../response_options/interpolationValueConstraints"
+
+    if response_type == "cost_function":
+
+        inputType = "radio"
+        responseOptions = "../../../response_options/costFunctionValueConstraints"
+
+    if response_type == "multiple_comparison":
+
+        inputType = "select"
+        responseOptions = "../../../response_options/multipleComparisonValueConstraints"
 
     # if we have multiple choices with a radio item
     elif response_type == "radio":
@@ -124,7 +141,7 @@ def define_response_choice(response_type, response_choices):
     # if we have a dropdown menu
     elif response_type == "dropdown":
 
-        inputType = "select"
+        inputType = "radio"  # "select"
         responseOptions = {"choices": []}
         responseOptions = list_responses_options(responseOptions, response_choices)
 
@@ -163,8 +180,11 @@ def list_responses_options(responseOptions, response_choices):
         responseOptions["choices"].append({"name": opt, "value": i, "@type": "option"})
 
     responseOptions["choices"].append(
-        {"name": "Other", "value": len(response_choices) + 1, "@type": "option"}
+        {"name": "Other", "value": len(response_choices), "@type": "option"}
     )
+
+    responseOptions["minValue"] = 0
+    responseOptions["maxValue"] = len(response_choices)
 
     return responseOptions
 

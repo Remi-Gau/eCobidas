@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "partial_fourrier_scheme",
+    "prefLabel": "partial_fourrier_scheme",
+    "description": "partial_fourrier_scheme",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Partial Fourier scheme and reconstruction method if used"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

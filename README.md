@@ -8,7 +8,7 @@
 
 <!-- TOC -->
 
-- [COBIDAS checklist](#cobidas-checklist)
+- [COBIDAS guidelines checklist](#cobidas-guidelines-checklist)
   - [Why this project](#why-this-project)
   - [Goals and roadmap](#goals-and-roadmap)
   - [Implementation](#implementation)

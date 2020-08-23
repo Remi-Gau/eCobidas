@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "source_of_functional_roi",
+    "prefLabel": "source_of_functional_roi",
+    "description": "source_of_functional_roi",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "If small-volume correction mask is functionally defined, clearly describe the functional task and identify any risk of circularity"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

@@ -5,9 +5,9 @@
     "prefLabel": "type_of_design",
     "description": "type_of_design",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Blocked, event-related, hybrid, or other"
@@ -20,7 +20,7 @@
                 "@type": "option"
             },
             {
-                "name": "event related",
+                "name": "event_related",
                 "value": 1,
                 "@type": "option"
             },
@@ -33,12 +33,9 @@
                 "name": "Other",
                 "value": 3,
                 "@type": "option"
-            },
-            {
-                "name": "Other",
-                "value": 5,
-                "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 3
     }
 }

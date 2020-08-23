@@ -5,31 +5,12 @@
     "prefLabel": "functional_coregistered_to_structural",
     "description": "functional_coregistered_to_structural",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
         "en": "Were the functional images coregistered to the subject's structural image?"
     },
-    "responseOptions": {
-        "multipleChoice": false,
-        "choices": [
-            {
-                "value": 0,
-                "name": "No",
-                "@type": "option"
-            },
-            {
-                "value": 1,
-                "name": "Yes",
-                "@type": "option"
-            },
-            {
-                "value": 9,
-                "name": "Unknown",
-                "@type": "option"
-            }
-        ]
-    }
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

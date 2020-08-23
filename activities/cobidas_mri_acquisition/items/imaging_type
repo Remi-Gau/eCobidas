@@ -1,0 +1,41 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "imaging_type",
+    "prefLabel": "imaging_type",
+    "description": "imaging_type",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "What imaging type was used for this sequence?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "echo planar",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "spiral",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "3D",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 3
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "used_reaction_time_regressor",
+    "prefLabel": "used_reaction_time_regressor",
+    "description": "used_reaction_time_regressor",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Was a reaction time regressor included?"
+    },
+    "responseOptions": "../../../response_options/booleanValueConstraints"
+}

@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "physiological_signals",
+    "prefLabel": "physiological_signals",
+    "description": "physiological_signals",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Physiological signals included as nuisance regressors"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "heart rate variability",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "respiration",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 2
+    }
+}

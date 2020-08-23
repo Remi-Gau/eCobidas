@@ -5,7 +5,7 @@
     "prefLabel": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
     "description": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [

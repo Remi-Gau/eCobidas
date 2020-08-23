@@ -5,9 +5,9 @@
     "prefLabel": "intersubject_transformation_type",
     "description": "intersubject_transformation_type",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Was linear or nonlinear registration used?"
@@ -20,15 +20,17 @@
                 "@type": "option"
             },
             {
-                "name": "nonlinear",
+                "name": "non-linear",
                 "value": 1,
                 "@type": "option"
             },
             {
                 "name": "Other",
-                "value": 3,
+                "value": 2,
                 "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 2
     }
 }
