@@ -5,7 +5,7 @@
     "prefLabel": "whole-blood-radioactivity",
     "description": "whole-blood-radioactivity",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },

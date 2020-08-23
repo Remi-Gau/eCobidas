@@ -5,14 +5,12 @@
     "prefLabel": "moco-interpolation",
     "description": "moco-interpolation",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "float"
+        "inputType": "radio"
     },
     "question": {
         "en": "MoCo interpolation"
     },
-    "responseOptions": {
-        "valueType": "xsd:float"
-    }
+    "responseOptions": "../interpolationValueConstraints"
 }

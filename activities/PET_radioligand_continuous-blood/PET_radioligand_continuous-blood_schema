@@ -5,7 +5,7 @@
     "prefLabel": "PET_radioligand_continuous-blood",
     "description": "PET_radioligand_continuous-blood",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [

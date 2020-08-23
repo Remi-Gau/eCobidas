@@ -5,9 +5,9 @@
     "prefLabel": "shape-of-smoothing-filter",
     "description": "shape-of-smoothing-filter",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Shape of smoothing filter"
@@ -21,9 +21,11 @@
             },
             {
                 "name": "Other",
-                "value": 2,
+                "value": 1,
                 "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 1
     }
 }

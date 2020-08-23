@@ -5,9 +5,9 @@
     "prefLabel": "BodyPart",
     "description": "BodyPart",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Name of the organ / body region scanned."
@@ -76,9 +76,11 @@
             },
             {
                 "name": "Other",
-                "value": 13,
+                "value": 12,
                 "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 12
     }
 }

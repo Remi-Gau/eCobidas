@@ -1,16 +1,16 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "dataLabels",
-    "prefLabel": "dataLabels",
-    "description": "dataLabels",
+    "@id": "reconstruction-data-labels",
+    "prefLabel": "reconstruction-data-labels",
+    "description": "reconstruction-data-labels",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
-        "en": "Data:labels"
+        "en": "Reconstruction data labels"
     },
     "responseOptions": {
         "choices": [
@@ -25,20 +25,22 @@
                 "@type": "option"
             },
             {
-                "name": "parentFraction",
+                "name": "activity",
                 "value": 2,
                 "@type": "option"
             },
             {
-                "name": "parentFraction SD",
+                "name": "activitySD",
                 "value": 3,
                 "@type": "option"
             },
             {
                 "name": "Other",
-                "value": 5,
+                "value": 4,
                 "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 4
     }
 }

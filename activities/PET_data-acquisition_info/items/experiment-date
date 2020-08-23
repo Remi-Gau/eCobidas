@@ -5,7 +5,7 @@
     "prefLabel": "experiment-date",
     "description": "experiment-date",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "date"
     },

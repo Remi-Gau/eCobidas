@@ -1,29 +1,31 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "data_decay-correction-time",
-    "prefLabel": "data_decay-correction-time",
-    "description": "data_decay-correction-time",
+    "@id": "plasma-data-units",
+    "prefLabel": "plasma-data-units",
+    "description": "plasma-data-units",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
-        "en": "Data: decay correction time"
+        "en": "plasma data units"
     },
     "responseOptions": {
         "choices": [
             {
-                "name": "scan start ",
+                "name": "",
                 "value": 0,
                 "@type": "option"
             },
             {
                 "name": "Other",
-                "value": 2,
+                "value": 1,
                 "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 1
     }
 }

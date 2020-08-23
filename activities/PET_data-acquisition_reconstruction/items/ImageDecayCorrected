@@ -5,31 +5,12 @@
     "prefLabel": "ImageDecayCorrected",
     "description": "ImageDecayCorrected",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
         "en": "Specify whether the image data have been decay-corrected."
     },
-    "responseOptions": {
-        "multipleChoice": false,
-        "choices": [
-            {
-                "value": 0,
-                "name": "No",
-                "@type": "option"
-            },
-            {
-                "value": 1,
-                "name": "Yes",
-                "@type": "option"
-            },
-            {
-                "value": 9,
-                "name": "Unknown",
-                "@type": "option"
-            }
-        ]
-    }
+    "responseOptions": "../booleanValueConstraints"
 }

@@ -5,7 +5,7 @@
     "prefLabel": "PET_radioligand_discrete-blood",
     "description": "PET_radioligand_discrete-blood",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [

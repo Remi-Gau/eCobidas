@@ -5,7 +5,7 @@
     "prefLabel": "PET_statistics_power-analysis",
     "description": "PET_statistics_power-analysis",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [

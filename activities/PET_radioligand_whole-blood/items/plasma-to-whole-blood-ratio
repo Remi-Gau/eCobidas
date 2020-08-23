@@ -5,7 +5,7 @@
     "prefLabel": "plasma-to-whole-blood-ratio",
     "description": "plasma-to-whole-blood-ratio",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "slider"
     },

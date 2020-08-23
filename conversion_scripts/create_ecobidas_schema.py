@@ -59,35 +59,36 @@ BRANCH = "remi-dev"
 # Protocol info
 
 # Neurovaut
-INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
-protocol = {"name": "neurovault_"}
-CSV_INFO = {
-    "section": {"col": 4, "name": "activity"},
-    "act_pref_label": {"col": 5, "name": "activity_pref_label"},
-    "item": {"col": 6, "name": "item"},
-    "question": {"col": 9, "name": "question"},
-    "resp_type": {"col": 11, "name": "field_type"},
-    "choice": {"col": 12, "name": "choices"},
-    "mandatory": {"col": 7, "name": "mandatory"},
-    "include": {"col": 3, "name": "include"},
-    "vis": {"col": 8, "name": "visibility"},
-    "preamble": {"col": 10, "name": "details"},
-}
+# INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
+# protocol = {"name": "neurovault_"}
+# CSV_INFO = {
+#     "section": {"col": 4, "name": "activity"},
+#     "act_pref_label": {"col": 5, "name": "activity_pref_label"},
+#     "item": {"col": 6, "name": "item"},
+#     "question": {"col": 9, "name": "question"},
+#     "resp_type": {"col": 11, "name": "field_type"},
+#     "choice": {"col": 12, "name": "choices"},
+#     "mandatory": {"col": 7, "name": "mandatory"},
+#     "include": {"col": 3, "name": "include"},
+#     "vis": {"col": 8, "name": "visibility"},
+#     "preamble": {"col": 10, "name": "details"},
+# }
 
 # PET
-# INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/PET_guidelines.csv"
-# protocol = {"name": "PET_"}
-# CSV_INFO = {
-#     "section": {"col": 5, "name": "Activity"},
-#     "act_pref_label": {"col": 6, "name": "Activity pref label"},
-#     "item": {"col": 7, "name": "Item"},
-#     "question": {"col": 9, "name": ""},
-#     "resp_type": {"col": 11, "name": ""},
-#     "choice": {"col": 12, "name": ""},
-#     "mandatory": {"col": 14, "name": ""},
-#     "include": {"col": 21, "name": ""},
-#     "vis": {"col": 15, "name": ""},
-# }
+INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/PET_guidelines.csv"
+protocol = {"name": "PET_"}
+CSV_INFO = {
+    "section": {"col": 7, "name": "activity"},
+    "act_pref_label": {"col": 8, "name": "activity_pref_label"},
+    "item": {"col": 9, "name": "item"},
+    "question": {"col": 12, "name": "question"},
+    "resp_type": {"col": 14, "name": "field_type"},
+    "choice": {"col": 15, "name": "choices"},
+    "mandatory": {"col": 10, "name": "mandatory"},
+    "include": {"col": 6, "name": "include"},
+    "vis": {"col": 11, "name": "visibility"},
+    "preamble": {"col": 13, "name": "details"},
+}
 
 # COBIDAS MRI
 # INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/COBIDAS_MRI - clean.csv"

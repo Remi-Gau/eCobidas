@@ -1,0 +1,29 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@id": "booleanValueConstraints",
+    "@type": "reproschema:ResponseOption",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 2,
+    "multipleChoice": false,
+    "choices": [
+        {
+            "name": {
+                "en": "Yes"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "No"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "Don't know"
+            },
+            "value": 2
+        }
+    ]
+}

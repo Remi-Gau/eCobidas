@@ -6,7 +6,6 @@
     "description": "high_pass_filter_method",
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
-    "preamble": 10,
     "ui": {
         "inputType": "text"
     },

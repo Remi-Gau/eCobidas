@@ -5,14 +5,14 @@
     "prefLabel": "PET_radioligand_metabolite",
     "description": "PET_radioligand_metabolite",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "preamble": " ",
     "ui": {
         "order": [
             "items/MetaboliteAvail",
             "items/MetaboliteMethod",
             "items/radiolabeled-parent-compound-fraction",
-            "items/dataLabels",
+            "items/metabolite-data-labels",
             "items/parent-fraction-units",
             "items/parent-fraction-measurement-error",
             "items/metabolite-analysis-timepoints",
@@ -39,8 +39,8 @@
                 "isVis": true
             },
             {
-                "variableName": "dataLabels",
-                "isAbout": "items/dataLabels",
+                "variableName": "metabolite-data-labels",
+                "isAbout": "items/metabolite-data-labels",
                 "isVis": true
             },
             {

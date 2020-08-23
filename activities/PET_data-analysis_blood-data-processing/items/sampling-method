@@ -5,7 +5,7 @@
     "prefLabel": "sampling-method",
     "description": "sampling-method",
     "schemaVersion": "1.0.0-rc1",
-    "version": "1.0.0-rc1",
+    "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
@@ -41,9 +41,11 @@
             },
             {
                 "name": "Other",
-                "value": 6,
+                "value": 5,
                 "@type": "option"
             }
-        ]
+        ],
+        "minValue": 0,
+        "maxValue": 5
     }
 }
