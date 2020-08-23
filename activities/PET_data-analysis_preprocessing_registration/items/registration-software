@@ -12,5 +12,5 @@
     "question": {
         "en": "Registration software"
     },
-    "responseOptions": "../mriSoftwareValueConstraints"
+    "responseOptions": "../../../response_options/mriSoftwareValueConstraints"
 }

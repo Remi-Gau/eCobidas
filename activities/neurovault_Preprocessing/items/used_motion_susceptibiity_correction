@@ -12,5 +12,5 @@
     "question": {
         "en": "Was motion-susceptibility correction used?"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

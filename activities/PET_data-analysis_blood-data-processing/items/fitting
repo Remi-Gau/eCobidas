@@ -12,5 +12,5 @@
     "question": {
         "en": "Fitting"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

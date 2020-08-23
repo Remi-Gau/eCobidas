@@ -109,27 +109,27 @@ def define_response_choice(response_type, response_choices):
     if response_type == "boolean":
 
         inputType = "radio"
-        responseOptions = "../booleanValueConstraints"
+        responseOptions = "../../../response_options/booleanValueConstraints"
 
     if response_type == "mri_software":
 
         inputType = "radio"
-        responseOptions = "../mriSoftwareValueConstraints"
+        responseOptions = "../../../response_options/mriSoftwareValueConstraints"
 
     if response_type == "interpolation":
 
         inputType = "radio"
-        responseOptions = "../interpolationValueConstraints"
+        responseOptions = "../../../response_options/interpolationValueConstraints"
 
     if response_type == "cost_function":
 
         inputType = "radio"
-        responseOptions = "../costFunctionValueConstraints"
+        responseOptions = "../../../response_options/costFunctionValueConstraints"
 
     if response_type == "multiple_comparison":
 
         inputType = "select"
-        responseOptions = "../multipleComparisonValueConstraints"
+        responseOptions = "../../../response_options/multipleComparisonValueConstraints"
 
     # if we have multiple choices with a radio item
     elif response_type == "radio":

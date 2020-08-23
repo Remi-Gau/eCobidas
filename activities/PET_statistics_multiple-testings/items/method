@@ -12,5 +12,5 @@
     "question": {
         "en": "Method"
     },
-    "responseOptions": "../multipleComparisonValueConstraints"
+    "responseOptions": "../../../response_options/multipleComparisonValueConstraints"
 }

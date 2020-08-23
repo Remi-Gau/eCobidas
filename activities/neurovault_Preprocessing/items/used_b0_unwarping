@@ -12,5 +12,5 @@
     "question": {
         "en": "Was B0 distortion correction used?"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

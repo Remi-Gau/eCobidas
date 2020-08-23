@@ -12,5 +12,5 @@
     "question": {
         "en": "Specify whether the image data have been decay-corrected."
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

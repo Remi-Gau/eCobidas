@@ -12,5 +12,5 @@
     "question": {
         "en": "Registration cost function"
     },
-    "responseOptions": "../costFunctionValueConstraints"
+    "responseOptions": "../../../response_options/costFunctionValueConstraints"
 }

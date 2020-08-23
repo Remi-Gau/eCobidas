@@ -12,5 +12,5 @@
     "question": {
         "en": "Boolean that specifies if plasma measurements are available."
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

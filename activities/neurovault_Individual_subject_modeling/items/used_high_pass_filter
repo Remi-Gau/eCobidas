@@ -12,5 +12,5 @@
     "question": {
         "en": "Was high pass filtering applied?"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

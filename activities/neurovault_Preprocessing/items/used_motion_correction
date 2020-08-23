@@ -12,5 +12,5 @@
     "question": {
         "en": "Was motion correction used?"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

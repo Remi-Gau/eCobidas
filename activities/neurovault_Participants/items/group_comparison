@@ -12,5 +12,5 @@
     "question": {
         "en": "Was this study a comparison between subject groups?"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

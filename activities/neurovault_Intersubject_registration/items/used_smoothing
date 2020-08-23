@@ -12,5 +12,5 @@
     "question": {
         "en": "Was spatial smoothing applied?"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

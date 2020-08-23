@@ -12,5 +12,5 @@
     "question": {
         "en": "Specify software used for intersubject registration if different from main package"
     },
-    "responseOptions": "../mriSoftwareValueConstraints"
+    "responseOptions": "../../../response_options/mriSoftwareValueConstraints"
 }

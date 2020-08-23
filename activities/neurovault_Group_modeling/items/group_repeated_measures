@@ -12,5 +12,5 @@
     "question": {
         "en": "Was this a repeated measures design at the group level?"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

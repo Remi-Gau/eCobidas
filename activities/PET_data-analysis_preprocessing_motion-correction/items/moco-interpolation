@@ -12,5 +12,5 @@
     "question": {
         "en": "MoCo interpolation"
     },
-    "responseOptions": "../interpolationValueConstraints"
+    "responseOptions": "../../../response_options/interpolationValueConstraints"
 }

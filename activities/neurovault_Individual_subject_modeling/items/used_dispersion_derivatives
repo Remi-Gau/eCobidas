@@ -12,5 +12,5 @@
     "question": {
         "en": "Were dispersion derivatives included?"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

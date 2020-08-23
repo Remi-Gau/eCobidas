@@ -12,5 +12,5 @@
     "question": {
         "en": "Delay time correction"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

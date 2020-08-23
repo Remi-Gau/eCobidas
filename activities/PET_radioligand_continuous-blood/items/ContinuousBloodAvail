@@ -12,5 +12,5 @@
     "question": {
         "en": "Boolean that specifies if continuous blood measurements are available."
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

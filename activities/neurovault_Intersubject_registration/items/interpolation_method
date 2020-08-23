@@ -12,5 +12,5 @@
     "question": {
         "en": "Interpolation method used for intersubject registration"
     },
-    "responseOptions": "../interpolationValueConstraints"
+    "responseOptions": "../../../response_options/interpolationValueConstraints"
 }

@@ -12,5 +12,5 @@
     "question": {
         "en": "Was a reaction time regressor included?"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

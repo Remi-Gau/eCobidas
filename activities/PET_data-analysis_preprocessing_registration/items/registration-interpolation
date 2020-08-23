@@ -12,5 +12,5 @@
     "question": {
         "en": "Registration interpolation"
     },
-    "responseOptions": "../interpolationValueConstraints"
+    "responseOptions": "../../../response_options/interpolationValueConstraints"
 }

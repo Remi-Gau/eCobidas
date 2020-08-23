@@ -12,5 +12,5 @@
     "question": {
         "en": "Were motion regressors included?"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

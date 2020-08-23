@@ -12,5 +12,5 @@
     "question": {
         "en": "Interpolation method used for motion correction"
     },
-    "responseOptions": "../interpolationValueConstraints"
+    "responseOptions": "../../../response_options/interpolationValueConstraints"
 }

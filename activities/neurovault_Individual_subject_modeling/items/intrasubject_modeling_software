@@ -12,5 +12,5 @@
     "question": {
         "en": "Software used for intrasubject modeling if different from overall package"
     },
-    "responseOptions": "../mriSoftwareValueConstraints"
+    "responseOptions": "../../../response_options/mriSoftwareValueConstraints"
 }

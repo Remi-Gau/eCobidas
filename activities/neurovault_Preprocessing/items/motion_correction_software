@@ -12,5 +12,5 @@
     "question": {
         "en": "Specify software used for motion correction if different from the main package"
     },
-    "responseOptions": "../mriSoftwareValueConstraints"
+    "responseOptions": "../../../response_options/mriSoftwareValueConstraints"
 }

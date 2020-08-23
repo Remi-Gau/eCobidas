@@ -12,5 +12,5 @@
     "question": {
         "en": "Similarity metric used for motion correction"
     },
-    "responseOptions": "../costFunctionValueConstraints"
+    "responseOptions": "../../../response_options/costFunctionValueConstraints"
 }

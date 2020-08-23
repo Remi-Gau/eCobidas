@@ -10,7 +10,6 @@
 import json
 import os
 import csv
-from shutil import copyfile
 from protocol import define_new_protocol, update_protocol
 from activity import define_new_activity, update_activity
 from item import get_item_info, define_new_item
@@ -59,36 +58,36 @@ BRANCH = "remi-dev"
 # Protocol info
 
 # Neurovaut
-# INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
-# protocol = {"name": "neurovault_"}
-# CSV_INFO = {
-#     "section": {"col": 4, "name": "activity"},
-#     "act_pref_label": {"col": 5, "name": "activity_pref_label"},
-#     "item": {"col": 6, "name": "item"},
-#     "question": {"col": 9, "name": "question"},
-#     "resp_type": {"col": 11, "name": "field_type"},
-#     "choice": {"col": 12, "name": "choices"},
-#     "mandatory": {"col": 7, "name": "mandatory"},
-#     "include": {"col": 3, "name": "include"},
-#     "vis": {"col": 8, "name": "visibility"},
-#     "preamble": {"col": 10, "name": "details"},
-# }
+INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
+protocol = {"name": "neurovault_"}
+CSV_INFO = {
+    "section": {"col": 4, "name": "activity"},
+    "act_pref_label": {"col": 5, "name": "activity_pref_label"},
+    "item": {"col": 6, "name": "item"},
+    "question": {"col": 9, "name": "question"},
+    "resp_type": {"col": 11, "name": "field_type"},
+    "choice": {"col": 12, "name": "choices"},
+    "mandatory": {"col": 7, "name": "mandatory"},
+    "include": {"col": 3, "name": "include"},
+    "vis": {"col": 8, "name": "visibility"},
+    "preamble": {"col": 10, "name": "details"},
+}
 
 # PET
-INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/PET_guidelines.csv"
-protocol = {"name": "PET_"}
-CSV_INFO = {
-    "section": {"col": 7, "name": "activity"},
-    "act_pref_label": {"col": 8, "name": "activity_pref_label"},
-    "item": {"col": 9, "name": "item"},
-    "question": {"col": 12, "name": "question"},
-    "resp_type": {"col": 14, "name": "field_type"},
-    "choice": {"col": 15, "name": "choices"},
-    "mandatory": {"col": 10, "name": "mandatory"},
-    "include": {"col": 6, "name": "include"},
-    "vis": {"col": 11, "name": "visibility"},
-    "preamble": {"col": 13, "name": "details"},
-}
+# INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/PET_guidelines.csv"
+# protocol = {"name": "PET_"}
+# CSV_INFO = {
+#     "section": {"col": 7, "name": "activity"},
+#     "act_pref_label": {"col": 8, "name": "activity_pref_label"},
+#     "item": {"col": 9, "name": "item"},
+#     "question": {"col": 12, "name": "question"},
+#     "resp_type": {"col": 14, "name": "field_type"},
+#     "choice": {"col": 15, "name": "choices"},
+#     "mandatory": {"col": 10, "name": "mandatory"},
+#     "include": {"col": 6, "name": "include"},
+#     "vis": {"col": 11, "name": "visibility"},
+#     "preamble": {"col": 13, "name": "details"},
+# }
 
 # COBIDAS MRI
 # INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/COBIDAS_MRI - clean.csv"
@@ -108,18 +107,6 @@ CSV_INFO = {
 # VERSION
 
 VERSION = "1.0.0-rc1"
-
-
-# --------------------
-# Response constraints
-
-RESPONSE_CONSTRAINTS = [
-    "booleanValueConstraints",
-    "interpolationValueConstraints",
-    "multipleComparisonValueConstraints",
-    "costFunctionValueConstraints",
-    "mriSoftwareValueConstraints",
-]
 
 # -----------------------------------------------------------------------------
 #                                   START
@@ -177,14 +164,6 @@ with open(INPUT_FILE, "r") as csvfile:
                     )
 
                 protocol = update_protocol(activity, protocol)
-
-                for i_file in RESPONSE_CONSTRAINTS:
-                    copyfile(
-                        os.path.join(INPUT_DIR, "response_options", i_file),
-                        os.path.join(
-                            OUTPUT_DIR, "activities", activity["name"], i_file
-                        ),
-                    )
 
                 print(activity["name"])
 

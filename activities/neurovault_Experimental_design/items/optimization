@@ -12,5 +12,5 @@
     "question": {
         "en": "Was the design optimized for efficiency"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }

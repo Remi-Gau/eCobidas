@@ -12,5 +12,5 @@
     "question": {
         "en": "If a single software package was used for all analyses, specify that here"
     },
-    "responseOptions": "../mriSoftwareValueConstraints"
+    "responseOptions": "../../../response_options/mriSoftwareValueConstraints"
 }

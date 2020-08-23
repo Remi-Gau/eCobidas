@@ -12,5 +12,5 @@
     "question": {
         "en": "Were the functional images coregistered to the subject's structural image?"
     },
-    "responseOptions": "../booleanValueConstraints"
+    "responseOptions": "../../../response_options/booleanValueConstraints"
 }
