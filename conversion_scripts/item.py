@@ -105,14 +105,27 @@ def define_response_choice(response_type, response_choices):
     if response_type == "boolean":
 
         inputType = "radio"
-        responseOptions = {
-            "multipleChoice": False,
-            "choices": [
-                {"value": 0, "name": "No", "@type": "option"},
-                {"value": 1, "name": "Yes", "@type": "option"},
-                {"value": 9, "name": "Unknown", "@type": "option"},
-            ],
-        }
+        responseOptions = "../booleanValueConstraints"
+
+    if response_type == "mri_software":
+
+        inputType = "radio"
+        responseOptions = "../mriSoftwareValueConstraints"
+
+    if response_type == "interpolation":
+
+        inputType = "radio"
+        responseOptions = "../interpolationValueConstraints"
+
+    if response_type == "cost_function":
+
+        inputType = "radio"
+        responseOptions = "../costFunctionValueConstraints"
+
+    if response_type == "multiple_comparison":
+
+        inputType = "select"
+        responseOptions = "../multipleComparisonValueConstraints"
 
     # if we have multiple choices with a radio item
     elif response_type == "radio":
@@ -163,8 +176,11 @@ def list_responses_options(responseOptions, response_choices):
         responseOptions["choices"].append({"name": opt, "value": i, "@type": "option"})
 
     responseOptions["choices"].append(
-        {"name": "Other", "value": len(response_choices) + 1, "@type": "option"}
+        {"name": "Other", "value": len(response_choices), "@type": "option"}
     )
+
+    responseOptions["minValue"] = 0
+    responseOptions["maxValue"] = len(response_choices)
 
     return responseOptions
 
