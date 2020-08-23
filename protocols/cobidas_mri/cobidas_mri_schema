@@ -1,0 +1,64 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "cobidas_mri_schema",
+    "prefLabel": "cobidas_mri_schema",
+    "description": "cobidas_mri_schema",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "README-en.md",
+        "@language": "en"
+    },
+    "ui": {
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ],
+        "shuffle": false,
+        "order": [
+            "../../activities/cobidas_mri_experimental_design/cobidas_mri_experimental_design_schema",
+            "../../activities/cobidas_mri_acquisition/cobidas_mri_acquisition_schema",
+            "../../activities/cobidas_mri_preprocessing/cobidas_mri_preprocessing_schema",
+            "../../activities/cobidas_mri_statistical_modeling_and_inference/cobidas_mri_statistical_modeling_and_inference_schema",
+            "../../activities/cobidas_mri_results/cobidas_mri_results_schema"
+        ],
+        "addProperties": [
+            {
+                "variableName": "cobidas_mri_experimental_design",
+                "isAbout": "../../activities/cobidas_mri_experimental_design/cobidas_mri_experimental_design_schema",
+                "prefLabel": {
+                    "en": "Experimental Design"
+                }
+            },
+            {
+                "variableName": "cobidas_mri_acquisition",
+                "isAbout": "../../activities/cobidas_mri_acquisition/cobidas_mri_acquisition_schema",
+                "prefLabel": {
+                    "en": "Acquisition"
+                }
+            },
+            {
+                "variableName": "cobidas_mri_preprocessing",
+                "isAbout": "../../activities/cobidas_mri_preprocessing/cobidas_mri_preprocessing_schema",
+                "prefLabel": {
+                    "en": "Preprocessing"
+                }
+            },
+            {
+                "variableName": "cobidas_mri_statistical_modeling_and_inference",
+                "isAbout": "../../activities/cobidas_mri_statistical_modeling_and_inference/cobidas_mri_statistical_modeling_and_inference_schema",
+                "prefLabel": {
+                    "en": "Statistical Modeling and Inference"
+                }
+            },
+            {
+                "variableName": "cobidas_mri_results",
+                "isAbout": "../../activities/cobidas_mri_results/cobidas_mri_results_schema",
+                "prefLabel": {
+                    "en": "Results"
+                }
+            }
+        ]
+    }
+}

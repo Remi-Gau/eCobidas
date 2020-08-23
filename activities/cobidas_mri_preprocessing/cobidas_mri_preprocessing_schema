@@ -1,0 +1,521 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_mri_preprocessing_schema",
+    "prefLabel": "cobidas_mri_preprocessing",
+    "description": "cobidas_mri_preprocessing",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/preprocessing_software",
+            "items/preprocessing_software_version",
+            "items/operation_performed",
+            "items/order_of_operation",
+            "items/t1_stabilization",
+            "items/bet_software",
+            "items/bet_version",
+            "items/bet_method",
+            "items/bet_parameters",
+            "items/bet_manual_edit",
+            "items/segmentation_software",
+            "items/segmentation_version",
+            "items/segmentation_method",
+            "items/segmentation_parameters",
+            "items/stc_software",
+            "items/stc_version",
+            "items/stc_method",
+            "items/stc_reference",
+            "items/stc_interpolation",
+            "items/moco_software",
+            "items/moco_version",
+            "items/non-rigid_registration",
+            "items/moco_dof",
+            "items/motion-susceptibility_correction_used",
+            "items/motion-susceptibility_correction_software",
+            "items/motion-susceptibility_correction_method",
+            "items/moco_reference",
+            "items/moco_cost_function",
+            "items/moco_interpolation",
+            "items/func-anat_coreg_software",
+            "items/func-anat_coreg_version",
+            "items/func-anat_coreg_method",
+            "items/func-anat_coreg_target_volume",
+            "items/func-anat_coreg_source_volume",
+            "items/func-anat_coreg_dof",
+            "items/func-anat_coreg_cost_function",
+            "items/func-anat_coreg_interpolation_method",
+            "items/intersubj_reg_software",
+            "items/intersubj_reg_version",
+            "items/intersubj_reg_method",
+            "items/intersubj_reg_volume_surface",
+            "items/intersubj_reg_source_image_modality",
+            "items/intersubj_reg_preprocessing",
+            "items/intersubj_reg_template_space",
+            "items/intersubj_reg_target_space_modality",
+            "items/intersubj_reg_target_space_resolution",
+            "items/intersubj_reg_target_image",
+            "items/intersubj_reg_extra",
+            "items/warp_choice",
+            "items/non_linear_type",
+            "items/regularization_used",
+            "items/regularization_parameters",
+            "items/intersubj_reg_interpolation",
+            "items/intersubj_reg_cost_function",
+            "items/intersubj_reg_masking",
+            "items/resampled_voxel_size",
+            "items/anatomical_image_intensity_correction",
+            "items/functional_image_intensity_correction",
+            "items/intensity_normalization",
+            "items/denoising_used",
+            "items/noise_sources_included",
+            "items/physio_noise_corr_software",
+            "items/physio_noise_corr_version",
+            "items/method",
+            "items/motion_parameters",
+            "items/tissue_signals",
+            "items/tissue_definition",
+            "items/tissue_signal_definition",
+            "items/physiological_signals",
+            "items/physiological_signals_model",
+            "items/physiological_signals_number_regressor",
+            "items/volume_censoring_used",
+            "items/volume_censoring_software",
+            "items/volume_censoring_version",
+            "items/volume_censoring_method",
+            "items/volume_censoring_criteria",
+            "items/interpolation",
+            "items/smoothing_software",
+            "items/smoothing_version",
+            "items/smoothing_type",
+            "items/smoothing_size",
+            "items/filtering_approach",
+            "items/smoothing_target_space",
+            "items/quality_control_reports"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "preprocessing_software",
+                "isAbout": "items/preprocessing_software",
+                "isVis": "single_preprocessing_software == 1"
+            },
+            {
+                "variableName": "preprocessing_software_version",
+                "isAbout": "items/preprocessing_software_version",
+                "isVis": "single_preprocessing_software == 1"
+            },
+            {
+                "variableName": "operation_performed",
+                "isAbout": "items/operation_performed",
+                "isVis": true
+            },
+            {
+                "variableName": "order_of_operation",
+                "isAbout": "items/order_of_operation",
+                "isVis": true
+            },
+            {
+                "variableName": "t1_stabilization",
+                "isAbout": "items/t1_stabilization",
+                "isVis": true
+            },
+            {
+                "variableName": "bet_software",
+                "isAbout": "items/bet_software",
+                "isVis": "~single_preprocessing_software | operation_performed == brain_extraction"
+            },
+            {
+                "variableName": "bet_version",
+                "isAbout": "items/bet_version",
+                "isVis": "~single_preprocessing_software | operation_performed == brain_extraction"
+            },
+            {
+                "variableName": "bet_method",
+                "isAbout": "items/bet_method",
+                "isVis": "operation_performed == brain_extraction"
+            },
+            {
+                "variableName": "bet_parameters",
+                "isAbout": "items/bet_parameters",
+                "isVis": "operation_performed == brain_extraction"
+            },
+            {
+                "variableName": "bet_manual_edit",
+                "isAbout": "items/bet_manual_edit",
+                "isVis": "operation_performed == brain_extraction"
+            },
+            {
+                "variableName": "segmentation_software",
+                "isAbout": "items/segmentation_software",
+                "isVis": "operation_performed == segmentation_used"
+            },
+            {
+                "variableName": "segmentation_version",
+                "isAbout": "items/segmentation_version",
+                "isVis": "operation_performed == segmentation_used"
+            },
+            {
+                "variableName": "segmentation_method",
+                "isAbout": "items/segmentation_method",
+                "isVis": "operation_performed == segmentation_used"
+            },
+            {
+                "variableName": "segmentation_parameters",
+                "isAbout": "items/segmentation_parameters",
+                "isVis": "operation_performed == segmentation_used"
+            },
+            {
+                "variableName": "stc_software",
+                "isAbout": "items/stc_software",
+                "isVis": "~single_preprocessing_software | operation_performed == stc"
+            },
+            {
+                "variableName": "stc_version",
+                "isAbout": "items/stc_version",
+                "isVis": "~single_preprocessing_software | operation_performed == stc"
+            },
+            {
+                "variableName": "stc_method",
+                "isAbout": "items/stc_method",
+                "isVis": "operation_performed == stc"
+            },
+            {
+                "variableName": "stc_reference",
+                "isAbout": "items/stc_reference",
+                "isVis": "operation_performed == stc"
+            },
+            {
+                "variableName": "stc_interpolation",
+                "isAbout": "items/stc_interpolation",
+                "isVis": "operation_performed == stc"
+            },
+            {
+                "variableName": "moco_software",
+                "isAbout": "items/moco_software",
+                "isVis": "~single_preprocessing_software | operation_performed == moco"
+            },
+            {
+                "variableName": "moco_version",
+                "isAbout": "items/moco_version",
+                "isVis": "~single_preprocessing_software | operation_performed == moco"
+            },
+            {
+                "variableName": "non-rigid_registration",
+                "isAbout": "items/non-rigid_registration",
+                "isVis": "operation_performed == moco"
+            },
+            {
+                "variableName": "moco_dof",
+                "isAbout": "items/moco_dof",
+                "isVis": "operation_performed == moco"
+            },
+            {
+                "variableName": "motion-susceptibility_correction_used",
+                "isAbout": "items/motion-susceptibility_correction_used",
+                "isVis": "operation_performed == moco"
+            },
+            {
+                "variableName": "motion-susceptibility_correction_software",
+                "isAbout": "items/motion-susceptibility_correction_software",
+                "isVis": "~single_preprocessing_software | operation_performed == moco"
+            },
+            {
+                "variableName": "motion-susceptibility_correction_method",
+                "isAbout": "items/motion-susceptibility_correction_method",
+                "isVis": "~single_preprocessing_software | operation_performed == moco"
+            },
+            {
+                "variableName": "moco_reference",
+                "isAbout": "items/moco_reference",
+                "isVis": "operation_performed == moco"
+            },
+            {
+                "variableName": "moco_cost_function",
+                "isAbout": "items/moco_cost_function",
+                "isVis": "operation_performed == moco"
+            },
+            {
+                "variableName": "moco_interpolation",
+                "isAbout": "items/moco_interpolation",
+                "isVis": "operation_performed == moco"
+            },
+            {
+                "variableName": "func-anat_coreg_software",
+                "isAbout": "items/func-anat_coreg_software",
+                "isVis": "~single_preprocessing_software | operation_performed == func-anat_coreg"
+            },
+            {
+                "variableName": "func-anat_coreg_version",
+                "isAbout": "items/func-anat_coreg_version",
+                "isVis": "~single_preprocessing_software | operation_performed == func-anat_coreg"
+            },
+            {
+                "variableName": "func-anat_coreg_method",
+                "isAbout": "items/func-anat_coreg_method",
+                "isVis": "operation_performed == func-anat_coreg"
+            },
+            {
+                "variableName": "func-anat_coreg_target_volume",
+                "isAbout": "items/func-anat_coreg_target_volume",
+                "isVis": "operation_performed == func-anat_coreg"
+            },
+            {
+                "variableName": "func-anat_coreg_source_volume",
+                "isAbout": "items/func-anat_coreg_source_volume",
+                "isVis": "operation_performed == func-anat_coreg"
+            },
+            {
+                "variableName": "func-anat_coreg_dof",
+                "isAbout": "items/func-anat_coreg_dof",
+                "isVis": "operation_performed == func-anat_coreg"
+            },
+            {
+                "variableName": "func-anat_coreg_cost_function",
+                "isAbout": "items/func-anat_coreg_cost_function",
+                "isVis": "operation_performed == func-anat_coreg"
+            },
+            {
+                "variableName": "func-anat_coreg_interpolation_method",
+                "isAbout": "items/func-anat_coreg_interpolation_method",
+                "isVis": "operation_performed == func-anat_coreg"
+            },
+            {
+                "variableName": "intersubj_reg_software",
+                "isAbout": "items/intersubj_reg_software",
+                "isVis": "~single_preprocessing_software | operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_version",
+                "isAbout": "items/intersubj_reg_version",
+                "isVis": "~single_preprocessing_software | operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_method",
+                "isAbout": "items/intersubj_reg_method",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_volume_surface",
+                "isAbout": "items/intersubj_reg_volume_surface",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_source_image_modality",
+                "isAbout": "items/intersubj_reg_source_image_modality",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_preprocessing",
+                "isAbout": "items/intersubj_reg_preprocessing",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_template_space",
+                "isAbout": "items/intersubj_reg_template_space",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_target_space_modality",
+                "isAbout": "items/intersubj_reg_target_space_modality",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_target_space_resolution",
+                "isAbout": "items/intersubj_reg_target_space_resolution",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_target_image",
+                "isAbout": "items/intersubj_reg_target_image",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_extra",
+                "isAbout": "items/intersubj_reg_extra",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "warp_choice",
+                "isAbout": "items/warp_choice",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "non_linear_type",
+                "isAbout": "items/non_linear_type",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "regularization_used",
+                "isAbout": "items/regularization_used",
+                "isVis": true
+            },
+            {
+                "variableName": "regularization_parameters",
+                "isAbout": "items/regularization_parameters",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_interpolation",
+                "isAbout": "items/intersubj_reg_interpolation",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_cost_function",
+                "isAbout": "items/intersubj_reg_cost_function",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "intersubj_reg_masking",
+                "isAbout": "items/intersubj_reg_masking",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "resampled_voxel_size",
+                "isAbout": "items/resampled_voxel_size",
+                "isVis": "operation_performed == intersubj_reg"
+            },
+            {
+                "variableName": "anatomical_image_intensity_correction",
+                "isAbout": "items/anatomical_image_intensity_correction",
+                "isVis": true
+            },
+            {
+                "variableName": "functional_image_intensity_correction",
+                "isAbout": "items/functional_image_intensity_correction",
+                "isVis": "stc_method == 'interleaved'_or_'other'"
+            },
+            {
+                "variableName": "intensity_normalization",
+                "isAbout": "items/intensity_normalization",
+                "isVis": true
+            },
+            {
+                "variableName": "denoising_used",
+                "isAbout": "items/denoising_used",
+                "isVis": true
+            },
+            {
+                "variableName": "noise_sources_included",
+                "isAbout": "items/noise_sources_included",
+                "isVis": "denoising_used  == 1"
+            },
+            {
+                "variableName": "physio_noise_corr_software",
+                "isAbout": "items/physio_noise_corr_software",
+                "isVis": "noise_sources_included == physiological"
+            },
+            {
+                "variableName": "physio_noise_corr_version",
+                "isAbout": "items/physio_noise_corr_version",
+                "isVis": "noise_sources_included == physiological"
+            },
+            {
+                "variableName": "method",
+                "isAbout": "items/method",
+                "isVis": "noise_sources_included == physiological"
+            },
+            {
+                "variableName": "motion_parameters",
+                "isAbout": "items/motion_parameters",
+                "isVis": "noise_sources_included == motion"
+            },
+            {
+                "variableName": "tissue_signals",
+                "isAbout": "items/tissue_signals",
+                "isVis": "noise_sources_included == tissue_specific_signal"
+            },
+            {
+                "variableName": "tissue_definition",
+                "isAbout": "items/tissue_definition",
+                "isVis": "noise_sources_included == tissue_specific_signal"
+            },
+            {
+                "variableName": "tissue_signal_definition",
+                "isAbout": "items/tissue_signal_definition",
+                "isVis": "noise_sources_included == tissue_specific_signal"
+            },
+            {
+                "variableName": "physiological_signals",
+                "isAbout": "items/physiological_signals",
+                "isVis": "noise_sources_included == physiological"
+            },
+            {
+                "variableName": "physiological_signals_model",
+                "isAbout": "items/physiological_signals_model",
+                "isVis": "noise_sources_included == physiological"
+            },
+            {
+                "variableName": "physiological_signals_number_regressor",
+                "isAbout": "items/physiological_signals_number_regressor",
+                "isVis": "noise_sources_included == physiological"
+            },
+            {
+                "variableName": "volume_censoring_used",
+                "isAbout": "items/volume_censoring_used",
+                "isVis": true
+            },
+            {
+                "variableName": "volume_censoring_software",
+                "isAbout": "items/volume_censoring_software",
+                "isVis": "volume_censoring_used  == 1"
+            },
+            {
+                "variableName": "volume_censoring_version",
+                "isAbout": "items/volume_censoring_version",
+                "isVis": "volume_censoring_used  == 2"
+            },
+            {
+                "variableName": "volume_censoring_method",
+                "isAbout": "items/volume_censoring_method",
+                "isVis": "volume_censoring_used  == 3"
+            },
+            {
+                "variableName": "volume_censoring_criteria",
+                "isAbout": "items/volume_censoring_criteria",
+                "isVis": "volume_censoring_used  == 4"
+            },
+            {
+                "variableName": "interpolation",
+                "isAbout": "items/interpolation",
+                "isVis": "volume_censoring_used  == 5"
+            },
+            {
+                "variableName": "smoothing_software",
+                "isAbout": "items/smoothing_software",
+                "isVis": "~single_preprocessing_software | operation_performed == smoothing"
+            },
+            {
+                "variableName": "smoothing_version",
+                "isAbout": "items/smoothing_version",
+                "isVis": "~single_preprocessing_software | operation_performed == smoothing"
+            },
+            {
+                "variableName": "smoothing_type",
+                "isAbout": "items/smoothing_type",
+                "isVis": "operation_performed == smoothing"
+            },
+            {
+                "variableName": "smoothing_size",
+                "isAbout": "items/smoothing_size",
+                "isVis": "operation_performed == smoothing"
+            },
+            {
+                "variableName": "filtering_approach",
+                "isAbout": "items/filtering_approach",
+                "isVis": true
+            },
+            {
+                "variableName": "smoothing_target_space",
+                "isAbout": "items/smoothing_target_space",
+                "isVis": true
+            },
+            {
+                "variableName": "quality_control_reports",
+                "isAbout": "items/quality_control_reports",
+                "isVis": true
+            }
+        ]
+    }
+}

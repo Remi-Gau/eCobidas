@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intensity_normalization",
+    "prefLabel": "intensity_normalization",
+    "description": "intensity_normalization",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Type of scaling of image intensities before statistical modelling"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "scan by scan",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "run wide",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 2
+    }
+}

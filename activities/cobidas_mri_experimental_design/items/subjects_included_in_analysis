@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "subjects_included_in_analysis",
+    "prefLabel": "subjects_included_in_analysis",
+    "description": "subjects_included_in_analysis",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "Number of subjects included in analysis"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_target_space_modality",
+    "prefLabel": "intersubj_reg_target_space_modality",
+    "description": "intersubj_reg_target_space_modality",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "What was the modality of the target volume?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "T1",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "T2*",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 2
+    }
+}

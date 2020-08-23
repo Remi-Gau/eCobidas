@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "warp_choice",
+    "prefLabel": "warp_choice",
+    "description": "warp_choice",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "What type of registration was used?"
+    },
+    "responseOptions": "../../../response_options/booleanValueConstraints"
+}

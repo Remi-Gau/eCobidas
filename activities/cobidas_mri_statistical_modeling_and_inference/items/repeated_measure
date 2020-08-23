@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "repeated_measure",
+    "prefLabel": "repeated_measure",
+    "description": "repeated_measure",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Was this a repeated measures design at the group level?"
+    },
+    "responseOptions": "../../../response_options/booleanValueConstraints"
+}

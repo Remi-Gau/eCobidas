@@ -4,7 +4,7 @@
     "@type": "reproschema:ResponseOption",
     "valueType": "xsd:integer",
     "minValue": 0,
-    "maxValue": 3,
+    "maxValue": 6,
     "multipleChoice": false,
     "choices": [
         {
@@ -30,6 +30,24 @@
                 "en": "Normalised cross-correlation"
             },
             "value": 3
+        },
+        {
+            "name": {
+                "en": "Correlation ratio"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "Boundary-based registration"
+            },
+            "value": 5
+        },
+        {
+            "name": {
+                "en": "Other"
+            },
+            "value": 6
         }
     ]
 }

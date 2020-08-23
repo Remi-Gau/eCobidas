@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "number_of_shots",
+    "prefLabel": "number_of_shots",
+    "description": "number_of_shots",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Number of shots for multishot imaging"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

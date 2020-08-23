@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intertrial_interval_range",
+    "prefLabel": "intertrial_interval_range",
+    "description": "intertrial_interval_range",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "What was the intertrial interval range?"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

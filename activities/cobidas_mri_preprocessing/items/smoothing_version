@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "smoothing_version",
+    "prefLabel": "smoothing_version",
+    "description": "smoothing_version",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Software version used for smoothing"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

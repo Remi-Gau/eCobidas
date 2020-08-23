@@ -4,7 +4,7 @@
     "@type": "reproschema:ResponseOption",
     "valueType": "xsd:integer",
     "minValue": 0,
-    "maxValue": 5,
+    "maxValue": 6,
     "multipleChoice": false,
     "choices": [
         {
@@ -21,27 +21,33 @@
         },
         {
             "name": {
-                "en": "Freesurfer"
+                "en": "AFNI"
             },
             "value": 2
         },
         {
             "name": {
-                "en": "Brain voyager"
+                "en": "Freesurfer"
             },
             "value": 3
         },
         {
             "name": {
-                "en": "ANTS"
+                "en": "Brain voyager"
             },
             "value": 4
         },
         {
             "name": {
-                "en": "Other"
+                "en": "ANTS"
             },
             "value": 5
+        },
+        {
+            "name": {
+                "en": "Other"
+            },
+            "value": 6
         }
     ]
 }

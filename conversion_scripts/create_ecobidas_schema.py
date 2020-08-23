@@ -58,20 +58,20 @@ BRANCH = "remi-dev"
 # Protocol info
 
 # Neurovaut
-INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
-protocol = {"name": "neurovault_"}
-CSV_INFO = {
-    "section": {"col": 4, "name": "activity"},
-    "act_pref_label": {"col": 5, "name": "activity_pref_label"},
-    "item": {"col": 6, "name": "item"},
-    "question": {"col": 9, "name": "question"},
-    "resp_type": {"col": 11, "name": "field_type"},
-    "choice": {"col": 12, "name": "choices"},
-    "mandatory": {"col": 7, "name": "mandatory"},
-    "include": {"col": 3, "name": "include"},
-    "vis": {"col": 8, "name": "visibility"},
-    "preamble": {"col": 10, "name": "details"},
-}
+# INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
+# protocol = {"name": "neurovault_"}
+# CSV_INFO = {
+#     "section": {"col": 4, "name": "activity"},
+#     "act_pref_label": {"col": 5, "name": "activity_pref_label"},
+#     "item": {"col": 6, "name": "item"},
+#     "question": {"col": 9, "name": "question"},
+#     "resp_type": {"col": 11, "name": "field_type"},
+#     "choice": {"col": 12, "name": "choices"},
+#     "mandatory": {"col": 7, "name": "mandatory"},
+#     "include": {"col": 3, "name": "include"},
+#     "vis": {"col": 8, "name": "visibility"},
+#     "preamble": {"col": 10, "name": "details"},
+# }
 
 # PET
 # INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/PET_guidelines.csv"
@@ -90,18 +90,20 @@ CSV_INFO = {
 # }
 
 # COBIDAS MRI
-# INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/COBIDAS_MRI - clean.csv"
-# protocol = {"name": "cobidas-MRI_"}
-# CSV_INFO = {
-#     "section": {"col": 18, "name": ""},
-#     "item": {"col": 24, "name": "Item"},
-#     "question": {"col": 26, "name": ""},
-#     "resp_type": {"col": 28, "name": ""},
-#     "choice": {"col": 29, "name": ""},
-#     "mandatory": {"col": 15, "name": ""},
-#     "include": {"col": 13, "name": ""},
-#     "vis": {"col": 30, "name": ""},
-# }
+INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/COBIDAS_MRI - clean.csv"
+protocol = {"name": "cobidas_mri_"}
+CSV_INFO = {
+    "section": {"col": 6, "name": "activity"},
+    "act_pref_label": {"col": 7, "name": "activity_pref_label"},
+    "item": {"col": 13, "name": "item"},
+    "question": {"col": 17, "name": "question"},
+    "resp_type": {"col": 19, "name": "field_type"},
+    "choice": {"col": 20, "name": "choices"},
+    "mandatory": {"col": 15, "name": "mandatory"},
+    "include": {"col": 3, "name": "include"},
+    "vis": {"col": 21, "name": "visibility"},
+    "preamble": {"col": 18, "name": "details"},
+}
 
 # --------------------
 # VERSION
