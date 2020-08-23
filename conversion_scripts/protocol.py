@@ -12,8 +12,8 @@ def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
         "prefLabel": protocol["schema_file"],
         "description": protocol["schema_file"],
         "schemaVersion": VERSION,
-        "version": VERSION,
-        "landingPage": {"@id": "README.md", "@language": "en"},
+        "version": "0.0.1",
+        "landingPage": {"@id": "README-en.md", "@language": "en"},
         # "image": "mit_voice_pilot_applet_image.svg?sanitize=true",
         "ui": {
             "allow": ["reproschema:AutoAdvance", "reproschema:AllowExport"],
@@ -28,7 +28,9 @@ def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
 
 def update_protocol(activity, protocol):
 
-    activity["URI"] = "../../" + activity["name"] + "/" + activity["schema_file"]
+    activity["URI"] = (
+        "../../activities/" + activity["name"] + "/" + activity["schema_file"]
+    )
 
     # update the content of the protool schema and context wrt this new activity
     append_to_protocol = {

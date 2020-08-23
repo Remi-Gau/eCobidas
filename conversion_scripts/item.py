@@ -80,7 +80,7 @@ def define_new_item(item_info, REPRONIM_REPO, VERSION):
         "prefLabel": item_info["name"],
         "description": item_info["name"],
         "schemaVersion": VERSION,
-        "version": VERSION,
+        "version": "0.0.1",
         "ui": {"inputType": []},
         "question": {"en": item_info["question"]},
     }
