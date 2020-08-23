@@ -6,6 +6,7 @@
     "description": "type_of_design",
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
+    "preamble": 10,
     "ui": {
         "inputType": "radio"
     },

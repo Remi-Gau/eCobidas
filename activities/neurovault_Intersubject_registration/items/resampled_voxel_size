@@ -6,6 +6,7 @@
     "description": "resampled_voxel_size",
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
+    "preamble": 10,
     "ui": {
         "inputType": "float"
     },

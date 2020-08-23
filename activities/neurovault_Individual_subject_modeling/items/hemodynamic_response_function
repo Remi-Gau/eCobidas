@@ -6,6 +6,7 @@
     "description": "hemodynamic_response_function",
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
+    "preamble": 10,
     "ui": {
         "inputType": "text"
     },

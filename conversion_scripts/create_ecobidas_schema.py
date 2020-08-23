@@ -71,6 +71,7 @@ CSV_INFO = {
     "mandatory": {"col": 7, "name": "mandatory"},
     "include": {"col": 3, "name": "include"},
     "vis": {"col": 8, "name": "visibility"},
+    "preamble": {"col": 10, "name": "details"},
 }
 
 # PET

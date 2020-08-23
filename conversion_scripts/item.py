@@ -25,6 +25,8 @@ def get_item_info(row, CSV_INFO):
     choice_col = CSV_INFO["choice"]["col"]
     response_choices = row[choice_col].split(" | ")
 
+    preamble = CSV_INFO["preamble"]["col"]
+
     visibility = get_visibility(row, CSV_INFO)
 
     mandatory = get_mandatory(row, CSV_INFO)
@@ -35,6 +37,7 @@ def get_item_info(row, CSV_INFO):
         "resp_type": response_type,
         "choices": response_choices,
         "visibility": visibility,
+        "preamble": preamble,
     }
 
 
@@ -81,6 +84,7 @@ def define_new_item(item_info, REPRONIM_REPO, VERSION):
         "description": item_info["name"],
         "schemaVersion": VERSION,
         "version": "0.0.1",
+        "preamble": item_info["preamble"],
         "ui": {"inputType": []},
         "question": {"en": item_info["question"]},
     }
