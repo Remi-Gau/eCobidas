@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "checklist_choice",
+    "prefLabel": "checklist choice",
+    "description": "item of checklist to choose from",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Which checklist do you want to use?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "neurovault (beta version)",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "PET (alpha version)",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "cobidas MRI (alpha version)",
+                "value": 2,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 2
+    }
+}
