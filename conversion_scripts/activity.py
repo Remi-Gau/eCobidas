@@ -1,5 +1,5 @@
 def define_new_activity(
-    protocol, section, row, CSV_INFO, REMOTE_REPO, BRANCH, REPRONIM_REPO, VERSION
+    protocol, section, row, CSV_INFO, REPRONIM_REPO, VERSION
 ):
     # define the base json content for the activity
 
@@ -11,15 +11,13 @@ def define_new_activity(
     activity["schema_file"] = activity["name"] + "_schema"
 
     activity = define_activity_schema(
-        activity, protocol, section, REPRONIM_REPO, REMOTE_REPO, BRANCH, VERSION
+        activity, protocol, section, REPRONIM_REPO, VERSION
     )
 
     return activity
 
 
-def define_activity_schema(
-    activity, protocol, section, REPRONIM_REPO, REMOTE_REPO, BRANCH, VERSION
-):
+def define_activity_schema(activity, protocol, section, REPRONIM_REPO, VERSION):
 
     activity["schema"] = {
         "@context": REPRONIM_REPO + "contexts/generic",

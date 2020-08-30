@@ -49,29 +49,27 @@ REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas_chckls/"
 # In the end the cobidas-UI repository will be reading the schema from the URL that
 # starts with: REMOTE_REPO + BRANCH
 
-# BRANCH = "master"
-BRANCH = "remi-dev"
-# BRANCH = 'neurovault'
-# BRANCH = "PET"
+BRANCH = "master"
+# BRANCH = "remi-dev"
 
 # ----------------------------------------
 # Protocol info
 
 # Neurovaut
-# INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
-# protocol = {"name": "neurovault_"}
-# CSV_INFO = {
-#     "section": {"col": 4, "name": "activity"},
-#     "act_pref_label": {"col": 5, "name": "activity_pref_label"},
-#     "item": {"col": 6, "name": "item"},
-#     "question": {"col": 9, "name": "question"},
-#     "resp_type": {"col": 11, "name": "field_type"},
-#     "choice": {"col": 12, "name": "choices"},
-#     "mandatory": {"col": 7, "name": "mandatory"},
-#     "include": {"col": 3, "name": "include"},
-#     "vis": {"col": 8, "name": "visibility"},
-#     "preamble": {"col": 10, "name": "details"},
-# }
+INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
+protocol = {"name": "neurovault_"}
+CSV_INFO = {
+    "section": {"col": 4, "name": "activity"},
+    "act_pref_label": {"col": 5, "name": "activity_pref_label"},
+    "item": {"col": 6, "name": "item"},
+    "question": {"col": 9, "name": "question"},
+    "resp_type": {"col": 11, "name": "field_type"},
+    "choice": {"col": 12, "name": "choices"},
+    "mandatory": {"col": 7, "name": "mandatory"},
+    "include": {"col": 3, "name": "include"},
+    "vis": {"col": 8, "name": "visibility"},
+    "preamble": {"col": 10, "name": "details"},
+}
 
 # PET
 # INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/PET_guidelines.csv"
@@ -90,20 +88,20 @@ BRANCH = "remi-dev"
 # }
 
 # COBIDAS MRI
-INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/COBIDAS_MRI - clean.csv"
-protocol = {"name": "cobidas_mri_"}
-CSV_INFO = {
-    "section": {"col": 6, "name": "activity"},
-    "act_pref_label": {"col": 7, "name": "activity_pref_label"},
-    "item": {"col": 13, "name": "item"},
-    "question": {"col": 17, "name": "question"},
-    "resp_type": {"col": 19, "name": "field_type"},
-    "choice": {"col": 20, "name": "choices"},
-    "mandatory": {"col": 15, "name": "mandatory"},
-    "include": {"col": 3, "name": "include"},
-    "vis": {"col": 21, "name": "visibility"},
-    "preamble": {"col": 18, "name": "details"},
-}
+# INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/COBIDAS_MRI - clean.csv"
+# protocol = {"name": "cobidas_mri_"}
+# CSV_INFO = {
+#     "section": {"col": 6, "name": "activity"},
+#     "act_pref_label": {"col": 7, "name": "activity_pref_label"},
+#     "item": {"col": 13, "name": "item"},
+#     "question": {"col": 17, "name": "question"},
+#     "resp_type": {"col": 19, "name": "field_type"},
+#     "choice": {"col": 20, "name": "choices"},
+#     "mandatory": {"col": 15, "name": "mandatory"},
+#     "include": {"col": 3, "name": "include"},
+#     "vis": {"col": 21, "name": "visibility"},
+#     "preamble": {"col": 18, "name": "details"},
+# }
 
 # --------------------
 # VERSION
@@ -114,7 +112,7 @@ VERSION = "1.0.0-rc1"
 #                                   START
 # -----------------------------------------------------------------------------
 
-protocol = define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION)
+protocol = define_new_protocol(REPRONIM_REPO, protocol, VERSION)
 
 # create output directories
 if not os.path.exists(os.path.join(OUTPUT_DIR, "protocols", protocol["dir"])):
@@ -142,14 +140,7 @@ with open(INPUT_FILE, "r") as csvfile:
                 section = this_section.replace(" ", "_")
 
                 activity = define_new_activity(
-                    protocol,
-                    section,
-                    row,
-                    CSV_INFO,
-                    REMOTE_REPO,
-                    BRANCH,
-                    REPRONIM_REPO,
-                    VERSION,
+                    protocol, section, row, CSV_INFO, REPRONIM_REPO, VERSION,
                 )
 
                 # create dir for this section

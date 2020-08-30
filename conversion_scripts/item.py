@@ -158,7 +158,7 @@ def define_response_choice(response_type, response_choices):
     # response is slider
     elif response_type == "slider":
         inputType = "slider"
-        responseOptions = slider_response(response_choices, "min", "max")
+        # responseOptions = slider_response(response_choices, "min", "max")
 
     # response is integer
     elif response_type == "int":
@@ -191,7 +191,7 @@ def list_responses_options(responseOptions, response_choices):
 
 def slider_response(response_choices, min_label, max_label):
 
-    from numpy import linspace
+    import numpy
 
     # min = int(response_choices[0])
     # max = int(response_choices[1])
@@ -206,7 +206,7 @@ def slider_response(response_choices, min_label, max_label):
         "choices": [],
     }
 
-    for i in linspace(min, max, steps):
+    for i in numpy.linspace(min, max, steps):
         responseOptions["choices"].append({"value": int(i), "@type": "option"})
 
     responseOptions["choices"][0]["name"] = min_label

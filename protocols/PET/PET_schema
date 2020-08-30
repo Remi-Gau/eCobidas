@@ -7,7 +7,7 @@
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
     "landingPage": {
-        "@id": "README-en.md",
+        "@id": "../README-en.md",
         "@language": "en"
     },
     "ui": {
@@ -44,140 +44,160 @@
                 "isAbout": "../../activities/PET_data-acquisition_info/PET_data-acquisition_info_schema",
                 "prefLabel": {
                     "en": "Info"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_radioligand_radiotracer",
                 "isAbout": "../../activities/PET_radioligand_radiotracer/PET_radioligand_radiotracer_schema",
                 "prefLabel": {
                     "en": "Radiotracer"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_radioligand_radiochem",
                 "isAbout": "../../activities/PET_radioligand_radiochem/PET_radioligand_radiochem_schema",
                 "prefLabel": {
                     "en": "Radiochem"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_radioligand_time",
                 "isAbout": "../../activities/PET_radioligand_time/PET_radioligand_time_schema",
                 "prefLabel": {
                     "en": "Time"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_data-acquisition_reconstruction",
                 "isAbout": "../../activities/PET_data-acquisition_reconstruction/PET_data-acquisition_reconstruction_schema",
                 "prefLabel": {
                     "en": "Reconstruction"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_radioligand_continuous-blood",
                 "isAbout": "../../activities/PET_radioligand_continuous-blood/PET_radioligand_continuous-blood_schema",
                 "prefLabel": {
                     "en": "Continuous blood"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_radioligand_discrete-blood",
                 "isAbout": "../../activities/PET_radioligand_discrete-blood/PET_radioligand_discrete-blood_schema",
                 "prefLabel": {
                     "en": "Discrete blood"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_radioligand_metabolite",
                 "isAbout": "../../activities/PET_radioligand_metabolite/PET_radioligand_metabolite_schema",
                 "prefLabel": {
                     "en": "Metabolite"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_radioligand_plasma",
                 "isAbout": "../../activities/PET_radioligand_plasma/PET_radioligand_plasma_schema",
                 "prefLabel": {
                     "en": "Plasma"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_radioligand_whole-blood",
                 "isAbout": "../../activities/PET_radioligand_whole-blood/PET_radioligand_whole-blood_schema",
                 "prefLabel": {
                     "en": "Whole blood"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_data-acquisition_cross-calibration",
                 "isAbout": "../../activities/PET_data-acquisition_cross-calibration/PET_data-acquisition_cross-calibration_schema",
                 "prefLabel": {
                     "en": "Cross-calibration"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_data-acquisition_external-motion-correction",
                 "isAbout": "../../activities/PET_data-acquisition_external-motion-correction/PET_data-acquisition_external-motion-correction_schema",
                 "prefLabel": {
                     "en": "External Motion Correction"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_data-analysis_blood-data-processing",
                 "isAbout": "../../activities/PET_data-analysis_blood-data-processing/PET_data-analysis_blood-data-processing_schema",
                 "prefLabel": {
                     "en": "Blood Data Processing"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_data-analysis_kinetic-modeling",
                 "isAbout": "../../activities/PET_data-analysis_kinetic-modeling/PET_data-analysis_kinetic-modeling_schema",
                 "prefLabel": {
                     "en": "Kinetic Modeling"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_data-analysis_preprocessing_motion-correction",
                 "isAbout": "../../activities/PET_data-analysis_preprocessing_motion-correction/PET_data-analysis_preprocessing_motion-correction_schema",
                 "prefLabel": {
                     "en": "Motion Correction"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_data-analysis_preprocessing_registration",
                 "isAbout": "../../activities/PET_data-analysis_preprocessing_registration/PET_data-analysis_preprocessing_registration_schema",
                 "prefLabel": {
                     "en": "Registration"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_data-analysis_preprocessing_volumes-of-interest-delineation",
                 "isAbout": "../../activities/PET_data-analysis_preprocessing_volumes-of-interest-delineation/PET_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
                 "prefLabel": {
                     "en": "Volumes of interest delineation"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_statistics_multiple-testings",
                 "isAbout": "../../activities/PET_statistics_multiple-testings/PET_statistics_multiple-testings_schema",
                 "prefLabel": {
                     "en": "Multiple Testings"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_statistics_power-analysis",
                 "isAbout": "../../activities/PET_statistics_power-analysis/PET_statistics_power-analysis_schema",
                 "prefLabel": {
                     "en": "Power Analysis"
-                }
+                },
+                "isVis": true
             },
             {
                 "variableName": "PET_statistics_pre-registration",
                 "isAbout": "../../activities/PET_statistics_pre-registration/PET_statistics_pre-registration_schema",
                 "prefLabel": {
                     "en": "Pre-registration"
-                }
+                },
+                "isVis": true
             }
         ]
     }

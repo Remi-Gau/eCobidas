@@ -1,4 +1,4 @@
-def define_new_protocol(REPRONIM_REPO, REMOTE_REPO, BRANCH, protocol, VERSION):
+def define_new_protocol(REPRONIM_REPO, protocol, VERSION):
     # define the jsonld for the schema protocol
 
     protocol["schema_file"] = protocol["name"] + "schema"
@@ -39,6 +39,7 @@ def update_protocol(activity, protocol):
         # for the name displayed by the UI for this activity we simply reuse the
         # activity name
         "prefLabel": {"en": activity["pref_label"]},
+        "isVis": True,
     }
 
     protocol["schema"]["ui"]["order"].append(activity["URI"])
