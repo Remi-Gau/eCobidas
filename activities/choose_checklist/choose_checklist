@@ -6,12 +6,10 @@
     "description": "activity to choose which checklist to use",
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
-    "preamble": " ",
     "ui": {
         "order": [
             "items/checklist_choice"
         ],
-        "shuffle": false,
         "addProperties": [
             {
                 "variableName": "checklist_choice",

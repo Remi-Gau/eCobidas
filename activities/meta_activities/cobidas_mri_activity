@@ -1,23 +1,14 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
-    "@type": "reproschema:Protocol",
-    "@id": "cobidas",
-    "prefLabel": "cobidas",
-    "description": "cobidas checklist",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_mri_activity",
+    "prefLabel": "cobidas_mri_activity",
+    "description": "cobidas_mri_activity",
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
-    "landingPage": {
-        "@id": "README-en.md",
-        "@language": "en"
-    },
     "ui": {
-        "allow": [
-            "reproschema:AutoAdvance",
-            "reproschema:AllowExport"
-        ],
         "shuffle": false,
         "order": [
-            "../../activities/choose_checklist/choose_checklist",
             "../../activities/cobidas_mri_experimental_design/cobidas_mri_experimental_design_schema",
             "../../activities/cobidas_mri_acquisition/cobidas_mri_acquisition_schema",
             "../../activities/cobidas_mri_preprocessing/cobidas_mri_preprocessing_schema",
@@ -26,20 +17,12 @@
         ],
         "addProperties": [
             {
-                "variableName": "choose_checklist",
-                "isAbout": "../../activities/choose_checklist/choose_checklist",
-                "prefLabel": {
-                    "en": "Choose a checklist"
-                },
-                "isVis": true
-            },
-            {
                 "variableName": "cobidas_mri_experimental_design",
                 "isAbout": "../../activities/cobidas_mri_experimental_design/cobidas_mri_experimental_design_schema",
                 "prefLabel": {
                     "en": "Experimental Design"
                 },
-                "isVis": "checklist_choice == 2"
+                "isVis": true
             },
             {
                 "variableName": "cobidas_mri_acquisition",
