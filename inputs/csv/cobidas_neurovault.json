@@ -1,0 +1,42 @@
+{
+    "section": {
+        "col": 4,
+        "name": "activity"
+    },
+    "act_pref_label": {
+        "col": 5,
+        "name": "activity_pref_label"
+    },
+    "item": {
+        "col": 6,
+        "name": "item"
+    },
+    "question": {
+        "col": 9,
+        "name": "question"
+    },
+    "resp_type": {
+        "col": 11,
+        "name": "field_type"
+    },
+    "choice": {
+        "col": 12,
+        "name": "choices"
+    },
+    "mandatory": {
+        "col": 7,
+        "name": "mandatory"
+    },
+    "include": {
+        "col": 3,
+        "name": "include"
+    },
+    "vis": {
+        "col": 8,
+        "name": "visibility"
+    },
+    "preamble": {
+        "col": 10,
+        "name": "details"
+    }
+}
