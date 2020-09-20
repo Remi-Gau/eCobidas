@@ -11,7 +11,9 @@
         "order": [
             "items/vision_of_participants",
             "items/proportion_of_women",
-            "items/mean_age"
+            "items/mean_age",
+            "items/procedure_to_test_vision",
+            "items/color_vision"
         ],
         "shuffle": false,
         "addProperties": [
@@ -28,6 +30,16 @@
             {
                 "variableName": "mean_age",
                 "isAbout": "items/mean_age",
+                "isVis": "0"
+            },
+            {
+                "variableName": "procedure_to_test_vision",
+                "isAbout": "items/procedure_to_test_vision",
+                "isVis": "0"
+            },
+            {
+                "variableName": "color_vision",
+                "isAbout": "items/color_vision",
                 "isVis": "0"
             }
         ]

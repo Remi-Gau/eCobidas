@@ -25,7 +25,6 @@
             "../../activities/cobidas_eyetracker_methods_procedure_setup/cobidas_eyetracker_methods_procedure_setup_schema",
             "../../activities/cobidas_eyetracker_methods_procedure_calibration/cobidas_eyetracker_methods_procedure_calibration_schema",
             "../../activities/cobidas_eyetracker_methods_procedure_participants/cobidas_eyetracker_methods_procedure_participants_schema",
-            "../../activities/cobidas_eyetracker_results_procedure_participants/cobidas_eyetracker_results_procedure_participants_schema",
             "../../activities/cobidas_eyetracker_results_data-processing_data-quality/cobidas_eyetracker_results_data-processing_data-quality_schema",
             "../../activities/cobidas_eyetracker_results_data-processing_dependent-measures/cobidas_eyetracker_results_data-processing_dependent-measures_schema",
             "../../activities/cobidas_eyetracker_?_data-processing_preprocessing/cobidas_eyetracker_?_data-processing_preprocessing_schema",
@@ -91,14 +90,6 @@
             {
                 "variableName": "cobidas_eyetracker_methods_procedure_participants",
                 "isAbout": "../../activities/cobidas_eyetracker_methods_procedure_participants/cobidas_eyetracker_methods_procedure_participants_schema",
-                "prefLabel": {
-                    "en": "Participants"
-                },
-                "isVis": true
-            },
-            {
-                "variableName": "cobidas_eyetracker_results_procedure_participants",
-                "isAbout": "../../activities/cobidas_eyetracker_results_procedure_participants/cobidas_eyetracker_results_procedure_participants_schema",
                 "prefLabel": {
                     "en": "Participants"
                 },
