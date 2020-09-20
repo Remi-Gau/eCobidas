@@ -1,4 +1,4 @@
-def create_schema(schema_to_create, OUTPUT_DIR, REMOTE_REPO):
+def create_schema(schema_to_create, OUTPUT_DIR):
     """
     This takes the content of the a csv file and turns it into a
     reproschema protocol.
