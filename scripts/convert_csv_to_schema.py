@@ -12,7 +12,7 @@ schema_to_create = "eyetracker"  # "neurovault" "pet" "mri" "eyetracker"
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the reproschema will be hosted
 
-# OUTPUT_DIR = "/home/remi/github/cobidas_chckls"
+OUTPUT_DIR = "/home/remi/github/cobidas_chckls"
 # OUTPUT_DIR = "/home/remi/github/cobidas-PET"
 # OUTPUT_DIR = "/home/remi/github/cobidas"
 # OUTPUT_DIR = "/home/remi/github/cobidas-eyetracker"
@@ -23,7 +23,7 @@ schema_to_create = "eyetracker"  # "neurovault" "pet" "mri" "eyetracker"
 # Most likely you just need to replace Remi-Gau in the following line by your
 # github username
 
-# REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas_chckls/"
+REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas_chckls/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-PET/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/ohbm/cobidas/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-eyetracker/"

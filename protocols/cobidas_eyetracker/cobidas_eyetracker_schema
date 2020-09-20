@@ -7,7 +7,7 @@
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
     "landingPage": {
-        "@id": "../README-en.md",
+        "@id": "../../README-en.md",
         "@language": "en"
     },
     "ui": {
