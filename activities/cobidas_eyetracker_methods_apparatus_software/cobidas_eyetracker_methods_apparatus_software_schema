@@ -1,0 +1,29 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_eyetracker_methods_apparatus_software_schema",
+    "prefLabel": "cobidas_eyetracker_methods_apparatus_software",
+    "description": "cobidas_eyetracker_methods_apparatus_software",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/pre_processing_program",
+            "items/stimulus_presentation"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "pre_processing_program",
+                "isAbout": "items/pre_processing_program",
+                "isVis": true
+            },
+            {
+                "variableName": "stimulus_presentation",
+                "isAbout": "items/stimulus_presentation",
+                "isVis": true
+            }
+        ]
+    }
+}

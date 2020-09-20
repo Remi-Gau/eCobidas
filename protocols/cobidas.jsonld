@@ -18,8 +18,8 @@
         "shuffle": false,
         "order": [
             "../../activities/choose_checklist/choose_checklist",
-            "../../activities/meta_activities/neurovault_activity",
-            "../../activities/meta_activities/PET_activity",
+            "../../activities/meta_activities/cobidas_neurovault_activity",
+            "../../activities/meta_activities/cobidas_PET_activity",
             "../../activities/meta_activities/cobidas_mri_activity"
         ],
         "addProperties": [{

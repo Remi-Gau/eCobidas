@@ -1,0 +1,204 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "cobidas_pet_schema",
+    "prefLabel": "cobidas_pet_schema",
+    "description": "cobidas_pet_schema",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "../../README-en.md",
+        "@language": "en"
+    },
+    "ui": {
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ],
+        "shuffle": false,
+        "order": [
+            "../../activities/cobidas_pet_data-acquisition_info/cobidas_pet_data-acquisition_info_schema",
+            "../../activities/cobidas_pet_radioligand_radiotracer/cobidas_pet_radioligand_radiotracer_schema",
+            "../../activities/cobidas_pet_radioligand_radiochem/cobidas_pet_radioligand_radiochem_schema",
+            "../../activities/cobidas_pet_radioligand_time/cobidas_pet_radioligand_time_schema",
+            "../../activities/cobidas_pet_data-acquisition_reconstruction/cobidas_pet_data-acquisition_reconstruction_schema",
+            "../../activities/cobidas_pet_radioligand_continuous-blood/cobidas_pet_radioligand_continuous-blood_schema",
+            "../../activities/cobidas_pet_radioligand_discrete-blood/cobidas_pet_radioligand_discrete-blood_schema",
+            "../../activities/cobidas_pet_radioligand_metabolite/cobidas_pet_radioligand_metabolite_schema",
+            "../../activities/cobidas_pet_radioligand_plasma/cobidas_pet_radioligand_plasma_schema",
+            "../../activities/cobidas_pet_radioligand_whole-blood/cobidas_pet_radioligand_whole-blood_schema",
+            "../../activities/cobidas_pet_data-acquisition_cross-calibration/cobidas_pet_data-acquisition_cross-calibration_schema",
+            "../../activities/cobidas_pet_data-acquisition_external-motion-correction/cobidas_pet_data-acquisition_external-motion-correction_schema",
+            "../../activities/cobidas_pet_data-analysis_blood-data-processing/cobidas_pet_data-analysis_blood-data-processing_schema",
+            "../../activities/cobidas_pet_data-analysis_kinetic-modeling/cobidas_pet_data-analysis_kinetic-modeling_schema",
+            "../../activities/cobidas_pet_data-analysis_preprocessing_motion-correction/cobidas_pet_data-analysis_preprocessing_motion-correction_schema",
+            "../../activities/cobidas_pet_data-analysis_preprocessing_registration/cobidas_pet_data-analysis_preprocessing_registration_schema",
+            "../../activities/cobidas_pet_data-analysis_preprocessing_volumes-of-interest-delineation/cobidas_pet_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
+            "../../activities/cobidas_pet_statistics_multiple-testings/cobidas_pet_statistics_multiple-testings_schema",
+            "../../activities/cobidas_pet_statistics_power-analysis/cobidas_pet_statistics_power-analysis_schema",
+            "../../activities/cobidas_pet_statistics_pre-registration/cobidas_pet_statistics_pre-registration_schema"
+        ],
+        "addProperties": [
+            {
+                "variableName": "cobidas_pet_data-acquisition_info",
+                "isAbout": "../../activities/cobidas_pet_data-acquisition_info/cobidas_pet_data-acquisition_info_schema",
+                "prefLabel": {
+                    "en": "Info"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_radioligand_radiotracer",
+                "isAbout": "../../activities/cobidas_pet_radioligand_radiotracer/cobidas_pet_radioligand_radiotracer_schema",
+                "prefLabel": {
+                    "en": "Radiotracer"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_radioligand_radiochem",
+                "isAbout": "../../activities/cobidas_pet_radioligand_radiochem/cobidas_pet_radioligand_radiochem_schema",
+                "prefLabel": {
+                    "en": "Radiochem"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_radioligand_time",
+                "isAbout": "../../activities/cobidas_pet_radioligand_time/cobidas_pet_radioligand_time_schema",
+                "prefLabel": {
+                    "en": "Time"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_data-acquisition_reconstruction",
+                "isAbout": "../../activities/cobidas_pet_data-acquisition_reconstruction/cobidas_pet_data-acquisition_reconstruction_schema",
+                "prefLabel": {
+                    "en": "Reconstruction"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_radioligand_continuous-blood",
+                "isAbout": "../../activities/cobidas_pet_radioligand_continuous-blood/cobidas_pet_radioligand_continuous-blood_schema",
+                "prefLabel": {
+                    "en": "Continuous blood"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_radioligand_discrete-blood",
+                "isAbout": "../../activities/cobidas_pet_radioligand_discrete-blood/cobidas_pet_radioligand_discrete-blood_schema",
+                "prefLabel": {
+                    "en": "Discrete blood"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_radioligand_metabolite",
+                "isAbout": "../../activities/cobidas_pet_radioligand_metabolite/cobidas_pet_radioligand_metabolite_schema",
+                "prefLabel": {
+                    "en": "Metabolite"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_radioligand_plasma",
+                "isAbout": "../../activities/cobidas_pet_radioligand_plasma/cobidas_pet_radioligand_plasma_schema",
+                "prefLabel": {
+                    "en": "Plasma"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_radioligand_whole-blood",
+                "isAbout": "../../activities/cobidas_pet_radioligand_whole-blood/cobidas_pet_radioligand_whole-blood_schema",
+                "prefLabel": {
+                    "en": "Whole blood"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_data-acquisition_cross-calibration",
+                "isAbout": "../../activities/cobidas_pet_data-acquisition_cross-calibration/cobidas_pet_data-acquisition_cross-calibration_schema",
+                "prefLabel": {
+                    "en": "Cross-calibration"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_data-acquisition_external-motion-correction",
+                "isAbout": "../../activities/cobidas_pet_data-acquisition_external-motion-correction/cobidas_pet_data-acquisition_external-motion-correction_schema",
+                "prefLabel": {
+                    "en": "External Motion Correction"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_data-analysis_blood-data-processing",
+                "isAbout": "../../activities/cobidas_pet_data-analysis_blood-data-processing/cobidas_pet_data-analysis_blood-data-processing_schema",
+                "prefLabel": {
+                    "en": "Blood Data Processing"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_data-analysis_kinetic-modeling",
+                "isAbout": "../../activities/cobidas_pet_data-analysis_kinetic-modeling/cobidas_pet_data-analysis_kinetic-modeling_schema",
+                "prefLabel": {
+                    "en": "Kinetic Modeling"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_data-analysis_preprocessing_motion-correction",
+                "isAbout": "../../activities/cobidas_pet_data-analysis_preprocessing_motion-correction/cobidas_pet_data-analysis_preprocessing_motion-correction_schema",
+                "prefLabel": {
+                    "en": "Motion Correction"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_data-analysis_preprocessing_registration",
+                "isAbout": "../../activities/cobidas_pet_data-analysis_preprocessing_registration/cobidas_pet_data-analysis_preprocessing_registration_schema",
+                "prefLabel": {
+                    "en": "Registration"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_data-analysis_preprocessing_volumes-of-interest-delineation",
+                "isAbout": "../../activities/cobidas_pet_data-analysis_preprocessing_volumes-of-interest-delineation/cobidas_pet_data-analysis_preprocessing_volumes-of-interest-delineation_schema",
+                "prefLabel": {
+                    "en": "Volumes of interest delineation"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_statistics_multiple-testings",
+                "isAbout": "../../activities/cobidas_pet_statistics_multiple-testings/cobidas_pet_statistics_multiple-testings_schema",
+                "prefLabel": {
+                    "en": "Multiple Testings"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_statistics_power-analysis",
+                "isAbout": "../../activities/cobidas_pet_statistics_power-analysis/cobidas_pet_statistics_power-analysis_schema",
+                "prefLabel": {
+                    "en": "Power Analysis"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "cobidas_pet_statistics_pre-registration",
+                "isAbout": "../../activities/cobidas_pet_statistics_pre-registration/cobidas_pet_statistics_pre-registration_schema",
+                "prefLabel": {
+                    "en": "Pre-registration"
+                },
+                "isVis": true
+            }
+        ]
+    }
+}
