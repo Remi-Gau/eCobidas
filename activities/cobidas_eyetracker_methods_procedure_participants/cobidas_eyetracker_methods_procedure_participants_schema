@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_eyetracker_methods_procedure_participants_schema",
+    "prefLabel": "cobidas_eyetracker_methods_procedure_participants",
+    "description": "cobidas_eyetracker_methods_procedure_participants",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/vision_of_participants",
+            "items/proportion_of_women",
+            "items/mean_age"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "vision_of_participants",
+                "isAbout": "items/vision_of_participants",
+                "isVis": "0"
+            },
+            {
+                "variableName": "proportion_of_women",
+                "isAbout": "items/proportion_of_women",
+                "isVis": "0"
+            },
+            {
+                "variableName": "mean_age",
+                "isAbout": "items/mean_age",
+                "isVis": "0"
+            }
+        ]
+    }
+}

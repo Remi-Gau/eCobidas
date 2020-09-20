@@ -1,0 +1,41 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_eyetracker_results_data-processing_dependent-measures_schema",
+    "prefLabel": "cobidas_eyetracker_results_data-processing_dependent-measures",
+    "description": "cobidas_eyetracker_results_data-processing_dependent-measures",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/other_transformations_of_data",
+            "items/blink_detection",
+            "items/fixation_detection",
+            "items/aggregation_method_for_fixations_during_data"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "other_transformations_of_data",
+                "isAbout": "items/other_transformations_of_data",
+                "isVis": true
+            },
+            {
+                "variableName": "blink_detection",
+                "isAbout": "items/blink_detection",
+                "isVis": "0"
+            },
+            {
+                "variableName": "fixation_detection",
+                "isAbout": "items/fixation_detection",
+                "isVis": "0"
+            },
+            {
+                "variableName": "aggregation_method_for_fixations_during_data",
+                "isAbout": "items/aggregation_method_for_fixations_during_data",
+                "isVis": true
+            }
+        ]
+    }
+}

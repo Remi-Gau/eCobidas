@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "proportion_of_excluded_trials",
+    "prefLabel": "proportion_of_excluded_trials",
+    "description": "proportion_of_excluded_trials",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "slider"
+    },
+    "question": {
+        "en": "Percentage of trials excluded for the analysis"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

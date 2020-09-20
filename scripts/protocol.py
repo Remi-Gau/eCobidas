@@ -13,7 +13,7 @@ def define_new_protocol(REPRONIM_REPO, protocol, VERSION):
         "description": protocol["schema_file"],
         "schemaVersion": VERSION,
         "version": "0.0.1",
-        "landingPage": {"@id": "../README-en.md", "@language": "en"},
+        "landingPage": {"@id": "../../README-en.md", "@language": "en"},
         # "image": "mit_voice_pilot_applet_image.svg?sanitize=true",
         "ui": {
             "allow": ["reproschema:AutoAdvance", "reproschema:AllowExport"],
