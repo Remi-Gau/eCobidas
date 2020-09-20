@@ -1,7 +1,6 @@
-/schema_template/*/neurovault/*
 .~lock*
 
-boilerplate/.DS_Store
+*.DS_Store
 
 .vscode/*
 *.code-workspace

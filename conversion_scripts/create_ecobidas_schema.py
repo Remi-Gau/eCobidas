@@ -56,20 +56,20 @@ BRANCH = "master"
 # Protocol info
 
 # Neurovaut
-INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
-protocol = {"name": "neurovault_"}
-CSV_INFO = {
-    "section": {"col": 4, "name": "activity"},
-    "act_pref_label": {"col": 5, "name": "activity_pref_label"},
-    "item": {"col": 6, "name": "item"},
-    "question": {"col": 9, "name": "question"},
-    "resp_type": {"col": 11, "name": "field_type"},
-    "choice": {"col": 12, "name": "choices"},
-    "mandatory": {"col": 7, "name": "mandatory"},
-    "include": {"col": 3, "name": "include"},
-    "vis": {"col": 8, "name": "visibility"},
-    "preamble": {"col": 10, "name": "details"},
-}
+# INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/metadata_neurovault.csv"
+# protocol = {"name": "neurovault_"}
+# CSV_INFO = {
+#     "section": {"col": 4, "name": "activity"},
+#     "act_pref_label": {"col": 5, "name": "activity_pref_label"},
+#     "item": {"col": 6, "name": "item"},
+#     "question": {"col": 9, "name": "question"},
+#     "resp_type": {"col": 11, "name": "field_type"},
+#     "choice": {"col": 12, "name": "choices"},
+#     "mandatory": {"col": 7, "name": "mandatory"},
+#     "include": {"col": 3, "name": "include"},
+#     "vis": {"col": 8, "name": "visibility"},
+#     "preamble": {"col": 10, "name": "details"},
+# }
 
 # PET
 # INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/PET_guidelines.csv"
@@ -102,6 +102,25 @@ CSV_INFO = {
 #     "vis": {"col": 21, "name": "visibility"},
 #     "preamble": {"col": 18, "name": "details"},
 # }
+
+# COBIDAS eyetracker
+INPUT_FILE = "/home/remi/github/cobidas_chckls/xlsx/COBIDAS_eyetracker - eyetracker.csv"
+protocol = {"name": "cobidas_eyetracker_"}
+CSV_INFO = {
+    "include": {"col": 6, "name": "include"},
+    "section": {"col": 7, "name": "activity"},
+    "act_pref_label": {"col": 8, "name": "activity_pref_label"},
+    "act_descrip": {"col": 9, "name": "activity_descrip"},
+    "item": {"col": 10, "name": "item"},
+    "item_pref_label": {"col": 11, "name": "item_pref_label"},
+    "item_descrip": {"col": 12, "name": "item_descrip"},
+    "question": {"col": 15, "name": "question"},
+    "resp_type": {"col": 17, "name": "field_type"},
+    "choice": {"col": 18, "name": "choices"},
+    "mandatory": {"col": 13, "name": "mandatory"},
+    "vis": {"col": 14, "name": "visibility"},
+    "preamble": {"col": 16, "name": "details"},
+}
 
 # --------------------
 # VERSION

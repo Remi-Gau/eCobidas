@@ -1,3 +1,0 @@
-reproschema
-requests_cache
-numpy

@@ -4,7 +4,8 @@ channels:
   - defaults
 dependencies:
   - python=3.8
-  - pip
+  - pip3
   - pip:
       - reproschema
       - numpy
+      - requests_cache

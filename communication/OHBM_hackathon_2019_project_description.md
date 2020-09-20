@@ -1,8 +1,9 @@
-O# Improving the COBIDAS checklist for better neuroimaging methods and results reporting
+# Improving the COBIDAS checklist for better neuroimaging methods and results reporting
 
 Remi Gau ([ORCID](https://orcid.org/0000-0002-1535-9767))
 
 ## Project Description
+
 In 2012, in his review of the methods and results reporting of more than 200 fMRI papers, [Joshua Carp wrote](https://www.ncbi.nlm.nih.gov/pubmed/22796459): "_Although many journals urge authors to describe their methods to a level of detail such that independent investigators can fully reproduce their efforts, the results described here suggest that few studies meet this criterion._"
 
 A few years ago, in order to improve the situation with respect to [reproducibility](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#reproducible-neuroimaging-tools) in f/MRI research, the Committee on Best Practices in Data Analysis and Sharing ([COBIDAS](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728)) of OHBM released a [report](https://www.biorxiv.org/content/10.1101/054262v2) to promote best practices for methods and results reporting. This was recently followed by a [similar initiative for EEG and MEG](https://osf.io/a8dhx/).
@@ -19,7 +20,6 @@ By turning the checklist into a website users could more rapidly click through i
 
 Other potential goals (e.g. interaction with BIDS and NIDM, further integration with main neuroimaging softwares...) and potential applications (improving data-sharing and peer-review) of this project are described in this [repository](https://github.com/Remi-Gau/COBIDAS_chckls).
 
-
 ## Skills required to participate
 
 One or more of those:
@@ -28,7 +28,6 @@ One or more of those:
 - Familiarity with the COBIDAS report for f/MRI, MEEG,
 - To know something about web design,
 - Familiarity with one or more of the main neuroimaging software for [fMRI](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#neuroimaging) (SPM, FSL...) or for [M/EEG](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#main-eeg-and-meg-softwares) (Fieldtrip, EEGlab...)
-
 
 ## Milestones
 
@@ -41,12 +40,12 @@ One or more of those:
   - outputs a populated COBIDAS-json file once the user is done,
   - generate a method section using a populated COBIDAS-json file.
 
-
 ## Preparation material
 
 Jeanette Mumford has a [30 min video](https://www.youtube.com/watch?v=bsM4KowO5Vc&t=175s) on her youtube channel explaining the background behind the COBIDAS report and giving a run through of the checklist.
 
 The COBIDAS report:
+
 - [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)
 - [for EEG and MEG](https://osf.io/a8dhx/)
 
@@ -59,7 +58,6 @@ A [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS checklist (thanks 
 ## GitHub repo
 
 [The github repository of this project can be found here](https://github.com/Remi-Gau/COBIDAS_chckls)
-
 
 ## Communication
 

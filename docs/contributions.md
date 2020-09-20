@@ -172,7 +172,7 @@ source:
 
 | Emoji | Represents                                                                  |
 |:------|:----------------------------------------------------------------------------|
-| 💬    | Answering Questions (on gitter, GitHub, or in person) |
+| 💬    | Answering Questions (on gitter, GitHub, or in person)                       |
 | 🐛    | Bug reports                                                                 |
 | 📝    | Blogposts                                                                   |
 | 💻    | Code                                                                        |
@@ -188,8 +188,8 @@ source:
 | 👀    | Reviewed Pull Requests                                                      |
 | 🔧    | Tools                                                                       |
 | 🌍    | Translation                                                                 |
-| ⚠️    | Tests                                                                       |
-| ✅     | Tutorials                                                                   |
+| ⚠️     | Tests                                                                       |
+| ✅    | Tutorials                                                                   |
 | 📢    | Talks                                                                       |
 | 📹    | Videos                                                                      |
 

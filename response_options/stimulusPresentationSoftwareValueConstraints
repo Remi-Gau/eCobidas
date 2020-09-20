@@ -1,0 +1,47 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@id": "stimulusPresentationSoftwareValueConstraints",
+    "@type": "reproschema:ResponseOption",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 6,
+    "multipleChoice": false,
+    "choices": [
+        {
+            "name": {
+                "en": "Psycthoolbox"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "PsychoPy"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "eprime"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "expyriment"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "Presentation"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "Other"
+            },
+            "value": 6
+        }
+    ]
+}
