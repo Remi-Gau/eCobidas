@@ -1,14 +1,11 @@
 def create_schema(schema_to_create, OUTPUT_DIR, REMOTE_REPO):
     """
-    This script takes the content of the a csv file and turns it into a
+    This takes the content of the a csv file and turns it into a
     reproschema protocol.
-    This scripts loops through the items of the csv and creates a new reproschema
+    This loops through the items of the csv and creates a new reproschema
     activity with every new checklist "section" it encouters: this new activity
     will be added to the protocol.
     Every new item encountered is added to the current activity.
-
-    schemas_to_create = "neurovault"  # "neurovault" "pet" "mri" "eyetracker"
-
     """
 
     import json
