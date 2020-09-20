@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "radiolabeled-parent-compound-fraction",
+    "prefLabel": "radiolabeled-parent-compound-fraction",
+    "description": "radiolabeled-parent-compound-fraction",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "slider"
+    },
+    "question": {
+        "en": "Radiolabeled Parent compound fraction"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

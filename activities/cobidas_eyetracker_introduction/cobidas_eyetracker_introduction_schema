@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_eyetracker_introduction_schema",
+    "prefLabel": "cobidas_eyetracker_introduction",
+    "description": "cobidas_eyetracker_introduction",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/Importance of auxiliary assumptions"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "Importance of auxiliary assumptions",
+                "isAbout": "items/Importance of auxiliary assumptions",
+                "isVis": true
+            }
+        ]
+    }
+}

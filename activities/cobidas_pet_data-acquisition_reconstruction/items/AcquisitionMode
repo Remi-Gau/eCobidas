@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "AcquisitionMode",
+    "prefLabel": "AcquisitionMode",
+    "description": "AcquisitionMode",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Acquisition mode"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "frame mode",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "list mode ",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 2
+    }
+}

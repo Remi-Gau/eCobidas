@@ -1,0 +1,29 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_eyetracker_discussion_schema",
+    "prefLabel": "cobidas_eyetracker_discussion",
+    "description": "cobidas_eyetracker_discussion",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/Importance of Study Specific Limitations",
+            "items/Importance of Limitations in General"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "Importance of Study Specific Limitations",
+                "isAbout": "items/Importance of Study Specific Limitations",
+                "isVis": true
+            },
+            {
+                "variableName": "Importance of Limitations in General",
+                "isAbout": "items/Importance of Limitations in General",
+                "isVis": true
+            }
+        ]
+    }
+}

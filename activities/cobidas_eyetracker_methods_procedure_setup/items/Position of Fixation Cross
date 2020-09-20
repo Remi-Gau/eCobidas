@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "Position of Fixation Cross",
+    "prefLabel": "Position of Fixation Cross",
+    "description": "Position of Fixation Cross",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Position of the fixation cross"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

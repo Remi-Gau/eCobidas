@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "Aggregation Method for Fixations during Data",
+    "prefLabel": "Aggregation Method for Fixations during Data",
+    "description": "Aggregation Method for Fixations during Data",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "The aggregation method for fixations during data preprocessing used"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

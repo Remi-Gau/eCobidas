@@ -1,0 +1,41 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_eyetracker_methods_procedure_calibration_schema",
+    "prefLabel": "cobidas_eyetracker_methods_procedure_calibration",
+    "description": "cobidas_eyetracker_methods_procedure_calibration",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/Number of Calibration Points",
+            "items/Background Color of the Calibration",
+            "items/Amount and Time of Recalibration",
+            "items/Specification of Calibration Procedure"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "Number of Calibration Points",
+                "isAbout": "items/Number of Calibration Points",
+                "isVis": "0"
+            },
+            {
+                "variableName": "Background Color of the Calibration",
+                "isAbout": "items/Background Color of the Calibration",
+                "isVis": "0"
+            },
+            {
+                "variableName": "Amount and Time of Recalibration",
+                "isAbout": "items/Amount and Time of Recalibration",
+                "isVis": "0"
+            },
+            {
+                "variableName": "Specification of Calibration Procedure",
+                "isAbout": "items/Specification of Calibration Procedure",
+                "isVis": "0"
+            }
+        ]
+    }
+}

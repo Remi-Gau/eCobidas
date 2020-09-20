@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "Size of AOIs",
+    "prefLabel": "Size of AOIs",
+    "description": "Size of AOIs",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "The size of the AOIs in pixel or degrees"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

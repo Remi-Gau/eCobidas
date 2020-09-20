@@ -1,0 +1,51 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "sampling-method",
+    "prefLabel": "sampling-method",
+    "description": "sampling-method",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Sampling Method"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "online system",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "manual",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "venous",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "arterial",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "image derived",
+                "value": 4,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 5,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 5
+    }
+}

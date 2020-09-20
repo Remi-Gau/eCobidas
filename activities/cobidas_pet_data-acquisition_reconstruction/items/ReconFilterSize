@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "ReconFilterSize",
+    "prefLabel": "ReconFilterSize",
+    "description": "ReconFilterSize",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Postrecon-filter-size"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "1 x 1 x 1",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "2 x 2 x 2",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 2
+    }
+}
