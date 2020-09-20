@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "motion-susceptibility_correction_software",
+    "prefLabel": "motion-susceptibility_correction_software",
+    "description": "motion-susceptibility_correction_software",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Software used for the motion-susceptibility correction"
+    },
+    "responseOptions": "../../../response_options/mriSoftwareValueConstraints"
+}

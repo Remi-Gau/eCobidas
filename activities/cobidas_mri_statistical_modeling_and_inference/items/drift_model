@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "drift_model",
+    "prefLabel": "drift_model",
+    "description": "drift_model",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Drift model, if not already specified as a dependent variable (e.g. locally linear detrending of data and regressors, as in FSL)"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

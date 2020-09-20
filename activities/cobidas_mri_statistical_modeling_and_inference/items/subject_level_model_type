@@ -1,0 +1,56 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "subject_level_model_type",
+    "prefLabel": "subject_level_model_type",
+    "description": "subject_level_model_type",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Type of subject model used"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "Mass Univariate",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "Multivariate",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Mass Multivariate",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Local Multivariate",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "Multivariate",
+                "value": 4,
+                "@type": "option"
+            },
+            {
+                "name": "Representational Similarity Analysis",
+                "value": 5,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 6,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 6
+    }
+}

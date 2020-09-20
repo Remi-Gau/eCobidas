@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "units_of_reported_results",
+    "prefLabel": "units_of_reported_results",
+    "description": "units_of_reported_results",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Unit used to report results"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "beta values",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "percent signal change",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 2
+    }
+}

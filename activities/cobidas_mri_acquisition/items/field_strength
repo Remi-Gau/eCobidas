@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "field_strength",
+    "prefLabel": "field_strength",
+    "description": "field_strength",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Field strength of MRI scanner (in Tesla)"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "scanner_syncrhonisation",
+    "prefLabel": "scanner_syncrhonisation",
+    "description": "scanner_syncrhonisation",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "How was the equipment was synched to the scanner?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "scanner TTL",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "manual synch ",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 2
+    }
+}

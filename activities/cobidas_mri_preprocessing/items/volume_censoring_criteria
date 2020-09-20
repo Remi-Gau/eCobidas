@@ -1,0 +1,41 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "volume_censoring_criteria",
+    "prefLabel": "volume_censoring_criteria",
+    "description": "volume_censoring_criteria",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Criteria used for volume censoring"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "frame-by-frame displacement threshold",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "percentage BOLD change",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "DVARS",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 3
+    }
+}

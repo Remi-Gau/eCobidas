@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "moco_cost_function",
+    "prefLabel": "moco_cost_function",
+    "description": "moco_cost_function",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Similarity metric used for motion correction"
+    },
+    "responseOptions": "../../../response_options/costFunctionValueConstraints"
+}

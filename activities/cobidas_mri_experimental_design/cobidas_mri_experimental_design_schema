@@ -1,0 +1,263 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_mri_experimental_design_schema",
+    "prefLabel": "cobidas_mri_experimental_design",
+    "description": "cobidas_mri_experimental_design",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/group_comparison",
+            "items/subjects_excluded",
+            "items/reason_for_exclusion",
+            "items/mean_age",
+            "items/age_standard_deviation",
+            "items/age_mininum",
+            "items/age_maximum",
+            "items/subjects_scanned_but_rejected",
+            "items/subjects_included_in_analysis",
+            "items/gender",
+            "items/handedness",
+            "items/handedness_method",
+            "items/exclusion_criteria",
+            "items/exclusion_criteria_description",
+            "items/matching_strategy",
+            "items/ethical_approval",
+            "items/rest_or_task",
+            "items/design_type",
+            "items/condition_and_stimuli",
+            "items/number_experimental_units",
+            "items/block_duration",
+            "items/trial_duration",
+            "items/intertrial_interval_type",
+            "items/intertrial_interval_range",
+            "items/total_scanning_time",
+            "items/number_of_functional_runs",
+            "items/duration_of_each_run",
+            "items/design_optimization_used",
+            "items/design_optimization_method",
+            "items/presentation_software_name",
+            "items/presentation_software_version",
+            "items/url_to_code",
+            "items/condition",
+            "items/instructions",
+            "items/randomization",
+            "items/deterministic",
+            "items/pseudo-random",
+            "items/stimulus_presentation",
+            "items/response_collection",
+            "items/scanner_syncrhonisation",
+            "items/run_order"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "group_comparison",
+                "isAbout": "items/group_comparison",
+                "isVis": true
+            },
+            {
+                "variableName": "subjects_excluded",
+                "isAbout": "items/subjects_excluded",
+                "isVis": true
+            },
+            {
+                "variableName": "reason_for_exclusion",
+                "isAbout": "items/reason_for_exclusion",
+                "isVis": "subjects_excluded == 1"
+            },
+            {
+                "variableName": "mean_age",
+                "isAbout": "items/mean_age",
+                "isVis": true
+            },
+            {
+                "variableName": "age_standard_deviation",
+                "isAbout": "items/age_standard_deviation",
+                "isVis": true
+            },
+            {
+                "variableName": "age_mininum",
+                "isAbout": "items/age_mininum",
+                "isVis": true
+            },
+            {
+                "variableName": "age_maximum",
+                "isAbout": "items/age_maximum",
+                "isVis": true
+            },
+            {
+                "variableName": "subjects_scanned_but_rejected",
+                "isAbout": "items/subjects_scanned_but_rejected",
+                "isVis": true
+            },
+            {
+                "variableName": "subjects_included_in_analysis",
+                "isAbout": "items/subjects_included_in_analysis",
+                "isVis": true
+            },
+            {
+                "variableName": "gender",
+                "isAbout": "items/gender",
+                "isVis": true
+            },
+            {
+                "variableName": "handedness",
+                "isAbout": "items/handedness",
+                "isVis": true
+            },
+            {
+                "variableName": "handedness_method",
+                "isAbout": "items/handedness_method",
+                "isVis": "handedness == 1"
+            },
+            {
+                "variableName": "exclusion_criteria",
+                "isAbout": "items/exclusion_criteria",
+                "isVis": true
+            },
+            {
+                "variableName": "exclusion_criteria_description",
+                "isAbout": "items/exclusion_criteria_description",
+                "isVis": "exclusion_criteria == 1"
+            },
+            {
+                "variableName": "matching_strategy",
+                "isAbout": "items/matching_strategy",
+                "isVis": true
+            },
+            {
+                "variableName": "ethical_approval",
+                "isAbout": "items/ethical_approval",
+                "isVis": true
+            },
+            {
+                "variableName": "rest_or_task",
+                "isAbout": "items/rest_or_task",
+                "isVis": true
+            },
+            {
+                "variableName": "design_type",
+                "isAbout": "items/design_type",
+                "isVis": true
+            },
+            {
+                "variableName": "condition_and_stimuli",
+                "isAbout": "items/condition_and_stimuli",
+                "isVis": true
+            },
+            {
+                "variableName": "number_experimental_units",
+                "isAbout": "items/number_experimental_units",
+                "isVis": true
+            },
+            {
+                "variableName": "block_duration",
+                "isAbout": "items/block_duration",
+                "isVis": true
+            },
+            {
+                "variableName": "trial_duration",
+                "isAbout": "items/trial_duration",
+                "isVis": true
+            },
+            {
+                "variableName": "intertrial_interval_type",
+                "isAbout": "items/intertrial_interval_type",
+                "isVis": true
+            },
+            {
+                "variableName": "intertrial_interval_range",
+                "isAbout": "items/intertrial_interval_range",
+                "isVis": true
+            },
+            {
+                "variableName": "total_scanning_time",
+                "isAbout": "items/total_scanning_time",
+                "isVis": true
+            },
+            {
+                "variableName": "number_of_functional_runs",
+                "isAbout": "items/number_of_functional_runs",
+                "isVis": true
+            },
+            {
+                "variableName": "duration_of_each_run",
+                "isAbout": "items/duration_of_each_run",
+                "isVis": true
+            },
+            {
+                "variableName": "design_optimization_used",
+                "isAbout": "items/design_optimization_used",
+                "isVis": true
+            },
+            {
+                "variableName": "design_optimization_method",
+                "isAbout": "items/design_optimization_method",
+                "isVis": "design_optimization_used"
+            },
+            {
+                "variableName": "presentation_software_name",
+                "isAbout": "items/presentation_software_name",
+                "isVis": true
+            },
+            {
+                "variableName": "presentation_software_version",
+                "isAbout": "items/presentation_software_version",
+                "isVis": true
+            },
+            {
+                "variableName": "url_to_code",
+                "isAbout": "items/url_to_code",
+                "isVis": true
+            },
+            {
+                "variableName": "condition",
+                "isAbout": "items/condition",
+                "isVis": true
+            },
+            {
+                "variableName": "instructions",
+                "isAbout": "items/instructions",
+                "isVis": true
+            },
+            {
+                "variableName": "randomization",
+                "isAbout": "items/randomization",
+                "isVis": true
+            },
+            {
+                "variableName": "deterministic",
+                "isAbout": "items/deterministic",
+                "isVis": "randomization == deterministic"
+            },
+            {
+                "variableName": "pseudo-random",
+                "isAbout": "items/pseudo-random",
+                "isVis": "randomization == pseudorandom"
+            },
+            {
+                "variableName": "stimulus_presentation",
+                "isAbout": "items/stimulus_presentation",
+                "isVis": true
+            },
+            {
+                "variableName": "response_collection",
+                "isAbout": "items/response_collection",
+                "isVis": true
+            },
+            {
+                "variableName": "scanner_syncrhonisation",
+                "isAbout": "items/scanner_syncrhonisation",
+                "isVis": true
+            },
+            {
+                "variableName": "run_order",
+                "isAbout": "items/run_order",
+                "isVis": true
+            }
+        ]
+    }
+}

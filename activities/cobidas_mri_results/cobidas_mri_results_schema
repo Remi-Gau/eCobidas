@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_mri_results_schema",
+    "prefLabel": "cobidas_mri_results",
+    "description": "cobidas_mri_results",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/units_of_reported_results",
+            "items/spatial_smoothness_of_noise",
+            "items/resel_count"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "units_of_reported_results",
+                "isAbout": "items/units_of_reported_results",
+                "isVis": true
+            },
+            {
+                "variableName": "spatial_smoothness_of_noise",
+                "isAbout": "items/spatial_smoothness_of_noise",
+                "isVis": true
+            },
+            {
+                "variableName": "resel_count",
+                "isAbout": "items/resel_count",
+                "isVis": true
+            }
+        ]
+    }
+}

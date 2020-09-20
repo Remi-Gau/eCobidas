@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "segmentation_method",
+    "prefLabel": "segmentation_method",
+    "description": "segmentation_method",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Method used for segmentation"
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

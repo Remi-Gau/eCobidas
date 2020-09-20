@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "exclusion_criteria",
+    "prefLabel": "exclusion_criteria",
+    "description": "exclusion_criteria",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Describe any screening criteria, including those applied to \u201cnormal\u201d sample such as MRI exclusion criteria"
+    },
+    "responseOptions": "../../../response_options/booleanValueConstraints"
+}

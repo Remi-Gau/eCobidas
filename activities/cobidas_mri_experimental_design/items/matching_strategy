@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "matching_strategy",
+    "prefLabel": "matching_strategy",
+    "description": "matching_strategy",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Describe how the different groups were matched."
+    },
+    "responseOptions": {
+        "type": "xsd:string"
+    }
+}

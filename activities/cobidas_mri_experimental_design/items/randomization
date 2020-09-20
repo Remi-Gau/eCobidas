@@ -1,0 +1,41 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "randomization",
+    "prefLabel": "randomization",
+    "description": "randomization",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Was the block or event ordering deterministic or randomized? "
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "deterministic",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "random",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "pseudorandom",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 3
+    }
+}

@@ -1,0 +1,167 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cobidas_mri_acquisition_schema",
+    "prefLabel": "cobidas_mri_acquisition",
+    "description": "cobidas_mri_acquisition",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "preamble": " ",
+    "ui": {
+        "order": [
+            "items/make",
+            "items/model",
+            "items/field_strength",
+            "items/receive_coil",
+            "items/pulse_sequence_type",
+            "items/imaging_type",
+            "items/number_of_shots",
+            "items/partial_fourrier_scheme",
+            "items/echo_time",
+            "items/repetition_time",
+            "items/flip_angle",
+            "items/voxel_dimension",
+            "items/number_of_volumes",
+            "items/inversion_time",
+            "items/field_of_view",
+            "items/in-plane_matrix_size",
+            "items/number_of_slices",
+            "items/slice_thickness",
+            "items/interslice_gap",
+            "items/slice_orientation",
+            "items/parallel_imaging_method",
+            "items/acceleration_factor",
+            "items/slice_timing",
+            "items/location_of_the_first_slice",
+            "items/brain_coverage"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "make",
+                "isAbout": "items/make",
+                "isVis": true
+            },
+            {
+                "variableName": "model",
+                "isAbout": "items/model",
+                "isVis": true
+            },
+            {
+                "variableName": "field_strength",
+                "isAbout": "items/field_strength",
+                "isVis": true
+            },
+            {
+                "variableName": "receive_coil",
+                "isAbout": "items/receive_coil",
+                "isVis": true
+            },
+            {
+                "variableName": "pulse_sequence_type",
+                "isAbout": "items/pulse_sequence_type",
+                "isVis": true
+            },
+            {
+                "variableName": "imaging_type",
+                "isAbout": "items/imaging_type",
+                "isVis": true
+            },
+            {
+                "variableName": "number_of_shots",
+                "isAbout": "items/number_of_shots",
+                "isVis": true
+            },
+            {
+                "variableName": "partial_fourrier_scheme",
+                "isAbout": "items/partial_fourrier_scheme",
+                "isVis": true
+            },
+            {
+                "variableName": "echo_time",
+                "isAbout": "items/echo_time",
+                "isVis": true
+            },
+            {
+                "variableName": "repetition_time",
+                "isAbout": "items/repetition_time",
+                "isVis": true
+            },
+            {
+                "variableName": "flip_angle",
+                "isAbout": "items/flip_angle",
+                "isVis": true
+            },
+            {
+                "variableName": "voxel_dimension",
+                "isAbout": "items/voxel_dimension",
+                "isVis": true
+            },
+            {
+                "variableName": "number_of_volumes",
+                "isAbout": "items/number_of_volumes",
+                "isVis": true
+            },
+            {
+                "variableName": "inversion_time",
+                "isAbout": "items/inversion_time",
+                "isVis": true
+            },
+            {
+                "variableName": "field_of_view",
+                "isAbout": "items/field_of_view",
+                "isVis": true
+            },
+            {
+                "variableName": "in-plane_matrix_size",
+                "isAbout": "items/in-plane_matrix_size",
+                "isVis": true
+            },
+            {
+                "variableName": "number_of_slices",
+                "isAbout": "items/number_of_slices",
+                "isVis": true
+            },
+            {
+                "variableName": "slice_thickness",
+                "isAbout": "items/slice_thickness",
+                "isVis": true
+            },
+            {
+                "variableName": "interslice_gap",
+                "isAbout": "items/interslice_gap",
+                "isVis": true
+            },
+            {
+                "variableName": "slice_orientation",
+                "isAbout": "items/slice_orientation",
+                "isVis": true
+            },
+            {
+                "variableName": "parallel_imaging_method",
+                "isAbout": "items/parallel_imaging_method",
+                "isVis": true
+            },
+            {
+                "variableName": "acceleration_factor",
+                "isAbout": "items/acceleration_factor",
+                "isVis": true
+            },
+            {
+                "variableName": "slice_timing",
+                "isAbout": "items/slice_timing",
+                "isVis": true
+            },
+            {
+                "variableName": "location_of_the_first_slice",
+                "isAbout": "items/location_of_the_first_slice",
+                "isVis": true
+            },
+            {
+                "variableName": "brain_coverage",
+                "isAbout": "items/brain_coverage",
+                "isVis": true
+            }
+        ]
+    }
+}

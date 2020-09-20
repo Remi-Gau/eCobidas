@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "design_optimization_used",
+    "prefLabel": "design_optimization_used",
+    "description": "design_optimization_used",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Was the design efficiency optimized?"
+    },
+    "responseOptions": "../../../response_options/booleanValueConstraints"
+}

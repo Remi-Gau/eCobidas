@@ -1,0 +1,41 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "moco_reference",
+    "prefLabel": "moco_reference",
+    "description": "moco_reference",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Reference scan used for motion correction"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "first image",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "middle image",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "mean image (2 pass)",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 3
+    }
+}

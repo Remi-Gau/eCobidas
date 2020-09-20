@@ -1,0 +1,41 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "brain_coverage",
+    "prefLabel": "brain_coverage",
+    "description": "brain_coverage",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "What was the brain coverage ?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "cerebrum+cerebellum+brainstem",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "cerebrum+cerebellum",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "cerebrum",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 3
+    }
+}

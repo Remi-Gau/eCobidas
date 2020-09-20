@@ -1,0 +1,46 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "slice_timing",
+    "prefLabel": "slice_timing",
+    "description": "slice_timing",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Specify the slice acquisition order"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "interleaved ascending",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "interleaved descending",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "sequential ascending",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "sequential descending",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 4
+    }
+}
