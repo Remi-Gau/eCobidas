@@ -26,14 +26,6 @@ REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas_chckls/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-PET/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/ohbm/cobidas/"
 
-# BRANCH ----------------------------------------
-# to which branch of reproschema the user interface will be pointed to
-# In the end the cobidas-UI repository will be reading the schema from the URL that
-# starts with: REMOTE_REPO + BRANCH
-
-BRANCH = "master"
-# BRANCH = "remi-dev"
-
 # -----------------------------------------------------------------------------
 #                                   RUN
 # -----------------------------------------------------------------------------
@@ -43,7 +35,7 @@ protocol = create_schema(schema_to_create, OUTPUT_DIR, REMOTE_REPO)
 print(
     "https://www.repronim.org/reproschema-ui/#/?url="
     + os.path.join(
-        REMOTE_REPO, BRANCH, "protocols", protocol["dir"], protocol["schema_file"]
+        REMOTE_REPO, "master", "protocols", protocol["dir"], protocol["schema_file"]
     )
 )
 
