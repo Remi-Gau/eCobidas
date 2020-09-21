@@ -60,7 +60,7 @@
             {
                 "variableName": "experimenter",
                 "isAbout": "items/experimenter",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "setting_and_location_of_data_collection",
@@ -70,7 +70,7 @@
             {
                 "variableName": "distance_between_participant_and_screen",
                 "isAbout": "items/distance_between_participant_and_screen",
-                "isVis": "0"
+                "isVis": true
             }
         ]
     }

@@ -43,7 +43,7 @@
             {
                 "variableName": "example_image_included",
                 "isAbout": "items/example_image_included",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "method_for_stimulus_preparation",
@@ -58,7 +58,7 @@
             {
                 "variableName": "size_of_stimulus",
                 "isAbout": "items/size_of_stimulus",
-                "isVis": "0"
+                "isVis": true
             }
         ]
     }

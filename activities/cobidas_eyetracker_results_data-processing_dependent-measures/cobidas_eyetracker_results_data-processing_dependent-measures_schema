@@ -24,12 +24,12 @@
             {
                 "variableName": "blink_detection",
                 "isAbout": "items/blink_detection",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "fixation_detection",
                 "isAbout": "items/fixation_detection",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "aggregation_method_for_fixations_during_data",

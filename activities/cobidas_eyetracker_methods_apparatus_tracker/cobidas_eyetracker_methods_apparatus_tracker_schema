@@ -44,57 +44,57 @@
             {
                 "variableName": "type_of_device",
                 "isAbout": "items/type_of_device",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "lens_size",
                 "isAbout": "items/lens_size",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "sampling_procedure",
                 "isAbout": "items/sampling_procedure",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "sampling_rate",
                 "isAbout": "items/sampling_rate",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "accuracy",
                 "isAbout": "items/accuracy",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "precision",
                 "isAbout": "items/precision",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "temporal_precision",
                 "isAbout": "items/temporal_precision",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "stimulus_synchronization_latency",
                 "isAbout": "items/stimulus_synchronization_latency",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "latency",
                 "isAbout": "items/latency",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "headbox",
                 "isAbout": "items/headbox",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "chin_rest",
                 "isAbout": "items/chin_rest",
-                "isVis": "0"
+                "isVis": true
             }
         ]
     }

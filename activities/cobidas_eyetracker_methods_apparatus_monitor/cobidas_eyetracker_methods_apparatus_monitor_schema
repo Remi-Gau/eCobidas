@@ -19,7 +19,7 @@
             {
                 "variableName": "type",
                 "isAbout": "items/type",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "resolution",
@@ -34,7 +34,7 @@
             {
                 "variableName": "screen_refresh_rate_software",
                 "isAbout": "items/screen_refresh_rate_software",
-                "isVis": "0"
+                "isVis": true
             }
         ]
     }

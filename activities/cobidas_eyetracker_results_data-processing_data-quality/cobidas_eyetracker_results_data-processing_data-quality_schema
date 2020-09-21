@@ -26,12 +26,12 @@
             {
                 "variableName": "handling_of_artefacts",
                 "isAbout": "items/handling_of_artefacts",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "obtained_accuracy",
                 "isAbout": "items/obtained_accuracy",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "monitoring_of_data_quality",
@@ -66,17 +66,17 @@
             {
                 "variableName": "test_of_assumptions_for_missing_data",
                 "isAbout": "items/test_of_assumptions_for_missing_data",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "methods_addressing_missing_data",
                 "isAbout": "items/methods_addressing_missing_data",
-                "isVis": "0"
+                "isVis": true
             },
             {
                 "variableName": "denoising,_filtering_or_smoothing_of_raw_data",
                 "isAbout": "items/denoising,_filtering_or_smoothing_of_raw_data",
-                "isVis": "0"
+                "isVis": true
             }
         ]
     }
