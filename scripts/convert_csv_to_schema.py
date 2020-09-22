@@ -41,7 +41,7 @@ protocol = create_schema(schema_to_create, OUTPUT_DIR)
 print(
     "https://www.repronim.org/reproschema-ui/#/?url="
     + os.path.join(
-        REMOTE_REPO, "master", "protocols", protocol["dir"], protocol["schema_file"]
+        REMOTE_REPO, "master", "protocols", protocol.dir, protocol.get_filename()
     )
 )
 

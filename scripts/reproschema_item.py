@@ -18,6 +18,8 @@ class ReproschemaItem(ReproschemaSchema):
 
     def set_defaults(self, name):
         self._ReproschemaSchema__set_defaults(name)  # this looks wrong
+        self.schema_file = name
+        self.schema["@id"] = name
 
     def set_question(self, question, lang="en"):
         self.schema["question"][lang] = question

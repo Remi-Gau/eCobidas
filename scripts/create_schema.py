@@ -56,7 +56,7 @@ def create_schema(schema_to_create, OUTPUT_DIR):
                     item_info, activity, row, csv_info, OUTPUT_DIR,
                 )
 
-    protocol.write(os.path.join(OUTPUT_DIR, "protocols", protocol.dir))
+    # protocol.write(os.path.join(OUTPUT_DIR, "protocols", protocol.dir))
 
     return protocol
 
