@@ -97,21 +97,19 @@ def define_response_choices(item, response_type, response_choices):
     # with no response choice involved
     item.set_basic_response_type(response_type)
 
-    response_options = {"choices": []}
-
     if response_type == "radio":
-        response_options = list_responses_options(response_options, response_choices)
+        response_options = list_responses_options(response_choices)
         item.set_input_type_as_radio(response_options)
 
     # if we have a dropdown menu
     # TODO: change to select item to have a REAL dropdown as soon as radio item
     # offer the possibility to have an "Other" choice that opens a text box
     elif response_type == "dropdown":
-        response_options = list_responses_options(response_options, response_choices)
+        response_options = list_responses_options(response_choices)
         item.set_input_type_as_radio(response_options)
 
     elif response_type == "slider":
-        # response_options = slider_response(response_choices)
+        # response_options = slider_response(response_choices, min_label, max_label)
         # item.set_input_type_as_slider(response_options)
         item.set_input_type_as_slider()
 
@@ -144,7 +142,9 @@ def define_response_choices(item, response_type, response_choices):
     return item
 
 
-def list_responses_options(response_options, response_choices):
+def list_responses_options(response_choices):
+
+    response_options = {"choices": []}
 
     for i, opt in enumerate(response_choices):
 

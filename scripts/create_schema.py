@@ -22,7 +22,7 @@ def create_schema(schema_to_create, OUTPUT_DIR):
 
     input_file, csv_info = return_protocol_details(schema_to_create)
 
-    protocol_name = "cobidas_" + schema_to_create
+    protocol_name = schema_to_create
     protocol = ReproschemaProtocol()
     protocol.set_defaults(protocol_name)
 
@@ -101,8 +101,8 @@ def create_update_activity(
         activity_name = protocol.get_name() + "_" + section
         activity.set_defaults(activity_name)
 
-        # pref_label = row[csv_info["act_pref_label"]["col"]]
-        # activity.set_pref_label(pref_label)
+        pref_label = row[csv_info["act_pref_label"]["col"]]
+        activity.set_pref_label(pref_label)
 
         URI = "../../activities/" + activity.get_name() + "/" + activity.get_filename()
         activity.set_URI(URI)
