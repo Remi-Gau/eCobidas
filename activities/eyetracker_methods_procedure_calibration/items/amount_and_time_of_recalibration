@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "amount_and_time_of_recalibration",
+    "prefLabel": "amount and time of recalibration",
+    "description": "amount and time of recalibration",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Time, when the calibration was conducted."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

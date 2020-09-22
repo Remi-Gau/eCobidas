@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "resolution",
+    "prefLabel": "resolution",
+    "description": "resolution",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "The resolution of the used monitor"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

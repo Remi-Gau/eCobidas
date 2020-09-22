@@ -1,0 +1,40 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "eyetracker_methods_apparatus_monitor_schema",
+    "prefLabel": "Monitor",
+    "description": "eyetracker methods apparatus monitor",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "order": [
+            "items/type",
+            "items/resolution",
+            "items/screen_size",
+            "items/screen_refresh_rate_software"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "type",
+                "isAbout": "items/type",
+                "isVis": true
+            },
+            {
+                "variableName": "resolution",
+                "isAbout": "items/resolution",
+                "isVis": true
+            },
+            {
+                "variableName": "screen_size",
+                "isAbout": "items/screen_size",
+                "isVis": true
+            },
+            {
+                "variableName": "screen_refresh_rate_software",
+                "isAbout": "items/screen_refresh_rate_software",
+                "isVis": true
+            }
+        ]
+    }
+}

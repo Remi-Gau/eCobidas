@@ -1,0 +1,28 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "eyetracker_discussion_schema",
+    "prefLabel": "Discussion",
+    "description": "eyetracker discussion",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "order": [
+            "items/importance_of_study_specific_limitations",
+            "items/importance_of_limitations_in_general"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "importance_of_study_specific_limitations",
+                "isAbout": "items/importance_of_study_specific_limitations",
+                "isVis": true
+            },
+            {
+                "variableName": "importance_of_limitations_in_general",
+                "isAbout": "items/importance_of_limitations_in_general",
+                "isVis": true
+            }
+        ]
+    }
+}

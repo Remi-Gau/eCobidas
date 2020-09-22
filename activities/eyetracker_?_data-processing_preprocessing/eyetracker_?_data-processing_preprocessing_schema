@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "eyetracker_?_data-processing_preprocessing_schema",
+    "prefLabel": "Preprocessing",
+    "description": "eyetracker ? data-processing preprocessing",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "order": [
+            "items/artefact_detection",
+            "items/pupil_aggregation_method",
+            "items/pupil_algorithm"
+        ],
+        "shuffle": false,
+        "addProperties": [
+            {
+                "variableName": "artefact_detection",
+                "isAbout": "items/artefact_detection",
+                "isVis": true
+            },
+            {
+                "variableName": "pupil_aggregation_method",
+                "isAbout": "items/pupil_aggregation_method",
+                "isVis": true
+            },
+            {
+                "variableName": "pupil_algorithm",
+                "isAbout": "items/pupil_algorithm",
+                "isVis": true
+            }
+        ]
+    }
+}

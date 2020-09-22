@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "length_of_fixation_cross_presentation",
+    "prefLabel": "length of fixation cross presentation",
+    "description": "length of fixation cross presentation",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Presentation duration of the fixation cross"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

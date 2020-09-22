@@ -1,0 +1,132 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "eyetracker_schema",
+    "prefLabel": "eyetracker",
+    "description": "eyetracker",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "../../README-en.md",
+        "@language": "en"
+    },
+    "ui": {
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ],
+        "shuffle": false,
+        "order": [
+            "../../activities/eyetracker_introduction/eyetracker_introduction_schema",
+            "../../activities/eyetracker_methods_apparatus_tracker/eyetracker_methods_apparatus_tracker_schema",
+            "../../activities/eyetracker_methods_apparatus_monitor/eyetracker_methods_apparatus_monitor_schema",
+            "../../activities/eyetracker_methods_apparatus_software/eyetracker_methods_apparatus_software_schema",
+            "../../activities/eyetracker_methods_material_aoi-definition/eyetracker_methods_material_aoi-definition_schema",
+            "../../activities/eyetracker_methods_procedure_setup/eyetracker_methods_procedure_setup_schema",
+            "../../activities/eyetracker_methods_procedure_calibration/eyetracker_methods_procedure_calibration_schema",
+            "../../activities/eyetracker_methods_procedure_participants/eyetracker_methods_procedure_participants_schema",
+            "../../activities/eyetracker_results_data-processing_data-quality/eyetracker_results_data-processing_data-quality_schema",
+            "../../activities/eyetracker_results_data-processing_dependent-measures/eyetracker_results_data-processing_dependent-measures_schema",
+            "../../activities/eyetracker_?_data-processing_preprocessing/eyetracker_?_data-processing_preprocessing_schema",
+            "../../activities/eyetracker_discussion/eyetracker_discussion_schema"
+        ],
+        "addProperties": [
+            {
+                "variableName": "eyetracker_introduction",
+                "isAbout": "../../activities/eyetracker_introduction/eyetracker_introduction_schema",
+                "prefLabel": {
+                    "en": "Introduction"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "eyetracker_methods_apparatus_tracker",
+                "isAbout": "../../activities/eyetracker_methods_apparatus_tracker/eyetracker_methods_apparatus_tracker_schema",
+                "prefLabel": {
+                    "en": "Tracker"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "eyetracker_methods_apparatus_monitor",
+                "isAbout": "../../activities/eyetracker_methods_apparatus_monitor/eyetracker_methods_apparatus_monitor_schema",
+                "prefLabel": {
+                    "en": "Monitor"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "eyetracker_methods_apparatus_software",
+                "isAbout": "../../activities/eyetracker_methods_apparatus_software/eyetracker_methods_apparatus_software_schema",
+                "prefLabel": {
+                    "en": "Software"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "eyetracker_methods_material_aoi-definition",
+                "isAbout": "../../activities/eyetracker_methods_material_aoi-definition/eyetracker_methods_material_aoi-definition_schema",
+                "prefLabel": {
+                    "en": "AOI definition"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "eyetracker_methods_procedure_setup",
+                "isAbout": "../../activities/eyetracker_methods_procedure_setup/eyetracker_methods_procedure_setup_schema",
+                "prefLabel": {
+                    "en": "Setup"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "eyetracker_methods_procedure_calibration",
+                "isAbout": "../../activities/eyetracker_methods_procedure_calibration/eyetracker_methods_procedure_calibration_schema",
+                "prefLabel": {
+                    "en": "Calibration"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "eyetracker_methods_procedure_participants",
+                "isAbout": "../../activities/eyetracker_methods_procedure_participants/eyetracker_methods_procedure_participants_schema",
+                "prefLabel": {
+                    "en": "Participants"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "eyetracker_results_data-processing_data-quality",
+                "isAbout": "../../activities/eyetracker_results_data-processing_data-quality/eyetracker_results_data-processing_data-quality_schema",
+                "prefLabel": {
+                    "en": "Data quality"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "eyetracker_results_data-processing_dependent-measures",
+                "isAbout": "../../activities/eyetracker_results_data-processing_dependent-measures/eyetracker_results_data-processing_dependent-measures_schema",
+                "prefLabel": {
+                    "en": "Dependent measures"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "eyetracker_?_data-processing_preprocessing",
+                "isAbout": "../../activities/eyetracker_?_data-processing_preprocessing/eyetracker_?_data-processing_preprocessing_schema",
+                "prefLabel": {
+                    "en": "Preprocessing"
+                },
+                "isVis": true
+            },
+            {
+                "variableName": "eyetracker_discussion",
+                "isAbout": "../../activities/eyetracker_discussion/eyetracker_discussion_schema",
+                "prefLabel": {
+                    "en": "Discussion"
+                },
+                "isVis": true
+            }
+        ]
+    }
+}
