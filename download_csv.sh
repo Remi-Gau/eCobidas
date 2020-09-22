@@ -19,44 +19,47 @@
 # }
 
 # download_csv "cobidas_eyetracker.csv" "1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o"
-# eyetracker_google_ID=1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o
 
-
+# https://docs.google.com/spreadsheets/d/1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o/edit?usp=sharing
+eyetracker_google_ID=1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o
 eyetracker_csv_filename=cobidas_eyetracker.csv
-download_csv $eyetracker_google_ID $eyetracker_csv_filename
 
 echo "download eyetracker spreadsheet to inputs/csv/$eyetracker_csv_filename"
 curl -L "https://docs.google.com/spreadsheets/d/"$eyetracker_google_ID"/export?format=csv" \
     -o inputs/csv/$eyetracker_csv_filename
 
 
-mri_google_ID=
-mri_csv_filename=cobidas_mri.csv
+# https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing
+# mri_google_ID=1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho
+# mri_csv_filename=cobidas_mri.csv
 
-echo "download eyetracker spreadsheet to inputs/csv/$mri_csv_filename"
-curl -L "https://docs.google.com/spreadsheets/d/"$mri_google_ID"/export?format=csv" \
-    -o inputs/csv/$mri_csv_filename
-
-
-meeg_google_ID=
-meeg_csv_filename=cobidas_meeg.csv
-
-echo "download eyetracker spreadsheet to inputs/csv/$meeg_csv_filename"
-curl -L "https://docs.google.com/spreadsheets/d/"$meeg_google_ID"/export?format=csv" \
-    -o inputs/csv/$meeg_csv_filename
+# echo "download eyetracker spreadsheet to inputs/csv/$mri_csv_filename"
+# curl -L "https://docs.google.com/spreadsheets/d/"$mri_google_ID"/export?format=csv" \
+#     -o inputs/csv/$mri_csv_filename
 
 
-neurovault_google_ID=
-neurovault_csv_filename=cobidas_neurovault.csv
+# https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing
+# meeg_google_ID=1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0
+# meeg_csv_filename=cobidas_meeg.csv
 
-echo "download eyetracker spreadsheet to inputs/csv/$neurovault_csv_filename"
-curl -L "https://docs.google.com/spreadsheets/d/"$neurovault_google_ID"/export?format=csv" \
-    -o inputs/csv/$neurovault_csv_filename
+# echo "download eyetracker spreadsheet to inputs/csv/$meeg_csv_filename"
+# curl -L "https://docs.google.com/spreadsheets/d/"$meeg_google_ID"/export?format=csv" \
+#     -o inputs/csv/$meeg_csv_filename
 
 
-pet_google_ID=
-pet_csv_filename=cobidas_pet.csv
+# https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing
+# neurovault_google_ID=1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0
+# neurovault_csv_filename=cobidas_neurovault.csv
 
-echo "download eyetracker spreadsheet to inputs/csv/$pet_csv_filename"
-curl -L "https://docs.google.com/spreadsheets/d/"$pet_google_ID"/export?format=csv" \
-    -o inputs/csv/$pet_csv_filename
+# echo "download eyetracker spreadsheet to inputs/csv/$neurovault_csv_filename"
+# curl -L "https://docs.google.com/spreadsheets/d/"$neurovault_google_ID"/export?format=csv" \
+#     -o inputs/csv/$neurovault_csv_filename
+
+
+# https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing
+# pet_google_ID=1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8
+# pet_csv_filename=cobidas_pet.csv
+
+# echo "download eyetracker spreadsheet to inputs/csv/$pet_csv_filename"
+# curl -L "https://docs.google.com/spreadsheets/d/"$pet_google_ID"/export?format=csv" \
+#     -o inputs/csv/$pet_csv_filename
