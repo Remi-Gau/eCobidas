@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "sampling_procedure",
+    "prefLabel": "sampling procedure",
+    "description": "sampling procedure",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "The sampling procedure used"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

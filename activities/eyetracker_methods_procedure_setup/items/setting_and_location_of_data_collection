@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "setting_and_location_of_data_collection",
+    "prefLabel": "setting and location of data collection",
+    "description": "setting and location of data collection",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Settings and locations where data were collected"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

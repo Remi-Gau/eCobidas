@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "proportion_of_women",
+    "prefLabel": "proportion of women",
+    "description": "proportion of women",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "The percentage of women"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

@@ -74,119 +74,90 @@ def get_mandatory(row, csv_info):
     return mandatory
 
 
-def define_new_item(item_info, REPRONIM_REPO, VERSION):
+def define_new_item(item_info):
+
+    from reproschema_item import ReproschemaItem
+
     # define jsonld for this item
 
-    item_schema = {
-        "@context": REPRONIM_REPO + "contexts/generic",
-        "@type": "reproschema:Field",
-        "@id": item_info["name"],
-        "prefLabel": item_info["name"],
-        "description": item_info["name"],
-        "schemaVersion": VERSION,
-        "version": "0.0.1",
-        "ui": {"inputType": []},
-        "question": {"en": item_info["question"]},
-    }
+    item = ReproschemaItem()
 
-    inputType, responseOptions = define_response_choice(
-        item_info["resp_type"], item_info["choices"]
-    )
+    item.set_defaults(item_info["name"])
 
-    item_schema["ui"]["inputType"] = inputType
-    item_schema["responseOptions"] = responseOptions
+    item.set_question(item_info["question"])
 
-    return item_schema
+    item = define_response_choices(item, item_info["resp_type"], item_info["choices"])
+
+    return item
 
 
-def define_response_choice(response_type, response_choices):
-    # now we define the answers for this item
+def define_response_choices(item, response_type, response_choices):
 
-    # default (also valid for "char" input type)
-    inputType = "text"
-    responseOptions = {"type": "xsd:string"}
+    # in case we have one of the basic response type
+    # with no response choice involved
+    item.set_basic_response_type(response_type)
 
-    if response_type == "boolean":
-
-        inputType = "radio"
-        responseOptions = "../../../response_options/booleanValueConstraints"
-
-    if response_type == "mri_software":
-
-        inputType = "radio"
-        responseOptions = "../../../response_options/mriSoftwareValueConstraints"
-
-    if response_type == "interpolation":
-
-        inputType = "radio"
-        responseOptions = "../../../response_options/interpolationValueConstraints"
-
-    if response_type == "cost_function":
-
-        inputType = "radio"
-        responseOptions = "../../../response_options/costFunctionValueConstraints"
-
-    if response_type == "multiple_comparison":
-
-        inputType = "select"
-        responseOptions = "../../../response_options/multipleComparisonValueConstraints"
-
-    # if we have multiple choices with a radio item
-    elif response_type == "radio":
-
-        inputType = "radio"
-        responseOptions = {"choices": []}
-        responseOptions = list_responses_options(responseOptions, response_choices)
+    if response_type == "radio":
+        response_options = list_responses_options(response_choices)
+        item.set_input_type_as_radio(response_options)
 
     # if we have a dropdown menu
+    # TODO: change to select item to have a REAL dropdown as soon as radio item
+    # offer the possibility to have an "Other" choice that opens a text box
     elif response_type == "dropdown":
+        response_options = list_responses_options(response_choices)
+        item.set_input_type_as_radio(response_options)
 
-        inputType = "radio"  # "select"
-        responseOptions = {"choices": []}
-        responseOptions = list_responses_options(responseOptions, response_choices)
-
-    # response is date
-    elif response_type == "date":
-        inputType = "date"
-        responseOptions = {"valueType": "xsd:date"}
-
-    # response is time range
-    elif response_type == "time range":
-        inputType = "timeRange"
-        responseOptions = {"valueType": "datetime"}
-
-    # response is slider
     elif response_type == "slider":
-        inputType = "slider"
-        # responseOptions = slider_response(response_choices, "min", "max")
+        # response_options = slider_response(response_choices, min_label, max_label)
+        # item.set_input_type_as_slider(response_options)
+        item.set_input_type_as_slider()
 
-    # response is integer
-    elif response_type == "int":
-        inputType = "number"
-        responseOptions = {"valueType": "xsd:integer"}
+    if (
+        response_type == "boolean"
+        or response_type == "mri_software"
+        or response_type == "interpolation"
+        or response_type == "cost_function"
+        or response_type == "multiple_comparison"
+    ):
 
-    # response is float
-    elif response_type == "float":
-        inputType = "float"
-        responseOptions = {"valueType": "xsd:float"}
+        value_constraint = response_type
 
-    return inputType, responseOptions
+        if "_" in response_type:
+
+            response_type = response_type.split("_")
+
+            # This does not cover the cases where the string has more than
+            # 2 elements separated by "_"
+            value_constraint == response_type[0]
+            +response_type[1][0].upper()
+            +response_type[1][1:]
+
+        response_options = "../../../response_options/"
+        response_options += value_constraint
+        response_options += "ValueConstraints"
+
+        item.set_input_type_as_radio(response_options)
+
+    return item
 
 
-def list_responses_options(responseOptions, response_choices):
+def list_responses_options(response_choices):
+
+    response_options = {"choices": []}
 
     for i, opt in enumerate(response_choices):
 
-        responseOptions["choices"].append({"name": opt, "value": i, "@type": "option"})
+        response_options["choices"].append({"name": opt, "value": i, "@type": "option"})
 
-    responseOptions["choices"].append(
+    response_options["choices"].append(
         {"name": "Other", "value": len(response_choices), "@type": "option"}
     )
 
-    responseOptions["minValue"] = 0
-    responseOptions["maxValue"] = len(response_choices)
+    response_options["minValue"] = 0
+    response_options["maxValue"] = len(response_choices)
 
-    return responseOptions
+    return response_options
 
 
 def slider_response(response_choices, min_label, max_label):
@@ -199,7 +170,7 @@ def slider_response(response_choices, min_label, max_label):
     min = 1
     max = 11
     steps = 11
-    responseOptions = {
+    response_options = {
         "valueType": "xsd:integer",
         "minValue": min,
         "maxValue": max,
@@ -207,9 +178,9 @@ def slider_response(response_choices, min_label, max_label):
     }
 
     for i in numpy.linspace(min, max, steps):
-        responseOptions["choices"].append({"value": int(i), "@type": "option"})
+        response_options["choices"].append({"value": int(i), "@type": "option"})
 
-    responseOptions["choices"][0]["name"] = min_label
-    responseOptions["choices"][-1]["name"] = max_label
+    response_options["choices"][0]["name"] = min_label
+    response_options["choices"][-1]["name"] = max_label
 
-    return responseOptions
+    return response_options

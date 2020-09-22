@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "other_transformations_of_data",
+    "prefLabel": "other transformations of data",
+    "description": "other transformations of data",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Other transformations of data"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

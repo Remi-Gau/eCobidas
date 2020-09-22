@@ -1,3 +1,7 @@
+import os
+import json
+
+
 def create_schema(schema_to_create, OUTPUT_DIR):
     """
     This takes the content of the a csv file and turns it into a
@@ -8,14 +12,9 @@ def create_schema(schema_to_create, OUTPUT_DIR):
     Every new item encountered is added to the current activity.
     """
 
-    import json
-    import os
     import csv
-    from protocol import define_new_protocol
+    from reproschema_protocol import ReproschemaProtocol
     from item import get_item_info
-
-    REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/"
-    VERSION = "1.0.0-rc1"
 
     # -----------------------------------------------------------------------------
     #                                   START
@@ -23,12 +22,13 @@ def create_schema(schema_to_create, OUTPUT_DIR):
 
     input_file, csv_info = return_protocol_details(schema_to_create)
 
-    protocol = {"name": "cobidas_" + schema_to_create + "_"}
-    protocol = define_new_protocol(REPRONIM_REPO, protocol, VERSION)
+    protocol_name = schema_to_create
+    protocol = ReproschemaProtocol()
+    protocol.set_defaults(protocol_name)
 
     # create output directories
-    if not os.path.exists(os.path.join(OUTPUT_DIR, "protocols", protocol["dir"])):
-        os.makedirs(os.path.join(OUTPUT_DIR, "protocols", protocol["dir"]))
+    if not os.path.exists(os.path.join(OUTPUT_DIR, "protocols", protocol.dir)):
+        os.makedirs(os.path.join(OUTPUT_DIR, "protocols", protocol.dir))
 
     # to check if we got to a new section while looping through items
     this_section = ""
@@ -50,34 +50,20 @@ def create_schema(schema_to_create, OUTPUT_DIR):
                     item_info,
                     this_section,
                     OUTPUT_DIR,
-                    REPRONIM_REPO,
-                    VERSION,
                 )
 
                 create_new_item(
-                    item_info,
-                    activity,
-                    row,
-                    csv_info,
-                    OUTPUT_DIR,
-                    REPRONIM_REPO,
-                    VERSION,
+                    item_info, activity, row, csv_info, OUTPUT_DIR,
                 )
 
-    # write protocol jsonld
-    with open(
-        os.path.join(OUTPUT_DIR, "protocols", protocol["dir"], protocol["schema_file"]),
-        "w",
-    ) as ff:
-        json.dump(protocol["schema"], ff, sort_keys=False, indent=4)
+    protocol.sort()
+
+    protocol.write(os.path.join(OUTPUT_DIR, "protocols", protocol.dir))
 
     return protocol
 
 
 def return_protocol_details(schema_to_create):
-
-    import os
-    import json
 
     source_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
     csv_dir = os.path.join("inputs", "csv")
@@ -96,21 +82,10 @@ def return_protocol_details(schema_to_create):
 
 
 def create_update_activity(
-    row,
-    csv_info,
-    protocol,
-    activity,
-    item_info,
-    this_section,
-    OUTPUT_DIR,
-    REPRONIM_REPO,
-    VERSION,
+    row, csv_info, protocol, activity, item_info, this_section, OUTPUT_DIR
 ):
 
-    import os
-    import json
-    from protocol import update_protocol
-    from activity import define_new_activity, update_activity
+    from reproschema_activity import ReproschemaActivity
 
     # -------------------------------------------------------------------
     # detect if this is a new section if so it will create a new activity
@@ -121,58 +96,49 @@ def create_update_activity(
         this_section = row[csv_info["section"]["col"]]
         section = this_section.replace(" ", "_")
 
-        activity = define_new_activity(
-            protocol, section, row, csv_info, REPRONIM_REPO, VERSION,
-        )
+        activity = ReproschemaActivity()
+
+        activity_name = protocol.get_name() + "_" + section
+        activity.set_defaults(activity_name)
+
+        pref_label = row[csv_info["act_pref_label"]["col"]]
+        activity.set_pref_label(pref_label)
+
+        URI = "../../activities/" + activity.get_name() + "/" + activity.get_filename()
+        activity.set_URI(URI)
 
         # create dir for this section
-        if not os.path.exists(os.path.join(OUTPUT_DIR, "activities", activity["name"])):
-            os.makedirs(os.path.join(OUTPUT_DIR, "activities", activity["name"]))
+        if not os.path.exists(
+            os.path.join(OUTPUT_DIR, "activities", activity.get_name())
+        ):
+            os.makedirs(os.path.join(OUTPUT_DIR, "activities", activity.get_name()))
             os.makedirs(
-                os.path.join(OUTPUT_DIR, "activities", activity["name"], "items")
+                os.path.join(OUTPUT_DIR, "activities", activity.get_name(), "items")
             )
 
-        protocol = update_protocol(activity, protocol)
+        protocol.append_activity(activity)
 
-        print(activity["name"])
+        print(activity.get_filename())
 
-    activity = update_activity(activity, item_info)
+    activity.update_activity(item_info)
 
-    # save activity schema with every new item
-    with open(
-        os.path.join(
-            OUTPUT_DIR, "activities", activity["name"], activity["schema_file"],
-        ),
-        "w",
-    ) as ff:
-        json.dump(activity["schema"], ff, sort_keys=False, indent=4)
+    activity.sort()
+
+    activity.write(os.path.join(OUTPUT_DIR, "activities", activity.get_name()))
 
     return protocol, activity, this_section
 
 
-def create_new_item(
-    item_info, activity, row, csv_info, OUTPUT_DIR, REPRONIM_REPO, VERSION
-):
+def create_new_item(item_info, activity, row, csv_info, OUTPUT_DIR):
 
-    import os
-    import json
     from item import define_new_item
 
     print("   " + item_info["name"])
     print("       " + item_info["question"])
     print("       " + item_info["resp_type"])
 
-    item_schema = define_new_item(item_info, REPRONIM_REPO, VERSION)
+    item = define_new_item(item_info)
 
-    # write item schema
-    with open(
-        os.path.join(
-            OUTPUT_DIR,
-            "activities",
-            activity["name"],
-            "items",
-            row[csv_info["item"]["col"]],
-        ),
-        "w",
-    ) as ff:
-        json.dump(item_schema, ff, sort_keys=False, indent=4)
+    item.sort()
+
+    item.write(os.path.join(OUTPUT_DIR, "activities", activity.get_name(), "items"))

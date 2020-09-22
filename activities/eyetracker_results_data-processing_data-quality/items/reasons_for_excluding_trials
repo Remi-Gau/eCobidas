@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "reasons_for_excluding_trials",
+    "prefLabel": "reasons for excluding trials",
+    "description": "reasons for excluding trials",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Reasons for exclusion"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}
