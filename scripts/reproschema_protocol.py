@@ -44,11 +44,38 @@ class ReproschemaProtocol(ReproschemaSchema):
 
         # update the content of the protocol with this new activity
         append_to_protocol = {
-            "variableName": activity.get_name,
-            "isAbout": activity.URI,
+            "variableName": activity.get_name(),
+            "isAbout": activity.get_URI(),
             "prefLabel": {"en": activity.schema["prefLabel"]},
             "isVis": True,
         }
 
         self.schema["ui"]["order"].append(activity.URI)
         self.schema["ui"]["addProperties"].append(append_to_protocol)
+
+    def sort(self):
+        """
+        sort the dictionnary so the different keys are printed in a typical
+        order
+        """
+        schema_order = [
+            "@context",
+            "@type",
+            "@id",
+            "prefLabel",
+            "description",
+            "schemaVersion",
+            "version",
+            "landingPage",
+            "ui",
+        ]
+
+        reordered_dict = {k: self.schema[k] for k in schema_order}
+        self.schema = reordered_dict
+
+        ui_order = [
+            "allow",
+            "shuffle",
+            "order",
+            "addProperties",
+        ]

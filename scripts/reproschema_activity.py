@@ -17,6 +17,9 @@ class ReproschemaActivity(ReproschemaSchema):
     def set_URI(self, URI):
         self.URI = URI
 
+    def get_URI(self):
+        return self.URI
+
     def set_defaults(self, name):
         self._ReproschemaSchema__set_defaults(name)  # this looks wrong
         self.set_ui_shuffle(False)

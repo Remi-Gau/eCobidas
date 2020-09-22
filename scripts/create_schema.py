@@ -56,7 +56,9 @@ def create_schema(schema_to_create, OUTPUT_DIR):
                     item_info, activity, row, csv_info, OUTPUT_DIR,
                 )
 
-    # protocol.write(os.path.join(OUTPUT_DIR, "protocols", protocol.dir))
+    protocol.sort()
+
+    protocol.write(os.path.join(OUTPUT_DIR, "protocols", protocol.dir))
 
     return protocol
 
@@ -107,11 +109,11 @@ def create_update_activity(
 
         # create dir for this section
         if not os.path.exists(
-            os.path.join(OUTPUT_DIR, "activities", activity.get_filename())
+            os.path.join(OUTPUT_DIR, "activities", activity.get_name())
         ):
-            os.makedirs(os.path.join(OUTPUT_DIR, "activities", activity.get_filename()))
+            os.makedirs(os.path.join(OUTPUT_DIR, "activities", activity.get_name()))
             os.makedirs(
-                os.path.join(OUTPUT_DIR, "activities", activity.get_filename(), "items")
+                os.path.join(OUTPUT_DIR, "activities", activity.get_name(), "items")
             )
 
         protocol.append_activity(activity)
@@ -120,7 +122,8 @@ def create_update_activity(
 
     activity.update_activity(item_info)
 
-    # save activity schema with every new item
+    activity.sort()
+
     activity.write(os.path.join(OUTPUT_DIR, "activities", activity.get_name()))
 
     return protocol, activity, this_section
@@ -135,5 +138,7 @@ def create_new_item(item_info, activity, row, csv_info, OUTPUT_DIR):
     print("       " + item_info["resp_type"])
 
     item = define_new_item(item_info)
+
+    item.sort()
 
     item.write(os.path.join(OUTPUT_DIR, "activities", activity.get_name(), "items"))

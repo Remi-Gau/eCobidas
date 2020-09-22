@@ -29,3 +29,33 @@ class ReproschemaItem(ReproschemaSchema):
 
     def set_response_options(self, response_options):
         self.schema["responseOptions"] = response_options
+
+    def sort(self):
+        """
+        sort the dictionnary so the different keys are printed in a typical
+        order
+        """
+        schema_order = [
+            "@context",
+            "@type",
+            "@id",
+            "prefLabel",
+            "description",
+            "schemaVersion",
+            "version",
+            "ui",
+            "question",
+            "responseOptions",
+        ]
+
+        reordered_dict = {k: self.schema[k] for k in schema_order}
+        self.schema = reordered_dict
+
+        # ui_order = [
+        #     "order",
+        #     "shuffle",
+        #     "addProperties",
+        # ]
+
+        # reordered_dict = {k: self.schema["ui"][k] for k in ui_order}
+        # self.schema["ui"] = reordered_dict
