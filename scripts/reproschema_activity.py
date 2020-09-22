@@ -6,8 +6,8 @@ class ReproschemaActivity(ReproschemaSchema):
     class to deal with reproschema activities
     """
 
-    def __init__(self, VERSION="1.0.0-rc1"):
-        super().__init__(VERSION)
+    def __init__(self):
+        super().__init__()
         self.schema["@type"] = "reproschema:Activity"
         self.schema["ui"] = {"shuffle": [], "order": [], "addProperties": []}
 

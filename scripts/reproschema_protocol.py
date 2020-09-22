@@ -6,8 +6,8 @@ class ReproschemaProtocol(ReproschemaSchema):
     class to deal with reproschema protocols
     """
 
-    def __init__(self, VERSION="1.0.0-rc1"):
-        super().__init__(VERSION)
+    def __init__(self):
+        super().__init__()
         self.schema["@type"] = "reproschema:Protocol"
         self.schema["ui"] = {
             "allow": [],

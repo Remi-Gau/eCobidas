@@ -3,9 +3,10 @@ class ReproschemaSchema:
     class to deal with reproschema schemas
     """
 
-    def __init__(
-        self, VERSION="1.0.0-rc1",
-    ):
+    def __init__(self):
+
+        VERSION = "1.0.0-rc1"
+
         self.schema = {
             "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/"
             + VERSION
