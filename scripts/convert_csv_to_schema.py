@@ -45,4 +45,6 @@ print(
     )
 )
 
+# https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema
+# https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
 # -----------------------------------------------------------------------------
