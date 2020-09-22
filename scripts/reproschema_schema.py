@@ -5,12 +5,11 @@ class ReproschemaSchema:
 
     def __init__(self):
 
+        URL = "https://raw.githubusercontent.com/ReproNim/reproschema/"
         VERSION = "1.0.0-rc1"
 
         self.schema = {
-            "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/"
-            + VERSION
-            + "/contexts/generic",
+            "@context": URL + VERSION + "/contexts/generic",
             "schemaVersion": VERSION,
             "version": "0.0.1",
         }
@@ -74,3 +73,6 @@ class ReproschemaSchema:
 
         with open(os.path.join(output_dir, self.schema_file), "w",) as ff:
             json.dump(self.schema, ff, sort_keys=False, indent=4)
+
+    def reorder_dict(dict, expected_key_order):
+        return {k: dict[k] for k in expected_key_order}

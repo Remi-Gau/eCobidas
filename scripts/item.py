@@ -86,89 +86,60 @@ def define_new_item(item_info):
 
     item.set_question(item_info["question"])
 
-    input_type, response_options = define_response_choice(
-        item_info["resp_type"], item_info["choices"]
-    )
-    item.set_input_type(input_type)
-    item.set_response_options(response_options)
+    item = define_response_choices(item, item_info["resp_type"], item_info["choices"])
 
     return item
 
 
-def define_response_choice(response_type, response_choices):
-    # now we define the answers for this item
+def define_response_choices(item, response_type, response_choices):
 
-    # default (also valid for "char" input type)
-    input_type = "text"
-    response_options = {"type": "xsd:string"}
+    item.set_basic_response_type(response_type)
 
-    if response_type == "boolean":
+    response_options = {"choices": []}
 
-        input_type = "radio"
+    if response_type == "radio":
+        response_options = list_responses_options(response_options, response_choices)
+        item.set_input_type_as_radio(response_options)
+
+    # if we have a dropdown menu
+    # TODO: change to select item to have a REAL dropdown as soon as radio item
+    # offer the possibility to have an "Other" choice that opens a text box
+    elif response_type == "dropdown":
+        response_options = list_responses_options(response_options, response_choices)
+        item.set_input_type_as_radio(response_options)
+
+    # response is slider
+    elif response_type == "slider":
+        item.set_input_type_as_slider()
+
+    elif response_type == "boolean":
+
+        item.set_input_type_as_radio(response_options)
         response_options = "../../../response_options/booleanValueConstraints"
 
-    if response_type == "mri_software":
+    elif response_type == "mri_software":
 
-        input_type = "radio"
+        item.set_input_type_as_radio(response_options)
         response_options = "../../../response_options/mriSoftwareValueConstraints"
 
-    if response_type == "interpolation":
+    elif response_type == "interpolation":
 
-        input_type = "radio"
+        item.set_input_type_as_radio(response_options)
         response_options = "../../../response_options/interpolationValueConstraints"
 
-    if response_type == "cost_function":
+    elif response_type == "cost_function":
 
-        input_type = "radio"
+        item.set_input_type_as_radio(response_options)
         response_options = "../../../response_options/costFunctionValueConstraints"
 
-    if response_type == "multiple_comparison":
+    elif response_type == "multiple_comparison":
 
-        input_type = "select"
+        item.set_input_type_as_radio(response_options)
         response_options = (
             "../../../response_options/multipleComparisonValueConstraints"
         )
 
-    # if we have multiple choices with a radio item
-    elif response_type == "radio":
-
-        input_type = "radio"
-        response_options = {"choices": []}
-        response_options = list_responses_options(response_options, response_choices)
-
-    # if we have a dropdown menu
-    elif response_type == "dropdown":
-
-        input_type = "radio"  # "select"
-        response_options = {"choices": []}
-        response_options = list_responses_options(response_options, response_choices)
-
-    # response is date
-    elif response_type == "date":
-        input_type = "date"
-        response_options = {"valueType": "xsd:date"}
-
-    # response is time range
-    elif response_type == "time range":
-        input_type = "timeRange"
-        response_options = {"valueType": "datetime"}
-
-    # response is slider
-    elif response_type == "slider":
-        input_type = "slider"
-        # response_options = slider_response(response_choices, "min", "max")
-
-    # response is integer
-    elif response_type == "int":
-        input_type = "number"
-        response_options = {"valueType": "xsd:integer"}
-
-    # response is float
-    elif response_type == "float":
-        input_type = "float"
-        response_options = {"valueType": "xsd:float"}
-
-    return input_type, response_options
+    return item
 
 
 def list_responses_options(response_options, response_choices):
