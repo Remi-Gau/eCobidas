@@ -1,0 +1,61 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "frame-sequence",
+    "prefLabel": "frame-sequence",
+    "description": "frame-sequence",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Frame-Sequence"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "6x10",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "3x20",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "6x30",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "5x60",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "5x120",
+                "value": 4,
+                "@type": "option"
+            },
+            {
+                "name": "8x300",
+                "value": 5,
+                "@type": "option"
+            },
+            {
+                "name": "3x600 (36 frames)",
+                "value": 6,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 7,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 7
+    }
+}

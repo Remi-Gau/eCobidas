@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "pet_radioligand_discrete-blood_schema",
+    "prefLabel": "Discrete blood",
+    "description": "pet radioligand discrete-blood",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/DiscreteBloodAvail",
+            "items/DiscreteBloodHaematocrit",
+            "items/DiscreteBloodDensity"
+        ],
+        "addProperties": [
+            {
+                "variableName": "DiscreteBloodAvail",
+                "isAbout": "items/DiscreteBloodAvail",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "DiscreteBloodHaematocrit",
+                "isAbout": "items/DiscreteBloodHaematocrit",
+                "isVis": "DiscreteBloodAvail == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "DiscreteBloodDensity",
+                "isAbout": "items/DiscreteBloodDensity",
+                "isVis": "DiscreteBloodAvail == 1",
+                "valueRequired": false
+            }
+        ]
+    }
+}

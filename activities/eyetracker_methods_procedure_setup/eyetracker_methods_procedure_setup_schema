@@ -7,6 +7,7 @@
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
     "ui": {
+        "shuffle": false,
         "order": [
             "items/length_of_inter_stimulus_interval",
             "items/length_of_fixation_cross_presentation",
@@ -19,57 +20,66 @@
             "items/setting_and_location_of_data_collection",
             "items/distance_between_participant_and_screen"
         ],
-        "shuffle": false,
         "addProperties": [
             {
                 "variableName": "length_of_inter_stimulus_interval",
                 "isAbout": "items/length_of_inter_stimulus_interval",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "length_of_fixation_cross_presentation",
                 "isAbout": "items/length_of_fixation_cross_presentation",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "position_of_fixation_cross",
                 "isAbout": "items/position_of_fixation_cross",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "length_of_stimulus_presentation",
                 "isAbout": "items/length_of_stimulus_presentation",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "order_of_stimulus_presentation",
                 "isAbout": "items/order_of_stimulus_presentation",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "counter_balancing_of_positions_in_the_presentation",
                 "isAbout": "items/counter_balancing_of_positions_in_the_presentation",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "number_of_trials",
                 "isAbout": "items/number_of_trials",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "experimenter",
                 "isAbout": "items/experimenter",
-                "isVis": true
+                "isVis": "long_form == 1",
+                "valueRequired": false
             },
             {
                 "variableName": "setting_and_location_of_data_collection",
                 "isAbout": "items/setting_and_location_of_data_collection",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "distance_between_participant_and_screen",
                 "isAbout": "items/distance_between_participant_and_screen",
-                "isVis": true
+                "isVis": "long_form == 1",
+                "valueRequired": false
             }
         ]
     }

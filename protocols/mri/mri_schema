@@ -1,0 +1,74 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "mri_schema",
+    "prefLabel": "mri",
+    "description": "mri",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "../../README-en.md",
+        "@language": "en"
+    },
+    "ui": {
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ],
+        "shuffle": false,
+        "order": [
+            "../../activities/mri_experimental_design/mri_experimental_design_schema",
+            "../../activities/mri_acquisition/mri_acquisition_schema",
+            "../../activities/mri_preprocessing/mri_preprocessing_schema",
+            "../../activities/mri_statistical_modeling_and_inference/mri_statistical_modeling_and_inference_schema",
+            "../../activities/mri_results/mri_results_schema"
+        ],
+        "addProperties": [
+            {
+                "variableName": "mri_experimental_design",
+                "isAbout": "../../activities/mri_experimental_design/mri_experimental_design_schema",
+                "prefLabel": {
+                    "en": "Experimental Design"
+                },
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "mri_acquisition",
+                "isAbout": "../../activities/mri_acquisition/mri_acquisition_schema",
+                "prefLabel": {
+                    "en": "Acquisition"
+                },
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "mri_preprocessing",
+                "isAbout": "../../activities/mri_preprocessing/mri_preprocessing_schema",
+                "prefLabel": {
+                    "en": "Preprocessing"
+                },
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "mri_statistical_modeling_and_inference",
+                "isAbout": "../../activities/mri_statistical_modeling_and_inference/mri_statistical_modeling_and_inference_schema",
+                "prefLabel": {
+                    "en": "Statistical Modeling and Inference"
+                },
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "mri_results",
+                "isAbout": "../../activities/mri_results/mri_results_schema",
+                "prefLabel": {
+                    "en": "Results"
+                },
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}

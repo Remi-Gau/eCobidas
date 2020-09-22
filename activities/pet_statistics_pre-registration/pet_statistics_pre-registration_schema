@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "pet_statistics_pre-registration_schema",
+    "prefLabel": "Pre-registration",
+    "description": "pet statistics pre-registration",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/link"
+        ],
+        "addProperties": [
+            {
+                "variableName": "link",
+                "isAbout": "items/link",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}

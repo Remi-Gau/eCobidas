@@ -7,6 +7,7 @@
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
     "ui": {
+        "shuffle": false,
         "order": [
             "items/handling_of_artefacts",
             "items/obtained_accuracy",
@@ -20,62 +21,72 @@
             "items/methods_addressing_missing_data",
             "items/denoising,_filtering_or_smoothing_of_raw_data"
         ],
-        "shuffle": false,
         "addProperties": [
             {
                 "variableName": "handling_of_artefacts",
                 "isAbout": "items/handling_of_artefacts",
-                "isVis": true
+                "isVis": "long_form == 1",
+                "valueRequired": false
             },
             {
                 "variableName": "obtained_accuracy",
                 "isAbout": "items/obtained_accuracy",
-                "isVis": true
+                "isVis": "long_form == 1",
+                "valueRequired": false
             },
             {
                 "variableName": "monitoring_of_data_quality",
                 "isAbout": "items/monitoring_of_data_quality",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "proportion_of_excluded_trials",
                 "isAbout": "items/proportion_of_excluded_trials",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "reasons_for_excluding_trials",
                 "isAbout": "items/reasons_for_excluding_trials",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "number_of_participants_excluded",
                 "isAbout": "items/number_of_participants_excluded",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "quality_threshold",
                 "isAbout": "items/quality_threshold",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "percentage_of_lost_data",
                 "isAbout": "items/percentage_of_lost_data",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "test_of_assumptions_for_missing_data",
                 "isAbout": "items/test_of_assumptions_for_missing_data",
-                "isVis": true
+                "isVis": "long_form == 1",
+                "valueRequired": false
             },
             {
                 "variableName": "methods_addressing_missing_data",
                 "isAbout": "items/methods_addressing_missing_data",
-                "isVis": true
+                "isVis": "long_form == 1",
+                "valueRequired": false
             },
             {
                 "variableName": "denoising,_filtering_or_smoothing_of_raw_data",
                 "isAbout": "items/denoising,_filtering_or_smoothing_of_raw_data",
-                "isVis": true
+                "isVis": "long_form == 1",
+                "valueRequired": false
             }
         ]
     }

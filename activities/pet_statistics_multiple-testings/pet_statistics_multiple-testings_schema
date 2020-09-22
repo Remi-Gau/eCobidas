@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "pet_statistics_multiple-testings_schema",
+    "prefLabel": "Multiple Testings",
+    "description": "pet statistics multiple-testings",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/method",
+            "items/threshold",
+            "items/number-of-tests"
+        ],
+        "addProperties": [
+            {
+                "variableName": "method",
+                "isAbout": "items/method",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "threshold",
+                "isAbout": "items/threshold",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "number-of-tests",
+                "isAbout": "items/number-of-tests",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}

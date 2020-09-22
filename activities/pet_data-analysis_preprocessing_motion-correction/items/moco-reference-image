@@ -1,0 +1,31 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "moco-reference-image",
+    "prefLabel": "moco-reference-image",
+    "description": "moco-reference-image",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "MoCo reference image"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "Summed PET image",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 1,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 1
+    }
+}

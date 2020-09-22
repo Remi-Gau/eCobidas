@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "registration-cost-function",
+    "prefLabel": "registration-cost-function",
+    "description": "registration-cost-function",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Registration cost function"
+    },
+    "responseOptions": "../../../response_options/costFunctionValueConstraints"
+}

@@ -1,0 +1,86 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "BodyPart",
+    "prefLabel": "BodyPart",
+    "description": "BodyPart",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Name of the organ / body region scanned."
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": " brain",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "neck",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "torso",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "cardiac",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "gut",
+                "value": 4,
+                "@type": "option"
+            },
+            {
+                "name": "hip",
+                "value": 5,
+                "@type": "option"
+            },
+            {
+                "name": "leg",
+                "value": 6,
+                "@type": "option"
+            },
+            {
+                "name": "knee",
+                "value": 7,
+                "@type": "option"
+            },
+            {
+                "name": "foot",
+                "value": 8,
+                "@type": "option"
+            },
+            {
+                "name": "hand",
+                "value": 9,
+                "@type": "option"
+            },
+            {
+                "name": "arm",
+                "value": 10,
+                "@type": "option"
+            },
+            {
+                "name": "lung ",
+                "value": 11,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 12,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 12
+    }
+}
