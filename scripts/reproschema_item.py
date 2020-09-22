@@ -22,6 +22,7 @@ class ReproschemaItem(ReproschemaSchema):
         self._ReproschemaSchema__set_defaults(name)  # this looks wrong
         self.schema_file = name
         self.schema["@id"] = name
+        self.set_input_type_as_char()
 
     def set_question(self, question, lang="en"):
         self.schema["question"][lang] = question
@@ -57,7 +58,8 @@ class ReproschemaItem(ReproschemaSchema):
         self.set_response_options({"valueType": "datetime"})
 
     def set_input_type_as_slider(self):
-        self.set_input_type("slider")
+        self.set_input_type_as_char()  # until the slide item of the ui is fixed
+        # self.set_input_type("slider")
         # self.set_response_options({"valueType": "xsd:string"})
 
     def set_input_type_as_date(self):
@@ -122,12 +124,3 @@ class ReproschemaItem(ReproschemaSchema):
 
         reordered_dict = {k: self.schema[k] for k in schema_order}
         self.schema = reordered_dict
-
-        # ui_order = [
-        #     "order",
-        #     "shuffle",
-        #     "addProperties",
-        # ]
-
-        # reordered_dict = {k: self.schema["ui"][k] for k in ui_order}
-        # self.schema["ui"] = reordered_dict

@@ -93,6 +93,8 @@ def define_new_item(item_info):
 
 def define_response_choices(item, response_type, response_choices):
 
+    # in case we have one of the basic response type
+    # with no response choice involved
     item.set_basic_response_type(response_type)
 
     response_options = {"choices": []}
@@ -108,36 +110,36 @@ def define_response_choices(item, response_type, response_choices):
         response_options = list_responses_options(response_options, response_choices)
         item.set_input_type_as_radio(response_options)
 
-    # response is slider
     elif response_type == "slider":
+        # response_options = slider_response(response_choices)
+        # item.set_input_type_as_slider(response_options)
         item.set_input_type_as_slider()
 
-    elif response_type == "boolean":
+    if (
+        response_type == "boolean"
+        or response_type == "mri_software"
+        or response_type == "interpolation"
+        or response_type == "cost_function"
+        or response_type == "multiple_comparison"
+    ):
+
+        value_constraint = response_type
+
+        if "_" in response_type:
+
+            response_type = response_type.split("_")
+
+            # This does not cover the cases where the string has more than
+            # 2 elements separated by "_"
+            value_constraint == response_type[0]
+            +response_type[1][0].upper()
+            +response_type[1][1:]
+
+        response_options = "../../../response_options/"
+        response_options += value_constraint
+        response_options += "ValueConstraints"
 
         item.set_input_type_as_radio(response_options)
-        response_options = "../../../response_options/booleanValueConstraints"
-
-    elif response_type == "mri_software":
-
-        item.set_input_type_as_radio(response_options)
-        response_options = "../../../response_options/mriSoftwareValueConstraints"
-
-    elif response_type == "interpolation":
-
-        item.set_input_type_as_radio(response_options)
-        response_options = "../../../response_options/interpolationValueConstraints"
-
-    elif response_type == "cost_function":
-
-        item.set_input_type_as_radio(response_options)
-        response_options = "../../../response_options/costFunctionValueConstraints"
-
-    elif response_type == "multiple_comparison":
-
-        item.set_input_type_as_radio(response_options)
-        response_options = (
-            "../../../response_options/multipleComparisonValueConstraints"
-        )
 
     return item
 
