@@ -21,6 +21,8 @@ class ReproschemaProtocol(ReproschemaSchema):
 
     # TODO
     # def add_landing_page(self, landing_page_url, lang="en"):
+    # preamble
+    # compute
 
     def set_image(self, image_url):
         self.schema["image"] = image_url
@@ -49,6 +51,8 @@ class ReproschemaProtocol(ReproschemaSchema):
             "prefLabel": {"en": activity.schema["prefLabel"]},
             "isVis": True,
         }
+        # TODO
+        # valueRequired
 
         self.schema["ui"]["order"].append(activity.URI)
         self.schema["ui"]["addProperties"].append(append_to_protocol)

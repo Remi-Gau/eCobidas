@@ -20,6 +20,12 @@ class ReproschemaActivity(ReproschemaSchema):
     def get_URI(self):
         return self.URI
 
+    # TODO
+    # preamble
+    # compute
+    # citation
+    # image
+
     def set_defaults(self, name):
         self._ReproschemaSchema__set_defaults(name)  # this looks wrong
         self.set_ui_shuffle(False)

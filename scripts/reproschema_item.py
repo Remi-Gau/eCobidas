@@ -18,6 +18,10 @@ class ReproschemaItem(ReproschemaSchema):
     def set_URI(self, URI):
         self.URI = URI
 
+    # TODO   
+    # image
+    # readonlyValue
+
     def set_defaults(self, name):
         self._ReproschemaSchema__set_defaults(name)  # this looks wrong
         self.schema_file = name
@@ -92,7 +96,7 @@ class ReproschemaItem(ReproschemaSchema):
         self.set_response_options({"valueType": "xsd:date"})
 
     """
-    
+
     input types with no response choice but with some parameters
 
     """
