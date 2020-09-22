@@ -1,7 +1,7 @@
 import os
 from create_schema import create_schema
 
-schema_to_create = "eyetracker"  # "neurovault" "pet" "mri" "eyetracker"
+schema_to_create = ["neurovault", "pet", "mri", "eyetracker"]
 
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS
@@ -36,15 +36,17 @@ REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas_chckls/"
 #                                   RUN
 # -----------------------------------------------------------------------------
 
-protocol = create_schema(schema_to_create, OUTPUT_DIR)
+for schema in schema_to_create:
 
-print(
-    "https://www.repronim.org/reproschema-ui/#/?url="
-    + os.path.join(
-        REMOTE_REPO, "master", "protocols", protocol.dir, protocol.get_filename()
+    protocol = create_schema(schema, OUTPUT_DIR)
+
+    print(
+        "https://www.repronim.org/reproschema-ui/#/?url="
+        + os.path.join(
+            REMOTE_REPO, "master", "protocols", protocol.dir, protocol.get_filename()
+        )
     )
-)
 
-# https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema
-# https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
-# -----------------------------------------------------------------------------
+    # https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema
+    # https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
+    # -----------------------------------------------------------------------------

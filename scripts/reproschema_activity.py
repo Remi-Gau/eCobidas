@@ -31,6 +31,10 @@ class ReproschemaActivity(ReproschemaSchema):
         self.set_ui_shuffle(False)
 
     def update_activity(self, item_info):
+
+        # TODO
+        # - remove the hard coding on visibility and valueRequired
+
         # update the content of the activity schema with new item
 
         item_info["URI"] = "items/" + item_info["name"]
@@ -39,8 +43,28 @@ class ReproschemaActivity(ReproschemaSchema):
             "variableName": item_info["name"],
             "isAbout": item_info["URI"],
             "isVis": item_info["visibility"],
+            "valueRequired": False,
         }
 
         self.schema["ui"]["order"].append(item_info["URI"])
         self.schema["ui"]["addProperties"].append(append_to_activity)
 
+    def sort(self):
+        schema_order = [
+            "@context",
+            "@type",
+            "@id",
+            "prefLabel",
+            "description",
+            "schemaVersion",
+            "version",
+            "ui",
+        ]
+        self.sort_schema(schema_order)
+
+        ui_order = [
+            "shuffle",
+            "order",
+            "addProperties",
+        ]
+        self.sort_ui(ui_order)

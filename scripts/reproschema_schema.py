@@ -39,30 +39,12 @@ class ReproschemaSchema:
         self.set_pref_label(name.replace("_", " "))
         self.set_description(name.replace("_", " "))
 
-    def sort(self):
-        """
-        sort the dictionnary so the different keys are printed in a typical
-        order
-        """
-        schema_order = [
-            "@context",
-            "@type",
-            "@id",
-            "prefLabel",
-            "description",
-            "schemaVersion",
-            "version",
-            "ui",
-        ]
+    def sort_schema(self, schema_order):
 
         reordered_dict = {k: self.schema[k] for k in schema_order}
         self.schema = reordered_dict
 
-        ui_order = [
-            "order",
-            "shuffle",
-            "addProperties",
-        ]
+    def sort_ui(self, ui_order):
 
         reordered_dict = {k: self.schema["ui"][k] for k in ui_order}
         self.schema["ui"] = reordered_dict
@@ -74,5 +56,3 @@ class ReproschemaSchema:
         with open(os.path.join(output_dir, self.schema_file), "w",) as ff:
             json.dump(self.schema, ff, sort_keys=False, indent=4)
 
-    def reorder_dict(dict, expected_key_order):
-        return {k: dict[k] for k in expected_key_order}
