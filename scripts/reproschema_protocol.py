@@ -6,12 +6,15 @@ class ReproschemaProtocol(ReproschemaSchema):
     class to deal with reproschema protocols
     """
 
-    def __init__(self, VERSION):
+    def __init__(self, VERSION="1.0.0-rc1"):
         super().__init__(VERSION)
         self.schema["@type"] = "reproschema:Protocol"
-        self.schema["ui"] = (
-            {"allow": [], "shuffle": [], "order": [], "addProperties": []},
-        )
+        self.schema["ui"] = {
+            "allow": [],
+            "shuffle": [],
+            "order": [],
+            "addProperties": [],
+        }
 
     def set_landing_page(self, landing_page_url, lang="en"):
         self.schema["landingPage"] = {"@id": landing_page_url, "@language": lang}
@@ -32,20 +35,18 @@ class ReproschemaProtocol(ReproschemaSchema):
         self.schema["ui"]["shuffle"] = shuffle
 
     def set_defaults(self, name):
-        super().__set_defaults(name)
+        self._ReproschemaSchema__set_defaults(name)  # this looks wrong
         self.set_landing_page("../../README-en.md")
         self.set_ui_allow()
         self.set_ui_shuffle(False)
 
     def append_activity(self, activity):
 
-        # update the content of the protool schema and context wrt this new activity
+        # update the content of the protocol with this new activity
         append_to_protocol = {
             "variableName": activity.get_name,
             "isAbout": activity.URI,
-            # for the name displayed by the UI for this activity we simply reuse the
-            # activity name
-            "prefLabel": {"en": activity.prefLabel},
+            "prefLabel": {"en": activity.schema["prefLabel"]},
             "isVis": True,
         }
 

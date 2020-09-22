@@ -16,9 +16,6 @@ def create_schema(schema_to_create, OUTPUT_DIR):
     from reproschema_protocol import ReproschemaProtocol
     from item import get_item_info
 
-    REPRONIM_REPO = "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/"
-    VERSION = "1.0.0-rc1"
-
     # -----------------------------------------------------------------------------
     #                                   START
     # -----------------------------------------------------------------------------
@@ -56,13 +53,7 @@ def create_schema(schema_to_create, OUTPUT_DIR):
                 )
 
                 create_new_item(
-                    item_info,
-                    activity,
-                    row,
-                    csv_info,
-                    OUTPUT_DIR,
-                    REPRONIM_REPO,
-                    VERSION,
+                    item_info, activity, row, csv_info, OUTPUT_DIR,
                 )
 
     protocol.write(os.path.join(OUTPUT_DIR, "protocols", protocol.dir))
@@ -105,39 +96,37 @@ def create_update_activity(
 
         activity = ReproschemaActivity()
 
-        activity_name = protocol.get_name + section
+        activity_name = protocol.get_name() + "_" + section
         activity.set_defaults(activity_name)
 
-        pref_label = row[csv_info["act_pref_label"]["col"]]
-        activity.set_pref_label(pref_label)
+        # pref_label = row[csv_info["act_pref_label"]["col"]]
+        # activity.set_pref_label(pref_label)
 
-        URI = "../../activities/" + activity.get_name + "/" + activity.filename
+        URI = "../../activities/" + activity.get_name() + "/" + activity.get_filename()
         activity.set_URI(URI)
 
         # create dir for this section
         if not os.path.exists(
-            os.path.join(OUTPUT_DIR, "activities", activity.filename)
+            os.path.join(OUTPUT_DIR, "activities", activity.get_filename())
         ):
-            os.makedirs(os.path.join(OUTPUT_DIR, "activities", activity.filename))
+            os.makedirs(os.path.join(OUTPUT_DIR, "activities", activity.get_filename()))
             os.makedirs(
-                os.path.join(OUTPUT_DIR, "activities", activity.filename, "items")
+                os.path.join(OUTPUT_DIR, "activities", activity.get_filename(), "items")
             )
 
         protocol.append_activity(activity)
 
-        print(activity.filename)
+        print(activity.get_filename())
 
-    activity.update_activity(activity, item_info)
+    activity.update_activity(item_info)
 
     # save activity schema with every new item
-    activity.write(os.path.join(OUTPUT_DIR, "activities", activity["name"]))
+    activity.write(os.path.join(OUTPUT_DIR, "activities", activity.get_name()))
 
     return protocol, activity, this_section
 
 
-def create_new_item(
-    item_info, activity, row, csv_info, OUTPUT_DIR, REPRONIM_REPO, VERSION
-):
+def create_new_item(item_info, activity, row, csv_info, OUTPUT_DIR):
 
     from item import define_new_item
 
@@ -145,17 +134,6 @@ def create_new_item(
     print("       " + item_info["question"])
     print("       " + item_info["resp_type"])
 
-    item_schema = define_new_item(item_info, REPRONIM_REPO, VERSION)
+    item = define_new_item(item_info)
 
-    # write item schema
-    with open(
-        os.path.join(
-            OUTPUT_DIR,
-            "activities",
-            activity["name"],
-            "items",
-            row[csv_info["item"]["col"]],
-        ),
-        "w",
-    ) as ff:
-        json.dump(item_schema, ff, sort_keys=False, indent=4)
+    item.write(os.path.join(OUTPUT_DIR, "activities", activity.get_name(), "items"))

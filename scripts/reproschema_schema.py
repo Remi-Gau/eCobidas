@@ -21,6 +21,9 @@ class ReproschemaSchema:
     def get_name(self):
         return self.schema_file.replace("_schema", "")
 
+    def get_filename(self):
+        return self.schema_file
+
     def set_pref_label(self, pref_label):
         self.schema["prefLabel"] = pref_label
 

@@ -6,10 +6,10 @@ class ReproschemaActivity(ReproschemaSchema):
     class to deal with reproschema activities
     """
 
-    def __init__(self, VERSION):
+    def __init__(self, VERSION="1.0.0-rc1"):
         super().__init__(VERSION)
         self.schema["@type"] = "reproschema:Activity"
-        self.schema["ui"] = ({"shuffle": [], "order": [], "addProperties": []},)
+        self.schema["ui"] = {"shuffle": [], "order": [], "addProperties": []}
 
     def set_ui_shuffle(self, shuffle=False):
         self.schema["ui"]["shuffle"] = shuffle
@@ -18,10 +18,10 @@ class ReproschemaActivity(ReproschemaSchema):
         self.URI = URI
 
     def set_defaults(self, name):
-        super().__set_defaults(name)
+        self._ReproschemaSchema__set_defaults(name)  # this looks wrong
         self.set_ui_shuffle(False)
 
-    def update_activity(activity, item_info):
+    def update_activity(self, item_info):
         # update the content of the activity schema with new item
 
         item_info["URI"] = "items/" + item_info["name"]
@@ -32,6 +32,6 @@ class ReproschemaActivity(ReproschemaSchema):
             "isVis": item_info["visibility"],
         }
 
-        activity["schema"]["ui"]["order"].append(item_info["URI"])
-        activity["schema"]["ui"]["addProperties"].append(append_to_activity)
+        self.schema["ui"]["order"].append(item_info["URI"])
+        self.schema["ui"]["addProperties"].append(append_to_activity)
 
