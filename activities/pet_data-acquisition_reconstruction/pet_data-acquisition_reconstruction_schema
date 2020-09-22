@@ -1,0 +1,149 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "pet_data-acquisition_reconstruction_schema",
+    "prefLabel": "Reconstruction",
+    "description": "pet data-acquisition reconstruction",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/AcquisitionMode",
+            "items/ImageDecayCorrected",
+            "items/ImageDecayCorrectionTime",
+            "items/ReconMethodName",
+            "items/ReconMethodParameterLabels",
+            "items/ReconFilterType",
+            "items/AttenuationCorrection",
+            "items/ReconFilterSize",
+            "items/pet-voxel-size",
+            "items/matrix-size",
+            "items/frame-sequence",
+            "items/ScaleFactor",
+            "items/ScatterFraction",
+            "items/DecayCorrectionFactor",
+            "items/PromptRate",
+            "items/RandomRate",
+            "items/SinglesRate",
+            "items/reconstruction-data-labels",
+            "items/AttenuationCorrectionMethodReference"
+        ],
+        "addProperties": [
+            {
+                "variableName": "AcquisitionMode",
+                "isAbout": "items/AcquisitionMode",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "ImageDecayCorrected",
+                "isAbout": "items/ImageDecayCorrected",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "ImageDecayCorrectionTime",
+                "isAbout": "items/ImageDecayCorrectionTime",
+                "isVis": "ImageDecayCorrected == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "ReconMethodName",
+                "isAbout": "items/ReconMethodName",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "ReconMethodParameterLabels",
+                "isAbout": "items/ReconMethodParameterLabels",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "ReconFilterType",
+                "isAbout": "items/ReconFilterType",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "AttenuationCorrection",
+                "isAbout": "items/AttenuationCorrection",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "ReconFilterSize",
+                "isAbout": "items/ReconFilterSize",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "pet-voxel-size",
+                "isAbout": "items/pet-voxel-size",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "matrix-size",
+                "isAbout": "items/matrix-size",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "frame-sequence",
+                "isAbout": "items/frame-sequence",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "ScaleFactor",
+                "isAbout": "items/ScaleFactor",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "ScatterFraction",
+                "isAbout": "items/ScatterFraction",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "DecayCorrectionFactor",
+                "isAbout": "items/DecayCorrectionFactor",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "PromptRate",
+                "isAbout": "items/PromptRate",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "RandomRate",
+                "isAbout": "items/RandomRate",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "SinglesRate",
+                "isAbout": "items/SinglesRate",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "reconstruction-data-labels",
+                "isAbout": "items/reconstruction-data-labels",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "AttenuationCorrectionMethodReference",
+                "isAbout": "items/AttenuationCorrectionMethodReference",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}

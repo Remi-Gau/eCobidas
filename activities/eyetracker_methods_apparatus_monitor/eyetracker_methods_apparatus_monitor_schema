@@ -7,33 +7,37 @@
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
     "ui": {
+        "shuffle": false,
         "order": [
             "items/type",
             "items/resolution",
             "items/screen_size",
             "items/screen_refresh_rate_software"
         ],
-        "shuffle": false,
         "addProperties": [
             {
                 "variableName": "type",
                 "isAbout": "items/type",
-                "isVis": true
+                "isVis": "long_form == 1",
+                "valueRequired": false
             },
             {
                 "variableName": "resolution",
                 "isAbout": "items/resolution",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "screen_size",
                 "isAbout": "items/screen_size",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "screen_refresh_rate_software",
                 "isAbout": "items/screen_refresh_rate_software",
-                "isVis": true
+                "isVis": "long_form == 1",
+                "valueRequired": false
             }
         ]
     }

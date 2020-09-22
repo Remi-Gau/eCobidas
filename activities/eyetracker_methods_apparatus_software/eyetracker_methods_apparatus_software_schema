@@ -7,21 +7,23 @@
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
     "ui": {
+        "shuffle": false,
         "order": [
             "items/pre_processing_program",
             "items/stimulus_presentation"
         ],
-        "shuffle": false,
         "addProperties": [
             {
                 "variableName": "pre_processing_program",
                 "isAbout": "items/pre_processing_program",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "stimulus_presentation",
                 "isAbout": "items/stimulus_presentation",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             }
         ]
     }

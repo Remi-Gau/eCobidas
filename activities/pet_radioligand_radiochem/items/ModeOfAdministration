@@ -1,0 +1,41 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "ModeOfAdministration",
+    "prefLabel": "ModeOfAdministration",
+    "description": "ModeOfAdministration",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Mode of administration of the injection."
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": " single IV bolus",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "single oral bolus",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "\n IV infusion \n",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 3,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 3
+    }
+}

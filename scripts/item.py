@@ -129,9 +129,9 @@ def define_response_choices(item, response_type, response_choices):
 
             # This does not cover the cases where the string has more than
             # 2 elements separated by "_"
-            value_constraint == response_type[0]
-            +response_type[1][0].upper()
-            +response_type[1][1:]
+            value_constraint = (
+                response_type[0] + response_type[1][0].upper() + response_type[1][1:]
+            )
 
         response_options = "../../../response_options/"
         response_options += value_constraint

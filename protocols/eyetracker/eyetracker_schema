@@ -37,7 +37,8 @@
                 "prefLabel": {
                     "en": "Introduction"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "eyetracker_methods_apparatus_tracker",
@@ -45,7 +46,8 @@
                 "prefLabel": {
                     "en": "Tracker"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "eyetracker_methods_apparatus_monitor",
@@ -53,7 +55,8 @@
                 "prefLabel": {
                     "en": "Monitor"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "eyetracker_methods_apparatus_software",
@@ -61,7 +64,8 @@
                 "prefLabel": {
                     "en": "Software"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "eyetracker_methods_material_aoi-definition",
@@ -69,7 +73,8 @@
                 "prefLabel": {
                     "en": "AOI definition"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "eyetracker_methods_procedure_setup",
@@ -77,7 +82,8 @@
                 "prefLabel": {
                     "en": "Setup"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "eyetracker_methods_procedure_calibration",
@@ -85,7 +91,8 @@
                 "prefLabel": {
                     "en": "Calibration"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "eyetracker_methods_procedure_participants",
@@ -93,7 +100,8 @@
                 "prefLabel": {
                     "en": "Participants"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "eyetracker_results_data-processing_data-quality",
@@ -101,7 +109,8 @@
                 "prefLabel": {
                     "en": "Data quality"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "eyetracker_results_data-processing_dependent-measures",
@@ -109,7 +118,8 @@
                 "prefLabel": {
                     "en": "Dependent measures"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "eyetracker_?_data-processing_preprocessing",
@@ -117,7 +127,8 @@
                 "prefLabel": {
                     "en": "Preprocessing"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "eyetracker_discussion",
@@ -125,7 +136,8 @@
                 "prefLabel": {
                     "en": "Discussion"
                 },
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             }
         ]
     }

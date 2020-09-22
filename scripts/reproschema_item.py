@@ -142,10 +142,6 @@ class ReproschemaItem(ReproschemaSchema):
             self.set_input_type_as_language()
 
     def sort(self):
-        """
-        sort the dictionnary so the different keys are printed in a typical
-        order
-        """
         schema_order = [
             "@context",
             "@type",
@@ -158,6 +154,4 @@ class ReproschemaItem(ReproschemaSchema):
             "question",
             "responseOptions",
         ]
-
-        reordered_dict = {k: self.schema[k] for k in schema_order}
-        self.schema = reordered_dict
+        self.sort_schema(schema_order)

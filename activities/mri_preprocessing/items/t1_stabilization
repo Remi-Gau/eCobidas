@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "t1_stabilization",
+    "prefLabel": "t1 stabilization",
+    "description": "t1 stabilization",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "number of \u201cdummy\u201d scans discarded if any"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

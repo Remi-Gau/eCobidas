@@ -7,21 +7,23 @@
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
     "ui": {
+        "shuffle": false,
         "order": [
             "items/importance_of_study_specific_limitations",
             "items/importance_of_limitations_in_general"
         ],
-        "shuffle": false,
         "addProperties": [
             {
                 "variableName": "importance_of_study_specific_limitations",
                 "isAbout": "items/importance_of_study_specific_limitations",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "variableName": "importance_of_limitations_in_general",
                 "isAbout": "items/importance_of_limitations_in_general",
-                "isVis": true
+                "isVis": true,
+                "valueRequired": false
             }
         ]
     }

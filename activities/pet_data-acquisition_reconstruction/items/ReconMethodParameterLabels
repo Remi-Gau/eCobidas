@@ -1,0 +1,36 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "ReconMethodParameterLabels",
+    "prefLabel": "ReconMethodParameterLabels",
+    "description": "ReconMethodParameterLabels",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Names, value, units of reconstruction parameters."
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "subsets",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "iterations",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 2,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 2
+    }
+}

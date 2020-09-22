@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "volume_censoring_version",
+    "prefLabel": "volume censoring version",
+    "description": "volume censoring version",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Software version used for volume censoring"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

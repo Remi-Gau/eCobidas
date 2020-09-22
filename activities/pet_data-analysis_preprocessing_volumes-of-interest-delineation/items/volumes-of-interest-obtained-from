@@ -1,0 +1,31 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "volumes-of-interest-obtained-from",
+    "prefLabel": "volumes-of-interest-obtained-from",
+    "description": "volumes-of-interest-obtained-from",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Volumes of interest obtained from"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "MP-RAGE T1",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 1,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 1
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "neurovault_Group_inference_schema",
+    "prefLabel": "Group inference",
+    "description": "neurovault Group inference",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/group_statistic_type",
+            "items/group_statistic_parameters",
+            "items/group_smoothness_fwhm"
+        ],
+        "addProperties": [
+            {
+                "variableName": "group_statistic_type",
+                "isAbout": "items/group_statistic_type",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "group_statistic_parameters",
+                "isAbout": "items/group_statistic_parameters",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "group_smoothness_fwhm",
+                "isAbout": "items/group_smoothness_fwhm",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}
