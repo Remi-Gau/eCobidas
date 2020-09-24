@@ -1,7 +1,7 @@
 # How the checklist is rendered
 
 <!-- TOC -->
-
+<!-- lint disable -->
 -   [How the checklist is rendered](#how-the-checklist-is-rendered)
     -   [How to](#how-to) -
     [Turn the spreadsheet into the schema](#turn-the-spreadsheet-into-the-schema) -
@@ -10,7 +10,8 @@
     [Run Locally with node.js](#run-locally-with-nodejs) -
     [Run locally with docker or docker-compose](#run-locally-with-docker-or-docker-compose) -
     [Run remotely with heroku](#run-remotely-with-heroku)
-    <!-- /TOC -->
+<!-- lint enable -->
+<!-- /TOC -->
 
 First make sure you understand how the different part of this project are
 organized by reading the [general organization](./general_organization.md)

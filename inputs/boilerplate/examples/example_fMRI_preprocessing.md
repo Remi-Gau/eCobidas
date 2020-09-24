@@ -1,7 +1,7 @@
 # boilerplate for fMRI preprocessing
 
 <!-- TOC -->
-
+<!-- lint disable -->
 - [boilerplate for fMRI preprocessing](#boilerplate-for-fmri-preprocessing)
   - [CPP SPM12 pipeline](#cpp-spm12-pipeline)
   - [fMRIprep](#fmriprep)
@@ -10,7 +10,7 @@
     - [spm_coreg](#spm_coreg)
     - [spm_normalize](#spm_normalize)
     - [spm_spm](#spm_spm)
-
+<!-- lint enable -->
 <!-- /TOC -->
 
 ## CPP SPM12 pipeline

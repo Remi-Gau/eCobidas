@@ -1,10 +1,10 @@
 <!-- TOC -->
-
-- [Why this project](#why-this-project)
-- [Goals and roadmap](#goals-and-roadmap)
-- [Implementation](#implementation)
-- [References](#references)
-
+<!-- lint disable -->
+-   [Why this project](#why-this-project)
+-   [Goals and roadmap](#goals-and-roadmap)
+-   [Implementation](#implementation)
+-   [References](#references)
+<!-- lint enable -->
 <!-- /TOC -->
 
 ## Why this project
@@ -14,7 +14,7 @@ replicability of research. It also makes it hard to compare new and old results
 and generally increases inefficiency in the research process. This project is
 built on the hope that improving methods and results reporting could improve our
 research.
-
+Please indicate shortly, how do you think Brainhack contributed to diversity and inclusivity in the scientific community?
 See [here](./why_this_project.md) for more background information.
 
 ## Goals and roadmap

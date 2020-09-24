@@ -1,13 +1,13 @@
 # boilerplate for fMRI GLM
 
 <!-- TOC -->
-
+<!-- lint disable -->
 - [boilerplate for fMRI GLM](#boilerplate-for-fmri-glm)
   - [AFNI](#afni)
   - [Freesurfer](#freesurfer)
   - [FSL](#fsl)
   - [SPM](#spm)
-
+<!-- lint enable -->
 <!-- /TOC -->
 
 taken from the

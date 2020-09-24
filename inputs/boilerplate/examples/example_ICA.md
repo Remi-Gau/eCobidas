@@ -1,7 +1,7 @@
 # boilerplate for ICA
 
 <!-- TOC -->
-
+<!-- lint disable -->
 - [boilerplate for ICA](#boilerplate-for-ica)
   - [Single-Modality ICA](#single-modality-ica)
     - [GIFT](#gift)
@@ -9,7 +9,7 @@
   - [Multi-Modalitiy ICA](#multi-modalitiy-ica)
     - [FIT](#fit)
     - [FSL](#fsl)
-
+<!-- lint enable -->
 <!-- /TOC -->
 
 taken from the

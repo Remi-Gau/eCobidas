@@ -4,6 +4,9 @@ node_js:
 cache:
   directories:
   - node_modules # NPM packages
+branches:
+  only:
+  - master
 before_script:
   - npm install `cat npm-requirements.txt`
 script:

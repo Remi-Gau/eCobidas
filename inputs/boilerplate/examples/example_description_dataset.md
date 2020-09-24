@@ -1,14 +1,14 @@
 # boilerplate for MRI dataset description
 
 <!-- TOC -->
-
+<!-- lint disable -->
 - [boilerplate for MRI dataset description](#boilerplate-for-mri-dataset-description)
   - [from pybids and bids-matlab](#from-pybids-and-bids-matlab)
     - [anat](#anat)
     - [func](#func)
     - [fmap](#fmap)
     - [dwi](#dwi)
-
+<!-- lint enable -->
 <!-- /TOC -->
 
 ## from pybids and bids-matlab

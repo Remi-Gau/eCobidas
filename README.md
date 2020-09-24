@@ -9,13 +9,13 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- TOC -->
-
+<!-- lint disable -->
 -   [COBIDAS guidelines checklist](#cobidas-guidelines-checklist)
     -   [Want to know more ?](#want-to-know-more-)
     -   [How to reach us](#how-to-reach-us)
     -   [How to contribute](#how-to-contribute)
     -   [Contributors ✨](#contributors-)
-
+<!-- lint enable -->
 <!-- /TOC -->
 
 The main aim of this project is to improve reporting methods and results in

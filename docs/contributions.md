@@ -1,7 +1,7 @@
 # Contributing
 
 <!-- TOC -->
-
+<!--lint disable -->
 - [Contributing](#contributing)
     - [General 'to do list' common for the f/MRI and MEEG app](#general-to-do-list-common-for-the-fmri-and-meeg-app)
     - ['To do list' for the f/MRI](#to-do-list-for-the-fmri)
@@ -19,7 +19,7 @@
         - [fMRI pre-registration use case](#fmri-pre-registration-use-case)
         - [EEG / MEG pre-registration use case](#eeg--meg-pre-registration-use-case)
         - [BIDS compatibility](#bids-compatibility)
-
+<!--lint enable -->
 <!-- /TOC -->
 
 We have a lot of work to do and many ways in which you can contribute to this

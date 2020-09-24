@@ -1,7 +1,7 @@
 # Goals
 
 <!-- TOC -->
-
+<!-- lint disable -->
 -   [Goals](#goals)
     -   [Imagined impact on the field of neuroimaging ("pie in the sky" goals)](#imagined-impact-on-the-field-of-neuroimaging-pie-in-the-sky-goals)
     -   [Requirements for the implementation](#requirements-for-the-implementation)
@@ -19,7 +19,7 @@
         -   [Link to journal specific checklists](#link-to-journal-specific-checklists)
         -   [Link to neurolex](#link-to-neurolex)
     -   [Potential applications ("pie in the sky" goals)](#potential-applications-pie-in-the-sky-goals)
-
+<!-- lint enable -->
 <!-- /TOC -->
 
 ## Imagined impact on the field of neuroimaging ("pie in the sky" goals)
