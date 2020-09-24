@@ -1,7 +1,4 @@
 {
-  "settings": {
-    "frail": true
-  },
   "plugins": [
     "preset-lint-consistent",
     "preset-lint-markdown-style-guide",

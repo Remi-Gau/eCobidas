@@ -1,9 +1,9 @@
 <!-- TOC -->
 
--   [Why this project](#why-this-project)
--   [Goals and roadmap](#goals-and-roadmap)
--   [Implementation](#implementation)
--   [References](#references)
+- [Why this project](#why-this-project)
+- [Goals and roadmap](#goals-and-roadmap)
+- [Implementation](#implementation)
+- [References](#references)
 
 <!-- /TOC -->
 
@@ -37,7 +37,8 @@ used to automatically generate part of the methods section of an article.
 
 This repository is a place where:
 
-1. issues and ideas around reaching this goal are discussed;
+1. issues and ideas around reaching this goal are discussed
+
 2. plans for how to reach this goal are designed and implemented.
 
 See [here](./goals.md) for more information on our short and long term goals as
@@ -91,7 +92,9 @@ checklist.
 The COBIDAS report:
 
 -   [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)
+
 -   [for EEG and MEG](https://osf.io/a8dhx/)
+
 -   MEEG report presentation at
     [OHBM 2019](https://www.pathlms.com/ohbm/courses/12238/sections/15843/video_presentations/138196)
 
@@ -104,5 +107,7 @@ Presentation slides made about this project can be found in the
 Other checklists:
 
 -   [Checklist for Artifical Intelligence in Medical Imaging](https://claim.shinyapps.io/CLAIM/)
+
 -   [Consensus on the reporting and experimental design of clinical and cognitive-beharioural neurofeedback studies](https://crednf.shinyapps.io/CREDnf/)
+
 -   [Transparency Checklist](http://www.shinyapps.org/apps/TransparencyChecklist/)
