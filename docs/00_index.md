@@ -1,3 +1,12 @@
+<!-- TOC -->
+
+- [Why this project](#why-this-project)
+- [Goals and roadmap](#goals-and-roadmap)
+- [Implementation](#implementation)
+- [References](#references)
+
+<!-- /TOC -->
+
 ## Why this project
 
 Poor methods and results description hinders the reproducibility and the

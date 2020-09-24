@@ -32,7 +32,12 @@ document. Anyone who has used this checklist tends to agree that it is a great
 resource but that it is a bit cumbersome to interpret and apply.
 
 So the goal of this project is to facilitate the use of this checklist. But, if
-done right, this could also in the long term enhance the adoption of emerging
+done righ, this could also in the long term enhance the adoption of eme
+
+
+
+
+
 neuroimaging standards (BIDS, fMRIprep, NIDM...), facilitate data sharing and
 pre-registration, help with peer-review...
 

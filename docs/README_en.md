@@ -10,9 +10,7 @@ different components of the COBIDAS protocol.</p>
 
 <h2>How to use it</h2>
 
-<p>You can navigate each section on the left and then answer the questions corresponding to your fMRI analysis. This is meant to make sure that you have not forgotten any of the essential information in the methods and results parts of your article.</p>
-
-<p>At the end, you can click on <b>Export</b> (bottom left) to get a zip file containing machine readable json files that captures information about your method/results section: our next step is to use this to automate the part of the methods writing and to submit the information alongside data submission to Neurovault and other data archives.</p>
+<p>You can navigate each section on the left and then answer the questions corresponding to your fMRI analysis. This is meant to make sure that you have not forgotten any of the essential information in the methods and results parts of your article, you can click on <b>Export</b> (bottom left) to get a zip file containing machine readable json files that captures information about your method/results section: our next step is to use this to automate the part of the methods writing and to submit the information alongside data submission to Neurovault and other data archives.</p>
 
 <h2>Have any questions? Something is missing? Let us know.</h2>
 

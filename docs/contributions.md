@@ -1,5 +1,28 @@
 # Contributing
 
+
+<!-- TOC -->
+
+- [Contributing](#contributing)
+  - [General 'to do list' common for the f/MRI and MEEG app](#general-to-do-list-common-for-the-fmri-and-meeg-app)
+  - ['To do list' for the f/MRI](#to-do-list-for-the-fmri)
+- [Who's who on the COBIDAS Checklist Team](#whos-who-on-the-cobidas-checklist-team)
+  - [Core team](#core-team)
+  - [Contributions](#contributions)
+    - [Legend](#legend)
+    - [Design, idea, planning](#design-idea-planning)
+    - [MRI spreadsheet](#mri-spreadsheet)
+    - [M/EEG spreadsheet](#meeg-spreadsheet)
+    - [ReproNim schema](#repronim-schema)
+    - [User interface](#user-interface)
+    - [Meta-analysis use case](#meta-analysis-use-case)
+    - [fMRI pre-registration use case](#fmri-pre-registration-use-case)
+    - [EEG / MEG pre-registration use case](#eeg--meg-pre-registration-use-case)
+    - [BIDS compatibility](#bids-compatibility)
+
+<!-- /TOC -->
+
+
 We have a lot of work to do and many ways in which you can contribute to this
 project.
 
@@ -52,6 +75,8 @@ feel free to do so.
 
 You can check the current
 [kanban](https://github.com/Remi-Gau/COBIDAS_chckls/projects/2) board
+
+
 
 # Who's who on the COBIDAS Checklist Team
 

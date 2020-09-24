@@ -10,4 +10,6 @@ To make sure the schemas are valid
 
 ```
 reproschema -l DEBUG validate protocols
+reproschema -l DEBUG validate activities 
+reproschema -l DEBUG validate filename
 ```

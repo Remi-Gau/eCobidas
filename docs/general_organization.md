@@ -1,5 +1,14 @@
 # General organization
 
+<!-- TOC -->
+
+- [General organization](#general-organization)
+  - [Spreadsheet work](#spreadsheet-work)
+    - [Spreadsheet content and organization](#spreadsheet-content-and-organization)
+  - [How is the Repronim schema organized](#how-is-the-repronim-schema-organized)
+
+<!-- /TOC -->
+
 There are 3 repositories behind this checklist:
 
 1.  this
