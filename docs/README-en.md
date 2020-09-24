@@ -32,7 +32,9 @@ different components of the COBIDAS protocol.</p>
 
 <p>This checklist is a project to make a user friendly checklist out the best practices <a href="https://www.humanbrainmapping.org/COBIDASreport">report</a> of the Committee on Best Practices in Data Analysis and Sharing (<a href="https://www.humanbrainmapping.org/cobidas/">COBIDAS</a>) of the <a href="https://www.humanbrainmapping.org">Organization for Human Brain Mapping</a>.</p>
 
-Currently the sections and items in the checklist correspond to the list of metadata used by <a href="https://neurovault.org/">neurovault website</a> when uploading your neuroimaging results.</p>
+Currently the sections and items in the checklist correspond to the list of
+metadata used by <a href="https://neurovault.org/">neurovault website</a> when
+uploading your neuroimaging results.</p>
 
 <p>This is very much of a work in progress but the next step is to expand the list to cover all the items of the COBIDAS report for fMRI as well as for the recent <a href="https://osf.io/a8dhx/">extension to EEG and MEG</a>.</p>
 
@@ -55,7 +57,8 @@ Currently the sections and items in the checklist correspond to the list of meta
 
 <p>From more frequent updates and behind the scenes, come and join us on the <b>cobidas_checklist</b> channel on the brainhack <a href="https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist"><img src="mattermost.png" width=100px /> channel.</a></p>
 
-There is also an [OSF project](https://osf.io/anvqy/) to centralize all the information and repos.</p>
+There is also an [OSF project](https://osf.io/anvqy/) to centralize all the
+information and repos.</p>
 
 <p>We have a <a href="https://github.com/Remi-Gau/COBIDAS_chckls/blob/master/goals.md">list</a> of short, middle, long term goals: if you are interested by any of those get in touch. Many of them do not necessarily require super-advanced technical skills (except maybe a certain love for working with spreadsheet and wanting them to be super organized).</p>
 

@@ -18,33 +18,47 @@
 
 <!-- /TOC -->
 
-The main aim of this project is to improve reporting methods and results in neuroimaging (MRI, fMRI, EEG, MEG, PET...) in order to increase transparency and reproducibility. We want to do this by developing a practical tool based on the COBIDAS checklist that allows users to easily fill in the necessary fields and provide a computer readable output that can then in turn be used to automatically generate parts of the methods section or to facilitate uploading statistical results to Neurovault.
+The main aim of this project is to improve reporting methods and results in
+neuroimaging (MRI, fMRI, EEG, MEG, PET...) in order to increase transparency and
+reproducibility. We want to do this by developing a practical tool based on the
+COBIDAS checklist that allows users to easily fill in the necessary fields and
+provide a computer readable output that can then in turn be used to
+automatically generate parts of the methods section or to facilitate uploading
+statistical results to Neurovault.
 
 **The prototype app for this checklist can be found at those URL:**
 
-- **For the version for fMRI (based on Neurovault): https://ohbm.github.io/cobidas/#/**
+-   **For the version for fMRI (based on Neurovault):
+    https://ohbm.github.io/cobidas/#/**
 
-- **For the version for PET (based an extension to BIDS): https://remi-gau.github.io/cobidas-PET/#/**
+-   **For the version for PET (based an extension to BIDS):
+    https://remi-gau.github.io/cobidas-PET/#/**
 
 ## Want to know more ?
 
 You want to know more about:
 
-- the motivations behind the project?
-- the different goals of the project?
-- how it is implemented?
+-   the motivations behind the project?
+-   the different goals of the project?
+-   how it is implemented?
 
 Head over to our [documentation section](./docs/00_index.md)
 
 ## How to reach us
 
-If you want to be kept posted about the progress of the project, you can join our [google group](https://groups.google.com/d/forum/cobidas-checklist).
+If you want to be kept posted about the progress of the project, you can join
+our [google group](https://groups.google.com/d/forum/cobidas-checklist).
 
-For more frequent updates and behind the scenes, come and join us on the `cobidas_checklist` channel on the brainhack mattermost. <a href="https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist"><img src="http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png" width=100px /> Join our channel </a>
+For more frequent updates and behind the scenes, come and join us on the
+`cobidas_checklist` channel on the brainhack mattermost.
+<a href="https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist"><img src="http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png" width=100px />
+Join our channel </a>
 
-Otherwise you can open a new issue on the repository itself if there is something you would like to discuss directly here.
+Otherwise you can open a new issue on the repository itself if there is
+something you would like to discuss directly here.
 
-There is also an [OSF project](https://osf.io/anvqy/) to try to centralize all the information and repos.
+There is also an [OSF project](https://osf.io/anvqy/) to try to centralize all
+the information and repos.
 
 ## How to contribute
 
@@ -54,7 +68,8 @@ To learn more about how to contribute see [here](./docs/contributions.md).
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people
+([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -91,4 +106,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the
+[all-contributors](https://github.com/all-contributors/all-contributors)
+specification. Contributions of any kind welcome!
