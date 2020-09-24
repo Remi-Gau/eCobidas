@@ -10,11 +10,11 @@
 
 <!-- TOC -->
 
-- [COBIDAS guidelines checklist](#cobidas-guidelines-checklist)
-  - [Want to know more ?](#want-to-know-more-)
-  - [How to reach us](#how-to-reach-us)
-  - [How to contribute](#how-to-contribute)
-  - [Contributors ✨](#contributors-)
+-   [COBIDAS guidelines checklist](#cobidas-guidelines-checklist)
+    -   [Want to know more ?](#want-to-know-more-)
+    -   [How to reach us](#how-to-reach-us)
+    -   [How to contribute](#how-to-contribute)
+    -   [Contributors ✨](#contributors-)
 
 <!-- /TOC -->
 

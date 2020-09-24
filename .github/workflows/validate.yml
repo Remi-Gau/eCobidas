@@ -1,4 +1,4 @@
-name: Test cobidas activities
+name: Test cobidas protocols and activities
 
 on:
   push:

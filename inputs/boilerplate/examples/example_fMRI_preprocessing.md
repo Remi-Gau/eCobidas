@@ -103,7 +103,7 @@ Friston KJ, Ashburner J, Frith CD, Poline J-B, Heather JD & Frackowiak RSJ
 (1995) Spatial registration and normalization of images Hum. Brain Map.
 2:165-189
 
-###  spm_coreg
+### spm_coreg
 
 ```
 % Mutual Information

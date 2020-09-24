@@ -1,7 +1,7 @@
 # Segmentation
 
-Structural images were segmented using [segmentation_software]
-[segmentation_version] by [segmentation_method] with the following parameters:
-[segmentation_parameters]
+Structural images were segmented using `segmentation_software`
+`segmentation_version` by `segmentation_method` with the following parameters:
+`segmentation_parameters`
 
 ## Example

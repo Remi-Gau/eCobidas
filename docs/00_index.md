@@ -1,9 +1,9 @@
 <!-- TOC -->
 
-- [Why this project](#why-this-project)
-- [Goals and roadmap](#goals-and-roadmap)
-- [Implementation](#implementation)
-- [References](#references)
+-   [Why this project](#why-this-project)
+-   [Goals and roadmap](#goals-and-roadmap)
+-   [Implementation](#implementation)
+-   [References](#references)
 
 <!-- /TOC -->
 

@@ -1,6 +1,6 @@
 # Normalization
 
-{if intensity_normalization} [intensity_normalization_choice] intensity
+{if intensity_normalization} `intensity_normalization_choice` intensity
 normalization was performed.
 
 {if structural_intensity_correction} T1 images were bias field corrected.

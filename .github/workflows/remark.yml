@@ -1,5 +1,7 @@
-on: push
 name: Remark Lint
+
+on: push
+
 jobs:
   remark:
     runs-on: ubuntu-latest
@@ -9,7 +11,7 @@ jobs:
       - name: Running Remark
         uses: ocular-d/action-remark@0.0.10
         with:
-          check_dir: 'md'
+          check_dir: '.'
 
       - name: Create Issue
         if: ${{ steps.remark.outputs.exit_code }}
