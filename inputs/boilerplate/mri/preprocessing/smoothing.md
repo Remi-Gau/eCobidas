@@ -4,7 +4,7 @@
 (`smoothing_version`) using a `smoothing_type` (FWHM = `smoothing_size` mm) with
 a `filtering_approach`.
 
-## Example:
+## Example
 
 Native volumes were smoothed using SPM (SPM12 - r7487) using a gaussian (FWHM =
 8 mm) fixed kernel.

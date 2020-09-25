@@ -2,15 +2,15 @@
 
 <!-- TOC -->
 
-- [How to contribute](#how-to-contribute)
-  - [Suggestions](#suggestions)
-    - [Spreadsheets](#spreadsheets)
-    - [Boilerplate method sections](#boilerplate-method-sections)
-    - [Documentation](#documentation)
-    - [Conversion scripts](#conversion-scripts)
-  - [Style guide](#style-guide)
-    - [Python](#python)
-    - [Markdown](#markdown)
+-   [How to contribute](#how-to-contribute)
+    -   [Suggestions](#suggestions)
+        -   [Spreadsheets](#spreadsheets)
+        -   [Boilerplate method sections](#boilerplate-method-sections)
+        -   [Documentation](#documentation)
+        -   [Conversion scripts](#conversion-scripts)
+    -   [Style guide](#style-guide)
+        -   [Python](#python)
+        -   [Markdown](#markdown)
 
 <!-- /TOC -->
 
@@ -73,6 +73,11 @@ files that the user interface needs as inputs to display the checklists.
 ### Python
 
 -   black
+
+On github:
+
+-   pep8
+-   sourcery
 
 ### Markdown
 
