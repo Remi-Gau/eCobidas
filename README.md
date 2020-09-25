@@ -26,13 +26,15 @@ provide a computer readable output that can then in turn be used to
 automatically generate parts of the methods section or to facilitate uploading
 statistical results to Neurovault.
 
-**The prototype app for this checklist can be found at those URL:**
+**The prototype app for this checklist can be found at those URL**
 
+<!-- lint disable -->
 -   **For the version for fMRI (based on Neurovault):
     https://ohbm.github.io/cobidas/#/**
 
 -   **For the version for PET (based an extension to BIDS):
     https://remi-gau.github.io/cobidas-PET/#/**
+<!-- lint enable -->
 
 ## Want to know more ?
 
@@ -42,7 +44,7 @@ You want to know more about:
 -   the different goals of the project?
 -   how it is implemented?
 
-Head over to our [documentation section](./docs/00_index.md)
+Head over to our [documentation](./docs/00_index.md)
 
 ## How to reach us
 
@@ -109,3 +111,5 @@ Thanks goes to these wonderful people
 This project follows the
 [all-contributors](https://github.com/all-contributors/all-contributors)
 specification. Contributions of any kind welcome!
+
+

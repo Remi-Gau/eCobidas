@@ -1,92 +1,43 @@
-# Contributing
+# Who is who
+
+<!--
+TODO
+This probably should be turned into a webpage using some jekyll magic:
+contributor spreadsheet --> yml --> html vie jekyll/liquid
+
+-->
 
 <!-- TOC -->
-<!--lint disable -->
-- [Contributing](#contributing)
-    - [General 'to do list' common for the f/MRI and MEEG app](#general-to-do-list-common-for-the-fmri-and-meeg-app)
-    - ['To do list' for the f/MRI](#to-do-list-for-the-fmri)
-    - [stylde guide](#stylde-guide)
-- [Who's who on the COBIDAS Checklist Team](#whos-who-on-the-cobidas-checklist-team)
-    - [Core team](#core-team)
-    - [Contributions](#contributions)
-        - [Legend](#legend)
-        - [Design, idea, planning](#design-idea-planning)
-        - [MRI spreadsheet](#mri-spreadsheet)
-        - [M/EEG spreadsheet](#meeg-spreadsheet)
-        - [ReproNim schema](#repronim-schema)
-        - [User interface](#user-interface)
-        - [Meta-analysis use case](#meta-analysis-use-case)
-        - [fMRI pre-registration use case](#fmri-pre-registration-use-case)
-        - [EEG / MEG pre-registration use case](#eeg--meg-pre-registration-use-case)
-        - [BIDS compatibility](#bids-compatibility)
-<!--lint enable -->
+
+- [Who is who](#who-is-who)
+  - [Contributors](#contributors)
+  - [Contributions](#contributions)
+    - [Design, idea, planning](#design-idea-planning)
+    - [Spreadsheets](#spreadsheets)
+      - [MRI](#mri)
+      - [MEEG](#meeg)
+      - [Neurovault](#neurovault)
+      - [Eyetracker](#eyetracker)
+    - [Reproschema](#reproschema)
+    - [User interface](#user-interface)
+    - [Use case definition](#use-case-definition)
+      - [Meta-analysis](#meta-analysis)
+      - [fMRI pre-registration](#fmri-pre-registration)
+      - [EEG / MEG pre-registration](#eeg--meg-pre-registration)
+    - [BIDS compatibility](#bids-compatibility)
+    - [Boilerplate method section](#boilerplate-method-section)
+
 <!-- /TOC -->
 
-We have a lot of work to do and many ways in which you can contribute to this
-project.
-
-Before you jump in you can familiarize yourself with:
-
--   the [motivations](./why_this_project.md) of this project
--   the [different short and long term goals](./goals.md)
--   the [general organization of the project](./general_organization.md)
-
-At this stage most of the work requires to interact with the checklists in their
-spreadsheet versions:
-
--   their content is described [here](./spreadsheet_content.md).
--   you can find them in this
-    [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing).
--   the MRI spreadsheet is accessible
-    [here](https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing)
--   the MEEG spreadsheet is accessible
-    [here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
-
-Below is list of the different tasks that you can contribute to. These are
-mostly related to the short term goals of the project. If however you feel more
-interested to start hacking at some of the issues related to long term goals,
-feel free to do so.
-
-## General 'to do list' common for the f/MRI and MEEG app
-
--   Identify high-priority items that will be in the next release of the app.
--   For each item:
-    -   Give it a unique item name (a formula in the MRI spreadsheet should
-        automatically take care of that)
-    -   Create a specific unambiguous question
-    -   Add details and explanation to that item, possibly with examples and/or
-        links to other resources to best guide users
-    -   Identify the response type expected
-    -   Create a response choice list where needed
-    -   Assess whether there is way to not expose users to that item (or some of
-        the response choice for that item) if it is not relevant to them
-        -   by answering another question that would select which following
-            items to show (e.g. 'which preprocessing steps were used?')
-        -   if some response choice are not available for that item based on
-            some previous answer
--   Create a boilerplate method section corresponding to a single item or a set
-    of items.
-
-## 'To do list' for the f/MRI
-
--   For the `acquisition` section create a new schema activity to group all the
-    items that will be found for any MRI sequences
-
-You can check the current
-[kanban](https://github.com/Remi-Gau/COBIDAS_chckls/projects/2) board
-
-## stylde guide
-
-remark npm install `cat npm-requirements.txt`
-
-dead links
-
-# Who's who on the COBIDAS Checklist Team
+## Contributors
 
 The following have contributed to the development of this tool (in alphabetical
-order by last name). If you contributed to the COBIDAS Checklist and your name
-is not listed, please add it (via pull request or get in touch if you don't know
-how to do this).
+order by last name).
+
+If you contributed to the COBIDAS Checklist and your name is not listed, please
+add it by adding your details in
+[this spreadsheet](https://docs.google.com/spreadsheets/d/1v_ReviQZLNxg9T5qCYAfMiA-rZupMnWp03PSNVRGpBI/edit?usp=sharing)
+and let us know about it: we'll take care of the rest.
 
 -   Sanu Ann Abraham
     <a href="https://github.com/sanuann"><img src="img/github.png" width=20px />
@@ -183,7 +134,6 @@ I am PhD student at the University of Jyväskylä, Finland.
     <a href="https://twitter.com/etklapwijk"><img src="img/twitter.png" width=20px /><a/>
 
 -   Tom Nichols
-    <a href="https://github.com/akeshavan"><img src="img/github.png" width=20px /><a/>
     <a href="https://twitter.com/nicholst"><img src="img/twitter.png" width=20px /><a/>
     <a href="http://www.nisox.org/"><img src="img/www.png" width=20px /><a/>
 
@@ -210,45 +160,9 @@ I am PhD student at the University of Jyväskylä, Finland.
     <a href="https://github.com/wdweeda"><img src="img/github.png" width=20px /><a/>
     <a href="https://twitter.com/weedawouter"><img src="img/twitter.png" width=20px /><a/>
 
-## Core team
-
-TBD
-
 ## Contributions
 
-### Legend
-
-source:
-[https://github.com/kentcdodds/all-contributors](https://github.com/kentcdodds/all-contributors)
-
-| Emoji | Represents                                            |
-| :---- | :---------------------------------------------------- |
-| 💬    | Answering Questions (on gitter, GitHub, or in person) |
-| 🐛    | Bug reports                                           |
-| 📝    | Blogposts                                             |
-| 💻    | Code                                                  |
-| 📖    | Documentation and specification                       |
-| 🎨    | Design                                                |
-| 💡    | Examples                                              |
-| 📋    | Event Organizers                                      |
-| 💵    | Financial Support                                     |
-| 🔍    | Funding/Grant Finders                                 |
-| 🤔    | Ideas & Planning                                      |
-| 🚇    | Infrastructure (Hosting, Build-Tools, etc)            |
-| 🔌    | Plugin/utility libraries                              |
-| 👀    | Reviewed Pull Requests                                |
-| 🔧    | Tools                                                 |
-| 🌍    | Translation                                           |
-| ⚠️    | Tests                                                 |
-| ✅    | Tutorials                                             |
-| 📢    | Talks                                                 |
-| 📹    | Videos                                                |
-
----
-
----
-
-Below is a more precise breakdown of who contributed to what
+Below is a more precise breakdown of who contributed to what:
 
 ### Design, idea, planning
 
@@ -262,46 +176,59 @@ Below is a more precise breakdown of who contributed to what
 -   Cristina Scarpazza
 -   Tom Nichols
 
-### MRI spreadsheet
+### Spreadsheets
+
+#### MRI
 
 -   Cassandra Gould van Praag
 -   Rémi Gau
 -   Ilona Ruotsalainen
 -   Angie Tepper
 
-### M/EEG spreadsheet
+#### MEEG
 
 -   Mary Miedema
 -   Martina G. Vilas
 -   Federico Adolfi
+-   Rémi Gau
 
-### ReproNim schema
+#### Neurovault
+
+-   Rémi Gau
+
+#### Eyetracker
+
+-   Rémi Gau
+
+### Reproschema
 
 -   Sanu Ann Abraham
+-   Satrajit Ghosh
 -   Anisha Keshavan
 -   Rémi Gau
--   Satrajit Ghosh
 
 ### User interface
 
+-   Sanu Ann Abraham
 -   Federico Adolfi
 -   Rémi Gau
 -   Tim Van Mourik
--   Sanu Ann Abraham
 -   Anisha Keshavan
 
-### Meta-analysis use case
+### Use case definition
+
+#### Meta-analysis
 
 -   Cristina Scarpazza
 -   David Moreau
 
-### fMRI pre-registration use case
+#### fMRI pre-registration
 
 -   Zsuzsika Sjoerds
 -   Kristina Wiebels
 -   Rémi Gau
 
-### EEG / MEG pre-registration use case
+#### EEG / MEG pre-registration
 
 -   James Bartlett
 -   Ruud Hortensius
@@ -313,3 +240,8 @@ Below is a more precise breakdown of who contributed to what
 -   Zsuzsika Sjoerds
 -   Kristina Wiebels
 -   Rémi Gau
+
+### Boilerplate method section
+
+-   Wouter Weeda
+-   Dorien Huijser

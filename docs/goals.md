@@ -1,25 +1,25 @@
 # Goals
 
 <!-- TOC -->
-<!-- lint disable -->
--   [Goals](#goals)
-    -   [Imagined impact on the field of neuroimaging ("pie in the sky" goals)](#imagined-impact-on-the-field-of-neuroimaging-pie-in-the-sky-goals)
-    -   [Requirements for the implementation](#requirements-for-the-implementation)
-    -   [Milestones (short term goals)](#milestones-short-term-goals)
-        -   [MRI COBIDAS](#mri-cobidas)
-        -   [M/EEG COBIDAS](#meeg-cobidas)
-    -   [Extensions (intermediate goals)](#extensions-intermediate-goals)
-        -   [Extended checklists](#extended-checklists)
-        -   [Links with BIDS and NIDM](#links-with-bids-and-nidm)
-        -   [Links to standarized pipelines (fMRIprep)](#links-to-standarized-pipelines-fmriprep)
-        -   [Automatic information extraction from source data (DICOM)](#automatic-information-extraction-from-source-data-dicom)
-    -   [Further developments (long term goals)](#further-developments-long-term-goals)
-        -   [Link to main neuroimaging software](#link-to-main-neuroimaging-software)
-        -   [Link to pipeline-creating tools](#link-to-pipeline-creating-tools)
-        -   [Link to journal specific checklists](#link-to-journal-specific-checklists)
-        -   [Link to neurolex](#link-to-neurolex)
-    -   [Potential applications ("pie in the sky" goals)](#potential-applications-pie-in-the-sky-goals)
-<!-- lint enable -->
+
+- [Goals](#goals)
+  - [Imagined impact on the field of neuroimaging ("pie in the sky" goals)](#imagined-impact-on-the-field-of-neuroimaging-pie-in-the-sky-goals)
+  - [Requirements for the implementation](#requirements-for-the-implementation)
+  - [Milestones (short term goals)](#milestones-short-term-goals)
+    - [MRI COBIDAS](#mri-cobidas)
+    - [M/EEG COBIDAS](#meeg-cobidas)
+  - [Extensions (intermediate goals)](#extensions-intermediate-goals)
+    - [Extended checklists](#extended-checklists)
+    - [Links with BIDS and NIDM](#links-with-bids-and-nidm)
+    - [Links to standarized pipelines (fMRIprep)](#links-to-standarized-pipelines-fmriprep)
+    - [Automatic information extraction from source data (DICOM)](#automatic-information-extraction-from-source-data-dicom)
+  - [Further developments (long term goals)](#further-developments-long-term-goals)
+    - [Link to main neuroimaging software](#link-to-main-neuroimaging-software)
+    - [Link to pipeline-creating tools](#link-to-pipeline-creating-tools)
+    - [Link to journal specific checklists](#link-to-journal-specific-checklists)
+    - [Link to neurolex](#link-to-neurolex)
+  - [Potential applications ("pie in the sky" goals)](#potential-applications-pie-in-the-sky-goals)
+
 <!-- /TOC -->
 
 ## Imagined impact on the field of neuroimaging ("pie in the sky" goals)
