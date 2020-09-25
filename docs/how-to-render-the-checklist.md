@@ -1,16 +1,16 @@
 # How the checklist is rendered
 
 <!-- TOC -->
-<!-- lint disable -->
--   [How the checklist is rendered](#how-the-checklist-is-rendered)
-    -   [How to](#how-to) -
-    [Turn the spreadsheet into the schema](#turn-the-spreadsheet-into-the-schema) -
-    [Making the new schema available to the cobidas-ui](#making-the-new-schema-available-to-the-cobidas-ui) -
-    [Rendering the checklist](#rendering-the-checklist) -
-    [Run Locally with node.js](#run-locally-with-nodejs) -
-    [Run locally with docker or docker-compose](#run-locally-with-docker-or-docker-compose) -
-    [Run remotely with heroku](#run-remotely-with-heroku)
-<!-- lint enable -->
+
+- [How the checklist is rendered](#how-the-checklist-is-rendered)
+  - [How to](#how-to)
+    - [Turn the spreadsheet into the schema](#turn-the-spreadsheet-into-the-schema)
+    - [Making the new schema available to the cobidas-ui](#making-the-new-schema-available-to-the-cobidas-ui)
+    - [Rendering the checklist](#rendering-the-checklist)
+      - [Run Locally with node.js](#run-locally-with-nodejs)
+      - [Run locally with docker or docker-compose](#run-locally-with-docker-or-docker-compose)
+      - [Run remotely with heroku](#run-remotely-with-heroku)
+
 <!-- /TOC -->
 
 First make sure you understand how the different part of this project are

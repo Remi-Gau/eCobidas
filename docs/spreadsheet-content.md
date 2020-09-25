@@ -1,5 +1,45 @@
 # Spreadsheet content
 
+<!-- TOC -->
+
+- [Spreadsheet content](#spreadsheet-content)
+  - [Referencing](#referencing)
+  - [Filtering](#filtering)
+  - [Schema activity name](#schema-activity-name)
+  - [Item name](#item-name)
+  - [Question	and details](#question	and-details)
+  - [Format](#format)
+  - [Visibility and branching logic](#visibility-and-branching-logic)
+  - [Default options](#default-options)
+  - [Import from other sources](#import-from-other-sources)
+  - [Comparison to Carp 2012](#comparison-to-carp-2012)
+  - [Meta analysis use case](#meta-analysis-use-case)
+
+<!-- /TOC -->
+
+-   Identify high-priority items that will be in the next release of the app.
+-   For each item:
+    -   Give it a unique item name (a formula in the MRI spreadsheet should
+        automatically take care of that)
+    -   Create a specific unambiguous question
+    -   Add details and explanation to that item, possibly with examples and/or
+        links to other resources to best guide users
+    -   Identify the response type expected
+    -   Create a response choice list where needed
+    -   Assess whether there is way to not expose users to that item (or some of
+        the response choice for that item) if it is not relevant to them
+        -   by answering another question that would select which following
+            items to show (e.g. 'which preprocessing steps were used?')
+        -   if some response choice are not available for that item based on
+            some previous answer
+
+-   you can find them in this
+    [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing).
+-   the MRI spreadsheet is accessible
+    [here](https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing)
+-   the MEEG spreadsheet is accessible
+    [here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
+
 The spreadsheets (found [here](https://drive.google.com/open?id=1ydwALHDzl21dcef3qhkju8JKKAT3Y72V)) contain all relevant information needed to develop the [COBIDAS app](https://cobidas-checklist.herokuapp.com/#/) further. The aim is to have one COBIDAS checklist item (one question) per row. In general, it is recommended to NOT hide rows but instead to filter using some of the columns.
 
 The MRI spreadsheet has some conditional formatting implemented so some cells will appear red when there is an error to be fixed. Some items that require more work might be manually highlighted in orange.
