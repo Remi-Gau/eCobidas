@@ -9,26 +9,28 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- TOC -->
-<!-- lint disable -->
+
 -   [COBIDAS guidelines checklist](#cobidas-guidelines-checklist)
     -   [Want to know more ?](#want-to-know-more-)
     -   [How to reach us](#how-to-reach-us)
     -   [How to contribute](#how-to-contribute)
     -   [Contributors ✨](#contributors-)
-<!-- lint enable -->
+
 <!-- /TOC -->
 
 The main aim of this project is to improve reporting methods and results in
-neuroimaging (MRI, fMRI, EEG, MEG, PET...) in order to increase transparency and
-reproducibility. We want to do this by developing a practical tool based on the
-COBIDAS checklist that allows users to easily fill in the necessary fields and
-provide a computer readable output that can then in turn be used to
-automatically generate parts of the methods section or to facilitate uploading
-statistical results to Neurovault.
+neuroimaging ( (f)MRI, (i)EEG, MEG, PET... ) in order to increase transparency
+and reproducibility.
+
+We want to do this by developing a practical tool based on the COBIDAS checklist
+that allows users to easily fill in the necessary fields and provide a computer
+readable output that can then, in turn, be used to automatically generate parts
+of the methods section.
 
 **The prototype app for this checklist can be found at those URL**
 
 <!-- lint disable -->
+
 -   **For the version for fMRI (based on Neurovault):
     https://ohbm.github.io/cobidas/#/**
 
@@ -44,7 +46,7 @@ You want to know more about:
 -   the different goals of the project?
 -   how it is implemented?
 
-Head over to our [documentation](./docs/00_index.md)
+Head over to our [documentation](./docs/00-index.md)
 
 ## How to reach us
 
@@ -66,12 +68,14 @@ the information and repos.
 
 We are looking for people to give us feedback or help us move forward.
 
-To learn more about how to contribute see [here](./docs/contributions.md).
+To learn more about how to contribute see [here](./docs/80-how-to-contribute.md).
 
 ## Contributors ✨
 
 Thanks goes to these wonderful people
-([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+([emoji key](https://allcontributors.org/docs/en/emoji-key)).
+
+For a more detailed description of the contributions, see [here](./docs/90-contributors.md).
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -111,5 +115,3 @@ Thanks goes to these wonderful people
 This project follows the
 [all-contributors](https://github.com/all-contributors/all-contributors)
 specification. Contributions of any kind welcome!
-
-

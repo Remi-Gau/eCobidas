@@ -31,9 +31,6 @@ contributor spreadsheet --> yml --> html vie jekyll/liquid
 
 ## Contributors
 
-The following have contributed to the development of this tool (in alphabetical
-order by last name).
-
 If you contributed to the COBIDAS Checklist and your name is not listed, please
 add it by adding your details in
 [this spreadsheet](https://docs.google.com/spreadsheets/d/1v_ReviQZLNxg9T5qCYAfMiA-rZupMnWp03PSNVRGpBI/edit?usp=sharing)

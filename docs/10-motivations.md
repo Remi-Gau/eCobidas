@@ -1,4 +1,4 @@
-# Project motivation
+# Project motivations
 
 In 2012, in a
 [review of the methods and results reporting of more than 200 fMRI papers](https://www.ncbi.nlm.nih.gov/pubmed/22796459)
@@ -20,10 +20,10 @@ do not seem to have been widely adopted and anecdotal evidence
 suggests that, even among people who know about the report, few of them use it
 to write or review papers.
 
-A [recent survey from ISMRM](https://ismrm.github.io/rrsg/QuestionnaireSummary/)
-seems to suggest that the lack of method details is big problem in MRI research
-in general but also that there seems to be little knowledge of the existence of
-the COBIDAS report outside of some circles.
+A [survey from ISMRM](https://ismrm.github.io/rrsg/QuestionnaireSummary/) seems
+to suggest that the lack of method details is big problem in MRI research in
+general but also that there seems to be little knowledge of the existence of the
+COBIDAS report outside of some circles.
 
 One possible reason for this might be the unwieldy nature of the report.
 Anticipating this issue, the authors of the guidelines included a checklist
@@ -32,15 +32,6 @@ document. Anyone who has used this checklist tends to agree that it is a great
 resource but that it is a bit cumbersome to interpret and apply.
 
 So the goal of this project is to facilitate the use of this checklist. But, if
-done righ, this could also in the long term enhance the adoption of eme
-
+done right, this could also in the long term enhance the adoption of emerging
 neuroimaging standards (BIDS, fMRIprep, NIDM...), facilitate data sharing and
 pre-registration, help with peer-review...
-
-## Similar projects
-
-Other checklists:
-
--   [Checklist for Artifical Intelligence in Medical Imaging](https://claim.shinyapps.io/CLAIM/)
--   [Consensus on the reporting and experimental design of clinical and cognitive-beharioural neurofeedback studies](https://crednf.shinyapps.io/CREDnf/)
--   [Transparency Checklist](http://www.shinyapps.org/apps/TransparencyChecklist/)

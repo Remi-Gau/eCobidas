@@ -30,13 +30,13 @@ This checklist could:
     published papers, both human- and machine-readible (use the app to
     **document** pipelines)
 
-2.  facilitate pre-registration and registered reports (use the app to
+1.  facilitate pre-registration and registered reports (use the app to
     **create** pipelines)
 
-3.  facilitate systematic literature reviews and meta-analyses (use the app to
+1.  facilitate systematic literature reviews and meta-analyses (use the app to
     **read** pipelines)
 
-4.  facilitate data sharing (use the app to **standardize** the report of
+1.  facilitate data sharing (use the app to **standardize** the report of
     information)
 
 If the json file it creates is accepted by neuroimaging databases (e.g
@@ -48,21 +48,12 @@ from
 [neurovault](https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv)
 are already present in the COBIDAS checklist.
 
-5.  help make peer-review more objective (use the app to **check** pipelines)
+1.  help make peer-review more objective (use the app to **check** pipelines)
 
 Reviewers could use the website to systematically cross-check that all the
 required methods and results information are present for a given paper. A tool
 to compare COBIDAS-json files could help editors visualize agreement across
 reviewers' json file.
-
-For an example, see this paper by
-[Aczel et al. 2020](https://www.nature.com/articles/s41562-019-0772-6) and the
-respective [shinyapp](http://www.shinyapps.org/apps/TransparencyChecklist/).
-
-Similar checklists aso exist for other subfields in neuroimaging:
-
--   [Checklist for Artifical Intelligence in Medical Imaging](https://claim.shinyapps.io/CLAIM/)
--   [Consensus on the reporting and experimental design of clinical and cognitive-beharioural neurofeedback studies](https://crednf.shinyapps.io/CREDnf/)
 
 ## Requirements for the implementation
 

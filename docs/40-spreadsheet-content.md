@@ -1,22 +1,5 @@
 # Spreadsheet content
 
-<!-- TOC -->
-
--   [Spreadsheet content](#spreadsheet-content)
-    -   [Referencing](#referencing)
-    -   [Filtering](#filtering)
-    -   [Schema activity name](#schema-activity-name)
-    -   [Item name](#item-name)
-    -   [Question and details](#question and-details)
-    -   [Format](#format)
-    -   [Visibility and branching logic](#visibility-and-branching-logic)
-    -   [Default options](#default-options)
-    -   [Import from other sources](#import-from-other-sources)
-    -   [Comparison to Carp 2012](#comparison-to-carp-2012)
-    -   [Meta analysis use case](#meta-analysis-use-case)
-
-<!-- /TOC -->
-
 -   Identify high-priority items that will be in the next release of the app.
 -   For each item:
 

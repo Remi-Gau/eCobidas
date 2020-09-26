@@ -8,6 +8,7 @@
         -   [Boilerplate method sections](#boilerplate-method-sections)
         -   [Documentation](#documentation)
         -   [Conversion scripts](#conversion-scripts)
+        -   [User interface](#user-interface)
     -   [Style guide](#style-guide)
         -   [Python](#python)
         -   [Markdown](#markdown)
@@ -29,8 +30,6 @@ We are also track the progress to our different goals using some of the
 integrated [kanban boards](https://github.com/Remi-Gau/cobidas_chckls/projects)
 that github offers.
 
--   [Kanban - Documentation](https://github.com/Remi-Gau/cobidas_chckls/projects/5)
-
 > [Kanban boards](https://en.wikipedia.org/wiki/Kanban):
 
 > They are a great way to keep track of who is doing what, how the different
@@ -41,9 +40,9 @@ that github offers.
 If you are unsure where to start, maybe have a read through some of those
 sections about the project. It might give you ideas.
 
--   the [motivations](./motivations.md) of this project
--   the [different short and long term goals](./goals.md)
--   the [general organization of the project](./general-organization.md)
+-   the [motivations](./10-motivations.md) of this project
+-   the [different short and long term goals](./20-goals.md)
+-   the [general organization of the project](./30-general-organization.md)
 
 Otherwise here are some suggestions of the different tasks that you can
 contribute to. If however you feel more interested to start hacking at some of
@@ -52,39 +51,57 @@ the issues related to long other goals, feel free to do so.
 ### Spreadsheets
 
 A lot of the work requires to interact with the checklists in their spreadsheet
-versions:
-
-Their content is described [here](./spreadsheet_content.md).
+versions: their content is described [here](./40-spreadsheet_content.md).
 
 ### Boilerplate method sections
 
-Create a boilerplate method section corresponding to a single item or a set of
-items.
+We want to create [boilerplate method sections](../inputs/boilerplate)
+corresponding to a single item or a set of items of the checklist to automate
+methods writing once the checklist is completed. There is a lot of work to do
+there in terms of writing the boilerplate text as well as automating the methods
+section generation.
 
 ### Documentation
 
+If you don't understand something about the project, its goals, its
+implementation or how to use, then it's most likely that we did not do a good
+enough job at explaining and describing it.
+[Get in touch](../README.md#how-to-reach-us) and we can work together to improve
+our documentation.
+
 ### Conversion scripts
 
-We use some python code to convert the spreadsheets into the set of `jsonld`
-files that the user interface needs as inputs to display the checklists.
+We use some [python code](../scripts) to convert the spreadsheets into the set
+of `jsonld` files that the user interface needs as inputs to display the
+checklists. This needs further improvement so if python is your jam, feel free
+to dive in.
+
+### User interface
+
+<!-- TODO add link to ui -->
+
+The user interface is Javascript based and uses the Vue framework and this also
+needs a lot of tweaking, so if Javascript is cup of tea:
+[get in touch!](../README.md#how-to-reach-us)
 
 ## Style guide
 
 ### Python
 
--   black
+We rely on [black](https://github.com/psf/black) to automate the python code
+formatting.
 
-On github:
+We have additional checks on Github for code style and quality.
 
--   pep8
--   sourcery
+-   [pep8 speaks](https://github.com/marketplace/pep-8-speaks) for code style
+-   the awesome [sourcery](https://github.com/marketplace/sourcery-ai) for code
+    quality and refactoring suggestions.
 
 ### Markdown
 
--   remark
+-   For markdown styling we rely on
+    [remark](https://github.com/remarkjs/remark-lint).
 
-```
-remark npm install `cat npm-requirements.txt`
-```
-
--   dead links
+-   We check for dead links using the
+    [markdown-link-check](https://github.com/marketplace/actions/markdown-link-check)
+    github action.
