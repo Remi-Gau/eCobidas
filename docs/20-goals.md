@@ -61,6 +61,7 @@ The implementation of this project should remain flexible enough to:
 
 -   accommodate the inclusion of new items in the checklist as new neuroimaging
     methods mature (e.g. new multivariate analysis, high-resolution MRI...),
+
 -   easily fork the project and convert it to create a checklist-website for a
     different field.
 
@@ -87,7 +88,9 @@ There is now work to be done to extend what this app can do so we can have a
 first release that could be used for a typical fMRI study with:
 
 -   a single functional task
+
 -   one anatomical scan
+
 -   using mass uni-variate analysis
 
 To reach that first milestone we still need to work on the following issues:
@@ -95,10 +98,13 @@ To reach that first milestone we still need to work on the following issues:
 -   Identify high-priority items that at least include those from
     [Carp 2012](https://www.ncbi.nlm.nih.gov/pubmed/22796459) to make sure users
     do better than 50% of the papers reported in this study
+
 -   Create a version of the spreadsheet where each of those high priority items
     has been properly atomized (i.e. it is only composed of a single question)
+
 -   Identify ways in which the user experience can be improved, mostly by
     finding ways to minimize the time users have to spend using the app.
+
 -   Identify defaults in the most common software packages (SPM, FSL, AFNI) to
     inform users about potential answers
 
@@ -114,11 +120,14 @@ The main short term goals for the MEEG version are:
 
 -   Identify overlaps between the MEEG and the f/MRI spreadsheet and harmonize
     both versions
+
 -   Identify high-priority items in the checklist (similar to Carp 2012 for
     fMRI, e.g.
     [Luck & Gaspelin 2015](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.12639))
+
 -   Create a version of the spreadsheet where each of those high priority items
     has been properly atomized (i.e it is only composed of a single question)
+
 -   For each item:
     -   Give it an item name
     -   Create a specific unambiguous question
@@ -144,7 +153,8 @@ existing standards for data and results curation like:
 
 1. the brain imaging data structure ([BIDS](http://bids.neuroimaging.io/)) used
    for that study,
-2. the [NIDM results](http://nidm.nidash.org/specs/nidm-results_130.html) of any
+
+1. the [NIDM results](http://nidm.nidash.org/specs/nidm-results_130.html) of any
    mass-univariate analysis performed for this study.
 
 **BIDS** is an emerging standard to organize neuroimaging data (MRI, fMRI,
@@ -235,9 +245,11 @@ This checklist could:
 
 1.  facilitate pre-registration and registered reports
 
-2.  facilitate systematic literature reviews and meta-analysis
+1.  facilitate systematic literature reviews and meta-analysis
 
-3.  facilitate data sharing
+1.  facilitate data sharing
+
+1.  help make peer-review more objective
 
 If the json file it creates is accepted by neuroimaging databases (e.g.
 neurovault) as metadata input, this could reduces friction for data sharing.
@@ -247,8 +259,6 @@ has a checklist of its own, when sharing data). For example the metadata fields
 from
 [neurovault](https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv)
 are already present in the COBIDAS checklist.
-
-4.  help make peer-review more objective
 
 Reviewers could use the website to systematically cross-check that all the
 required methods and results information are present for a given paper. A tool

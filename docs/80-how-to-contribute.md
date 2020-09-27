@@ -41,7 +41,9 @@ If you are unsure where to start, maybe have a read through some of those
 sections about the project. It might give you ideas.
 
 -   the [motivations](./10-motivations.md) of this project
+
 -   the [different short and long term goals](./20-goals.md)
+
 -   the [general organization of the project](./30-general-organization.md)
 
 Otherwise here are some suggestions of the different tasks that you can
@@ -65,12 +67,16 @@ The content of the spreadsheet is described in more details
 
 -   The neurovault spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing)
+
 -   The PET spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing)
+
 -   The eyetracker spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o/edit?usp=sharing)
+
 -   The MRI spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing)
+
 -   The M/EEG spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
 
@@ -82,7 +88,8 @@ methods writing once the checklist is completed. There is a lot of work to do
 there in terms of writing the boilerplate text as well as automating the methods
 section generation.
 
-Boilerplate related issues listed [here](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate).
+Boilerplate related issues listed
+[here](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate).
 
 ### Documentation
 
@@ -103,10 +110,10 @@ of `jsonld` files that the user interface needs as inputs to display the
 checklists. This needs further improvement so if python is your jam, feel free
 to dive in.
 
-Boilerplate related issues listed [here](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate).
+Boilerplate related issues listed
+[here](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate).
 
-We are 
-https://github.com/ReproNim/reproschema-py
+We are https://github.com/ReproNim/reproschema-py
 
 ### User interface
 
@@ -115,7 +122,9 @@ and uses the [Vue framework](https://vuejs.org/) and this also needs a lot of
 tweaking, so if Javascript is cup of tea:
 [get in touch!](../README.md#how-to-reach-us)
 
-Here are [some of the issues](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Auser-interface) related to the UI.
+Here are
+[some of the issues](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Auser-interface)
+related to the UI.
 
 ## Style guide
 
@@ -127,6 +136,7 @@ formatting.
 We have additional checks on Github for code style and quality.
 
 -   [pep8 speaks](https://github.com/marketplace/pep-8-speaks) for code style
+
 -   the awesome [sourcery](https://github.com/marketplace/sourcery-ai) for code
     quality and refactoring suggestions.
 

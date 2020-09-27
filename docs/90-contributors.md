@@ -5,8 +5,7 @@ TODO
 This probably should be turned into a webpage using some jekyll magic:
 contributor spreadsheet --> yml --> html vie jekyll/liquid
 
-Or at least use a bash/python script to generate the content.
--->
+Or at least use a bash/python script to generate the content. -->
 
 <!-- TOC -->
 
@@ -37,7 +36,8 @@ add it by adding your details in
 [this spreadsheet](https://docs.google.com/spreadsheets/d/1v_ReviQZLNxg9T5qCYAfMiA-rZupMnWp03PSNVRGpBI/edit?usp=sharing)
 and let us know about it: we'll take care of the rest.
 
-Make sure that you are also listed as a contributor on our [OSF project](https://osf.io/anvqy/).
+Make sure that you are also listed as a contributor on our
+[OSF project](https://osf.io/anvqy/).
 
 -   Sanu Ann Abraham
     <a href="https://github.com/sanuann"><img src="img/github.png" width=20px />

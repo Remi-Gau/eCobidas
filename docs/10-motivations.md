@@ -2,10 +2,10 @@
 
 In 2012, in a
 [review of the methods and results reporting of more than 200 fMRI papers](https://www.ncbi.nlm.nih.gov/pubmed/22796459)
-the author found that "_Although many journals urge authors to describe their
+the author found that "*Although many journals urge authors to describe their
 methods to a level of detail such that independent investigators can fully
 reproduce their efforts, the results described here suggest that few studies
-meet this criterion._"
+meet this criterion.*"
 
 A few years ago, in order to improve reproducibility in f/MRI research, the
 Committee on Best Practices in Data Analysis and Sharing

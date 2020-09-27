@@ -7,7 +7,9 @@ us know if we missed something.
 ## The COBIDAS reports
 
 -   [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)
+
 -   [for EEG and MEG](https://osf.io/a8dhx/)
+
 -   MEEG report presentation at
     [OHBM 2019](https://www.pathlms.com/ohbm/courses/12238/sections/15843/video_presentations/138196)
 
@@ -25,10 +27,14 @@ checklist (thanks to [Cass](https://github.com/cassgvp)!!!)
 ## Related reporting guidelines
 
 -   [Guideline for Reporting Standards of Eye-tracking Research in Decision Sciences](https://psyarxiv.com/f6qcy/)
+
 -   [Guidelines for the content and format of PET brain data in publications and archives: A consensus paper](https://doi.org/10.1177/0271678X20905433)
 
 ## Related checklists
 
-- [A consensus-based transparency checklist](https://www.nature.com/articles/s41562-019-0772-6) and its [shinyapp](http://www.shinyapps.org/apps/TransparencyChecklist/)
+-   [A consensus-based transparency checklist](https://www.nature.com/articles/s41562-019-0772-6)
+    and its [shinyapp](http://www.shinyapps.org/apps/TransparencyChecklist/)
+
 -   [Checklist for Artifical Intelligence in Medical Imaging](https://claim.shinyapps.io/CLAIM/)
+
 -   [Consensus on the reporting and experimental design of clinical and cognitive-beharioural neurofeedback studies](https://crednf.shinyapps.io/CREDnf/)
