@@ -51,7 +51,28 @@ the issues related to long other goals, feel free to do so.
 ### Spreadsheets
 
 A lot of the work requires to interact with the checklists in their spreadsheet
-versions: their content is described [here](./40-spreadsheet_content.md).
+format.
+
+The spreadsheets are hosted on this
+[google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
+and we try to keep a back-up in the [csv folder](./inputs/csv).
+
+The MRI part is the more advanced at this moment but we are looking for people
+to help with the M/EEG part.
+
+The content of the spreadsheet is described in more details
+[here](./40-spreadsheet-content.md).
+
+-   The neurovault spreadsheet is
+    [here](https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing)
+-   The PET spreadsheet is
+    [here](https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing)
+-   The eyetracker spreadsheet is
+    [here](https://docs.google.com/spreadsheets/d/1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o/edit?usp=sharing)
+-   The MRI spreadsheet is
+    [here](https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing)
+-   The M/EEG spreadsheet is
+    [here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
 
 ### Boilerplate method sections
 
@@ -61,6 +82,8 @@ methods writing once the checklist is completed. There is a lot of work to do
 there in terms of writing the boilerplate text as well as automating the methods
 section generation.
 
+Boilerplate related issues listed [here](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate).
+
 ### Documentation
 
 If you don't understand something about the project, its goals, its
@@ -69,6 +92,10 @@ enough job at explaining and describing it.
 [Get in touch](../README.md#how-to-reach-us) and we can work together to improve
 our documentation.
 
+There are also
+[several aspects of the documentation](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Adocumentation)
+that need to be expanded.
+
 ### Conversion scripts
 
 We use some [python code](../scripts) to convert the spreadsheets into the set
@@ -76,13 +103,19 @@ of `jsonld` files that the user interface needs as inputs to display the
 checklists. This needs further improvement so if python is your jam, feel free
 to dive in.
 
+Boilerplate related issues listed [here](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate).
+
+We are 
+https://github.com/ReproNim/reproschema-py
+
 ### User interface
 
-<!-- TODO add link to ui -->
-
-The user interface is Javascript based and uses the Vue framework and this also
-needs a lot of tweaking, so if Javascript is cup of tea:
+The [user interface](https://github.com/ReproNim/schema-ui) is Javascript based
+and uses the [Vue framework](https://vuejs.org/) and this also needs a lot of
+tweaking, so if Javascript is cup of tea:
 [get in touch!](../README.md#how-to-reach-us)
+
+Here are [some of the issues](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Auser-interface) related to the UI.
 
 ## Style guide
 

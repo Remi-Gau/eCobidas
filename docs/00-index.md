@@ -42,8 +42,21 @@ necessarily require super-advanced technical skills (except maybe a certain love
 for working with spreadsheet and wanting them to be super organized) :wink:.
 
 We are still in development so we are currently using the
-[list of required inputs](./xlsx/metadata_neurovault.csv) from
+[list of required inputs](./inputs/csv/cobidas_neurovault.csv) from
 [neurovault](https://www.neurovault.org/) to work on the user interface.
+
+
+<!-- ```
+├── 00-index.md
+├── 10-motivations.md
+├── 20-goals.md
+├── 30-general-organization.md
+├── 40-spreadsheet-content.md
+├── 50-how-to-render-the-checklist.md
+├── 80-how-to-contribute.md
+├── 90-contributors.md
+└── 99-references.md
+``` -->
 
 ## Implementation
 
@@ -69,10 +82,10 @@ of this schema representation:
     will prevent users to be presented with items that are not relevant to them
     (e.g. answer PET-related questions when they have only run an fMRI study).
 
-See [here](./30-general_organization.md) for more information about how this
+See [here](./30-general-organization.md) for more information about how this
 whole project is organized.
 
-See [here](./50-how_to_render_the_checklist.md) for more information on how to
+See [here](./50-how-to-render-the-checklist.md) for more information on how to
 work on the checklist on your own computer.
 
 ## References

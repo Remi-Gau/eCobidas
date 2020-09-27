@@ -9,6 +9,25 @@
 
 <!-- /TOC -->
 
+<!-- TODO
+- mention OSF
+- mention Zotero
+ -->
+
+<!-- ```
+.
+├── activities
+├── communication
+├── docs
+├── inputs
+├── node_modules
+├── protocols
+├── response_options
+├── schema
+├── scripts
+└── tests
+``` -->
+
 There are 3 repositories behind this checklist:
 
 1.  this
@@ -18,46 +37,37 @@ There are 3 repositories behind this checklist:
     -   the python [script](./python/create_ecobidas_schema.py) to turn that
         spreadsheet into a Repronim schema (basically a bunch hierarchically
         organized json files that link to each other).
-2.  this
-    [fork of the ReproNim reproschema repository](https://github.com/Remi-Gau/reproschema)
-    that hosts the schema representation of the checklist
-3.  the [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui) that
+
+2. Reproschema
+
+3. the ui
+
+  the [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui) that
     does the actual rendering of the checklist app by reading the schema hosted
     by the previous repository. There is a general explanation of how the app
     works in this [issue](https://github.com/ReproNim/schema-ui/issues/4). The
     prototype app for this checklist can be, for now, found
     [here](https://cobidas-checklist.herokuapp.com/)
 
-You will need to fork and clone each of them if you want to work on the
-checklist on your own. If you want some stable versions of the repositories this
-table gives you a link to the most recent ones.
+ohbm/cobidas repo
 
-| Repositories                                                                | Used version                                                             |
-| --------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| [COBIDAS checklist repository](https://github.com/Remi-Gau/COBIDAS_chckls/) | [v0.0.1](https://github.com/Remi-Gau/COBIDAS_chckls/releases/tag/v0.0.1) |
-| [reproschema repository](https://github.com/Remi-Gau/reproschema)           | [v0.0.1](https://github.com/Remi-Gau/reproschema/releases/tag/v0.0.1)    |
-| [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui)             | [v0.0.1](https://github.com/Remi-Gau/cobidas-ui/releases/tag/v0.0.1)     |
+add info on reproschema template about what to modify
 
-## Spreadsheet work
+## Spreadsheet content and organization
 
-So far most of the work is being done in spreadsheets hosted on this
-[google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
-and we try to keep a back-up in the [xlsx folder](./xlsx/).
+See the dedicated [document](./spreadsheet-content.md)
 
-The MRI spreadsheet is accessible
-[here](https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing)
+## How is the Reproschema organized
 
-The M/EEG spreadsheet is accessible
-[here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
+<!-- TODO link to reproschema doc -->
 
-The MRI part is the most advanced at this moment but we are looking for people
-to help with the M/EEG part.
+https://www.repronim.org/reproschema/
 
-### Spreadsheet content and organization
+https://www.repronim.org/reproschema/98_FAQ/ 
 
-See the dedicated [document](./spreadsheet_content.md)
+https://github.com/ReproNim/reproschema/pull/399
 
-## How is the Repronim schema organized
+https://github.com/Remi-Gau/reproschema/tree/remi-documentation/docs
 
 The first step to create the checklist involves taking a spreadsheet that
 contains all the items and turning that into a representation that can
