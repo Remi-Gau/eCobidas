@@ -1,8 +1,80 @@
 {
-    "column_name": {
+    "include": {
         "LongName": "",
+        "VariableName": "include",
+        "Description": "whether the item should be generated and included in the activity",
+        "Levels": ""
+    },
+    "activity": {
+        "LongName": "",
+        "VariableName": "section",
+        "Description": "name of the activity this item is part of",
+        "Levels": ""
+    },
+    "activity_pref_label": {
+        "LongName": "",
+        "VariableName": "activity_pref_label",
+        "Description": "preferred label of the activity",
+        "Levels": ""
+    },
+    "activity_descrip": {
+        "LongName": "",
+        "VariableName": "act_descrip",
+        "Description": "description of the activity",
+        "Levels": ""
+    },
+    "item": {
+        "LongName": "name of the item",
+        "VariableName": "item",
         "Description": "",
-        "Levels": "",
-        "TermURL": ""
+        "Levels": ""
+    },
+    "item_pref_label": {
+        "LongName": "",
+        "VariableName": "item_pref_label",
+        "Description": "preferred label of the item",
+        "Levels": ""
+    },
+    "item_descrip": {
+        "LongName": "",
+        "VariableName": "item_descrip",
+        "Description": "description of the item",
+        "Levels": ""
+    },
+    "question": {
+        "LongName": "",
+        "VariableName": "question",
+        "Description": "question corresponding to the item",
+        "Levels": ""
+    },
+    "field_type": {
+        "LongName": "",
+        "VariableName": "resp_type",
+        "Description": "type of response expected",
+        "Levels": ""
+    },
+    "choices": {
+        "LongName": "",
+        "VariableName": "choice",
+        "Description": "list of possible responses",
+        "Levels": ""
+    },
+    "mandatory": {
+        "LongName": "",
+        "VariableName": "mandatory",
+        "Description": "whether an answer to the item is required",
+        "Levels": ""
+    },
+    "visibility": {
+        "LongName": "",
+        "VariableName": "vis",
+        "Description": "defines the conditions that the item must fullfill to be displayed ; default == 1",
+        "Levels": ""
+    },
+    "details": {
+        "LongName": "",
+        "VariableName": "preamble",
+        "Description": "",
+        "Levels": ""
     }
 }
