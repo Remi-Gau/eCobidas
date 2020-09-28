@@ -31,11 +31,12 @@ of the methods section.
 
 <!-- lint disable -->
 
--   **For the version for fMRI (based on Neurovault):
-    https://ohbm.github.io/cobidas/#/**
+-   **For the version for fMRI (based on Neurovault): see
+    [HERE](https://ohbm.github.io/cobidas/#/**)
 
--   **For the version for PET (based an extension to BIDS):
-    https://remi-gau.github.io/cobidas-PET/#/**
+-   **For the version for PET (based an extension to BIDS): see
+    [HERE](https://remi-gau.github.io/cobidas-PET/#/**)
+
 <!-- lint enable -->
 
 ## Want to know more ?
@@ -61,21 +62,20 @@ Join our channel </a>
 Otherwise you can open a new issue on the repository itself if there is
 something you would like to discuss directly here.
 
-There is also an [OSF project](https://osf.io/anvqy/) to try to centralize all
-the information and repos.
-
 ## How to contribute
 
 We are looking for people to give us feedback or help us move forward.
 
-To learn more about how to contribute see [here](./docs/80-how-to-contribute.md).
+To learn more about how to contribute see
+[here](./docs/80-how-to-contribute.md).
 
 ## Contributors ✨
 
 Thanks goes to these wonderful people
 ([emoji key](https://allcontributors.org/docs/en/emoji-key)).
 
-For a more detailed description of the contributions, see [here](./docs/90-contributors.md).
+For a more detailed description of the contributions, see
+[here](./docs/90-contributors.md).
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
