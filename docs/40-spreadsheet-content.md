@@ -1,5 +1,14 @@
 # Spreadsheet content
 
+
+-   For each item:
+    -   Give it an item name
+    -   Create a specific unambiguous question
+    -   Identify the response type expected (based on exemplary software)
+    -   Determine which softwares are considered in the examples
+    -   Create a response choice list where needed
+    -   Check if the item can be extracted from a BIDS data set
+
 -   Identify high-priority items that will be in the next release of the app.
 -   For each item:
 

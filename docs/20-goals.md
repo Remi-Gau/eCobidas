@@ -22,16 +22,23 @@
 
 <!-- /TOC -->
 
-## Imagined impact on the field of neuroimaging ("pie in the sky" goals)
+## Vision
 
-This checklist could:
+We envision that using checklists to report methods and results can:
 
-1.  provide comprehensive descriptions of the analysis pipelines used in
-    published papers, both human- and machine-readible (use the app to
-    **document** pipelines)
+1.  provide comprehensive descriptions, in a format that is both human and
+    machine-readable, of the data collection and analysis pipelines used in
+    published papers: in other words we want an app to help **document**
+    pipelines to improve the reproducibility of our work and to reduce
+    inefficiencies and frictions when trying to build on each other's work.
 
-1.  facilitate pre-registration and registered reports (use the app to
-    **create** pipelines)
+1.  facilitate the creation and preparation of pre-registration and registered
+    reports by reminding of future analysis steps that we might otherwise
+    overlook or forget about: in other words we want an app to help us think
+    about and **create** pipelines before we start collecting data.
+
+1.  help make peer-review more objective: we want an app to help us **check**
+    pipelines.
 
 1.  facilitate systematic literature reviews and meta-analyses (use the app to
     **read** pipelines)
@@ -39,44 +46,20 @@ This checklist could:
 1.  facilitate data sharing (use the app to **standardize** the report of
     information)
 
-If the json file it creates is accepted by neuroimaging databases (e.g
-neurovault) as metadata input, this could reduces friction for data sharing.
-Users wouldn't have to fill several times the same information (when
-pre-registering, when writing their methods, when submitting to a journal if it
-has a checklist of its own, when sharing data). For example the metadata fields
-from
-[neurovault](https://github.com/NeuroVault/NeuroVault/blob/master/scripts/metadata_neurovault.csv)
-are already present in the COBIDAS checklist.
+## Milestone
 
-1.  help make peer-review more objective (use the app to **check** pipelines)
-
-Reviewers could use the website to systematically cross-check that all the
-required methods and results information are present for a given paper. A tool
-to compare COBIDAS-json files could help editors visualize agreement across
-reviewers' json file.
-
-## Requirements for the implementation
-
-The implementation of this project should remain flexible enough to:
-
--   accommodate the inclusion of new items in the checklist as new neuroimaging
-    methods mature (e.g. new multivariate analysis, high-resolution MRI...),
-
--   easily fork the project and convert it to create a checklist-website for a
-    different field.
-
-## Milestones (short term goals)
+### Short term goals
 
 **The short term goal of this project is to make the COBIDAS report easier to
 use: we want to create a website with a clickable checklist that, at the end,
 automatically generates most of the method section of a (f)MRI or (i)EEG / MEG
 paper.**
 
-### MRI COBIDAS
+#### MRI COBIDAS
 
 So far the short goals of the MRI app have been:
 
--   Create a proof of concept website that can:
+-   Create a proof of concept webapp that can:
     -   can generate a checklist to clicked through by users, given a template
         spreadsheet file, :heavy_check_mark: :smiley:
     -   outputs a populated JSON file once the user is done, :heavy_check_mark:
@@ -108,18 +91,18 @@ To reach that first milestone we still need to work on the following issues:
 -   Identify defaults in the most common software packages (SPM, FSL, AFNI) to
     inform users about potential answers
 
-### M/EEG COBIDAS
+#### M/EEG COBIDAS
 
 The MRI version is currently ahead and the work done there can pave the way for
-the MEEG version. The MEEG version should have the same overall structure as the
-MRI version. The MEEG version currently still awaits the final release of the
-MEEG COBIDAS guidelines (see the [preprint](https://osf.io/a8dhx/) and
+the MEEG version. 
+
+The MEEG COBIDAS guidelines have recently been published (see the [preprint](https://osf.io/a8dhx/) and
 [webpage](https://cobidasmeeg.wordpress.com/)).
 
 The main short term goals for the MEEG version are:
 
--   Identify overlaps between the MEEG and the f/MRI spreadsheet and harmonize
-    both versions
+-   Identify overlaps between the MEEG and the MRI spreadsheets and harmonize
+    both versions by extracting the common parts into standalone spreadsheets: for example there could be one common spreadsheet for participant sample description.
 
 -   Identify high-priority items in the checklist (similar to Carp 2012 for
     fMRI, e.g.
@@ -128,20 +111,18 @@ The main short term goals for the MEEG version are:
 -   Create a version of the spreadsheet where each of those high priority items
     has been properly atomized (i.e it is only composed of a single question)
 
--   For each item:
-    -   Give it an item name
-    -   Create a specific unambiguous question
-    -   Identify the response type expected (based on exemplary software)
-    -   Determine which softwares are considered in the examples
-    -   Create a response choice list where needed
-    -   Check if the item can be extracted from a BIDS data set
 
-## Extensions (intermediate goals)
+
+#### Positron emission tomography
+
+#### Eyetracking
+
+## Intermediate goals
 
 ### Extended checklists
 
-Right now, the [prototype](https://cobidas-checklist.herokuapp.com/) contains
-some of questions from the COBIDAS reports. In the near future, we want to be
+Right now, the [prototype](https://ohbm.github.io/cobidas/#/**) contains only
+some of questions from the COBIDAS reports: those that correspond to the metadata of a collection of statistical maps uploaded on Neurovault. In the near future, we want to be
 able to extend those checklists so they include **all** the items listed in the
 COBIDAS reports. Also, it will create human-readible method sections as outputs.
 
@@ -188,7 +169,7 @@ One can also imagine that pointing to a folder containing source MRI data (e.g
 DICOM) could allow the extraction of several of the information required by the
 COBIDAS checklist.
 
-## Further developments (long term goals)
+## Long term goals
 
 ### Link to main neuroimaging software
 
@@ -241,16 +222,6 @@ terminology used by the checklist in general can be linked to the neurolex
 
 ## Potential applications ("pie in the sky" goals)
 
-This checklist could:
-
-1.  facilitate pre-registration and registered reports
-
-1.  facilitate systematic literature reviews and meta-analysis
-
-1.  facilitate data sharing
-
-1.  help make peer-review more objective
-
 If the json file it creates is accepted by neuroimaging databases (e.g.
 neurovault) as metadata input, this could reduces friction for data sharing.
 Users wouldn't have to fill several times the same information (when
@@ -264,3 +235,13 @@ Reviewers could use the website to systematically cross-check that all the
 required methods and results information are present for a given paper. A tool
 to compare COBIDAS-json files could help editors visualize agreement across
 reviewers' json file.
+
+## Requirements for the implementation
+
+The implementation of this project should remain flexible enough to:
+
+-   accommodate the inclusion of new items in the checklist as new neuroimaging
+    methods mature (e.g. new multivariate analysis, high-resolution MRI...),
+
+-   easily fork the project and convert it to create a checklist-website for a
+    different field.

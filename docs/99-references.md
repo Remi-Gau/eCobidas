@@ -4,6 +4,16 @@ There is [zotero group](https://www.zotero.org/groups/2349772/cobidas_checklist)
 where we try to keep track the relevant literature related to this project. Let
 us know if we missed something.
 
+## About the checklist
+
+-   [website](https://remi-gau.github.io/cobidas_chckls/)
+
+-   [our project on the Open-Science Framework](https://osf.io/anvqy/) with the
+    [DOI:10.17605/OSF.IO/ANVQY](https://doi.org/10.17605/OSF.IO/ANVQY) is a
+    where we try to centralize all the information across repos, google drive...
+
+-   [a twitter thread](https://twitter.com/RemiGau/status/1275821842364870658)
+
 ## The COBIDAS reports
 
 -   [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)

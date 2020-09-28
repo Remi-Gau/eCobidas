@@ -1,5 +1,7 @@
 # Project motivations
 
+## Improve transparency and reproducibility
+
 In 2012, in a
 [review of the methods and results reporting of more than 200 fMRI papers](https://www.ncbi.nlm.nih.gov/pubmed/22796459)
 the author found that "*Although many journals urge authors to describe their
@@ -35,3 +37,17 @@ So the goal of this project is to facilitate the use of this checklist. But, if
 done right, this could also in the long term enhance the adoption of emerging
 neuroimaging standards (BIDS, fMRIprep, NIDM...), facilitate data sharing and
 pre-registration, help with peer-review...
+
+## Reduce inefficiencies
+
+- lost time trying to figure out what: 
+ - other authors did 
+    - to compare our results
+    - when reviewing papers
+ - what we did 6 months ago
+
+- we often have to report the same information
+    - when writing a pre-registration
+    - when curating our data
+    - when writing our methods and results section 
+    - when sharing data

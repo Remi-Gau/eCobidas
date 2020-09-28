@@ -62,8 +62,8 @@ and we try to keep a back-up in the [csv folder](./inputs/csv).
 The MRI part is the more advanced at this moment but we are looking for people
 to help with the M/EEG part.
 
-The content of the spreadsheet is described in more details
-[here](./40-spreadsheet-content.md).
+The content of the spreadsheets and the work involved there is described in more
+details [here](./40-spreadsheet-content.md).
 
 -   The neurovault spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing)
@@ -110,10 +110,11 @@ of `jsonld` files that the user interface needs as inputs to display the
 checklists. This needs further improvement so if python is your jam, feel free
 to dive in.
 
-Boilerplate related issues listed
-[here](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate).
-
-We are https://github.com/ReproNim/reproschema-py
+We are also using the
+[Reproschema python package](https://github.com/ReproNim/reproschema-py) to
+validate the schemas created. This package should also in the long-term help
+automating the creation of schemas, so there are definitely some features
+waiting to be written there.
 
 ### User interface
 
