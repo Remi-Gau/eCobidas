@@ -33,21 +33,22 @@ There are 3 repositories behind this checklist:
 1.  this
     [COBIDAS_chckls repository](https://github.com/Remi-Gau/COBIDAS_chckls/)
     where you are currently reading this. It contains:
-    -   the [neurovault spreadsheet](./xlsx/metadata_neurovault.csv)
+
+    -   the [neurovault spreadsheet](../inputs/csv/cobidas_neurovault.csv)
     -   the python [script](./python/create_ecobidas_schema.py) to turn that
         spreadsheet into a Repronim schema (basically a bunch hierarchically
         organized json files that link to each other).
 
-1. Reproschema
+1.  Reproschema
 
-1. the ui
+1.  the ui
 
-  the [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui) that
-    does the actual rendering of the checklist app by reading the schema hosted
-    by the previous repository. There is a general explanation of how the app
-    works in this [issue](https://github.com/ReproNim/schema-ui/issues/4). The
-    prototype app for this checklist can be, for now, found
-    [here](https://cobidas-checklist.herokuapp.com/)
+the [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui) that does
+the actual rendering of the checklist app by reading the schema hosted by the
+previous repository. There is a general explanation of how the app works in this
+[issue](https://github.com/ReproNim/schema-ui/issues/4). The prototype app for
+this checklist can be, for now, found
+[here](https://cobidas-checklist.herokuapp.com/)
 
 ohbm/cobidas repo
 
@@ -59,13 +60,13 @@ See the dedicated [document](./spreadsheet-content.md)
 
 ## How is the Reproschema organized
 
-<!-- 
+<!--
 
 TODO link to reproschema doc
 
 https://www.repronim.org/reproschema/
 
-https://www.repronim.org/reproschema/98_FAQ/ 
+https://www.repronim.org/reproschema/98_FAQ/
 
 https://github.com/ReproNim/reproschema/pull/399
 
@@ -112,6 +113,6 @@ The repronim schema is organized in a hierarchical manner with 3 levels.
     this level is underused in the COBIDAS checklist but could be used to define
     activity sets for different use case: fMRI, MEEG, pre-registration...
 
-So far we have a [script](./python/create_ecobidas_schema.py) to turn the
-neurovault [list of required inputs](./xlsx/metadata_neurovault.csv) into a
+So far we have a [script](./scripts/create_ecobidas_schema.py) to turn the
+neurovault [list of required inputs](./inputs/csv/cobidas_neurovault.csv) into a
 schema that can then be render with the schema-ui.

@@ -12,7 +12,7 @@
 <!-- /TOC -->
 
 First make sure you understand how the different part of this project are
-organized by reading the [general organization](./general_organization.md)
+organized by reading the [general organization](./30-general-organization.md)
 document.
 
 ---
@@ -22,7 +22,6 @@ document.
 ### Turn the spreadsheet into the schema
 
 <!-- TODO add link to script section -->
-
 
 ### Making the new schema available to the cobidas-ui
 

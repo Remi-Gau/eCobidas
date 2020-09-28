@@ -6,7 +6,7 @@ us know if we missed something.
 
 ## About the checklist
 
--   [website](https://remi-gau.github.io/cobidas_chckls/)
+-   [website](https://remi-gau.github.io/eCobidas/)
 
 -   [our project on the Open-Science Framework](https://osf.io/anvqy/) with the
     [DOI:10.17605/OSF.IO/ANVQY](https://doi.org/10.17605/OSF.IO/ANVQY) is a

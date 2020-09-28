@@ -42,7 +42,7 @@ necessarily require super-advanced technical skills (except maybe a certain love
 for working with spreadsheet and wanting them to be super organized) :wink:.
 
 We are still in development so we are currently using the
-[list of required inputs](./inputs/csv/cobidas_neurovault.csv) from
+[list of required inputs](../inputs/csv/cobidas_neurovault.csv) from
 [neurovault](https://www.neurovault.org/) to work on the user interface.
 
 <!-- ```
@@ -76,7 +76,7 @@ of this schema representation:
 
 -   its use simplifies the rendering of the checklist by using the
     [schema-ui](https://github.com/ReproNim/schema-ui) made for it,
-    
+
 -   this representation allows specification of user interface options that can
     simplify the user experience: it allows us to specify a branching logic that
     will prevent users to be presented with items that are not relevant to them

@@ -1,7 +1,7 @@
 # Spreadsheet content
 
-
 -   For each item:
+
     -   Give it an item name
     -   Create a specific unambiguous question
     -   Identify the response type expected (based on exemplary software)
