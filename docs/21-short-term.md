@@ -1,27 +1,50 @@
 # Short term goals
 
-**The short term goal of this project is to make the COBIDAS report easier to
-use: we want to create a website with a clickable checklist that, at the end,
-automatically generates most of the method section of a (f)MRI or (i)EEG / MEG
-paper.**
+**The short term goal of this project is to make the COBIDAS report (and similar
+guidelines) easier to use.** We want to create a prototype website with a
+clickable checklist that, at the end, automatically generates most of the method
+section of a (f)MRI or (i)EEG / MEG or PET paper.
 
-## MRI COBIDAS
+---
 
-So far the short goals of the MRI app have been:
+So far the common short goals of all the versions of the app (for MRI, PET...)
+are:
 
--   Create a proof of concept webapp that can:
+-   Create a set of tools and a proof of concept web-app that can:
 
-    -   can generate a checklist to clicked through by users, given a template
-        spreadsheet file, :heavy_check_mark: :smiley:
+    -   convert a set of spreadsheet of items into a schema that represents all
+        those items,
 
-    -   outputs a populated JSON file once the user is done, :heavy_check_mark:
-        :smiley:
+    -   from this schema generate a checklist to be clicked through by users,
 
-    -   generate a method section using this JSON file.
+    -   outputs a set of JSON-LD files once the user is done,
 
-By working on those first steps, a proof of concept app has been put together.
-There is now work to be done to extend what this app can do so we can have a
-first release that could be used for a typical fMRI study with:
+    -   generate a method section using these JSON-LD files and some boilerplate
+        template of a method section where the content of the JSON-LD files
+        could be reinjected.
+
+---
+
+For the spreadsheets that represent the recommendation guidelines, the initial
+curation process must:
+
+-   identify high-priority items for each checklist,
+
+-   ensure that those high priority items has been properly atomized (meaning
+    that it is only made of a single question) and curated (define an item name,
+    a question, the type of response expected and an eventual list of response
+    choices).
+
+<!-- TODO  Add link to spreadsheet doc -->
+
+---
+
+## MRI
+
+The current version of MRI prototype is inspired from
+[Neurovault](https://neurovault.org/), so we would have to expand from there.
+
+The goal for the MRI app would to be able to describe a typical fMRI study with:
 
 -   a single functional task
 
@@ -29,22 +52,9 @@ first release that could be used for a typical fMRI study with:
 
 -   using mass uni-variate analysis
 
-To reach that first milestone we still need to work on the following issues:
+## M/EEG
 
--   Identify high-priority items that at least include those from
-    [Carp 2012](https://www.ncbi.nlm.nih.gov/pubmed/22796459) to make sure users
-    do better than 50% of the papers reported in this study
-
--   Create a version of the spreadsheet where each of those high priority items
-    has been properly atomized (i.e. it is only composed of a single question)
-
--   Identify ways in which the user experience can be improved, mostly by
-    finding ways to minimize the time users have to spend using the app.
-
--   Identify defaults in the most common software packages (SPM, FSL, AFNI) to
-    inform users about potential answers
-
-## M/EEG COBIDAS
+<!-- TODO -->
 
 The MRI version is currently ahead and the work done there can pave the way for
 the MEEG version.
@@ -60,13 +70,17 @@ The main short term goals for the MEEG version are:
     for example there could be one common spreadsheet for participant sample
     description.
 
+-   Consolidate the other items of the spreadsheet, as it is still missing a lot
+    of information
+
 -   Identify high-priority items in the checklist (similar to Carp 2012 for
     fMRI, e.g.
     [Luck & Gaspelin 2015](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.12639))
 
--   Create a version of the spreadsheet where each of those high priority items
-    has been properly atomized (i.e it is only composed of a single question)
+## Positron emission tomography and Eyetracking
 
-## Positron emission tomography
+Those 2 projects are more quite ahead already as they both started from fairly
+standardized spreadsheets.
 
-## Eyetracking
+Both could benefit from a better definition of the response types and reponse
+options.

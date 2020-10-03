@@ -22,12 +22,14 @@ The main aim of this project is to improve reporting methods and results in
 neuroimaging ( (f)MRI, (i)EEG, MEG, PET... ) in order to increase transparency
 and reproducibility.
 
-We want to do this by developing a practical tool based on the COBIDAS checklist
-that allows users to easily fill in the necessary fields and provide a computer
-readable output that can then, in turn, be used to automatically generate parts
-of the methods section.
+We want to do this by developing a practical tool based on best practices
+guidelines that allows users to easily fill in the necessary fields and provide
+a computer readable output that can then, in turn, be used to automatically
+generate parts of the methods section.
 
-**The prototype app for this checklist can be found at those URL**
+## Prototypes
+
+**The prototype apps for this checklist can be found at those URL**
 
 <!-- lint disable -->
 
@@ -38,6 +40,14 @@ of the methods section.
     [HERE](https://remi-gau.github.io/cobidas-PET/#/**)
 
 <!-- lint enable -->
+
+Those apps and incoming ones are based on the following best practices
+guidelines:
+
+-   [Best Practices in Data Analysis and Sharing in Neuroimaging using MRI](https://www.biorxiv.org/content/10.1101/054262v2)
+-   [Best Practices in Data Analysis and Sharing in Neuroimaging using MEEG](https://osf.io/a8dhx/)
+-   [Guideline for Reporting Standards of Eye-tracking Research in Decision Sciences](https://psyarxiv.com/f6qcy/)
+-   [Guidelines for the content and format of PET brain data in publications and archives: A consensus paper](https://doi.org/10.1177/0271678X20905433)
 
 ## Want to know more ?
 
