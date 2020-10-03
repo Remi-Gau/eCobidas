@@ -1,0 +1,76 @@
+# boilerplate for MRI dataset description
+
+<!-- TOC -->
+<!-- lint disable -->
+- [boilerplate for MRI dataset description](#boilerplate-for-mri-dataset-description)
+  - [from pybids and bids-matlab](#from-pybids-and-bids-matlab)
+    - [anat](#anat)
+    - [func](#func)
+    - [fmap](#fmap)
+    - [dwi](#dwi)
+<!-- lint enable -->
+<!-- /TOC -->
+
+## from pybids and bids-matlab
+
+### anat
+
+```
+anat_text = cat(2, ...
+    '%s %s %s structural MRI data were collected (%s slices; \n', ...
+    'repetition time, TR= %s ms; echo time, TE= %s ms; flip angle, FA=%s deg; \n', ...
+    'field of view, FOV= %s mm; matrix size= %s; voxel size= %s mm) \n\n');
+
+fprintf(anat_text,...
+    acq_param.type, acq_param.variants, acq_param.seqs, ...
+    acq_param.n_slices, acq_param.tr, ...
+    acq_param.te, acq_param.fa, ...
+    acq_param.fov, acq_param.ms, acq_param.vs);
+```
+
+### func
+
+```
+'%s run(s) of %s %s %s fMRI data were collected (%s slices acquired in a %s fashion; repetition time, TR= %s ms; \n', ...
+'echo time, TE= %s ms; flip angle, FA= %s deg; field of view, FOV= %s mm; matrix size= %s; \n', ...
+'voxel size= %s mm; multiband factor= %s; in-plane acceleration factor= %s). Each run was %s minutes in length, during which \n', ...
+'%s functional volumes were acquired. \n\n');
+
+fprintf(func_text,...
+    acq_param.run_str, acq_param.task, acq_param.variants, acq_param.seqs, ...
+    acq_param.n_slices, acq_param.so_str, acq_param.tr, ...
+    acq_param.te, acq_param.fa, ...
+    acq_param.fov, acq_param.ms, ...
+    acq_param.vs, acq_param.mb_str, acq_param.pr_str, ...
+    acq_param.length, ...
+    acq_param.n_vols);
+```
+
+### fmap
+
+```
+fmap_text = cat(2, ... 'A %s %s field map (phase encoding: %s; %s slices;
+repetition time, TR= %s ms; \n',... 'echo time 1 / 2, TE 1/2= %s ms; flip angle,
+FA= %s deg; field of view, FOV= %s mm; matrix size= %s; \n',... 'voxel size= %s
+mm) was acquired %s. \n\n');
+
+fprintf(fmap_text,... acq_param.variants, acq_param.seqs, acq_param.phs_enc_dir,
+acq_param.n_slices, acq_param.tr, ... acq_param.te, acq_param.fa, acq_param.fov,
+acq_param.ms, ... acq_param.vs, acq_param.for);
+
+```
+
+### dwi
+
+```
+fmap_text = cat(2, ... 'One run of %s %s diffusion-weighted (dMRI) data were
+collected (%s slices %s ; repetition time, TR= %s ms \n', ... 'echo time, TE= %s
+ms; flip angle, FA= %s deg; field of view, FOV= %s mm; matrix size= %s ; voxel
+size= %s mm \n', ... 'b-values of %s acquired; %s diffusion directions;
+multiband factor= %s ). \n\n');
+
+fprintf(fmap_text,... acq_param.variants, acq_param.seqs, acq_param.n_slices,
+acq_param.so_str, acq_param.tr,... acq_param.te, acq_param.fa, acq_param.fov,
+acq_param.ms, acq_param.vs, ... acq_param.bval_str, acq_param.n_vecs,
+acq_param.mb_str);
+```

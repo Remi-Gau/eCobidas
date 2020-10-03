@@ -6,7 +6,6 @@ def get_item_info(row, csv_info):
     item_col_name = csv_info["item"]["name"]
 
     # we want to skip the header and only include items with 1 in the include column (if it exists)
-    INCLUDE = True
     incl_col = csv_info["include"]["col"]
     if row[item_col] == item_col_name or (incl_col != [] and row[incl_col] != "1"):
 
@@ -75,10 +74,11 @@ def get_mandatory(row, csv_info):
 
 
 def define_new_item(item_info):
+    """
+    define jsonld for this item
+    """
 
     from reproschema_item import ReproschemaItem
-
-    # define jsonld for this item
 
     item = ReproschemaItem()
 
@@ -124,6 +124,11 @@ def define_response_choices(item, response_type, response_choices):
         value_constraint = response_type
 
         if "_" in response_type:
+            """
+            if response_type is "test_name" in the spreadsheet then the
+            corresponding response option value constraints file is
+            testNameValueConstraints, so we need to do some string magic
+            """
 
             response_type = response_type.split("_")
 

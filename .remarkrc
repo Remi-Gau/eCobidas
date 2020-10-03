@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    "preset-lint-consistent",
+    "preset-lint-markdown-style-guide",
+    "preset-lint-recommended",
+    ["lint-no-duplicate-headings", false],
+    ["lint-list-item-indent", "tab-size"],
+    ["lint-maximum-line-length", true],
+    ["lint-maximum-heading-length", false]
+  ]
+}

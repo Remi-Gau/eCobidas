@@ -53,7 +53,7 @@ def create_schema(schema_to_create, OUTPUT_DIR):
                 )
 
                 create_new_item(
-                    item_info, activity, row, csv_info, OUTPUT_DIR,
+                    item_info, activity.get_name(), OUTPUT_DIR,
                 )
 
     protocol.sort()
@@ -129,7 +129,7 @@ def create_update_activity(
     return protocol, activity, this_section
 
 
-def create_new_item(item_info, activity, row, csv_info, OUTPUT_DIR):
+def create_new_item(item_info, activity_name, OUTPUT_DIR):
 
     from item import define_new_item
 
@@ -141,4 +141,4 @@ def create_new_item(item_info, activity, row, csv_info, OUTPUT_DIR):
 
     item.sort()
 
-    item.write(os.path.join(OUTPUT_DIR, "activities", activity.get_name(), "items"))
+    item.write(os.path.join(OUTPUT_DIR, "activities", activity_name, "items"))

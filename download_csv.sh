@@ -1,65 +1,45 @@
 #!/usr/bin/env bash
 
-# function download_csv {
-#     # function check_installed() {
-#     #     func=${1}
-#     #     hash ${func} 2> /dev/null || {
-#     #         printf "Missing software program: ${func}. "
-#     #         printf "Check installation instructions\n"
-#     #         missing=true
-#     #     }
-#     # }
+# Simple script to download the content of the different google spreadsheet in
+# the csv folder
+#
+# USAGE
+# sh download_csv.sh modality
+# 
+# modality can be any of the following 
+# - eyetracker 
+# - mri
+# - meeg 
+# - neurovault 
+# - pet
+#
+#
+# TODO: loop through the inputed modality
+# i.e allow for sh download_csv.sh mri eyetracker
 
-#     # csv_name=$1
-#     # google_ID=$2
-#     echo "download eyetracker spreadsheet to inputs/csv/"$1
-#     curl -L "https://docs.google.com/spreadsheets/d/"$2"/export?format=csv" \
-#         -o inputs/csv/$1
+csv_folder=inputs/csv/
 
-# }
+if [ $# -lt 1 ]; then
+    modalities='eyetracker mri meeg neurovault pet'
+    else
+    modalities=$1
+fi
 
-# download_csv "cobidas_eyetracker.csv" "1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o"
+for modality in $modalities;
+do
+    output_filename=cobidas_$modality.csv
 
-# https://docs.google.com/spreadsheets/d/1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o/edit?usp=sharing
-eyetracker_google_ID=1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o
-eyetracker_csv_filename=cobidas_eyetracker.csv
+    google_ID=`cat $csv_folder'spreadsheet_google_id.txt' | grep $modality'_google' |  awk '{print $2}'`
 
-echo "download eyetracker spreadsheet to inputs/csv/$eyetracker_csv_filename"
-curl -L "https://docs.google.com/spreadsheets/d/"$eyetracker_google_ID"/export?format=csv" \
-    -o inputs/csv/$eyetracker_csv_filename
+    echo "\nDownloading the $modality spreadsheet to $csv_folder$output_filename"
+    echo Google ID: $google_ID
 
+    curl -L "https://docs.google.com/spreadsheets/d/"$google_ID"/export?format=csv" \
+        -o $csv_folder$output_filename
 
-# https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing
-# mri_google_ID=1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho
-# mri_csv_filename=cobidas_mri.csv
+    echo "\nDone\n"
 
-# echo "download eyetracker spreadsheet to inputs/csv/$mri_csv_filename"
-# curl -L "https://docs.google.com/spreadsheets/d/"$mri_google_ID"/export?format=csv" \
-#     -o inputs/csv/$mri_csv_filename
-
-
-# https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing
-# meeg_google_ID=1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0
-# meeg_csv_filename=cobidas_meeg.csv
-
-# echo "download eyetracker spreadsheet to inputs/csv/$meeg_csv_filename"
-# curl -L "https://docs.google.com/spreadsheets/d/"$meeg_google_ID"/export?format=csv" \
-#     -o inputs/csv/$meeg_csv_filename
+done
 
 
-# https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing
-# neurovault_google_ID=1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0
-# neurovault_csv_filename=cobidas_neurovault.csv
-
-# echo "download eyetracker spreadsheet to inputs/csv/$neurovault_csv_filename"
-# curl -L "https://docs.google.com/spreadsheets/d/"$neurovault_google_ID"/export?format=csv" \
-#     -o inputs/csv/$neurovault_csv_filename
-
-
-# https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing
-# pet_google_ID=1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8
-# pet_csv_filename=cobidas_pet.csv
-
-# echo "download eyetracker spreadsheet to inputs/csv/$pet_csv_filename"
-# curl -L "https://docs.google.com/spreadsheets/d/"$pet_google_ID"/export?format=csv" \
-#     -o inputs/csv/$pet_csv_filename
+return

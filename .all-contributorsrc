@@ -1,9 +1,17 @@
 {
   "files": [
-    "README.md"
+    "README.md",
+    "./docs/90-contributors.md"
   ],
+  "contributorsSortAlphabetically": true,
   "imageSize": 100,
   "commit": false,
+  "contributorsPerLine": 8,
+  "projectName": "COBIDAS_chckls",
+  "projectOwner": "Remi-Gau",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
   "contributors": [
     {
       "login": "remi-gau",
@@ -216,11 +224,5 @@
         "ideas"
       ]
     }
-  ],
-  "contributorsPerLine": 7,
-  "projectName": "COBIDAS_chckls",
-  "projectOwner": "Remi-Gau",
-  "repoType": "github",
-  "repoHost": "https://github.com",
-  "skipCi": true
+  ]
 }

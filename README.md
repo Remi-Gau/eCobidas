@@ -10,51 +10,82 @@
 
 <!-- TOC -->
 
-- [COBIDAS guidelines checklist](#cobidas-guidelines-checklist)
-  - [Want to know more ?](#want-to-know-more-)
-  - [How to reach us](#how-to-reach-us)
-  - [How to contribute](#how-to-contribute)
-  - [Contributors ✨](#contributors-)
+-   [COBIDAS guidelines checklist](#cobidas-guidelines-checklist)
+    -   [Want to know more ?](#want-to-know-more-)
+    -   [How to reach us](#how-to-reach-us)
+    -   [How to contribute](#how-to-contribute)
+    -   [Contributors ✨](#contributors-)
 
 <!-- /TOC -->
 
-The main aim of this project is to improve reporting methods and results in neuroimaging (MRI, fMRI, EEG, MEG, PET...) in order to increase transparency and reproducibility. We want to do this by developing a practical tool based on the COBIDAS checklist that allows users to easily fill in the necessary fields and provide a computer readable output that can then in turn be used to automatically generate parts of the methods section or to facilitate uploading statistical results to Neurovault.
+The main aim of this project is to improve reporting methods and results in
+neuroimaging ( (f)MRI, (i)EEG, MEG, PET... ) in order to increase transparency
+and reproducibility.
 
-**The prototype app for this checklist can be found at those URL:**
+We want to do this by developing a practical tool based on best practices
+guidelines that allows users to easily fill in the necessary fields and provide
+a computer readable output that can then, in turn, be used to automatically
+generate parts of the methods section.
 
-- **For the version for fMRI (based on Neurovault): https://ohbm.github.io/cobidas/#/**
+## Prototypes
 
-- **For the version for PET (based an extension to BIDS): https://remi-gau.github.io/cobidas-PET/#/**
+**The prototype apps for this checklist can be found at those URL**
+
+<!-- lint disable -->
+
+-   **For the version for fMRI (based on Neurovault): see
+    [HERE](https://ohbm.github.io/cobidas/#/**)
+
+-   **For the version for PET (based an extension to BIDS): see
+    [HERE](https://remi-gau.github.io/cobidas-PET/#/**)
+
+<!-- lint enable -->
+
+Those apps and incoming ones are based on the following best practices
+guidelines:
+
+-   [Best Practices in Data Analysis and Sharing in Neuroimaging using MRI](https://www.biorxiv.org/content/10.1101/054262v2)
+-   [Best Practices in Data Analysis and Sharing in Neuroimaging using MEEG](https://osf.io/a8dhx/)
+-   [Guideline for Reporting Standards of Eye-tracking Research in Decision Sciences](https://psyarxiv.com/f6qcy/)
+-   [Guidelines for the content and format of PET brain data in publications and archives: A consensus paper](https://doi.org/10.1177/0271678X20905433)
 
 ## Want to know more ?
 
 You want to know more about:
 
-- the motivations behind the project?
-- the different goals of the project?
-- how it is implemented?
+-   the motivations behind the project?
+-   the different goals of the project?
+-   how it is implemented?
 
-Head over to our [documentation section](./docs/00_index.md)
+Head over to our [documentation](./docs/00-index.md)
 
 ## How to reach us
 
-If you want to be kept posted about the progress of the project, you can join our [google group](https://groups.google.com/d/forum/cobidas-checklist).
+If you want to be kept posted about the progress of the project, you can join
+our [google group](https://groups.google.com/d/forum/cobidas-checklist).
 
-For more frequent updates and behind the scenes, come and join us on the `cobidas_checklist` channel on the brainhack mattermost. <a href="https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist"><img src="http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png" width=100px /> Join our channel </a>
+For more frequent updates and behind the scenes, come and join us on the
+`cobidas_checklist` channel on the brainhack mattermost.
+<a href="https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist"><img src="http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png" width=100px />
+Join our channel </a>
 
-Otherwise you can open a new issue on the repository itself if there is something you would like to discuss directly here.
-
-There is also an [OSF project](https://osf.io/anvqy/) to try to centralize all the information and repos.
+Otherwise you can open a new issue on the repository itself if there is
+something you would like to discuss directly here.
 
 ## How to contribute
 
 We are looking for people to give us feedback or help us move forward.
 
-To learn more about how to contribute see [here](./docs/contributions.md).
+To learn more about how to contribute see
+[here](./docs/80-how-to-contribute.md).
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people
+([emoji key](https://allcontributors.org/docs/en/emoji-key)).
+
+For a more detailed description of the contributions, see
+[here](./docs/90-contributors.md).
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -91,4 +122,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the
+[all-contributors](https://github.com/all-contributors/all-contributors)
+specification. Contributions of any kind welcome!
