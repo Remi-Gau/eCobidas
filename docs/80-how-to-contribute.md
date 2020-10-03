@@ -41,9 +41,7 @@ If you are unsure where to start, maybe have a read through some of those
 sections about the project. It might give you ideas.
 
 -   the [motivations](./10-motivations.md) of this project
-
 -   the [different short and long term goals](./20-goals.md)
-
 -   the [general organization of the project](./30-general-organization.md)
 
 Otherwise here are some suggestions of the different tasks that you can

@@ -50,7 +50,5 @@ The implementation of this project should remain flexible enough to:
 We are trying to divide our goals and milestones in 3 main categories:
 
 -   [short term](./21-short-term.md)
-
 -   [intermediate](./22-mid-term.md)
-
 -   [long term](./23-long-term.md)

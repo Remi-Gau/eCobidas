@@ -47,9 +47,7 @@ The current version of MRI prototype is inspired from
 The goal for the MRI app would to be able to describe a typical fMRI study with:
 
 -   a single functional task
-
 -   one anatomical scan
-
 -   using mass uni-variate analysis
 
 ## M/EEG

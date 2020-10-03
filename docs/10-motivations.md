@@ -4,10 +4,10 @@
 
 In 2012, in a
 [review of the methods](https://www.ncbi.nlm.nih.gov/pubmed/22796459) of more
-than 200 fMRI papers, the author found that "_Although many journals urge
+than 200 fMRI papers, the author found that "*Although many journals urge
 authors to describe their methods to a level of detail such that independent
 investigators can fully reproduce their efforts, the results described here
-suggest that few studies meet this criterion._"
+suggest that few studies meet this criterion.*"
 
 A few years ago, in order to improve reproducibility in f/MRI research, the
 Committee on Best Practices in Data Analysis and Sharing
@@ -59,8 +59,11 @@ methods used when
 Another source of inefficiency is the time lost trying to figure out:
 
 -   what the authors of a paper actually did
+
     -   when we would like to compare our results to theirs
+
     -   when reviewing papers
+    
 -   what we actually did 6 months ago but forgot to make a note of it.
 
 So a potential side effect of using a checklist to systematically capture how

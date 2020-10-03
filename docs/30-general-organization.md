@@ -28,6 +28,12 @@
 └── tests
 ``` -->
 
+
+This repository hosts the work that will turn the report published by the
+Committee on Best Practices in Data Analysis and Sharing (COBIDAS) of the
+organization for human brain mapping (OHBM) into a practical tool for improving
+methods and results reporting in (f)MRI, (i)EEG, MEG.
+
 There are 3 repositories behind this checklist:
 
 1.  this
@@ -116,3 +122,29 @@ The repronim schema is organized in a hierarchical manner with 3 levels.
 So far we have a [script](./scripts/create_ecobidas_schema.py) to turn the
 neurovault [list of required inputs](./inputs/csv/cobidas_neurovault.csv) into a
 schema that can then be render with the schema-ui.
+
+
+## Implementation
+
+<!-- TODO -->
+
+The first step of the implementation involves taking a spreadsheet that contains
+all the items of the checklist and turning that into a representation that can
+efficiently link the metadata about each item to the data imputed by the user.
+We are currently using the
+[ReproSchema](https://github.com/ReproNim/reproschema) initiative from
+[ReproNim](http://www.repronim.org/) to do this. Basically, it means turning
+your 'dumb' spreadsheet into an equivalent but 'smarter' representation of it: a
+bunch of hierarchically organized json files that link to each other.
+
+On top of the inherent
+[advantages](https://github.com/ReproNim/reproschema#30-advantages-of-current-representation)
+of this schema representation:
+
+-   its use simplifies the rendering of the checklist by using the
+    [schema-ui](https://github.com/ReproNim/schema-ui) made for it,
+
+-   this representation allows specification of user interface options that can
+    simplify the user experience: it allows us to specify a branching logic that
+    will prevent users to be presented with items that are not relevant to them
+    (e.g. answer PET-related questions when they have only run an fMRI study).
