@@ -1,4 +1,4 @@
-![checklist](https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/img/checklist.jpg)
+![checklist](https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/docs/img/checklist.jpg)
 
 # COBIDAS guidelines checklist
 
@@ -33,11 +33,11 @@ generate parts of the methods section.
 
 <!-- lint disable -->
 
--   **For the version for fMRI (based on Neurovault): see
-    [HERE](https://ohbm.github.io/cobidas/#/**)
+-   **For the version for fMRI (based on Neurovault)**: see
+    [HERE](https://ohbm.github.io/cobidas/#/)
 
--   **For the version for PET (based an extension to BIDS): see
-    [HERE](https://remi-gau.github.io/cobidas-PET/#/**)
+-   **For the version for PET (based an extension to BIDS)**: see
+    [HERE](https://remi-gau.github.io/cobidas-PET/#/)
 
 <!-- lint enable -->
 
