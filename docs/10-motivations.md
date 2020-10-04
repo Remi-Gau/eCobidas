@@ -59,11 +59,8 @@ methods used when
 Another source of inefficiency is the time lost trying to figure out:
 
 -   what the authors of a paper actually did
-
     -   when we would like to compare our results to theirs
-
-    -   when reviewing papers
-    
+    -   when reviewing papers   
 -   what we actually did 6 months ago but forgot to make a note of it.
 
 So a potential side effect of using a checklist to systematically capture how

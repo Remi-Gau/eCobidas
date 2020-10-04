@@ -11,7 +11,6 @@
 
 -   Identify high-priority items that will be in the next release of the app.
 -   For each item:
-
     -   Give it a unique item name (a formula in the MRI spreadsheet should
         automatically take care of that)
     -   Create a specific unambiguous question
