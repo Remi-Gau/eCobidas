@@ -21,6 +21,11 @@ items that are relevant to them. For example, we want to make sure that the
 items related "arterial spin labelling" are displayed only if the user mentioned
 they used this technique in a previous section of the checklist.
 
+### Improving the wording
+
+The questions of the checklist must be as unambiguous as possible. This
+should be improved through early user feedback.
+
 ## Extended checklists
 
 Right now, several of the [prototypes](../README.md#prototypes) contains only a
@@ -38,3 +43,8 @@ Data processed with some standardized pipelines (like
 facilitate filling in the checklist: ticking the box corresponding to that
 pipeline would automatically populate all the relevant fields in the
 COBIDAS-json file.
+
+## Standardize terminology
+
+Ensure that the across apps the same terminology is used by trying to rely on
+the BIDS terminology with reference to other lexicons or ontology.

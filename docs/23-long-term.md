@@ -6,6 +6,24 @@ the user.
 
 Similarly we want to broaden the use-cases for the app.
 
+## Improve user-friendliness
+
+### Improving default answers
+
+If some data is gathered about the content of the method section of a sample of
+articles in the litterature (see
+[Carp, 2012](https://www.ncbi.nlm.nih.gov/pubmed/22796459) or the
+[eyetracking guidelines](https://psyarxiv.com/f6qcy/)), it should be possible to
+create or better organize list of response choices. It will take less time for
+users to tick a box rather than type something. Similarly we could decide to
+make the most common choices or the "better" option more prominent in a list of
+response options.
+
+### Adding a help section for each item
+
+The content of some item might be quite obscure for some users, so embedding
+some help about each item would be a desirable goal.
+
 ## Integration with the main neuroimaging software
 
 ### Plugins
@@ -31,10 +49,9 @@ information can be directly accessed from the metadata in some of the existing
 standards for data and results like:
 
 1.  the brain imaging data structure ([BIDS](http://bids.neuroimaging.io/)) used
-   for that study,
-
-1.  the [NIDM results](http://nidm.nidash.org/specs/nidm-results_130.html) of any
-   mass-univariate analysis performed for this study.
+    for that study,
+1.  the [NIDM results](http://nidm.nidash.org/specs/nidm-results_130.html) of
+    any mass-univariate analysis performed for this study.
 
 **BIDS** is an emerging standard to organize neuroimaging data (MRI, fMRI,
 EEG...) and its associated metadata regarding acquisition (like repetition time,
@@ -60,6 +77,14 @@ and NIDM results could automatically fill part of the COBIDAS checklist.
 
 Conversely it is possible to help users create some files that make up a BIDS
 dataset by having them fill in part of the checklist.
+
+An implementation of this, will most likely rely on the respective schema of
+those resources:
+
+-   [BIDS schema](https://github.com/bids-standard/bids-specification/tree/master/src/schema).
+-   NIDM schema: **link missing**
+
+<!-- TODO add NIDM schema link -->
 
 ## Integration with existing ontologies
 

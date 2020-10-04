@@ -1,4 +1,10 @@
 {
+    "row_formating": {
+        "LongName": "",
+        "VariableName": "",
+        "Description": "a column used for the conditional formatting of the spreasheet",
+        "Levels": ""
+    },
     "include": {
         "LongName": "",
         "VariableName": "include",
@@ -8,7 +14,7 @@
     "activity": {
         "LongName": "",
         "VariableName": "section",
-        "Description": "name of the activity this item is part of",
+        "Description": "corresponds to the main section headings found in the original guideline documents or table",
         "Levels": ""
     },
     "activity_pref_label": {
@@ -17,10 +23,22 @@
         "Description": "preferred label of the activity",
         "Levels": ""
     },
-    "activity_descrip": {
+    "activity_description": {
         "LongName": "",
         "VariableName": "act_descrip",
         "Description": "description of the activity",
+        "Levels": ""
+    },
+    "activity_preamble": {
+        "LongName": "",
+        "VariableName": "preamble",
+        "Description": "introductory text to the activity",
+        "Levels": ""
+    },
+    "activity_order": {
+        "LongName": "",
+        "VariableName": "",
+        "Description": "position in which the activity is supposed to be presented in a protocol",
         "Levels": ""
     },
     "item": {
@@ -35,10 +53,22 @@
         "Description": "preferred label of the item",
         "Levels": ""
     },
-    "item_descrip": {
+    "item_description": {
         "LongName": "",
         "VariableName": "item_descrip",
         "Description": "description of the item",
+        "Levels": ""
+    },
+    "item_order": {
+        "LongName": "",
+        "VariableName": "",
+        "Description": "Position in which the item is supposed to be presented in the activity.",
+        "Levels": ""
+    },
+    "duplicate": {
+        "LongName": "",
+        "VariableName": "",
+        "Description": "reports the number of items that have the same name in this spreadsheet",
         "Levels": ""
     },
     "question": {
@@ -51,7 +81,56 @@
         "LongName": "",
         "VariableName": "resp_type",
         "Description": "type of response expected",
-        "Levels": ""
+        "Levels": [
+            {
+                "Name": "int",
+                "Description": ""
+            },
+            {
+                "Name": "char",
+                "Description": "a text answer is expected"
+            },
+            {
+                "Name": "float",
+                "Description": ""
+            },
+            {
+                "Name": "boolean",
+                "Description": "a 'yes/no/don't know' radio item is expected"
+            },
+            {
+                "Name": "radio",
+                "Description": ""
+            },
+            {
+                "Name": "dropdown",
+                "Description": ""
+            },
+            {
+                "Name": "slider",
+                "Description": ""
+            },
+            {
+                "Name": "mri_software",
+                "Description": "list of mri softwares"
+            },
+            {
+                "Name": "cost_function",
+                "Description": "list of cost functions"
+            },
+            {
+                "Name": "interpolation",
+                "Description": "list of interpolation"
+            },
+            {
+                "Name": "multiple_comparison",
+                "Description": "list of multiple comparison correction techniques"
+            },
+            {
+                "Name": "stimulus_presentation",
+                "Description": "list of stimulus presentation softwares"
+            }
+        ]
     },
     "choices": {
         "LongName": "",
@@ -63,17 +142,69 @@
         "LongName": "",
         "VariableName": "mandatory",
         "Description": "whether an answer to the item is required",
-        "Levels": ""
+        "Default": 1,
+        "Levels": [
+            {
+                "Name": 1,
+                "Description": "a response to this item is required"
+            },
+            {
+                "Name": 0,
+                "Description": "a response to this item is not required"
+            }
+        ]
     },
     "visibility": {
         "LongName": "",
         "VariableName": "vis",
-        "Description": "defines the conditions that the item must fullfill to be displayed ; default == 1",
+        "Description": "Lists the conditions that have to be fulfilled for each item to be displayed to the user. By default, an item will be displayed. Other it will only be shown if a specific answer has been given to a previous item: in this case the expression in this cell must be a valid javascript expression like: 'previousItem === 1' ",
+        "Default": 1,
         "Levels": ""
     },
     "details": {
         "LongName": "",
-        "VariableName": "preamble",
+        "VariableName": "",
+        "Description": "Some questions might require some additional information to be understandable by all users, so any extra information to be displayed to the users should be put the detail column.",
+        "Levels": ""
+    },
+    "bids_status": {
+        "LongName": "",
+        "VariableName": "",
+        "Description": "list if the item can be found in a BIDS (Brain Imaging Data Structure) dataset",
+        "Levels": [
+            {
+                "Name": 0,
+                "Description": "does not exist in BIDS"
+            },
+            {
+                "Name": 1,
+                "Description": "exist in BIDS and can be extracted"
+            },
+            {
+                "Name": 2,
+                "Description": "could be included in BIDS"
+            },
+            {
+                "Name": 3,
+                "Description": "unknown"
+            } 
+        ]
+    },
+    "bids_file": {
+        "LongName": "",
+        "VariableName": "",
+        "Description": "list the bids file in which the item can be found",
+        "Levels": ""
+    },
+    "bids_key": {
+        "LongName": "",
+        "VariableName": "",
+        "Description": "list the json key corresponding to this item in the bids json file",
+        "Levels": ""
+    },
+    "bids_key_for_unit": {
+        "LongName": "",
+        "VariableName": "",
         "Description": "",
         "Levels": ""
     }

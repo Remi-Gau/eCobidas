@@ -39,14 +39,11 @@ There are 3 repositories behind this checklist:
 1.  this
     [COBIDAS_chckls repository](https://github.com/Remi-Gau/COBIDAS_chckls/)
     where you are currently reading this. It contains:
-
     -   the [neurovault spreadsheet](../inputs/csv/cobidas_neurovault.csv)
     -   the python [script](./python/create_ecobidas_schema.py) to turn that
         spreadsheet into a Repronim schema (basically a bunch hierarchically
         organized json files that link to each other).
-
 1.  Reproschema
-
 1.  the ui
 
 the [cobidas-ui repository](https://github.com/Remi-Gau/cobidas-ui) that does

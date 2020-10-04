@@ -17,8 +17,13 @@ best practices for methods reporting) easier to use: we want to create a website
 with a clickable checklist that, at the end, automatically generates most of the
 method section of a (f)MRI / (i)EEG / MEG / PET paper.
 
-See [here](./20-goals.md) for more information on our goals as well as possible
-extension to the project.
+See [here](./20-goals.md) for more information on our vision and general goals.
+You can also go directly to one of the following section to see a breakdown of
+those goals and see some extensions we have in mind for the project.
+
+1.  [short term goals](./21-short-term.md)
+1.  [intermediate goals](./22-mid-term.md)
+1.  [long term goals](./23-long-term.md)
 
 If you are interested by any of those,
 [get in touch](../README.md#how-to-reach-us). Contributing to this project does
@@ -31,13 +36,9 @@ love for working with spreadsheet and wanting them to be super organized)
 See [here](./30-general-organization.md) for more information about how this
 whole project is organized.
 
-## Spreadsheet content
+## Spreadsheets
 
 <!-- TODO -->
-
-We are still in development so we are currently using the
-[list of required inputs](../inputs/csv/cobidas_neurovault.csv) from
-[neurovault](https://www.neurovault.org/) to work on the user interface.
 
 ## How to run the checklist
 
