@@ -47,8 +47,6 @@ The goal for the MRI app would to be able to describe a typical fMRI study with:
 
 ## M/EEG
 
-<!-- TODO -->
-
 The MRI version is currently ahead and the work done there can pave the way for
 the MEEG version.
 

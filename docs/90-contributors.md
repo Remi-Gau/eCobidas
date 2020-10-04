@@ -3,7 +3,7 @@
 <!--
 TODO
 This probably should be turned into a webpage using some jekyll magic:
-contributor spreadsheet --> yml --> html vie jekyll/liquid
+contributor spreadsheet -> yml -> html vie jekyll/liquid
 
 Or at least use a bash/python script to generate the content. -->
 

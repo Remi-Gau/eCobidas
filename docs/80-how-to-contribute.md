@@ -61,18 +61,7 @@ The MRI part is the more advanced at this moment but we are looking for people
 to help with the M/EEG part.
 
 The content of the spreadsheets and the work involved there is described in more
-details [here](./40-spreadsheet-content.md).
-
--   The neurovault spreadsheet is
-    [here](https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing)
--   The PET spreadsheet is
-    [here](https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing)
--   The eyetracker spreadsheet is
-    [here](https://docs.google.com/spreadsheets/d/1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o/edit?usp=sharing)
--   The MRI spreadsheet is
-    [here](https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing)
--   The M/EEG spreadsheet is
-    [here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
+details [here](./40-spreadsheets.md).
 
 ### Boilerplate method sections
 
