@@ -3,7 +3,7 @@
 The spreadsheets that allow us to generate the different checklists are hosted
 on this
 [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
-and we try to keep a back-up in the [csv folder](./inputs/csv).
+and we try to keep a back-up in the [csv folder](../inputs/csv).
 
 -   The neurovault spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing)

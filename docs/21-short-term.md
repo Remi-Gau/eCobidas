@@ -64,7 +64,7 @@ The main short term goals for the MEEG version are:
     of information
 -   Identify high-priority items in the checklist (similar to Carp 2012 for
     fMRI, e.g.
-    [Luck & Gaspelin 2015](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.12639))
+    [Luck & Gaspelin 2015](https://doi.org/10.1111/psyp.12639))
 
 ## Positron emission tomography and Eyetracking
 
