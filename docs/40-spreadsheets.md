@@ -18,7 +18,8 @@ and we try to keep a back-up in the [csv folder](./inputs/csv).
 
 ## To do
 
-Here is for working on one of the spreadsheet entails.
+Here is a short list of the different things to keep in mind when working on one
+of the spreadsheet.
 
 Each line must correspond to one checklist item that must have only one
 unambiguous item with an associated question. Any item that opens the

@@ -19,17 +19,16 @@
 <!-- /TOC -->
 
 The main aim of this project is to improve reporting methods and results in
-neuroimaging ( (f)MRI, (i)EEG, MEG, PET... ) in order to increase transparency
-and reproducibility.
+neuroimaging (f/MRI, i/EEG, MEG, PET...) in order to increase transparency and
+reproducibility.
 
-We want to do this by developing a practical tool based on best practices
-guidelines that allows users to easily fill in the necessary fields and provide
-a computer readable output that can then, in turn, be used to automatically
-generate parts of the methods section.
+We want to do this by developing a checklist based on best practices guidelines
+that is both easy and practical to use, and that provides a computer readable
+output that can be used to automatically generate parts of the methods section.
 
 ## Prototypes
 
-**The prototype apps for this checklist can be found at those URL**
+**The prototype apps for this checklist are listed below**
 
 <!-- lint disable -->
 
