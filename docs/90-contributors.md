@@ -1,4 +1,4 @@
-# Who is who
+# Contributors
 
 <!--
 TODO
@@ -6,30 +6,6 @@ This probably should be turned into a webpage using some jekyll magic:
 contributor spreadsheet -> yml -> html vie jekyll/liquid
 
 Or at least use a bash/python script to generate the content. -->
-
-<!-- TOC -->
-
--   [Who is who](#who-is-who)
-    -   [Contributors](#contributors)
-    -   [Contributions](#contributions)
-        -   [Design, idea, planning](#design-idea-planning)
-        -   [Spreadsheets](#spreadsheets)
-            -   [MRI](#mri)
-            -   [MEEG](#meeg)
-            -   [Neurovault](#neurovault)
-            -   [Eyetracker](#eyetracker)
-        -   [Reproschema](#reproschema)
-        -   [User interface](#user-interface)
-        -   [Use case definition](#use-case-definition)
-            -   [Meta-analysis](#meta-analysis)
-            -   [fMRI pre-registration](#fmri-pre-registration)
-            -   [EEG / MEG pre-registration](#eeg--meg-pre-registration)
-        -   [BIDS compatibility](#bids-compatibility)
-        -   [Boilerplate method section](#boilerplate-method-section)
-
-<!-- /TOC -->
-
-## Contributors
 
 If you contributed to the COBIDAS Checklist and your name is not listed, please
 add it by adding your details in

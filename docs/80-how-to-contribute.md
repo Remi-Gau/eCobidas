@@ -1,20 +1,5 @@
 # How to contribute
 
-<!-- TOC -->
-
--   [How to contribute](#how-to-contribute)
-    -   [Suggestions](#suggestions)
-        -   [Spreadsheets](#spreadsheets)
-        -   [Boilerplate method sections](#boilerplate-method-sections)
-        -   [Documentation](#documentation)
-        -   [Conversion scripts](#conversion-scripts)
-        -   [User interface](#user-interface)
-    -   [Style guide](#style-guide)
-        -   [Python](#python)
-        -   [Markdown](#markdown)
-
-<!-- /TOC -->
-
 There are many ways in which you can contribute to this project.
 
 We have a list of

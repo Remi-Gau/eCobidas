@@ -1,0 +1,33 @@
+# Project information
+site_name: 'eCOBIDAS'
+repo_name: 'Remi-Gau/eCobidas'
+repo_url: 'https://github.com/Remi-Gau/eCobidas'
+# docs_dir: alternative_path # docs/ is the default folder
+
+# This will use Material them
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'light blue'
+    accent: 'light blue'
+
+# Pages
+nav:
+  - Welcome: "index.md"
+  - Motivations: "10-motivations.md"
+  - Goals:
+    - Short term goals: "21-short-term.md"
+    - Mid term goals: "22-mid-term.md"
+    - Long term goals: "23-long-term.md"
+  - General organization: "30-general-organization.md"
+  - Working with the spreadhseets: "40-spreadsheets.md"
+  - Viewing the checklist: "50-how-to-render-the-checklist.md"
+  - How to contribute: "80-how-to-contribute.md"
+  - Contributors: "90-contributors.md"
+  - References: "99-references.md"
+
+# list of extension
+markdown_extensions:
+  - admonition
+  - pymdownx.details

@@ -1,16 +1,5 @@
 # How the checklist is rendered
 
-<!-- TOC -->
-
--   [How the checklist is rendered](#how-the-checklist-is-rendered)
-    -   [Turn the spreadsheet into the schema](#turn-the-spreadsheet-into-the-schema)
-        -   [Making the new schema available to the UI](#making-the-new-schema-available-to-the-ui)
-        -   [Rendering the checklist](#rendering-the-checklist)
-            -   [Using the online user interface](#using-the-online-user-interface)
-            -   [Serving the app locally](#serving-the-app-locally)
-
-<!-- /TOC -->
-
 This part gets a bit more "techy" but we will do our best to guide you through
 it.
 
