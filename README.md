@@ -19,17 +19,16 @@
 <!-- /TOC -->
 
 The main aim of this project is to improve reporting methods and results in
-neuroimaging ( (f)MRI, (i)EEG, MEG, PET... ) in order to increase transparency
-and reproducibility.
+neuroimaging (f/MRI, i/EEG, MEG, PET...) in order to increase transparency and
+reproducibility.
 
-We want to do this by developing a practical tool based on best practices
-guidelines that allows users to easily fill in the necessary fields and provide
-a computer readable output that can then, in turn, be used to automatically
-generate parts of the methods section.
+We want to do this by developing a checklist based on best practices guidelines
+that is both easy and practical to use, and that provides a computer readable
+output that can be used to automatically generate parts of the methods section.
 
 ## Prototypes
 
-**The prototype apps for this checklist can be found at those URL**
+**The prototype apps for this checklist are listed below**
 
 <!-- lint disable -->
 
@@ -88,8 +87,11 @@ For a more detailed description of the contributions, see
 [here](./docs/90-contributors.md).
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 <!-- prettier-ignore-start -->
+
 <!-- markdownlint-disable -->
+
 <table>
   <tr>
     <td align="center"><a href="https://remi-gau.github.io/"><img src="https://avatars3.githubusercontent.com/u/6961185?v=4" width="100px;" alt=""/><br /><sub><b>Remi Gau</b></sub></a><br /><a href="https://github.com/Remi-Gau/COBIDAS_chckls/commits?author=remi-gau" title="Code">💻</a> <a href="#design-remi-gau" title="Design">🎨</a> <a href="#content-remi-gau" title="Content">🖋</a> <a href="#ideas-remi-gau" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-remi-gau" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-remi-gau" title="Maintenance">🚧</a> <a href="#projectManagement-remi-gau" title="Project Management">📆</a> <a href="#tool-remi-gau" title="Tools">🔧</a> <a href="#talk-remi-gau" title="Talks">📢</a></td>
@@ -118,6 +120,7 @@ For a more detailed description of the contributions, see
 </table>
 
 <!-- markdownlint-enable -->
+
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->

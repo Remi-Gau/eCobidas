@@ -2,7 +2,7 @@
 
 Common RRID for neuroimaging.
 
-Feel free to look more up [here]{https://scicrunch.org/resources} and add more.
+Feel free to look more up [here](https://scicrunch.org/resources) and add more.
 
 ## Stimulus presentation
 

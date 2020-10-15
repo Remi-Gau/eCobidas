@@ -1,4 +1,4 @@
-# Documentation
+# Welcome to the eCOBIDAS docmentation
 
 ## Motivations
 
@@ -38,7 +38,11 @@ whole project is organized.
 
 ## Spreadsheets
 
-<!-- TODO -->
+A lot of the work for this projects starts with some (usually pretty big)
+spreadsheets.
+
+See [here](./40-spreadsheets.md) for a description of their content and what the
+work involves.
 
 ## How to run the checklist
 

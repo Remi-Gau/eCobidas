@@ -1,20 +1,5 @@
 # How to contribute
 
-<!-- TOC -->
-
--   [How to contribute](#how-to-contribute)
-    -   [Suggestions](#suggestions)
-        -   [Spreadsheets](#spreadsheets)
-        -   [Boilerplate method sections](#boilerplate-method-sections)
-        -   [Documentation](#documentation)
-        -   [Conversion scripts](#conversion-scripts)
-        -   [User interface](#user-interface)
-    -   [Style guide](#style-guide)
-        -   [Python](#python)
-        -   [Markdown](#markdown)
-
-<!-- /TOC -->
-
 There are many ways in which you can contribute to this project.
 
 We have a list of
@@ -55,7 +40,7 @@ format.
 
 The spreadsheets are hosted on this
 [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
-and we try to keep a back-up in the [csv folder](./inputs/csv).
+and we try to keep a back-up in the [csv folder](../inputs/csv).
 
 The MRI part is the more advanced at this moment but we are looking for people
 to help with the M/EEG part.
