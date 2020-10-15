@@ -56,7 +56,7 @@ You want to know more about:
 -   the different goals of the project?
 -   how it is implemented?
 
-Head over to our [documentation](./docs/00-index.md)
+Head over to our [documentation](https://remi-gau.github.io/eCobidas/)
 
 ## How to reach us
 

@@ -28,7 +28,7 @@ should be improved through early user feedback.
 
 ## Extended checklists
 
-Right now, several of the [prototypes](../README.md#prototypes) contains only a
+Right now, several of the [prototypes](https://github.com/Remi-Gau/eCobidas/README.md#prototypes) contains only a
 subset of all the questions from the reports they came from. For example, the
 MRI checklist only contain the items corresponding to the metadata of a
 collection of results uploaded on [Neurovault](https://neurovault.org/).
