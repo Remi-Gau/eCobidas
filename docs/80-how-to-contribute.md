@@ -3,16 +3,16 @@
 There are many ways in which you can contribute to this project.
 
 We have a list of
-[milestones](https://github.com/Remi-Gau/cobidas_chckls/milestones) for the
+[milestones](https://github.com/Remi-Gau/eCobidas/tree/master/milestones) for the
 different features we would like to include in this project.
 
 Those milestones have
-[several opened issues](https://github.com/Remi-Gau/cobidas_chckls/issues)
+[several opened issues](https://github.com/Remi-Gau/eCobidas/tree/master/issues)
 related to them: have a look through those issues to see if there is any of them
 where you think you can help.
 
 We are also track the progress to our different goals using some of the
-integrated [kanban boards](https://github.com/Remi-Gau/cobidas_chckls/projects)
+integrated [kanban boards](https://github.com/Remi-Gau/eCobidas/tree/master/projects)
 that github offers.
 
 > [Kanban boards](https://en.wikipedia.org/wiki/Kanban):
@@ -40,7 +40,7 @@ format.
 
 The spreadsheets are hosted on this
 [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
-and we try to keep a back-up in the [csv folder](https://github.com/Remi-Gau/eCobidas/inputs/csv).
+and we try to keep a back-up in the [csv folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/csv).
 
 The MRI part is the more advanced at this moment but we are looking for people
 to help with the M/EEG part.
@@ -50,30 +50,30 @@ details [here](./40-spreadsheets.md).
 
 ### Boilerplate method sections
 
-We want to create [boilerplate method sections](https://github.com/Remi-Gau/eCobidas/inputs/boilerplate)
+We want to create [boilerplate method sections](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/boilerplate)
 corresponding to a single item or a set of items of the checklist to automate
 methods writing once the checklist is completed. There is a lot of work to do
 there in terms of writing the boilerplate text as well as automating the methods
 section generation.
 
 Boilerplate related issues listed
-[here](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate).
+[here](https://github.com/Remi-Gau/eCobidas/tree/master/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate).
 
 ### Documentation
 
 If you don't understand something about the project, its goals, its
 implementation or how to use, then it's most likely that we did not do a good
 enough job at explaining and describing it.
-[Get in touch](https://github.com/Remi-Gau/eCobidas/README.md#how-to-reach-us) and we can work together to improve
+[Get in touch](https://github.com/Remi-Gau/eCobidas/tree/master/README.md#how-to-reach-us) and we can work together to improve
 our documentation.
 
 There are also
-[several aspects of the documentation](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Adocumentation)
+[several aspects of the documentation](https://github.com/Remi-Gau/eCobidas/tree/master/issues?q=is%3Aissue+is%3Aopen+label%3Adocumentation)
 that need to be expanded.
 
 ### Conversion scripts
 
-We use some [python code](https://github.com/Remi-Gau/eCobidas/scripts) to convert the spreadsheets into the set
+We use some [python code](https://github.com/Remi-Gau/eCobidas/tree/master/tree/master/scripts) to convert the spreadsheets into the set
 of `jsonld` files that the user interface needs as inputs to display the
 checklists. This needs further improvement so if python is your jam, feel free
 to dive in.
@@ -89,10 +89,10 @@ waiting to be written there.
 The [user interface](https://github.com/ReproNim/schema-ui) is Javascript based
 and uses the [Vue framework](https://vuejs.org/) and this also needs a lot of
 tweaking, so if Javascript is cup of tea:
-[get in touch!](https://github.com/Remi-Gau/eCobidas/README.md#how-to-reach-us)
+[get in touch!](https://github.com/Remi-Gau/eCobidas/tree/master/README.md#how-to-reach-us)
 
 Here are
-[some of the issues](https://github.com/Remi-Gau/cobidas_chckls/issues?q=is%3Aissue+is%3Aopen+label%3Auser-interface)
+[some of the issues](https://github.com/Remi-Gau/eCobidas/tree/master/issues?q=is%3Aissue+is%3Aopen+label%3Auser-interface)
 related to the UI.
 
 ## Style guide

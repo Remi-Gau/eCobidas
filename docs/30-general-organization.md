@@ -28,10 +28,10 @@ methods and results reporting in (f)MRI, (i)EEG, MEG.
 There are 3 repositories behind this checklist:
 
 1.  this
-    [COBIDAS_chckls repository](https://github.com/Remi-Gau/eCobidas)
+    [COBIDAS_chckls repository](https://github.com/Remi-Gau/eCobidas/tree/master)
     where you are currently reading this. It contains:
-    -   the [neurovault spreadsheet](https://github.com/Remi-Gau/eCobidas/inputs/csv/cobidas_neurovault.csv)
-    -   the python [script](https://github.com/Remi-Gau/eCobidas/scripts/convert_csv_to_schema.py) to turn that
+    -   the [neurovault spreadsheet](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/csv/cobidas_neurovault.csv)
+    -   the python [script](https://github.com/Remi-Gau/eCobidas/tree/master/scripts/convert_csv_to_schema.py) to turn that
         spreadsheet into a Repronim schema (basically a bunch hierarchically
         organized json files that link to each other).
 1.  Reproschema
@@ -109,8 +109,8 @@ The repronim schema is organized in a hierarchical manner with 3 levels.
     this level is underused in the COBIDAS checklist but could be used to define
     activity sets for different use case: fMRI, MEEG, pre-registration...
 
-So far we have a [script](https://github.com/Remi-Gau/eCobidas/scripts/create_ecobidas_schema.py) to turn the
-neurovault [list of required inputs](https://github.com/Remi-Gau/eCobidas/inputs/csv/cobidas_neurovault.csv) into a
+So far we have a [script](https://github.com/Remi-Gau/eCobidas/tree/master/scripts/create_ecobidas_schema.py) to turn the
+neurovault [list of required inputs](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/csv/cobidas_neurovault.csv) into a
 schema that can then be render with the schema-ui.
 
 

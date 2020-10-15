@@ -26,7 +26,7 @@ those goals and see some extensions we have in mind for the project.
 1.  [long term goals](./23-long-term.md)
 
 If you are interested by any of those,
-[get in touch](https://github.com/Remi-Gau/eCobidas/README.md#how-to-reach-us). Contributing to this project does
+[get in touch](https://github.com/Remi-Gau/eCobidas/tree/master/README.md#how-to-reach-us). Contributing to this project does
 not necessarily require super-advanced technical skills (except maybe a certain
 love for working with spreadsheet and wanting them to be super organized)
 :wink:.
