@@ -1,4 +1,4 @@
-# Welcome to the eCOBIDAS docmentation
+# Welcome to the eCOBIDAS documentation
 
 ## Motivations
 
