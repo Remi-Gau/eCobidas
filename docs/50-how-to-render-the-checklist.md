@@ -3,86 +3,110 @@
 <!-- TOC -->
 
 -   [How the checklist is rendered](#how-the-checklist-is-rendered)
-    -   [How to](#how-to)
-        -   [Turn the spreadsheet into the schema](#turn-the-spreadsheet-into-the-schema)
-        -   [Making the new schema available to the cobidas-ui](#making-the-new-schema-available-to-the-cobidas-ui)
+    -   [Turn the spreadsheet into the schema](#turn-the-spreadsheet-into-the-schema)
+        -   [Making the new schema available to the UI](#making-the-new-schema-available-to-the-ui)
         -   [Rendering the checklist](#rendering-the-checklist)
-            -   [Run Locally with node.js](#run-locally-with-nodejs)
+            -   [Using the online user interface](#using-the-online-user-interface)
+            -   [Serving the app locally](#serving-the-app-locally)
 
 <!-- /TOC -->
 
-First make sure you understand how the different part of this project are
-organized by reading the [general organization](./30-general-organization.md)
-document.
+This part gets a bit more "techy" but we will do our best to guide you through
+it.
 
----
+First make sure you are familiar with the structure of this project by reading
+the [general organization](./30-general-organization.md) documentation.
 
-## How to
+## Turn the spreadsheet into the schema
 
-### Turn the spreadsheet into the schema
+This part is done by a bit of python code and you can find more information in
+the [README](../scripts/README.md) in the `scripts` folder.
 
-<!-- TODO add link to script section -->
-
-### Making the new schema available to the cobidas-ui
+### Making the new schema available to the UI
 
 If the previous step went smoothly you now need to make the newly created files
-available on the remote of your reproschema repository so that the cobidas-ui
-repository can 'see' them. This you can do by committing the files newly created
-on your local reproschema repository and pushing them the remote. For example if
-the schema is hosted on the `neurovault` branch of your `origin` remote
-repository, the following should do the trick (assuming that you are already on
-the `neurovault` branch of your local repo):
+available on your remote repository on github so that the user-interface can
+'see' them. This you can do by committing the files newly created on your local
+repository and pushing them the remote.
 
-```
+For example if the schema is hosted on the `neurovault` branch of your `origin`
+remote repository, the following should do the trick (assuming that you are
+already on the `neurovault` branch of your local repo):
+
+```bash
 git add --all
-git commit -m 'update neurovault schema'
+git commit -m 'your commit message'
 git push origin neurovault
 ```
 
 ### Rendering the checklist
 
-<!-- TODO add link to doc of the ui -->
+There are 2 ways to visualize the checklist you have created.
 
-Step inside the `cobidas-ui` directory, checkout the `neurovault` development
-branch
+#### Using the online user interface
 
-```
-cd cobidas-ui
-git checkout neurovault
-```
+You can point the already existing user-interface to the schema of the protocol
+or the activity you have just created.
 
-Make sure that that you have set `cobidas-ui` correctly so it will read the
-schema from the right repository. This can be be set by modifying its
-`schema-ui/src/config.js` file (e.g see
-[here](https://github.com/Remi-Gau/cobidas-ui/blob/COBIDAS/src/config.js)).
+If you want to visualize an activity on its own, you can use the
+[reproschema-ui](https://www.repronim.org/reproschema-ui/#/). To do that you can
+point the UI to the **raw** content of this activity.
 
-You then have 2 options to run the app locally: use javascript `node.js` or use
-`docker`.
+To get access to the raw content of an activity you must click on the `Raw`
+button on github once you have opened its page,
+[see for example the PHQ-9 acvitiy here](https://github.com/ReproNim/reproschema-library/blob/master/activities/PHQ-9/PHQ9_schema).
+This will open this URL:
+[https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/PHQ-9/PHQ9_schema](https://raw.githubusercontent.com/ReproNim/reproschema-library/master/activities/PHQ-9/PHQ9_schema).
 
-#### Run Locally with node.js
-
--   Install [node version manager](https://github.com/nvm-sh/nvm) to help you
-    deal with different version of `node.js`.
-
-If you are running linux go for:
+You can then pass the the URL of raw content to the UI using the following
+template URL:
 
 ```
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
 ```
 
-Then close your terminal and reopen it then run
+To view a protocol, you can also use the reproschema-ui with the following
+template URL:
 
 ```
-nvm install node
-nvm install 9
+https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema
 ```
 
--   Install the javascript dependencies
--   Run the development server
+#### Serving the app locally
 
-```
-npm install
-npm run dev
+If you want to use serve the app locally on your computer, you will need to
+install [node.js](https://nodejs.org/en/) (the "backend" version of Javascript).
+A good way to do this is to use node version manager: some installation
+instructions are available on the
+[user-interface repository](https://github.com/ReproNim/reproschema-ui#serve-the-app-on-your-computer).
+
+<!-- TODO Is it possible to point the UI to a local file ? -->
+
+Make sure that that you have set the UI correctly so it will read the schema
+from the right repository. This can be be set by modifying its
+`reproschema-ui/src/config.js` file (e.g see
+[here](https://github.com/ReproNim/reproschema-ui/blob/master/src/config.js)).
+
+Modify the `githubSrc` so that it points to the URL of the schema of your
+protocol:
+
+```javascript
+module.exports = {
+    /* eslint-disable */
+    githubSrc:
+        "https://raw.githubusercontent.com/your-gtihub-account/your-repository/branch-name/folder/protcol_schema_filename",
+    banner: "This is a test",
+    assetsPublicPath: "/your-repository/",
+    backendServer: null,
+    consent: true,
+};
 ```
 
--   Open your browser and go to [localhost:8080](localhost:8080)
+Once you have done that you can launch the app with:
+
+```bash
+npm install # Install the Javascript dependencies
+npm run serve # Run the development server locally
+```
+
+Open your browser and go to [localhost:8080](localhost:8080)

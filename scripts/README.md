@@ -67,3 +67,19 @@ reproschema_schema.py
   ├── reproschema_item.py
   └── reproschema_protocol.py
 ```
+
+## Validate the output
+
+```bash
+reproschema -l DEBUG validate activities
+reproschema -l DEBUG validate protocols
+```
+
+## View the results
+
+After pushing to github
+
+```
+https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema
+https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
+```
