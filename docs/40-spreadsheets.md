@@ -3,7 +3,7 @@
 The spreadsheets that allow us to generate the different checklists are hosted
 on this
 [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
-and we try to keep a back-up in the [csv folder](../inputs/csv).
+and we try to keep a back-up in the [csv folder](https://github.com/Remi-Gau/eCobidas/inputs/csv).
 
 -   The neurovault spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing)
@@ -112,8 +112,8 @@ Here follows a description of the columns' content.
 ### Content common to all spreadsheets
 
 The description of the columns common to all spreadsheet is described in the
-[data dictionary](../inputs/csv/data-dictionary.json) in the
-[inputs folder](../inputs/csv/data-dictionary.json).
+[data dictionary](https://github.com/Remi-Gau/eCobidas/inputs/csv/data-dictionary.json) in the
+[inputs folder](https://github.com/Remi-Gau/eCobidas/inputs/csv/data-dictionary.json).
 
 Each column is described by an element in the JSON data dictionarry.
 
