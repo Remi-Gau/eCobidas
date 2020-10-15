@@ -55,7 +55,7 @@ format.
 
 The spreadsheets are hosted on this
 [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
-and we try to keep a back-up in the [csv folder](./inputs/csv).
+and we try to keep a back-up in the [csv folder](../inputs/csv).
 
 The MRI part is the more advanced at this moment but we are looking for people
 to help with the M/EEG part.
