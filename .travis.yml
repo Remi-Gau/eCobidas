@@ -10,4 +10,5 @@ branches:
 before_script:
   - npm install `cat npm-requirements.txt`
 script:
-  - remark . --frail
+  - remark ./docs/ --frail
+  - remark ./inputs/ --frail

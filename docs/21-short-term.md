@@ -11,10 +11,13 @@ So far the common short goals of all the versions of the app (for MRI, PET...)
 are:
 
 -   Create a set of tools and a proof of concept web-app that can:
+
     -   convert a set of spreadsheet of items into a schema that represents all
        
     -   from this schema generate a checklist to be clicked through by users,
+    
     -   outputs a set of JSON-LD files once the user is done,
+
     -   generate a method section using these JSON-LD files and some boilerplate
         template of a method section where the content of the JSON-LD files
         could be reinjected.
@@ -25,6 +28,7 @@ For the spreadsheets that represent the recommendation guidelines, the initial
 curation process must:
 
 -   identify high-priority items for each checklist,
+
 -   ensure that those high priority items has been properly atomized (meaning
     that it is only made of a single question) and curated (define an item name,
     a question, the type of response expected and an eventual list of response
@@ -60,8 +64,10 @@ The main short term goals for the MEEG version are:
     both versions by extracting the common parts into standalone spreadsheets:
     for example there could be one common spreadsheet for participant sample
     description.
+
 -   Consolidate the other items of the spreadsheet, as it is still missing a lot
     of information
+
 -   Identify high-priority items in the checklist (similar to Carp 2012 for
     fMRI, e.g.
     [Luck & Gaspelin 2015](https://doi.org/10.1111/psyp.12639))

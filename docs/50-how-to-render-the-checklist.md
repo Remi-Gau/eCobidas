@@ -50,14 +50,14 @@ This will open this URL:
 You can then pass the the URL of raw content to the UI using the following
 template URL:
 
-```
+```bash
 https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
 ```
 
 To view a protocol, you can also use the reproschema-ui with the following
 template URL:
 
-```
+```bash
 https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema
 ```
 

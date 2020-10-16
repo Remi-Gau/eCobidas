@@ -3,16 +3,16 @@
 There are many ways in which you can contribute to this project.
 
 We have a list of
-[milestones](https://github.com/Remi-Gau/eCobidas/tree/master/milestones) for the
+[milestones](https://github.com/Remi-Gau/eCobidas/milestones) for the
 different features we would like to include in this project.
 
 Those milestones have
-[several opened issues](https://github.com/Remi-Gau/eCobidas/tree/master/issues)
+[several opened issues](https://github.com/Remi-Gau/eCobidas/issues)
 related to them: have a look through those issues to see if there is any of them
 where you think you can help.
 
 We are also track the progress to our different goals using some of the
-integrated [kanban boards](https://github.com/Remi-Gau/eCobidas/tree/master/projects)
+integrated [kanban boards](https://github.com/Remi-Gau/eCobidas/projects)
 that github offers.
 
 > [Kanban boards](https://en.wikipedia.org/wiki/Kanban):
@@ -57,7 +57,7 @@ there in terms of writing the boilerplate text as well as automating the methods
 section generation.
 
 Boilerplate related issues listed
-[here](https://github.com/Remi-Gau/eCobidas/tree/master/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate).
+[here](https://github.com/Remi-Gau/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate).
 
 ### Documentation
 
@@ -68,12 +68,12 @@ enough job at explaining and describing it.
 our documentation.
 
 There are also
-[several aspects of the documentation](https://github.com/Remi-Gau/eCobidas/tree/master/issues?q=is%3Aissue+is%3Aopen+label%3Adocumentation)
+[several aspects of the documentation](https://github.com/Remi-Gau/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Adocumentation)
 that need to be expanded.
 
 ### Conversion scripts
 
-We use some [python code](https://github.com/Remi-Gau/eCobidas/tree/master/tree/master/scripts) to convert the spreadsheets into the set
+We use some [python code](https://github.com/Remi-Gau/eCobidas/tree/master/scripts) to convert the spreadsheets into the set
 of `jsonld` files that the user interface needs as inputs to display the
 checklists. This needs further improvement so if python is your jam, feel free
 to dive in.
@@ -92,7 +92,7 @@ tweaking, so if Javascript is cup of tea:
 [get in touch!](https://github.com/Remi-Gau/eCobidas/tree/master/README.md#how-to-reach-us)
 
 Here are
-[some of the issues](https://github.com/Remi-Gau/eCobidas/tree/master/issues?q=is%3Aissue+is%3Aopen+label%3Auser-interface)
+[some of the issues](https://github.com/Remi-Gau/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Auser-interface)
 related to the UI.
 
 ## Style guide
@@ -105,6 +105,7 @@ formatting.
 We have additional checks on Github for code style and quality.
 
 -   [pep8 speaks](https://github.com/marketplace/pep-8-speaks) for code style
+
 -   the awesome [sourcery](https://github.com/marketplace/sourcery-ai) for code
     quality and refactoring suggestions.
 
@@ -112,6 +113,7 @@ We have additional checks on Github for code style and quality.
 
 -   For markdown styling we rely on
     [remark](https://github.com/remarkjs/remark-lint).
+
 -   We check for dead links using the
     [markdown-link-check](https://github.com/marketplace/actions/markdown-link-check)
     github action.

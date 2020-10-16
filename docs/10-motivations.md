@@ -47,11 +47,14 @@ For example, a researcher would have to write or rewrite some aspects of the
 methods used when
 
 1.  when preparing a pre-registration describing the planned study
+
 1.  during the data curation process that usually involves adding metadata
     elements that relate to the details of the data acquisition,
+
 1.  when actually working the methods and results section where we have to back
     and forth to the code we used to run the experiment and to the dataset to
     make sure important details are accurately reported,
+
 1.  when sharing raw or derived data which also usually involves adding a
     minimum of methods-related metadata if the shared data is to be meaningfully
     reusable.
@@ -59,8 +62,10 @@ methods used when
 Another source of inefficiency is the time lost trying to figure out:
 
 -   what the authors of a paper actually did
+
     -   when we would like to compare our results to theirs
-    -   when reviewing papers   
+    -   when reviewing papers     
+
 -   what we actually did 6 months ago but forgot to make a note of it.
 
 So a potential side effect of using a checklist to systematically capture how

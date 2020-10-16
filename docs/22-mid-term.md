@@ -23,15 +23,16 @@ they used this technique in a previous section of the checklist.
 
 ### Improving the wording
 
-The questions of the checklist must be as unambiguous as possible. This
-should be improved through early user feedback.
+The questions of the checklist must be as unambiguous as possible. This should
+be improved through early user feedback.
 
 ## Extended checklists
 
-Right now, several of the [prototypes](https://github.com/Remi-Gau/eCobidas/tree/master/README.md#prototypes) contains only a
-subset of all the questions from the reports they came from. For example, the
-MRI checklist only contain the items corresponding to the metadata of a
-collection of results uploaded on [Neurovault](https://neurovault.org/).
+Right now, several of the
+[prototypes](https://github.com/Remi-Gau/eCobidas/tree/master/README.md#prototypes)
+contains only a subset of all the questions from the reports they came from. For
+example, the MRI checklist only contain the items corresponding to the metadata
+of a collection of results uploaded on [Neurovault](https://neurovault.org/).
 
 In the near future, we want to be able to extend those checklists so they
 include **all** the items listed in their guidelines.
