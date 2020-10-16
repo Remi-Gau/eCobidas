@@ -4,7 +4,8 @@
 
 You will need to have python installed.
 
-There are few dependencies (for now):
+There are few dependencies (for now). One of them is the `reproschema-py`
+package that helps to validate that the schema you create is valid.
 
 -   reproschema
 -   requests_cache
@@ -38,7 +39,7 @@ You only need to specify in the header of that script:
 Once this is done, type this run the script from the `scripts` directory:
 
 ```bash
-python create_ecobidas_schema.py
+python convert_csv_to_schema.py
 ```
 
 ## Implementation
@@ -58,8 +59,8 @@ python create_ecobidas_schema.py
 
 The core function is in [create_schema.py](./create_schema.py).
 
-This code also relies on several classes with the classes `protocol`, `activity` and
-`item` inherit from `schema`:
+This code also relies on several classes with the classes `protocol`, `activity`
+and `item` inherit from `schema`:
 
 ```bash
 reproschema_schema.py
@@ -77,7 +78,7 @@ reproschema -l DEBUG validate protocols
 
 ## View the results
 
-After pushing to github
+After pushing to github:
 
 ```
 https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema

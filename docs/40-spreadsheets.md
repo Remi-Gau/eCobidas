@@ -3,18 +3,28 @@
 The spreadsheets that allow us to generate the different checklists are hosted
 on this
 [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
-and we try to keep a back-up in the [csv folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/csv).
+and we try to keep a back-up in the
+[csv folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/csv).
 
 -   The neurovault spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing)
+
 -   The PET spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing)
+
 -   The eyetracker spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o/edit?usp=sharing)
+
 -   The MRI spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing)
+
 -   The M/EEG spreadsheet is
     [here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
+
+The
+[`download_csv.sh`](https://github.com/Remi-Gau/eCobidas/tree/master/download_csv.sh)
+bash script will directly download those spreadsheets as csv files into the
+`inputs/csv` folder
 
 ## To do
 
@@ -25,13 +35,13 @@ Each line must correspond to one checklist item that must have only one
 unambiguous item with an associated question. Any item that opens the
 possibility of a response of the form:
 
-```
+```bash
 If A was used, then list the parameters B, C, D
 ```
 
-must be broken down into several questions:
+Then it must be broken down into several questions:
 
-```
+```bash
 1. Was A used?
 2. If so, what parameter was used for B?
 3. What parameter was used for C?
@@ -41,12 +51,17 @@ must be broken down into several questions:
 For each item:
 
 -   make sure it has a name, preferred label, description: for some of those a
-    formula in the MRI spreadsheet should automatically take care of that
+    formula in the spreadsheet should automatically take care of that
+
 -   make sure that there is a clear specific and unambiguous question associated
     to this item
+
 -   identify the response type expected
+
 -   create a response choice list where needed
+
 -   mark the item as high-priority to be in the next release of the app.
+
 -   assess whether there is way to **not** expose users to that item (or
     restrict list of the response choices for that item) if it is not relevant
     to their use-case
@@ -67,7 +82,7 @@ If some columns do not appear, it is possible that they have been hidden by
 someone else. You will simply have to click on the double black arrow at the
 limit between columns to display them back.
 
-![ ](./img/show_hidden_columns.png)
+![](./img/show_hidden_columns.png)
 
 ### Formatting
 
@@ -112,8 +127,9 @@ Here follows a description of the columns' content.
 ### Content common to all spreadsheets
 
 The description of the columns common to all spreadsheet is described in the
-[data dictionary](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/csv/data-dictionary.json) in the
-[inputs folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/csv/data-dictionary.json).
+[data dictionary](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/csv/data-dictionary.json)
+in the
+[inputs folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/).
 
 Each column is described by an element in the JSON data dictionarry.
 
@@ -132,17 +148,24 @@ Each column is described by an element in the JSON data dictionarry.
 
 -   Software defaults columns (`spm_default`, `fsl_default`) refer to the
     default value used for this item by a given software.
+
 -   Integration with other sources:
+
     -   Brain Imaging Data Structure dataset: the `bids_*` columns denote if
         information about this item can be found in a
         [BIDS](http://bids.neuroimaging.io/) dataset and if so where.
+
     -   `nidm_results`: mention where information this item can be found in an
         NIDM results package
+
     -   `neurovault` collection: refers to the name of this item in a Neurovault
         collection
+
 -   Meta-analysis: These columns denote whether or not each item could be
     important to evaluate studies for a meta-analysis.
+
     -   `use_case_meta-analysis`
+
         -   yes, include for meta-analyses
         -   no, exclude for meta-analyses
         -   maybe - `meta-analysis_comment`
@@ -157,9 +180,11 @@ For the MRI spreadsheet, this is taken from
 [Carp, 2012](https://drive.google.com/file/d/1TBSxC52kXVERl9JmfbBPC7uCas4QN_vg/view?usp=sharing).
 
 -   `in_Carp2012`: name of the item in that paper
+
 -   `percent_of_studies`: percent of studies reporting the item. If the number
     is in **bold**, it was approximately extracted from one of the figures of
     the paper. (because it was not reported in the text of the article).
+
 -   `percent_of_studies_anat`: same as above but for the anatomical data
 
 The Eyetracking spreadsheet `percent_reported` column also has numbers on the
