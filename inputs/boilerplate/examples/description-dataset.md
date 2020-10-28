@@ -8,6 +8,7 @@
     - [func](#func)
     - [fmap](#fmap)
     - [dwi](#dwi)
+    - [eeg](#meeg)
 <!-- lint enable -->
 <!-- /TOC -->
 
@@ -74,3 +75,10 @@ acq_param.so_str, acq_param.tr,... acq_param.te, acq_param.fa, acq_param.fov,
 acq_param.ms, acq_param.vs, ... acq_param.bval_str, acq_param.n_vecs,
 acq_param.mb_str);
 ```
+
+
+### meeg
+
+MNE generates some level of dataset description at the end of the BIDS conversion.
+
+See [here for example](https://mne.tools/mne-bids/stable/auto_examples/convert_group_studies.html#sphx-glr-auto-examples-convert-group-studies-py)
