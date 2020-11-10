@@ -65,7 +65,7 @@ def create_schema(schema_to_create, OUTPUT_DIR):
 
 def return_protocol_details(schema_to_create):
 
-    source_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+    source_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
     csv_dir = os.path.join("inputs", "csv")
 
     input_file = os.path.join(
