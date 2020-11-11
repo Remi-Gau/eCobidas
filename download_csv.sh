@@ -20,7 +20,7 @@
 csv_folder=inputs/csv/
 
 if [ $# -lt 1 ]; then
-    modalities='eyetracker mri meeg neurovault pet'
+    modalities='eyetracker mri meeg neurovault pet artemis'
     else
     modalities=$1
 fi

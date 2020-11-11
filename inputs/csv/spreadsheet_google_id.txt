@@ -25,3 +25,10 @@ neurovault_google_ID 1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0
 # 
 # https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing
 pet_google_ID 1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8
+
+# ---------------------------------------------------------------------------- #
+#                                    ARTEM-IS
+# 
+# https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit#gid=759849853
+
+artemis_google_ID 1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo
