@@ -13,42 +13,12 @@
 <!-- lint enable -->
 <!-- /TOC -->
 
-## CPP SPM12 pipeline
-
-The fMRI data were pre-processed and analyzed using statistical parametric
-mapping (SPM12 – v7487; Wellcome Center for Neuroimaging, London, UK;
-www.fil.ion.ucl.ac.uk/spm) running on {octave 4.{??} / matlab 20{XX}
-(Mathworks)}.
-
-The preprocessing of the functional images was performed in the following order:
-removing of dummy scans, {slice timing correction}, realignment, normalization
-to MNI, smoothing.
-
-{XX} dummy scans were removed to allow signal stabilization.
-
-{Slice timing correction was then performed taking the {XX}th slice as a
-reference (interpolation: sinc interpolation).}
-
-Functional scans from each participant were realigned using the mean image as a
-reference (SPM 2 passes ; number of degrees of freedom: 6 ; cost function: least
-square) (Friston et al, 1995).
-
-The mean image obtained from realignement was then co-registered to the
-anatomical T1 image (number of degrees of freedom: 6 ; cost function: normalized
-mutual information) (Friston et al, 1995). The transformation matrix from this
-coregistration was then applied to all the functional images.
-
-The anatomical T1 image was bias field corrected, segmented and normalized to
-MNI space (target space resolution: 1 mm ; interpolation: 4th degree b-spline)
-using a unified segmentation. The deformation field obtained from this step was
-then applied to all the functional images (target space resolution equal that
-used at acquisition ; interpolation: 4th degree b-spline)
-
-Functional MNI normalized images were then spatially smoothed using a 3D
-gaussian kernel (FWHM = {XX} mm).
 
 ## fMRIprep
 
+Taken from this [page](https://fmriprep.org/en/stable/citing.html).
+
+```
 Results included in this manuscript come from preprocessing performed using
 FMRIPREP version latest [1, 2, RRID:SCR_016216], a Nipype [3, 4,
 RRID:SCR_002502] based tool. Each T1w (T1-weighted) volume was corrected for INU
@@ -94,6 +64,43 @@ denoised [20].
 Many internal operations of FMRIPREP use Nilearn [22, RRID:SCR_001362],
 principally within the BOLD-processing workflow. For more details of the
 pipeline see https://fmriprep.readthedocs.io/en/latest/workflows.html.
+```
+
+## CPP SPM
+
+```
+The fMRI data were pre-processed and analyzed using statistical parametric
+mapping (SPM12 – v7487; Wellcome Center for Neuroimaging, London, UK;
+www.fil.ion.ucl.ac.uk/spm) running on {octave 4.{??} / matlab 20{XX}
+(Mathworks)}.
+
+The preprocessing of the functional images was performed in the following order:
+removing of dummy scans, {slice timing correction}, realignment, normalization
+to MNI, smoothing.
+
+{XX} dummy scans were removed to allow signal stabilization.
+
+{Slice timing correction was then performed taking the {XX}th slice as a
+reference (interpolation: sinc interpolation).}
+
+Functional scans from each participant were realigned using the mean image as a
+reference (SPM 2 passes ; number of degrees of freedom: 6 ; cost function: least
+square) (Friston et al, 1995).
+
+The mean image obtained from realignement was then co-registered to the
+anatomical T1 image (number of degrees of freedom: 6 ; cost function: normalized
+mutual information) (Friston et al, 1995). The transformation matrix from this
+coregistration was then applied to all the functional images.
+
+The anatomical T1 image was bias field corrected, segmented and normalized to
+MNI space (target space resolution: 1 mm ; interpolation: 4th degree b-spline)
+using a unified segmentation. The deformation field obtained from this step was
+then applied to all the functional images (target space resolution equal that
+used at acquisition ; interpolation: 4th degree b-spline)
+
+Functional MNI normalized images were then spatially smoothed using a 3D
+gaussian kernel (FWHM = {XX} mm).
+```
 
 ## SPM references
 
