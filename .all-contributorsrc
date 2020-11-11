@@ -6,7 +6,7 @@
   "imageSize": 100,
   "commit": false,
   "contributorsPerLine": 8,
-  "projectName": "COBIDAS_chckls",
+  "projectName": "eCobidas",
   "projectOwner": "Remi-Gau",
   "repoType": "github",
   "repoHost": "https://github.com",
@@ -221,6 +221,15 @@
       "contributions": [
         "content",
         "ideas"
+      ]
+    },
+    {
+      "login": "jasminetan6032",
+      "name": "jasminetan6032",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/41640321?v=4",
+      "profile": "https://github.com/jasminetan6032",
+      "contributions": [
+        "code"
       ]
     }
   ]
