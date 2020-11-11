@@ -1,7 +1,6 @@
 {
   "files": [
-    "README.md",
-    "./docs/90-contributors.md"
+    "README.md"
   ],
   "contributorsSortAlphabetically": true,
   "imageSize": 100,
