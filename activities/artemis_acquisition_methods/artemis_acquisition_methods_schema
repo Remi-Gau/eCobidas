@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "artemis_acquisition_methods_schema",
+    "prefLabel": "methods",
+    "description": "artemis acquisition methods",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/acquisition_methods"
+        ],
+        "addProperties": [
+            {
+                "variableName": "acquisition_methods",
+                "isAbout": "items/acquisition_methods",
+                "isVis": "different methods == 1",
+                "valueRequired": false
+            }
+        ]
+    }
+}

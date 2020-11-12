@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "acquisition_software",
+    "prefLabel": "acquisition software",
+    "description": "acquisition software",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "What software did you use for the aquisition?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

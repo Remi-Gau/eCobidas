@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "other_peripheral_devices",
+    "prefLabel": "other peripheral devices",
+    "description": "other peripheral devices",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Do you have other devices (eg. signal boxes, converters, other peripheral devices) to report?"
+    },
+    "responseOptions": "../../../response_options/booleanValueConstraints"
+}
