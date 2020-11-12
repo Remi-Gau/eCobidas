@@ -1,0 +1,86 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "artemis_hardware_preamp-peripherals_schema",
+    "prefLabel": "Preamp peripherals",
+    "description": "artemis hardware preamp-peripherals",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/electroded_placement_type",
+            "items/electroded_placement_type_cap",
+            "items/electroded_placement_type_net",
+            "items/electroded_placement_type_loose_placed",
+            "items/cap_model",
+            "items/net_model",
+            "items/electrode_manufacturer",
+            "items/electrode_model",
+            "items/electrode_type",
+            "items/conductive_medium"
+        ],
+        "addProperties": [
+            {
+                "variableName": "electroded_placement_type",
+                "isAbout": "items/electroded_placement_type",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "electroded_placement_type_cap",
+                "isAbout": "items/electroded_placement_type_cap",
+                "isVis": "electroded_placement_type == cap",
+                "valueRequired": false
+            },
+            {
+                "variableName": "electroded_placement_type_net",
+                "isAbout": "items/electroded_placement_type_net",
+                "isVis": "electroded_placement_type == net",
+                "valueRequired": false
+            },
+            {
+                "variableName": "electroded_placement_type_loose_placed",
+                "isAbout": "items/electroded_placement_type_loose_placed",
+                "isVis": "electroded_placement_type == loose placed",
+                "valueRequired": false
+            },
+            {
+                "variableName": "cap_model",
+                "isAbout": "items/cap_model",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "net_model",
+                "isAbout": "items/net_model",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "electrode_manufacturer",
+                "isAbout": "items/electrode_manufacturer",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "electrode_model",
+                "isAbout": "items/electrode_model",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "electrode_type",
+                "isAbout": "items/electrode_type",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "conductive_medium",
+                "isAbout": "items/conductive_medium",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "artemis_hardware_triggers_schema",
+    "prefLabel": "Triggers",
+    "description": "artemis hardware triggers",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/trigger_signal_source",
+            "items/trigger_signal_input"
+        ],
+        "addProperties": [
+            {
+                "variableName": "trigger_signal_source",
+                "isAbout": "items/trigger_signal_source",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "trigger_signal_input",
+                "isAbout": "items/trigger_signal_input",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}

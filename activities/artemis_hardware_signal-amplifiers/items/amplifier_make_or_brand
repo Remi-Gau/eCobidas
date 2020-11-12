@@ -1,0 +1,116 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "amplifier_make_or_brand",
+    "prefLabel": "amplifier make or brand",
+    "description": "amplifier make or brand",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Make or brand of the amplifier"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "Cognitrace",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "Neuroscan",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Digitimer",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "SA Instrumentation",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "BioSemi",
+                "value": 4,
+                "@type": "option"
+            },
+            {
+                "name": "Grass",
+                "value": 5,
+                "@type": "option"
+            },
+            {
+                "name": "NeuroScience",
+                "value": 6,
+                "@type": "option"
+            },
+            {
+                "name": "Brain Products",
+                "value": 7,
+                "@type": "option"
+            },
+            {
+                "name": "Electrical Geodesics",
+                "value": 8,
+                "@type": "option"
+            },
+            {
+                "name": "ANT",
+                "value": 9,
+                "@type": "option"
+            },
+            {
+                "name": "TMSi",
+                "value": 10,
+                "@type": "option"
+            },
+            {
+                "name": "M&I",
+                "value": 11,
+                "@type": "option"
+            },
+            {
+                "name": "Emotiv",
+                "value": 12,
+                "@type": "option"
+            },
+            {
+                "name": "Coulbourn",
+                "value": 13,
+                "@type": "option"
+            },
+            {
+                "name": "Neuronic",
+                "value": 14,
+                "@type": "option"
+            },
+            {
+                "name": "Nihon Kohden",
+                "value": 15,
+                "@type": "option"
+            },
+            {
+                "name": "Psylab",
+                "value": 16,
+                "@type": "option"
+            },
+            {
+                "name": "other",
+                "value": 17,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 18,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 18
+    }
+}

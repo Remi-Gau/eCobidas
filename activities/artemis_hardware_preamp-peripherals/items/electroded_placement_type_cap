@@ -1,0 +1,71 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "electroded_placement_type_cap",
+    "prefLabel": "electroded placement type cap",
+    "description": "electroded placement type cap",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "What type of cap did you use?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "Waveguard (ANT)",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "Electrocap",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "Quickcap (Neuroscan)",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "Easycap standard caps",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "Aegis Array",
+                "value": 4,
+                "@type": "option"
+            },
+            {
+                "name": "Emotiv",
+                "value": 5,
+                "@type": "option"
+            },
+            {
+                "name": "BrainProducts",
+                "value": 6,
+                "@type": "option"
+            },
+            {
+                "name": "BioSemi",
+                "value": 7,
+                "@type": "option"
+            },
+            {
+                "name": "TMSi",
+                "value": 8,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 9,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 9
+    }
+}
