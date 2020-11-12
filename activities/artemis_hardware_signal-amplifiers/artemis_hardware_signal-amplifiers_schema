@@ -1,0 +1,30 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "artemis_hardware_signal-amplifiers_schema",
+    "prefLabel": "Signal amplifiers",
+    "description": "artemis hardware signal-amplifiers",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/amplifier_make_or_brand",
+            "items/amplifier_model"
+        ],
+        "addProperties": [
+            {
+                "variableName": "amplifier_make_or_brand",
+                "isAbout": "items/amplifier_make_or_brand",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "amplifier_model",
+                "isAbout": "items/amplifier_model",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}

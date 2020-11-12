@@ -1,0 +1,46 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "trigger_signal_source",
+    "prefLabel": "trigger signal source",
+    "description": "trigger signal source",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Source of the triggers"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "photo diode",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "auditory trigger/voice key",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "combination stim tracker",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "presentation software trigger",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 4
+    }
+}

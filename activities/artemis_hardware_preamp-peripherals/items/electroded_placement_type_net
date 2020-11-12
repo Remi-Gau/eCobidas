@@ -1,0 +1,31 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "electroded_placement_type_net",
+    "prefLabel": "electroded placement type net",
+    "description": "electroded placement type net",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "What type of net did you use?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "Geodesic Sensor Net",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 1,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 1
+    }
+}
