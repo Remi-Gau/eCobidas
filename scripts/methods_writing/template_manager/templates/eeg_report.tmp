@@ -11,4 +11,3 @@
 {% include 'EEG_channel_placement.tmp' %}
 
 {% include 'recording_properties.tmp' %}
-

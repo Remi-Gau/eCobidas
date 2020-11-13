@@ -1,4 +1,14 @@
-{{suffix}} {{SequenceVariant}} {{SequenceName}} structural MRI data were collected
-({{n_slices}} slices; repetition time, TR={{tr}}ms;
-echo time, TE={{EchoTime}}ms; flip angle, FA={{FlipAngle}}<deg>;
-field of view, FOV={{fov}}mm; matrix size={{ms}}; voxel size={{vs}}mm).
+The anatomical MRI data were collected with following parameters.
+
+{% include 'mri_sequence.tmp' %}
+
+{% include 'mri_inplane_spatial_encoding.tmp' %}
+
+{% include 'mri_rf_contrasts.tmp' %}
+
+{% include 'mri_slice_acceleration.tmp' %}
+
+{% include 'mri_timing_parameters.tmp' %}
+
+({{n_slices}} slices acquired in XXXX order; field of view, FOV={{fov}}mm; 
+matrix size={{ms}}; voxel size={{vs}}mm).

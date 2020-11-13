@@ -1,9 +1,5 @@
 {% include 'institution.tmp' %}
 
-{% include 'mri_scanner_info.tmp' %} 
+{% include 'mri_scanner_hardware.tmp' %} 
 
-{% include 'anat_info.tmp' %} 
-
-
-
-
+{% include 'anat_info.tmp' %}
