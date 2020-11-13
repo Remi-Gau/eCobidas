@@ -4,7 +4,6 @@ import os
 
 from template_manager import *
 
-
 MODALITY = "eeg"
 
 OUTFILE = "dataset_descriptor-" + MODALITY + ".md"
@@ -47,7 +46,7 @@ if __name__ == "__main__":
 
     if MODALITY == "meg":
         input_file = "sub-01_task-FullExample_acq-CTF_run-1_proc-sss_meg.json"
-    if MODALITY == "eeg":
+    elif MODALITY == "eeg":
         input_file = "sub-01_ses-01_task-FullExample_eeg.json"
     elif MODALITY == "anat":
         input_file = "sub-01_ses-01_acq-FullExample_run-01_T1w.json"
