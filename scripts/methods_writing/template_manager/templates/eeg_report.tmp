@@ -8,5 +8,7 @@
 
 {% include 'device_channels.tmp' %}
 
+{% include 'EEG_channel_placement.tmp' %}
+
 {% include 'recording_properties.tmp' %}
 
