@@ -21,7 +21,7 @@
         },
         {
             "name": {
-                "en": "eprime"
+                "en": "Eprime"
             },
             "value": 2
         },
@@ -39,9 +39,63 @@
         },
         {
             "name": {
-                "en": "Other"
+                "en": "Cogent"
+            },
+            "value": 5
+        },
+        {
+            "name": {
+                "en": "ERTS"
             },
             "value": 6
+        },
+        {
+            "name": {
+                "en": "STIM"
+            },
+            "value": 11
+        },
+        {
+            "name": {
+                "en": "EEVoke"
+            },
+            "value": 12
+        },
+        {
+            "name": {
+                "en": "Neurolab"
+            },
+            "value": 13
+        },
+        {
+            "name": {
+                "en": "SuperLab"
+            },
+            "value": 14
+        },
+        {
+            "name": {
+                "en": "ERP system"
+            },
+            "value": 15
+        },
+        {
+            "name": {
+                "en": "StimPres"
+            },
+            "value": 16
+        },
+        {
+            "name": {
+                "en": "InsEP"
+            },
+            "value": 17
+        },
+        {
+            "name": {
+                "en": "Other"
+            },
+            "value": 18
         }
     ]
 }

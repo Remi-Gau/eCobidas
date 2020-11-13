@@ -1,6 +1,6 @@
 The following data correspond to the Testdata task. 
 
-The recordings were performed in the University of Open Science,  Third rock from the sun.
+The recordings were performed in the University of Open Science, ,  Third rock from the sun.
 
 Recordings were acquired using the ActiveTwo system from Biosemi, with serial number BHD2020. The software version was 13.11. 
 

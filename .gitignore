@@ -13,7 +13,7 @@ node_modules/*
 site/*
 
 *.txt
-dataset_descriptor*.md
+# dataset_descriptor*.md
 
 
 # venv/

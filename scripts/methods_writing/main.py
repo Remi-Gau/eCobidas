@@ -4,7 +4,7 @@ import os
 
 from template_manager import *
 
-MODALITY = "eeg"
+MODALITY = "anat"
 
 OUTFILE = "dataset_descriptor-" + MODALITY + ".md"
 

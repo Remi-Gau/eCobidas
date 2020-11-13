@@ -1,0 +1,5 @@
+{% include 'institution.tmp' %}
+
+{% include 'mri_scanner_info.tmp' %} 
+
+{% include 'anat_info.tmp' %} 
