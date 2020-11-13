@@ -8,14 +8,14 @@
 __pycache__
 
 package-lock.json
-
 node_modules/*
 
 site/*
 
+*.txt
+dataset_descriptor*.md
 
-renderedReportResult.txt
-# .idea/
+
 # venv/
-# __pycache__/
+
 # *.py[cod]
