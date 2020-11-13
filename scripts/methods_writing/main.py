@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
     # TODO Parametrize this in arguments, maybe use a processor class
     # Get the input BIDS data
-    input_data = json.load(open('data/sample_meg.json'))
+    input_data = json.load(open('../../inputs/bids_template/sub-01/ses-01/eeg/sub-01_ses-01_task-FullExample_eeg.json'))
 
     # Initialize the class responsible for rendering templates
     TemplateManager.initialize()
