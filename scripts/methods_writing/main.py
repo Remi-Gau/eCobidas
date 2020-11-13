@@ -4,8 +4,7 @@ import os
 
 from template_manager import *
 
-
-MODALITY = "anat"
+MODALITY = "eeg"
 
 OUTFILE = "dataset_descriptor-" + MODALITY + ".md"
 
@@ -47,6 +46,8 @@ if __name__ == "__main__":
 
     if MODALITY == "meg":
         input_file = "sub-01_task-FullExample_acq-CTF_run-1_proc-sss_meg.json"
+    elif MODALITY == "eeg":
+        input_file = "sub-01_ses-01_task-FullExample_eeg.json"
     elif MODALITY == "anat":
         input_file = "sub-01_ses-01_acq-FullExample_run-01_T1w.json"
     elif MODALITY == "func":
@@ -54,7 +55,7 @@ if __name__ == "__main__":
     elif MODALITY == "fmap":
         input_file = "sub-01_ses-01_task-FullExample_run-01_bold"
     elif MODALITY == "dwi":
-        print("Diffusion weighted imaging not surpported")
+        print("Diffusion weighted imaging not supported")
         # input_file = "sub-01_ses-01_task-FullExample_run-01_bold"
     else:
         input_file = "sub-01_task-FullExample_acq-CTF_run-1_proc-sss_meg.json"
