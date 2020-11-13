@@ -44,6 +44,7 @@ if __name__ == "__main__":
     # TODO Parametrize this in arguments, maybe use a processor class
 
     # Get the input BIDS data
+    input_data = json.load(open('../../inputs/bids_template/sub-01/ses-01/eeg/sub-01_ses-01_task-FullExample_eeg.json'))
 
     if MODALITY == "meg":
         input_file = "sub-01_task-FullExample_acq-CTF_run-1_proc-sss_meg.json"
