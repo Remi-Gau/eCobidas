@@ -45,13 +45,10 @@ if __name__ == "__main__":
 
     # Get the input BIDS data
 
-    if MODALITY == "meg":
+    if MODALITY == "meg" or MODALITY != "anat":
         input_file = "sub-01_task-FullExample_acq-CTF_run-1_proc-sss_meg.json"
-    elif MODALITY == "anat":
-        input_file = "sub-01_ses-01_acq-FullExample_run-01_T1w.json"
     else:
-        input_file = "sub-01_task-FullExample_acq-CTF_run-1_proc-sss_meg.json"
-
+        input_file = "sub-01_ses-01_acq-FullExample_run-01_T1w.json"
     input_data = json.load(open(os.path.join(INPUT_PATH, MODALITY, input_file)))
 
     # Initialize the class responsible for rendering templates
