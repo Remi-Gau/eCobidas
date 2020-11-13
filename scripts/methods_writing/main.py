@@ -7,7 +7,7 @@ from template_manager import *
 
 MODALITY = "anat"
 
-OUTFILE = "dataset_descriptor-" + MODALITY + ".txt"
+OUTFILE = "dataset_descriptor-" + MODALITY + ".md"
 
 INPUT_PATH = os.path.join("..", "..", "inputs", "bids_template", "sub-01", "ses-01")
 
@@ -49,6 +49,13 @@ if __name__ == "__main__":
         input_file = "sub-01_task-FullExample_acq-CTF_run-1_proc-sss_meg.json"
     elif MODALITY == "anat":
         input_file = "sub-01_ses-01_acq-FullExample_run-01_T1w.json"
+    elif MODALITY == "func":
+        input_file = "sub-01_ses-01_task-FullExample_run-01_bold"
+    elif MODALITY == "fmap":
+        input_file = "sub-01_ses-01_task-FullExample_run-01_bold"
+    elif MODALITY == "dwi":
+        print("Diffusion weighted imaging not surpported")
+        # input_file = "sub-01_ses-01_task-FullExample_run-01_bold"
     else:
         input_file = "sub-01_task-FullExample_acq-CTF_run-1_proc-sss_meg.json"
 
