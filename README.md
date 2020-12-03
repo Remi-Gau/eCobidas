@@ -3,7 +3,7 @@
 # COBIDAS guidelines checklist
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-21-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- TOC -->
@@ -113,6 +113,7 @@ For a more detailed description of the contributions, see
     <td align="center"><a href="https://github.com/wdweeda"><img src="https://avatars0.githubusercontent.com/u/6614351?v=4" width="100px;" alt=""/><br /><sub><b>Wouter Weeda</b></sub></a><br /><a href="#content-wdweeda" title="Content">🖋</a> <a href="#ideas-wdweeda" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/jasminetan6032"><img src="https://avatars2.githubusercontent.com/u/41640321?v=4" width="100px;" alt=""/><br /><sub><b>jasminetan6032</b></sub></a><br /><a href="https://github.com/Remi-Gau/eCobidas/commits?author=jasminetan6032" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/MarCordero"><img src="https://avatars1.githubusercontent.com/u/68017602?v=4" width="100px;" alt=""/><br /><sub><b>MarCordero</b></sub></a><br /><a href="https://github.com/Remi-Gau/eCobidas/commits?author=MarCordero" title="Code">💻</a> <a href="#ideas-MarCordero" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="http://www.sbirc.ed.ac.uk/cyril/"><img src="https://avatars2.githubusercontent.com/u/4772878?v=4" width="100px;" alt=""/><br /><sub><b>Cyril Pernet</b></sub></a><br /><a href="#ideas-CPernet" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-CPernet" title="Content">🖋</a></td>
   </tr>
 </table>
 
