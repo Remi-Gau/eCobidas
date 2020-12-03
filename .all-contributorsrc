@@ -241,6 +241,16 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "CPernet",
+      "name": "Cyril Pernet",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4772878?v=4",
+      "profile": "http://www.sbirc.ed.ac.uk/cyril/",
+      "contributions": [
+        "ideas",
+        "content"
+      ]
     }
   ]
 }
