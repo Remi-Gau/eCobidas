@@ -1,34 +1,50 @@
 
-# eyetracker
+# ---------------------------------------------------------------------------- #
+#                                   eyetracker
 # https://docs.google.com/spreadsheets/d/1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o/edit?usp=sharing
 eyetracker_google_ID 1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o
 
 
-# MRI
+# ---------------------------------------------------------------------------- #
+#                                    MRI
 # https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing
 mri_google_ID 1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho
 
 # ---------------------------------------------------------------------------- #
 #                                    MEEG
-#
 # https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing
 meeg_google_ID 1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0
 
 # ---------------------------------------------------------------------------- #
 #                                 neurovault
-#
 # https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing
 neurovault_google_ID 1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0
 
 # ---------------------------------------------------------------------------- #
 #                                    PET
-# 
 # https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing
 pet_google_ID 1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8
 
 # ---------------------------------------------------------------------------- #
 #                                    ARTEM-IS
-# 
 # https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit#gid=759849853
 
 artemis_google_ID 1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo
+
+# ---------------------------------------------------------------------------- #
+#                               common participants
+# https://docs.google.com/spreadsheets/d/1pshzE4tXvj294-S-rRVlf9XpczFq2bkj2P3C7xGgzjs/edit?usp=sharing
+
+participants_google_ID 1pshzE4tXvj294-S-rRVlf9XpczFq2bkj2P3C7xGgzjs
+
+# ---------------------------------------------------------------------------- #
+#                                mri all sequences
+# https://docs.google.com/spreadsheets/d/16LhsvrEKOzkNsXGLGlYZsH9h4aZ1hyt_BORmxkndaiI/edit?usp=sharing
+
+mri_all_sequences_google_ID  16LhsvrEKOzkNsXGLGlYZsH9h4aZ1hyt_BORmxkndaiI
+
+# ---------------------------------------------------------------------------- #
+#                                    behavior
+# https://docs.google.com/spreadsheets/d/1P0BQcM0889YTBFSoY8-E0vfdp0psrl7vyHBAW0fSmqs/edit?usp=sharing
+
+behavior_google_ID 1P0BQcM0889YTBFSoY8-E0vfdp0psrl7vyHBAW0fSmqs
