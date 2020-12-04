@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "population_and_recruitment_strategy",
+    "prefLabel": "population and recruitment strategy",
+    "description": "population and recruitment strategy",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": ""
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

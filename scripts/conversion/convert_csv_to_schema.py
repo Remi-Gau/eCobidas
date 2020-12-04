@@ -1,9 +1,9 @@
 import os
 from create_schema import create_schema
 
-# schema_to_create = ["mri_all_sequences" "behavior" "neurovault", "pet", "mri", "eyetracker" "artemis"]
+# schema_to_create = ["mri_all_sequences" "participants" "behavior" "neurovault", "pet", "mri", "eyetracker" "artemis"]
 
-schema_to_create = ["behavior"]
+schema_to_create = ["participants"]
 
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS
