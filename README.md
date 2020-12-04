@@ -53,6 +53,7 @@ guidelines:
 
 ### Sub-checklists: work in progress
 
+-   [participants](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/participants/participants_schema)
 -   [behavior](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/behavior/behavior_schema)
 
 ## Want to know more ?

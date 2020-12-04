@@ -10,12 +10,9 @@
         "shuffle": false,
         "order": [
             "items/group_comparison",
-            "items/number_of_groups",
             "items/number_of_subjects_planned",
             "items/subjects_approached",
             "items/subjects_consented",
-            "items/subjects_refused_to_participate",
-            "items/reason_for_refusal",
             "items/subjects_excluded",
             "items/reason_for_exclusion",
             "items/mean_age",
@@ -24,13 +21,9 @@
             "items/age_maximum",
             "items/subjects_scanned",
             "items/subjects_scanned_but_rejected",
-            "items/subjects_participated_and_analyzed",
             "items/subjects_included_in_analysis",
-            "items/planned_sample_gender",
             "items/gender",
-            "items/race_and_ethnicity",
             "items/education",
-            "items/iq",
             "items/handedness",
             "items/handedness_method",
             "items/exclusion_criteria",
@@ -38,24 +31,12 @@
             "items/clinical_criteria",
             "items/clinical_instruments",
             "items/matching_strategy",
-            "items/population_and_recruitment_strategy",
-            "items/subject_scanning_order",
-            "items/neurocognitive_measures",
-            "items/ethical_approval",
-            "items/informed_consent",
-            "items/compensation",
-            "items/other_demographics"
+            "items/ethical_approval"
         ],
         "addProperties": [
             {
                 "variableName": "group_comparison",
                 "isAbout": "items/group_comparison",
-                "isVis": true,
-                "valueRequired": false
-            },
-            {
-                "variableName": "number_of_groups",
-                "isAbout": "items/number_of_groups",
                 "isVis": true,
                 "valueRequired": false
             },
@@ -74,18 +55,6 @@
             {
                 "variableName": "subjects_consented",
                 "isAbout": "items/subjects_consented",
-                "isVis": true,
-                "valueRequired": false
-            },
-            {
-                "variableName": "subjects_refused_to_participate",
-                "isAbout": "items/subjects_refused_to_participate",
-                "isVis": true,
-                "valueRequired": false
-            },
-            {
-                "variableName": "reason_for_refusal",
-                "isAbout": "items/reason_for_refusal",
                 "isVis": true,
                 "valueRequired": false
             },
@@ -138,20 +107,8 @@
                 "valueRequired": false
             },
             {
-                "variableName": "subjects_participated_and_analyzed",
-                "isAbout": "items/subjects_participated_and_analyzed",
-                "isVis": true,
-                "valueRequired": false
-            },
-            {
                 "variableName": "subjects_included_in_analysis",
                 "isAbout": "items/subjects_included_in_analysis",
-                "isVis": true,
-                "valueRequired": false
-            },
-            {
-                "variableName": "planned_sample_gender",
-                "isAbout": "items/planned_sample_gender",
                 "isVis": true,
                 "valueRequired": false
             },
@@ -162,20 +119,8 @@
                 "valueRequired": false
             },
             {
-                "variableName": "race_and_ethnicity",
-                "isAbout": "items/race_and_ethnicity",
-                "isVis": true,
-                "valueRequired": false
-            },
-            {
                 "variableName": "education",
                 "isAbout": "items/education",
-                "isVis": true,
-                "valueRequired": false
-            },
-            {
-                "variableName": "iq",
-                "isAbout": "items/iq",
                 "isVis": true,
                 "valueRequired": false
             },
@@ -222,45 +167,9 @@
                 "valueRequired": false
             },
             {
-                "variableName": "population_and_recruitment_strategy",
-                "isAbout": "items/population_and_recruitment_strategy",
-                "isVis": true,
-                "valueRequired": false
-            },
-            {
-                "variableName": "subject_scanning_order",
-                "isAbout": "items/subject_scanning_order",
-                "isVis": true,
-                "valueRequired": false
-            },
-            {
-                "variableName": "neurocognitive_measures",
-                "isAbout": "items/neurocognitive_measures",
-                "isVis": true,
-                "valueRequired": false
-            },
-            {
                 "variableName": "ethical_approval",
                 "isAbout": "items/ethical_approval",
                 "isVis": true,
-                "valueRequired": false
-            },
-            {
-                "variableName": "informed_consent",
-                "isAbout": "items/informed_consent",
-                "isVis": true,
-                "valueRequired": false
-            },
-            {
-                "variableName": "compensation",
-                "isAbout": "items/compensation",
-                "isVis": "",
-                "valueRequired": false
-            },
-            {
-                "variableName": "other_demographics",
-                "isAbout": "items/other_demographics",
-                "isVis": "",
                 "valueRequired": false
             }
         ]
