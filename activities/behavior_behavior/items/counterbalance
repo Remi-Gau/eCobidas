@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "counterbalance",
+    "prefLabel": "counterbalance",
+    "description": "counterbalance",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Was the order of the stimuli counterbalanced (across runs, across participants)?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "clarity",
+    "prefLabel": "clarity",
+    "description": "clarity",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Clarity (i.e.,visual contrast, intensity, etc.)"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

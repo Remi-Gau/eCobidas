@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "location_on_body",
+    "prefLabel": "location on body",
+    "description": "location on body",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Location on the body with reference to anatomical landmarks"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

@@ -1,0 +1,338 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "behavior_behavior_schema",
+    "prefLabel": "Behavior",
+    "description": "behavior behavior",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/design_type",
+            "items/condition_and_stimuli",
+            "items/number_experimental_units",
+            "items/block_duration",
+            "items/trial_duration",
+            "items/intertrial_interval_type",
+            "items/intertrial_interval_range",
+            "items/intertrial_interval_distribution",
+            "items/number_of_functional_runs",
+            "items/duration_of_each_run",
+            "items/presentation_software_name",
+            "items/presentation_software_version",
+            "items/operating_system",
+            "items/url_to_code",
+            "items/condition",
+            "items/instructions",
+            "items/stimuli",
+            "items/randomization",
+            "items/deterministic",
+            "items/pseudo-random",
+            "items/stimulus_presentation",
+            "items/response_collection",
+            "items/run_order",
+            "items/counterbalance",
+            "items/apparent_size",
+            "items/viewing_distance",
+            "items/clarity",
+            "items/color",
+            "items/site_of_the_stimulation",
+            "items/position_in_the_visual_field",
+            "items/display_device",
+            "items/visual_other",
+            "items/description",
+            "items/intensity",
+            "items/ear_of_stimulation",
+            "items/auditory_type",
+            "items/contralateral_masking",
+            "items/stimuli_database",
+            "items/calibration_procedure",
+            "items/type",
+            "items/characteristics",
+            "items/location_on_body",
+            "items/somatosensoty_intensity",
+            "items/other_stimulation",
+            "items/feedbacks",
+            "items/variables_recorded"
+        ],
+        "addProperties": [
+            {
+                "variableName": "design_type",
+                "isAbout": "items/design_type",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "condition_and_stimuli",
+                "isAbout": "items/condition_and_stimuli",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "number_experimental_units",
+                "isAbout": "items/number_experimental_units",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "block_duration",
+                "isAbout": "items/block_duration",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "trial_duration",
+                "isAbout": "items/trial_duration",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "intertrial_interval_type",
+                "isAbout": "items/intertrial_interval_type",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "intertrial_interval_range",
+                "isAbout": "items/intertrial_interval_range",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "intertrial_interval_distribution",
+                "isAbout": "items/intertrial_interval_distribution",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "number_of_functional_runs",
+                "isAbout": "items/number_of_functional_runs",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "duration_of_each_run",
+                "isAbout": "items/duration_of_each_run",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "presentation_software_name",
+                "isAbout": "items/presentation_software_name",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "presentation_software_version",
+                "isAbout": "items/presentation_software_version",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "operating_system",
+                "isAbout": "items/operating_system",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "url_to_code",
+                "isAbout": "items/url_to_code",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "condition",
+                "isAbout": "items/condition",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "instructions",
+                "isAbout": "items/instructions",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "stimuli",
+                "isAbout": "items/stimuli",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "randomization",
+                "isAbout": "items/randomization",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "deterministic",
+                "isAbout": "items/deterministic",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "pseudo-random",
+                "isAbout": "items/pseudo-random",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "stimulus_presentation",
+                "isAbout": "items/stimulus_presentation",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "response_collection",
+                "isAbout": "items/response_collection",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "run_order",
+                "isAbout": "items/run_order",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "counterbalance",
+                "isAbout": "items/counterbalance",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "apparent_size",
+                "isAbout": "items/apparent_size",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "viewing_distance",
+                "isAbout": "items/viewing_distance",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "clarity",
+                "isAbout": "items/clarity",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "color",
+                "isAbout": "items/color",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "site_of_the_stimulation",
+                "isAbout": "items/site_of_the_stimulation",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "position_in_the_visual_field",
+                "isAbout": "items/position_in_the_visual_field",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "display_device",
+                "isAbout": "items/display_device",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "visual_other",
+                "isAbout": "items/visual_other",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "description",
+                "isAbout": "items/description",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "intensity",
+                "isAbout": "items/intensity",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "ear_of_stimulation",
+                "isAbout": "items/ear_of_stimulation",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "auditory_type",
+                "isAbout": "items/auditory_type",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "contralateral_masking",
+                "isAbout": "items/contralateral_masking",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "stimuli_database",
+                "isAbout": "items/stimuli_database",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "calibration_procedure",
+                "isAbout": "items/calibration_procedure",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "type",
+                "isAbout": "items/type",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "characteristics",
+                "isAbout": "items/characteristics",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "location_on_body",
+                "isAbout": "items/location_on_body",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "somatosensoty_intensity",
+                "isAbout": "items/somatosensoty_intensity",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "other_stimulation",
+                "isAbout": "items/other_stimulation",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "feedbacks",
+                "isAbout": "items/feedbacks",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "variables_recorded",
+                "isAbout": "items/variables_recorded",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}

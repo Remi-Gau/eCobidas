@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "visual_other",
+    "prefLabel": "visual other",
+    "description": "visual other",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Note if differences in intensity or contrast between different stimulus conditions"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

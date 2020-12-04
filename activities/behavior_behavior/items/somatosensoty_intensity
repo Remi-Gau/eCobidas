@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "somatosensoty_intensity",
+    "prefLabel": "somatosensoty intensity",
+    "description": "somatosensoty intensity",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Was was the intensity of the stimulus? "
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}
