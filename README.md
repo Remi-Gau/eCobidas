@@ -55,6 +55,7 @@ guidelines:
 
 -   [participants](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/participants/participants_schema)
 -   [behavior](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/behavior/behavior_schema)
+- [common acquisition parameters to all MRI sequences](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/mri_all_sequences/mri_all_sequences_schema)
 
 ## Want to know more ?
 
