@@ -3,7 +3,9 @@
 # COBIDAS guidelines checklist
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-21-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- TOC -->
@@ -30,11 +32,14 @@ output that can be used to automatically generate parts of the methods section.
 
 <!-- lint disable -->
 
--   **For the version for fMRI (based on Neurovault)**: see
+-   **For fMRI (based on Neurovault)**: see
     [HERE](https://ohbm.github.io/cobidas/#/)
 
--   **For the version for PET (based an extension to BIDS)**: see
+-   **For PET (based an extension to BIDS)**: see
     [HERE](https://remi-gau.github.io/cobidas-PET/#/)
+
+-   **For eyetracking (based on this [preprint](https://psyarxiv.com/f6qcy/))**:
+    see [HERE](https://remi-gau.github.io/cobidas-eyetracker/#/)
 
 <!-- lint enable -->
 
@@ -45,6 +50,10 @@ guidelines:
 -   [Best Practices in Data Analysis and Sharing in Neuroimaging using MEEG](https://osf.io/a8dhx/)
 -   [Guideline for Reporting Standards of Eye-tracking Research in Decision Sciences](https://psyarxiv.com/f6qcy/)
 -   [Guidelines for the content and format of PET brain data in publications and archives: A consensus paper](https://doi.org/10.1177/0271678X20905433)
+
+### Sub-checklists: work in progress
+
+-   [behavior](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/behavior/behavior_schema)
 
 ## Want to know more ?
 
@@ -119,6 +128,7 @@ For a more detailed description of the contributions, see
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the
