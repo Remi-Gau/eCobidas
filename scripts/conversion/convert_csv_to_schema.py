@@ -1,9 +1,9 @@
 import os
 from create_schema import create_schema
 
-# schema_to_create = ["neurovault", "pet", "mri", "eyetracker"]
+# schema_to_create = ["mri_all_sequences" "behavior" "neurovault", "pet", "mri", "eyetracker" "artemis"]
 
-schema_to_create = ["artemis"]
+schema_to_create = ["behavior"]
 
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS
@@ -14,11 +14,9 @@ schema_to_create = ["artemis"]
 # where the files will be written on your machine: the local repository
 # corresponding to the remote where of the reproschema will be hosted
 
-
-# OUTPUT_DIR = "/home/remi/github/cobidas_chckls"
+OUTPUT_DIR = "/home/remi/github/cobidas_chckls"
 # OUTPUT_DIR = "/home/remi/github/cobidas-PET"
 # OUTPUT_DIR = "/home/remi/github/cobidas"
-OUTPUT_DIR = "C:\Users\Utilisateur\Documents\conferences\BHD2020_BrainhackDonostia2020\eCobidas"
 
 # REMOTE_REPO ----------------------------------------
 # Placeholder to insert in all instances of the remote repo that will host the
@@ -26,10 +24,9 @@ OUTPUT_DIR = "C:\Users\Utilisateur\Documents\conferences\BHD2020_BrainhackDonost
 # Most likely you just need to replace Remi-Gau in the following line by your
 # github username
 
-# REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas_chckls/"
+REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/eCobidas/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-PET/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/ohbm/cobidas/"
-REMOTE_REPO = "https://raw.githubusercontent.com/MarCordero/eCobidas/"
 
 # -----------------------------------------------------------------------------
 #                                   RUN
