@@ -3,7 +3,7 @@ from create_schema import create_schema
 
 # schema_to_create = ["mri_all_sequences" "participants" "behavior" "neurovault", "pet", "mri", "eyetracker" "artemis"]
 
-schema_to_create = ["participants"]
+schema_to_create = ["mri_all_sequences"]
 
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS

@@ -1,0 +1,240 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "mri_all_sequences_mri_all_sequences_schema",
+    "prefLabel": "mri all sequences",
+    "description": "mri all sequences mri all sequences",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/pulse_sequence_type",
+            "items/pulse_sequence_details",
+            "items/imaging_type",
+            "items/number_of_shots",
+            "items/partial_fourrier_scheme",
+            "items/echo_time",
+            "items/repetition_time",
+            "items/flip_angle",
+            "items/voxel_dimension",
+            "items/acquisition_time",
+            "items/inversion_time",
+            "items/field_of_view",
+            "items/in-plane_matrix_size",
+            "items/number_of_slices",
+            "items/slice_thickness",
+            "items/interslice_gap",
+            "items/3d_matrix_size",
+            "items/slice_orientation",
+            "items/slice_alignement",
+            "items/phase_encoding",
+            "items/3d_phase_encoding",
+            "items/phase_encoding_reversal",
+            "items/parallel_imaging_used",
+            "items/parallel_imaging_method",
+            "items/acceleration_factor",
+            "items/other_parallel_imaging_parameters",
+            "items/readout_parameters",
+            "items/fat_suppression",
+            "items/shimming",
+            "items/slice_timing",
+            "items/location_of_the_first_slice",
+            "items/brain_coverage"
+        ],
+        "addProperties": [
+            {
+                "variableName": "pulse_sequence_type",
+                "isAbout": "items/pulse_sequence_type",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "pulse_sequence_details",
+                "isAbout": "items/pulse_sequence_details",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "imaging_type",
+                "isAbout": "items/imaging_type",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "number_of_shots",
+                "isAbout": "items/number_of_shots",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "partial_fourrier_scheme",
+                "isAbout": "items/partial_fourrier_scheme",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "echo_time",
+                "isAbout": "items/echo_time",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "repetition_time",
+                "isAbout": "items/repetition_time",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "flip_angle",
+                "isAbout": "items/flip_angle",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "voxel_dimension",
+                "isAbout": "items/voxel_dimension",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "acquisition_time",
+                "isAbout": "items/acquisition_time",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "inversion_time",
+                "isAbout": "items/inversion_time",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "field_of_view",
+                "isAbout": "items/field_of_view",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "in-plane_matrix_size",
+                "isAbout": "items/in-plane_matrix_size",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "number_of_slices",
+                "isAbout": "items/number_of_slices",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "slice_thickness",
+                "isAbout": "items/slice_thickness",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "interslice_gap",
+                "isAbout": "items/interslice_gap",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "3d_matrix_size",
+                "isAbout": "items/3d_matrix_size",
+                "isVis": "imaging_type == 2",
+                "valueRequired": false
+            },
+            {
+                "variableName": "slice_orientation",
+                "isAbout": "items/slice_orientation",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "slice_alignement",
+                "isAbout": "items/slice_alignement",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "phase_encoding",
+                "isAbout": "items/phase_encoding",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "3d_phase_encoding",
+                "isAbout": "items/3d_phase_encoding",
+                "isVis": "imaging_type == 2",
+                "valueRequired": false
+            },
+            {
+                "variableName": "phase_encoding_reversal",
+                "isAbout": "items/phase_encoding_reversal",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "parallel_imaging_used",
+                "isAbout": "items/parallel_imaging_used",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "parallel_imaging_method",
+                "isAbout": "items/parallel_imaging_method",
+                "isVis": "parallel_imaging_used == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "acceleration_factor",
+                "isAbout": "items/acceleration_factor",
+                "isVis": "parallel_imaging_used == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "other_parallel_imaging_parameters",
+                "isAbout": "items/other_parallel_imaging_parameters",
+                "isVis": "parallel_imaging_used == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "readout_parameters",
+                "isAbout": "items/readout_parameters",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "fat_suppression",
+                "isAbout": "items/fat_suppression",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "shimming",
+                "isAbout": "items/shimming",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "slice_timing",
+                "isAbout": "items/slice_timing",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "location_of_the_first_slice",
+                "isAbout": "items/location_of_the_first_slice",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "brain_coverage",
+                "isAbout": "items/brain_coverage",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}
