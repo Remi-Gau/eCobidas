@@ -1,3 +1,6 @@
 mkdocs-material
 pymdown-extensions
 Jinja2
+reproschema
+requests_cache
+numpy

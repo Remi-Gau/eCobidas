@@ -10,12 +10,17 @@ __pycache__
 package-lock.json
 node_modules/*
 
-site/*
-
 *.txt
 # dataset_descriptor*.md
-
 
 # venv/
 
 # *.py[cod]
+
+# DOCUMENTATION
+site/*
+
+# VIRTUAL ENV
+ecobidas/*
+
+

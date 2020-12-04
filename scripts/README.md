@@ -4,28 +4,24 @@
 
 You will need to have python installed.
 
-There are few dependencies (for now). One of them is the `reproschema-py`
+There are few dependencies (for now). One of them is the [`reproschema-py`](https://github.com/ReproNim/reproschema-py)
 package that helps to validate that the schema you create is valid.
 
--   reproschema
--   requests_cache
--   numpy
-
 ```bash
-pip install reproschema requests_cache numpy
+# create a new virtual environment in ecobidas
+$ virtualenv --python=python3.8 ecobidas
+# activate the new environment
+$ source ecobidas/bin/activate
 ```
 
-If you are using conda for your environment management you should be able to
-install all the dependencies with the `environment.yml` file.
-
 ```bash
-conda env create --file environment.yml
+pip install -r requirements.txt
 ```
 
 ## Generate the schemas
 
 The highest level script that you will use to create the schema is
-[convert_csv_to_schema.py](./convert_csv_to_schema.py). It will go through the
+[convert_csv_to_schema.py](./conversion/convert_csv_to_schema.py). It will go through the
 csv files in the [input folder](../inputs/csv/) and turn them into their
 corresponding protocol, activity and items.
 
@@ -39,10 +35,10 @@ You only need to specify in the header of that script:
 Once this is done, type this run the script from the `scripts` directory:
 
 ```bash
-python convert_csv_to_schema.py
+python3 scripts/conversion/convert_csv_to_schema.py
 ```
 
-## Implementation
+### Implementation
 
 ```bash
 .
@@ -69,14 +65,15 @@ reproschema_schema.py
   └── reproschema_protocol.py
 ```
 
-## Validate the output
+### Validate the output
 
 ```bash
 reproschema -l DEBUG validate activities
 reproschema -l DEBUG validate protocols
+reproschema -l DEBUG validate path_to_the_file_to_validate
 ```
 
-## View the results
+### View the results
 
 After pushing to github:
 
