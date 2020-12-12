@@ -1,0 +1,119 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@id": "artemisAmplifierBrand",
+    "@type": "reproschema:ResponseOption",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 17,
+    "multipleChoice": false,
+    "choices": [
+        {
+            "name": {
+                "en": "Cognitrace"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "Neuroscan"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "Digitimer"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "SA Instrumentation"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "Biosemi"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "Grass"
+            },
+            "value": 5
+        },
+        {
+            "name": {
+                "en": "NeuroScience"
+            },
+            "value": 6
+        },
+        {
+            "name": {
+                "en": "Brain Products"
+            },
+            "value": 7
+        },
+        {
+            "name": {
+                "en": "Electrical Geodesics"
+            },
+            "value": 8
+        },
+        {
+            "name": {
+                "en": "ANT"
+            },
+            "value": 9
+        },
+        {
+            "name": {
+                "en": "TMSi"
+            },
+            "value": 10
+        },
+        {
+            "name": {
+                "en": "M&I"
+            },
+            "value": 11
+        },
+        {
+            "name": {
+                "en": "Emotiv"
+            },
+            "value": 12
+        },
+        {
+            "name": {
+                "en": "Coulbourn"
+            },
+            "value": 13
+        },
+        {
+            "name": {
+                "en": "Neuronic"
+            },
+            "value": 14
+        },
+        {
+            "name": {
+                "en": "Nihon Kohden"
+            },
+            "value": 15
+        },
+        {
+            "name": {
+                "en": "Psylab"
+            },
+            "value": 16
+        },
+        {
+            "name": {
+                "en": "other"
+            },
+            "value": 17
+        }
+    ]
+}

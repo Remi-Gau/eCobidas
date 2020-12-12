@@ -1,0 +1,89 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@id": "artemisReferenceElectrode",
+    "@type": "reproschema:ResponseOption",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 12,
+    "multipleChoice": false,
+    "choices": [
+        {
+            "name": {
+                "en": "left mastoid"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "right mastoid"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "left earlobe"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "right earlobe"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "physically linked"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "Grass"
+            },
+            "value": 5
+        },
+        {
+            "name": {
+                "en": "mastoids"
+            },
+            "value": 6
+        },
+        {
+            "name": {
+                "en": "physically linked earlobes"
+            },
+            "value": 7
+        },
+        {
+            "name": {
+                "en": "Cz"
+            },
+            "value": 8
+        },
+        {
+            "name": {
+                "en": "tip of the nose"
+            },
+            "value": 9
+        },
+        {
+            "name": {
+                "en": "balanced non-cephalic reference"
+            },
+            "value": 10
+        },
+        {
+            "name": {
+                "en": "average"
+            },
+            "value": 11
+        },
+        {
+            "name": {
+                "en": "other"
+            },
+            "value": 12
+        }
+    ]
+}

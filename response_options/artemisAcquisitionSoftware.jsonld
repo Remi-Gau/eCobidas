@@ -1,0 +1,89 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@id": "artemisAcquisitionSoftware",
+    "@type": "reproschema:ResponseOption",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 12,
+    "multipleChoice": false,
+    "choices": [
+        {
+            "name": {
+                "en": "Eemagine"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "Neuroscan"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "InsEP"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "Biosemi"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "NetStation"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "Brain Vision Recorder"
+            },
+            "value": 5
+        },
+        {
+            "name": {
+                "en": "Emotiv"
+            },
+            "value": 6
+        },
+        {
+            "name": {
+                "en": "Brain Products"
+            },
+            "value": 7
+        },
+        {
+            "name": {
+                "en": "ActiView605-Lores"
+            },
+            "value": 8
+        },
+        {
+            "name": {
+                "en": "EEProbe"
+            },
+            "value": 9
+        },
+        {
+            "name": {
+                "en": "TMSi"
+            },
+            "value": 10
+        },
+        {
+            "name": {
+                "en": "BIOPAC"
+            },
+            "value": 11
+        },
+        {
+            "name": {
+                "en": "ANT-Neuro"
+            },
+            "value": 12
+        }
+    ]
+}
