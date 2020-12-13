@@ -37,7 +37,7 @@ fi
 
 for modality in $spreadsheet_name;
 do
-    output_filename=cobidas_$modality.csv
+    output_filename=$modality.csv
 
     google_ID=`cat $csv_folder'spreadsheet_google_id.txt' | grep $modality'_google' |  awk '{print $2}'`
 
