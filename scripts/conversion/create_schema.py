@@ -69,10 +69,10 @@ def return_protocol_details(schema_to_create):
     csv_dir = os.path.join("inputs", "csv")
 
     input_file = os.path.join(
-        source_dir, csv_dir, "cobidas_" + schema_to_create + ".csv"
+        source_dir, csv_dir, schema_to_create + ".csv"
     )
     data_dictionnary_file = os.path.join(
-        source_dir, csv_dir, "cobidas_" + schema_to_create + ".json"
+        source_dir, csv_dir, schema_to_create + ".json"
     )
 
     with open(data_dictionnary_file) as f:
