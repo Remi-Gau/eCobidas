@@ -4,30 +4,40 @@
 # the csv folder
 #
 # USAGE
-# sh download_csv.sh modality
+# sh download_csv.sh spreadsheet_name
 # 
-# modality can be any of the following 
-# - eyetracker 
-# - mri
-# - meeg 
-# - neurovault 
-# - pet
-#
-#
-# TODO: loop through the inputed modality
-# i.e allow for sh download_csv.sh mri eyetracker
+# spreadsheet_name can be any of the following: 
+#   participants 
+#   behavior 
+#   data_sharing 
+#   reproducibility 
+#   mri_all_sequences
+#   mri_acquisition
+#   mri_design
+#   mri_preprocessing
+#   mri_modelling_inference
+#   mri_results
+#   neurovault
+#   meeg_design
+#   meeg_acquisition
+#   meeg_processing
+#   meeg_statistical_analysis
+#   meeg_reporting
+#   artemis
+#   eyetracker
+#   pet
 
 csv_folder=inputs/csv/
 
 if [ $# -lt 1 ]; then
-    modalities='eyetracker mri meeg neurovault pet artemis'
+    spreadsheet_name='participants behavior data_sharing reproducibility mri_all_sequences mri_acquisition mri_design mri_preprocessing mri_modelling_inference mri_results neurovault meeg_design meeg_acquisition meeg_processing meeg_statistical_analysis meeg_reporting artemis eyetracker pet'
     else
-    modalities=$1
+    spreadsheet_name=$1
 fi
 
-for modality in $modalities;
+for modality in $spreadsheet_name;
 do
-    output_filename=cobidas_$modality.csv
+    output_filename=$modality.csv
 
     google_ID=`cat $csv_folder'spreadsheet_google_id.txt' | grep $modality'_google' |  awk '{print $2}'`
 

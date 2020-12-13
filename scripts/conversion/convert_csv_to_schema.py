@@ -19,8 +19,7 @@ OUTPUT_DIR = "/home/remi/github/cobidas_chckls"
 # OUTPUT_DIR = "/home/remi/github/cobidas"
 
 # REMOTE_REPO ----------------------------------------
-# Placeholder to insert in all instances of the remote repo that will host the
-# schema representation
+# Placeholder of the remote repo that will host the schema representation.
 # Most likely you just need to replace Remi-Gau in the following line by your
 # github username
 
