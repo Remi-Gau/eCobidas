@@ -1,0 +1,69 @@
+include,activity,activity_pref_label,activity_description,,,,item,item_pref_label,item_description,item_order,mandatory,duplicate,question,details,field_type,choices,visibility
+1,reporting,Reporting,Reporting,Nomenclature,Use IFCN-sanctioned nomenclature,,use_ifcn-sanctioned_nomenclature,use ifcn-sanctioned nomenclature,use ifcn-sanctioned nomenclature,,,0,,,,,
+1,reporting,Reporting,Reporting,Time and frequency windows,Note time windows (if applicable),**Note basis for selection,**note_basis_for_selection,**note basis for selection,**note basis for selection,,,1,,,,,
+1,reporting,Reporting,Reporting,Time and frequency windows,Note frequency windows (if applicable),**Note basis for selection,**note_basis_for_selection,**note basis for selection,**note basis for selection,,,1,,,,,
+1,reporting,Reporting,Reporting,Statistical results,Report statistical values of analyses performed,Minima/maxima of R-squared,minima/maxima_of_r-squared,minima/maxima of r-squared,minima/maxima of r-squared,,,0,,,,,
+1,reporting,Reporting,Reporting,Statistical results,Report statistical values of analyses performed,Minima/maxima of z/t/F values,minima/maxima_of_z/t/f_values,minima/maxima of z/t/f values,minima/maxima of z/t/f values,,,0,,,,,
+1,reporting,Reporting,Reporting,Statistical results,Report statistical values of analyses performed,**Other? This seems too broad a category to strictly narrow down.,**other?_this_seems_too_broad_a_category_to_strictly_narrow_down.,**other? this seems too broad a category to strictly narrow down.,**other? this seems too broad a category to strictly narrow down.,,,0,,,,,
+1,reporting,Reporting,Reporting,Statistical results,Report raw effects of interest,,report_raw_effects_of_interest,report raw effects of interest,report raw effects of interest,,,0,,,,,
+1,reporting,Reporting,Reporting,Statistical results,Report standardized effect sizes,,report_standardized_effect_sizes,report standardized effect sizes,report standardized effect sizes,,,0,,,,,
+1,reporting,Reporting,Reporting,Figures,Waveforms or spectra of each condition (& any differences of interest),Indicate clearly whether individual or group data,indicate_clearly_whether_individual_or_group_data,indicate clearly whether individual or group data,indicate clearly whether individual or group data,,,0,,,,,
+1,reporting,Reporting,Reporting,Figures,Display measures of error for waveforms (confidence intervals/standard devation),,display_measures_of_error_for_waveforms_(confidence_intervals/standard_devation),display measures of error for waveforms (confidence intervals/standard devation),display measures of error for waveforms (confidence intervals/standard devation),,,0,,,,,
+1,reporting,Reporting,Reporting,Figures,Topographic representations of waveforms/spectra,,topographic_representations_of_waveforms/spectra,topographic representations of waveforms/spectra,topographic representations of waveforms/spectra,,,0,,,,,
+1,reporting,Reporting,Reporting,Figures,Figures properly formatted/labelled?,All axes labelled?,all_axes_labelled?,all axes labelled?,all axes labelled?,,,0,,,,,
+1,reporting,Reporting,Reporting,Figures,Figures properly formatted/labelled?,Units reported?,units_reported?,units reported?,units reported?,,,0,,,,,
+1,reporting,Reporting,Reporting,Figures,Figures properly formatted/labelled?,Calibration bars displayed with units?,calibration_bars_displayed_with_units?,calibration bars displayed with units?,calibration bars displayed with units?,,,0,,,,,
+1,reporting,Reporting,Reporting,Figures,"Mass-univariate and multivariate
+analysis should show the full space of
+statistical results along with significant
+results",,"mass-univariate_and_multivariate
+analysis_should_show_the_full_space_of
+statistical_results_along_with_significant
+results","mass-univariate and multivariate
+analysis should show the full space of
+statistical results along with significant
+results","mass-univariate and multivariate
+analysis should show the full space of
+statistical results along with significant
+results",,,0,,,,,
+1,reporting,Reporting,Reporting,Spatial analyses,Show all source results,Time courses,time_courses,time courses,time courses,,,0,,,,,
+1,reporting,Reporting,Reporting,Spatial analyses,Show all source results,Full non-thresholded maps (distributed models only),full_non-thresholded_maps_(distributed_models_only),full non-thresholded maps (distributed models only),full non-thresholded maps (distributed models only),,,0,,,,,
+1,reporting,Reporting,Reporting,Spatial analyses,Topography,"Include information
+related to the spatial layout of sensors","include_information
+related_to_the_spatial_layout_of_sensors","include information
+related to the spatial layout of sensors","include information
+related to the spatial layout of sensors",,,0,,,,,
+1,reporting,Reporting,Reporting,Spatial analyses,Tables,Contrast/effect tested,contrast/effect_tested,contrast/effect tested,contrast/effect tested,,,0,,,,,
+1,reporting,Reporting,Reporting,Spatial analyses,Tables,Anatomical regions,anatomical_regions,anatomical regions,anatomical regions,,,0,,,,,
+1,reporting,Reporting,Reporting,Spatial analyses,Tables,"x, y, z coordinates","x,_y,_z_coordinates","x, y, z coordinates","x, y, z coordinates",,,0,,,,,
+1,reporting,Reporting,Reporting,Spatial analyses,Tables,t/z/F statistic,t/z/f_statistic,t/z/f statistic,t/z/f statistic,,,0,,,,,
+1,reporting,Reporting,Reporting,Spatial analyses,Tables,p-value/Bayes factor,p-value/bayes_factor,p-value/bayes factor,p-value/bayes factor,,,0,,,,,
+1,reporting,Reporting,Reporting,Connectivity analyses,Report type of data reduction and/or space selection performed,,report_type_of_data_reduction_and/or_space_selection_performed,report type of data reduction and/or space selection performed,report type of data reduction and/or space selection performed,,,0,,,,,
+1,reporting,Reporting,Reporting,Connectivity analyses,Report all metrics tested and associated values,,report_all_metrics_tested_and_associated_values,report all metrics tested and associated values,report all metrics tested and associated values,,,0,,,,,
+1,reporting,Reporting,Reporting,Connectivity analyses,"If using a null model for statistical
+comparison, report how this was
+generated",,"if_using_a_null_model_for_statistical
+comparison,_report_how_this_was
+generated","if using a null model for statistical
+comparison, report how this was
+generated","if using a null model for statistical
+comparison, report how this was
+generated",,,0,,,,,
+1,reporting,Reporting,Reporting,Connectivity analyses,"For DCM, report the distribution of
+probability (expected or/and
+exceedance) over models considered
+and the statistics on the connectivity
+parameters",,"for_dcm,_report_the_distribution_of
+probability_(expected_or/and
+exceedance)_over_models_considered
+and_the_statistics_on_the_connectivity
+parameters","for dcm, report the distribution of
+probability (expected or/and
+exceedance) over models considered
+and the statistics on the connectivity
+parameters","for dcm, report the distribution of
+probability (expected or/and
+exceedance) over models considered
+and the statistics on the connectivity
+parameters",,,0,,,,,
+1,suggestions_from_main_text_of_meeg_cobidas,Suggestions from main text of MEEG Cobidas,Suggestions from main text of MEEG Cobidas,Additional suggestions from text,Recording site of EEG results in sensor space,,recording_site_of_eeg_results_in_sensor_space,recording site of eeg results in sensor space,recording site of eeg results in sensor space,,,0,,,,,

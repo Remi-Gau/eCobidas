@@ -1,0 +1,180 @@
+3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40
+include,neurovault_or_carp,mandatory,activity,activity_pref_label,activity_description,,,,,,item,item_pref_label,item_description,item_order,mri_type,duplicate,question,details,field_type,choices,visibility,spm_default,fsl_default,bids_status,bids_file,bids_key,bids_key_for_unit,nidm_results,neurovault,included_in_NARPS,in_Carp_2012,percent_of_studies,percent_of_studies_anat,use_case_meta-analysis,meta-analysis_comment
+0,0,0,acquisition,Acquisition,Acquisition,Subject preparation,Mock scanning,Mock scanning used,,,mock_scanning_used,mock scanning used,mock scanning used,,,0,Was an MRI simulator used to acclimate subjects to scanner environment?,,boolean,,1,"NA
+","NA
+",,,,,,,,,,,,
+,,0,acquisition,Acquisition,Acquisition,Subject preparation,Mock scanning,Mock scanning description,,,mock_scanning_description,mock scanning description,mock scanning description,,,0,"Report type of mock scanner and protocol (i.e. duration, types of simulated scans, experiments)",,char,,mock_scanning_used == 1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,Subject preparation,Special accommodations,,,,special_accommodations,special accommodations,special accommodations,,,0,,"For example, for pediatric scanning, presence of parent/guardian in the room",char,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,0,acquisition,Acquisition,Acquisition,Subject preparation,Experimenter personnel,,,,experimenter_personnel,experimenter personnel,experimenter personnel,,,0,How many experimenters interacted with the participants?,,int,,1,"NA
+","NA
+",,,,,,,,,,,,
+1,1,1,acquisition,Acquisition,Acquisition,MRI system description,Scanner,make,,,make,make,make,,,0,Manufacturer of MRI scanner,,radio,Siemens | Philips | General Electric,1,"NA
+","NA
+",2,*_<modality_label>.json,"InstitutionName, Manufacturer, InstitutionAddress, InstitutionalDepartmentName
+",,,scanner_make,,,,,yes,relevant for inclusion/exclusion criteria or sub-analysis
+1,1,1,acquisition,Acquisition,Acquisition,MRI system description,Scanner,model,,,model,model,model,,,0,Model of MRI scanner,,char,,1,"NA
+","NA
+",2,*_<modality_label>.json,ManufacturersModelName,,,scanner_model,,,,,yes,
+1,1,1,acquisition,Acquisition,Acquisition,MRI system description,Scanner,field strength,,,field_strength,field strength,field strength,,,0,Field strength of MRI scanner (in Tesla),,float,,1,"NA
+","NA
+",2,*_<modality_label>.json,MagneticFieldStrength,,,field_strength,,,,,yes,
+1,0,1,acquisition,Acquisition,Acquisition,MRI system description,Coil,receive coil,,,receive_coil,receive coil,receive coil,,,0,What type of receive coil was used?,,radio,standard: receive coil | non-standard openfield,1,"NA
+","NA
+",2,*_<modality_label>.json,"ReceiveCoilName, ReceiveCoilActiveElements",,,,,,,,,
+0,0,0,acquisition,Acquisition,Acquisition,MRI system description,Coil,transmit coil,,,transmit_coil,transmit coil,transmit coil,,,0,,,,,1,"NA
+","NA
+",2,*_<modality_label>.json,MRTransmitCoilSequence,,,,,,,,,
+0,0,0,acquisition,Acquisition,Acquisition,MRI system description,Coil,gradient,,,gradient,gradient,gradient,,,0,,,,,1,"NA
+","NA
+",2,*_<modality_label>.json,GradientSetType,,,,,,,,,
+0,0,0,acquisition,Acquisition,Acquisition,MRI system description,Coil,other,,,other,other,other,,,0,,,,,1,"NA
+","NA
+",2,*_<modality_label>.json,"MatrixCoilMode, CoilCombinationMethod",,,,,,,,,
+0,0,0,acquisition,Acquisition,Acquisition,MRI system description,Significant hardware modifications,,,,significant_hardware_modifications,significant hardware modifications,significant hardware modifications,,,0,,"For example, special gradient inserts/sets",char,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,0,acquisition,Acquisition,Acquisition,MRI system description,Software version,,,,software_version,software version,software version,,,0,,"Highly recommended when sharing vendor-specific protocols or exam cards, as version may be needed to correctly interpret that information",char,,1,"NA
+","NA
+",2,*_<modality_label>.json,SoftwareVersions,,,,,,,,,
+1,1,1,acquisition,Acquisition,Acquisition,MRI acquisition,Essential sequence and imaging parameters,Functional MRI,number of volumes,,number_of_volumes,number of volumes,number of volumes,,fMRI,0,Specify the number of volumes,,int,,1,"NA
+","NA
+",1,,,,,,,nbvol,50,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Essential sequence and imaging parameters,Functional MRI,Sparse sampling delay,,sparse_sampling_delay,sparse sampling delay,sparse sampling delay,,fMRI,0,,(delay in TR) if used,float,,1,"NA
+","NA
+",1,*bold.json,"VolumeTiming, DelayTime",,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Essential sequence and imaging parameters,B0 field maps,Echo time difference,,echo_time_difference,echo time difference,echo time difference,,,0,,(dTE),float,,1,"NA
+","NA
+",1,*fmap.json,"EchoTime, EchoTime1 and EchoTime2, PhaseEncodingDirection and TotalReadoutTime, Units",,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Essential sequence and imaging parameters,Diffusion MRI,Number of directions,,number_of_directions,number of directions,number of directions,,DWI,0,,,float,,1,"NA
+","NA
+",1,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Essential sequence and imaging parameters,Diffusion MRI,"Direction optimization, if used and type",,"direction_optimization,_if_used_and_type","direction optimization, if used and type","direction optimization, if used and type",,DWI,0,Was direction optimization used?,,boolean,,1,"NA
+","NA
+",3,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Essential sequence and imaging parameters,Diffusion MRI,B-values,,b-values,b-values,b-values,,DWI,0,,,float,,1,"NA
+","NA
+",1,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Essential sequence and imaging parameters,Diffusion MRI,Number of b=0 images,,number_of_b=0_images,number of b=0 images,number of b=0 images,,DWI,0,,,float,,1,"NA
+","NA
+",2,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Essential sequence and imaging parameters,Diffusion MRI,Number of averages (if any),,number_of_averages_(if_any),number of averages (if any),number of averages (if any),,DWI,0,,,float,,1,"NA
+","NA
+",2,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Essential sequence and imaging parameters,Diffusion MRI,"Single shell, multi­shell (specify equal or unequal spacing)",,"single_shell,_multi­shell_(specify_equal_or_unequal_spacing)","single shell, multi­shell (specify equal or unequal spacing)","single shell, multi­shell (specify equal or unequal spacing)",,DWI,0,,,dropdown,Single shell | multi­shell (specify equal or unequal spacing),1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Essential sequence and imaging parameters,Diffusion MRI,"Single­ or dual­-spin-­echo, gradient mode (serial or parallel)",,"single­_or_dual­-spin-­echo,_gradient_mode_(serial_or_parallel)","single­ or dual­-spin-­echo, gradient mode (serial or parallel)","single­ or dual­-spin-­echo, gradient mode (serial or parallel)",,DWI,0,,,dropdown,Single­ or dual­-spin-­echo | gradient mode (serial or parallel),1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Essential sequence and imaging parameters,Diffusion MRI,Cardiac gating,,cardiac_gating,cardiac gating,cardiac gating,,DWI,0,Was cardiac gating used?,,boolean,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Scanner-side preprocessing,,,,scanner-side_preprocessing,scanner-side preprocessing,scanner-side preprocessing,,,0,,Reconstruction matrix size differing from acquisition matrix size,,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Scanner-side preprocessing,prospective moco used,,,prospective_moco_used,prospective moco used,prospective moco used,,,0,Was prospective motion correction used?,,boolean,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Scanner-side preprocessing,prospective moco param,,,prospective_moco_param,prospective moco param,prospective moco param,,,0,"Describe the prospective motion correction (details of any optical tracking, how motion parameters are used, ...",,char,,prospective_moco_used == 1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Scanner-side preprocessing,signal inhomogeneity correction used,,,signal_inhomogeneity_correction_used,signal inhomogeneity correction used,signal inhomogeneity correction used,,,0,Was there signal inhomogeneity correction?,,boolean,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Scanner-side preprocessing,signal inhomogeneity correction param,,,signal_inhomogeneity_correction_param,signal inhomogeneity correction param,signal inhomogeneity correction param,,,0,Describe the signal inhomogeneity correction,,char,,signal_inhomogeneity_correction_used == 1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Scanner-side preprocessing,distortion correction used,,,distortion_correction_used,distortion correction used,distortion correction used,,,0,Was distortion-correction applied?,,boolean,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,0,acquisition,Acquisition,Acquisition,MRI acquisition,Scan duration,,,,scan_duration,scan duration,scan duration,,,0,,In seconds ,float,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,0,acquisition,Acquisition,Acquisition,MRI acquisition,Other non­standard procedures,,,,other_non­standard_procedures,other non­standard procedures,other non­standard procedures,,,1,,Turning off the cold head(s) (e.g. during EEG/fMRI or spectroscopy measurements),,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,0,acquisition,Acquisition,Acquisition,MRI acquisition,Other non­standard procedures,,,,other_non­standard_procedures,other non­standard procedures,other non­standard procedures,,,1,,Reduce sound pressure by limiting the gradient slew rate,char,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,0,acquisition,Acquisition,Acquisition,MRI acquisition,Diffusion MRI gradient table,,,,diffusion_mri_gradient_table,diffusion mri gradient table,diffusion mri gradient table,,,0,,Also referred to as the b­matrix (but not to be confused with the 3×3 matrix that describes diffusion weighting for a single diffusion weighted measurement),,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,All acquisitions,Labelling method,labelling_method,labelling method,labelling method,,ASL,0,,,dropdown,continuous ASL (CASL) | pseudo-continuous ASL (PCASL) | Pulsed ALS (PASL) | velocity selective ASL (VSASL),1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,All acquisitions,Use of background suppression pulses and their timing,use_of_background_suppression_pulses_and_their_timing,use of background suppression pulses and their timing,use of background suppression pulses and their timing,,ASL,0,,,,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,PCASL or CASL,Label Duration,label_duration,label duration,label duration,,ASL,0,,,float,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,PCASL or CASL,Post-labeling delay (PLD),post-labeling_delay_(pld),post-labeling delay (pld),post-labeling delay (pld),,ASL,0,,,float,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,PCASL or CASL,Location of the labelling plane,location_of_the_labelling_plane,location of the labelling plane,location of the labelling plane,,ASL,0,,,char,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,PCASL,Average labelling gradient,average_labelling_gradient,average labelling gradient,average labelling gradient,,ASL,0,,,,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,PCASL,Slice­s elective labeling gradient,slice­s_elective_labeling_gradient,slice­s elective labeling gradient,slice­s elective labeling gradient,,ASL,0,,,,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,PCASL,Flip angle of B1 pulses,flip_angle_of_b1_pulses,flip angle of b1 pulses,flip angle of b1 pulses,,ASL,0,,,,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,PCASL,"Assessment of inversion efficiency; QC used to ensure off-resonance artifacts not problematic, signal obtained over whole brain","assessment_of_inversion_efficiency;_qc_used_to_ensure_off-resonance_artifacts_not_problematic,_signal_obtained_over_whole_brain","assessment of inversion efficiency; qc used to ensure off-resonance artifacts not problematic, signal obtained over whole brain","assessment of inversion efficiency; qc used to ensure off-resonance artifacts not problematic, signal obtained over whole brain",,ASL,0,,,,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,CASL,Use of a separate labelling coil,use_of_a_separate_labelling_coil,use of a separate labelling coil,use of a separate labelling coil,,ASL,0,,,,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,CASL,Control scan/pulse used,control_scan/pulse_used,control scan/pulse used,control scan/pulse used,,ASL,0,,,,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,CASL,B1 amplitude,b1_amplitude,b1 amplitude,b1 amplitude,,ASL,0,,,float,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,PASL,PASL-TI,pasl-ti,pasl-ti,pasl-ti,,ASL,0,,,float,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,PASL,Labelling slab thickness,labelling_slab_thickness,labelling slab thickness,labelling slab thickness,,ASL,0,,,float,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,PASL,Use of QUIPSS pulses and their timing,use_of_quipss_pulses_and_their_timing,use of quipss pulses and their timing,use of quipss pulses and their timing,,ASL,0,,,,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,VSASL,VSASL-TI,vsasl-ti,vsasl-ti,vsasl-ti,,ASL,0,,,float,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Arterial Spin Labelling MRI,VSASL,Choice of velocity selection cutoff (“VENC”),choice_of_velocity_selection_cutoff_(“venc”),choice of velocity selection cutoff (“venc”),choice of velocity selection cutoff (“venc”),,ASL,0,,,,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Dynamic Susceptibility Contrast MRI,Number of baseline volumes,,number_of_baseline_volumes,number of baseline volumes,number of baseline volumes,,SWI,0,,Number of baseline volumes,float,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Dynamic Susceptibility Contrast MRI,"Type, name and manufacturer of intravenous bolus",,"type,_name_and_manufacturer_of_intravenous_bolus","type, name and manufacturer of intravenous bolus","type, name and manufacturer of intravenous bolus",,SWI,0,,"e.g. gadobutrol, Gadavist, Bayer",char,Type | name and manufacturer of intravenous bolus (e.g. gadobutrol | Gadavist | Bayer),1,"NA
+","NA
+",2,*_<modality_label>.json,ContrastBolusIngredient,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Dynamic Susceptibility Contrast MRI,Bolus amount and concentration,,bolus_amount_and_concentration,bolus amount and concentration,bolus amount and concentration,,SWI,0,,e.g. 0.1 ml/kg and 0.1 mmol/kg,float,Bolus amount | bolus concentration,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Dynamic Susceptibility Contrast MRI,Injection rate,,injection_rate,injection rate,injection rate,,SWI,0,,e.g. 5 ml/s,float,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Dynamic Susceptibility Contrast MRI,Post-injection of saline,,post-injection_of_saline,post-injection of saline,post-injection of saline,,SWI,0,,e.g. 20 ml,float,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,0,1,acquisition,Acquisition,Acquisition,MRI acquisition,Perfusion,Dynamic Susceptibility Contrast MRI,Injection method,,injection_method,injection method,injection method,,SWI,0,,e.g. power injector,char,,1,"NA
+","NA
+",,,,,,,,,,,,
+0,1,1,acquisition,Acquisition,Acquisition,Preliminary quality control,Motion monitoring,,,,motion_monitoring,motion monitoring,motion monitoring,,,0,,"For functional or diffusion acquisitions, any visual or quantitative checks for severe motion; likewise, for structural images, checks on motion or general image quality",char,,1,"NA
+","NA
+",,,,,,,,qccriteria; qclevels,21.6; 18.3,,,
+0,0,0,acquisition,Acquisition,Acquisition,Preliminary quality control,Incidental findings,,,,incidental_findings,incidental findings,incidental findings,,,0,,"Protocol for review of any incidental findings, and how they are handled in particular with respect to possible exclusion of a subject’s data",char,,1,"NA
+","NA
+",,,,,,,,,,,,
