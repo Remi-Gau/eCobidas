@@ -27,7 +27,7 @@
             "../../activities/eyetracker_methods_procedure_participants/eyetracker_methods_procedure_participants_schema",
             "../../activities/eyetracker_results_data-processing_data-quality/eyetracker_results_data-processing_data-quality_schema",
             "../../activities/eyetracker_results_data-processing_dependent-measures/eyetracker_results_data-processing_dependent-measures_schema",
-            "../../activities/eyetracker_?_data-processing_preprocessing/eyetracker_?_data-processing_preprocessing_schema",
+            "../../activities/eyetracker_methods_data-processing_preprocessing/eyetracker_methods_data-processing_preprocessing_schema",
             "../../activities/eyetracker_discussion/eyetracker_discussion_schema"
         ],
         "addProperties": [
@@ -122,8 +122,8 @@
                 "valueRequired": false
             },
             {
-                "variableName": "eyetracker_?_data-processing_preprocessing",
-                "isAbout": "../../activities/eyetracker_?_data-processing_preprocessing/eyetracker_?_data-processing_preprocessing_schema",
+                "variableName": "eyetracker_methods_data-processing_preprocessing",
+                "isAbout": "../../activities/eyetracker_methods_data-processing_preprocessing/eyetracker_methods_data-processing_preprocessing_schema",
                 "prefLabel": {
                     "en": "Preprocessing"
                 },
