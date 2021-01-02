@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "python.pythonPath": "env/bin/python",
+        "git.ignoreLimitWarning": true,
+        "editor.formatOnSave": true,
+        "python.formatting.provider": "black"
+    }
+}
