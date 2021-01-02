@@ -1,4 +1,4 @@
-name: test_and_coverage
+name: Test and coverage
 
 # This workflow will install Python dependencies, run tests and lint with a variety of Python versions
 
@@ -6,7 +6,9 @@ name: test_and_coverage
 
 on: [push, pull_request]
 
-jobs: build:
+jobs: 
+
+  build:
 
     runs-on: ubuntu-latest
 
