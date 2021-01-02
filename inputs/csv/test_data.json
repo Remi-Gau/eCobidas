@@ -1,0 +1,54 @@
+{
+    "include": {
+        "col": 1,
+        "name": "include"
+    },
+    "section": {
+        "col": 2,
+        "name": "activity"
+    },
+    "act_pref_label": {
+        "col": 3,
+        "name": "activity_pref_label"
+    },
+    "act_descrip": {
+        "col": 4,
+        "name": "activity_descrip"
+    },
+    "item": {
+        "col": 5,
+        "name": "item"
+    },
+    "item_pref_label": {
+        "col": 6,
+        "name": "item_pref_label"
+    },
+    "item_descrip": {
+        "col": 7,
+        "name": "item_descrip"
+    },
+    "mandatory": {
+        "col": 8,
+        "name": "mandatory"
+    },
+    "question": {
+        "col": 9,
+        "name": "question"
+    },
+    "resp_type": {
+        "col": 10,
+        "name": "field_type"
+    },
+    "choice": {
+        "col": 11,
+        "name": "choices"
+    },
+    "vis": {
+        "col": 12,
+        "name": "visibility"
+    },
+    "preamble": {
+        "col": 13,
+        "name": "details"
+    }
+}
