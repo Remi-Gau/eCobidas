@@ -5,4 +5,5 @@ reproschema
 requests_cache
 numpy
 pytest
+pytest-cov
 black
