@@ -7,7 +7,7 @@
     "schemaVersion": "1.0.0-rc1",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
         "en": "From which repository(s) is this data listed as being available from (i.e. NITRC or OpenNeuro, etc.)?"

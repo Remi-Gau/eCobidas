@@ -106,7 +106,7 @@ def define_response_choices(item, response_type, response_choices):
     # offer the possibility to have an "Other" choice that opens a text box
     elif response_type == "dropdown":
         response_options = list_responses_options(response_choices)
-        item.set_input_type_as_radio(response_options)
+        item.set_input_type_as_select(response_options)
 
     elif response_type == "slider":
         # response_options = slider_response(response_choices, min_label, max_label)
