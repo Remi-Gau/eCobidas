@@ -26,6 +26,7 @@
 #   artemis
 #   eyetracker
 #   pet
+#   reexec_nimg
 
 csv_folder=inputs/csv/
 

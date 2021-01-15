@@ -1,0 +1,254 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "reexec_nimg_reexec_nimg_litt_review_schema",
+    "prefLabel": "reexec nimg litt review",
+    "description": "reexec nimg reexec nimg litt review",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/rater_ID",
+            "items/pubmed_ID",
+            "items/publication_DOI",
+            "items/publiction_URL",
+            "items/data_accessible",
+            "items/data_location",
+            "items/data_repository",
+            "items/data_website",
+            "items/data_access_attempt",
+            "items/data_access_success",
+            "items/data_subset",
+            "items/dataset_unique_ID",
+            "items/data_subet_rationale",
+            "items/analysis_tools_specified",
+            "items/analysis_tools_and_versions",
+            "items/analysis_OS_specified",
+            "items/analysis_OS_class",
+            "items/analysis_OS_details",
+            "items/preprocessing_parameters_specified",
+            "items/analysis_reexecutable",
+            "items/statistical_tools_specified",
+            "items/statitical_tools_and_versions",
+            "items/statistics_OS_specified",
+            "items/statistics_OS_class",
+            "items/statistics_OS_details",
+            "items/statistics_parameters_specified",
+            "items/statistical_analysis_reexecutable",
+            "items/results_available",
+            "items/results_access",
+            "items/results_repository",
+            "items/additional_information",
+            "items/preregistration",
+            "items/preregistration_URL",
+            "items/comments"
+        ],
+        "addProperties": [
+            {
+                "variableName": "rater_ID",
+                "isAbout": "items/rater_ID",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "pubmed_ID",
+                "isAbout": "items/pubmed_ID",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "publication_DOI",
+                "isAbout": "items/publication_DOI",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "publiction_URL",
+                "isAbout": "items/publiction_URL",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "data_accessible",
+                "isAbout": "items/data_accessible",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "data_location",
+                "isAbout": "items/data_location",
+                "isVis": "data_accessible == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "data_repository",
+                "isAbout": "items/data_repository",
+                "isVis": "data_accessible == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "data_website",
+                "isAbout": "items/data_website",
+                "isVis": "data_accessible == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "data_access_attempt",
+                "isAbout": "items/data_access_attempt",
+                "isVis": "data_accessible == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "data_access_success",
+                "isAbout": "items/data_access_success",
+                "isVis": "data_accessible == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "data_subset",
+                "isAbout": "items/data_subset",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "dataset_unique_ID",
+                "isAbout": "items/dataset_unique_ID",
+                "isVis": "data_subset == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "data_subet_rationale",
+                "isAbout": "items/data_subet_rationale",
+                "isVis": "data_subset == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "analysis_tools_specified",
+                "isAbout": "items/analysis_tools_specified",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "analysis_tools_and_versions",
+                "isAbout": "items/analysis_tools_and_versions",
+                "isVis": "analysis_tools_specified == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "analysis_OS_specified",
+                "isAbout": "items/analysis_OS_specified",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "analysis_OS_class",
+                "isAbout": "items/analysis_OS_class",
+                "isVis": "analysis_OS_specified == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "analysis_OS_details",
+                "isAbout": "items/analysis_OS_details",
+                "isVis": "analysis_OS_specified == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "preprocessing_parameters_specified",
+                "isAbout": "items/preprocessing_parameters_specified",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "analysis_reexecutable",
+                "isAbout": "items/analysis_reexecutable",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "statistical_tools_specified",
+                "isAbout": "items/statistical_tools_specified",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "statitical_tools_and_versions",
+                "isAbout": "items/statitical_tools_and_versions",
+                "isVis": "statistical_tools_specified == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "statistics_OS_specified",
+                "isAbout": "items/statistics_OS_specified",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "statistics_OS_class",
+                "isAbout": "items/statistics_OS_class",
+                "isVis": "statistics_OS_specified == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "statistics_OS_details",
+                "isAbout": "items/statistics_OS_details",
+                "isVis": "statistics_OS_specified == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "statistics_parameters_specified",
+                "isAbout": "items/statistics_parameters_specified",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "statistical_analysis_reexecutable",
+                "isAbout": "items/statistical_analysis_reexecutable",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "results_available",
+                "isAbout": "items/results_available",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "results_access",
+                "isAbout": "items/results_access",
+                "isVis": "results_available == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "results_repository",
+                "isAbout": "items/results_repository",
+                "isVis": "results_available == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "additional_information",
+                "isAbout": "items/additional_information",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "preregistration",
+                "isAbout": "items/preregistration",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "preregistration_URL",
+                "isAbout": "items/preregistration_URL",
+                "isVis": "preregistration == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "comments",
+                "isAbout": "items/comments",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}

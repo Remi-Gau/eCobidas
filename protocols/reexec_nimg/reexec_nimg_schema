@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "reexec_nimg_schema",
+    "prefLabel": "reexec nimg",
+    "description": "reexec nimg",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "../../README-en.md",
+        "@language": "en"
+    },
+    "ui": {
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ],
+        "shuffle": false,
+        "order": [
+            "../../activities/reexec_nimg_reexec_nimg_litt_review/reexec_nimg_reexec_nimg_litt_review_schema"
+        ],
+        "addProperties": [
+            {
+                "variableName": "reexec_nimg_reexec_nimg_litt_review",
+                "isAbout": "../../activities/reexec_nimg_reexec_nimg_litt_review/reexec_nimg_reexec_nimg_litt_review_schema",
+                "prefLabel": {
+                    "en": "reexec nimg litt review"
+                },
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}
