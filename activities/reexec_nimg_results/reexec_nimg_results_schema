@@ -1,0 +1,44 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "reexec_nimg_results_schema",
+    "prefLabel": "results",
+    "description": "reexec nimg results",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/results_available",
+            "items/results_access",
+            "items/results_repository",
+            "items/additional_information"
+        ],
+        "addProperties": [
+            {
+                "variableName": "results_available",
+                "isAbout": "items/results_available",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "results_access",
+                "isAbout": "items/results_access",
+                "isVis": "results_available == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "results_repository",
+                "isAbout": "items/results_repository",
+                "isVis": "results_available == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "additional_information",
+                "isAbout": "items/additional_information",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}

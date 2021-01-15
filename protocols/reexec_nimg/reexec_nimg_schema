@@ -17,14 +17,64 @@
         ],
         "shuffle": false,
         "order": [
-            "../../activities/reexec_nimg_reexec_nimg_litt_review/reexec_nimg_reexec_nimg_litt_review_schema"
+            "../../activities/reexec_nimg_publication/reexec_nimg_publication_schema",
+            "../../activities/reexec_nimg_data/reexec_nimg_data_schema",
+            "../../activities/reexec_nimg_analysis/reexec_nimg_analysis_schema",
+            "../../activities/reexec_nimg_statistics/reexec_nimg_statistics_schema",
+            "../../activities/reexec_nimg_results/reexec_nimg_results_schema",
+            "../../activities/reexec_nimg_other/reexec_nimg_other_schema"
         ],
         "addProperties": [
             {
-                "variableName": "reexec_nimg_reexec_nimg_litt_review",
-                "isAbout": "../../activities/reexec_nimg_reexec_nimg_litt_review/reexec_nimg_reexec_nimg_litt_review_schema",
+                "variableName": "reexec_nimg_publication",
+                "isAbout": "../../activities/reexec_nimg_publication/reexec_nimg_publication_schema",
                 "prefLabel": {
-                    "en": "reexec nimg litt review"
+                    "en": "publication"
+                },
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "reexec_nimg_data",
+                "isAbout": "../../activities/reexec_nimg_data/reexec_nimg_data_schema",
+                "prefLabel": {
+                    "en": "data"
+                },
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "reexec_nimg_analysis",
+                "isAbout": "../../activities/reexec_nimg_analysis/reexec_nimg_analysis_schema",
+                "prefLabel": {
+                    "en": "analysis"
+                },
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "reexec_nimg_statistics",
+                "isAbout": "../../activities/reexec_nimg_statistics/reexec_nimg_statistics_schema",
+                "prefLabel": {
+                    "en": "statistics"
+                },
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "reexec_nimg_results",
+                "isAbout": "../../activities/reexec_nimg_results/reexec_nimg_results_schema",
+                "prefLabel": {
+                    "en": "results"
+                },
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "reexec_nimg_other",
+                "isAbout": "../../activities/reexec_nimg_other/reexec_nimg_other_schema",
+                "prefLabel": {
+                    "en": "other"
                 },
                 "isVis": true,
                 "valueRequired": false

@@ -1,0 +1,44 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "reexec_nimg_publication_schema",
+    "prefLabel": "publication",
+    "description": "reexec nimg publication",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/rater_ID",
+            "items/pubmed_ID",
+            "items/publication_DOI",
+            "items/publiction_URL"
+        ],
+        "addProperties": [
+            {
+                "variableName": "rater_ID",
+                "isAbout": "items/rater_ID",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "pubmed_ID",
+                "isAbout": "items/pubmed_ID",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "publication_DOI",
+                "isAbout": "items/publication_DOI",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "publiction_URL",
+                "isAbout": "items/publiction_URL",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}

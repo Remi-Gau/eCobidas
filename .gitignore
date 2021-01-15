@@ -13,14 +13,17 @@ node_modules/*
 *.txt
 # dataset_descriptor*.md
 
-# venv/
 
 # *.py[cod]
+
+.coverage
 
 # DOCUMENTATION
 site/*
 
 # VIRTUAL ENV
 ecobidas/*
+env/*
+venv/*
 
 
