@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "publication_DOI",
+    "prefLabel": "publication DOI",
+    "description": "publication DOI",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Enter the publication DOI"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

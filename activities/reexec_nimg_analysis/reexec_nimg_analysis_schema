@@ -1,0 +1,65 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "reexec_nimg_analysis_schema",
+    "prefLabel": "analysis",
+    "description": "reexec nimg analysis",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/analysis_tools_specified",
+            "items/analysis_tools_and_versions",
+            "items/analysis_OS_specified",
+            "items/analysis_OS_class",
+            "items/analysis_OS_details",
+            "items/preprocessing_parameters_specified",
+            "items/analysis_reexecutable"
+        ],
+        "addProperties": [
+            {
+                "variableName": "analysis_tools_specified",
+                "isAbout": "items/analysis_tools_specified",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "analysis_tools_and_versions",
+                "isAbout": "items/analysis_tools_and_versions",
+                "isVis": "analysis_tools_specified == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "analysis_OS_specified",
+                "isAbout": "items/analysis_OS_specified",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "analysis_OS_class",
+                "isAbout": "items/analysis_OS_class",
+                "isVis": "analysis_OS_specified == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "analysis_OS_details",
+                "isAbout": "items/analysis_OS_details",
+                "isVis": "analysis_OS_specified == 1",
+                "valueRequired": false
+            },
+            {
+                "variableName": "preprocessing_parameters_specified",
+                "isAbout": "items/preprocessing_parameters_specified",
+                "isVis": true,
+                "valueRequired": false
+            },
+            {
+                "variableName": "analysis_reexecutable",
+                "isAbout": "items/analysis_reexecutable",
+                "isVis": true,
+                "valueRequired": false
+            }
+        ]
+    }
+}
