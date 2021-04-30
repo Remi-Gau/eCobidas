@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "analysis_tools_and_versions",
+    "prefLabel": "analysis tools and versions",
+    "description": "analysis tools and versions",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "List the tools and versions indicated (i.e. Freesurfer 5.0). If more than one tool used, use a new line for each tool."
+    },
+    "responseOptions": "../../../response_options/mriSoftwareValueConstraints"
+}
