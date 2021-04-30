@@ -113,13 +113,13 @@ def define_response_choices(item, response_type, response_choices):
         # item.set_input_type_as_slider(response_options)
         item.set_input_type_as_slider()
 
-    if (
-        response_type == "boolean"
-        or response_type == "mri_software"
-        or response_type == "interpolation"
-        or response_type == "cost_function"
-        or response_type == "multiple_comparison"
-    ):
+    if response_type in [
+        "boolean",
+        "mri_software",
+        "interpolation",
+        "cost_function",
+        "multiple_comparison",
+    ]:
 
         value_constraint = response_type
 
