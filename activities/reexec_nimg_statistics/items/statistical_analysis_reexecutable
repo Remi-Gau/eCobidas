@@ -1,0 +1,46 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "statistical_analysis_reexecutable",
+    "prefLabel": "statistical analysis reexecutable",
+    "description": "statistical analysis reexecutable",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Do you think a reasonably skilled statistical analyst could re-execute this statistical analysis (including getting the specified versions of the statistical tools and operating system indicated)?"
+    },
+    "responseOptions": {
+        "choices": [
+            {
+                "name": "yes",
+                "value": 0,
+                "@type": "option"
+            },
+            {
+                "name": "approximately",
+                "value": 1,
+                "@type": "option"
+            },
+            {
+                "name": "no",
+                "value": 2,
+                "@type": "option"
+            },
+            {
+                "name": "I am not sure",
+                "value": 3,
+                "@type": "option"
+            },
+            {
+                "name": "Other",
+                "value": 4,
+                "@type": "option"
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 4
+    }
+}
