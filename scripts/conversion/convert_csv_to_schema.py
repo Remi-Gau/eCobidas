@@ -1,9 +1,9 @@
 import os
 from create_schema import create_schema
 
-# schema_to_create = ["mri_all_sequences" "participants" "behavior" "neurovault", "pet", "mri", "eyetracker" "artemis"]
-
-schema_to_create = ["eyetracker"]
+# schema_to_create = ["mri_all_sequences" "participants" "behavior" "neurovault", "pet", "mri", "eyetracker" "artemis" "reexec_nimg"]
+ 
+schema_to_create = ["reexec_nimg"]
 
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS
@@ -17,6 +17,7 @@ schema_to_create = ["eyetracker"]
 OUTPUT_DIR = "/home/remi/github/cobidas_chckls"
 # OUTPUT_DIR = "/home/remi/github/cobidas-PET"
 # OUTPUT_DIR = "/home/remi/github/cobidas"
+# OUTPUT_DIR = "/home/remi/github/reexecute_nimg_checklist/"
 
 # REMOTE_REPO ----------------------------------------
 # Placeholder of the remote repo that will host the schema representation.
@@ -26,6 +27,7 @@ OUTPUT_DIR = "/home/remi/github/cobidas_chckls"
 REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/eCobidas/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/cobidas-PET/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/ohbm/cobidas/"
+# REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/reexecute_nimg_checklist/"
 
 # -----------------------------------------------------------------------------
 #                                   RUN

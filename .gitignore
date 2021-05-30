@@ -6,7 +6,10 @@ __pycache__
 
 *.txt
 # dataset_descriptor*.md
+
 # *.py[cod]
+
+.coverage
 
 # DOCUMENTATION
 site/*
@@ -14,6 +17,8 @@ site/*
 # local virtual environnment
 ecobidas/*
 env/*
+venv/*
+
 
 # pytest
 .pytest_cache/
