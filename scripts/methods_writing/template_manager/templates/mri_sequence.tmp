@@ -1,8 +1,0 @@
-This data was acquired using a {{SequenceVariant}} variant of {{SequenceName}}, 
-a {{ScanningSequence}} {{PulseSequenceType}} with options {{ScanOptions}}.
-
-{% if NonlinearGradientCorrection %}
-The image(s) were corrected for gradient nonlinearities by this scanner sequence.
-{% endif %}
-
-{{PulseSequenceDetails}}

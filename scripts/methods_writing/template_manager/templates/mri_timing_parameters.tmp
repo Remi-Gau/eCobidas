@@ -1,7 +1,0 @@
-repetition time, TR={{tr}}ms;
-echo time, TE={{EchoTime}}ms;
-inversion time, TE={{InversionTime}}ms;
-
-SliceTiming
-SliceEncodingDirection
-DwellTime

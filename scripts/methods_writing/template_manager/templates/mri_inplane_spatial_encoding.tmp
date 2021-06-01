@@ -1,6 +1,0 @@
-This data was acquired using {{NumberShots}} radio-frequency excitations, 
-with a phase encoding directon along {{PhaseEncodingDirection}}, with 
-an effective echo spacing {{EffectiveEchoSpacing}} seconds and total readout 
-time of {{TotalReadoutTime}}, using {{ParallelAcquisitionTechnique}} parallel imaging with a factor of
-{{ParallelReductionFactorInPlane}}, a partial Fourrier of {{PartialFourier}}
-in the {{PartialFourierDirection}} direction.
