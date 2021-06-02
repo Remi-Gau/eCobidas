@@ -2,17 +2,10 @@
 
 *.DS_Store
 
-.vscode/*
-*.code-workspace
-
 __pycache__
-
-package-lock.json
-node_modules/*
 
 *.txt
 # dataset_descriptor*.md
-
 
 # *.py[cod]
 
@@ -21,9 +14,15 @@ node_modules/*
 # DOCUMENTATION
 site/*
 
-# VIRTUAL ENV
+# local virtual environnment
 ecobidas/*
 env/*
 venv/*
 
 
+# pytest
+.pytest_cache/
+
+# javascript
+package-lock.json
+node_modules/*
