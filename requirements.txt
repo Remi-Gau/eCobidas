@@ -1,7 +1,7 @@
 mkdocs-material
 pymdown-extensions
 Jinja2
-reproschema
+reproschema==0.6.1
 requests_cache
 numpy
 pytest

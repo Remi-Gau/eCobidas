@@ -1,4 +1,3 @@
-import os
 from create_schema import create_schema
 
 # schema_to_create = ["mri_all_sequences" "participants" "behavior" "neurovault", "pet", "mri", "eyetracker" "artemis" "reexec_nimg"]

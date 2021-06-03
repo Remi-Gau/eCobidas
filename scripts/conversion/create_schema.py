@@ -1,5 +1,4 @@
 import os
-import json
 
 
 def create_schema(schema_to_create, OUTPUT_DIR):
@@ -77,8 +76,9 @@ def load_data(schema_to_create):
 def initialize_protocol(schema_to_create, OUTPUT_DIR):
 
     from reproschema_protocol import ReproschemaProtocol
+    from utils import snake_case
 
-    protocol_name = schema_to_create
+    protocol_name = snake_case(schema_to_create)
     protocol = ReproschemaProtocol()
     protocol.set_defaults(protocol_name)
 
@@ -103,13 +103,14 @@ def initialize_protocol(schema_to_create, OUTPUT_DIR):
 def initialize_activity(protocol, items, OUTPUT_DIR):
 
     from reproschema_activity import ReproschemaActivity
+    from utils import snake_case
 
     activity = ReproschemaActivity()
 
     activity_pref_label = items.activity_pref_label.unique()[0]
     activity.set_pref_label(activity_pref_label)
 
-    activity_name = activity_pref_label.lower().replace(" ", "_")
+    activity_name = snake_case(activity_pref_label)
     activity.set_defaults(activity_name)
     activity.set_filename(activity_name)
 
@@ -161,7 +162,7 @@ def print_info(type, pref_label, file):
         "\n"
         + "--------------------------------------------------------------"
         + "\n"
-        + type.upper
+        + type.upper()
         + ": "
         + pref_label
         + "\n"
