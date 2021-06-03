@@ -2,15 +2,17 @@ def get_item_info(this_item):
 
     item_name = []
 
-    item_name = convert_to_str(this_item["item_pref_label"])
-    # .replace("\n", "").replace(" ", "")
+    pref_label = convert_to_str(this_item["item_pref_label"])
+
+    item_name = pref_label.lower().replace("\n", "").replace(" ", "_")
 
     question = convert_to_str(this_item["question"])
     # .replace("\n", "")
 
     field_type = convert_to_str(this_item["field_type"])
 
-    choices = this_item["choices"]  # .split(" | ")
+    choices = this_item["choices"]
+    # choices = choices.split(" | ")
 
     visibility = get_visibility()
 
@@ -18,6 +20,7 @@ def get_item_info(this_item):
 
     return {
         "name": item_name,
+        "pref_label": pref_label,
         "question": question,
         "field_type": field_type,
         "choices": choices,
@@ -73,6 +76,7 @@ def define_new_item(item_info):
     item = ReproschemaItem()
 
     item.set_defaults(item_info["name"])
+    item.set_pref_label(item_info["pref_label"])
 
     item.set_question(item_info["question"])
 

@@ -12,16 +12,71 @@ def create_schema(schema_to_create, OUTPUT_DIR):
     Every new item encountered is added to the current activity.
     """
 
-    import pandas as pd
-    from reproschema_protocol import ReproschemaProtocol
-    from reproschema_activity import ReproschemaActivity
     from item import get_item_info
+
+    DEBUG = True
 
     # -----------------------------------------------------------------------------
     #                                   START
     # -----------------------------------------------------------------------------
 
-    input_file = return_protocol_details(schema_to_create)
+    protocol, protocol_path = initialize_protocol(schema_to_create, OUTPUT_DIR)
+
+    df = load_data(schema_to_create)
+
+    activities = df.activity_order.unique()
+
+    if DEBUG:
+        activities = [1]
+
+    for activity_idx in activities:
+
+        this_activity = df["activity_order"] == activities[activity_idx - 1]
+        items = df[this_activity]
+        included_items = items["include"] == 1
+        items = items[included_items]
+
+        protocol, activity, activity_path = initialize_activity(
+            protocol, items, OUTPUT_DIR
+        )
+
+        items_order = items.item_order.unique()
+
+        for index in items_order:
+
+            this_item = items[items["item_order"] == index]
+
+            item_info = get_item_info(this_item)
+
+            create_new_item(item_info, activity_path)
+
+            activity.update_activity(item_info)
+
+        activity.sort()
+        activity.write(activity_path)
+
+        protocol.append_activity(activity)
+
+    protocol.sort()
+    protocol.write(protocol_path)
+
+    return protocol
+
+
+def load_data(schema_to_create):
+
+    import pandas as pd
+
+    source_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
+    csv_dir = os.path.join("inputs", "csv")
+
+    input_file = os.path.join(source_dir, csv_dir, schema_to_create + ".csv")
+    return pd.read_csv(input_file)
+
+
+def initialize_protocol(schema_to_create, OUTPUT_DIR):
+
+    from reproschema_protocol import ReproschemaProtocol
 
     protocol_name = schema_to_create
     protocol = ReproschemaProtocol()
@@ -36,157 +91,56 @@ def create_schema(schema_to_create, OUTPUT_DIR):
     protocol.sort()
     protocol.write(protocol_path)
 
-    print(
-        "\n\n"
-        + "--------------------------------------------------------------"
-        + "\nPROTOCOL: "
-        + protocol_name
-        + "\n"
-        + os.path.join(protocol_path, protocol.get_filename())
-        + "\n"
-        + "--------------------------------------------------------------"
+    print_info(
+        "activity",
+        protocol_name,
+        os.path.join(protocol_path, protocol.get_filename()),
     )
 
-    # to check if we got to a new section while looping through items
-    this_section = ""
-    activity = []
-
-    df = pd.read_csv(input_file)
-
-    activities = df.activity_order.unique()
-
-    activities = [1]
-
-    for activity_idx in activities:
-
-        this_activity = df["activity_order"] == activities[activity_idx - 1]
-
-        items = df[this_activity]
-        included_items = items["include"] == 1
-        items = items[included_items]
-
-        activity_pref_label = items.activity_pref_label.unique()[0]
-        activity_name = activity_pref_label.lower().replace(" ", "_")
-
-        activity = ReproschemaActivity()
-        activity.set_defaults(activity_name)
-        activity.set_filename(activity_name)
-        activity.set_pref_label(activity_pref_label)
-
-        # print(activity.get_filename())
-
-        URI = (
-            "../../activities/"
-            + protocol.get_name()
-            + "/"
-            + activity.get_name()
-            + "/"
-            + activity.get_filename()
-        )
-        activity.set_URI(URI)
-
-        activity_path = os.path.join(
-            OUTPUT_DIR, "activities", protocol.dir, activity.dir
-        )
-
-        print(
-            "\n\n"
-            + "--------------------------------------------------------------"
-            + "\nACTIVITY: "
-            + activity_pref_label
-            + "\n"
-            + os.path.join(activity_path, activity.get_filename())
-            + "\n"
-            + "--------------------------------------------------------------"
-        )
-
-        items_order = items.item_order.unique()
-
-        for index in items_order:
-
-            this_item = items[items["item_order"] == index]
-
-            item_info = get_item_info(this_item)
-
-            # print(item_info)
-
-            create_new_item(item_info, activity_name, activity_path)
-
-            # item_info["URI"] = "items/" + item_info["name"]
-
-            # append_to_activity = {
-            # "variableName": item_info["name"],
-            # "isAbout": item_info["URI"],
-            # "isVis": item_info["visibility"],
-            # "valueRequired": False,
-            # }
-
-            # self.schema["ui"]["order"].append(item_info["URI"])
-            # self.schema["ui"]["addProperties"].append(append_to_activity)
-
-        # with open(input_file, "r") as csvfile:
-
-        #     for row in PROTOCOL_METADATA:
-
-        #         item_info = get_item_info(row, csv_info)
-
-        #         if item_info["name"] != []:
-
-        #             protocol, activity, this_section = create_update_activity(
-        #                 row,
-        #                 csv_info,
-        #                 protocol,
-        #                 activity,
-        #                 item_info,
-        #                 this_section,
-        #                 OUTPUT_DIR,
-        #             )
-
-        #             create_new_item(
-        #                 item_info,
-        #                 activity.get_name(),
-        #                 OUTPUT_DIR,
-        #             )
-
-        if not os.path.exists(activity_path):
-            os.makedirs(activity_path)
-            os.makedirs(os.path.join(activity_path, "items"))
-
-        activity.sort()
-        activity.write(activity_path)
-
-        protocol.append_activity(activity)
-
-    protocol.sort()
-    protocol.write(protocol_path)
-
-    return protocol
+    return protocol, protocol_path
 
 
-def return_protocol_details(schema_to_create):
+def initialize_activity(protocol, items, OUTPUT_DIR):
 
-    source_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
-    csv_dir = os.path.join("inputs", "csv")
+    from reproschema_activity import ReproschemaActivity
 
-    input_file = os.path.join(source_dir, csv_dir, schema_to_create + ".csv")
+    activity = ReproschemaActivity()
 
-    return input_file
+    activity_pref_label = items.activity_pref_label.unique()[0]
+    activity.set_pref_label(activity_pref_label)
+
+    activity_name = activity_pref_label.lower().replace(" ", "_")
+    activity.set_defaults(activity_name)
+    activity.set_filename(activity_name)
+
+    URI = (
+        "../../activities/"
+        + protocol.get_name()
+        + "/"
+        + activity.get_name()
+        + "/"
+        + activity.get_filename()
+    )
+    activity.set_URI(URI)
+
+    activity_path = os.path.join(OUTPUT_DIR, "activities", protocol.dir, activity.dir)
+
+    if not os.path.exists(activity_path):
+        os.makedirs(activity_path)
+
+    if not os.path.exists(os.path.join(activity_path, "items")):
+        os.makedirs(os.path.join(activity_path, "items"))
+
+    print_info(
+        "activity",
+        activity_pref_label,
+        os.path.join(activity_path, activity.get_filename()),
+    )
+
+    return protocol, activity, activity_path
 
 
-def create_update_activity(
-    row, csv_info, protocol, activity, item_info, this_section, OUTPUT_DIR
-):
-
-    activity.update_activity(item_info)
-
-    activity.sort()
-
-    activity.write(os.path.join(OUTPUT_DIR, "activities", activity.get_name()))
-
-    return protocol, activity, this_section
-
-
-def create_new_item(item_info, activity_name, activity_path):
+def create_new_item(item_info, activity_path):
 
     from item import define_new_item
 
@@ -199,3 +153,19 @@ def create_new_item(item_info, activity_name, activity_path):
     item.sort()
 
     item.write(os.path.join(activity_path, "items"))
+
+
+def print_info(type, pref_label, file):
+
+    print(
+        "\n"
+        + "--------------------------------------------------------------"
+        + "\n"
+        + type.upper
+        + ": "
+        + pref_label
+        + "\n"
+        + file
+        + "\n"
+        + "--------------------------------------------------------------"
+    )
