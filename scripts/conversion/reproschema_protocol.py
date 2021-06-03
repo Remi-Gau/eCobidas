@@ -17,7 +17,7 @@ class ReproschemaProtocol(ReproschemaSchema):
         }
 
     def set_landing_page(self, landing_page_url, lang="en"):
-        self.schema["landingPage"] = {"@id": landing_page_url, "@language": lang}
+        self.schema["landingPage"] = {"@id": landing_page_url, "inLanguage": lang}
 
     # TODO
     # def add_landing_page(self, landing_page_url, lang="en"):
@@ -80,4 +80,3 @@ class ReproschemaProtocol(ReproschemaSchema):
             "addProperties",
         ]
         self.sort_ui(ui_order)
-

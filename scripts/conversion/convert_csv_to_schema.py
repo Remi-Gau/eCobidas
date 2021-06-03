@@ -2,8 +2,8 @@ import os
 from create_schema import create_schema
 
 # schema_to_create = ["mri_all_sequences" "participants" "behavior" "neurovault", "pet", "mri", "eyetracker" "artemis" "reexec_nimg"]
- 
-schema_to_create = ["reexec_nimg"]
+
+schema_to_create = ["neurovault"]
 
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS
@@ -29,6 +29,8 @@ REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/eCobidas/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/ohbm/cobidas/"
 # REMOTE_REPO = "https://raw.githubusercontent.com/Remi-Gau/reexecute_nimg_checklist/"
 
+BRANCH = "master"
+
 # -----------------------------------------------------------------------------
 #                                   RUN
 # -----------------------------------------------------------------------------
@@ -37,13 +39,15 @@ for schema in schema_to_create:
 
     protocol = create_schema(schema, OUTPUT_DIR)
 
+    s = "/"
+
     print(
         "\n\n"
         + "---------------------------------------------------------------"
         + "\nYou can view this protocol here:\n"
         + "https://www.repronim.org/reproschema-ui/#/?url="
-        + os.path.join(
-            REMOTE_REPO, "master", "protocols", protocol.dir, protocol.get_filename()
+        + s.join(
+            [REMOTE_REPO, BRANCH, "protocols", protocol.dir, protocol.get_filename()]
         )
         + "\n"
         + "--------------------------------------------------------------"

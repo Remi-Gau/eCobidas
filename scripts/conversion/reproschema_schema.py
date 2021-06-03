@@ -6,12 +6,12 @@ class ReproschemaSchema:
     def __init__(self):
 
         URL = "https://raw.githubusercontent.com/ReproNim/reproschema/"
-        VERSION = "1.0.0-rc1"
+        VERSION = "1.0.0-rc4"
 
         self.schema = {
             "@context": URL + VERSION + "/contexts/generic",
             "schemaVersion": VERSION,
-            "version": "0.0.1",
+            "version": "0.1.0",
         }
 
     def set_filename(self, name):

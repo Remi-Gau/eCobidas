@@ -1,74 +1,64 @@
-def get_item_info(row, csv_info):
+def get_item_info(this_item):
 
     item_name = []
 
-    item_col = csv_info["item"]["col"]
-    item_col_name = csv_info["item"]["name"]
+    item_name = convert_to_str(this_item["item_pref_label"])
+    # .replace("\n", "").replace(" ", "")
 
-    # we want to skip the header and only include items with 1 in the include column (if it exists)
-    incl_col = csv_info["include"]["col"]
-    if row[item_col] == item_col_name or (incl_col != [] and row[incl_col] != "1"):
+    question = convert_to_str(this_item["question"])
+    # .replace("\n", "")
 
-        print("   skipping item")
+    field_type = convert_to_str(this_item["field_type"])
 
-        return {"name": item_name}
+    choices = this_item["choices"]  # .split(" | ")
 
-    item_name = row[item_col].replace("\n", "")
+    visibility = get_visibility()
 
-    question_col = csv_info["question"]["col"]
-    question = row[question_col].replace("\n", "")
-
-    resp_type_col = csv_info["resp_type"]["col"]
-    response_type = row[resp_type_col]
-
-    choice_col = csv_info["choice"]["col"]
-    response_choices = row[choice_col].split(" | ")
-
-    preamble = csv_info["preamble"]["col"]
-
-    visibility = get_visibility(row, csv_info)
-
-    mandatory = get_mandatory(row, csv_info)
+    mandatory = get_mandatory()
 
     return {
         "name": item_name,
         "question": question,
-        "resp_type": response_type,
-        "choices": response_choices,
+        "field_type": field_type,
+        "choices": choices,
         "visibility": visibility,
-        "preamble": preamble,
         "mandatory": mandatory,
     }
 
 
-def get_visibility(row, csv_info):
+def convert_to_str(df_field):
+
+    return df_field.tolist()[0]
+
+
+def get_visibility():
 
     visibility = True
 
-    if row[csv_info["vis"]["col"]] != "1":
+    # if row[csv_info["vis"]["col"]] != "1":
 
-        visibility = row[csv_info["vis"]["col"]]
+    #     visibility = row[csv_info["vis"]["col"]]
 
-        # vis_conditions = row[choice_col].split(',')
-        #
-        # for i, cdt in enumerate(vis_conditions):
-        #
-        #     visibility['choices'].append({
-        #         'schema:name': opt,
-        #         'schema:value': i,
-        #         '@type': 'schema:option'
-        #         })
+    # vis_conditions = row[choice_col].split(',')
+    #
+    # for i, cdt in enumerate(vis_conditions):
+    #
+    #     visibility['choices'].append({
+    #         'schema:name': opt,
+    #         'schema:value': i,
+    #         '@type': 'schema:option'
+    #         })
 
     return visibility
 
 
-def get_mandatory(row, csv_info):
+def get_mandatory():
 
-    mandatory = False
+    mandatory = True
 
-    if row[csv_info["mandatory"]["col"]] == "1":
+    # if row[csv_info["mandatory"]["col"]] == "1":
 
-        mandatory = True
+    #     mandatory = True
 
     return mandatory
 
@@ -86,7 +76,7 @@ def define_new_item(item_info):
 
     item.set_question(item_info["question"])
 
-    item = define_response_choices(item, item_info["resp_type"], item_info["choices"])
+    item = define_response_choices(item, item_info["field_type"], item_info["choices"])
 
     return item
 
