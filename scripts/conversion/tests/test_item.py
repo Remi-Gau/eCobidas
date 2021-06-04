@@ -1,3 +1,9 @@
+import sys, os
+
+myPath = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, myPath + "/../")
+
+
 def test_get_item_info():
 
     from ..item import get_item_info
