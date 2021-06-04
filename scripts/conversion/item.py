@@ -13,9 +13,10 @@ def get_item_info(this_item):
 
     field_type = convert_to_str(this_item["field_type"])
 
-    choices = this_item["choices"]
-    if type(choices) == str:
-        choices = choices.split(" | ")
+    choices = convert_to_str(this_item["choices"])
+    choices = choices.split(" | ")
+
+    print(choices)
 
     visibility = get_visibility(this_item)
 

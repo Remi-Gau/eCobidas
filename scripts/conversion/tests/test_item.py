@@ -24,7 +24,7 @@ def test_get_item_info():
 
     expected = {
         "name": "item_name",
-        "item_pref_label": "item name",
+        "pref_label": "item name",
         "question": "test question",
         "field_type": "radio",
         "choices": ["choice A", "choice B"],
@@ -41,8 +41,6 @@ def test_get_visibility():
     import pandas as pd
 
     this_item = pd.DataFrame({"visibility": ["1"]})
-
-    # this_item = {"visibility": "1"}
 
     visibility = get_visibility(this_item)
 
