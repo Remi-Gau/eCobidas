@@ -14,12 +14,12 @@ class ReproschemaSchema:
             "version": "0.1.0",
         }
 
-    def set_filename(self, name):
-        self.schema_file = name + "_schema"
-        self.schema["@id"] = name + "_schema"
+    def set_filename(self, name, ext=".jsonld"):
+        self.schema_file = name + "_schema" + ext
+        self.schema["@id"] = name + "_schema" + ext
 
     def get_name(self):
-        return self.schema_file.replace("_schema", "")
+        return self.schema_file.replace("_schema", "").replace(".jsonld", "")
 
     def get_filename(self):
         return self.schema_file
@@ -53,6 +53,8 @@ class ReproschemaSchema:
         import os
         import json
 
-        with open(os.path.join(output_dir, self.schema_file), "w",) as ff:
+        with open(
+            os.path.join(output_dir, self.schema_file),
+            "w",
+        ) as ff:
             json.dump(self.schema, ff, sort_keys=False, indent=4)
-

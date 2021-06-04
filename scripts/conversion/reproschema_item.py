@@ -18,7 +18,7 @@ class ReproschemaItem(ReproschemaSchema):
     def set_URI(self, URI):
         self.URI = URI
 
-    # TODO   
+    # TODO
     # image
     # readonlyValue
 
@@ -27,6 +27,10 @@ class ReproschemaItem(ReproschemaSchema):
         self.schema_file = name
         self.schema["@id"] = name
         self.set_input_type_as_char()
+
+    def set_filename(self, name, ext=".jsonld"):
+        self.schema_file = name + ext
+        self.schema["@id"] = name + ext
 
     def set_question(self, question, lang="en"):
         self.schema["question"][lang] = question
