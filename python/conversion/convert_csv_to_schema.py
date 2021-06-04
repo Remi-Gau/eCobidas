@@ -34,6 +34,7 @@ BRANCH = "master"
 #                                   RUN
 # -----------------------------------------------------------------------------
 
+
 for schema in schema_to_create:
 
     protocol = create_schema(schema, OUTPUT_DIR)
@@ -46,7 +47,13 @@ for schema in schema_to_create:
         + "\nYou can view this protocol here:\n"
         + "https://www.repronim.org/reproschema-ui/#/?url="
         + s.join(
-            [REMOTE_REPO, BRANCH, "protocols", protocol.dir, protocol.get_filename()]
+            [
+                REMOTE_REPO,
+                BRANCH,
+                "protocols",
+                protocol.dir,
+                protocol.get_filename(),
+            ]
         )
         + "\n"
         + "--------------------------------------------------------------"
@@ -58,3 +65,7 @@ for schema in schema_to_create:
         + "--------------------------------------------------------------"
         + "\n\n",
     )
+
+
+# if __name__ == "__main__":
+#     main()

@@ -1,0 +1,70 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "Activity4_schema",
+    "prefLabel": "demo of all input types and widgets",
+    "description": "dummy activity to show all inputs types and widgets",
+    "preamble": "This activity will show you all the different input type and widgets currently available.",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "addProperties": [
+                {"isAbout": "items/text_item",
+                "variableName": "text_item",
+                "isVis": true,
+                  "allow": [
+                    "reproschema:Skipped"
+                ]
+                },
+                {"isAbout": "items/participant_id_item",
+                "variableName": "participant_id_item",
+                "isVis": true,
+                  "allow": [
+                    "reproschema:Skipped"
+                ]
+                },
+                {"isAbout": "items/multitext_item",
+                "variableName": "multitext_item",
+                "isVis": true,
+                  "allow": [
+                    "reproschema:Skipped"
+                ]
+                },
+                {"isAbout": "items/float_item",
+                "variableName": "float_item",
+                "isVis": true,
+                  "allow": [
+                    "reproschema:Skipped"
+                ]
+                },
+                {"isAbout": "items/sign_item",
+                "variableName": "sign_item",
+                "isVis": true,
+                  "allow": [
+                    "reproschema:Skipped"
+                ]
+                },
+                {"isAbout": "items/save_item",
+                "variableName": "save_item",
+                "isVis": true,
+                  "allow": [
+                    "reproschema:Skipped"
+                ]
+                }
+                
+        ],
+        "order": [
+            "items/text_item",
+            "items/multitext_item",
+            "items/float_item",
+            "items/participant_id_item",
+            "items/sign_item",
+            "items/save_item"
+        ],
+        "shuffle": false,
+        "allow": [
+			"reproschema:AutoAdvance",
+			"reproschema:AllowExport"
+		]
+    }
+}

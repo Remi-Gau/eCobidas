@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc2/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "participant_id_item",
+    "prefLabel": "participant id item",
+    "description": "This is a participant id item.",
+    "schemaVersion": "1.0.0-rc2",
+    "version": "0.0.1",
+    "question": "This is an item where the user can input the participant id number.",
+    "ui": {
+        "inputType": "pid"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string"
+    }
+}

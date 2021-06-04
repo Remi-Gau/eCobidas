@@ -1,6 +1,5 @@
 from reproschema_schema import ReproschemaSchema
 
-
 class ReproschemaActivity(ReproschemaSchema):
     """
     class to deal with reproschema activities

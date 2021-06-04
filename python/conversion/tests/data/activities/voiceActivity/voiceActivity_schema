@@ -1,0 +1,54 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "voiceActivity_schema",
+    "prefLabel": "demo of all input types and widgets",
+    "description": "dummy activity to show all inputs types and widgets",
+    "preamble": "This activity will show you all the different input type and widgets currently available.",
+    "schemaVersion": "1.0.0-rc1",
+    "version": "0.0.1",
+    "ui": {
+        "addProperties": [
+                {"isAbout": "items/audio_check_item",
+                "variableName": "audio_check_item",
+                "isVis": true,
+                  "allow": [
+                    "reproschema:Skipped"
+                ]
+                },
+                {"isAbout": "items/audio_passage_record_item",
+                "variableName": "audio_passage_record_item",
+                "isVis": true,
+                  "allow": [
+                    "reproschema:Skipped"
+                ]
+                },
+                {"isAbout": "items/audio_image_record_item",
+                "variableName": "audio_image_record_item",
+                "isVis": true,
+                  "allow": [
+                    "reproschema:Skipped"
+                ]
+                },
+                {"isAbout": "items/audio_number_record_item",
+                "variableName": "audio_number_record_item",
+                "isVis": true,
+                  "allow": [
+                    "reproschema:Skipped"
+                ]
+                }
+                
+        ],
+        "order": [
+            "items/audio_check_item",
+            "items/audio_passage_record_item",
+            "items/audio_image_record_item",
+            "items/audio_number_record_item"
+        ],
+        "shuffle": false,
+        "allow": [
+			"reproschema:AutoAdvance",
+			"reproschema:AllowExport"
+		]
+    }
+}

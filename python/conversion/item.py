@@ -1,6 +1,8 @@
-def get_item_info(this_item):
+from utils import convert_to_str, convert_to_int, snake_case
+from reproschema_item import ReproschemaItem
 
-    from utils import convert_to_str, snake_case
+
+def get_item_info(this_item):
 
     item_name = []
 
@@ -14,9 +16,8 @@ def get_item_info(this_item):
     field_type = convert_to_str(this_item["field_type"])
 
     choices = convert_to_str(this_item["choices"])
-    choices = choices.split(" | ")
-
-    print(choices)
+    if type(choices) == str:
+        choices = choices.split(" | ")
 
     visibility = get_visibility(this_item)
 
@@ -35,8 +36,6 @@ def get_item_info(this_item):
 
 def get_visibility(this_item):
 
-    from utils import convert_to_str
-
     visibility = convert_to_str(this_item["visibility"])
 
     if visibility == "1":
@@ -53,8 +52,6 @@ def get_visibility(this_item):
 
 def get_mandatory(this_item):
 
-    from utils import convert_to_int
-
     mandatory = convert_to_int(this_item["mandatory"])
 
     mandatory = mandatory >= 0
@@ -66,8 +63,6 @@ def define_new_item(item_info):
     """
     define jsonld for this item
     """
-
-    from reproschema_item import ReproschemaItem
 
     item = ReproschemaItem()
 

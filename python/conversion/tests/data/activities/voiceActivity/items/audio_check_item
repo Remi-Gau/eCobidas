@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc2/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "audio_check_item",
+    "prefLabel": "audio check item",
+    "description": "This is a audio check item.",
+    "schemaVersion": "1.0.0-rc2",
+    "version": "0.0.1",
+    "question": "This is an audio check item. Click on the start button and say something audibly. Click Play button to hear your recording. If you think there is too much background noise, please go somewhere quieter and Redo, else click Continue.",
+    "ui": {
+        "inputType": "audioCheck"
+    },
+    "responseOptions": {
+        "valueType": "schema:AudioObject",
+        "minValue": 0,
+        "maxValue": 4000
+    }
+}

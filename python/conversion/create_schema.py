@@ -1,4 +1,10 @@
 import os
+import pandas as pd
+
+from item import get_item_info, define_new_item
+from utils import snake_case
+from reproschema_protocol import ReproschemaProtocol
+from reproschema_activity import ReproschemaActivity
 
 
 def create_schema(schema_to_create, OUTPUT_DIR):
@@ -10,8 +16,6 @@ def create_schema(schema_to_create, OUTPUT_DIR):
     will be added to the protocol.
     Every new item encountered is added to the current activity.
     """
-
-    from item import get_item_info
 
     DEBUG = True
 
@@ -64,8 +68,6 @@ def create_schema(schema_to_create, OUTPUT_DIR):
 
 def load_data(schema_to_create):
 
-    import pandas as pd
-
     source_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
     csv_dir = os.path.join("inputs", "csv")
 
@@ -74,9 +76,6 @@ def load_data(schema_to_create):
 
 
 def initialize_protocol(schema_to_create, OUTPUT_DIR):
-
-    from reproschema_protocol import ReproschemaProtocol
-    from utils import snake_case
 
     protocol_name = snake_case(schema_to_create)
     protocol = ReproschemaProtocol()
@@ -101,9 +100,6 @@ def initialize_protocol(schema_to_create, OUTPUT_DIR):
 
 
 def initialize_activity(protocol, items, OUTPUT_DIR):
-
-    from reproschema_activity import ReproschemaActivity
-    from utils import snake_case
 
     activity = ReproschemaActivity()
 
@@ -142,8 +138,6 @@ def initialize_activity(protocol, items, OUTPUT_DIR):
 
 
 def create_new_item(item_info, activity_path):
-
-    from item import define_new_item
 
     print("   " + item_info["name"])
     print("       " + item_info["question"])

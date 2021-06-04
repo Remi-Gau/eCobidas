@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc2/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "audio_image_record_item",
+    "prefLabel": "audio image record item",
+    "description": "This is a audio image record item.",
+    "schemaVersion": "1.0.0-rc2",
+    "version": "0.0.1",
+    "image": "https://picsum.photos/500/400",
+    "question": "This is an audio image record item where the participant describes verbally an image shown below for a minute",
+    "ui": {
+        "inputType": "audioImageRecord"
+    },
+    "responseOptions": {
+        "valueType": "schema:AudioObject",
+        "minValue": 0,
+        "maxValue": 60000,
+        "multipleChoice": false
+    }
+}

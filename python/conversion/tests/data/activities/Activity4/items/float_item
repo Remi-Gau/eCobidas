@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc2/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "float_item",
+    "prefLabel": "float item",
+    "description": "This is a float item.",
+    "schemaVersion": "1.0.0-rc2",
+    "version": "0.0.1",
+    "question": "This is an item where the user can input a float like 3.1415926...",
+    "ui": {
+        "inputType": "float"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

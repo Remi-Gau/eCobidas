@@ -1,0 +1,62 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc2/contexts/generic",
+	"@type": "reproschema:Protocol",
+	"@id": "DemoProtocol_schema",
+	"prefLabel": {
+		"en": "Protocol1",
+		"es": "Protocol1_es"
+	},
+	"description": "example Protocol",
+	"schemaVersion": "1.0.0-rc2",
+	"version": "0.0.1",
+	"landingPage": [{
+            "@id": "README.md",
+            "inLanguage": "en"
+        }
+    ],
+	"messages": [
+		{
+			"message": "Test message: Triggered when item1 value is greater than 0",
+			"jsExpression": "item1 > 0"
+		}
+	],
+	"ui": {
+        "addProperties": [
+            {"isAbout": "../activities/Activity1/activity1_schema",
+            "variableName": "activity1_schema",
+            "prefLabel": {"en": "Activity 1"}
+            },
+            {"isAbout": "../activities/Activity2/Activity2_schema",
+            "variableName": "Activity2_schema",
+            "prefLabel": {"en": "Activity 2"}
+            },
+            {"isAbout": "../activities/Activity3/Activity3_schema",
+            "variableName": "Activity3_schema",
+            "prefLabel": {"en": "Activity 3"}
+            },
+            {"isAbout": "../activities/Activity4/Activity4_schema",
+            "variableName": "Activity4_schema",
+            "prefLabel": {"en": "Activity 4"}
+            },
+            {"isAbout": "../activities/selectActivity/selectActivity_schema",
+            "variableName": "selectActivity_schema",
+            "prefLabel": {"en": "Select Activity"}
+            },
+            {"isAbout": "../activities/voiceActivity/voiceActivity_schema",
+            "variableName": "voiceActivity_schema",
+            "prefLabel": {"en": "Voice Activity" }
+            }
+        ],
+    "order": [
+            "../activities/Activity2/Activity2_schema",
+            "../activities/Activity3/Activity3_schema",
+            "../activities/Activity4/Activity4_schema",
+            "../activities/selectActivity/selectActivity_schema",
+            "../activities/voiceActivity/voiceActivity_schema"
+        ],
+		"shuffle": false,
+		"allow": [
+			"reproschema:AllowExport"
+		]
+	}
+}

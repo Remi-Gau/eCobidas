@@ -1,0 +1,16 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc2/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "document_upload_item",
+    "prefLabel": "document upload item",
+    "description": "This is a document upload item.",
+    "schemaVersion": "1.0.0-rc2",
+    "version": "0.0.1",
+    "question": "This is an item where the user can upload a document.",
+    "ui": {
+        "inputType": "documentUpload"
+    },
+    "responseOptions": {
+        "valueType": "DigitalDocument"
+    }
+}
