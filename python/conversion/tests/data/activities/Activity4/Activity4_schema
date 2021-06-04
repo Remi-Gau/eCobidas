@@ -16,13 +16,6 @@
                     "reproschema:Skipped"
                 ]
                 },
-                {"isAbout": "items/participant_id_item",
-                "variableName": "participant_id_item",
-                "isVis": true,
-                  "allow": [
-                    "reproschema:Skipped"
-                ]
-                },
                 {"isAbout": "items/multitext_item",
                 "variableName": "multitext_item",
                 "isVis": true,
@@ -37,13 +30,6 @@
                     "reproschema:Skipped"
                 ]
                 },
-                {"isAbout": "items/sign_item",
-                "variableName": "sign_item",
-                "isVis": true,
-                  "allow": [
-                    "reproschema:Skipped"
-                ]
-                },
                 {"isAbout": "items/save_item",
                 "variableName": "save_item",
                 "isVis": true,
@@ -51,14 +37,11 @@
                     "reproschema:Skipped"
                 ]
                 }
-                
         ],
         "order": [
             "items/text_item",
             "items/multitext_item",
             "items/float_item",
-            "items/participant_id_item",
-            "items/sign_item",
             "items/save_item"
         ],
         "shuffle": false,

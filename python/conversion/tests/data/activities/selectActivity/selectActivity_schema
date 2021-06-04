@@ -1,55 +1,57 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
-    "@type": "reproschema:Activity",
-    "@id": "selectActivity_schema",
-    "prefLabel": "demo of all input types and widgets",
-    "description": "dummy activity to show all inputs types and widgets",
-    "preamble": "This activity will show you all the different input type and widgets currently available.",
-    "schemaVersion": "1.0.0-rc1",
-    "version": "0.0.1",
-    "ui": {
-        "addProperties": [
-                {"isAbout": "items/radio_item",
-                "variableName": "radio_item",
-                "isVis": true,
-                  "allow": [
-                    "reproschema:Skipped"
-                ]
-                },
-                {"isAbout": "items/radio_item_multiple_choice",
-                "variableName": "radio_item_multiple_choice",
-                "isVis": true,
-                  "allow": [
-                    "reproschema:Skipped"
-                ]
-                },
-                {"isAbout": "items/select_item",
-                "variableName": "select_item",
-                "isVis": true,
-                  "allow": [
-                    "reproschema:Skipped"
-                ]
-                },
-          {
-            "isAbout": "items/select_item_multiple_choice",
-            "variableName": "select_item_multiple_choice",
-            "isVis": true,
-            "allow": [
-                    "reproschema:Skipped"
-                ]
-          }
-                
-        ],
-        "order": [
-            "items/radio_item",
-            "items/radio_item_multiple_choice",
-            "items/select_item",
-            "items/select_item_multiple_choice"
-        ],
-        "shuffle": false,
+  "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc1/contexts/generic",
+  "@type": "reproschema:Activity",
+  "@id": "selectActivity_schema",
+  "prefLabel": "demo of all input types and widgets",
+  "description": "dummy activity to show all inputs types and widgets",
+  "preamble": "This activity will show you all the different input type and widgets currently available.",
+  "schemaVersion": "1.0.0-rc1",
+  "version": "0.0.1",
+  "ui": {
+    "addProperties": [
+      {
+        "isAbout": "items/radio_item",
+        "variableName": "radio_item",
+        "isVis": true,
         "allow": [
-			"reproschema:AutoAdvance",
-			"reproschema:AllowExport"
-		]
-    }
+          "reproschema:Skipped"
+        ]
+      },
+      {
+        "isAbout": "items/radio_item_multiple_choice",
+        "variableName": "radio_item_multiple_choice",
+        "isVis": true,
+        "allow": [
+          "reproschema:Skipped"
+        ]
+      },
+      {
+        "isAbout": "items/select_item",
+        "variableName": "select_item",
+        "isVis": true,
+        "allow": [
+          "reproschema:Skipped"
+        ]
+      },
+      {
+        "isAbout": "items/select_item_multiple_choice",
+        "variableName": "select_item_multiple_choice",
+        "isVis": true,
+        "allow": [
+          "reproschema:Skipped"
+        ]
+      }
+    ],
+    "order": [
+      "items/radio_item",
+      "items/radio_item_multiple_choice",
+      "items/select_item",
+      "items/select_item_multiple_choice"
+    ],
+    "shuffle": false,
+    "allow": [
+      "reproschema:AutoAdvance",
+      "reproschema:AllowExport"
+    ]
+  }
 }
