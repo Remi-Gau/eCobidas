@@ -1,8 +1,9 @@
 activity_order,include,activity_pref_label,item_pref_label,item_description,item_order,mandatory,visibility,skip,question,field_type,choices
 1,1,Activity 2,number of subjects,number of subjects,1,1,1,1,Number of subjects entering into the analysis,int,
 2,1,Activity 3,scanner make,scanner make,1,1,1,1,Manufacturer of MRI scanner,radio,Siemens | Philips | General Electric
-3,1,Activity 4,software package,software package,1,1,1,1,"If a single software package was used for all analyses, specify that here",mri_software,
-4,1,Select Activity,radio item,This is a radio item.,1,1,1,1,This is an example of a radio item with several possible answers to choose from (only one answer allowed).,radio,Response option 1 | Response option 2 | Response option 3
-4,1,Select Activity,radio item multiple choice,This is a radio item with multiple choice.,2,1,1,1,This is an example of a radio item with several possible answers to choose from (several answers allowed).,radio_multiple,Response option 1 | Response option 2 | Response option 3
-4,1,Select Activity,select item,This is a select item that works with a drop down menu.,3,1,1,1,This is an example of a select item with several possible answers to choose from a dropdown menu (only one answer allowed).,select,Response option 1 | Response option 2 | Response option 3
+3,1,Activity 4,text item,text item,1,1,1,1,This is an item where the user can input some text with a max length of 300.,char,
+3,1,Activity 4,float item,float item,2,1,1,1,This is an item where the user can input a float like 3.1415926...,float,
+4,1,Select Activity,radio item,This is a radio item.,1,1,1,1,radio item - one answer allowed,radio,Response option 1 | Response option 2 | Response option 3
+4,1,Select Activity,radio item multiple choice,This is a radio item with multiple choice.,2,1,1,1,radio item - several answers allowed,radio_multiple,Response option 1 | Response option 2 | Response option 3
+4,1,Select Activity,select item,This is a select item that works with a drop down menu.,3,1,1,1,This is an example of a select item with several possible answers to choose from a dropdown menu (only one answer allowed).,dropdown,Response option 1 | Response option 2 | Response option 3
 4,1,Select Activity,select item multiple choice,This is a select item that works with a drop down menu.,4,1,1,1,This is an example of a select item with several possible answers to choose from a dropdown menu (several answers allowed).,select_multiple,Response option 1 | Response option 2 | Response option 3

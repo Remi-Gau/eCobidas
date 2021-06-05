@@ -3,17 +3,19 @@
     "@type": "reproschema:Field",
     "@id": "radio_item",
     "prefLabel": "radio item",
-    "description": "This is a radio item.",
-    "schemaVersion": "1.0.0-rc2",
+    "description": "radio item",
+    "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
-    "question": "This is an example of a radio item with several possible answers to choose from (only one answer allowed).",
+    "question": {
+        "en": "radio item - one answer allowed"
+        },
     "ui": {
         "inputType": "radio"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 3,
         "multipleChoice": false,
         "choices": [
             {
@@ -27,7 +29,11 @@
             {
                 "name": "Response option 3",
                 "value": 2
-            }
+            },
+            {
+                "name": "Other",
+                "value": 3
+            }            
         ]
     }
 }

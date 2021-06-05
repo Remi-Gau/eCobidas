@@ -84,6 +84,7 @@ def define_choices(item, field_type, choices):
 
     if field_type == "radio":
         choices = list_responses_options(choices)
+        choices["multipleChoice"] = False
         item.set_input_type_as_radio(choices)
 
     # if we have a dropdown menu
@@ -140,14 +141,13 @@ def list_responses_options(choice_list):
 
     for i, opt in enumerate(choice_list):
 
-        choices["choices"].append({"name": opt, "value": i, "@type": "option"})
+        choices["choices"].append({"name": opt, "value": i})
 
-    choices["choices"].append(
-        {"name": "Other", "value": len(choice_list), "@type": "option"}
-    )
+    choices["choices"].append({"name": "Other", "value": len(choice_list)})
 
     choices["minValue"] = 0
-    choices["maxValue"] = len(choices)
+    choices["maxValue"] = len(choices["choices"]) - 1
+    choices["valueType"] = "xsd:integer"
 
     return choices
 

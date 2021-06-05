@@ -60,14 +60,13 @@ def test_get_visibility():
 
 def test_list_responses_options():
 
-    choices = list_responses_options(["A", "B"])
+    choices = list_responses_options(["A", "B", "C"])
 
-    print(choices)
+    expected = {"choices": [], "minValue": 0, "maxValue": 3, "valueType": "xsd:integer"}
 
-    expected = {"choices": [], "minValue": 0, "maxValue": 2}
-
-    expected["choices"].append({"name": "A", "value": 0, "@type": "option"})
-    expected["choices"].append({"name": "B", "value": 1, "@type": "option"})
-    expected["choices"].append({"name": "Other", "value": 2, "@type": "option"})
+    expected["choices"].append({"name": "A", "value": 0})
+    expected["choices"].append({"name": "B", "value": 1})
+    expected["choices"].append({"name": "C", "value": 2})
+    expected["choices"].append({"name": "Other", "value": 3})
 
     assert choices == expected

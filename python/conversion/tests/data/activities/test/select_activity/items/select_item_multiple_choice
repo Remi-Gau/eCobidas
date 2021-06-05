@@ -1,10 +1,10 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc2/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "select_item_multiple_choice",
     "prefLabel": "select item multiple choice",
     "description": "This is a select item that works with a drop down menu.",
-    "schemaVersion": "1.0.0-rc2",
+    "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "question": "This is an example of a select item with several possible answers to choose from a dropdown menu (several answers allowed).",
     "ui": {

@@ -15,30 +15,52 @@ def test_convert_to_schema():
 
     convert_to_schema(schema_to_create, output_dir, repo)
 
-    output_file = os.path.join(output_dir, "protocols", "test", "test_schema")
+    # check protocol
+    protocol_folder = os.path.join("protocols", "test")
+
+    output_file = os.path.join(output_dir, protocol_folder, "test_schema")
     protocol_content = read_json(output_file)
 
-    data_file = os.path.join(myPath, "data", "protocols", "test", "test_schema.jsonld")
+    data_file = os.path.join(myPath, "data", protocol_folder, "test_schema")
     expected = read_json(data_file)
 
     assert protocol_content == expected
 
+    # check activities
+    activities_folder = os.path.join("activities", "test")
+
+    activity_name = "select_activity"
+    this_activity_folder = os.path.join(activities_folder, activity_name)
+
     output_file = os.path.join(
-        output_dir, "activities", "test", "select_activity", "select_activity_schema"
+        output_dir, this_activity_folder, activity_name + "_schema"
     )
     activity_content = read_json(output_file)
 
     data_file = os.path.join(
-        myPath,
-        "data",
-        "activities",
-        "test",
-        "select_activity",
-        "select_activity_schema.jsonld",
+        myPath, "data", this_activity_folder, activity_name + "_schema"
     )
     expected = read_json(data_file)
 
     assert activity_content == expected
+
+    #  Check items
+    item_name = "radio_item"
+    output_file = os.path.join(
+        output_dir, this_activity_folder, "items", item_name
+    )
+    item_content = read_json(output_file)
+
+    data_file = os.path.join(
+        myPath,
+        "data",
+        this_activity_folder,
+        "items",
+        item_name,
+    )
+    expected = read_json(data_file)
+
+    assert item_content == expected
 
 
 def read_json(file):
