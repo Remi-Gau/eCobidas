@@ -82,6 +82,9 @@ def define_choices(item, field_type, choices):
     # with no response choice involved
     item.set_basic_response_type(field_type)
 
+    if field_type == "multitext":
+        item.set_input_type_as_multitext()
+
     if field_type == "radio":
         choices = list_responses_options(choices)
         choices["multipleChoice"] = False

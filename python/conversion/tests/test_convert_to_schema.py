@@ -63,6 +63,52 @@ def test_convert_to_schema():
 
         assert item_content == expected
 
+    # Check activity
+    activity_name = "activity_4"
+    this_activity_folder = os.path.join(activities_folder, activity_name)
+
+    # Check items
+    item_list = ["float_item"]
+    # "multitext_item"
+
+    for item in item_list:
+
+        output_file = os.path.join(output_dir, this_activity_folder, "items", item)
+        item_content = read_json(output_file)
+
+        data_file = os.path.join(
+            myPath,
+            "data",
+            this_activity_folder,
+            "items",
+            item,
+        )
+        expected = read_json(data_file)
+
+        assert item_content == expected
+
+    # # Check activity
+    # activity_name = "activity_3"
+
+    # # Check items
+    # item_list = ["slider_item"]
+
+    # for item in item_list:
+
+    #     output_file = os.path.join(output_dir, this_activity_folder, "items", item)
+    #     item_content = read_json(output_file)
+
+    #     data_file = os.path.join(
+    #         myPath,
+    #         "data",
+    #         this_activity_folder,
+    #         "items",
+    #         item,
+    #     )
+    #     expected = read_json(data_file)
+
+    #     assert item_content == expected
+
 
 def read_json(file):
 
