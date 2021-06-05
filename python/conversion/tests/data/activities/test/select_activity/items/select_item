@@ -3,17 +3,19 @@
     "@type": "reproschema:Field",
     "@id": "select_item",
     "prefLabel": "select item",
-    "description": "This is a select item that works with a drop down menu.",
+    "description": "select item",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
-    "question": "This is an example of a select item with several possible answers to choose from a dropdown menu (only one answer allowed).",
+    "question":  {
+        "en": "select item - one answer allowed"
+        },
     "ui": {
         "inputType": "select"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 3,
         "multipleChoice": false,
         "choices": [
             {
@@ -27,7 +29,11 @@
             {
                 "name": "Response option 3",
                 "value": 2
-            }
+            },
+            {
+                "name": "Other",
+                "value": 3
+            }            
         ]
     }
 }

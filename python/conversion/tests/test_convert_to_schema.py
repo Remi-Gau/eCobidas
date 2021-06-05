@@ -45,22 +45,23 @@ def test_convert_to_schema():
     assert activity_content == expected
 
     #  Check items
-    item_name = "radio_item"
-    output_file = os.path.join(
-        output_dir, this_activity_folder, "items", item_name
-    )
-    item_content = read_json(output_file)
+    item_list = ["radio_item", "select_item"]
 
-    data_file = os.path.join(
-        myPath,
-        "data",
-        this_activity_folder,
-        "items",
-        item_name,
-    )
-    expected = read_json(data_file)
+    for item in item_list:
 
-    assert item_content == expected
+        output_file = os.path.join(output_dir, this_activity_folder, "items", item)
+        item_content = read_json(output_file)
+
+        data_file = os.path.join(
+            myPath,
+            "data",
+            this_activity_folder,
+            "items",
+            item,
+        )
+        expected = read_json(data_file)
+
+        assert item_content == expected
 
 
 def read_json(file):

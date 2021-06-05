@@ -92,6 +92,7 @@ def define_choices(item, field_type, choices):
     # offer the possibility to have an "Other" choice that opens a text box
     elif field_type == "dropdown":
         choices = list_responses_options(choices)
+        choices["multipleChoice"] = False
         item.set_input_type_as_select(choices)
 
     elif field_type == "slider":
