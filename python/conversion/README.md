@@ -8,12 +8,6 @@ There are few dependencies (for now). One of them is the
 [`reproschema-py`](https://github.com/ReproNim/reproschema-py) package that
 helps to validate that the schema you create is valid.
 
-```bash
-# create a new virtual environment in ecobidas
-$ virtualenv --python=python3.8 ecobidas
-# activate the new environment
-$ source ecobidas/bin/activate
-```
 
 ```bash
 pip install -r requirements.txt

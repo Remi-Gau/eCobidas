@@ -9,6 +9,8 @@ from reproschema_activity import ReproschemaActivity
 
 def convert_to_schema(schema_to_create, output_dir, repo, branch="master"):
 
+    repo = "https://raw.githubusercontent.com/" + repo
+
     for schema in schema_to_create:
 
         protocol = create_schema(schema, output_dir)
