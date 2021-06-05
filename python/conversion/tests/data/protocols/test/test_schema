@@ -1,17 +1,16 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Protocol",
-    "@id": "protocol_schema",
+    "@id": "test_schema",
     "prefLabel": "test",
     "description": "test",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
-    "landingPage": [
+    "landingPage":
         {
             "@id": "../../README-en.md",
             "inLanguage": "en"
-        }
-    ],
+        },
     "ui": {
         "addProperties": [
             {
@@ -19,28 +18,36 @@
                 "variableName": "activity_2",
                 "prefLabel": {
                     "en": "activity 2"
-                }
+                },
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "isAbout": "../../activities/test/activity_3/activity_3_schema",
                 "variableName": "activity_3",
                 "prefLabel": {
                     "en": "activity 3"
-                }
+                },
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "isAbout": "../../activities/test/activity_4/activity_4_schema",
                 "variableName": "activity_4",
                 "prefLabel": {
                     "en": "activity 4"
-                }
+                },
+                "isVis": true,
+                "valueRequired": false
             },
             {
                 "isAbout": "../../activities/test/select_activity/select_activity_schema",
                 "variableName": "select_activity",
                 "prefLabel": {
                     "en": "select activity"
-                }
+                },
+                "isVis": true,
+                "valueRequired": false
             }
         ],
         "order": [

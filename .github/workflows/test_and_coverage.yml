@@ -28,7 +28,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run tests and generate coverage report
-      run: pytest --cov=./ --cov-report=xml scripts
+      run: pytest --cov=./ --cov-report=xml python
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1

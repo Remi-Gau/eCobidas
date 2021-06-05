@@ -26,6 +26,7 @@ jobs:
           npm install -g jsonlint
           grep -r  "@context" activities | cut -d: -f1 | xargs -I fname jsonlint -q fname
           grep -r  "@context" protocols | cut -d: -f1 | xargs -I fname jsonlint -q fname
+          grep -r  "@context" python/conversion/tests/data | cut -d: -f1 | xargs -I fname jsonlint -q fname
 
       # Checks that the schemas are valid
       - name: Set up Python 3.8
@@ -42,3 +43,5 @@ jobs:
         run: |
           reproschema -l DEBUG validate activities
           reproschema -l DEBUG validate protocols
+          reproschema -l DEBUG validate python/conversion/tests/data/protocols
+          reproschema -l DEBUG validate python/conversion/tests/data/activities
