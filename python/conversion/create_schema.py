@@ -43,7 +43,7 @@ def convert_to_schema(schema_to_create, output_dir, repo, branch="master"):
         )
 
 
-def create_schema(schema_to_create, OUTPUT_DIR):
+def create_schema(schema_to_create, output_dir, debug=False):
     """
     This takes the content of the a csv file and turns it into a
     reproschema protocol.
@@ -53,19 +53,13 @@ def create_schema(schema_to_create, OUTPUT_DIR):
     Every new item encountered is added to the current activity.
     """
 
-    DEBUG = True
-
-    # -----------------------------------------------------------------------------
-    #                                   START
-    # -----------------------------------------------------------------------------
-
-    protocol, protocol_path = initialize_protocol(schema_to_create, OUTPUT_DIR)
+    protocol, protocol_path = initialize_protocol(schema_to_create, output_dir)
 
     df = load_data(schema_to_create)
 
     activities = df.activity_order.unique()
 
-    if DEBUG:
+    if debug:
         activities = [1]
 
     for activity_idx in activities:
@@ -76,7 +70,7 @@ def create_schema(schema_to_create, OUTPUT_DIR):
         items = items[included_items]
 
         protocol, activity, activity_path = initialize_activity(
-            protocol, items, OUTPUT_DIR
+            protocol, items, output_dir
         )
 
         items_order = items.item_order.unique()
@@ -107,18 +101,21 @@ def load_data(schema_to_create):
     source_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
     csv_dir = os.path.join("inputs", "csv")
 
+    if schema_to_create == "test":
+        source_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tests")
+
     input_file = os.path.join(source_dir, csv_dir, schema_to_create + ".csv")
     return pd.read_csv(input_file)
 
 
-def initialize_protocol(schema_to_create, OUTPUT_DIR):
+def initialize_protocol(schema_to_create, output_dir):
 
     protocol_name = snake_case(schema_to_create)
     protocol = ReproschemaProtocol()
     protocol.set_defaults(protocol_name)
 
     # create output directories
-    protocol_path = os.path.join(OUTPUT_DIR, "protocols", protocol.dir)
+    protocol_path = os.path.join(output_dir, "protocols", protocol.dir)
     protocol.set_directory = protocol_path
     if not os.path.exists(protocol_path):
         os.makedirs(protocol_path)
@@ -135,7 +132,7 @@ def initialize_protocol(schema_to_create, OUTPUT_DIR):
     return protocol, protocol_path
 
 
-def initialize_activity(protocol, items, OUTPUT_DIR):
+def initialize_activity(protocol, items, output_dir):
 
     activity = ReproschemaActivity()
 
@@ -156,7 +153,7 @@ def initialize_activity(protocol, items, OUTPUT_DIR):
     )
     activity.set_URI(URI)
 
-    activity_path = os.path.join(OUTPUT_DIR, "activities", protocol.dir, activity.dir)
+    activity_path = os.path.join(output_dir, "activities", protocol.dir, activity.dir)
 
     if not os.path.exists(activity_path):
         os.makedirs(activity_path)

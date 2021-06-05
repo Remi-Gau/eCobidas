@@ -11,10 +11,10 @@ class ReproschemaSchema:
         self.schema = {
             "@context": URL + VERSION + "/contexts/generic",
             "schemaVersion": VERSION,
-            "version": "0.1.0",
+            "version": "0.0.1",
         }
 
-    def set_filename(self, name, ext=".jsonld"):
+    def set_filename(self, name, ext=""):
         self.schema_file = name + "_schema" + ext
         self.schema["@id"] = name + "_schema" + ext
 

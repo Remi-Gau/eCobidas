@@ -1,0 +1,5 @@
+activity_order,include,activity_pref_label,item_pref_label,item_description,item_order,mandatory,visibility,question,field_type,choices
+1,1,Activity 2,number of subjects,number of subjects,1,1,1,Number of subjects entering into the analysis,int,
+2,1,Activity 3,scanner make,scanner make,1,1,1,Manufacturer of MRI scanner,radio,Siemens | Philips | General Electric
+3,1,Activity 4,software package,software package,1,1,1,"If a single software package was used for all analyses, specify that here",mri_software,
+4,1,Select Activity,used intersubject registration,used intersubject registration,1,1,1,Were subjects registered to a common stereotactic space?,boolean,

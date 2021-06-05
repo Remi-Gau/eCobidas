@@ -8,7 +8,7 @@ sys.path.insert(0, myPath + "/../")
 
 def test_convert_to_schema():
 
-    schema_to_create = ["neurovault"]
+    schema_to_create = ["test"]
     output_dir = os.path.join(myPath, "outputs")
     repo = "https://raw.githubusercontent.com/Remi-Gau/eCobidas/"
 

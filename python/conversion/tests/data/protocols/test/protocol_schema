@@ -1,0 +1,58 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "protocol_schema",
+    "prefLabel": "test",
+    "description": "test",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "landingPage": [
+        {
+            "@id": "../../README-en.md",
+            "inLanguage": "en"
+        }
+    ],
+    "ui": {
+        "addProperties": [
+            {
+                "isAbout": "../../activities/test/activity_2/activity_2_schema",
+                "variableName": "activity_2",
+                "prefLabel": {
+                    "en": "activity 2"
+                }
+            },
+            {
+                "isAbout": "../../activities/test/activity_3/activity_3_schema",
+                "variableName": "activity_3",
+                "prefLabel": {
+                    "en": "activity 3"
+                }
+            },
+            {
+                "isAbout": "../../activities/test/activity_4/activity_4_schema",
+                "variableName": "activity_4",
+                "prefLabel": {
+                    "en": "activity 4"
+                }
+            },
+            {
+                "isAbout": "../../activities/test/select_activity/select_activity_schema",
+                "variableName": "select_activity",
+                "prefLabel": {
+                    "en": "select activity"
+                }
+            }
+        ],
+        "order": [
+            "../../activities/test/activity_2/activity_2_schema",
+            "../../activities/test/activity_3/activity_3_schema",
+            "../../activities/test/activity_4/activity_4_schema",
+            "../../activities/test/select_activity/select_activity_schema"
+        ],
+        "shuffle": false,
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}
