@@ -30,110 +30,54 @@ def test_convert_to_schema():
     activities_folder = os.path.join("activities", "test")
 
     # Check activity
-    activity_name = "select_activity"
-    this_activity_folder = os.path.join(activities_folder, activity_name)
+    activities = [
+        {"name": "select_activity", "items": ["radio_item", "select_item"]},
+        {
+            "name": "activity_4",
+            "items": ["float_item"],
+        },  #  "multitext_item", "text_item"
+        {
+            "name": "activity_3",
+            "items": ["integer_item"]
+        }  #  "slider_item"      
+    ]
 
-    output_file = os.path.join(
-        output_dir, this_activity_folder, activity_name + "_schema"
-    )
-    activity_content = read_json(output_file)
+    for activity in activities:
 
-    data_file = os.path.join(
-        myPath, "data", this_activity_folder, activity_name + "_schema"
-    )
-    expected = read_json(data_file)
+        activity_name = activity["name"]
 
-    assert activity_content == expected
+        this_activity_folder = os.path.join(activities_folder, activity_name)
 
-    #  Check items
-    item_list = ["radio_item", "select_item"]
-
-    for item in item_list:
-
-        output_file = os.path.join(output_dir, this_activity_folder, "items", item)
-        item_content = read_json(output_file)
+        output_file = os.path.join(
+            output_dir, this_activity_folder, activity_name + "_schema"
+        )
+        activity_content = read_json(output_file)
 
         data_file = os.path.join(
-            myPath,
-            "data",
-            this_activity_folder,
-            "items",
-            item,
+            myPath, "data", this_activity_folder, activity_name + "_schema"
         )
         expected = read_json(data_file)
 
-        assert item_content == expected
+        assert activity_content == expected
 
-    # Check activity
-    activity_name = "activity_4"
-    this_activity_folder = os.path.join(activities_folder, activity_name)
+        #  Check items
+        item_list = activity["items"]
 
-    output_file = os.path.join(
-        output_dir, this_activity_folder, activity_name + "_schema"
-    )
-    activity_content = read_json(output_file)
+        for item in item_list:
 
-    data_file = os.path.join(
-        myPath, "data", this_activity_folder, activity_name + "_schema"
-    )
-    expected = read_json(data_file)
+            output_file = os.path.join(output_dir, this_activity_folder, "items", item)
+            item_content = read_json(output_file)
 
-    assert activity_content == expected
+            data_file = os.path.join(
+                myPath,
+                "data",
+                this_activity_folder,
+                "items",
+                item,
+            )
+            expected = read_json(data_file)
 
-    # Check items
-    item_list = ["float_item"]
-    # "multitext_item", "text_item"
-
-    for item in item_list:
-
-        output_file = os.path.join(output_dir, this_activity_folder, "items", item)
-        item_content = read_json(output_file)
-
-        data_file = os.path.join(
-            myPath,
-            "data",
-            this_activity_folder,
-            "items",
-            item,
-        )
-        expected = read_json(data_file)
-
-        assert item_content == expected
-
-    # Check activity
-    activity_name = "activity_3"
-    this_activity_folder = os.path.join(activities_folder, activity_name)
-
-    output_file = os.path.join(
-        output_dir, this_activity_folder, activity_name + "_schema"
-    )
-    activity_content = read_json(output_file)
-
-    data_file = os.path.join(
-        myPath, "data", this_activity_folder, activity_name + "_schema"
-    )
-    expected = read_json(data_file)
-
-    assert activity_content == expected
-
-    # Check items
-    item_list = ["integer_item"]  # ["slider_item"]
-
-    for item in item_list:
-
-        output_file = os.path.join(output_dir, this_activity_folder, "items", item)
-        item_content = read_json(output_file)
-
-        data_file = os.path.join(
-            myPath,
-            "data",
-            this_activity_folder,
-            "items",
-            item,
-        )
-        expected = read_json(data_file)
-
-        assert item_content == expected
+            assert item_content == expected
 
 
 def read_json(file):
