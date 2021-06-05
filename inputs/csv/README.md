@@ -7,7 +7,7 @@ The google spreadsheet can be downloaded using the scripts
 [`download_csv.sh`](../../download_csv.sh).
 
 The `csv` files can be turned into schemas using the python code in the
-[`scripts`](../../scripts) folder.
+[`conversion`](../../python/conversion) folder.
 
 The content of the different columns is described in `data_dictionary.json` and
 the `json` files associated with each file.

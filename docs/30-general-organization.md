@@ -29,7 +29,7 @@ To execute that work, this project is organized around several "repositories":
     -   the [one for the MRI version](https://github.com/ohbm/cobidas) based of
         the Neurovault metadata "checklist" hosted on the OHBM Github
         organization and that serves this
-        [checklist]((https://ohbm.github.io/cobidas/#/)),
+        [checklist](https://ohbm.github.io/eCOBIDAS/#/),
 
     -   the one for the
         [PET imaging version](https://github.com/Remi-Gau/cobidas-PET) that
@@ -67,7 +67,7 @@ the ones for PET imaging and eyetracking).
 ├── protocols         <-- schema for the checklists putting together several "sections" together
 ├── response_options  <-- contains the pre-set list of response options to some checklist items
 ├── schema            <-- obsolete: ignore this
-├── scripts           <-- python scripts to convert the CSV spreadsheets into schemas
+├── python            <-- python scripts to convert the CSV spreadsheets into schemas
 └── tests             <-- python script to test that the schema files are valid JSON-LD
 ```
 

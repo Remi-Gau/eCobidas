@@ -8,7 +8,6 @@ There are few dependencies (for now). One of them is the
 [`reproschema-py`](https://github.com/ReproNim/reproschema-py) package that
 helps to validate that the schema you create is valid.
 
-
 ```bash
 pip install -r requirements.txt
 ```
@@ -19,18 +18,19 @@ To be able to use the command line tool, do the following
 pip install -e .
 ```
 
-The following should run the conversion.
+## Generate the schemas
+
+If you have installed the package the following command line call should run the
+conversion.
 
 ```bash
 convert_to_schema
 ```
 
-## Generate the schemas
-
-The highest level script that you will use to create the schema is
-[convert_csv_to_schema.py](./conversion/convert_csv_to_schema.py). It will go
-through the csv files in the [input folder](../inputs/csv/) and turn them into
-their corresponding protocol, activity and items.
+The highest level function that you will use to create the schema is
+[create_schema.py](./create_schema.py). It will go through the csv files in the
+[inputs folder](../../inputs/csv/) and turn them into their corresponding
+protocol, activity and items.
 
 You only need to specify in the header of that script:
 
@@ -38,11 +38,13 @@ You only need to specify in the header of that script:
     several of protocols at once),
 -   `output_dir` where the schemas is meant to be created on your computer,
 -   `repo` the URL of the repository where the schema will be hosted
+-   `branch`
 
 Once this is done, type this run the script from the `scripts` directory:
 
 ```bash
-python3 convert_csv_to_schema.py
+python3 cli.py
+python3 create_schema.py
 ```
 
 ### Implementation
