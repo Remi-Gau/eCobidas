@@ -1,12 +1,14 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc2/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "integer_item",
     "prefLabel": "integer item",
-    "description": "This is a integer item.",
-    "schemaVersion": "1.0.0-rc2",
+    "description": "integer item",
+    "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
-    "question": "This is an item where the user can input a integer like 3, -4 or 321...",
+    "question": {
+        "en": "This is an integer item"
+    },
     "ui": {
         "inputType": "number"
     },

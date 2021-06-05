@@ -1,12 +1,14 @@
 {
-    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc2/contexts/generic",
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "text_item",
     "prefLabel": "text item",
     "description": "text item",
-    "schemaVersion": "1.0.0-rc2",
+    "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
-    "question": "This is an item where the user can input some text with a max length of 300.",
+    "question": {
+        "en": "This is a text item"
+    },
     "ui": {
         "inputType": "text"
     },
