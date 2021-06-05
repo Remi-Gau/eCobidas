@@ -27,7 +27,7 @@
     "order": [
       "items/text_item",
       "items/multitext_item",
-      "items/float_item",
+      "items/float_item"
     ],
     "shuffle": false
   }
