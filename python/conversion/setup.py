@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def readfile(filename):
@@ -10,6 +10,7 @@ setup(
     name="conversion",
     version="2021.06.05",
     description="",
+    packages=find_packages(),
     long_description=readfile("README.md"),
     author="Rémi Gau",
     author_email="remi.gau@gmail.com",
@@ -18,6 +19,6 @@ setup(
     license=readfile("LICENSE"),
     entry_points="""
         [console_scripts]
-        convert_to_schema=convert_csv_to_schema:convert_to_schema
+        ecobidas_convert=cli:convert
     """,
 )

@@ -7,6 +7,40 @@ from reproschema_protocol import ReproschemaProtocol
 from reproschema_activity import ReproschemaActivity
 
 
+def convert_to_schema(schema_to_create, output_dir, repo, branch="master"):
+
+    for schema in schema_to_create:
+
+        protocol = create_schema(schema, output_dir)
+
+        s = "/"
+
+        print(
+            "\n\n"
+            + "---------------------------------------------------------------"
+            + "\nYou can view this protocol here:\n"
+            + "https://www.repronim.org/reproschema-ui/#/?url="
+            + s.join(
+                [
+                    repo,
+                    branch,
+                    "protocols",
+                    protocol.dir,
+                    protocol.get_filename(),
+                ]
+            )
+            + "\n"
+            + "--------------------------------------------------------------"
+            + "\n"
+            + "https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema"
+            + "\n"
+            + "https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema"
+            + "\n"
+            + "--------------------------------------------------------------"
+            + "\n\n",
+        )
+
+
 def create_schema(schema_to_create, OUTPUT_DIR):
     """
     This takes the content of the a csv file and turns it into a

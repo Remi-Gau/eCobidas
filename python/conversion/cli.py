@@ -1,5 +1,5 @@
 import click
-from create_schema import create_schema
+from create_schema import convert_to_schema
 
 # -----------------------------------------------------------------------------
 #                                   PARAMETERS
@@ -49,39 +49,10 @@ branch = "master"
 @click.option("--output_dir", default=output_dir, help="Where to output stuff.")
 @click.option("--repo", default=repo, help="repo")
 @click.option("--branch", default=branch, help="branch")
-def convert_to_schema(schema_to_create, output_dir, repo, branch):
+def convert(schema_to_create, output_dir, repo, branch):
 
-    for schema in schema_to_create:
-
-        protocol = create_schema(schema, output_dir)
-
-        s = "/"
-
-        print(
-            "\n\n"
-            + "---------------------------------------------------------------"
-            + "\nYou can view this protocol here:\n"
-            + "https://www.repronim.org/reproschema-ui/#/?url="
-            + s.join(
-                [
-                    repo,
-                    branch,
-                    "protocols",
-                    protocol.dir,
-                    protocol.get_filename(),
-                ]
-            )
-            + "\n"
-            + "--------------------------------------------------------------"
-            + "\n"
-            + "https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema"
-            + "\n"
-            + "https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema"
-            + "\n"
-            + "--------------------------------------------------------------"
-            + "\n\n",
-        )
+    convert_to_schema(schema_to_create, output_dir, repo, branch)
 
 
 if __name__ == "__main__":
-    convert_to_schema()
+    convert()

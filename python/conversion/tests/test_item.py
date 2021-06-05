@@ -1,13 +1,14 @@
 import sys, os
+import pandas as pd
+
+from ..item import get_item_info, get_visibility, list_responses_options
+
 
 myPath = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, myPath + "/../")
 
 
 def test_get_item_info():
-
-    from ..item import get_item_info
-    import pandas as pd
 
     this_item = pd.DataFrame(
         {
@@ -37,9 +38,6 @@ def test_get_item_info():
 
 def test_get_visibility():
 
-    from ..item import get_visibility
-    import pandas as pd
-
     this_item = pd.DataFrame({"visibility": ["1"]})
 
     visibility = get_visibility(this_item)
@@ -50,8 +48,6 @@ def test_get_visibility():
 
 
 def test_list_responses_options():
-
-    from ..item import list_responses_options
 
     choices = list_responses_options(["A", "B"])
 
