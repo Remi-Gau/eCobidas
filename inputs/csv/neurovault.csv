@@ -60,7 +60,7 @@ duplicate,activity_order,include,activity_pref_label,item_pref_label,item_descri
 0,5,1,Intersubject registration,used smoothing,used smoothing,13,1,1,Was spatial smoothing applied?,boolean,,,,,,
 0,5,1,Intersubject registration,smoothing type,smoothing type,14,1,used_smoothing == 1,Describe the type of smoothing applied,char,,,,,,
 0,5,1,Intersubject registration,smoothing fwhm,smoothing fwhm,15,1,used_smoothing == 1,The full-width at half-maximum of the smoothing kernel in millimeters,float,,,,,,
-0,5,1,Intersubject registration,resampled voxel size,resampled voxel size,16,,1,"Voxel size in mm of the resampled, atlas-space images",float,,,,,,
+0,5,1,Intersubject registration,resampled voxel size,resampled voxel size,16,1,1,"Voxel size in mm of the resampled, atlas-space images",float,,,,,,
 0,6,1,Individual subject modeling,intrasubject model type,intrasubject model type,1,1,1,Type of group model used,radio,Regression,,,,,
 0,6,1,Individual subject modeling,intrasubject estimation type,intrasubject estimation type,2,1,1,Estimation method used for model,radio,OLS | generalized least squares,,,,,
 0,6,1,Individual subject modeling,intrasubject modeling software,intrasubject modeling software,3,2,1,Software used for intrasubject modeling if different from overall package,mri_software,,,,,,

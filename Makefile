@@ -11,23 +11,8 @@
 
 .PHONY: all clean clean_protocol clean_activities clean_csv
 
-all: inputs/csv/%.csv scripts/create_schema.py
-	python scripts/create_schema.py -i $< -o $@
-
 neurovault:
 	ecobidas_convert --schema_to_create neurovault
-
-protocols/mri/mri_schema: inputs/csv/mri.csv scripts/create_schema.py
-	python scripts/create_schema.py -i $< -o $@
-
-protocols/pet/pet_schema: inputs/csv/pet.csv scripts/create_schema.py
-	python scripts/create_schema.py -i $< -o $@
-
-protocols/pet/eyetracker_schema: inputs/csv/eyetracker.csv scripts/create_schema.py
-	python scripts/create_schema.py -i $< -o $@
-
-protocols/pet/meeg_schema: inputs/csv/meeg.csv scripts/create_schema.py
-	python scripts/create_schema.py -i $< -o $@
 
 # install:
 # 	virtualenv -p python3.8 env
@@ -53,6 +38,9 @@ clean_mri:
 clean_eyetracker:
 	rm -rf activities/*eye*
 	rm -rf protocols/*eye*
+
+clean_tests: 
+	rm -rf python/*/tests/outputs	
 
 clean_activities: 
 	rm -rf activities/**
