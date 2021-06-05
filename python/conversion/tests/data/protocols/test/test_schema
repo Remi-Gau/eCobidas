@@ -6,11 +6,10 @@
     "description": "test",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
-    "landingPage":
-        {
-            "@id": "../../README-en.md",
-            "inLanguage": "en"
-        },
+    "landingPage": {
+        "@id": "../../README-en.md",
+        "inLanguage": "en"
+    },
     "ui": {
         "addProperties": [
             {
