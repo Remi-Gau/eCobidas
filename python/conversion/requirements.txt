@@ -1,0 +1,8 @@
+reproschema==0.6.1
+requests_cache
+numpy
+pytest
+pytest-cov
+black
+pandas
+click

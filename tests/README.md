@@ -3,7 +3,7 @@
 To make sure they are valid JSON
 
 ```bash
-python scripts/jsonParser.py
+python tests/jsonParser.py
 ```
 
 To make sure the schemas are valid

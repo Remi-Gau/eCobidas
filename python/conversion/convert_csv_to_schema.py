@@ -25,7 +25,6 @@ schema_to_create = ["neurovault"]
 # corresponding to the remote where of the reproschema will be hosted
 
 output_dir = "/home/remi/github/cobidas_chckls"
-
 # output_dir = "/home/remi/github/cobidas-PET"
 # output_dir = "/home/remi/github/cobidas"
 # output_dir = "/home/remi/github/reexecute_nimg_checklist/"
@@ -48,8 +47,8 @@ branch = "master"
     "--schema_to_create", default=schema_to_create, help="Name of the schema to create."
 )
 @click.option("--output_dir", default=output_dir, help="Where to output stuff.")
-@click.option("--repo", default=output_dir, help="repo")
-@click.option("--branch", default=output_dir, help="branch")
+@click.option("--repo", default=repo, help="repo")
+@click.option("--branch", default=branch, help="branch")
 def convert_to_schema(schema_to_create, output_dir, repo, branch):
 
     for schema in schema_to_create:
