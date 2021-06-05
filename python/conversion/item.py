@@ -38,10 +38,10 @@ def get_visibility(this_item):
 
     visibility = convert_to_str(this_item["visibility"])
 
-    if visibility == "1":
+    if visibility in ["1", 1]:
         visibility = True
 
-    elif visibility == "0":
+    elif visibility in ["0", 0]:
         visibility = False
 
     # TODO

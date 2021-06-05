@@ -1,0 +1,44 @@
+{
+  "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+  "@type": "reproschema:Activity",
+  "@id": "select_activity_schema",
+  "prefLabel": "select activity",
+  "description": "select activity",
+  "schemaVersion": "1.0.0-rc4",
+  "version": "0.0.1",
+  "ui": {
+    "addProperties": [
+      {
+        "isAbout": "items/radio_item",
+        "variableName": "radio_item",
+        "valueRequired": false,
+        "isVis": true
+      },
+      {
+        "isAbout": "items/radio_item_multiple_choice",
+        "variableName": "radio_item_multiple_choice",
+        "valueRequired": false,
+        "isVis": true
+      },
+      {
+        "isAbout": "items/select_item",
+        "variableName": "select_item",
+        "valueRequired": false,
+        "isVis": true
+      },
+      {
+        "isAbout": "items/select_item_multiple_choice",
+        "variableName": "select_item_multiple_choice",
+        "valueRequired": false,
+        "isVis": true
+      }
+    ],
+    "order": [
+      "items/radio_item",
+      "items/radio_item_multiple_choice",
+      "items/select_item",
+      "items/select_item_multiple_choice"
+    ],
+    "shuffle": false
+  }
+}

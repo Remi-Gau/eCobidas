@@ -39,12 +39,23 @@ def test_get_item_info():
 def test_get_visibility():
 
     this_item = pd.DataFrame({"visibility": ["1"]})
-
     visibility = get_visibility(this_item)
+    assert visibility == True
 
-    expected = True
+    this_item = pd.DataFrame({"visibility": [1]})
+    visibility = get_visibility(this_item)
+    assert visibility == True
 
-    assert visibility == expected
+    this_item = pd.DataFrame({"visibility": ["0"]})
+    visibility = get_visibility(this_item)
+    assert visibility == False
+
+    this_item = pd.DataFrame({"visibility": [0]})
+    visibility = get_visibility(this_item)
+    assert visibility == False
+
+    this_item = pd.DataFrame({"visibility": ["javascript expression"]})
+    visibility = get_visibility(this_item)
 
 
 def test_list_responses_options():
