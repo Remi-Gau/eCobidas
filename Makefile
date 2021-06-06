@@ -1,25 +1,52 @@
-# Makefile to create the activitie and protocols
-
-# INPUT_DIR = $(inputs/csv/)
-# OUTPUT_DIR = $(inputs/csv/)
-
-# ALL_CSV = $(wildcard $(INPUT_DIR)*.csv)
-# ALL_CSV = $(wildcard data/*.csv)
-# INPUT_CSV = $(wildcard data/input_file_*.csv)
-# DATA = $(filter-out $(INPUT_CSV),$(ALL_CSV))
-# FIGURES = $(patsubst data/%.csv,output/figure_%.png,$(DATA))
+# Makefile to create the activities and protocols
 
 .PHONY: all clean clean_protocol clean_activities clean_csv
 
+# CREATE
 neurovault:
 	ecobidas_convert --schema_to_create neurovault
 
-# install:
-# 	virtualenv -p python3.8 env
-# 	source env/bin/activate
-# 	pip install -r requirements.txt
-# 	pip install -e python/conversion
+# DOWNLOAD
+download_neurovault: 
+	sh download_tsv.sh neurovault neurovault
 
+download_mri: 
+	sh download_tsv.sh mri all_sequences
+	sh download_tsv.sh mri design
+	sh download_tsv.sh mri acquisition
+	sh download_tsv.sh mri preprocessing
+	sh download_tsv.sh mri modelling_inference
+	sh download_tsv.sh mri results
+
+download_core: 
+	sh download_tsv.sh core participants
+	sh download_tsv.sh core behavior
+	sh download_tsv.sh core reproducibility
+	sh download_tsv.sh core data_sharing	
+
+download_meeg:
+	sh download_tsv.sh meeg design
+	sh download_tsv.sh meeg acquisition
+	sh download_tsv.sh meeg processing
+	sh download_tsv.sh meeg statistical_analysis
+	sh download_tsv.sh meeg reporting 	
+
+download_artemis:
+ sh download_tsv.sh artem-is artem-is
+
+download_eyetrack:
+	sh download_tsv.sh eyetracking eyetracking
+
+download_pet:
+	sh download_tsv.sh pet pet
+
+download_rexec:	
+	sh download_tsv.sh nimg_reexecution nimg_reexecution
+
+download_responses:
+	sh download_tsv.sh response_options	mri_softwares		
+
+# CLEAN
 clean_csv: 
 	rm -f inputs/*.csv
 

@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+#  TODO
+# Add a loop to download them all
+
 # Simple script to download the content of the different google spreadsheet in
 # the csv folder
 #

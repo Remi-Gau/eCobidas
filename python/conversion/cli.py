@@ -1,3 +1,6 @@
+# TODO
+# create another entry point for creating response files
+
 import click
 from create_schema import convert_to_schema
 

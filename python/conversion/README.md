@@ -18,13 +18,15 @@ To be able to use the command line tool, do the following
 pip install -e .
 ```
 
+Addiotnal entry points should be set up in `cli.py` and adapted in `setup.py`.
+
 ## Generate the schemas
 
 If you have installed the package the following command line call should run the
 conversion.
 
 ```bash
-convert_to_schema
+ecobidas_convert
 ```
 
 The highest level function that you will use to create the schema is
@@ -40,11 +42,11 @@ You only need to specify in the header of that script:
 -   `repo` the URL of the repository where the schema will be hosted
 -   `branch`
 
-Once this is done, type this run the script from the `python` directory:
+Once this is done, type this run the script from the `python/conversion`
+directory:
 
 ```bash
 python3 cli.py
-python3 create_schema.py
 ```
 
 ### Implementation
