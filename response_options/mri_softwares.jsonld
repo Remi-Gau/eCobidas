@@ -1,0 +1,40 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:ResponseOption",
+    "@id": "mri_softwares.jsonld",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 4,
+    "choices": [
+        {
+            "name": {
+                "en": "SPM"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "FSL"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "AFNI"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "Freesurfer"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "Brain voyager"
+            },
+            "value": 4
+        }
+    ]
+}

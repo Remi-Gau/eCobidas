@@ -40,7 +40,7 @@ You only need to specify in the header of that script:
 -   `repo` the URL of the repository where the schema will be hosted
 -   `branch`
 
-Once this is done, type this run the script from the `scripts` directory:
+Once this is done, type this run the script from the `python` directory:
 
 ```bash
 python3 cli.py
