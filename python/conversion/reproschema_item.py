@@ -130,7 +130,7 @@ class ReproschemaItem(ReproschemaSchema):
         # default (also valid for "char" input type)
         self.set_input_type_as_char()
 
-        if response_type == "int":
+        if response_type == "integer":
             self.set_input_type_as_int()
 
         elif response_type == "float":

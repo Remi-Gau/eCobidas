@@ -1,10 +1,23 @@
-import os
+import os, sys
 import pandas as pd
 
 from item import get_item_info, define_new_item
 from utils import snake_case
 from reproschema_protocol import ReproschemaProtocol
 from reproschema_activity import ReproschemaActivity
+
+local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
+sys.path.insert(0, local_reproschema)
+
+from reproschema.models.item import ResponseOption
+
+this_path = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.join(this_path, "..", "..")
+input_dir = os.path.join(
+    root_dir,
+    "inputs",
+    "csv",
+)
 
 
 def convert_to_schema(schema_to_create, output_dir, repo, branch="master"):
@@ -77,6 +90,9 @@ def create_schema(schema_to_create, output_dir, debug=False):
 
         for index in items_order:
 
+            print(activity_idx)
+            print(index)
+
             this_item = items[items["item_order"] == index]
 
             item_info = get_item_info(this_item)
@@ -98,14 +114,31 @@ def create_schema(schema_to_create, output_dir, debug=False):
 
 def load_data(schema_to_create):
 
-    source_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
-    csv_dir = os.path.join("inputs", "csv")
+    if ~os.path.isfile(schema_to_create):
 
-    if schema_to_create == "test":
-        source_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tests")
+        this_path = os.path.dirname(os.path.abspath(__file__))
+        root_dir = os.path.join(this_path, "..", "..")
+        input_dir = os.path.join(
+            root_dir,
+            "inputs",
+            "csv",
+        )
+        if schema_to_create in ["neurovault", "pet", "eyetracking", "nimg_reexecution"]:
+            sub_dir = schema_to_create
+        elif schema_to_create in ["all_sequences"]:
+            sub_dir = "mri"
+        elif schema_to_create in ["participants", "behavior"]:
+            sub_dir = "core"
 
-    input_file = os.path.join(source_dir, csv_dir, schema_to_create + ".csv")
-    return pd.read_csv(input_file)
+        if schema_to_create == "test":
+            input_dir = os.path.join(
+                os.path.dirname(os.path.abspath(__file__)), "tests"
+            )
+            sub_dir = ""
+
+        input_file = os.path.join(input_dir, sub_dir, schema_to_create + ".tsv")
+
+    return pd.read_csv(input_file, sep="\t")
 
 
 def initialize_protocol(schema_to_create, output_dir):
@@ -124,7 +157,7 @@ def initialize_protocol(schema_to_create, output_dir):
     protocol.write(protocol_path)
 
     print_info(
-        "activity",
+        "protocol",
         protocol_name,
         os.path.join(protocol_path, protocol.get_filename()),
     )

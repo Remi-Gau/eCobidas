@@ -1,5 +1,6 @@
 # TODO
 # create another entry point for creating response files
+# see how reproschema uses click to create command line calls `reproschema validate`
 
 import click
 from create_schema import convert_to_schema
@@ -9,16 +10,32 @@ from create_schema import convert_to_schema
 # -----------------------------------------------------------------------------
 # modify the following lines to match your needs
 
+default_schema = "behavior"
+default_schema = "participants"
+default_output_dir = "/home/remi/github/cobidas_chckls/schemas/core"
+
+# default_schema = "all_sequences"
+# default_output_dir = "/home/remi/github/cobidas_chckls/schemas/mri"
+
+# default_schema = "nimg_reexecution"
+# default_output_dir = "/home/remi/github/cobidas_chckls/schemas/rexecution"
+
+# default_schema = "pet"
+# default_output_dir = "/home/remi/github/cobidas_chckls/schemas/pet"
+
+# default_schema = "neurovault"
+# default_output_dir = "/home/remi/github/cobidas_chckls/schemas/neurovault"
+
+# default_schema = "eyetracking"
+# default_output_dir = "/home/remi/github/cobidas_chckls/schemas/eyetracking"
+
+
 # schema_to_create = [
-#     "mri_all_sequences",
+#     "all_sequences",
 #     "participants",
 #     "behavior",
-#     "neurovault",
-#     "pet",
 #     "mri",
-#     "eyetracker",
 #     "artemis",
-#     "reexec_nimg",
 # ]
 
 # output_dir ----------------------------------------
@@ -38,16 +55,14 @@ from create_schema import convert_to_schema
 # repo = "https://raw.githubusercontent.com/ohbm/cobidas/"
 # repo = "https://raw.githubusercontent.com/Remi-Gau/reexecute_nimg_checklist/"
 
-branch = "master"
-
 
 @click.command()
 @click.option(
-    "--schema_to_create", default="neurovault", help="Name of the schema to create."
+    "--schema_to_create", default=default_schema, help="Name of the schema to create."
 )
 @click.option(
     "--output_dir",
-    default="/home/remi/github/cobidas_chckls",
+    default=default_output_dir,
     help="Where to output stuff.",
 )
 @click.option(

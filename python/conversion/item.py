@@ -143,6 +143,8 @@ def list_responses_options(choice_list):
 
     choices = {"choices": []}
 
+    print(choice_list)
+
     for i, opt in enumerate(choice_list):
 
         choices["choices"].append({"name": opt, "value": i})

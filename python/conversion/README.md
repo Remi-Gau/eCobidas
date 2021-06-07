@@ -27,6 +27,7 @@ conversion.
 
 ```bash
 ecobidas_convert
+ecobidas_responses
 ```
 
 The highest level function that you will use to create the schema is
