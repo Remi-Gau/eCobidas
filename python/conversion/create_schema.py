@@ -148,7 +148,7 @@ def initialize_protocol(schema_to_create, output_dir):
     protocol.set_defaults(protocol_name)
 
     # create output directories
-    protocol_path = os.path.join(output_dir, "protocols", protocol.dir)
+    protocol_path = os.path.join(output_dir, "protocols")
     protocol.set_directory = protocol_path
     if not os.path.exists(protocol_path):
         os.makedirs(protocol_path)
@@ -176,17 +176,10 @@ def initialize_activity(protocol, items, output_dir):
     activity.set_defaults(activity_name)
     activity.set_filename(activity_name)
 
-    URI = (
-        "../../activities/"
-        + protocol.get_name()
-        + "/"
-        + activity.get_name()
-        + "/"
-        + activity.get_filename()
-    )
+    URI = "../activities" + "/" + activity.get_name() + "/" + activity.get_filename()
     activity.set_URI(URI)
 
-    activity_path = os.path.join(output_dir, "activities", protocol.dir, activity.dir)
+    activity_path = os.path.join(output_dir, "activities", activity.dir)
 
     if not os.path.exists(activity_path):
         os.makedirs(activity_path)
