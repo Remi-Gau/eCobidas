@@ -1,11 +1,34 @@
 import sys, os
 import pandas as pd
 
-from ..item import get_item_info, get_visibility, list_responses_options
-
+from ..item import (
+    get_item_info,
+    get_visibility,
+    list_responses_options,
+    slider_response,
+)
 
 myPath = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, myPath + "/../")
+
+local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
+sys.path.insert(0, local_reproschema)
+
+from reproschema.models.item import ResponseOption
+
+
+def test_slider_response():
+
+    choices = ["1", "4", "4"]
+
+    response_options = ResponseOption()
+
+    slider_response(response_options, choices)
+
+    assert len(response_options.options["choices"]) == 4
+    assert response_options.options["choices"][1]["value"] == int(1)
+    assert response_options.options["minValue"] == 0
+    assert response_options.options["maxValue"] == 4
 
 
 def test_get_item_info():
@@ -18,6 +41,7 @@ def test_get_item_info():
             "question": ["test question"],
             "choices": ["choice A | choice B"],
             "item_pref_label": ["item name"],
+            "item_description": ["desc"],
         }
     )
 
@@ -31,6 +55,7 @@ def test_get_item_info():
         "choices": ["choice A", "choice B"],
         "visibility": True,
         "mandatory": True,
+        "description": "desc",
     }
 
     assert item_info == expected
@@ -60,13 +85,13 @@ def test_get_visibility():
 
 def test_list_responses_options():
 
-    choices = list_responses_options(["A", "B", "C"])
+    response_options = list_responses_options(["A", "B", "C"])
 
-    expected = {"choices": [], "minValue": 0, "maxValue": 3, "valueType": "xsd:integer"}
+    expected = ResponseOption()
+    expected.add_choice("A", 0)
+    expected.add_choice("B", 1)
+    expected.add_choice("C", 2)
+    expected.add_choice("Other", 3)
+    expected.set_max(3)
 
-    expected["choices"].append({"name": "A", "value": 0})
-    expected["choices"].append({"name": "B", "value": 1})
-    expected["choices"].append({"name": "C", "value": 2})
-    expected["choices"].append({"name": "Other", "value": 3})
-
-    assert choices == expected
+    assert response_options.options == expected.options

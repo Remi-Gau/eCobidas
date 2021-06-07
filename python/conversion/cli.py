@@ -14,8 +14,8 @@ from create_schema import convert_to_schema
 # default_schema = "participants"
 # default_output_dir = "/home/remi/github/cobidas_chckls/schemas/core"
 
-default_schema = "all_sequences"
-default_output_dir = "/home/remi/github/cobidas_chckls/schemas/mri"
+# default_schema = "all_sequences"
+# default_output_dir = "/home/remi/github/cobidas_chckls/schemas/mri"
 
 # default_schema = "nimg_reexecution"
 # default_output_dir = "/home/remi/github/cobidas_chckls/schemas/rexecution"
@@ -29,6 +29,8 @@ default_output_dir = "/home/remi/github/cobidas_chckls/schemas/mri"
 # default_schema = "eyetracking"
 # default_output_dir = "/home/remi/github/cobidas_chckls/schemas/eyetracking"
 
+default_schema = "test"
+default_output_dir = "/home/remi/github/cobidas_chckls/python/conversion/tests/outputs"
 
 # schema_to_create = [
 #     "all_sequences",

@@ -9,8 +9,6 @@ from reproschema_activity import ReproschemaActivity
 local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
 sys.path.insert(0, local_reproschema)
 
-from reproschema.models.item import ResponseOption
-
 this_path = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.join(this_path, "..", "..")
 input_dir = os.path.join(
@@ -134,7 +132,7 @@ def load_data(schema_to_create):
             input_dir = os.path.join(
                 os.path.dirname(os.path.abspath(__file__)), "tests"
             )
-            sub_dir = ""
+            sub_dir = os.path.join("inputs", "csv")
 
         input_file = os.path.join(input_dir, sub_dir, schema_to_create + ".tsv")
 

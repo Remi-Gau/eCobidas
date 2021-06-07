@@ -1,5 +1,11 @@
+import sys
+
 from utils import convert_to_str, convert_to_int, snake_case
-from reproschema_item import ReproschemaItem
+
+local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
+sys.path.insert(0, local_reproschema)
+
+from reproschema.models.item import Item, ResponseOption
 
 
 def get_item_info(this_item):
@@ -7,6 +13,7 @@ def get_item_info(this_item):
     item_name = []
 
     pref_label = convert_to_str(this_item["item_pref_label"])
+    description = convert_to_str(this_item["item_description"])
 
     item_name = snake_case(pref_label)
 
@@ -14,6 +21,8 @@ def get_item_info(this_item):
     question = question.replace("\n", "")
 
     field_type = convert_to_str(this_item["field_type"])
+    if field_type == "integer":
+        field_type = "int"
 
     choices = convert_to_str(this_item["choices"])
     if type(choices) == str:
@@ -26,6 +35,7 @@ def get_item_info(this_item):
     return {
         "name": item_name,
         "pref_label": pref_label,
+        "description": description,
         "question": question,
         "field_type": field_type,
         "choices": choices,
@@ -64,14 +74,21 @@ def define_new_item(item_info):
     define jsonld for this item
     """
 
-    item = ReproschemaItem()
-
+    item = Item()
     item.set_defaults(item_info["name"])
+    item.set_description(item_info["description"])
     item.set_pref_label(item_info["pref_label"])
-
     item.set_question(item_info["question"])
-
     item = define_choices(item, item_info["field_type"], item_info["choices"])
+
+    # item = ReproschemaItem()
+
+    # item.set_defaults(item_info["name"])
+    # item.set_pref_label(item_info["pref_label"])
+
+    # item.set_question(item_info["question"])
+
+    # item = define_choices(item, item_info["field_type"], item_info["choices"])
 
     return item
 
@@ -86,22 +103,23 @@ def define_choices(item, field_type, choices):
         item.set_input_type_as_multitext()
 
     if field_type == "radio":
-        choices = list_responses_options(choices)
-        choices["multipleChoice"] = False
-        item.set_input_type_as_radio(choices)
+        response_options = list_responses_options(choices)
+        item.set_input_type_as_radio(response_options)
 
     # if we have a dropdown menu
     # TODO: change to select item to have a REAL dropdown as soon as radio item
     # offer the possibility to have an "Other" choice that opens a text box
     elif field_type == "dropdown":
-        choices = list_responses_options(choices)
-        choices["multipleChoice"] = False
-        item.set_input_type_as_select(choices)
+        response_options = list_responses_options(choices)
+        item.set_input_type_as_select(response_options)
 
     elif field_type == "slider":
-        # choices = slider_response(choices, min_label, max_label)
-        # item.set_input_type_as_slider(choices)
-        item.set_input_type_as_slider()
+
+        response_options = ResponseOption()
+
+        response_options = slider_response(response_options, choices)
+
+        item.set_input_type_as_slider(response_options)
 
     if field_type in [
         "boolean",
@@ -141,44 +159,32 @@ def define_choices(item, field_type, choices):
 
 def list_responses_options(choice_list):
 
-    choices = {"choices": []}
-
-    print(choice_list)
+    response_options = ResponseOption()
 
     for i, opt in enumerate(choice_list):
 
-        choices["choices"].append({"name": opt, "value": i})
+        response_options.add_choice(opt, i)
 
-    choices["choices"].append({"name": "Other", "value": len(choice_list)})
+    response_options.add_choice("Other", len(choice_list))
 
-    choices["minValue"] = 0
-    choices["maxValue"] = len(choices["choices"]) - 1
-    choices["valueType"] = "xsd:integer"
+    response_options.set_min(0)
+    response_options.set_max(len(choice_list))
 
-    return choices
+    return response_options
 
 
-def slider_response(choices, min_label, max_label):
+def slider_response(response_options, choices):
 
     from numpy import linspace
 
-    # min = int(choices[0])
-    # max = int(choices[1])
-    # steps = int(choices[2]) + 1 if len(choices) == 3 else 11
-    min = 1
-    max = 11
-    steps = 11
-    choices = {
-        "valueType": "xsd:integer",
-        "minValue": min,
-        "maxValue": max,
-        "choices": [],
-    }
+    min = int(choices[0])
+    max = int(choices[1])
+    steps = int(choices[2]) if len(choices) == 3 else 11
 
-    for i in linspace(min, max, steps):
-        choices["choices"].append({"value": int(i), "@type": "option"})
+    response_options.set_max(min)
+    response_options.set_max(max)
 
-    choices["choices"][0]["name"] = min_label
-    choices["choices"][-1]["name"] = max_label
+    for i, opt in enumerate(linspace(min, max, steps)):
+        response_options.add_choice(str(opt), i)
 
-    return choices
+    return response_options
