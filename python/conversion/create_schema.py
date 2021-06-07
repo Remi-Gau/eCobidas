@@ -2,7 +2,7 @@ import os, sys
 import pandas as pd
 
 from item import get_item_info, define_new_item
-from utils import snake_case
+from utils import snake_case, set_dir
 
 local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
 sys.path.insert(0, local_reproschema)
@@ -10,49 +10,37 @@ sys.path.insert(0, local_reproschema)
 from reproschema.models.activity import Activity
 from reproschema.models.protocol import Protocol
 
-this_path = os.path.dirname(os.path.abspath(__file__))
-root_dir = os.path.join(this_path, "..", "..")
-input_dir = os.path.join(
-    root_dir,
-    "inputs",
-    "csv",
-)
 
-
-def convert_to_schema(schema_to_create, output_dir, repo, branch="master"):
+def convert_to_schema(schema, output_dir, repo, branch="master"):
 
     repo = "https://raw.githubusercontent.com/" + repo
 
-    for schema in schema_to_create:
+    protocol = create_schema(schema, output_dir)
 
-        protocol = create_schema(schema, output_dir)
+    s = "/"
 
-        s = "/"
-
-        print(
-            "\n\n"
-            + "---------------------------------------------------------------"
-            + "\nYou can view this protocol here:\n"
-            + "https://www.repronim.org/reproschema-ui/#/?url="
-            + s.join(
-                [
-                    repo,
-                    branch,
-                    "protocols",
-                    protocol.dir,
-                    protocol.get_filename(),
-                ]
-            )
-            + "\n"
-            + "--------------------------------------------------------------"
-            + "\n"
-            + "https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema"
-            + "\n"
-            + "https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema"
-            + "\n"
-            + "--------------------------------------------------------------"
-            + "\n\n",
+    print(
+        "\n"
+        + dashed_line()
+        + "\nYou can view this protocol here:\n"
+        + "https://www.repronim.org/reproschema-ui/#/?url="
+        + s.join(
+            [
+                repo,
+                branch,
+                "protocols",
+                protocol.dir,
+                protocol.get_filename(),
+            ]
         )
+        + dashed_line()
+        + "\n"
+        + "https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema"
+        + "\n"
+        + "https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema"
+        + dashed_line()
+        + "\n\n",
+    )
 
 
 def create_schema(schema_to_create, output_dir, debug=False):
@@ -109,31 +97,33 @@ def create_schema(schema_to_create, output_dir, debug=False):
     return protocol
 
 
-def load_data(schema_to_create):
+def load_data(this_schema):
 
-    if ~os.path.isfile(schema_to_create):
+    if ~os.path.isfile(this_schema):
 
-        this_path = os.path.dirname(os.path.abspath(__file__))
-        root_dir = os.path.join(this_path, "..", "..")
-        input_dir = os.path.join(
-            root_dir,
-            "inputs",
-            "csv",
-        )
-        if schema_to_create in ["neurovault", "pet", "eyetracking", "nimg_reexecution"]:
-            sub_dir = schema_to_create
-        elif schema_to_create in ["all_sequences"]:
-            sub_dir = "mri"
-        elif schema_to_create in ["participants", "behavior"]:
-            sub_dir = "core"
+        input_dir, sub_dir = set_dir(this_schema)
 
-        if schema_to_create == "test":
-            input_dir = os.path.join(
-                os.path.dirname(os.path.abspath(__file__)), "tests"
-            )
-            sub_dir = os.path.join("inputs", "csv")
+        # this_path = os.path.dirname(os.path.abspath(__file__))
+        # root_dir = os.path.join(this_path, "..", "..")
+        # input_dir = os.path.join(
+        #     root_dir,
+        #     "inputs",
+        #     "csv",
+        # )
+        # if this_schema in ["neurovault", "pet", "eyetracking", "nimg_reexecution"]:
+        #     sub_dir = this_schema
+        # elif this_schema in ["all_sequences"]:
+        #     sub_dir = "mri"
+        # elif this_schema in ["participants", "behavior"]:
+        #     sub_dir = "core"
 
-        input_file = os.path.join(input_dir, sub_dir, schema_to_create + ".tsv")
+        # if this_schema == "test":
+        #     input_dir = os.path.join(
+        #         os.path.dirname(os.path.abspath(__file__)), "tests"
+        #     )
+        #     sub_dir = os.path.join("inputs", "csv")
+
+        input_file = os.path.join(input_dir, sub_dir, this_schema + ".tsv")
 
     return pd.read_csv(input_file, sep="\t")
 
@@ -204,6 +194,8 @@ def create_new_item(item_info, activity_path):
     print("       " + item_info["question"])
     print("       " + item_info["field_type"])
 
+    f"{2 * 37}"
+
     item = define_new_item(item_info)
 
     item.set_URI(os.path.join("items", item.get_filename()))
@@ -216,8 +208,7 @@ def create_new_item(item_info, activity_path):
 def print_info(type, pref_label, file):
 
     print(
-        "\n"
-        + "--------------------------------------------------------------"
+        dashed_line()
         + "\n"
         + type.upper()
         + ": "
@@ -225,5 +216,9 @@ def print_info(type, pref_label, file):
         + "\n"
         + file
         + "\n"
-        + "--------------------------------------------------------------"
+        + dashed_line()
     )
+
+
+def dashed_line():
+    return "\n--------------------------------------------------------------"

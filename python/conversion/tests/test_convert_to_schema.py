@@ -6,12 +6,17 @@ from ..create_schema import convert_to_schema
 myPath = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, myPath + "/../")
 
+"""
+Runs the conversion of the tsv in `inputs/csv/test.tsv` 
+and checks that the correct jsonld are created.
+"""
+
 
 def test_convert_to_schema():
 
     schema_to_create = ["test"]
     output_dir = os.path.join(myPath, "outputs")
-    repo = "https://raw.githubusercontent.com/Remi-Gau/eCobidas/"
+    repo = "https://raw.githubusercontent.com/Remi-Gau/eCobidas"
 
     convert_to_schema(schema_to_create, output_dir, repo)
 
@@ -26,10 +31,15 @@ def test_convert_to_schema():
 
     assert protocol_content == expected
 
-    # Check activities
+    """ 
+    CHECK ACTIVITIES
+    We define the items to check for each activity below
+    """
+    # TODO
+    # - I suspect that that this type of loop checking could be parametrized with pytest
+    # - not checked: time range items
     activities_folder = "activities"
 
-    # Check activity
     activities = [
         {
             "name": "select_activity",
@@ -38,13 +48,15 @@ def test_convert_to_schema():
                 "select_item",
                 "mri_softwares",
                 "yes_no_do_not_know",
-            ],
+            ],  # TODO radio and select with multiple choices
         },
         {
             "name": "activity_4",
             "items": ["float_item", "multitext_item", "text_item"],
         },
         {"name": "activity_3", "items": ["integer_item", "slider_item"]},
+        {"name": "activity_2", "items": ["number_of_subjects"]},
+        # TODO year, date, country
     ]
 
     for activity in activities:

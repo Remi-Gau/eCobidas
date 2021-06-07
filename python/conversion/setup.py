@@ -17,6 +17,8 @@ setup(
     url="",
     py_modules=["conversion"],
     license=readfile("LICENSE"),
+    # TODO
+    # change the way the second entry point is managed
     entry_points="""
         [console_scripts]
         ecobidas_convert=cli:convert
