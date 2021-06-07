@@ -1,0 +1,255 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "sample_schema.jsonld",
+    "prefLabel": {
+        "en": "sample"
+    },
+    "description": "sample",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/group_comparison.jsonld",
+            "items/number_of_subjects_planned.jsonld",
+            "items/subjects_approached.jsonld",
+            "items/subjects_consented.jsonld",
+            "items/subjects_excluded.jsonld",
+            "items/reason_for_exclusion.jsonld",
+            "items/mean_age.jsonld",
+            "items/age_standard_deviation.jsonld",
+            "items/age_mininum.jsonld",
+            "items/age_maximum.jsonld",
+            "items/subjects_scanned.jsonld",
+            "items/subjects_scanned_but_rejected.jsonld",
+            "items/subjects_included_in_analysis.jsonld",
+            "items/gender.jsonld",
+            "items/education.jsonld",
+            "items/handedness.jsonld",
+            "items/handedness_method.jsonld",
+            "items/exclusion_criteria.jsonld",
+            "items/exclusion_criteria_description.jsonld",
+            "items/clinical_criteria.jsonld",
+            "items/clinical_instruments.jsonld",
+            "items/matching_strategy.jsonld",
+            "items/ethical_approval.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "group_comparison",
+                "isAbout": "items/group_comparison.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_subjects_planned",
+                "isAbout": "items/number_of_subjects_planned.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "subjects_approached",
+                "isAbout": "items/subjects_approached.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "subjects_consented",
+                "isAbout": "items/subjects_consented.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "subjects_excluded",
+                "isAbout": "items/subjects_excluded.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "reason_for_exclusion",
+                "isAbout": "items/reason_for_exclusion.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "mean_age",
+                "isAbout": "items/mean_age.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "age_standard_deviation",
+                "isAbout": "items/age_standard_deviation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "age_mininum",
+                "isAbout": "items/age_mininum.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "age_maximum",
+                "isAbout": "items/age_maximum.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "subjects_scanned",
+                "isAbout": "items/subjects_scanned.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "subjects_scanned_but_rejected",
+                "isAbout": "items/subjects_scanned_but_rejected.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "subjects_included_in_analysis",
+                "isAbout": "items/subjects_included_in_analysis.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "gender",
+                "isAbout": "items/gender.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "education",
+                "isAbout": "items/education.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "handedness",
+                "isAbout": "items/handedness.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "handedness_method",
+                "isAbout": "items/handedness_method.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "exclusion_criteria",
+                "isAbout": "items/exclusion_criteria.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "exclusion_criteria_description",
+                "isAbout": "items/exclusion_criteria_description.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "clinical_criteria",
+                "isAbout": "items/clinical_criteria.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "clinical_instruments",
+                "isAbout": "items/clinical_instruments.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "matching_strategy",
+                "isAbout": "items/matching_strategy.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "ethical_approval",
+                "isAbout": "items/ethical_approval.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

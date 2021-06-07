@@ -1,0 +1,165 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "cross-calibration_schema.jsonld",
+    "prefLabel": {
+        "en": "cross-calibration"
+    },
+    "description": "cross-calibration",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/blood-sampling-device-read.jsonld",
+            "items/blood-sampling-device-measurement-time.jsonld",
+            "items/phantom-type.jsonld",
+            "items/phantom-volume.jsonld",
+            "items/radiotracer-isotope.jsonld",
+            "items/phantom-activity.jsonld",
+            "items/activity-time.jsonld",
+            "items/residual-activity.jsonld",
+            "items/residual-activity-time.jsonld",
+            "items/phantom-acquisition-time.jsonld",
+            "items/well-counter-sample-volumes.jsonld",
+            "items/well-counter-measurement-time.jsonld",
+            "items/well-counter-read.jsonld",
+            "items/phantom-data.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "blood-sampling-device-read",
+                "isAbout": "items/blood-sampling-device-read.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "blood-sampling-device-measurement-time",
+                "isAbout": "items/blood-sampling-device-measurement-time.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "phantom-type",
+                "isAbout": "items/phantom-type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "phantom-volume",
+                "isAbout": "items/phantom-volume.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "radiotracer-isotope",
+                "isAbout": "items/radiotracer-isotope.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "phantom-activity",
+                "isAbout": "items/phantom-activity.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "activity-time",
+                "isAbout": "items/activity-time.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "residual-activity",
+                "isAbout": "items/residual-activity.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "residual-activity-time",
+                "isAbout": "items/residual-activity-time.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "phantom-acquisition-time",
+                "isAbout": "items/phantom-acquisition-time.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "well-counter-sample-volumes",
+                "isAbout": "items/well-counter-sample-volumes.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "well-counter-measurement-time",
+                "isAbout": "items/well-counter-measurement-time.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "well-counter-read",
+                "isAbout": "items/well-counter-read.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "phantom-data",
+                "isAbout": "items/phantom-data.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

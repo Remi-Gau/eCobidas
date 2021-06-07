@@ -1,0 +1,67 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "pupil_aggregation_method.jsonld",
+    "prefLabel": {
+        "en": "pupil aggregation method"
+    },
+    "description": "pupil aggregation method",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Specification of the algorithm to calculate the pupil size"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 6,
+        "choices": [
+            {
+                "name": {
+                    "en": "absolute measure"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "average measure"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "baseline-to-average measure"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "elliptical fitting"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "not applicable (because no pupil measure was used) "
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 6
+            }
+        ],
+        "multipleChoice": false
+    }
+}

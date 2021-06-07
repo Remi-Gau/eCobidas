@@ -1,0 +1,455 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "blood_data_processing_schema.jsonld",
+    "prefLabel": {
+        "en": "blood data processing"
+    },
+    "description": "blood data processing",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/sampling-method.jsonld",
+            "items/delay-time-correction.jsonld",
+            "items/fitting.jsonld",
+            "items/fitting-description.jsonld",
+            "items/blood-data-processing-interpolation.jsonld",
+            "items/model.jsonld",
+            "items/reference-volume.jsonld",
+            "items/outcome-measure.jsonld",
+            "items/weighting.jsonld",
+            "items/level-of-analysis.jsonld",
+            "items/kinetic-modelling-software.jsonld",
+            "items/kinetic-modelling-software-version.jsonld",
+            "items/moco-reference-image.jsonld",
+            "items/moco-cost-function.jsonld",
+            "items/moco-interpolation.jsonld",
+            "items/moco-smoothing.jsonld",
+            "items/moco-quality-control.jsonld",
+            "items/moco-software.jsonld",
+            "items/moco-software-version.jsonld",
+            "items/registration-reference-image.jsonld",
+            "items/registration-target-image.jsonld",
+            "items/registration-cost-function.jsonld",
+            "items/registration-interpolation.jsonld",
+            "items/registration-smoothing.jsonld",
+            "items/resolution-of-reference-target.jsonld",
+            "items/registration-quality-control.jsonld",
+            "items/registration-software.jsonld",
+            "items/registration-software-version.jsonld",
+            "items/smoothing-target-image.jsonld",
+            "items/shape-of-smoothing-filter.jsonld",
+            "items/size-of-smoothing-filter.jsonld",
+            "items/justification-for-smoothing-size.jsonld",
+            "items/space-of-smoothing.jsonld",
+            "items/volumes-of-interest-obtained-from.jsonld",
+            "items/volumes-of-interest-operational-criteria.jsonld",
+            "items/volumes-of-interest-mask.jsonld",
+            "items/volumes-of-interest-procedure.jsonld",
+            "items/volumes-of-interest.jsonld",
+            "items/volumes-of-interest-software.jsonld",
+            "items/partial-volume-correction-technique.jsonld",
+            "items/partial-volume-correction-assumptions.jsonld",
+            "items/partial-volume-correction-software.jsonld",
+            "items/partial-volume-correction-software-version.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "sampling-method",
+                "isAbout": "items/sampling-method.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "delay-time-correction",
+                "isAbout": "items/delay-time-correction.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "fitting",
+                "isAbout": "items/fitting.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "fitting-description",
+                "isAbout": "items/fitting-description.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "blood-data-processing-interpolation",
+                "isAbout": "items/blood-data-processing-interpolation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "model",
+                "isAbout": "items/model.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "reference-volume",
+                "isAbout": "items/reference-volume.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "outcome-measure",
+                "isAbout": "items/outcome-measure.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "weighting",
+                "isAbout": "items/weighting.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "level-of-analysis",
+                "isAbout": "items/level-of-analysis.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "kinetic-modelling-software",
+                "isAbout": "items/kinetic-modelling-software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "kinetic-modelling-software-version",
+                "isAbout": "items/kinetic-modelling-software-version.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco-reference-image",
+                "isAbout": "items/moco-reference-image.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco-cost-function",
+                "isAbout": "items/moco-cost-function.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco-interpolation",
+                "isAbout": "items/moco-interpolation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco-smoothing",
+                "isAbout": "items/moco-smoothing.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco-quality-control",
+                "isAbout": "items/moco-quality-control.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco-software",
+                "isAbout": "items/moco-software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco-software-version",
+                "isAbout": "items/moco-software-version.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "registration-reference-image",
+                "isAbout": "items/registration-reference-image.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "registration-target-image",
+                "isAbout": "items/registration-target-image.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "registration-cost-function",
+                "isAbout": "items/registration-cost-function.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "registration-interpolation",
+                "isAbout": "items/registration-interpolation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "registration-smoothing",
+                "isAbout": "items/registration-smoothing.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "resolution-of-reference-target",
+                "isAbout": "items/resolution-of-reference-target.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "registration-quality-control",
+                "isAbout": "items/registration-quality-control.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "registration-software",
+                "isAbout": "items/registration-software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "registration-software-version",
+                "isAbout": "items/registration-software-version.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "smoothing-target-image",
+                "isAbout": "items/smoothing-target-image.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "shape-of-smoothing-filter",
+                "isAbout": "items/shape-of-smoothing-filter.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "size-of-smoothing-filter",
+                "isAbout": "items/size-of-smoothing-filter.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "justification-for-smoothing-size",
+                "isAbout": "items/justification-for-smoothing-size.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "space-of-smoothing",
+                "isAbout": "items/space-of-smoothing.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "volumes-of-interest-obtained-from",
+                "isAbout": "items/volumes-of-interest-obtained-from.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "volumes-of-interest-operational-criteria",
+                "isAbout": "items/volumes-of-interest-operational-criteria.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "volumes-of-interest-mask",
+                "isAbout": "items/volumes-of-interest-mask.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "volumes-of-interest-procedure",
+                "isAbout": "items/volumes-of-interest-procedure.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "volumes-of-interest",
+                "isAbout": "items/volumes-of-interest.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "volumes-of-interest-software",
+                "isAbout": "items/volumes-of-interest-software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "partial-volume-correction-technique",
+                "isAbout": "items/partial-volume-correction-technique.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "partial-volume-correction-assumptions",
+                "isAbout": "items/partial-volume-correction-assumptions.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "partial-volume-correction-software",
+                "isAbout": "items/partial-volume-correction-software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "partial-volume-correction-software-version",
+                "isAbout": "items/partial-volume-correction-software-version.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

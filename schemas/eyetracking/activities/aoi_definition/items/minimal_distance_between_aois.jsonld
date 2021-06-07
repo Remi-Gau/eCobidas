@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "minimal_distance_between_aois.jsonld",
+    "prefLabel": {
+        "en": "minimal distance between aois"
+    },
+    "description": "minimal distance between aois",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "The minimal distance between AOIs in pixel"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

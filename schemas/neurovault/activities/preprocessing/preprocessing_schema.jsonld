@@ -1,0 +1,165 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "preprocessing_schema.jsonld",
+    "prefLabel": {
+        "en": "preprocessing"
+    },
+    "description": "preprocessing",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/software_package.jsonld",
+            "items/software_version.jsonld",
+            "items/order_of_preprocessing_operations.jsonld",
+            "items/quality_control.jsonld",
+            "items/used_b0_unwarping.jsonld",
+            "items/b0_unwarping_software.jsonld",
+            "items/used_slice_timing_correction.jsonld",
+            "items/slice_timing_correction_software.jsonld",
+            "items/used_motion_correction.jsonld",
+            "items/motion_correction_software.jsonld",
+            "items/motion_correction_reference.jsonld",
+            "items/motion_correction_metric.jsonld",
+            "items/motion_correction_interpolation.jsonld",
+            "items/used_motion_susceptibiity_correction.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "software_package",
+                "isAbout": "items/software_package.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "software_version",
+                "isAbout": "items/software_version.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "order_of_preprocessing_operations",
+                "isAbout": "items/order_of_preprocessing_operations.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "quality_control",
+                "isAbout": "items/quality_control.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "used_b0_unwarping",
+                "isAbout": "items/used_b0_unwarping.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "b0_unwarping_software",
+                "isAbout": "items/b0_unwarping_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "used_slice_timing_correction",
+                "isAbout": "items/used_slice_timing_correction.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "slice_timing_correction_software",
+                "isAbout": "items/slice_timing_correction_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "used_motion_correction",
+                "isAbout": "items/used_motion_correction.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "motion_correction_software",
+                "isAbout": "items/motion_correction_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "motion_correction_reference",
+                "isAbout": "items/motion_correction_reference.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "motion_correction_metric",
+                "isAbout": "items/motion_correction_metric.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "motion_correction_interpolation",
+                "isAbout": "items/motion_correction_interpolation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "used_motion_susceptibiity_correction",
+                "isAbout": "items/used_motion_susceptibiity_correction.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

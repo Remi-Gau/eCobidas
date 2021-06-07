@@ -1,0 +1,115 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "radiotracer_schema.jsonld",
+    "prefLabel": {
+        "en": "radiotracer"
+    },
+    "description": "radiotracer",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/pharmaceuticaldoseregimen.jsonld",
+            "items/tracername.jsonld",
+            "items/tracerradlex.jsonld",
+            "items/tracersnomed.jsonld",
+            "items/pharmaceuticalname.jsonld",
+            "items/tracerradionuclide.jsonld",
+            "items/tracermolecularweight.jsonld",
+            "items/pharmaceuticaldosetime.jsonld",
+            "items/pharmaceuticaldoseamount.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "pharmaceuticaldoseregimen",
+                "isAbout": "items/pharmaceuticaldoseregimen.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "tracername",
+                "isAbout": "items/tracername.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "tracerradlex",
+                "isAbout": "items/tracerradlex.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "tracersnomed",
+                "isAbout": "items/tracersnomed.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "pharmaceuticalname",
+                "isAbout": "items/pharmaceuticalname.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "tracerradionuclide",
+                "isAbout": "items/tracerradionuclide.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "tracermolecularweight",
+                "isAbout": "items/tracermolecularweight.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "pharmaceuticaldosetime",
+                "isAbout": "items/pharmaceuticaldosetime.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "pharmaceuticaldoseamount",
+                "isAbout": "items/pharmaceuticaldoseamount.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

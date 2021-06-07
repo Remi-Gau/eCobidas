@@ -44,3 +44,4 @@ jobs:
           reproschema -l DEBUG validate activities
           reproschema -l DEBUG validate python/conversion/tests/data/protocols
           reproschema -l DEBUG validate python/conversion/tests/data/activities
+          reproschema -l DEBUG validate schemas

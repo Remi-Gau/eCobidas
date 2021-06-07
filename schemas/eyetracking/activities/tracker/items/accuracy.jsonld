@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "accuracy.jsonld",
+    "prefLabel": {
+        "en": "accuracy"
+    },
+    "description": "accuracy",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "The accuracy of the eye-tracker"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

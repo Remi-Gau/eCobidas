@@ -1,0 +1,95 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "group_modeling_schema.jsonld",
+    "prefLabel": {
+        "en": "group modeling"
+    },
+    "description": "group modeling",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/group_model_type.jsonld",
+            "items/group_estimation_type.jsonld",
+            "items/group_modeling_software.jsonld",
+            "items/group_inference_type.jsonld",
+            "items/group_model_multilevel.jsonld",
+            "items/group_repeated_measures.jsonld",
+            "items/group_repeated_measures_method.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "group_model_type",
+                "isAbout": "items/group_model_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_estimation_type",
+                "isAbout": "items/group_estimation_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_modeling_software",
+                "isAbout": "items/group_modeling_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_inference_type",
+                "isAbout": "items/group_inference_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_model_multilevel",
+                "isAbout": "items/group_model_multilevel.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_repeated_measures",
+                "isAbout": "items/group_repeated_measures.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_repeated_measures_method",
+                "isAbout": "items/group_repeated_measures_method.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

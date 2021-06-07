@@ -1,0 +1,165 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "mri_acquisition_schema.jsonld",
+    "prefLabel": {
+        "en": "mri acquisition"
+    },
+    "description": "mri acquisition",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/scanner_make.jsonld",
+            "items/scanner_model.jsonld",
+            "items/field_strength.jsonld",
+            "items/pulse_sequence.jsonld",
+            "items/parallel_imaging.jsonld",
+            "items/field_of_view.jsonld",
+            "items/matrix_size.jsonld",
+            "items/slice_thickness.jsonld",
+            "items/skip_factor.jsonld",
+            "items/acquisition_orientation.jsonld",
+            "items/order_of_acquisition.jsonld",
+            "items/repetition_time.jsonld",
+            "items/echo_time.jsonld",
+            "items/flip_angle.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "scanner_make",
+                "isAbout": "items/scanner_make.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "scanner_model",
+                "isAbout": "items/scanner_model.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "field_strength",
+                "isAbout": "items/field_strength.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "pulse_sequence",
+                "isAbout": "items/pulse_sequence.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "parallel_imaging",
+                "isAbout": "items/parallel_imaging.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "field_of_view",
+                "isAbout": "items/field_of_view.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "matrix_size",
+                "isAbout": "items/matrix_size.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "slice_thickness",
+                "isAbout": "items/slice_thickness.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "skip_factor",
+                "isAbout": "items/skip_factor.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "acquisition_orientation",
+                "isAbout": "items/acquisition_orientation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "order_of_acquisition",
+                "isAbout": "items/order_of_acquisition.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "repetition_time",
+                "isAbout": "items/repetition_time.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "echo_time",
+                "isAbout": "items/echo_time.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "flip_angle",
+                "isAbout": "items/flip_angle.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

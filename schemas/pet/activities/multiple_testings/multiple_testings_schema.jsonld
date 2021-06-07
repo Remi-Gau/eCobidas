@@ -1,0 +1,115 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "multiple_testings_schema.jsonld",
+    "prefLabel": {
+        "en": "multiple testings"
+    },
+    "description": "multiple testings",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/method.jsonld",
+            "items/threshold.jsonld",
+            "items/number-of-tests.jsonld",
+            "items/alpha-level.jsonld",
+            "items/power.jsonld",
+            "items/effect-size.jsonld",
+            "items/variance-assumption.jsonld",
+            "items/number-of-subjects-needed.jsonld",
+            "items/link.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "method",
+                "isAbout": "items/method.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "threshold",
+                "isAbout": "items/threshold.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number-of-tests",
+                "isAbout": "items/number-of-tests.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "alpha-level",
+                "isAbout": "items/alpha-level.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "power",
+                "isAbout": "items/power.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "effect-size",
+                "isAbout": "items/effect-size.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "variance-assumption",
+                "isAbout": "items/variance-assumption.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number-of-subjects-needed",
+                "isAbout": "items/number-of-subjects-needed.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "link",
+                "isAbout": "items/link.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

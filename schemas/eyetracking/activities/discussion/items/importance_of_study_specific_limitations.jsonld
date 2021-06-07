@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "importance_of_study_specific_limitations.jsonld",
+    "prefLabel": {
+        "en": "importance of study specific limitations"
+    },
+    "description": "importance of study specific limitations",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Limitations mentioned due to the eye-tracking methodology, study specific or general stated?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

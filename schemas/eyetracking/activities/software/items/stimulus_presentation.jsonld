@@ -1,0 +1,211 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "stimulus_presentation.jsonld",
+    "prefLabel": {
+        "en": "stimulus presentation"
+    },
+    "description": "stimulus presentation",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "The software used to present the stimuli"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 30,
+        "choices": [
+            {
+                "name": {
+                    "en": "Attention Tool 5.2 software"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Eprime"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "Experiment Builder"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "Eye-Works Design, EyeWorks record"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "Gaze Tracker software"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "Inquisit 3.0.5"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "MATLAB and the Psychophysics Toolbox"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "Matlab"
+                },
+                "value": 7
+            },
+            {
+                "name": {
+                    "en": "Matlab, Eyelink"
+                },
+                "value": 8
+            },
+            {
+                "name": {
+                    "en": "OpenSesam"
+                },
+                "value": 9
+            },
+            {
+                "name": {
+                    "en": "Phyton"
+                },
+                "value": 10
+            },
+            {
+                "name": {
+                    "en": "Power Point"
+                },
+                "value": 11
+            },
+            {
+                "name": {
+                    "en": "Presentation"
+                },
+                "value": 12
+            },
+            {
+                "name": {
+                    "en": "PsychoPhysics toolbox"
+                },
+                "value": 13
+            },
+            {
+                "name": {
+                    "en": "Psychopy"
+                },
+                "value": 14
+            },
+            {
+                "name": {
+                    "en": "Relax, Archisim"
+                },
+                "value": 15
+            },
+            {
+                "name": {
+                    "en": "S-CCS (simulation of a  naval air-defense environment)"
+                },
+                "value": 16
+            },
+            {
+                "name": {
+                    "en": "SMI Experiment Center"
+                },
+                "value": 17
+            },
+            {
+                "name": {
+                    "en": "SR Experiment Builder"
+                },
+                "value": 18
+            },
+            {
+                "name": {
+                    "en": "Sawtooth Software"
+                },
+                "value": 19
+            },
+            {
+                "name": {
+                    "en": "StatSoft Statistica"
+                },
+                "value": 20
+            },
+            {
+                "name": {
+                    "en": "TEMPO software system (reflective Computing)"
+                },
+                "value": 21
+            },
+            {
+                "name": {
+                    "en": "Tobii"
+                },
+                "value": 22
+            },
+            {
+                "name": {
+                    "en": "Tobii Studio"
+                },
+                "value": 23
+            },
+            {
+                "name": {
+                    "en": "Tobii Studio Professional"
+                },
+                "value": 24
+            },
+            {
+                "name": {
+                    "en": "Tobii X1 Light eye-tracking software"
+                },
+                "value": 25
+            },
+            {
+                "name": {
+                    "en": "unipark"
+                },
+                "value": 26
+            },
+            {
+                "name": {
+                    "en": "web application called \"PhotoRating\""
+                },
+                "value": 27
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 28
+            },
+            {
+                "name": {
+                    "en": "not applicable (because no experimental program was administered)"
+                },
+                "value": 29
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 30
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -1,0 +1,115 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "info_schema.jsonld",
+    "prefLabel": {
+        "en": "info"
+    },
+    "description": "info",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/modality.jsonld",
+            "items/manufacturer.jsonld",
+            "items/manufacturersmodelname.jsonld",
+            "items/anaesthesia.jsonld",
+            "items/bodypart.jsonld",
+            "items/unit.jsonld",
+            "items/experiment-date.jsonld",
+            "items/imaging-center-site.jsonld",
+            "items/imaging-department.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "modality",
+                "isAbout": "items/modality.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "manufacturer",
+                "isAbout": "items/manufacturer.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "manufacturersmodelname",
+                "isAbout": "items/manufacturersmodelname.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "anaesthesia",
+                "isAbout": "items/anaesthesia.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "bodypart",
+                "isAbout": "items/bodypart.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "unit",
+                "isAbout": "items/unit.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "experiment-date",
+                "isAbout": "items/experiment-date.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "imaging-center-site",
+                "isAbout": "items/imaging-center-site.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "imaging-department",
+                "isAbout": "items/imaging-department.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

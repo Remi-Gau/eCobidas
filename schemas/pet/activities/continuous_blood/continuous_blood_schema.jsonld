@@ -1,0 +1,335 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "continuous_blood_schema.jsonld",
+    "prefLabel": {
+        "en": "continuous blood"
+    },
+    "description": "continuous blood",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/continuousbloodavail.jsonld",
+            "items/continuousbloodwithdrawalrate.jsonld",
+            "items/continuousbloodtubingtype.jsonld",
+            "items/continuousbloodtubinglength.jsonld",
+            "items/continuousblooddispersionconstant.jsonld",
+            "items/continuousblooddispersioncorrected.jsonld",
+            "items/discretebloodavail.jsonld",
+            "items/discretebloodhaematocrit.jsonld",
+            "items/discreteblooddensity.jsonld",
+            "items/metaboliteavail.jsonld",
+            "items/metabolitemethod.jsonld",
+            "items/radiolabeled-parent-compound-fraction.jsonld",
+            "items/metabolite-data-labels.jsonld",
+            "items/parent-fraction-units.jsonld",
+            "items/parent-fraction-measurement-error.jsonld",
+            "items/metabolite-analysis-timepoints.jsonld",
+            "items/fraction-of-radiometabolite-needing-quantitation.jsonld",
+            "items/error-on-above-measurement.jsonld",
+            "items/radiolabeled-metabolite-fractions.jsonld",
+            "items/metaboliterecoverycorrectionapplied.jsonld",
+            "items/plasmaavail.jsonld",
+            "items/plasmafreefraction.jsonld",
+            "items/error-of-free-fraction-measurement.jsonld",
+            "items/plasmafreefractionmethod.jsonld",
+            "items/decay-corrected.jsonld",
+            "items/decay-correction-time.jsonld",
+            "items/plasma-data-type.jsonld",
+            "items/plasma-data-units.jsonld",
+            "items/hematocrit-value.jsonld",
+            "items/whole-blood-radioactivity.jsonld",
+            "items/plasma-to-whole-blood-ratio.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "continuousbloodavail",
+                "isAbout": "items/continuousbloodavail.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "continuousbloodwithdrawalrate",
+                "isAbout": "items/continuousbloodwithdrawalrate.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "continuousbloodtubingtype",
+                "isAbout": "items/continuousbloodtubingtype.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "continuousbloodtubinglength",
+                "isAbout": "items/continuousbloodtubinglength.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "continuousblooddispersionconstant",
+                "isAbout": "items/continuousblooddispersionconstant.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "continuousblooddispersioncorrected",
+                "isAbout": "items/continuousblooddispersioncorrected.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "discretebloodavail",
+                "isAbout": "items/discretebloodavail.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "discretebloodhaematocrit",
+                "isAbout": "items/discretebloodhaematocrit.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "discreteblooddensity",
+                "isAbout": "items/discreteblooddensity.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "metaboliteavail",
+                "isAbout": "items/metaboliteavail.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "metabolitemethod",
+                "isAbout": "items/metabolitemethod.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "radiolabeled-parent-compound-fraction",
+                "isAbout": "items/radiolabeled-parent-compound-fraction.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "metabolite-data-labels",
+                "isAbout": "items/metabolite-data-labels.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "parent-fraction-units",
+                "isAbout": "items/parent-fraction-units.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "parent-fraction-measurement-error",
+                "isAbout": "items/parent-fraction-measurement-error.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "metabolite-analysis-timepoints",
+                "isAbout": "items/metabolite-analysis-timepoints.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "fraction-of-radiometabolite-needing-quantitation",
+                "isAbout": "items/fraction-of-radiometabolite-needing-quantitation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "error-on-above-measurement",
+                "isAbout": "items/error-on-above-measurement.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "radiolabeled-metabolite-fractions",
+                "isAbout": "items/radiolabeled-metabolite-fractions.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "metaboliterecoverycorrectionapplied",
+                "isAbout": "items/metaboliterecoverycorrectionapplied.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "plasmaavail",
+                "isAbout": "items/plasmaavail.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "plasmafreefraction",
+                "isAbout": "items/plasmafreefraction.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "error-of-free-fraction-measurement",
+                "isAbout": "items/error-of-free-fraction-measurement.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "plasmafreefractionmethod",
+                "isAbout": "items/plasmafreefractionmethod.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "decay-corrected",
+                "isAbout": "items/decay-corrected.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "decay-correction-time",
+                "isAbout": "items/decay-correction-time.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "plasma-data-type",
+                "isAbout": "items/plasma-data-type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "plasma-data-units",
+                "isAbout": "items/plasma-data-units.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "hematocrit-value",
+                "isAbout": "items/hematocrit-value.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "whole-blood-radioactivity",
+                "isAbout": "items/whole-blood-radioactivity.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "plasma-to-whole-blood-ratio",
+                "isAbout": "items/plasma-to-whole-blood-ratio.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

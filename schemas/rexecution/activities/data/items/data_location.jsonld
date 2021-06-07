@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "data_location.jsonld",
+    "prefLabel": {
+        "en": "data location"
+    },
+    "description": "data location",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "From where/how am I instructed to access the data?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "Repository - Authorization Required"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Data available upon request from author"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

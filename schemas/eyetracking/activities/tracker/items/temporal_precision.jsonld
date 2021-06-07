@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "temporal_precision.jsonld",
+    "prefLabel": {
+        "en": "temporal precision"
+    },
+    "description": "temporal precision",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "The temporal precision"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

@@ -1,0 +1,215 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "reconstruction_schema.jsonld",
+    "prefLabel": {
+        "en": "reconstruction"
+    },
+    "description": "reconstruction",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/acquisitionmode.jsonld",
+            "items/imagedecaycorrected.jsonld",
+            "items/imagedecaycorrectiontime.jsonld",
+            "items/reconmethodname.jsonld",
+            "items/reconmethodparameterlabels.jsonld",
+            "items/reconfiltertype.jsonld",
+            "items/attenuationcorrection.jsonld",
+            "items/reconfiltersize.jsonld",
+            "items/pet-voxel-size.jsonld",
+            "items/matrix-size.jsonld",
+            "items/frame-sequence.jsonld",
+            "items/scalefactor.jsonld",
+            "items/scatterfraction.jsonld",
+            "items/decaycorrectionfactor.jsonld",
+            "items/promptrate.jsonld",
+            "items/randomrate.jsonld",
+            "items/singlesrate.jsonld",
+            "items/reconstruction-data-labels.jsonld",
+            "items/attenuationcorrectionmethodreference.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "acquisitionmode",
+                "isAbout": "items/acquisitionmode.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "imagedecaycorrected",
+                "isAbout": "items/imagedecaycorrected.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "imagedecaycorrectiontime",
+                "isAbout": "items/imagedecaycorrectiontime.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "reconmethodname",
+                "isAbout": "items/reconmethodname.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "reconmethodparameterlabels",
+                "isAbout": "items/reconmethodparameterlabels.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "reconfiltertype",
+                "isAbout": "items/reconfiltertype.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "attenuationcorrection",
+                "isAbout": "items/attenuationcorrection.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "reconfiltersize",
+                "isAbout": "items/reconfiltersize.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "pet-voxel-size",
+                "isAbout": "items/pet-voxel-size.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "matrix-size",
+                "isAbout": "items/matrix-size.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "frame-sequence",
+                "isAbout": "items/frame-sequence.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "scalefactor",
+                "isAbout": "items/scalefactor.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "scatterfraction",
+                "isAbout": "items/scatterfraction.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "decaycorrectionfactor",
+                "isAbout": "items/decaycorrectionfactor.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "promptrate",
+                "isAbout": "items/promptrate.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "randomrate",
+                "isAbout": "items/randomrate.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "singlesrate",
+                "isAbout": "items/singlesrate.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "reconstruction-data-labels",
+                "isAbout": "items/reconstruction-data-labels.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "attenuationcorrectionmethodreference",
+                "isAbout": "items/attenuationcorrectionmethodreference.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

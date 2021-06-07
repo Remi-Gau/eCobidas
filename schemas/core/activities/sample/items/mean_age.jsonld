@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "mean_age.jsonld",
+    "prefLabel": {
+        "en": "mean age"
+    },
+    "description": "mean age",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Age of participants: Mean (in years)"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

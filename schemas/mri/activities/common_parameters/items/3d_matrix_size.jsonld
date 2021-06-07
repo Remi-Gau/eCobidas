@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "3d_matrix_size.jsonld",
+    "prefLabel": {
+        "en": "3d matrix size"
+    },
+    "description": "3d matrix size",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Specify the 3D matrix size"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}
