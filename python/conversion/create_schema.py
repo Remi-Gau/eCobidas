@@ -172,7 +172,13 @@ def initialize_activity(protocol, items, output_dir):
     activity.set_defaults(activity_name)
     activity.set_filename(activity_name)
 
-    URI = "../activities" + "/" + activity.get_name() + "/" + activity.get_filename()
+    URI = (
+        "../activities"
+        + "/"
+        + activity.get_basename().replace("_schema", "")
+        + "/"
+        + activity.get_filename()
+    )
     activity.set_URI(URI)
 
     activity_path = os.path.join(output_dir, "activities", activity.dir)

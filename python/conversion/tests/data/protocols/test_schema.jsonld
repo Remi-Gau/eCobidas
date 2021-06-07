@@ -18,15 +18,15 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "../activities/activity_2.jsonld/activity_2_schema.jsonld",
-            "../activities/activity_3.jsonld/activity_3_schema.jsonld",
-            "../activities/activity_4.jsonld/activity_4_schema.jsonld",
-            "../activities/select_activity.jsonld/select_activity_schema.jsonld"
+            "../activities/activity_2/activity_2_schema.jsonld",
+            "../activities/activity_3/activity_3_schema.jsonld",
+            "../activities/activity_4/activity_4_schema.jsonld",
+            "../activities/select_activity/select_activity_schema.jsonld"
         ],
         "addProperties": [
             {
                 "variableName": "activity_2",
-                "isAbout": "../activities/activity_2.jsonld/activity_2_schema.jsonld",
+                "isAbout": "../activities/activity_2/activity_2_schema.jsonld",
                 "prefLabel": {
                     "en": "activity 2"
                 },
@@ -38,7 +38,7 @@
             },
             {
                 "variableName": "activity_3",
-                "isAbout": "../activities/activity_3.jsonld/activity_3_schema.jsonld",
+                "isAbout": "../activities/activity_3/activity_3_schema.jsonld",
                 "prefLabel": {
                     "en": "activity 3"
                 },
@@ -50,7 +50,7 @@
             },
             {
                 "variableName": "activity_4",
-                "isAbout": "../activities/activity_4.jsonld/activity_4_schema.jsonld",
+                "isAbout": "../activities/activity_4/activity_4_schema.jsonld",
                 "prefLabel": {
                     "en": "activity 4"
                 },
@@ -62,7 +62,7 @@
             },
             {
                 "variableName": "select_activity",
-                "isAbout": "../activities/select_activity.jsonld/select_activity_schema.jsonld",
+                "isAbout": "../activities/select_activity/select_activity_schema.jsonld",
                 "prefLabel": {
                     "en": "select activity"
                 },
