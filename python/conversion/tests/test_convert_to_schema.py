@@ -31,12 +31,20 @@ def test_convert_to_schema():
 
     # Check activity
     activities = [
-        {"name": "select_activity", "items": ["radio_item", "select_item"]},
+        {
+            "name": "select_activity",
+            "items": [
+                "radio_item",
+                "select_item",
+                "mri_softwares",
+                "yes_no_do_not_know",
+            ],
+        },
         {
             "name": "activity_4",
-            "items": ["float_item"],
-        },  #  "multitext_item", "text_item"
-        {"name": "activity_3", "items": ["integer_item"]},  #  "slider_item"
+            "items": ["float_item", "multitext_item", "text_item"],
+        },
+        {"name": "activity_3", "items": ["integer_item", "slider_item"]},
     ]
 
     for activity in activities:

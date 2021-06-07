@@ -9,3 +9,5 @@ activity_order	include	activity_pref_label	item_pref_label	item_description	item
 4	1	Select Activity	radio item multiple choice	This is a radio item with multiple choice.	2	1	1	1	radio item - several answers allowed	radio_multiple	Response option 1 | Response option 2 | Response option 3
 4	1	Select Activity	select item	This is a select item that works with a drop down menu.	3	1	1	1	select item - one answer allowed	dropdown	Response option 1 | Response option 2 | Response option 3
 4	1	Select Activity	select item multiple choice	This is a select item that works with a drop down menu.	4	1	1	1	select item - several answer allowed	dropdown_multiple	Response option 1 | Response option 2 | Response option 3
+4	1	Select Activity	yes, no, do not know	yes, no, do not know	5	1	1	1	yes or no	radio	preset:boolean
+4	1	Select Activity	mri softwares	mri softwares	6	1	1	1	mri software	dropdown	preset:mri_softwares

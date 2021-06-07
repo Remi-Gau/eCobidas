@@ -4,6 +4,7 @@ import pandas as pd
 from ..item import (
     get_item_info,
     get_visibility,
+    define_choices,
     list_responses_options,
     slider_response,
 )
@@ -14,21 +15,35 @@ sys.path.insert(0, myPath + "/../")
 local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
 sys.path.insert(0, local_reproschema)
 
-from reproschema.models.item import ResponseOption
+from reproschema.models.item import ResponseOption, Item
 
 
 def test_slider_response():
 
     choices = ["1", "4", "4"]
 
-    response_options = ResponseOption()
-
-    slider_response(response_options, choices)
+    response_options = slider_response(choices)
 
     assert len(response_options.options["choices"]) == 4
     assert response_options.options["choices"][1]["value"] == int(1)
     assert response_options.options["minValue"] == 0
     assert response_options.options["maxValue"] == 4
+
+
+def test_preset():
+
+    field_type = "radio"
+    choices = ["preset:boolean"]
+
+    item = Item()
+    item.set_defaults()
+
+    item = define_choices(item, field_type, choices)
+
+    assert (
+        item.response_options.options
+        == "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/boolean.jsonld"
+    )
 
 
 def test_get_item_info():

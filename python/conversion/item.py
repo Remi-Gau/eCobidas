@@ -1,5 +1,5 @@
 import sys
-
+from numpy import linspace
 from utils import convert_to_str, convert_to_int, snake_case
 
 local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
@@ -90,10 +90,12 @@ def define_choices(item, field_type, choices):
     # with no response choice involved
     item.set_basic_response_type(field_type)
 
+    print(choices)
+
     if field_type == "multitext":
         item.set_input_type_as_multitext()
 
-    if field_type == "radio":
+    elif field_type == "radio":
         response_options = list_responses_options(choices)
         item.set_input_type_as_radio(response_options)
 
@@ -105,73 +107,38 @@ def define_choices(item, field_type, choices):
         item.set_input_type_as_select(response_options)
 
     elif field_type == "slider":
-
-        response_options = ResponseOption()
-
-        response_options = slider_response(response_options, choices)
-
+        response_options = slider_response(choices)
         item.set_input_type_as_slider(response_options)
 
-    if field_type in [
-        "boolean",
-        "mri_software",
-        "interpolation",
-        "cost_function",
-        "multiple_comparison",
-    ]:
-
-        value_constraint = field_type
-
-        if "_" in field_type:
-            """
-            if field_type is "test_name" in the spreadsheet then the
-            corresponding response option value constraints file is
-            testNameValueConstraints, so we need to do some string magic
-            """
-
-            field_type = field_type.split("_")
-
-            # This does not cover the cases where the string has more than
-            # 2 elements separated by "_"
-            value_constraint = (
-                field_type[0] + field_type[1][0].upper() + field_type[1][1:]
-            )
-
-        # TODO
-        # do not hard code the path of where the response options files are stored
-        choices = "../../../choices/"
-        choices += value_constraint
-        choices += "ValueConstraints"
-
-        item.set_input_type_as_radio(choices)
+    if field_type in ["radio", "dropdown"] and ispreset(choices):
+        item = use_preset(item, choices)
 
     return item
 
 
-def list_responses_options(choice_list):
+def list_responses_options(choices):
 
     response_options = ResponseOption()
 
-    for i, opt in enumerate(choice_list):
+    for i, opt in enumerate(choices):
 
         response_options.add_choice(opt, i)
 
-    response_options.add_choice("Other", len(choice_list))
+    response_options.add_choice("Other", len(choices))
 
     response_options.set_min(0)
-    response_options.set_max(len(choice_list))
+    response_options.set_max(len(choices))
 
     return response_options
 
 
-def slider_response(response_options, choices):
-
-    from numpy import linspace
+def slider_response(choices):
 
     min = int(choices[0])
     max = int(choices[1])
     steps = int(choices[2]) if len(choices) == 3 else 11
 
+    response_options = ResponseOption()
     response_options.set_max(min)
     response_options.set_max(max)
 
@@ -179,3 +146,20 @@ def slider_response(response_options, choices):
         response_options.add_choice(str(opt), i)
 
     return response_options
+
+
+def use_preset(item, choices):
+
+    preset_response_file = (
+        "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/"
+        + choices[0].split("preset:")[1]
+        + ".jsonld"
+    )
+
+    item.response_options.options = preset_response_file
+
+    return item
+
+
+def ispreset(choices):
+    return isinstance(choices[0], str) and len(choices) == 1 and "preset:" in choices[0]

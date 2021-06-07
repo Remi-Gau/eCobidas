@@ -17,7 +17,9 @@
             "items/radio_item.jsonld",
             "items/radio_item_multiple_choice.jsonld",
             "items/select_item.jsonld",
-            "items/select_item_multiple_choice.jsonld"
+            "items/select_item_multiple_choice.jsonld",
+            "items/yes_no_do_not_know.jsonld",
+            "items/mri_softwares.jsonld"
         ],
         "addProperties": [
             {
@@ -50,6 +52,24 @@
             {
                 "variableName": "select_item_multiple_choice",
                 "isAbout": "items/select_item_multiple_choice.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "yes_no_do_not_know",
+                "isAbout": "items/yes_no_do_not_know.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "mri_softwares",
+                "isAbout": "items/mri_softwares.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
