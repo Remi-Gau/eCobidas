@@ -3,12 +3,12 @@ import pandas as pd
 
 from item import get_item_info, define_new_item
 from utils import snake_case
-from reproschema_protocol import ReproschemaProtocol
 
 local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
 sys.path.insert(0, local_reproschema)
 
 from reproschema.models.activity import Activity
+from reproschema.models.protocol import Protocol
 
 this_path = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.join(this_path, "..", "..")
@@ -100,12 +100,10 @@ def create_schema(schema_to_create, output_dir, debug=False):
 
             activity.append_item(item)
 
-        activity.sort()
         activity.write(activity_path)
 
         protocol.append_activity(activity)
 
-    protocol.sort()
     protocol.write(protocol_path)
 
     return protocol
@@ -143,7 +141,7 @@ def load_data(schema_to_create):
 def initialize_protocol(schema_to_create, output_dir):
 
     protocol_name = snake_case(schema_to_create)
-    protocol = ReproschemaProtocol()
+    protocol = Protocol()
     protocol.set_defaults(protocol_name)
 
     # create output directories
@@ -152,7 +150,6 @@ def initialize_protocol(schema_to_create, output_dir):
     if not os.path.exists(protocol_path):
         os.makedirs(protocol_path)
 
-    protocol.sort()
     protocol.write(protocol_path)
 
     print_info(

@@ -18,13 +18,13 @@ def test_convert_to_schema():
     # Check protocol
     protocol_folder = "protocols"
 
-    output_file = os.path.join(output_dir, protocol_folder, "test_schema")
-    # protocol_content = read_json(output_file)
+    output_file = os.path.join(output_dir, protocol_folder, "test_schema.jsonld")
+    protocol_content = read_json(output_file)
 
-    data_file = os.path.join(myPath, "data", protocol_folder, "test_schema")
-    # expected = read_json(data_file)
+    data_file = os.path.join(myPath, "data", protocol_folder, "test_schema.jsonld")
+    expected = read_json(data_file)
 
-    # assert protocol_content == expected
+    assert protocol_content == expected
 
     # Check activities
     activities_folder = "activities"
