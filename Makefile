@@ -7,10 +7,34 @@ neurovault:
 	ecobidas_convert --schema_to_create neurovault
 
 # DOWNLOAD
+ALL_MRI = $(wildcard inputs/csv/mri/*.tsv)
+download_all:
+	sh download_tsv.sh neurovault neurovault
+	sh download_tsv.sh mri all_sequences
+	sh download_tsv.sh mri design
+	sh download_tsv.sh mri acquisition
+	sh download_tsv.sh mri preprocessing
+	sh download_tsv.sh mri modelling_inference
+	sh download_tsv.sh mri results
+	sh download_tsv.sh core participants
+	sh download_tsv.sh core behavior
+	sh download_tsv.sh core reproducibility
+	sh download_tsv.sh core data_sharing	
+	sh download_tsv.sh meeg design
+	sh download_tsv.sh meeg acquisition
+	sh download_tsv.sh meeg processing
+	sh download_tsv.sh meeg statistical_analysis
+	sh download_tsv.sh meeg reporting 	
+	sh download_tsv.sh artem-is artem-is
+	sh download_tsv.sh eyetracking eyetracking
+	sh download_tsv.sh pet pet
+	sh download_tsv.sh nimg_reexecution nimg_reexecution
+	sh download_tsv.sh response_options	mri_softwares	
+
 download_neurovault: 
 	sh download_tsv.sh neurovault neurovault
 
-download_mri: 
+download_mri: $(ALL_MRI)
 	sh download_tsv.sh mri all_sequences
 	sh download_tsv.sh mri design
 	sh download_tsv.sh mri acquisition
@@ -31,8 +55,8 @@ download_meeg:
 	sh download_tsv.sh meeg statistical_analysis
 	sh download_tsv.sh meeg reporting 	
 
-download_artemis:
- sh download_tsv.sh artem-is artem-is
+# download_artemis:
+#  sh download_tsv.sh artem-is artem-is
 
 download_eyetrack:
 	sh download_tsv.sh eyetracking eyetracking

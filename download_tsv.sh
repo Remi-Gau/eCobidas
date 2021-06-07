@@ -44,6 +44,9 @@
 csv_folder=./inputs/csv/
 file=spreadsheet_google_id.tsv
 
+# TODO
+# add a way to filter all by section 
+
 if [ $# -lt 1 ]; then
     section='neurovault'
     else
@@ -62,6 +65,9 @@ mkdir -p $ouput_folder
 output_filename=$subsection.tsv
 
 google_ID=`cat $csv_folder'spreadsheet_google_id.tsv' | grep $section | grep $subsection | awk '{print $3}'`
+
+# TODO
+# add error in case google_ID is empty
 
 echo "\nDownloading the $section $subsection spreadsheet to $ouput_folder$output_filename"
 echo Google ID: $google_ID
