@@ -81,15 +81,6 @@ def define_new_item(item_info):
     item.set_question(item_info["question"])
     item = define_choices(item, item_info["field_type"], item_info["choices"])
 
-    # item = ReproschemaItem()
-
-    # item.set_defaults(item_info["name"])
-    # item.set_pref_label(item_info["pref_label"])
-
-    # item.set_question(item_info["question"])
-
-    # item = define_choices(item, item_info["field_type"], item_info["choices"])
-
     return item
 
 

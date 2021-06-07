@@ -46,16 +46,16 @@ def test_convert_to_schema():
         this_activity_folder = os.path.join(activities_folder, activity_name)
 
         output_file = os.path.join(
-            output_dir, this_activity_folder, activity_name + "_schema"
+            output_dir, this_activity_folder, activity_name + "_schema.jsonld"
         )
-        # activity_content = read_json(output_file)
+        activity_content = read_json(output_file)
 
         data_file = os.path.join(
-            myPath, "data", this_activity_folder, activity_name + "_schema"
+            myPath, "data", this_activity_folder, activity_name + "_schema.jsonld"
         )
-        # expected = read_json(data_file)
+        expected = read_json(data_file)
 
-        # assert activity_content == expected
+        assert activity_content == expected
 
         #  Check items
         item_list = activity["items"]

@@ -4,10 +4,11 @@ import pandas as pd
 from item import get_item_info, define_new_item
 from utils import snake_case
 from reproschema_protocol import ReproschemaProtocol
-from reproschema_activity import ReproschemaActivity
 
 local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
 sys.path.insert(0, local_reproschema)
+
+from reproschema.models.activity import Activity
 
 this_path = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.join(this_path, "..", "..")
@@ -95,9 +96,9 @@ def create_schema(schema_to_create, output_dir, debug=False):
 
             item_info = get_item_info(this_item)
 
-            create_new_item(item_info, activity_path)
+            item = create_new_item(item_info, activity_path)
 
-            activity.update_activity(item_info)
+            activity.append_item(item)
 
         activity.sort()
         activity.write(activity_path)
@@ -165,7 +166,7 @@ def initialize_protocol(schema_to_create, output_dir):
 
 def initialize_activity(protocol, items, output_dir):
 
-    activity = ReproschemaActivity()
+    activity = Activity()
 
     activity_pref_label = items.activity_pref_label.unique()[0]
     activity.set_pref_label(activity_pref_label)
@@ -202,9 +203,11 @@ def create_new_item(item_info, activity_path):
 
     item = define_new_item(item_info)
 
-    item.sort()
+    item.set_URI(os.path.join("items", item.get_filename()))
 
     item.write(os.path.join(activity_path, "items"))
+
+    return item
 
 
 def print_info(type, pref_label, file):
