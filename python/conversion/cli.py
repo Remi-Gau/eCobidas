@@ -10,24 +10,24 @@ from create_schema import convert_to_schema
 # -----------------------------------------------------------------------------
 # modify the following lines to match your needs
 
-# default_schema = "behavior"
-# default_schema = "participants"
-# default_output_dir = "/home/remi/github/cobidas_chckls/schemas/core"
-
-# default_schema = "all_sequences"
-# default_output_dir = "/home/remi/github/cobidas_chckls/schemas/mri"
-
-# default_schema = "nimg_reexecution"
-# default_output_dir = "/home/remi/github/cobidas_chckls/schemas/rexecution"
+default_schema = "neurovault"
+default_output_dir = "/home/remi/github/cobidas_chckls/schemas/neurovault"
 
 default_schema = "pet"
 default_output_dir = "/home/remi/github/cobidas_chckls/schemas/pet"
 
-# default_schema = "neurovault"
-# default_output_dir = "/home/remi/github/cobidas_chckls/schemas/neurovault"
+default_schema = "eyetracking"
+default_output_dir = "/home/remi/github/cobidas_chckls/schemas/eyetracking"
 
-# default_schema = "eyetracking"
-# default_output_dir = "/home/remi/github/cobidas_chckls/schemas/eyetracking"
+default_schema = "all_sequences"
+default_output_dir = "/home/remi/github/cobidas_chckls/schemas/mri"
+
+default_schema = "nimg_reexecution"
+default_output_dir = "/home/remi/github/cobidas_chckls/schemas/rexecution"
+
+default_schema = "behavior"
+# default_schema = "participants"
+default_output_dir = "/home/remi/github/cobidas_chckls/schemas/core"
 
 # schema_to_create = [
 #     "all_sequences",
