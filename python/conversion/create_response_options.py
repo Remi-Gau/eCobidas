@@ -1,11 +1,10 @@
 # TODO
 # set output directory
 
-filename = "mri_softwares"
-
 import os, sys
-import pandas as pd
 import click
+
+from utils import load_data, set_dir, get_root_dir
 
 from reproschema.models.item import ResponseOption
 
@@ -13,24 +12,20 @@ local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
 sys.path.insert(0, local_reproschema)
 
 
-this_path = os.path.dirname(os.path.abspath(__file__))
-root_dir = os.path.join(this_path, "..", "..")
-in_dir = os.path.join(root_dir, "inputs", "csv", "response_options")
-
-response_options_path = os.path.join(root_dir, "response_options")
-if not os.path.exists(response_options_path):
-    os.makedirs(response_options_path)
-
-
 @click.command()
 @click.option(
     "--filename",
-    default=filename,
+    default="mri_softwares",
     help="Name of the response options to create.",
 )
-def create_response_options(filename):
+@click.option(
+    "--out_dir",
+    default=os.path.join(get_root_dir(), "schemas"),
+    help="Name of the response options to create.",
+)
+def create_response_options(filename, out_dir):
 
-    df = load_data(filename)
+    df = load_data(filename, out_dir)
 
     responses = df.name.unique()
 
@@ -44,13 +39,10 @@ def create_response_options(filename):
         response_options.add_choice(name, i)
         response_options.set_max(i)
 
-    response_options.write(response_options_path)
-
-
-def load_data(filename):
-
-    input_file = os.path.join(in_dir, filename + ".tsv")
-    return pd.read_csv(input_file, sep="\t")
+    in_dir, out_dir = set_dir("response_options", out_dir)
+    if not os.path.exists(out_dir):
+        os.makedirs(out_dir)
+    response_options.write(out_dir)
 
 
 if __name__ == "__main__":

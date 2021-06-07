@@ -23,7 +23,7 @@ def create_schema(this_schema, out_dir, debug=False):
 
     protocol, protocol_path = initialize_protocol(this_schema, out_dir)
 
-    df = load_data(this_schema)
+    df = load_data(this_schema, out_dir)
 
     activities = df.activity_order.unique()
 
@@ -64,13 +64,13 @@ def create_schema(this_schema, out_dir, debug=False):
     return protocol
 
 
-def load_data(this_schema):
+def load_data(this_schema, out_dir):
 
-    if ~os.path.isfile(this_schema):
+    if not os.path.isfile(this_schema):
 
-        in_dir, sub_dir = set_dir(this_schema)
+        in_dir, out_dir = set_dir(this_schema, out_dir)
 
-        input_file = os.path.join(in_dir, sub_dir, this_schema + ".tsv")
+        input_file = os.path.join(in_dir, this_schema + ".tsv")
 
     return pd.read_csv(input_file, sep="\t")
 

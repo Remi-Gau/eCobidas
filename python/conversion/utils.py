@@ -1,27 +1,61 @@
 import os
+import pandas as pd
 
 
-def set_dir(this_schema):
+def get_root_dir():
 
     this_path = os.path.dirname(os.path.abspath(__file__))
-    root_dir = os.path.join(this_path, "..", "..")
+    return os.path.abspath(os.path.join(this_path, "..", ".."))
+
+
+def set_dir(this_schema, out_dir):
+
     in_dir = os.path.join(
-        root_dir,
+        get_root_dir(),
         "inputs",
         "csv",
     )
-    if this_schema in ["neurovault", "pet", "eyetracking", "nimg_reexecution"]:
+
+    if this_schema == "test":
+        in_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tests")
+
+    if this_schema in [
+        "neurovault",
+        "pet",
+        "eyetracking",
+        "nimg_reexecution",
+        "response_options",
+    ]:
         sub_dir = this_schema
     elif this_schema in ["all_sequences"]:
         sub_dir = "mri"
     elif this_schema in ["participants", "behavior"]:
         sub_dir = "core"
-
-    if this_schema == "test":
-        in_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tests")
+    elif this_schema in ["mri_softwares"]:
+        sub_dir = "response_options"
+    elif this_schema == "test":
         sub_dir = os.path.join("inputs", "csv")
+    else:
+        # TODO throw warning
+        print("unknown schema:" + this_schema)
+        sub_dir = this_schema
 
-    return in_dir, sub_dir
+    out_dir = os.path.join(out_dir, sub_dir)
+
+    in_dir = os.path.join(in_dir, sub_dir)
+
+    return in_dir, out_dir
+
+
+def load_data(this_schema, out_dir):
+
+    if not os.path.isfile(this_schema):
+
+        in_dir, out_dir = set_dir(this_schema, out_dir)
+
+        input_file = os.path.join(in_dir, this_schema + ".tsv")
+
+    return pd.read_csv(input_file, sep="\t")
 
 
 def convert_to_str(df_field):

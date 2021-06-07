@@ -4,7 +4,7 @@
 
 import click, os
 from create_schema import create_schema
-from utils import print_download
+from utils import print_download, set_dir
 
 # "neurovault"
 # "pet",
@@ -49,21 +49,9 @@ def convert(
     if isinstance(schema, str):
         schema = [schema]
 
-    for i, this_schema in enumerate(schema):
+    for this_schema in schema:
 
-        if this_schema in ["neurovault", "pet", "eyetracking", "nimg_reexecution"]:
-            sub_dir = this_schema
-        elif this_schema in ["behavior", "participants"]:
-            sub_dir = "core"
-        elif this_schema in ["all_sequences"]:
-            sub_dir = "mri"
-        elif this_schema in ["nimg_reexecution"]:
-            sub_dir = "rexecution"
-        else:
-            print("unknown schema:" + this_schema)
-            return
-
-        out_dir = os.path.join(out_dir, sub_dir)
+        in_dir, out_dir = set_dir(this_schema, out_dir)
 
         # add debug parameter
         protocol = create_schema(this_schema, out_dir)
