@@ -1,10 +1,11 @@
 import sys, os, json
 
 
-from ..create_schema import convert_to_schema
+from ..create_schema import create_schema
 
 myPath = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, myPath + "/../")
+
 
 """
 Runs the conversion of the tsv in `inputs/csv/test.tsv` 
@@ -12,18 +13,17 @@ and checks that the correct jsonld are created.
 """
 
 
-def test_convert_to_schema():
+def test_create_schema():
 
-    schema_to_create = ["test"]
-    output_dir = os.path.join(myPath, "outputs")
-    repo = "https://raw.githubusercontent.com/Remi-Gau/eCobidas"
+    this_schema = "test"
+    out_dir = os.path.join(myPath, "outputs")
 
-    convert_to_schema(schema_to_create, output_dir, repo)
+    create_schema(this_schema, out_dir)
 
     # Check protocol
     protocol_folder = "protocols"
 
-    output_file = os.path.join(output_dir, protocol_folder, "test_schema.jsonld")
+    output_file = os.path.join(out_dir, protocol_folder, "test_schema.jsonld")
     protocol_content = read_json(output_file)
 
     data_file = os.path.join(myPath, "data", protocol_folder, "test_schema.jsonld")
@@ -66,7 +66,7 @@ def test_convert_to_schema():
         this_activity_folder = os.path.join(activities_folder, activity_name)
 
         output_file = os.path.join(
-            output_dir, this_activity_folder, activity_name + "_schema.jsonld"
+            out_dir, this_activity_folder, activity_name + "_schema.jsonld"
         )
         activity_content = read_json(output_file)
 
@@ -83,7 +83,7 @@ def test_convert_to_schema():
         for item in item_list:
 
             output_file = os.path.join(
-                output_dir, this_activity_folder, "items", item + ".jsonld"
+                out_dir, this_activity_folder, "items", item + ".jsonld"
             )
             item_content = read_json(output_file)
 

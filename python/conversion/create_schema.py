@@ -2,48 +2,16 @@ import os, sys
 import pandas as pd
 
 from item import get_item_info, define_new_item
-from utils import snake_case, set_dir
-
-local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
-sys.path.insert(0, local_reproschema)
+from utils import snake_case, set_dir, print_info, print_item_info
 
 from reproschema.models.activity import Activity
 from reproschema.models.protocol import Protocol
 
-
-def convert_to_schema(schema, output_dir, repo, branch="master"):
-
-    repo = "https://raw.githubusercontent.com/" + repo
-
-    protocol = create_schema(schema, output_dir)
-
-    s = "/"
-
-    print(
-        "\n"
-        + dashed_line()
-        + "\nYou can view this protocol here:\n"
-        + "https://www.repronim.org/reproschema-ui/#/?url="
-        + s.join(
-            [
-                repo,
-                branch,
-                "protocols",
-                protocol.dir,
-                protocol.get_filename(),
-            ]
-        )
-        + dashed_line()
-        + "\n"
-        + "https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema"
-        + "\n"
-        + "https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema"
-        + dashed_line()
-        + "\n\n",
-    )
+# local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
+# sys.path.insert(0, local_reproschema)
 
 
-def create_schema(schema_to_create, output_dir, debug=False):
+def create_schema(this_schema, out_dir, debug=False):
     """
     This takes the content of the a csv file and turns it into a
     reproschema protocol.
@@ -53,9 +21,9 @@ def create_schema(schema_to_create, output_dir, debug=False):
     Every new item encountered is added to the current activity.
     """
 
-    protocol, protocol_path = initialize_protocol(schema_to_create, output_dir)
+    protocol, protocol_path = initialize_protocol(this_schema, out_dir)
 
-    df = load_data(schema_to_create)
+    df = load_data(this_schema)
 
     activities = df.activity_order.unique()
 
@@ -70,19 +38,18 @@ def create_schema(schema_to_create, output_dir, debug=False):
         items = items[included_items]
 
         protocol, activity, activity_path = initialize_activity(
-            protocol, items, output_dir
+            protocol, items, out_dir
         )
 
         items_order = items.item_order.unique()
 
-        for index in items_order:
+        for item_idx in items_order:
 
-            print(activity_idx)
-            print(index)
-
-            this_item = items[items["item_order"] == index]
+            this_item = items[items["item_order"] == item_idx]
 
             item_info = get_item_info(this_item)
+
+            print_item_info(activity_idx, item_idx, item_info)
 
             item = create_new_item(item_info, activity_path)
 
@@ -101,41 +68,21 @@ def load_data(this_schema):
 
     if ~os.path.isfile(this_schema):
 
-        input_dir, sub_dir = set_dir(this_schema)
+        in_dir, sub_dir = set_dir(this_schema)
 
-        # this_path = os.path.dirname(os.path.abspath(__file__))
-        # root_dir = os.path.join(this_path, "..", "..")
-        # input_dir = os.path.join(
-        #     root_dir,
-        #     "inputs",
-        #     "csv",
-        # )
-        # if this_schema in ["neurovault", "pet", "eyetracking", "nimg_reexecution"]:
-        #     sub_dir = this_schema
-        # elif this_schema in ["all_sequences"]:
-        #     sub_dir = "mri"
-        # elif this_schema in ["participants", "behavior"]:
-        #     sub_dir = "core"
-
-        # if this_schema == "test":
-        #     input_dir = os.path.join(
-        #         os.path.dirname(os.path.abspath(__file__)), "tests"
-        #     )
-        #     sub_dir = os.path.join("inputs", "csv")
-
-        input_file = os.path.join(input_dir, sub_dir, this_schema + ".tsv")
+        input_file = os.path.join(in_dir, sub_dir, this_schema + ".tsv")
 
     return pd.read_csv(input_file, sep="\t")
 
 
-def initialize_protocol(schema_to_create, output_dir):
+def initialize_protocol(this_schema, out_dir):
 
-    protocol_name = snake_case(schema_to_create)
+    protocol_name = snake_case(this_schema)
     protocol = Protocol()
     protocol.set_defaults(protocol_name)
 
     # create output directories
-    protocol_path = os.path.join(output_dir, "protocols")
+    protocol_path = os.path.join(out_dir, "protocols")
     protocol.set_directory = protocol_path
     if not os.path.exists(protocol_path):
         os.makedirs(protocol_path)
@@ -151,7 +98,7 @@ def initialize_protocol(schema_to_create, output_dir):
     return protocol, protocol_path
 
 
-def initialize_activity(protocol, items, output_dir):
+def initialize_activity(protocol, items, out_dir):
 
     activity = Activity()
 
@@ -171,7 +118,7 @@ def initialize_activity(protocol, items, output_dir):
     )
     activity.set_URI(URI)
 
-    activity_path = os.path.join(output_dir, "activities", activity.dir)
+    activity_path = os.path.join(out_dir, "activities", activity.dir)
 
     if not os.path.exists(activity_path):
         os.makedirs(activity_path)
@@ -190,12 +137,6 @@ def initialize_activity(protocol, items, output_dir):
 
 def create_new_item(item_info, activity_path):
 
-    print("   " + item_info["name"])
-    print("       " + item_info["question"])
-    print("       " + item_info["field_type"])
-
-    f"{2 * 37}"
-
     item = define_new_item(item_info)
 
     item.set_URI(os.path.join("items", item.get_filename()))
@@ -203,22 +144,3 @@ def create_new_item(item_info, activity_path):
     item.write(os.path.join(activity_path, "items"))
 
     return item
-
-
-def print_info(type, pref_label, file):
-
-    print(
-        dashed_line()
-        + "\n"
-        + type.upper()
-        + ": "
-        + pref_label
-        + "\n"
-        + file
-        + "\n"
-        + dashed_line()
-    )
-
-
-def dashed_line():
-    return "\n--------------------------------------------------------------"

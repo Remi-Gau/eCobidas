@@ -1,10 +1,6 @@
-import sys
 from numpy import linspace
+
 from utils import convert_to_str, convert_to_int, snake_case
-
-local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
-sys.path.insert(0, local_reproschema)
-
 from reproschema.models.item import Item, ResponseOption
 
 
@@ -89,8 +85,6 @@ def define_choices(item, field_type, choices):
     # in case we have one of the basic response type
     # with no response choice involved
     item.set_basic_response_type(field_type)
-
-    print(choices)
 
     if field_type == "multitext":
         item.set_input_type_as_multitext()

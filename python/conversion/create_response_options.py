@@ -7,14 +7,15 @@ import os, sys
 import pandas as pd
 import click
 
+from reproschema.models.item import ResponseOption
+
 local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
 sys.path.insert(0, local_reproschema)
 
-from reproschema.models.item import ResponseOption
 
 this_path = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.join(this_path, "..", "..")
-input_dir = os.path.join(root_dir, "inputs", "csv", "response_options")
+in_dir = os.path.join(root_dir, "inputs", "csv", "response_options")
 
 response_options_path = os.path.join(root_dir, "response_options")
 if not os.path.exists(response_options_path):
@@ -48,7 +49,7 @@ def create_response_options(filename):
 
 def load_data(filename):
 
-    input_file = os.path.join(input_dir, filename + ".tsv")
+    input_file = os.path.join(in_dir, filename + ".tsv")
     return pd.read_csv(input_file, sep="\t")
 
 

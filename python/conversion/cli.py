@@ -3,7 +3,8 @@
 # see how reproschema uses click to create command line calls `reproschema validate`
 
 import click, os
-from create_schema import convert_to_schema
+from create_schema import create_schema
+from utils import print_download
 
 # "neurovault"
 # "pet",
@@ -45,14 +46,10 @@ def convert(
     branch,
 ):
 
-    print(schema)
-
     if isinstance(schema, str):
         schema = [schema]
 
     for i, this_schema in enumerate(schema):
-
-        print(this_schema)
 
         if this_schema in ["neurovault", "pet", "eyetracking", "nimg_reexecution"]:
             sub_dir = this_schema
@@ -66,11 +63,12 @@ def convert(
             print("unknown schema:" + this_schema)
             return
 
-        print(this_schema)
-
         out_dir = os.path.join(out_dir, sub_dir)
 
-        convert_to_schema(this_schema, out_dir, repo, branch)
+        # add debug parameter
+        protocol = create_schema(this_schema, out_dir)
+
+        print_download(repo, branch, protocol)
 
 
 if __name__ == "__main__":
