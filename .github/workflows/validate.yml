@@ -42,6 +42,5 @@ jobs:
       - name: Test with pyshacl
         run: |
           reproschema -l DEBUG validate activities
-          reproschema -l DEBUG validate protocols
           reproschema -l DEBUG validate python/conversion/tests/data/protocols
           reproschema -l DEBUG validate python/conversion/tests/data/activities
