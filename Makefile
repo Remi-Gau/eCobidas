@@ -26,6 +26,7 @@ pet:
 	rm -rf schemas/pet
 	sh download_tsv.sh pet pet
 	ecobidas_convert --schema pet
+	grep -r  "@context" schemas/pet | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/pet	
 
 eyetracking:
@@ -33,6 +34,7 @@ eyetracking:
 	rm -rf schemas/eyetracking
 	sh download_tsv.sh eyetracking eyetracking
 	ecobidas_convert --schema eyetracking
+	grep -r  "@context" schemas/eyetracking | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/eyetracking		
 
 reexecution:
@@ -40,6 +42,7 @@ reexecution:
 	rm -rf schemas/reexecution
 	sh download_tsv.sh reexecution reexecution
 	ecobidas_convert --schema reexecution
+	grep -r  "@context" schemas/reexecution | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/reexecution	
 
 all_sequences:
@@ -48,6 +51,7 @@ all_sequences:
 	rm -rf schemas/core/protocols/all_sequences*
 	sh download_tsv.sh core all_sequences
 	ecobidas_convert --schema all_sequences
+	grep -r  "@context" schemas/mri | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/mri	
 
 behavior:
@@ -56,6 +60,7 @@ behavior:
 	rm -rf schemas/core/protocols/behavior*
 	sh download_tsv.sh core behavior
 	ecobidas_convert --schema behavior
+	grep -r  "@context" schemas/core | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/core
 
 participants:
@@ -64,6 +69,7 @@ participants:
 	rm -rf schemas/core/protocols/participants*
 	sh download_tsv.sh core participants
 	ecobidas_convert --schema participants
+	grep -r  "@context" schemas/core | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/core		
 
 # DOWNLOAD

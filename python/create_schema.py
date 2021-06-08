@@ -130,6 +130,8 @@ def initialize_activity(protocol, items, out_dir):
     activity.set_filename(activity_name)
     activity.set_pref_label(activity_pref_label)
 
+    activity.set_preamble(get_activity_preamble(items))
+
     URI = (
         "../activities"
         + "/"
@@ -165,3 +167,18 @@ def create_new_item(item_info, activity_path):
     item.write(os.path.join(activity_path, "items"))
 
     return item
+
+
+def get_activity_preamble(items):
+
+    not_nan = items["preamble"].notna()
+
+    preambles = items[not_nan]
+    preamble = list(preambles["preamble"].unique())
+
+    if len(preamble) > 1 or not preamble:
+        preamble = ""
+    else:
+        preamble = preamble[0]
+
+    return preamble
