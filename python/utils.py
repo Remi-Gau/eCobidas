@@ -30,7 +30,9 @@ def get_landing_page(this_schema):
     df = get_metatable()
 
     is_this_schema = df["subsection"] == this_schema
-    this_schema_info = df[is_this_schema]
+    not_nan = df["landing page"].notna()
+
+    this_schema_info = df[is_this_schema & not_nan]
 
     if list(this_schema_info["landing page"]) == []:
         DEFAULT = ["README_eCOBIDAS-en.md"]

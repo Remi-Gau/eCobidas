@@ -1,88 +1,88 @@
-duplicate	activity_order	include	activity_pref_label	item	item_pref_label	item_description	item_order	mandatory	visibility	question	field_type	choices	bids_status	bids_file	bids_key	bids_key_for_unit
-0	1	1	Experimental design		type of design	type of design	1	1	1	Type of design	select	blocked | event_related | hybrid block/event				
-0	1	1	Experimental design		number of imaging runs	number of imaging runs	2	2	1	Number of imaging runs acquired	integer					
-0	1	1	Experimental design		number of experimental units	number of experimental units	3	2	1	Number of blocks, trials or experimental units per imaging run	integer					
-0	1	1	Experimental design		length of runs	length of runs	4	2	1	Length of each imaging run in seconds	float					
-0	1	1	Experimental design		length of blocks	length of blocks	5	2	1	For blocked designs, length of blocks in seconds	float					
-0	1	1	Experimental design		length of trials	length of trials	6	2	1	Length of individual trials in seconds	float					
-0	1	1	Experimental design		optimization	optimization	7	2	1	Was the design optimized for efficiency?	radio	preset:boolean				
-0	1	1	Experimental design		optimization method	optimization method	8	3	optimization == 1	What method was used for optimization?	text					
-0	2	1	Participants		number of subjects	number of subjects	1	1	1	Number of subjects entering into the analysis	integer					
-0	2	1	Participants		subject age mean	subject age mean	2	1	1	Mean age of subjects	float					
-0	2	1	Participants		subject age min	subject age min	3	2	1	Minimum age of subjects	float					
-0	2	1	Participants		subject age max	subject age max	4	2	1	Maximum age of subjects	float					
-0	2	1	Participants		handedness	handedness	5	2	1	Handedness of subjects	radio	right | left | both				
-0	2	1	Participants		proportion male subjects	proportion male subjects	6	2	1	The proportion of subjects who were male	slider	0 | 100 | 20				
-0	2	1	Participants		inclusion exclusion criteria	inclusion exclusion criteria	7	3	1	Additional inclusion/exclusion criteria, if any (including specific sampling strategies that limit inclusion to a specific group, such as laboratory members)	text					
-0	2	1	Participants		number of rejected subjects	number of rejected subjects	8	2	1	Number of subjects scanned but rejected from analysis	integer					
-0	2	1	Participants		group comparison	group comparison	9	1	1	Was this study a comparison between subject groups?	radio	preset:boolean				
-0	2	1	Participants		group description	group description	10	2	1	A description of the groups being compared	text					
-0	3	1	MRI acquisition	Manufacturer	scanner make	scanner make	1	1	1	Manufacturer of MRI scanner	select	Siemens | Philips | General Electric				
-0	3	1	MRI acquisition	ManufacturersModelName	scanner model	scanner model	2	1	1	Model of MRI scanner	text					
-0	3	1	MRI acquisition	MagneticFieldStrength	field strength	field strength	3	1	1	Field strength of MRI scanner (in Tesla)	float					
-0	3	1	MRI acquisition	PulseSequenceType	pulse sequence	pulse sequence	4	1	1	Description of pulse sequence used for fMRI	select	Gradient echo | Spin echo | Mutliband gradient echo | MPRAGE | MP2RAGE | FLASH				
-0	3	1	MRI acquisition		parallel imaging	parallel imaging	5	3	1	Description of parallel imaging method and parameters	text					
-0	3	1	MRI acquisition		field of view	field of view	6	2	1	Imaging field of view in millimeters	float					
-0	3	1	MRI acquisition		matrix size	matrix size	7	2	1	Matrix size for MRI acquisition	integer					
-0	3	1	MRI acquisition		slice thickness	slice thickness	8	1	1	Distance between slices (includes skip or distance factor) in millimeters	float					
-0	3	1	MRI acquisition		skip factor	skip factor	9	2	1	The size of the skipped area between slices in millimeters	float					
-0	3	1	MRI acquisition		acquisition orientation	acquisition orientation	10	2	1	The orientation of slices	radio	axial | sagittal | frontal				
-0	3	1	MRI acquisition	SliceTiming	order of acquisition	order of acquisition	11	3	1	Order of acquisition of slices	select	ascending | descending | interleaved				
-0	3	1	MRI acquisition	RepetitionTime	repetition time	repetition time	12	1	1	Repetition time (TR) in milliseconds	float					
-0	3	1	MRI acquisition	EchoTime	echo time	echo time	13	1	1	Echo time (TE) in milliseconds	float					
-0	3	1	MRI acquisition	FlipAngle	flip angle	flip angle	14	2	1	Flip angle in degrees	float					
-0	4	1	Preprocessing	SoftwareName	software package	software package	1	1	1	If a single software package was used for all analyses, specify that here	select	preset:mri_softwares				
-0	4	1	Preprocessing	SoftwareVersion	software version	software version	2	1	1	Version of software package used	text					
-0	4	1	Preprocessing		order of preprocessing operations	order of preprocessing operations	3	2	1	Specify order of preprocessing operations	text					
-0	4	1	Preprocessing		quality control	quality control	4	3	1	Describe quality control measures	text					
-0	4	1	Preprocessing		used b0 unwarping	used b0 unwarping	5	2	1	Was B0 distortion correction used?	radio	preset:boolean				
-0	4	1	Preprocessing		b0 unwarping software	b0 unwarping software	6	3	used_b0_unwarping == 1	Specify software used for distortion correction if different from the main package	select	preset:mri_softwares				
-0	4	1	Preprocessing		used slice timing correction	used slice timing correction	7	1	1	Was slice timing correction used?	radio	preset:boolean				
-0	4	1	Preprocessing		slice timing correction software	slice timing correction software	8	3	used_slice_timing_correction == 1	Specify software used for slice timing correction if different from the main package	text					
-0	4	1	Preprocessing		used motion correction	used motion correction	9	1	1	Was motion correction used?	radio	preset:boolean				
-0	4	1	Preprocessing		motion correction software	motion correction software	10	3	used_motion_correction == 1	Specify software used for motion correction if different from the main package	select	preset:mri_softwares				
-0	4	1	Preprocessing		motion correction reference	motion correction reference	11	3	used_motion_correction == 1	Reference scan used for motion correction	text					
-0	4	1	Preprocessing		motion correction metric	motion correction metric	12	3	used_motion_correction == 1	Similarity metric used for motion correction	select	preset:cost_functions				
-0	4	1	Preprocessing		motion correction interpolation	motion correction interpolation	13	3	used_motion_correction == 1	Interpolation method used for motion correction	select	preset:interpolation				
-0	4	1	Preprocessing		used motion susceptibiity correction	used motion susceptibiity correction	14	3	1	Was motion-susceptibility correction used?	radio	preset:boolean				
-0	5	1	Intersubject registration		used intersubject registration	used intersubject registration	1	1	1	Were subjects registered to a common stereotactic space?	radio	preset:boolean				
-0	5	1	Intersubject registration		intersubject registration software	intersubject registration software	2	2	used_intersubject_registration == 1	Specify software used for intersubject registration if different from main package	select	preset:mri_softwares				
-0	5	1	Intersubject registration		intersubject transformation type	intersubject transformation type	3	1	used_intersubject_registration == 1	Was linear or nonlinear registration used?	select	linear | non-linear				
-0	5	1	Intersubject registration		nonlinear transform type	nonlinear transform type	4	2	used_intersubject_registration == 1	If nonlinear registration was used, describe transform method	text					
-0	5	1	Intersubject registration		transform similarity metric	transform similarity metric	5	3	used_intersubject_registration == 1	Similarity metric used for intersubject registration	text					
-0	5	1	Intersubject registration		interpolation method	interpolation method	6	2	used_intersubject_registration == 1	Interpolation method used for intersubject registration	select	preset:interpolation				
-0	5	1	Intersubject registration		object image type	object image type	7	1	used_intersubject_registration == 1	What type of image was used to determine the transformation to the atlas?	text					
-0	5	1	Intersubject registration		functional coregistered to structural	functional coregistered to structural	8	2	1	Were the functional images coregistered to the subject's structural image?	radio	preset:boolean				
-0	5	1	Intersubject registration		functional coregistration method	functional coregistration method	9	3	functional_coregistered_to_structural == 1	Method used to coregister functional to structural images	text					
-0	5	1	Intersubject registration		coordinate space	coordinate space	10	1	1	Name of coordinate space for registration target	select	MNI | Talairach | MNI2Tal				
-0	5	1	Intersubject registration		target template image	target template image	11	2	1	Name of target template image	text					
-0	5	1	Intersubject registration		target resolution	target resolution	12	1	1	Voxel size of target template in millimeters	float					
-0	5	1	Intersubject registration		used smoothing	used smoothing	13	1	1	Was spatial smoothing applied?	radio	preset:boolean				
-0	5	1	Intersubject registration		smoothing type	smoothing type	14	1	used_smoothing == 1	Describe the type of smoothing applied	text					
-0	5	1	Intersubject registration		smoothing fwhm	smoothing fwhm	15	1	used_smoothing == 1	The full-width at half-maximum of the smoothing kernel in millimeters	float					
-0	5	1	Intersubject registration		resampled voxel size	resampled voxel size	16	1	1	Voxel size in mm of the resampled, atlas-space images	float					
-0	6	1	Individual subject modeling		intrasubject model type	intrasubject model type	1	1	1	Type of group model used	radio	Regression				
-0	6	1	Individual subject modeling		intrasubject estimation type	intrasubject estimation type	2	1	1	Estimation method used for model	select	ordinary least squares | generalized least squares				
-0	6	1	Individual subject modeling		intrasubject modeling software	intrasubject modeling software	3	2	1	Software used for intrasubject modeling if different from overall package	radio	preset:mri_softwares				
-0	6	1	Individual subject modeling		hemodynamic response function	hemodynamic response function	4	2	1	Nature of HRF model	select	double gamma | Fourrier set | FIR				
-0	6	1	Individual subject modeling		used temporal derivatives	used temporal derivatives	5	2	1	Were temporal derivatives included?	radio	preset:boolean				
-0	6	1	Individual subject modeling		used dispersion derivatives	used dispersion derivatives	6	3	1	Were dispersion derivatives included?	radio	preset:boolean				
-0	6	1	Individual subject modeling		used motion regressors	used motion regressors	7	2	1	Were motion regressors included?	radio	preset:boolean				
-0	6	1	Individual subject modeling		used reaction time regressor	used reaction time regressor	8	2	1	Was a reaction time regressor included?	radio	preset:boolean				
-0	6	1	Individual subject modeling		used orthogonalization	used orthogonalization	9	1	1	Were any regressors specifically orthogonalized with respect to others?	radio	preset:boolean				
-0	6	1	Individual subject modeling		orthogonalization description	orthogonalization description	10	2	used_orthogonalization == 1	If orthogonalization was used, describe here	text					
-0	6	1	Individual subject modeling		used high pass filter	used high pass filter	11	1	1	Was high pass filtering applied?	radio	preset:boolean				
-0	6	1	Individual subject modeling		high pass filter method	high pass filter method	12	2	used_high_pass_filter == 1	Describe method used for high pass filtering	text					
-0	6	1	Individual subject modeling		autocorrelation model	autocorrelation model	13	2	1	What autocorrelation model was used (or 'none' of none was used)	text					
-0	6	1	Individual subject modeling		contrast definition	contrast definition	14	1	1	Exactly what terms are subtracted from what? Define these in terms of task or stimulus conditions (e.g., 'one-back task with objects versus zero-back task with objects') instead of underlying psychological concepts (e.g., 'working memory').	text					
-0	6	1	Individual subject modeling		contrast definition cogatlas	contrast definition cogatlas	15	3	1	Link to Cognitive Atlas definition of this contrast	text					
-0	7	1	Group modeling		group model type	group model type	1	1	1	Type of group model used	select	Regression				
-0	7	1	Group modeling		group estimation type	group estimation type	2	1	1	Estimation method used for model	select	ordinary least squares | generalized least squares				
-0	7	1	Group modeling		group modeling software	group modeling software	3	2	1	Software used for group modeling if different from overall package	select	preset:mri_softwares				
-0	7	1	Group modeling		group inference type	group inference type	4	1	1	Type of inference for group model	select	random effect | mixed effect | fixed effect				
-0	7	1	Group modeling		group model multilevel	group model multilevel	5	3	1	If more than 2-levels, describe the levels and assumptions of the model (e.g. are variances assumed equal between groups)	text					
-0	7	1	Group modeling		group repeated measures	group repeated measures	6	1	1	Was this a repeated measures design at the group level?	radio	preset:boolean				
-0	7	1	Group modeling		group repeated measures method	group repeated measures method	7	3	group_repeated_measures == 1	If multiple measurements per subject, list method to account for within subject correlation, exact assumptions made about correlation/variance	text					
-0	8	1	Group inference		group statistic type	group statistic type	1	2	1	Type of statistic that is the basis of the inference	select	Z | T | F | X2 | PostProb | NonparametricP | MonteCarloP				
-0	8	1	Group inference		group statistic parameters	group statistic parameters	2	1	1	Parameters of the null distribution of the test statisic, typically degrees of freedom (should be clear from the test statistic what these are).	float					
-0	8	1	Group inference		group smoothness fwhm	group smoothness fwhm	3	1	1	Noise smoothness for statistical inference; this is the estimated smoothness used with Random Field Theory or a simulation-based inference method.	float					
+duplicate	activity_order	include	preamble	activity_pref_label	item	item_pref_label	item_description	item_order	mandatory	visibility	question	field_type	choices	bids_status	bids_file	bids_key	bids_key_for_unit
+0	1	1	Describe your exeprimental design	Experimental design		type of design	type of design	1	1	1	Type of design	select	blocked | event_related | hybrid block/event				
+0	1	1		Experimental design		number of imaging runs	number of imaging runs	2	2	1	Number of imaging runs acquired	integer					
+0	1	1		Experimental design		number of experimental units	number of experimental units	3	2	1	Number of blocks, trials or experimental units per imaging run	integer					
+0	1	1		Experimental design		length of runs	length of runs	4	2	1	Length of each imaging run in seconds	float					
+0	1	1		Experimental design		length of blocks	length of blocks	5	2	1	For blocked designs, length of blocks in seconds	float					
+0	1	1		Experimental design		length of trials	length of trials	6	2	1	Length of individual trials in seconds	float					
+0	1	1		Experimental design		optimization	optimization	7	2	1	Was the design optimized for efficiency?	radio	preset:boolean				
+0	1	1		Experimental design		optimization method	optimization method	8	3	optimization == 1	What method was used for optimization?	text					
+0	2	1	Describe your participant sample	Participants		number of subjects	number of subjects	1	1	1	Number of subjects entering into the analysis	integer					
+0	2	1		Participants		subject age mean	subject age mean	2	1	1	Mean age of subjects	float					
+0	2	1		Participants		subject age min	subject age min	3	2	1	Minimum age of subjects	float					
+0	2	1		Participants		subject age max	subject age max	4	2	1	Maximum age of subjects	float					
+0	2	1		Participants		handedness	handedness	5	2	1	Handedness of subjects	radio	right | left | both				
+0	2	1		Participants		proportion male subjects	proportion male subjects	6	2	1	The proportion of subjects who were male	slider	0 | 100 | 20				
+0	2	1		Participants		inclusion exclusion criteria	inclusion exclusion criteria	7	3	1	Additional inclusion/exclusion criteria, if any (including specific sampling strategies that limit inclusion to a specific group, such as laboratory members)	text					
+0	2	1		Participants		number of rejected subjects	number of rejected subjects	8	2	1	Number of subjects scanned but rejected from analysis	integer					
+0	2	1		Participants		group comparison	group comparison	9	1	1	Was this study a comparison between subject groups?	radio	preset:boolean				
+0	2	1		Participants		group description	group description	10	2	1	A description of the groups being compared	text					
+0	3	1	Describe your acquisition parameters	MRI acquisition	Manufacturer	scanner make	scanner make	1	1	1	Manufacturer of MRI scanner	select	Siemens | Philips | General Electric				
+0	3	1		MRI acquisition	ManufacturersModelName	scanner model	scanner model	2	1	1	Model of MRI scanner	text					
+0	3	1		MRI acquisition	MagneticFieldStrength	field strength	field strength	3	1	1	Field strength of MRI scanner (in Tesla)	float					
+0	3	1		MRI acquisition	PulseSequenceType	pulse sequence	pulse sequence	4	1	1	Description of pulse sequence used for fMRI	select	Gradient echo | Spin echo | Mutliband gradient echo | MPRAGE | MP2RAGE | FLASH				
+0	3	1		MRI acquisition		parallel imaging	parallel imaging	5	3	1	Description of parallel imaging method and parameters	text					
+0	3	1		MRI acquisition		field of view	field of view	6	2	1	Imaging field of view in millimeters	float					
+0	3	1		MRI acquisition		matrix size	matrix size	7	2	1	Matrix size for MRI acquisition	integer					
+0	3	1		MRI acquisition		slice thickness	slice thickness	8	1	1	Distance between slices (includes skip or distance factor) in millimeters	float					
+0	3	1		MRI acquisition		skip factor	skip factor	9	2	1	The size of the skipped area between slices in millimeters	float					
+0	3	1		MRI acquisition		acquisition orientation	acquisition orientation	10	2	1	The orientation of slices	radio	axial | sagittal | frontal				
+0	3	1		MRI acquisition	SliceTiming	order of acquisition	order of acquisition	11	3	1	Order of acquisition of slices	select	ascending | descending | interleaved				
+0	3	1		MRI acquisition	RepetitionTime	repetition time	repetition time	12	1	1	Repetition time (TR) in milliseconds	float					
+0	3	1		MRI acquisition	EchoTime	echo time	echo time	13	1	1	Echo time (TE) in milliseconds	float					
+0	3	1		MRI acquisition	FlipAngle	flip angle	flip angle	14	2	1	Flip angle in degrees	float					
+0	4	1	Describe your preprocessing	Preprocessing	SoftwareName	software package	software package	1	1	1	If a single software package was used for all analyses, specify that here	select	preset:mri_softwares				
+0	4	1		Preprocessing	SoftwareVersion	software version	software version	2	1	1	Version of software package used	text					
+0	4	1		Preprocessing		order of preprocessing operations	order of preprocessing operations	3	2	1	Specify order of preprocessing operations	text					
+0	4	1		Preprocessing		quality control	quality control	4	3	1	Describe quality control measures	text					
+0	4	1		Preprocessing		used b0 unwarping	used b0 unwarping	5	2	1	Was B0 distortion correction used?	radio	preset:boolean				
+0	4	1		Preprocessing		b0 unwarping software	b0 unwarping software	6	3	used_b0_unwarping == 1	Specify software used for distortion correction if different from the main package	select	preset:mri_softwares				
+0	4	1		Preprocessing		used slice timing correction	used slice timing correction	7	1	1	Was slice timing correction used?	radio	preset:boolean				
+0	4	1		Preprocessing		slice timing correction software	slice timing correction software	8	3	used_slice_timing_correction == 1	Specify software used for slice timing correction if different from the main package	text					
+0	4	1		Preprocessing		used motion correction	used motion correction	9	1	1	Was motion correction used?	radio	preset:boolean				
+0	4	1		Preprocessing		motion correction software	motion correction software	10	3	used_motion_correction == 1	Specify software used for motion correction if different from the main package	select	preset:mri_softwares				
+0	4	1		Preprocessing		motion correction reference	motion correction reference	11	3	used_motion_correction == 1	Reference scan used for motion correction	text					
+0	4	1		Preprocessing		motion correction metric	motion correction metric	12	3	used_motion_correction == 1	Similarity metric used for motion correction	select	preset:cost_functions				
+0	4	1		Preprocessing		motion correction interpolation	motion correction interpolation	13	3	used_motion_correction == 1	Interpolation method used for motion correction	select	preset:interpolation				
+0	4	1		Preprocessing		used motion susceptibiity correction	used motion susceptibiity correction	14	3	1	Was motion-susceptibility correction used?	radio	preset:boolean				
+0	5	1	Describe your spatial normalization	Intersubject registration		used intersubject registration	used intersubject registration	1	1	1	Were subjects registered to a common stereotactic space?	radio	preset:boolean				
+0	5	1		Intersubject registration		intersubject registration software	intersubject registration software	2	2	used_intersubject_registration == 1	Specify software used for intersubject registration if different from main package	select	preset:mri_softwares				
+0	5	1		Intersubject registration		intersubject transformation type	intersubject transformation type	3	1	used_intersubject_registration == 1	Was linear or nonlinear registration used?	select	linear | non-linear				
+0	5	1		Intersubject registration		nonlinear transform type	nonlinear transform type	4	2	used_intersubject_registration == 1	If nonlinear registration was used, describe transform method	text					
+0	5	1		Intersubject registration		transform similarity metric	transform similarity metric	5	3	used_intersubject_registration == 1	Similarity metric used for intersubject registration	text					
+0	5	1		Intersubject registration		interpolation method	interpolation method	6	2	used_intersubject_registration == 1	Interpolation method used for intersubject registration	select	preset:interpolation				
+0	5	1		Intersubject registration		object image type	object image type	7	1	used_intersubject_registration == 1	What type of image was used to determine the transformation to the atlas?	text					
+0	5	1		Intersubject registration		functional coregistered to structural	functional coregistered to structural	8	2	1	Were the functional images coregistered to the subject's structural image?	radio	preset:boolean				
+0	5	1		Intersubject registration		functional coregistration method	functional coregistration method	9	3	functional_coregistered_to_structural == 1	Method used to coregister functional to structural images	text					
+0	5	1		Intersubject registration		coordinate space	coordinate space	10	1	1	Name of coordinate space for registration target	select	MNI | Talairach | MNI2Tal				
+0	5	1		Intersubject registration		target template image	target template image	11	2	1	Name of target template image	text					
+0	5	1		Intersubject registration		target resolution	target resolution	12	1	1	Voxel size of target template in millimeters	float					
+0	5	1		Intersubject registration		used smoothing	used smoothing	13	1	1	Was spatial smoothing applied?	radio	preset:boolean				
+0	5	1		Intersubject registration		smoothing type	smoothing type	14	1	used_smoothing == 1	Describe the type of smoothing applied	text					
+0	5	1		Intersubject registration		smoothing fwhm	smoothing fwhm	15	1	used_smoothing == 1	The full-width at half-maximum of the smoothing kernel in millimeters	float					
+0	5	1		Intersubject registration		resampled voxel size	resampled voxel size	16	1	1	Voxel size in mm of the resampled, atlas-space images	float					
+0	6	1	Describe your model specification at the subejct level	Individual subject modeling		intrasubject model type	intrasubject model type	1	1	1	Type of group model used	radio	Regression				
+0	6	1		Individual subject modeling		intrasubject estimation type	intrasubject estimation type	2	1	1	Estimation method used for model	select	ordinary least squares | generalized least squares				
+0	6	1		Individual subject modeling		intrasubject modeling software	intrasubject modeling software	3	2	1	Software used for intrasubject modeling if different from overall package	radio	preset:mri_softwares				
+0	6	1		Individual subject modeling		hemodynamic response function	hemodynamic response function	4	2	1	Nature of HRF model	select	double gamma | Fourrier set | FIR				
+0	6	1		Individual subject modeling		used temporal derivatives	used temporal derivatives	5	2	1	Were temporal derivatives included?	radio	preset:boolean				
+0	6	1		Individual subject modeling		used dispersion derivatives	used dispersion derivatives	6	3	1	Were dispersion derivatives included?	radio	preset:boolean				
+0	6	1		Individual subject modeling		used motion regressors	used motion regressors	7	2	1	Were motion regressors included?	radio	preset:boolean				
+0	6	1		Individual subject modeling		used reaction time regressor	used reaction time regressor	8	2	1	Was a reaction time regressor included?	radio	preset:boolean				
+0	6	1		Individual subject modeling		used orthogonalization	used orthogonalization	9	1	1	Were any regressors specifically orthogonalized with respect to others?	radio	preset:boolean				
+0	6	1		Individual subject modeling		orthogonalization description	orthogonalization description	10	2	used_orthogonalization == 1	If orthogonalization was used, describe here	text					
+0	6	1		Individual subject modeling		used high pass filter	used high pass filter	11	1	1	Was high pass filtering applied?	radio	preset:boolean				
+0	6	1		Individual subject modeling		high pass filter method	high pass filter method	12	2	used_high_pass_filter == 1	Describe method used for high pass filtering	text					
+0	6	1		Individual subject modeling		autocorrelation model	autocorrelation model	13	2	1	What autocorrelation model was used (or 'none' of none was used)	text					
+0	6	1		Individual subject modeling		contrast definition	contrast definition	14	1	1	Exactly what terms are subtracted from what? Define these in terms of task or stimulus conditions (e.g., 'one-back task with objects versus zero-back task with objects') instead of underlying psychological concepts (e.g., 'working memory').	text					
+0	6	1		Individual subject modeling		contrast definition cogatlas	contrast definition cogatlas	15	3	1	Link to Cognitive Atlas definition of this contrast	text					
+0	7	1	Describe the group level analyisis	Group modeling		group model type	group model type	1	1	1	Type of group model used	select	Regression				
+0	7	1		Group modeling		group estimation type	group estimation type	2	1	1	Estimation method used for model	select	ordinary least squares | generalized least squares				
+0	7	1		Group modeling		group modeling software	group modeling software	3	2	1	Software used for group modeling if different from overall package	select	preset:mri_softwares				
+0	7	1		Group modeling		group inference type	group inference type	4	1	1	Type of inference for group model	select	random effect | mixed effect | fixed effect				
+0	7	1		Group modeling		group model multilevel	group model multilevel	5	3	1	If more than 2-levels, describe the levels and assumptions of the model (e.g. are variances assumed equal between groups)	text					
+0	7	1		Group modeling		group repeated measures	group repeated measures	6	1	1	Was this a repeated measures design at the group level?	radio	preset:boolean				
+0	7	1		Group modeling		group repeated measures method	group repeated measures method	7	3	group_repeated_measures == 1	If multiple measurements per subject, list method to account for within subject correlation, exact assumptions made about correlation/variance	text					
+0	8	1	Describe your statistical inference	Group inference		group statistic type	group statistic type	1	2	1	Type of statistic that is the basis of the inference	select	Z | T | F | X2 | PostProb | NonparametricP | MonteCarloP				
+0	8	1		Group inference		group statistic parameters	group statistic parameters	2	1	1	Parameters of the null distribution of the test statisic, typically degrees of freedom (should be clear from the test statistic what these are).	float					
+0	8	1		Group inference		group smoothness fwhm	group smoothness fwhm	3	1	1	Noise smoothness for statistical inference; this is the estimated smoothness used with Random Field Theory or a simulation-based inference method.	float					

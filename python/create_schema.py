@@ -171,6 +171,9 @@ def create_new_item(item_info, activity_path):
 
 def get_activity_preamble(items):
 
+    if "preamble" not in items.keys():
+        return ""
+
     not_nan = items["preamble"].notna()
 
     preambles = items[not_nan]
