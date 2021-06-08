@@ -1,4 +1,4 @@
-import os
+import os, warnings
 import pandas as pd
 
 
@@ -52,8 +52,7 @@ def set_dir(this_schema, out_dir):
     elif this_schema == "test":
         sub_dir = os.path.join("inputs", "csv")
     else:
-        # TODO throw warning
-        print("unknown schema:" + this_schema)
+        warnings.warn("Unknown target schema: " + this_schema)
         sub_dir = this_schema
 
     out_dir = os.path.join(out_dir, sub_dir)
@@ -106,7 +105,6 @@ def print_info(type, pref_label, file):
 
 def print_item_info(activity_idx, item_idx, item_info):
 
-    # print("\n")
     print("Activity: " + str(activity_idx) + " Item: " + str(item_idx))
     print("  " + item_info["name"] + "   " + item_info["field_type"])
 

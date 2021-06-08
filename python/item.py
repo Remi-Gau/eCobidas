@@ -1,3 +1,4 @@
+import warnings
 from numpy import linspace
 
 from utils import convert_to_str, convert_to_int, snake_case
@@ -82,6 +83,23 @@ def define_new_item(item_info):
 
 def define_choices(item, field_type, choices):
 
+    if field_type not in [
+        "multitext",
+        "text",
+        "radio",
+        "select",
+        "select",
+        "date",
+        "float",
+        "int",
+        "slider",
+        "time range",
+        "date",
+    ]:
+        warnings.warn("Unknown field type: " + field_type)
+        # TODO
+        # - create a log file of unknown item types
+
     # in case we have one of the basic response type
     # with no response choice involved
     item.set_basic_response_type(field_type)
@@ -89,23 +107,25 @@ def define_choices(item, field_type, choices):
     if field_type == "multitext":
         item.set_input_type_as_multitext()
 
-    elif field_type == "radio":
-        response_options = list_responses_options(choices)
-        item.set_input_type_as_radio(response_options)
-
-    # if we have a dropdown menu
-    # TODO: change to select item to have a REAL dropdown as soon as radio item
-    # offer the possibility to have an "Other" choice that opens a text box
-    elif field_type == "dropdown":
-        response_options = list_responses_options(choices)
-        item.set_input_type_as_select(response_options)
-
     elif field_type == "slider":
         response_options = slider_response(choices)
         item.set_input_type_as_slider(response_options)
 
-    if field_type in ["radio", "dropdown"] and ispreset(choices):
-        item = use_preset(item, choices)
+    if field_type in ["radio", "select"]:
+
+        response_options = list_responses_options(choices)
+
+        if field_type == "radio":
+            item.set_input_type_as_radio(response_options)
+
+        # if we have a dropdown menu
+        elif field_type == "select":
+            response_options.add_choice("Other", len(choices))
+            response_options.set_max(len(choices))
+            item.set_input_type_as_select(response_options)
+
+        if ispreset(choices):
+            item = use_preset(item, choices)
 
     return item
 
@@ -118,10 +138,8 @@ def list_responses_options(choices):
 
         response_options.add_choice(opt, i)
 
-    response_options.add_choice("Other", len(choices))
-
     response_options.set_min(0)
-    response_options.set_max(len(choices))
+    response_options.set_max(len(choices) - 1)
 
     return response_options
 

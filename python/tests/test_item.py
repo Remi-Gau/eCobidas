@@ -106,7 +106,6 @@ def test_list_responses_options():
     expected.add_choice("A", 0)
     expected.add_choice("B", 1)
     expected.add_choice("C", 2)
-    expected.add_choice("Other", 3)
-    expected.set_max(3)
+    expected.set_max(2)
 
     assert response_options.options == expected.options
