@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "error_of_free_fraction_measurement.jsonld",
+    "prefLabel": {
+        "en": "error of free fraction measurement"
+    },
+    "description": "error of free fraction measurement",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Error of free fraction measurement"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

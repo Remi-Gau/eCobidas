@@ -9,10 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "text"
     },
     "question": {
         "en": "If a single software package was used for all analyses, specify that here"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/mri_softwares.jsonld"
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
 }

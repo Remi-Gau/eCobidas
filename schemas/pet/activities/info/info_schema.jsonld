@@ -20,9 +20,9 @@
             "items/anaesthesia.jsonld",
             "items/bodypart.jsonld",
             "items/unit.jsonld",
-            "items/experiment-date.jsonld",
-            "items/imaging-center-site.jsonld",
-            "items/imaging-department.jsonld"
+            "items/experiment_date.jsonld",
+            "items/imaging_center_site.jsonld",
+            "items/imaging_department.jsonld"
         ],
         "addProperties": [
             {
@@ -80,8 +80,8 @@
                 ]
             },
             {
-                "variableName": "experiment-date",
-                "isAbout": "items/experiment-date.jsonld",
+                "variableName": "experiment_date",
+                "isAbout": "items/experiment_date.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -89,8 +89,8 @@
                 ]
             },
             {
-                "variableName": "imaging-center-site",
-                "isAbout": "items/imaging-center-site.jsonld",
+                "variableName": "imaging_center_site",
+                "isAbout": "items/imaging_center_site.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -98,8 +98,8 @@
                 ]
             },
             {
-                "variableName": "imaging-department",
-                "isAbout": "items/imaging-department.jsonld",
+                "variableName": "imaging_department",
+                "isAbout": "items/imaging_department.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

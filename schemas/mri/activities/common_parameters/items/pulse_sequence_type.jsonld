@@ -9,59 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "text"
     },
     "question": {
         "en": "Description of the pulse sequence used"
     },
     "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 6,
-        "choices": [
-            {
-                "name": {
-                    "en": "Gradient echo"
-                },
-                "value": 0
-            },
-            {
-                "name": {
-                    "en": "Spin echo"
-                },
-                "value": 1
-            },
-            {
-                "name": {
-                    "en": "Mutliband gradient echo"
-                },
-                "value": 2
-            },
-            {
-                "name": {
-                    "en": "MPRAGE"
-                },
-                "value": 3
-            },
-            {
-                "name": {
-                    "en": "MP2RAGE"
-                },
-                "value": 4
-            },
-            {
-                "name": {
-                    "en": "FLASH"
-                },
-                "value": 5
-            },
-            {
-                "name": {
-                    "en": "Other"
-                },
-                "value": 6
-            }
-        ],
-        "multipleChoice": false
+        "valueType": "xsd:string",
+        "maxLength": 300
     }
 }

@@ -16,12 +16,12 @@
         "order": [
             "items/method.jsonld",
             "items/threshold.jsonld",
-            "items/number-of-tests.jsonld",
-            "items/alpha-level.jsonld",
+            "items/number_of_tests.jsonld",
+            "items/alpha_level.jsonld",
             "items/power.jsonld",
-            "items/effect-size.jsonld",
-            "items/variance-assumption.jsonld",
-            "items/number-of-subjects-needed.jsonld",
+            "items/effect_size.jsonld",
+            "items/variance_assumption.jsonld",
+            "items/number_of_subjects_needed.jsonld",
             "items/link.jsonld"
         ],
         "addProperties": [
@@ -44,8 +44,8 @@
                 ]
             },
             {
-                "variableName": "number-of-tests",
-                "isAbout": "items/number-of-tests.jsonld",
+                "variableName": "number_of_tests",
+                "isAbout": "items/number_of_tests.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -53,8 +53,8 @@
                 ]
             },
             {
-                "variableName": "alpha-level",
-                "isAbout": "items/alpha-level.jsonld",
+                "variableName": "alpha_level",
+                "isAbout": "items/alpha_level.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -71,8 +71,8 @@
                 ]
             },
             {
-                "variableName": "effect-size",
-                "isAbout": "items/effect-size.jsonld",
+                "variableName": "effect_size",
+                "isAbout": "items/effect_size.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -80,8 +80,8 @@
                 ]
             },
             {
-                "variableName": "variance-assumption",
-                "isAbout": "items/variance-assumption.jsonld",
+                "variableName": "variance_assumption",
+                "isAbout": "items/variance_assumption.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -89,8 +89,8 @@
                 ]
             },
             {
-                "variableName": "number-of-subjects-needed",
-                "isAbout": "items/number-of-subjects-needed.jsonld",
+                "variableName": "number_of_subjects_needed",
+                "isAbout": "items/number_of_subjects_needed.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

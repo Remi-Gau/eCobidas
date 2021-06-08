@@ -9,13 +9,10 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
         "en": "Describe any screening criteria, including those applied to \u201cnormal\u201d sample such as MRI exclusion criteria"
     },
-    "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
-    }
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/boolean.jsonld"
 }

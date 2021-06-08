@@ -9,41 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "text"
     },
     "question": {
         "en": "Type of design"
     },
     "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 3,
-        "choices": [
-            {
-                "name": {
-                    "en": "blocked"
-                },
-                "value": 0
-            },
-            {
-                "name": {
-                    "en": "event_related"
-                },
-                "value": 1
-            },
-            {
-                "name": {
-                    "en": "hybrid block/event"
-                },
-                "value": 2
-            },
-            {
-                "name": {
-                    "en": "Other"
-                },
-                "value": 3
-            }
-        ],
-        "multipleChoice": false
+        "valueType": "xsd:string",
+        "maxLength": 300
     }
 }

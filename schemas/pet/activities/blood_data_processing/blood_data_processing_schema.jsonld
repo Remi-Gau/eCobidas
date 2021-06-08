@@ -14,54 +14,54 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/sampling-method.jsonld",
-            "items/delay-time-correction.jsonld",
+            "items/sampling_method.jsonld",
+            "items/delay_time_correction.jsonld",
             "items/fitting.jsonld",
-            "items/fitting-description.jsonld",
-            "items/blood-data-processing-interpolation.jsonld",
+            "items/fitting_description.jsonld",
+            "items/blood_data_processing_interpolation.jsonld",
             "items/model.jsonld",
-            "items/reference-volume.jsonld",
-            "items/outcome-measure.jsonld",
+            "items/reference_volume.jsonld",
+            "items/outcome_measure.jsonld",
             "items/weighting.jsonld",
-            "items/level-of-analysis.jsonld",
-            "items/kinetic-modelling-software.jsonld",
-            "items/kinetic-modelling-software-version.jsonld",
-            "items/moco-reference-image.jsonld",
-            "items/moco-cost-function.jsonld",
-            "items/moco-interpolation.jsonld",
-            "items/moco-smoothing.jsonld",
-            "items/moco-quality-control.jsonld",
-            "items/moco-software.jsonld",
-            "items/moco-software-version.jsonld",
-            "items/registration-reference-image.jsonld",
-            "items/registration-target-image.jsonld",
-            "items/registration-cost-function.jsonld",
-            "items/registration-interpolation.jsonld",
-            "items/registration-smoothing.jsonld",
-            "items/resolution-of-reference-target.jsonld",
-            "items/registration-quality-control.jsonld",
-            "items/registration-software.jsonld",
-            "items/registration-software-version.jsonld",
-            "items/smoothing-target-image.jsonld",
-            "items/shape-of-smoothing-filter.jsonld",
-            "items/size-of-smoothing-filter.jsonld",
-            "items/justification-for-smoothing-size.jsonld",
-            "items/space-of-smoothing.jsonld",
-            "items/volumes-of-interest-obtained-from.jsonld",
-            "items/volumes-of-interest-operational-criteria.jsonld",
-            "items/volumes-of-interest-mask.jsonld",
-            "items/volumes-of-interest-procedure.jsonld",
-            "items/volumes-of-interest.jsonld",
-            "items/volumes-of-interest-software.jsonld",
-            "items/partial-volume-correction-technique.jsonld",
-            "items/partial-volume-correction-assumptions.jsonld",
-            "items/partial-volume-correction-software.jsonld",
-            "items/partial-volume-correction-software-version.jsonld"
+            "items/level_of_analysis.jsonld",
+            "items/kinetic_modelling_software.jsonld",
+            "items/kinetic_modelling_software_version.jsonld",
+            "items/moco_reference_image.jsonld",
+            "items/moco_cost_function.jsonld",
+            "items/moco_interpolation.jsonld",
+            "items/moco_smoothing.jsonld",
+            "items/moco_quality_control.jsonld",
+            "items/moco_software.jsonld",
+            "items/moco_software_version.jsonld",
+            "items/registration_reference_image.jsonld",
+            "items/registration_target_image.jsonld",
+            "items/registration_cost_function.jsonld",
+            "items/registration_interpolation.jsonld",
+            "items/registration_smoothing.jsonld",
+            "items/resolution_of_reference_target.jsonld",
+            "items/registration_quality_control.jsonld",
+            "items/registration_software.jsonld",
+            "items/registration_software_version.jsonld",
+            "items/smoothing_target_image.jsonld",
+            "items/shape_of_smoothing_filter.jsonld",
+            "items/size_of_smoothing_filter.jsonld",
+            "items/justification_for_smoothing_size.jsonld",
+            "items/space_of_smoothing.jsonld",
+            "items/volumes_of_interest_obtained_from.jsonld",
+            "items/volumes_of_interest_operational_criteria.jsonld",
+            "items/volumes_of_interest_mask.jsonld",
+            "items/volumes_of_interest_procedure.jsonld",
+            "items/volumes_of_interest.jsonld",
+            "items/volumes_of_interest_software.jsonld",
+            "items/partial_volume_correction_technique.jsonld",
+            "items/partial_volume_correction_assumptions.jsonld",
+            "items/partial_volume_correction_software.jsonld",
+            "items/partial_volume_correction_software_version.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "sampling-method",
-                "isAbout": "items/sampling-method.jsonld",
+                "variableName": "sampling_method",
+                "isAbout": "items/sampling_method.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -69,8 +69,8 @@
                 ]
             },
             {
-                "variableName": "delay-time-correction",
-                "isAbout": "items/delay-time-correction.jsonld",
+                "variableName": "delay_time_correction",
+                "isAbout": "items/delay_time_correction.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -87,8 +87,8 @@
                 ]
             },
             {
-                "variableName": "fitting-description",
-                "isAbout": "items/fitting-description.jsonld",
+                "variableName": "fitting_description",
+                "isAbout": "items/fitting_description.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -96,8 +96,8 @@
                 ]
             },
             {
-                "variableName": "blood-data-processing-interpolation",
-                "isAbout": "items/blood-data-processing-interpolation.jsonld",
+                "variableName": "blood_data_processing_interpolation",
+                "isAbout": "items/blood_data_processing_interpolation.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -114,8 +114,8 @@
                 ]
             },
             {
-                "variableName": "reference-volume",
-                "isAbout": "items/reference-volume.jsonld",
+                "variableName": "reference_volume",
+                "isAbout": "items/reference_volume.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -123,8 +123,8 @@
                 ]
             },
             {
-                "variableName": "outcome-measure",
-                "isAbout": "items/outcome-measure.jsonld",
+                "variableName": "outcome_measure",
+                "isAbout": "items/outcome_measure.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -141,8 +141,8 @@
                 ]
             },
             {
-                "variableName": "level-of-analysis",
-                "isAbout": "items/level-of-analysis.jsonld",
+                "variableName": "level_of_analysis",
+                "isAbout": "items/level_of_analysis.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -150,8 +150,8 @@
                 ]
             },
             {
-                "variableName": "kinetic-modelling-software",
-                "isAbout": "items/kinetic-modelling-software.jsonld",
+                "variableName": "kinetic_modelling_software",
+                "isAbout": "items/kinetic_modelling_software.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -159,8 +159,8 @@
                 ]
             },
             {
-                "variableName": "kinetic-modelling-software-version",
-                "isAbout": "items/kinetic-modelling-software-version.jsonld",
+                "variableName": "kinetic_modelling_software_version",
+                "isAbout": "items/kinetic_modelling_software_version.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -168,8 +168,8 @@
                 ]
             },
             {
-                "variableName": "moco-reference-image",
-                "isAbout": "items/moco-reference-image.jsonld",
+                "variableName": "moco_reference_image",
+                "isAbout": "items/moco_reference_image.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -177,8 +177,8 @@
                 ]
             },
             {
-                "variableName": "moco-cost-function",
-                "isAbout": "items/moco-cost-function.jsonld",
+                "variableName": "moco_cost_function",
+                "isAbout": "items/moco_cost_function.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -186,8 +186,8 @@
                 ]
             },
             {
-                "variableName": "moco-interpolation",
-                "isAbout": "items/moco-interpolation.jsonld",
+                "variableName": "moco_interpolation",
+                "isAbout": "items/moco_interpolation.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -195,8 +195,8 @@
                 ]
             },
             {
-                "variableName": "moco-smoothing",
-                "isAbout": "items/moco-smoothing.jsonld",
+                "variableName": "moco_smoothing",
+                "isAbout": "items/moco_smoothing.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -204,8 +204,8 @@
                 ]
             },
             {
-                "variableName": "moco-quality-control",
-                "isAbout": "items/moco-quality-control.jsonld",
+                "variableName": "moco_quality_control",
+                "isAbout": "items/moco_quality_control.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -213,8 +213,8 @@
                 ]
             },
             {
-                "variableName": "moco-software",
-                "isAbout": "items/moco-software.jsonld",
+                "variableName": "moco_software",
+                "isAbout": "items/moco_software.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -222,8 +222,8 @@
                 ]
             },
             {
-                "variableName": "moco-software-version",
-                "isAbout": "items/moco-software-version.jsonld",
+                "variableName": "moco_software_version",
+                "isAbout": "items/moco_software_version.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -231,8 +231,8 @@
                 ]
             },
             {
-                "variableName": "registration-reference-image",
-                "isAbout": "items/registration-reference-image.jsonld",
+                "variableName": "registration_reference_image",
+                "isAbout": "items/registration_reference_image.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -240,8 +240,8 @@
                 ]
             },
             {
-                "variableName": "registration-target-image",
-                "isAbout": "items/registration-target-image.jsonld",
+                "variableName": "registration_target_image",
+                "isAbout": "items/registration_target_image.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -249,8 +249,8 @@
                 ]
             },
             {
-                "variableName": "registration-cost-function",
-                "isAbout": "items/registration-cost-function.jsonld",
+                "variableName": "registration_cost_function",
+                "isAbout": "items/registration_cost_function.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -258,8 +258,8 @@
                 ]
             },
             {
-                "variableName": "registration-interpolation",
-                "isAbout": "items/registration-interpolation.jsonld",
+                "variableName": "registration_interpolation",
+                "isAbout": "items/registration_interpolation.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -267,8 +267,8 @@
                 ]
             },
             {
-                "variableName": "registration-smoothing",
-                "isAbout": "items/registration-smoothing.jsonld",
+                "variableName": "registration_smoothing",
+                "isAbout": "items/registration_smoothing.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -276,8 +276,8 @@
                 ]
             },
             {
-                "variableName": "resolution-of-reference-target",
-                "isAbout": "items/resolution-of-reference-target.jsonld",
+                "variableName": "resolution_of_reference_target",
+                "isAbout": "items/resolution_of_reference_target.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -285,8 +285,8 @@
                 ]
             },
             {
-                "variableName": "registration-quality-control",
-                "isAbout": "items/registration-quality-control.jsonld",
+                "variableName": "registration_quality_control",
+                "isAbout": "items/registration_quality_control.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -294,8 +294,8 @@
                 ]
             },
             {
-                "variableName": "registration-software",
-                "isAbout": "items/registration-software.jsonld",
+                "variableName": "registration_software",
+                "isAbout": "items/registration_software.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -303,8 +303,8 @@
                 ]
             },
             {
-                "variableName": "registration-software-version",
-                "isAbout": "items/registration-software-version.jsonld",
+                "variableName": "registration_software_version",
+                "isAbout": "items/registration_software_version.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -312,8 +312,8 @@
                 ]
             },
             {
-                "variableName": "smoothing-target-image",
-                "isAbout": "items/smoothing-target-image.jsonld",
+                "variableName": "smoothing_target_image",
+                "isAbout": "items/smoothing_target_image.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -321,8 +321,8 @@
                 ]
             },
             {
-                "variableName": "shape-of-smoothing-filter",
-                "isAbout": "items/shape-of-smoothing-filter.jsonld",
+                "variableName": "shape_of_smoothing_filter",
+                "isAbout": "items/shape_of_smoothing_filter.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -330,8 +330,8 @@
                 ]
             },
             {
-                "variableName": "size-of-smoothing-filter",
-                "isAbout": "items/size-of-smoothing-filter.jsonld",
+                "variableName": "size_of_smoothing_filter",
+                "isAbout": "items/size_of_smoothing_filter.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -339,8 +339,8 @@
                 ]
             },
             {
-                "variableName": "justification-for-smoothing-size",
-                "isAbout": "items/justification-for-smoothing-size.jsonld",
+                "variableName": "justification_for_smoothing_size",
+                "isAbout": "items/justification_for_smoothing_size.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -348,8 +348,8 @@
                 ]
             },
             {
-                "variableName": "space-of-smoothing",
-                "isAbout": "items/space-of-smoothing.jsonld",
+                "variableName": "space_of_smoothing",
+                "isAbout": "items/space_of_smoothing.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -357,8 +357,8 @@
                 ]
             },
             {
-                "variableName": "volumes-of-interest-obtained-from",
-                "isAbout": "items/volumes-of-interest-obtained-from.jsonld",
+                "variableName": "volumes_of_interest_obtained_from",
+                "isAbout": "items/volumes_of_interest_obtained_from.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -366,8 +366,8 @@
                 ]
             },
             {
-                "variableName": "volumes-of-interest-operational-criteria",
-                "isAbout": "items/volumes-of-interest-operational-criteria.jsonld",
+                "variableName": "volumes_of_interest_operational_criteria",
+                "isAbout": "items/volumes_of_interest_operational_criteria.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -375,8 +375,8 @@
                 ]
             },
             {
-                "variableName": "volumes-of-interest-mask",
-                "isAbout": "items/volumes-of-interest-mask.jsonld",
+                "variableName": "volumes_of_interest_mask",
+                "isAbout": "items/volumes_of_interest_mask.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -384,8 +384,8 @@
                 ]
             },
             {
-                "variableName": "volumes-of-interest-procedure",
-                "isAbout": "items/volumes-of-interest-procedure.jsonld",
+                "variableName": "volumes_of_interest_procedure",
+                "isAbout": "items/volumes_of_interest_procedure.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -393,8 +393,8 @@
                 ]
             },
             {
-                "variableName": "volumes-of-interest",
-                "isAbout": "items/volumes-of-interest.jsonld",
+                "variableName": "volumes_of_interest",
+                "isAbout": "items/volumes_of_interest.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -402,8 +402,8 @@
                 ]
             },
             {
-                "variableName": "volumes-of-interest-software",
-                "isAbout": "items/volumes-of-interest-software.jsonld",
+                "variableName": "volumes_of_interest_software",
+                "isAbout": "items/volumes_of_interest_software.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -411,8 +411,8 @@
                 ]
             },
             {
-                "variableName": "partial-volume-correction-technique",
-                "isAbout": "items/partial-volume-correction-technique.jsonld",
+                "variableName": "partial_volume_correction_technique",
+                "isAbout": "items/partial_volume_correction_technique.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -420,8 +420,8 @@
                 ]
             },
             {
-                "variableName": "partial-volume-correction-assumptions",
-                "isAbout": "items/partial-volume-correction-assumptions.jsonld",
+                "variableName": "partial_volume_correction_assumptions",
+                "isAbout": "items/partial_volume_correction_assumptions.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -429,8 +429,8 @@
                 ]
             },
             {
-                "variableName": "partial-volume-correction-software",
-                "isAbout": "items/partial-volume-correction-software.jsonld",
+                "variableName": "partial_volume_correction_software",
+                "isAbout": "items/partial_volume_correction_software.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -438,8 +438,8 @@
                 ]
             },
             {
-                "variableName": "partial-volume-correction-software-version",
-                "isAbout": "items/partial-volume-correction-software-version.jsonld",
+                "variableName": "partial_volume_correction_software_version",
+                "isAbout": "items/partial_volume_correction_software_version.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

@@ -25,26 +25,26 @@
             "items/discreteblooddensity.jsonld",
             "items/metaboliteavail.jsonld",
             "items/metabolitemethod.jsonld",
-            "items/radiolabeled-parent-compound-fraction.jsonld",
-            "items/metabolite-data-labels.jsonld",
-            "items/parent-fraction-units.jsonld",
-            "items/parent-fraction-measurement-error.jsonld",
-            "items/metabolite-analysis-timepoints.jsonld",
-            "items/fraction-of-radiometabolite-needing-quantitation.jsonld",
-            "items/error-on-above-measurement.jsonld",
-            "items/radiolabeled-metabolite-fractions.jsonld",
+            "items/radiolabeled_parent_compound_fraction.jsonld",
+            "items/metabolite_data_labels.jsonld",
+            "items/parent_fraction_units.jsonld",
+            "items/parent_fraction_measurement_error.jsonld",
+            "items/metabolite_analysis_timepoints.jsonld",
+            "items/fraction_of_radiometabolite_needing_quantitation.jsonld",
+            "items/error_on_above_measurement.jsonld",
+            "items/radiolabeled_metabolite_fractions.jsonld",
             "items/metaboliterecoverycorrectionapplied.jsonld",
             "items/plasmaavail.jsonld",
             "items/plasmafreefraction.jsonld",
-            "items/error-of-free-fraction-measurement.jsonld",
+            "items/error_of_free_fraction_measurement.jsonld",
             "items/plasmafreefractionmethod.jsonld",
-            "items/decay-corrected.jsonld",
-            "items/decay-correction-time.jsonld",
-            "items/plasma-data-type.jsonld",
-            "items/plasma-data-units.jsonld",
-            "items/hematocrit-value.jsonld",
-            "items/whole-blood-radioactivity.jsonld",
-            "items/plasma-to-whole-blood-ratio.jsonld"
+            "items/decay_corrected.jsonld",
+            "items/decay_correction_time.jsonld",
+            "items/plasma_data_type.jsonld",
+            "items/plasma_data_units.jsonld",
+            "items/hematocrit_value.jsonld",
+            "items/whole_blood_radioactivity.jsonld",
+            "items/plasma_to_whole_blood_ratio.jsonld"
         ],
         "addProperties": [
             {
@@ -147,8 +147,8 @@
                 ]
             },
             {
-                "variableName": "radiolabeled-parent-compound-fraction",
-                "isAbout": "items/radiolabeled-parent-compound-fraction.jsonld",
+                "variableName": "radiolabeled_parent_compound_fraction",
+                "isAbout": "items/radiolabeled_parent_compound_fraction.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -156,8 +156,8 @@
                 ]
             },
             {
-                "variableName": "metabolite-data-labels",
-                "isAbout": "items/metabolite-data-labels.jsonld",
+                "variableName": "metabolite_data_labels",
+                "isAbout": "items/metabolite_data_labels.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -165,8 +165,8 @@
                 ]
             },
             {
-                "variableName": "parent-fraction-units",
-                "isAbout": "items/parent-fraction-units.jsonld",
+                "variableName": "parent_fraction_units",
+                "isAbout": "items/parent_fraction_units.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -174,8 +174,8 @@
                 ]
             },
             {
-                "variableName": "parent-fraction-measurement-error",
-                "isAbout": "items/parent-fraction-measurement-error.jsonld",
+                "variableName": "parent_fraction_measurement_error",
+                "isAbout": "items/parent_fraction_measurement_error.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -183,8 +183,8 @@
                 ]
             },
             {
-                "variableName": "metabolite-analysis-timepoints",
-                "isAbout": "items/metabolite-analysis-timepoints.jsonld",
+                "variableName": "metabolite_analysis_timepoints",
+                "isAbout": "items/metabolite_analysis_timepoints.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -192,8 +192,8 @@
                 ]
             },
             {
-                "variableName": "fraction-of-radiometabolite-needing-quantitation",
-                "isAbout": "items/fraction-of-radiometabolite-needing-quantitation.jsonld",
+                "variableName": "fraction_of_radiometabolite_needing_quantitation",
+                "isAbout": "items/fraction_of_radiometabolite_needing_quantitation.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -201,8 +201,8 @@
                 ]
             },
             {
-                "variableName": "error-on-above-measurement",
-                "isAbout": "items/error-on-above-measurement.jsonld",
+                "variableName": "error_on_above_measurement",
+                "isAbout": "items/error_on_above_measurement.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -210,8 +210,8 @@
                 ]
             },
             {
-                "variableName": "radiolabeled-metabolite-fractions",
-                "isAbout": "items/radiolabeled-metabolite-fractions.jsonld",
+                "variableName": "radiolabeled_metabolite_fractions",
+                "isAbout": "items/radiolabeled_metabolite_fractions.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -246,8 +246,8 @@
                 ]
             },
             {
-                "variableName": "error-of-free-fraction-measurement",
-                "isAbout": "items/error-of-free-fraction-measurement.jsonld",
+                "variableName": "error_of_free_fraction_measurement",
+                "isAbout": "items/error_of_free_fraction_measurement.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -264,8 +264,8 @@
                 ]
             },
             {
-                "variableName": "decay-corrected",
-                "isAbout": "items/decay-corrected.jsonld",
+                "variableName": "decay_corrected",
+                "isAbout": "items/decay_corrected.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -273,8 +273,8 @@
                 ]
             },
             {
-                "variableName": "decay-correction-time",
-                "isAbout": "items/decay-correction-time.jsonld",
+                "variableName": "decay_correction_time",
+                "isAbout": "items/decay_correction_time.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -282,8 +282,8 @@
                 ]
             },
             {
-                "variableName": "plasma-data-type",
-                "isAbout": "items/plasma-data-type.jsonld",
+                "variableName": "plasma_data_type",
+                "isAbout": "items/plasma_data_type.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -291,8 +291,8 @@
                 ]
             },
             {
-                "variableName": "plasma-data-units",
-                "isAbout": "items/plasma-data-units.jsonld",
+                "variableName": "plasma_data_units",
+                "isAbout": "items/plasma_data_units.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -300,8 +300,8 @@
                 ]
             },
             {
-                "variableName": "hematocrit-value",
-                "isAbout": "items/hematocrit-value.jsonld",
+                "variableName": "hematocrit_value",
+                "isAbout": "items/hematocrit_value.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -309,8 +309,8 @@
                 ]
             },
             {
-                "variableName": "whole-blood-radioactivity",
-                "isAbout": "items/whole-blood-radioactivity.jsonld",
+                "variableName": "whole_blood_radioactivity",
+                "isAbout": "items/whole_blood_radioactivity.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -318,8 +318,8 @@
                 ]
             },
             {
-                "variableName": "plasma-to-whole-blood-ratio",
-                "isAbout": "items/plasma-to-whole-blood-ratio.jsonld",
+                "variableName": "plasma_to_whole_blood_ratio",
+                "isAbout": "items/plasma_to_whole_blood_ratio.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

@@ -9,35 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "text"
     },
     "question": {
         "en": "Were there any screening criteria for handiness?"
     },
     "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 2,
-        "choices": [
-            {
-                "name": {
-                    "en": "self report"
-                },
-                "value": 0
-            },
-            {
-                "name": {
-                    "en": "EHI"
-                },
-                "value": 1
-            },
-            {
-                "name": {
-                    "en": "Other"
-                },
-                "value": 2
-            }
-        ],
-        "multipleChoice": false
+        "valueType": "xsd:string",
+        "maxLength": 300
     }
 }

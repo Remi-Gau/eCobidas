@@ -14,25 +14,25 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/blood-sampling-device-read.jsonld",
-            "items/blood-sampling-device-measurement-time.jsonld",
-            "items/phantom-type.jsonld",
-            "items/phantom-volume.jsonld",
-            "items/radiotracer-isotope.jsonld",
-            "items/phantom-activity.jsonld",
-            "items/activity-time.jsonld",
-            "items/residual-activity.jsonld",
-            "items/residual-activity-time.jsonld",
-            "items/phantom-acquisition-time.jsonld",
-            "items/well-counter-sample-volumes.jsonld",
-            "items/well-counter-measurement-time.jsonld",
-            "items/well-counter-read.jsonld",
-            "items/phantom-data.jsonld"
+            "items/blood_sampling_device_read.jsonld",
+            "items/blood_sampling_device_measurement_time.jsonld",
+            "items/phantom_type.jsonld",
+            "items/phantom_volume.jsonld",
+            "items/radiotracer_isotope.jsonld",
+            "items/phantom_activity.jsonld",
+            "items/activity_time.jsonld",
+            "items/residual_activity.jsonld",
+            "items/residual_activity_time.jsonld",
+            "items/phantom_acquisition_time.jsonld",
+            "items/well_counter_sample_volumes.jsonld",
+            "items/well_counter_measurement_time.jsonld",
+            "items/well_counter_read.jsonld",
+            "items/phantom_data.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "blood-sampling-device-read",
-                "isAbout": "items/blood-sampling-device-read.jsonld",
+                "variableName": "blood_sampling_device_read",
+                "isAbout": "items/blood_sampling_device_read.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -40,8 +40,8 @@
                 ]
             },
             {
-                "variableName": "blood-sampling-device-measurement-time",
-                "isAbout": "items/blood-sampling-device-measurement-time.jsonld",
+                "variableName": "blood_sampling_device_measurement_time",
+                "isAbout": "items/blood_sampling_device_measurement_time.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -49,8 +49,8 @@
                 ]
             },
             {
-                "variableName": "phantom-type",
-                "isAbout": "items/phantom-type.jsonld",
+                "variableName": "phantom_type",
+                "isAbout": "items/phantom_type.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -58,8 +58,8 @@
                 ]
             },
             {
-                "variableName": "phantom-volume",
-                "isAbout": "items/phantom-volume.jsonld",
+                "variableName": "phantom_volume",
+                "isAbout": "items/phantom_volume.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -67,8 +67,8 @@
                 ]
             },
             {
-                "variableName": "radiotracer-isotope",
-                "isAbout": "items/radiotracer-isotope.jsonld",
+                "variableName": "radiotracer_isotope",
+                "isAbout": "items/radiotracer_isotope.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -76,8 +76,8 @@
                 ]
             },
             {
-                "variableName": "phantom-activity",
-                "isAbout": "items/phantom-activity.jsonld",
+                "variableName": "phantom_activity",
+                "isAbout": "items/phantom_activity.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -85,8 +85,8 @@
                 ]
             },
             {
-                "variableName": "activity-time",
-                "isAbout": "items/activity-time.jsonld",
+                "variableName": "activity_time",
+                "isAbout": "items/activity_time.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -94,8 +94,8 @@
                 ]
             },
             {
-                "variableName": "residual-activity",
-                "isAbout": "items/residual-activity.jsonld",
+                "variableName": "residual_activity",
+                "isAbout": "items/residual_activity.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -103,8 +103,8 @@
                 ]
             },
             {
-                "variableName": "residual-activity-time",
-                "isAbout": "items/residual-activity-time.jsonld",
+                "variableName": "residual_activity_time",
+                "isAbout": "items/residual_activity_time.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -112,8 +112,8 @@
                 ]
             },
             {
-                "variableName": "phantom-acquisition-time",
-                "isAbout": "items/phantom-acquisition-time.jsonld",
+                "variableName": "phantom_acquisition_time",
+                "isAbout": "items/phantom_acquisition_time.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -121,8 +121,8 @@
                 ]
             },
             {
-                "variableName": "well-counter-sample-volumes",
-                "isAbout": "items/well-counter-sample-volumes.jsonld",
+                "variableName": "well_counter_sample_volumes",
+                "isAbout": "items/well_counter_sample_volumes.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -130,8 +130,8 @@
                 ]
             },
             {
-                "variableName": "well-counter-measurement-time",
-                "isAbout": "items/well-counter-measurement-time.jsonld",
+                "variableName": "well_counter_measurement_time",
+                "isAbout": "items/well_counter_measurement_time.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -139,8 +139,8 @@
                 ]
             },
             {
-                "variableName": "well-counter-read",
-                "isAbout": "items/well-counter-read.jsonld",
+                "variableName": "well_counter_read",
+                "isAbout": "items/well_counter_read.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -148,8 +148,8 @@
                 ]
             },
             {
-                "variableName": "phantom-data",
-                "isAbout": "items/phantom-data.jsonld",
+                "variableName": "phantom_data",
+                "isAbout": "items/phantom_data.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

@@ -18,7 +18,7 @@
             "items/infusionspeed.jsonld",
             "items/injectedradioactivity.jsonld",
             "items/injectedmass.jsonld",
-            "items/moles-tracer-injected.jsonld",
+            "items/moles_tracer_injected.jsonld",
             "items/bodyweight.jsonld",
             "items/molaractivity.jsonld",
             "items/molaractivitymeastime.jsonld",
@@ -66,8 +66,8 @@
                 ]
             },
             {
-                "variableName": "moles-tracer-injected",
-                "isAbout": "items/moles-tracer-injected.jsonld",
+                "variableName": "moles_tracer_injected",
+                "isAbout": "items/moles_tracer_injected.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

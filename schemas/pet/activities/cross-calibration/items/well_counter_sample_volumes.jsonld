@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "well_counter_sample_volumes.jsonld",
+    "prefLabel": {
+        "en": "well counter sample volumes"
+    },
+    "description": "well counter sample volumes",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Well counter sample volumes"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

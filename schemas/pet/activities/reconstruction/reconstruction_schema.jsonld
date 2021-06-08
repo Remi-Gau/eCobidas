@@ -22,16 +22,16 @@
             "items/reconfiltertype.jsonld",
             "items/attenuationcorrection.jsonld",
             "items/reconfiltersize.jsonld",
-            "items/pet-voxel-size.jsonld",
-            "items/matrix-size.jsonld",
-            "items/frame-sequence.jsonld",
+            "items/pet_voxel_size.jsonld",
+            "items/matrix_size.jsonld",
+            "items/frame_sequence.jsonld",
             "items/scalefactor.jsonld",
             "items/scatterfraction.jsonld",
             "items/decaycorrectionfactor.jsonld",
             "items/promptrate.jsonld",
             "items/randomrate.jsonld",
             "items/singlesrate.jsonld",
-            "items/reconstruction-data-labels.jsonld",
+            "items/reconstruction_data_labels.jsonld",
             "items/attenuationcorrectionmethodreference.jsonld"
         ],
         "addProperties": [
@@ -108,8 +108,8 @@
                 ]
             },
             {
-                "variableName": "pet-voxel-size",
-                "isAbout": "items/pet-voxel-size.jsonld",
+                "variableName": "pet_voxel_size",
+                "isAbout": "items/pet_voxel_size.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -117,8 +117,8 @@
                 ]
             },
             {
-                "variableName": "matrix-size",
-                "isAbout": "items/matrix-size.jsonld",
+                "variableName": "matrix_size",
+                "isAbout": "items/matrix_size.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -126,8 +126,8 @@
                 ]
             },
             {
-                "variableName": "frame-sequence",
-                "isAbout": "items/frame-sequence.jsonld",
+                "variableName": "frame_sequence",
+                "isAbout": "items/frame_sequence.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -189,8 +189,8 @@
                 ]
             },
             {
-                "variableName": "reconstruction-data-labels",
-                "isAbout": "items/reconstruction-data-labels.jsonld",
+                "variableName": "reconstruction_data_labels",
+                "isAbout": "items/reconstruction_data_labels.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

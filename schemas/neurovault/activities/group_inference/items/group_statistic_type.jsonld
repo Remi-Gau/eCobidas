@@ -9,65 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "text"
     },
     "question": {
         "en": "Type of statistic that is the basis of the inference"
     },
     "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 7,
-        "choices": [
-            {
-                "name": {
-                    "en": "Z"
-                },
-                "value": 0
-            },
-            {
-                "name": {
-                    "en": "T"
-                },
-                "value": 1
-            },
-            {
-                "name": {
-                    "en": "F"
-                },
-                "value": 2
-            },
-            {
-                "name": {
-                    "en": "X2"
-                },
-                "value": 3
-            },
-            {
-                "name": {
-                    "en": "PostProb"
-                },
-                "value": 4
-            },
-            {
-                "name": {
-                    "en": "NonparametricP"
-                },
-                "value": 5
-            },
-            {
-                "name": {
-                    "en": "MonteCarloP"
-                },
-                "value": 6
-            },
-            {
-                "name": {
-                    "en": "Other"
-                },
-                "value": 7
-            }
-        ],
-        "multipleChoice": false
+        "valueType": "xsd:string",
+        "maxLength": 300
     }
 }
