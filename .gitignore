@@ -24,6 +24,3 @@ node_modules/*
 
 # set up
 **/*.egg-info
-
-# tests
-python/*/tests/outputs
