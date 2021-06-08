@@ -12,9 +12,6 @@
 # cd ../../reproschema-py
 # git checkout remi_schema_creator
 
-
-
-
 # DOWNLOAD and CREATE
 neurovault:
 	rm -rf inputs/csv/neurovault
@@ -22,6 +19,20 @@ neurovault:
 	sh download_tsv.sh neurovault neurovault
 	ecobidas_convert --schema neurovault
 	reproschema -l DEBUG validate schemas/neurovault
+
+pet:
+	rm -rf inputs/csv/pet
+	rm -rf schemas/pet
+	sh download_tsv.sh pet pet
+	ecobidas_convert --schema pet
+	reproschema -l DEBUG validate schemas/pet	
+
+eyetracking:
+	rm -rf inputs/csv/eyetracking
+	rm -rf schemas/eyetracking
+	sh download_tsv.sh eyetracking eyetracking
+	ecobidas_convert --schema eyetracking
+	reproschema -l DEBUG validate schemas/eyetracking		
 
 # DOWNLOAD
 
