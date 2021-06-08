@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "cross-calibration_schema.jsonld",
     "prefLabel": {
-        "en": "cross-calibration"
+        "en": "Cross-calibration"
     },
     "description": "cross-calibration",
     "schemaVersion": "1.0.0-rc4",
@@ -18,7 +18,7 @@
             "items/blood_sampling_device_measurement_time.jsonld",
             "items/phantom_type.jsonld",
             "items/phantom_volume.jsonld",
-            "items/radiotracer_isotope.jsonld",
+            "items/radiotracer-isotope.jsonld",
             "items/phantom_activity.jsonld",
             "items/activity_time.jsonld",
             "items/residual_activity.jsonld",
@@ -67,8 +67,8 @@
                 ]
             },
             {
-                "variableName": "radiotracer_isotope",
-                "isAbout": "items/radiotracer_isotope.jsonld",
+                "variableName": "radiotracer-isotope",
+                "isAbout": "items/radiotracer-isotope.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

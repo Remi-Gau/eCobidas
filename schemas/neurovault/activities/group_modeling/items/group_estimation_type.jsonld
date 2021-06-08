@@ -9,13 +9,35 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Estimation method used for model"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "ordinary least squares"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "generalized least squares"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
     }
 }

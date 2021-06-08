@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "time_schema.jsonld",
     "prefLabel": {
-        "en": "time"
+        "en": "Time"
     },
     "description": "time",
     "schemaVersion": "1.0.0-rc4",
@@ -14,18 +14,18 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/scandate.jsonld",
-            "items/timezero.jsonld",
-            "items/scanstart.jsonld",
-            "items/injectionstart.jsonld",
-            "items/injectionend.jsonld",
-            "items/frametimesstart.jsonld",
-            "items/frameduration.jsonld"
+            "items/ScanDate.jsonld",
+            "items/TimeZero.jsonld",
+            "items/ScanStart.jsonld",
+            "items/InjectionStart.jsonld",
+            "items/InjectionEnd.jsonld",
+            "items/FrameTimesStart.jsonld",
+            "items/FrameDuration.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "scandate",
-                "isAbout": "items/scandate.jsonld",
+                "variableName": "ScanDate",
+                "isAbout": "items/ScanDate.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -33,8 +33,8 @@
                 ]
             },
             {
-                "variableName": "timezero",
-                "isAbout": "items/timezero.jsonld",
+                "variableName": "TimeZero",
+                "isAbout": "items/TimeZero.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -42,8 +42,8 @@
                 ]
             },
             {
-                "variableName": "scanstart",
-                "isAbout": "items/scanstart.jsonld",
+                "variableName": "ScanStart",
+                "isAbout": "items/ScanStart.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -51,8 +51,8 @@
                 ]
             },
             {
-                "variableName": "injectionstart",
-                "isAbout": "items/injectionstart.jsonld",
+                "variableName": "InjectionStart",
+                "isAbout": "items/InjectionStart.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -60,8 +60,8 @@
                 ]
             },
             {
-                "variableName": "injectionend",
-                "isAbout": "items/injectionend.jsonld",
+                "variableName": "InjectionEnd",
+                "isAbout": "items/InjectionEnd.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -69,8 +69,8 @@
                 ]
             },
             {
-                "variableName": "frametimesstart",
-                "isAbout": "items/frametimesstart.jsonld",
+                "variableName": "FrameTimesStart",
+                "isAbout": "items/FrameTimesStart.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -78,8 +78,8 @@
                 ]
             },
             {
-                "variableName": "frameduration",
-                "isAbout": "items/frameduration.jsonld",
+                "variableName": "FrameDuration",
+                "isAbout": "items/FrameDuration.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

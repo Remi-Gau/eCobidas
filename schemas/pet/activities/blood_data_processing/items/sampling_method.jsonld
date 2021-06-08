@@ -9,13 +9,53 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Sampling Method"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 5,
+        "choices": [
+            {
+                "name": {
+                    "en": "online system"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "manual"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "venous"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "arterial"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "image derived"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 5
+            }
+        ],
+        "multipleChoice": false
     }
 }

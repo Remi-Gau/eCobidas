@@ -3,13 +3,13 @@
     "@type": "reproschema:Activity",
     "@id": "intersubject_registration_schema.jsonld",
     "prefLabel": {
-        "en": "intersubject registration"
+        "en": "Intersubject registration"
     },
     "description": "intersubject registration",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "Describe your spatial normalization"
     },
     "ui": {
         "shuffle": false,

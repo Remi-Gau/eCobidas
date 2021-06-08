@@ -3,13 +3,13 @@
     "@type": "reproschema:Activity",
     "@id": "participants_schema.jsonld",
     "prefLabel": {
-        "en": "participants"
+        "en": "Participants"
     },
     "description": "participants",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "Describe your participant sample"
     },
     "ui": {
         "shuffle": false,

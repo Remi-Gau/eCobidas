@@ -1,0 +1,79 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "data_repository.jsonld",
+    "prefLabel": {
+        "en": "data repository"
+    },
+    "description": "data repository",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "From which repository(s) is this data listed as being available from (i.e. NITRC or OpenNeuro, etc.)?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 8,
+        "choices": [
+            {
+                "name": {
+                    "en": "ABIDE"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "ABIDE 2"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "NITRC"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "UK Biobank"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "FCP"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "HCP"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "COINS"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "LORIS"
+                },
+                "value": 7
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 8
+            }
+        ],
+        "multipleChoice": false
+    }
+}

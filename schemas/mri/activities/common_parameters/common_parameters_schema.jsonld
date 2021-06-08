@@ -19,12 +19,12 @@
             "items/imaging_type.jsonld",
             "items/number_of_shots.jsonld",
             "items/partial_fourrier_scheme.jsonld",
-            "items/echo_time.jsonld",
-            "items/repetition_time.jsonld",
-            "items/flip_angle.jsonld",
+            "items/EchoTime.jsonld",
+            "items/RepetitionTime.jsonld",
+            "items/FlipAngle.jsonld",
             "items/voxel_dimension.jsonld",
             "items/acquisition_time.jsonld",
-            "items/inversion_time.jsonld",
+            "items/InversionTime.jsonld",
             "items/field_of_view.jsonld",
             "items/in-plane_matrix_size.jsonld",
             "items/number_of_slices.jsonld",
@@ -33,7 +33,7 @@
             "items/3d_matrix_size.jsonld",
             "items/slice_orientation.jsonld",
             "items/slice_alignement.jsonld",
-            "items/phase_encoding.jsonld",
+            "items/PhaseEncodingDirection.jsonld",
             "items/3d_phase_encoding.jsonld",
             "items/phase_encoding_reversal.jsonld",
             "items/parallel_imaging_used.jsonld",
@@ -94,8 +94,8 @@
                 ]
             },
             {
-                "variableName": "echo_time",
-                "isAbout": "items/echo_time.jsonld",
+                "variableName": "EchoTime",
+                "isAbout": "items/EchoTime.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -103,8 +103,8 @@
                 ]
             },
             {
-                "variableName": "repetition_time",
-                "isAbout": "items/repetition_time.jsonld",
+                "variableName": "RepetitionTime",
+                "isAbout": "items/RepetitionTime.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -112,8 +112,8 @@
                 ]
             },
             {
-                "variableName": "flip_angle",
-                "isAbout": "items/flip_angle.jsonld",
+                "variableName": "FlipAngle",
+                "isAbout": "items/FlipAngle.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -139,8 +139,8 @@
                 ]
             },
             {
-                "variableName": "inversion_time",
-                "isAbout": "items/inversion_time.jsonld",
+                "variableName": "InversionTime",
+                "isAbout": "items/InversionTime.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -220,8 +220,8 @@
                 ]
             },
             {
-                "variableName": "phase_encoding",
-                "isAbout": "items/phase_encoding.jsonld",
+                "variableName": "PhaseEncodingDirection",
+                "isAbout": "items/PhaseEncodingDirection.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

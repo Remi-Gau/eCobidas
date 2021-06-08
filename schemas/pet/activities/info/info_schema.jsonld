@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "info_schema.jsonld",
     "prefLabel": {
-        "en": "info"
+        "en": "Info"
     },
     "description": "info",
     "schemaVersion": "1.0.0-rc4",
@@ -14,20 +14,20 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/modality.jsonld",
-            "items/manufacturer.jsonld",
-            "items/manufacturersmodelname.jsonld",
-            "items/anaesthesia.jsonld",
-            "items/bodypart.jsonld",
-            "items/unit.jsonld",
+            "items/Modality.jsonld",
+            "items/Manufacturer.jsonld",
+            "items/ManufacturersModelName.jsonld",
+            "items/Anaesthesia.jsonld",
+            "items/BodyPart.jsonld",
+            "items/Unit.jsonld",
             "items/experiment_date.jsonld",
-            "items/imaging_center_site.jsonld",
+            "items/imaging_center-site.jsonld",
             "items/imaging_department.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "modality",
-                "isAbout": "items/modality.jsonld",
+                "variableName": "Modality",
+                "isAbout": "items/Modality.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -35,8 +35,8 @@
                 ]
             },
             {
-                "variableName": "manufacturer",
-                "isAbout": "items/manufacturer.jsonld",
+                "variableName": "Manufacturer",
+                "isAbout": "items/Manufacturer.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -44,8 +44,8 @@
                 ]
             },
             {
-                "variableName": "manufacturersmodelname",
-                "isAbout": "items/manufacturersmodelname.jsonld",
+                "variableName": "ManufacturersModelName",
+                "isAbout": "items/ManufacturersModelName.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -53,8 +53,8 @@
                 ]
             },
             {
-                "variableName": "anaesthesia",
-                "isAbout": "items/anaesthesia.jsonld",
+                "variableName": "Anaesthesia",
+                "isAbout": "items/Anaesthesia.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -62,8 +62,8 @@
                 ]
             },
             {
-                "variableName": "bodypart",
-                "isAbout": "items/bodypart.jsonld",
+                "variableName": "BodyPart",
+                "isAbout": "items/BodyPart.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -71,8 +71,8 @@
                 ]
             },
             {
-                "variableName": "unit",
-                "isAbout": "items/unit.jsonld",
+                "variableName": "Unit",
+                "isAbout": "items/Unit.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -89,8 +89,8 @@
                 ]
             },
             {
-                "variableName": "imaging_center_site",
-                "isAbout": "items/imaging_center_site.jsonld",
+                "variableName": "imaging_center-site",
+                "isAbout": "items/imaging_center-site.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
         "en": "The software used to pre-process the eye-tracking data"
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 18,
+        "maxValue": 17,
         "choices": [
             {
                 "name": {
@@ -123,15 +123,9 @@
             },
             {
                 "name": {
-                    "en": "other"
-                },
-                "value": 17
-            },
-            {
-                "name": {
                     "en": "Other"
                 },
-                "value": 18
+                "value": 17
             }
         ],
         "multipleChoice": false

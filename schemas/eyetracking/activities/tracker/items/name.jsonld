@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
         "en": "The eye-tracker used"
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 43,
+        "maxValue": 42,
         "choices": [
             {
                 "name": {
@@ -267,21 +267,15 @@
             },
             {
                 "name": {
-                    "en": "View Point Eye Frame PC60"
+                    "en": "View Point Eye Frame PC60 "
                 },
                 "value": 41
             },
             {
                 "name": {
-                    "en": "other"
-                },
-                "value": 42
-            },
-            {
-                "name": {
                     "en": "Other"
                 },
-                "value": 43
+                "value": 42
             }
         ],
         "multipleChoice": false

@@ -3,36 +3,36 @@
     "@type": "reproschema:Activity",
     "@id": "mri_acquisition_schema.jsonld",
     "prefLabel": {
-        "en": "mri acquisition"
+        "en": "MRI acquisition"
     },
     "description": "mri acquisition",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "Describe your acquisition parameters"
     },
     "ui": {
         "shuffle": false,
         "order": [
-            "items/scanner_make.jsonld",
-            "items/scanner_model.jsonld",
-            "items/field_strength.jsonld",
-            "items/pulse_sequence.jsonld",
+            "items/Manufacturer.jsonld",
+            "items/ManufacturersModelName.jsonld",
+            "items/MagneticFieldStrength.jsonld",
+            "items/PulseSequenceType.jsonld",
             "items/parallel_imaging.jsonld",
             "items/field_of_view.jsonld",
             "items/matrix_size.jsonld",
             "items/slice_thickness.jsonld",
             "items/skip_factor.jsonld",
             "items/acquisition_orientation.jsonld",
-            "items/order_of_acquisition.jsonld",
-            "items/repetition_time.jsonld",
-            "items/echo_time.jsonld",
-            "items/flip_angle.jsonld"
+            "items/SliceTiming.jsonld",
+            "items/RepetitionTime.jsonld",
+            "items/EchoTime.jsonld",
+            "items/FlipAngle.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "scanner_make",
-                "isAbout": "items/scanner_make.jsonld",
+                "variableName": "Manufacturer",
+                "isAbout": "items/Manufacturer.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -40,8 +40,8 @@
                 ]
             },
             {
-                "variableName": "scanner_model",
-                "isAbout": "items/scanner_model.jsonld",
+                "variableName": "ManufacturersModelName",
+                "isAbout": "items/ManufacturersModelName.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -49,8 +49,8 @@
                 ]
             },
             {
-                "variableName": "field_strength",
-                "isAbout": "items/field_strength.jsonld",
+                "variableName": "MagneticFieldStrength",
+                "isAbout": "items/MagneticFieldStrength.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -58,8 +58,8 @@
                 ]
             },
             {
-                "variableName": "pulse_sequence",
-                "isAbout": "items/pulse_sequence.jsonld",
+                "variableName": "PulseSequenceType",
+                "isAbout": "items/PulseSequenceType.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -121,8 +121,8 @@
                 ]
             },
             {
-                "variableName": "order_of_acquisition",
-                "isAbout": "items/order_of_acquisition.jsonld",
+                "variableName": "SliceTiming",
+                "isAbout": "items/SliceTiming.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -130,8 +130,8 @@
                 ]
             },
             {
-                "variableName": "repetition_time",
-                "isAbout": "items/repetition_time.jsonld",
+                "variableName": "RepetitionTime",
+                "isAbout": "items/RepetitionTime.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -139,8 +139,8 @@
                 ]
             },
             {
-                "variableName": "echo_time",
-                "isAbout": "items/echo_time.jsonld",
+                "variableName": "EchoTime",
+                "isAbout": "items/EchoTime.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -148,8 +148,8 @@
                 ]
             },
             {
-                "variableName": "flip_angle",
-                "isAbout": "items/flip_angle.jsonld",
+                "variableName": "FlipAngle",
+                "isAbout": "items/FlipAngle.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

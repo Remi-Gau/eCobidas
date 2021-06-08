@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
         "en": "Event detection procedure"
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 2,
         "choices": [
             {
                 "name": {
@@ -33,15 +33,9 @@
             },
             {
                 "name": {
-                    "en": "other"
-                },
-                "value": 2
-            },
-            {
-                "name": {
                     "en": "Other"
                 },
-                "value": 3
+                "value": 2
             }
         ],
         "multipleChoice": false

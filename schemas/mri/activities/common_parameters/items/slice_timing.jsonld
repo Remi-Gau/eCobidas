@@ -9,13 +9,47 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Specify the slice acquisition order"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 4,
+        "choices": [
+            {
+                "name": {
+                    "en": "interleaved ascending"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "interleaved descending"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "sequential ascending"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "sequential descending"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 4
+            }
+        ],
+        "multipleChoice": false
     }
 }

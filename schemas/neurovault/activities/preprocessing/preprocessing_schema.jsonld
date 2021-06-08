@@ -3,19 +3,19 @@
     "@type": "reproschema:Activity",
     "@id": "preprocessing_schema.jsonld",
     "prefLabel": {
-        "en": "preprocessing"
+        "en": "Preprocessing"
     },
     "description": "preprocessing",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "Describe your preprocessing"
     },
     "ui": {
         "shuffle": false,
         "order": [
-            "items/software_package.jsonld",
-            "items/software_version.jsonld",
+            "items/SoftwareName.jsonld",
+            "items/SoftwareVersion.jsonld",
             "items/order_of_preprocessing_operations.jsonld",
             "items/quality_control.jsonld",
             "items/used_b0_unwarping.jsonld",
@@ -31,8 +31,8 @@
         ],
         "addProperties": [
             {
-                "variableName": "software_package",
-                "isAbout": "items/software_package.jsonld",
+                "variableName": "SoftwareName",
+                "isAbout": "items/SoftwareName.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -40,8 +40,8 @@
                 ]
             },
             {
-                "variableName": "software_version",
-                "isAbout": "items/software_version.jsonld",
+                "variableName": "SoftwareVersion",
+                "isAbout": "items/SoftwareVersion.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

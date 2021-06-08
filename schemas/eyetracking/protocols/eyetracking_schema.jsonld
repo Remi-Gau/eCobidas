@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "landingPage": {
-        "@id": "README-en.md",
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_eyetracker-en.md ",
         "inLanguage": "en"
     },
     "preamble": {
@@ -36,7 +36,7 @@
                 "variableName": "introduction",
                 "isAbout": "../activities/introduction/introduction_schema.jsonld",
                 "prefLabel": {
-                    "en": "introduction"
+                    "en": "Introduction"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -48,7 +48,7 @@
                 "variableName": "tracker",
                 "isAbout": "../activities/tracker/tracker_schema.jsonld",
                 "prefLabel": {
-                    "en": "tracker"
+                    "en": "Tracker"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -60,7 +60,7 @@
                 "variableName": "monitor",
                 "isAbout": "../activities/monitor/monitor_schema.jsonld",
                 "prefLabel": {
-                    "en": "monitor"
+                    "en": "Monitor"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -72,7 +72,7 @@
                 "variableName": "software",
                 "isAbout": "../activities/software/software_schema.jsonld",
                 "prefLabel": {
-                    "en": "software"
+                    "en": "Software"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -84,7 +84,7 @@
                 "variableName": "aoi_definition",
                 "isAbout": "../activities/aoi_definition/aoi_definition_schema.jsonld",
                 "prefLabel": {
-                    "en": "aoi definition"
+                    "en": "AOI definition"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -96,7 +96,7 @@
                 "variableName": "setup",
                 "isAbout": "../activities/setup/setup_schema.jsonld",
                 "prefLabel": {
-                    "en": "setup"
+                    "en": "Setup"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -108,7 +108,7 @@
                 "variableName": "calibration",
                 "isAbout": "../activities/calibration/calibration_schema.jsonld",
                 "prefLabel": {
-                    "en": "calibration"
+                    "en": "Calibration"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -120,7 +120,7 @@
                 "variableName": "participants",
                 "isAbout": "../activities/participants/participants_schema.jsonld",
                 "prefLabel": {
-                    "en": "participants"
+                    "en": "Participants"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -132,7 +132,7 @@
                 "variableName": "data_quality",
                 "isAbout": "../activities/data_quality/data_quality_schema.jsonld",
                 "prefLabel": {
-                    "en": "data quality"
+                    "en": "Data quality"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -144,7 +144,7 @@
                 "variableName": "dependent_measures",
                 "isAbout": "../activities/dependent_measures/dependent_measures_schema.jsonld",
                 "prefLabel": {
-                    "en": "dependent measures"
+                    "en": "Dependent measures"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -156,7 +156,7 @@
                 "variableName": "preprocessing",
                 "isAbout": "../activities/preprocessing/preprocessing_schema.jsonld",
                 "prefLabel": {
-                    "en": "preprocessing"
+                    "en": "Preprocessing"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -168,7 +168,7 @@
                 "variableName": "discussion",
                 "isAbout": "../activities/discussion/discussion_schema.jsonld",
                 "prefLabel": {
-                    "en": "discussion"
+                    "en": "Discussion"
                 },
                 "isVis": true,
                 "requiredValue": false,

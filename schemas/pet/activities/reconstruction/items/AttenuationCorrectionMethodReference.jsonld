@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "AttenuationCorrectionMethodReference.jsonld",
+    "prefLabel": {
+        "en": "AttenuationCorrectionMethodReference"
+    },
+    "description": "AttenuationCorrectionMethodReference",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Reference paper for the attenuation correction method used."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

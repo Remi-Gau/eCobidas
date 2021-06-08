@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "preprocessing_schema.jsonld",
     "prefLabel": {
-        "en": "preprocessing"
+        "en": "Preprocessing"
     },
     "description": "preprocessing",
     "schemaVersion": "1.0.0-rc4",

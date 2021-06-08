@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "landingPage": {
-        "@id": "README-en.md",
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_eCOBIDAS-en.md",
         "inLanguage": "en"
     },
     "preamble": {
@@ -25,7 +25,7 @@
                 "variableName": "behavior",
                 "isAbout": "../activities/behavior/behavior_schema.jsonld",
                 "prefLabel": {
-                    "en": "behavior"
+                    "en": "Behavior"
                 },
                 "isVis": true,
                 "requiredValue": false,

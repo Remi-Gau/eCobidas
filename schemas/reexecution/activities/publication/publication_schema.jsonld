@@ -1,0 +1,65 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "publication_schema.jsonld",
+    "prefLabel": {
+        "en": "publication"
+    },
+    "description": "publication",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/rater_ID.jsonld",
+            "items/pubmed_ID.jsonld",
+            "items/publication_DOI.jsonld",
+            "items/publiction_URL.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "rater_ID",
+                "isAbout": "items/rater_ID.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "pubmed_ID",
+                "isAbout": "items/pubmed_ID.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "publication_DOI",
+                "isAbout": "items/publication_DOI.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "publiction_URL",
+                "isAbout": "items/publiction_URL.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

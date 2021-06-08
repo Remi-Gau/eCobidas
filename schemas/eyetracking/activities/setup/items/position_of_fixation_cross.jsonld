@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
         "en": "Position of the fixation cross"
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 5,
+        "maxValue": 4,
         "choices": [
             {
                 "name": {
@@ -45,15 +45,9 @@
             },
             {
                 "name": {
-                    "en": "other"
-                },
-                "value": 4
-            },
-            {
-                "name": {
                     "en": "Other"
                 },
-                "value": 5
+                "value": 4
             }
         ],
         "multipleChoice": false

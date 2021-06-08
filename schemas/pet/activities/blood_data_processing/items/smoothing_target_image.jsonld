@@ -17,19 +17,13 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 1,
+        "maxValue": 0,
         "choices": [
             {
                 "name": {
                     "en": "4D PET Image"
                 },
                 "value": 0
-            },
-            {
-                "name": {
-                    "en": "Other"
-                },
-                "value": 1
             }
         ],
         "multipleChoice": false

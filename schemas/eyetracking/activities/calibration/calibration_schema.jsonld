@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "calibration_schema.jsonld",
     "prefLabel": {
-        "en": "calibration"
+        "en": "Calibration"
     },
     "description": "calibration",
     "schemaVersion": "1.0.0-rc4",

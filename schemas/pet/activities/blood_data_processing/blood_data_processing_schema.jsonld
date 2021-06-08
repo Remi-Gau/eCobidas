@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "blood_data_processing_schema.jsonld",
     "prefLabel": {
-        "en": "blood data processing"
+        "en": "Blood Data Processing"
     },
     "description": "blood data processing",
     "schemaVersion": "1.0.0-rc4",
@@ -38,7 +38,7 @@
             "items/registration_cost_function.jsonld",
             "items/registration_interpolation.jsonld",
             "items/registration_smoothing.jsonld",
-            "items/resolution_of_reference_target.jsonld",
+            "items/resolution_of_reference-target.jsonld",
             "items/registration_quality_control.jsonld",
             "items/registration_software.jsonld",
             "items/registration_software_version.jsonld",
@@ -276,8 +276,8 @@
                 ]
             },
             {
-                "variableName": "resolution_of_reference_target",
-                "isAbout": "items/resolution_of_reference_target.jsonld",
+                "variableName": "resolution_of_reference-target",
+                "isAbout": "items/resolution_of_reference-target.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

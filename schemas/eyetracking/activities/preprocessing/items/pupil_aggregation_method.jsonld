@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
         "en": "Specification of the algorithm to calculate the pupil size"
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 6,
+        "maxValue": 5,
         "choices": [
             {
                 "name": {
@@ -45,21 +45,15 @@
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "not applicable (because no pupil measure was used) "
                 },
                 "value": 4
             },
             {
                 "name": {
-                    "en": "not applicable (because no pupil measure was used) "
-                },
-                "value": 5
-            },
-            {
-                "name": {
                     "en": "Other"
                 },
-                "value": 6
+                "value": 5
             }
         ],
         "multipleChoice": false

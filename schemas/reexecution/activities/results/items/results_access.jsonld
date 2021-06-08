@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "results_access.jsonld",
+    "prefLabel": {
+        "en": "results access"
+    },
+    "description": "results access",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "How are the results accessed?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "Supplementary information (with the publication)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Upon request"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "Repository"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

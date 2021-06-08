@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "statistics_OS_class.jsonld",
+    "prefLabel": {
+        "en": "statistics OS class"
+    },
+    "description": "statistics OS class",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Which class of operating system was indicated for the statistical analysis?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "windows"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "macOS"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "linux"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

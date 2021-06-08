@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "TimeZero.jsonld",
+    "prefLabel": {
+        "en": "TimeZero"
+    },
+    "description": "TimeZero",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "timeRange"
+    },
+    "question": {
+        "en": "Time zero to which all scan and/or blood measurements have been adjusted to."
+    },
+    "responseOptions": {
+        "valueType": "xsd:datetime"
+    }
+}

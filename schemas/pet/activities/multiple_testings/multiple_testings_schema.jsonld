@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "multiple_testings_schema.jsonld",
     "prefLabel": {
-        "en": "multiple testings"
+        "en": "Multiple Testings"
     },
     "description": "multiple testings",
     "schemaVersion": "1.0.0-rc4",

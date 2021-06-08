@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "introduction_schema.jsonld",
     "prefLabel": {
-        "en": "introduction"
+        "en": "Introduction"
     },
     "description": "introduction",
     "schemaVersion": "1.0.0-rc4",

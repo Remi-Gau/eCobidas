@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "monitor_schema.jsonld",
     "prefLabel": {
-        "en": "monitor"
+        "en": "Monitor"
     },
     "description": "monitor",
     "schemaVersion": "1.0.0-rc4",

@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "software_schema.jsonld",
     "prefLabel": {
-        "en": "software"
+        "en": "Software"
     },
     "description": "software",
     "schemaVersion": "1.0.0-rc4",

@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "radiotracer_schema.jsonld",
     "prefLabel": {
-        "en": "radiotracer"
+        "en": "Radiotracer"
     },
     "description": "radiotracer",
     "schemaVersion": "1.0.0-rc4",
@@ -14,20 +14,20 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/pharmaceuticaldoseregimen.jsonld",
-            "items/tracername.jsonld",
-            "items/tracerradlex.jsonld",
-            "items/tracersnomed.jsonld",
-            "items/pharmaceuticalname.jsonld",
-            "items/tracerradionuclide.jsonld",
-            "items/tracermolecularweight.jsonld",
-            "items/pharmaceuticaldosetime.jsonld",
-            "items/pharmaceuticaldoseamount.jsonld"
+            "items/PharmaceuticalDoseRegimen.jsonld",
+            "items/TracerName.jsonld",
+            "items/TracerRadLex.jsonld",
+            "items/TracerSNOMED.jsonld",
+            "items/PharmaceuticalName.jsonld",
+            "items/TracerRadionuclide.jsonld",
+            "items/TracerMolecularWeight.jsonld",
+            "items/PharmaceuticalDoseTime.jsonld",
+            "items/PharmaceuticalDoseAmount.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "pharmaceuticaldoseregimen",
-                "isAbout": "items/pharmaceuticaldoseregimen.jsonld",
+                "variableName": "PharmaceuticalDoseRegimen",
+                "isAbout": "items/PharmaceuticalDoseRegimen.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -35,8 +35,8 @@
                 ]
             },
             {
-                "variableName": "tracername",
-                "isAbout": "items/tracername.jsonld",
+                "variableName": "TracerName",
+                "isAbout": "items/TracerName.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -44,8 +44,8 @@
                 ]
             },
             {
-                "variableName": "tracerradlex",
-                "isAbout": "items/tracerradlex.jsonld",
+                "variableName": "TracerRadLex",
+                "isAbout": "items/TracerRadLex.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -53,8 +53,8 @@
                 ]
             },
             {
-                "variableName": "tracersnomed",
-                "isAbout": "items/tracersnomed.jsonld",
+                "variableName": "TracerSNOMED",
+                "isAbout": "items/TracerSNOMED.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -62,8 +62,8 @@
                 ]
             },
             {
-                "variableName": "pharmaceuticalname",
-                "isAbout": "items/pharmaceuticalname.jsonld",
+                "variableName": "PharmaceuticalName",
+                "isAbout": "items/PharmaceuticalName.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -71,8 +71,8 @@
                 ]
             },
             {
-                "variableName": "tracerradionuclide",
-                "isAbout": "items/tracerradionuclide.jsonld",
+                "variableName": "TracerRadionuclide",
+                "isAbout": "items/TracerRadionuclide.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -80,8 +80,8 @@
                 ]
             },
             {
-                "variableName": "tracermolecularweight",
-                "isAbout": "items/tracermolecularweight.jsonld",
+                "variableName": "TracerMolecularWeight",
+                "isAbout": "items/TracerMolecularWeight.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -89,8 +89,8 @@
                 ]
             },
             {
-                "variableName": "pharmaceuticaldosetime",
-                "isAbout": "items/pharmaceuticaldosetime.jsonld",
+                "variableName": "PharmaceuticalDoseTime",
+                "isAbout": "items/PharmaceuticalDoseTime.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -98,8 +98,8 @@
                 ]
             },
             {
-                "variableName": "pharmaceuticaldoseamount",
-                "isAbout": "items/pharmaceuticaldoseamount.jsonld",
+                "variableName": "PharmaceuticalDoseAmount",
+                "isAbout": "items/PharmaceuticalDoseAmount.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

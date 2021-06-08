@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "external_motion_correction_schema.jsonld",
     "prefLabel": {
-        "en": "external motion correction"
+        "en": "External Motion Correction"
     },
     "description": "external motion correction",
     "schemaVersion": "1.0.0-rc4",

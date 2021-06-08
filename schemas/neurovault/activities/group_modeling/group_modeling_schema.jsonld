@@ -3,13 +3,13 @@
     "@type": "reproschema:Activity",
     "@id": "group_modeling_schema.jsonld",
     "prefLabel": {
-        "en": "group modeling"
+        "en": "Group modeling"
     },
     "description": "group modeling",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "Describe the group level analyisis"
     },
     "ui": {
         "shuffle": false,

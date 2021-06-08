@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
         "en": "The relative size of AOIs and Content within AOIs"
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 5,
+        "maxValue": 4,
         "choices": [
             {
                 "name": {
@@ -39,21 +39,15 @@
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": " not applicable (because no AOIs/ROIs were generated) "
                 },
                 "value": 3
             },
             {
                 "name": {
-                    "en": "not applicable (because no AOIs/ROIs were generated) "
-                },
-                "value": 4
-            },
-            {
-                "name": {
                     "en": "Other"
                 },
-                "value": 5
+                "value": 4
             }
         ],
         "multipleChoice": false

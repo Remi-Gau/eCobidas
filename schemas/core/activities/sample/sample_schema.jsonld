@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "sample_schema.jsonld",
     "prefLabel": {
-        "en": "sample"
+        "en": "Sample"
     },
     "description": "sample",
     "schemaVersion": "1.0.0-rc4",

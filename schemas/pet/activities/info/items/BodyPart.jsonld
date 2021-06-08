@@ -1,0 +1,103 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "BodyPart.jsonld",
+    "prefLabel": {
+        "en": "BodyPart"
+    },
+    "description": "BodyPart",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Name of the organ / body region scanned."
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 12,
+        "choices": [
+            {
+                "name": {
+                    "en": " brain"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "neck"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "torso"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "cardiac"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "gut"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "hip"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "leg"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "knee"
+                },
+                "value": 7
+            },
+            {
+                "name": {
+                    "en": "foot"
+                },
+                "value": 8
+            },
+            {
+                "name": {
+                    "en": "hand"
+                },
+                "value": 9
+            },
+            {
+                "name": {
+                    "en": "arm"
+                },
+                "value": 10
+            },
+            {
+                "name": {
+                    "en": "lung "
+                },
+                "value": 11
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 12
+            }
+        ],
+        "multipleChoice": false
+    }
+}

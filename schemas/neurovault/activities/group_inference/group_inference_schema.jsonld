@@ -3,13 +3,13 @@
     "@type": "reproschema:Activity",
     "@id": "group_inference_schema.jsonld",
     "prefLabel": {
-        "en": "group inference"
+        "en": "Group inference"
     },
     "description": "group inference",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "Describe your statistical inference"
     },
     "ui": {
         "shuffle": false,

@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "radiochem_schema.jsonld",
     "prefLabel": {
-        "en": "radiochem"
+        "en": "Radiochem"
     },
     "description": "radiochem",
     "schemaVersion": "1.0.0-rc4",
@@ -14,24 +14,24 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/modeofadministration.jsonld",
-            "items/infusionspeed.jsonld",
-            "items/injectedradioactivity.jsonld",
-            "items/injectedmass.jsonld",
+            "items/ModeOfAdministration.jsonld",
+            "items/InfusionSpeed.jsonld",
+            "items/InjectedRadioactivity.jsonld",
+            "items/InjectedMass.jsonld",
             "items/moles_tracer_injected.jsonld",
             "items/bodyweight.jsonld",
-            "items/molaractivity.jsonld",
-            "items/molaractivitymeastime.jsonld",
-            "items/specificradioactivity.jsonld",
-            "items/specificradioactivitymeastime.jsonld",
-            "items/purity.jsonld",
-            "items/injectedvolume.jsonld",
+            "items/MolarActivity.jsonld",
+            "items/MolarActivityMeasTime.jsonld",
+            "items/SpecificRadioactivity.jsonld",
+            "items/SpecificRadioactivityMeasTime.jsonld",
+            "items/Purity.jsonld",
+            "items/InjectedVolume.jsonld",
             "items/formulation.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "modeofadministration",
-                "isAbout": "items/modeofadministration.jsonld",
+                "variableName": "ModeOfAdministration",
+                "isAbout": "items/ModeOfAdministration.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -39,8 +39,8 @@
                 ]
             },
             {
-                "variableName": "infusionspeed",
-                "isAbout": "items/infusionspeed.jsonld",
+                "variableName": "InfusionSpeed",
+                "isAbout": "items/InfusionSpeed.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -48,8 +48,8 @@
                 ]
             },
             {
-                "variableName": "injectedradioactivity",
-                "isAbout": "items/injectedradioactivity.jsonld",
+                "variableName": "InjectedRadioactivity",
+                "isAbout": "items/InjectedRadioactivity.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -57,8 +57,8 @@
                 ]
             },
             {
-                "variableName": "injectedmass",
-                "isAbout": "items/injectedmass.jsonld",
+                "variableName": "InjectedMass",
+                "isAbout": "items/InjectedMass.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -84,8 +84,8 @@
                 ]
             },
             {
-                "variableName": "molaractivity",
-                "isAbout": "items/molaractivity.jsonld",
+                "variableName": "MolarActivity",
+                "isAbout": "items/MolarActivity.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -93,8 +93,8 @@
                 ]
             },
             {
-                "variableName": "molaractivitymeastime",
-                "isAbout": "items/molaractivitymeastime.jsonld",
+                "variableName": "MolarActivityMeasTime",
+                "isAbout": "items/MolarActivityMeasTime.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -102,8 +102,8 @@
                 ]
             },
             {
-                "variableName": "specificradioactivity",
-                "isAbout": "items/specificradioactivity.jsonld",
+                "variableName": "SpecificRadioactivity",
+                "isAbout": "items/SpecificRadioactivity.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -111,8 +111,8 @@
                 ]
             },
             {
-                "variableName": "specificradioactivitymeastime",
-                "isAbout": "items/specificradioactivitymeastime.jsonld",
+                "variableName": "SpecificRadioactivityMeasTime",
+                "isAbout": "items/SpecificRadioactivityMeasTime.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -120,8 +120,8 @@
                 ]
             },
             {
-                "variableName": "purity",
-                "isAbout": "items/purity.jsonld",
+                "variableName": "Purity",
+                "isAbout": "items/Purity.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -129,8 +129,8 @@
                 ]
             },
             {
-                "variableName": "injectedvolume",
-                "isAbout": "items/injectedvolume.jsonld",
+                "variableName": "InjectedVolume",
+                "isAbout": "items/InjectedVolume.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

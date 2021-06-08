@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
         "en": "The producer of the eye-tracker"
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 13,
+        "maxValue": 12,
         "choices": [
             {
                 "name": {
@@ -93,15 +93,9 @@
             },
             {
                 "name": {
-                    "en": "other"
-                },
-                "value": 12
-            },
-            {
-                "name": {
                     "en": "Other"
                 },
-                "value": 13
+                "value": 12
             }
         ],
         "multipleChoice": false

@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "PharmaceuticalDoseRegimen.jsonld",
+    "prefLabel": {
+        "en": "PharmaceuticalDoseRegimen"
+    },
+    "description": "PharmaceuticalDoseRegimen",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Details of the pharmaceutical dose regimen."
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": " single IV bolus"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "single oral bolus"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "  IV infusion  "
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

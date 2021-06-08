@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "continuous_blood_schema.jsonld",
     "prefLabel": {
-        "en": "continuous blood"
+        "en": "Continuous blood"
     },
     "description": "continuous blood",
     "schemaVersion": "1.0.0-rc4",
@@ -14,17 +14,17 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/continuousbloodavail.jsonld",
-            "items/continuousbloodwithdrawalrate.jsonld",
-            "items/continuousbloodtubingtype.jsonld",
-            "items/continuousbloodtubinglength.jsonld",
-            "items/continuousblooddispersionconstant.jsonld",
-            "items/continuousblooddispersioncorrected.jsonld",
-            "items/discretebloodavail.jsonld",
-            "items/discretebloodhaematocrit.jsonld",
-            "items/discreteblooddensity.jsonld",
-            "items/metaboliteavail.jsonld",
-            "items/metabolitemethod.jsonld",
+            "items/ContinuousBloodAvail.jsonld",
+            "items/ContinuousBloodWithdrawalRate.jsonld",
+            "items/ContinuousBloodTubingType.jsonld",
+            "items/ContinuousBloodTubingLength.jsonld",
+            "items/ContinuousBloodDispersionConstant.jsonld",
+            "items/ContinuousBloodDispersionCorrected.jsonld",
+            "items/DiscreteBloodAvail.jsonld",
+            "items/DiscreteBloodHaematocrit.jsonld",
+            "items/DiscreteBloodDensity.jsonld",
+            "items/MetaboliteAvail.jsonld",
+            "items/MetaboliteMethod.jsonld",
             "items/radiolabeled_parent_compound_fraction.jsonld",
             "items/metabolite_data_labels.jsonld",
             "items/parent_fraction_units.jsonld",
@@ -33,11 +33,11 @@
             "items/fraction_of_radiometabolite_needing_quantitation.jsonld",
             "items/error_on_above_measurement.jsonld",
             "items/radiolabeled_metabolite_fractions.jsonld",
-            "items/metaboliterecoverycorrectionapplied.jsonld",
-            "items/plasmaavail.jsonld",
-            "items/plasmafreefraction.jsonld",
+            "items/MetaboliteRecoveryCorrectionApplied.jsonld",
+            "items/PlasmaAvail.jsonld",
+            "items/PlasmaFreeFraction.jsonld",
             "items/error_of_free_fraction_measurement.jsonld",
-            "items/plasmafreefractionmethod.jsonld",
+            "items/PlasmaFreeFractionMethod.jsonld",
             "items/decay_corrected.jsonld",
             "items/decay_correction_time.jsonld",
             "items/plasma_data_type.jsonld",
@@ -48,8 +48,8 @@
         ],
         "addProperties": [
             {
-                "variableName": "continuousbloodavail",
-                "isAbout": "items/continuousbloodavail.jsonld",
+                "variableName": "ContinuousBloodAvail",
+                "isAbout": "items/ContinuousBloodAvail.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -57,8 +57,8 @@
                 ]
             },
             {
-                "variableName": "continuousbloodwithdrawalrate",
-                "isAbout": "items/continuousbloodwithdrawalrate.jsonld",
+                "variableName": "ContinuousBloodWithdrawalRate",
+                "isAbout": "items/ContinuousBloodWithdrawalRate.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -66,8 +66,8 @@
                 ]
             },
             {
-                "variableName": "continuousbloodtubingtype",
-                "isAbout": "items/continuousbloodtubingtype.jsonld",
+                "variableName": "ContinuousBloodTubingType",
+                "isAbout": "items/ContinuousBloodTubingType.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -75,8 +75,8 @@
                 ]
             },
             {
-                "variableName": "continuousbloodtubinglength",
-                "isAbout": "items/continuousbloodtubinglength.jsonld",
+                "variableName": "ContinuousBloodTubingLength",
+                "isAbout": "items/ContinuousBloodTubingLength.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -84,8 +84,8 @@
                 ]
             },
             {
-                "variableName": "continuousblooddispersionconstant",
-                "isAbout": "items/continuousblooddispersionconstant.jsonld",
+                "variableName": "ContinuousBloodDispersionConstant",
+                "isAbout": "items/ContinuousBloodDispersionConstant.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -93,8 +93,8 @@
                 ]
             },
             {
-                "variableName": "continuousblooddispersioncorrected",
-                "isAbout": "items/continuousblooddispersioncorrected.jsonld",
+                "variableName": "ContinuousBloodDispersionCorrected",
+                "isAbout": "items/ContinuousBloodDispersionCorrected.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -102,8 +102,8 @@
                 ]
             },
             {
-                "variableName": "discretebloodavail",
-                "isAbout": "items/discretebloodavail.jsonld",
+                "variableName": "DiscreteBloodAvail",
+                "isAbout": "items/DiscreteBloodAvail.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -111,8 +111,8 @@
                 ]
             },
             {
-                "variableName": "discretebloodhaematocrit",
-                "isAbout": "items/discretebloodhaematocrit.jsonld",
+                "variableName": "DiscreteBloodHaematocrit",
+                "isAbout": "items/DiscreteBloodHaematocrit.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -120,8 +120,8 @@
                 ]
             },
             {
-                "variableName": "discreteblooddensity",
-                "isAbout": "items/discreteblooddensity.jsonld",
+                "variableName": "DiscreteBloodDensity",
+                "isAbout": "items/DiscreteBloodDensity.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -129,8 +129,8 @@
                 ]
             },
             {
-                "variableName": "metaboliteavail",
-                "isAbout": "items/metaboliteavail.jsonld",
+                "variableName": "MetaboliteAvail",
+                "isAbout": "items/MetaboliteAvail.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -138,8 +138,8 @@
                 ]
             },
             {
-                "variableName": "metabolitemethod",
-                "isAbout": "items/metabolitemethod.jsonld",
+                "variableName": "MetaboliteMethod",
+                "isAbout": "items/MetaboliteMethod.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -219,8 +219,8 @@
                 ]
             },
             {
-                "variableName": "metaboliterecoverycorrectionapplied",
-                "isAbout": "items/metaboliterecoverycorrectionapplied.jsonld",
+                "variableName": "MetaboliteRecoveryCorrectionApplied",
+                "isAbout": "items/MetaboliteRecoveryCorrectionApplied.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -228,8 +228,8 @@
                 ]
             },
             {
-                "variableName": "plasmaavail",
-                "isAbout": "items/plasmaavail.jsonld",
+                "variableName": "PlasmaAvail",
+                "isAbout": "items/PlasmaAvail.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -237,8 +237,8 @@
                 ]
             },
             {
-                "variableName": "plasmafreefraction",
-                "isAbout": "items/plasmafreefraction.jsonld",
+                "variableName": "PlasmaFreeFraction",
+                "isAbout": "items/PlasmaFreeFraction.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -255,8 +255,8 @@
                 ]
             },
             {
-                "variableName": "plasmafreefractionmethod",
-                "isAbout": "items/plasmafreefractionmethod.jsonld",
+                "variableName": "PlasmaFreeFractionMethod",
+                "isAbout": "items/PlasmaFreeFractionMethod.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

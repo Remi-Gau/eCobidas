@@ -9,13 +9,10 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Software used for group modeling if different from overall package"
     },
-    "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
-    }
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/mri_softwares.jsonld"
 }

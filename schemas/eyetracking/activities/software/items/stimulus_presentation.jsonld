@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
         "en": "The software used to present the stimuli"
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 30,
+        "maxValue": 29,
         "choices": [
             {
                 "name": {
@@ -189,21 +189,15 @@
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "not applicable (because no experimental program was administered)"
                 },
                 "value": 28
             },
             {
                 "name": {
-                    "en": "not applicable (because no experimental program was administered)"
-                },
-                "value": 29
-            },
-            {
-                "name": {
                     "en": "Other"
                 },
-                "value": 30
+                "value": 29
             }
         ],
         "multipleChoice": false

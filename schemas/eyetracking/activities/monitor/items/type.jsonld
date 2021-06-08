@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 2,
         "choices": [
             {
                 "name": {
@@ -33,21 +33,9 @@
             },
             {
                 "name": {
-                    "en": "other"
-                },
-                "value": 2
-            },
-            {
-                "name": {
                     "en": "not applicable (because no monitor was used  in the experiment) "
                 },
-                "value": 3
-            },
-            {
-                "name": {
-                    "en": "Other"
-                },
-                "value": 4
+                "value": 2
             }
         ],
         "multipleChoice": false

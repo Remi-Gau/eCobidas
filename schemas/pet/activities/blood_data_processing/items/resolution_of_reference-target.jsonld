@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "resolution_of_reference-target.jsonld",
+    "prefLabel": {
+        "en": "resolution of reference target"
+    },
+    "description": "resolution of reference target",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Resolution of reference-target"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": " 1 x 1 x 1"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "2 x 2 x 2"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

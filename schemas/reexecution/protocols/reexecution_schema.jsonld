@@ -1,0 +1,107 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "reexecution_schema.jsonld",
+    "prefLabel": {
+        "en": "reexecution"
+    },
+    "description": "reexecution",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_reexecute-en.md",
+        "inLanguage": "en"
+    },
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "../activities/publication/publication_schema.jsonld",
+            "../activities/data/data_schema.jsonld",
+            "../activities/analysis/analysis_schema.jsonld",
+            "../activities/statistics/statistics_schema.jsonld",
+            "../activities/results/results_schema.jsonld",
+            "../activities/other/other_schema.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "publication",
+                "isAbout": "../activities/publication/publication_schema.jsonld",
+                "prefLabel": {
+                    "en": "publication"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "data",
+                "isAbout": "../activities/data/data_schema.jsonld",
+                "prefLabel": {
+                    "en": "data"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "analysis",
+                "isAbout": "../activities/analysis/analysis_schema.jsonld",
+                "prefLabel": {
+                    "en": "analysis"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "statistics",
+                "isAbout": "../activities/statistics/statistics_schema.jsonld",
+                "prefLabel": {
+                    "en": "statistics"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "results",
+                "isAbout": "../activities/results/results_schema.jsonld",
+                "prefLabel": {
+                    "en": "results"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "other",
+                "isAbout": "../activities/other/other_schema.jsonld",
+                "prefLabel": {
+                    "en": "other"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "landingPage": {
-        "@id": "README-en.md",
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_eCOBIDAS-en.md",
         "inLanguage": "en"
     },
     "preamble": {
@@ -32,7 +32,7 @@
                 "variableName": "experimental_design",
                 "isAbout": "../activities/experimental_design/experimental_design_schema.jsonld",
                 "prefLabel": {
-                    "en": "experimental design"
+                    "en": "Experimental design"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -44,7 +44,7 @@
                 "variableName": "participants",
                 "isAbout": "../activities/participants/participants_schema.jsonld",
                 "prefLabel": {
-                    "en": "participants"
+                    "en": "Participants"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -56,7 +56,7 @@
                 "variableName": "mri_acquisition",
                 "isAbout": "../activities/mri_acquisition/mri_acquisition_schema.jsonld",
                 "prefLabel": {
-                    "en": "mri acquisition"
+                    "en": "MRI acquisition"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -68,7 +68,7 @@
                 "variableName": "preprocessing",
                 "isAbout": "../activities/preprocessing/preprocessing_schema.jsonld",
                 "prefLabel": {
-                    "en": "preprocessing"
+                    "en": "Preprocessing"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -80,7 +80,7 @@
                 "variableName": "intersubject_registration",
                 "isAbout": "../activities/intersubject_registration/intersubject_registration_schema.jsonld",
                 "prefLabel": {
-                    "en": "intersubject registration"
+                    "en": "Intersubject registration"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -92,7 +92,7 @@
                 "variableName": "individual_subject_modeling",
                 "isAbout": "../activities/individual_subject_modeling/individual_subject_modeling_schema.jsonld",
                 "prefLabel": {
-                    "en": "individual subject modeling"
+                    "en": "Individual subject modeling"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -104,7 +104,7 @@
                 "variableName": "group_modeling",
                 "isAbout": "../activities/group_modeling/group_modeling_schema.jsonld",
                 "prefLabel": {
-                    "en": "group modeling"
+                    "en": "Group modeling"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -116,7 +116,7 @@
                 "variableName": "group_inference",
                 "isAbout": "../activities/group_inference/group_inference_schema.jsonld",
                 "prefLabel": {
-                    "en": "group inference"
+                    "en": "Group inference"
                 },
                 "isVis": true,
                 "requiredValue": false,

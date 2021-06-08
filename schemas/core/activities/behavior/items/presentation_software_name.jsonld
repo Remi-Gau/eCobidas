@@ -9,13 +9,53 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "What was the software used for stimuli presentation?"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 5,
+        "choices": [
+            {
+                "name": {
+                    "en": "Psychtoolbox"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "psychopy"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "e prime"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "presentation"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "cogent"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 5
+            }
+        ],
+        "multipleChoice": false
     }
 }

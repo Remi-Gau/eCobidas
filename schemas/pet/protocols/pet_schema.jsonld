@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "landingPage": {
-        "@id": "README-en.md",
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_PET-en.md",
         "inLanguage": "en"
     },
     "preamble": {
@@ -34,7 +34,7 @@
                 "variableName": "info",
                 "isAbout": "../activities/info/info_schema.jsonld",
                 "prefLabel": {
-                    "en": "info"
+                    "en": "Info"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -46,7 +46,7 @@
                 "variableName": "radiotracer",
                 "isAbout": "../activities/radiotracer/radiotracer_schema.jsonld",
                 "prefLabel": {
-                    "en": "radiotracer"
+                    "en": "Radiotracer"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -58,7 +58,7 @@
                 "variableName": "radiochem",
                 "isAbout": "../activities/radiochem/radiochem_schema.jsonld",
                 "prefLabel": {
-                    "en": "radiochem"
+                    "en": "Radiochem"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -70,7 +70,7 @@
                 "variableName": "time",
                 "isAbout": "../activities/time/time_schema.jsonld",
                 "prefLabel": {
-                    "en": "time"
+                    "en": "Time"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -82,7 +82,7 @@
                 "variableName": "reconstruction",
                 "isAbout": "../activities/reconstruction/reconstruction_schema.jsonld",
                 "prefLabel": {
-                    "en": "reconstruction"
+                    "en": "Reconstruction"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -94,7 +94,7 @@
                 "variableName": "continuous_blood",
                 "isAbout": "../activities/continuous_blood/continuous_blood_schema.jsonld",
                 "prefLabel": {
-                    "en": "continuous blood"
+                    "en": "Continuous blood"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -106,7 +106,7 @@
                 "variableName": "cross-calibration",
                 "isAbout": "../activities/cross-calibration/cross-calibration_schema.jsonld",
                 "prefLabel": {
-                    "en": "cross-calibration"
+                    "en": "Cross-calibration"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -118,7 +118,7 @@
                 "variableName": "external_motion_correction",
                 "isAbout": "../activities/external_motion_correction/external_motion_correction_schema.jsonld",
                 "prefLabel": {
-                    "en": "external motion correction"
+                    "en": "External Motion Correction"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -130,7 +130,7 @@
                 "variableName": "blood_data_processing",
                 "isAbout": "../activities/blood_data_processing/blood_data_processing_schema.jsonld",
                 "prefLabel": {
-                    "en": "blood data processing"
+                    "en": "Blood Data Processing"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -142,7 +142,7 @@
                 "variableName": "multiple_testings",
                 "isAbout": "../activities/multiple_testings/multiple_testings_schema.jsonld",
                 "prefLabel": {
-                    "en": "multiple testings"
+                    "en": "Multiple Testings"
                 },
                 "isVis": true,
                 "requiredValue": false,

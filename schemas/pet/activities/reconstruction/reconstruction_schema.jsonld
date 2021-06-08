@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "reconstruction_schema.jsonld",
     "prefLabel": {
-        "en": "reconstruction"
+        "en": "Reconstruction"
     },
     "description": "reconstruction",
     "schemaVersion": "1.0.0-rc4",
@@ -14,30 +14,30 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/acquisitionmode.jsonld",
-            "items/imagedecaycorrected.jsonld",
-            "items/imagedecaycorrectiontime.jsonld",
-            "items/reconmethodname.jsonld",
-            "items/reconmethodparameterlabels.jsonld",
-            "items/reconfiltertype.jsonld",
-            "items/attenuationcorrection.jsonld",
-            "items/reconfiltersize.jsonld",
+            "items/AcquisitionMode.jsonld",
+            "items/ImageDecayCorrected.jsonld",
+            "items/ImageDecayCorrectionTime.jsonld",
+            "items/ReconMethodName.jsonld",
+            "items/ReconMethodParameterLabels.jsonld",
+            "items/ReconFilterType.jsonld",
+            "items/AttenuationCorrection.jsonld",
+            "items/ReconFilterSize.jsonld",
             "items/pet_voxel_size.jsonld",
             "items/matrix_size.jsonld",
-            "items/frame_sequence.jsonld",
-            "items/scalefactor.jsonld",
-            "items/scatterfraction.jsonld",
-            "items/decaycorrectionfactor.jsonld",
-            "items/promptrate.jsonld",
-            "items/randomrate.jsonld",
-            "items/singlesrate.jsonld",
+            "items/frame-sequence.jsonld",
+            "items/ScaleFactor.jsonld",
+            "items/ScatterFraction.jsonld",
+            "items/DecayCorrectionFactor.jsonld",
+            "items/PromptRate.jsonld",
+            "items/RandomRate.jsonld",
+            "items/SinglesRate.jsonld",
             "items/reconstruction_data_labels.jsonld",
-            "items/attenuationcorrectionmethodreference.jsonld"
+            "items/AttenuationCorrectionMethodReference.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "acquisitionmode",
-                "isAbout": "items/acquisitionmode.jsonld",
+                "variableName": "AcquisitionMode",
+                "isAbout": "items/AcquisitionMode.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -45,8 +45,8 @@
                 ]
             },
             {
-                "variableName": "imagedecaycorrected",
-                "isAbout": "items/imagedecaycorrected.jsonld",
+                "variableName": "ImageDecayCorrected",
+                "isAbout": "items/ImageDecayCorrected.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -54,8 +54,8 @@
                 ]
             },
             {
-                "variableName": "imagedecaycorrectiontime",
-                "isAbout": "items/imagedecaycorrectiontime.jsonld",
+                "variableName": "ImageDecayCorrectionTime",
+                "isAbout": "items/ImageDecayCorrectionTime.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -63,8 +63,8 @@
                 ]
             },
             {
-                "variableName": "reconmethodname",
-                "isAbout": "items/reconmethodname.jsonld",
+                "variableName": "ReconMethodName",
+                "isAbout": "items/ReconMethodName.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -72,8 +72,8 @@
                 ]
             },
             {
-                "variableName": "reconmethodparameterlabels",
-                "isAbout": "items/reconmethodparameterlabels.jsonld",
+                "variableName": "ReconMethodParameterLabels",
+                "isAbout": "items/ReconMethodParameterLabels.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -81,8 +81,8 @@
                 ]
             },
             {
-                "variableName": "reconfiltertype",
-                "isAbout": "items/reconfiltertype.jsonld",
+                "variableName": "ReconFilterType",
+                "isAbout": "items/ReconFilterType.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -90,8 +90,8 @@
                 ]
             },
             {
-                "variableName": "attenuationcorrection",
-                "isAbout": "items/attenuationcorrection.jsonld",
+                "variableName": "AttenuationCorrection",
+                "isAbout": "items/AttenuationCorrection.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -99,8 +99,8 @@
                 ]
             },
             {
-                "variableName": "reconfiltersize",
-                "isAbout": "items/reconfiltersize.jsonld",
+                "variableName": "ReconFilterSize",
+                "isAbout": "items/ReconFilterSize.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -126,8 +126,8 @@
                 ]
             },
             {
-                "variableName": "frame_sequence",
-                "isAbout": "items/frame_sequence.jsonld",
+                "variableName": "frame-sequence",
+                "isAbout": "items/frame-sequence.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -135,8 +135,8 @@
                 ]
             },
             {
-                "variableName": "scalefactor",
-                "isAbout": "items/scalefactor.jsonld",
+                "variableName": "ScaleFactor",
+                "isAbout": "items/ScaleFactor.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -144,8 +144,8 @@
                 ]
             },
             {
-                "variableName": "scatterfraction",
-                "isAbout": "items/scatterfraction.jsonld",
+                "variableName": "ScatterFraction",
+                "isAbout": "items/ScatterFraction.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -153,8 +153,8 @@
                 ]
             },
             {
-                "variableName": "decaycorrectionfactor",
-                "isAbout": "items/decaycorrectionfactor.jsonld",
+                "variableName": "DecayCorrectionFactor",
+                "isAbout": "items/DecayCorrectionFactor.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -162,8 +162,8 @@
                 ]
             },
             {
-                "variableName": "promptrate",
-                "isAbout": "items/promptrate.jsonld",
+                "variableName": "PromptRate",
+                "isAbout": "items/PromptRate.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -171,8 +171,8 @@
                 ]
             },
             {
-                "variableName": "randomrate",
-                "isAbout": "items/randomrate.jsonld",
+                "variableName": "RandomRate",
+                "isAbout": "items/RandomRate.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -180,8 +180,8 @@
                 ]
             },
             {
-                "variableName": "singlesrate",
-                "isAbout": "items/singlesrate.jsonld",
+                "variableName": "SinglesRate",
+                "isAbout": "items/SinglesRate.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -198,8 +198,8 @@
                 ]
             },
             {
-                "variableName": "attenuationcorrectionmethodreference",
-                "isAbout": "items/attenuationcorrectionmethodreference.jsonld",
+                "variableName": "AttenuationCorrectionMethodReference",
+                "isAbout": "items/AttenuationCorrectionMethodReference.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
