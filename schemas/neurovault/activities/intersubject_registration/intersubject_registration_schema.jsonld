@@ -1,0 +1,185 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "intersubject_registration_schema.jsonld",
+    "prefLabel": {
+        "en": "Intersubject registration"
+    },
+    "description": "intersubject registration",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "Describe your spatial normalization"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/used_intersubject_registration.jsonld",
+            "items/intersubject_registration_software.jsonld",
+            "items/intersubject_transformation_type.jsonld",
+            "items/nonlinear_transform_type.jsonld",
+            "items/transform_similarity_metric.jsonld",
+            "items/interpolation_method.jsonld",
+            "items/object_image_type.jsonld",
+            "items/functional_coregistered_to_structural.jsonld",
+            "items/functional_coregistration_method.jsonld",
+            "items/coordinate_space.jsonld",
+            "items/target_template_image.jsonld",
+            "items/target_resolution.jsonld",
+            "items/used_smoothing.jsonld",
+            "items/smoothing_type.jsonld",
+            "items/smoothing_fwhm.jsonld",
+            "items/resampled_voxel_size.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "used_intersubject_registration",
+                "isAbout": "items/used_intersubject_registration.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubject_registration_software",
+                "isAbout": "items/intersubject_registration_software.jsonld",
+                "isVis": "used_intersubject_registration == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubject_transformation_type",
+                "isAbout": "items/intersubject_transformation_type.jsonld",
+                "isVis": "used_intersubject_registration == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "nonlinear_transform_type",
+                "isAbout": "items/nonlinear_transform_type.jsonld",
+                "isVis": "used_intersubject_registration == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "transform_similarity_metric",
+                "isAbout": "items/transform_similarity_metric.jsonld",
+                "isVis": "used_intersubject_registration == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "interpolation_method",
+                "isAbout": "items/interpolation_method.jsonld",
+                "isVis": "used_intersubject_registration == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "object_image_type",
+                "isAbout": "items/object_image_type.jsonld",
+                "isVis": "used_intersubject_registration == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "functional_coregistered_to_structural",
+                "isAbout": "items/functional_coregistered_to_structural.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "functional_coregistration_method",
+                "isAbout": "items/functional_coregistration_method.jsonld",
+                "isVis": "functional_coregistered_to_structural == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "coordinate_space",
+                "isAbout": "items/coordinate_space.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "target_template_image",
+                "isAbout": "items/target_template_image.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "target_resolution",
+                "isAbout": "items/target_resolution.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "used_smoothing",
+                "isAbout": "items/used_smoothing.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "smoothing_type",
+                "isAbout": "items/smoothing_type.jsonld",
+                "isVis": "used_smoothing == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "smoothing_fwhm",
+                "isAbout": "items/smoothing_fwhm.jsonld",
+                "isVis": "used_smoothing == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "resampled_voxel_size",
+                "isAbout": "items/resampled_voxel_size.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

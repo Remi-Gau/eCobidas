@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "blood_sampling_device_measurement_time.jsonld",
+    "prefLabel": {
+        "en": "blood sampling device measurement time"
+    },
+    "description": "blood sampling device measurement time",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "timeRange"
+    },
+    "question": {
+        "en": "Blood sampling device measurement time"
+    },
+    "responseOptions": {
+        "valueType": "xsd:datetime"
+    }
+}

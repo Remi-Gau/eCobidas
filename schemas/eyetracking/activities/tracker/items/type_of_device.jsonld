@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "type_of_device.jsonld",
+    "prefLabel": {
+        "en": "type of device"
+    },
+    "description": "type of device",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "The type of eye-tracking device"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "corneal reflection"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "dual purkinje"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

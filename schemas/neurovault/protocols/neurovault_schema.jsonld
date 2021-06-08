@@ -1,0 +1,133 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "neurovault_schema.jsonld",
+    "prefLabel": {
+        "en": "neurovault"
+    },
+    "description": "neurovault",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_eCOBIDAS-en.md",
+        "inLanguage": "en"
+    },
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "../activities/experimental_design/experimental_design_schema.jsonld",
+            "../activities/participants/participants_schema.jsonld",
+            "../activities/mri_acquisition/mri_acquisition_schema.jsonld",
+            "../activities/preprocessing/preprocessing_schema.jsonld",
+            "../activities/intersubject_registration/intersubject_registration_schema.jsonld",
+            "../activities/individual_subject_modeling/individual_subject_modeling_schema.jsonld",
+            "../activities/group_modeling/group_modeling_schema.jsonld",
+            "../activities/group_inference/group_inference_schema.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "experimental_design",
+                "isAbout": "../activities/experimental_design/experimental_design_schema.jsonld",
+                "prefLabel": {
+                    "en": "Experimental design"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "participants",
+                "isAbout": "../activities/participants/participants_schema.jsonld",
+                "prefLabel": {
+                    "en": "Participants"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "mri_acquisition",
+                "isAbout": "../activities/mri_acquisition/mri_acquisition_schema.jsonld",
+                "prefLabel": {
+                    "en": "MRI acquisition"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "preprocessing",
+                "isAbout": "../activities/preprocessing/preprocessing_schema.jsonld",
+                "prefLabel": {
+                    "en": "Preprocessing"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubject_registration",
+                "isAbout": "../activities/intersubject_registration/intersubject_registration_schema.jsonld",
+                "prefLabel": {
+                    "en": "Intersubject registration"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "individual_subject_modeling",
+                "isAbout": "../activities/individual_subject_modeling/individual_subject_modeling_schema.jsonld",
+                "prefLabel": {
+                    "en": "Individual subject modeling"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_modeling",
+                "isAbout": "../activities/group_modeling/group_modeling_schema.jsonld",
+                "prefLabel": {
+                    "en": "Group modeling"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_inference",
+                "isAbout": "../activities/group_inference/group_inference_schema.jsonld",
+                "prefLabel": {
+                    "en": "Group inference"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

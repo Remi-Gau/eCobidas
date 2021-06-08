@@ -1,0 +1,10 @@
+name	value
+None	0
+Family-wise Error: Random field theory	1
+Family-wise Error: Permutation	2
+Family-wise Error: Monte Carlo	3
+Family-wise Error: Bonferroni	4
+False discovery rate: Benjamini & Hochberg	5
+False discovery rate: Positive FDR	6
+False discovery rate: Local FDR	7
+False discovery rate: Cluster-level FDR	8

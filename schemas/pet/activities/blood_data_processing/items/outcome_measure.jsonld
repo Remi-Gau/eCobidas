@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "outcome_measure.jsonld",
+    "prefLabel": {
+        "en": "outcome measure"
+    },
+    "description": "outcome measure",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Outcome measure"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "BPND"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "K1"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "k2"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "R1"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

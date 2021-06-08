@@ -1,0 +1,94 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:ResponseOption",
+    "@id": "stimulus_presentation_softwares.jsonld",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 13,
+    "choices": [
+        {
+            "name": {
+                "en": "Psycthoolbox"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "PsychoPy"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "Eprime"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "expyriment"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "Presentation"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "Cogent"
+            },
+            "value": 5
+        },
+        {
+            "name": {
+                "en": "ERTS"
+            },
+            "value": 6
+        },
+        {
+            "name": {
+                "en": "STIM"
+            },
+            "value": 7
+        },
+        {
+            "name": {
+                "en": "EEVoke"
+            },
+            "value": 8
+        },
+        {
+            "name": {
+                "en": "Neurolab"
+            },
+            "value": 9
+        },
+        {
+            "name": {
+                "en": "SuperLab"
+            },
+            "value": 10
+        },
+        {
+            "name": {
+                "en": "ERP system"
+            },
+            "value": 11
+        },
+        {
+            "name": {
+                "en": "StimPres"
+            },
+            "value": 12
+        },
+        {
+            "name": {
+                "en": "InsEP"
+            },
+            "value": 13
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "clinical_instruments.jsonld",
+    "prefLabel": {
+        "en": "clinical instruments"
+    },
+    "description": "clinical instruments",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Describe the instruments used to obtain the diagnosis and provide tests of intra\u00ad or inter-\u00adrater reliability."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "fixation_detection.jsonld",
+    "prefLabel": {
+        "en": "fixation detection"
+    },
+    "description": "fixation detection",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Event detection procedure"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "dispersion"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "velocity"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

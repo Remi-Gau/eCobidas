@@ -1,0 +1,64 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:ResponseOption",
+    "@id": "eeg_cap_types.jsonld",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 8,
+    "choices": [
+        {
+            "name": {
+                "en": "Waveguard (ANT)"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "Electrocap"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "Quickcap (Neuroscan)"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "Easycap standard caps"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "Aegis Array"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "Emotiv"
+            },
+            "value": 5
+        },
+        {
+            "name": {
+                "en": "BrainProducts"
+            },
+            "value": 6
+        },
+        {
+            "name": {
+                "en": "Biosemi"
+            },
+            "value": 7
+        },
+        {
+            "name": {
+                "en": "TMSi"
+            },
+            "value": 8
+        }
+    ]
+}

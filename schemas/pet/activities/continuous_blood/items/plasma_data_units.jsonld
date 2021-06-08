@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "plasma_data_units.jsonld",
+    "prefLabel": {
+        "en": "plasma data units"
+    },
+    "description": "plasma data units",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "plasma data units"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "s"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "kBq/mL"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

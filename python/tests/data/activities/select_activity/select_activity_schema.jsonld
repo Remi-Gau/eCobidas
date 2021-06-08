@@ -1,0 +1,85 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "select_activity_schema.jsonld",
+    "prefLabel": {
+        "en": "Select Activity"
+    },
+    "description": "select activity",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "A list of selection item"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/radio_item.jsonld",
+            "items/radio_item_multiple_choice.jsonld",
+            "items/select_item.jsonld",
+            "items/select_item_multiple_choice.jsonld",
+            "items/yes_no_do_not_know.jsonld",
+            "items/mri_softwares.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "radio_item",
+                "isAbout": "items/radio_item.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "radio_item_multiple_choice",
+                "isAbout": "items/radio_item_multiple_choice.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "select_item",
+                "isAbout": "items/select_item.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "select_item_multiple_choice",
+                "isAbout": "items/select_item_multiple_choice.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "yes_no_do_not_know",
+                "isAbout": "items/yes_no_do_not_know.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "mri_softwares",
+                "isAbout": "items/mri_softwares.jsonld",
+                "isVis": "yes_no_do_not_know == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "response_collection.jsonld",
+    "prefLabel": {
+        "en": "response collection"
+    },
+    "description": "response collection",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "How were responses collected?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "motor response (button boxes)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": " motor response (other)"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": " other"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

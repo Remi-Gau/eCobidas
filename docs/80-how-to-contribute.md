@@ -73,7 +73,7 @@ that need to be expanded.
 
 ### Conversion scripts
 
-We use some [python code](https://github.com/Remi-Gau/eCobidas/tree/master/scripts) to convert the spreadsheets into the set
+We use some [python code](https://github.com/Remi-Gau/eCobidas/tree/master/python) to convert the spreadsheets into the set
 of `jsonld` files that the user interface needs as inputs to display the
 checklists. This needs further improvement so if python is your jam, feel free
 to dive in.

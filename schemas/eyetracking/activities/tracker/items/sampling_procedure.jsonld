@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "sampling_procedure.jsonld",
+    "prefLabel": {
+        "en": "sampling procedure"
+    },
+    "description": "sampling procedure",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "The sampling procedure used"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "binocular"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "monocular"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

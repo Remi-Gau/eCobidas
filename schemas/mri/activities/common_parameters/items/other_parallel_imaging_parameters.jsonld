@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "other_parallel_imaging_parameters.jsonld",
+    "prefLabel": {
+        "en": "other parallel imaging parameters"
+    },
+    "description": "other parallel imaging parameters",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Mention any other parameters about parallel imaging like matrix coil mode, and coil combining method (if non\u00adstandard)"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

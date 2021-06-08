@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "reasons_for_excluding_trials.jsonld",
+    "prefLabel": {
+        "en": "reasons for excluding trials"
+    },
+    "description": "reasons for excluding trials",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Reasons for exclusion"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 4,
+        "choices": [
+            {
+                "name": {
+                    "en": "choice"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "reaction times"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "signal loss"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "not applicable (because no trial is excluded) "
+                },
+                "value": 4
+            }
+        ],
+        "multipleChoice": false
+    }
+}

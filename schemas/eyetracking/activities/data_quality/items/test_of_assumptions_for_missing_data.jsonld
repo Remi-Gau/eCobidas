@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "test_of_assumptions_for_missing_data.jsonld",
+    "prefLabel": {
+        "en": "test of assumptions for missing data"
+    },
+    "description": "test of assumptions for missing data",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Test of assumptions for missing data"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "MCAR"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "MAR"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "MNAR"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

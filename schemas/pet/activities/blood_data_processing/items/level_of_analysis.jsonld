@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "level_of_analysis.jsonld",
+    "prefLabel": {
+        "en": "level of analysis"
+    },
+    "description": "level of analysis",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Level of analysis"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "region"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "voxel"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "region+voxel"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

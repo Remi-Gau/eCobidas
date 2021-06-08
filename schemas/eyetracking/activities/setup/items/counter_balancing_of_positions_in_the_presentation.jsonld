@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "counter_balancing_of_positions_in_the_presentation.jsonld",
+    "prefLabel": {
+        "en": "counter balancing of positions in the presentation"
+    },
+    "description": "counter balancing of positions in the presentation",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Counter-balancing of the stimulus in the presentation across positions"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

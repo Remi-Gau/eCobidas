@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "exclusion_criteria.jsonld",
+    "prefLabel": {
+        "en": "exclusion criteria"
+    },
+    "description": "exclusion criteria",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Describe any screening criteria, including those applied to \u201cnormal\u201d sample such as MRI exclusion criteria"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/boolean.jsonld"
+}

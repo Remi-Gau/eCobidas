@@ -1,0 +1,91 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "alpha_level.jsonld",
+    "prefLabel": {
+        "en": "alpha level"
+    },
+    "description": "alpha level",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "slider"
+    },
+    "question": {
+        "en": "Alpha level"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "0.0"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "0.1"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "0.2"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "0.30000000000000004"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "0.4"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "0.5"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "0.6000000000000001"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "0.7000000000000001"
+                },
+                "value": 7
+            },
+            {
+                "name": {
+                    "en": "0.8"
+                },
+                "value": 8
+            },
+            {
+                "name": {
+                    "en": "0.9"
+                },
+                "value": 9
+            },
+            {
+                "name": {
+                    "en": "1.0"
+                },
+                "value": 10
+            }
+        ],
+        "multipleChoice": false
+    }
+}

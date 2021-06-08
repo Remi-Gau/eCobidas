@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "type.jsonld",
+    "prefLabel": {
+        "en": "type"
+    },
+    "description": "type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "The type of monitor used"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "CRT"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "LCD"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "not applicable (because no monitor was used  in the experiment) "
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

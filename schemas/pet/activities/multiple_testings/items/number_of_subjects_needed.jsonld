@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "number_of_subjects_needed.jsonld",
+    "prefLabel": {
+        "en": "number of subjects needed"
+    },
+    "description": "number of subjects needed",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "Number of Subjects Needed"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

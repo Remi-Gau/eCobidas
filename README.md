@@ -3,7 +3,9 @@
 # COBIDAS guidelines checklist
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-22-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- TOC -->
@@ -31,7 +33,7 @@ output that can be used to automatically generate parts of the methods section.
 <!-- lint disable -->
 
 -   **For fMRI (based on Neurovault)**: see
-    [HERE](https://ohbm.github.io/cobidas/#/)
+    [HERE](https://ohbm.github.io/eCOBIDAS/#/)
 
 -   **For PET (based an extension to BIDS)**: see
     [HERE](https://remi-gau.github.io/cobidas-PET/#/)
@@ -53,7 +55,7 @@ guidelines:
 
 -   [participants](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/participants/participants_schema)
 -   [behavior](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/behavior/behavior_schema)
-- [common acquisition parameters to all MRI sequences](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/mri_all_sequences/mri_all_sequences_schema)
+-   [common acquisition parameters to all MRI sequences](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/mri_all_sequences/mri_all_sequences_schema)
 
 ## Want to know more ?
 
@@ -129,6 +131,7 @@ For a more detailed description of the contributions, see
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the

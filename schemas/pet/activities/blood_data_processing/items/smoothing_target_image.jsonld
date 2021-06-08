@@ -1,0 +1,31 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "smoothing_target_image.jsonld",
+    "prefLabel": {
+        "en": "smoothing target image"
+    },
+    "description": "smoothing target image",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Smoothing target image"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 0,
+        "choices": [
+            {
+                "name": {
+                    "en": "4D PET Image"
+                },
+                "value": 0
+            }
+        ],
+        "multipleChoice": false
+    }
+}

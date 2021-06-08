@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "MetaboliteMethod.jsonld",
+    "prefLabel": {
+        "en": "MetaboliteMethod"
+    },
+    "description": "MetaboliteMethod",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Method used to measure metabolites"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "HPLC"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Fraction Collector"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "SPE"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

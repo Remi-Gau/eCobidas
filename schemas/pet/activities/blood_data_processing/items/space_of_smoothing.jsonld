@@ -1,0 +1,31 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "space_of_smoothing.jsonld",
+    "prefLabel": {
+        "en": "space of smoothing"
+    },
+    "description": "space of smoothing",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Space of smoothing"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 0,
+        "choices": [
+            {
+                "name": {
+                    "en": "MP-RAGE T1"
+                },
+                "value": 0
+            }
+        ],
+        "multipleChoice": false
+    }
+}

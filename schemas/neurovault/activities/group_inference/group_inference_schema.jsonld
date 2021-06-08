@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "group_inference_schema.jsonld",
+    "prefLabel": {
+        "en": "Group inference"
+    },
+    "description": "group inference",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "Describe your statistical inference"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/group_statistic_type.jsonld",
+            "items/group_statistic_parameters.jsonld",
+            "items/group_smoothness_fwhm.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "group_statistic_type",
+                "isAbout": "items/group_statistic_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_statistic_parameters",
+                "isAbout": "items/group_statistic_parameters.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_smoothness_fwhm",
+                "isAbout": "items/group_smoothness_fwhm.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

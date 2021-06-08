@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "size_of_smoothing_filter.jsonld",
+    "prefLabel": {
+        "en": "size of smoothing filter"
+    },
+    "description": "size of smoothing filter",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Size of smoothing filter"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

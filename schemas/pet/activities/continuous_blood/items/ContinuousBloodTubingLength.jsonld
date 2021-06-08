@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "ContinuousBloodTubingLength.jsonld",
+    "prefLabel": {
+        "en": "ContinuousBloodTubingLength"
+    },
+    "description": "ContinuousBloodTubingLength",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "The length of the blood tubing, from the subject to the detector."
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

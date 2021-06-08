@@ -1,0 +1,185 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "eyetracking_schema.jsonld",
+    "prefLabel": {
+        "en": "eyetracking"
+    },
+    "description": "eyetracking",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_eyetracker-en.md ",
+        "inLanguage": "en"
+    },
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "../activities/introduction/introduction_schema.jsonld",
+            "../activities/tracker/tracker_schema.jsonld",
+            "../activities/monitor/monitor_schema.jsonld",
+            "../activities/software/software_schema.jsonld",
+            "../activities/aoi_definition/aoi_definition_schema.jsonld",
+            "../activities/setup/setup_schema.jsonld",
+            "../activities/calibration/calibration_schema.jsonld",
+            "../activities/participants/participants_schema.jsonld",
+            "../activities/data_quality/data_quality_schema.jsonld",
+            "../activities/dependent_measures/dependent_measures_schema.jsonld",
+            "../activities/preprocessing/preprocessing_schema.jsonld",
+            "../activities/discussion/discussion_schema.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "introduction",
+                "isAbout": "../activities/introduction/introduction_schema.jsonld",
+                "prefLabel": {
+                    "en": "Introduction"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "tracker",
+                "isAbout": "../activities/tracker/tracker_schema.jsonld",
+                "prefLabel": {
+                    "en": "Tracker"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "monitor",
+                "isAbout": "../activities/monitor/monitor_schema.jsonld",
+                "prefLabel": {
+                    "en": "Monitor"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "software",
+                "isAbout": "../activities/software/software_schema.jsonld",
+                "prefLabel": {
+                    "en": "Software"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "aoi_definition",
+                "isAbout": "../activities/aoi_definition/aoi_definition_schema.jsonld",
+                "prefLabel": {
+                    "en": "AOI definition"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "setup",
+                "isAbout": "../activities/setup/setup_schema.jsonld",
+                "prefLabel": {
+                    "en": "Setup"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "calibration",
+                "isAbout": "../activities/calibration/calibration_schema.jsonld",
+                "prefLabel": {
+                    "en": "Calibration"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "participants",
+                "isAbout": "../activities/participants/participants_schema.jsonld",
+                "prefLabel": {
+                    "en": "Participants"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "data_quality",
+                "isAbout": "../activities/data_quality/data_quality_schema.jsonld",
+                "prefLabel": {
+                    "en": "Data quality"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "dependent_measures",
+                "isAbout": "../activities/dependent_measures/dependent_measures_schema.jsonld",
+                "prefLabel": {
+                    "en": "Dependent measures"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "preprocessing",
+                "isAbout": "../activities/preprocessing/preprocessing_schema.jsonld",
+                "prefLabel": {
+                    "en": "Preprocessing"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "discussion",
+                "isAbout": "../activities/discussion/discussion_schema.jsonld",
+                "prefLabel": {
+                    "en": "Discussion"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

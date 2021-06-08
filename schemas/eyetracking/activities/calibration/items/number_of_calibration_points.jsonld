@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "number_of_calibration_points.jsonld",
+    "prefLabel": {
+        "en": "number of calibration points"
+    },
+    "description": "number of calibration points",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "Number of points that appeared in calibration"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

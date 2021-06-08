@@ -1,0 +1,125 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "participants_schema.jsonld",
+    "prefLabel": {
+        "en": "Participants"
+    },
+    "description": "participants",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "Describe your participant sample"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/number_of_subjects.jsonld",
+            "items/subject_age_mean.jsonld",
+            "items/subject_age_min.jsonld",
+            "items/subject_age_max.jsonld",
+            "items/handedness.jsonld",
+            "items/proportion_male_subjects.jsonld",
+            "items/inclusion_exclusion_criteria.jsonld",
+            "items/number_of_rejected_subjects.jsonld",
+            "items/group_comparison.jsonld",
+            "items/group_description.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "number_of_subjects",
+                "isAbout": "items/number_of_subjects.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "subject_age_mean",
+                "isAbout": "items/subject_age_mean.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "subject_age_min",
+                "isAbout": "items/subject_age_min.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "subject_age_max",
+                "isAbout": "items/subject_age_max.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "handedness",
+                "isAbout": "items/handedness.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "proportion_male_subjects",
+                "isAbout": "items/proportion_male_subjects.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "inclusion_exclusion_criteria",
+                "isAbout": "items/inclusion_exclusion_criteria.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_rejected_subjects",
+                "isAbout": "items/number_of_rejected_subjects.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_comparison",
+                "isAbout": "items/group_comparison.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_description",
+                "isAbout": "items/group_description.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

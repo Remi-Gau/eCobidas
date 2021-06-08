@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "phantom_volume.jsonld",
+    "prefLabel": {
+        "en": "phantom volume"
+    },
+    "description": "phantom volume",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Phantom volume"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

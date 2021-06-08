@@ -1,0 +1,485 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "behavior_schema.jsonld",
+    "prefLabel": {
+        "en": "Behavior"
+    },
+    "description": "behavior",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/design_type.jsonld",
+            "items/condition_and_stimuli.jsonld",
+            "items/number_experimental_units.jsonld",
+            "items/block_duration.jsonld",
+            "items/trial_duration.jsonld",
+            "items/intertrial_interval_type.jsonld",
+            "items/intertrial_interval_range.jsonld",
+            "items/intertrial_interval_distribution.jsonld",
+            "items/number_of_functional_runs.jsonld",
+            "items/duration_of_each_run.jsonld",
+            "items/presentation_software_name.jsonld",
+            "items/presentation_software_version.jsonld",
+            "items/operating_system.jsonld",
+            "items/url_to_code.jsonld",
+            "items/condition.jsonld",
+            "items/instructions.jsonld",
+            "items/stimuli.jsonld",
+            "items/randomization.jsonld",
+            "items/deterministic.jsonld",
+            "items/pseudo-random.jsonld",
+            "items/stimulus_presentation.jsonld",
+            "items/response_collection.jsonld",
+            "items/run_order.jsonld",
+            "items/counterbalance.jsonld",
+            "items/apparent_size.jsonld",
+            "items/viewing_distance.jsonld",
+            "items/clarity.jsonld",
+            "items/color.jsonld",
+            "items/site_of_the_stimulation.jsonld",
+            "items/position_in_the_visual_field.jsonld",
+            "items/display_device.jsonld",
+            "items/visual_other.jsonld",
+            "items/description.jsonld",
+            "items/intensity.jsonld",
+            "items/ear_of_stimulation.jsonld",
+            "items/auditory_type.jsonld",
+            "items/contralateral_masking.jsonld",
+            "items/stimuli_database.jsonld",
+            "items/calibration_procedure.jsonld",
+            "items/type.jsonld",
+            "items/characteristics.jsonld",
+            "items/location_on_body.jsonld",
+            "items/somatosensoty_intensity.jsonld",
+            "items/other_stimulation.jsonld",
+            "items/feedbacks.jsonld",
+            "items/variables_recorded.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "design_type",
+                "isAbout": "items/design_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "condition_and_stimuli",
+                "isAbout": "items/condition_and_stimuli.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_experimental_units",
+                "isAbout": "items/number_experimental_units.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "block_duration",
+                "isAbout": "items/block_duration.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "trial_duration",
+                "isAbout": "items/trial_duration.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intertrial_interval_type",
+                "isAbout": "items/intertrial_interval_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intertrial_interval_range",
+                "isAbout": "items/intertrial_interval_range.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intertrial_interval_distribution",
+                "isAbout": "items/intertrial_interval_distribution.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_functional_runs",
+                "isAbout": "items/number_of_functional_runs.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "duration_of_each_run",
+                "isAbout": "items/duration_of_each_run.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "presentation_software_name",
+                "isAbout": "items/presentation_software_name.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "presentation_software_version",
+                "isAbout": "items/presentation_software_version.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "operating_system",
+                "isAbout": "items/operating_system.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "url_to_code",
+                "isAbout": "items/url_to_code.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "condition",
+                "isAbout": "items/condition.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "instructions",
+                "isAbout": "items/instructions.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "stimuli",
+                "isAbout": "items/stimuli.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "randomization",
+                "isAbout": "items/randomization.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "deterministic",
+                "isAbout": "items/deterministic.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "pseudo-random",
+                "isAbout": "items/pseudo-random.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "stimulus_presentation",
+                "isAbout": "items/stimulus_presentation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "response_collection",
+                "isAbout": "items/response_collection.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "run_order",
+                "isAbout": "items/run_order.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "counterbalance",
+                "isAbout": "items/counterbalance.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "apparent_size",
+                "isAbout": "items/apparent_size.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "viewing_distance",
+                "isAbout": "items/viewing_distance.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "clarity",
+                "isAbout": "items/clarity.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "color",
+                "isAbout": "items/color.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "site_of_the_stimulation",
+                "isAbout": "items/site_of_the_stimulation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "position_in_the_visual_field",
+                "isAbout": "items/position_in_the_visual_field.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "display_device",
+                "isAbout": "items/display_device.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visual_other",
+                "isAbout": "items/visual_other.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "description",
+                "isAbout": "items/description.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intensity",
+                "isAbout": "items/intensity.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "ear_of_stimulation",
+                "isAbout": "items/ear_of_stimulation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "auditory_type",
+                "isAbout": "items/auditory_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "contralateral_masking",
+                "isAbout": "items/contralateral_masking.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "stimuli_database",
+                "isAbout": "items/stimuli_database.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "calibration_procedure",
+                "isAbout": "items/calibration_procedure.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "type",
+                "isAbout": "items/type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "characteristics",
+                "isAbout": "items/characteristics.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "location_on_body",
+                "isAbout": "items/location_on_body.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "somatosensoty_intensity",
+                "isAbout": "items/somatosensoty_intensity.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "other_stimulation",
+                "isAbout": "items/other_stimulation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "feedbacks",
+                "isAbout": "items/feedbacks.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "variables_recorded",
+                "isAbout": "items/variables_recorded.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "time_schema.jsonld",
+    "prefLabel": {
+        "en": "Time"
+    },
+    "description": "time",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/ScanDate.jsonld",
+            "items/TimeZero.jsonld",
+            "items/ScanStart.jsonld",
+            "items/InjectionStart.jsonld",
+            "items/InjectionEnd.jsonld",
+            "items/FrameTimesStart.jsonld",
+            "items/FrameDuration.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "ScanDate",
+                "isAbout": "items/ScanDate.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "TimeZero",
+                "isAbout": "items/TimeZero.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "ScanStart",
+                "isAbout": "items/ScanStart.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "InjectionStart",
+                "isAbout": "items/InjectionStart.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "InjectionEnd",
+                "isAbout": "items/InjectionEnd.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "FrameTimesStart",
+                "isAbout": "items/FrameTimesStart.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "FrameDuration",
+                "isAbout": "items/FrameDuration.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

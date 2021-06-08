@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "all_sequences_schema.jsonld",
+    "prefLabel": {
+        "en": "all sequences"
+    },
+    "description": "all sequences",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_eCOBIDAS-en.md",
+        "inLanguage": "en"
+    },
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "../activities/common_parameters/common_parameters_schema.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "common_parameters",
+                "isAbout": "../activities/common_parameters/common_parameters_schema.jsonld",
+                "prefLabel": {
+                    "en": "common parameters"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

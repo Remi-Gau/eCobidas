@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "fraction_of_radiometabolite_needing_quantitation.jsonld",
+    "prefLabel": {
+        "en": "fraction of radiometabolite needing quantitation"
+    },
+    "description": "fraction of radiometabolite needing quantitation",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Fraction of radiometabolite needing quantitation"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "fraction"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "percentage"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

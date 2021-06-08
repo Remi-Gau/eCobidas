@@ -1,0 +1,159 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "pet_schema.jsonld",
+    "prefLabel": {
+        "en": "pet"
+    },
+    "description": "pet",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_PET-en.md",
+        "inLanguage": "en"
+    },
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "../activities/info/info_schema.jsonld",
+            "../activities/radiotracer/radiotracer_schema.jsonld",
+            "../activities/radiochem/radiochem_schema.jsonld",
+            "../activities/time/time_schema.jsonld",
+            "../activities/reconstruction/reconstruction_schema.jsonld",
+            "../activities/continuous_blood/continuous_blood_schema.jsonld",
+            "../activities/cross-calibration/cross-calibration_schema.jsonld",
+            "../activities/external_motion_correction/external_motion_correction_schema.jsonld",
+            "../activities/blood_data_processing/blood_data_processing_schema.jsonld",
+            "../activities/multiple_testings/multiple_testings_schema.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "info",
+                "isAbout": "../activities/info/info_schema.jsonld",
+                "prefLabel": {
+                    "en": "Info"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "radiotracer",
+                "isAbout": "../activities/radiotracer/radiotracer_schema.jsonld",
+                "prefLabel": {
+                    "en": "Radiotracer"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "radiochem",
+                "isAbout": "../activities/radiochem/radiochem_schema.jsonld",
+                "prefLabel": {
+                    "en": "Radiochem"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "time",
+                "isAbout": "../activities/time/time_schema.jsonld",
+                "prefLabel": {
+                    "en": "Time"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "reconstruction",
+                "isAbout": "../activities/reconstruction/reconstruction_schema.jsonld",
+                "prefLabel": {
+                    "en": "Reconstruction"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "continuous_blood",
+                "isAbout": "../activities/continuous_blood/continuous_blood_schema.jsonld",
+                "prefLabel": {
+                    "en": "Continuous blood"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "cross-calibration",
+                "isAbout": "../activities/cross-calibration/cross-calibration_schema.jsonld",
+                "prefLabel": {
+                    "en": "Cross-calibration"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "external_motion_correction",
+                "isAbout": "../activities/external_motion_correction/external_motion_correction_schema.jsonld",
+                "prefLabel": {
+                    "en": "External Motion Correction"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "blood_data_processing",
+                "isAbout": "../activities/blood_data_processing/blood_data_processing_schema.jsonld",
+                "prefLabel": {
+                    "en": "Blood Data Processing"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "multiple_testings",
+                "isAbout": "../activities/multiple_testings/multiple_testings_schema.jsonld",
+                "prefLabel": {
+                    "en": "Multiple Testings"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

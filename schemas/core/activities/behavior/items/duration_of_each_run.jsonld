@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "duration_of_each_run.jsonld",
+    "prefLabel": {
+        "en": "duration of each run"
+    },
+    "description": "duration of each run",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "What was the duration of each imaging run in seconds?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

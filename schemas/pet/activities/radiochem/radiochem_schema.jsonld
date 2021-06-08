@@ -1,0 +1,155 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "radiochem_schema.jsonld",
+    "prefLabel": {
+        "en": "Radiochem"
+    },
+    "description": "radiochem",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/ModeOfAdministration.jsonld",
+            "items/InfusionSpeed.jsonld",
+            "items/InjectedRadioactivity.jsonld",
+            "items/InjectedMass.jsonld",
+            "items/moles_tracer_injected.jsonld",
+            "items/bodyweight.jsonld",
+            "items/MolarActivity.jsonld",
+            "items/MolarActivityMeasTime.jsonld",
+            "items/SpecificRadioactivity.jsonld",
+            "items/SpecificRadioactivityMeasTime.jsonld",
+            "items/Purity.jsonld",
+            "items/InjectedVolume.jsonld",
+            "items/formulation.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "ModeOfAdministration",
+                "isAbout": "items/ModeOfAdministration.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "InfusionSpeed",
+                "isAbout": "items/InfusionSpeed.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "InjectedRadioactivity",
+                "isAbout": "items/InjectedRadioactivity.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "InjectedMass",
+                "isAbout": "items/InjectedMass.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moles_tracer_injected",
+                "isAbout": "items/moles_tracer_injected.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "bodyweight",
+                "isAbout": "items/bodyweight.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "MolarActivity",
+                "isAbout": "items/MolarActivity.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "MolarActivityMeasTime",
+                "isAbout": "items/MolarActivityMeasTime.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "SpecificRadioactivity",
+                "isAbout": "items/SpecificRadioactivity.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "SpecificRadioactivityMeasTime",
+                "isAbout": "items/SpecificRadioactivityMeasTime.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Purity",
+                "isAbout": "items/Purity.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "InjectedVolume",
+                "isAbout": "items/InjectedVolume.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "formulation",
+                "isAbout": "items/formulation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

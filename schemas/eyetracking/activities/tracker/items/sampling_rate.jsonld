@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "sampling_rate.jsonld",
+    "prefLabel": {
+        "en": "sampling rate"
+    },
+    "description": "sampling rate",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "The sampling rate used"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

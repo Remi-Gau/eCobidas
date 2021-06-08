@@ -1,0 +1,31 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "shape_of_smoothing_filter.jsonld",
+    "prefLabel": {
+        "en": "shape of smoothing filter"
+    },
+    "description": "shape of smoothing filter",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Shape of smoothing filter"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 0,
+        "choices": [
+            {
+                "name": {
+                    "en": "3D Gaussian"
+                },
+                "value": 0
+            }
+        ],
+        "multipleChoice": false
+    }
+}

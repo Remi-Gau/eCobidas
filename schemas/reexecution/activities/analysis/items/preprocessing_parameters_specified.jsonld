@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "preprocessing_parameters_specified.jsonld",
+    "prefLabel": {
+        "en": "preprocessing parameters specified"
+    },
+    "description": "preprocessing parameters specified",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Are the detailed processing parameters specified?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "yes"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "some details provided"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "no"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "external_motion_correction_schema.jsonld",
+    "prefLabel": {
+        "en": "External Motion Correction"
+    },
+    "description": "external motion correction",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/hardware.jsonld",
+            "items/external_moco_software.jsonld",
+            "items/external_moco_software_version.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "hardware",
+                "isAbout": "items/hardware.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "external_moco_software",
+                "isAbout": "items/external_moco_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "external_moco_software_version",
+                "isAbout": "items/external_moco_software_version.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

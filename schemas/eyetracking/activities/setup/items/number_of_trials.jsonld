@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "number_of_trials.jsonld",
+    "prefLabel": {
+        "en": "number of trials"
+    },
+    "description": "number of trials",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "The number of trials in the experiment"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

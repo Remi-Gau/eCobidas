@@ -1,0 +1,35 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "activity_2_schema.jsonld",
+    "prefLabel": {
+        "en": "Activity 2"
+    },
+    "description": "activity 2",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/number_of_subjects.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "number_of_subjects",
+                "isAbout": "items/number_of_subjects.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

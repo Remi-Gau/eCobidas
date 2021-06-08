@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "distance_between_participant_and_screen.jsonld",
+    "prefLabel": {
+        "en": "distance between participant and screen"
+    },
+    "description": "distance between participant and screen",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "The distance between participants and the screen"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

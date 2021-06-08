@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "pubmed_ID.jsonld",
+    "prefLabel": {
+        "en": "pubmed ID"
+    },
+    "description": "pubmed ID",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "Enter the publication PubMed ID (PMID)"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

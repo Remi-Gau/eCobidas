@@ -1,28 +1,26 @@
-.~lock*
-
 *.DS_Store
 
+.~lock*
+
 __pycache__
-
-*.txt
-# dataset_descriptor*.md
-
-# *.py[cod]
-
 .coverage
 
-# DOCUMENTATION
+# doc
 site/*
 
 # local virtual environnment
-ecobidas/*
-env/*
-venv/*
-
+*env/*
 
 # pytest
 .pytest_cache/
 
+# jupyter notebook
+.ipynb_checkpoints/
+Untitled.ipynb
+
 # javascript
 package-lock.json
 node_modules/*
+
+# set up
+**/*.egg-info

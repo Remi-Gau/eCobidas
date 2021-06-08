@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "parent_fraction_units.jsonld",
+    "prefLabel": {
+        "en": "parent fraction units"
+    },
+    "description": "parent fraction units",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Parent fraction units"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "s"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "fraction"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "fraction"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}
