@@ -89,7 +89,7 @@
             {
                 "variableName": "fitting_description",
                 "isAbout": "items/fitting_description.jsonld",
-                "isVis": true,
+                "isVis": "fitting-description == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

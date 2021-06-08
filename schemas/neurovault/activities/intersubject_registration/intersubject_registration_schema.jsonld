@@ -44,7 +44,7 @@
             {
                 "variableName": "intersubject_registration_software",
                 "isAbout": "items/intersubject_registration_software.jsonld",
-                "isVis": true,
+                "isVis": "used_intersubject_registration == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -53,7 +53,7 @@
             {
                 "variableName": "intersubject_transformation_type",
                 "isAbout": "items/intersubject_transformation_type.jsonld",
-                "isVis": true,
+                "isVis": "used_intersubject_registration == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -62,7 +62,7 @@
             {
                 "variableName": "nonlinear_transform_type",
                 "isAbout": "items/nonlinear_transform_type.jsonld",
-                "isVis": true,
+                "isVis": "used_intersubject_registration == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -71,7 +71,7 @@
             {
                 "variableName": "transform_similarity_metric",
                 "isAbout": "items/transform_similarity_metric.jsonld",
-                "isVis": true,
+                "isVis": "used_intersubject_registration == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -80,7 +80,7 @@
             {
                 "variableName": "interpolation_method",
                 "isAbout": "items/interpolation_method.jsonld",
-                "isVis": true,
+                "isVis": "used_intersubject_registration == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -89,7 +89,7 @@
             {
                 "variableName": "object_image_type",
                 "isAbout": "items/object_image_type.jsonld",
-                "isVis": true,
+                "isVis": "used_intersubject_registration == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -107,7 +107,7 @@
             {
                 "variableName": "functional_coregistration_method",
                 "isAbout": "items/functional_coregistration_method.jsonld",
-                "isVis": true,
+                "isVis": "functional_coregistered_to_structural == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -152,7 +152,7 @@
             {
                 "variableName": "smoothing_type",
                 "isAbout": "items/smoothing_type.jsonld",
-                "isVis": true,
+                "isVis": "used_smoothing == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -161,7 +161,7 @@
             {
                 "variableName": "smoothing_fwhm",
                 "isAbout": "items/smoothing_fwhm.jsonld",
-                "isVis": true,
+                "isVis": "used_smoothing == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

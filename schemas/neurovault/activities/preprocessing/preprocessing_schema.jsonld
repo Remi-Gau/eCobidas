@@ -78,7 +78,7 @@
             {
                 "variableName": "b0_unwarping_software",
                 "isAbout": "items/b0_unwarping_software.jsonld",
-                "isVis": true,
+                "isVis": "used_b0_unwarping == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -96,7 +96,7 @@
             {
                 "variableName": "slice_timing_correction_software",
                 "isAbout": "items/slice_timing_correction_software.jsonld",
-                "isVis": true,
+                "isVis": "used_slice_timing_correction == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -114,7 +114,7 @@
             {
                 "variableName": "motion_correction_software",
                 "isAbout": "items/motion_correction_software.jsonld",
-                "isVis": true,
+                "isVis": "used_motion_correction == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -123,7 +123,7 @@
             {
                 "variableName": "motion_correction_reference",
                 "isAbout": "items/motion_correction_reference.jsonld",
-                "isVis": true,
+                "isVis": "used_motion_correction == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -132,7 +132,7 @@
             {
                 "variableName": "motion_correction_metric",
                 "isAbout": "items/motion_correction_metric.jsonld",
-                "isVis": true,
+                "isVis": "used_motion_correction == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -141,7 +141,7 @@
             {
                 "variableName": "motion_correction_interpolation",
                 "isAbout": "items/motion_correction_interpolation.jsonld",
-                "isVis": true,
+                "isVis": "used_motion_correction == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

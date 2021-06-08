@@ -63,7 +63,7 @@
             {
                 "variableName": "example_image_included",
                 "isAbout": "items/example_image_included.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -90,7 +90,7 @@
             {
                 "variableName": "size_of_stimulus",
                 "isAbout": "items/size_of_stimulus.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

@@ -30,7 +30,7 @@
             {
                 "variableName": "handling_of_artefacts",
                 "isAbout": "items/handling_of_artefacts.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -39,7 +39,7 @@
             {
                 "variableName": "obtained_accuracy",
                 "isAbout": "items/obtained_accuracy.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -102,7 +102,7 @@
             {
                 "variableName": "test_of_assumptions_for_missing_data",
                 "isAbout": "items/test_of_assumptions_for_missing_data.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -111,7 +111,7 @@
             {
                 "variableName": "methods_addressing_missing_data",
                 "isAbout": "items/methods_addressing_missing_data.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -120,7 +120,7 @@
             {
                 "variableName": "denoising_filtering_or_smoothing_of_raw_data",
                 "isAbout": "items/denoising_filtering_or_smoothing_of_raw_data.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

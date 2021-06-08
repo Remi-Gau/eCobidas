@@ -115,7 +115,7 @@
             {
                 "variableName": "orthogonalization_description",
                 "isAbout": "items/orthogonalization_description.jsonld",
-                "isVis": true,
+                "isVis": "used_orthogonalization == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -133,7 +133,7 @@
             {
                 "variableName": "high_pass_filter_method",
                 "isAbout": "items/high_pass_filter_method.jsonld",
-                "isVis": true,
+                "isVis": "used_high_pass_filter == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

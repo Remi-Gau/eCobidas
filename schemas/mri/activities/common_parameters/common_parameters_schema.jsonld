@@ -195,7 +195,7 @@
             {
                 "variableName": "3d_matrix_size",
                 "isAbout": "items/3d_matrix_size.jsonld",
-                "isVis": true,
+                "isVis": "imaging_type == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -231,7 +231,7 @@
             {
                 "variableName": "3d_phase_encoding",
                 "isAbout": "items/3d_phase_encoding.jsonld",
-                "isVis": true,
+                "isVis": "imaging_type == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -258,7 +258,7 @@
             {
                 "variableName": "parallel_imaging_method",
                 "isAbout": "items/parallel_imaging_method.jsonld",
-                "isVis": true,
+                "isVis": "parallel_imaging_used == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -267,7 +267,7 @@
             {
                 "variableName": "acceleration_factor",
                 "isAbout": "items/acceleration_factor.jsonld",
-                "isVis": true,
+                "isVis": "parallel_imaging_used == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -276,7 +276,7 @@
             {
                 "variableName": "other_parallel_imaging_parameters",
                 "isAbout": "items/other_parallel_imaging_parameters.jsonld",
-                "isVis": true,
+                "isVis": "parallel_imaging_used == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

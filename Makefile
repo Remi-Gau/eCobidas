@@ -101,10 +101,10 @@ download_all:
 	sh download_tsv.sh reexecution reexecution
 	sh download_tsv.sh response_options	mri_softwares
 	sh download_tsv.sh response_options	stimulus_presentation_softwares
-	sh download_tsv.sh response_options	multiple_comparison
-	sh download_tsv.sh response_options	interpolation
-	sh download_tsv.sh response_options	cost_function
-	sh download_tsv.sh response_options	meeg_reference_electrode
+	sh download_tsv.sh response_options	multiple_comparisons
+	sh download_tsv.sh response_options	interpolations
+	sh download_tsv.sh response_options	cost_functions
+	sh download_tsv.sh response_options	meeg_reference_electrodes
 	sh download_tsv.sh response_options	meeg_analysis_softwares
 	sh download_tsv.sh response_options	meeg_amplifier_brands
 	sh download_tsv.sh response_options	meeg_acquisition_softwares
@@ -150,10 +150,10 @@ download_rexec:
 download_responses:
 	sh download_tsv.sh response_options	mri_softwares
 	sh download_tsv.sh response_options	stimulus_presentation_softwares
-	sh download_tsv.sh response_options	multiple_comparison
-	sh download_tsv.sh response_options	interpolation
-	sh download_tsv.sh response_options	cost_function
-	sh download_tsv.sh response_options	meeg_reference_electrode
+	sh download_tsv.sh response_options	multiple_comparisons
+	sh download_tsv.sh response_options	interpolations
+	sh download_tsv.sh response_options	cost_functions
+	sh download_tsv.sh response_options	meeg_reference_electrodes
 	sh download_tsv.sh response_options	meeg_analysis_softwares
 	sh download_tsv.sh response_options	meeg_amplifier_brands
 	sh download_tsv.sh response_options	meeg_acquisition_softwares
@@ -184,10 +184,10 @@ convert_all:
 responses_all:
 	ecobidas_responses --filename mri_softwares
 	ecobidas_responses --filename stimulus_presentation_softwares
-	ecobidas_responses --filename multiple_comparison
-	ecobidas_responses --filename interpolation
-	ecobidas_responses --filename cost_function
-	ecobidas_responses --filename meeg_reference_electrode
+	ecobidas_responses --filename multiple_comparisons
+	ecobidas_responses --filename interpolations
+	ecobidas_responses --filename cost_functions
+	ecobidas_responses --filename meeg_reference_electrodes
 	ecobidas_responses --filename meeg_analysis_softwares
 	ecobidas_responses --filename meeg_amplifier_brands
 	ecobidas_responses --filename meeg_acquisition_softwares
@@ -197,6 +197,7 @@ responses_all:
 
 # VALIDATE
 validate_all:
+	grep -r  "@context" schemas | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas
 
 # CLEAN

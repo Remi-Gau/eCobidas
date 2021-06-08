@@ -87,7 +87,7 @@
             {
                 "variableName": "reason_for_exclusion",
                 "isAbout": "items/reason_for_exclusion.jsonld",
-                "isVis": true,
+                "isVis": "subjects_excluded == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -186,7 +186,7 @@
             {
                 "variableName": "handedness_method",
                 "isAbout": "items/handedness_method.jsonld",
-                "isVis": true,
+                "isVis": "handedness == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -204,7 +204,7 @@
             {
                 "variableName": "exclusion_criteria_description",
                 "isAbout": "items/exclusion_criteria_description.jsonld",
-                "isVis": true,
+                "isVis": "exclusion_criteria == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

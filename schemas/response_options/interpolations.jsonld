@@ -1,46 +1,52 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:ResponseOption",
-    "@id": "cost_function.jsonld",
+    "@id": "interpolations.jsonld",
     "valueType": "xsd:integer",
     "minValue": 0,
-    "maxValue": 5,
+    "maxValue": 6,
     "choices": [
         {
             "name": {
-                "en": "Mutual information"
+                "en": "Nearest neighbour"
             },
             "value": 0
         },
         {
             "name": {
-                "en": "Normalised mutual information"
+                "en": "Trilinear"
             },
             "value": 1
         },
         {
             "name": {
-                "en": "Entropy correlation coefficient"
+                "en": "2nd degree spline"
             },
             "value": 2
         },
         {
             "name": {
-                "en": "Normalised cross-correlation"
+                "en": "3rd degree spline"
             },
             "value": 3
         },
         {
             "name": {
-                "en": "Correlation ratio"
+                "en": "4th degree spline"
             },
             "value": 4
         },
         {
             "name": {
-                "en": "Boundary-based registration"
+                "en": "Fourrier interpolation"
             },
             "value": 5
+        },
+        {
+            "name": {
+                "en": "sinc interpolation"
+            },
+            "value": 6
         }
     ]
 }

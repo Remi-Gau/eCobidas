@@ -92,7 +92,7 @@
             {
                 "variableName": "experimenter",
                 "isAbout": "items/experimenter.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -110,7 +110,7 @@
             {
                 "variableName": "distance_between_participant_and_screen",
                 "isAbout": "items/distance_between_participant_and_screen.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

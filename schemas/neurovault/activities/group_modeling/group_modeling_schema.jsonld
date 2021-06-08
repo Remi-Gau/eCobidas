@@ -80,7 +80,7 @@
             {
                 "variableName": "group_repeated_measures_method",
                 "isAbout": "items/group_repeated_measures_method.jsonld",
-                "isVis": true,
+                "isVis": "group_repeated_measures == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

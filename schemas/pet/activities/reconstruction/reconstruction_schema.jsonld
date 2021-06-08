@@ -56,7 +56,7 @@
             {
                 "variableName": "ImageDecayCorrectionTime",
                 "isAbout": "items/ImageDecayCorrectionTime.jsonld",
-                "isVis": true,
+                "isVis": "ImageDecayCorrected == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

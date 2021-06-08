@@ -90,7 +90,7 @@
             {
                 "variableName": "optimization_method",
                 "isAbout": "items/optimization_method.jsonld",
-                "isVis": true,
+                "isVis": "optimization == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

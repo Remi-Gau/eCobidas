@@ -59,7 +59,7 @@
             {
                 "variableName": "ContinuousBloodWithdrawalRate",
                 "isAbout": "items/ContinuousBloodWithdrawalRate.jsonld",
-                "isVis": true,
+                "isVis": "ContinuousBloodAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -68,7 +68,7 @@
             {
                 "variableName": "ContinuousBloodTubingType",
                 "isAbout": "items/ContinuousBloodTubingType.jsonld",
-                "isVis": true,
+                "isVis": "ContinuousBloodAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -77,7 +77,7 @@
             {
                 "variableName": "ContinuousBloodTubingLength",
                 "isAbout": "items/ContinuousBloodTubingLength.jsonld",
-                "isVis": true,
+                "isVis": "ContinuousBloodAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -86,7 +86,7 @@
             {
                 "variableName": "ContinuousBloodDispersionConstant",
                 "isAbout": "items/ContinuousBloodDispersionConstant.jsonld",
-                "isVis": true,
+                "isVis": "ContinuousBloodAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -95,7 +95,7 @@
             {
                 "variableName": "ContinuousBloodDispersionCorrected",
                 "isAbout": "items/ContinuousBloodDispersionCorrected.jsonld",
-                "isVis": true,
+                "isVis": "ContinuousBloodAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -113,7 +113,7 @@
             {
                 "variableName": "DiscreteBloodHaematocrit",
                 "isAbout": "items/DiscreteBloodHaematocrit.jsonld",
-                "isVis": true,
+                "isVis": "DiscreteBloodAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -122,7 +122,7 @@
             {
                 "variableName": "DiscreteBloodDensity",
                 "isAbout": "items/DiscreteBloodDensity.jsonld",
-                "isVis": true,
+                "isVis": "DiscreteBloodAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -140,7 +140,7 @@
             {
                 "variableName": "MetaboliteMethod",
                 "isAbout": "items/MetaboliteMethod.jsonld",
-                "isVis": true,
+                "isVis": "MetaboliteAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -221,7 +221,7 @@
             {
                 "variableName": "MetaboliteRecoveryCorrectionApplied",
                 "isAbout": "items/MetaboliteRecoveryCorrectionApplied.jsonld",
-                "isVis": true,
+                "isVis": "MetaboliteAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -239,7 +239,7 @@
             {
                 "variableName": "PlasmaFreeFraction",
                 "isAbout": "items/PlasmaFreeFraction.jsonld",
-                "isVis": true,
+                "isVis": "PlasmaAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -257,7 +257,7 @@
             {
                 "variableName": "PlasmaFreeFractionMethod",
                 "isAbout": "items/PlasmaFreeFractionMethod.jsonld",
-                "isVis": true,
+                "isVis": "PlasmaAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -311,7 +311,7 @@
             {
                 "variableName": "whole_blood_radioactivity",
                 "isAbout": "items/whole_blood_radioactivity.jsonld",
-                "isVis": true,
+                "isVis": "MetaboliteAvail == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

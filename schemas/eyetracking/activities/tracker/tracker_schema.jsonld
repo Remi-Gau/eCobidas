@@ -60,7 +60,7 @@
             {
                 "variableName": "type_of_device",
                 "isAbout": "items/type_of_device.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -69,7 +69,7 @@
             {
                 "variableName": "lens_size",
                 "isAbout": "items/lens_size.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -78,7 +78,7 @@
             {
                 "variableName": "sampling_procedure",
                 "isAbout": "items/sampling_procedure.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -87,7 +87,7 @@
             {
                 "variableName": "sampling_rate",
                 "isAbout": "items/sampling_rate.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -96,7 +96,7 @@
             {
                 "variableName": "accuracy",
                 "isAbout": "items/accuracy.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -105,7 +105,7 @@
             {
                 "variableName": "precision",
                 "isAbout": "items/precision.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -114,7 +114,7 @@
             {
                 "variableName": "temporal_precision",
                 "isAbout": "items/temporal_precision.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -123,7 +123,7 @@
             {
                 "variableName": "stimulus_synchronization_latency",
                 "isAbout": "items/stimulus_synchronization_latency.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -132,7 +132,7 @@
             {
                 "variableName": "latency",
                 "isAbout": "items/latency.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -141,7 +141,7 @@
             {
                 "variableName": "headbox",
                 "isAbout": "items/headbox.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -150,7 +150,7 @@
             {
                 "variableName": "chin_rest",
                 "isAbout": "items/chin_rest.jsonld",
-                "isVis": true,
+                "isVis": "long_form == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
