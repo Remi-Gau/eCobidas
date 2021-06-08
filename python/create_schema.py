@@ -164,6 +164,11 @@ def create_new_item(item_info, activity_path):
 
     item.set_URI(os.path.join("items", item.get_filename()))
 
+    # TODO
+    # add a method to the Item class so that updating visibility does not have
+    # does not have to be done manually
+    item.visible = item_info["visibility"]
+
     item.write(os.path.join(activity_path, "items"))
 
     return item

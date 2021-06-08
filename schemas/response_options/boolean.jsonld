@@ -8,13 +8,13 @@
     "choices": [
         {
             "name": {
-                "en": "Yes"
+                "en": "No"
             },
             "value": 0
         },
         {
             "name": {
-                "en": "No"
+                "en": "Yes"
             },
             "value": 1
         },

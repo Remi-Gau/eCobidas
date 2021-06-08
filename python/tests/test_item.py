@@ -90,7 +90,7 @@ def test_get_item_info():
 
     this_item = pd.DataFrame(
         {
-            "visibility": ["1"],
+            "visibility": ["previous_item == 2"],
             "item": [""],
             "mandatory": ["1"],
             "field_type": ["radio"],
@@ -109,7 +109,7 @@ def test_get_item_info():
         "question": "test question",
         "field_type": "radio",
         "choices": ["choice A", "choice B"],
-        "visibility": True,
+        "visibility": "previous_item == 2",
         "mandatory": True,
         "description": "desc",
     }
@@ -168,6 +168,7 @@ def test_get_visibility():
 
     this_item = pd.DataFrame({"visibility": ["javascript expression"]})
     visibility = get_visibility(this_item)
+    assert visibility == "javascript expression"
 
 
 def test_list_responses_options():
