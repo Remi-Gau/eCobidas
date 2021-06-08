@@ -44,6 +44,20 @@ def get_landing_page(this_schema):
     return landing_page
 
 
+def get_sub_dir(this_schema):
+
+    df = get_metatable()
+
+    is_this_schema = df["subsection"] == this_schema
+    this_schema_info = df[is_this_schema]
+
+    if list(this_schema_info["landing page"]) != []:
+        return list(this_schema_info["section"])[0]
+
+    warnings.warn("Unknown target schema: " + this_schema)
+    return this_schema
+
+
 def set_dir(this_schema, out_dir):
 
     in_dir = os.path.join(
@@ -55,25 +69,10 @@ def set_dir(this_schema, out_dir):
     if this_schema == "test":
         in_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tests")
 
-    if this_schema in [
-        "neurovault",
-        "pet",
-        "eyetracking",
-        "reexecution",
-        "response_options",
-    ]:
-        sub_dir = this_schema
-    elif this_schema in ["all_sequences"]:
-        sub_dir = "mri"
-    elif this_schema in ["participants", "behavior"]:
-        sub_dir = "core"
-    elif this_schema in list_preset_responses():
-        sub_dir = "response_options"
-    elif this_schema == "test":
+    sub_dir = get_sub_dir(this_schema)
+
+    if this_schema == "test":
         sub_dir = os.path.join("inputs", "csv")
-    else:
-        warnings.warn("Unknown target schema: " + this_schema)
-        sub_dir = this_schema
 
     out_dir = os.path.join(out_dir, sub_dir)
 
