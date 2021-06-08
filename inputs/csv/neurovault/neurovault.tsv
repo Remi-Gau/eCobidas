@@ -43,14 +43,14 @@ duplicate	activity_order	include	preamble	activity_pref_label	item	item_pref_lab
 0	4	1		Preprocessing		motion correction software	motion correction software	10	3	used_motion_correction == 1	Specify software used for motion correction if different from the main package	select	preset:mri_softwares				
 0	4	1		Preprocessing		motion correction reference	motion correction reference	11	3	used_motion_correction == 1	Reference scan used for motion correction	text					
 0	4	1		Preprocessing		motion correction metric	motion correction metric	12	3	used_motion_correction == 1	Similarity metric used for motion correction	select	preset:cost_functions				
-0	4	1		Preprocessing		motion correction interpolation	motion correction interpolation	13	3	used_motion_correction == 1	Interpolation method used for motion correction	select	preset:interpolation				
+0	4	1		Preprocessing		motion correction interpolation	motion correction interpolation	13	3	used_motion_correction == 1	Interpolation method used for motion correction	select	preset:interpolations				
 0	4	1		Preprocessing		used motion susceptibiity correction	used motion susceptibiity correction	14	3	1	Was motion-susceptibility correction used?	radio	preset:boolean				
 0	5	1	Describe your spatial normalization	Intersubject registration		used intersubject registration	used intersubject registration	1	1	1	Were subjects registered to a common stereotactic space?	radio	preset:boolean				
 0	5	1		Intersubject registration		intersubject registration software	intersubject registration software	2	2	used_intersubject_registration == 1	Specify software used for intersubject registration if different from main package	select	preset:mri_softwares				
 0	5	1		Intersubject registration		intersubject transformation type	intersubject transformation type	3	1	used_intersubject_registration == 1	Was linear or nonlinear registration used?	select	linear | non-linear				
 0	5	1		Intersubject registration		nonlinear transform type	nonlinear transform type	4	2	used_intersubject_registration == 1	If nonlinear registration was used, describe transform method	text					
 0	5	1		Intersubject registration		transform similarity metric	transform similarity metric	5	3	used_intersubject_registration == 1	Similarity metric used for intersubject registration	text					
-0	5	1		Intersubject registration		interpolation method	interpolation method	6	2	used_intersubject_registration == 1	Interpolation method used for intersubject registration	select	preset:interpolation				
+0	5	1		Intersubject registration		interpolation method	interpolation method	6	2	used_intersubject_registration == 1	Interpolation method used for intersubject registration	select	preset:interpolations				
 0	5	1		Intersubject registration		object image type	object image type	7	1	used_intersubject_registration == 1	What type of image was used to determine the transformation to the atlas?	text					
 0	5	1		Intersubject registration		functional coregistered to structural	functional coregistered to structural	8	2	1	Were the functional images coregistered to the subject's structural image?	radio	preset:boolean				
 0	5	1		Intersubject registration		functional coregistration method	functional coregistration method	9	3	functional_coregistered_to_structural == 1	Method used to coregister functional to structural images	text					
@@ -63,7 +63,7 @@ duplicate	activity_order	include	preamble	activity_pref_label	item	item_pref_lab
 0	5	1		Intersubject registration		resampled voxel size	resampled voxel size	16	1	1	Voxel size in mm of the resampled, atlas-space images	float					
 0	6	1	Describe your model specification at the subejct level	Individual subject modeling		intrasubject model type	intrasubject model type	1	1	1	Type of group model used	radio	Regression				
 0	6	1		Individual subject modeling		intrasubject estimation type	intrasubject estimation type	2	1	1	Estimation method used for model	select	ordinary least squares | generalized least squares				
-0	6	1		Individual subject modeling		intrasubject modeling software	intrasubject modeling software	3	2	1	Software used for intrasubject modeling if different from overall package	radio	preset:mri_softwares				
+0	6	1		Individual subject modeling		intrasubject modeling software	intrasubject modeling software	3	2	1	Software used for intrasubject modeling if different from overall package	select	preset:mri_softwares				
 0	6	1		Individual subject modeling		hemodynamic response function	hemodynamic response function	4	2	1	Nature of HRF model	select	double gamma | Fourrier set | FIR				
 0	6	1		Individual subject modeling		used temporal derivatives	used temporal derivatives	5	2	1	Were temporal derivatives included?	radio	preset:boolean				
 0	6	1		Individual subject modeling		used dispersion derivatives	used dispersion derivatives	6	3	1	Were dispersion derivatives included?	radio	preset:boolean				

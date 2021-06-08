@@ -10,7 +10,7 @@ def set_item_name(this_item):
     if "item" not in this_item.keys():
         item_name = convert_to_str(this_item["item_pref_label"])
     elif isinstance(convert_to_str(this_item["item"]), float):
-        item_name = convert_to_str(this_item["item_pref_label"])        
+        item_name = convert_to_str(this_item["item_pref_label"])
     elif convert_to_str(this_item["item"]) == "":
         item_name = convert_to_str(this_item["item_pref_label"])
     else:
@@ -135,7 +135,7 @@ def define_choices(item, field_type, choices):
 
         # if we have a dropdown menu
         elif field_type == "select":
-            response_options.add_choice("Other", len(choices))
+            response_options.add_choice("other", len(choices))
             response_options.set_max(len(choices))
             item.set_input_type_as_select(response_options)
 
