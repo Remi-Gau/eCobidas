@@ -21,22 +21,17 @@ def list_preset_responses():
 
     df = get_metatable()
     is_response_option = df["section"] == "response_options"
-    reponse_options = df[is_response_option]
-    return list(reponse_options["subsection"])
+    response_options = df[is_response_option]
+    return list(response_options["subsection"])
 
-    # return [
-    #     "mri_softwares",
-    #     "stimulus_presentation_softwares",
-    #     "multiple_comparison",
-    #     "interpolation",
-    #     "cost_function",
-    #     "meeg_reference_electrode",
-    #     "meeg_analysis_softwares",
-    #     "meeg_amplifier_brands",
-    #     "meeg_acquisition_softwares",
-    #     "eeg_cap_types",
-    #     "boolean",
-    # ]
+
+def get_landing_page(this_schema):
+
+    repo = "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/"
+
+    landing_page = "README_eCOBIDAS-en.md"
+
+    return repo + landing_page
 
 
 def set_dir(this_schema, out_dir):

@@ -2,7 +2,14 @@ import os, sys
 import pandas as pd
 
 from item import get_item_info, define_new_item
-from utils import snake_case, set_dir, print_info, print_item_info, get_root_dir
+from utils import (
+    snake_case,
+    set_dir,
+    print_info,
+    print_item_info,
+    get_root_dir,
+    get_landing_page,
+)
 
 from reproschema.models.activity import Activity
 from reproschema.models.protocol import Protocol
@@ -86,6 +93,8 @@ def initialize_protocol(this_schema, out_dir):
     protocol_name = protocol_name.lower()
     protocol = Protocol()
     protocol.set_defaults(protocol_name)
+
+    protocol.set_landing_page(get_landing_page(this_schema))
 
     # create output directories
     protocol_path = os.path.join(out_dir, "protocols")
