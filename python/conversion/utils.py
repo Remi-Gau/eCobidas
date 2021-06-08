@@ -8,6 +8,22 @@ def get_root_dir():
     return os.path.abspath(os.path.join(this_path, "..", ".."))
 
 
+def list_preset_responses():
+    return [
+        "mri_softwares",
+        "stimulus_presentation_softwares",
+        "multiple_comparison",
+        "interpolation",
+        "cost_function",
+        "meeg_reference_electrode",
+        "meeg_analysis_softwares",
+        "meeg_amplifier_brands",
+        "meeg_acquisition_softwares",
+        "eeg_cap_types",
+        "boolean",
+    ]
+
+
 def set_dir(this_schema, out_dir):
 
     in_dir = os.path.join(
@@ -23,7 +39,7 @@ def set_dir(this_schema, out_dir):
         "neurovault",
         "pet",
         "eyetracking",
-        "nimg_reexecution",
+        "reexecution",
         "response_options",
     ]:
         sub_dir = this_schema
@@ -31,7 +47,7 @@ def set_dir(this_schema, out_dir):
         sub_dir = "mri"
     elif this_schema in ["participants", "behavior"]:
         sub_dir = "core"
-    elif this_schema in ["mri_softwares"]:
+    elif this_schema in list_preset_responses():
         sub_dir = "response_options"
     elif this_schema == "test":
         sub_dir = os.path.join("inputs", "csv")
