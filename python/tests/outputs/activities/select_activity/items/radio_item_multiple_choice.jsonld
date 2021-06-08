@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "radio_item_multiple_choice.jsonld",
+    "prefLabel": {
+        "en": "radio item multiple choice"
+    },
+    "description": "This is a radio item with multiple choice.",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "radio item - several answers allowed"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

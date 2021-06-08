@@ -8,8 +8,10 @@ from utils import load_data, set_dir, get_root_dir
 
 from reproschema.models.item import ResponseOption
 
-local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
-sys.path.insert(0, local_reproschema)
+local_reproschema = os.path.join(
+    get_root_dir(), "..", "reproschema-py", "reproschema", "models"
+)
+# sys.path.insert(0, local_reproschema)
 
 
 @click.command()

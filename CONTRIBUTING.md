@@ -19,6 +19,7 @@ git checkout remi_schema_creator
 # pip install it
 pip install -e /home/remi/github/reproschema-py
 ```
+## Notes
 
 Using then `pip freeze` should give you this with the specific shasum of the
 commit between the `@` and the `#`:

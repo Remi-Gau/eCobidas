@@ -2,7 +2,7 @@
 # create another entry point for creating response files
 # see how reproschema uses click to create command line calls `reproschema validate`
 
-import click, os
+import click
 from create_schema import create_schema
 from utils import print_download, set_dir
 

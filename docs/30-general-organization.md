@@ -60,15 +60,23 @@ the ones for PET imaging and eyetracking).
 ```text
 .
 ├── .github           <-- continuous integration "scripts"
-├── activities        <-- schema of the different "sections"of the checklistss with their items
+├── activities        <-- deprecated: ignore this
 ├── communication     <-- abstracts and presentations about the project
 ├── docs              <-- content of the documentation
 ├── inputs            <-- checklists spreadsheets as CSV files, boilerplate for method section generation
-├── protocols         <-- schema for the checklists putting together several "sections" together
-├── response_options  <-- contains the pre-set list of response options to some checklist items
-├── schema            <-- obsolete: ignore this
-├── python            <-- python scripts to convert the CSV spreadsheets into schemas
+├── schema            <-- deprecated: ignore this
+├── schemas           <-- where the schemas are kept locally
+├── python            <-- python package to convert the CSV spreadsheets into schemas
 └── tests             <-- python script to test that the schema files are valid JSON-LD
+```
+
+In the schemas folder you might find different folders some of them with the
+following names:
+
+```text
+├── protocols         <-- schema for the checklists putting together several "sections" together
+├── activities        <-- schema of the different "sections"of the checklistss with their items
+└── response_options  <-- contains the pre-set list of response options to some checklist items
 ```
 
 ### Spreadsheet content and organization

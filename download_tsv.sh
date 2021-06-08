@@ -4,7 +4,7 @@
 # Add a loop to download them all
 
 # Simple script to download the content of the different google spreadsheet in
-# the csv folder
+# the inputs folder
 #
 # USAGE:
 #

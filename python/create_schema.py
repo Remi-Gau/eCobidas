@@ -2,12 +2,14 @@ import os, sys
 import pandas as pd
 
 from item import get_item_info, define_new_item
-from utils import snake_case, set_dir, print_info, print_item_info
+from utils import snake_case, set_dir, print_info, print_item_info, get_root_dir
 
 from reproschema.models.activity import Activity
 from reproschema.models.protocol import Protocol
 
-# local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
+local_reproschema = os.path.join(
+    get_root_dir(), "..", "reproschema-py", "reproschema", "models"
+)
 # sys.path.insert(0, local_reproschema)
 
 

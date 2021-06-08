@@ -1,6 +1,19 @@
 # Makefile to create the activities and protocols
 
+# TODO
+# update the clean commands to clean the correct directories
+
 .PHONY: all clean clean_protocol clean_activities clean_csv
+
+# INSTALL
+# TODO
+pip install -r requirements.txt
+git clone https://github.com/Remi-Gau/reproschema-py.git  ../../
+cd ../../reproschema-py
+git checkout remi_schema_creator
+
+
+
 
 # DOWNLOAD and CREATE
 neurovault:
@@ -12,6 +25,7 @@ neurovault:
 
 # DOWNLOAD
 
+# TODO
 # simplify by making download script more powerful
 
 ALL_MRI = $(wildcard inputs/csv/mri/*.tsv)
@@ -138,7 +152,8 @@ validate_all:
 
 # CLEAN
 
-# TODO use wildcards to simplify 
+# TODO 
+# use wildcards to simplify 
 clean_tsv: 
 	rm -f inputs/*.tsv
 

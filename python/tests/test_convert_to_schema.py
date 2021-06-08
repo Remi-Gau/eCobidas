@@ -4,7 +4,7 @@ import sys, os, json
 from ..create_schema import create_schema
 
 myPath = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, myPath + "/../")
+# sys.path.insert(0, myPath + "/../")
 
 
 """

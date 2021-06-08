@@ -9,7 +9,7 @@ the [general organization](./30-general-organization.md) documentation.
 ## Turn the spreadsheet into the schema
 
 This part is done by a bit of python code and you can find more information in
-the [README](https://github.com/Remi-Gau/eCobidas/tree/master/scripts/README.md) in the `scripts` folder.
+the [README](https://github.com/Remi-Gau/eCobidas/tree/master/python/README.md) in the `python` folder.
 
 ### Making the new schema available to the UI
 

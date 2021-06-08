@@ -5,7 +5,7 @@ import pandas as pd
 def get_root_dir():
 
     this_path = os.path.dirname(os.path.abspath(__file__))
-    return os.path.abspath(os.path.join(this_path, "..", ".."))
+    return os.path.abspath(os.path.join(this_path, ".."))
 
 
 def list_preset_responses():

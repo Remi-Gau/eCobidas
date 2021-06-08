@@ -1,0 +1,85 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "slider_item.jsonld",
+    "prefLabel": {
+        "en": "slider item"
+    },
+    "description": "slider item",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "slider"
+    },
+    "question": {
+        "en": "This is a slider item"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 100,
+        "choices": [
+            {
+                "name": {
+                    "en": "1.0"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "12.0"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "23.0"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "34.0"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "45.0"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "56.0"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "67.0"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "78.0"
+                },
+                "value": 7
+            },
+            {
+                "name": {
+                    "en": "89.0"
+                },
+                "value": 8
+            },
+            {
+                "name": {
+                    "en": "100.0"
+                },
+                "value": 9
+            }
+        ],
+        "multipleChoice": false
+    }
+}

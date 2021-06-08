@@ -1,4 +1,3 @@
 mkdocs-material
 pymdown-extensions
 -r python/conversion/requirements.txt
--r python/methods_writing/requirements.txt
