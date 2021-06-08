@@ -85,7 +85,7 @@ def convert_to_int(df_field):
 
 def snake_case(input):
 
-    return input.lower().replace("\n", "").replace(" ", "_").replace(",", "")
+    return input.replace("\n", "").replace(" ", "_").replace(",", "")
 
 
 def print_info(type, pref_label, file):

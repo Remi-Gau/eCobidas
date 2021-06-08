@@ -5,14 +5,27 @@ from utils import convert_to_str, convert_to_int, snake_case
 from reproschema.models.item import Item, ResponseOption
 
 
-def get_item_info(this_item):
+def set_item_name(this_item):
 
-    item_name = []
+    if "item" not in this_item.keys():
+        item_name = convert_to_str(this_item["item_pref_label"])
+    elif isinstance(convert_to_str(this_item["item"]), float):
+        item_name = convert_to_str(this_item["item_pref_label"])        
+    elif convert_to_str(this_item["item"]) == "":
+        item_name = convert_to_str(this_item["item_pref_label"])
+    else:
+        item_name = convert_to_str(this_item["item"])
+
+    item_name = snake_case(item_name)
+
+    return item_name
+
+
+def get_item_info(this_item):
 
     pref_label = convert_to_str(this_item["item_pref_label"])
     description = convert_to_str(this_item["item_description"])
-
-    item_name = snake_case(pref_label)
+    item_name = set_item_name(this_item)
 
     question = convert_to_str(this_item["question"])
     question = question.replace("\n", "")
@@ -96,7 +109,9 @@ def define_choices(item, field_type, choices):
         "time range",
         "date",
     ]:
-        warnings.warn("Unknown field type: " + field_type)
+        warnings.warn(
+            "Item " + item.get_name() + " has unknown field type: " + field_type
+        )
         # TODO
         # - create a log file of unknown item types
 

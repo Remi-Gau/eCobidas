@@ -7,10 +7,10 @@
 
 # INSTALL
 # TODO
-pip install -r requirements.txt
-git clone https://github.com/Remi-Gau/reproschema-py.git  ../../
-cd ../../reproschema-py
-git checkout remi_schema_creator
+# pip install -r requirements.txt
+# git clone https://github.com/Remi-Gau/reproschema-py.git  ../../
+# cd ../../reproschema-py
+# git checkout remi_schema_creator
 
 
 

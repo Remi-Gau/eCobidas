@@ -7,6 +7,7 @@ from ..item import (
     define_choices,
     list_responses_options,
     slider_response,
+    set_item_name,
 )
 
 myPath = os.path.dirname(os.path.abspath(__file__))
@@ -46,12 +47,52 @@ def test_preset():
     )
 
 
+# add test_set_item_name?
+# add test mandatory
+
+
+def test_set_item_name():
+
+    this_item = pd.DataFrame(
+        {
+            "item_pref_label": ["item name"],
+        }
+    )
+
+    name = set_item_name(this_item)
+
+    assert name == "item_name"
+
+    this_item = pd.DataFrame(
+        {
+            "item": [""],
+            "item_pref_label": ["item name"],
+        }
+    )
+
+    name = set_item_name(this_item)
+
+    assert name == "item_name"
+
+    this_item = pd.DataFrame(
+        {
+            "item": ["foo Bar"],
+            "item_pref_label": ["item name"],
+        }
+    )
+
+    name = set_item_name(this_item)
+
+    assert name == "foo_Bar"
+
+
 def test_get_item_info():
 
     this_item = pd.DataFrame(
         {
             "visibility": ["1"],
-            "mandatory": ["2"],
+            "item": [""],
+            "mandatory": ["1"],
             "field_type": ["radio"],
             "question": ["test question"],
             "choices": ["choice A | choice B"],
@@ -64,6 +105,37 @@ def test_get_item_info():
 
     expected = {
         "name": "item_name",
+        "pref_label": "item name",
+        "question": "test question",
+        "field_type": "radio",
+        "choices": ["choice A", "choice B"],
+        "visibility": True,
+        "mandatory": True,
+        "description": "desc",
+    }
+
+    assert item_info == expected
+
+
+def test_get_item_info_with_name():
+
+    this_item = pd.DataFrame(
+        {
+            "visibility": ["1"],
+            "mandatory": ["2"],
+            "field_type": ["radio"],
+            "question": ["test question"],
+            "choices": ["choice A | choice B"],
+            "item_pref_label": ["item name"],
+            "item": ["TEST"],
+            "item_description": ["desc"],
+        }
+    )
+
+    item_info = get_item_info(this_item)
+
+    expected = {
+        "name": "TEST",
         "pref_label": "item name",
         "question": "test question",
         "field_type": "radio",

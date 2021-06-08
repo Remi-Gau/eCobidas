@@ -80,6 +80,7 @@ def load_data(this_schema, out_dir):
 def initialize_protocol(this_schema, out_dir):
 
     protocol_name = snake_case(this_schema)
+    protocol_name = protocol_name.lower()
     protocol = Protocol()
     protocol.set_defaults(protocol_name)
 
@@ -108,6 +109,7 @@ def initialize_activity(protocol, items, out_dir):
     activity.set_pref_label(activity_pref_label)
 
     activity_name = snake_case(activity_pref_label)
+    activity_name = activity_name.lower()
     activity.set_defaults(activity_name)
     activity.set_filename(activity_name)
 
