@@ -27,11 +27,21 @@ def list_preset_responses():
 
 def get_landing_page(this_schema):
 
+    df = get_metatable()
+
+    is_this_schema = df["subsection"] == this_schema
+    this_schema_info = df[is_this_schema]
+
+    if list(this_schema_info["landing page"]) == []:
+        DEFAULT = ["README_eCOBIDAS-en.md"]
+        landing_page = DEFAULT
+    else:
+        landing_page = list(this_schema_info["landing page"])
+
     repo = "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/"
+    landing_page = repo + landing_page[0]
 
-    landing_page = "README_eCOBIDAS-en.md"
-
-    return repo + landing_page
+    return landing_page
 
 
 def set_dir(this_schema, out_dir):
