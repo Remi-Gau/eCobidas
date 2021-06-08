@@ -12,12 +12,13 @@
 # cd ../../reproschema-py
 # git checkout remi_schema_creator
 
-# DOWNLOAD and CREATE
+# DOWNLOAD and CREATE and VALIDATE
 neurovault:
 	rm -rf inputs/csv/neurovault
 	rm -rf schemas/neurovault
 	sh download_tsv.sh neurovault neurovault
 	ecobidas_convert --schema neurovault
+	grep -r  "@context" schemas/neurovault | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/neurovault
 
 pet:
@@ -33,6 +34,37 @@ eyetracking:
 	sh download_tsv.sh eyetracking eyetracking
 	ecobidas_convert --schema eyetracking
 	reproschema -l DEBUG validate schemas/eyetracking		
+
+reexecution:
+	rm -rf inputs/csv/reexecution
+	rm -rf schemas/reexecution
+	sh download_tsv.sh reexecution reexecution
+	ecobidas_convert --schema reexecution
+	reproschema -l DEBUG validate schemas/reexecution	
+
+all_sequences:
+	rm -rf inputs/csv/core/all_sequences.tsv
+	rm -rf schemas/core/activities/common_parameters
+	rm -rf schemas/core/protocols/all_sequences*
+	sh download_tsv.sh core all_sequences
+	ecobidas_convert --schema all_sequences
+	reproschema -l DEBUG validate schemas/mri	
+
+behavior:
+	rm -rf inputs/csv/core/behavior.tsv
+	rm -rf schemas/core/activities/behavior
+	rm -rf schemas/core/protocols/behavior*
+	sh download_tsv.sh core behavior
+	ecobidas_convert --schema behavior
+	reproschema -l DEBUG validate schemas/core
+
+participants:
+	rm -rf inputs/csv/core/participants.tsv
+	rm -rf schemas/core/activities/behavior
+	rm -rf schemas/core/protocols/participants*
+	sh download_tsv.sh core participants
+	ecobidas_convert --schema participants
+	reproschema -l DEBUG validate schemas/core		
 
 # DOWNLOAD
 
