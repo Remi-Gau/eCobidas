@@ -31,7 +31,7 @@
             {
                 "variableName": "preregistration_URL",
                 "isAbout": "items/preregistration_URL.jsonld",
-                "isVis": true,
+                "isVis": "preregistration == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

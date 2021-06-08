@@ -35,7 +35,7 @@
             {
                 "variableName": "statitical_tools_and_versions",
                 "isAbout": "items/statitical_tools_and_versions.jsonld",
-                "isVis": true,
+                "isVis": "statistical_tools_specified == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -53,7 +53,7 @@
             {
                 "variableName": "statistics_OS_class",
                 "isAbout": "items/statistics_OS_class.jsonld",
-                "isVis": true,
+                "isVis": "statistics_OS_specified == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -62,7 +62,7 @@
             {
                 "variableName": "statistics_OS_details",
                 "isAbout": "items/statistics_OS_details.jsonld",
-                "isVis": true,
+                "isVis": "statistics_OS_specified == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

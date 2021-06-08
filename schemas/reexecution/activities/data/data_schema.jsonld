@@ -37,7 +37,7 @@
             {
                 "variableName": "data_location",
                 "isAbout": "items/data_location.jsonld",
-                "isVis": true,
+                "isVis": "data_accessible == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -46,7 +46,7 @@
             {
                 "variableName": "data_repository",
                 "isAbout": "items/data_repository.jsonld",
-                "isVis": true,
+                "isVis": "data_accessible == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -55,7 +55,7 @@
             {
                 "variableName": "data_website",
                 "isAbout": "items/data_website.jsonld",
-                "isVis": true,
+                "isVis": "data_accessible == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -64,7 +64,7 @@
             {
                 "variableName": "data_access_attempt",
                 "isAbout": "items/data_access_attempt.jsonld",
-                "isVis": true,
+                "isVis": "data_accessible == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -73,7 +73,7 @@
             {
                 "variableName": "data_access_success",
                 "isAbout": "items/data_access_success.jsonld",
-                "isVis": true,
+                "isVis": "data_accessible == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -91,7 +91,7 @@
             {
                 "variableName": "dataset_unique_ID",
                 "isAbout": "items/dataset_unique_ID.jsonld",
-                "isVis": true,
+                "isVis": "data_subset == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -100,7 +100,7 @@
             {
                 "variableName": "data_subet_rationale",
                 "isAbout": "items/data_subet_rationale.jsonld",
-                "isVis": true,
+                "isVis": "data_subset == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

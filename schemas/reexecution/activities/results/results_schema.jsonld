@@ -32,7 +32,7 @@
             {
                 "variableName": "results_access",
                 "isAbout": "items/results_access.jsonld",
-                "isVis": true,
+                "isVis": "results_available == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -41,7 +41,7 @@
             {
                 "variableName": "results_repository",
                 "isAbout": "items/results_repository.jsonld",
-                "isVis": true,
+                "isVis": "results_available == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

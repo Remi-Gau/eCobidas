@@ -35,7 +35,7 @@
             {
                 "variableName": "analysis_tools_and_versions",
                 "isAbout": "items/analysis_tools_and_versions.jsonld",
-                "isVis": true,
+                "isVis": "analysis_tools_specified == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -53,7 +53,7 @@
             {
                 "variableName": "analysis_OS_class",
                 "isAbout": "items/analysis_OS_class.jsonld",
-                "isVis": true,
+                "isVis": "analysis_OS_specified == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -62,7 +62,7 @@
             {
                 "variableName": "analysis_OS_details",
                 "isAbout": "items/analysis_OS_details.jsonld",
-                "isVis": true,
+                "isVis": "analysis_OS_specified == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

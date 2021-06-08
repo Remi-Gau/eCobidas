@@ -168,6 +168,7 @@ convert_all:
 	ecobidas_convert --schema participants
 	ecobidas_convert --schema behavior
 	ecobidas_convert --schema eyetracking
+	ecobidas_convert --schema reexecution
 
 # DO NOT WORK
 # ecobidas_convert --schema artem-is
