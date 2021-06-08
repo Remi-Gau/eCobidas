@@ -52,7 +52,7 @@ def test_create_schema():
         },
         {
             "name": "activity_4",
-            "items": ["float_item", "multitext_item", "text_item"],
+            "items": ["float_item", "multitext_item", "TEXT"],
         },
         {"name": "activity_3", "items": ["integer_item", "slider_item"]},
         {"name": "activity_2", "items": ["number_of_subjects"]},

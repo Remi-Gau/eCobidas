@@ -1,7 +1,7 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "text_item.jsonld",
+    "@id": "TEXT.jsonld",
     "prefLabel": {
         "en": "text item"
     },

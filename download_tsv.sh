@@ -37,8 +37,19 @@
 # artem-is         artem-is
 # eyetracking      eyetracking
 # pet              pet
-# nimg_reexecution nimg_reexecution
+# reexecution       reexecution
 # response_options	mri_softwares
+# response_options	mri_softwares
+# response_options	stimulus_presentation_softwares
+# response_options	multiple_comparison
+# response_options	interpolation
+# response_options	cost_function
+# response_options	meeg_reference_electrode
+# response_options	meeg_analysis_softwares
+# response_options	meeg_amplifier_brands
+# response_options	meeg_acquisition_softwares
+# response_options	eeg_cap_types
+# response_options	boolean
 
 
 csv_folder=./inputs/csv/

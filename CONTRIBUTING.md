@@ -1,5 +1,12 @@
 # CONTRIBUTING
 
+## Editing the spreadsheets
+
+DO NOT EDIT THEM DIRECTLY !!!
+
+Instead edit them on the google drive and use `download_tsv.sh` to download them
+locally. Or type `make download_all` to download update all the spreadsheets.
+
 ## Virtural environment
 
 ```bash
@@ -19,6 +26,7 @@ git checkout remi_schema_creator
 # pip install it
 pip install -e /home/remi/github/reproschema-py
 ```
+
 ## Notes
 
 Using then `pip freeze` should give you this with the specific shasum of the
@@ -38,17 +46,16 @@ out, the I update the path of Python to force it look into the relevant folder
 by adding the following in my code...
 
 ```python
-import os, sys 
+import os, sys
 my_path = os.path.dirname("/home/remi/github/reproschema-py/reproschema/models/")
 sys.path.insert(0, my_path)
 ```
 
 I can then do:
+
 ```python
 from models import Item
 ```
-
-
 
 ## Visual studio code settings
 

@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "activity_3_schema.jsonld",
     "prefLabel": {
-        "en": "activity 3"
+        "en": "Activity 3"
     },
     "description": "activity 3",
     "schemaVersion": "1.0.0-rc4",

@@ -8,20 +8,35 @@ def get_root_dir():
     return os.path.abspath(os.path.join(this_path, ".."))
 
 
+def get_metatable():
+
+    metatable_file = os.path.abspath(
+        os.path.join(get_root_dir(), "inputs", "csv", "spreadsheet_google_id.tsv")
+    )
+
+    return pd.read_csv(metatable_file, sep="\t")
+
+
 def list_preset_responses():
-    return [
-        "mri_softwares",
-        "stimulus_presentation_softwares",
-        "multiple_comparison",
-        "interpolation",
-        "cost_function",
-        "meeg_reference_electrode",
-        "meeg_analysis_softwares",
-        "meeg_amplifier_brands",
-        "meeg_acquisition_softwares",
-        "eeg_cap_types",
-        "boolean",
-    ]
+
+    df = get_metatable()
+    is_response_option = df["section"] == "response_options"
+    reponse_options = df[is_response_option]
+    return list(reponse_options["subsection"])
+
+    # return [
+    #     "mri_softwares",
+    #     "stimulus_presentation_softwares",
+    #     "multiple_comparison",
+    #     "interpolation",
+    #     "cost_function",
+    #     "meeg_reference_electrode",
+    #     "meeg_analysis_softwares",
+    #     "meeg_amplifier_brands",
+    #     "meeg_acquisition_softwares",
+    #     "eeg_cap_types",
+    #     "boolean",
+    # ]
 
 
 def set_dir(this_schema, out_dir):

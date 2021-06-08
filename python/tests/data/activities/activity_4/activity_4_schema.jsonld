@@ -3,7 +3,7 @@
     "@type": "reproschema:Activity",
     "@id": "activity_4_schema.jsonld",
     "prefLabel": {
-        "en": "activity 4"
+        "en": "Activity 4"
     },
     "description": "activity 4",
     "schemaVersion": "1.0.0-rc4",
@@ -14,14 +14,14 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/text_item.jsonld",
+            "items/TEXT.jsonld",
             "items/multitext_item.jsonld",
             "items/float_item.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "text_item",
-                "isAbout": "items/text_item.jsonld",
+                "variableName": "TEXT",
+                "isAbout": "items/TEXT.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
