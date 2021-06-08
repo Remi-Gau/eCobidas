@@ -9,7 +9,6 @@ __pycache__
 site/*
 
 # local virtual environnment
-ecobidas/*
 *env/*
 
 # pytest

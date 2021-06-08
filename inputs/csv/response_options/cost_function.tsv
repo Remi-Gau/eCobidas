@@ -1,0 +1,7 @@
+name	value
+Mutual information	0
+Normalised mutual information	1
+Entropy correlation coefficient	2
+Normalised cross-correlation	3
+Correlation ratio	4
+Boundary-based registration	5

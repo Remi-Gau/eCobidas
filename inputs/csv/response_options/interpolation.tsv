@@ -1,0 +1,8 @@
+name	value
+Nearest neighbour	0
+Trilinear	1
+2nd degree spline	2
+3rd degree spline	3
+4th degree spline	4
+Fourrier interpolation	5
+sinc interpolation	6
