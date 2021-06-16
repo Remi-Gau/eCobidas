@@ -1,0 +1,185 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "hardware_schema.jsonld",
+    "prefLabel": {
+        "en": "Hardware"
+    },
+    "description": "hardware",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/Electroded_Placement_Type.jsonld",
+            "items/Electroded_Placement_Type_Cap.jsonld",
+            "items/Electroded_Placement_Type_Net.jsonld",
+            "items/Electroded_placement_type_Loose_Placed.jsonld",
+            "items/Cap_model.jsonld",
+            "items/Net_model.jsonld",
+            "items/Electrode_manufacturer.jsonld",
+            "items/Electrode_model.jsonld",
+            "items/Electrode_type.jsonld",
+            "items/Conductive_medium.jsonld",
+            "items/Amplifier_make_or_brand.jsonld",
+            "items/Amplifier_model.jsonld",
+            "items/Trigger_signal_source.jsonld",
+            "items/Trigger_signal_input.jsonld",
+            "items/Other_peripheral_devices.jsonld",
+            "items/Further_clarification_on_peripheral_devices.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "Electroded_Placement_Type",
+                "isAbout": "items/Electroded_Placement_Type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Electroded_Placement_Type_Cap",
+                "isAbout": "items/Electroded_Placement_Type_Cap.jsonld",
+                "isVis": "electroded_placement_type == cap",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Electroded_Placement_Type_Net",
+                "isAbout": "items/Electroded_Placement_Type_Net.jsonld",
+                "isVis": "electroded_placement_type == net",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Electroded_placement_type_Loose_Placed",
+                "isAbout": "items/Electroded_placement_type_Loose_Placed.jsonld",
+                "isVis": "electroded_placement_type == single electrodes",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Cap_model",
+                "isAbout": "items/Cap_model.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Net_model",
+                "isAbout": "items/Net_model.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Electrode_manufacturer",
+                "isAbout": "items/Electrode_manufacturer.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Electrode_model",
+                "isAbout": "items/Electrode_model.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Electrode_type",
+                "isAbout": "items/Electrode_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Conductive_medium",
+                "isAbout": "items/Conductive_medium.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Amplifier_make_or_brand",
+                "isAbout": "items/Amplifier_make_or_brand.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Amplifier_model",
+                "isAbout": "items/Amplifier_model.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Trigger_signal_source",
+                "isAbout": "items/Trigger_signal_source.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Trigger_signal_input",
+                "isAbout": "items/Trigger_signal_input.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Other_peripheral_devices",
+                "isAbout": "items/Other_peripheral_devices.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Further_clarification_on_peripheral_devices",
+                "isAbout": "items/Further_clarification_on_peripheral_devices.jsonld",
+                "isVis": "other_peripheral_devices == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

@@ -136,7 +136,13 @@ download_meeg:
 	sh download_tsv.sh meeg reporting 	
 
 download_artemis:
-	sh download_tsv.sh artem-is artem-is
+	sh download_tsv_artemis.sh artemis hardware
+	sh download_tsv_artemis.sh artemis acquisition
+	sh download_tsv_artemis.sh artemis preprocessing
+	sh download_tsv_artemis.sh artemis experimental_design_sample
+	sh download_tsv_artemis.sh artemis measurements
+	sh download_tsv_artemis.sh artemis channel_electrode_choice
+	sh download_tsv_artemis.sh artemis visualization	
 
 download_eyetrack:
 	sh download_tsv.sh eyetracking eyetracking

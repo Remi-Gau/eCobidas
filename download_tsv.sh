@@ -34,7 +34,6 @@
 # meeg             statistical_analysis
 # meeg             reporting
 # deprecated       meeg
-# artem-is         artem-is
 # eyetracking      eyetracking
 # pet              pet
 # reexecution       reexecution
