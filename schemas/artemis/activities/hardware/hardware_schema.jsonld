@@ -71,7 +71,7 @@
             {
                 "variableName": "cap_model",
                 "isAbout": "items/cap_model.jsonld",
-                "isVis": true,
+                "isVis": "electrode_placement_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -80,7 +80,7 @@
             {
                 "variableName": "net_model",
                 "isAbout": "items/net_model.jsonld",
-                "isVis": true,
+                "isVis": "electrode_placement_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
