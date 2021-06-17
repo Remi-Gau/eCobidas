@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "Net_model.jsonld",
+    "@id": "amplifier_model.jsonld",
     "prefLabel": {
-        "en": "Net model"
+        "en": "Amplifier model"
     },
-    "description": "Net model",
+    "description": "Amplifier model",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please indicate the net model."
+        "en": "Model of amplifier"
     },
     "responseOptions": {
         "valueType": "xsd:string",

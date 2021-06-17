@@ -21,19 +21,19 @@
         "choices": [
             {
                 "name": {
-                    "en": "1. rectified"
+                    "en": "rectified"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "2. signed"
+                    "en": "signed"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "3. integral"
+                    "en": "integral"
                 },
                 "value": 2
             }

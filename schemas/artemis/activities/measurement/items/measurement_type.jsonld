@@ -21,19 +21,19 @@
         "choices": [
             {
                 "name": {
-                    "en": "1.amplitude"
+                    "en": "amplitude"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "2.latency"
+                    "en": "latency"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "3.other"
+                    "en": "other"
                 },
                 "value": 2
             },

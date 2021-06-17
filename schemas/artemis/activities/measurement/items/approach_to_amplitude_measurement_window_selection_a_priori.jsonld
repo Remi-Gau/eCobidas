@@ -21,13 +21,13 @@
         "choices": [
             {
                 "name": {
-                    "en": "1. The same as in previous literature"
+                    "en": "The same as in previous literature"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "2. arbitrary windows across epoch with/without overlap (time windows decided in advance) "
+                    "en": "arbitrary windows across epoch with/without overlap (time windows decided in advance) "
                 },
                 "value": 1
             },

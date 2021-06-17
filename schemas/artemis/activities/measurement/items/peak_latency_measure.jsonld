@@ -21,37 +21,37 @@
         "choices": [
             {
                 "name": {
-                    "en": "1. onset - extrapolation based on slope"
+                    "en": "onset - extrapolation based on slope"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "2. onset - difference larger than chance"
+                    "en": "onset - difference larger than chance"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "3. onset - N consecutive significant comparisons"
+                    "en": "onset - N consecutive significant comparisons"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "4. onset - fractational area (e.g. 30% area)"
+                    "en": "onset - fractational area (e.g. 30% area)"
                 },
                 "value": 3
             },
             {
                 "name": {
-                    "en": "5. onset - fractational peak (e.g. 50% peak)"
+                    "en": "onset - fractational peak (e.g. 50% peak)"
                 },
                 "value": 4
             },
             {
                 "name": {
-                    "en": "6. onset - other"
+                    "en": "onset - other"
                 },
                 "value": 5
             },

@@ -21,25 +21,25 @@
         "choices": [
             {
                 "name": {
-                    "en": "1. visual inspection"
+                    "en": "visual inspection"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "2. consecutive significant tests to determine the start and the end of a window that will be analysed "
+                    "en": "consecutive significant tests to determine the start and the end of a window that will be analysed "
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "3. window around a peak"
+                    "en": "window around a peak"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "4. windows accross epoch with/without overlap (time windows decided after seeing the waveforms, specify details) "
+                    "en": "windows across epoch with/without overlap (time windows decided after seeing the waveforms, specify details) "
                 },
                 "value": 3
             },

@@ -1,11 +1,11 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "measurement_window_start_data-driven.jsonld",
+    "@id": "latency_measurement_window_start_data-driven.jsonld",
     "prefLabel": {
-        "en": "Measurement window START data-driven"
+        "en": "latency measurement window START data-driven"
     },
-    "description": "Measurement window START data-driven",
+    "description": "latency measurement window START data-driven",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

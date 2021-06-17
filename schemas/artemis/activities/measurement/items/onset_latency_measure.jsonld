@@ -21,13 +21,13 @@
         "choices": [
             {
                 "name": {
-                    "en": "1. midpoint - peak"
+                    "en": "midpoint - peak"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "2. midpoint - local peak"
+                    "en": "midpoint - local peak"
                 },
                 "value": 1
             },
@@ -39,7 +39,7 @@
             },
             {
                 "name": {
-                    "en": "5. midpoint - other "
+                    "en": "midpoint - other "
                 },
                 "value": 3
             },

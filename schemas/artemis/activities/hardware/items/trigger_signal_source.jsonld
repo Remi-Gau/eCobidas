@@ -1,59 +1,47 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "Electrode_type.jsonld",
+    "@id": "trigger_signal_source.jsonld",
     "prefLabel": {
-        "en": "Electrode type"
+        "en": "Trigger signal source"
     },
-    "description": "Electrode type",
+    "description": "Trigger signal source",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "Type of electrodes"
+        "en": "Source of the triggers"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 5,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
-                    "en": "passive Ag/Ag-Cl"
+                    "en": "photo diode"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "passive tin"
+                    "en": "auditory trigger/voice key"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "active electrodes (with preamplifiers)"
+                    "en": "combination stim tracker"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "active dry"
+                    "en": "presentation software trigger"
                 },
                 "value": 3
-            },
-            {
-                "name": {
-                    "en": "passive dry"
-                },
-                "value": 4
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 5
             }
         ],
         "multipleChoice": false

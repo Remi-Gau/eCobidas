@@ -27,10 +27,10 @@
             "items/approach_to_amplitude_measurement_window_selection_data_driven.jsonld",
             "items/broader_time_window_start.jsonld",
             "items/broader_time_window_end.jsonld",
-            "items/measurement_window_start_a_priori.jsonld",
-            "items/measurement_window_end_a_priori.jsonld",
-            "items/measurement_window_start_data-driven.jsonld",
-            "items/measurement_window_end_data_driven.jsonld",
+            "items/amplitude_measurement_window_start_a_priori.jsonld",
+            "items/amplitude_measurement_window_end_a_priori.jsonld",
+            "items/amplitude_measurement_window_start_data-driven.jsonld",
+            "items/amplitude_measurement_window_end_data_driven.jsonld",
             "items/amplitude_measurement_software.jsonld",
             "items/latency_type.jsonld",
             "items/onset_latency_measure.jsonld",
@@ -44,10 +44,10 @@
             "items/further_clarification_latency.jsonld",
             "items/broader_time_window_start.jsonld",
             "items/broader_time_window_end.jsonld",
-            "items/measurement_window_start_a_priori.jsonld",
-            "items/measurement_window_end_a_priori.jsonld",
-            "items/measurement_window_start_data-driven.jsonld",
-            "items/measurement_window_end_data-driven.jsonld",
+            "items/latency_measurement_window_start_a_priori.jsonld",
+            "items/latency_measurement_window_end_a_priori.jsonld",
+            "items/latency_measurement_window_start_data-driven.jsonld",
+            "items/latency_measurement_window_end_data-driven.jsonld",
             "items/latency_measurement_software.jsonld"
         ],
         "addProperties": [
@@ -153,7 +153,7 @@
             {
                 "variableName": "broader_time_window_start",
                 "isAbout": "items/broader_time_window_start.jsonld",
-                "isVis": "approach_to_amplitude_measurement_window_selection == 1",
+                "isVis": "amplitude_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -162,43 +162,43 @@
             {
                 "variableName": "broader_time_window_end",
                 "isAbout": "items/broader_time_window_end.jsonld",
-                "isVis": "approach_to_amplitude_measurement_window_selection == 1",
+                "isVis": "amplitude_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "measurement_window_start_a_priori",
-                "isAbout": "items/measurement_window_start_a_priori.jsonld",
-                "isVis": "approach_to_amplitude_measurement_window_selection == 0",
+                "variableName": "amplitude_measurement_window_start_a_priori",
+                "isAbout": "items/amplitude_measurement_window_start_a_priori.jsonld",
+                "isVis": "amplitude_time_window_selection == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "measurement_window_end_a_priori",
-                "isAbout": "items/measurement_window_end_a_priori.jsonld",
-                "isVis": "approach_to_amplitude_measurement_window_selection == 0",
+                "variableName": "amplitude_measurement_window_end_a_priori",
+                "isAbout": "items/amplitude_measurement_window_end_a_priori.jsonld",
+                "isVis": "amplitude_time_window_selection == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "measurement_window_start_data-driven",
-                "isAbout": "items/measurement_window_start_data-driven.jsonld",
-                "isVis": "approach_to_amplitude_measurement_window_selection == 1",
+                "variableName": "amplitude_measurement_window_start_data-driven",
+                "isAbout": "items/amplitude_measurement_window_start_data-driven.jsonld",
+                "isVis": "amplitude_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "measurement_window_end_data_driven",
-                "isAbout": "items/measurement_window_end_data_driven.jsonld",
-                "isVis": "approach_to_amplitude_measurement_window_selection == 1",
+                "variableName": "amplitude_measurement_window_end_data_driven",
+                "isAbout": "items/amplitude_measurement_window_end_data_driven.jsonld",
+                "isVis": "amplitude_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -297,7 +297,7 @@
             {
                 "variableName": "further_clarification_latency",
                 "isAbout": "items/further_clarification_latency.jsonld",
-                "isVis": "latency_selection_approach == 2 OR 3",
+                "isVis": "latency_selection_approach == 2 || latency_selection_approach == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -322,8 +322,8 @@
                 ]
             },
             {
-                "variableName": "measurement_window_start_a_priori",
-                "isAbout": "items/measurement_window_start_a_priori.jsonld",
+                "variableName": "latency_measurement_window_start_a_priori",
+                "isAbout": "items/latency_measurement_window_start_a_priori.jsonld",
                 "isVis": "latency_selection_approach == 0",
                 "requiredValue": false,
                 "allow": [
@@ -331,8 +331,8 @@
                 ]
             },
             {
-                "variableName": "measurement_window_end_a_priori",
-                "isAbout": "items/measurement_window_end_a_priori.jsonld",
+                "variableName": "latency_measurement_window_end_a_priori",
+                "isAbout": "items/latency_measurement_window_end_a_priori.jsonld",
                 "isVis": "latency_selection_approach == 0",
                 "requiredValue": false,
                 "allow": [
@@ -340,8 +340,8 @@
                 ]
             },
             {
-                "variableName": "measurement_window_start_data-driven",
-                "isAbout": "items/measurement_window_start_data-driven.jsonld",
+                "variableName": "latency_measurement_window_start_data-driven",
+                "isAbout": "items/latency_measurement_window_start_data-driven.jsonld",
                 "isVis": "latency_selection_approach == 1",
                 "requiredValue": false,
                 "allow": [
@@ -349,8 +349,8 @@
                 ]
             },
             {
-                "variableName": "measurement_window_end_data-driven",
-                "isAbout": "items/measurement_window_end_data-driven.jsonld",
+                "variableName": "latency_measurement_window_end_data-driven",
+                "isAbout": "items/latency_measurement_window_end_data-driven.jsonld",
                 "isVis": "latency_selection_approach == 1",
                 "requiredValue": false,
                 "allow": [

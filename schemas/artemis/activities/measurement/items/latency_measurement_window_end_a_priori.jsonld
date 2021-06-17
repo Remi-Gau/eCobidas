@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "measurement_window_start_a_priori.jsonld",
+    "@id": "latency_measurement_window_end_a_priori.jsonld",
     "prefLabel": {
-        "en": "Measurement window START a priori"
+        "en": "latency measurement window END a priori"
     },
-    "description": "Measurement window START a priori",
+    "description": "latency measurement window END a priori",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "float"
     },
     "question": {
-        "en": "Please provide here the start of the window which was used to measure latency. Measurement window: START [ms]"
+        "en": "Please provide here the end of the window which was used to measure latency. Measurement window: END [ms]"
     },
     "responseOptions": {
         "valueType": "xsd:float"

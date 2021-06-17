@@ -21,19 +21,19 @@
         "choices": [
             {
                 "name": {
-                    "en": "1. a priori"
+                    "en": "a priori"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "2. data-driven"
+                    "en": "data-driven"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "3. no window selection (e.g. point-by-point analysis such as mass univariate analysis)"
+                    "en": "no window selection (e.g. point-by-point analysis such as mass univariate analysis)"
                 },
                 "value": 2
             },

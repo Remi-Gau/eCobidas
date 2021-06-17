@@ -17,37 +17,31 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
-                    "en": "1.A priori"
+                    "en": "A priori"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "2.Data-driven"
+                    "en": "Data-driven"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "3.latency identified based on the entire epoch"
+                    "en": "latency identified based on the entire epoch"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "4. other"
-                },
-                "value": 3
-            },
-            {
-                "name": {
                     "en": "other"
                 },
-                "value": 4
+                "value": 3
             }
         ],
         "multipleChoice": false

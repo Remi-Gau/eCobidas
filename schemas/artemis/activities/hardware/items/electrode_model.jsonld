@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "Electrode_manufacturer.jsonld",
+    "@id": "electrode_model.jsonld",
     "prefLabel": {
-        "en": "Electrode manufacturer"
+        "en": "Electrode model"
     },
-    "description": "Electrode manufacturer",
+    "description": "Electrode model",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Manufacturer of the electrodes"
+        "en": "Model of electrodes"
     },
     "responseOptions": {
         "valueType": "xsd:string",
