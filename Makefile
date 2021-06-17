@@ -24,7 +24,8 @@ artemis:
 	sh download_tsv_artemis.sh artemis measurements
 	sh download_tsv_artemis.sh artemis channel_electrode_choice
 	sh download_tsv_artemis.sh artemis visualization
-	ecobidas_convert --schema hardware	
+	ecobidas_convert --schema hardware
+	ecobidas_convert --schema experimental_design_sample
 	ecobidas_convert --schema measurements
 	ecobidas_convert --schema visualization	
 	grep -r  "@context" schemas/artemis | cut -d: -f1 | xargs -I fname jsonlint -q fname
