@@ -1,5 +1,5 @@
 import warnings
-from numpy import linspace
+from numpy import linspace, isnan
 
 from utils import convert_to_str, convert_to_int, snake_case
 from reproschema.models.item import Item, ResponseOption
@@ -68,8 +68,13 @@ def get_visibility(this_item):
     elif visibility in ["0", 0]:
         visibility = False
 
-    # TODO
-    # help with javascript expression input and validation
+    elif isinstance(visibility, float) and isnan(visibility):
+        visibility = True
+
+    else:
+        # TODO
+        # help with javascript expression input and validation
+        return visibility
 
     return visibility
 

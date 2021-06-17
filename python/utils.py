@@ -20,16 +20,16 @@ def get_metatable():
 def list_preset_responses():
 
     df = get_metatable()
-    is_response_option = df["section"] == "response_options"
+    is_response_option = df["dir"] == "response_options"
     response_options = df[is_response_option]
-    return list(response_options["subsection"])
+    return list(response_options["subdir"])
 
 
 def get_landing_page(this_schema):
 
     df = get_metatable()
 
-    is_this_schema = df["subsection"] == this_schema
+    is_this_schema = df["subdir"] == this_schema
     not_nan = df["landing page"].notna()
 
     this_schema_info = df[is_this_schema & not_nan]
@@ -50,11 +50,11 @@ def get_sub_dir(this_schema):
 
     df = get_metatable()
 
-    is_this_schema = df["subsection"] == this_schema
+    is_this_schema = df["subdir"] == this_schema
     this_schema_info = df[is_this_schema]
 
     if list(this_schema_info["landing page"]) != []:
-        return list(this_schema_info["section"])[0]
+        return list(this_schema_info["dir"])[0]
 
     warnings.warn("Unknown target schema: " + this_schema)
     return this_schema
@@ -90,6 +90,10 @@ def load_data(this_schema, out_dir):
         in_dir, out_dir = set_dir(this_schema, out_dir)
 
         input_file = os.path.join(in_dir, this_schema + ".tsv")
+
+    else:
+
+        input_file = this_schema
 
     return pd.read_csv(input_file, sep="\t")
 

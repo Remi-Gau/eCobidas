@@ -50,8 +50,8 @@ mkdir -p $ouput_folder
 
 output_filename=$subsection.tsv
 
-google_ID=`cat $csv_folder'spreadsheet_google_id.tsv' | grep $section | grep $subsection | awk '{print $3}'`
-sheet_id=`cat $csv_folder'spreadsheet_google_id.tsv' | grep $section | grep $subsection | awk '{print $4}'`
+google_ID=`cat $csv_folder'spreadsheet_google_id.tsv' | grep $section | grep $subsection | awk '{print $4}'`
+sheet_id=`cat $csv_folder'spreadsheet_google_id.tsv' | grep $section | grep $subsection | awk '{print $5}'`
 
 # TODO
 # add error in case google_ID is empty

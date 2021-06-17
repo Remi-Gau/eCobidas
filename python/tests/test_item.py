@@ -150,6 +150,10 @@ def test_get_item_info_with_name():
 
 def test_get_visibility():
 
+    this_item = pd.DataFrame({"visibility": [float("nan")]})
+    visibility = get_visibility(this_item)
+    assert visibility == True
+
     this_item = pd.DataFrame({"visibility": ["1"]})
     visibility = get_visibility(this_item)
     assert visibility == True

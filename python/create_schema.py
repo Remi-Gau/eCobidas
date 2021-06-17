@@ -34,14 +34,14 @@ def create_schema(this_schema, out_dir, debug=False):
 
     df = load_data(this_schema, out_dir)
 
-    activities = df.activity_order.unique()
+    activities = list(df.activity_order.unique())
 
     if debug:
         activities = [1]
 
-    for activity_idx in activities:
+    for i, activity_idx in enumerate(activities):
 
-        this_activity = df["activity_order"] == activities[activity_idx - 1]
+        this_activity = df["activity_order"] == activities[i]
         items = df[this_activity]
         included_items = items["include"] == 1
         items = items[included_items]
