@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "amplitude_time_window_selection.jsonld",
+    "prefLabel": {
+        "en": "Amplitude time window selection"
+    },
+    "description": "Amplitude time window selection",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "If the amplitude measurement window is selected in advance (a priori), select the procedure which was used for amplitude measurement in this time window."
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "1. As described in previous literature"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "2. arbitrary windows across epoch with/without overlap (time windows decided in advance)"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "3. other"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

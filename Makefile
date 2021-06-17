@@ -25,6 +25,7 @@ artemis:
 	sh download_tsv_artemis.sh artemis channel_electrode_choice
 	sh download_tsv_artemis.sh artemis visualization
 	ecobidas_convert --schema hardware	
+	ecobidas_convert --schema measurements
 	ecobidas_convert --schema visualization	
 	grep -r  "@context" schemas/artemis | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/artemis
@@ -232,8 +233,10 @@ validate_artemis:
 # TODO 
 # use wildcards to simplify 
 clean_tsv: 
-	rm -f inputs/*.tsv
+	rm -f inputs/*/*.tsv
 
+clean_artemis:
+	rm -rf schemas/artemis/activities
 clean_neurovault:
 	rm -rf activities/*neuro*
 	rm -rf protocols/*neuro*
@@ -259,9 +262,9 @@ clean_activities:
 	rm -rf activities/*mri*
 	rm -rf activities/*neuro*
 	rm -rf activities/*pet*
+	rm -rf activities/*artemis*
 
 clean_protocols: 
-	rm -rf protocols/**
 	rm -rf protocols/*eye*
 	rm -rf protocols/*mri*
 	rm -rf protocols/*neuro*
@@ -269,7 +272,6 @@ clean_protocols:
 
 clean:
 	rm -rf activities/**
-	rm -rf protocols/**
 	rm -rf activities/*eye*
 	rm -rf protocols/*eye*
 	rm -rf activities/*mri*

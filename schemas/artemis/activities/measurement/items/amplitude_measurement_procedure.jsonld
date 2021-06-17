@@ -1,0 +1,73 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "amplitude_measurement_procedure.jsonld",
+    "prefLabel": {
+        "en": "Amplitude measurement procedure"
+    },
+    "description": "Amplitude measurement procedure",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "What was the procedure used for amplitude measurement in the selected time window?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 7,
+        "choices": [
+            {
+                "name": {
+                    "en": "1. amplitude mean"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "2. amplitude peak"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "3. factor scores based on factor analysis"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "4. window area measure (specify e.g. rectified, signed, integral)"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "5. each time point separately"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "6.multiple measurement types"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "7.other"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 7
+            }
+        ],
+        "multipleChoice": false
+    }
+}

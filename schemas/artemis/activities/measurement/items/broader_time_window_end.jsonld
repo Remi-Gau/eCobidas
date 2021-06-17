@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "broader_time_window_end.jsonld",
+    "prefLabel": {
+        "en": "Broader time window end"
+    },
+    "description": "Broader time window end",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Broader time window used for locating the measurement window.where we looked for amplitude: END [ms]"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

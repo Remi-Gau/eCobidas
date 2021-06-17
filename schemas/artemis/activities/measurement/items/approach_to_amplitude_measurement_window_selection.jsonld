@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "approach_to_amplitude_measurement_window_selection.jsonld",
+    "prefLabel": {
+        "en": "Approach to amplitude measurement window selection"
+    },
+    "description": "Approach to amplitude measurement window selection",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Approach to amplitude measurement window selection "
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 4,
+        "choices": [
+            {
+                "name": {
+                    "en": "1. a priori"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "2. data-driven"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "3. no window selection (e.g. point-by-point analysis such as mass univariate analysis)"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "4. other"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 4
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "onset_latency_measure.jsonld",
+    "prefLabel": {
+        "en": "Onset latency measure"
+    },
+    "description": "Onset latency measure",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Onset latency measure"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 4,
+        "choices": [
+            {
+                "name": {
+                    "en": "1. midpoint - peak"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "2. midpoint - local peak"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "4. midpoint - 50% area"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "5. midpoint - other "
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 4
+            }
+        ],
+        "multipleChoice": false
+    }
+}

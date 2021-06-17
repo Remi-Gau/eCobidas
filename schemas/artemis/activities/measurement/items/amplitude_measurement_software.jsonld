@@ -1,0 +1,115 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "amplitude_measurement_software.jsonld",
+    "prefLabel": {
+        "en": "Amplitude measurement software"
+    },
+    "description": "Amplitude measurement software",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Latency measurement software"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 14,
+        "choices": [
+            {
+                "name": {
+                    "en": "1. EEGlab (+ ERPlab)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "2.InstEP"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "3.FieldTrip"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "4.BESA Research"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "5.Scan"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "6.Brain Vision Analyzer"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "7.NetStation"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "8.Cartool"
+                },
+                "value": 7
+            },
+            {
+                "name": {
+                    "en": "9.MatLab custom script"
+                },
+                "value": 8
+            },
+            {
+                "name": {
+                    "en": "10.Curry"
+                },
+                "value": 9
+            },
+            {
+                "name": {
+                    "en": "11.TrackWalker"
+                },
+                "value": 10
+            },
+            {
+                "name": {
+                    "en": "12.ERP system"
+                },
+                "value": 11
+            },
+            {
+                "name": {
+                    "en": "13.EEProbe"
+                },
+                "value": 12
+            },
+            {
+                "name": {
+                    "en": "14.custom and others"
+                },
+                "value": 13
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 14
+            }
+        ],
+        "multipleChoice": false
+    }
+}
