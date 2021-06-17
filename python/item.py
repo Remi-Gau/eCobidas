@@ -1,4 +1,4 @@
-import warnings
+import warnings, re
 from numpy import linspace, isnan
 
 from utils import convert_to_str, convert_to_int, snake_case
@@ -18,6 +18,7 @@ def set_item_name(this_item):
         item_name = convert_to_str(this_item["item"])
 
     item_name = snake_case(item_name)
+    item_name = re.sub("[^-_a-zA-Z0-9]+", "", item_name)
 
     return item_name
 

@@ -55,6 +55,17 @@ def test_set_item_name():
 
     this_item = pd.DataFrame(
         {
+            "item_pref_label": ["_i[t]em-n:a m!e"],
+        }
+    )
+
+    name = set_item_name(this_item)
+
+    # alaphanumeric with _ and - only
+    assert name == "_item-na_me"
+
+    this_item = pd.DataFrame(
+        {
             "item_pref_label": ["item name"],
         }
     )
