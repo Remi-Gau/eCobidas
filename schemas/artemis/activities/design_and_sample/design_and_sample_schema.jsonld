@@ -1,0 +1,175 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "design_and_sample_schema.jsonld",
+    "prefLabel": {
+        "en": "design_and_sample"
+    },
+    "description": "design and sample",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/trial_presentation_strategy.jsonld",
+            "items/trial_presentation_strategy_other.jsonld",
+            "items/total_number_of_trials.jsonld",
+            "items/total_number_of_conditions.jsonld",
+            "items/total_number_of_trials.jsonld",
+            "items/averaged_number_of_trials.jsonld",
+            "items/mininum_number_of_trials_per_condition.jsonld",
+            "items/maximum_number_of_trials_per_condition.jsonld",
+            "items/sample_size_total.jsonld",
+            "items/sample_size_valid.jsonld",
+            "items/number_of_groups.jsonld",
+            "items/participants_per_group.jsonld",
+            "items/presenting_software.jsonld",
+            "items/presenting_software_others.jsonld",
+            "items/presenting_software.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "trial_presentation_strategy",
+                "isAbout": "items/trial_presentation_strategy.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "trial_presentation_strategy_other",
+                "isAbout": "items/trial_presentation_strategy_other.jsonld",
+                "isVis": "trial_presentation_strategy == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "total_number_of_trials",
+                "isAbout": "items/total_number_of_trials.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "total_number_of_conditions",
+                "isAbout": "items/total_number_of_conditions.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "total_number_of_trials",
+                "isAbout": "items/total_number_of_trials.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "averaged_number_of_trials",
+                "isAbout": "items/averaged_number_of_trials.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "mininum_number_of_trials_per_condition",
+                "isAbout": "items/mininum_number_of_trials_per_condition.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "maximum_number_of_trials_per_condition",
+                "isAbout": "items/maximum_number_of_trials_per_condition.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "sample_size_total",
+                "isAbout": "items/sample_size_total.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "sample_size_valid",
+                "isAbout": "items/sample_size_valid.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_groups",
+                "isAbout": "items/number_of_groups.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "participants_per_group",
+                "isAbout": "items/participants_per_group.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "presenting_software",
+                "isAbout": "items/presenting_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "presenting_software_others",
+                "isAbout": "items/presenting_software_others.jsonld",
+                "isVis": "presenting_software == 13",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "presenting_software",
+                "isAbout": "items/presenting_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}
