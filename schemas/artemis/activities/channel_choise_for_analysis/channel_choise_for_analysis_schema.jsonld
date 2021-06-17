@@ -64,7 +64,7 @@
             {
                 "variableName": "channel_incl-excl_a-priori",
                 "isAbout": "items/channel_incl-excl_a-priori.jsonld",
-                "isVis": "channel_incl-excl_for_analysis == 1",
+                "isVis": "channel_incl-excl_for_analysis == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -73,7 +73,7 @@
             {
                 "variableName": "channel_incl-excl_a-priori_lit_based",
                 "isAbout": "items/channel_incl-excl_a-priori_lit_based.jsonld",
-                "isVis": "channel_incl-excl_a-priori == 1",
+                "isVis": "channel_incl-excl_a-priori == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -82,7 +82,7 @@
             {
                 "variableName": "channel_incl-excl_a-priori_theory_based",
                 "isAbout": "items/channel_incl-excl_a-priori_theory_based.jsonld",
-                "isVis": "channel_incl-excl_a-priori == 2",
+                "isVis": "channel_incl-excl_a-priori == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -91,7 +91,7 @@
             {
                 "variableName": "channel_incl-excl_a-priori_other",
                 "isAbout": "items/channel_incl-excl_a-priori_other.jsonld",
-                "isVis": "channel_incl-excl_a-priori  == 3",
+                "isVis": "channel_incl-excl_a-priori  == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -100,7 +100,7 @@
             {
                 "variableName": "channel_incl-excl_by_noise",
                 "isAbout": "items/channel_incl-excl_by_noise.jsonld",
-                "isVis": "channel_incl-excl_for_analysis == 2",
+                "isVis": "channel_incl-excl_for_analysis == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -109,7 +109,7 @@
             {
                 "variableName": "channel_incl-excl_by_noise_visual_inspection",
                 "isAbout": "items/channel_incl-excl_by_noise_visual_inspection.jsonld",
-                "isVis": "channel_incl-excl_by_noise == 1",
+                "isVis": "channel_incl-excl_by_noise == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -118,7 +118,7 @@
             {
                 "variableName": "incl-excl_by_noise_thresholds",
                 "isAbout": "items/incl-excl_by_noise_thresholds.jsonld",
-                "isVis": "channel_incl-excl_by_noise == 2",
+                "isVis": "channel_incl-excl_by_noise == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -127,7 +127,7 @@
             {
                 "variableName": "incl-excl_by_noise_visual_inspection",
                 "isAbout": "items/incl-excl_by_noise_visual_inspection.jsonld",
-                "isVis": "channel_incl-excl_by_noise == 3",
+                "isVis": "channel_incl-excl_by_noise == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -136,7 +136,7 @@
             {
                 "variableName": "channel_incl-excl_by_signal",
                 "isAbout": "items/channel_incl-excl_by_signal.jsonld",
-                "isVis": "channel_incl-excl_for_analysis == 3",
+                "isVis": "channel_incl-excl_for_analysis == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -145,7 +145,7 @@
             {
                 "variableName": "channel_incl-excl_by_signal_visual_inspection",
                 "isAbout": "items/channel_incl-excl_by_signal_visual_inspection.jsonld",
-                "isVis": "channel_incl-excl_by_signal == 1",
+                "isVis": "channel_incl-excl_by_signal == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -154,7 +154,7 @@
             {
                 "variableName": "incl-excl_by_signal_thresholds",
                 "isAbout": "items/incl-excl_by_signal_thresholds.jsonld",
-                "isVis": "channel_incl-excl_by_signal == 2",
+                "isVis": "channel_incl-excl_by_signal == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -163,7 +163,7 @@
             {
                 "variableName": "incl-excl_by_signal_visual_inspection",
                 "isAbout": "items/incl-excl_by_signal_visual_inspection.jsonld",
-                "isVis": "channel_incl-excl_by_signal == 3",
+                "isVis": "channel_incl-excl_by_signal == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -172,7 +172,7 @@
             {
                 "variableName": "channel_incl-excl_by_condition",
                 "isAbout": "items/channel_incl-excl_by_condition.jsonld",
-                "isVis": "channel_incl-excl_for_analysis == 4",
+                "isVis": "channel_incl-excl_for_analysis == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -181,7 +181,7 @@
             {
                 "variableName": "channel_incl-excl_by_noise_visual_inspection",
                 "isAbout": "items/channel_incl-excl_by_noise_visual_inspection.jsonld",
-                "isVis": "channel_incl-excl_by_condition == 1",
+                "isVis": "channel_incl-excl_by_condition == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -190,7 +190,7 @@
             {
                 "variableName": "channel_incl-excl_by_noise_thresholds",
                 "isAbout": "items/channel_incl-excl_by_noise_thresholds.jsonld",
-                "isVis": "channel_incl-excl_by_condition == 2",
+                "isVis": "channel_incl-excl_by_condition == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -199,7 +199,7 @@
             {
                 "variableName": "channel_incl-excl_by_noise_other",
                 "isAbout": "items/channel_incl-excl_by_noise_other.jsonld",
-                "isVis": "channel_incl-excl_by_condition == 3",
+                "isVis": "channel_incl-excl_by_condition == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -208,7 +208,7 @@
             {
                 "variableName": "channel_incl-excl_by_other",
                 "isAbout": "items/channel_incl-excl_by_other.jsonld",
-                "isVis": "channel_incl-excl_for_analysis > 5",
+                "isVis": "channel_incl-excl_for_analysis > 4",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -262,7 +262,7 @@
             {
                 "variableName": "channel_incl-excl_reconstruction_order",
                 "isAbout": "items/channel_incl-excl_reconstruction_order.jsonld",
-                "isVis": "!(channel_incl-excl_for_analysis = 5 && channel_reconstruction = 4)",
+                "isVis": "!(channel_incl-excl_for_analysis > 4 && channel_reconstruction = 4)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
