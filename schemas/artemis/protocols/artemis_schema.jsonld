@@ -19,6 +19,7 @@
         "shuffle": false,
         "order": [
             "../activities/hardware/hardware_schema.jsonld",
+            "../activities/measurement/measurement_schema.jsonld",
             "../activities/visualization/visualization_schema.jsonld",
             "../activities/other/other_schema.jsonld"
         ],
@@ -28,6 +29,18 @@
                 "isAbout": "../activities/hardware/hardware_schema.jsonld",
                 "prefLabel": {
                     "en": "Hardware"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "measurement",
+                "isAbout": "../activities/measurement/measurement_schema.jsonld",
+                "prefLabel": {
+                    "en": "Measurement"
                 },
                 "isVis": true,
                 "requiredValue": false,
