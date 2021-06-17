@@ -207,6 +207,10 @@ validate_all:
 	grep -r  "@context" schemas | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas
 
+validate_artemis:
+	grep -r  "@context" schemas/artemis | cut -d: -f1 | xargs -I fname jsonlint -q fname
+	reproschema -l DEBUG validate schemas/artemis
+
 # CLEAN
 
 # TODO 
