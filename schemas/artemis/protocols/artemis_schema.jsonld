@@ -20,6 +20,7 @@
         "order": [
             "../activities/hardware/hardware_schema.jsonld",
             "../activities/design_and_sample/design_and_sample_schema.jsonld",
+            "../activities/channel_choise_for_analysis/channel_choise_for_analysis_schema.jsonld",            
             "../activities/measurement/measurement_schema.jsonld",
             "../activities/visualization/visualization_schema.jsonld",
             "../activities/other/other_schema.jsonld"
@@ -38,10 +39,22 @@
                 ]
             },
             {
+                "variableName": "channel_choice_for_analysis",
+                "isAbout": "../activities/channel_choise_for_analysis/channel_choise_for_analysis_schema.jsonld",
+                "prefLabel": {
+                    "en": "Channel choice for analysis"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },            
+            {
                 "variableName": "design_and_sample",
                 "isAbout": "../activities/design_and_sample/design_and_sample_schema.jsonld",
                 "prefLabel": {
-                    "en": "design_and_sample"
+                    "en": "Design and sample"
                 },
                 "isVis": true,
                 "requiredValue": false,

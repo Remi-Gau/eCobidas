@@ -27,6 +27,7 @@ artemis:
 	ecobidas_convert --schema hardware
 	ecobidas_convert --schema experimental_design_sample
 	ecobidas_convert --schema measurements
+	ecobidas_convert --schema channel_electrode_choice
 	ecobidas_convert --schema visualization	
 	grep -r  "@context" schemas/artemis | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/artemis
