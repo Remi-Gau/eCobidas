@@ -138,14 +138,14 @@ def define_choices(item, field_type, choices):
         response_options = slider_response(choices)
         item.set_input_type_as_slider(response_options)
 
-    if field_type in ["radio", "select", "select_multiple"]:
+    if field_type in ["radio", "radio_multiple", "select", "select_multiple"]:
 
         response_options = list_responses_options(choices)
 
         if field_type in ["radio_multiple", "select_multiple"]:
             response_options.set_multiple_choice(True)
 
-        if field_type == "radio":
+        if field_type in ["radio", "radio_multiple"]:
             item.set_input_type_as_radio(response_options)
 
         # if we have a dropdown menu
