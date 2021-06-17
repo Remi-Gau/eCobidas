@@ -13,6 +13,22 @@
 # git checkout remi_schema_creator
 
 # DOWNLOAD and CREATE and VALIDATE
+
+artemis:
+	rm -rf inputs/csv/artemis
+	rm -rf schemas/artemis/activities
+	sh download_tsv_artemis.sh artemis hardware
+	sh download_tsv_artemis.sh artemis acquisition
+	sh download_tsv_artemis.sh artemis preprocessing
+	sh download_tsv_artemis.sh artemis experimental_design_sample
+	sh download_tsv_artemis.sh artemis measurements
+	sh download_tsv_artemis.sh artemis channel_electrode_choice
+	sh download_tsv_artemis.sh artemis visualization
+	ecobidas_convert --schema hardware	
+	ecobidas_convert --schema visualization	
+	grep -r  "@context" schemas/artemis | cut -d: -f1 | xargs -I fname jsonlint -q fname
+	reproschema -l DEBUG validate schemas/artemis
+
 neurovault:
 	rm -rf inputs/csv/neurovault
 	rm -rf schemas/neurovault

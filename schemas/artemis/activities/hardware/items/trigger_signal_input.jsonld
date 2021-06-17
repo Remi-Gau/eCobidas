@@ -1,53 +1,59 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "Electrode_type.jsonld",
+    "@id": "trigger_signal_input.jsonld",
     "prefLabel": {
-        "en": "Electrode type"
+        "en": "Trigger signal input"
     },
-    "description": "Electrode type",
+    "description": "Trigger signal input",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "Type of electrodes"
+        "en": "Describe your trigger signal input."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 5,
         "choices": [
             {
                 "name": {
-                    "en": "Ag/Ag-Cl"
+                    "en": "1. analogue signal to amplifier"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "tin"
+                    "en": "2. digital signal to amplifier"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "active electrodes (with preamplifiers)"
+                    "en": "3. analogue signal to acquisition software"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "dry"
+                    "en": "4. digital signal to acquisition software"
                 },
                 "value": 3
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "5. combined stimulus delivery/acquisition software"
                 },
                 "value": 4
+            },
+            {
+                "name": {
+                    "en": "6. offline triggers"
+                },
+                "value": 5
             }
         ],
         "multipleChoice": false

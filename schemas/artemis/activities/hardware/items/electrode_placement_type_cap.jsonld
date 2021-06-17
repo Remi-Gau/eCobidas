@@ -1,7 +1,7 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "Electrode_Placement_Type_Cap.jsonld",
+    "@id": "electrode_placement_type_cap.jsonld",
     "prefLabel": {
         "en": "Electrode Placement Type Cap"
     },

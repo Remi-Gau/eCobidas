@@ -1,7 +1,7 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "Other_peripheral_devices.jsonld",
+    "@id": "other_peripheral_devices.jsonld",
     "prefLabel": {
         "en": "Other peripheral devices"
     },

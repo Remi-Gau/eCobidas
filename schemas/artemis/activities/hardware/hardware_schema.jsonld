@@ -14,27 +14,27 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/Electrode_Placement_Type.jsonld",
-            "items/Electrode_Placement_Type_Cap.jsonld",
-            "items/Electrode_Placement_Type_Net.jsonld",
-            "items/Electrode_placement_type_Loose_Placed.jsonld",
-            "items/Cap_model.jsonld",
-            "items/Net_model.jsonld",
-            "items/Electrode_manufacturer.jsonld",
-            "items/Electrode_model.jsonld",
-            "items/Electrode_type.jsonld",
-            "items/Conductive_medium.jsonld",
-            "items/Amplifier_make_or_brand.jsonld",
-            "items/Amplifier_model.jsonld",
-            "items/Trigger_signal_source.jsonld",
-            "items/Trigger_signal_input.jsonld",
-            "items/Other_peripheral_devices.jsonld",
-            "items/Further_clarification_on_peripheral_devices.jsonld"
+            "items/electrode_placement_type.jsonld",
+            "items/electrode_placement_type_cap.jsonld",
+            "items/electrode_placement_type_net.jsonld",
+            "items/electrode_placement_type_loose_placed.jsonld",
+            "items/cap_model.jsonld",
+            "items/net_model.jsonld",
+            "items/electrode_manufacturer.jsonld",
+            "items/electrode_model.jsonld",
+            "items/electrode_type.jsonld",
+            "items/conductive_medium.jsonld",
+            "items/amplifier_make_or_brand.jsonld",
+            "items/amplifier_model.jsonld",
+            "items/trigger_signal_source.jsonld",
+            "items/trigger_signal_input.jsonld",
+            "items/other_peripheral_devices.jsonld",
+            "items/further_clarification_on_peripheral_devices.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "Electrode_Placement_Type",
-                "isAbout": "items/Electrode_Placement_Type.jsonld",
+                "variableName": "electrode_placement_type",
+                "isAbout": "items/electrode_placement_type.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -42,8 +42,8 @@
                 ]
             },
             {
-                "variableName": "Electrode_Placement_Type_Cap",
-                "isAbout": "items/Electrode_Placement_Type_Cap.jsonld",
+                "variableName": "electrode_placement_type_cap",
+                "isAbout": "items/electrode_placement_type_cap.jsonld",
                 "isVis": "electrode_placement_type == 0",
                 "requiredValue": false,
                 "allow": [
@@ -51,8 +51,8 @@
                 ]
             },
             {
-                "variableName": "Electrode_Placement_Type_Net",
-                "isAbout": "items/Electrode_Placement_Type_Net.jsonld",
+                "variableName": "electrode_placement_type_net",
+                "isAbout": "items/electrode_placement_type_net.jsonld",
                 "isVis": "electrode_placement_type == 1",
                 "requiredValue": false,
                 "allow": [
@@ -60,8 +60,8 @@
                 ]
             },
             {
-                "variableName": "Electrode_placement_type_Loose_Placed",
-                "isAbout": "items/Electrode_placement_type_Loose_Placed.jsonld",
+                "variableName": "electrode_placement_type_loose_placed",
+                "isAbout": "items/electrode_placement_type_loose_placed.jsonld",
                 "isVis": "electrode_placement_type == 2",
                 "requiredValue": false,
                 "allow": [
@@ -69,8 +69,8 @@
                 ]
             },
             {
-                "variableName": "Cap_model",
-                "isAbout": "items/Cap_model.jsonld",
+                "variableName": "cap_model",
+                "isAbout": "items/cap_model.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -78,8 +78,8 @@
                 ]
             },
             {
-                "variableName": "Net_model",
-                "isAbout": "items/Net_model.jsonld",
+                "variableName": "net_model",
+                "isAbout": "items/net_model.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -87,8 +87,8 @@
                 ]
             },
             {
-                "variableName": "Electrode_manufacturer",
-                "isAbout": "items/Electrode_manufacturer.jsonld",
+                "variableName": "electrode_manufacturer",
+                "isAbout": "items/electrode_manufacturer.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -96,8 +96,8 @@
                 ]
             },
             {
-                "variableName": "Electrode_model",
-                "isAbout": "items/Electrode_model.jsonld",
+                "variableName": "electrode_model",
+                "isAbout": "items/electrode_model.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -105,8 +105,8 @@
                 ]
             },
             {
-                "variableName": "Electrode_type",
-                "isAbout": "items/Electrode_type.jsonld",
+                "variableName": "electrode_type",
+                "isAbout": "items/electrode_type.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -114,8 +114,8 @@
                 ]
             },
             {
-                "variableName": "Conductive_medium",
-                "isAbout": "items/Conductive_medium.jsonld",
+                "variableName": "conductive_medium",
+                "isAbout": "items/conductive_medium.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -123,8 +123,8 @@
                 ]
             },
             {
-                "variableName": "Amplifier_make_or_brand",
-                "isAbout": "items/Amplifier_make_or_brand.jsonld",
+                "variableName": "amplifier_make_or_brand",
+                "isAbout": "items/amplifier_make_or_brand.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -132,8 +132,8 @@
                 ]
             },
             {
-                "variableName": "Amplifier_model",
-                "isAbout": "items/Amplifier_model.jsonld",
+                "variableName": "amplifier_model",
+                "isAbout": "items/amplifier_model.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -141,8 +141,8 @@
                 ]
             },
             {
-                "variableName": "Trigger_signal_source",
-                "isAbout": "items/Trigger_signal_source.jsonld",
+                "variableName": "trigger_signal_source",
+                "isAbout": "items/trigger_signal_source.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -150,8 +150,8 @@
                 ]
             },
             {
-                "variableName": "Trigger_signal_input",
-                "isAbout": "items/Trigger_signal_input.jsonld",
+                "variableName": "trigger_signal_input",
+                "isAbout": "items/trigger_signal_input.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -159,8 +159,8 @@
                 ]
             },
             {
-                "variableName": "Other_peripheral_devices",
-                "isAbout": "items/Other_peripheral_devices.jsonld",
+                "variableName": "other_peripheral_devices",
+                "isAbout": "items/other_peripheral_devices.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -168,8 +168,8 @@
                 ]
             },
             {
-                "variableName": "Further_clarification_on_peripheral_devices",
-                "isAbout": "items/Further_clarification_on_peripheral_devices.jsonld",
+                "variableName": "further_clarification_on_peripheral_devices",
+                "isAbout": "items/further_clarification_on_peripheral_devices.jsonld",
                 "isVis": "other_peripheral_devices == 1",
                 "requiredValue": false,
                 "allow": [
