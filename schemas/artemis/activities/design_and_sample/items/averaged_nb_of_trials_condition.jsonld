@@ -1,11 +1,11 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "averaged_number_of_trials.jsonld",
+    "@id": "averaged_nb_of_trials_condition.jsonld",
     "prefLabel": {
-        "en": "averaged_number_of_trials"
+        "en": "averaged_nb_of_trials_condition"
     },
-    "description": "averaged_number_of_trials",
+    "description": "averaged_nb_of_trials_condition",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

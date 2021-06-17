@@ -52,6 +52,9 @@ def create_schema(this_schema, out_dir, debug=False):
 
         items_order = items.item_order.unique()
 
+        # TODO add a check to make sure that no 2 items have the same
+        # ID (OR preferred label)
+
         for item_idx in items_order:
 
             this_item = items[items["item_order"] == item_idx]

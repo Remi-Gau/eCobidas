@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "total_number_of_trials.jsonld",
+    "@id": "total_nb_of_conditions.jsonld",
     "prefLabel": {
-        "en": "total_number_of_trials"
+        "en": "total_nb_of_conditions"
     },
-    "description": "total_number_of_trials",
+    "description": "total_nb_of_conditions",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "number"
     },
     "question": {
-        "en": "How many trials did you use for each condition?"
+        "en": "How many (within-subjects) conditions did you include in your task?"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

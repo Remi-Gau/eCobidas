@@ -16,10 +16,10 @@
         "order": [
             "items/trial_presentation_strategy.jsonld",
             "items/trial_presentation_strategy_other.jsonld",
-            "items/total_number_of_trials.jsonld",
-            "items/total_number_of_conditions.jsonld",
-            "items/total_number_of_trials.jsonld",
-            "items/averaged_number_of_trials.jsonld",
+            "items/total_nb_of_trials.jsonld",
+            "items/total_nb_of_conditions.jsonld",
+            "items/total_nb_of_trials_condition.jsonld",
+            "items/averaged_nb_of_trials_condition.jsonld",
             "items/min_nb_of_trials_per_condition.jsonld",
             "items/max_nb_of_trials_per_condition.jsonld",
             "items/sample_size_total.jsonld",
@@ -51,8 +51,8 @@
                 ]
             },
             {
-                "variableName": "total_number_of_trials",
-                "isAbout": "items/total_number_of_trials.jsonld",
+                "variableName": "total_nb_of_trials",
+                "isAbout": "items/total_nb_of_trials.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -60,8 +60,8 @@
                 ]
             },
             {
-                "variableName": "total_number_of_conditions",
-                "isAbout": "items/total_number_of_conditions.jsonld",
+                "variableName": "total_nb_of_conditions",
+                "isAbout": "items/total_nb_of_conditions.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -69,8 +69,8 @@
                 ]
             },
             {
-                "variableName": "total_number_of_trials",
-                "isAbout": "items/total_number_of_trials.jsonld",
+                "variableName": "total_nb_of_trials_condition",
+                "isAbout": "items/total_nb_of_trials_condition.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -78,8 +78,8 @@
                 ]
             },
             {
-                "variableName": "averaged_number_of_trials",
-                "isAbout": "items/averaged_number_of_trials.jsonld",
+                "variableName": "averaged_nb_of_trials_condition",
+                "isAbout": "items/averaged_nb_of_trials_condition.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -143,7 +143,7 @@
             {
                 "variableName": "order_of_group",
                 "isAbout": "items/order_of_group.jsonld",
-                "isVis": "number_of_groups!=0",
+                "isVis": "number_of_groups > 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -161,7 +161,7 @@
             {
                 "variableName": "presenting_software_others",
                 "isAbout": "items/presenting_software_others.jsonld",
-                "isVis": "presenting_software == 14",
+                "isVis": "presenting_software > 13",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

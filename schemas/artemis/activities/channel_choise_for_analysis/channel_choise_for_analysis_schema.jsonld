@@ -23,7 +23,7 @@
             "items/channel_incl-excl_by_noise_visual_inspection.jsonld",
             "items/incl-excl_by_noise_thresholds.jsonld",
             "items/incl-excl_by_noise_visual_inspection.jsonld",
-            "items/channel_incl-excl_by_signal__1.jsonld",
+            "items/channel_incl-excl_by_signal.jsonld",
             "items/channel_incl-excl_by_signal_visual_inspection.jsonld",
             "items/incl-excl_by_signal_thresholds.jsonld",
             "items/incl-excl_by_signal_visual_inspection.jsonld",
@@ -37,7 +37,7 @@
             "items/channel_reconstruction_participants.jsonld",
             "items/channel_reconstruction_trials.jsonld",
             "items/channel_reconstruction_other.jsonld",
-            "items/channel_inclusionexclusion_reconstruction_order.jsonld",
+            "items/channel_incl-excl_reconstruction_order.jsonld",
             "items/analysis_montages.jsonld",
             "items/analysis_montage_1_number.jsonld",
             "items/analysis_montage_1_channels.jsonld",
@@ -64,7 +64,7 @@
             {
                 "variableName": "channel_incl-excl_a-priori",
                 "isAbout": "items/channel_incl-excl_a-priori.jsonld",
-                "isVis": "channel_incl-exclusion_for_analysis == 1",
+                "isVis": "channel_incl-excl_for_analysis == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -100,7 +100,7 @@
             {
                 "variableName": "channel_incl-excl_by_noise",
                 "isAbout": "items/channel_incl-excl_by_noise.jsonld",
-                "isVis": "channel_incl-exclusion_for_analysis == 2",
+                "isVis": "channel_incl-excl_for_analysis == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -134,9 +134,9 @@
                 ]
             },
             {
-                "variableName": "channel_incl-excl_by_signal__1",
-                "isAbout": "items/channel_incl-excl_by_signal__1.jsonld",
-                "isVis": "channel_incl-exclusion_for_analysis == 3",
+                "variableName": "channel_incl-excl_by_signal",
+                "isAbout": "items/channel_incl-excl_by_signal.jsonld",
+                "isVis": "channel_incl-excl_for_analysis == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -172,7 +172,7 @@
             {
                 "variableName": "channel_incl-excl_by_condition",
                 "isAbout": "items/channel_incl-excl_by_condition.jsonld",
-                "isVis": "channel_incl-exclusion_for_analysis == 4",
+                "isVis": "channel_incl-excl_for_analysis == 4",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -208,7 +208,7 @@
             {
                 "variableName": "channel_incl-excl_by_other",
                 "isAbout": "items/channel_incl-excl_by_other.jsonld",
-                "isVis": "channel_incl-exclusion_for_analysis == 6",
+                "isVis": "channel_incl-excl_for_analysis > 5",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -253,16 +253,16 @@
             {
                 "variableName": "channel_reconstruction_other",
                 "isAbout": "items/channel_reconstruction_other.jsonld",
-                "isVis": "channel_reconstruction == 5",
+                "isVis": "channel_reconstruction > 4",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "channel_inclusionexclusion_reconstruction_order",
-                "isAbout": "items/channel_inclusionexclusion_reconstruction_order.jsonld",
-                "isVis": "~(channel incl-excl for analysis = 5 && missing channel reconstruction = 4)",
+                "variableName": "channel_incl-excl_reconstruction_order",
+                "isAbout": "items/channel_incl-excl_reconstruction_order.jsonld",
+                "isVis": "~(channel_incl-excl_for_analysis = 5 && channel_reconstruction = 4)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
