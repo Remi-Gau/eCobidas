@@ -4,91 +4,109 @@
     "@id": "meeg_analysis_softwares.jsonld",
     "valueType": "xsd:integer",
     "minValue": 0,
-    "maxValue": 13,
+    "maxValue": 16,
     "choices": [
         {
             "name": {
-                "en": "EEGlab (+ ERPLab)"
+                "en": "BESA Research"
             },
             "value": 0
         },
         {
             "name": {
-                "en": "InstEP"
+                "en": "Brain Vision Analyzer"
             },
             "value": 1
         },
         {
             "name": {
-                "en": "FieldTrip"
+                "en": "Brainstorm"
             },
             "value": 2
         },
         {
             "name": {
-                "en": "BESA Research"
+                "en": "Cartool"
             },
             "value": 3
         },
         {
             "name": {
-                "en": "Scan"
+                "en": "Curry"
             },
             "value": 4
         },
         {
             "name": {
-                "en": "Brain Vision Analyzer"
+                "en": "custom and others"
             },
             "value": 5
         },
         {
             "name": {
-                "en": "NetStation"
+                "en": "EEGlab (+ ERPlab)"
             },
             "value": 6
         },
         {
             "name": {
-                "en": "Cartool"
+                "en": "EEProbe"
             },
             "value": 7
         },
         {
             "name": {
-                "en": "MatLab custom script"
+                "en": "ERP system"
             },
             "value": 8
         },
         {
             "name": {
-                "en": "Curry"
+                "en": "FieldTrip "
             },
             "value": 9
         },
         {
             "name": {
-                "en": "TrackWalker"
+                "en": "InstEP"
             },
             "value": 10
         },
         {
             "name": {
-                "en": "ERP system"
+                "en": "MatLab custom script"
             },
             "value": 11
         },
         {
             "name": {
-                "en": "EEProbe"
+                "en": "MNE"
             },
             "value": 12
         },
         {
             "name": {
-                "en": "other"
+                "en": "NetStation"
             },
             "value": 13
+        },
+        {
+            "name": {
+                "en": "Scan"
+            },
+            "value": 14
+        },
+        {
+            "name": {
+                "en": "TrackWalker"
+            },
+            "value": 15
+        },
+        {
+            "name": {
+                "en": "Other"
+            },
+            "value": 16
         }
     ]
 }

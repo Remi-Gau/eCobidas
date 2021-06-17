@@ -1,11 +1,11 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "a_priori_latency_selection_approach.jsonld",
+    "@id": "latency_selection_approach_a_priori.jsonld",
     "prefLabel": {
-        "en": "A priori latency selection approach"
+        "en": "Latency selection approach a priori"
     },
-    "description": "A priori latency selection approach",
+    "description": "Latency selection approach a priori",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

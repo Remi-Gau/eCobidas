@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "maximum_number_of_trials_per_condition.jsonld",
+    "@id": "electrode_placement_type_single_electrodes.jsonld",
     "prefLabel": {
-        "en": "maximum_number_of_trials_per_condition"
+        "en": "Electrode placement type Single Electrodes"
     },
-    "description": "maximum_number_of_trials_per_condition",
+    "description": "Electrode placement type Single Electrodes",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please insert the maximum number of trials analysed per condition: "
+        "en": "Please specify details about electrode placement."
     },
     "responseOptions": {
         "valueType": "xsd:string",

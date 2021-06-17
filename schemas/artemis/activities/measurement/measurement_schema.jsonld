@@ -22,11 +22,11 @@
             "items/other_further_clarification.jsonld",
             "items/amplitude_time_window_selection.jsonld",
             "items/approach_to_amplitude_measurement_window_selection_a_priori.jsonld",
-            "items/literature_references.jsonld",
-            "items/further_details.jsonld",
+            "items/amplitude_literature_references.jsonld",
+            "items/amplitude_further_details.jsonld",
             "items/approach_to_amplitude_measurement_window_selection_data_driven.jsonld",
-            "items/broader_time_window_start.jsonld",
-            "items/broader_time_window_end.jsonld",
+            "items/amplitude_broader_time_window_start.jsonld",
+            "items/amplitude_broader_time_window_end.jsonld",
             "items/amplitude_measurement_window_start_a_priori.jsonld",
             "items/amplitude_measurement_window_end_a_priori.jsonld",
             "items/amplitude_measurement_window_start_data-driven.jsonld",
@@ -37,13 +37,13 @@
             "items/peak_latency_measure.jsonld",
             "items/latency_measured_from.jsonld",
             "items/latency_selection_approach.jsonld",
-            "items/a_priori_latency_selection_approach.jsonld",
+            "items/latency_selection_approach_a_priori.jsonld",
             "items/latency_selection_literature.jsonld",
             "items/latency_selection_rationale.jsonld",
             "items/latency_selection_data_driven.jsonld",
-            "items/further_clarification_latency.jsonld",
-            "items/broader_time_window_start.jsonld",
-            "items/broader_time_window_end.jsonld",
+            "items/latency_further_clarification.jsonld",
+            "items/latency_broader_time_window_start.jsonld",
+            "items/latency_broader_time_window_end.jsonld",
             "items/latency_measurement_window_start_a_priori.jsonld",
             "items/latency_measurement_window_end_a_priori.jsonld",
             "items/latency_measurement_window_start_data-driven.jsonld",
@@ -124,8 +124,8 @@
                 ]
             },
             {
-                "variableName": "literature_references",
-                "isAbout": "items/literature_references.jsonld",
+                "variableName": "amplitude_literature_references",
+                "isAbout": "items/amplitude_literature_references.jsonld",
                 "isVis": "amplitude_time_window_selection == 0",
                 "requiredValue": false,
                 "allow": [
@@ -133,8 +133,8 @@
                 ]
             },
             {
-                "variableName": "further_details",
-                "isAbout": "items/further_details.jsonld",
+                "variableName": "amplitude_further_details",
+                "isAbout": "items/amplitude_further_details.jsonld",
                 "isVis": "amplitude_time_window_selection == 1 || amplitude_time_window_selection == 2",
                 "requiredValue": false,
                 "allow": [
@@ -151,8 +151,8 @@
                 ]
             },
             {
-                "variableName": "broader_time_window_start",
-                "isAbout": "items/broader_time_window_start.jsonld",
+                "variableName": "amplitude_broader_time_window_start",
+                "isAbout": "items/amplitude_broader_time_window_start.jsonld",
                 "isVis": "amplitude_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
@@ -160,8 +160,8 @@
                 ]
             },
             {
-                "variableName": "broader_time_window_end",
-                "isAbout": "items/broader_time_window_end.jsonld",
+                "variableName": "amplitude_broader_time_window_end",
+                "isAbout": "items/amplitude_broader_time_window_end.jsonld",
                 "isVis": "amplitude_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
@@ -259,8 +259,8 @@
                 ]
             },
             {
-                "variableName": "a_priori_latency_selection_approach",
-                "isAbout": "items/a_priori_latency_selection_approach.jsonld",
+                "variableName": "latency_selection_approach_a_priori",
+                "isAbout": "items/latency_selection_approach_a_priori.jsonld",
                 "isVis": "latency_selection_approach == 0",
                 "requiredValue": false,
                 "allow": [
@@ -270,7 +270,7 @@
             {
                 "variableName": "latency_selection_literature",
                 "isAbout": "items/latency_selection_literature.jsonld",
-                "isVis": "a_priori_latency_selection_approach == 0",
+                "isVis": "latency_selection_approach_a_priori == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -279,7 +279,7 @@
             {
                 "variableName": "latency_selection_rationale",
                 "isAbout": "items/latency_selection_rationale.jsonld",
-                "isVis": "a_priori_latency_selection_approach == 1",
+                "isVis": "latency_selection_approach_a_priori == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -295,8 +295,8 @@
                 ]
             },
             {
-                "variableName": "further_clarification_latency",
-                "isAbout": "items/further_clarification_latency.jsonld",
+                "variableName": "latency_further_clarification",
+                "isAbout": "items/latency_further_clarification.jsonld",
                 "isVis": "latency_selection_approach == 2 || latency_selection_approach == 3",
                 "requiredValue": false,
                 "allow": [
@@ -304,8 +304,8 @@
                 ]
             },
             {
-                "variableName": "broader_time_window_start",
-                "isAbout": "items/broader_time_window_start.jsonld",
+                "variableName": "latency_broader_time_window_start",
+                "isAbout": "items/latency_broader_time_window_start.jsonld",
                 "isVis": "latency_selection_approach == 1",
                 "requiredValue": false,
                 "allow": [
@@ -313,8 +313,8 @@
                 ]
             },
             {
-                "variableName": "broader_time_window_end",
-                "isAbout": "items/broader_time_window_end.jsonld",
+                "variableName": "latency_broader_time_window_end",
+                "isAbout": "items/latency_broader_time_window_end.jsonld",
                 "isVis": "latency_selection_approach == 1",
                 "requiredValue": false,
                 "allow": [

@@ -262,7 +262,7 @@
             {
                 "variableName": "channel_inclusionexclusion_reconstruction_order",
                 "isAbout": "items/channel_inclusionexclusion_reconstruction_order.jsonld",
-                "isVis": "(DO NOT SHOW IF  channel incl-excl for analysis = 5 AND missing channel reconstruction = 4)",
+                "isVis": "~(channel incl-excl for analysis = 5 && missing channel reconstruction = 4)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

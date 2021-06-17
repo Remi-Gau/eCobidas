@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "further_clarification_latency.jsonld",
+    "@id": "amplitude_further_details.jsonld",
     "prefLabel": {
-        "en": "Further clarification latency"
+        "en": "Amplitude further details"
     },
-    "description": "Further clarification latency",
+    "description": "Amplitude further details",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please clarify how you selected the window in to measure latency."
+        "en": "Please provide futher details needed for replication."
     },
     "responseOptions": {
         "valueType": "xsd:string",

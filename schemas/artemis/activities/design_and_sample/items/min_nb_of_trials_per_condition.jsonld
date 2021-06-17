@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "electrode_placement_type_loose_placed.jsonld",
+    "@id": "min_nb_of_trials_per_condition.jsonld",
     "prefLabel": {
-        "en": "Electrode placement type Loose Placed"
+        "en": "min_nb_of_trials_per_condition"
     },
-    "description": "Electrode placement type Loose Placed",
+    "description": "min_nb_of_trials_per_condition",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please specify details about electrode placement."
+        "en": "Please insert the minimum number of trials analysed per condition:"
     },
     "responseOptions": {
         "valueType": "xsd:string",

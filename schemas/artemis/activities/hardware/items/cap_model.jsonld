@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please indicate the cap model."
+        "en": "Please indicate the cap or net model."
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "net_model.jsonld",
+    "@id": "presenting_software_version.jsonld",
     "prefLabel": {
-        "en": "Net model"
+        "en": "presenting_software_version"
     },
-    "description": "Net model",
+    "description": "presenting_software_version",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please indicate the net model."
+        "en": "Specify the software version used"
     },
     "responseOptions": {
         "valueType": "xsd:string",
