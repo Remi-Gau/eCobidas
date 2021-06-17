@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "amp_measure_end_a_priori.jsonld",
+    "prefLabel": {
+        "en": "amp measure END a priori"
+    },
+    "description": "amp measure END a priori",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "Please provide here the end of the window which was used to measure amplitude. Measurement window: END [ms]"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

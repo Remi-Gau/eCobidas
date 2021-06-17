@@ -14,46 +14,46 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/measurement_type.jsonld",
-            "items/amplitude_measured_from.jsonld",
-            "items/amplitude_measurement_procedure.jsonld",
+            "items/measure_type.jsonld",
+            "items/amp_measured_from.jsonld",
+            "items/amp_measure_procedure.jsonld",
             "items/window_area_measure_further_clarification.jsonld",
             "items/factor_scores_further_clarification.jsonld",
             "items/other_further_clarification.jsonld",
-            "items/amplitude_time_window_selection.jsonld",
-            "items/approach_to_amplitude_measurement_window_selection_a_priori.jsonld",
-            "items/amplitude_literature_references.jsonld",
-            "items/amplitude_further_details.jsonld",
-            "items/approach_to_amplitude_measurement_window_selection_data_driven.jsonld",
-            "items/amplitude_broader_time_window_start.jsonld",
-            "items/amplitude_broader_time_window_end.jsonld",
-            "items/amplitude_measurement_window_start_a_priori.jsonld",
-            "items/amplitude_measurement_window_end_a_priori.jsonld",
-            "items/amplitude_measurement_window_start_data-driven.jsonld",
-            "items/amplitude_measurement_window_end_data_driven.jsonld",
-            "items/amplitude_measurement_software.jsonld",
-            "items/latency_type.jsonld",
-            "items/onset_latency_measure.jsonld",
-            "items/peak_latency_measure.jsonld",
-            "items/latency_measured_from.jsonld",
-            "items/latency_selection_approach.jsonld",
-            "items/latency_selection_approach_a_priori.jsonld",
-            "items/latency_selection_literature.jsonld",
-            "items/latency_selection_rationale.jsonld",
-            "items/latency_selection_data_driven.jsonld",
-            "items/latency_further_clarification.jsonld",
-            "items/latency_broader_time_window_start.jsonld",
-            "items/latency_broader_time_window_end.jsonld",
-            "items/latency_measurement_window_start_a_priori.jsonld",
-            "items/latency_measurement_window_end_a_priori.jsonld",
-            "items/latency_measurement_window_start_data-driven.jsonld",
-            "items/latency_measurement_window_end_data-driven.jsonld",
-            "items/latency_measurement_software.jsonld"
+            "items/amp_window_selection.jsonld",
+            "items/approach_to_amp_measure_window_selection_a_priori.jsonld",
+            "items/amp_literature_references.jsonld",
+            "items/amp_further_details.jsonld",
+            "items/approach_to_amp_measure_window_selection_data_driven.jsonld",
+            "items/amp_broader_window_start.jsonld",
+            "items/amp_broader_window_end.jsonld",
+            "items/amp_measure_start_a_priori.jsonld",
+            "items/amp_measure_end_a_priori.jsonld",
+            "items/amp_measure_start_data-driven.jsonld",
+            "items/amp_measure_end_data_driven.jsonld",
+            "items/amp_measure_software.jsonld",
+            "items/lat_type.jsonld",
+            "items/onset_lat_measure.jsonld",
+            "items/peak_lat_measure.jsonld",
+            "items/lat_measured_from.jsonld",
+            "items/lat_selection_approach.jsonld",
+            "items/lat_selection_approach_a_priori.jsonld",
+            "items/lat_selection_literature.jsonld",
+            "items/lat_selection_rationale.jsonld",
+            "items/lat_selection_data_driven.jsonld",
+            "items/lat_further_clarification.jsonld",
+            "items/lat_broader_time_window_start.jsonld",
+            "items/lat_broader_time_window_end.jsonld",
+            "items/lat_measure_window_start_a_priori.jsonld",
+            "items/lat_measure_window_end_a_priori.jsonld",
+            "items/lat_measure_window_start_data-driven.jsonld",
+            "items/lat_measure_window_end_data-driven.jsonld",
+            "items/lat_measure_software.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "measurement_type",
-                "isAbout": "items/measurement_type.jsonld",
+                "variableName": "measure_type",
+                "isAbout": "items/measure_type.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -61,18 +61,18 @@
                 ]
             },
             {
-                "variableName": "amplitude_measured_from",
-                "isAbout": "items/amplitude_measured_from.jsonld",
-                "isVis": "measurement_type == 0",
+                "variableName": "amp_measured_from",
+                "isAbout": "items/amp_measured_from.jsonld",
+                "isVis": "measure_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amplitude_measurement_procedure",
-                "isAbout": "items/amplitude_measurement_procedure.jsonld",
-                "isVis": "measurement_type == 0",
+                "variableName": "amp_measure_procedure",
+                "isAbout": "items/amp_measure_procedure.jsonld",
+                "isVis": "measure_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -81,7 +81,7 @@
             {
                 "variableName": "window_area_measure_further_clarification",
                 "isAbout": "items/window_area_measure_further_clarification.jsonld",
-                "isVis": "amplitude_measurement_procedure == 3",
+                "isVis": "amp_measure_procedure == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -90,7 +90,7 @@
             {
                 "variableName": "factor_scores_further_clarification",
                 "isAbout": "items/factor_scores_further_clarification.jsonld",
-                "isVis": "amplitude_measurement_procedure == 2",
+                "isVis": "amp_measure_procedure == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -99,268 +99,268 @@
             {
                 "variableName": "other_further_clarification",
                 "isAbout": "items/other_further_clarification.jsonld",
-                "isVis": "amplitude_measurement_procedure == 6",
+                "isVis": "amp_measure_procedure > 5",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amplitude_time_window_selection",
-                "isAbout": "items/amplitude_time_window_selection.jsonld",
-                "isVis": "measurement_type == 0",
+                "variableName": "amp_window_selection",
+                "isAbout": "items/amp_window_selection.jsonld",
+                "isVis": "measure_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "approach_to_amplitude_measurement_window_selection_a_priori",
-                "isAbout": "items/approach_to_amplitude_measurement_window_selection_a_priori.jsonld",
-                "isVis": "measurement_type == 0",
+                "variableName": "approach_to_amp_measure_window_selection_a_priori",
+                "isAbout": "items/approach_to_amp_measure_window_selection_a_priori.jsonld",
+                "isVis": "measure_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amplitude_literature_references",
-                "isAbout": "items/amplitude_literature_references.jsonld",
-                "isVis": "amplitude_time_window_selection == 0",
+                "variableName": "amp_literature_references",
+                "isAbout": "items/amp_literature_references.jsonld",
+                "isVis": "amp_time_window_selection == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amplitude_further_details",
-                "isAbout": "items/amplitude_further_details.jsonld",
-                "isVis": "amplitude_time_window_selection == 1 || amplitude_time_window_selection == 2",
+                "variableName": "amp_further_details",
+                "isAbout": "items/amp_further_details.jsonld",
+                "isVis": "amp_time_window_selection == 1 || amp_time_window_selection == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "approach_to_amplitude_measurement_window_selection_data_driven",
-                "isAbout": "items/approach_to_amplitude_measurement_window_selection_data_driven.jsonld",
-                "isVis": "measurement_type == 0",
+                "variableName": "approach_to_amp_measure_window_selection_data_driven",
+                "isAbout": "items/approach_to_amp_measure_window_selection_data_driven.jsonld",
+                "isVis": "measure_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amplitude_broader_time_window_start",
-                "isAbout": "items/amplitude_broader_time_window_start.jsonld",
-                "isVis": "amplitude_time_window_selection == 1",
+                "variableName": "amp_broader_window_start",
+                "isAbout": "items/amp_broader_window_start.jsonld",
+                "isVis": "amp_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amplitude_broader_time_window_end",
-                "isAbout": "items/amplitude_broader_time_window_end.jsonld",
-                "isVis": "amplitude_time_window_selection == 1",
+                "variableName": "amp_broader_window_end",
+                "isAbout": "items/amp_broader_window_end.jsonld",
+                "isVis": "amp_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amplitude_measurement_window_start_a_priori",
-                "isAbout": "items/amplitude_measurement_window_start_a_priori.jsonld",
-                "isVis": "amplitude_time_window_selection == 0",
+                "variableName": "amp_measure_start_a_priori",
+                "isAbout": "items/amp_measure_start_a_priori.jsonld",
+                "isVis": "amp_time_window_selection == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amplitude_measurement_window_end_a_priori",
-                "isAbout": "items/amplitude_measurement_window_end_a_priori.jsonld",
-                "isVis": "amplitude_time_window_selection == 0",
+                "variableName": "amp_measure_end_a_priori",
+                "isAbout": "items/amp_measure_end_a_priori.jsonld",
+                "isVis": "amp_time_window_selection == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amplitude_measurement_window_start_data-driven",
-                "isAbout": "items/amplitude_measurement_window_start_data-driven.jsonld",
-                "isVis": "amplitude_time_window_selection == 1",
+                "variableName": "amp_measure_start_data-driven",
+                "isAbout": "items/amp_measure_start_data-driven.jsonld",
+                "isVis": "amp_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amplitude_measurement_window_end_data_driven",
-                "isAbout": "items/amplitude_measurement_window_end_data_driven.jsonld",
-                "isVis": "amplitude_time_window_selection == 1",
+                "variableName": "amp_measure_end_data_driven",
+                "isAbout": "items/amp_measure_end_data_driven.jsonld",
+                "isVis": "amp_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amplitude_measurement_software",
-                "isAbout": "items/amplitude_measurement_software.jsonld",
-                "isVis": "measurement_type == 0",
+                "variableName": "amp_measure_software",
+                "isAbout": "items/amp_measure_software.jsonld",
+                "isVis": "measure_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_type",
-                "isAbout": "items/latency_type.jsonld",
-                "isVis": "measurement_type == 1",
+                "variableName": "lat_type",
+                "isAbout": "items/lat_type.jsonld",
+                "isVis": "measure_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "onset_latency_measure",
-                "isAbout": "items/onset_latency_measure.jsonld",
-                "isVis": "measurement_type == 1",
+                "variableName": "onset_lat_measure",
+                "isAbout": "items/onset_lat_measure.jsonld",
+                "isVis": "measure_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "peak_latency_measure",
-                "isAbout": "items/peak_latency_measure.jsonld",
-                "isVis": "measurement_type == 1",
+                "variableName": "peak_lat_measure",
+                "isAbout": "items/peak_lat_measure.jsonld",
+                "isVis": "measure_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_measured_from",
-                "isAbout": "items/latency_measured_from.jsonld",
-                "isVis": "measurement_type == 1",
+                "variableName": "lat_measured_from",
+                "isAbout": "items/lat_measured_from.jsonld",
+                "isVis": "measure_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_selection_approach",
-                "isAbout": "items/latency_selection_approach.jsonld",
-                "isVis": "measurement_type == 1",
+                "variableName": "lat_selection_approach",
+                "isAbout": "items/lat_selection_approach.jsonld",
+                "isVis": "measure_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_selection_approach_a_priori",
-                "isAbout": "items/latency_selection_approach_a_priori.jsonld",
-                "isVis": "latency_selection_approach == 0",
+                "variableName": "lat_selection_approach_a_priori",
+                "isAbout": "items/lat_selection_approach_a_priori.jsonld",
+                "isVis": "lat_selection_approach == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_selection_literature",
-                "isAbout": "items/latency_selection_literature.jsonld",
-                "isVis": "latency_selection_approach_a_priori == 0",
+                "variableName": "lat_selection_literature",
+                "isAbout": "items/lat_selection_literature.jsonld",
+                "isVis": "lat_selection_approach_a_priori == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_selection_rationale",
-                "isAbout": "items/latency_selection_rationale.jsonld",
-                "isVis": "latency_selection_approach_a_priori == 1",
+                "variableName": "lat_selection_rationale",
+                "isAbout": "items/lat_selection_rationale.jsonld",
+                "isVis": "lat_selection_approach_a_priori == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_selection_data_driven",
-                "isAbout": "items/latency_selection_data_driven.jsonld",
-                "isVis": "latency_selection_approach == 1",
+                "variableName": "lat_selection_data_driven",
+                "isAbout": "items/lat_selection_data_driven.jsonld",
+                "isVis": "lat_selection_approach == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_further_clarification",
-                "isAbout": "items/latency_further_clarification.jsonld",
-                "isVis": "latency_selection_approach == 2 || latency_selection_approach == 3",
+                "variableName": "lat_further_clarification",
+                "isAbout": "items/lat_further_clarification.jsonld",
+                "isVis": "lat_selection_approach == 2 || lat_selection_approach == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_broader_time_window_start",
-                "isAbout": "items/latency_broader_time_window_start.jsonld",
-                "isVis": "latency_selection_approach == 1",
+                "variableName": "lat_broader_time_window_start",
+                "isAbout": "items/lat_broader_time_window_start.jsonld",
+                "isVis": "lat_selection_approach == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_broader_time_window_end",
-                "isAbout": "items/latency_broader_time_window_end.jsonld",
-                "isVis": "latency_selection_approach == 1",
+                "variableName": "lat_broader_time_window_end",
+                "isAbout": "items/lat_broader_time_window_end.jsonld",
+                "isVis": "lat_selection_approach == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_measurement_window_start_a_priori",
-                "isAbout": "items/latency_measurement_window_start_a_priori.jsonld",
-                "isVis": "latency_selection_approach == 0",
+                "variableName": "lat_measure_window_start_a_priori",
+                "isAbout": "items/lat_measure_window_start_a_priori.jsonld",
+                "isVis": "lat_selection_approach == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_measurement_window_end_a_priori",
-                "isAbout": "items/latency_measurement_window_end_a_priori.jsonld",
-                "isVis": "latency_selection_approach == 0",
+                "variableName": "lat_measure_window_end_a_priori",
+                "isAbout": "items/lat_measure_window_end_a_priori.jsonld",
+                "isVis": "lat_selection_approach == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_measurement_window_start_data-driven",
-                "isAbout": "items/latency_measurement_window_start_data-driven.jsonld",
-                "isVis": "latency_selection_approach == 1",
+                "variableName": "lat_measure_window_start_data-driven",
+                "isAbout": "items/lat_measure_window_start_data-driven.jsonld",
+                "isVis": "lat_selection_approach == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_measurement_window_end_data-driven",
-                "isAbout": "items/latency_measurement_window_end_data-driven.jsonld",
-                "isVis": "latency_selection_approach == 1",
+                "variableName": "lat_measure_window_end_data-driven",
+                "isAbout": "items/lat_measure_window_end_data-driven.jsonld",
+                "isVis": "lat_selection_approach == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "latency_measurement_software",
-                "isAbout": "items/latency_measurement_software.jsonld",
-                "isVis": "measurement_type == 1",
+                "variableName": "lat_measure_software",
+                "isAbout": "items/lat_measure_software.jsonld",
+                "isVis": "measure_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
