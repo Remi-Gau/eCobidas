@@ -51,7 +51,7 @@
                 "variableName": "Other",
                 "isAbout": "../activities/other/other_schema.jsonld",
                 "prefLabel": {
-                    "en": "other"
+                    "en": "Other"
                 },
                 "isVis": true,
                 "requiredValue": false,
