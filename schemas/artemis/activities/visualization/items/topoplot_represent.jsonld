@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
         "en": "What type of data do the topographic maps represent?"
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 7,
+        "maxValue": 8,
         "choices": [
             {
                 "name": {
@@ -66,6 +66,12 @@
                     "en": "3D voltage maps"
                 },
                 "value": 7
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 8
             }
         ],
         "multipleChoice": false

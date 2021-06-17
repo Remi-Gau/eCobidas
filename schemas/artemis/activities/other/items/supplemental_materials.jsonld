@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
         "en": "Which supplemental materials are identifiable through the journal article?"
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 10,
+        "maxValue": 11,
         "choices": [
             {
                 "name": {
@@ -84,6 +84,12 @@
                     "en": "codes for figures"
                 },
                 "value": 10
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 11
             }
         ],
         "multipleChoice": false

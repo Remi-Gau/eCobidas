@@ -16,6 +16,7 @@
         "order": [
             "items/electrode_placement_type.jsonld",
             "items/electrode_placement_type_cap.jsonld",
+            "items/cap_other.jsonld",
             "items/electrode_placement_type_loose_placed.jsonld",
             "items/cap_model.jsonld",
             "items/net_model.jsonld",
@@ -44,6 +45,15 @@
                 "variableName": "electrode_placement_type_cap",
                 "isAbout": "items/electrode_placement_type_cap.jsonld",
                 "isVis": "electrode_placement_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "cap_other",
+                "isAbout": "items/cap_other.jsonld",
+                "isVis": "electrode_placement_type_cap == other",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
