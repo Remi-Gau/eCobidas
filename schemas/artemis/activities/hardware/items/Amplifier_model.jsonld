@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "electrode_placement_type_loose_placed.jsonld",
+    "@id": "Amplifier_model.jsonld",
     "prefLabel": {
-        "en": "Electrode placement type Loose Placed"
+        "en": "Amplifier model"
     },
-    "description": "Electrode placement type Loose Placed",
+    "description": "Amplifier model",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please specify details about electrode placement."
+        "en": "Model of amplifier"
     },
     "responseOptions": {
         "valueType": "xsd:string",

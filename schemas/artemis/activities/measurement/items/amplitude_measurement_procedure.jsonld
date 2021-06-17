@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 7,
+        "maxValue": 6,
         "choices": [
             {
                 "name": {
@@ -51,21 +51,15 @@
             },
             {
                 "name": {
-                    "en": "6.multiple measurement types"
+                    "en": "6.multiple measurement types "
                 },
                 "value": 5
             },
             {
                 "name": {
-                    "en": "7.other"
-                },
-                "value": 6
-            },
-            {
-                "name": {
                     "en": "other"
                 },
-                "value": 7
+                "value": 6
             }
         ],
         "multipleChoice": false

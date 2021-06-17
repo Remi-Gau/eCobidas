@@ -1,53 +1,59 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "approach_to_amplitude_measurement_window_selection.jsonld",
+    "@id": "Electrode_type.jsonld",
     "prefLabel": {
-        "en": "Approach to amplitude measurement window selection"
+        "en": "Electrode type"
     },
-    "description": "Approach to amplitude measurement window selection",
+    "description": "Electrode type",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
-        "en": "Approach to amplitude measurement window selection "
+        "en": "Type of electrodes"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 5,
         "choices": [
             {
                 "name": {
-                    "en": "1. a priori"
+                    "en": "passive Ag/Ag-Cl"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "2. data-driven"
+                    "en": "passive tin"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "3. no window selection (e.g. point-by-point analysis such as mass univariate analysis)"
+                    "en": "active electrodes (with preamplifiers)"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "4. other"
+                    "en": "active dry"
                 },
                 "value": 3
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "passive dry"
                 },
                 "value": 4
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 5
             }
         ],
         "multipleChoice": false

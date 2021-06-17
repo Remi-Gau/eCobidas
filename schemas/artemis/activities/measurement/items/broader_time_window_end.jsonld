@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Broader time window used for locating the measurement window.where we looked for amplitude: END [ms]"
+        "en": "Broader time window used for locating the measurement window.where we looked for latency: END [ms]"
     },
     "responseOptions": {
         "valueType": "xsd:float"

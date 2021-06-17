@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "amplitude_measurement_software.jsonld",
+    "@id": "latency_measurement_software.jsonld",
     "prefLabel": {
-        "en": "Amplitude measurement software"
+        "en": "Latency measurement software"
     },
-    "description": "Amplitude measurement software",
+    "description": "Latency measurement software",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "select"
     },
     "question": {
-        "en": "Amplitude measurement software"
+        "en": "Latency measurement software"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/ meeg_analysis_software.jsonld"
 }

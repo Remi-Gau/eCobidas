@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "If the latency measurement window is selected in advance (a priori), select the procedure which was used for latency measurement in this time window."
+        "en": "Select the procedure which was used for latency measurement in this time window."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -21,7 +21,7 @@
         "choices": [
             {
                 "name": {
-                    "en": " 1. As described in previous literature"
+                    "en": " 1. The same as in previous literature"
                 },
                 "value": 0
             },

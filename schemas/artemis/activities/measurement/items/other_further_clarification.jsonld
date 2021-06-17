@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "If other is selected, please specify further details"
+        "en": "Please specify further details"
     },
     "responseOptions": {
         "valueType": "xsd:string",

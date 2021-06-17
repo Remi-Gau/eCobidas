@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "electrode_type.jsonld",
+    "@id": "approach_to_amplitude_measurement_window_selection_data_driven.jsonld",
     "prefLabel": {
-        "en": "Electrode type"
+        "en": "Approach to amplitude measurement window selection data driven"
     },
-    "description": "Electrode type",
+    "description": "Approach to amplitude measurement window selection data driven",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
-        "en": "Type of electrodes"
+        "en": "Select the procedure which was used for amplitude measurement in this time window."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -21,25 +21,25 @@
         "choices": [
             {
                 "name": {
-                    "en": "Ag/Ag-Cl"
+                    "en": "1. visual inspection"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "tin"
+                    "en": "2. consecutive significant tests to determine the start and the end of a window that will be analysed "
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "active electrodes (with preamplifiers)"
+                    "en": "3. window around a peak"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "dry"
+                    "en": "4. windows accross epoch with/without overlap (time windows decided after seeing the waveforms, specify details) "
                 },
                 "value": 3
             },

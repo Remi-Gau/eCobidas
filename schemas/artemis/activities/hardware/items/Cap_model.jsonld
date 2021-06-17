@@ -1,20 +1,21 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "temp2.jsonld",
+    "@id": "Cap_model.jsonld",
     "prefLabel": {
-        "en": "TEMP2"
+        "en": "Cap model"
     },
-    "description": "TEMP2",
+    "description": "Cap model",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "float"
+        "inputType": "text"
     },
     "question": {
-        "en": "Please provide here the start of the window which was used to measure amplitude. Measurement window: START [ms]"
+        "en": "Please indicate the cap model."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:string",
+        "maxLength": 300
     }
 }

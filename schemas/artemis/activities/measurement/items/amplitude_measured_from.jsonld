@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -39,15 +39,9 @@
             },
             {
                 "name": {
-                    "en": "4. other"
-                },
-                "value": 3
-            },
-            {
-                "name": {
                     "en": "other"
                 },
-                "value": 4
+                "value": 3
             }
         ],
         "multipleChoice": false

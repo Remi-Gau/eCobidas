@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "If the amplitude measurement window is selected in advance (a priori), select the procedure which was used for amplitude measurement in this time window."
+        "en": "Approach to amplitude measurement window selection "
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -21,19 +21,19 @@
         "choices": [
             {
                 "name": {
-                    "en": "1. As described in previous literature"
+                    "en": "1. a priori"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "2. arbitrary windows across epoch with/without overlap (time windows decided in advance)"
+                    "en": "2. data-driven"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "3. other"
+                    "en": "3. no window selection (e.g. point-by-point analysis such as mass univariate analysis)"
                 },
                 "value": 2
             },

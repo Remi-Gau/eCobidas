@@ -1,53 +1,59 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "temp6.jsonld",
+    "@id": "Trigger_signal_input.jsonld",
     "prefLabel": {
-        "en": "TEMP6"
+        "en": "Trigger signal input"
     },
-    "description": "TEMP6",
+    "description": "Trigger signal input",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
-        "en": "Latency measured from"
+        "en": "Describe your trigger signal input."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 5,
         "choices": [
             {
                 "name": {
-                    "en": "1. single waves (one condition)"
+                    "en": "1. analogue signal to amplifier"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "2. difference waves"
+                    "en": "2. digital signal to amplifier"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "3. waves obtained using transformation of raw data (e.g. sPCA, source localization)"
+                    "en": "3. analogue signal to acquisition software"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "4. other"
+                    "en": "4. digital signal to acquisition software"
                 },
                 "value": 3
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "5. combined stimulus delivery/acquisition software"
                 },
                 "value": 4
+            },
+            {
+                "name": {
+                    "en": "6. offline triggers"
+                },
+                "value": 5
             }
         ],
         "multipleChoice": false

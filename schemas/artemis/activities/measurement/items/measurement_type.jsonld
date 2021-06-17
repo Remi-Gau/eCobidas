@@ -9,13 +9,41 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Select an aspect of measurement"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "1.amplitude"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "2.latency"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "3.other"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": true
     }
 }

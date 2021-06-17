@@ -1,20 +1,21 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "temp8.jsonld",
+    "@id": "Electrode_model.jsonld",
     "prefLabel": {
-        "en": "TEMP8"
+        "en": "Electrode model"
     },
-    "description": "TEMP8",
+    "description": "Electrode model",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "float"
+        "inputType": "text"
     },
     "question": {
-        "en": "Please provide here the end of the window which was used to measure amplitude. Measurement window: END [ms]"
+        "en": "Model of electrodes"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:string",
+        "maxLength": 300
     }
 }

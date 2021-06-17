@@ -1,29 +1,41 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "electrode_placement_type_net.jsonld",
+    "@id": "Electrode_Placement_Type.jsonld",
     "prefLabel": {
-        "en": "Electrode Placement Type Net"
+        "en": "Electrode Placement Type"
     },
-    "description": "Electrode Placement Type Net",
+    "description": "Electrode Placement Type",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "What type of net did you use?"
+        "en": "How were your electrodes placed?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 0,
+        "maxValue": 2,
         "choices": [
             {
                 "name": {
-                    "en": "Geodesic Sensor Net"
+                    "en": "cap"
                 },
                 "value": 0
+            },
+            {
+                "name": {
+                    "en": "net"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "single electrodes"
+                },
+                "value": 2
             }
         ],
         "multipleChoice": false

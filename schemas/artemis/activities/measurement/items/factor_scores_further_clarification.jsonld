@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "If factor scores were used, please specify the details."
+        "en": "Please specify the details."
     },
     "responseOptions": {
         "valueType": "xsd:string",

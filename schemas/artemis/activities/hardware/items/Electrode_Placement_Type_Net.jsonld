@@ -1,41 +1,29 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "latency_type.jsonld",
+    "@id": "Electrode_Placement_Type_Net.jsonld",
     "prefLabel": {
-        "en": "Latency type"
+        "en": "Electrode Placement Type Net"
     },
-    "description": "Latency type",
+    "description": "Electrode Placement Type Net",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
-        "en": "Describe the latency type."
+        "en": "What type of net did you use?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 0,
         "choices": [
             {
                 "name": {
-                    "en": "1. midpoint"
+                    "en": "Geodesic Sensor Net"
                 },
                 "value": 0
-            },
-            {
-                "name": {
-                    "en": "2. onset "
-                },
-                "value": 1
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 2
             }
         ],
         "multipleChoice": false

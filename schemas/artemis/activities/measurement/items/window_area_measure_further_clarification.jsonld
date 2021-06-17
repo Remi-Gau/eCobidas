@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "If area measure is selected, please specify how this measure was calculated"
+        "en": "Please specify how this measure was calculated."
     },
     "responseOptions": {
         "valueType": "xsd:integer",

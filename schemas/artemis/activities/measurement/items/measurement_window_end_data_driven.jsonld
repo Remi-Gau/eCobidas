@@ -1,11 +1,11 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "temp10.jsonld",
+    "@id": "measurement_window_end_data_driven.jsonld",
     "prefLabel": {
-        "en": "TEMP10"
+        "en": "Measurement window END data driven"
     },
-    "description": "TEMP10",
+    "description": "Measurement window END data driven",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

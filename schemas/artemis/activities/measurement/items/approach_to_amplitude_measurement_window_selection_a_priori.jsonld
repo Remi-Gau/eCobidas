@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "electrode_placement_type.jsonld",
+    "@id": "approach_to_amplitude_measurement_window_selection_a_priori.jsonld",
     "prefLabel": {
-        "en": "Electrode Placement Type"
+        "en": "Approach to amplitude measurement window selection A priori"
     },
-    "description": "Electrode Placement Type",
+    "description": "Approach to amplitude measurement window selection A priori",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
-        "en": "How were your electrodes placed?"
+        "en": "Select the procedure which was used for amplitude measurement in this time window."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -21,19 +21,19 @@
         "choices": [
             {
                 "name": {
-                    "en": "cap"
+                    "en": "1. The same as in previous literature"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "net"
+                    "en": "2. arbitrary windows across epoch with/without overlap (time windows decided in advance) "
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "single electrodes"
+                    "en": "other"
                 },
                 "value": 2
             }
