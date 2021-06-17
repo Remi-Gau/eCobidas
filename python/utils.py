@@ -131,7 +131,14 @@ def print_info(type, pref_label, file):
 def print_item_info(activity_idx, item_idx, item_info):
 
     print("Activity: " + str(activity_idx) + " Item: " + str(item_idx))
-    print("  " + item_info["name"] + "   " + item_info["field_type"])
+    print(
+        "  "
+        + item_info["name"]
+        + "   "
+        + item_info["field_type"]
+        + "   "
+        + str(item_info["visibility"])
+    )
 
 
 def print_download(repo, branch, protocol):

@@ -1,8 +1,7 @@
 question	details	field_type	choices	item_pref_label	visibility	item_order	include	mandatory	activity	sub-section	sub-sub-section	activity_pref_label	activity_order	unit	BIDS_status	BIDS_file	BIDS_key	BIDS_key_for_unit
-How were your electrodes placed?		radio	cap | net | single electrodes	Electrode Placement Type	1	1	1	1	Hardware	Preamp peripherals		Hardware	1					
-What type of cap did you use?		radio	preset:eeg_cap_types	Electrode Placement Type Cap	electrode_placement_type == 0	2	1	1	Hardware	Preamp peripherals		Hardware	1					
-What type of net did you use?		radio	Geodesic Sensor Net	Electrode Placement Type Net	electrode_placement_type == 1	3	1	1	Hardware	Preamp peripherals		Hardware	1					
-Please specify details about electrode placement.		text		Electrode placement type Loose Placed	electrode_placement_type == 2	4	1	1	Hardware	Preamp peripherals		Hardware	1					
+How were your electrodes placed?		radio	cap or net | single electrodes	Electrode Placement Type	1	1	1	1	Hardware	Preamp peripherals		Hardware	1					
+What type of cap or net did you use?		radio	preset:eeg_cap_types	Electrode Placement Type Cap	electrode_placement_type == 0	2	1	1	Hardware	Preamp peripherals		Hardware	1					
+Please specify details about electrode placement.		text		Electrode placement type Loose Placed	electrode_placement_type == 1	4	1	1	Hardware	Preamp peripherals		Hardware	1					
 Please indicate the cap model.		text		Cap model	electrode_placement_type == 0	5	1	1	Hardware	Preamp peripherals		Hardware	1					
 Please indicate the net model.		text		Net model	electrode_placement_type == 1	6	1	1	Hardware	Preamp peripherals		Hardware	1					
 Manufacturer of the electrodes		text		Electrode manufacturer	1	7	1	1	Hardware	Preamp peripherals		Hardware	1					

@@ -63,7 +63,7 @@
             {
                 "variableName": "amplitude_measured_from",
                 "isAbout": "items/amplitude_measured_from.jsonld",
-                "isVis": "measurement_type.includes(0)",
+                "isVis": "measurement_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -72,7 +72,7 @@
             {
                 "variableName": "amplitude_measurement_procedure",
                 "isAbout": "items/amplitude_measurement_procedure.jsonld",
-                "isVis": "measurement_type.includes(0)",
+                "isVis": "measurement_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -108,7 +108,7 @@
             {
                 "variableName": "amplitude_time_window_selection",
                 "isAbout": "items/amplitude_time_window_selection.jsonld",
-                "isVis": "measurement_type.includes(0)",
+                "isVis": "measurement_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -117,7 +117,7 @@
             {
                 "variableName": "approach_to_amplitude_measurement_window_selection_a_priori",
                 "isAbout": "items/approach_to_amplitude_measurement_window_selection_a_priori.jsonld",
-                "isVis": "measurement_type.includes(0)",
+                "isVis": "measurement_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -144,7 +144,7 @@
             {
                 "variableName": "approach_to_amplitude_measurement_window_selection_data_driven",
                 "isAbout": "items/approach_to_amplitude_measurement_window_selection_data_driven.jsonld",
-                "isVis": true,
+                "isVis": "measurement_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -207,7 +207,7 @@
             {
                 "variableName": "amplitude_measurement_software",
                 "isAbout": "items/amplitude_measurement_software.jsonld",
-                "isVis": true,
+                "isVis": "measurement_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -216,7 +216,7 @@
             {
                 "variableName": "latency_type",
                 "isAbout": "items/latency_type.jsonld",
-                "isVis": "measurement_type.includes(1)",
+                "isVis": "measurement_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -225,7 +225,7 @@
             {
                 "variableName": "onset_latency_measure",
                 "isAbout": "items/onset_latency_measure.jsonld",
-                "isVis": true,
+                "isVis": "measurement_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -234,7 +234,7 @@
             {
                 "variableName": "peak_latency_measure",
                 "isAbout": "items/peak_latency_measure.jsonld",
-                "isVis": true,
+                "isVis": "measurement_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -243,7 +243,7 @@
             {
                 "variableName": "latency_measured_from",
                 "isAbout": "items/latency_measured_from.jsonld",
-                "isVis": true,
+                "isVis": "measurement_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -252,7 +252,7 @@
             {
                 "variableName": "latency_selection_approach",
                 "isAbout": "items/latency_selection_approach.jsonld",
-                "isVis": true,
+                "isVis": "measurement_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -360,7 +360,7 @@
             {
                 "variableName": "latency_measurement_software",
                 "isAbout": "items/latency_measurement_software.jsonld",
-                "isVis": true,
+                "isVis": "measurement_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
