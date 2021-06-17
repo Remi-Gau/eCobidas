@@ -32,7 +32,7 @@
             {
                 "variableName": "specify_supplemental",
                 "isAbout": "items/specify_supplemental.jsonld",
-                "isVis": "supplemental_materials == supplemental_materials.length",
+                "isVis": "supplemental_materials == 11",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -50,7 +50,7 @@
             {
                 "variableName": "specify_additional",
                 "isAbout": "items/specify_additional.jsonld",
-                "isVis": true,
+                "isVis": "additional_comment == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

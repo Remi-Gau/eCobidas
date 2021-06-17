@@ -1,12 +1,12 @@
 question	details	field_type	choices	item_pref_label	visibility	item_order	include	mandatory	activity	sub-section	activity_pref_label	activity_order	unit
 Did you apply any procedures for visualisation purposes only (not used for analysis)? e.g. smoothing filter, different baseline 		radio	preset:boolean	visualisation only procedures	1	1	1	1	results	visualization	visualization	7	
 Please specify		text		specify visualisation	visualisation_only_procedures == 1	2	1	1	results	visualization	visualization	7	
-What do the waveforms represent ?		select	single waves | difference waves | both | other	waveforms represent	1	3	1	1	results	visualization	visualization	7	
+What do the waveforms represent ?		select	single waves | difference waves | both	waveforms represent	1	3	1	1	results	visualization	visualization	7	
 Please specify which conditions and groups are presented using maps		text		specify waveforms		4	1	1	results	visualization	visualization	7	
 Rationale for selection of channel locations used for waveform presentation		text		channel location rationale	1	5	1	1	results	visualization	visualization	7	
-What type of data do the topographic maps represent?		radio	no maps | voltage maps | voltage maps normalized data |  statistical maps based on t-score/p-value |  current source density maps | topographic maps of PCA factors |  voltage maps on percent scale | 3D voltage maps | other	topoplot represent	1	6	1	1	results	visualization	visualization	7	
-Please specify the details about the topographic maps		text		specify topoplot	topoplot_represent == topoplot_represent.length	7	1	1	results	visualization	visualization	7	
-Which supplemental materials are identifiable through the journal article?		radio	no supplementary materials | all stimuli | codes or files with the experimental task | raw EEG data | individual epochs | averaged ERPs for individual participants | grand average ERPs for all conditions, amplitude measures | component amplutudes/latencies and other measures for statistical analysis | codes for pre-processing and averaging | codes for statistical analysis | codes for figures | other	supplemental materials	1	1	1	1	other	other	other	8	
-Please specify		text		specify supplemental	supplemental_materials == supplemental_materials.length	2	1	1	other	other	other	8	
+What type of data do the topographic maps represent?		radio	no maps | voltage maps | voltage maps normalized data |  statistical maps based on t-score/p-value |  current source density maps | topographic maps of PCA factors |  voltage maps on percent scale | 3D voltage maps	topoplot represent	1	6	1	1	results	visualization	visualization	7	
+Please specify the details about the topographic maps		text		specify topoplot	topoplot_represent == 9	7	1	1	results	visualization	visualization	7	
+Which supplemental materials are identifiable through the journal article?		radio	no supplementary materials | all stimuli | codes or files with the experimental task | raw EEG data | individual epochs | averaged ERPs for individual participants | grand average ERPs for all conditions, amplitude measures | component amplutudes/latencies and other measures for statistical analysis | codes for pre-processing and averaging | codes for statistical analysis | codes for figures	supplemental materials	1	1	1	1	other	other	other	8	
+Please specify		text		specify supplemental	supplemental_materials == 11	2	1	1	other	other	other	8	
 Additional comments		radio	preset:boolean	additional comment	1	3	1	1	other	other	other	8	
-Please specify		text		specify additional	1	4	1	1	other	other	other	8	
+Please specify		text		specify additional	additional_comment == 1	4	1	1	other	other	other	8	

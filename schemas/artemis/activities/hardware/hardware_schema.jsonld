@@ -15,9 +15,9 @@
         "shuffle": false,
         "order": [
             "items/Electroded_Placement_Type.jsonld",
-            "items/Electroded_Placement_Type_Cap.jsonld",
-            "items/Electroded_Placement_Type_Net.jsonld",
-            "items/Electroded_placement_type_Loose_Placed.jsonld",
+            "items/Electrode_Placement_Type_Cap.jsonld",
+            "items/Electrode_Placement_Type_Net.jsonld",
+            "items/Electrode_placement_type_Loose_Placed.jsonld",
             "items/Cap_model.jsonld",
             "items/Net_model.jsonld",
             "items/Electrode_manufacturer.jsonld",
@@ -42,27 +42,27 @@
                 ]
             },
             {
-                "variableName": "Electroded_Placement_Type_Cap",
-                "isAbout": "items/Electroded_Placement_Type_Cap.jsonld",
-                "isVis": "electroded_placement_type == cap",
+                "variableName": "Electrode_Placement_Type_Cap",
+                "isAbout": "items/Electrode_Placement_Type_Cap.jsonld",
+                "isVis": "electroded_placement_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "Electroded_Placement_Type_Net",
-                "isAbout": "items/Electroded_Placement_Type_Net.jsonld",
-                "isVis": "electroded_placement_type == net",
+                "variableName": "Electrode_Placement_Type_Net",
+                "isAbout": "items/Electrode_Placement_Type_Net.jsonld",
+                "isVis": "electroded_placement_type == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "Electroded_placement_type_Loose_Placed",
-                "isAbout": "items/Electroded_placement_type_Loose_Placed.jsonld",
-                "isVis": "electroded_placement_type == single electrodes",
+                "variableName": "Electrode_placement_type_Loose_Placed",
+                "isAbout": "items/Electrode_placement_type_Loose_Placed.jsonld",
+                "isVis": "electroded_placement_type == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

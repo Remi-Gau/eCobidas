@@ -80,7 +80,7 @@
             {
                 "variableName": "specify_topoplot",
                 "isAbout": "items/specify_topoplot.jsonld",
-                "isVis": "topoplot_represent == topoplot_represent.length",
+                "isVis": "topoplot_represent == 9",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

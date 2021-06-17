@@ -39,7 +39,7 @@
                 "variableName": "visualization",
                 "isAbout": "../activities/visualization/visualization_schema.jsonld",
                 "prefLabel": {
-                    "en": "visualization"
+                    "en": "Visualization"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -48,7 +48,7 @@
                 ]
             },
             {
-                "variableName": "other",
+                "variableName": "Other",
                 "isAbout": "../activities/other/other_schema.jsonld",
                 "prefLabel": {
                     "en": "other"
