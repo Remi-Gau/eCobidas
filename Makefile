@@ -24,14 +24,16 @@ artemis:
 	sh download_tsv_artemis.sh artemis measurements
 	sh download_tsv_artemis.sh artemis channel_electrode_choice
 	sh download_tsv_artemis.sh artemis visualization
-	ecobidas_convert --schema hardware
-	ecobidas_convert --schema experimental_design_sample
-	ecobidas_convert --schema measurements
-	ecobidas_convert --schema channel_electrode_choice
-	ecobidas_convert --schema visualization	
+	ecobidas_convert --schema artemis-hardware
+	ecobidas_convert --schema artemis-design
+	ecobidas_convert --schema artemis-measur
+	ecobidas_convert --schema artemis-channel
+	ecobidas_convert --schema artemis-vis
 	grep -r  "@context" schemas/artemis | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/artemis
 
+# ecobidas_convert --schema artemis-acquisition
+# ecobidas_convert --schema artemis-preproc	
 neurovault:
 	rm -rf inputs/csv/neurovault
 	rm -rf schemas/neurovault
@@ -69,7 +71,7 @@ all_sequences:
 	rm -rf schemas/core/activities/common_parameters
 	rm -rf schemas/core/protocols/all_sequences*
 	sh download_tsv.sh core all_sequences
-	ecobidas_convert --schema all_sequences
+	ecobidas_convert --schema mri-allseq
 	grep -r  "@context" schemas/mri | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/mri	
 
@@ -78,7 +80,7 @@ behavior:
 	rm -rf schemas/core/activities/behavior
 	rm -rf schemas/core/protocols/behavior*
 	sh download_tsv.sh core behavior
-	ecobidas_convert --schema behavior
+	ecobidas_convert --schema core-beh
 	grep -r  "@context" schemas/core | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/core
 
@@ -87,7 +89,7 @@ participants:
 	rm -rf schemas/core/activities/behavior
 	rm -rf schemas/core/protocols/participants*
 	sh download_tsv.sh core participants
-	ecobidas_convert --schema participants
+	ecobidas_convert --schema core-participants
 	grep -r  "@context" schemas/core | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/core		
 
@@ -189,14 +191,13 @@ download_responses:
 convert_all:
 	ecobidas_convert --schema pet
 	ecobidas_convert --schema neurovault
-	ecobidas_convert --schema all_sequences
-	ecobidas_convert --schema participants
-	ecobidas_convert --schema behavior
 	ecobidas_convert --schema eyetracking
 	ecobidas_convert --schema reexecution
+	ecobidas_convert --schema mri-allseq
+	ecobidas_convert --schema core-participants
+	ecobidas_convert --schema core-beh
 
 # DO NOT WORK
-# ecobidas_convert --schema artem-is
 # ecobidas_convert --schema data_sharing	
 # ecobidas_convert --schema reproducibility
 # ecobidas_convert --schema results
