@@ -4,7 +4,7 @@
 
 import click
 from create_schema import create_schema
-from utils import print_download, set_dir
+from utils import print_download
 
 # "neurovault"
 # "pet",
@@ -50,8 +50,6 @@ def convert(
         schema = [schema]
 
     for this_schema in schema:
-
-        in_dir, out_dir = set_dir(this_schema, out_dir)
 
         # add debug parameter
         protocol = create_schema(this_schema, out_dir)

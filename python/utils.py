@@ -8,11 +8,21 @@ def get_root_dir():
     return os.path.abspath(os.path.join(this_path, ".."))
 
 
+def get_input_dir(dir=get_root_dir()):
+
+    return os.path.abspath(os.path.join(dir, "inputs", "csv"))
+
+
+def get_output_dir(this_schema, out_dir):
+
+    schema_info = get_schema_info(this_schema)
+
+    return os.path.abspath(os.path.join(out_dir, schema_info["dir"].tolist()[0]))
+
+
 def get_metatable():
 
-    metatable_file = os.path.abspath(
-        os.path.join(get_root_dir(), "inputs", "csv", "spreadsheet_google_id.tsv")
-    )
+    metatable_file = os.path.join(get_input_dir(), "spreadsheet_google_id.tsv")
 
     return pd.read_csv(metatable_file, sep="\t")
 
@@ -25,20 +35,14 @@ def list_preset_responses():
     return list(response_options["subdir"])
 
 
-def get_landing_page(this_schema):
+def get_landing_page(schema_info):
 
-    df = get_metatable()
+    DEFAULT = ["README_eCOBIDAS-en.md"]
 
-    is_this_schema = df["subdir"] == this_schema
-    not_nan = df["landing page"].notna()
-
-    this_schema_info = df[is_this_schema & not_nan]
-
-    if list(this_schema_info["landing page"]) == []:
-        DEFAULT = ["README_eCOBIDAS-en.md"]
+    if schema_info["landing page"].isna().tolist()[0]:
         landing_page = DEFAULT
     else:
-        landing_page = list(this_schema_info["landing page"])
+        landing_page = list(schema_info["landing page"])
 
     repo = "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/"
     landing_page = repo + landing_page[0]
@@ -46,50 +50,34 @@ def get_landing_page(this_schema):
     return landing_page
 
 
-def get_sub_dir(this_schema):
+def get_schema_info(this_schema):
 
     df = get_metatable()
 
-    is_this_schema = df["subdir"] == this_schema
-    this_schema_info = df[is_this_schema]
-
-    if list(this_schema_info["landing page"]) != []:
-        return list(this_schema_info["dir"])[0]
-
-    warnings.warn("Unknown target schema: " + this_schema)
-    return this_schema
+    is_this_schema = df["schema"] == this_schema
+    return df[is_this_schema]
 
 
-def set_dir(this_schema, out_dir):
+def get_input_file(schema_info):
 
-    in_dir = os.path.join(
-        get_root_dir(),
-        "inputs",
-        "csv",
-    )
+    input_dir = get_root_dir()
+    dir = schema_info["dir"].tolist()[0]
 
-    if this_schema == "test":
-        in_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tests")
+    if schema_info["schema"].tolist()[0] == "test":
+        input_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tests")
 
-    sub_dir = get_sub_dir(this_schema)
+    input_dir = get_input_dir(input_dir)
+    basename = schema_info["basename"].tolist()[0]
 
-    if this_schema == "test":
-        sub_dir = os.path.join("inputs", "csv")
-
-    out_dir = os.path.join(out_dir, sub_dir)
-
-    in_dir = os.path.join(in_dir, sub_dir)
-
-    return in_dir, out_dir
+    return os.path.join(input_dir, dir, basename + ".tsv")
 
 
-def load_data(this_schema, out_dir):
+def load_data(this_schema):
 
     if not os.path.isfile(this_schema):
 
-        in_dir, out_dir = set_dir(this_schema, out_dir)
-
-        input_file = os.path.join(in_dir, this_schema + ".tsv")
+        schema_info = get_schema_info(this_schema)
+        input_file = get_input_file(schema_info)
 
     else:
 

@@ -4,11 +4,13 @@ import pandas as pd
 from item import get_item_info, define_new_item
 from utils import (
     snake_case,
-    set_dir,
     print_info,
     print_item_info,
     get_root_dir,
     get_landing_page,
+    load_data,
+    get_schema_info,
+    get_output_dir
 )
 
 from reproschema.models.activity import Activity
@@ -30,9 +32,11 @@ def create_schema(this_schema, out_dir, debug=False):
     Every new item encountered is added to the current activity.
     """
 
+    out_dir = get_output_dir(this_schema, out_dir)
+
     protocol, protocol_path = initialize_protocol(this_schema, out_dir)
 
-    df = load_data(this_schema, out_dir)
+    df = load_data(this_schema)
 
     activities = list(df.activity_order.unique())
 
@@ -76,20 +80,11 @@ def create_schema(this_schema, out_dir, debug=False):
     return protocol
 
 
-def load_data(this_schema, out_dir):
-
-    if not os.path.isfile(this_schema):
-
-        in_dir, out_dir = set_dir(this_schema, out_dir)
-
-        input_file = os.path.join(in_dir, this_schema + ".tsv")
-
-    return pd.read_csv(input_file, sep="\t")
-
-
 def initialize_protocol(this_schema, out_dir):
 
-    protocol_name = snake_case(this_schema)
+    schema_info = get_schema_info(this_schema)
+
+    protocol_name = snake_case(schema_info["basename"].tolist()[0])
     # TODO
     # are we sure we want to change the case or the protocol
     # or make it snake case?
@@ -97,7 +92,7 @@ def initialize_protocol(this_schema, out_dir):
     protocol = Protocol()
     protocol.set_defaults(protocol_name)
 
-    protocol.set_landing_page(get_landing_page(this_schema))
+    protocol.set_landing_page(get_landing_page(schema_info))
 
     # create output directories
     protocol_path = os.path.join(out_dir, "protocols")

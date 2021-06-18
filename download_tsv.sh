@@ -38,7 +38,6 @@
 # pet              pet
 # reexecution       reexecution
 # response_options	mri_softwares
-# response_options	mri_softwares
 # response_options	stimulus_presentation_softwares
 # response_options	multiple_comparison
 # response_options	interpolation
