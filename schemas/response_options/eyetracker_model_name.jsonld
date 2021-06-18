@@ -1,232 +1,268 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:ResponseOption",
-    "@id": "stimulus_presentation_softwares.jsonld",
+    "@id": "eyetracker_model_name.jsonld",
     "valueType": "xsd:integer",
     "minValue": 0,
-    "maxValue": 36,
+    "maxValue": 42,
     "choices": [
         {
             "name": {
-                "en": "Psycthoolbox"
+                "en": "ASL 504"
             },
             "value": 0
         },
         {
             "name": {
-                "en": "PsychoPy"
+                "en": "ASL 6000"
             },
             "value": 1
         },
         {
             "name": {
-                "en": "Eprime"
+                "en": "ASL EYE-TRAC 6"
             },
             "value": 2
         },
         {
             "name": {
-                "en": "expyriment"
+                "en": "BioMed Version 2"
             },
             "value": 3
         },
         {
             "name": {
-                "en": "Presentation"
+                "en": "EAS Binocular"
             },
             "value": 4
         },
         {
             "name": {
-                "en": "Cogent"
+                "en": "EEG-1100"
             },
             "value": 5
         },
         {
             "name": {
-                "en": "ERTS"
+                "en": "EyeFollower"
             },
             "value": 6
         },
         {
             "name": {
-                "en": "STIM"
+                "en": "EyeLink 1.11"
             },
             "value": 7
         },
         {
             "name": {
-                "en": "EEVoke"
+                "en": "EyeLink 1000"
             },
             "value": 8
         },
         {
             "name": {
-                "en": "Neurolab"
+                "en": "EyeLink 1000 Plus"
             },
             "value": 9
         },
         {
             "name": {
-                "en": "SuperLab"
+                "en": "EyeLink 1001"
             },
             "value": 10
         },
         {
             "name": {
-                "en": "ERP system"
+                "en": "EyeLink 2000"
             },
             "value": 11
         },
         {
             "name": {
-                "en": "StimPres"
+                "en": "EyeLink II"
             },
             "value": 12
         },
         {
             "name": {
-                "en": "InsEP"
+                "en": "EyeTribe"
             },
             "value": 13
         },
         {
             "name": {
-                "en": "Other"
+                "en": "FreeView DTS"
             },
             "value": 14
         },
         {
             "name": {
-                "en": "Attention Tool 5.2 software"
+                "en": "Locarna eye tracker"
             },
             "value": 15
         },
         {
             "name": {
-                "en": "Matlab"
+                "en": "Miramatrix s2 system"
             },
             "value": 16
         },
         {
             "name": {
-                "en": "Eyelink"
+                "en": "SMI Glases"
             },
             "value": 17
         },
         {
             "name": {
-                "en": "Power Point"
+                "en": "SMI HED4"
             },
             "value": 18
         },
         {
             "name": {
-                "en": "OpenSesam"
+                "en": "SMI RED"
             },
             "value": 19
         },
         {
             "name": {
-                "en": "Experiment Builder"
+                "en": "SMI RED mobile"
             },
             "value": 20
         },
         {
             "name": {
-                "en": "Eye-Works Design, EyeWorks record"
+                "en": "Sony VFCB-EX480B"
             },
             "value": 21
         },
         {
             "name": {
-                "en": "Relax, Archisim"
+                "en": "Tobii 1749"
             },
             "value": 22
         },
         {
             "name": {
-                "en": "S-CCS (simulation of a naval air-defense environment)"
+                "en": "Tobii 1750"
             },
             "value": 23
         },
         {
             "name": {
-                "en": "Sawtooth Software"
+                "en": "Tobii 1751"
             },
             "value": 24
         },
         {
             "name": {
-                "en": "TEMPO software system (reflective Computing)"
+                "en": "Tobii 2150"
             },
             "value": 25
         },
         {
             "name": {
-                "en": "StatSoft Statistica"
+                "en": "Tobii 2151"
             },
             "value": 26
         },
         {
             "name": {
-                "en": "SR Experiment Builder"
+                "en": "Tobii Glasses"
             },
             "value": 27
         },
         {
             "name": {
-                "en": "SMI Experiment Center"
+                "en": "Tobii T-120"
             },
             "value": 28
         },
         {
             "name": {
-                "en": "Inquisit 3.0.5"
+                "en": "Tobii T-59"
             },
             "value": 29
         },
         {
             "name": {
-                "en": "Gaze Tracker software"
+                "en": "Tobii T-60"
             },
             "value": 30
         },
         {
             "name": {
-                "en": "Tobii"
+                "en": "Tobii T-60 XL"
             },
             "value": 31
         },
         {
             "name": {
-                "en": "Tobii Studio"
+                "en": "Tobii T-61"
             },
             "value": 32
         },
         {
             "name": {
-                "en": "Tobii Studio Professional"
+                "en": "Tobii TX-300"
             },
             "value": 33
         },
         {
             "name": {
-                "en": "Tobii X1 Light eye-tracking software"
+                "en": "Tobii TX-301"
             },
             "value": 34
         },
         {
             "name": {
-                "en": "unipark"
+                "en": "Tobii X-120"
             },
             "value": 35
         },
         {
             "name": {
-                "en": "PhotoRating (web application)"
+                "en": "Tobii X-20"
             },
             "value": 36
+        },
+        {
+            "name": {
+                "en": "Tobii X-50"
+            },
+            "value": 37
+        },
+        {
+            "name": {
+                "en": "Tobii X-60"
+            },
+            "value": 38
+        },
+        {
+            "name": {
+                "en": "Tobii X1"
+            },
+            "value": 39
+        },
+        {
+            "name": {
+                "en": "Tobii pro X2-60"
+            },
+            "value": 40
+        },
+        {
+            "name": {
+                "en": "View Point Eye Frame PC60"
+            },
+            "value": 41
+        },
+        {
+            "name": {
+                "en": "other"
+            },
+            "value": 42
         }
     ]
 }

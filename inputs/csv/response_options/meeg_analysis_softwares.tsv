@@ -1,20 +1,18 @@
 name	value
-BESA Research	1
-Brain Vision Analyzer	2
-Brainstorm	3
-Cartool	4
-Curry	5
-custom and others	6
-EEGlab (+ ERPlab)	7
-EEProbe	8
-ERP system	9
-ERP system	10
-FieldTrip 	11
-InstEP	12
-InstEP	13
-MatLab custom script	14
-MNE	15
-NetStation	16
-Scan	17
-TrackWalker	18
-Other	19
+BESA Research	0
+Brain Vision Analyzer	1
+Brainstorm	2
+Cartool	3
+Curry	4
+custom and others	5
+EEGlab (+ ERPlab)	6
+EEProbe	7
+ERP system	8
+FieldTrip 	9
+InstEP	10
+MatLab custom script	11
+MNE	12
+NetStation	13
+Scan	14
+TrackWalker	15
+Other	16

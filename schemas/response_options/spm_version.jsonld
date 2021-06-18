@@ -1,0 +1,130 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:ResponseOption",
+    "@id": "spm_version.jsonld",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 19,
+    "choices": [
+        {
+            "name": {
+                "en": "SPM 12 - 6225"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "SPM 12 - 6470"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "SPM 12 - 6685"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "SPM 12 - 6906"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "SPM 12 - 7219"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "SPM 12 - 7487"
+            },
+            "value": 5
+        },
+        {
+            "name": {
+                "en": "SPM 12 - 7771"
+            },
+            "value": 6
+        },
+        {
+            "name": {
+                "en": "SPM 8 - 3042"
+            },
+            "value": 7
+        },
+        {
+            "name": {
+                "en": "SPM 8 - 3164"
+            },
+            "value": 8
+        },
+        {
+            "name": {
+                "en": "SPM 8 - 3408"
+            },
+            "value": 9
+        },
+        {
+            "name": {
+                "en": "SPM 8 - 3684"
+            },
+            "value": 10
+        },
+        {
+            "name": {
+                "en": "SPM 8 - 4010"
+            },
+            "value": 11
+        },
+        {
+            "name": {
+                "en": "SPM 8 - 4290"
+            },
+            "value": 12
+        },
+        {
+            "name": {
+                "en": "SPM 8 - 4667"
+            },
+            "value": 13
+        },
+        {
+            "name": {
+                "en": "SPM 8 - 5236"
+            },
+            "value": 14
+        },
+        {
+            "name": {
+                "en": "SPM 8 - 6313"
+            },
+            "value": 15
+        },
+        {
+            "name": {
+                "en": "SPM 5"
+            },
+            "value": 16
+        },
+        {
+            "name": {
+                "en": "SPM 2"
+            },
+            "value": 17
+        },
+        {
+            "name": {
+                "en": "SPM 99"
+            },
+            "value": 18
+        },
+        {
+            "name": {
+                "en": "SPM 96"
+            },
+            "value": 19
+        }
+    ]
+}
