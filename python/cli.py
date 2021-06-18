@@ -54,7 +54,8 @@ def convert(
         # add debug parameter
         protocol = create_schema(this_schema, out_dir)
 
-        print_download(repo, branch, protocol)
+        if "resp" not in this_schema:
+            print_download(repo, branch, protocol)
 
 
 if __name__ == "__main__":

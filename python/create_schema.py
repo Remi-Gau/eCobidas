@@ -10,11 +10,12 @@ from utils import (
     get_landing_page,
     load_data,
     get_schema_info,
-    get_output_dir
+    get_output_dir,
 )
 
 from reproschema.models.activity import Activity
 from reproschema.models.protocol import Protocol
+from reproschema.models.item import ResponseOption
 
 local_reproschema = os.path.join(
     get_root_dir(), "..", "reproschema-py", "reproschema", "models"
@@ -22,7 +23,7 @@ local_reproschema = os.path.join(
 # sys.path.insert(0, local_reproschema)
 
 
-def create_schema(this_schema, out_dir, debug=False):
+def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
     """
     This takes the content of the a csv file and turns it into a
     reproschema protocol.
@@ -33,10 +34,15 @@ def create_schema(this_schema, out_dir, debug=False):
     """
 
     out_dir = get_output_dir(this_schema, out_dir)
+    df = load_data(this_schema)
+
+    schema_info = get_schema_info(this_schema)
+
+    if schema_info["dir"].tolist()[0] == "response_options":
+        create_response_options(schema_info, df, out_dir)
+        return
 
     protocol, protocol_path = initialize_protocol(this_schema, out_dir)
-
-    df = load_data(this_schema)
 
     activities = list(df.activity_order.unique())
 
@@ -188,3 +194,28 @@ def get_activity_preamble(items):
         preamble = preamble[0]
 
     return preamble
+
+
+def create_response_options(schema_info, df, out_dir):
+
+    responses = df.name.unique()
+
+    response_options = ResponseOption()
+    response_options.set_defaults()
+    response_options.set_filename(schema_info["basename"].tolist()[0])
+    response_options.set_type("integer")
+    response_options.unset("multipleChoice")
+
+    for i, name in enumerate(responses):
+        response_options.add_choice(name, i)
+        response_options.set_max(i)
+
+    if not os.path.exists(out_dir):
+        os.makedirs(out_dir)
+    response_options.write(out_dir)
+
+    print_info(
+        "response options",
+        schema_info["basename"].tolist()[0],
+        os.path.join(out_dir, response_options.get_filename()),
+    )

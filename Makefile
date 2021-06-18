@@ -186,6 +186,16 @@ download_responses:
 	sh download_tsv.sh response_options	meeg_acquisition_softwares
 	sh download_tsv.sh response_options	eeg_cap_types
 	sh download_tsv.sh response_options	boolean
+	sh download_tsv.sh response_options	spm_version
+	sh download_tsv.sh response_options	linux_version
+	sh download_tsv.sh response_options	type_os
+	sh download_tsv.sh response_options	windows_version
+	sh download_tsv.sh response_options	macos_version
+	sh download_tsv.sh response_options	eyetracker_preproc_softwares
+	sh download_tsv.sh response_options	eyetracker_model_name
+	sh download_tsv.sh response_options	eyetracker_producer
+
+
 
 # CREATE protocol
 convert_all:
@@ -209,17 +219,27 @@ convert_all:
 # CREATE responses
 
 responses_all:
-	ecobidas_responses --filename mri_softwares
-	ecobidas_responses --filename stimulus_presentation_softwares
-	ecobidas_responses --filename multiple_comparisons
-	ecobidas_responses --filename interpolations
-	ecobidas_responses --filename cost_functions
-	ecobidas_responses --filename meeg_reference_electrodes
-	ecobidas_responses --filename meeg_analysis_softwares
-	ecobidas_responses --filename meeg_amplifier_brands
-	ecobidas_responses --filename meeg_acquisition_softwares
-	ecobidas_responses --filename eeg_cap_types
-	ecobidas_responses --filename boolean
+	ecobidas_convert --schema resp-mri_soft
+	ecobidas_convert --schema resp-pres_soft
+	ecobidas_convert --schema resp-multiple_comp
+	ecobidas_convert --schema resp-interp
+	ecobidas_convert --schema resp-cost_functions
+	ecobidas_convert --schema resp-meeg_ref
+	ecobidas_convert --schema resp-meeg_analysis_soft
+	ecobidas_convert --schema resp-meeg_amplifier_brands
+	ecobidas_convert --schema resp-meeg_acq_softwares
+	ecobidas_convert --schema resp-eeg_cap_types
+	ecobidas_convert --schema resp-boolean
+	ecobidas_convert --schema resp-ver-spm
+	ecobidas_convert --schema resp-ver-linux
+	ecobidas_convert --schema resp-type-os
+	ecobidas_convert --schema resp-ver-windows
+	ecobidas_convert --schema resp-ver-macos
+	ecobidas_convert --schema resp-eye_preproc_soft
+	ecobidas_convert --schema resp-eye_model
+	ecobidas_convert --schema resp-eye_producer
+
+
 
 
 # VALIDATE
