@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_definition_1.jsonld",
+    "prefLabel": {
+        "en": "Artifact definition 1"
+    },
+    "description": "Artifact definition 1",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "How did you define your artifacts in step 1?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "visual inspection"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "algorithm"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "pre-set numerical criterion"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other "
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

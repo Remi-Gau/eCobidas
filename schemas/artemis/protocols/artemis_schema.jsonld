@@ -20,12 +20,38 @@
         "order": [
             "../activities/hardware/hardware_schema.jsonld",
             "../activities/design_and_sample/design_and_sample_schema.jsonld",
-            "../activities/channel_choise_for_analysis/channel_choise_for_analysis_schema.jsonld",            
+            "../activities/channel_choise_for_analysis/channel_choise_for_analysis_schema.jsonld",
+            "../activities/acquisition/acquisition_schema.jsonld",
             "../activities/measurement/measurement_schema.jsonld",
+            "../activities/preprocessing/preprocessing_schema.jsonld",
             "../activities/visualization/visualization_schema.jsonld",
             "../activities/other/other_schema.jsonld"
         ],
         "addProperties": [
+            {
+                "variableName": "acquisition",
+                "isAbout": "../activities/acquisition/acquisition_schema.jsonld",
+                "prefLabel": {
+                    "en": "Acquisition"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "preprocessing",
+                "isAbout": "../activities/preprocessing/preprocessing_schema.jsonld",
+                "prefLabel": {
+                    "en": "Preprocessing"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
             {
                 "variableName": "hardware",
                 "isAbout": "../activities/hardware/hardware_schema.jsonld",
@@ -49,7 +75,7 @@
                 "allow": [
                     "reproschema:Skipped"
                 ]
-            },            
+            },
             {
                 "variableName": "design_and_sample",
                 "isAbout": "../activities/design_and_sample/design_and_sample_schema.jsonld",

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "What type of cap or net did you use?"
+        "en": "What kind of cap or net did you use?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/eeg_cap_types.jsonld"
 }

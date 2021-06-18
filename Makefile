@@ -29,11 +29,11 @@ artemis:
 	ecobidas_convert --schema artemis-measur
 	ecobidas_convert --schema artemis-channel
 	ecobidas_convert --schema artemis-vis
+	ecobidas_convert --schema artemis-acquisition
+	ecobidas_convert --schema artemis-preproc	
 	grep -r  "@context" schemas/artemis | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/artemis
 
-# ecobidas_convert --schema artemis-acquisition
-# ecobidas_convert --schema artemis-preproc	
 neurovault:
 	rm -rf inputs/csv/neurovault
 	rm -rf schemas/neurovault

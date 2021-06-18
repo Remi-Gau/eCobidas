@@ -52,7 +52,7 @@
             {
                 "variableName": "cap_other",
                 "isAbout": "items/cap_other.jsonld",
-                "isVis": "electrode_placement_type_cap == 10",
+                "isVis": "electrode_placement_type_cap == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -97,7 +97,7 @@
             {
                 "variableName": "electrode_type",
                 "isAbout": "items/electrode_type.jsonld",
-                "isVis": "electrode_placement_type == 1",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
