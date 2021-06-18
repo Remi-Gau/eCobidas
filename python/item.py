@@ -134,6 +134,9 @@ def define_choices(item, field_type, choices):
     if field_type == "multitext":
         item.set_input_type_as_multitext()
 
+    if field_type == "text":
+        item.set_input_type_as_text(3000)
+
     elif field_type == "slider":
         response_options = slider_response(choices)
         item.set_input_type_as_slider(response_options)
