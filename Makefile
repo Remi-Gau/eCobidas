@@ -68,9 +68,7 @@ convert_artemis: $(ARTEMIS_TSV)
 	ecobidas_convert --schema artemis-vis
 	ecobidas_convert --schema artemis-acquisition
 	ecobidas_convert --schema artemis-preproc
-
-# Something wrong with measurements file format: opening and saving it fixes it???
-# ecobidas_convert --schema artemis-measur
+	ecobidas_convert --schema artemis-measur
 
 validate_artemis: convert_artemis
 	grep -r  "@context" schemas/artemis | cut -d: -f1 | xargs -I fname jsonlint -q fname
