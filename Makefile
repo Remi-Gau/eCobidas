@@ -28,16 +28,16 @@ PET_JSON =         schemas/pet/protocols/pet.jsonld
 EYE_TSV =          inputs/csv/eyetracking/eyetracking.tsv
 EYE_JSON =         schemas/eyetracking/protocols/eyetracking.jsonld
 
-REEXEC_TSV =          inputs/csv/reexecution/reexecution.tsv
-REEXEC_JSON =         schemas/reexecution/protocols/reexecution_schema.jsonld
+REEXEC_TSV =       inputs/csv/reexecution/reexecution.tsv
+REEXEC_JSON =      schemas/reexecution/protocols/reexecution_schema.jsonld
 
-ARTEMIS_TSV = $(wildcard inputs/csv/artemis/*.tsv)
-CORE_TSV = $(wildcard inputs/csv/artemis/*.tsv)
-MRI_TSV = $(wildcard inputs/csv/artemis/*.tsv)
+ARTEMIS_TSV =   $(wildcard inputs/csv/artemis/*.tsv)
+CORE_TSV =      $(wildcard inputs/csv/core/*.tsv)
+MRI_TSV =       $(wildcard inputs/csv/mri/*.tsv)
 RESPONSES_TSV = $(wildcard inputs/csv/response_options/*.tsv)
 
 
-all: neurovault responses pet eye rexec core mri
+all: neurovault responses pet eye rexec mri
 
 # ---------------------------------------------------------------------------- #
 # ARTEMIS
