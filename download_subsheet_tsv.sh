@@ -41,7 +41,7 @@ input_file=$csv_folder$file
 # output with awk intos arrays and will loop over google ids to download
 # use the first column of the metatable for awk and only take lines that start with this pattern
 google_IDs=($(     awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $4}' $input_file))
-sheet_id=($(     awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $4}' $input_file))
+sheet_id=($(     awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $5}' $input_file))
 subfolder=($(      awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $2}' $input_file))
 output_filename=($(awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $3}' $input_file))
 
@@ -57,6 +57,8 @@ do
 
     ouput_folder="$csv_folder${subfolder[$i]}/"
     mkdir -p $ouput_folder    
+
+    echo "https://docs.google.com/spreadsheets/d/${google_IDs[$i]}/export?format=tsv&gid=${sheet_id[$i]}"
 
     curl -L "https://docs.google.com/spreadsheets/d/${google_IDs[$i]}/export?format=tsv&gid=${sheet_id[$i]}" \
     -o $ouput_folder${output_filename[$i]}.tsv
