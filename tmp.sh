@@ -2,7 +2,7 @@
 
 schema="core"
 
-IDs=($(awk '/core/ { print $4 }' inputs/csv/spreadsheet_google_id.tsv))
+IDs=($(awk 'BEGIN{pat="^core"} $0 ~ pat{print $4 }' inputs/csv/spreadsheet_google_id.tsv))
 
 len=${#IDs[@]}
 echo $len
