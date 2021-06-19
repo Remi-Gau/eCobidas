@@ -66,41 +66,39 @@
 # resp-eye_model
 # resp-eye_producer
 
-csv_folder=./inputs/csv/
-file=spreadsheet_google_id.tsv
-
-# TODO
-# add a way to filter all by section 
-
 if [ $# -lt 1 ]; then
     schema='neurovault'
     else
     schema=$1
 fi
 
-google_ID=`cat $csv_folder'spreadsheet_google_id.tsv' | grep $schema | awk '{print $4}'`
-subfolder=`cat $csv_folder'spreadsheet_google_id.tsv' | grep $schema | awk '{print $2}'`
-output_filename=`cat $csv_folder'spreadsheet_google_id.tsv' | grep $schema | awk '{print $3}'`
+csv_folder="./inputs/csv/"
+file="spreadsheet_google_id.tsv"
+input_file=$csv_folder$file
 
-ouput_folder="$csv_folder$subfolder/"
-mkdir -p $ouput_folder
+# output with awk intos arrays and will loop over google ids to download
+# use the first column of the metatable for awk and only take lines that start with this pattern
+google_IDs=($(     awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $4}' $input_file))
+subfolder=($(      awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $2}' $input_file))
+output_filename=($(awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $3}' $input_file))
 
-len=${#google_ID[@]}
+len=${#google_IDs[@]}
 
-# TODO
-# add error in case google_ID is empty
-
-for id in $google_ID
+for (( i=0; i<$len; i++ ))
 do
 
-    echo "Downloading the $subfolder $output_filename spreadsheet to $subfolder/$output_filename"
-    echo Google ID: $google_ID
-    echo $ouput_folder
+    printf "\n"
 
-    curl -L "https://docs.google.com/spreadsheets/d/"$google_ID"/export?format=tsv" \
-        -o $ouput_folder$output_filename.tsv
+    echo "Downloading the ${subfolder[$i]} ${output_filename[$i]} spreadsheet to ${subfolder[$i]}/${output_filename[$i]}"
+    echo Google ID: "${google_IDs[$i]}"
 
-    echo "Done"
+    ouput_folder="$csv_folder${subfolder[$i]}/"
+    mkdir -p $ouput_folder    
+
+    curl -L "https://docs.google.com/spreadsheets/d/${google_IDs[$i]}/export?format=tsv" \
+    -o $ouput_folder${output_filename[$i]}.tsv
+
+    printf "DONE\n"
 
 done
 
