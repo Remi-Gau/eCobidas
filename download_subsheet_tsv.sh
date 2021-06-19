@@ -1,51 +1,24 @@
 #!/usr/bin/env bash
 
-# Simple script to download the content of the different google spreadsheet in
+#  TODO
+# refactor to fuse with the regular download script
+# 
+# 
+# Simple script to download the content of a specific sheet of a google spreadsheet in
 # the inputs folder
+# 
+# https://stackoverflow.com/questions/27000699/google-spreadsheet-direct-download-link-for-only-one-sheet-as-excel
 #
 # USAGE:
 #
-#   sh download_tsv.sh schema-abbreviation
+#   sh download_subshhet_tsv.sh schema-abbreviation
 # 
 # To know which are the possible comniation of section and subsection
 #
 #   awk '{print $1}' inputs/csv/spreadsheet_google_id.tsv
 #
-#   
 # schema
 #
-# core-participants
-# core-beh
-# core-rep
-# core-data
-# mri-allseq
-# mri-design
-# mri-acq
-# mri-preproc
-# mri-model
-# mri-results
-# neurovault
-# deprecated-mri
-# meeg-design
-# meeg-acq
-# meeg-preproc
-# meeg-analysis
-# meeg-reporting
-# deprecated-meeg
-# eyetracking
-# pet
-# reexecution
-# resp-mri_soft
-# resp-pres_soft
-# resp-multiple_comp
-# resp-interp
-# resp-cost_functions
-# resp-meeg_ref
-# resp-meeg_analysis_soft
-# resp-meeg_amplifier_brands
-# resp-meeg_acq_softwares
-# resp-eeg_cap_types
-# resp-boolean
 # artemis-hardware
 # artemis-acquisition
 # artemis-preproc
@@ -53,18 +26,10 @@
 # artemis-measur
 # artemis-channel
 # artemis-vis
-# test
-# resp-ver-spm
-# resp-ver-linux
-# resp-type-os
-# resp-ver-windows
-# resp-ver-macos
-# resp-eye_preproc_soft
-# resp-eye_model
-# resp-eye_producer
+
 
 if [ $# -lt 1 ]; then
-    schema='neurovault'
+    schema='artemis-'
     else
     schema=$1
 fi
@@ -76,6 +41,7 @@ input_file=$csv_folder$file
 # output with awk intos arrays and will loop over google ids to download
 # use the first column of the metatable for awk and only take lines that start with this pattern
 google_IDs=($(     awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $4}' $input_file))
+sheet_id=($(     awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $4}' $input_file))
 subfolder=($(      awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $2}' $input_file))
 output_filename=($(awk -v schema=$schema 'BEGIN{pattern="^"schema } $0 ~ pattern{print $3}' $input_file))
 
@@ -92,7 +58,7 @@ do
     ouput_folder="$csv_folder${subfolder[$i]}/"
     mkdir -p $ouput_folder    
 
-    curl -L "https://docs.google.com/spreadsheets/d/${google_IDs[$i]}/export?format=tsv" \
+    curl -L "https://docs.google.com/spreadsheets/d/${google_IDs[$i]}/export?format=tsv&gid=${sheet_id[$i]}" \
     -o $ouput_folder${output_filename[$i]}.tsv
 
     printf "DONE\n"
