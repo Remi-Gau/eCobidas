@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "location_on_body.jsonld",
+    "@id": "apparent_size.jsonld",
     "prefLabel": {
-        "en": "location on body"
+        "en": "apparent size"
     },
-    "description": "location on body",
+    "description": "apparent size",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Location on the body with reference to anatomical landmarks"
+        "en": "Stimuli apparent size"
     },
     "responseOptions": {
         "valueType": "xsd:string",

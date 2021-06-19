@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "location_on_body.jsonld",
+    "@id": "condition.jsonld",
     "prefLabel": {
-        "en": "location on body"
+        "en": "condition"
     },
-    "description": "location on body",
+    "description": "condition",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Location on the body with reference to anatomical landmarks"
+        "en": "Enumerate the conditions and fully describe and reference each."
     },
     "responseOptions": {
         "valueType": "xsd:string",

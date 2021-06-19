@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "location_on_body.jsonld",
+    "@id": "clarity.jsonld",
     "prefLabel": {
-        "en": "location on body"
+        "en": "clarity"
     },
-    "description": "location on body",
+    "description": "clarity",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Location on the body with reference to anatomical landmarks"
+        "en": "Clarity (i.e.,visual contrast, intensity, etc.)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

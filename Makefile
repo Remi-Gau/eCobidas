@@ -70,7 +70,6 @@ clean_artemis: verb.clean_artemis
 # NEUROVAULT
 # ---------------------------------------------------------------------------- #
 
-
 neurovault: clean_neurovault validate_neurovault
 
 clean_neurovault:
@@ -135,7 +134,7 @@ pet: clean_pet validate_pet
 
 clean_pet:
 	rm -rf $(PET_TSV)
-	rm -rf schemas/pet*/
+	rm -rf schemas/pet/
 
 $(PET_TSV): download_tsv.sh
 	bash download_tsv.sh pet
@@ -155,7 +154,7 @@ eye: clean_eye validate_eye
 
 clean_eye:
 	rm -rf $(EYE_TSV)
-	rm -rf schemas/pet*/
+	rm -rf schemas/eyetracking/
 
 $(EYE_TSV): download_tsv.sh
 	bash download_tsv.sh eyetracking
@@ -175,7 +174,7 @@ rexec: clean_rexec validate_rexec
 
 clean_rexec:
 	rm -rf $(REEXEC_TSV)
-	rm -rf schemas/pet*/
+	rm -rf schemas/reexecution/
 
 $(REEXEC_TSV): download_tsv.sh
 	bash download_tsv.sh reexecution
@@ -216,7 +215,7 @@ mri: core clean_mri convert_mri
 
 clean_mri:
 	rm -rf $(MRI_TSV)
-	rm -rf schemas/core
+	rm -rf schemas/mri
 
 download_mri: download_tsv.sh
 	bash download_tsv.sh mri-
