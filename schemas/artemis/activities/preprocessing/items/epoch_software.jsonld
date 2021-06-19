@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "epoch_software.jsonld",
+    "prefLabel": {
+        "en": "Epoch software"
+    },
+    "description": "Epoch software",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Which analysis software do you use for epoching EEG data?"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/meeg_analysis_softwares.jsonld"
+}

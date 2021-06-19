@@ -4,91 +4,109 @@
     "@id": "meeg_analysis_softwares.jsonld",
     "valueType": "xsd:integer",
     "minValue": 0,
-    "maxValue": 13,
+    "maxValue": 16,
     "choices": [
         {
             "name": {
-                "en": "EEGlab (+ ERPLab)"
+                "en": "BESA Research"
             },
             "value": 0
         },
         {
             "name": {
-                "en": "InstEP"
+                "en": "Brain Vision Analyzer"
             },
             "value": 1
         },
         {
             "name": {
-                "en": "FieldTrip"
+                "en": "Brainstorm"
             },
             "value": 2
         },
         {
             "name": {
-                "en": "BESA Research"
+                "en": "Cartool"
             },
             "value": 3
         },
         {
             "name": {
-                "en": "Scan"
+                "en": "Curry"
             },
             "value": 4
         },
         {
             "name": {
-                "en": "Brain Vision Analyzer"
+                "en": "EEGlab (+ ERPlab)"
             },
             "value": 5
         },
         {
             "name": {
-                "en": "NetStation"
+                "en": "EEProbe"
             },
             "value": 6
         },
         {
             "name": {
-                "en": "Cartool"
+                "en": "ERP system"
             },
             "value": 7
         },
         {
             "name": {
-                "en": "MatLab custom script"
+                "en": "FieldTrip "
             },
             "value": 8
         },
         {
             "name": {
-                "en": "Curry"
+                "en": "InstEP"
             },
             "value": 9
         },
         {
             "name": {
-                "en": "TrackWalker"
+                "en": "Custom scripts (any language)"
             },
             "value": 10
         },
         {
             "name": {
-                "en": "ERP system"
+                "en": "MNE-Python"
             },
             "value": 11
         },
         {
             "name": {
-                "en": "EEProbe"
+                "en": "NetStation"
             },
             "value": 12
         },
         {
             "name": {
-                "en": "other"
+                "en": "Scan"
             },
             "value": 13
+        },
+        {
+            "name": {
+                "en": "TrackWalker"
+            },
+            "value": 14
+        },
+        {
+            "name": {
+                "en": "Other"
+            },
+            "value": 15
+        },
+        {
+            "name": {
+                "en": "SPM"
+            },
+            "value": 16
         }
     ]
 }

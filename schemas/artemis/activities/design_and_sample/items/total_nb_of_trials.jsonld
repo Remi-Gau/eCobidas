@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "total_nb_of_trials.jsonld",
+    "prefLabel": {
+        "en": "total_nb_of_trials"
+    },
+    "description": "total_nb_of_trials",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "How many trials in total was each subject presented with?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

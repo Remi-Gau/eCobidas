@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "min_nb_of_trials_per_condition.jsonld",
+    "prefLabel": {
+        "en": "min_nb_of_trials_per_condition"
+    },
+    "description": "min_nb_of_trials_per_condition",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Please specify the minimum number of trials analyzed per condition for any subject:"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

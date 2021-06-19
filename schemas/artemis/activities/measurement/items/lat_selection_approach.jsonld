@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "lat_selection_approach.jsonld",
+    "prefLabel": {
+        "en": "lat selection approach"
+    },
+    "description": "lat selection approach",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Approach to selection of the window within which latency was located (multi choice)"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "A priori"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Data-driven"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "latency identified based on the entire epoch"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

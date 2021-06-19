@@ -1,4 +1,4 @@
-import sys, os
+import sys, os, pytest
 import pandas as pd
 
 from ..item import (
@@ -47,43 +47,48 @@ def test_preset():
     )
 
 
-# add test_set_item_name?
-# add test mandatory
+# TODO add test mandatory
 
 
-def test_set_item_name():
+@pytest.mark.parametrize(
+    "input, expected",
+    [
+        ("_i[t]em-n:a m!e", "_item-na_me"),  # alphanumeric with _ and - only
+        ("item name", "item_name"),
+    ],
+)
+def test_set_item_name(input, expected):
 
     this_item = pd.DataFrame(
         {
-            "item_pref_label": ["item name"],
+            "item_pref_label": [input],
         }
     )
 
     name = set_item_name(this_item)
 
-    assert name == "item_name"
+    assert name == expected
+
+
+@pytest.mark.parametrize(
+    "item_name, pref_label, expected",
+    [
+        ("", "item name", "item_name"),
+        ("foo Bar", "item name", "foo_Bar"),
+    ],
+)
+def test_set_item_name_pref_label(item_name, pref_label, expected):
 
     this_item = pd.DataFrame(
         {
-            "item": [""],
-            "item_pref_label": ["item name"],
+            "item": [item_name],
+            "item_pref_label": [pref_label],
         }
     )
 
     name = set_item_name(this_item)
 
-    assert name == "item_name"
-
-    this_item = pd.DataFrame(
-        {
-            "item": ["foo Bar"],
-            "item_pref_label": ["item name"],
-        }
-    )
-
-    name = set_item_name(this_item)
-
-    assert name == "foo_Bar"
+    assert name == expected
 
 
 def test_get_item_info():
@@ -148,27 +153,52 @@ def test_get_item_info_with_name():
     assert item_info == expected
 
 
-def test_get_visibility():
+def test_get_item_info_with_only_name():
 
-    this_item = pd.DataFrame({"visibility": ["1"]})
-    visibility = get_visibility(this_item)
-    assert visibility == True
+    this_item = pd.DataFrame(
+        {
+            "visibility": ["1"],
+            "mandatory": ["2"],
+            "field_type": ["radio"],
+            "question": ["test question"],
+            "choices": ["choice A | choice B"],
+            "item": ["TEST_1"],
+            "item_description": ["desc"],
+        }
+    )
 
-    this_item = pd.DataFrame({"visibility": [1]})
-    visibility = get_visibility(this_item)
-    assert visibility == True
+    item_info = get_item_info(this_item)
 
-    this_item = pd.DataFrame({"visibility": ["0"]})
-    visibility = get_visibility(this_item)
-    assert visibility == False
+    expected = {
+        "name": "TEST_1",
+        "pref_label": "TEST 1",
+        "question": "test question",
+        "field_type": "radio",
+        "choices": ["choice A", "choice B"],
+        "visibility": True,
+        "mandatory": True,
+        "description": "desc",
+    }
 
-    this_item = pd.DataFrame({"visibility": [0]})
-    visibility = get_visibility(this_item)
-    assert visibility == False
+    assert item_info == expected
 
-    this_item = pd.DataFrame({"visibility": ["javascript expression"]})
+
+@pytest.mark.parametrize(
+    "input, expected",
+    [
+        (float("nan"), True),
+        ("1", True),
+        (1, True),
+        ("0", False),
+        (0, False),
+        ("javascript expression", "javascript expression"),
+    ],
+)
+def test_get_visibility(input, expected):
+
+    this_item = pd.DataFrame({"visibility": [input]})
     visibility = get_visibility(this_item)
-    assert visibility == "javascript expression"
+    assert visibility == expected
 
 
 def test_list_responses_options():

@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "number_active_channels.jsonld",
+    "prefLabel": {
+        "en": "number_active_channels"
+    },
+    "description": "number of channels used (active) during M/EEG recording",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "How many channels were active for the recording (excluding reference channels, ground channels, VEOG and HEOG)?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

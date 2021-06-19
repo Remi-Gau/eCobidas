@@ -1,0 +1,165 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "hardware_schema.jsonld",
+    "prefLabel": {
+        "en": "Hardware"
+    },
+    "description": "hardware",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/electrode_placement_type.jsonld",
+            "items/electrode_placement_type_cap.jsonld",
+            "items/cap_other.jsonld",
+            "items/cap_model.jsonld",
+            "items/electrode_manufacturer.jsonld",
+            "items/electrode_model.jsonld",
+            "items/electrode_type.jsonld",
+            "items/conductive_medium.jsonld",
+            "items/amplifier_make_or_brand.jsonld",
+            "items/amplifier_model.jsonld",
+            "items/trigger_signal_source.jsonld",
+            "items/trigger_signal_input.jsonld",
+            "items/other_peripheral_devices.jsonld",
+            "items/further_clarification_on_peripheral_devices.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "electrode_placement_type",
+                "isAbout": "items/electrode_placement_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "electrode_placement_type_cap",
+                "isAbout": "items/electrode_placement_type_cap.jsonld",
+                "isVis": "electrode_placement_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "cap_other",
+                "isAbout": "items/cap_other.jsonld",
+                "isVis": "electrode_placement_type_cap == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "cap_model",
+                "isAbout": "items/cap_model.jsonld",
+                "isVis": "electrode_placement_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "electrode_manufacturer",
+                "isAbout": "items/electrode_manufacturer.jsonld",
+                "isVis": "electrode_placement_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "electrode_model",
+                "isAbout": "items/electrode_model.jsonld",
+                "isVis": "electrode_placement_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "electrode_type",
+                "isAbout": "items/electrode_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "conductive_medium",
+                "isAbout": "items/conductive_medium.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amplifier_make_or_brand",
+                "isAbout": "items/amplifier_make_or_brand.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amplifier_model",
+                "isAbout": "items/amplifier_model.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "trigger_signal_source",
+                "isAbout": "items/trigger_signal_source.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "trigger_signal_input",
+                "isAbout": "items/trigger_signal_input.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "other_peripheral_devices",
+                "isAbout": "items/other_peripheral_devices.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "further_clarification_on_peripheral_devices",
+                "isAbout": "items/further_clarification_on_peripheral_devices.jsonld",
+                "isVis": "other_peripheral_devices == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

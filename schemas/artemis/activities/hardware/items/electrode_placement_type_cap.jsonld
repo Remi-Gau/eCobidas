@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "electrode_placement_type_cap.jsonld",
+    "prefLabel": {
+        "en": "Electrode Placement Type Cap"
+    },
+    "description": "Electrode Placement Type Cap",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "What kind of cap or net did you use?"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/eeg_cap_types.jsonld"
+}

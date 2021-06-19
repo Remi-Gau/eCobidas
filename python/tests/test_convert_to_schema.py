@@ -23,7 +23,7 @@ def test_create_schema():
     # Check protocol
     protocol_folder = "protocols"
 
-    output_file = os.path.join(out_dir, protocol_folder, "test_schema.jsonld")
+    output_file = os.path.join(out_dir, "tests", protocol_folder, "test_schema.jsonld")
     protocol_content = read_json(output_file)
 
     data_file = os.path.join(myPath, "data", protocol_folder, "test_schema.jsonld")
@@ -66,7 +66,7 @@ def test_create_schema():
         this_activity_folder = os.path.join(activities_folder, activity_name)
 
         output_file = os.path.join(
-            out_dir, this_activity_folder, activity_name + "_schema.jsonld"
+            out_dir, "tests", this_activity_folder, activity_name + "_schema.jsonld"
         )
         activity_content = read_json(output_file)
 
@@ -83,7 +83,7 @@ def test_create_schema():
         for item in item_list:
 
             output_file = os.path.join(
-                out_dir, this_activity_folder, "items", item + ".jsonld"
+                out_dir, "tests", this_activity_folder, "items", item + ".jsonld"
             )
             item_content = read_json(output_file)
 

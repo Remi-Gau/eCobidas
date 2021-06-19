@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "electrode_location_naming_convention.jsonld",
+    "prefLabel": {
+        "en": "electrode_location_naming_convention"
+    },
+    "description": "type of naming convention used for electrode locations",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "What type of naming convention have you used for the electrode locations?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "five percent electrode system (extension of the International 10-20 system by Oostenveld & Praamstra (2001))"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "commercial geodesic net"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "custom locations and other systems"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -1,9 +1,12 @@
 # Makefile to create the activities and protocols
 
-# TODO
-# update the clean commands to clean the correct directories
+# Dependency graph can be created with:
+#
+#   make all -Bnd | make2graph | dot -Tpng -o out.png
+#
+# witrh https://github.com/lindenb/makefile2graph
 
-.PHONY: all clean clean_protocol clean_activities clean_csv
+.PHONY: clean_neurovault
 
 # INSTALL
 # TODO
@@ -12,188 +15,224 @@
 # cd ../../reproschema-py
 # git checkout remi_schema_creator
 
-# DOWNLOAD and CREATE and VALIDATE
-neurovault:
-	rm -rf inputs/csv/neurovault
-	rm -rf schemas/neurovault
-	sh download_tsv.sh neurovault neurovault
+INPUT_DIR = $(inputs/csv)
+
+ALL_TSV = $(wildcard inputs/csv/*/*.tsv)
+
+NEUROVAULT_TSV =   inputs/csv/neurovault/neurovault.tsv
+NEUROVAULT_JSON =  schemas/neurovault/protocols/neurovault_schema.jsonld
+
+PET_TSV =          inputs/csv/pet/pet.tsv
+PET_JSON =         schemas/pet/protocols/pet.jsonld
+
+EYE_TSV =          inputs/csv/eyetracking/eyetracking.tsv
+EYE_JSON =         schemas/eyetracking/protocols/eyetracking.jsonld
+
+REEXEC_TSV =       inputs/csv/reexecution/reexecution.tsv
+REEXEC_JSON =      schemas/reexecution/protocols/reexecution_schema.jsonld
+
+ARTEMIS_TSV =   $(wildcard inputs/csv/artemis/*.tsv)
+CORE_TSV =      $(wildcard inputs/csv/core/*.tsv)
+MRI_TSV =       $(wildcard inputs/csv/mri/*.tsv)
+RESPONSES_TSV = $(wildcard inputs/csv/response_options/*.tsv)
+
+
+all: neurovault responses pet eye rexec mri
+
+# ---------------------------------------------------------------------------- #
+# ARTEMIS
+# ---------------------------------------------------------------------------- #
+artemis: download_artemis $(ARTEMIS_TSV) validate_artemis
+
+download_artemis: download_subsheet_tsv.sh
+	bash download_subsheet_tsv.sh artemis-
+
+convert_artemis: $(ARTEMIS_TSV)
+	ecobidas_convert --schema artemis-hardware
+	ecobidas_convert --schema artemis-design
+	ecobidas_convert --schema artemis-channel
+	ecobidas_convert --schema artemis-vis
+	ecobidas_convert --schema artemis-acquisition
+	ecobidas_convert --schema artemis-preproc
+
+# Something wrong with measurements file format: opening and saving it fixes it???
+# ecobidas_convert --schema artemis-measur
+
+validate_artemis: convert_artemis
+	grep -r  "@context" schemas/artemis | cut -d: -f1 | xargs -I fname jsonlint -q fname
+	reproschema -l DEBUG validate schemas/artemis
+clean_artemis: verb.clean_artemis
+	rm -rf $(ARTEMIS_TSV)
+	rm -rf schemas/artemis/activities
+
+
+# ---------------------------------------------------------------------------- #
+# NEUROVAULT
+# ---------------------------------------------------------------------------- #
+
+neurovault: clean_neurovault validate_neurovault
+
+clean_neurovault:
+	rm -rf $(NEUROVAULT_TSV)
+	rm -rf schemas/neurovault/
+
+$(NEUROVAULT_TSV): download_tsv.sh
+	bash download_tsv.sh neurovault
+
+$(NEUROVAULT_JSON): $(NEUROVAULT_TSV)
 	ecobidas_convert --schema neurovault
+validate_neurovault: $(NEUROVAULT_JSON)
 	grep -r  "@context" schemas/neurovault | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/neurovault
+verb.clean_neurovault:
+	$(call verb, "clean neurovault")
 
-pet:
-	rm -rf inputs/csv/pet
-	rm -rf schemas/pet
-	sh download_tsv.sh pet pet
+
+# ---------------------------------------------------------------------------- #
+# RESPONSES
+# ---------------------------------------------------------------------------- #
+responses: clean_responses validate_responses
+
+clean_responses:
+	rm -rf $(RESPONSES_TSV)
+	rm -rf schemas/response_options/
+
+download_responses: download_tsv.sh
+	bash download_tsv.sh resp-	
+
+convert_responses: download_responses
+	ecobidas_convert --schema resp-mri_soft
+	ecobidas_convert --schema resp-pres_soft
+	ecobidas_convert --schema resp-multiple_comp
+	ecobidas_convert --schema resp-interp
+	ecobidas_convert --schema resp-cost_functions
+	ecobidas_convert --schema resp-meeg_ref
+	ecobidas_convert --schema resp-meeg_analysis_soft
+	ecobidas_convert --schema resp-meeg_amplifier_brands
+	ecobidas_convert --schema resp-meeg_acq_softwares
+	ecobidas_convert --schema resp-eeg_cap_types
+	ecobidas_convert --schema resp-boolean
+	ecobidas_convert --schema resp-ver-spm
+	ecobidas_convert --schema resp-ver-linux
+	ecobidas_convert --schema resp-type-os
+	ecobidas_convert --schema resp-ver-windows
+	ecobidas_convert --schema resp-ver-macos
+	ecobidas_convert --schema resp-eye_preproc_soft
+	ecobidas_convert --schema resp-eye_model
+	ecobidas_convert --schema resp-eye_producer
+
+validate_responses: convert_responses
+	grep -r  "@context" schemas/response_options | cut -d: -f1 | xargs -I fname jsonlint -q fname
+	reproschema -l DEBUG validate schemas/response_options
+
+
+# ---------------------------------------------------------------------------- #
+# PET
+# ---------------------------------------------------------------------------- #
+
+pet: clean_pet validate_pet
+
+clean_pet:
+	rm -rf $(PET_TSV)
+	rm -rf schemas/pet/
+
+$(PET_TSV): download_tsv.sh
+	bash download_tsv.sh pet
+
+$(PET_JSON): $(PET_TSV)
 	ecobidas_convert --schema pet
+validate_pet: $(PET_JSON)
 	grep -r  "@context" schemas/pet | cut -d: -f1 | xargs -I fname jsonlint -q fname
-	reproschema -l DEBUG validate schemas/pet	
+	reproschema -l DEBUG validate schemas/pet
 
-eyetracking:
-	rm -rf inputs/csv/eyetracking
-	rm -rf schemas/eyetracking
-	sh download_tsv.sh eyetracking eyetracking
+
+# ---------------------------------------------------------------------------- #
+# EYETRACKING
+# ---------------------------------------------------------------------------- #
+
+eye: clean_eye validate_eye
+
+clean_eye:
+	rm -rf $(EYE_TSV)
+	rm -rf schemas/eyetracking/
+
+$(EYE_TSV): download_tsv.sh
+	bash download_tsv.sh eyetracking
+
+$(EYE_JSON): $(EYE_TSV)
 	ecobidas_convert --schema eyetracking
+validate_eye: $(EYE_JSON)
 	grep -r  "@context" schemas/eyetracking | cut -d: -f1 | xargs -I fname jsonlint -q fname
-	reproschema -l DEBUG validate schemas/eyetracking		
+	reproschema -l DEBUG validate schemas/eyetracking
 
-reexecution:
-	rm -rf inputs/csv/reexecution
-	rm -rf schemas/reexecution
-	sh download_tsv.sh reexecution reexecution
+
+# ---------------------------------------------------------------------------- #
+# NIMG REEXECUTION
+# ---------------------------------------------------------------------------- #
+
+rexec: clean_rexec validate_rexec
+
+clean_rexec:
+	rm -rf $(REEXEC_TSV)
+	rm -rf schemas/reexecution/
+
+$(REEXEC_TSV): download_tsv.sh
+	bash download_tsv.sh reexecution
+
+$(REEXEC_JSON): $(REEXEC_TSV)
 	ecobidas_convert --schema reexecution
+validate_rexec: $(REEXEC_JSON)
 	grep -r  "@context" schemas/reexecution | cut -d: -f1 | xargs -I fname jsonlint -q fname
-	reproschema -l DEBUG validate schemas/reexecution	
+	reproschema -l DEBUG validate schemas/reexecution
 
-all_sequences:
-	rm -rf inputs/csv/core/all_sequences.tsv
-	rm -rf schemas/core/activities/common_parameters
-	rm -rf schemas/core/protocols/all_sequences*
-	sh download_tsv.sh core all_sequences
-	ecobidas_convert --schema all_sequences
-	grep -r  "@context" schemas/mri | cut -d: -f1 | xargs -I fname jsonlint -q fname
-	reproschema -l DEBUG validate schemas/mri	
 
-behavior:
-	rm -rf inputs/csv/core/behavior.tsv
-	rm -rf schemas/core/activities/behavior
-	rm -rf schemas/core/protocols/behavior*
-	sh download_tsv.sh core behavior
-	ecobidas_convert --schema behavior
+# ---------------------------------------------------------------------------- #
+# CORE
+# ---------------------------------------------------------------------------- #
+
+core: clean_core validate_core
+
+clean_core:
+	rm -rf $(CORE_TSV)
+	rm -rf schemas/core
+
+download_core: download_tsv.sh
+	bash download_tsv.sh core-
+
+convert_core: download_core
+	ecobidas_convert --schema core-participants
+	ecobidas_convert --schema core-beh
+validate_core: convert_core
 	grep -r  "@context" schemas/core | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/core
 
-participants:
-	rm -rf inputs/csv/core/participants.tsv
-	rm -rf schemas/core/activities/behavior
-	rm -rf schemas/core/protocols/participants*
-	sh download_tsv.sh core participants
-	ecobidas_convert --schema participants
+
+# ---------------------------------------------------------------------------- #
+# MRI
+# ---------------------------------------------------------------------------- #
+
+mri: core clean_mri convert_mri
+
+clean_mri:
+	rm -rf $(MRI_TSV)
+	rm -rf schemas/mri
+
+download_mri: download_tsv.sh
+	bash download_tsv.sh mri-
+
+convert_mri: download_mri
+	ecobidas_convert --schema mri-allseq
+validate_mri: convert_mri
 	grep -r  "@context" schemas/core | cut -d: -f1 | xargs -I fname jsonlint -q fname
-	reproschema -l DEBUG validate schemas/core		
+	reproschema -l DEBUG validate schemas/core
+
+# ---------------------------------------------------------------------------- #	
+
 
 # DOWNLOAD
 
-# TODO
-# simplify by making download script more powerful
-
-ALL_MRI = $(wildcard inputs/csv/mri/*.tsv)
-download_all:
-	sh download_tsv.sh neurovault neurovault
-	sh download_tsv.sh mri all_sequences
-	sh download_tsv.sh mri design
-	sh download_tsv.sh mri acquisition
-	sh download_tsv.sh mri preprocessing
-	sh download_tsv.sh mri modelling_inference
-	sh download_tsv.sh mri results
-	sh download_tsv.sh core participants
-	sh download_tsv.sh core behavior
-	sh download_tsv.sh core reproducibility
-	sh download_tsv.sh core data_sharing	
-	sh download_tsv.sh meeg design
-	sh download_tsv.sh meeg acquisition
-	sh download_tsv.sh meeg processing
-	sh download_tsv.sh meeg statistical_analysis
-	sh download_tsv.sh meeg reporting 	
-	sh download_tsv.sh artem-is artem-is
-	sh download_tsv.sh eyetracking eyetracking
-	sh download_tsv.sh pet pet
-	sh download_tsv.sh reexecution reexecution
-	sh download_tsv.sh response_options	mri_softwares
-	sh download_tsv.sh response_options	stimulus_presentation_softwares
-	sh download_tsv.sh response_options	multiple_comparisons
-	sh download_tsv.sh response_options	interpolations
-	sh download_tsv.sh response_options	cost_functions
-	sh download_tsv.sh response_options	meeg_reference_electrodes
-	sh download_tsv.sh response_options	meeg_analysis_softwares
-	sh download_tsv.sh response_options	meeg_amplifier_brands
-	sh download_tsv.sh response_options	meeg_acquisition_softwares
-	sh download_tsv.sh response_options	eeg_cap_types
-	sh download_tsv.sh response_options	boolean
-
-download_neurovault: 
-	sh download_tsv.sh neurovault neurovault
-
-download_mri: $(ALL_MRI)
-	sh download_tsv.sh mri all_sequences
-	sh download_tsv.sh mri design
-	sh download_tsv.sh mri acquisition
-	sh download_tsv.sh mri preprocessing
-	sh download_tsv.sh mri modelling_inference
-	sh download_tsv.sh mri results
-
-download_core: 
-	sh download_tsv.sh core participants
-	sh download_tsv.sh core behavior
-	sh download_tsv.sh core reproducibility
-	sh download_tsv.sh core data_sharing	
-
 download_meeg:
-	sh download_tsv.sh meeg design
-	sh download_tsv.sh meeg acquisition
-	sh download_tsv.sh meeg processing
-	sh download_tsv.sh meeg statistical_analysis
-	sh download_tsv.sh meeg reporting 	
-
-download_artemis:
-	sh download_tsv.sh artem-is artem-is
-
-download_eyetrack:
-	sh download_tsv.sh eyetracking eyetracking
-
-download_pet:
-	sh download_tsv.sh pet pet
-
-download_rexec:	
-	sh download_tsv.sh reexecution reexecution
-
-download_responses:
-	sh download_tsv.sh response_options	mri_softwares
-	sh download_tsv.sh response_options	stimulus_presentation_softwares
-	sh download_tsv.sh response_options	multiple_comparisons
-	sh download_tsv.sh response_options	interpolations
-	sh download_tsv.sh response_options	cost_functions
-	sh download_tsv.sh response_options	meeg_reference_electrodes
-	sh download_tsv.sh response_options	meeg_analysis_softwares
-	sh download_tsv.sh response_options	meeg_amplifier_brands
-	sh download_tsv.sh response_options	meeg_acquisition_softwares
-	sh download_tsv.sh response_options	eeg_cap_types
-	sh download_tsv.sh response_options	boolean
-
-# CREATE protocol
-convert_all:
-	ecobidas_convert --schema pet
-	ecobidas_convert --schema neurovault
-	ecobidas_convert --schema all_sequences
-	ecobidas_convert --schema participants
-	ecobidas_convert --schema behavior
-	ecobidas_convert --schema eyetracking
-	ecobidas_convert --schema reexecution
-
-# DO NOT WORK
-# ecobidas_convert --schema artem-is
-# ecobidas_convert --schema data_sharing	
-# ecobidas_convert --schema reproducibility
-# ecobidas_convert --schema results
-# ecobidas_convert --schema modelling_inference
-# ecobidas_convert --schema preprocessing
-# ecobidas_convert --schema acquisition
-# ecobidas_convert --schema design
-
-# CREATE responses
-
-responses_all:
-	ecobidas_responses --filename mri_softwares
-	ecobidas_responses --filename stimulus_presentation_softwares
-	ecobidas_responses --filename multiple_comparisons
-	ecobidas_responses --filename interpolations
-	ecobidas_responses --filename cost_functions
-	ecobidas_responses --filename meeg_reference_electrodes
-	ecobidas_responses --filename meeg_analysis_softwares
-	ecobidas_responses --filename meeg_amplifier_brands
-	ecobidas_responses --filename meeg_acquisition_softwares
-	ecobidas_responses --filename eeg_cap_types
-	ecobidas_responses --filename boolean
+	bash download_tsv.sh meeg-
 
 
 # VALIDATE
@@ -203,52 +242,24 @@ validate_all:
 
 # CLEAN
 
-# TODO 
-# use wildcards to simplify 
+clean_all: clean_rexec clean_pet clean_eye clean_artemis clean_neurovault clean_responses
+
+
 clean_tsv: 
-	rm -f inputs/*.tsv
-
-clean_neurovault:
-	rm -rf activities/*neuro*
-	rm -rf protocols/*neuro*
-
-clean_pet:
-	rm -rf activities/*pet*
-	rm -rf protocols/*pet*
-
-clean_mri:
-	rm -rf activities/*mri*
-	rm -rf protocols/*mri*
-
-clean_eyetracker:
-	rm -rf activities/*eye*
-	rm -rf protocols/*eye*
+	rm -f $(ALL_TSV)
 
 clean_tests: 
 	rm -rf python/*/tests/outputs	
 
 clean_activities: 
-	rm -rf activities/**
-	rm -rf activities/*eye*
-	rm -rf activities/*mri*
-	rm -rf activities/*neuro*
-	rm -rf activities/*pet*
+	rm -rf schemas/*/activities
 
-clean_protocols: 
-	rm -rf protocols/**
-	rm -rf protocols/*eye*
-	rm -rf protocols/*mri*
-	rm -rf protocols/*neuro*
-	rm -rf protocols/*pet*
+# HELPER FUNCTIONS
 
-clean:
-	rm -rf activities/**
-	rm -rf protocols/**
-	rm -rf activities/*eye*
-	rm -rf protocols/*eye*
-	rm -rf activities/*mri*
-	rm -rf protocols/*mri*
-	rm -rf activities/*neuro*
-	rm -rf protocols/*neuro*
-	rm -rf activities/*pet*
-	rm -rf protocols/*pet*
+define verb
+	@ echo "_____________________________________________________________"
+	@ echo ""
+	@ echo "        " $(1)
+	@ echo "_____________________________________________________________"
+	@ echo ""
+endef

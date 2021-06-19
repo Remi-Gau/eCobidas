@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "amp_measured_from.jsonld",
+    "prefLabel": {
+        "en": "amp measured from"
+    },
+    "description": "amp measured from",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "The amplitude is measured from"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "single waves (one condition)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "difference waves"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "waves obtained using transformation of raw data (e.g. sPCA, source localization)"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

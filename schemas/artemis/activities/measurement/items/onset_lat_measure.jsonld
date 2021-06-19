@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "onset_lat_measure.jsonld",
+    "prefLabel": {
+        "en": "Onset lat measure"
+    },
+    "description": "Onset lat measure",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Onset latency measure"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "midpoint - peak"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "midpoint - local peak"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "midpoint - 50% area"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "midpoint - other "
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

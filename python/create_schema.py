@@ -4,15 +4,18 @@ import pandas as pd
 from item import get_item_info, define_new_item
 from utils import (
     snake_case,
-    set_dir,
     print_info,
     print_item_info,
     get_root_dir,
     get_landing_page,
+    load_data,
+    get_schema_info,
+    get_output_dir,
 )
 
 from reproschema.models.activity import Activity
 from reproschema.models.protocol import Protocol
+from reproschema.models.item import ResponseOption
 
 local_reproschema = os.path.join(
     get_root_dir(), "..", "reproschema-py", "reproschema", "models"
@@ -20,7 +23,7 @@ local_reproschema = os.path.join(
 # sys.path.insert(0, local_reproschema)
 
 
-def create_schema(this_schema, out_dir, debug=False):
+def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
     """
     This takes the content of the a csv file and turns it into a
     reproschema protocol.
@@ -30,18 +33,25 @@ def create_schema(this_schema, out_dir, debug=False):
     Every new item encountered is added to the current activity.
     """
 
+    out_dir = get_output_dir(this_schema, out_dir)
+    df = load_data(this_schema)
+
+    schema_info = get_schema_info(this_schema)
+
+    if schema_info["dir"].tolist()[0] == "response_options":
+        create_response_options(schema_info, df, out_dir)
+        return
+
     protocol, protocol_path = initialize_protocol(this_schema, out_dir)
 
-    df = load_data(this_schema, out_dir)
-
-    activities = df.activity_order.unique()
+    activities = list(df.activity_order.unique())
 
     if debug:
         activities = [1]
 
-    for activity_idx in activities:
+    for i, activity_idx in enumerate(activities):
 
-        this_activity = df["activity_order"] == activities[activity_idx - 1]
+        this_activity = df["activity_order"] == activities[i]
         items = df[this_activity]
         included_items = items["include"] == 1
         items = items[included_items]
@@ -51,6 +61,9 @@ def create_schema(this_schema, out_dir, debug=False):
         )
 
         items_order = items.item_order.unique()
+
+        # TODO add a check to make sure that no 2 items have the same
+        # ID (OR preferred label)
 
         for item_idx in items_order:
 
@@ -73,20 +86,11 @@ def create_schema(this_schema, out_dir, debug=False):
     return protocol
 
 
-def load_data(this_schema, out_dir):
-
-    if not os.path.isfile(this_schema):
-
-        in_dir, out_dir = set_dir(this_schema, out_dir)
-
-        input_file = os.path.join(in_dir, this_schema + ".tsv")
-
-    return pd.read_csv(input_file, sep="\t")
-
-
 def initialize_protocol(this_schema, out_dir):
 
-    protocol_name = snake_case(this_schema)
+    schema_info = get_schema_info(this_schema)
+
+    protocol_name = snake_case(schema_info["basename"].tolist()[0])
     # TODO
     # are we sure we want to change the case or the protocol
     # or make it snake case?
@@ -94,7 +98,7 @@ def initialize_protocol(this_schema, out_dir):
     protocol = Protocol()
     protocol.set_defaults(protocol_name)
 
-    protocol.set_landing_page(get_landing_page(this_schema))
+    protocol.set_landing_page(get_landing_page(schema_info))
 
     # create output directories
     protocol_path = os.path.join(out_dir, "protocols")
@@ -190,3 +194,28 @@ def get_activity_preamble(items):
         preamble = preamble[0]
 
     return preamble
+
+
+def create_response_options(schema_info, df, out_dir):
+
+    responses = df.name.unique()
+
+    response_options = ResponseOption()
+    response_options.set_defaults()
+    response_options.set_filename(schema_info["basename"].tolist()[0])
+    response_options.set_type("integer")
+    response_options.unset("multipleChoice")
+
+    for i, name in enumerate(responses):
+        response_options.add_choice(name, i)
+        response_options.set_max(i)
+
+    if not os.path.exists(out_dir):
+        os.makedirs(out_dir)
+    response_options.write(out_dir)
+
+    print_info(
+        "response options",
+        schema_info["basename"].tolist()[0],
+        os.path.join(out_dir, response_options.get_filename()),
+    )

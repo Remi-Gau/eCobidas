@@ -1,0 +1,65 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "other_schema.jsonld",
+    "prefLabel": {
+        "en": "other"
+    },
+    "description": "other",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/supplemental_materials.jsonld",
+            "items/specify_supplemental.jsonld",
+            "items/additional_comment.jsonld",
+            "items/specify_additional.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "supplemental_materials",
+                "isAbout": "items/supplemental_materials.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "specify_supplemental",
+                "isAbout": "items/specify_supplemental.jsonld",
+                "isVis": "supplemental_materials == 11",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "additional_comment",
+                "isAbout": "items/additional_comment.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "specify_additional",
+                "isAbout": "items/specify_additional.jsonld",
+                "isVis": "additional_comment == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

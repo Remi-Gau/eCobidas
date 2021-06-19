@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "measure_type.jsonld",
+    "prefLabel": {
+        "en": "measure type"
+    },
+    "description": "measure type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "Select an type of measurement"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "amplitude"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "latency"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": true
+    }
+}

@@ -22,6 +22,5 @@ setup(
     entry_points="""
         [console_scripts]
         ecobidas_convert=cli:convert
-        ecobidas_responses=create_response_options:create_response_options
     """,
 )

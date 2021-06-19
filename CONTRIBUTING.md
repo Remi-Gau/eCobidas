@@ -15,6 +15,23 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
+#### Pre-commit
+
+There is a [pre-commit hook](https://pre-commit.com/) that you can use to
+reformat files as you commit them.
+
+Install pre-commit by using our `requirements.txt` file 
+```bash
+pip install -r requirements.txt
+```
+
+Install the hook
+```bash
+pre-commit install
+```
+
+You're done. `mh_style --fix` will now be run every time you commit.
+
 ## Install the "dev" version of reproschema
 
 ```bash

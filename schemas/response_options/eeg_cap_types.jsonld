@@ -4,7 +4,7 @@
     "@id": "eeg_cap_types.jsonld",
     "valueType": "xsd:integer",
     "minValue": 0,
-    "maxValue": 8,
+    "maxValue": 10,
     "choices": [
         {
             "name": {
@@ -59,6 +59,18 @@
                 "en": "TMSi"
             },
             "value": 8
+        },
+        {
+            "name": {
+                "en": "Geodesic Sensor Net"
+            },
+            "value": 9
+        },
+        {
+            "name": {
+                "en": "other"
+            },
+            "value": 10
         }
     ]
 }

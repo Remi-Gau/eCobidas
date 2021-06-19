@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "max_nb_of_trials_per_condition.jsonld",
+    "prefLabel": {
+        "en": "max_nb_of_trials_per_condition"
+    },
+    "description": "max_nb_of_trials_per_condition",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Please specify the maximum number of trials analyzed per condition for any subject: "
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

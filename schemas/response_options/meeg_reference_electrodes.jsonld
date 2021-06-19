@@ -4,7 +4,7 @@
     "@id": "meeg_reference_electrodes.jsonld",
     "valueType": "xsd:integer",
     "minValue": 0,
-    "maxValue": 11,
+    "maxValue": 9,
     "choices": [
         {
             "name": {
@@ -32,51 +32,39 @@
         },
         {
             "name": {
-                "en": "physically linked"
+                "en": "physically linked mastoids"
             },
             "value": 4
         },
         {
             "name": {
-                "en": "Grass"
+                "en": "physically linked earlobes"
             },
             "value": 5
         },
         {
             "name": {
-                "en": "mastoids"
+                "en": "Cz"
             },
             "value": 6
         },
         {
             "name": {
-                "en": "physically linked earlobes"
+                "en": "tip of the nose"
             },
             "value": 7
         },
         {
             "name": {
-                "en": "Cz"
+                "en": "balanced non-cephalic reference"
             },
             "value": 8
         },
         {
             "name": {
-                "en": "tip of the nose"
+                "en": "other and alternatives (e.g. DRL)"
             },
             "value": 9
-        },
-        {
-            "name": {
-                "en": "balanced non-cephalic reference"
-            },
-            "value": 10
-        },
-        {
-            "name": {
-                "en": "average"
-            },
-            "value": 11
         }
     ]
 }

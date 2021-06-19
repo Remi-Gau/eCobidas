@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "impedance_alternative.jsonld",
+    "prefLabel": {
+        "en": "impedance_alternative"
+    },
+    "description": "alternative measure to impedance threshold (e.g. impedance range, other non-impedance measures)",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Specify the data quality information in the field below."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

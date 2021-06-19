@@ -1,0 +1,385 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "preprocessing_schema.jsonld",
+    "prefLabel": {
+        "en": "Preprocessing"
+    },
+    "description": "preprocessing",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/filtering_software.jsonld",
+            "items/filter_software_details.jsonld",
+            "items/offline_filter_unit.jsonld",
+            "items/offline_reference.jsonld",
+            "items/type_offline_reference.jsonld",
+            "items/other_type_offline_reference.jsonld",
+            "items/offline_highpass_filter_cutoff.jsonld",
+            "items/offline_lowpass_filter_cutoff.jsonld",
+            "items/offline_highpass_filter_rolloff.jsonld",
+            "items/offline_lowpass_filter_rolloff.jsonld",
+            "items/downsample_data.jsonld",
+            "items/sampling_frequency.jsonld",
+            "items/rereference_software.jsonld",
+            "items/rereference_software_details.jsonld",
+            "items/new_reference.jsonld",
+            "items/artifact_steps_number.jsonld",
+            "items/artifact_definition_1.jsonld",
+            "items/artifact_details_1.jsonld",
+            "items/artifact_software_1.jsonld",
+            "items/artifact_software_1_details.jsonld",
+            "items/artifact_definition_2.jsonld",
+            "items/artifact_action_2.jsonld",
+            "items/artifact_details_2.jsonld",
+            "items/artifact_software_2.jsonld",
+            "items/artifact_software_2_details.jsonld",
+            "items/epoch_software.jsonld",
+            "items/epoch_software_details.jsonld",
+            "items/epoch_beginning.jsonld",
+            "items/epoch_trigger_event.jsonld",
+            "items/epoch_end.jsonld",
+            "items/baseline_software.jsonld",
+            "items/baseline_software_details.jsonld",
+            "items/baseline_beginning.jsonld",
+            "items/baseline_end.jsonld",
+            "items/baseline_method.jsonld",
+            "items/baseline_other_method_details.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "filtering_software",
+                "isAbout": "items/filtering_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "filter_software_details",
+                "isAbout": "items/filter_software_details.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_filter_unit",
+                "isAbout": "items/offline_filter_unit.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_reference",
+                "isAbout": "items/offline_reference.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "type_offline_reference",
+                "isAbout": "items/type_offline_reference.jsonld",
+                "isVis": "offline_reference == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "other_type_offline_reference",
+                "isAbout": "items/other_type_offline_reference.jsonld",
+                "isVis": "type_offline_reference == 5",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_highpass_filter_cutoff",
+                "isAbout": "items/offline_highpass_filter_cutoff.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_lowpass_filter_cutoff",
+                "isAbout": "items/offline_lowpass_filter_cutoff.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_highpass_filter_rolloff",
+                "isAbout": "items/offline_highpass_filter_rolloff.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_lowpass_filter_rolloff",
+                "isAbout": "items/offline_lowpass_filter_rolloff.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "downsample_data",
+                "isAbout": "items/downsample_data.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "sampling_frequency",
+                "isAbout": "items/sampling_frequency.jsonld",
+                "isVis": "downsample_data == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "rereference_software",
+                "isAbout": "items/rereference_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "rereference_software_details",
+                "isAbout": "items/rereference_software_details.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "new_reference",
+                "isAbout": "items/new_reference.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "artifact_steps_number",
+                "isAbout": "items/artifact_steps_number.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "artifact_definition_1",
+                "isAbout": "items/artifact_definition_1.jsonld",
+                "isVis": "artifact_steps_number>=1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "artifact_details_1",
+                "isAbout": "items/artifact_details_1.jsonld",
+                "isVis": "artifact_steps_number>=1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "artifact_software_1",
+                "isAbout": "items/artifact_software_1.jsonld",
+                "isVis": "artifact_steps_number>=1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "artifact_software_1_details",
+                "isAbout": "items/artifact_software_1_details.jsonld",
+                "isVis": "artifact_steps_number>=1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "artifact_definition_2",
+                "isAbout": "items/artifact_definition_2.jsonld",
+                "isVis": "artifact_steps_number>=2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "artifact_action_2",
+                "isAbout": "items/artifact_action_2.jsonld",
+                "isVis": "artifact_steps_number>=2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "artifact_details_2",
+                "isAbout": "items/artifact_details_2.jsonld",
+                "isVis": "artifact_steps_number>=2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "artifact_software_2",
+                "isAbout": "items/artifact_software_2.jsonld",
+                "isVis": "artifact_steps_number>=2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "artifact_software_2_details",
+                "isAbout": "items/artifact_software_2_details.jsonld",
+                "isVis": "artifact_steps_number>=2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "epoch_software",
+                "isAbout": "items/epoch_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "epoch_software_details",
+                "isAbout": "items/epoch_software_details.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "epoch_beginning",
+                "isAbout": "items/epoch_beginning.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "epoch_trigger_event",
+                "isAbout": "items/epoch_trigger_event.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "epoch_end",
+                "isAbout": "items/epoch_end.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "baseline_software",
+                "isAbout": "items/baseline_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "baseline_software_details",
+                "isAbout": "items/baseline_software_details.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "baseline_beginning",
+                "isAbout": "items/baseline_beginning.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "baseline_end",
+                "isAbout": "items/baseline_end.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "baseline_method",
+                "isAbout": "items/baseline_method.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "baseline_other_method_details",
+                "isAbout": "items/baseline_other_method_details.jsonld",
+                "isVis": "baseline method == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

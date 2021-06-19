@@ -1,0 +1,9 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:ResponseOption",
+    "@id": "macos_version.jsonld",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 0,
+    "choices": []
+}

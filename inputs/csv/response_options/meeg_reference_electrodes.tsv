@@ -3,11 +3,9 @@ left mastoid	0
 right mastoid	1
 left earlobe	2
 right earlobe	3
-physically linked	4
-Grass	5
-mastoids	6
+physically linked mastoids	4
 physically linked earlobes	7
 Cz	8
 tip of the nose	9
 balanced non-cephalic reference	10
-average	11
+other and alternatives (e.g. DRL)	11

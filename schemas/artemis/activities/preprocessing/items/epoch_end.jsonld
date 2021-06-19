@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "epoch_end.jsonld",
+    "prefLabel": {
+        "en": "Epoch end"
+    },
+    "description": "Epoch end",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "What was the epoch end (in ms) relative to a trigger point?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

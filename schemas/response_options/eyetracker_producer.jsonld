@@ -1,0 +1,88 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:ResponseOption",
+    "@id": "eyetracker_producer.jsonld",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 12,
+    "choices": [
+        {
+            "name": {
+                "en": "Applied Science"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "Arrington Research"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "BioMed Jena"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "ISCAN"
+            },
+            "value": 3
+        },
+        {
+            "name": {
+                "en": "LC Technologies"
+            },
+            "value": 4
+        },
+        {
+            "name": {
+                "en": "Locarna Systems"
+            },
+            "value": 5
+        },
+        {
+            "name": {
+                "en": "Nihon-Kohden"
+            },
+            "value": 6
+        },
+        {
+            "name": {
+                "en": "SMI"
+            },
+            "value": 7
+        },
+        {
+            "name": {
+                "en": "SR Research"
+            },
+            "value": 8
+        },
+        {
+            "name": {
+                "en": "Sony"
+            },
+            "value": 9
+        },
+        {
+            "name": {
+                "en": "Takei Instruments"
+            },
+            "value": 10
+        },
+        {
+            "name": {
+                "en": "Tobii"
+            },
+            "value": 11
+        },
+        {
+            "name": {
+                "en": "other"
+            },
+            "value": 12
+        }
+    ]
+}

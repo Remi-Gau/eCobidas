@@ -4,7 +4,7 @@
     "@id": "meeg_amplifier_brands.jsonld",
     "valueType": "xsd:integer",
     "minValue": 0,
-    "maxValue": 16,
+    "maxValue": 25,
     "choices": [
         {
             "name": {
@@ -14,7 +14,7 @@
         },
         {
             "name": {
-                "en": "Neuroscan"
+                "en": "Neuroscan (e.g., SynAmps RT, NuAmps)"
             },
             "value": 1
         },
@@ -107,6 +107,60 @@
                 "en": "Psylab"
             },
             "value": 16
+        },
+        {
+            "name": {
+                "en": "MUSE"
+            },
+            "value": 17
+        },
+        {
+            "name": {
+                "en": "g.tec"
+            },
+            "value": 18
+        },
+        {
+            "name": {
+                "en": "MindMedia (e.g., Nexus 32)"
+            },
+            "value": 19
+        },
+        {
+            "name": {
+                "en": "BlindSight (e.g., NeurOne Tesla)"
+            },
+            "value": 20
+        },
+        {
+            "name": {
+                "en": "Mitsar"
+            },
+            "value": 21
+        },
+        {
+            "name": {
+                "en": "mBrainTrain (e.g., SMARTING)"
+            },
+            "value": 22
+        },
+        {
+            "name": {
+                "en": "neuroConn"
+            },
+            "value": 23
+        },
+        {
+            "name": {
+                "en": "Micromed"
+            },
+            "value": 24
+        },
+        {
+            "name": {
+                "en": "other (please specify Model of amplifier in the next question)"
+            },
+            "value": 25
         }
     ]
 }

@@ -1,5 +1,5 @@
-import warnings
-from numpy import linspace
+import warnings, re
+from numpy import linspace, isnan
 
 from utils import convert_to_str, convert_to_int, snake_case
 from reproschema.models.item import Item, ResponseOption
@@ -9,6 +9,7 @@ def set_item_name(this_item):
 
     if "item" not in this_item.keys():
         item_name = convert_to_str(this_item["item_pref_label"])
+        item_name = item_name.lower()
     elif isinstance(convert_to_str(this_item["item"]), float):
         item_name = convert_to_str(this_item["item_pref_label"])
     elif convert_to_str(this_item["item"]) == "":
@@ -17,15 +18,22 @@ def set_item_name(this_item):
         item_name = convert_to_str(this_item["item"])
 
     item_name = snake_case(item_name)
+    item_name = re.sub("[^-_a-zA-Z0-9]+", "", item_name)
 
     return item_name
 
 
 def get_item_info(this_item):
 
-    pref_label = convert_to_str(this_item["item_pref_label"])
-    description = convert_to_str(this_item["item_description"])
     item_name = set_item_name(this_item)
+    if "item_pref_label" in this_item.keys():
+        pref_label = convert_to_str(this_item["item_pref_label"])
+    else:
+        pref_label = item_name.replace("_", " ")
+
+    description = pref_label
+    if "item_description" in this_item.keys():
+        description = convert_to_str(this_item["item_description"])
 
     question = convert_to_str(this_item["question"])
     question = question.replace("\n", "")
@@ -64,8 +72,13 @@ def get_visibility(this_item):
     elif visibility in ["0", 0]:
         visibility = False
 
-    # TODO
-    # help with javascript expression input and validation
+    elif isinstance(visibility, float) and isnan(visibility):
+        visibility = True
+
+    else:
+        # TODO
+        # help with javascript expression input and validation
+        return visibility
 
     return visibility
 
@@ -100,8 +113,9 @@ def define_choices(item, field_type, choices):
         "multitext",
         "text",
         "radio",
+        "radio_multiple",
         "select",
-        "select",
+        "select_multiple",
         "date",
         "float",
         "int",
@@ -122,19 +136,25 @@ def define_choices(item, field_type, choices):
     if field_type == "multitext":
         item.set_input_type_as_multitext()
 
+    if field_type == "text":
+        item.set_input_type_as_text(3000)
+
     elif field_type == "slider":
         response_options = slider_response(choices)
         item.set_input_type_as_slider(response_options)
 
-    if field_type in ["radio", "select"]:
+    if field_type in ["radio", "radio_multiple", "select", "select_multiple"]:
 
         response_options = list_responses_options(choices)
 
-        if field_type == "radio":
+        if field_type in ["radio_multiple", "select_multiple"]:
+            response_options.set_multiple_choice(True)
+
+        if field_type in ["radio", "radio_multiple"]:
             item.set_input_type_as_radio(response_options)
 
         # if we have a dropdown menu
-        elif field_type == "select":
+        elif field_type in ["select", "select_multiple"]:
             response_options.add_choice("other", len(choices))
             response_options.set_max(len(choices))
             item.set_input_type_as_select(response_options)

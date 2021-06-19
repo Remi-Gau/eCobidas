@@ -1,0 +1,133 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "artemis_schema.jsonld",
+    "prefLabel": {
+        "en": "Artemis"
+    },
+    "description": "Artemis",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_artemis-en.md ",
+        "inLanguage": "en"
+    },
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "../activities/hardware/hardware_schema.jsonld",
+            "../activities/design_and_sample/design_and_sample_schema.jsonld",
+            "../activities/channel_choise_for_analysis/channel_choise_for_analysis_schema.jsonld",
+            "../activities/acquisition/acquisition_schema.jsonld",
+            "../activities/measurement/measurement_schema.jsonld",
+            "../activities/preprocessing/preprocessing_schema.jsonld",
+            "../activities/visualization/visualization_schema.jsonld",
+            "../activities/other/other_schema.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "acquisition",
+                "isAbout": "../activities/acquisition/acquisition_schema.jsonld",
+                "prefLabel": {
+                    "en": "Acquisition"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "preprocessing",
+                "isAbout": "../activities/preprocessing/preprocessing_schema.jsonld",
+                "prefLabel": {
+                    "en": "Preprocessing"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "hardware",
+                "isAbout": "../activities/hardware/hardware_schema.jsonld",
+                "prefLabel": {
+                    "en": "Hardware"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "channel_choice_for_analysis",
+                "isAbout": "../activities/channel_choise_for_analysis/channel_choise_for_analysis_schema.jsonld",
+                "prefLabel": {
+                    "en": "Channel choice"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "design_and_sample",
+                "isAbout": "../activities/design_and_sample/design_and_sample_schema.jsonld",
+                "prefLabel": {
+                    "en": "Design and sample"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "measurement",
+                "isAbout": "../activities/measurement/measurement_schema.jsonld",
+                "prefLabel": {
+                    "en": "Measurement"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visualization",
+                "isAbout": "../activities/visualization/visualization_schema.jsonld",
+                "prefLabel": {
+                    "en": "Visualization"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "Other",
+                "isAbout": "../activities/other/other_schema.jsonld",
+                "prefLabel": {
+                    "en": "Other"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}
