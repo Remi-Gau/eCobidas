@@ -153,6 +153,36 @@ def test_get_item_info_with_name():
     assert item_info == expected
 
 
+def test_get_item_info_with_only_name():
+
+    this_item = pd.DataFrame(
+        {
+            "visibility": ["1"],
+            "mandatory": ["2"],
+            "field_type": ["radio"],
+            "question": ["test question"],
+            "choices": ["choice A | choice B"],
+            "item": ["TEST_1"],
+            "item_description": ["desc"],
+        }
+    )
+
+    item_info = get_item_info(this_item)
+
+    expected = {
+        "name": "TEST_1",
+        "pref_label": "TEST 1",
+        "question": "test question",
+        "field_type": "radio",
+        "choices": ["choice A", "choice B"],
+        "visibility": True,
+        "mandatory": True,
+        "description": "desc",
+    }
+
+    assert item_info == expected
+
+
 @pytest.mark.parametrize(
     "input, expected",
     [

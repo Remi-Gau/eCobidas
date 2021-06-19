@@ -25,13 +25,15 @@ def set_item_name(this_item):
 
 def get_item_info(this_item):
 
-    pref_label = convert_to_str(this_item["item_pref_label"])
+    item_name = set_item_name(this_item)
+    if "item_pref_label" in this_item.keys():
+        pref_label = convert_to_str(this_item["item_pref_label"])
+    else:
+        pref_label = item_name.replace("_", " ")
 
     description = pref_label
     if "item_description" in this_item.keys():
         description = convert_to_str(this_item["item_description"])
-
-    item_name = set_item_name(this_item)
 
     question = convert_to_str(this_item["question"])
     question = question.replace("\n", "")
