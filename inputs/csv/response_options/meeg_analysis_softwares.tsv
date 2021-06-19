@@ -4,15 +4,15 @@ Brain Vision Analyzer	1
 Brainstorm	2
 Cartool	3
 Curry	4
-custom and others	5
 EEGlab (+ ERPlab)	6
 EEProbe	7
 ERP system	8
 FieldTrip 	9
 InstEP	10
-MatLab custom script	11
-MNE	12
+Custom scripts (any language)	11
+MNE-Python	12
 NetStation	13
 Scan	14
 TrackWalker	15
-Other	16
+Other	17
+SPM	16
