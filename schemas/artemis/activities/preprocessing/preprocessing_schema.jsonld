@@ -15,6 +15,7 @@
         "shuffle": false,
         "order": [
             "items/filtering_software.jsonld",
+            "items/filter_software_details.jsonld",
             "items/offline_filter_unit.jsonld",
             "items/offline_reference.jsonld",
             "items/type_offline_reference.jsonld",
@@ -26,20 +27,25 @@
             "items/downsample_data.jsonld",
             "items/sampling_frequency.jsonld",
             "items/rereference_software.jsonld",
+            "items/rereference_software_details.jsonld",
             "items/new_reference.jsonld",
             "items/artifact_steps_number.jsonld",
             "items/artifact_definition_1.jsonld",
             "items/artifact_details_1.jsonld",
             "items/artifact_software_1.jsonld",
-            "items/artifact_other_software.jsonld",
+            "items/artifact_software_1_details.jsonld",
             "items/artifact_definition_2.jsonld",
             "items/artifact_action_2.jsonld",
             "items/artifact_details_2.jsonld",
             "items/artifact_software_2.jsonld",
+            "items/artifact_software_2_details.jsonld",
             "items/epoch_software.jsonld",
+            "items/epoch_software_details.jsonld",
             "items/epoch_beginning.jsonld",
+            "items/epoch_trigger_event.jsonld",
             "items/epoch_end.jsonld",
             "items/baseline_software.jsonld",
+            "items/baseline_software_details.jsonld",
             "items/baseline_beginning.jsonld",
             "items/baseline_end.jsonld",
             "items/baseline_method.jsonld",
@@ -49,6 +55,15 @@
             {
                 "variableName": "filtering_software",
                 "isAbout": "items/filtering_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "filter_software_details",
+                "isAbout": "items/filter_software_details.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -85,7 +100,7 @@
             {
                 "variableName": "other_type_offline_reference",
                 "isAbout": "items/other_type_offline_reference.jsonld",
-                "isVis": "type_offline_reference == 6",
+                "isVis": "type_offline_reference == 5",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -155,6 +170,15 @@
                 ]
             },
             {
+                "variableName": "rereference_software_details",
+                "isAbout": "items/rereference_software_details.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
                 "variableName": "new_reference",
                 "isAbout": "items/new_reference.jsonld",
                 "isVis": true,
@@ -200,9 +224,9 @@
                 ]
             },
             {
-                "variableName": "artifact_other_software",
-                "isAbout": "items/artifact_other_software.jsonld",
-                "isVis": "artifact software 1 > 18",
+                "variableName": "artifact_software_1_details",
+                "isAbout": "items/artifact_software_1_details.jsonld",
+                "isVis": "artifact_steps_number>=1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -245,6 +269,15 @@
                 ]
             },
             {
+                "variableName": "artifact_software_2_details",
+                "isAbout": "items/artifact_software_2_details.jsonld",
+                "isVis": "artifact_steps_number>=2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
                 "variableName": "epoch_software",
                 "isAbout": "items/epoch_software.jsonld",
                 "isVis": true,
@@ -254,8 +287,26 @@
                 ]
             },
             {
+                "variableName": "epoch_software_details",
+                "isAbout": "items/epoch_software_details.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
                 "variableName": "epoch_beginning",
                 "isAbout": "items/epoch_beginning.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "epoch_trigger_event",
+                "isAbout": "items/epoch_trigger_event.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -274,6 +325,15 @@
             {
                 "variableName": "baseline_software",
                 "isAbout": "items/baseline_software.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "baseline_software_details",
+                "isAbout": "items/baseline_software_details.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

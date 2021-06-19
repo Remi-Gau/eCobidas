@@ -1,21 +1,21 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "auditory_type.jsonld",
+    "@id": "lat_measure_software_details.jsonld",
     "prefLabel": {
-        "en": "auditory type"
+        "en": "lat measure software details"
     },
-    "description": "auditory type",
+    "description": "lat measure software details",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Type, manufacturer and model of the delivery device"
+        "en": "Specify software version if applicable, and software name and version if \"other\" was selected."
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 300
+        "maxLength": 3000
     }
 }

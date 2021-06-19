@@ -1,21 +1,21 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "apparent_size.jsonld",
+    "@id": "waveform_further_details.jsonld",
     "prefLabel": {
-        "en": "apparent size"
+        "en": "waveform further details"
     },
-    "description": "apparent size",
+    "description": "waveform further details",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Stimuli apparent size"
+        "en": "Please specify details of how the waveforms were constructed in the further clarification text. The details should be sufficient to allow replication."
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 300
+        "maxLength": 3000
     }
 }

@@ -15,7 +15,7 @@
         "shuffle": false,
         "order": [
             "items/acquisition_software.jsonld",
-            "items/acquisition_software_further_details.jsonld",
+            "items/acquisition_software_details.jsonld",
             "items/acquisiton_quality_measure.jsonld",
             "items/impedance_threshold.jsonld",
             "items/impedance_alternative.jsonld",
@@ -51,8 +51,8 @@
                 ]
             },
             {
-                "variableName": "acquisition_software_further_details",
-                "isAbout": "items/acquisition_software_further_details.jsonld",
+                "variableName": "acquisition_software_details",
+                "isAbout": "items/acquisition_software_details.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

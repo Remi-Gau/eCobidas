@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "In your final analysis, how many trials, on average, did you include for each condition?"
+        "en": "In your final analysis, how many trials, on average, did you include for each condition? (specify for one subject)"
     },
     "responseOptions": {
         "valueType": "xsd:float"

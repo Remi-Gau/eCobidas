@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please insert the minimum number of trials analysed per condition:"
+        "en": "Please specify the minimum number of trials analyzed per condition for any subject:"
     },
     "responseOptions": {
         "valueType": "xsd:string",

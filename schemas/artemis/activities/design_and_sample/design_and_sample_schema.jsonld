@@ -28,8 +28,7 @@
             "items/participants_per_group.jsonld",
             "items/order_of_group.jsonld",
             "items/presenting_software.jsonld",
-            "items/presenting_software_others.jsonld",
-            "items/presenting_software_version.jsonld"
+            "items/presenting_software_details.jsonld"
         ],
         "addProperties": [
             {
@@ -159,17 +158,8 @@
                 ]
             },
             {
-                "variableName": "presenting_software_others",
-                "isAbout": "items/presenting_software_others.jsonld",
-                "isVis": "presenting_software > 13",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "presenting_software_version",
-                "isAbout": "items/presenting_software_version.jsonld",
+                "variableName": "presenting_software_details",
+                "isAbout": "items/presenting_software_details.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

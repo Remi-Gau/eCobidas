@@ -17,7 +17,6 @@
             "items/electrode_placement_type.jsonld",
             "items/electrode_placement_type_cap.jsonld",
             "items/cap_other.jsonld",
-            "items/electrode_placement_type_single_electrodes.jsonld",
             "items/cap_model.jsonld",
             "items/electrode_manufacturer.jsonld",
             "items/electrode_model.jsonld",
@@ -53,15 +52,6 @@
                 "variableName": "cap_other",
                 "isAbout": "items/cap_other.jsonld",
                 "isVis": "electrode_placement_type_cap == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "electrode_placement_type_single_electrodes",
-                "isAbout": "items/electrode_placement_type_single_electrodes.jsonld",
-                "isVis": "electrode_placement_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

@@ -12,36 +12,42 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Select the procedure which was used for amplitude measurement in this time window."
+        "en": "Select the procedure which was used to identify start and end of the time window"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 4,
         "choices": [
             {
                 "name": {
-                    "en": "visual inspection"
+                    "en": "visual inspection of grand averages in separate conditions across participants"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "consecutive significant tests to determine the start and the end of a window that will be analysed "
+                    "en": "visual inspection of grand average across all conditions and participants (flattened average approach, see  https://doi.org/10.1371/journal.pcbi.1008286         )"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "window around a peak"
+                    "en": "consecutive significant tests to determine the start and the end of a window that will be analysed "
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "windows across epoch with/without overlap (time windows decided after seeing the waveforms, specify details) "
+                    "en": "window around a peak"
                 },
                 "value": 3
+            },
+            {
+                "name": {
+                    "en": "windows across epoch with/without overlap (time windows decided after seeing the waveforms, specify details) "
+                },
+                "value": 4
             }
         ],
         "multipleChoice": false

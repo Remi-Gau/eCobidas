@@ -17,23 +17,8 @@
     },
     "ui": {
         "shuffle": false,
-        "order": [
-            "../activities/measurement/measurement_schema.jsonld"
-        ],
-        "addProperties": [
-            {
-                "variableName": "measurement",
-                "isAbout": "../activities/measurement/measurement_schema.jsonld",
-                "prefLabel": {
-                    "en": "Measurement"
-                },
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            }
-        ],
+        "order": [],
+        "addProperties": [],
         "allow": [
             "reproschema:AutoAdvance",
             "reproschema:AllowExport"

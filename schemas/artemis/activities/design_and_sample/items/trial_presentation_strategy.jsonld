@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "How did you decide to present trials?"
+        "en": "What determined the number of trials each subject was presented with?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -27,7 +27,7 @@
             },
             {
                 "name": {
-                    "en": "adaptive N of trails (please explain)"
+                    "en": "adaptive N of trials (please explain)"
                 },
                 "value": 1
             },

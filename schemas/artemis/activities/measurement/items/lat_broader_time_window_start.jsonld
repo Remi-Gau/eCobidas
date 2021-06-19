@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Broader time window used for locating the measurement window: START [ms]"
+        "en": "  If the entire epoch was analyzed, enter \u201c0\u201d: START [ms]"
     },
     "responseOptions": {
         "valueType": "xsd:float"

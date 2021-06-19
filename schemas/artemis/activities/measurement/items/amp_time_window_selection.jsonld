@@ -1,23 +1,23 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "amp_window_selection.jsonld",
+    "@id": "amp_time_window_selection.jsonld",
     "prefLabel": {
-        "en": "amp window selection"
+        "en": "amp time window selection"
     },
-    "description": "amp window selection",
+    "description": "amp time window selection",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "How was this amplitude measurement window selected?   A priori: the window is selected in advance Data-driven: the measurement window is selected based on data obtained in the current study.  In a data driven approach, either a wider window or the entire epoch are analyzed or examined to determine which will be the final measurement window. "
+        "en": "How was this amplitude measurement window selected?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -36,6 +36,12 @@
                     "en": "no window selection (e.g. point-by-point analysis such as mass univariate analysis)"
                 },
                 "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
             }
         ],
         "multipleChoice": false

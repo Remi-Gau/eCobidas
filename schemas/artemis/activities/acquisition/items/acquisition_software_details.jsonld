@@ -1,21 +1,21 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "color.jsonld",
+    "@id": "acquisition_software_details.jsonld",
     "prefLabel": {
-        "en": "color"
+        "en": "acquisition_software_details"
     },
-    "description": "color",
+    "description": "software version, and software name or brief description if \"other and custom\" was selected",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Color"
+        "en": "Specify software version if applicable, and software name and version if \"other\" was selected."
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 300
+        "maxLength": 3000
     }
 }

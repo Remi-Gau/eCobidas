@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "electrode_placement_type_single_electrodes.jsonld",
+    "@id": "artifact_software_2_details.jsonld",
     "prefLabel": {
-        "en": "Electrode placement type Single Electrodes"
+        "en": "artifact_software_2_details"
     },
-    "description": "Electrode placement type Single Electrodes",
+    "description": "artifact_software_2_details",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please specify details about electrode placement."
+        "en": "Specify software version if applicable, and software name and version if \"other\" was selected."
     },
     "responseOptions": {
         "valueType": "xsd:string",

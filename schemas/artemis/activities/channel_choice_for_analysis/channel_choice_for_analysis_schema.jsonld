@@ -1,11 +1,11 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "channel_choise_for_analysis_schema.jsonld",
+    "@id": "channel_choice_for_analysis_schema.jsonld",
     "prefLabel": {
-        "en": "Channel choise for analysis"
+        "en": "Channel choice for analysis"
     },
-    "description": "channel choise for analysis",
+    "description": "channel choice for analysis",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {

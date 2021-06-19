@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "How many channels were active for the recording (excluding reference and ground channels, and VEOG and HEOG)?"
+        "en": "How many channels were active for the recording (excluding reference channels, ground channels, VEOG and HEOG)?"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

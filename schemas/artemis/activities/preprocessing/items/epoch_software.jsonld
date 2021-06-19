@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Which analysis software do you use for  epoching EEG data?"
+        "en": "Which analysis software do you use for epoching EEG data?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/meeg_analysis_softwares.jsonld"
 }
