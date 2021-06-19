@@ -1,4 +1,4 @@
 mkdocs-material
 pymdown-extensions
 pre-commit
--r python/conversion/requirements.txt
+-r python/requirements.txt
