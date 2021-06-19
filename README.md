@@ -53,9 +53,9 @@ guidelines:
 
 ### Sub-checklists: work in progress
 
--   [participants](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/participants/participants_schema)
--   [behavior](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/behavior/behavior_schema)
--   [common acquisition parameters to all MRI sequences](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/Remi-Gau/eCobidas/remi-dev/protocols/mri_all_sequences/mri_all_sequences_schema)
+-   [participants](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/schemas/core/protocols/participants_schema.jsonld)
+-   [behavior](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/schemas/core/protocols/behavior_schema.jsonld)
+-   [common acquisition parameters to all MRI sequences](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/schemas/mri/protocols/all_sequences_schema.jsonld)
 
 ## Want to know more ?
 

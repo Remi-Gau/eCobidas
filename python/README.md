@@ -8,7 +8,7 @@ There are few dependencies (for now). One of them is the
 [`reproschema-py`](https://github.com/ReproNim/reproschema-py) package that
 helps to validate that the schema you create is valid.
 
-Preferaby use a virtual environment:
+Preferably use a virtual environment:
 
 ```bash
 virtualenv -p python3.8 env
@@ -94,5 +94,6 @@ After pushing to github:
 
 ```
 https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema
+
 https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
 ```
