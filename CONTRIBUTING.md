@@ -13,6 +13,9 @@ If you are running Windows 10, you will will need to use
 An easy way to install Python is to rely on
 [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
 
+<!-- TODO 
+check if virtualenv is installed in base conda
+-->
 ### node.js 12.x
 
 A good way to To install javascript [`node.js`](<(https://nodejs.org/en/)>), is
