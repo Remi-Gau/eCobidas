@@ -6,14 +6,25 @@
 #
 # witrh https://github.com/lindenb/makefile2graph
 
-.PHONY: clean_neurovault
+.PHONY:
 
-# INSTALL
-# TODO
-# pip install -r requirements.txt
-# git clone https://github.com/Remi-Gau/reproschema-py.git  ../../
-# cd ../../reproschema-py
-# git checkout remi_schema_creator
+
+# ---------------------------------------------------------------------------- #
+# 							         INSTALL
+# ---------------------------------------------------------------------------- #
+# install the required packages and also install the local package for ecobidas conversion
+# clone Rémi's fork of Reproschema-py on your machine and install the local package
+install:
+	pip install -r requirements.txt
+	cd python && pip install -e . && cd ..
+	mkdir -p lib && git clone https://github.com/Remi-Gau/reproschema-py.git lib/reproschema-py
+	cd lib/reproschema-py && git checkout remi_schema_creator && pip install -e .
+	pre-commit install
+
+
+# ---------------------------------------------------------------------------- #
+# 							   CONVERSION TO JSONLD
+# ---------------------------------------------------------------------------- #
 
 INPUT_DIR = $(inputs/csv)
 

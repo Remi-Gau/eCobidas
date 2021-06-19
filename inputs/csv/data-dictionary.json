@@ -83,11 +83,11 @@
         "Description": "type of response expected",
         "Levels": [
             {
-                "Name": "int",
+                "Name": "integer",
                 "Description": ""
             },
             {
-                "Name": "char",
+                "Name": "text",
                 "Description": "a text answer is expected"
             },
             {
@@ -95,40 +95,16 @@
                 "Description": ""
             },
             {
-                "Name": "boolean",
-                "Description": "a 'yes/no/don't know' radio item is expected"
-            },
-            {
                 "Name": "radio",
                 "Description": ""
             },
             {
-                "Name": "dropdown",
+                "Name": "select",
                 "Description": ""
             },
             {
                 "Name": "slider",
                 "Description": ""
-            },
-            {
-                "Name": "mri_software",
-                "Description": "list of mri softwares"
-            },
-            {
-                "Name": "cost_function",
-                "Description": "list of cost functions"
-            },
-            {
-                "Name": "interpolation",
-                "Description": "list of interpolation"
-            },
-            {
-                "Name": "multiple_comparison",
-                "Description": "list of multiple comparison correction techniques"
-            },
-            {
-                "Name": "stimulus_presentation",
-                "Description": "list of stimulus presentation softwares"
             }
         ]
     },
@@ -187,7 +163,7 @@
             {
                 "Name": 3,
                 "Description": "unknown"
-            } 
+            }
         ]
     },
     "bids_file": {

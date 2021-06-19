@@ -2,25 +2,18 @@
 # create another entry point for creating response files
 # see how reproschema uses click to create command line calls `reproschema validate`
 
-import click
+import os, click
 from create_schema import create_schema
-from utils import print_download
+from utils import print_download, get_root_dir
 
-# "neurovault"
-# "pet",
-# "eyetracking",
-# "nimg_reexecution",
-# "behavior",
-# "participants",
-# "all_sequences",
-# "nimg_reexecution",
+default_dir = os.path.join(get_root_dir(), "schemas")
 
 
 @click.command()
 @click.option("--schema", default="neurovault", help="Name of the schema to create.")
 @click.option(
     "--out_dir",
-    default="/home/remi/github/cobidas_chckls/schemas",
+    default=default_dir,
     help="Where the files will be written on your machine.",
 )
 @click.option(
