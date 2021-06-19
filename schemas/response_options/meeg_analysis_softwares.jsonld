@@ -38,73 +38,73 @@
         },
         {
             "name": {
-                "en": "custom and others"
+                "en": "EEGlab (+ ERPlab)"
             },
             "value": 5
         },
         {
             "name": {
-                "en": "EEGlab (+ ERPlab)"
+                "en": "EEProbe"
             },
             "value": 6
         },
         {
             "name": {
-                "en": "EEProbe"
+                "en": "ERP system"
             },
             "value": 7
         },
         {
             "name": {
-                "en": "ERP system"
+                "en": "FieldTrip "
             },
             "value": 8
         },
         {
             "name": {
-                "en": "FieldTrip "
+                "en": "InstEP"
             },
             "value": 9
         },
         {
             "name": {
-                "en": "InstEP"
+                "en": "Custom scripts (any language)"
             },
             "value": 10
         },
         {
             "name": {
-                "en": "MatLab custom script"
+                "en": "MNE-Python"
             },
             "value": 11
         },
         {
             "name": {
-                "en": "MNE"
+                "en": "NetStation"
             },
             "value": 12
         },
         {
             "name": {
-                "en": "NetStation"
+                "en": "Scan"
             },
             "value": 13
         },
         {
             "name": {
-                "en": "Scan"
+                "en": "TrackWalker"
             },
             "value": 14
         },
         {
             "name": {
-                "en": "TrackWalker"
+                "en": "Other"
             },
             "value": 15
         },
         {
             "name": {
-                "en": "Other"
+                "en": "SPM"
             },
             "value": 16
         }
