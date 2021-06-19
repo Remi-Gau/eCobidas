@@ -2,18 +2,17 @@
 
 There are many ways in which you can contribute to this project.
 
-We have a list of
-[milestones](https://github.com/Remi-Gau/eCobidas/milestones) for the
-different features we would like to include in this project.
+We have a list of [milestones](https://github.com/Remi-Gau/eCobidas/milestones)
+for the different features we would like to include in this project.
 
 Those milestones have
-[several opened issues](https://github.com/Remi-Gau/eCobidas/issues)
-related to them: have a look through those issues to see if there is any of them
-where you think you can help.
+[several opened issues](https://github.com/Remi-Gau/eCobidas/issues) related to
+them: have a look through those issues to see if there is any of them where you
+think you can help.
 
 We are also track the progress to our different goals using some of the
-integrated [kanban boards](https://github.com/Remi-Gau/eCobidas/projects)
-that github offers.
+integrated [kanban boards](https://github.com/Remi-Gau/eCobidas/projects) that
+github offers.
 
 > [Kanban boards](https://en.wikipedia.org/wiki/Kanban):
 
@@ -40,7 +39,8 @@ format.
 
 The spreadsheets are hosted on this
 [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
-and we try to keep a back-up in the [csv folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/csv).
+and we try to keep a back-up in the
+[csv folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/csv).
 
 The MRI part is the more advanced at this moment but we are looking for people
 to help with the M/EEG part.
@@ -50,7 +50,8 @@ details [here](./40-spreadsheets.md).
 
 ### Boilerplate method sections
 
-We want to create [boilerplate method sections](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/boilerplate)
+We want to create
+[boilerplate method sections](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/boilerplate)
 corresponding to a single item or a set of items of the checklist to automate
 methods writing once the checklist is completed. There is a lot of work to do
 there in terms of writing the boilerplate text as well as automating the methods
@@ -64,8 +65,8 @@ Boilerplate related issues listed
 If you don't understand something about the project, its goals, its
 implementation or how to use, then it's most likely that we did not do a good
 enough job at explaining and describing it.
-[Get in touch](https://github.com/Remi-Gau/eCobidas/tree/master/README.md#how-to-reach-us) and we can work together to improve
-our documentation.
+[Get in touch](https://github.com/Remi-Gau/eCobidas/tree/master/README.md#how-to-reach-us)
+and we can work together to improve our documentation.
 
 There are also
 [several aspects of the documentation](https://github.com/Remi-Gau/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Adocumentation)
@@ -73,16 +74,22 @@ that need to be expanded.
 
 ### Conversion scripts
 
-We use some [python code](https://github.com/Remi-Gau/eCobidas/tree/master/python) to convert the spreadsheets into the set
-of `jsonld` files that the user interface needs as inputs to display the
-checklists. This needs further improvement so if python is your jam, feel free
-to dive in.
+We use some
+[python code](https://github.com/Remi-Gau/eCobidas/tree/master/python) to
+convert the spreadsheets into the set of `jsonld` files that the user interface
+needs as inputs to display the checklists. This needs further improvement so if
+python is your jam, feel free to dive in.
 
 We are also using the
 [Reproschema python package](https://github.com/ReproNim/reproschema-py) to
 validate the schemas created. This package should also in the long-term help
 automating the creation of schemas, so there are definitely some features
 waiting to be written there.
+
+There is more information on how to set things up in the
+[CONTRIBUTING.md](https://github.com/Remi-Gau/eCobidas/tree/master/CONTRIBUTING.md)
+and the readme of the
+[python package](https://github.com/Remi-Gau/eCobidas/tree/master/python/README.md).
 
 ### User interface
 

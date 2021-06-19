@@ -41,7 +41,6 @@ conversion.
 
 ```bash
 ecobidas_convert    #<-- to create a whole protocol + activities
-ecobidas_responses  #<-- to create a response options file
 ```
 
 You only need to specify:

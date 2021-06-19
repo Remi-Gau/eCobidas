@@ -12,14 +12,17 @@
 # ---------------------------------------------------------------------------- #
 # 							         INSTALL
 # ---------------------------------------------------------------------------- #
-# install the required packages and also install the local package for ecobidas conversion
-# clone Rémi's fork of Reproschema-py on your machine and install the local package
+# install the required python and node packages and 
+# install the local package for ecobidas conversion
+# install the pre-commit hook
+# clone Rémi's fork of Reproschema-py and install the local package in the lib folder
 install:
 	pip install -r requirements.txt
 	cd python && pip install -e . && cd ..
 	mkdir -p lib && git clone https://github.com/Remi-Gau/reproschema-py.git lib/reproschema-py
 	cd lib/reproschema-py && git checkout remi_schema_creator && pip install -e .
 	pre-commit install
+	npm install `cat npm-requirements.txt`
 
 
 # ---------------------------------------------------------------------------- #
