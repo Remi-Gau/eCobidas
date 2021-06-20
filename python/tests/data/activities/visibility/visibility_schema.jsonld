@@ -16,7 +16,14 @@
         "order": [
             "items/base.jsonld",
             "items/base1.jsonld",
-            "items/base0.jsonld"
+            "items/base0.jsonld",
+            "items/radio_vis.jsonld",
+            "items/multi_gt_5.jsonld",
+            "items/multi_lt_2.jsonld",
+            "items/multi_2_or_5.jsonld",
+            "items/select_boolean.jsonld",
+            "items/select_boolean1.jsonld",
+            "items/select_boolean0.jsonld"
         ],
         "addProperties": [
             {
@@ -41,6 +48,69 @@
                 "variableName": "base0",
                 "isAbout": "items/base0.jsonld",
                 "isVis": "base==0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "radio_vis",
+                "isAbout": "items/radio_vis.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "multi_gt_5",
+                "isAbout": "items/multi_gt_5.jsonld",
+                "isVis": "select_vis>5",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "multi_lt_2",
+                "isAbout": "items/multi_lt_2.jsonld",
+                "isVis": "select_vis<=2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "multi_2_or_5",
+                "isAbout": "items/multi_2_or_5.jsonld",
+                "isVis": "select_vis == 2 OR select_vis == 5",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "select_boolean",
+                "isAbout": "items/select_boolean.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "select_boolean1",
+                "isAbout": "items/select_boolean1.jsonld",
+                "isVis": "select_boolean==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "select_boolean0",
+                "isAbout": "items/select_boolean0.jsonld",
+                "isVis": "select_boolean==0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
