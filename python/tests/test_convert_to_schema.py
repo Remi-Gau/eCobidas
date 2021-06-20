@@ -55,6 +55,21 @@ def test_create_schema():
         {"name": "activity_4", "items": ["float_item", "multitext_item", "TEXT"]},
         {"name": "activity_3", "items": ["integer_item", "slider_item"]},
         {"name": "activity_2", "items": ["number_of_subjects"]},
+        {
+            "name": "visibility",
+            "items": [
+                "base0",
+                "base1",
+                "base",
+                "multi_2_or_5",
+                "multi_gt_5",
+                "multi_lt_2",
+                "radio_vis",
+                "select_boolean0",
+                "select_boolean1",
+                "select_boolean",
+            ],
+        },
         # TODO year, date, country
     ]
 
