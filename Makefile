@@ -12,7 +12,7 @@
 # ---------------------------------------------------------------------------- #
 # 							         INSTALL
 # ---------------------------------------------------------------------------- #
-# install the required python and node packages and 
+# install the required python and node packages and
 # install the local package for ecobidas conversion
 # install the pre-commit hook
 # clone Rémi's fork of Reproschema-py and install the local package in the lib folder
@@ -110,7 +110,7 @@ clean_responses:
 	rm -rf schemas/response_options/
 
 download_responses: download_tsv.sh
-	bash download_tsv.sh resp-	
+	bash download_tsv.sh resp-
 
 convert_responses: download_responses
 	ecobidas_convert --schema resp-mri_soft
@@ -238,7 +238,7 @@ validate_mri: convert_mri
 	grep -r  "@context" schemas/core | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/core
 
-# ---------------------------------------------------------------------------- #	
+# ---------------------------------------------------------------------------- #
 
 
 # DOWNLOAD
@@ -257,13 +257,13 @@ validate_all:
 clean_all: clean_rexec clean_pet clean_eye clean_artemis clean_neurovault clean_responses
 
 
-clean_tsv: 
+clean_tsv:
 	rm -f $(ALL_TSV)
 
-clean_tests: 
-	rm -rf python/*/tests/outputs	
+clean_tests:
+	rm -rf python/*/tests/outputs
 
-clean_activities: 
+clean_activities:
 	rm -rf schemas/*/activities
 
 # HELPER FUNCTIONS

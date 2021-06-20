@@ -1,6 +1,6 @@
 # _Armitage_  - BIDS Report NLG
 
-Simple program for template-based natural language rendering of reports based on [BIDS](http://bids.neuroimaging.io/) neuroimaging data. 
+Simple program for template-based natural language rendering of reports based on [BIDS](http://bids.neuroimaging.io/) neuroimaging data.
 
 ## Getting Started
 
@@ -32,4 +32,3 @@ Would only render the _institution.tmp_ sub-template:
 ```
 The recordings were performed in the Stanford University, 450 Serra Mall, Stanford, CA 94305-2004, USA.
 ```
-

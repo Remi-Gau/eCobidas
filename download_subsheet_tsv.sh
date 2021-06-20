@@ -2,17 +2,17 @@
 
 #  TODO
 # refactor to fuse with the regular download script
-# 
-# 
+#
+#
 # Simple script to download the content of a specific sheet of a google spreadsheet in
 # the inputs folder
-# 
+#
 # https://stackoverflow.com/questions/27000699/google-spreadsheet-direct-download-link-for-only-one-sheet-as-excel
 #
 # USAGE:
 #
 #   sh download_subshhet_tsv.sh schema-abbreviation
-# 
+#
 # To know which are the possible comniation of section and subsection
 #
 #   awk '{print $1}' inputs/csv/spreadsheet_google_id.tsv
@@ -56,7 +56,7 @@ do
     echo Google ID: "${google_IDs[$i]}"
 
     ouput_folder="$csv_folder${subfolder[$i]}/"
-    mkdir -p $ouput_folder    
+    mkdir -p $ouput_folder
 
     echo "https://docs.google.com/spreadsheets/d/${google_IDs[$i]}/export?format=tsv&gid=${sheet_id[$i]}"
 
@@ -66,4 +66,3 @@ do
     printf "DONE\n"
 
 done
-

@@ -7,7 +7,7 @@
 
 <!-- TODO
 
-- Add link to Repronim talk 
+- Add link to Repronim talk
 - Add slides of that talk
 
 -->

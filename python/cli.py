@@ -4,7 +4,7 @@
 
 import os, click
 from create_schema import create_schema
-from utils import print_download, get_root_dir
+from utils import print_download, get_root_dir, get_metatable
 
 default_dir = os.path.join(get_root_dir(), "schemas")
 
@@ -20,7 +20,7 @@ default_dir = os.path.join(get_root_dir(), "schemas")
     "--repo",
     default="Remi-Gau/eCobidas",
     help="""
-    Placeholder of the 'username/repo' that will host the schema representation. 
+    Placeholder of the 'username/repo' that will host the schema representation.
     Example: 'Remi-Gau/eCobidas'
     """,
 )
@@ -28,16 +28,17 @@ default_dir = os.path.join(get_root_dir(), "schemas")
     "--branch",
     default="remi-dev",
     help="""
-    Placeholder of the 'branch' that will host the schema representation. 
+    Placeholder of the 'branch' that will host the schema representation.
     Example: 'remi-dev'
     """,
 )
-def convert(
-    schema,
-    out_dir,
-    repo,
-    branch,
-):
+def convert(schema, out_dir, repo, branch):
+
+    # TODO
+    # If this_schema is a file
+    # If using regex to deal with several schema from the metatable
+
+    df = get_metatable()
 
     if isinstance(schema, str):
         schema = [schema]

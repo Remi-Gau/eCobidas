@@ -13,9 +13,9 @@ are:
 -   Create a set of tools and a proof of concept web-app that can:
 
     -   convert a set of spreadsheet of items into a schema that represents all
-       
+
     -   from this schema generate a checklist to be clicked through by users,
-    
+
     -   outputs a set of JSON-LD files once the user is done,
 
     -   generate a method section using these JSON-LD files and some boilerplate

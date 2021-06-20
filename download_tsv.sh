@@ -6,12 +6,12 @@
 # USAGE:
 #
 #   sh download_tsv.sh schema-abbreviation
-# 
+#
 # To know which are the possible comniation of section and subsection
 #
 #   awk '{print $1}' inputs/csv/spreadsheet_google_id.tsv
 #
-#   
+#
 # schema
 #
 # core-participants
@@ -90,7 +90,7 @@ do
     echo Google ID: "${google_IDs[$i]}"
 
     ouput_folder="$csv_folder${subfolder[$i]}/"
-    mkdir -p $ouput_folder    
+    mkdir -p $ouput_folder
 
     curl -L "https://docs.google.com/spreadsheets/d/${google_IDs[$i]}/export?format=tsv" \
     -o $ouput_folder${output_filename[$i]}.tsv
@@ -98,4 +98,3 @@ do
     printf "DONE\n"
 
 done
-

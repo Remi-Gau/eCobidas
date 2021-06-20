@@ -25,7 +25,7 @@ class TemplateManager:
 
         :param template_name: Filename of the required template, sans the .tmp extension.
         :param kwargs: Data used for the template rendering.
-        
+
         :return: Rendered text for the requested template. Includes any subtemplates in the hierarchy.
         """
         template_filename: str = "{}.tmp".format(template_name)

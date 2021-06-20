@@ -1,5 +1,5 @@
 """
-Script used to generate markdown documents that list all the 
+Script used to generate markdown documents that list all the
 - preset response options (with link to google sheet and jsonld)
 - apps (with link to google sheet, repo...)
 """
@@ -30,7 +30,7 @@ for i in files:
     details = response_lists[response_lists["basename"] == i]
 
     basename = details["basename"].to_string(index=False)
-    
+
     an_item = dict(
         basename=basename,
         link=details["link"].tolist()[0],

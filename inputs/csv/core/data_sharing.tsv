@@ -1,18 +1,18 @@
 7	10	11	16	18	3	26	4	5		22	23	24	25	39	40
 activity_pref_label			item_pref_label	item_order	include	visibility	neurovault_or_carp	mandatory	activity_order	question	details	field_type	choices	use_case_meta-analysis	meta-analysis_comment
-Data Sharing	Reporting a data sharing resource	Material shared	Material shared	1	1	1	1	1	1		List types of images and non­imaging data provided	char			
-Data Sharing	Reporting a data sharing resource	Material shared	Material shared	2	1	1	1	1	1		Report on the completeness of the data (e.g., number of subjects where all types of imaging, demographic, and behavioral data is available)	char			
-Data Sharing	Reporting a data sharing resource	URL DOI	URL DOI	3	1	1	1	1	1		Stable URL or DOI	char			
-Data Sharing	Reporting a data sharing resource	URL, access information	url, access information	4	1	1	1	1	1		Specific instructions on how to gain access. Specifically mention whether application must be vetted for particular intended research use (e.g. to preclude multiple users investigating the same question), or whether a research collaboration must be established	char			
-Data Sharing	Reporting a data sharing resource	access cost	access cost	5	1	1	1	1	1		Cost of access	char			
-Data Sharing	Reporting a data sharing resource	Ethics compliance	ethics compliance	6	1	1	1	1	1		Confirm that the ethics board of the host institution generating the data approves the sharing of the data made available	char			
-Data Sharing	Reporting a data sharing resource	Constraints on use	constraints on use	7	1	1	1	1	1		Clarify any constraints on uses of shared data, for example, whether users downloading the data also need ethics approval from their own institution	char			
-Data Sharing	Reporting a data sharing resource	Documentation URL	documentation url	8	1	1	1	0	1		Provide URL to documentation, and specify its scope (e.g. worked examples, white papers, etc.)				
-Data Sharing	Reporting a data sharing resource	Data format	data format	9	1	1	1	1	1		Report the format of the image data shared, e.g. DICOM, MINC, NIFTI, etc.	dropdown			
-Data Sharing	Reporting a data sharing resource	Ontologies	ontologies	10	1	1	1	0	1		Data organization structures, including Data Dictionaries and Schemas. Is the software using an established ontology?	char			
-Data Sharing	Reporting a data sharing resource	Visualization	visualization	11	1	1	1	0	1		Availability of in-resource visualization of the imaging or non­imaging data	boolean	Can data be de-identified?		
-Data Sharing	Reporting a data sharing resource	De-identification	de-identification	12	1	1	1	0	1		How, if at all, data are de-identified	boolean			
-Data Sharing	Reporting a data sharing resource	Provenance and history	provenance and history	13	1	1	1	0	1		Availability of detailed provenance of preprocessing and analysis of shared data	boolean			
-Data Sharing	Reporting a data sharing resource	Interoperability	interoperability	14	1	1	1	0	1		Ability of a repository to work in a multi-database environment, availability of API’s and ability to connect to analysis pipelines	boolean			
-Data Sharing	Reporting a data sharing resource	Querying	querying	15	1	1	1	0	1		Mechanisms available for constructing queries on the repository (e.g. SQL, SPARQL)	char			
-Data Sharing	Reporting a data sharing resource	Versioning	versioning	16	1	1	1	0	1		How users can check version of downloaded data and compare it to the current version at a later time	char			
+Data Sharing	Reporting a data sharing resource	Material shared	Material shared	1	1	1	1	1	1		List types of images and non­imaging data provided	char
+Data Sharing	Reporting a data sharing resource	Material shared	Material shared	2	1	1	1	1	1		Report on the completeness of the data (e.g., number of subjects where all types of imaging, demographic, and behavioral data is available)	char
+Data Sharing	Reporting a data sharing resource	URL DOI	URL DOI	3	1	1	1	1	1		Stable URL or DOI	char
+Data Sharing	Reporting a data sharing resource	URL, access information	url, access information	4	1	1	1	1	1		Specific instructions on how to gain access. Specifically mention whether application must be vetted for particular intended research use (e.g. to preclude multiple users investigating the same question), or whether a research collaboration must be established	char
+Data Sharing	Reporting a data sharing resource	access cost	access cost	5	1	1	1	1	1		Cost of access	char
+Data Sharing	Reporting a data sharing resource	Ethics compliance	ethics compliance	6	1	1	1	1	1		Confirm that the ethics board of the host institution generating the data approves the sharing of the data made available	char
+Data Sharing	Reporting a data sharing resource	Constraints on use	constraints on use	7	1	1	1	1	1		Clarify any constraints on uses of shared data, for example, whether users downloading the data also need ethics approval from their own institution	char
+Data Sharing	Reporting a data sharing resource	Documentation URL	documentation url	8	1	1	1	0	1		Provide URL to documentation, and specify its scope (e.g. worked examples, white papers, etc.)
+Data Sharing	Reporting a data sharing resource	Data format	data format	9	1	1	1	1	1		Report the format of the image data shared, e.g. DICOM, MINC, NIFTI, etc.	dropdown
+Data Sharing	Reporting a data sharing resource	Ontologies	ontologies	10	1	1	1	0	1		Data organization structures, including Data Dictionaries and Schemas. Is the software using an established ontology?	char
+Data Sharing	Reporting a data sharing resource	Visualization	visualization	11	1	1	1	0	1		Availability of in-resource visualization of the imaging or non­imaging data	boolean	Can data be de-identified?
+Data Sharing	Reporting a data sharing resource	De-identification	de-identification	12	1	1	1	0	1		How, if at all, data are de-identified	boolean
+Data Sharing	Reporting a data sharing resource	Provenance and history	provenance and history	13	1	1	1	0	1		Availability of detailed provenance of preprocessing and analysis of shared data	boolean
+Data Sharing	Reporting a data sharing resource	Interoperability	interoperability	14	1	1	1	0	1		Ability of a repository to work in a multi-database environment, availability of API’s and ability to connect to analysis pipelines	boolean
+Data Sharing	Reporting a data sharing resource	Querying	querying	15	1	1	1	0	1		Mechanisms available for constructing queries on the repository (e.g. SQL, SPARQL)	char
+Data Sharing	Reporting a data sharing resource	Versioning	versioning	16	1	1	1	0	1		How users can check version of downloaded data and compare it to the current version at a later time	char

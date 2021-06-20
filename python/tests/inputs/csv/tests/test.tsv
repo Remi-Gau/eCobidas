@@ -1,10 +1,10 @@
 activity_order	include	activity	activity_pref_label	preamble	item	item_pref_label	item_description	item_order	mandatory	visibility	skip	question	field_type	choices
-1	1		Activity 2			number of subjects	number of subjects	1	1	1	1	Number of subjects entering into the analysis	integer	
-2	1		Activity 3	same activity		integer item	integer item	1	1	1	1	This is an integer item	integer	
+1	1		Activity 2			number of subjects	number of subjects	1	1	1	1	Number of subjects entering into the analysis	integer
+2	1		Activity 3	same activity		integer item	integer item	1	1	1	1	This is an integer item	integer
 2	1		Activity 3	different preamble		slider item	slider item	2	1	1	1	This is a slider item	slider	1 | 100 | 10
-3	1	text and float	Activity 4		TEXT	text item	text item	1	1	1	1	This is a text item	text	
-3	1		Activity 4			multitext item	multitext item	2	1	1	1	This is a multitext item	multitext	
-3	1		Activity 4			float item	float item	3	1	1	1	This is a float item	float	
+3	1	text and float	Activity 4		TEXT	text item	text item	1	1	1	1	This is a text item	text
+3	1		Activity 4			multitext item	multitext item	2	1	1	1	This is a multitext item	multitext
+3	1		Activity 4			float item	float item	3	1	1	1	This is a float item	float
 4	1		Select Activity			radio item	This is a radio item.	1	1	1	1	radio item - one answer allowed	radio	Response option 1 | Response option 2 | Response option 3
 4	1		Select Activity			radio item multiple choice	This is a radio item with multiple choice.	2	1	1	1	radio item - several answers allowed	radio_multiple	Response option 1 | Response option 2 | Response option 3
 4	1		Select Activity			select item	This is a select item that works with a drop down menu.	3	1	1	1	select item - one answer allowed	select	Response option 1 | Response option 2 | Response option 3

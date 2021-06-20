@@ -8,7 +8,7 @@ myPath = os.path.dirname(os.path.abspath(__file__))
 
 
 """
-Runs the conversion of the tsv in `inputs/csv/test.tsv` 
+Runs the conversion of the tsv in `inputs/csv/test.tsv`
 and checks that the correct jsonld are created.
 """
 
@@ -31,7 +31,7 @@ def test_create_schema():
 
     assert protocol_content == expected
 
-    """ 
+    """
     CHECK ACTIVITIES
     We define the items to check for each activity below
     """
@@ -50,10 +50,7 @@ def test_create_schema():
                 "yes_no_do_not_know",
             ],  # TODO radio and select with multiple choices
         },
-        {
-            "name": "activity_4",
-            "items": ["float_item", "multitext_item", "TEXT"],
-        },
+        {"name": "activity_4", "items": ["float_item", "multitext_item", "TEXT"]},
         {"name": "activity_3", "items": ["integer_item", "slider_item"]},
         {"name": "activity_2", "items": ["number_of_subjects"]},
         # TODO year, date, country
@@ -88,11 +85,7 @@ def test_create_schema():
             item_content = read_json(output_file)
 
             data_file = os.path.join(
-                myPath,
-                "data",
-                this_activity_folder,
-                "items",
-                item + ".jsonld",
+                myPath, "data", this_activity_folder, "items", item + ".jsonld"
             )
             expected = read_json(data_file)
 

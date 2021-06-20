@@ -1,38 +1,38 @@
 question	details	field_type	choices	item_pref_label	visibility	item_order	include	mandatory	activity	sub-section	sub-sub-section	activity_pref_label	activity_order	unit
-Which analysis software do you use for implementing filter on EEG data?		radio	preset:meeg_analysis_softwares	filtering_software	1	1	1	1	Preprocessing	Offline filtering		Preprocessing	3	
-Specify software version if applicable, and software name and version if "other" was selected.		text		filter_software_details	1	2	1	1	Preprocessing	Offline filtering		Preprocessing	3	
-What is the offline filter unit do you use?		radio	half-power | half-amplitude	Offline filter unit	1	3	1	1	Preprocessing	Offline filtering		Preprocessing	3	
-Did you reference offline?		radio	preset:boolean	offline reference	1	4	1	1	Preprocessing	preprocessing reference		Preprocessing	3	
-What type of offline reference did you use?		radio	mean mastoids | mean earlobes | average | sum of mastoids | sum of earlobes | other	type offline reference	offline_reference == 1	5	1	1	Preprocessing	preprocessing reference		Preprocessing	3	
-What other offline reference did you use?		text		other type offline reference	type_offline_reference == 5	6	1	1	Preprocessing	preprocessing  reference		Preprocessing	3	
+Which analysis software do you use for implementing filter on EEG data?		radio	preset:meeg_analysis_softwares	filtering_software	1	1	1	1	Preprocessing	Offline filtering		Preprocessing	3
+Specify software version if applicable, and software name and version if "other" was selected.		text		filter_software_details	1	2	1	1	Preprocessing	Offline filtering		Preprocessing	3
+What is the offline filter unit do you use?		radio	half-power | half-amplitude	Offline filter unit	1	3	1	1	Preprocessing	Offline filtering		Preprocessing	3
+Did you reference offline?		radio	preset:boolean	offline reference	1	4	1	1	Preprocessing	preprocessing reference		Preprocessing	3
+What type of offline reference did you use?		radio	mean mastoids | mean earlobes | average | sum of mastoids | sum of earlobes | other	type offline reference	offline_reference == 1	5	1	1	Preprocessing	preprocessing reference		Preprocessing	3
+What other offline reference did you use?		text		other type offline reference	type_offline_reference == 5	6	1	1	Preprocessing	preprocessing  reference		Preprocessing	3
 Specify the offline high-pass filter cut-off (Hz)		float		offline_highpass_filter_cutoff	1	7	1	1	Preprocessing	preprocessing offline filtering		Preprocessing	3	Hz
 Specify the offline low-pass filter cut-off (Hz)		float		offline_lowpass_filter_cutoff	1	8	1	1	Preprocessing	preprocessing offline filtering		Preprocessing	3	Hz
 Specify the offline high-pass filter roll off (dB/octave)		float		offline_highpass_filter_rolloff	1	9	1	1	Preprocessing	preprocessing offline filtering		Preprocessing	3	Hz
 Specify the offline low-pass filter roll off (dB/octave)		float		offline_lowpass_filter_rolloff	1	10	1	1	Preprocessing	preprocessing offline filtering		Preprocessing	3	HZ
-Did you downsample your data?		radio	preset:boolean	downsample data	1	11	1	1	Preprocessing	preprocessing offline filtering		Preprocessing	3	
+Did you downsample your data?		radio	preset:boolean	downsample data	1	11	1	1	Preprocessing	preprocessing offline filtering		Preprocessing	3
 If yes, what was your new sampling frequency? (Hz)		float		sampling frequency	downsample_data == 1	12	1	1	Preprocessing	preprocessing downsampling		Preprocessing	3	Hz
-Which analysis software do you use for re-referencing on EEG data?		radio	preset:meeg_analysis_softwares	rereference software	1	13	1	1	Preprocessing	preprocessing rereference		Preprocessing	3	
-Specify software version if applicable, and software name and version if "other" was selected.		text		rereference_software_details	1	14	1	1	Preprocessing	preprocessing rereference		Preprocessing	3	
-What is new reference?		text		new reference	1	15	1	1	Preprocessing	preprocessing rereference		Preprocessing	3	
-How many artifact elimination steps did you have?	this is a fake loop hack - we will offer up to N steps (currently only 2 while this is in development) - and then steps are only visible if a person has picked a total number of steps that is equal to or higher :)	integer		Artifact steps number	1	16	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3	
-How did you define your artifacts in step 1?		radio	visual inspection | algorithm | pre-set numerical criterion | other 	Artifact definition 1	artifact_steps_number>=1	17	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3	
-What action did you take regarding artifacts in step 1?		radio	reject bad participant | reject bad trial or bad data segment | remove bad electrode | interpolate bad electrode | correct by subtraction (blinks, EKG etc.)	Artifact action 1	artifact_steps_number>=1	18				preprocessing artifacts		Preprocessing	3	
-Please specify details of your artifact procedure to the degree sufficient for replicating it. (Step 1)		text		artifact details 1	artifact_steps_number>=1	19	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3	
-What software did you use in step 1?		radio	preset:meeg_analysis_softwares	artifact software 1	artifact_steps_number>=1	20	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3	
-Specify software version if applicable, and software name and version if "other" was selected.		text		artifact_software_1_details	artifact_steps_number>=1	21	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3	
-How did you define your artifacts in step 2?		radio	visual inspection | algorithm | pre-set numerical criterion | other 	Artifact definition 2	artifact_steps_number>=2	22	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3	
-What action did you take regarding artifacts in step 2?		radio	reject bad participant | reject bad trial or bad data segment | remove bad electrode | interpolate bad electrode | correct by subtraction (blinks, EKG etc.)	Artifact action 2	artifact_steps_number>=2	23	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3	
-Please specify details of your artifact procedure to the degree sufficient for replicating it. (Step 2)		text		artifact details 2	artifact_steps_number>=2	24	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3	
-What software did you use in step 2?		radio	preset:meeg_analysis_softwares	artifact software 2	artifact_steps_number>=2	25	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3	
-Specify software version if applicable, and software name and version if "other" was selected.		text		artifact_software_2_details	artifact_steps_number>=2	26	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3	
-Which analysis software do you use for epoching EEG data?		radio	preset:meeg_analysis_softwares	Epoch software	1	27	1	1	Preprocessing	preprocessing epoch		Preprocessing	3	
-Specify software version if applicable, and software name and version if "other" was selected.		text		epoch_software_details	1	28	1	1	Preprocessing	preprocessing epoch		Preprocessing	3	
-What was the epoch beginning (in ms) relative to a trigger point?		float		Epoch beginning	1	29	1	1	Preprocessing	preprocessing epoch		Preprocessing	3	
-What is the event for the trigger code? 	For example, the onset of stimulus	text		epoch trigger event	1	30	1	1	Preprocessing	preprocessing epoch		preprocessing	3	
-What was the epoch end (in ms) relative to a trigger point?		float		Epoch end	1	31	1	1	Preprocessing	preprocessing epoch		Preprocessing	3	
-Which analysis software do you use for baseline correction?		radio	preset:meeg_analysis_softwares	baseline software	1	32	1	1	Preprocessing	preprocessing baseline		Preprocessing	3	
-Specify software version if applicable, and software name and version if "other" was selected.		text		baseline_software_details	1	33	1	1	Preprocessing	preprocessing baseline		Preprocessing	3	
-What was the baseline period beginning (in ms) relative to a trigger point?		float		baseline beginning	1	34	1	1	Preprocessing	preprocessing baseline		Preprocessing	3	
-What was the baseline period end (in ms) relative to a trigger point?		float		baseline end	1	35	1	1	Preprocessing	preprocessing baseline		Preprocessing	3	
-baseline calculation method		radio	subtract mean of the baseline period | other	baseline method	1	36	1	1	Preprocessing	preprocessing baseline		Preprocessing	3	
-Please specify your baseline calculation method.		text		baseline other method details	baseline method == 1	37	1	1	Preprocessing	preprocessing baseline		Preprocessing	3	
+Which analysis software do you use for re-referencing on EEG data?		radio	preset:meeg_analysis_softwares	rereference software	1	13	1	1	Preprocessing	preprocessing rereference		Preprocessing	3
+Specify software version if applicable, and software name and version if "other" was selected.		text		rereference_software_details	1	14	1	1	Preprocessing	preprocessing rereference		Preprocessing	3
+What is new reference?		text		new reference	1	15	1	1	Preprocessing	preprocessing rereference		Preprocessing	3
+How many artifact elimination steps did you have?	this is a fake loop hack - we will offer up to N steps (currently only 2 while this is in development) - and then steps are only visible if a person has picked a total number of steps that is equal to or higher :)	integer		Artifact steps number	1	16	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3
+How did you define your artifacts in step 1?		radio	visual inspection | algorithm | pre-set numerical criterion | other 	Artifact definition 1	artifact_steps_number>=1	17	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3
+What action did you take regarding artifacts in step 1?		radio	reject bad participant | reject bad trial or bad data segment | remove bad electrode | interpolate bad electrode | correct by subtraction (blinks, EKG etc.)	Artifact action 1	artifact_steps_number>=1	18				preprocessing artifacts		Preprocessing	3
+Please specify details of your artifact procedure to the degree sufficient for replicating it. (Step 1)		text		artifact details 1	artifact_steps_number>=1	19	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3
+What software did you use in step 1?		radio	preset:meeg_analysis_softwares	artifact software 1	artifact_steps_number>=1	20	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3
+Specify software version if applicable, and software name and version if "other" was selected.		text		artifact_software_1_details	artifact_steps_number>=1	21	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3
+How did you define your artifacts in step 2?		radio	visual inspection | algorithm | pre-set numerical criterion | other 	Artifact definition 2	artifact_steps_number>=2	22	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3
+What action did you take regarding artifacts in step 2?		radio	reject bad participant | reject bad trial or bad data segment | remove bad electrode | interpolate bad electrode | correct by subtraction (blinks, EKG etc.)	Artifact action 2	artifact_steps_number>=2	23	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3
+Please specify details of your artifact procedure to the degree sufficient for replicating it. (Step 2)		text		artifact details 2	artifact_steps_number>=2	24	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3
+What software did you use in step 2?		radio	preset:meeg_analysis_softwares	artifact software 2	artifact_steps_number>=2	25	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3
+Specify software version if applicable, and software name and version if "other" was selected.		text		artifact_software_2_details	artifact_steps_number>=2	26	1	1	Preprocessing	preprocessing artifacts		Preprocessing	3
+Which analysis software do you use for epoching EEG data?		radio	preset:meeg_analysis_softwares	Epoch software	1	27	1	1	Preprocessing	preprocessing epoch		Preprocessing	3
+Specify software version if applicable, and software name and version if "other" was selected.		text		epoch_software_details	1	28	1	1	Preprocessing	preprocessing epoch		Preprocessing	3
+What was the epoch beginning (in ms) relative to a trigger point?		float		Epoch beginning	1	29	1	1	Preprocessing	preprocessing epoch		Preprocessing	3
+What is the event for the trigger code? 	For example, the onset of stimulus	text		epoch trigger event	1	30	1	1	Preprocessing	preprocessing epoch		preprocessing	3
+What was the epoch end (in ms) relative to a trigger point?		float		Epoch end	1	31	1	1	Preprocessing	preprocessing epoch		Preprocessing	3
+Which analysis software do you use for baseline correction?		radio	preset:meeg_analysis_softwares	baseline software	1	32	1	1	Preprocessing	preprocessing baseline		Preprocessing	3
+Specify software version if applicable, and software name and version if "other" was selected.		text		baseline_software_details	1	33	1	1	Preprocessing	preprocessing baseline		Preprocessing	3
+What was the baseline period beginning (in ms) relative to a trigger point?		float		baseline beginning	1	34	1	1	Preprocessing	preprocessing baseline		Preprocessing	3
+What was the baseline period end (in ms) relative to a trigger point?		float		baseline end	1	35	1	1	Preprocessing	preprocessing baseline		Preprocessing	3
+baseline calculation method		radio	subtract mean of the baseline period | other	baseline method	1	36	1	1	Preprocessing	preprocessing baseline		Preprocessing	3
+Please specify your baseline calculation method.		text		baseline other method details	baseline method == 1	37	1	1	Preprocessing	preprocessing baseline		Preprocessing	3
