@@ -92,7 +92,7 @@ This step is by far the most labor intensive and has its dedicated page in the
 
 Most of that is covered in the section on
 [how the checklist is rendered](./50-how-to-render-the-checklist.md) and in the
-README in the `scripts` folder.
+README in the `python` folder.
 
 ## How is the Reproschema organized
 

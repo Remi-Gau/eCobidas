@@ -1,17 +1,17 @@
 name: Test and coverage
 
-# This workflow will install Python dependencies, run tests 
+# This workflow will install Python dependencies, run tests
 # and lint with a variety of Python versions
 
 # TODO
 # - make sure the tests run online
 
-# For more information see: 
+# For more information see:
 # https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
 on: [push, pull_request]
 
-jobs: 
+jobs:
 
   build:
 
@@ -33,7 +33,7 @@ jobs:
         pip install -r requirements.txt
         cd python && pip install -e . && cd ..
         mkdir -p lib && git clone https://github.com/Remi-Gau/reproschema-py.git lib/reproschema-py
-        cd lib/reproschema-py && git checkout remi_schema_creator && pip install -e .        
+        cd lib/reproschema-py && git checkout remi_schema_creator && pip install -e .
 
     - name: Run tests and generate coverage report
       run: pytest --cov=./ --cov-report=xml python

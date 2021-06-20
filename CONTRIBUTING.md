@@ -13,10 +13,11 @@ If you are running Windows 10, you will will need to use
 An easy way to install Python is to rely on
 [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
 
-<!-- TODO 
+<!-- TODO
 check if virtualenv is installed in base conda
 -->
-### node.js 12.x
+
+### node.js
 
 A good way to To install javascript [`node.js`](<(https://nodejs.org/en/)>), is
 to install [node version manager](https://github.com/nvm-sh/nvm) (NVM) to help
@@ -29,7 +30,8 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 ```
 
 Then close your terminal and reopen it then run the following to install the
-version 9 of `node.js`
+version 12 of `node.js` (using the latest version of `node.js` should be fine,
+so this is more there as an example).
 
 ```
 nvm install node

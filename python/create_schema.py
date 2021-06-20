@@ -33,8 +33,9 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
     Every new item encountered is added to the current activity.
     """
 
-    out_dir = get_output_dir(this_schema, out_dir)
+    # add a way to deal with this_schelma being a file
     df = load_data(this_schema)
+    out_dir = get_output_dir(this_schema, out_dir)
 
     schema_info = get_schema_info(this_schema)
 
@@ -109,9 +110,7 @@ def initialize_protocol(this_schema, out_dir):
     protocol.write(protocol_path)
 
     print_info(
-        "protocol",
-        protocol_name,
-        os.path.join(protocol_path, protocol.get_filename()),
+        "protocol", protocol_name, os.path.join(protocol_path, protocol.get_filename())
     )
 
     return protocol, protocol_path

@@ -103,7 +103,7 @@ desc = '''
                     mb_str=mb_str,
                     pr_str=pr_str
                     )
-```                     
+```
 
 ### bids-matlab
 
@@ -150,14 +150,14 @@ desc = '''
 ### bids-matlab
 
 ```matlab
-fmap_text = cat(2, ... 
-'A %s %s field map (phase encoding: %s; %s slices; repetition time, TR= %s ms; \n',... 
-'echo time 1 / 2, TE 1/2= %s ms; flip angle, FA= %s deg; field of view, FOV= %s mm; matrix size= %s; \n',... 
+fmap_text = cat(2, ...
+'A %s %s field map (phase encoding: %s; %s slices; repetition time, TR= %s ms; \n',...
+'echo time 1 / 2, TE 1/2= %s ms; flip angle, FA= %s deg; field of view, FOV= %s mm; matrix size= %s; \n',...
 'voxel size= %s mm) was acquired %s. \n\n');
 
-fprintf(fmap_text,... 
-acq_param.variants, acq_param.seqs, acq_param.phs_enc_dir, acq_param.n_slices, acq_param.tr, ... 
-acq_param.te, acq_param.fa, acq_param.fov, acq_param.ms, ... 
+fprintf(fmap_text,...
+acq_param.variants, acq_param.seqs, acq_param.phs_enc_dir, acq_param.n_slices, acq_param.tr, ...
+acq_param.te, acq_param.fa, acq_param.fov, acq_param.ms, ...
 acq_param.vs, acq_param.for);
 
 ```
@@ -232,9 +232,3 @@ See
 [here for example](https://mne.tools/mne-bids/stable/auto_examples/convert_group_studies.html#sphx-glr-auto-examples-convert-group-studies-py)
 
 Implemented by [`report.py`](https://github.com/mne-tools/mne-bids/blob/master/mne_bids/report.py).
-
-
-
-
-
-

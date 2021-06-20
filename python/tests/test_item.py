@@ -59,11 +59,7 @@ def test_preset():
 )
 def test_set_item_name(input, expected):
 
-    this_item = pd.DataFrame(
-        {
-            "item_pref_label": [input],
-        }
-    )
+    this_item = pd.DataFrame({"item_pref_label": [input]})
 
     name = set_item_name(this_item)
 
@@ -72,19 +68,11 @@ def test_set_item_name(input, expected):
 
 @pytest.mark.parametrize(
     "item_name, pref_label, expected",
-    [
-        ("", "item name", "item_name"),
-        ("foo Bar", "item name", "foo_Bar"),
-    ],
+    [("", "item name", "item_name"), ("foo Bar", "item name", "foo_Bar")],
 )
 def test_set_item_name_pref_label(item_name, pref_label, expected):
 
-    this_item = pd.DataFrame(
-        {
-            "item": [item_name],
-            "item_pref_label": [pref_label],
-        }
-    )
+    this_item = pd.DataFrame({"item": [item_name], "item_pref_label": [pref_label]})
 
     name = set_item_name(this_item)
 

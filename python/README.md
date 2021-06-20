@@ -54,7 +54,7 @@ You only need to specify:
 ### Implementation
 
 `ecobidas_convert` calls: the highest level function that you will use to create the schema is
-[create_schema.py](./create_schema.py). 
+[create_schema.py](./create_schema.py).
 
 <!-- It will go through the csv files in the
 [inputs folder](../../inputs/csv/) and turn them into their corresponding
@@ -74,12 +74,12 @@ base.py               # --> Base()
 Class inheritance
 
 ```text
-Base() 
+Base()
   ├── Protocol()
   ├── Activity()
   ├── Item()
   └── ResponseOptions()
-```  
+```
 
 ### Validate the output
 
