@@ -11,7 +11,6 @@
     "preamble": {
         "en": "<p><a href='nan' target='_blank' > Source </a> | <a href='' target='_blank' > Github repository </a> | <a href='http://google.com' target='_blank' > Reference </a><br><br>A list of selection item</p>"
     },
-    "citation": "http://google.com",
     "ui": {
         "shuffle": false,
         "order": [

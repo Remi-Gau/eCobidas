@@ -45,9 +45,10 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
 
     protocol, protocol_path = initialize_protocol(this_schema, out_dir)
 
-    protocol.schema["citation"] = ""
-    if schema_info["citation"].any():
-        protocol.schema["citation"] = schema_info["citation"].tolist()[0]
+    # TODO implement once figured out wha the right schema shape is
+    # protocol.schema["citation"] = ""
+    # if schema_info["citation"].any():
+    #     protocol.schema["citation"] = schema_info["citation"].tolist()[0]
 
     activities = list(df.activity_order.unique())
 
@@ -65,9 +66,10 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
             protocol, items, out_dir
         )
 
-        activity.schema["citation"] = ""
-        if schema_info["citation"].any():
-            activity.schema["citation"] = schema_info["citation"].tolist()[0]
+        # TODO implement once figured out wha the right schema shape is
+        # activity.schema["citation"] = ""
+        # if schema_info["citation"].any():
+        #     activity.schema["citation"] = schema_info["citation"].tolist()[0]
 
         preamble = make_preamble(schema_info, items)
         activity.set_preamble(preamble)

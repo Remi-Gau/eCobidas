@@ -45,10 +45,12 @@ def test_create_schema():
             "name": "select_activity",
             "items": [
                 "radio_item",
+                "radio_item_multiple_choice",
                 "select_item",
+                "select_item_multiple_choice",
                 "mri_softwares",
                 "yes_no_do_not_know",
-            ],  # TODO radio and select with multiple choices
+            ],
         },
         {"name": "activity_4", "items": ["float_item", "multitext_item", "TEXT"]},
         {"name": "activity_3", "items": ["integer_item", "slider_item"]},

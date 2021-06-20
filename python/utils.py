@@ -140,7 +140,16 @@ def print_download(repo, branch, protocol):
         + dashed_line()
         + "\nYou can view this protocol here:\n"
         + "https://www.repronim.org/reproschema-ui/#/?url="
-        + s.join([repo, branch, "protocols", protocol.dir, protocol.get_filename()])
+        + s.join(
+            [
+                repo,
+                branch,
+                "schemas",
+                protocol.dir,
+                "protocols",
+                protocol.get_filename(),
+            ]
+        )
         + dashed_line()
         + "\n"
         + "https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema"
