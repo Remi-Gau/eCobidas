@@ -36,9 +36,11 @@ def convert(schema, out_dir, repo, branch):
 
     # TODO
     # If this_schema is a file
-    # If using regex to deal with several schema from the metatable
 
     df = get_metatable()
+
+    schema_to_run = df[df["schema"].str.match(r"(^" + schema + ".*)") == True]
+    schema = list(schema_to_run["schema"])
 
     if isinstance(schema, str):
         schema = [schema]

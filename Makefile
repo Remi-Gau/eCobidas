@@ -62,13 +62,7 @@ download_artemis: download_subsheet_tsv.sh
 	bash download_subsheet_tsv.sh artemis-
 
 convert_artemis: $(ARTEMIS_TSV)
-	ecobidas_convert --schema artemis-hardware
-	ecobidas_convert --schema artemis-design
-	ecobidas_convert --schema artemis-channel
-	ecobidas_convert --schema artemis-vis
-	ecobidas_convert --schema artemis-acquisition
-	ecobidas_convert --schema artemis-preproc
-	ecobidas_convert --schema artemis-measur
+	ecobidas_convert --schema artemis-
 
 validate_artemis: convert_artemis
 	grep -r  "@context" schemas/artemis | cut -d: -f1 | xargs -I fname jsonlint -q fname
@@ -113,25 +107,7 @@ download_responses: download_tsv.sh
 	bash download_tsv.sh resp-
 
 convert_responses: download_responses
-	ecobidas_convert --schema resp-mri_soft
-	ecobidas_convert --schema resp-pres_soft
-	ecobidas_convert --schema resp-multiple_comp
-	ecobidas_convert --schema resp-interp
-	ecobidas_convert --schema resp-cost_functions
-	ecobidas_convert --schema resp-meeg_ref
-	ecobidas_convert --schema resp-meeg_analysis_soft
-	ecobidas_convert --schema resp-meeg_amplifier_brands
-	ecobidas_convert --schema resp-meeg_acq_softwares
-	ecobidas_convert --schema resp-eeg_cap_types
-	ecobidas_convert --schema resp-boolean
-	ecobidas_convert --schema resp-ver-spm
-	ecobidas_convert --schema resp-ver-linux
-	ecobidas_convert --schema resp-type-os
-	ecobidas_convert --schema resp-ver-windows
-	ecobidas_convert --schema resp-ver-macos
-	ecobidas_convert --schema resp-eye_preproc_soft
-	ecobidas_convert --schema resp-eye_model
-	ecobidas_convert --schema resp-eye_producer
+	ecobidas_convert --schema resp-
 
 validate_responses: convert_responses
 	grep -r  "@context" schemas/response_options | cut -d: -f1 | xargs -I fname jsonlint -q fname
@@ -212,8 +188,7 @@ download_core: download_tsv.sh
 	bash download_tsv.sh core-
 
 convert_core: download_core
-	ecobidas_convert --schema core-participants
-	ecobidas_convert --schema core-beh
+	ecobidas_convert --schema core-
 validate_core: convert_core
 	grep -r  "@context" schemas/core | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/core
