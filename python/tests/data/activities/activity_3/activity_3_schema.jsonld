@@ -11,6 +11,7 @@
     "preamble": {
         "en": ""
     },
+    "citation": "http://google.com",
     "ui": {
         "shuffle": false,
         "order": [

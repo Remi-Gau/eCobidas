@@ -11,6 +11,7 @@
     "preamble": {
         "en": "A list of selection item"
     },
+    "citation": "http://google.com",
     "ui": {
         "shuffle": false,
         "order": [

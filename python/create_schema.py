@@ -45,6 +45,10 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
 
     protocol, protocol_path = initialize_protocol(this_schema, out_dir)
 
+    protocol.schema["citation"] = ""
+    if schema_info["citation"].any():
+        protocol.schema["citation"] = schema_info["citation"].tolist()[0]
+
     activities = list(df.activity_order.unique())
 
     if debug:
@@ -60,6 +64,10 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
         protocol, activity, activity_path = initialize_activity(
             protocol, items, out_dir
         )
+
+        activity.schema["citation"] = ""
+        if schema_info["citation"].any():
+            activity.schema["citation"] = schema_info["citation"].tolist()[0]
 
         items_order = items.item_order.unique()
 
