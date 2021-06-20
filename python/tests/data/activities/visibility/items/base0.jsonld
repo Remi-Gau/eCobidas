@@ -5,7 +5,7 @@
     "prefLabel": {
         "en": "base==0"
     },
-    "description": NaN,
+    "description": "base==0",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
