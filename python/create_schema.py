@@ -69,6 +69,9 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
         if schema_info["citation"].any():
             activity.schema["citation"] = schema_info["citation"].tolist()[0]
 
+        preamble = make_preamble(schema_info, items)
+        activity.set_preamble(preamble)
+
         items_order = items.item_order.unique()
 
         # TODO add a check to make sure that no 2 items have the same
@@ -140,8 +143,6 @@ def initialize_activity(protocol, items, out_dir):
     activity.set_defaults(activity_name)
     activity.set_filename(activity_name)
     activity.set_pref_label(activity_pref_label)
-
-    activity.set_preamble(get_activity_preamble(items))
 
     URI = (
         "../activities"
@@ -226,3 +227,43 @@ def create_response_options(schema_info, df, out_dir):
         schema_info["basename"].tolist()[0],
         os.path.join(out_dir, response_options.get_filename()),
     )
+
+
+def make_preamble(schema_info, items):
+    """
+    if preamble is empty we do nothing
+    but otherwise we try to create an additional 'header' to the activity
+    with info about the source spreadsheet, repo...
+    """
+
+    preamble = get_activity_preamble(items)
+
+    if not preamble:
+        return preamble
+
+    info = dict(
+        preamble=preamble, xls=schema_info["link"].tolist()[0], repo="", citation=""
+    )
+
+    if schema_info["repo"].any():
+        info["repo"] = schema_info["repo"].tolist()[0]
+    if schema_info["citation"].any():
+        info["citation"] = schema_info["citation"].tolist()[0]
+
+    preamble = (
+        "<p>"
+        + "<a href='"
+        + str(info["xls"])
+        + "' target='_blank' > Source </a> | "
+        + "<a href='"
+        + str(info["repo"])
+        + "' target='_blank' > Github repository </a> | "
+        + "<a href='"
+        + str(info["citation"])
+        + "' target='_blank' > Reference </a>"
+        + "<br><br>"
+        + str(preamble)
+        + "</p>"
+    )
+
+    return preamble
