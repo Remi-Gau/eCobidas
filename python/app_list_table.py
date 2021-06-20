@@ -1,5 +1,11 @@
-from utils import get_metatable
+"""
+Script used to generate markdown documents that list all the 
+- preset response options (with link to google sheet and jsonld)
+- apps (with link to google sheet, repo...)
+"""
 
+import os
+from utils import get_metatable
 from template_manager import TemplateManager
 
 TemplateManager.initialize()
@@ -13,17 +19,18 @@ df = get_metatable()
 """
 Create file for list of response options
 """
-template = TemplateManager.env.get_template("table_template_responses.j2")
+template = TemplateManager.env.get_template("preset_response_table.j2")
 
 response_lists = df[df["schema"].str.match(r"(^resp-.*)") == True]
-
 files = list(response_lists["basename"])
 
 items = []
-
 for i in files:
+
     details = response_lists[response_lists["basename"] == i]
+
     basename = details["basename"].to_string(index=False)
+    
     an_item = dict(
         basename=basename,
         link=details["link"].tolist()[0],
@@ -32,7 +39,7 @@ for i in files:
     items.append(an_item)
 
 rendered_template = template.render(items=items)
-with open("preset_responses.md", "w") as out:
+with open(os.path.join("output", "preset_responses.md"), "w") as out:
     out.write("{}".format(rendered_template))
 
 
@@ -40,17 +47,14 @@ with open("preset_responses.md", "w") as out:
 Create file for list of apps
 """
 
-template = TemplateManager.env.get_template("table_template_apps.j2")
+template = TemplateManager.env.get_template("app_table_md.j2")
 
 apps_lists = df[df["app link"].notnull()]
-
 apps = list(apps_lists["basename"])
 
 items = []
-
 # make sure to include artemis only once
 artemis = False
-
 for i in apps:
 
     details = apps_lists[apps_lists["basename"] == i]
@@ -85,5 +89,5 @@ for i in apps:
 
 
 rendered_template = template.render(items=items)
-with open("apps_table.md", "w") as out:
+with open(os.path.join("output", "apps_table.md"), "w") as out:
     out.write("{}".format(rendered_template))
