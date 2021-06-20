@@ -6,25 +6,24 @@ on this
 and we try to keep a back-up in the
 [csv folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/csv).
 
--   The neurovault spreadsheet is
-    [here](https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing)
-
--   The PET spreadsheet is
-    [here](https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing)
-
--   The eyetracker spreadsheet is
-    [here](https://docs.google.com/spreadsheets/d/1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o/edit?usp=sharing)
-
--   The MRI spreadsheet is
-    [here](https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing)
-
--   The M/EEG spreadsheet is
-    [here](https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing)
-
 The
-[`download_csv.sh`](https://github.com/Remi-Gau/eCobidas/tree/master/download_csv.sh)
+[`download_tsv.sh`](https://github.com/Remi-Gau/eCobidas/tree/master/download_tsv.sh)
 bash script will directly download those spreadsheets as csv files into the
-`inputs/csv` folder
+`inputs/csv` folder.
+
+<!-- generate the table below using python/app_list_table.py -->
+
+| web app                                                                                                                                                                      | reference                                                             | spreadsheet                                                                                                                       | Github repository                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| [neurovault ](https://ohbm.github.io/eCOBIDAS/#/)                                                                                                                            | [link](https://doi.org/10.3389/fninf.2015.00008)                      | [spreadsheet](https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing)               | [github](https://github.com/ohbm/eCOBIDAS)               |
+| [pet ](https://remi-gau.github.io/cobidas-PET/#/)                                                                                                                            | [link](https://doi.org/10.1177/0271678X20905433)                      | [spreadsheet](https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing)               | [github](https://github.com/Remi-Gau/cobidas-PET)        |
+| [eyetracking ](https://remi-gau.github.io/cobidas-eyetracker/#/)                                                                                                             | [link](https://psyarxiv.com/f6qcy/)                                   | [spreadsheet](https://docs.google.com/spreadsheets/d/1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o/edit?usp=sharing)               | [github](https://github.com/Remi-Gau/cobidas-eyetracker) |
+| [artemis ](https://remi-gau.github.io/artemis_checklist/#/)                                                                                                                  | [link](https://osf.io/pvrn6/)                                         | [spreadsheet](https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=759849853) | [github](https://github.com/Remi-Gau/artemis_checklist)  |
+| [reexecution ](https://remi-gau.github.io/cobidas_reexecute/#/)                                                                                                              | [link](https://f1000research.com/articles/9-1031)                     | [spreadsheet](https://docs.google.com/spreadsheets/d/1M9H7Bkti4OEVrYETajLbpbwY0T-QqSkpRUiwTz6-5Vc/edit?usp=sharing)               | [github](https://github.com/Remi-Gau/cobidas_reexecute)  |
+| [core behavior](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/schemas/core/protocols/behavior_schema.jsonld)         | [link](http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf) | [spreadsheet](https://docs.google.com/spreadsheets/d/1P0BQcM0889YTBFSoY8-E0vfdp0psrl7vyHBAW0fSmqs/edit?usp=sharing)               |                                                          |
+| [core participants](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/schemas/core/protocols/participants_schema.jsonld) | [link](http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf) | [spreadsheet](https://docs.google.com/spreadsheets/d/1pshzE4tXvj294-S-rRVlf9XpczFq2bkj2P3C7xGgzjs/edit?usp=sharing)               |                                                          |
+| [mri all_sequences](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/schemas/mri/protocols/all_sequences_schema.jsonld) | [link](http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf) | [spreadsheet](https://docs.google.com/spreadsheets/d/16LhsvrEKOzkNsXGLGlYZsH9h4aZ1hyt_BORmxkndaiI/edit?usp=sharing)               |                                                          |
+
 
 ## To do
 
@@ -143,6 +142,32 @@ Each column is described by an element in the JSON data dictionarry.
 ```
 
 <!-- TODO automatically generate this section with data dictionaries of the spreadsheets -->
+
+## preset responses
+
+<!-- generate the table below using python/app_list_table.py -->
+
+| response list                   | google spreadsheet                                                                                                  | jsonld                                                                                                         |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| mri_softwares                   | [spreadsheet](https://docs.google.com/spreadsheets/d/1TT38bvZimEnfBdp4O0i2_YEnUk9J60QXAJykGSxJsjI/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/mri_softwares.jsonld)                   |
+| stimulus_presentation_softwares | [spreadsheet](https://docs.google.com/spreadsheets/d/1Gal7vMIJk4EOa1XrKgioLyfAvQJKQQDSw3YlEAeCecA/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/stimulus_presentation_softwares.jsonld) |
+| multiple_comparisons            | [spreadsheet](https://docs.google.com/spreadsheets/d/19-030DcknqEL-aSYhG-BwosMGQo_WMvyiveita5wLv8/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/multiple_comparisons.jsonld)            |
+| interpolations                  | [spreadsheet](https://docs.google.com/spreadsheets/d/1aN4HzzZLcc_IywvuXqOzlqApl7v2NBGcHSjUTmEWlEo/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/interpolations.jsonld)                  |
+| cost_functions                  | [spreadsheet](https://docs.google.com/spreadsheets/d/1MWyPZ_EpaJ8qxQJOH5Zmnibl0npcewHtDIH5Yfgtx-c/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/cost_functions.jsonld)                  |
+| meeg_reference_electrodes       | [spreadsheet](https://docs.google.com/spreadsheets/d/11GXVYHfqMOCnU7jeBR0MZQbUU1rUh2Jf8DSRAEAPsV0/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/meeg_reference_electrodes.jsonld)       |
+| meeg_analysis_softwares         | [spreadsheet](https://docs.google.com/spreadsheets/d/1HIZddFerYChctkUANE7AAoQXVA8B_1rKnjXpw3XkS6Q/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/meeg_analysis_softwares.jsonld)         |
+| meeg_amplifier_brands           | [spreadsheet](https://docs.google.com/spreadsheets/d/1fIw2DLSCBpNQ0WnGmbbV1G7L5bywXkNCTNP_UFroNe0/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/meeg_amplifier_brands.jsonld)           |
+| meeg_acquisition_softwares      | [spreadsheet](https://docs.google.com/spreadsheets/d/10qiox_kb-F0RjF1vfd1B8dyZMF7kF9UoMBHrfW-IqLA/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/meeg_acquisition_softwares.jsonld)      |
+| eeg_cap_types                   | [spreadsheet](https://docs.google.com/spreadsheets/d/1Wy6Vts1ruSFqLZ4Ftfuq2vP4rASfZBe1RCzjHECVRL0/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/eeg_cap_types.jsonld)                   |
+| boolean                         | [spreadsheet](https://docs.google.com/spreadsheets/d/1l8_89p6zCrku7ETqThXZvpy6BvIwnFhPfNRIXn1bmcU/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/boolean.jsonld)                         |
+| spm_version                     | [spreadsheet](https://docs.google.com/spreadsheets/d/1ZfxJdQ-a9Y-hoY37jZN8stPHjQmyHxQKM3wEhv8MqAo/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/spm_version.jsonld)                     |
+| linux_version                   | [spreadsheet](https://docs.google.com/spreadsheets/d/1UQhId75_vEBfsJOtoZK2caeiJCCWuxWwJtUxcdNa8pg/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/linux_version.jsonld)                   |
+| type_os                         | [spreadsheet](https://docs.google.com/spreadsheets/d/1tPBQArrw_vXPvR2JKURmCrW4Ldbi2Yta83QAyyqHdfs/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/type_os.jsonld)                         |
+| windows_version                 | [spreadsheet](https://docs.google.com/spreadsheets/d/1wGN4pP4tojxxqH3baEa6DbDaGjRgjebu-SuLYMhRzmw/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/windows_version.jsonld)                 |
+| macos_version                   | [spreadsheet](https://docs.google.com/spreadsheets/d/1fLyrEbnxj4Y-XWOfvTcaJuZNxDOHGh_nEJ1vXJdJS9E/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/macos_version.jsonld)                   |
+| eyetracker_preproc_softwares    | [spreadsheet](https://docs.google.com/spreadsheets/d/1MrDCAoQvDbKr59LT1_lJB8SnXMhxJnRDATLXciA4Jys/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/eyetracker_preproc_softwares.jsonld)    |
+| eyetracker_model_name           | [spreadsheet](https://docs.google.com/spreadsheets/d/14Zo4ltjKOyiJ9wUd5ZybMt6MnEryMc23KAb7sspT0Ko/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/eyetracker_model_name.jsonld)           |
+| eyetracker_producer             | [spreadsheet](https://docs.google.com/spreadsheets/d/1SxM0c3QgRprfPM8KL8SBRaUGCGKzRKFG4apZ2NwcpqM/edit?usp=sharing) | [jsonld](https://github.com/ohbm/eCOBIDAS/blob/master/response_options/eyetracker_producer.jsonld)             |
 
 ## Extra columns
 
