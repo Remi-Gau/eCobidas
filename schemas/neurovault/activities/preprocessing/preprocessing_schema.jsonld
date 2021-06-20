@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": "Describe your preprocessing"
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing' target='_blank' > Source </a> | <a href='https://github.com/ohbm/eCOBIDAS' target='_blank' > Github repository </a> | <a href='https://doi.org/10.3389/fninf.2015.00008' target='_blank' > Reference </a><br><br>Describe your preprocessing</p>"
     },
     "ui": {
         "shuffle": false,
