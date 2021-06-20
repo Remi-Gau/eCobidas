@@ -6,4 +6,4 @@ pytest-cov
 black
 pandas
 click
-Jinja2
+Jinja2==2.0.1
