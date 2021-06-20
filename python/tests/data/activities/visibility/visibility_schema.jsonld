@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "visibility_schema.jsonld",
+    "prefLabel": {
+        "en": "Visibility"
+    },
+    "description": "visibility",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/base.jsonld",
+            "items/base1.jsonld",
+            "items/base0.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "base",
+                "isAbout": "items/base.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "base1",
+                "isAbout": "items/base1.jsonld",
+                "isVis": "base==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "base0",
+                "isAbout": "items/base0.jsonld",
+                "isVis": "base==0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

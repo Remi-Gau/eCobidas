@@ -11,3 +11,6 @@ activity_order	include	activity	activity_pref_label	preamble	item	item_pref_labe
 4	1		Select Activity	A list of selection item		select item multiple choice	This is a select item that works with a drop down menu.	4	1	1	1	select item - several answer allowed	select_multiple	Response option 1 | Response option 2 | Response option 3
 4	1		Select Activity			yes, no, do not know	yes, no, do not know	5	1	1	1	yes or no	radio	preset:boolean
 4	1		Select Activity			mri softwares	mri softwares	6	1	yes_no_do_not_know == 1	1	mri software	select	preset:mri_softwares
+5	1		Visibility			base		1	1	1	1	select one answer	radio	preset:boolean
+5	1		Visibility			base==1		2	1	base==1	1	this should only show if you selected ‘yes’	text
+5	1		Visibility			base==0		3	1	base==0	1	this should only show if you selected ‘no’	text
