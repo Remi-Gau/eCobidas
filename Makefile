@@ -225,6 +225,7 @@ download_meeg:
 # VALIDATE
 validate_all:
 	grep -r  "@context" schemas | cut -d: -f1 | xargs -I fname jsonlint -q fname
+	python3 tests/jsonParser.py
 	reproschema -l DEBUG validate schemas
 
 # CLEAN
