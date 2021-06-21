@@ -8,7 +8,7 @@ class TemplateManager:
 
     @classmethod
     def initialize(cls):
-        """ Initialize class variables.
+        """Initialize class variables.
 
         :return: None
         """
@@ -21,7 +21,7 @@ class TemplateManager:
 
     @classmethod
     def render_template(cls, template_name: str, **kwargs) -> str:
-        """ Render the template after the provided name.
+        """Render the template after the provided name.
 
         :param template_name: Filename of the required template, sans the .tmp extension.
         :param kwargs: Data used for the template rendering.
