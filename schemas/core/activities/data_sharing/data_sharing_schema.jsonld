@@ -1,0 +1,195 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "data_sharing_schema.jsonld",
+    "prefLabel": {
+        "en": "Data Sharing"
+    },
+    "description": "data sharing",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1yoI37se8nfWKNdKBCd-VgK1zDTdf4JR--m8apZ9iPR8/edit?usp=sharing' target='_blank' > Source </a> | <a href='' target='_blank' > Github repository </a> | <a href='http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf' target='_blank' > Reference </a><br><br>data sharing aspects of your work </p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/material_shared.jsonld",
+            "items/data_completeness.jsonld",
+            "items/url_doi.jsonld",
+            "items/url_access_information.jsonld",
+            "items/access_cost.jsonld",
+            "items/ethics_compliance.jsonld",
+            "items/constraints_on_use.jsonld",
+            "items/documentation_url.jsonld",
+            "items/data_format.jsonld",
+            "items/data_structure.jsonld",
+            "items/ontologies.jsonld",
+            "items/visualization.jsonld",
+            "items/de-identification.jsonld",
+            "items/provenance_and_history.jsonld",
+            "items/interoperability.jsonld",
+            "items/querying.jsonld",
+            "items/versioning.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "material_shared",
+                "isAbout": "items/material_shared.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "data_completeness",
+                "isAbout": "items/data_completeness.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "url_doi",
+                "isAbout": "items/url_doi.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "url_access_information",
+                "isAbout": "items/url_access_information.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "access_cost",
+                "isAbout": "items/access_cost.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "ethics_compliance",
+                "isAbout": "items/ethics_compliance.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "constraints_on_use",
+                "isAbout": "items/constraints_on_use.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "documentation_url",
+                "isAbout": "items/documentation_url.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "data_format",
+                "isAbout": "items/data_format.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "data_structure",
+                "isAbout": "items/data_structure.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "ontologies",
+                "isAbout": "items/ontologies.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visualization",
+                "isAbout": "items/visualization.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "de-identification",
+                "isAbout": "items/de-identification.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "provenance_and_history",
+                "isAbout": "items/provenance_and_history.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "interoperability",
+                "isAbout": "items/interoperability.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "querying",
+                "isAbout": "items/querying.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "versioning",
+                "isAbout": "items/versioning.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

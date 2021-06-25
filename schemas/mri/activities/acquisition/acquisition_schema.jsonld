@@ -1,0 +1,255 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "acquisition_schema.jsonld",
+    "prefLabel": {
+        "en": "Acquisition"
+    },
+    "description": "acquisition",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/modality.jsonld",
+            "items/mock_scanning_used.jsonld",
+            "items/mock_scanning_description.jsonld",
+            "items/experimenter_personnel.jsonld",
+            "items/coil_receive.jsonld",
+            "items/number_of_volumes.jsonld",
+            "items/direction_optimization_if_used_and_type.jsonld",
+            "items/b_values.jsonld",
+            "items/nb_of_b0_images.jsonld",
+            "items/cardiac_gating.jsonld",
+            "items/scanner-side_preprocessing.jsonld",
+            "items/prospective_moco_used.jsonld",
+            "items/prospective_moco_param.jsonld",
+            "items/signal_inhomogeneity_correction_used.jsonld",
+            "items/signal_inhomogeneity_correction_param.jsonld",
+            "items/distortion_correction_used.jsonld",
+            "items/scan_duration.jsonld",
+            "items/contrast_agent_used.jsonld",
+            "items/ContrastBolusIngredient.jsonld",
+            "items/bolus_amount_and_concentration.jsonld",
+            "items/injection_rate.jsonld",
+            "items/post_injection_of_saline.jsonld",
+            "items/injection_method.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "modality",
+                "isAbout": "items/modality.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "mock_scanning_used",
+                "isAbout": "items/mock_scanning_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "mock_scanning_description",
+                "isAbout": "items/mock_scanning_description.jsonld",
+                "isVis": "mock_scanning_used == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "experimenter_personnel",
+                "isAbout": "items/experimenter_personnel.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "coil_receive",
+                "isAbout": "items/coil_receive.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_volumes",
+                "isAbout": "items/number_of_volumes.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "direction_optimization_if_used_and_type",
+                "isAbout": "items/direction_optimization_if_used_and_type.jsonld",
+                "isVis": "modality == DWI",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "b_values",
+                "isAbout": "items/b_values.jsonld",
+                "isVis": "modality == DWI",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "nb_of_b0_images",
+                "isAbout": "items/nb_of_b0_images.jsonld",
+                "isVis": "modality == DWI",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "cardiac_gating",
+                "isAbout": "items/cardiac_gating.jsonld",
+                "isVis": "modality == DWI",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "scanner-side_preprocessing",
+                "isAbout": "items/scanner-side_preprocessing.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "prospective_moco_used",
+                "isAbout": "items/prospective_moco_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "prospective_moco_param",
+                "isAbout": "items/prospective_moco_param.jsonld",
+                "isVis": "prospective_moco_used == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "signal_inhomogeneity_correction_used",
+                "isAbout": "items/signal_inhomogeneity_correction_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "signal_inhomogeneity_correction_param",
+                "isAbout": "items/signal_inhomogeneity_correction_param.jsonld",
+                "isVis": "signal_inhomogeneity_correction_used == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "distortion_correction_used",
+                "isAbout": "items/distortion_correction_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "scan_duration",
+                "isAbout": "items/scan_duration.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "contrast_agent_used",
+                "isAbout": "items/contrast_agent_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "ContrastBolusIngredient",
+                "isAbout": "items/ContrastBolusIngredient.jsonld",
+                "isVis": "modality == SWI && contrast_agent_used==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "bolus_amount_and_concentration",
+                "isAbout": "items/bolus_amount_and_concentration.jsonld",
+                "isVis": "modality == SWI && contrast_agent_used==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "injection_rate",
+                "isAbout": "items/injection_rate.jsonld",
+                "isVis": "modality == SWI && contrast_agent_used==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "post_injection_of_saline",
+                "isAbout": "items/post_injection_of_saline.jsonld",
+                "isVis": "modality == SWI && contrast_agent_used==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "injection_method",
+                "isAbout": "items/injection_method.jsonld",
+                "isVis": "modality == SWI && contrast_agent_used==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

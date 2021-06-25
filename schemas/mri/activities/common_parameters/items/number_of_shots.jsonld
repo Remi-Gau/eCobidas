@@ -9,13 +9,12 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "number"
     },
     "question": {
         "en": "Number of shots for multishot imaging"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
+        "valueType": "xsd:integer"
     }
 }

@@ -14,6 +14,10 @@
     "ui": {
         "shuffle": false,
         "order": [
+            "items/scanner_make.jsonld",
+            "items/ManufacturersModelName.jsonld",
+            "items/MagneticFieldStrength.jsonld",
+            "items/SoftwareVersions.jsonld",
             "items/pulse_sequence_type.jsonld",
             "items/pulse_sequence_details.jsonld",
             "items/imaging_type.jsonld",
@@ -48,6 +52,42 @@
             "items/brain_coverage.jsonld"
         ],
         "addProperties": [
+            {
+                "variableName": "scanner_make",
+                "isAbout": "items/scanner_make.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "ManufacturersModelName",
+                "isAbout": "items/ManufacturersModelName.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "MagneticFieldStrength",
+                "isAbout": "items/MagneticFieldStrength.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "SoftwareVersions",
+                "isAbout": "items/SoftwareVersions.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
             {
                 "variableName": "pulse_sequence_type",
                 "isAbout": "items/pulse_sequence_type.jsonld",

@@ -1,12 +1,15 @@
-	7	10	11	16	18	26	3	5	22	23	24	25
-activity_order	activity_pref_label			item_pref_label	item_order	visibility	include	mandatory	question	details	field_type	choices
-1	Reproducibility	Documentation	Tools used	tools used	1	1	1	1		Tool names, versions, and URLs	char
-1	Reproducibility	Documentation	Infrastructure	infrastructure	2	1	1	1		Machine CPU model, operating system version, any use of parallelization	char
-1	Reproducibility	Documentation	Workflow	workflow	3	1	1	0		Use of a workflow system, its version and URL	char
-1	Reproducibility	Documentation	Provenance trace	provenance trace	4	1	1	0		State whether detailed provenance information is available	boolean
-1	Reproducibility	Documentation	Literate program implementing results	literate program implementing results	5	1	0	0		Provide a URL linking to the relevant resource; for example, an ipython notebook implementing key analyses	char
-1	Reproducibility	Documentation	English language version	english language version	6	1	1	0		As the scientific lingua franca, documentation should be provided in English in addition to any other languages	boolean	Is the documentation provided in English?
-1	Reproducibility	Archiving	Tools availability	tools availability	7	1	1	0		Note if tools are publically available	boolean	Are the tools publically available?
-1	Reproducibility	Archiving	Virtual appliances	virtual appliances	8	1	1	0		Note if a virtual environment to facilitate a repeated analysis is available	boolean	Is a virtual environment to facilitate a repeated analysis available?
-1	Reproducibility	Data	Data	data	9	1	0	0	???????	Provide permanent identifier if possible	char
-1	Reproducibility	Workflow	Workflow	workflow	10	1	1	0		Provide permanent identifier if possible	char
+question	details	field_type	choices	item_pref_label	item_order	visibility	include	mandatory	activity_order	activity_pref_label			preamble
+Tool names, versions, and URLs		text		tools used	1	1	1	1	1	Reproducibility	Documentation	Tools used	reproducibility aspects of your work
+Machine CPU model, any use of parallelization		text		infrastructure	2	1	1	1	1	Reproducibility	Documentation	Infrastructure
+operating system used for analysis		radio	preset:operating_systems	os_type	3	1	1	0	1	Reproducibility	Documentation	Infrastructure
+operating system version		text		os_version	4	1	1	0	1	Reproducibility	Documentation	Infrastructure
+Was a workflow system used?		radio	preset:boolean	workflow used	5	1	1	0	1	Reproducibility	Documentation	Workflow
+Name of workflow system used		select	Nipype | make | snakemake | matlab batch | MIPAV	workflow type	6	1	1	0	1	Reproducibility	Documentation	Workflow
+Version of the workflow system used		text		workflow version	7	1	1	0	1	Reproducibility	Documentation	Workflow
+Provide a permanent identifie to the workflow if possible		text		workflow identifier	8	1	1	0	1	Reproducibility	Documentation	Workflow
+State whether detailed provenance information is available		text		provenance trace	9	1	1	0	1	Reproducibility	Documentation	Provenance trace
+Provide permanent identifier to the data if possible		text		data identifier	10	1	1	0	1	Reproducibility	Data	Data
+Provide a URL linking to the relevant resource (for example, a jupyter notebook implementing key analyses)		text		literate programming	11	1	1	0	1	Reproducibility	Documentation	Literate program implementing results
+Is the documentation provided in English?		text		english language version	12	1	1	0	1	Reproducibility	Documentation	English language version
+Are the tools publically available?		text		tools availability	13	1	1	0	1	Reproducibility	Archiving	Tools availability
+Is a virtual environment to facilitate a repeated analysis available?		text		virtual appliances	14	1	1	0	1	Reproducibility	Archiving	Virtual appliances

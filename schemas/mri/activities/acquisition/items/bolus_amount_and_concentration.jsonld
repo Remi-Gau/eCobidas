@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "bolus_amount_and_concentration.jsonld",
+    "prefLabel": {
+        "en": "bolus amount and concentration"
+    },
+    "description": "bolus amount and concentration",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "bolus amount and concentration"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

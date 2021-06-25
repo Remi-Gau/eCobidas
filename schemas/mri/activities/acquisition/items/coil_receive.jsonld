@@ -1,53 +1,35 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "phase_encoding.jsonld",
+    "@id": "coil_receive.jsonld",
     "prefLabel": {
-        "en": "phase encoding"
+        "en": "coil receive"
     },
-    "description": "phase encoding",
+    "description": "coil receive",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "Specify phase encoding direction"
+        "en": "What type of receive coil was used?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
-                    "en": "A/P"
+                    "en": "standard: receive coil"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "P/A"
+                    "en": "non-standard openfield"
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "L/R"
-                },
-                "value": 2
-            },
-            {
-                "name": {
-                    "en": "S/I"
-                },
-                "value": 3
-            },
-            {
-                "name": {
-                    "en": "Other"
-                },
-                "value": 4
             }
         ],
         "multipleChoice": false
