@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1P0BQcM0889YTBFSoY8-E0vfdp0psrl7vyHBAW0fSmqs/edit?usp=sharing' target='_blank' > Source </a> | <a href='' target='_blank' > Github repository </a> | <a href='http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf' target='_blank' > Reference </a><br><br>describe your behavrioal design</p>"
     },
     "ui": {
         "shuffle": false,

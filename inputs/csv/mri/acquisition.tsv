@@ -1,5 +1,5 @@
-item_pref_label	question	include	details	field_type	choices	visibility	item_order	mandatory	item	bids_key	neurovault_or_carp	activity_order	activity_pref_label						bids_status	bids_file	in_Carp_2012	percent_of_studies
-modality	What type of MRI was performed ?	1		select_multiple	anatomical | functional | ASL | DWI | SWI	1	1	1			0	1	Acquisition
+item_pref_label	question	include	details	field_type	choices	visibility	item_order	mandatory	item	bids_key	neurovault_or_carp	activity_order	activity_pref_label						bids_status	bids_file	in_Carp_2012	percent_of_studies	preamble
+modality	What type of MRI was performed ?	1		select_multiple	anatomical | functional | ASL | DWI | SWI	1	1	1			0	1	Acquisition										use case specific acquisition parameters
 mock scanning used	Was an MRI simulator used to acclimate subjects to scanner environment?	1		radio	preset:boolean	1	2	1			1	1	Acquisition	Subject preparation	Mock scanning	Mock scanning used
 mock scanning description	Report the type of mock scanner and protocol (i.e. duration, types of simulated scans, experiments)	1		text		mock_scanning_used == 1	3	1			0	1	Acquisition	Subject preparation	Mock scanning	Mock scanning description
 special accommodations		0	For example, for pediatric scanning, presence of parent/guardian in the room	text		1	4	1			1	1	Acquisition	Subject preparation	Special accommodations

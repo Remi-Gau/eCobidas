@@ -1,5 +1,5 @@
-question	details	field_type	choices	item	item_order	visibility	include	neurovault_or_carp	mandatory	neurovault	in_Carp_2012	bids_status	bids_file	bids_key	bids_key_for_unit	activity_order	activity_pref_label				percent_of_studies	use_case_meta-analysis	meta-analysis_comment
-Was this study a group comparison? 		radio	preset:boolean	group_comparison	1	1	1	1	1	group_comparison						1	Sample	Group comparison
+question	details	field_type	choices	item	item_order	visibility	include	neurovault_or_carp	mandatory	neurovault	in_Carp_2012	bids_status	bids_file	bids_key	bids_key_for_unit	activity_order	activity_pref_label				percent_of_studies	use_case_meta-analysis	meta-analysis_comment	preamble
+Was this study a group comparison? 		radio	preset:boolean	group_comparison	1	1	1	1	1	group_comparison						1	Sample	Group comparison						Describe your sample
 		integer		number_of_groups	2	1	0	0	1							1	Sample	Group comparison	Number of groups
 Number of subjects planned		integer		number_of_subjects_planned	3	1	1	0	1							1	Sample	Number of subjects (by group)	Number of subjects planned
 Number of subjects approached		integer		subjects_approached	4	1	1	0	0							1	Sample	Number of subjects (by group)	Subjects approached
