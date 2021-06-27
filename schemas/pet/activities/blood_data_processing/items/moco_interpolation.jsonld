@@ -14,5 +14,5 @@
     "question": {
         "en": "MoCo interpolation"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/interpolations.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/interpolations.jsonld"
 }

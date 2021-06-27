@@ -14,5 +14,5 @@
     "question": {
         "en": "What software did you use in step 2?"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/meeg_analysis_softwares.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_analysis_softwares.jsonld"
 }

@@ -14,5 +14,5 @@
     "question": {
         "en": "Does the publication provide information about how to access the raw imaging data?"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/boolean.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

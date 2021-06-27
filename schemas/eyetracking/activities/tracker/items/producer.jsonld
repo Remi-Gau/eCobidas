@@ -14,5 +14,5 @@
     "question": {
         "en": "The producer of the eye-tracker"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/eyetracker_producer.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/eyetracker_producer.jsonld"
 }

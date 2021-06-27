@@ -9,12 +9,137 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "float"
+        "inputType": "slider"
     },
     "question": {
         "en": "Percentage of men in the study"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 100,
+        "choices": [
+            {
+                "name": {
+                    "en": "0.0"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "5.2631578947368425"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "10.526315789473685"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "15.789473684210527"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "21.05263157894737"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "26.315789473684212"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "31.578947368421055"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "36.8421052631579"
+                },
+                "value": 7
+            },
+            {
+                "name": {
+                    "en": "42.10526315789474"
+                },
+                "value": 8
+            },
+            {
+                "name": {
+                    "en": "47.36842105263158"
+                },
+                "value": 9
+            },
+            {
+                "name": {
+                    "en": "52.631578947368425"
+                },
+                "value": 10
+            },
+            {
+                "name": {
+                    "en": "57.89473684210527"
+                },
+                "value": 11
+            },
+            {
+                "name": {
+                    "en": "63.15789473684211"
+                },
+                "value": 12
+            },
+            {
+                "name": {
+                    "en": "68.42105263157896"
+                },
+                "value": 13
+            },
+            {
+                "name": {
+                    "en": "73.6842105263158"
+                },
+                "value": 14
+            },
+            {
+                "name": {
+                    "en": "78.94736842105263"
+                },
+                "value": 15
+            },
+            {
+                "name": {
+                    "en": "84.21052631578948"
+                },
+                "value": 16
+            },
+            {
+                "name": {
+                    "en": "89.47368421052633"
+                },
+                "value": 17
+            },
+            {
+                "name": {
+                    "en": "94.73684210526316"
+                },
+                "value": 18
+            },
+            {
+                "name": {
+                    "en": "100.0"
+                },
+                "value": 19
+            }
+        ],
+        "multipleChoice": false
     }
 }

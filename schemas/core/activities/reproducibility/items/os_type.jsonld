@@ -14,5 +14,5 @@
     "question": {
         "en": "operating system used for analysis"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/operating_systems.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/operating_systems.jsonld"
 }

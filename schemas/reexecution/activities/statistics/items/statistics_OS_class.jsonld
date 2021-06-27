@@ -14,30 +14,5 @@
     "question": {
         "en": "Which class of operating system was indicated for the statistical analysis?"
     },
-    "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 2,
-        "choices": [
-            {
-                "name": {
-                    "en": "windows"
-                },
-                "value": 0
-            },
-            {
-                "name": {
-                    "en": "macOS"
-                },
-                "value": 1
-            },
-            {
-                "name": {
-                    "en": "linux"
-                },
-                "value": 2
-            }
-        ],
-        "multipleChoice": false
-    }
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/operating_systems.jsonld"
 }

@@ -14,5 +14,5 @@
     "question": {
         "en": "What kind of cap or net did you use?"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/eeg_cap_types.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/eeg_cap_types.jsonld"
 }

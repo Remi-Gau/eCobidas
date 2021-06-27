@@ -14,48 +14,5 @@
     "question": {
         "en": "What was the software used for stimuli presentation?"
     },
-    "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 5,
-        "choices": [
-            {
-                "name": {
-                    "en": "Psychtoolbox"
-                },
-                "value": 0
-            },
-            {
-                "name": {
-                    "en": "psychopy"
-                },
-                "value": 1
-            },
-            {
-                "name": {
-                    "en": "e prime"
-                },
-                "value": 2
-            },
-            {
-                "name": {
-                    "en": "presentation"
-                },
-                "value": 3
-            },
-            {
-                "name": {
-                    "en": "cogent"
-                },
-                "value": 4
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 5
-            }
-        ],
-        "multipleChoice": false
-    }
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/stimulus_presentation_softwares.jsonld"
 }

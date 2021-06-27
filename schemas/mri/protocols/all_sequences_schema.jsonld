@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "landingPage": {
-        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_eCOBIDAS-en.md",
+        "@id": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/landing_pages/README_eCOBIDAS-en.md",
         "inLanguage": "en"
     },
     "preamble": {
@@ -25,7 +25,7 @@
                 "variableName": "common_parameters",
                 "isAbout": "../activities/common_parameters/common_parameters_schema.jsonld",
                 "prefLabel": {
-                    "en": "common parameters"
+                    "en": "Common parameters"
                 },
                 "isVis": true,
                 "requiredValue": false,

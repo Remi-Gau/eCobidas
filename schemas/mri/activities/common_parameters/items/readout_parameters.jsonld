@@ -9,12 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "float"
+        "inputType": "text"
     },
     "question": {
         "en": "Describe readout parameters (receiver bandwidth, readout duration, echo spacing)"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:string",
+        "maxLength": 3000
     }
 }

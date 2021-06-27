@@ -14,5 +14,5 @@
     "question": {
         "en": "Software used for group modeling if different from overall package"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/mri_softwares.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/mri_softwares.jsonld"
 }

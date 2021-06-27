@@ -14,5 +14,5 @@
     "question": {
         "en": "Make or brand of the amplifier"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/meeg_amplifier_brands.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_amplifier_brands.jsonld"
 }

@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "landingPage": {
-        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_artemis-en.md ",
+        "@id": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/landing_pages/README_artemis-en.md ",
         "inLanguage": "en"
     },
     "preamble": {
