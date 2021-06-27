@@ -198,7 +198,7 @@ def slider_response(choices):
 def use_preset(item, choices):
 
     preset_response_file = (
-        "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/"
+        "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/"
         + choices[0].split("preset:")[1]
         + ".jsonld"
     )
