@@ -1,20 +1,21 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "inversion_time.jsonld",
+    "@id": "SoftwareVersions.jsonld",
     "prefLabel": {
-        "en": "inversion time"
+        "en": "software version"
     },
-    "description": "inversion time",
+    "description": "software version",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "float"
+        "inputType": "text"
     },
     "question": {
-        "en": "Specify the inversion time (in milliseconds)"
+        "en": "Software version of seqeunce software"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:string",
+        "maxLength": 3000
     }
 }

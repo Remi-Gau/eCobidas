@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "ethics_compliance.jsonld",
+    "prefLabel": {
+        "en": "ethics compliance"
+    },
+    "description": "ethics compliance",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Confirm that the ethics board of the host institution generating the data approves the sharing of the data made available"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

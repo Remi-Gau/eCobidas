@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "acquisition_schema.jsonld",
+    "prefLabel": {
+        "en": "acquisition"
+    },
+    "description": "acquisition",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_eCOBIDAS-en.md",
+        "inLanguage": "en"
+    },
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "../activities/acquisition/acquisition_schema.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "acquisition",
+                "isAbout": "../activities/acquisition/acquisition_schema.jsonld",
+                "prefLabel": {
+                    "en": "Acquisition"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

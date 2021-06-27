@@ -77,6 +77,8 @@ something you would like to discuss directly here.
 
 We are looking for people to give us feedback or help us move forward.
 
+Join our working group at the [International Neuroinformatics Coordinating Facility](https://www.incf.org/sig/incfohbm-working-group-checklists-transparent-methods-reporting-neuroscience-ecobidas)
+
 To learn more about how to contribute see
 [here](./docs/80-how-to-contribute.md).
 

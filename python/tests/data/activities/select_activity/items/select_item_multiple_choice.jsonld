@@ -9,13 +9,41 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "select item - several answer allowed"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "Response option 1"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Response option 2"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "Response option 3"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": true
     }
 }

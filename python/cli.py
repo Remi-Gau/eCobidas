@@ -26,7 +26,7 @@ default_dir = os.path.join(get_root_dir(), "schemas")
 )
 @click.option(
     "--branch",
-    default="remi-dev",
+    default="dev",
     help="""
     Placeholder of the 'branch' that will host the schema representation.
     Example: 'remi-dev'

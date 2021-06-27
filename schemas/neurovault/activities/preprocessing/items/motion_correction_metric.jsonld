@@ -14,5 +14,5 @@
     "question": {
         "en": "Similarity metric used for motion correction"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/cost_functions.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/cost_functions.jsonld"
 }

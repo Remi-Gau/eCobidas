@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Were there any screening criteria for handiness?"
+        "en": "Were there any screening criteria for handedness?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

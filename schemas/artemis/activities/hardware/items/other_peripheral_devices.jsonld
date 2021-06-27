@@ -14,5 +14,5 @@
     "question": {
         "en": "Do you have other devices (eg. signal boxes, converters, other peripheral devices) to report?"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/boolean.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

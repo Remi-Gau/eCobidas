@@ -44,7 +44,7 @@ def get_landing_page(schema_info):
     else:
         landing_page = list(schema_info["landing page"])
 
-    repo = "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/"
+    repo = "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/landing_pages/"
     landing_page = repo + landing_page[0]
 
     return landing_page
@@ -140,7 +140,16 @@ def print_download(repo, branch, protocol):
         + dashed_line()
         + "\nYou can view this protocol here:\n"
         + "https://www.repronim.org/reproschema-ui/#/?url="
-        + s.join([repo, branch, "protocols", protocol.dir, protocol.get_filename()])
+        + s.join(
+            [
+                repo,
+                branch,
+                "schemas",
+                protocol.dir,
+                "protocols",
+                protocol.get_filename(),
+            ]
+        )
         + dashed_line()
         + "\n"
         + "https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema"

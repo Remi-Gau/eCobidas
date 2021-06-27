@@ -1,0 +1,165 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "reproducibility_schema.jsonld",
+    "prefLabel": {
+        "en": "Reproducibility"
+    },
+    "description": "reproducibility",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1aucpZDoav8lb2QI4YlIppNBN0FwSikV-2diQmrJCI-4/edit?usp=sharing' target='_blank' > Source </a> | <a href='' target='_blank' > Github repository </a> | <a href='http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf' target='_blank' > Reference </a><br><br>reproducibility aspects of your work </p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/tools_used.jsonld",
+            "items/infrastructure.jsonld",
+            "items/os_type.jsonld",
+            "items/os_version.jsonld",
+            "items/workflow_used.jsonld",
+            "items/workflow_type.jsonld",
+            "items/workflow_version.jsonld",
+            "items/workflow_identifier.jsonld",
+            "items/provenance_trace.jsonld",
+            "items/data_identifier.jsonld",
+            "items/literate_programming.jsonld",
+            "items/english_language_version.jsonld",
+            "items/tools_availability.jsonld",
+            "items/virtual_appliances.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "tools_used",
+                "isAbout": "items/tools_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "infrastructure",
+                "isAbout": "items/infrastructure.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "os_type",
+                "isAbout": "items/os_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "os_version",
+                "isAbout": "items/os_version.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "workflow_used",
+                "isAbout": "items/workflow_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "workflow_type",
+                "isAbout": "items/workflow_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "workflow_version",
+                "isAbout": "items/workflow_version.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "workflow_identifier",
+                "isAbout": "items/workflow_identifier.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "provenance_trace",
+                "isAbout": "items/provenance_trace.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "data_identifier",
+                "isAbout": "items/data_identifier.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "literate_programming",
+                "isAbout": "items/literate_programming.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "english_language_version",
+                "isAbout": "items/english_language_version.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "tools_availability",
+                "isAbout": "items/tools_availability.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "virtual_appliances",
+                "isAbout": "items/virtual_appliances.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

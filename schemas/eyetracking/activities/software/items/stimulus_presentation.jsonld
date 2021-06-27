@@ -14,5 +14,5 @@
     "question": {
         "en": "The software used to present the stimuli"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/stimulus_presentation_softwares.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/stimulus_presentation_softwares.jsonld"
 }

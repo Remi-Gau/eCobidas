@@ -14,5 +14,5 @@
     "question": {
         "en": "Latency measurement software"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/meeg_analysis_softwares.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_analysis_softwares.jsonld"
 }

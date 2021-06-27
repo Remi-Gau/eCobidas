@@ -1,20 +1,21 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "echo_time.jsonld",
+    "@id": "data_identifier.jsonld",
     "prefLabel": {
-        "en": "echo time"
+        "en": "data identifier"
     },
-    "description": "echo time",
+    "description": "data identifier",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "float"
+        "inputType": "text"
     },
     "question": {
-        "en": "Specify the echo time (in milliseconds)"
+        "en": "Provide permanent identifier to the data if possible"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:string",
+        "maxLength": 3000
     }
 }

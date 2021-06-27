@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "prospective_moco_param.jsonld",
+    "prefLabel": {
+        "en": "prospective moco param"
+    },
+    "description": "prospective moco param",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Describe the prospective motion correction (details of any optical tracking, how motion parameters are used, ..."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

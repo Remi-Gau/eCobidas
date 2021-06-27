@@ -1,20 +1,21 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "repetition_time.jsonld",
+    "@id": "data_completeness.jsonld",
     "prefLabel": {
-        "en": "repetition time"
+        "en": "data completeness"
     },
-    "description": "repetition time",
+    "description": "data completeness",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "float"
+        "inputType": "text"
     },
     "question": {
-        "en": "Specify the repetition time (in milliseconds)"
+        "en": "Report on the completeness of the data"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:string",
+        "maxLength": 3000
     }
 }

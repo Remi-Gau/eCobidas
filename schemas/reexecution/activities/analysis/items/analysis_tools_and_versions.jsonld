@@ -14,5 +14,5 @@
     "question": {
         "en": "List the tools and versions indicated (i.e. Freesurfer 5.0).  If more than one tool used, use a new line for each tool."
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/mri_softwares.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/mri_softwares.jsonld"
 }

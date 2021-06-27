@@ -1,0 +1,107 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "cobidas_mri_schema.jsonld",
+    "prefLabel": {
+        "en": "COBIDAS MRI"
+    },
+    "description": "checklist for COBIDAS",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/README_eCOBIDAS-en.md",
+        "inLanguage": "en"
+    },
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "../../core/activities/sample/sample_schema.jsonld",
+            "../../core/activities/behavior/behavior_schema.jsonld",
+            "../../mri/activities/common_parameters/common_parameters_schema.jsonld",
+            "../../mri/activities/acquisition/acquisition_schema.jsonld",
+            "../../core/activities/data_sharing/data_sharing_schema.jsonld",
+            "../../core/activities/reproducibility/reproducibility_schema.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "acquisition",
+                "isAbout": "../../mri/activities/acquisition/acquisition_schema.jsonld",
+                "prefLabel": {
+                    "en": "Acquisition"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "data_sharing",
+                "isAbout": "../../core/activities/data_sharing/data_sharing_schema.jsonld",
+                "prefLabel": {
+                    "en": "Data Sharing"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "reproducibility",
+                "isAbout": "../../core/activities/reproducibility/reproducibility_schema.jsonld",
+                "prefLabel": {
+                    "en": "Reproducibility"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "sample",
+                "isAbout": "../../core/activities/sample/sample_schema.jsonld",
+                "prefLabel": {
+                    "en": "Sample"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "behavior",
+                "isAbout": "../../core/activities/behavior/behavior_schema.jsonld",
+                "prefLabel": {
+                    "en": "Behavior"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "common_parameters",
+                "isAbout": "../../mri/activities/common_parameters/common_parameters_schema.jsonld",
+                "prefLabel": {
+                    "en": "common parameters"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

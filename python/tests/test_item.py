@@ -90,7 +90,7 @@ def test_get_item_info():
             "question": ["test question"],
             "choices": ["choice A | choice B"],
             "item_pref_label": ["item name"],
-            "item_description": ["desc"],
+            "item_description": "",
         }
     )
 
@@ -104,7 +104,7 @@ def test_get_item_info():
         "choices": ["choice A", "choice B"],
         "visibility": "previous_item == 2",
         "mandatory": True,
-        "description": "desc",
+        "description": "item name",
     }
 
     assert item_info == expected

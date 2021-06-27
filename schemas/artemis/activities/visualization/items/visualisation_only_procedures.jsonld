@@ -14,5 +14,5 @@
     "question": {
         "en": "Did you apply any procedures for visualisation purposes only (not used for analysis)? e.g. smoothing filter, different baseline "
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/boolean.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

@@ -21,7 +21,8 @@
             "../activities/activity_2/activity_2_schema.jsonld",
             "../activities/activity_3/activity_3_schema.jsonld",
             "../activities/activity_4/activity_4_schema.jsonld",
-            "../activities/select_activity/select_activity_schema.jsonld"
+            "../activities/select_activity/select_activity_schema.jsonld",
+            "../activities/visibility/visibility_schema.jsonld"
         ],
         "addProperties": [
             {
@@ -65,6 +66,18 @@
                 "isAbout": "../activities/select_activity/select_activity_schema.jsonld",
                 "prefLabel": {
                     "en": "Select Activity"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visibility",
+                "isAbout": "../activities/visibility/visibility_schema.jsonld",
+                "prefLabel": {
+                    "en": "Visibility"
                 },
                 "isVis": true,
                 "requiredValue": false,

@@ -32,7 +32,7 @@ def get_item_info(this_item):
         pref_label = item_name.replace("_", " ")
 
     description = pref_label
-    if "item_description" in this_item.keys():
+    if "item_description" in this_item.keys() and this_item["item_description"].any():
         description = convert_to_str(this_item["item_description"])
 
     question = convert_to_str(this_item["question"])
@@ -198,7 +198,7 @@ def slider_response(choices):
 def use_preset(item, choices):
 
     preset_response_file = (
-        "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/"
+        "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/"
         + choices[0].split("preset:")[1]
         + ".jsonld"
     )

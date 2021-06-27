@@ -14,5 +14,5 @@
     "question": {
         "en": "What software did you use for the aquisition?"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/meeg_acquisition_softwares.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_acquisition_softwares.jsonld"
 }
