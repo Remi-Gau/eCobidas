@@ -43,7 +43,7 @@ def test_preset():
 
     assert (
         item.response_options.options
-        == "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/boolean.jsonld"
+        == "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
     )
 
 
