@@ -54,10 +54,19 @@ with open("names.csv", "w", newline="") as csvfile:
 
             items_order = items.item_order.unique()
 
+            sub_section = ""
+
             for item_idx in items_order:
 
                 this_item = items[items["item_order"] == item_idx]
                 item_info = get_item_info(this_item)
+
+                if (
+                    item_info["sub_section"] is not ""
+                    and item_info["sub_section"] != sub_section
+                ):
+                    sub_section = item_info["sub_section"]
+                    writer.writerow({"item": sub_section.upper()})
 
                 dict_to_print = print_item_to_table(
                     activity_idx, item_idx, this_item, item_info, sep

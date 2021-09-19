@@ -149,7 +149,7 @@ def print_item_to_table(activity_idx, item_idx, this_item, item_info, sep=" "):
         choices = ""
 
     dict_to_print = {
-        "item": str(activity_idx) + "." + str(item_idx),
+        "item": "'" + str(activity_idx) + "." + str(item_idx),
         "field": item_info["pref_label"],
         "question": item_info["question"],
         "options": choices,

@@ -27,6 +27,10 @@ def set_item_name(this_item):
 
 def get_item_info(this_item):
 
+    sub_section = ""
+    if "sub_section" in this_item.keys() and this_item["sub_section"].any():
+        sub_section = convert_to_str(this_item["sub_section"])
+
     item_name = set_item_name(this_item)
     if "item_pref_label" in this_item.keys():
         pref_label = convert_to_str(this_item["item_pref_label"])
@@ -63,6 +67,7 @@ def get_item_info(this_item):
         "choices": choices,
         "visibility": visibility,
         "mandatory": mandatory,
+        "sub_section": sub_section,
     }
 
 

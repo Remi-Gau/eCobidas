@@ -105,6 +105,7 @@ def test_get_item_info():
         "visibility": "previous_item == 2",
         "mandatory": True,
         "description": "item name",
+        "sub_section": "",
     }
 
     assert item_info == expected
@@ -136,6 +137,7 @@ def test_get_item_info_with_name():
         "visibility": True,
         "mandatory": True,
         "description": "desc",
+        "sub_section": "",
     }
 
     assert item_info == expected
@@ -166,6 +168,7 @@ def test_get_item_info_with_only_name():
         "visibility": True,
         "mandatory": True,
         "description": "desc",
+        "sub_section": "",
     }
 
     assert item_info == expected
