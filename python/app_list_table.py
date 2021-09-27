@@ -34,7 +34,7 @@ for i in files:
     an_item = dict(
         basename=basename,
         link=details["link"].tolist()[0],
-        jsonld=BASE_URL + "response_options/" + basename + ".jsonld",
+        jsonld=f"{BASE_URL}response_options/{basename}.jsonld",
     )
     items.append(an_item)
 
