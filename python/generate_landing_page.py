@@ -54,4 +54,4 @@ for i in apps:
 
 rendered_template = template.render(items=items)
 with open(os.path.join("output", "landing_page.html"), "w") as out:
-    out.write("{}".format(rendered_template))
+    out.write(f"{rendered_template}")
