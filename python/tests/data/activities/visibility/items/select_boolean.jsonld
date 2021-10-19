@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "select_boolean.jsonld",
     "prefLabel": {
-        "en": "select_boolean"
+        "en": "select boolean"
     },
-    "description": "select_boolean",
+    "description": "select boolean",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

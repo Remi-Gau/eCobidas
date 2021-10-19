@@ -28,6 +28,6 @@ class TemplateManager:
 
         :return: Rendered text for the requested template. Includes any subtemplates in the hierarchy.
         """
-        template_filename: str = "{}.tmp".format(template_name)
+        template_filename: str = f"{template_name}.tmp"
         template = cls.env.get_template(template_filename)
         return template.render(kwargs["input_data"])

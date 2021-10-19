@@ -1,4 +1,6 @@
-import warnings, re
+import warnings
+import re
+
 from numpy import linspace, isnan
 
 from utils import convert_to_str, convert_to_int, snake_case
@@ -25,11 +27,17 @@ def set_item_name(this_item):
 
 def get_item_info(this_item):
 
+    sub_section = ""
+    if "sub_section" in this_item.keys() and this_item["sub_section"].any():
+        sub_section = convert_to_str(this_item["sub_section"])
+
     item_name = set_item_name(this_item)
     if "item_pref_label" in this_item.keys():
         pref_label = convert_to_str(this_item["item_pref_label"])
     else:
-        pref_label = item_name.replace("_", " ")
+        pref_label = item_name
+
+    pref_label = pref_label.replace("_", " ")
 
     description = pref_label
     if "item_description" in this_item.keys() and this_item["item_description"].any():
@@ -59,6 +67,7 @@ def get_item_info(this_item):
         "choices": choices,
         "visibility": visibility,
         "mandatory": mandatory,
+        "sub_section": sub_section,
     }
 
 

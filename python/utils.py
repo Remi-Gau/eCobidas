@@ -1,5 +1,6 @@
-import os, warnings
+import os
 import pandas as pd
+from numpy import isnan
 
 
 def get_root_dir():
@@ -118,15 +119,49 @@ def print_info(type, pref_label, file):
 
 def print_item_info(activity_idx, item_idx, item_info):
 
-    print("Activity: " + str(activity_idx) + " Item: " + str(item_idx))
+    f"Activity: {activity_idx} Item: {item_idx}"
+    f"   {item_info['name']}   {item_info['field_type']}   {item_info['visibility']}"
+
+
+def print_item_to_table(activity_idx, item_idx, this_item, item_info, sep=" "):
+
+    details = convert_to_str(this_item["details"])
+    if isinstance(details, float):
+        details = [str(details)]
+    if details == ["nan"]:
+        details = ""
+
+    choices = item_info["choices"]
+    if isinstance(choices, float):
+        choices = [str(choices)]
+    if "preset:boolean" in choices:
+        choices = ["yes", "no"]
+    if isinstance(choices, list):
+        choices = "- " + "\n- ".join(choices)
+    if choices == "- nan":
+        choices = ""
+
+    dict_to_print = {
+        "item": "'" + str(activity_idx) + "." + str(item_idx),
+        "field": item_info["pref_label"],
+        "question": item_info["question"],
+        "options": choices,
+        "instructions": details,
+    }
+
     print(
-        "  "
-        + item_info["name"]
-        + "   "
-        + item_info["field_type"]
-        + "   "
-        + str(item_info["visibility"])
+        dict_to_print["item"]
+        + sep
+        + dict_to_print["field"]
+        + sep
+        + dict_to_print["question"]
+        + sep
+        + dict_to_print["options"]
+        + sep
+        + dict_to_print["instructions"]
     )
+
+    return dict_to_print
 
 
 def print_download(repo, branch, protocol):

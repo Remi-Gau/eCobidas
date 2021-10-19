@@ -8,7 +8,13 @@ repos:
     -   id: check-yaml
     -   id: check-added-large-files
     # -   id: end-of-file-fixer (removed until jsonld output does not add extra end lines)
+
 -   repo: https://github.com/psf/black
     rev: 21.8b0
     hooks:
     -   id: black
+
+-   repo: https://github.com/ikamensh/flynt/
+    rev: ''
+    hooks:
+    -   id: flynt

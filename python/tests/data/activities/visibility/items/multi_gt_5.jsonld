@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "multi_gt_5.jsonld",
     "prefLabel": {
-        "en": "multi_gt_5"
+        "en": "multi gt 5"
     },
-    "description": "multi_gt_5",
+    "description": "multi gt 5",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

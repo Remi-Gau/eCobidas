@@ -75,4 +75,4 @@ if __name__ == "__main__":
 
     # Output the same result in a text file in the OUTFILE path
     with open(OUTFILE, "w") as out:
-        out.write("{} ".format(rendered_template))
+        out.write(f"{rendered_template} ")

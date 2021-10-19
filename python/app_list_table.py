@@ -34,13 +34,13 @@ for i in files:
     an_item = dict(
         basename=basename,
         link=details["link"].tolist()[0],
-        jsonld=BASE_URL + "response_options/" + basename + ".jsonld",
+        jsonld=f"{BASE_URL}response_options/{basename}.jsonld",
     )
     items.append(an_item)
 
 rendered_template = template.render(items=items)
 with open(os.path.join("output", "preset_responses.md"), "w") as out:
-    out.write("{}".format(rendered_template))
+    out.write(f"{rendered_template}")
 
 
 """
@@ -90,4 +90,4 @@ for i in apps:
 
 rendered_template = template.render(items=items)
 with open(os.path.join("output", "apps_table.md"), "w") as out:
-    out.write("{}".format(rendered_template))
+    out.write(f"{rendered_template}")
