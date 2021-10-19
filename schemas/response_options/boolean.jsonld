@@ -17,12 +17,6 @@
                 "en": "Yes"
             },
             "value": 1
-        },
-        {
-            "name": {
-                "en": "Do not Know"
-            },
-            "value": 2
         }
     ]
 }
