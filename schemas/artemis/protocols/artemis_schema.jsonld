@@ -24,7 +24,7 @@
             "../activities/preprocessing/preprocessing_schema.jsonld",
             "../activities/measurement/measurement_schema.jsonld",
             "../activities/channel_choice/channel_choice_schema.jsonld",
-            "../activities/visualization/visualization_schema.jsonld",
+            "../activities/visualisation/visualisation_schema.jsonld",
             "../activities/other/other_schema.jsonld"
         ],
         "addProperties": [
@@ -101,8 +101,8 @@
                 ]
             },
             {
-                "variableName": "visualization",
-                "isAbout": "../activities/visualization/visualization_schema.jsonld",
+                "variableName": "visualisation",
+                "isAbout": "../activities/visualisation/visualisation_schema.jsonld",
                 "prefLabel": {
                     "en": "Visualization"
                 },

@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "visualisation_schema.jsonld",
+    "prefLabel": {
+        "en": "visualisation"
+    },
+    "description": "visualisation",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "landingPage": {
+        "@id": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/landing_pages/README_artemis-en.md ",
+        "inLanguage": "en"
+    },
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "../activities/visualisation/visualisation_schema.jsonld",
+            "../activities/other/other_schema.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "visualisation",
+                "isAbout": "../activities/visualisation/visualisation_schema.jsonld",
+                "prefLabel": {
+                    "en": "visualisation"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "other",
+                "isAbout": "../activities/other/other_schema.jsonld",
+                "prefLabel": {
+                    "en": "other"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}
