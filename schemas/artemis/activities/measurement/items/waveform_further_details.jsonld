@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please specify details of how the waveforms were constructed in the further clarification text. The details should be sufficient to allow replication."
+        "en": "How did you calculate your waveforms for analysis? Describe in detail sufficient to allow replication."
     },
     "responseOptions": {
         "valueType": "xsd:string",

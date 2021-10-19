@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Specify the offline high-pass filter cut-off (Hz)"
+        "en": "Specify the offline high-pass filter cut-off (Hz):"
     },
     "responseOptions": {
         "valueType": "xsd:float"

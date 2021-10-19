@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Specify the order of the group"
+        "en": "Specify group names separated by semicolon (e.g., test group; control group)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Which analysis software do you use for implementing filter on EEG data?"
+        "en": "Which software do you use for implementing filter on EEG data?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_analysis_softwares.jsonld"
 }

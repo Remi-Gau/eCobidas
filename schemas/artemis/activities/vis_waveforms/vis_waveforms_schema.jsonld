@@ -1,0 +1,95 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "vis_waveforms_schema.jsonld",
+    "prefLabel": {
+        "en": "vis_waveforms"
+    },
+    "description": "vis waveforms",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=1616564910' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>Please specify all the procesures for visualisation purposes in this section.</p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/visualisation_only_procedures.jsonld",
+            "items/specify_visualisation.jsonld",
+            "items/waveforms_represent.jsonld",
+            "items/specify_waveforms.jsonld",
+            "items/channel_location_rationale.jsonld",
+            "items/topoplot_represent.jsonld",
+            "items/specify_topoplot.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "visualisation_only_procedures",
+                "isAbout": "items/visualisation_only_procedures.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "specify_visualisation",
+                "isAbout": "items/specify_visualisation.jsonld",
+                "isVis": "visualisation_only_procedures == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveforms_represent",
+                "isAbout": "items/waveforms_represent.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "specify_waveforms",
+                "isAbout": "items/specify_waveforms.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "channel_location_rationale",
+                "isAbout": "items/channel_location_rationale.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "topoplot_represent",
+                "isAbout": "items/topoplot_represent.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "specify_topoplot",
+                "isAbout": "items/specify_topoplot.jsonld",
+                "isVis": "topoplot_represent == 8",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

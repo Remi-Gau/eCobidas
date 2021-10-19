@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "What is the event for the trigger code? "
+        "en": "What was the event type relative to which epochs were defined?"
     },
     "responseOptions": {
         "valueType": "xsd:string",

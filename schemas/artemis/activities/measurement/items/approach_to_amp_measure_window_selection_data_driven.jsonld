@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -42,12 +42,6 @@
                     "en": "window around a peak"
                 },
                 "value": 3
-            },
-            {
-                "name": {
-                    "en": "windows across epoch with/without overlap (time windows decided after seeing the waveforms, specify details) "
-                },
-                "value": 4
             }
         ],
         "multipleChoice": false

@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "trigger_signal_input.jsonld",
     "prefLabel": {
-        "en": "Trigger signal input"
+        "en": "Trigger_signal_input"
     },
-    "description": "Trigger signal input",
+    "description": "Trigger_signal_input",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

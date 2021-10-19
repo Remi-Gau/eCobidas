@@ -133,6 +133,7 @@ def initialize_activity(protocol, items, out_dir):
 
     activity = Activity()
 
+    # TODO : make sure there is only only preferred label
     activity_pref_label = items.activity_pref_label.unique()[0]
     activity.set_pref_label(activity_pref_label)
 

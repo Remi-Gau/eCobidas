@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "What is your recording sampling frequency?"
+        "en": "What is your acquisition sampling rate?"
     },
     "responseOptions": {
         "valueType": "xsd:string",

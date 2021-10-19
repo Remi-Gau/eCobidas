@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=724696342' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>Please specify acquisition set-up in this section, which software you have used, impedance upper treschold, what type of online reference, recording channels, VEOG and HEOG and filters.  </p>"
     },
     "ui": {
         "shuffle": false,
@@ -21,7 +21,7 @@
             "items/impedance_alternative.jsonld",
             "items/was_reference_used.jsonld",
             "items/type_online_reference.jsonld",
-            "items/other_online_references.jsonld",
+            "items/alternatives_to_reference.jsonld",
             "items/other_type_online_reference.jsonld",
             "items/type_ground.jsonld",
             "items/electrode_location_naming_convention.jsonld",
@@ -105,8 +105,8 @@
                 ]
             },
             {
-                "variableName": "other_online_references",
-                "isAbout": "items/other_online_references.jsonld",
+                "variableName": "alternatives_to_reference",
+                "isAbout": "items/alternatives_to_reference.jsonld",
                 "isVis": "was_reference_used == 0",
                 "requiredValue": false,
                 "allow": [
@@ -116,7 +116,7 @@
             {
                 "variableName": "other_type_online_reference",
                 "isAbout": "items/other_type_online_reference.jsonld",
-                "isVis": "type_online_reference == other",
+                "isVis": "type_online_reference == 11",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -143,7 +143,7 @@
             {
                 "variableName": "custom_electrode_location_naming_convention",
                 "isAbout": "items/custom_electrode_location_naming_convention.jsonld",
-                "isVis": "electrode_location_convention == 3",
+                "isVis": "electrode_location_convention == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

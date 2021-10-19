@@ -67,7 +67,7 @@ convert_artemis: $(ARTEMIS_TSV)
 validate_artemis: convert_artemis
 	grep -r  "@context" schemas/artemis | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/artemis
-clean_artemis: verb.clean_artemis
+clean_artemis:
 	rm -rf $(ARTEMIS_TSV)
 	rm -rf schemas/artemis/activities
 

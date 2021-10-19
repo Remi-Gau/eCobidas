@@ -18,15 +18,15 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "../activities/visualization/visualization_schema.jsonld",
+            "../activities/vis_waveforms/vis_waveforms_schema.jsonld",
             "../activities/other/other_schema.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "visualization",
-                "isAbout": "../activities/visualization/visualization_schema.jsonld",
+                "variableName": "vis_waveforms",
+                "isAbout": "../activities/vis_waveforms/vis_waveforms_schema.jsonld",
                 "prefLabel": {
-                    "en": "visualization"
+                    "en": "vis_waveforms"
                 },
                 "isVis": true,
                 "requiredValue": false,

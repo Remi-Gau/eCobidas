@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "offline_lowpass_filter_attenuation.jsonld",
+    "prefLabel": {
+        "en": "offline_lowpass_filter_attenuation"
+    },
+    "description": "offline_lowpass_filter_attenuation",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "What is the attenuation achieved in the stopband (in dB) after low-pass filtering?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

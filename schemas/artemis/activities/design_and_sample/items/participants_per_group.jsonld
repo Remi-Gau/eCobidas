@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "How many participants did each experimental/comparison groups feature? "
+        "en": "How many participants did each group have? Input numeric values in the same order in which groups were listed in the previous section. Values should be separated by semicolon. "
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -9,23 +9,30 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=1276614777' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>Please specifiy all the preprocessing decisions in this section, such as analysis software, off-line filtering, re-referencing, artefact removal, epoching and baseline.  </p>"
     },
     "ui": {
         "shuffle": false,
         "order": [
             "items/filtering_software.jsonld",
             "items/filter_software_details.jsonld",
-            "items/offline_filter_unit.jsonld",
-            "items/offline_reference.jsonld",
-            "items/type_offline_reference.jsonld",
-            "items/other_type_offline_reference.jsonld",
+            "items/offline_highpass_filter_type.jsonld",
+            "items/offline_highpass_filter_order.jsonld",
             "items/offline_highpass_filter_cutoff.jsonld",
-            "items/offline_lowpass_filter_cutoff.jsonld",
+            "items/offline_highpass_filter_unit.jsonld",
             "items/offline_highpass_filter_rolloff.jsonld",
+            "items/offline_highpass_filter_attenuation.jsonld",
+            "items/offline_highpass_filter_direction.jsonld",
+            "items/offline_lowpass_filter_type.jsonld",
+            "items/offline_lowpass_filter_order.jsonld",
+            "items/offline_lowpass_filter_cutoff.jsonld",
+            "items/offline_lowpass_filter_unit.jsonld",
             "items/offline_lowpass_filter_rolloff.jsonld",
+            "items/offline_lowpass_filter_attenuation.jsonld",
+            "items/offline_lowpass_filter_direction.jsonld",
             "items/downsample_data.jsonld",
             "items/sampling_frequency.jsonld",
+            "items/offline_reference.jsonld",
             "items/rereference_software.jsonld",
             "items/rereference_software_details.jsonld",
             "items/new_reference.jsonld",
@@ -71,8 +78,8 @@
                 ]
             },
             {
-                "variableName": "offline_filter_unit",
-                "isAbout": "items/offline_filter_unit.jsonld",
+                "variableName": "offline_highpass_filter_type",
+                "isAbout": "items/offline_highpass_filter_type.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -80,27 +87,9 @@
                 ]
             },
             {
-                "variableName": "offline_reference",
-                "isAbout": "items/offline_reference.jsonld",
+                "variableName": "offline_highpass_filter_order",
+                "isAbout": "items/offline_highpass_filter_order.jsonld",
                 "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "type_offline_reference",
-                "isAbout": "items/type_offline_reference.jsonld",
-                "isVis": "offline_reference == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "other_type_offline_reference",
-                "isAbout": "items/other_type_offline_reference.jsonld",
-                "isVis": "type_offline_reference == 5",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -116,8 +105,8 @@
                 ]
             },
             {
-                "variableName": "offline_lowpass_filter_cutoff",
-                "isAbout": "items/offline_lowpass_filter_cutoff.jsonld",
+                "variableName": "offline_highpass_filter_unit",
+                "isAbout": "items/offline_highpass_filter_unit.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -134,8 +123,80 @@
                 ]
             },
             {
+                "variableName": "offline_highpass_filter_attenuation",
+                "isAbout": "items/offline_highpass_filter_attenuation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_highpass_filter_direction",
+                "isAbout": "items/offline_highpass_filter_direction.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_lowpass_filter_type",
+                "isAbout": "items/offline_lowpass_filter_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_lowpass_filter_order",
+                "isAbout": "items/offline_lowpass_filter_order.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_lowpass_filter_cutoff",
+                "isAbout": "items/offline_lowpass_filter_cutoff.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_lowpass_filter_unit",
+                "isAbout": "items/offline_lowpass_filter_unit.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
                 "variableName": "offline_lowpass_filter_rolloff",
                 "isAbout": "items/offline_lowpass_filter_rolloff.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_lowpass_filter_attenuation",
+                "isAbout": "items/offline_lowpass_filter_attenuation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_lowpass_filter_direction",
+                "isAbout": "items/offline_lowpass_filter_direction.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -155,6 +216,15 @@
                 "variableName": "sampling_frequency",
                 "isAbout": "items/sampling_frequency.jsonld",
                 "isVis": "downsample_data == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_reference",
+                "isAbout": "items/offline_reference.jsonld",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

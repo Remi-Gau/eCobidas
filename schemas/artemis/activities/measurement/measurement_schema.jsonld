@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=867147534' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>Please specify details regarding measurement in this section, such as type of measurement, amplitude and latency. </p>"
     },
     "ui": {
         "shuffle": false,
@@ -111,7 +111,7 @@
             {
                 "variableName": "other_further_clarification",
                 "isAbout": "items/other_further_clarification.jsonld",
-                "isVis": "amp_measure_procedure > 5",
+                "isVis": "amp_measure_procedure == 6",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -129,7 +129,7 @@
             {
                 "variableName": "approach_to_amp_measure_window_selection_a_priori",
                 "isAbout": "items/approach_to_amp_measure_window_selection_a_priori.jsonld",
-                "isVis": "measure_type == 0",
+                "isVis": "amp_time_window_selection == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -138,7 +138,7 @@
             {
                 "variableName": "amp_literature_references",
                 "isAbout": "items/amp_literature_references.jsonld",
-                "isVis": "amp_time_window_selection == 0",
+                "isVis": "approach_to_amp_measure_window_selection_a_priori == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -147,7 +147,7 @@
             {
                 "variableName": "amp_further_details",
                 "isAbout": "items/amp_further_details.jsonld",
-                "isVis": "amp_time_window_selection == 1 || amp_time_window_selection == 2",
+                "isVis": "approach_to_amp_measure_window_selection_a_prior == 1 || approach_to_amp_measure_window_selection_a_priori == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -156,7 +156,7 @@
             {
                 "variableName": "approach_to_amp_measure_window_selection_data_driven",
                 "isAbout": "items/approach_to_amp_measure_window_selection_data_driven.jsonld",
-                "isVis": "measure_type == 0",
+                "isVis": "amp_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -228,7 +228,7 @@
             {
                 "variableName": "amp_measure_software_details",
                 "isAbout": "items/amp_measure_software_details.jsonld",
-                "isVis": "measure_type == 0",
+                "isVis": "measure_type == 0 | amp_measure_software == 16",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "How were your electrodes placed?"
+        "en": "How were the EEG electrodes placed?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

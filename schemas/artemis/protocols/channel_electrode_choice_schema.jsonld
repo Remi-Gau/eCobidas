@@ -18,14 +18,14 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "../activities/channel_choice_for_analysis/channel_choice_for_analysis_schema.jsonld"
+            "../activities/channel_choice/channel_choice_schema.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "channel_choice_for_analysis",
-                "isAbout": "../activities/channel_choice_for_analysis/channel_choice_for_analysis_schema.jsonld",
+                "variableName": "channel_choice",
+                "isAbout": "../activities/channel_choice/channel_choice_schema.jsonld",
                 "prefLabel": {
-                    "en": "Channel choice for analysis"
+                    "en": "Channel choice"
                 },
                 "isVis": true,
                 "requiredValue": false,
