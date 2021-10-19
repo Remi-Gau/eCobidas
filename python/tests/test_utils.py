@@ -34,7 +34,7 @@ def test_get_landing_page(this_schema, filename):
     schema_info = get_schema_info(this_schema)
     landing_page = get_landing_page(schema_info)
 
-    repo = "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/landing_pages/"
+    repo = "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/landing_pages/"
 
     expected = repo + filename
 

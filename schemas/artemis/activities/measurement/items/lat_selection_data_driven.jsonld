@@ -9,29 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "text"
     },
     "question": {
         "en": "Select the procedure which was used for latency measurement in this time window."
     },
     "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 1,
-        "choices": [
-            {
-                "name": {
-                    "en": "visual inspection "
-                },
-                "value": 0
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 1
-            }
-        ],
-        "multipleChoice": false
+        "valueType": "xsd:string",
+        "maxLength": 300
     }
 }

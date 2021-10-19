@@ -155,8 +155,6 @@ def define_choices(item, field_type, choices):
 
         # if we have a dropdown menu
         elif field_type in ["select", "select_multiple"]:
-            response_options.add_choice("other", len(choices))
-            response_options.set_max(len(choices))
             item.set_input_type_as_select(response_options)
 
         if ispreset(choices):
