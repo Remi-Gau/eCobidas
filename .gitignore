@@ -1,4 +1,7 @@
 lib/*
+names.csv
+
+#
 
 *.DS_Store
 

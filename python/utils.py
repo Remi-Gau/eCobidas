@@ -123,7 +123,7 @@ def print_item_info(activity_idx, item_idx, item_info):
     f"   {item_info['name']}   {item_info['field_type']}   {item_info['visibility']}"
 
 
-def print_item_to_table(activity_idx, item_idx, this_item, item_info, sep=" "):
+def print_item_to_table(item_id, this_item, item_info, sep=" "):
 
     details = convert_to_str(this_item["details"])
     if isinstance(details, float):
@@ -142,7 +142,7 @@ def print_item_to_table(activity_idx, item_idx, this_item, item_info, sep=" "):
         choices = ""
 
     dict_to_print = {
-        "item": "'" + str(activity_idx) + "." + str(item_idx),
+        "item": item_id,
         "field": item_info["pref_label"],
         "question": item_info["question"],
         "options": choices,

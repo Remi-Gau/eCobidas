@@ -10,66 +10,91 @@ from utils import (
     print_item_to_table,
 )
 
-sep = ", "
 
-pattern = "artemis-"
+def main():
 
-header = ["item", "field", "question", "options", "instructions"]
+    sep = ", "
 
-with open("names.csv", "w", newline="") as csvfile:
+    pattern = "artemis-"
 
-    writer = csv.DictWriter(csvfile, fieldnames=header)
+    header = ["item", "field", "question", "options", "instructions"]
 
-    writer.writerow(
-        {
-            "item": "ARTEM-IS (Agreed Reporting Template for EEG Methodology - International Standard) template for ERP"
-        }
-    )
-    writer.writeheader()
+    with open("names.csv", "w", newline="") as csvfile:
 
-    df = get_metatable()
+        writer = csv.DictWriter(csvfile, fieldnames=header)
 
-    tables_to_convert = df[df["schema"].str.match(r"(^" + pattern + ".*)") == True]
-    tables_name = list(tables_to_convert["basename"])
-    tables_to_convert = list(tables_to_convert["schema"])
+        writer.writerow(
+            {
+                "item": "ARTEM-IS (Agreed Reporting Template for EEG Methodology - International Standard) template for ERP"
+            }
+        )
+        writer.writeheader()
 
-    for j, this_table in enumerate(tables_to_convert):
+        df = get_metatable()
 
-        df = load_data(this_table)
+        tables_to_convert = df[df["schema"].str.match(r"(^" + pattern + ".*)") == True]
+        tables_name = list(tables_to_convert["basename"])
+        tables_to_convert = list(tables_to_convert["schema"])
 
-        activities = list(df.activity_order.unique())
+        for j, this_table in enumerate(tables_to_convert):
 
-        for i, activity_idx in enumerate(activities):
+            df = load_data(this_table)
 
-            print(str(activity_idx) + " - " + tables_name[j].upper())
-            writer.writerow(
-                {"item": str(activity_idx) + " - " + tables_name[j].upper()}
-            )
+            activities = list(df.activity_order.unique())
 
-            this_activity = df["activity_order"] == activities[i]
+            for i, activity_idx in enumerate(activities):
 
-            items = df[this_activity]
-            included_items = items["include"] == 1
-            items = items[included_items]
+                id = str(activity_idx) + " - " + tables_name[j].upper()
 
-            items_order = items.item_order.unique()
+                print(id)
+                writer.writerow({"item": id})
 
-            sub_section = ""
+                this_activity = df["activity_order"] == activities[i]
 
-            for item_idx in items_order:
+                items = df[this_activity]
+                included_items = items["include"] == 1
+                items = items[included_items]
 
-                this_item = items[items["item_order"] == item_idx]
-                item_info = get_item_info(this_item)
+                items_order = items.item_order.unique()
 
-                if (
-                    item_info["sub_section"] is not ""
-                    and item_info["sub_section"] != sub_section
-                ):
-                    sub_section = item_info["sub_section"]
-                    writer.writerow({"item": sub_section.upper()})
+                sub_section = ""
+                sub_section_id = 0
 
-                dict_to_print = print_item_to_table(
-                    activity_idx, item_idx, this_item, item_info, sep
-                )
+                for item_idx in items_order:
 
-                writer.writerow(dict_to_print)
+                    this_item = items[items["item_order"] == item_idx]
+                    item_info = get_item_info(this_item)
+
+                    if (
+                        item_info["sub_section"] is not ""
+                        and item_info["sub_section"] != sub_section
+                    ):
+                        sub_section_id += 1
+                        item_id = 0
+                        sub_section = item_info["sub_section"]
+                        id = (
+                            str(activity_idx)
+                            + "."
+                            + str(sub_section_id)
+                            + " - "
+                            + sub_section.upper()
+                        )
+                        writer.writerow({"item": id})
+
+                    item_id += 1
+                    id = (
+                        str(activity_idx)
+                        + "."
+                        + str(sub_section_id)
+                        + "."
+                        + str(item_id)
+                    )
+
+                    dict_to_print = print_item_to_table(id, this_item, item_info, sep)
+
+                    writer.writerow(dict_to_print)
+
+
+if __name__ == "__main__":
+
+    main()
