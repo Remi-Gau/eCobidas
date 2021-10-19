@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "other_eog_channels.jsonld",
     "prefLabel": {
-        "en": "other_eog_channels"
+        "en": "other eog channels"
     },
     "description": "Specify EOG channels used to record eye movements",
     "schemaVersion": "1.0.0-rc4",

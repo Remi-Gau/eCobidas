@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "offline_highpass_filter_unit.jsonld",
     "prefLabel": {
-        "en": "offline_highpass_filter_unit"
+        "en": "offline highpass filter unit"
     },
-    "description": "offline_highpass_filter_unit",
+    "description": "offline highpass filter unit",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

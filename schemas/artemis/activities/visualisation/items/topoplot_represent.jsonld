@@ -1,61 +1,79 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "channel_incl-excl_for_analysis.jsonld",
+    "@id": "topoplot_represent.jsonld",
     "prefLabel": {
-        "en": "channel incl-excl for analysis"
+        "en": "topoplot represent"
     },
-    "description": "channel incl-excl for analysis",
+    "description": "topoplot represent",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "select"
     },
     "question": {
-        "en": "How did you decide which channels would be included/excluded from analysis"
+        "en": "What type of data do the topographic maps represent?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 5,
+        "maxValue": 8,
         "choices": [
             {
                 "name": {
-                    "en": "a-priori decision inclusion/exclusion of channels"
+                    "en": "no maps"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "noise-dependent inclusion/exclusion of channels"
+                    "en": "voltage maps"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "signal-dependent inclusion/exclusion of channels"
+                    "en": "voltage maps normalized data"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "condition-dependent inclusion/exclusion of channels"
+                    "en": " statistical maps based on t-score/p-value"
                 },
                 "value": 3
             },
             {
                 "name": {
-                    "en": "all channels are used for measurement and analysis"
+                    "en": " current source density maps"
                 },
                 "value": 4
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "topographic maps of PCA factors"
                 },
                 "value": 5
+            },
+            {
+                "name": {
+                    "en": " voltage maps on percent scale"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "3D voltage maps"
+                },
+                "value": 7
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 8
             }
         ],
-        "multipleChoice": true
+        "multipleChoice": false
     }
 }

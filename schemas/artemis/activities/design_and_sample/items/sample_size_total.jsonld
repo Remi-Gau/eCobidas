@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "sample_size_total.jsonld",
     "prefLabel": {
-        "en": "sample_size_total"
+        "en": "sample size total"
     },
-    "description": "sample_size_total",
+    "description": "sample size total",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

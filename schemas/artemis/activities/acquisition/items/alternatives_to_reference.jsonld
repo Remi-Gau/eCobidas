@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "alternatives_to_reference.jsonld",
     "prefLabel": {
-        "en": "alternatives_to_reference"
+        "en": "alternatives to reference"
     },
     "description": "description of an acquisition system with a model alternative to ground & reference based acquisition",
     "schemaVersion": "1.0.0-rc4",

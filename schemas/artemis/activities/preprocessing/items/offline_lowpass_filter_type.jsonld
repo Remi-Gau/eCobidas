@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "offline_lowpass_filter_type.jsonld",
     "prefLabel": {
-        "en": "offline_lowpass_filter_type"
+        "en": "offline lowpass filter type"
     },
-    "description": "offline_lowpass_filter_type",
+    "description": "offline lowpass filter type",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "offline_highpass_filter_attenuation.jsonld",
     "prefLabel": {
-        "en": "offline_highpass_filter_attenuation"
+        "en": "offline highpass filter attenuation"
     },
-    "description": "offline_highpass_filter_attenuation",
+    "description": "offline highpass filter attenuation",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

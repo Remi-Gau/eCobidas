@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "notch_offline_filters.jsonld",
     "prefLabel": {
-        "en": "notch_offline_filters"
+        "en": "notch offline filters"
     },
     "description": "notch filter (AC offset or electricity-related interference) applied after recording or session",
     "schemaVersion": "1.0.0-rc4",

@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "total_nb_of_trials_condition.jsonld",
     "prefLabel": {
-        "en": "total_nb_of_trials_condition"
+        "en": "total nb of trials condition"
     },
-    "description": "total_nb_of_trials_condition",
+    "description": "total nb of trials condition",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

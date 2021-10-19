@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "custom_electrode_location_naming_convention.jsonld",
     "prefLabel": {
-        "en": "custom_electrode_location_naming_convention"
+        "en": "custom electrode location naming convention"
     },
     "description": "clarification of custom type of naming convention used for electrode locations",
     "schemaVersion": "1.0.0-rc4",

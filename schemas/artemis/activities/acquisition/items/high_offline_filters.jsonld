@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "high_offline_filters.jsonld",
     "prefLabel": {
-        "en": "high_offline_filters"
+        "en": "high offline filters"
     },
     "description": "high pass filters applied after recording or session",
     "schemaVersion": "1.0.0-rc4",

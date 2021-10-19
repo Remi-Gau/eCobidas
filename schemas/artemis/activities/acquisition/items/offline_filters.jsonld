@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "offline_filters.jsonld",
     "prefLabel": {
-        "en": "offline_filters"
+        "en": "offline filters"
     },
     "description": "filters used after recording/session",
     "schemaVersion": "1.0.0-rc4",

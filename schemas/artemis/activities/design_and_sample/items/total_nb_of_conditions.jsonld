@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "total_nb_of_conditions.jsonld",
     "prefLabel": {
-        "en": "total_nb_of_conditions"
+        "en": "total nb of conditions"
     },
-    "description": "total_nb_of_conditions",
+    "description": "total nb of conditions",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

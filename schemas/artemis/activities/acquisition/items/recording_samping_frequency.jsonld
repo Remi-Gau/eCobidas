@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "recording_samping_frequency.jsonld",
     "prefLabel": {
-        "en": "recording_samping_frequency"
+        "en": "recording samping frequency"
     },
     "description": "sampling frequency at data acqusition",
     "schemaVersion": "1.0.0-rc4",

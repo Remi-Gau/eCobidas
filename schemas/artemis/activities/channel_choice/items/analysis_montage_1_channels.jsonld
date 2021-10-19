@@ -9,13 +9,23 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Analysis montage 1 Electrode locations (main analysis)"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 0,
+        "choices": [
+            {
+                "name": {
+                    "en": "items drawn from acquisition"
+                },
+                "value": 0
+            }
+        ],
+        "multipleChoice": true
     }
 }

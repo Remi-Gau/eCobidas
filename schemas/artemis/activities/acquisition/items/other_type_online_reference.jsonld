@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "other_type_online_reference.jsonld",
     "prefLabel": {
-        "en": "other_type_online_reference"
+        "en": "other type online reference"
     },
     "description": "other types of online reference used",
     "schemaVersion": "1.0.0-rc4",

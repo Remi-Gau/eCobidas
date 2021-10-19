@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "epoch_software_details.jsonld",
     "prefLabel": {
-        "en": "epoch_software_details"
+        "en": "epoch software details"
     },
-    "description": "epoch_software_details",
+    "description": "epoch software details",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

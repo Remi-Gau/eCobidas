@@ -1,35 +1,47 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "acquisiton_quality_measure.jsonld",
+    "@id": "waveforms_represent.jsonld",
     "prefLabel": {
-        "en": "acquisiton quality measure"
+        "en": "waveforms represent"
     },
-    "description": "is data quality properly described by the highest impedance tollerated",
+    "description": "waveforms represent",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
-        "en": "What is the appropriate acquisition data quality measure for your recording equipment?"
+        "en": "What do the waveforms in the figure represent ?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 1,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
-                    "en": "impedance upper treshold"
+                    "en": "single waves"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "an alternative data quality measure"
+                    "en": "difference waves"
                 },
                 "value": 1
+            },
+            {
+                "name": {
+                    "en": "both"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
             }
         ],
         "multipleChoice": false

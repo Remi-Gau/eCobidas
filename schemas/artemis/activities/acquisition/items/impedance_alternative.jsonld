@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "impedance_alternative.jsonld",
     "prefLabel": {
-        "en": "impedance_alternative"
+        "en": "impedance alternative"
     },
     "description": "alternative measure to impedance threshold (e.g. impedance range, other non-impedance measures)",
     "schemaVersion": "1.0.0-rc4",

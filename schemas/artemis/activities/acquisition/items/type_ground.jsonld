@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "type_ground.jsonld",
     "prefLabel": {
-        "en": "type_ground"
+        "en": "type ground"
     },
     "description": "type of ground used during recording",
     "schemaVersion": "1.0.0-rc4",

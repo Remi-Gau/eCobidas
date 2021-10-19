@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "baseline_software_details.jsonld",
+    "@id": "specify_waveforms.jsonld",
     "prefLabel": {
-        "en": "baseline software details"
+        "en": "specify waveforms"
     },
-    "description": "baseline software details",
+    "description": "specify waveforms",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Specify software version if applicable, and software name and version if \"other\" was selected."
+        "en": "Please specify which conditions and groups do waveforms represent in the figure"
     },
     "responseOptions": {
         "valueType": "xsd:string",

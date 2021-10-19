@@ -9,13 +9,23 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
         "en": "Inclusion/Exclusion Reconstruction Order"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 0,
+        "choices": [
+            {
+                "name": {
+                    "en": "(items drawn from above)"
+                },
+                "value": 0
+            }
+        ],
+        "multipleChoice": true
     }
 }

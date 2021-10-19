@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "trial_presentation_strategy_other.jsonld",
     "prefLabel": {
-        "en": "trial_presentation_strategy_other"
+        "en": "trial presentation strategy other"
     },
-    "description": "trial_presentation_strategy_other",
+    "description": "trial presentation strategy other",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

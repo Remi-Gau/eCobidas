@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "total_nb_of_trials.jsonld",
     "prefLabel": {
-        "en": "total_nb_of_trials"
+        "en": "total nb of trials"
     },
-    "description": "total_nb_of_trials",
+    "description": "total nb of trials",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

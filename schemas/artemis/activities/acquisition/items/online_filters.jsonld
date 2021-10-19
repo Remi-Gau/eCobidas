@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "online_filters.jsonld",
     "prefLabel": {
-        "en": "online_filters"
+        "en": "online filters"
     },
     "description": "filters used during the recording (simultaneously)",
     "schemaVersion": "1.0.0-rc4",

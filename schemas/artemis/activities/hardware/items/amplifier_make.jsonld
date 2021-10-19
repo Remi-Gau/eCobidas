@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "amplifier_make.jsonld",
     "prefLabel": {
-        "en": "Amplifier_make"
+        "en": "Amplifier make"
     },
-    "description": "Amplifier_make",
+    "description": "Amplifier make",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

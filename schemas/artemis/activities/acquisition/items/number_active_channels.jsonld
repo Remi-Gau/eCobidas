@@ -3,7 +3,7 @@
     "@type": "reproschema:Field",
     "@id": "number_active_channels.jsonld",
     "prefLabel": {
-        "en": "number_active_channels"
+        "en": "number active channels"
     },
     "description": "number of channels used (active) during EEG recording",
     "schemaVersion": "1.0.0-rc4",
