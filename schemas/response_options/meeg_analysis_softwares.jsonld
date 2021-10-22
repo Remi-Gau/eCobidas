@@ -68,43 +68,43 @@
         },
         {
             "name": {
-                "en": "Custom scripts (any language)"
+                "en": "MNE-Python"
             },
             "value": 10
         },
         {
             "name": {
-                "en": "MNE-Python"
+                "en": "NetStation"
             },
             "value": 11
         },
         {
             "name": {
-                "en": "NetStation"
+                "en": "Scan"
             },
             "value": 12
         },
         {
             "name": {
-                "en": "Scan"
+                "en": "TrackWalker"
             },
             "value": 13
         },
         {
             "name": {
-                "en": "TrackWalker"
+                "en": "SPM"
             },
             "value": 14
         },
         {
             "name": {
-                "en": "Other"
+                "en": "Custom scripts (any language)"
             },
             "value": 15
         },
         {
             "name": {
-                "en": "SPM"
+                "en": "Other"
             },
             "value": 16
         }

@@ -9,10 +9,10 @@ EEProbe	7
 ERP system	8
 FieldTrip 	9
 InstEP	10
-Custom scripts (any language)	11
-MNE-Python	12
-NetStation	13
-Scan	14
-TrackWalker	15
-Other	17
-SPM	16
+MNE-Python	11
+NetStation	12
+Scan	13
+TrackWalker	14
+SPM	15
+Custom scripts (any language)	17
+Other	16
