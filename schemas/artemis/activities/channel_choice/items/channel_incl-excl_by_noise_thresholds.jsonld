@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please explain your thresholds further"
+        "en": "Explain your thresholds further"
     },
     "responseOptions": {
         "valueType": "xsd:string",

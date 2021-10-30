@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "amplifier_make_other.jsonld",
     "prefLabel": {
-        "en": "Amplifier make other"
+        "en": "amplifier make other"
     },
-    "description": "Amplifier make other",
+    "description": "amplifier make other",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please specify which make (brand) of the amplifiers did you use."
+        "en": "Specify which make (brand) of the amplifiers did you use."
     },
     "responseOptions": {
         "valueType": "xsd:string",

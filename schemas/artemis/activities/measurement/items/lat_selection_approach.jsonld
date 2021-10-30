@@ -21,19 +21,19 @@
         "choices": [
             {
                 "name": {
-                    "en": "A priori"
+                    "en": "a priori"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "Data-driven"
+                    "en": "data-driven"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "latency identified based on the entire epoch"
+                    "en": "latency idenfied based on entire epoch"
                 },
                 "value": 2
             },

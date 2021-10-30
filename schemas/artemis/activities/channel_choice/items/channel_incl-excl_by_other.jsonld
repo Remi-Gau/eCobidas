@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please explain your inclusion/exclusion of channels for analysis"
+        "en": "Explain your inclusion/exclusion of channels for analysis"
     },
     "responseOptions": {
         "valueType": "xsd:string",

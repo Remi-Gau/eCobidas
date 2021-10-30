@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "What type of online reference did you use?"
+        "en": "Where did you place references electrode(s)?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_reference_electrodes.jsonld"
 }

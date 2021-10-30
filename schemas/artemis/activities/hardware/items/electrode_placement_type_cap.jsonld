@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "electrode_placement_type_cap.jsonld",
     "prefLabel": {
-        "en": "Electrode Placement Type Cap"
+        "en": "electrode placement type cap"
     },
-    "description": "Electrode Placement Type Cap",
+    "description": "electrode placement type cap",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

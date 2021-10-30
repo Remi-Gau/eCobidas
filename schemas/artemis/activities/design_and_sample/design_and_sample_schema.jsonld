@@ -9,12 +9,16 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=2021971006' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>Please specify the experimental design and sample in this section, such as experimental condtion and trial number per condition, number of participants, participant exclusion and presenting software. </p>"
     },
     "ui": {
         "shuffle": false,
         "order": [
-            "items/trial_presentation_strategy.jsonld",
+            "items/sample_size_total.jsonld",
+            "items/sample_size_valid.jsonld",
+            "items/number_of_groups.jsonld",
+            "items/order_of_group.jsonld",
+            "items/participants_per_group.jsonld",
             "items/trial_presentation_strategy_other.jsonld",
             "items/total_nb_of_trials.jsonld",
             "items/total_nb_of_conditions.jsonld",
@@ -22,18 +26,49 @@
             "items/averaged_nb_of_trials_condition.jsonld",
             "items/min_nb_of_trials_per_condition.jsonld",
             "items/max_nb_of_trials_per_condition.jsonld",
-            "items/sample_size_total.jsonld",
-            "items/sample_size_valid.jsonld",
-            "items/number_of_groups.jsonld",
-            "items/order_of_group.jsonld",
-            "items/participants_per_group.jsonld",
             "items/presenting_software.jsonld",
             "items/presenting_software_details.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "trial_presentation_strategy",
-                "isAbout": "items/trial_presentation_strategy.jsonld",
+                "variableName": "sample_size_total",
+                "isAbout": "items/sample_size_total.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "sample_size_valid",
+                "isAbout": "items/sample_size_valid.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_groups",
+                "isAbout": "items/number_of_groups.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "order_of_group",
+                "isAbout": "items/order_of_group.jsonld",
+                "isVis": "number_of_groups > 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "participants_per_group",
+                "isAbout": "items/participants_per_group.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -97,51 +132,6 @@
             {
                 "variableName": "max_nb_of_trials_per_condition",
                 "isAbout": "items/max_nb_of_trials_per_condition.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "sample_size_total",
-                "isAbout": "items/sample_size_total.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "sample_size_valid",
-                "isAbout": "items/sample_size_valid.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "number_of_groups",
-                "isAbout": "items/number_of_groups.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "order_of_group",
-                "isAbout": "items/order_of_group.jsonld",
-                "isVis": "number_of_groups > 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "participants_per_group",
-                "isAbout": "items/participants_per_group.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "How did you decide on the basis of signal?"
+        "en": "Signal-dependent channel inclusion/exclusion type"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

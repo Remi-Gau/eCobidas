@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "electrode_preamplifiers.jsonld",
     "prefLabel": {
-        "en": "Electrode preamplifiers"
+        "en": "electrode preamplifiers"
     },
-    "description": "Electrode preamplifiers",
+    "description": "electrode preamplifiers",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

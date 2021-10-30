@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please clarify how you selected the window in to measure latency."
+        "en": "Clarify how you selected the window in to measure latency."
     },
     "responseOptions": {
         "valueType": "xsd:string",

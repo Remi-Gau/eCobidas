@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "epoch_beginning.jsonld",
     "prefLabel": {
-        "en": "Epoch beginning"
+        "en": "epoch beginning"
     },
-    "description": "Epoch beginning",
+    "description": "epoch beginning",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "float"
     },
     "question": {
-        "en": "What was the epoch beginning (in ms) relative to a trigger point?"
+        "en": "What was the epoch beginning (in ms) relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers."
     },
     "responseOptions": {
         "valueType": "xsd:float"

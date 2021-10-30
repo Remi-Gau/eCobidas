@@ -20,7 +20,6 @@
             "items/amp_measure_procedure.jsonld",
             "items/window_area_measure_further_clarification.jsonld",
             "items/factor_scores_further_clarification.jsonld",
-            "items/other_further_clarification.jsonld",
             "items/amp_time_window_selection.jsonld",
             "items/approach_to_amp_measure_window_selection_a_priori.jsonld",
             "items/amp_literature_references.jsonld",
@@ -102,16 +101,7 @@
             {
                 "variableName": "factor_scores_further_clarification",
                 "isAbout": "items/factor_scores_further_clarification.jsonld",
-                "isVis": "amp_measure_procedure == 2",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "other_further_clarification",
-                "isAbout": "items/other_further_clarification.jsonld",
-                "isVis": "amp_measure_procedure == 6",
+                "isVis": "amp_measure_procedure == 2 || amp_measure_procedure == 6",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -246,7 +236,7 @@
             {
                 "variableName": "onset_lat_measure",
                 "isAbout": "items/onset_lat_measure.jsonld",
-                "isVis": "measure_type == 1",
+                "isVis": "lat_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -255,7 +245,7 @@
             {
                 "variableName": "peak_lat_measure",
                 "isAbout": "items/peak_lat_measure.jsonld",
-                "isVis": "measure_type == 1",
+                "isVis": "lat_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

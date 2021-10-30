@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please provide futher details needed for replication."
+        "en": "Provide futher details needed for replication."
     },
     "responseOptions": {
         "valueType": "xsd:string",

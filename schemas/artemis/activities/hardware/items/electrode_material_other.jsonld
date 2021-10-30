@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "electrode_material_other.jsonld",
     "prefLabel": {
-        "en": "Electrode material other"
+        "en": "electrode material other"
     },
-    "description": "Electrode material other",
+    "description": "electrode material other",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please specify the material that the electrodes were made of."
+        "en": "Specify the material that the electrodes were made of."
     },
     "responseOptions": {
         "valueType": "xsd:string",

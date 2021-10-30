@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please describe your decision"
+        "en": "Other a priori channel inclusion/exclusion"
     },
     "responseOptions": {
         "valueType": "xsd:string",

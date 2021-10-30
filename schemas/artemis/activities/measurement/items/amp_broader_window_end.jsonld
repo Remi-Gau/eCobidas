@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Please provide here the end of the broader window which was examined to determine the analysis window or time point.  If the entire epoch was examined, enter the epoch end. END (ms)"
+        "en": "Provide the end of the broader window which was examined to determine the analysis window or time point.  If the entire epoch was examined, enter the epoch end. END (ms)"
     },
     "responseOptions": {
         "valueType": "xsd:float"

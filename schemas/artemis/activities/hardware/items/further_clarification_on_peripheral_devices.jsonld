@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "further_clarification_on_peripheral_devices.jsonld",
     "prefLabel": {
-        "en": "Further clarification on peripheral devices"
+        "en": "further clarification on peripheral devices"
     },
-    "description": "Further clarification on peripheral devices",
+    "description": "further clarification on peripheral devices",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please specify the details of the additional devices."
+        "en": "Specify the details of the additional devices."
     },
     "responseOptions": {
         "valueType": "xsd:string",

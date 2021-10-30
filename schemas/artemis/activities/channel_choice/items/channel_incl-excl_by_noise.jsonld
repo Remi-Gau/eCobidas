@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "How did you decide on the basis of noise?"
+        "en": "Describe your noise-dependent inclusion/exclusion thresholds for channels"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

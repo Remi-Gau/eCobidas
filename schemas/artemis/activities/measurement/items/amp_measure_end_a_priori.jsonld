@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Please provide here the end of the window which was used to measure amplitude. Measurement window: END [ms]"
+        "en": "Provide the end of the window which was used to measure amplitude. Measurement window: END [ms]"
     },
     "responseOptions": {
         "valueType": "xsd:float"

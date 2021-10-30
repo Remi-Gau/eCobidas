@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Select an type of measurement"
+        "en": "Select a type of measurement"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

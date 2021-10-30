@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Please provide end of the window which was used for latency measurement as a result of the data-driven approach or where the effect was found (e.g. as a result of a mass univariate analysis). Measurement window: END [ms]"
+        "en": "Provide the end of the window which was used for latency measurement as a result of the data-driven approach or where the effect was found (e.g. as a result of a mass univariate analysis). Measurement window: END [ms]"
     },
     "responseOptions": {
         "valueType": "xsd:float"

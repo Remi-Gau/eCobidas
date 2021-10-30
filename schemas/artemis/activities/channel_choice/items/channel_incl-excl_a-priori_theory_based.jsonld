@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please describe the theory"
+        "en": "Theory behind a priori inclusion/exclusion (including implementation of regions, thresholds etc, and references ir relevant)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "trigger_signal_source.jsonld",
     "prefLabel": {
-        "en": "Trigger signal source"
+        "en": "trigger signal source"
     },
-    "description": "Trigger signal source",
+    "description": "trigger signal source",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

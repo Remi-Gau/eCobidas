@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "cap_other.jsonld",
     "prefLabel": {
-        "en": "Cap other"
+        "en": "cap other"
     },
-    "description": "Cap other",
+    "description": "cap other",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

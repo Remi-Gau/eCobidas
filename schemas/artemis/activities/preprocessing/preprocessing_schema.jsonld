@@ -30,8 +30,10 @@
             "items/offline_lowpass_filter_rolloff.jsonld",
             "items/offline_lowpass_filter_attenuation.jsonld",
             "items/offline_lowpass_filter_direction.jsonld",
+            "items/offline_notch_filter_type.jsonld",
+            "items/offline_notch_filter_type_details.jsonld",
             "items/downsample_data.jsonld",
-            "items/sampling_frequency.jsonld",
+            "items/new_sampling_frequency.jsonld",
             "items/offline_reference.jsonld",
             "items/rereference_software.jsonld",
             "items/rereference_software_details.jsonld",
@@ -50,6 +52,7 @@
             "items/epoch_software_details.jsonld",
             "items/epoch_beginning.jsonld",
             "items/epoch_trigger_event.jsonld",
+            "items/epoch_trigger_event_other.jsonld",
             "items/epoch_end.jsonld",
             "items/baseline_software.jsonld",
             "items/baseline_software_details.jsonld",
@@ -204,6 +207,24 @@
                 ]
             },
             {
+                "variableName": "offline_notch_filter_type",
+                "isAbout": "items/offline_notch_filter_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "offline_notch_filter_type_details",
+                "isAbout": "items/offline_notch_filter_type_details.jsonld",
+                "isVis": "offline_notch_filter_type == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
                 "variableName": "downsample_data",
                 "isAbout": "items/downsample_data.jsonld",
                 "isVis": true,
@@ -213,8 +234,8 @@
                 ]
             },
             {
-                "variableName": "sampling_frequency",
-                "isAbout": "items/sampling_frequency.jsonld",
+                "variableName": "new_sampling_frequency",
+                "isAbout": "items/new_sampling_frequency.jsonld",
                 "isVis": "downsample_data == 1",
                 "requiredValue": false,
                 "allow": [
@@ -384,6 +405,15 @@
                 ]
             },
             {
+                "variableName": "epoch_trigger_event_other",
+                "isAbout": "items/epoch_trigger_event_other.jsonld",
+                "isVis": " epoch_trigger_event==other",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
                 "variableName": "epoch_end",
                 "isAbout": "items/epoch_end.jsonld",
                 "isVis": true,
@@ -440,7 +470,7 @@
             {
                 "variableName": "baseline_other_method_details",
                 "isAbout": "items/baseline_other_method_details.jsonld",
-                "isVis": "baseline method == 1",
+                "isVis": "baseline_method==1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

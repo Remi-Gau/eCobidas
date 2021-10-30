@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please provide more details your trial presentation:"
+        "en": "Provide more details about your trial presentation:"
     },
     "responseOptions": {
         "valueType": "xsd:string",

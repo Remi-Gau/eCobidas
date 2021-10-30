@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "artifact_definition_2.jsonld",
     "prefLabel": {
-        "en": "Artifact definition 2"
+        "en": "artifact definition 2"
     },
-    "description": "Artifact definition 2",
+    "description": "artifact definition 2",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

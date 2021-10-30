@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "selected_time_end.jsonld",
+    "prefLabel": {
+        "en": "selected time end"
+    },
+    "description": "selected time end",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "What is the end of the time window selected for this visualization (relative to trigger, in ms)?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

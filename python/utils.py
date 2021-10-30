@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from numpy import isnan
+from rich import print
 
 
 def get_root_dir():

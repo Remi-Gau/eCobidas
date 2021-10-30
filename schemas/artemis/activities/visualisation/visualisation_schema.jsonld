@@ -9,18 +9,23 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=1616564910' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>Please specify all the procesures for visualisation purposes in this section.</p>"
+        "en": ""
     },
     "ui": {
         "shuffle": false,
         "order": [
             "items/visualisation_only_procedures.jsonld",
             "items/specify_visualisation.jsonld",
-            "items/waveforms_represent.jsonld",
-            "items/specify_waveforms.jsonld",
-            "items/channel_location_rationale.jsonld",
-            "items/topoplot_represent.jsonld",
-            "items/specify_topoplot.jsonld"
+            "items/waveform_type.jsonld",
+            "items/waveform_conditions.jsonld",
+            "items/selected_channels_list.jsonld",
+            "items/selected_channels_rationale.jsonld",
+            "items/selected_channels_average.jsonld",
+            "items/selected_time_begin.jsonld",
+            "items/selected_time_end.jsonld",
+            "items/selected_time_rationale.jsonld",
+            "items/selected_time_average.jsonld",
+            "items/waveform_rationale.jsonld"
         ],
         "addProperties": [
             {
@@ -42,8 +47,8 @@
                 ]
             },
             {
-                "variableName": "waveforms_represent",
-                "isAbout": "items/waveforms_represent.jsonld",
+                "variableName": "waveform_type",
+                "isAbout": "items/waveform_type.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -51,8 +56,8 @@
                 ]
             },
             {
-                "variableName": "specify_waveforms",
-                "isAbout": "items/specify_waveforms.jsonld",
+                "variableName": "waveform_conditions",
+                "isAbout": "items/waveform_conditions.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -60,8 +65,8 @@
                 ]
             },
             {
-                "variableName": "channel_location_rationale",
-                "isAbout": "items/channel_location_rationale.jsonld",
+                "variableName": "selected_channels_list",
+                "isAbout": "items/selected_channels_list.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -69,8 +74,8 @@
                 ]
             },
             {
-                "variableName": "topoplot_represent",
-                "isAbout": "items/topoplot_represent.jsonld",
+                "variableName": "selected_channels_rationale",
+                "isAbout": "items/selected_channels_rationale.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -78,9 +83,54 @@
                 ]
             },
             {
-                "variableName": "specify_topoplot",
-                "isAbout": "items/specify_topoplot.jsonld",
-                "isVis": "topoplot_represent == 8",
+                "variableName": "selected_channels_average",
+                "isAbout": "items/selected_channels_average.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "selected_time_begin",
+                "isAbout": "items/selected_time_begin.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "selected_time_end",
+                "isAbout": "items/selected_time_end.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "selected_time_rationale",
+                "isAbout": "items/selected_time_rationale.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "selected_time_average",
+                "isAbout": "items/selected_time_average.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_rationale",
+                "isAbout": "items/waveform_rationale.jsonld",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

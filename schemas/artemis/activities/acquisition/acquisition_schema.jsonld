@@ -16,28 +16,23 @@
         "order": [
             "items/acquisition_software.jsonld",
             "items/acquisition_software_details.jsonld",
-            "items/acquisiton_quality_measure.jsonld",
+            "items/acquistion_quality_measure.jsonld",
             "items/impedance_threshold.jsonld",
             "items/impedance_alternative.jsonld",
             "items/was_reference_used.jsonld",
             "items/type_online_reference.jsonld",
             "items/alternatives_to_reference.jsonld",
             "items/other_type_online_reference.jsonld",
-            "items/type_ground.jsonld",
+            "items/location_ground.jsonld",
             "items/electrode_location_naming_convention.jsonld",
             "items/custom_electrode_location_naming_convention.jsonld",
             "items/number_active_channels.jsonld",
             "items/eog_channels.jsonld",
             "items/other_eog_channels.jsonld",
-            "items/type_filters.jsonld",
             "items/online_filters.jsonld",
-            "items/offline_filters.jsonld",
             "items/high_online_filters.jsonld",
             "items/low_online_filters.jsonld",
             "items/notch_online_filters.jsonld",
-            "items/high_offline_filters.jsonld",
-            "items/low_offline_filters.jsonld",
-            "items/notch_offline_filters.jsonld",
             "items/recording_samping_frequency.jsonld"
         ],
         "addProperties": [
@@ -60,8 +55,8 @@
                 ]
             },
             {
-                "variableName": "acquisiton_quality_measure",
-                "isAbout": "items/acquisiton_quality_measure.jsonld",
+                "variableName": "acquistion_quality_measure",
+                "isAbout": "items/acquistion_quality_measure.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -123,8 +118,8 @@
                 ]
             },
             {
-                "variableName": "type_ground",
-                "isAbout": "items/type_ground.jsonld",
+                "variableName": "location_ground",
+                "isAbout": "items/location_ground.jsonld",
                 "isVis": "was_reference_used == 1",
                 "requiredValue": false,
                 "allow": [
@@ -177,27 +172,9 @@
                 ]
             },
             {
-                "variableName": "type_filters",
-                "isAbout": "items/type_filters.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
                 "variableName": "online_filters",
                 "isAbout": "items/online_filters.jsonld",
-                "isVis": "type_filters== 0 || type_filters == 3",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "offline_filters",
-                "isAbout": "items/offline_filters.jsonld",
-                "isVis": "type_filters== 1 || type_filters == 3",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -225,33 +202,6 @@
                 "variableName": "notch_online_filters",
                 "isAbout": "items/notch_online_filters.jsonld",
                 "isVis": "online_filters == 4",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "high_offline_filters",
-                "isAbout": "items/high_offline_filters.jsonld",
-                "isVis": "offline_filters == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "low_offline_filters",
-                "isAbout": "items/low_offline_filters.jsonld",
-                "isVis": "offline_filters == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "notch_offline_filters",
-                "isAbout": "items/notch_offline_filters.jsonld",
-                "isVis": "offline_filters == 4",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

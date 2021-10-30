@@ -3,57 +3,33 @@
     "@type": "reproschema:Field",
     "@id": "trigger_signal_input.jsonld",
     "prefLabel": {
-        "en": "Trigger signal input"
+        "en": "trigger signal input"
     },
-    "description": "Trigger signal input",
+    "description": "trigger signal input",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
-        "en": "Describe your trigger signal input."
+        "en": "Describe your trigger signal input. Were your triggers delivered during acquisition or added after recording (e.g. after analysis of an audio recording of spoken responses)?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 5,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
-                    "en": "analogue signal to amplifier"
+                    "en": "Online, during acquisition"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "digital signal to amplifier"
+                    "en": "Added after recording "
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "analogue signal to acquisition software"
-                },
-                "value": 2
-            },
-            {
-                "name": {
-                    "en": "digital signal to acquisition software"
-                },
-                "value": 3
-            },
-            {
-                "name": {
-                    "en": "combined stimulus delivery/acquisition software"
-                },
-                "value": 4
-            },
-            {
-                "name": {
-                    "en": "offline triggers"
-                },
-                "value": 5
             }
         ],
         "multipleChoice": false

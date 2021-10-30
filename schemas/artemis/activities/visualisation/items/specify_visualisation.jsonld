@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please specify the details of the procedures you had applied for the purposes of waveforms visualisation."
+        "en": "Extra preprocessing: Please specify the details of the procedures you had applied for the purposes of waveforms visualisation."
     },
     "responseOptions": {
         "valueType": "xsd:string",

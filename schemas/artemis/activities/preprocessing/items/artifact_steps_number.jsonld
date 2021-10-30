@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "artifact_steps_number.jsonld",
     "prefLabel": {
-        "en": "Artifact steps number"
+        "en": "artifact steps number"
     },
-    "description": "Artifact steps number",
+    "description": "artifact steps number",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "offline_notch_filter_type.jsonld",
+    "prefLabel": {
+        "en": "offline notch filter type"
+    },
+    "description": "offline notch filter type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "What notch filter (eg. 50Hz) have you applied after the recording?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "50 Hz"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "60 Hz"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "none"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}
