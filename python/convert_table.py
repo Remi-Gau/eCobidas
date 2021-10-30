@@ -1,8 +1,7 @@
-import os
-import sys
 import csv
+from rich import print
 
-from item import get_item_info, define_new_item
+from item import get_item_info
 
 from utils import (
     get_metatable,
@@ -46,7 +45,7 @@ def main():
 
                 id = str(activity_idx) + " - " + tables_name[j].upper()
 
-                print(id)
+                print("[bold red]" + id + "[/bold red]")
                 writer.writerow({"item": id})
 
                 this_activity = df["activity_order"] == activities[i]
@@ -65,10 +64,7 @@ def main():
                     this_item = items[items["item_order"] == item_idx]
                     item_info = get_item_info(this_item)
 
-                    if (
-                        item_info["sub_section"] is not ""
-                        and item_info["sub_section"] != sub_section
-                    ):
+                    if item_info["sub_section"] not in ["", sub_section]:
                         sub_section_id += 1
                         item_id = 0
                         sub_section = item_info["sub_section"]
