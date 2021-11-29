@@ -84,6 +84,8 @@ def load_data(this_schema):
 
         input_file = this_schema
 
+    print("[bold green]" + "Loading:" + input_file + "[/bold green]" + "\n")
+
     return pd.read_csv(input_file, sep="\t")
 
 
@@ -107,9 +109,11 @@ def print_info(type, pref_label, file):
     print(
         dashed_line()
         + "\n"
+        + "[bold red]"
         + type.upper()
         + ": "
         + pref_label
+        + "[/bold red]"
         + "\n"
         + file
         + "\n"
@@ -119,8 +123,10 @@ def print_info(type, pref_label, file):
 
 def print_item_info(activity_idx, item_idx, item_info):
 
-    f"Activity: {activity_idx} Item: {item_idx}"
-    f"   {item_info['name']}   {item_info['field_type']}   {item_info['visibility']}"
+    print(f"Activity: {int(activity_idx)} Item: {int(item_idx)}")
+    print(
+        f"   {item_info['name']}   {item_info['field_type']}   {item_info['visibility']}"
+    )
 
 
 def print_item_to_table(item_id, this_item, item_info, sep=" "):

@@ -63,6 +63,9 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
         included_items = items["include"] == 1
         items = items[included_items]
 
+        if len(items.activity_pref_label.unique()) == 0:
+            raise NameError("Empty activity")
+
         protocol, activity, activity_path = initialize_activity(
             protocol, items, out_dir
         )
