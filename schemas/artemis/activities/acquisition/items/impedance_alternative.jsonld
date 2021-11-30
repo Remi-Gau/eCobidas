@@ -5,14 +5,14 @@
     "prefLabel": {
         "en": "impedance alternative"
     },
-    "description": "alternative measure to impedance threshold (e.g. impedance range, other non-impedance measures)",
+    "description": "impedance alternative",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Specify the data quality information in the field below."
+        "en": "Report data quality measures provided by your recording system alternative to impedances."
     },
     "responseOptions": {
         "valueType": "xsd:string",

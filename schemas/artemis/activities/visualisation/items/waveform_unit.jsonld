@@ -1,0 +1,73 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "waveform_unit.jsonld",
+    "prefLabel": {
+        "en": "waveform unit"
+    },
+    "description": "waveform unit",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "What kind of unit does the plotted data have?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 7,
+        "choices": [
+            {
+                "name": {
+                    "en": "voltage maps"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "voltage maps normalized data"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": " statistical maps based on t-score/p-value"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": " current source density maps"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "topographic maps of PCA factors"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": " voltage maps on percent scale"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "3D voltage maps"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 7
+            }
+        ],
+        "multipleChoice": false
+    }
+}

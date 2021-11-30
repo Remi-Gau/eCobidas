@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "lat_measure_window_start_data-driven.jsonld",
     "prefLabel": {
-        "en": "lat measure window START data-driven"
+        "en": "lat measure window start data-driven"
     },
-    "description": "lat measure window START data-driven",
+    "description": "lat measure window start data-driven",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

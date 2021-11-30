@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "How many trials in total was each subject presented with?"
+        "en": "How many trials in total was each subject presented with (including repetition of the same stimuli or trials)?"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

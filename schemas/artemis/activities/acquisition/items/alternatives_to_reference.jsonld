@@ -5,7 +5,7 @@
     "prefLabel": {
         "en": "alternatives to reference"
     },
-    "description": "description of an acquisition system with a model alternative to ground & reference based acquisition",
+    "description": "alternatives to reference",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

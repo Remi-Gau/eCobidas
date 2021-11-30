@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "other_licenses.jsonld",
+    "prefLabel": {
+        "en": "other licenses"
+    },
+    "description": "other licenses",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Name of each licensed study element followed by license type, with listed elements separated by semicolon and a space (e.g. derivatives, figures, slides, etc)"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

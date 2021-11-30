@@ -15,15 +15,18 @@
         "shuffle": false,
         "order": [
             "items/measure_type.jsonld",
+            "items/amp_measure_software.jsonld",
+            "items/amp_measure_software_details.jsonld",
             "items/amp_measured_from.jsonld",
+            "items/waveform_difference_waves.jsonld",
             "items/waveform_further_details.jsonld",
-            "items/amp_measure_procedure.jsonld",
-            "items/window_area_measure_further_clarification.jsonld",
-            "items/factor_scores_further_clarification.jsonld",
             "items/amp_time_window_selection.jsonld",
-            "items/approach_to_amp_measure_window_selection_a_priori.jsonld",
-            "items/amp_literature_references.jsonld",
-            "items/amp_further_details.jsonld",
+            "items/amp_measure_window_selection_a_priori.jsonld",
+            "items/amp_literature_exact.jsonld",
+            "items/amp_literature_similar.jsonld",
+            "items/amp_theory.jsonld",
+            "items/amp_multiple_window_reasons.jsonld",
+            "items/amp_selection_other_reasons.jsonld",
             "items/approach_to_amp_measure_window_selection_data_driven.jsonld",
             "items/amp_broader_window_start.jsonld",
             "items/amp_broader_window_end.jsonld",
@@ -31,8 +34,11 @@
             "items/amp_measure_end_a_priori.jsonld",
             "items/amp_measure_start_data-driven.jsonld",
             "items/amp_measure_end_data_driven.jsonld",
-            "items/amp_measure_software.jsonld",
-            "items/amp_measure_software_details.jsonld",
+            "items/amp_measure_procedure.jsonld",
+            "items/window_area_measure_further_clarification.jsonld",
+            "items/amp_measure_details.jsonld",
+            "items/amp_measure_peakwin_duration.jsonld",
+            "items/amp_measure_peakwin_rationale.jsonld",
             "items/lat_type.jsonld",
             "items/onset_lat_measure.jsonld",
             "items/peak_lat_measure.jsonld",
@@ -63,6 +69,24 @@
                 ]
             },
             {
+                "variableName": "amp_measure_software",
+                "isAbout": "items/amp_measure_software.jsonld",
+                "isVis": "measure_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_software_details",
+                "isAbout": "items/amp_measure_software_details.jsonld",
+                "isVis": "measure_type == 0 | amp_measure_software == 16",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
                 "variableName": "amp_measured_from",
                 "isAbout": "items/amp_measured_from.jsonld",
                 "isVis": "measure_type == 0",
@@ -72,36 +96,18 @@
                 ]
             },
             {
+                "variableName": "waveform_difference_waves",
+                "isAbout": "items/waveform_difference_waves.jsonld",
+                "isVis": "amp_measured_from == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
                 "variableName": "waveform_further_details",
                 "isAbout": "items/waveform_further_details.jsonld",
-                "isVis": "measure_type == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_measure_procedure",
-                "isAbout": "items/amp_measure_procedure.jsonld",
-                "isVis": "measure_type == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "window_area_measure_further_clarification",
-                "isAbout": "items/window_area_measure_further_clarification.jsonld",
-                "isVis": "amp_measure_procedure == 3",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "factor_scores_further_clarification",
-                "isAbout": "items/factor_scores_further_clarification.jsonld",
-                "isVis": "amp_measure_procedure == 2 || amp_measure_procedure == 6",
+                "isVis": "amp_measured_from == 2 || amp_measured_from == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -117,8 +123,8 @@
                 ]
             },
             {
-                "variableName": "approach_to_amp_measure_window_selection_a_priori",
-                "isAbout": "items/approach_to_amp_measure_window_selection_a_priori.jsonld",
+                "variableName": "amp_measure_window_selection_a_priori",
+                "isAbout": "items/amp_measure_window_selection_a_priori.jsonld",
                 "isVis": "amp_time_window_selection == 0",
                 "requiredValue": false,
                 "allow": [
@@ -126,18 +132,45 @@
                 ]
             },
             {
-                "variableName": "amp_literature_references",
-                "isAbout": "items/amp_literature_references.jsonld",
-                "isVis": "approach_to_amp_measure_window_selection_a_priori == 0",
+                "variableName": "amp_literature_exact",
+                "isAbout": "items/amp_literature_exact.jsonld",
+                "isVis": "amp_measure_window_selection_a_priori == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amp_further_details",
-                "isAbout": "items/amp_further_details.jsonld",
-                "isVis": "approach_to_amp_measure_window_selection_a_prior == 1 || approach_to_amp_measure_window_selection_a_priori == 2",
+                "variableName": "amp_literature_similar",
+                "isAbout": "items/amp_literature_similar.jsonld",
+                "isVis": "amp_measure_window_selection_a_priori == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_theory",
+                "isAbout": "items/amp_theory.jsonld",
+                "isVis": "amp_measure_window_selection_a_priori == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_multiple_window_reasons",
+                "isAbout": "items/amp_multiple_window_reasons.jsonld",
+                "isVis": "amp_measure_window_selection_a_priori == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_selection_other_reasons",
+                "isAbout": "items/amp_selection_other_reasons.jsonld",
+                "isVis": "amp_measure_window_selection_a_priori == 4",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -207,8 +240,8 @@
                 ]
             },
             {
-                "variableName": "amp_measure_software",
-                "isAbout": "items/amp_measure_software.jsonld",
+                "variableName": "amp_measure_procedure",
+                "isAbout": "items/amp_measure_procedure.jsonld",
                 "isVis": "measure_type == 0",
                 "requiredValue": false,
                 "allow": [
@@ -216,9 +249,36 @@
                 ]
             },
             {
-                "variableName": "amp_measure_software_details",
-                "isAbout": "items/amp_measure_software_details.jsonld",
-                "isVis": "measure_type == 0 | amp_measure_software == 16",
+                "variableName": "window_area_measure_further_clarification",
+                "isAbout": "items/window_area_measure_further_clarification.jsonld",
+                "isVis": "amp_measure_procedure == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_details",
+                "isAbout": "items/amp_measure_details.jsonld",
+                "isVis": "amp_measure_procedure == 2 || amp_measure_procedure == 6",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_peakwin_duration",
+                "isAbout": "items/amp_measure_peakwin_duration.jsonld",
+                "isVis": "amp_measure_procedure == 5",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_peakwin_rationale",
+                "isAbout": "items/amp_measure_peakwin_rationale.jsonld",
+                "isVis": "amp_measure_procedure == 5",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

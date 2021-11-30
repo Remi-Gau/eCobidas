@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "peak_lat_measure.jsonld",
     "prefLabel": {
-        "en": "Peak lat measure"
+        "en": "peak lat measure"
     },
-    "description": "Peak lat measure",
+    "description": "peak lat measure",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

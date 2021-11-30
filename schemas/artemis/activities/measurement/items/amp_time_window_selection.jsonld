@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "How was this amplitude measurement window selected?   A priori: the window is selected in advance Data-driven: the measurement window is selected based on data obtained in the current study.  In a data driven approach, either a wider window or the entire epoch are analyzed or examined to determine which will be the final measurement window. "
+        "en": "How was the amplitude measurement window selected?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -21,19 +21,19 @@
         "choices": [
             {
                 "name": {
-                    "en": "a priori"
+                    "en": "a priori selection of the window"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "data-driven"
+                    "en": "a priori selection of a broader window within which the final time window will be selected using data-driven methods"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "no window selection (e.g. point-by-point analysis such as mass univariate analysis)"
+                    "en": "data-driven selection of the time window over the entire epoch"
                 },
                 "value": 2
             },

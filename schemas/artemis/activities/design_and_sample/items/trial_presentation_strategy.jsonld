@@ -27,13 +27,13 @@
             },
             {
                 "name": {
-                    "en": "adaptive N of trials (please explain)"
+                    "en": "adaptive N of trials (e.g., presenting trials with behavioural errors again until correct response)"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "Other (please explain)"
+                    "en": "Other"
                 },
                 "value": 2
             }

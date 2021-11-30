@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "channel_incl-excl_a-priori_theory_based.jsonld",
     "prefLabel": {
-        "en": "channel incl-excl a-priori: theory based"
+        "en": "channel incl-excl a-priori theory based"
     },
-    "description": "channel incl-excl a-priori: theory based",
+    "description": "channel incl-excl a-priori theory based",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Theory behind a priori inclusion/exclusion (including implementation of regions, thresholds etc, and references ir relevant)"
+        "en": "Theory behind a-priori channel selection (including implementation of regions, thresholds etc, and references if relevant)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

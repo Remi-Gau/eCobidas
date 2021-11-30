@@ -24,13 +24,17 @@
             "items/electrode_material.jsonld",
             "items/electrode_material_other.jsonld",
             "items/conductive_medium.jsonld",
+            "items/conductive_medium_other.jsonld",
             "items/amplifier_make.jsonld",
             "items/amplifier_make_other.jsonld",
             "items/amplifier_model.jsonld",
             "items/trigger_signal_source.jsonld",
-            "items/trigger_signal_input.jsonld",
+            "items/trigger_signal_source_other.jsonld",
+            "items/trigger_signal_input_when.jsonld",
+            "items/trigger_signal_input_where.jsonld",
+            "items/trigger_signal_input_how.jsonld",
             "items/other_peripheral_devices.jsonld",
-            "items/further_clarification_on_peripheral_devices.jsonld"
+            "items/other_peripheral_devices_details.jsonld"
         ],
         "addProperties": [
             {
@@ -108,7 +112,7 @@
             {
                 "variableName": "electrode_material_other",
                 "isAbout": "items/electrode_material_other.jsonld",
-                "isVis": true,
+                "isVis": "electrode_material == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -118,6 +122,15 @@
                 "variableName": "conductive_medium",
                 "isAbout": "items/conductive_medium.jsonld",
                 "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "conductive_medium_other",
+                "isAbout": "items/conductive_medium_other.jsonld",
+                "isVis": "conductive medium == 4",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -160,8 +173,35 @@
                 ]
             },
             {
-                "variableName": "trigger_signal_input",
-                "isAbout": "items/trigger_signal_input.jsonld",
+                "variableName": "trigger_signal_source_other",
+                "isAbout": "items/trigger_signal_source_other.jsonld",
+                "isVis": "trigger_signal_source == 4",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "trigger_signal_input_when",
+                "isAbout": "items/trigger_signal_input_when.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "trigger_signal_input_where",
+                "isAbout": "items/trigger_signal_input_where.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "trigger_signal_input_how",
+                "isAbout": "items/trigger_signal_input_how.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -178,8 +218,8 @@
                 ]
             },
             {
-                "variableName": "further_clarification_on_peripheral_devices",
-                "isAbout": "items/further_clarification_on_peripheral_devices.jsonld",
+                "variableName": "other_peripheral_devices_details",
+                "isAbout": "items/other_peripheral_devices_details.jsonld",
                 "isVis": "other_peripheral_devices == 1",
                 "requiredValue": false,
                 "allow": [

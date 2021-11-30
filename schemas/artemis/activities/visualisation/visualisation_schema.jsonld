@@ -14,10 +14,12 @@
     "ui": {
         "shuffle": false,
         "order": [
+            "items/visualisation_type.jsonld",
             "items/visualisation_only_procedures.jsonld",
             "items/specify_visualisation.jsonld",
             "items/waveform_type.jsonld",
-            "items/waveform_conditions.jsonld",
+            "items/waveform_unit.jsonld",
+            "items/plotting_conditions.jsonld",
             "items/selected_channels_list.jsonld",
             "items/selected_channels_rationale.jsonld",
             "items/selected_channels_average.jsonld",
@@ -28,6 +30,15 @@
             "items/waveform_rationale.jsonld"
         ],
         "addProperties": [
+            {
+                "variableName": "visualisation_type",
+                "isAbout": "items/visualisation_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
             {
                 "variableName": "visualisation_only_procedures",
                 "isAbout": "items/visualisation_only_procedures.jsonld",
@@ -49,15 +60,24 @@
             {
                 "variableName": "waveform_type",
                 "isAbout": "items/waveform_type.jsonld",
-                "isVis": true,
+                "isVis": "visualisation_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "waveform_conditions",
-                "isAbout": "items/waveform_conditions.jsonld",
+                "variableName": "waveform_unit",
+                "isAbout": "items/waveform_unit.jsonld",
+                "isVis": "visualisation_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "plotting_conditions",
+                "isAbout": "items/plotting_conditions.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

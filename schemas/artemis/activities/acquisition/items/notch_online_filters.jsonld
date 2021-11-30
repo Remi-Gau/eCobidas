@@ -5,7 +5,7 @@
     "prefLabel": {
         "en": "notch online filters"
     },
-    "description": "notch filter (AC offset or electricity-related interference) applied during recording or session",
+    "description": "notch online filters",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

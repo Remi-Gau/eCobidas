@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "amp_measure_peakwin_duration.jsonld",
+    "prefLabel": {
+        "en": "amp measure peakwin duration"
+    },
+    "description": "amp measure peakwin duration",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "How wide was the window around peak in ms?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

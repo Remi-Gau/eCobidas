@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "window_area_measure_further_clarification.jsonld",
     "prefLabel": {
-        "en": "Window area measure further clarification"
+        "en": "window area measure further clarification"
     },
-    "description": "Window area measure further clarification",
+    "description": "window area measure further clarification",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "Please specify how window area measure was calculated."
+        "en": "Which window area measure did you use?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

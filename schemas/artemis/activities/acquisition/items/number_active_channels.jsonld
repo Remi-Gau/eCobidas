@@ -5,14 +5,14 @@
     "prefLabel": {
         "en": "number active channels"
     },
-    "description": "number of channels used (active) during EEG recording",
+    "description": "number active channels",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "number"
     },
     "question": {
-        "en": "How many active scalp electrodes (excluding reference channels, ground channels, VEOG and HEOG) did you have during recording?"
+        "en": "Number of scalp electrodes excluding reference channels, ground channel, VEOG and HEOG."
     },
     "responseOptions": {
         "valueType": "xsd:integer"

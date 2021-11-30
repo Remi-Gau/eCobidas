@@ -5,7 +5,7 @@
     "prefLabel": {
         "en": "acquisition software details"
     },
-    "description": "software version, and software name or brief description if \"other and custom\" was selected",
+    "description": "acquisition software details",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

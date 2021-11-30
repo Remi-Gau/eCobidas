@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "channel_incl-excl_after-rec_observed.jsonld",
+    "prefLabel": {
+        "en": "channel incl-excl after-rec observed"
+    },
+    "description": "channel incl-excl after-rec observed",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "Describe your signal/noise dependent inclusion/exclusion thresholds for channels"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "visual inspection"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "thresholds for inclusion/exclusion decided after recording"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": true
+    }
+}

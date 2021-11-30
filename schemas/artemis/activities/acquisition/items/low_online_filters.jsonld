@@ -5,7 +5,7 @@
     "prefLabel": {
         "en": "low online filters"
     },
-    "description": "low pass filters applied during recording or session",
+    "description": "low online filters",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

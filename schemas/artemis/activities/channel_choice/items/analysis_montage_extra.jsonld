@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Analysis montage additional"
+        "en": "Decribe your additional montages here in the following format: number of electrodes and then list of electrodes, separated by a comma and a space for each montage, and separate montages should be separated by a semicolon and a space."
     },
     "responseOptions": {
         "valueType": "xsd:string",

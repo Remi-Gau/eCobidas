@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "channel_incl-excl_for_analysis_other.jsonld",
+    "prefLabel": {
+        "en": "channel incl-excl for analysis other"
+    },
+    "description": "channel incl-excl for analysis other",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "Describe what process, other than listed, did you use when deciding on channels to use in the analysis."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

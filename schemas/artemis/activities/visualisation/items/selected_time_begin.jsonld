@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "What is the begin of the time window selected for this visualization (relative to trigger, in ms)?"
+        "en": "What is the beginning of the time window selected for this visualization (relative to trigger, in ms)?"
     },
     "responseOptions": {
         "valueType": "xsd:float"

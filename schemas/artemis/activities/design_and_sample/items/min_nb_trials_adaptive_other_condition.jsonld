@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "min_nb_trials_adaptive_other_condition.jsonld",
+    "prefLabel": {
+        "en": "min nb trials adaptive other condition"
+    },
+    "description": "min nb trials adaptive other condition",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "What was the minimum number of trials a participant was presented with, per condition (including repetition of the same stimuli or trials)? Values should be separated by semicolon and a space and given in the same order as the conditions were listed earlier. If there are multiple groups of participants, list trial counts for all conditions for one group, and then for the next one - following the ordering of groups as you specified them earlier."
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

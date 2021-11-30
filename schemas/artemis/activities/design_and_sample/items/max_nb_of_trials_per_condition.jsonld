@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Specify the maximum number of trials analyzed per condition for any subject: "
+        "en": "Specify the maximum number of trials analyzed per condition for any subject. Values should be separated by semicolon and a space and given in the same order as the conditions were listed earlier. If there are multiple groups of participants, list trial counts for all conditions for one group, and then for the next one - following the ordering of groups as you specified them earlier."
     },
     "responseOptions": {
         "valueType": "xsd:string",

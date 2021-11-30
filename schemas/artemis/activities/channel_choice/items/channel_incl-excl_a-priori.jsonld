@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "A-priori channel inclusion/exclusion type"
@@ -17,27 +17,33 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
-                    "en": "based on a previous literature"
+                    "en": "same channels as in previous literature"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "theory driven novel component"
+                    "en": "based on previous literature, but not exact replication"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "theory driven novel channel selection"
                 },
                 "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
             }
         ],
-        "multipleChoice": true
+        "multipleChoice": false
     }
 }

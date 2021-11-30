@@ -5,7 +5,7 @@
     "prefLabel": {
         "en": "acquistion quality measure"
     },
-    "description": "is data quality properly described by the highest impedance tollerated",
+    "description": "acquistion quality measure",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 1,
+        "maxValue": 2,
         "choices": [
             {
                 "name": {
@@ -27,9 +27,15 @@
             },
             {
                 "name": {
-                    "en": "an alternative data quality measure"
+                    "en": "impedance range"
                 },
                 "value": 1
+            },
+            {
+                "name": {
+                    "en": "a data quality measure alternative to impedances"
+                },
+                "value": 2
             }
         ],
         "multipleChoice": false

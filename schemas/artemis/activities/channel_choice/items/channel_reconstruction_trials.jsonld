@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Explain your missing data reconstruction for a subset of trials"
+        "en": "Explain your missing data reconstruction for a subset of trials (including order of operations, if relevant)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

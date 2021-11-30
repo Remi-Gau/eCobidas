@@ -9,23 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "text"
     },
     "question": {
-        "en": "Analysis montage 1 Electrode locations (main analysis)"
+        "en": "Analysis montage 1: List all channel locations included in the analysis, separated by a semicolon and a space."
     },
     "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 0,
-        "choices": [
-            {
-                "name": {
-                    "en": "items drawn from acquisition"
-                },
-                "value": 0
-            }
-        ],
-        "multipleChoice": true
+        "valueType": "xsd:string",
+        "maxLength": 3000
     }
 }

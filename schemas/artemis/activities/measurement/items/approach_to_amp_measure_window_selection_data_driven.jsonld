@@ -3,9 +3,9 @@
     "@type": "reproschema:Field",
     "@id": "approach_to_amp_measure_window_selection_data_driven.jsonld",
     "prefLabel": {
-        "en": "Approach to amp measure window selection data driven"
+        "en": "approach to amp measure window selection data driven"
     },
-    "description": "Approach to amp measure window selection data driven",
+    "description": "approach to amp measure window selection data driven",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 4,
         "choices": [
             {
                 "name": {
@@ -27,7 +27,7 @@
             },
             {
                 "name": {
-                    "en": "visual inspection of grand average across all conditions and participants (flattened average approach, see https://doi.org/10.1371/journal.pcbi.1008286 )"
+                    "en": "visual inspection of grand average across all conditions and participants"
                 },
                 "value": 1
             },
@@ -42,6 +42,12 @@
                     "en": "window around a peak"
                 },
                 "value": 3
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 4
             }
         ],
         "multipleChoice": false

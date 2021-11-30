@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "How many different channel montages have you analysed?"
+        "en": "How many different channel combinations (analysis montages) have you analysed?"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

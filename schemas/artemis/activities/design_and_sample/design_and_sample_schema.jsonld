@@ -9,21 +9,30 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=2021971006' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>Please specify the experimental design and sample in this section, such as experimental condtion and trial number per condition, number of participants, participant exclusion and presenting software. </p>"
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=2021971006' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>Please specify the experimental design and sample in this section, such as experimental condition and trial number per condition, number of participants, participant exclusion and presenting software. </p>"
     },
     "ui": {
         "shuffle": false,
         "order": [
             "items/sample_size_total.jsonld",
             "items/sample_size_valid.jsonld",
+            "items/subject_exclusion_rationale.jsonld",
             "items/number_of_groups.jsonld",
             "items/order_of_group.jsonld",
             "items/participants_per_group.jsonld",
-            "items/trial_presentation_strategy_other.jsonld",
+            "items/total_nb_of_within_subject_conditions.jsonld",
+            "items/within_subject_condition_names.jsonld",
+            "items/trial_presentation_strategy.jsonld",
             "items/total_nb_of_trials.jsonld",
-            "items/total_nb_of_conditions.jsonld",
             "items/total_nb_of_trials_condition.jsonld",
-            "items/averaged_nb_of_trials_condition.jsonld",
+            "items/trial_presentation_strategy_other.jsonld",
+            "items/avg_total_nb_trials_adaptive_other.jsonld",
+            "items/min_total_nb_trials_adaptive_other.jsonld",
+            "items/max_total_nb_trials_adaptive_other.jsonld",
+            "items/avg_nb_trials_adaptive_other_condition.jsonld",
+            "items/min_nb_trials_adaptive_other_condition.jsonld",
+            "items/max_nb_trials_adaptive_other_condition.jsonld",
+            "items/avg_nb_of_trials_condition.jsonld",
             "items/min_nb_of_trials_per_condition.jsonld",
             "items/max_nb_of_trials_per_condition.jsonld",
             "items/presenting_software.jsonld",
@@ -43,6 +52,15 @@
                 "variableName": "sample_size_valid",
                 "isAbout": "items/sample_size_valid.jsonld",
                 "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "subject_exclusion_rationale",
+                "isAbout": "items/subject_exclusion_rationale.jsonld",
+                "isVis": "sample_size_total != sample_size_valid",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -76,6 +94,51 @@
                 ]
             },
             {
+                "variableName": "total_nb_of_within_subject_conditions",
+                "isAbout": "items/total_nb_of_within_subject_conditions.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "within_subject_condition_names",
+                "isAbout": "items/within_subject_condition_names.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "trial_presentation_strategy",
+                "isAbout": "items/trial_presentation_strategy.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "total_nb_of_trials",
+                "isAbout": "items/total_nb_of_trials.jsonld",
+                "isVis": "trial_presentation_strategy == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "total_nb_of_trials_condition",
+                "isAbout": "items/total_nb_of_trials_condition.jsonld",
+                "isVis": "trial_presentation_strategy == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
                 "variableName": "trial_presentation_strategy_other",
                 "isAbout": "items/trial_presentation_strategy_other.jsonld",
                 "isVis": "trial_presentation_strategy >= 1",
@@ -85,35 +148,62 @@
                 ]
             },
             {
-                "variableName": "total_nb_of_trials",
-                "isAbout": "items/total_nb_of_trials.jsonld",
-                "isVis": true,
+                "variableName": "avg_total_nb_trials_adaptive_other",
+                "isAbout": "items/avg_total_nb_trials_adaptive_other.jsonld",
+                "isVis": "trial_presentation_strategy >= 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "total_nb_of_conditions",
-                "isAbout": "items/total_nb_of_conditions.jsonld",
-                "isVis": true,
+                "variableName": "min_total_nb_trials_adaptive_other",
+                "isAbout": "items/min_total_nb_trials_adaptive_other.jsonld",
+                "isVis": "trial_presentation_strategy >= 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "total_nb_of_trials_condition",
-                "isAbout": "items/total_nb_of_trials_condition.jsonld",
-                "isVis": true,
+                "variableName": "max_total_nb_trials_adaptive_other",
+                "isAbout": "items/max_total_nb_trials_adaptive_other.jsonld",
+                "isVis": "trial_presentation_strategy >= 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "averaged_nb_of_trials_condition",
-                "isAbout": "items/averaged_nb_of_trials_condition.jsonld",
+                "variableName": "avg_nb_trials_adaptive_other_condition",
+                "isAbout": "items/avg_nb_trials_adaptive_other_condition.jsonld",
+                "isVis": "trial_presentation_strategy >= 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "min_nb_trials_adaptive_other_condition",
+                "isAbout": "items/min_nb_trials_adaptive_other_condition.jsonld",
+                "isVis": "trial_presentation_strategy >= 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "max_nb_trials_adaptive_other_condition",
+                "isAbout": "items/max_nb_trials_adaptive_other_condition.jsonld",
+                "isVis": "trial_presentation_strategy >= 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "avg_nb_of_trials_condition",
+                "isAbout": "items/avg_nb_of_trials_condition.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

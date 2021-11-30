@@ -16,28 +16,26 @@
         "order": [
             "items/channel_incl-excl_for_analysis.jsonld",
             "items/channel_incl-excl_a-priori.jsonld",
-            "items/channel_incl-excl_a-priori_lit_based.jsonld",
+            "items/channel_incl-excl_a-priori_lit_exact.jsonld",
+            "items/channel_incl-excl_a-priori_lit_similar.jsonld",
             "items/channel_incl-excl_a-priori_theory_based.jsonld",
             "items/channel_incl-excl_a-priori_other.jsonld",
-            "items/channel_incl-excl_by_noise.jsonld",
-            "items/channel_incl-excl_by_noise_visual_inspection.jsonld",
-            "items/incl-excl_by_noise_thresholds.jsonld",
-            "items/incl-excl_by_noise_other.jsonld",
-            "items/channel_incl-excl_by_signal.jsonld",
-            "items/channel_incl-excl_by_signal_visual_inspection.jsonld",
-            "items/incl-excl_by_signal_thresholds.jsonld",
-            "items/incl-excl_by_signal_other.jsonld",
-            "items/channel_incl-excl_by_condition.jsonld",
-            "items/channel_incl-excl_by_noise_visual_inspection.jsonld",
-            "items/channel_incl-excl_by_noise_thresholds.jsonld",
-            "items/channel_incl-excl_by_noise_other.jsonld",
-            "items/channel_incl-excl_by_other.jsonld",
-            "items/channel_reconstruction.jsonld",
+            "items/channel_incl-excl_a-priori_criterion.jsonld",
+            "items/channel_incl-excl_after-rec_type.jsonld",
+            "items/channel_incl-excl_after-rec_equipmal.jsonld",
+            "items/channel_incl-excl_after-rec_observed.jsonld",
+            "items/channel_incl-excl_after-rec_observed_visual.jsonld",
+            "items/channel_incl-excl_after-rec_observed_threshold.jsonld",
+            "items/channel_incl-excl_after-rec_observed_other.jsonld",
+            "items/channel_incl-excl_after-rec_results.jsonld",
+            "items/channel_incl-excl_for_analysis_other.jsonld",
+            "items/channel_incl-excl_order.jsonld",
+            "items/channel_reconstruction_exists.jsonld",
+            "items/channel_reconstruction_cases.jsonld",
             "items/channel_reconstruction_all.jsonld",
             "items/channel_reconstruction_participants.jsonld",
             "items/channel_reconstruction_trials.jsonld",
             "items/channel_reconstruction_other.jsonld",
-            "items/channel_incl-excl_reconstruction_order.jsonld",
             "items/analysis_montages.jsonld",
             "items/analysis_montage_1_number.jsonld",
             "items/analysis_montage_1_channels.jsonld",
@@ -71,9 +69,18 @@
                 ]
             },
             {
-                "variableName": "channel_incl-excl_a-priori_lit_based",
-                "isAbout": "items/channel_incl-excl_a-priori_lit_based.jsonld",
+                "variableName": "channel_incl-excl_a-priori_lit_exact",
+                "isAbout": "items/channel_incl-excl_a-priori_lit_exact.jsonld",
                 "isVis": "channel_incl-excl_a-priori == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "channel_incl-excl_a-priori_lit_similar",
+                "isAbout": "items/channel_incl-excl_a-priori_lit_similar.jsonld",
+                "isVis": "channel_incl-excl_a-priori == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -82,7 +89,7 @@
             {
                 "variableName": "channel_incl-excl_a-priori_theory_based",
                 "isAbout": "items/channel_incl-excl_a-priori_theory_based.jsonld",
-                "isVis": "channel_incl-excl_a-priori == 1",
+                "isVis": "channel_incl-excl_a-priori == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -91,15 +98,15 @@
             {
                 "variableName": "channel_incl-excl_a-priori_other",
                 "isAbout": "items/channel_incl-excl_a-priori_other.jsonld",
-                "isVis": "channel_incl-excl_a-priori  == 2",
+                "isVis": "channel_incl-excl_a-priori  == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "channel_incl-excl_by_noise",
-                "isAbout": "items/channel_incl-excl_by_noise.jsonld",
+                "variableName": "channel_incl-excl_a-priori_criterion",
+                "isAbout": "items/channel_incl-excl_a-priori_criterion.jsonld",
                 "isVis": "channel_incl-excl_for_analysis == 1",
                 "requiredValue": false,
                 "allow": [
@@ -107,35 +114,8 @@
                 ]
             },
             {
-                "variableName": "channel_incl-excl_by_noise_visual_inspection",
-                "isAbout": "items/channel_incl-excl_by_noise_visual_inspection.jsonld",
-                "isVis": "channel_incl-excl_by_noise == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "incl-excl_by_noise_thresholds",
-                "isAbout": "items/incl-excl_by_noise_thresholds.jsonld",
-                "isVis": "channel_incl-excl_by_noise == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "incl-excl_by_noise_other",
-                "isAbout": "items/incl-excl_by_noise_other.jsonld",
-                "isVis": "channel_incl-excl_by_noise == 2",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "channel_incl-excl_by_signal",
-                "isAbout": "items/channel_incl-excl_by_signal.jsonld",
+                "variableName": "channel_incl-excl_after-rec_type",
+                "isAbout": "items/channel_incl-excl_after-rec_type.jsonld",
                 "isVis": "channel_incl-excl_for_analysis == 2",
                 "requiredValue": false,
                 "allow": [
@@ -143,81 +123,90 @@
                 ]
             },
             {
-                "variableName": "channel_incl-excl_by_signal_visual_inspection",
-                "isAbout": "items/channel_incl-excl_by_signal_visual_inspection.jsonld",
-                "isVis": "channel_incl-excl_by_signal == 0",
+                "variableName": "channel_incl-excl_after-rec_equipmal",
+                "isAbout": "items/channel_incl-excl_after-rec_equipmal.jsonld",
+                "isVis": "channel_incl-excl_after-rec_type == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "incl-excl_by_signal_thresholds",
-                "isAbout": "items/incl-excl_by_signal_thresholds.jsonld",
-                "isVis": "channel_incl-excl_by_signal == 1",
+                "variableName": "channel_incl-excl_after-rec_observed",
+                "isAbout": "items/channel_incl-excl_after-rec_observed.jsonld",
+                "isVis": "channel_incl-excl_after-rec_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "incl-excl_by_signal_other",
-                "isAbout": "items/incl-excl_by_signal_other.jsonld",
-                "isVis": "channel_incl-excl_by_signal == 2",
+                "variableName": "channel_incl-excl_after-rec_observed_visual",
+                "isAbout": "items/channel_incl-excl_after-rec_observed_visual.jsonld",
+                "isVis": "channel_incl-excl_after-rec_observed == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "channel_incl-excl_by_condition",
-                "isAbout": "items/channel_incl-excl_by_condition.jsonld",
-                "isVis": "channel_incl-excl_for_analysis == 3",
+                "variableName": "channel_incl-excl_after-rec_observed_threshold",
+                "isAbout": "items/channel_incl-excl_after-rec_observed_threshold.jsonld",
+                "isVis": "channel_incl-excl_after-rec_observed == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "channel_incl-excl_by_noise_visual_inspection",
-                "isAbout": "items/channel_incl-excl_by_noise_visual_inspection.jsonld",
-                "isVis": "channel_incl-excl_by_condition == 0",
+                "variableName": "channel_incl-excl_after-rec_observed_other",
+                "isAbout": "items/channel_incl-excl_after-rec_observed_other.jsonld",
+                "isVis": "channel_incl-excl_after-rec_observed == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "channel_incl-excl_by_noise_thresholds",
-                "isAbout": "items/channel_incl-excl_by_noise_thresholds.jsonld",
-                "isVis": "channel_incl-excl_by_condition == 1",
+                "variableName": "channel_incl-excl_after-rec_results",
+                "isAbout": "items/channel_incl-excl_after-rec_results.jsonld",
+                "isVis": "channel_incl-excl_after-rec_type == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "channel_incl-excl_by_noise_other",
-                "isAbout": "items/channel_incl-excl_by_noise_other.jsonld",
-                "isVis": "channel_incl-excl_by_condition == 2",
+                "variableName": "channel_incl-excl_for_analysis_other",
+                "isAbout": "items/channel_incl-excl_for_analysis_other.jsonld",
+                "isVis": "channel_incl-excl_for_analysis == 4",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "channel_incl-excl_by_other",
-                "isAbout": "items/channel_incl-excl_by_other.jsonld",
-                "isVis": "channel_incl-excl_for_analysis == 5",
+                "variableName": "channel_incl-excl_order",
+                "isAbout": "items/channel_incl-excl_order.jsonld",
+                "isVis": "channel_incl-excl_for_analysis == 1 || channel_incl-excl_for_analysis == 2 || channel_incl-excl_for_analysis = 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "channel_reconstruction",
-                "isAbout": "items/channel_reconstruction.jsonld",
+                "variableName": "channel_reconstruction_exists",
+                "isAbout": "items/channel_reconstruction_exists.jsonld",
                 "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "channel_reconstruction_cases",
+                "isAbout": "items/channel_reconstruction_cases.jsonld",
+                "isVis": "channel_reconstruction_exists == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -226,7 +215,7 @@
             {
                 "variableName": "channel_reconstruction_all",
                 "isAbout": "items/channel_reconstruction_all.jsonld",
-                "isVis": "channel_reconstruction == 0",
+                "isVis": "channel_reconstruction_cases == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -235,7 +224,7 @@
             {
                 "variableName": "channel_reconstruction_participants",
                 "isAbout": "items/channel_reconstruction_participants.jsonld",
-                "isVis": "channel_reconstruction == 1",
+                "isVis": "channel_reconstruction_cases == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -244,7 +233,7 @@
             {
                 "variableName": "channel_reconstruction_trials",
                 "isAbout": "items/channel_reconstruction_trials.jsonld",
-                "isVis": "channel_reconstruction == 2",
+                "isVis": "channel_reconstruction_cases == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -253,16 +242,7 @@
             {
                 "variableName": "channel_reconstruction_other",
                 "isAbout": "items/channel_reconstruction_other.jsonld",
-                "isVis": "channel_reconstruction == 4",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "channel_incl-excl_reconstruction_order",
-                "isAbout": "items/channel_incl-excl_reconstruction_order.jsonld",
-                "isVis": "!(channel_incl-excl_for_analysis > 3 || channel_reconstruction > 2)",
+                "isVis": "channel_reconstruction_cases == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -280,7 +260,7 @@
             {
                 "variableName": "analysis_montage_1_number",
                 "isAbout": "items/analysis_montage_1_number.jsonld",
-                "isVis": "analysis_montages == 1",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -289,7 +269,7 @@
             {
                 "variableName": "analysis_montage_1_channels",
                 "isAbout": "items/analysis_montage_1_channels.jsonld",
-                "isVis": "analysis_montages == 1",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

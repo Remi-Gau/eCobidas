@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "channel_incl-excl_after-rec_type.jsonld",
+    "prefLabel": {
+        "en": "channel incl-excl after-rec type"
+    },
+    "description": "channel incl-excl after-rec type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "After recording, how did you decide which electrodes/channels to include/exclude?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "equipment malfunction"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "observed signal/noise"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "results dependent"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": true
+    }
+}

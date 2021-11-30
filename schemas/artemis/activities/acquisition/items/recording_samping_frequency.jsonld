@@ -5,17 +5,16 @@
     "prefLabel": {
         "en": "recording samping frequency"
     },
-    "description": "sampling frequency at data acqusition",
+    "description": "recording samping frequency",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "float"
     },
     "question": {
-        "en": "What is your acquisition sampling rate?"
+        "en": "What was your acquisition sampling rate in Hz?"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 3000
+        "valueType": "xsd:float"
     }
 }

@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Provide more details about your trial presentation:"
+        "en": "Explain how it was determined how many trials a participant was presented with."
     },
     "responseOptions": {
         "valueType": "xsd:string",
