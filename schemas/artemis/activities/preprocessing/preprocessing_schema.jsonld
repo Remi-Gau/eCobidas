@@ -80,7 +80,7 @@
             {
                 "variableName": "preprocessing_software",
                 "isAbout": "items/preprocessing_software.jsonld",
-                "isVis": "same_software == 1",
+                "isVis": false,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -89,7 +89,7 @@
             {
                 "variableName": "preprocessing_software_details",
                 "isAbout": "items/preprocessing_software_details.jsonld",
-                "isVis": "same_software == 1",
+                "isVis": "(same_software == 1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -107,7 +107,7 @@
             {
                 "variableName": "filtering_software",
                 "isAbout": "items/filtering_software.jsonld",
-                "isVis": "which_filters < 3 && same_software == 0",
+                "isVis": "(which_filters < 3 && same_software == 0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
