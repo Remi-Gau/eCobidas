@@ -18,6 +18,7 @@
     "ui": {
         "shuffle": false,
         "order": [
+            "../activities/study_id/study_id_schema.jsonld",
             "../activities/design_and_sample/design_and_sample_schema.jsonld",
             "../activities/hardware/hardware_schema.jsonld",
             "../activities/acquisition/acquisition_schema.jsonld",
@@ -28,6 +29,18 @@
             "../activities/other/other_schema.jsonld"
         ],
         "addProperties": [
+            {
+                "variableName": "study_id",
+                "isAbout": "../activities/study_id/study_id_schema.jsonld",
+                "prefLabel": {
+                    "en": "study_id"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
             {
                 "variableName": "acquisition",
                 "isAbout": "../activities/acquisition/acquisition_schema.jsonld",
