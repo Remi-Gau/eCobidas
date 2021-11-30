@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "incl-excl_by_noise_other.jsonld",
+    "@id": "study_dataset_DOI.jsonld",
     "prefLabel": {
-        "en": "incl-excl by noise: other"
+        "en": "study dataset DOI"
     },
-    "description": "incl-excl by noise: other",
+    "description": "study dataset DOI",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": " Describe your 'other' process of noise-dependent channel inclusion/exclusion"
+        "en": "Dataset DOIs separated by a semicolon and a space."
     },
     "responseOptions": {
         "valueType": "xsd:string",

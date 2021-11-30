@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:ResponseOption",
+    "@id": "filter.jsonld",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 3,
+    "choices": [
+        {
+            "name": {
+                "en": "FIR filter"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "IIR filter"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "Clean Line"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "other and alternatives (e.g. DRL)"
+            },
+            "value": 3
+        }
+    ]
+}

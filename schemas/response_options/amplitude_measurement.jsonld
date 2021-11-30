@@ -1,76 +1,52 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:ResponseOption",
-    "@id": "eeg_cap_types.jsonld",
+    "@id": "amplitude_measurement.jsonld",
     "valueType": "xsd:integer",
     "minValue": 0,
-    "maxValue": 10,
+    "maxValue": 6,
     "choices": [
         {
             "name": {
-                "en": "Aegis Array"
+                "en": "mean over a time window"
             },
             "value": 0
         },
         {
             "name": {
-                "en": "Biosemi"
+                "en": "peak"
             },
             "value": 1
         },
         {
             "name": {
-                "en": "BrainProducts"
+                "en": "factor scores based on factor analysis"
             },
             "value": 2
         },
         {
             "name": {
-                "en": "Easycap standard caps"
+                "en": "window area"
             },
             "value": 3
         },
         {
             "name": {
-                "en": "Electrocap"
+                "en": "each time point separately"
             },
             "value": 4
         },
         {
             "name": {
-                "en": "Emotiv"
+                "en": "time window around peak"
             },
             "value": 5
         },
         {
             "name": {
-                "en": "Geodesic Sensor Net"
-            },
-            "value": 6
-        },
-        {
-            "name": {
-                "en": "Quickcap (Neuroscan)"
-            },
-            "value": 7
-        },
-        {
-            "name": {
-                "en": "TMSi"
-            },
-            "value": 8
-        },
-        {
-            "name": {
-                "en": "Waveguard (ANT)"
-            },
-            "value": 9
-        },
-        {
-            "name": {
                 "en": "other"
             },
-            "value": 10
+            "value": 6
         }
     ]
 }

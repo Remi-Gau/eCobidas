@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "study_datasets_nodoi_exists.jsonld",
+    "@id": "study_dataset_DOI_exists.jsonld",
     "prefLabel": {
-        "en": "study datasets noDOI exists"
+        "en": "study dataset DOI exists"
     },
-    "description": "study datasets noDOI exists",
+    "description": "study dataset DOI exists",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "Are there any datasets that do not have a DOI?"
+        "en": "Do any of these datasets have a DOI?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

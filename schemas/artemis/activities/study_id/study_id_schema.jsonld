@@ -21,17 +21,17 @@
             "items/study_working_title.jsonld",
             "items/study_authors.jsonld",
             "items/study_reference_exists.jsonld",
-            "items/study_reference_dois_exists.jsonld",
+            "items/study_reference_DOIs_exists.jsonld",
             "items/study_reference.jsonld",
-            "items/study_reference_nodoi_exists.jsonld",
-            "items/study_reference_nodoi.jsonld",
+            "items/study_reference_noDOI_exists.jsonld",
+            "items/study_reference_noDOI.jsonld",
             "items/study_dataset_exists.jsonld",
             "items/study_dataset_types.jsonld",
             "items/study_dataset_types_other.jsonld",
-            "items/study_dataset_doi_exists.jsonld",
-            "items/study_dataset_doi.jsonld",
-            "items/study_datasets_nodoi_exists.jsonld",
-            "items/study_datasets_nodoi.jsonld",
+            "items/study_dataset_DOI_exists.jsonld",
+            "items/study_dataset_DOI.jsonld",
+            "items/study_datasets_noDOI_exists.jsonld",
+            "items/study_datasets_noDOI.jsonld",
             "items/supplementary_materials_exists.jsonld",
             "items/supplementary_materials.jsonld",
             "items/specify_supplementary.jsonld",
@@ -120,8 +120,8 @@
                 ]
             },
             {
-                "variableName": "study_reference_dois_exists",
-                "isAbout": "items/study_reference_dois_exists.jsonld",
+                "variableName": "study_reference_DOIs_exists",
+                "isAbout": "items/study_reference_DOIs_exists.jsonld",
                 "isVis": "study_reference_exists == 1",
                 "requiredValue": false,
                 "allow": [
@@ -138,8 +138,8 @@
                 ]
             },
             {
-                "variableName": "study_reference_nodoi_exists",
-                "isAbout": "items/study_reference_nodoi_exists.jsonld",
+                "variableName": "study_reference_noDOI_exists",
+                "isAbout": "items/study_reference_noDOI_exists.jsonld",
                 "isVis": "study_reference_exists == 1",
                 "requiredValue": false,
                 "allow": [
@@ -147,8 +147,8 @@
                 ]
             },
             {
-                "variableName": "study_reference_nodoi",
-                "isAbout": "items/study_reference_nodoi.jsonld",
+                "variableName": "study_reference_noDOI",
+                "isAbout": "items/study_reference_noDOI.jsonld",
                 "isVis": "study_reference_noDOI_exists == 1",
                 "requiredValue": false,
                 "allow": [
@@ -183,8 +183,8 @@
                 ]
             },
             {
-                "variableName": "study_dataset_doi_exists",
-                "isAbout": "items/study_dataset_doi_exists.jsonld",
+                "variableName": "study_dataset_DOI_exists",
+                "isAbout": "items/study_dataset_DOI_exists.jsonld",
                 "isVis": "study_dataset_exists == 1",
                 "requiredValue": false,
                 "allow": [
@@ -192,8 +192,8 @@
                 ]
             },
             {
-                "variableName": "study_dataset_doi",
-                "isAbout": "items/study_dataset_doi.jsonld",
+                "variableName": "study_dataset_DOI",
+                "isAbout": "items/study_dataset_DOI.jsonld",
                 "isVis": "study_dataset_DOI == 1",
                 "requiredValue": false,
                 "allow": [
@@ -201,8 +201,8 @@
                 ]
             },
             {
-                "variableName": "study_datasets_nodoi_exists",
-                "isAbout": "items/study_datasets_nodoi_exists.jsonld",
+                "variableName": "study_datasets_noDOI_exists",
+                "isAbout": "items/study_datasets_noDOI_exists.jsonld",
                 "isVis": "study_dataset_exists == 1",
                 "requiredValue": false,
                 "allow": [
@@ -210,8 +210,8 @@
                 ]
             },
             {
-                "variableName": "study_datasets_nodoi",
-                "isAbout": "items/study_datasets_nodoi.jsonld",
+                "variableName": "study_datasets_noDOI",
+                "isAbout": "items/study_datasets_noDOI.jsonld",
                 "isVis": "study_datasets_noDOI_exists == 1",
                 "requiredValue": false,
                 "allow": [

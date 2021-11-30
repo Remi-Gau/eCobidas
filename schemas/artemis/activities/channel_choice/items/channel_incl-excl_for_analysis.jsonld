@@ -17,31 +17,37 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 4,
         "choices": [
             {
                 "name": {
-                    "en": "a-priori selection of particular channels| a priori criteria for inclusion/exclusion"
+                    "en": "a-priori selection of particular channels"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "inclusion/exclusion decisions made after recording"
+                    "en": "a priori criteria for inclusion/exclusion"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "all channels are used for measurement and analysis"
+                    "en": "inclusion/exclusion decisions made after recording"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "all channels are used for measurement and analysis"
                 },
                 "value": 3
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 4
             }
         ],
         "multipleChoice": true

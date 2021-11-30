@@ -48,3 +48,7 @@ resp-ver-macos	response_options	macos_version	1fLyrEbnxj4Y-XWOfvTcaJuZNxDOHGh_nE
 resp-eye_preproc_soft	response_options	eyetracker_preproc_softwares	1MrDCAoQvDbKr59LT1_lJB8SnXMhxJnRDATLXciA4Jys		https://docs.google.com/spreadsheets/d/1MrDCAoQvDbKr59LT1_lJB8SnXMhxJnRDATLXciA4Jys/edit?usp=sharing
 resp-eye_model	response_options	eyetracker_model_name	14Zo4ltjKOyiJ9wUd5ZybMt6MnEryMc23KAb7sspT0Ko		https://docs.google.com/spreadsheets/d/14Zo4ltjKOyiJ9wUd5ZybMt6MnEryMc23KAb7sspT0Ko/edit?usp=sharing
 resp-eye_producer	response_options	eyetracker_producer	1SxM0c3QgRprfPM8KL8SBRaUGCGKzRKFG4apZ2NwcpqM		https://docs.google.com/spreadsheets/d/1SxM0c3QgRprfPM8KL8SBRaUGCGKzRKFG4apZ2NwcpqM/edit?usp=sharing
+resp-amp_meas	response_options	amplitude_measurement	1d2MR-XUVtA-8c1OHq_Y77D8G3XQkkHUaz1dveM5IHng		https://docs.google.com/spreadsheets/d/1d2MR-XUVtA-8c1OHq_Y77D8G3XQkkHUaz1dveM5IHng/edit?usp=sharing
+resp-eeg_waveform	response_options	waveform	1dvWOmcoEztNnNH0QQW3b5cBELdkWRPsSdC50WnZn1xI		https://docs.google.com/spreadsheets/d/1dvWOmcoEztNnNH0QQW3b5cBELdkWRPsSdC50WnZn1xI/edit?usp=sharing
+resp-meeg_filter	response_options	filter	1Hp1k6FNovwLiZSm2ev75glXesA_czwgnyyYf9c1MReE		https://docs.google.com/spreadsheets/d/1Hp1k6FNovwLiZSm2ev75glXesA_czwgnyyYf9c1MReE/
+	response_options	latency_measurement	1Wy4yUuwi-RoDex_zTVGvCCjrydHGH7xZcwFBNuF4KBc		https://docs.google.com/spreadsheets/d/1Wy4yUuwi-RoDex_zTVGvCCjrydHGH7xZcwFBNuF4KBc/edit#gid=0

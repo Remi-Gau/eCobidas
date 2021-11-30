@@ -1,27 +1,27 @@
 name	value
-Cognitrace	0
-Neuroscan (e.g., SynAmps RT, NuAmps)	1
-Digitimer	2
-SA Instrumentation	3
-Biosemi	4
-Grass	5
-NeuroScience	6
-Brain Products	7
-Electrical Geodesics	8
-ANT	9
-TMSi	10
+ANT	0
+Biosemi	1
+BlindSight (e.g., NeurOne Tesla)	2
+Brain Products	3
+Cognitrace	4
+Coulbourn	5
+Digitimer	6
+Electrical Geodesics	7
+Emotiv	8
+g.tec	9
+Grass	10
 M&I	11
-Emotiv	12
-Coulbourn	13
-Neuronic	14
-Nihon Kohden	15
-Psylab	16
-MUSE	17
-g.tec	18
-MindMedia (e.g., Nexus 32)	19
-BlindSight (e.g., NeurOne Tesla)	20
-Mitsar	21
-mBrainTrain (e.g., SMARTING)	22
-neuroConn	23
-Micromed	24
+mBrainTrain (e.g., SMARTING)	12
+Micromed	13
+MindMedia (e.g., Nexus 32)	14
+Mitsar	15
+MUSE	16
+neuroConn	17
+Neuronic	18
+Neuroscan (e.g., SynAmps RT, NuAmps)	19
+NeuroScience	20
+Nihon Kohden	21
+Psylab	22
+SA Instrumentation	23
+TMSi	24
 other	25

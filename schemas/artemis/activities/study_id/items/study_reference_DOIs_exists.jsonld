@@ -1,7 +1,7 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "study_reference_dois_exists.jsonld",
+    "@id": "study_reference_DOIs_exists.jsonld",
     "prefLabel": {
         "en": "study reference DOIs exists"
     },

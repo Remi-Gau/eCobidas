@@ -1,38 +1,38 @@
 name	value
-Psychtoolbox	0
-PsychoPy	1
-Eprime	2
-expyriment	3
-Presentation	4
-Cogent	5
-ERTS	6
-STIM	7
-EEVoke	8
-Neurolab	9
-SuperLab	10
-ERP system	11
-StimPres	12
-InsEP	13
-Other	14
-Attention Tool 5.2 software	15
-Matlab	16
-Eyelink	17
-Power Point	18
-OpenSesam	19
-Experiment Builder	20
-Eye-Works Design, EyeWorks record	21
-Relax, Archisim	22
-S-CCS (simulation of a naval air-defense environment)	23
-Sawtooth Software	24
-TEMPO software system (reflective Computing)	25
+Attention Tool 5.2 software	0
+Cogent	1
+EEVoke	2
+Eprime	3
+ERP system	4
+ERTS	5
+Experiment Builder	6
+expyriment	7
+Eye-Works Design, EyeWorks record	8
+Eyelink	9
+Gaze Tracker software	10
+Inquisit 3.0.5	11
+InsEP	12
+Matlab	13
+Neurolab	14
+OpenSesam	15
+PhotoRating (web application)	16
+Power Point	17
+Presentation	18
+PsychoPy	19
+Psychtoolbox	20
+Relax, Archisim	21
+S-CCS (simulation of a naval air-defense environment)	22
+Sawtooth Software	23
+SMI Experiment Center	24
+SR Experiment Builder	25
 StatSoft Statistica	26
-SR Experiment Builder	27
-SMI Experiment Center	28
-Inquisit 3.0.5	29
-Gaze Tracker software	30
+STIM	27
+StimPres	28
+SuperLab	29
+TEMPO software system (reflective Computing)	30
 Tobii	31
 Tobii Studio	32
 Tobii Studio Professional	33
 Tobii X1 Light eye-tracking software	34
 unipark	35
-"PhotoRating" (web application)	36
+Other	36

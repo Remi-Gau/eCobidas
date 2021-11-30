@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "high_offline_filters.jsonld",
+    "@id": "study_reference_noDOI.jsonld",
     "prefLabel": {
-        "en": "high offline filters"
+        "en": "study reference noDOI"
     },
-    "description": "high pass filters applied after recording or session",
+    "description": "study reference noDOI",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "What high pass filter (Hz, dB, octave...) have you applied after the recording?"
+        "en": "Provide links to non-DOI publications, separated by a semicolon and a space."
     },
     "responseOptions": {
         "valueType": "xsd:string",

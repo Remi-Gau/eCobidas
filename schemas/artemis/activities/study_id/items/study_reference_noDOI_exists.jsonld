@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "was_reference_used.jsonld",
+    "@id": "study_reference_noDOI_exists.jsonld",
     "prefLabel": {
-        "en": "was reference used"
+        "en": "study reference noDOI exists"
     },
-    "description": "whether reference or an alternative such as DRL was used",
+    "description": "study reference noDOI exists",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "Did you use an online reference (as opposed to alternative solutions such as DRL)?"
+        "en": "Are there any web-accessible publications that do not have a DOI?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

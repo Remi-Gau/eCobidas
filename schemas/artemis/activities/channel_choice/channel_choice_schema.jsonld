@@ -188,7 +188,7 @@
             {
                 "variableName": "channel_incl-excl_order",
                 "isAbout": "items/channel_incl-excl_order.jsonld",
-                "isVis": "channel_incl-excl_for_analysis == 1 || channel_incl-excl_for_analysis == 2 || channel_incl-excl_for_analysis = 3",
+                "isVis": "channel_incl-excl_for_analysis == 1 || channel_incl-excl_for_analysis == 2 || channel_incl-excl_for_analysis == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -323,7 +323,7 @@
             {
                 "variableName": "analysis_montage_4_channels",
                 "isAbout": "items/analysis_montage_4_channels.jsonld",
-                "isVis": "analysis_montages >3",
+                "isVis": "analysis_montages > 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -332,7 +332,7 @@
             {
                 "variableName": "analysis_montage_5_number",
                 "isAbout": "items/analysis_montage_5_number.jsonld",
-                "isVis": "analysis_montages >4",
+                "isVis": "analysis_montages > 4",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

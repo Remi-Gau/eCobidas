@@ -8,67 +8,67 @@
     "choices": [
         {
             "name": {
-                "en": "Cognitrace"
+                "en": "ANT"
             },
             "value": 0
         },
         {
             "name": {
-                "en": "Neuroscan (e.g., SynAmps RT, NuAmps)"
+                "en": "Biosemi"
             },
             "value": 1
         },
         {
             "name": {
-                "en": "Digitimer"
+                "en": "BlindSight (e.g., NeurOne Tesla)"
             },
             "value": 2
         },
         {
             "name": {
-                "en": "SA Instrumentation"
+                "en": "Brain Products"
             },
             "value": 3
         },
         {
             "name": {
-                "en": "Biosemi"
+                "en": "Cognitrace"
             },
             "value": 4
         },
         {
             "name": {
-                "en": "Grass"
+                "en": "Coulbourn"
             },
             "value": 5
         },
         {
             "name": {
-                "en": "NeuroScience"
+                "en": "Digitimer"
             },
             "value": 6
         },
         {
             "name": {
-                "en": "Brain Products"
+                "en": "Electrical Geodesics"
             },
             "value": 7
         },
         {
             "name": {
-                "en": "Electrical Geodesics"
+                "en": "Emotiv"
             },
             "value": 8
         },
         {
             "name": {
-                "en": "ANT"
+                "en": "g.tec"
             },
             "value": 9
         },
         {
             "name": {
-                "en": "TMSi"
+                "en": "Grass"
             },
             "value": 10
         },
@@ -80,79 +80,79 @@
         },
         {
             "name": {
-                "en": "Emotiv"
+                "en": "mBrainTrain (e.g., SMARTING)"
             },
             "value": 12
         },
         {
             "name": {
-                "en": "Coulbourn"
+                "en": "Micromed"
             },
             "value": 13
         },
         {
             "name": {
-                "en": "Neuronic"
+                "en": "MindMedia (e.g., Nexus 32)"
             },
             "value": 14
         },
         {
             "name": {
-                "en": "Nihon Kohden"
+                "en": "Mitsar"
             },
             "value": 15
         },
         {
             "name": {
-                "en": "Psylab"
+                "en": "MUSE"
             },
             "value": 16
         },
         {
             "name": {
-                "en": "MUSE"
+                "en": "neuroConn"
             },
             "value": 17
         },
         {
             "name": {
-                "en": "g.tec"
+                "en": "Neuronic"
             },
             "value": 18
         },
         {
             "name": {
-                "en": "MindMedia (e.g., Nexus 32)"
+                "en": "Neuroscan (e.g., SynAmps RT, NuAmps)"
             },
             "value": 19
         },
         {
             "name": {
-                "en": "BlindSight (e.g., NeurOne Tesla)"
+                "en": "NeuroScience"
             },
             "value": 20
         },
         {
             "name": {
-                "en": "Mitsar"
+                "en": "Nihon Kohden"
             },
             "value": 21
         },
         {
             "name": {
-                "en": "mBrainTrain (e.g., SMARTING)"
+                "en": "Psylab"
             },
             "value": 22
         },
         {
             "name": {
-                "en": "neuroConn"
+                "en": "SA Instrumentation"
             },
             "value": 23
         },
         {
             "name": {
-                "en": "Micromed"
+                "en": "TMSi"
             },
             "value": 24
         },
