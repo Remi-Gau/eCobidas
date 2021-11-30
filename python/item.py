@@ -11,7 +11,6 @@ def set_item_name(this_item):
 
     if "item" not in this_item.keys():
         item_name = convert_to_str(this_item["item_pref_label"])
-        item_name = item_name.lower()
     elif isinstance(convert_to_str(this_item["item"]), float):
         item_name = convert_to_str(this_item["item_pref_label"])
     elif convert_to_str(this_item["item"]) == "":
