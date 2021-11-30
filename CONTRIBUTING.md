@@ -5,13 +5,25 @@ Make sure to also read the
 
 ## Requirements
 
-If you are running Windows 10, you will will need to use
-[WSL2 to run a linux distribution](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+You will need to have Python and Node.js installed on your system.
+
+If you are running Windows 10, you might want to work directly in a Linux
+Windows sub-system.
+
+An easy way to do this is to install
+[Ubuntu from the Windows App store](https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71).
 
 ### Python 3.8 or above
 
 An easy way to install Python is to rely on
 [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
+
+If you are on Linux this should be enough.
+
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
 
 <!-- TODO
 check if virtualenv is installed in base conda

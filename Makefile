@@ -20,7 +20,7 @@ install:
 	pip install -r requirements.txt
 	cd python && pip install -e . && cd ..
 	mkdir -p lib && git clone https://github.com/Remi-Gau/reproschema-py.git lib/reproschema-py
-	cd lib/reproschema-py && git checkout remi_schema_creator && pip install -e .
+	cd lib/reproschema-py && git checkout eCobidas_valid && pip install -e .
 	pre-commit install
 	npm install `cat npm-requirements.txt`
 
