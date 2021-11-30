@@ -97,6 +97,12 @@ grep -r  "@context" schemas/neurovault | cut -d: -f1 | xargs -I fname jsonlint -
 reproschema -l DEBUG validate schemas/neurovault
 ```
 
+## Serving the local protocols and activities to test them with the reproschema-ui
+
+```
+python schemas/simple-cors-http-server.py
+```
+
 ## Editing the spreadsheets
 
 DO NOT EDIT THE DIRECTLY IN THE REPOSITORY!!!

@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
         "en": "Are any elements in the study currently covered by a license allowing for reuse (e.g., code used to run the study, data arising from the study)"
@@ -38,6 +38,6 @@
                 "value": 2
             }
         ],
-        "multipleChoice": false
+        "multipleChoice": true
     }
 }
