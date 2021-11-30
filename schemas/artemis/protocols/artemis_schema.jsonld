@@ -33,7 +33,7 @@
                 "variableName": "study_id",
                 "isAbout": "../activities/study_id/study_id_schema.jsonld",
                 "prefLabel": {
-                    "en": "study ID"
+                    "en": "Study ID"
                 },
                 "isVis": true,
                 "requiredValue": false,

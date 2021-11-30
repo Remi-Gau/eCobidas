@@ -5,12 +5,16 @@ Make sure to also read the
 
 ## Requirements
 
-You will need to have Python and Node.js installed on your system.
+You will need to have installed.
 
-If you are running Windows 10, you might want to work directly in a Linux
-Windows sub-system.
+-   Python
+-   [node.js](https://nodejs.org/en/)
+-   [Git](https://git-scm.com/downloads)
 
-An easy way to do this is to install
+If you are running Windows 10, you will want to work directly in a Linux Windows
+sub-system.
+
+An simple way to do this is to install
 [Ubuntu from the Windows App store](https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71).
 
 ### Python 3.8 or above
@@ -18,7 +22,7 @@ An easy way to do this is to install
 An easy way to install Python is to rely on
 [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
 
-If you are on Linux this should be enough.
+If you are on Linux this should be enough:
 
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -31,9 +35,9 @@ check if virtualenv is installed in base conda
 
 ### node.js
 
-A good way to To install javascript [`node.js`](<(https://nodejs.org/en/)>), is
-to install [node version manager](https://github.com/nvm-sh/nvm) (NVM) to help
-you deal with different version of `node.js`.
+A good way to To install javascript [`node.js`](https://nodejs.org/en/), is to
+install [node version manager](https://github.com/nvm-sh/nvm) (NVM) to help you
+deal with different version of `node.js`.
 
 In a terminal or in Windows WSL2, you can install NVM by typing:
 
@@ -52,8 +56,9 @@ nvm install 12
 
 ## Set up
 
-Fork and clone the repo. Preferably set up a python virtual environment. Then
-run make install.
+Fork and clone the repo. Preferably set up a python virtual environment.
+
+Then run make install.
 
 ```
 git clone https://github.com/YOUR_GITHUB_USERNAME/eCobidas.git
@@ -103,6 +108,3 @@ locally. Or type `make download_all` to download update all the spreadsheets.
 
 Load the `ecobidas.code-workspace` file in the `.vscode` folder.
 
-```
-
-```
