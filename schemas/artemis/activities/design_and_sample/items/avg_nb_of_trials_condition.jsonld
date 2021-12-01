@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "In your final analysis, how many trials, on average, did you include for each condition per subject? Insert numbers for each condition, separated by a semicolon and a space, in the same order as the conditions were listed earlier. If there are multiple groups of participants, list trial counts for all conditions for one group, and then for the next one - following the ordering of groups as you specified them earlier."
+        "en": "In your final analysis, how many trials, on average, did you include for each condition per subject? <br><br><p>Insert numbers for each condition, separated by a semicolon and a space, in the same order as the conditions were listed earlier. If there are multiple groups of participants, list trial counts for all conditions for one group, and then for the next one - following the ordering of groups as you specified them earlier.</p>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
