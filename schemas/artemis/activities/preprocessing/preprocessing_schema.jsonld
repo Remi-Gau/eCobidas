@@ -107,7 +107,7 @@
             {
                 "variableName": "filtering_software",
                 "isAbout": "items/filtering_software.jsonld",
-                "isVis": "which_filters < 3 && same_software == 0",
+                "isVis": "!which_filters.includes(3) && same_software == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -116,7 +116,7 @@
             {
                 "variableName": "filter_software_details",
                 "isAbout": "items/filter_software_details.jsonld",
-                "isVis": "which_filters < 3 && same_software == 0",
+                "isVis": "!which_filters.includes(3) &&  same_software == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -125,7 +125,7 @@
             {
                 "variableName": "offline_highpass_filter_type",
                 "isAbout": "items/offline_highpass_filter_type.jsonld",
-                "isVis": "which_filters == 0",
+                "isVis": "which_filters.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -134,7 +134,7 @@
             {
                 "variableName": "offline_highpass_filter_order",
                 "isAbout": "items/offline_highpass_filter_order.jsonld",
-                "isVis": "which_filters == 0",
+                "isVis": "which_filters.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -143,7 +143,7 @@
             {
                 "variableName": "offline_highpass_filter_unit",
                 "isAbout": "items/offline_highpass_filter_unit.jsonld",
-                "isVis": "which_filters == 0",
+                "isVis": "which_filters.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -152,7 +152,7 @@
             {
                 "variableName": "offline_highpass_filter_cutoff",
                 "isAbout": "items/offline_highpass_filter_cutoff.jsonld",
-                "isVis": "which_filters == 0",
+                "isVis": "which_filters.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -161,7 +161,7 @@
             {
                 "variableName": "offline_highpass_filter_rolloff",
                 "isAbout": "items/offline_highpass_filter_rolloff.jsonld",
-                "isVis": "which_filters == 0",
+                "isVis": "which_filters.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -170,7 +170,7 @@
             {
                 "variableName": "offline_highpass_filter_attenuation",
                 "isAbout": "items/offline_highpass_filter_attenuation.jsonld",
-                "isVis": "which_filters == 0",
+                "isVis": "which_filters.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -179,7 +179,7 @@
             {
                 "variableName": "offline_highpass_filter_direction",
                 "isAbout": "items/offline_highpass_filter_direction.jsonld",
-                "isVis": "which_filters == 0",
+                "isVis": "which_filters.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -188,7 +188,7 @@
             {
                 "variableName": "offline_lowpass_filter_type",
                 "isAbout": "items/offline_lowpass_filter_type.jsonld",
-                "isVis": "which_filters == 1",
+                "isVis": "which_filters.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -197,7 +197,7 @@
             {
                 "variableName": "offline_lowpass_filter_order",
                 "isAbout": "items/offline_lowpass_filter_order.jsonld",
-                "isVis": "which_filters == 1",
+                "isVis": "which_filters.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -206,7 +206,7 @@
             {
                 "variableName": "offline_lowpass_filter_unit",
                 "isAbout": "items/offline_lowpass_filter_unit.jsonld",
-                "isVis": "which_filters == 1",
+                "isVis": "which_filters.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -215,7 +215,7 @@
             {
                 "variableName": "offline_lowpass_filter_cutoff",
                 "isAbout": "items/offline_lowpass_filter_cutoff.jsonld",
-                "isVis": "which_filters == 1",
+                "isVis": "which_filters.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -224,7 +224,7 @@
             {
                 "variableName": "offline_lowpass_filter_rolloff",
                 "isAbout": "items/offline_lowpass_filter_rolloff.jsonld",
-                "isVis": "which_filters == 1",
+                "isVis": "which_filters.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -233,7 +233,7 @@
             {
                 "variableName": "offline_lowpass_filter_attenuation",
                 "isAbout": "items/offline_lowpass_filter_attenuation.jsonld",
-                "isVis": "which_filters == 1",
+                "isVis": "which_filters.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -242,7 +242,7 @@
             {
                 "variableName": "offline_lowpass_filter_direction",
                 "isAbout": "items/offline_lowpass_filter_direction.jsonld",
-                "isVis": "which_filters == 1",
+                "isVis": "which_filters.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -251,7 +251,7 @@
             {
                 "variableName": "offline_notch_filter_type",
                 "isAbout": "items/offline_notch_filter_type.jsonld",
-                "isVis": "which_filters == 2",
+                "isVis": "which_filters.includes(2)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -278,7 +278,7 @@
             {
                 "variableName": "downsample_software",
                 "isAbout": "items/downsample_software.jsonld",
-                "isVis": "same_software == 0",
+                "isVis": "downsample_data == 1 && same_software == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -287,7 +287,7 @@
             {
                 "variableName": "downsample_software_details",
                 "isAbout": "items/downsample_software_details.jsonld",
-                "isVis": "same_software == 0",
+                "isVis": "downsample_data == 1 && same_software == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -368,7 +368,7 @@
             {
                 "variableName": "artifact_software_1",
                 "isAbout": "items/artifact_software_1.jsonld",
-                "isVis": "artifact_steps_number >= 1 &&  same_software == 0",
+                "isVis": "artifact_steps_number >= 1 && same_software == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -377,7 +377,7 @@
             {
                 "variableName": "artifact_software_1_details",
                 "isAbout": "items/artifact_software_1_details.jsonld",
-                "isVis": "artifact_steps_number >=1 &&  same_software == 0",
+                "isVis": "artifact_steps_number >=1 && same_software == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -413,7 +413,7 @@
             {
                 "variableName": "artifact_software_2",
                 "isAbout": "items/artifact_software_2.jsonld",
-                "isVis": "artifact_steps_number >= 2 &&  same_software == 0",
+                "isVis": "artifact_steps_number >= 2 && same_software == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -422,7 +422,7 @@
             {
                 "variableName": "artifact_software_2_details",
                 "isAbout": "items/artifact_software_2_details.jsonld",
-                "isVis": "artifact_steps_number >= 2 &&  same_software == 0",
+                "isVis": "artifact_steps_number >= 2 && same_software == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -467,7 +467,7 @@
             {
                 "variableName": "epoch_trigger_event_other",
                 "isAbout": "items/epoch_trigger_event_other.jsonld",
-                "isVis": " epoch_trigger_event == other",
+                "isVis": " epoch_trigger_event == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
