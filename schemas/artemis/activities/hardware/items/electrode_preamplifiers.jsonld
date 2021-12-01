@@ -21,13 +21,13 @@
         "choices": [
             {
                 "name": {
-                    "en": "no (passive electrodes)"
+                    "en": "no - passive electrodes"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "yes (active electrodes)"
+                    "en": "yes - active electrodes"
                 },
                 "value": 1
             }

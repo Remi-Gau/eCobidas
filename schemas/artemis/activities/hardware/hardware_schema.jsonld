@@ -130,7 +130,7 @@
             {
                 "variableName": "conductive_medium_other",
                 "isAbout": "items/conductive_medium_other.jsonld",
-                "isVis": "conductive medium == 4",
+                "isVis": "conductive_medium == 4",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
