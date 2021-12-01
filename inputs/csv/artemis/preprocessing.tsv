@@ -1,54 +1,54 @@
-sub_section	preamble	question	details	field_type	choices	item_pref_label	visibility	item_order	include	mandatory	activity_pref_label	activity_order	unit
-Preprocessing general	Please specifiy all the preprocessing decisions in this section, such as analysis software, off-line filtering, re-referencing, artefact removal, epoching and baseline.  	Did you use the same software for all pre-processing steps (fitlering, downsampling, re-referencing, artifact removal, epoching and baseline correction, other)?		radio	preset:boolean	same_software	1	1	1	1	Preprocessing	5
-Preprocessing general		Which software do you use?		select	preset:meeg_analysis_softwares	preprocessing_software	same_software == 1	2	1	1	Preprocessing	5
-Preprocessing general		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.		text		preprocessing_software_details	same_software == 1	3	1	1	Preprocessing	5
-Offline filters		Did you apply any of the following offline (digital) filters?		radio_multiple	high pass | low pass | notch | none	which_filters	1	4	1	1	Preprocessing	5
-Offline filters		Which software do you use for implementing offline filters on EEG data?		select	preset:meeg_analysis_softwares	filtering_software	!which_filters.includes(3) && same_software == 0	5	1	1	Preprocessing	5
-Offline filters		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.		text		filter_software_details	!which_filters.includes(3) &&  same_software == 0	6	1	1	Preprocessing	5
-Offline filters		What kind of high-pass filter did you use?		radio	preset:filter	offline_highpass_filter_type	which_filters.includes(0)	7	1	1	Preprocessing	5
-Offline filters		What was the length/order of the high-pass filter?		float		offline_highpass_filter_order	which_filters.includes(0)	8	1	1	Preprocessing	5
-Offline filters		What is the unit in which you report the high-pass filter cut-off?		radio	half-power | half-amplitude	offline_highpass_filter_unit	which_filters.includes(0)	9	1	1	Preprocessing	5
-Offline filters		Specify the offline high-pass filter cut-off (Hz):		float		offline_highpass_filter_cutoff	which_filters.includes(0)	10	1	1	Preprocessing	5	Hz
-Offline filters		Specify the offline high-pass filter roll off (dB/octave)		float		offline_highpass_filter_rolloff	which_filters.includes(0)	11	1	1	Preprocessing	5	Hz
-Offline filters		What is the attenuation achieved in the stopband (in dB) after high-pass filtering?		float		offline_highpass_filter_attenuation	which_filters.includes(0)	12	1	1	Preprocessing	5	dB
-Offline filters		What was the direction of the high-pass filter?		radio	forwards | backwards | forwards and backwards	offline_highpass_filter_direction	which_filters.includes(0)	13	1	1	Preprocessing	5
-Offline filters		What kind of low-pass filter did you use?		radio	preset:filter	offline_lowpass_filter_type	which_filters.includes(1)	14	1	1	Preprocessing	5
-Offline filters		What was the length/order of the low-pass filter?		float		offline_lowpass_filter_order	which_filters.includes(1)	15	1	1	Preprocessing	5
-Offline filters		What is the unit in which you report the low-pass filter cut-off?		radio	half-power | half-amplitude	offline_lowpass_filter_unit	which_filters.includes(1)	16	1	1	Preprocessing	5
-Offline filters		Specify the offline low-pass filter cut-off (Hz):		float		offline_lowpass_filter_cutoff	which_filters.includes(1)	17	1	1	Preprocessing	5	Hz
-Offline filters		Specify the offline low-pass filter roll off (dB/octave)		float		offline_lowpass_filter_rolloff	which_filters.includes(1)	18	1	1	Preprocessing	5	HZ
-Offline filters		What is the attenuation achieved in the stopband (in dB) after low-pass filtering?		float		offline_lowpass_filter_attenuation	which_filters.includes(1)	19	1	1	Preprocessing	5	dB
-Offline filters		What was the direction of the low-pass filter?		radio	forwards | backwards | forwards and backwards	offline_lowpass_filter_direction	which_filters.includes(1)	20	1	1	Preprocessing	5
-Offline filters		What notch filter (eg. 50Hz) have you applied after the recording?		radio	50 Hz | 60 Hz | other	offline_notch_filter_type	which_filters.includes(2)	21	1	1	Preprocessing	5
-Offline filters		Specify the notch filter you applied:		text		offline_notch_filter_type_details	offline_notch_filter_type == 2	22	1	1	Preprocessing	5
-Downsampling		Did you downsample your data?		radio	preset:boolean	downsample_data	1	23	1	1	Preprocessing	5
-Downsampling		What software did you use in step 1?		select	preset:meeg_analysis_softwares	downsample_software	downsample_data == 1 && same_software == 0	24	1	1	Preprocessing	5
-Downsampling		Specify software version if applicable, script language if "custom script" was selected and software name and version if "other" was selected.		text		downsample_software_details	downsample_data == 1 && same_software == 0	25	1	1	Preprocessing	5
-Downsampling		If yes, what was your new sampling frequency? (Hz)		float		new_sampling_frequency	downsample_data == 1	26	1	1	Preprocessing	5	Hz
-Re-referencing		Did you re-reference offline?		radio	preset:boolean	offline_reference	1	27	1	1	Preprocessing	5
-Re-referencing		Which analysis software do you use for re-referencing on EEG data?		select	preset:meeg_analysis_softwares	rereference_software	 offline_reference == 1 && same_software == 0	28	1	1	Preprocessing	5
-Re-referencing		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.		text		rereference_software_details	 offline_reference == 1 && same_software == 0	29	1	1	Preprocessing	5
-Re-referencing		What was the new reference?		text		new_reference	offline_reference == 1	30	1	1	Preprocessing	5
-Artifacts		How many artifact elimination steps did you have?	this is a fake loop hack - we will offer up to N steps (currently only 2 while this is in development) - and then steps are only visible if a person has picked a total number of steps that is equal to or higher :)	integer		artifact_steps_number	1	31	1	1	Preprocessing	5
-Artifacts		How did you define your artifacts in step 1?		radio	visual inspection | algorithm | pre-set numerical criterion | other 	artifact_definition_1	artifact_steps_number >= 1	32	1	1	Preprocessing	5
-Artifacts		What action did you take regarding artifacts in step 1?		radio	reject bad participant | reject bad trial or bad data segment | remove bad electrode | interpolate bad electrode | correct by subtraction (blinks, EKG etc.)	artifact_action_1	artifact_steps_number >= 1	33	1	1	Preprocessing	5
-Artifacts		Specify details of your artifact procedure to the degree sufficient for replicating it. (Step 1)		text		artifact_details_1	artifact_steps_number >= 1	34	1	1	Preprocessing	5
-Artifacts		What software did you use in step 1?		select	preset:meeg_analysis_softwares	artifact software 1	artifact_steps_number >= 1 && same_software == 0	35	1	1	Preprocessing	5
-Artifacts		Specify software version if applicable, script language if "custom script" was selected and software name and version if "other" was selected.		text		artifact_software_1_details	artifact_steps_number >=1 && same_software == 0	36	1	1	Preprocessing	5
-Artifacts		How did you define your artifacts in step 2?		radio	visual inspection | algorithm | pre-set numerical criterion | other 	artifact_definition_2	artifact_steps_number >= 2	37	1	1	Preprocessing	5
-Artifacts		What action did you take regarding artifacts in step 2?		radio	reject bad participant | reject bad trial or bad data segment | remove bad electrode | interpolate bad electrode | correct by subtraction (blinks, EKG etc.)	artifact_action_2	artifact_steps_number >= 2	38	1	1	Preprocessing	5
-Artifacts		Specify details of your artifact procedure to the degree sufficient for replicating it. (Step 2)		text		artifact_details_2	artifact_steps_number >= 2	39	1	1	Preprocessing	5
-Artifacts		What software did you use in step 2?		select	preset:meeg_analysis_softwares	artifact software 2	artifact_steps_number >= 2 && same_software == 0	40	1	1	Preprocessing	5
-Artifacts		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.		text		artifact_software_2_details	artifact_steps_number >= 2 && same_software == 0	41	1	1	Preprocessing	5
-Epoching		Which analysis software do you use for epoching EEG data?		select	preset:meeg_analysis_softwares	epoch_software	same_software == 0	42	1	1	Preprocessing	5
-Epoching		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.		text		epoch_software_details	same_software == 0	43	1	1	Preprocessing	5
-Epoching		What was the epoch beginning (in ms) relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers.		float		epoch_beginning	1	44	1	1	Preprocessing	5	ms
-Epoching		What was the event type relative to which epochs were defined?		radio	stimulus onset | response | feedback onset | other	epoch_trigger_event	1	45	1	1	Preprocessing	5
-Epoching		If other, what is the event?		text		epoch_trigger_event_other	 epoch_trigger_event == 3	46	1	1	Preprocessing	5
-Epoching		What was the epoch end (in ms) relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers.		float		epoch_end	1	47	1	1	Preprocessing	5	ms
-Baseline correction		Which analysis software did you use for baseline correction?		select	preset:meeg_analysis_softwares	baseline_software	same_software == 0	48	1	1	Preprocessing	5
-Baseline correction		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.		text		baseline_software_details	same_software == 0	49	1	1	Preprocessing	5
-Baseline correction		What was the baseline period beginning (in ms) relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers.		float		baseline_beginning	1	50	1	1	Preprocessing	5	ms
-Baseline correction		What was the baseline period end (in ms) relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers.		float		baseline_end	1	51	1	1	Preprocessing	5	ms
-Baseline correction		baseline calculation method		radio	subtract mean of the baseline period | other	baseline_method	1	52	1	1	Preprocessing	5
-Baseline correction		Specify your baseline calculation method.		text		baseline_other_method_details	baseline_method == 1	53	1	1	Preprocessing	5
+sub_section	preamble	question	unit	details	field_type	choices	item_pref_label	visibility	item_order	include	mandatory	activity_pref_label	activity_order
+Preprocessing general	Please specifiy all the preprocessing decisions in this section, such as analysis software, off-line filtering, re-referencing, artefact removal, epoching and baseline.  	Did you use the same software for all pre-processing steps (fitlering, downsampling, re-referencing, artifact removal, epoching and baseline correction, other)?			radio	preset:boolean	same_software	1	1	1	1	Preprocessing	5
+Preprocessing general		Which software do you use?			select	preset:meeg_analysis_softwares	preprocessing_software	same_software == 1	2	1	1	Preprocessing	5
+Preprocessing general		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.			text		preprocessing_software_details	same_software == 1	3	1	1	Preprocessing	5
+Offline filters		Did you apply any of the following offline (digital) filters?			radio_multiple	high pass | low pass | notch | none	which_filters	1	4	1	1	Preprocessing	5
+Offline filters		Which software do you use for implementing offline filters on EEG data?			select	preset:meeg_analysis_softwares	filtering_software	!which_filters.includes(3) && same_software == 0	5	1	1	Preprocessing	5
+Offline filters		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.			text		filter_software_details	!which_filters.includes(3) &&  same_software == 0	6	1	1	Preprocessing	5
+Offline filters		What kind of high-pass filter did you use?			radio	preset:filter	offline_highpass_filter_type	which_filters.includes(0)	7	1	1	Preprocessing	5
+Offline filters		What was the length/order of the high-pass filter?			float		offline_highpass_filter_order	which_filters.includes(0)	8	1	1	Preprocessing	5
+Offline filters		What is the unit in which you report the high-pass filter cut-off?			radio	half-power | half-amplitude	offline_highpass_filter_unit	which_filters.includes(0)	9	1	1	Preprocessing	5
+Offline filters		Specify the offline high-pass filter cut-off.	Hz		float		offline_highpass_filter_cutoff	which_filters.includes(0)	10	1	1	Preprocessing	5
+Offline filters		Specify the offline high-pass filter roll off.	dB/octave		float		offline_highpass_filter_rolloff	which_filters.includes(0)	11	1	1	Preprocessing	5
+Offline filters		What is the attenuation achieved in the stopband after high-pass filtering?	dB		float		offline_highpass_filter_attenuation	which_filters.includes(0)	12	1	1	Preprocessing	5
+Offline filters		What was the direction of the high-pass filter?			radio	forwards | backwards | forwards and backwards	offline_highpass_filter_direction	which_filters.includes(0)	13	1	1	Preprocessing	5
+Offline filters		What kind of low-pass filter did you use?			radio	preset:filter	offline_lowpass_filter_type	which_filters.includes(1)	14	1	1	Preprocessing	5
+Offline filters		What was the length/order of the low-pass filter?			float		offline_lowpass_filter_order	which_filters.includes(1)	15	1	1	Preprocessing	5
+Offline filters		What is the unit in which you report the low-pass filter cut-off?			radio	half-power | half-amplitude	offline_lowpass_filter_unit	which_filters.includes(1)	16	1	1	Preprocessing	5
+Offline filters		Specify the offline low-pass filter cut-off.	Hz		float		offline_lowpass_filter_cutoff	which_filters.includes(1)	17	1	1	Preprocessing	5
+Offline filters		Specify the offline low-pass filter roll off.	dB/octave		float		offline_lowpass_filter_rolloff	which_filters.includes(1)	18	1	1	Preprocessing	5
+Offline filters		What is the attenuation achieved in the stopband after low-pass filtering?	dB		float		offline_lowpass_filter_attenuation	which_filters.includes(1)	19	1	1	Preprocessing	5
+Offline filters		What was the direction of the low-pass filter?			radio	forwards | backwards | forwards and backwards	offline_lowpass_filter_direction	which_filters.includes(1)	20	1	1	Preprocessing	5
+Offline filters		What notch filter (eg. 50Hz) have you applied after the recording?			radio	50 Hz | 60 Hz | other	offline_notch_filter_type	which_filters.includes(2)	21	1	1	Preprocessing	5
+Offline filters		Specify the notch filter you applied:			text		offline_notch_filter_type_details	offline_notch_filter_type == 2	22	1	1	Preprocessing	5
+Downsampling		Did you downsample your data?			radio	preset:boolean	downsample_data	1	23	1	1	Preprocessing	5
+Downsampling		What software did you use in step 1?			select	preset:meeg_analysis_softwares	downsample_software	downsample_data == 1 && same_software == 0	24	1	1	Preprocessing	5
+Downsampling		Specify software version if applicable, script language if "custom script" was selected and software name and version if "other" was selected.			text		downsample_software_details	downsample_data == 1 && same_software == 0	25	1	1	Preprocessing	5
+Downsampling		If yes, what was your new sampling frequency?	Hz		float		new_sampling_frequency	downsample_data == 1	26	1	1	Preprocessing	5
+Re-referencing		Did you re-reference offline?			radio	preset:boolean	offline_reference	1	27	1	1	Preprocessing	5
+Re-referencing		Which analysis software do you use for re-referencing on EEG data?			select	preset:meeg_analysis_softwares	rereference_software	 offline_reference == 1 && same_software == 0	28	1	1	Preprocessing	5
+Re-referencing		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.			text		rereference_software_details	 offline_reference == 1 && same_software == 0	29	1	1	Preprocessing	5
+Re-referencing		What was the new reference?			text		new_reference	offline_reference == 1	30	1	1	Preprocessing	5
+Artifacts		How many artifact elimination steps did you have?		this is a fake loop hack - we will offer up to N steps (currently only 2 while this is in development) - and then steps are only visible if a person has picked a total number of steps that is equal to or higher :)	integer		artifact_steps_number	1	31	1	1	Preprocessing	5
+Artifacts		How did you define your artifacts in step 1?			radio	visual inspection | algorithm | pre-set numerical criterion | other 	artifact_definition_1	artifact_steps_number >= 1	32	1	1	Preprocessing	5
+Artifacts		What action did you take regarding artifacts in step 1?			radio	reject bad participant | reject bad trial or bad data segment | remove bad electrode | interpolate bad electrode | correct by subtraction (blinks, EKG etc.)	artifact_action_1	artifact_steps_number >= 1	33	1	1	Preprocessing	5
+Artifacts		Specify details of your artifact procedure to the degree sufficient for replicating it. (Step 1)			text		artifact_details_1	artifact_steps_number >= 1	34	1	1	Preprocessing	5
+Artifacts		What software did you use in step 1?			select	preset:meeg_analysis_softwares	artifact software 1	artifact_steps_number >= 1 && same_software == 0	35	1	1	Preprocessing	5
+Artifacts		Specify software version if applicable, script language if "custom script" was selected and software name and version if "other" was selected.			text		artifact_software_1_details	artifact_steps_number >=1 && same_software == 0	36	1	1	Preprocessing	5
+Artifacts		How did you define your artifacts in step 2?			radio	visual inspection | algorithm | pre-set numerical criterion | other 	artifact_definition_2	artifact_steps_number >= 2	37	1	1	Preprocessing	5
+Artifacts		What action did you take regarding artifacts in step 2?			radio	reject bad participant | reject bad trial or bad data segment | remove bad electrode | interpolate bad electrode | correct by subtraction (blinks, EKG etc.)	artifact_action_2	artifact_steps_number >= 2	38	1	1	Preprocessing	5
+Artifacts		Specify details of your artifact procedure to the degree sufficient for replicating it. (Step 2)			text		artifact_details_2	artifact_steps_number >= 2	39	1	1	Preprocessing	5
+Artifacts		What software did you use in step 2?			select	preset:meeg_analysis_softwares	artifact software 2	artifact_steps_number >= 2 && same_software == 0	40	1	1	Preprocessing	5
+Artifacts		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.			text		artifact_software_2_details	artifact_steps_number >= 2 && same_software == 0	41	1	1	Preprocessing	5
+Epoching		Which analysis software do you use for epoching EEG data?			select	preset:meeg_analysis_softwares	epoch_software	same_software == 0	42	1	1	Preprocessing	5
+Epoching		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.			text		epoch_software_details	same_software == 0	43	1	1	Preprocessing	5
+Epoching		What was the epoch beginning relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers.	ms		float		epoch_beginning	1	44	1	1	Preprocessing	5
+Epoching		What was the event type relative to which epochs were defined?			radio	stimulus onset | response | feedback onset | other	epoch_trigger_event	1	45	1	1	Preprocessing	5
+Epoching		If other, what is the event?			text		epoch_trigger_event_other	 epoch_trigger_event == 3	46	1	1	Preprocessing	5
+Epoching		What was the epoch end relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers.	ms		float		epoch_end	1	47	1	1	Preprocessing	5
+Baseline correction		Which analysis software did you use for baseline correction?			select	preset:meeg_analysis_softwares	baseline_software	same_software == 0	48	1	1	Preprocessing	5
+Baseline correction		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.			text		baseline_software_details	same_software == 0	49	1	1	Preprocessing	5
+Baseline correction		What was the baseline period beginning relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers.	ms		float		baseline_beginning	1	50	1	1	Preprocessing	5
+Baseline correction		What was the baseline period end relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers.	ms		float		baseline_end	1	51	1	1	Preprocessing	5
+Baseline correction		baseline calculation method			radio	subtract mean of the baseline period | other	baseline_method	1	52	1	1	Preprocessing	5
+Baseline correction		Specify your baseline calculation method.			text		baseline_other_method_details	baseline_method == 1	53	1	1	Preprocessing	5
