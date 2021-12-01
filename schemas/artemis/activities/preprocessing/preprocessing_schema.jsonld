@@ -46,6 +46,7 @@
             "items/new_reference.jsonld",
             "items/artifact_steps_number.jsonld",
             "items/artifact_definition_1.jsonld",
+            "items/artifact_action_1.jsonld",
             "items/artifact_details_1.jsonld",
             "items/artifact_software_1.jsonld",
             "items/artifact_software_1_details.jsonld",
@@ -350,6 +351,15 @@
             {
                 "variableName": "artifact_definition_1",
                 "isAbout": "items/artifact_definition_1.jsonld",
+                "isVis": "artifact_steps_number >= 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "artifact_action_1",
+                "isAbout": "items/artifact_action_1.jsonld",
                 "isVis": "artifact_steps_number >= 1",
                 "requiredValue": false,
                 "allow": [
