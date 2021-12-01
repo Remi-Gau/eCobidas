@@ -43,6 +43,7 @@
             "items/onset_lat_measure.jsonld",
             "items/peak_lat_measure.jsonld",
             "items/lat_measured_from.jsonld",
+            "items/lat_waveform_further_details.jsonld",
             "items/lat_selection_approach.jsonld",
             "items/lat_selection_approach_a_priori.jsonld",
             "items/lat_selection_literature.jsonld",
@@ -80,7 +81,7 @@
             {
                 "variableName": "amp_measure_software_details",
                 "isAbout": "items/amp_measure_software_details.jsonld",
-                "isVis": "measure_type == 0 | amp_measure_software == 16",
+                "isVis": "measure_type == 0 || amp_measure_software == 16",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -314,6 +315,15 @@
             {
                 "variableName": "lat_measured_from",
                 "isAbout": "items/lat_measured_from.jsonld",
+                "isVis": "measure_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_waveform_further_details",
+                "isAbout": "items/lat_waveform_further_details.jsonld",
                 "isVis": "measure_type == 1",
                 "requiredValue": false,
                 "allow": [

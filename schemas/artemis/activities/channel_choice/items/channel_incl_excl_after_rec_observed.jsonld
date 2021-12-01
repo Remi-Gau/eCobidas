@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "channel_incl-excl_after-rec_type.jsonld",
+    "@id": "channel_incl_excl_after_rec_observed.jsonld",
     "prefLabel": {
-        "en": "channel incl-excl after-rec type"
+        "en": "channel incl excl after rec observed"
     },
-    "description": "channel incl-excl after-rec type",
+    "description": "channel incl excl after rec observed",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "After recording, how did you decide which electrodes/channels to include/exclude?"
+        "en": "Describe your signal/noise dependent inclusion/exclusion thresholds for channels"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -21,19 +21,19 @@
         "choices": [
             {
                 "name": {
-                    "en": "equipment malfunction"
+                    "en": "visual inspection"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "observed signal/noise"
+                    "en": "thresholds for inclusion/exclusion decided after recording"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "results dependent"
+                    "en": "other"
                 },
                 "value": 2
             }

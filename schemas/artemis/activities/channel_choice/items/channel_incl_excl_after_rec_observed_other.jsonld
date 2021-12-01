@@ -1,11 +1,11 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "channel_incl-excl_after-rec_observed_other.jsonld",
+    "@id": "channel_incl_excl_after_rec_observed_other.jsonld",
     "prefLabel": {
-        "en": "channel incl-excl after-rec observed other"
+        "en": "channel incl excl after rec observed other"
     },
-    "description": "channel incl-excl after-rec observed other",
+    "description": "channel incl excl after rec observed other",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

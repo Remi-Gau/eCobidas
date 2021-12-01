@@ -1,11 +1,11 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "channel_incl-excl_for_analysis.jsonld",
+    "@id": "channel_incl_excl_for_analysis.jsonld",
     "prefLabel": {
-        "en": "channel incl-excl for analysis"
+        "en": "channel incl excl for analysis"
     },
-    "description": "channel incl-excl for analysis",
+    "description": "channel incl excl for analysis",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {

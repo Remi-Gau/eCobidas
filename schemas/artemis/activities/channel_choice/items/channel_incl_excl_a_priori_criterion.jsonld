@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "channel_incl-excl_after-rec_results.jsonld",
+    "@id": "channel_incl_excl_a_priori_criterion.jsonld",
     "prefLabel": {
-        "en": "channel incl-excl after-rec results"
+        "en": "channel incl excl a priori criterion"
     },
-    "description": "channel incl-excl after-rec results",
+    "description": "channel incl excl a priori criterion",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Describe how you decided on your included/excluded channels on the basis of the conditions you plan to statistically compare (e.g., channels with largest difference between critical conditions)"
+        "en": "Describe your a-priori criteria for channel inclusion/exclusion"
     },
     "responseOptions": {
         "valueType": "xsd:string",

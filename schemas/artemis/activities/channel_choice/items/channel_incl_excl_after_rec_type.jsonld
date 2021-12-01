@@ -1,49 +1,43 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "channel_incl-excl_a-priori.jsonld",
+    "@id": "channel_incl_excl_after_rec_type.jsonld",
     "prefLabel": {
-        "en": "channel incl-excl a-priori"
+        "en": "channel incl excl after rec type"
     },
-    "description": "channel incl-excl a-priori",
+    "description": "channel incl excl after rec type",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "A-priori channel inclusion/exclusion type"
+        "en": "After recording, how did you decide which electrodes/channels to include/exclude?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 2,
         "choices": [
             {
                 "name": {
-                    "en": "same channels as in previous literature"
+                    "en": "equipment malfunction"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "based on previous literature, but not exact replication"
+                    "en": "observed signal/noise"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "theory driven novel channel selection"
+                    "en": "results dependent"
                 },
                 "value": 2
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 3
             }
         ],
-        "multipleChoice": false
+        "multipleChoice": true
     }
 }

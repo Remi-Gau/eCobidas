@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "channel_incl-excl_a-priori_lit_exact.jsonld",
+    "@id": "channel_incl_excl_after_rec_results.jsonld",
     "prefLabel": {
-        "en": "channel incl-excl a-priori lit exact"
+        "en": "channel incl excl after rec results"
     },
-    "description": "channel incl-excl a-priori lit exact",
+    "description": "channel incl excl after rec results",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "References in which this exact channel selection was used, separated by semicolon and space"
+        "en": "Describe how you decided on your included/excluded channels on the basis of the conditions you plan to statistically compare (e.g., channels with largest difference between critical conditions)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

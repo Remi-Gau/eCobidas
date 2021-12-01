@@ -1,43 +1,49 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "channel_incl-excl_after-rec_observed.jsonld",
+    "@id": "channel_incl_excl_a_priori.jsonld",
     "prefLabel": {
-        "en": "channel incl-excl after-rec observed"
+        "en": "channel incl excl a priori"
     },
-    "description": "channel incl-excl after-rec observed",
+    "description": "channel incl excl a priori",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "Describe your signal/noise dependent inclusion/exclusion thresholds for channels"
+        "en": "A-priori channel inclusion/exclusion type"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
-                    "en": "visual inspection"
+                    "en": "same channels as in previous literature"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "thresholds for inclusion/exclusion decided after recording"
+                    "en": "based on previous literature, but not exact replication"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "theory driven novel channel selection"
                 },
                 "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
             }
         ],
-        "multipleChoice": true
+        "multipleChoice": false
     }
 }

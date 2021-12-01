@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "channel_incl-excl_a-priori_other.jsonld",
+    "@id": "lat_waveform_further_details.jsonld",
     "prefLabel": {
-        "en": "channel incl-excl a-priori other"
+        "en": "lat waveform further details"
     },
-    "description": "channel incl-excl a-priori other",
+    "description": "lat waveform further details",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Describe your a-priori channel selection other than those listed"
+        "en": "How did you calculate your waveforms for analysis? Describe in detail sufficient to allow replication."
     },
     "responseOptions": {
         "valueType": "xsd:string",
