@@ -176,7 +176,7 @@
             {
                 "variableName": "study_dataset_types_other",
                 "isAbout": "items/study_dataset_types_other.jsonld",
-                "isVis": "study_dataset_types == 5",
+                "isVis": "study_dataset_types.includes(5)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -239,7 +239,7 @@
             {
                 "variableName": "specify_supplementary",
                 "isAbout": "items/specify_supplementary.jsonld",
-                "isVis": "supplementary_materials == 11",
+                "isVis": "supplementary_materials == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -248,7 +248,7 @@
             {
                 "variableName": "supplementary_link",
                 "isAbout": "items/supplementary_link.jsonld",
-                "isVis": "supplementary materials > 0",
+                "isVis": "supplementary_materials_exists = 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -266,7 +266,7 @@
             {
                 "variableName": "code_license",
                 "isAbout": "items/code_license.jsonld",
-                "isVis": "licences_exists == 0",
+                "isVis": "licenses_exists.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -293,7 +293,7 @@
             {
                 "variableName": "data_license",
                 "isAbout": "items/data_license.jsonld",
-                "isVis": "licenses_exists == 1",
+                "isVis": "licenses_exists.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -320,7 +320,7 @@
             {
                 "variableName": "other_licenses",
                 "isAbout": "items/other_licenses.jsonld",
-                "isVis": "licenses_exists == 2",
+                "isVis": "licenses_exists.includes(2)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
