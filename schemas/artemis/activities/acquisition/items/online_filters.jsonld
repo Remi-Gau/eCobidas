@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Which of the following online filters have you used? (You can choose as many as used)"
+        "en": "Which of the following online filters have you used?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

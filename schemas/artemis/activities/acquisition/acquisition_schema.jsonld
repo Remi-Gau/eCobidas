@@ -16,8 +16,8 @@
         "order": [
             "items/acquisition_software.jsonld",
             "items/acquisition_software_details.jsonld",
-            "items/acquistion_quality_measure_exists.jsonld",
-            "items/acquistion_quality_measure.jsonld",
+            "items/acquisition_quality_measure_exists.jsonld",
+            "items/acquisition_quality_measure.jsonld",
             "items/impedance_threshold.jsonld",
             "items/impedance_lower_end.jsonld",
             "items/impedance_higher_end.jsonld",
@@ -59,8 +59,8 @@
                 ]
             },
             {
-                "variableName": "acquistion_quality_measure_exists",
-                "isAbout": "items/acquistion_quality_measure_exists.jsonld",
+                "variableName": "acquisition_quality_measure_exists",
+                "isAbout": "items/acquisition_quality_measure_exists.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -68,9 +68,9 @@
                 ]
             },
             {
-                "variableName": "acquistion_quality_measure",
-                "isAbout": "items/acquistion_quality_measure.jsonld",
-                "isVis": "acquistion_quality_measure_exists == 1",
+                "variableName": "acquisition_quality_measure",
+                "isAbout": "items/acquisition_quality_measure.jsonld",
+                "isVis": "acquisition_quality_measure_exists == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -223,7 +223,7 @@
             {
                 "variableName": "high_online_filters",
                 "isAbout": "items/high_online_filters.jsonld",
-                "isVis": "online_filters == 0",
+                "isVis": "online_filters.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -232,7 +232,7 @@
             {
                 "variableName": "low_online_filters",
                 "isAbout": "items/low_online_filters.jsonld",
-                "isVis": "online_filters == 1",
+                "isVis": "online_filters.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -241,7 +241,7 @@
             {
                 "variableName": "notch_online_filters",
                 "isAbout": "items/notch_online_filters.jsonld",
-                "isVis": "online_filters == 4",
+                "isVis": "online_filters.includes(4)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
