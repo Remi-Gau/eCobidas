@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Theory behind a-priori channel selection (including implementation of regions, thresholds etc, and references if relevant)"
+        "en": "Theory behind a-priori window selection (including implementation of regions, thresholds etc, and references if relevant)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "References in which this exact window selection was used, separated by semicolon and space"
+        "en": "Literature references in which this exact window selection was used, separated by semicolon and space"
     },
     "responseOptions": {
         "valueType": "xsd:string",

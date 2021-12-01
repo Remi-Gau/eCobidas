@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Provide the end of the window which was used to measure latency. Measurement window: END [ms]"
+        "en": "Provide the end of the window which was used to measure latency. Measurement window: END"
     },
     "responseOptions": {
         "valueType": "xsd:float"

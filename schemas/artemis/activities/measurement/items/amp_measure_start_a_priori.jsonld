@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Provide the start of the window which was used to measure amplitude. Measurement window: START [ms]"
+        "en": "Provide the start of the window which was used to measure amplitude. Measurement window: START"
     },
     "responseOptions": {
         "valueType": "xsd:float"

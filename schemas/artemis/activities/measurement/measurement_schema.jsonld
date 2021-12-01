@@ -39,6 +39,8 @@
             "items/amp_measure_details.jsonld",
             "items/amp_measure_peakwin_duration.jsonld",
             "items/amp_measure_peakwin_rationale.jsonld",
+            "items/lat_measure_software.jsonld",
+            "items/lat_measure_software_details.jsonld",
             "items/lat_type.jsonld",
             "items/onset_lat_measure.jsonld",
             "items/peak_lat_measure.jsonld",
@@ -55,9 +57,7 @@
             "items/lat_measure_window_start_a_priori.jsonld",
             "items/lat_measure_window_end_a_priori.jsonld",
             "items/lat_measure_window_start_data-driven.jsonld",
-            "items/lat_measure_window_end_data-driven.jsonld",
-            "items/lat_measure_software.jsonld",
-            "items/lat_measure_software_details.jsonld"
+            "items/lat_measure_window_end_data-driven.jsonld"
         ],
         "addProperties": [
             {
@@ -72,7 +72,7 @@
             {
                 "variableName": "amp_measure_software",
                 "isAbout": "items/amp_measure_software.jsonld",
-                "isVis": "measure_type == 0",
+                "isVis": "measure_type.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -81,7 +81,7 @@
             {
                 "variableName": "amp_measure_software_details",
                 "isAbout": "items/amp_measure_software_details.jsonld",
-                "isVis": "measure_type == 0 || amp_measure_software == 16",
+                "isVis": "measure_type.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -90,7 +90,7 @@
             {
                 "variableName": "amp_measured_from",
                 "isAbout": "items/amp_measured_from.jsonld",
-                "isVis": "measure_type == 0",
+                "isVis": "measure_type.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -108,7 +108,7 @@
             {
                 "variableName": "waveform_further_details",
                 "isAbout": "items/waveform_further_details.jsonld",
-                "isVis": "amp_measured_from == 2 || amp_measured_from == 3",
+                "isVis": "amp_measured_from > 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -117,7 +117,7 @@
             {
                 "variableName": "amp_time_window_selection",
                 "isAbout": "items/amp_time_window_selection.jsonld",
-                "isVis": "measure_type == 0",
+                "isVis": "measure_type.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -243,7 +243,7 @@
             {
                 "variableName": "amp_measure_procedure",
                 "isAbout": "items/amp_measure_procedure.jsonld",
-                "isVis": "measure_type == 0",
+                "isVis": "measure_type.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -261,7 +261,7 @@
             {
                 "variableName": "amp_measure_details",
                 "isAbout": "items/amp_measure_details.jsonld",
-                "isVis": "amp_measure_procedure == 2 || amp_measure_procedure == 6",
+                "isVis": "amp_measure_procedure > 4",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -270,7 +270,7 @@
             {
                 "variableName": "amp_measure_peakwin_duration",
                 "isAbout": "items/amp_measure_peakwin_duration.jsonld",
-                "isVis": "amp_measure_procedure == 5",
+                "isVis": "amp_measure_procedure == 4",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -279,7 +279,25 @@
             {
                 "variableName": "amp_measure_peakwin_rationale",
                 "isAbout": "items/amp_measure_peakwin_rationale.jsonld",
-                "isVis": "amp_measure_procedure == 5",
+                "isVis": "amp_measure_procedure == 4",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_measure_software",
+                "isAbout": "items/lat_measure_software.jsonld",
+                "isVis": "measure_type.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_measure_software_details",
+                "isAbout": "items/lat_measure_software_details.jsonld",
+                "isVis": "measure_type.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -288,7 +306,7 @@
             {
                 "variableName": "lat_type",
                 "isAbout": "items/lat_type.jsonld",
-                "isVis": "measure_type == 1",
+                "isVis": "measure_type.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -315,7 +333,7 @@
             {
                 "variableName": "lat_measured_from",
                 "isAbout": "items/lat_measured_from.jsonld",
-                "isVis": "measure_type == 1",
+                "isVis": "measure_type.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -324,7 +342,7 @@
             {
                 "variableName": "lat_waveform_further_details",
                 "isAbout": "items/lat_waveform_further_details.jsonld",
-                "isVis": "measure_type == 1",
+                "isVis": "measure_type.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -333,7 +351,7 @@
             {
                 "variableName": "lat_selection_approach",
                 "isAbout": "items/lat_selection_approach.jsonld",
-                "isVis": "measure_type == 1",
+                "isVis": "measure_type.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -378,7 +396,7 @@
             {
                 "variableName": "lat_further_clarification",
                 "isAbout": "items/lat_further_clarification.jsonld",
-                "isVis": "lat_selection_approach == 2 || lat_selection_approach == 3",
+                "isVis": "lat_selection_approach > 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -433,24 +451,6 @@
                 "variableName": "lat_measure_window_end_data-driven",
                 "isAbout": "items/lat_measure_window_end_data-driven.jsonld",
                 "isVis": "lat_selection_approach == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "lat_measure_software",
-                "isAbout": "items/lat_measure_software.jsonld",
-                "isVis": "measure_type == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "lat_measure_software_details",
-                "isAbout": "items/lat_measure_software_details.jsonld",
-                "isVis": "measure_type == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

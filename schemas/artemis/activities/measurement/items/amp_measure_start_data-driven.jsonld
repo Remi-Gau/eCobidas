@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Provide the window which was eventually used for amplitude measurement or where the effect was found (e.g. as a result of a mass univariate analysis) Measurement window: START [ms]"
+        "en": "Provide the window which was eventually used for amplitude measurement or where the effect was found (e.g. as a result of a mass univariate analysis) Measurement window: START"
     },
     "responseOptions": {
         "valueType": "xsd:float"

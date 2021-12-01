@@ -9,12 +9,12 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "number"
+        "inputType": "float"
     },
     "question": {
-        "en": "How wide was the window around peak in ms?"
+        "en": "How wide was the window around peak?"
     },
     "responseOptions": {
-        "valueType": "xsd:integer"
+        "valueType": "xsd:float"
     }
 }

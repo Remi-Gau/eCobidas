@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "References for a-priori selection plus reasons for deviation/combination of references, separated by semicolon and space"
+        "en": "Literature references for a-priori selection plus reasons for deviation/combination of references, separated by semicolon and space"
     },
     "responseOptions": {
         "valueType": "xsd:string",
