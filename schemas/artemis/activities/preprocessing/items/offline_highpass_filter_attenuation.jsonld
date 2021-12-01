@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "What is the attenuation achieved in the stopband (in dB) after high-pass filtering?"
+        "en": "What is the attenuation achieved in the stopband after high-pass filtering?"
     },
     "responseOptions": {
         "valueType": "xsd:float"

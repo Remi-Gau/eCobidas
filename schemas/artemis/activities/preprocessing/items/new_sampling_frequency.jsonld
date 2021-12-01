@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "If yes, what was your new sampling frequency? (Hz)"
+        "en": "If yes, what was your new sampling frequency?"
     },
     "responseOptions": {
         "valueType": "xsd:float"
