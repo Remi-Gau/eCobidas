@@ -1,8 +1,8 @@
 name	value
 mean over a time window	0
 peak	1
-factor scores based on factor analysis	2
-window area	3
-each time point separately	4
-time window around peak	5
+window area	2
+each time point separately	3
+time window around peak	4
+factor scores based on factor analysis	5
 other	6

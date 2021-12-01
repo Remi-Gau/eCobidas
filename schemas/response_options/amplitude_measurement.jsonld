@@ -20,25 +20,25 @@
         },
         {
             "name": {
-                "en": "factor scores based on factor analysis"
+                "en": "window area"
             },
             "value": 2
         },
         {
             "name": {
-                "en": "window area"
+                "en": "each time point separately"
             },
             "value": 3
         },
         {
             "name": {
-                "en": "each time point separately"
+                "en": "time window around peak"
             },
             "value": 4
         },
         {
             "name": {
-                "en": "time window around peak"
+                "en": "factor scores based on factor analysis"
             },
             "value": 5
         },
