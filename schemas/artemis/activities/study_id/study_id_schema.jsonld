@@ -45,7 +45,6 @@
             "items/data_license_other.jsonld",
             "items/other_licenses.jsonld",
             "items/study_keywords.jsonld",
-            "items/supplementary_materials_exists.jsonld",
             "items/study_funding_exists.jsonld",
             "items/study_funding.jsonld",
             "items/study_ethics_exists.jsonld",
@@ -131,7 +130,7 @@
             {
                 "variableName": "study_reference",
                 "isAbout": "items/study_reference.jsonld",
-                "isVis": "study_reference_DOIs_exists = 1",
+                "isVis": "study_reference_DOIs_exists == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -230,7 +229,7 @@
             {
                 "variableName": "supplementary_materials",
                 "isAbout": "items/supplementary_materials.jsonld",
-                "isVis": "supplementary_materials_exists = 1",
+                "isVis": "supplementary_materials_exists == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -239,7 +238,7 @@
             {
                 "variableName": "specify_supplementary",
                 "isAbout": "items/specify_supplementary.jsonld",
-                "isVis": "supplementary_materials == 3",
+                "isVis": "supplementary_materials_exists == 1 && supplementary_materials.includes(3)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -248,7 +247,7 @@
             {
                 "variableName": "supplementary_link",
                 "isAbout": "items/supplementary_link.jsonld",
-                "isVis": "supplementary_materials_exists = 1",
+                "isVis": "supplementary_materials_exists == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -329,15 +328,6 @@
             {
                 "variableName": "study_keywords",
                 "isAbout": "items/study_keywords.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "supplementary_materials_exists",
-                "isAbout": "items/supplementary_materials_exists.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

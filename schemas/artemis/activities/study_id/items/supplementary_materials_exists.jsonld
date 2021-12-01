@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Are there any supplementary materials associated with the study or publications arising from the study?"
+        "en": "Has this study resulted in any supplementary materials other than data and publications?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }
