@@ -15,6 +15,14 @@
         "en": "Phantom activity"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "MBq"
+                },
+                "value": "MBq"
+            }
+        ]
     }
 }

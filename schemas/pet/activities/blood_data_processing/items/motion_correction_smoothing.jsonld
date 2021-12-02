@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "moco_software_version.jsonld",
+    "@id": "motion_correction_smoothing.jsonld",
     "prefLabel": {
-        "en": "moco software version"
+        "en": "moco smoothing"
     },
-    "description": "moco software version",
+    "description": "moco smoothing",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "MoCo software version"
+        "en": "Motion correction: smoothing"
     },
     "responseOptions": {
         "valueType": "xsd:string",

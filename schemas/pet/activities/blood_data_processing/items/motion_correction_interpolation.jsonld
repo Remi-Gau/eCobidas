@@ -1,7 +1,7 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "moco_interpolation.jsonld",
+    "@id": "motion_correction_interpolation.jsonld",
     "prefLabel": {
         "en": "moco interpolation"
     },
@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "MoCo interpolation"
+        "en": "Motion correction: interpolation"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/interpolations.jsonld"
 }

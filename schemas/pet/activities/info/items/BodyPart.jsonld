@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 12,
+        "maxValue": 11,
         "choices": [
             {
                 "name": {
@@ -90,12 +90,6 @@
                     "en": "lung "
                 },
                 "value": 11
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 12
             }
         ],
         "multipleChoice": false

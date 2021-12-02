@@ -15,6 +15,26 @@
         "en": "Total mass of radiolabeled compound injected into subject."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "\u00b5g"
+                },
+                "value": "\u00b5g"
+            },
+            {
+                "prefLabel": {
+                    "en": "mg"
+                },
+                "value": "mg"
+            },
+            {
+                "prefLabel": {
+                    "en": "g "
+                },
+                "value": "g "
+            }
+        ]
     }
 }

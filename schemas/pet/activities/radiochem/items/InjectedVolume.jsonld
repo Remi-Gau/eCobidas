@@ -15,6 +15,14 @@
         "en": "Injected volume"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ml"
+                },
+                "value": "ml"
+            }
+        ]
     }
 }

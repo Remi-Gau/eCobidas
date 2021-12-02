@@ -15,6 +15,14 @@
         "en": "Measured blood density."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "g/ml"
+                },
+                "value": "g/ml"
+            }
+        ]
     }
 }

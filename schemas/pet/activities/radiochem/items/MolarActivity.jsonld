@@ -15,6 +15,14 @@
         "en": "Molar activity of compound injected."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "GBq/\u00b5mol "
+                },
+                "value": "GBq/\u00b5mol "
+            }
+        ]
     }
 }

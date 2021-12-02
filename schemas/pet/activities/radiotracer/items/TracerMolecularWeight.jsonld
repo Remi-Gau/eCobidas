@@ -15,6 +15,20 @@
         "en": "Accurate molecular weight of the tracer used."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Da"
+                },
+                "value": "Da"
+            },
+            {
+                "prefLabel": {
+                    "en": "g/mol"
+                },
+                "value": "g/mol"
+            }
+        ]
     }
 }

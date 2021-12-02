@@ -16,6 +16,14 @@
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 3000,
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "MBq "
+                },
+                "value": "MBq "
+            }
+        ]
     }
 }

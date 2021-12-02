@@ -1,7 +1,7 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "moco_reference_image.jsonld",
+    "@id": "motion_correction_reference_image.jsonld",
     "prefLabel": {
         "en": "moco reference image"
     },
@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "MoCo reference image"
+        "en": "Motion correction: reference image"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

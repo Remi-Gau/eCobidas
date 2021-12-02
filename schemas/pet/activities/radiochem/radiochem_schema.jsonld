@@ -41,7 +41,7 @@
             {
                 "variableName": "InfusionSpeed",
                 "isAbout": "items/InfusionSpeed.jsonld",
-                "isVis": true,
+                "isVis": "ModeOfAdministration == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

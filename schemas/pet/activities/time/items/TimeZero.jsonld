@@ -9,12 +9,12 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "timeRange"
+        "inputType": "float"
     },
     "question": {
         "en": "Time zero to which all scan and/or blood measurements have been adjusted to."
     },
     "responseOptions": {
-        "valueType": "xsd:datetime"
+        "valueType": "xsd:float"
     }
 }

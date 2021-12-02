@@ -15,6 +15,20 @@
         "en": "Infusion speed"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ml/s"
+                },
+                "value": "ml/s"
+            },
+            {
+                "prefLabel": {
+                    "en": "unitless (Kbol) "
+                },
+                "value": "unitless (Kbol) "
+            }
+        ]
     }
 }

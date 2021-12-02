@@ -15,6 +15,14 @@
         "en": "Registration smoothing"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "mm"
+                },
+                "value": "mm"
+            }
+        ]
     }
 }

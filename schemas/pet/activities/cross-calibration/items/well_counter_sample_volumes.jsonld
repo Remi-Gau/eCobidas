@@ -15,6 +15,20 @@
         "en": "Well counter sample volumes"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ml"
+                },
+                "value": "ml"
+            },
+            {
+                "prefLabel": {
+                    "en": "\u00b5l"
+                },
+                "value": "\u00b5l"
+            }
+        ]
     }
 }

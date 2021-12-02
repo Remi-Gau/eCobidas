@@ -15,8 +15,8 @@
         "shuffle": false,
         "order": [
             "items/hardware.jsonld",
-            "items/external_moco_software.jsonld",
-            "items/external_moco_software_version.jsonld"
+            "items/external_motion_correction_software.jsonld",
+            "items/external_motion_correction_software_version.jsonld"
         ],
         "addProperties": [
             {
@@ -29,8 +29,8 @@
                 ]
             },
             {
-                "variableName": "external_moco_software",
-                "isAbout": "items/external_moco_software.jsonld",
+                "variableName": "external_motion_correction_software",
+                "isAbout": "items/external_motion_correction_software.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -38,8 +38,8 @@
                 ]
             },
             {
-                "variableName": "external_moco_software_version",
-                "isAbout": "items/external_moco_software_version.jsonld",
+                "variableName": "external_motion_correction_software_version",
+                "isAbout": "items/external_motion_correction_software_version.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

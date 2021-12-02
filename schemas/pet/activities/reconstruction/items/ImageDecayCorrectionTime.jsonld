@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Point in time from which the decay correction was applied wrt TimeZero"
+        "en": "Point in time from which the decay correction was applied with respect to TimeZero"
     },
     "responseOptions": {
         "valueType": "xsd:float"

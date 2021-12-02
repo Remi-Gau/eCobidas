@@ -15,6 +15,20 @@
         "en": "Specific radioactivity"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Bq/g"
+                },
+                "value": "Bq/g"
+            },
+            {
+                "prefLabel": {
+                    "en": "GBq/mg"
+                },
+                "value": "GBq/mg"
+            }
+        ]
     }
 }

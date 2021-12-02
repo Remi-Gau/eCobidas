@@ -15,6 +15,14 @@
         "en": "Size of smoothing filter"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "mm"
+                },
+                "value": "mm"
+            }
+        ]
     }
 }

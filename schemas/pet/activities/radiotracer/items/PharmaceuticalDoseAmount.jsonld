@@ -15,6 +15,32 @@
         "en": "Dose amount of pharmaceutical coadministered with tracer."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": " mg"
+                },
+                "value": " mg"
+            },
+            {
+                "prefLabel": {
+                    "en": "mg/kg"
+                },
+                "value": "mg/kg"
+            },
+            {
+                "prefLabel": {
+                    "en": "\u00b5g"
+                },
+                "value": "\u00b5g"
+            },
+            {
+                "prefLabel": {
+                    "en": "\u00b5g/kg"
+                },
+                "value": "\u00b5g/kg"
+            }
+        ]
     }
 }

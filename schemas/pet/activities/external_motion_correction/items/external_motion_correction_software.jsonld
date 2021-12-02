@@ -1,7 +1,7 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "external_moco_software.jsonld",
+    "@id": "external_motion_correction_software.jsonld",
     "prefLabel": {
         "en": "external moco software"
     },
@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "External MoCo software"
+        "en": "External motion correction software"
     },
     "responseOptions": {
         "valueType": "xsd:string",

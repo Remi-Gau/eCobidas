@@ -15,6 +15,26 @@
         "en": "Moles tracer injected"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "moles"
+                },
+                "value": "moles"
+            },
+            {
+                "prefLabel": {
+                    "en": "micromoles"
+                },
+                "value": "micromoles"
+            },
+            {
+                "prefLabel": {
+                    "en": "nanomoles"
+                },
+                "value": "nanomoles"
+            }
+        ]
     }
 }

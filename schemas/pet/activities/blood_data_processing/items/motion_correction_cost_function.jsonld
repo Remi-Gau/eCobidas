@@ -1,7 +1,7 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "moco_cost_function.jsonld",
+    "@id": "motion_correction_cost_function.jsonld",
     "prefLabel": {
         "en": "moco cost function"
     },
@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "MoCo cost function"
+        "en": "Motion correction: cost function"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/cost_functions.jsonld"
 }

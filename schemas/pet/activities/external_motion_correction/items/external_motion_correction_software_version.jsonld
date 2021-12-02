@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "moco_quality_control.jsonld",
+    "@id": "external_motion_correction_software_version.jsonld",
     "prefLabel": {
-        "en": "moco quality control"
+        "en": "external moco software version"
     },
-    "description": "moco quality control",
+    "description": "external moco software version",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "MoCo quality control"
+        "en": "External motion correction software version"
     },
     "responseOptions": {
         "valueType": "xsd:string",
