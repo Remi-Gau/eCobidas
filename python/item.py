@@ -219,16 +219,18 @@ def list_responses_options(choices: list):
 
 def slider_response(choices: list):
 
-    min = int(choices[0])
-    max = int(choices[1])
-    steps = int(choices[2]) if len(choices) == 3 else 11
+    min = float(choices[0])
+    max = float(choices[1])
+    steps = int(choices[2]) if len(choices) == 3 else 21
 
     response_options = ResponseOption()
     response_options.set_max(min)
     response_options.set_max(max)
 
+    linspace(min, max, steps)
+
     for i, opt in enumerate(linspace(min, max, steps)):
-        response_options.add_choice(str(opt), i)
+        response_options.add_choice(f"{opt:.3f}", f"{opt:.3f}")
 
     return response_options
 
