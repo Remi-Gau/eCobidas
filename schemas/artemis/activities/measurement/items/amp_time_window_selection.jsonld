@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "How was the amplitude measurement window selected?"
+        "en": "How was the amplitude measurement window selected or identified?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -21,19 +21,19 @@
         "choices": [
             {
                 "name": {
-                    "en": "a priori selection of the window"
+                    "en": "a priori"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "a priori selection of a broader window within which the final time window will be selected using data-driven methods"
+                    "en": "time window or peak was selected/identified using data-driven methods from a broader window which was selected a priori"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "data-driven selection of the time window over the entire epoch"
+                    "en": "data-driven selection/identification of the time window or peak from the entire epoch"
                 },
                 "value": 2
             },

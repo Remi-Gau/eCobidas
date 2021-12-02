@@ -14,5 +14,5 @@
     "question": {
         "en": "Where did you place reference electrode(s)?"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/eeg_reference_electrodes.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_reference_electrodes.jsonld"
 }

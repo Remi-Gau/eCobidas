@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 6,
         "choices": [
             {
                 "name": {
@@ -33,21 +33,33 @@
             },
             {
                 "name": {
-                    "en": "consecutive significant tests to determine the start and the end of a window that will be analysed "
+                    "en": "consecutive significant tests to determine the start and the end of a window that will be analysed"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "window around a peak"
+                    "en": "mass univariate analysis"
                 },
                 "value": 3
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "window around a peak"
                 },
                 "value": 4
+            },
+            {
+                "name": {
+                    "en": "peak"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 6
             }
         ],
         "multipleChoice": false

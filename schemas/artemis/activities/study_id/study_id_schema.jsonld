@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=1498151197' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>This section contains information on the study, such as title, links to publications and datasets, etc.</p>"
     },
     "ui": {
         "shuffle": false,
@@ -193,7 +193,7 @@
             {
                 "variableName": "study_dataset_DOI",
                 "isAbout": "items/study_dataset_DOI.jsonld",
-                "isVis": "study_dataset_DOI == 1",
+                "isVis": "study_dataset_DOI_exists == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

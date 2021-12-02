@@ -27,11 +27,11 @@
             "items/amp_theory.jsonld",
             "items/amp_multiple_window_reasons.jsonld",
             "items/amp_selection_other_reasons.jsonld",
+            "items/amp_measure_start_a_priori.jsonld",
+            "items/amp_measure_end_a_priori.jsonld",
             "items/approach_to_amp_measure_window_selection_data_driven.jsonld",
             "items/amp_broader_window_start.jsonld",
             "items/amp_broader_window_end.jsonld",
-            "items/amp_measure_start_a_priori.jsonld",
-            "items/amp_measure_end_a_priori.jsonld",
             "items/amp_measure_start_data-driven.jsonld",
             "items/amp_measure_end_data_driven.jsonld",
             "items/amp_measure_procedure.jsonld",
@@ -178,6 +178,24 @@
                 ]
             },
             {
+                "variableName": "amp_measure_start_a_priori",
+                "isAbout": "items/amp_measure_start_a_priori.jsonld",
+                "isVis": "amp_time_window_selection == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_end_a_priori",
+                "isAbout": "items/amp_measure_end_a_priori.jsonld",
+                "isVis": "amp_time_window_selection == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
                 "variableName": "approach_to_amp_measure_window_selection_data_driven",
                 "isAbout": "items/approach_to_amp_measure_window_selection_data_driven.jsonld",
                 "isVis": "amp_time_window_selection == 1",
@@ -199,24 +217,6 @@
                 "variableName": "amp_broader_window_end",
                 "isAbout": "items/amp_broader_window_end.jsonld",
                 "isVis": "amp_time_window_selection == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_measure_start_a_priori",
-                "isAbout": "items/amp_measure_start_a_priori.jsonld",
-                "isVis": "amp_time_window_selection == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_measure_end_a_priori",
-                "isAbout": "items/amp_measure_end_a_priori.jsonld",
-                "isVis": "amp_time_window_selection == 0",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
