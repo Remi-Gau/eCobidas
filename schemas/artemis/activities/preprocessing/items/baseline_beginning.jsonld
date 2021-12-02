@@ -15,6 +15,14 @@
         "en": "What was the baseline period beginning relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ms"
+                },
+                "value": "ms"
+            }
+        ]
     }
 }

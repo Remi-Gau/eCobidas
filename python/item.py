@@ -6,8 +6,10 @@ from numpy import linspace, isnan
 from utils import convert_to_str, convert_to_int, snake_case
 from reproschema.models.item import Item, ResponseOption
 
+from rich import print
 
-def set_item_name(this_item):
+
+def set_item_name(this_item: dict):
 
     if "item" not in this_item.keys():
         item_name = convert_to_str(this_item["item_pref_label"])
@@ -24,14 +26,14 @@ def set_item_name(this_item):
     return item_name
 
 
-def get_item_info(this_item):
+def get_item_info(this_item: dict) -> dict:
 
     sub_section = ""
-    if "sub_section" in this_item.keys() and this_item["sub_section"].any():
+    if "sub_section" in this_item and this_item["sub_section"].any():
         sub_section = convert_to_str(this_item["sub_section"])
 
     item_name = set_item_name(this_item)
-    if "item_pref_label" in this_item.keys():
+    if "item_pref_label" in this_item:
         pref_label = convert_to_str(this_item["item_pref_label"])
     else:
         pref_label = item_name
@@ -39,8 +41,13 @@ def get_item_info(this_item):
     pref_label = pref_label.replace("_", " ")
 
     description = pref_label
-    if "item_description" in this_item.keys() and this_item["item_description"].any():
+    if "item_description" in this_item and this_item["item_description"].any():
         description = convert_to_str(this_item["item_description"])
+
+    unit = ""
+    if "unit" in this_item and this_item["unit"].any():
+        unit = convert_to_str(this_item["unit"])
+        unit = split_choices(unit)
 
     question = convert_to_str(this_item["question"])
     question = question.replace("\n", "")
@@ -50,8 +57,7 @@ def get_item_info(this_item):
         field_type = "int"
 
     choices = convert_to_str(this_item["choices"])
-    if type(choices) == str:
-        choices = choices.split(" | ")
+    choices = split_choices(choices)
 
     visibility = get_visibility(this_item)
 
@@ -64,13 +70,20 @@ def get_item_info(this_item):
         "question": question,
         "field_type": field_type,
         "choices": choices,
+        "unit": unit,
         "visibility": visibility,
         "mandatory": mandatory,
         "sub_section": sub_section,
     }
 
 
-def get_visibility(this_item):
+def split_choices(choices) -> list:
+    if type(choices) == str:
+        choices = choices.split(" | ")
+    return choices
+
+
+def get_visibility(this_item: dict):
 
     visibility = convert_to_str(this_item["visibility"])
 
@@ -91,7 +104,7 @@ def get_visibility(this_item):
     return visibility
 
 
-def get_mandatory(this_item):
+def get_mandatory(this_item: dict) -> bool:
 
     mandatory = convert_to_int(this_item["mandatory"])
 
@@ -100,7 +113,25 @@ def get_mandatory(this_item):
     return mandatory
 
 
-def define_new_item(item_info):
+def define_unit(item, units):
+
+    if units == "":
+        return item
+
+    unitOptions = []
+    for unit in units:
+        unitOptions.append(
+            {
+                "prefLabel": {"en": unit},
+                "value": unit,
+            }
+        )
+    item.response_options.options["unitOptions"] = unitOptions
+
+    return item
+
+
+def define_new_item(item_info: dict):
     """
     define jsonld for this item
     """
@@ -111,11 +142,12 @@ def define_new_item(item_info):
     item.set_pref_label(item_info["pref_label"])
     item.set_question(item_info["question"])
     item = define_choices(item, item_info["field_type"], item_info["choices"])
+    item = define_unit(item, item_info["unit"])
 
     return item
 
 
-def define_choices(item, field_type, choices):
+def define_choices(item, field_type: str, choices: list):
 
     if field_type not in [
         "multitext",
@@ -171,7 +203,7 @@ def define_choices(item, field_type, choices):
     return item
 
 
-def list_responses_options(choices):
+def list_responses_options(choices: list):
 
     response_options = ResponseOption()
 
@@ -185,7 +217,7 @@ def list_responses_options(choices):
     return response_options
 
 
-def slider_response(choices):
+def slider_response(choices: list):
 
     min = int(choices[0])
     max = int(choices[1])
@@ -201,7 +233,7 @@ def slider_response(choices):
     return response_options
 
 
-def use_preset(item, choices):
+def use_preset(item, choices: list):
 
     preset_response_file = (
         "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/"
@@ -214,5 +246,5 @@ def use_preset(item, choices):
     return item
 
 
-def ispreset(choices):
+def ispreset(choices: list):
     return isinstance(choices[0], str) and len(choices) == 1 and "preset:" in choices[0]

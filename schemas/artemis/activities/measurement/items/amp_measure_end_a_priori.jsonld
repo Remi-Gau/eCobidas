@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Provide the end of the window which was used to measure amplitude. Measurement window: END"
+        "en": "Provide the end of the a priori selected time window."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ms"
+                },
+                "value": "ms"
+            }
+        ]
     }
 }

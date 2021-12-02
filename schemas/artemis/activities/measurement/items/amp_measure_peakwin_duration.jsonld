@@ -15,6 +15,14 @@
         "en": "How wide was the window around peak?"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ms"
+                },
+                "value": "ms"
+            }
+        ]
     }
 }

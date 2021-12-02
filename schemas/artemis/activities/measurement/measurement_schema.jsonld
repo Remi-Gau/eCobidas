@@ -25,13 +25,14 @@
             "items/amp_literature_exact.jsonld",
             "items/amp_literature_similar.jsonld",
             "items/amp_theory.jsonld",
-            "items/amp_multiple_window_reasons.jsonld",
             "items/amp_selection_other_reasons.jsonld",
             "items/amp_measure_start_a_priori.jsonld",
             "items/amp_measure_end_a_priori.jsonld",
-            "items/approach_to_amp_measure_window_selection_data_driven.jsonld",
-            "items/amp_broader_window_start.jsonld",
-            "items/amp_broader_window_end.jsonld",
+            "items/amp_measure_window_selection_data_driven.jsonld",
+            "items/amp_measure_length_sig_tests.jsonld",
+            "items/amp_measure_overlap_sig_tests.jsonld",
+            "items/amp_measure_overlap_length_sig_tests.jsonld",
+            "items/amp_measure_number_sig_tests.jsonld",
             "items/amp_measure_start_data-driven.jsonld",
             "items/amp_measure_end_data_driven.jsonld",
             "items/amp_measure_procedure.jsonld",
@@ -126,7 +127,7 @@
             {
                 "variableName": "amp_measure_window_selection_a_priori",
                 "isAbout": "items/amp_measure_window_selection_a_priori.jsonld",
-                "isVis": "amp_time_window_selection == 0",
+                "isVis": "amp_time_window_selection == 0 || amp_time_window_selection == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -160,15 +161,6 @@
                 ]
             },
             {
-                "variableName": "amp_multiple_window_reasons",
-                "isAbout": "items/amp_multiple_window_reasons.jsonld",
-                "isVis": "amp_measure_window_selection_a_priori == 3",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
                 "variableName": "amp_selection_other_reasons",
                 "isAbout": "items/amp_selection_other_reasons.jsonld",
                 "isVis": "amp_measure_window_selection_a_priori == 4",
@@ -196,27 +188,45 @@
                 ]
             },
             {
-                "variableName": "approach_to_amp_measure_window_selection_data_driven",
-                "isAbout": "items/approach_to_amp_measure_window_selection_data_driven.jsonld",
-                "isVis": "amp_time_window_selection == 1",
+                "variableName": "amp_measure_window_selection_data_driven",
+                "isAbout": "items/amp_measure_window_selection_data_driven.jsonld",
+                "isVis": "amp_time_window_selection == 1 || amp_time_window_selection == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amp_broader_window_start",
-                "isAbout": "items/amp_broader_window_start.jsonld",
-                "isVis": "amp_time_window_selection == 1",
+                "variableName": "amp_measure_length_sig_tests",
+                "isAbout": "items/amp_measure_length_sig_tests.jsonld",
+                "isVis": "amp_measure_window_selection_data_driven == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "amp_broader_window_end",
-                "isAbout": "items/amp_broader_window_end.jsonld",
-                "isVis": "amp_time_window_selection == 1",
+                "variableName": "amp_measure_overlap_sig_tests",
+                "isAbout": "items/amp_measure_overlap_sig_tests.jsonld",
+                "isVis": "amp_measure_window_selection_data_driven == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_overlap_length_sig_tests",
+                "isAbout": "items/amp_measure_overlap_length_sig_tests.jsonld",
+                "isVis": "amp_measure_overlap_sig_tests = 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_number_sig_tests",
+                "isAbout": "items/amp_measure_number_sig_tests.jsonld",
+                "isVis": "amp_measure_window_selection_data_driven == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -225,7 +235,7 @@
             {
                 "variableName": "amp_measure_start_data-driven",
                 "isAbout": "items/amp_measure_start_data-driven.jsonld",
-                "isVis": "amp_time_window_selection == 1",
+                "isVis": "amp_time_window_selection == 1 || amp_time_window_selection == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -234,7 +244,7 @@
             {
                 "variableName": "amp_measure_end_data_driven",
                 "isAbout": "items/amp_measure_end_data_driven.jsonld",
-                "isVis": "amp_time_window_selection == 1",
+                "isVis": "amp_time_window_selection == 1 || amp_time_window_selection == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

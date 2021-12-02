@@ -15,6 +15,14 @@
         "en": "What is the attenuation achieved in the stopband after high-pass filtering?"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "dB"
+                },
+                "value": "dB"
+            }
+        ]
     }
 }

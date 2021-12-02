@@ -1,27 +1,27 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "offline_highpass_filter_cutoff.jsonld",
+    "@id": "amp_measure_length_sig_tests.jsonld",
     "prefLabel": {
-        "en": "offline highpass filter cutoff"
+        "en": "amp measure length sig tests"
     },
-    "description": "offline highpass filter cutoff",
+    "description": "amp measure length sig tests",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "float"
+        "inputType": "number"
     },
     "question": {
-        "en": "Specify the offline high-pass filter cut-off."
+        "en": "How broad were the windows that were consecutively tested?"
     },
     "responseOptions": {
-        "valueType": "xsd:float",
+        "valueType": "xsd:integer",
         "unitOptions": [
             {
                 "prefLabel": {
-                    "en": "Hz"
+                    "en": "ms"
                 },
-                "value": "Hz"
+                "value": "ms"
             }
         ]
     }

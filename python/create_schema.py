@@ -63,9 +63,6 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
         included_items = items["include"] == 1
         items = items[included_items]
 
-        if len(items.activity_pref_label.unique()) == 0:
-            raise NameError("Empty activity")
-
         protocol, activity, activity_path = initialize_activity(
             protocol, items, out_dir
         )
@@ -135,6 +132,9 @@ def initialize_protocol(this_schema, out_dir):
 
 def initialize_activity(protocol, items, out_dir):
 
+    if len(items.activity_pref_label.unique()) == 0:
+        raise NameError("Empty activity")
+
     activity = Activity()
 
     # TODO : make sure there is only only preferred label
@@ -177,9 +177,11 @@ def initialize_activity(protocol, items, out_dir):
     return protocol, activity, activity_path
 
 
-def create_new_item(item_info, activity_path):
+def create_new_item(item_info: dict, activity_path: str):
 
     item = define_new_item(item_info)
+
+    print(item)
 
     item.set_URI(os.path.join("items", item.get_filename()))
 
@@ -211,7 +213,7 @@ def get_activity_preamble(items):
     return preamble
 
 
-def create_response_options(schema_info, df, out_dir):
+def create_response_options(schema_info: dict, df, out_dir):
 
     responses = df.name.unique()
 

@@ -15,6 +15,14 @@
         "en": "Specify the offline low-pass filter roll off."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "dB/octave"
+                },
+                "value": "dB/octave"
+            }
+        ]
     }
 }

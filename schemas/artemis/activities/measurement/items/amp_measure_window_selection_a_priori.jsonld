@@ -12,12 +12,12 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Select the procedure which was used for amplitude measurement in this time window."
+        "en": "Select the a priori procedure which was used for amplitude measurement in this time window."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -39,15 +39,9 @@
             },
             {
                 "name": {
-                    "en": "a priori multiple windows across epoch with/without overlap"
-                },
-                "value": 3
-            },
-            {
-                "name": {
                     "en": "other"
                 },
-                "value": 4
+                "value": 3
             }
         ],
         "multipleChoice": false

@@ -36,7 +36,7 @@ def list_preset_responses():
     return list(response_options["subdir"])
 
 
-def get_landing_page(schema_info):
+def get_landing_page(schema_info: dict):
 
     DEFAULT = ["README_eCOBIDAS-en.md"]
 
@@ -59,7 +59,7 @@ def get_schema_info(this_schema):
     return df[is_this_schema]
 
 
-def get_input_file(schema_info):
+def get_input_file(schema_info: dict):
 
     input_dir = get_root_dir()
     dir = schema_info["dir"].tolist()[0]
@@ -99,12 +99,12 @@ def convert_to_int(df_field):
     return int(df_field.tolist()[0])
 
 
-def snake_case(input):
+def snake_case(input: str):
 
     return input.replace("\n", "").replace(" ", "_").replace(",", "")
 
 
-def print_info(type, pref_label, file):
+def print_info(type: str, pref_label: str, file: str):
 
     print(
         dashed_line()
@@ -121,7 +121,7 @@ def print_info(type, pref_label, file):
     )
 
 
-def print_item_info(activity_idx, item_idx, item_info):
+def print_item_info(activity_idx, item_idx, item_info: dict):
 
     print(f"Activity: {int(activity_idx)} Item: {int(item_idx)}")
     print(
@@ -129,7 +129,7 @@ def print_item_info(activity_idx, item_idx, item_info):
     )
 
 
-def print_item_to_table(item_id, this_item, item_info, sep=" "):
+def print_item_to_table(item_id: str, this_item: dict, item_info: dict, sep=" "):
 
     details = convert_to_str(this_item["details"])
     if isinstance(details, float):
@@ -170,7 +170,7 @@ def print_item_to_table(item_id, this_item, item_info, sep=" "):
     return dict_to_print
 
 
-def print_download(repo, branch, protocol):
+def print_download(repo: str, branch: str, protocol):
 
     repo = "https://raw.githubusercontent.com/" + repo
 

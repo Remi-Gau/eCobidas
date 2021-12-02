@@ -15,6 +15,14 @@
         "en": "What was the upper threshold of impedance that you registered in your study?"
     },
     "responseOptions": {
-        "valueType": "xsd:integer"
+        "valueType": "xsd:integer",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "kilo-ohms"
+                },
+                "value": "kilo-ohms"
+            }
+        ]
     }
 }

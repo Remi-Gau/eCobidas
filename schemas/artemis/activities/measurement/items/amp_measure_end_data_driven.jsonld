@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Provide the end of the window which was eventually used for amplitude measurement or where the effect was found (e.g. as a result of a mass univariate analysis). Measurement window: END"
+        "en": "End of the window which was eventually used for amplitude measurement or where the effect was found. For peak measures, insert peak as both start and end."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ms"
+                },
+                "value": "ms"
+            }
+        ]
     }
 }

@@ -15,6 +15,14 @@
         "en": "What was the lowest impedance you registered in this study?"
     },
     "responseOptions": {
-        "valueType": "xsd:integer"
+        "valueType": "xsd:integer",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "kilo-ohms"
+                },
+                "value": "kilo-ohms"
+            }
+        ]
     }
 }

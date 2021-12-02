@@ -15,6 +15,14 @@
         "en": "Provide the end of the window which was used to measure latency. Measurement window: END"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ms"
+                },
+                "value": "ms"
+            }
+        ]
     }
 }
