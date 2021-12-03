@@ -12,7 +12,7 @@ Electrode positioning		Describe the custom placement of your electrodes relative
 Electrode positioning		In a later version of the app you will be able to upload here your electrode location file to report the exact position.			radio	great! | bring it on! | no need...	locations_active_channels	1	11	0	1	Acquisition	4			x,y,z	*_electrodes.tsv
 Electrode positioning		Number of scalp electrodes excluding reference channels, ground channel, VEOG and HEOG.			integer		number_active_channels	1	12	1	1	Acquisition	4			EEGChannelCount 	*_eeg.json
 Electrode positioning		Did you use an online reference (as opposed to alternative solutions such as Driven Right Leg (DRL))?			radio	preset:boolean	online_reference_exists	1	13	1	1	Acquisition	4
-Electrode positioning		Where did you place reference electrode(s)?			radio	preset:eeg_reference_electrodes	online_reference_type	online_reference_exists == 1	14	1	1	Acquisition	4			EEGReference // reference	*_eeg.json // *_channels.tsv
+Electrode positioning		Where did you place reference electrode(s)?			radio	preset:meeg_reference_electrodes	online_reference_type	online_reference_exists == 1	14	1	1	Acquisition	4			EEGReference // reference	*_eeg.json // *_channels.tsv
 Electrode positioning		What alternative to an online reference (e.g. DRL) did you use? Please describe it.			text		alternatives_to_reference	online_reference_exists == 0	15	1	1	Acquisition	4
 Electrode positioning		Online reference location other than listed			text		online_reference_type_other	online_reference_type == 11	16	1	1	Acquisition	4
 Electrode positioning		Where did you place ground electrode during the recording?			text		location_ground	online_reference_exists == 1	17	1	1	Acquisition	4			EEGGround	*_eeg.json
