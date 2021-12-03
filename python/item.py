@@ -49,6 +49,10 @@ def get_item_info(this_item: dict) -> dict:
         unit = convert_to_str(this_item["unit"])
         unit = split_choices(unit)
 
+    details = ""
+    if "details" in this_item and this_item["details"].any():
+        details = convert_to_str(this_item["details"])
+
     question = convert_to_str(this_item["question"])
     question = question.replace("\n", "")
 
@@ -68,6 +72,7 @@ def get_item_info(this_item: dict) -> dict:
         "pref_label": pref_label,
         "description": description,
         "question": question,
+        "details": details,
         "field_type": field_type,
         "choices": choices,
         "unit": unit,
@@ -140,10 +145,16 @@ def define_new_item(item_info: dict):
     item.set_description(item_info["description"])
     item.set_pref_label(item_info["pref_label"])
 
+    question = item_info["question"]
     if "id" in item_info and item_info["id"] != "":
-        question = item_info["id"] + " - " + item_info["question"]
-    else:
-        question = item_info["question"]
+        question = item_info["id"] + " - " + question
+    if "details" in item_info and item_info["details"] != "":
+        question = (
+            question
+            + "<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>"
+            + item_info["details"]
+            + "</details></div>"
+        )
 
     item.set_question(question)
 

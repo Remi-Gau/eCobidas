@@ -13,7 +13,7 @@ def main():
 
     TemplateManager.initialize()
 
-    BASE_URL = "https://github.com/ohbm/eCOBIDAS/blob/master/"
+    BASE_URL = "https://github.com/ohbm/cobidas_schema/blob/master/"
 
     df = get_metatable()
 
