@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "If you applied multiple decisions about channel inclusion/exclusion, describe the order you applied them here."
+        "en": "7.16 - If you applied multiple decisions about channel inclusion/exclusion, describe the order you applied them here."
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

@@ -12,38 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Where is the onset of your latency measure?"
+        "en": "6.45 - How did you calculate the onset of this latency?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Select procedure which was used for latency measurement in this time window and describe all details neccessary for replicating this procedure in Further clarification.</details></div>"
     },
-    "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 3,
-        "choices": [
-            {
-                "name": {
-                    "en": "midpoint - peak"
-                },
-                "value": 0
-            },
-            {
-                "name": {
-                    "en": "midpoint - local peak"
-                },
-                "value": 1
-            },
-            {
-                "name": {
-                    "en": "midpoint - 50% area"
-                },
-                "value": 2
-            },
-            {
-                "name": {
-                    "en": "midpoint - other"
-                },
-                "value": 3
-            }
-        ],
-        "multipleChoice": false
-    }
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/latency_measurement.jsonld"
 }

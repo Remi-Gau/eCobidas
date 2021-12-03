@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Has this study resulted in any datasets archived in a persistent, version controlled repository, administered independently from the authorship team?"
+        "en": "1.12 - Has this study resulted in any datasets archived in a persistent, version controlled repository, administered independently from the authorship team?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

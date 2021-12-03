@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Name of each licensed study element followed by license type, with listed elements separated by semicolon and a space (e.g. derivatives, figures, slides, etc)"
+        "en": "1.30 - Name of each licensed study element followed by license type, with listed elements separated by semicolon and a space (e.g. derivatives, figures, slides, etc)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

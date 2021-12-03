@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Which conditions were subtracted from which? Specify how difference waves were constructed."
+        "en": "6.5 - Which conditions were subtracted from which? Specify how difference waves were constructed."
     },
     "responseOptions": {
         "valueType": "xsd:string",

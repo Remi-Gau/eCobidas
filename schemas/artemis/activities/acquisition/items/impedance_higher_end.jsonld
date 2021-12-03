@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "What was the highest impedance you registered in this study?"
+        "en": "4.7 - What was the highest impedance you registered in this study?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

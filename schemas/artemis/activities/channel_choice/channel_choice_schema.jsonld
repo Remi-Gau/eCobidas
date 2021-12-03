@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=75463838' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>Please specify channel electrode choice in this section, inclusion and excusion criteria and channel montages analysed. </p>"
     },
     "ui": {
         "shuffle": false,
@@ -36,18 +36,8 @@
             "items/channel_reconstruction_participants.jsonld",
             "items/channel_reconstruction_trials.jsonld",
             "items/channel_reconstruction_other.jsonld",
-            "items/analysis_montages.jsonld",
             "items/analysis_montage_1_number.jsonld",
-            "items/analysis_montage_1_channels.jsonld",
-            "items/analysis_montage_2_number.jsonld",
-            "items/analysis_montage_2_channels.jsonld",
-            "items/analysis_montage_3_number.jsonld",
-            "items/analysis_montage_3_channels.jsonld",
-            "items/analysis_montage_4_number.jsonld",
-            "items/analysis_montage_4_channels.jsonld",
-            "items/analysis_montage_5_number.jsonld",
-            "items/analysis_montage_5_channels.jsonld",
-            "items/analysis_montage_extra.jsonld"
+            "items/analysis_montage_1_channels.jsonld"
         ],
         "addProperties": [
             {
@@ -249,18 +239,9 @@
                 ]
             },
             {
-                "variableName": "analysis_montages",
-                "isAbout": "items/analysis_montages.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
                 "variableName": "analysis_montage_1_number",
                 "isAbout": "items/analysis_montage_1_number.jsonld",
-                "isVis": true,
+                "isVis": "channel_incl_excl_for_analysis.includes(0) ||  channel_incl_excl_for_analysis.includes(1) || channel_incl_excl_for_analysis.includes(2)  || channel_incl_excl_for_analysis.includes(4)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -269,88 +250,7 @@
             {
                 "variableName": "analysis_montage_1_channels",
                 "isAbout": "items/analysis_montage_1_channels.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "analysis_montage_2_number",
-                "isAbout": "items/analysis_montage_2_number.jsonld",
-                "isVis": "analysis_montages > 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "analysis_montage_2_channels",
-                "isAbout": "items/analysis_montage_2_channels.jsonld",
-                "isVis": "analysis_montages > 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "analysis_montage_3_number",
-                "isAbout": "items/analysis_montage_3_number.jsonld",
-                "isVis": "analysis_montages > 2",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "analysis_montage_3_channels",
-                "isAbout": "items/analysis_montage_3_channels.jsonld",
-                "isVis": "analysis_montages > 2",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "analysis_montage_4_number",
-                "isAbout": "items/analysis_montage_4_number.jsonld",
-                "isVis": "analysis_montages > 3",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "analysis_montage_4_channels",
-                "isAbout": "items/analysis_montage_4_channels.jsonld",
-                "isVis": "analysis_montages > 3",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "analysis_montage_5_number",
-                "isAbout": "items/analysis_montage_5_number.jsonld",
-                "isVis": "analysis_montages > 4",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "analysis_montage_5_channels",
-                "isAbout": "items/analysis_montage_5_channels.jsonld",
-                "isVis": "analysis_montages > 4",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "analysis_montage_extra",
-                "isAbout": "items/analysis_montage_extra.jsonld",
-                "isVis": "analysis_montages > 5",
+                "isVis": "channel_incl_excl_for_analysis.includes(0) ||  channel_incl_excl_for_analysis.includes(1) || channel_incl_excl_for_analysis.includes(2)  || channel_incl_excl_for_analysis.includes(4)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

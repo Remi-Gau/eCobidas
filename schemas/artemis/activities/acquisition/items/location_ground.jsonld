@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Where did you place ground electrode during the recording?"
+        "en": "4.17 - Where did you place ground electrode during the recording?"
     },
     "responseOptions": {
         "valueType": "xsd:string",

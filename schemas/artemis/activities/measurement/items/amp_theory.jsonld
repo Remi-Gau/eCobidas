@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Theory behind a-priori window selection (including implementation of regions, thresholds etc, and references if relevant)"
+        "en": "6.11 - Theory behind a-priori window selection (including implementation of regions, thresholds etc, and references if relevant)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

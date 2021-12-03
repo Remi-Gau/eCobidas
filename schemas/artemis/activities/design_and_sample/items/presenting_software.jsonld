@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Which presenting software did you use to show your experimental task?"
+        "en": "2.22 - Which presenting software did you use to show your experimental task?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/stimulus_presentation_softwares.jsonld"
 }

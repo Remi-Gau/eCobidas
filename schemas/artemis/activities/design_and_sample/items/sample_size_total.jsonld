@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "How many subjects participated in the study?"
+        "en": "2.1 - How many subjects participated in the study?"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

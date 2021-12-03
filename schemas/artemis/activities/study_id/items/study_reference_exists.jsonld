@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Has the study resulted in any published articles, conference presentations or research reports at this stage? "
+        "en": "1.7 - Has the study resulted in any published articles, conference presentations or research reports at this stage? "
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

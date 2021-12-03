@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Make (brand) of the amplifier"
+        "en": "3.12 - Make (brand) of the amplifier"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_amplifier_brands.jsonld"
 }

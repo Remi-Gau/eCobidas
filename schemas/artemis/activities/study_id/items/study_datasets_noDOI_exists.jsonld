@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Are there any datasets that do not have a DOI?"
+        "en": "1.17 - Are there any datasets that do not have a DOI?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

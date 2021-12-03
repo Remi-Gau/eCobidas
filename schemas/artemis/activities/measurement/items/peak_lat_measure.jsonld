@@ -12,7 +12,38 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "How did you select the peak of your latency measure?"
+        "en": "6.43 - How did you calculate the midpoint of this latency?"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/latency_measurement.jsonld"
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "simple peak"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "local peak"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "50% area"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
 }

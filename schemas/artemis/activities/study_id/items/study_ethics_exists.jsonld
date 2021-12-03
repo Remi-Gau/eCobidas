@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "At the time of writing has the study been approved by an ethics committee?"
+        "en": "1.34 - At the time of writing has the study been approved by an ethics committee?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

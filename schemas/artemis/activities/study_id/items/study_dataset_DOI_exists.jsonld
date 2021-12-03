@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Do any of these datasets have a DOI?"
+        "en": "1.15 - Do any of these datasets have a DOI?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

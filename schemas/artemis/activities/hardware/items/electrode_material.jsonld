@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "What material were electrodes made of?"
+        "en": "3.8 - What material were electrodes made of?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

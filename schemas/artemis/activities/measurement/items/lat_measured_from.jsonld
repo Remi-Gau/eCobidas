@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Latency was calculated from the following waveforms. "
+        "en": "6.50 - Latency was calculated from the following waveforms. <div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Please specify details of how the waveforms were constructed in the further clarification text. The details should be sufficient to allow replication.  For discussion: any way to help with reporting complex steps such as measurement from waveforms that are transformed by source localization?</details></div>"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/waveform.jsonld"
 }

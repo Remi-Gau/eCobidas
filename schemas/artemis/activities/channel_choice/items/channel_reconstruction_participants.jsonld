@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Explain your missing data reconstruction for a subset of participants (including order of operations, if relevant)"
+        "en": "7.20 - Explain your missing data reconstruction for a subset of participants (including order of operations, if relevant)<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Data from some recording sessions or some participants was reconstructed but not others. e.g., in one participant, electrode FP1 detatched and was replaced by the signal from FP2</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

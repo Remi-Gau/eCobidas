@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Extra preprocessing: Did you apply any procedures for visualisation purposes only (not used for analysis)? e.g. smoothing filter, different baseline"
+        "en": "8.2 - Extra preprocessing: Did you apply any procedures for visualisation purposes only (not used for analysis)? e.g. smoothing filter, different baseline"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

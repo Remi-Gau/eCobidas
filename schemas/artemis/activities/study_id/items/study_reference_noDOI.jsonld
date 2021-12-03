@@ -12,7 +12,7 @@
         "inputType": "textarea"
     },
     "question": {
-        "en": "Provide links to non-DOI publications, separated by a semicolon and a space."
+        "en": "1.11 - Provide links to non-DOI publications, separated by a semicolon and a space."
     },
     "responseOptions": {
         "valueType": "xsd:string",

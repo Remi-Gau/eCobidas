@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Describe the visual inspection process for signal/noise for channel inclusion/exclusion"
+        "en": "7.11 - Describe the visual inspection process for signal/noise for channel inclusion/exclusion<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>e.g., 'channels visually identified as noisy at the time of recording were excluded'; 'channels that were identified as unstable, (i.e., frequently losing contact at the time of recording) were excluded' 'after calculation of the grant average, channels that do not show a clear PNP complex were excluded'</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

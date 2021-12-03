@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Explain your missing data reconstruction implemented for all participants and all trials"
+        "en": "7.19 - Explain your missing data reconstruction implemented for all participants and all trials<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Data from all participants were experienced the same missing data, and the same reconstruction was applied to all recordings for all participants. e.g.,  'Due to an electrical fault in the amplifier, no signal was detected from T3, so T3 was reconstructed from the average of the two nearest electrodes',  </details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

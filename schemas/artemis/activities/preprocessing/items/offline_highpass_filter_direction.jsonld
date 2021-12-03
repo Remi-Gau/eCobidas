@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "What was the direction of the high-pass filter?"
+        "en": "5.13 - What was the direction of the high-pass filter?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

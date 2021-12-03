@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Literature references for a-priori selection plus reasons for deviation/combination of references, separated by semicolon and space"
+        "en": "7.4 - Literature references for a-priori selection plus reasons for deviation/combination of references, separated by semicolon and space"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

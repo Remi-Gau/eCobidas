@@ -12,12 +12,12 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "How was the amplitude measurement window selected or identified?"
+        "en": "6.7 - How was the amplitude measurement window selected?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For future help: e.g. for a priori - mean of a window decided in advance; e.g. visual inspection of an a priori decided range or window around a peak found in an a priori decided range; e.g., for data driven - mass uni analysis of the entire epoch, visual inspecion of the entire epoch or a vaguely defined (i.e. flexible) general time range</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 4,
         "choices": [
             {
                 "name": {
@@ -27,21 +27,27 @@
             },
             {
                 "name": {
-                    "en": "time window or peak was selected/identified using data-driven methods from a broader window which was selected a priori"
+                    "en": "data-driven selection/identification of the time window from the entire epoch "
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "data-driven selection/identification of the time window or peak from the entire epoch"
+                    "en": "time window was selected/identified using data-driven methods from a broader window which was selected a priori"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "selection/identification of time window in two data driven steps (e.g. time window around a peak of a visually identified broader window)"
                 },
                 "value": 3
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 4
             }
         ],
         "multipleChoice": false

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Select a type of measurement"
+        "en": "6.1 - Select a type of measurement"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -33,7 +33,7 @@
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "other (e.g., mass univariate analysis)"
                 },
                 "value": 2
             }

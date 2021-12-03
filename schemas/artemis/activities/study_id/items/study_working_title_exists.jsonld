@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Has the current study or pipeline been known by a different name or a working title previously? "
+        "en": "1.4 - Has the current study or pipeline been known by a different name or a working title previously? "
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

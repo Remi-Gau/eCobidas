@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Specify the electrode placement/naming convention used"
+        "en": "4.9 - Specify the electrode placement/naming convention used"
     },
     "responseOptions": {
         "valueType": "xsd:string",

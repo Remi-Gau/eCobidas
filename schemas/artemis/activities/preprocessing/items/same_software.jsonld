@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Did you use the same software for all pre-processing steps (fitlering, downsampling, re-referencing, artifact removal, epoching and baseline correction, other)?"
+        "en": "5.1 - Did you use the same software for all pre-processing steps (fitlering, downsampling, re-referencing, artifact removal, epoching and baseline correction, other)?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

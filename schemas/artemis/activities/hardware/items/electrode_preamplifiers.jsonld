@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Did electrodes have pre-amplifiers?"
+        "en": "3.7 - Did electrodes have pre-amplifiers?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

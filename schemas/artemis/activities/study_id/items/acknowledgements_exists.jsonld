@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Do you have any acknowledgments to add in addition to authors or funding?"
+        "en": "1.36 - Do you have any acknowledgments to add in addition to authors or funding?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

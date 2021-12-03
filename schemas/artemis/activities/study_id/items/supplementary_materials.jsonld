@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Which supplementary materials are available publically?"
+        "en": "1.20 - Which supplementary materials are available publically?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

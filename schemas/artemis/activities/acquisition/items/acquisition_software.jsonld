@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "What software did you use for the acquisition?"
+        "en": "4.1 - What software did you use for the acquisition?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_acquisition_softwares.jsonld"
 }

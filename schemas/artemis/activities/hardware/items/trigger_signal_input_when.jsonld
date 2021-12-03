@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Describe your trigger signal input. Were your triggers delivered during acquisition (e.g., triggers from photo diode simultaneously recorded while presenting trials) or added after recording (e.g. after analysis of an audio recording of spoken responses)?"
+        "en": "3.17 - Describe your trigger signal input. Were your triggers delivered during acquisition (e.g., triggers from photo diode simultaneously recorded while presenting trials) or added after recording (e.g. after analysis of an audio recording of spoken responses)?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

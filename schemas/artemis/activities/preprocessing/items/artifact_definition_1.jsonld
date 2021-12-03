@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "How did you define your artifacts in step 1?"
+        "en": "5.32 - How did you define your artifacts in step 1?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

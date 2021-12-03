@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "At the time of document creation, what is the current ARTEM-IS template for?"
+        "en": "1.1 - At the time of document creation, what is the current ARTEM-IS template for?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

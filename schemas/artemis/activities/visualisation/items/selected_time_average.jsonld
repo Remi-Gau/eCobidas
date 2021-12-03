@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Was the selected time window averaged?"
+        "en": "8.13 - Was the selected time window averaged?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

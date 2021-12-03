@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "What was the upper threshold of impedance that you registered in your study?"
+        "en": "4.5 - What was the upper threshold of impedance that you registered in your study?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

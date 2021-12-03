@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Explain your missing data reconstruction for a subset of trials in a subset of participants, including order of operations"
+        "en": "7.22 - Explain your missing data reconstruction for a subset of trials in a subset of participants, including order of operations"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

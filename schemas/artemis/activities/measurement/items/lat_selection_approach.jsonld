@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Approach to selection of the window within which latency was located (multi choice)"
+        "en": "6.53 - Approach to selection of the window within which latency was located<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>A priori: the window is selected in advance Data-driven: the measurement window is selected based on data obtained in the current study. In a data driven approach, either a wider window or the entire epoch are analyzed or examined to determine which will be the final analysis window.  Entire epoch: latency is identified based on the entire epoch instead of a narrower window (e.g. peak of the entire waveform, mass univariate approch on the entire epoch etc.). Please specify details in the Further clarification column [if 1 was selected, jump to 6.4.2.1; if 2 was selected, jumpe to 6.4.2.2] If 3 or 4 was selected, specify in \"further clarification\" filed.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

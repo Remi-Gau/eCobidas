@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Theory behind a-priori channel selection (including implementation of regions, thresholds etc, and references if relevant)"
+        "en": "7.5 - Theory behind a-priori channel selection (including implementation of regions, thresholds etc, and references if relevant)<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Please describe the theory your decision was based on, and how you implemented it in terms of regions, thresholds etc. You may note down any relevant references here.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

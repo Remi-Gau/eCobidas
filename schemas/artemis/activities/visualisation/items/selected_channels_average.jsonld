@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Were the selected channels averaged?"
+        "en": "8.9 - Were the selected channels averaged?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

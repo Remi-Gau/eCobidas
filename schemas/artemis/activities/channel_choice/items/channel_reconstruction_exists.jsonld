@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Did you reconstruct the signal from any missing/excluded/noisy channel(s)?"
+        "en": "7.17 - Did you reconstruct the signal from any missing/excluded/noisy channel(s)?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

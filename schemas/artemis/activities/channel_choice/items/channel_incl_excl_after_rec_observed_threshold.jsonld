@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Describe your thresholds for channel inclusion/exclusion decided after recording"
+        "en": "7.12 - Describe your thresholds for channel inclusion/exclusion decided after recording<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>e.g., if a single electrode in a high density net deviates by more than X% from 4 surrounding electrodes, then excluded </details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

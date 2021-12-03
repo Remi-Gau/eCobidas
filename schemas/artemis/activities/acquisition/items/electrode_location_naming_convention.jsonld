@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "What type of placement/naming convention have you used for the electrode locations?"
+        "en": "4.18 - What type of placement/naming convention have you used for the electrode locations?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

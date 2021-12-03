@@ -12,7 +12,7 @@
         "inputType": "textarea"
     },
     "question": {
-        "en": "Authors of the study in the following format: family-name, other names. Each author separated by a semicolon and a space."
+        "en": "1.6 - Authors of the study in the following format: family-name, other names. Each author separated by a semicolon and a space."
     },
     "responseOptions": {
         "valueType": "xsd:string",

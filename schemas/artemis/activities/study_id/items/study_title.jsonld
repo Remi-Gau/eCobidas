@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Current title of the study/pipeline"
+        "en": "1.2 - Current title of the study/pipeline"
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Analysis montage 1: List all channel locations included in the analysis, separated by a semicolon and a space."
+        "en": "7.25 - List all channel locations included in the analysis using this selection/exclusion method, separated by a semicolon and a space."
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

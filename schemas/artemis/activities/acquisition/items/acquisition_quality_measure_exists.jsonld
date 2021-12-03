@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Did you document impedances, or an alternative data aquisition quality measure? "
+        "en": "4.3 - Did you document impedances, or an alternative data aquisition quality measure? "
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

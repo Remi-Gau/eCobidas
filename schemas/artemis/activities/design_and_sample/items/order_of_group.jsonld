@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Specify group names separated by semicolon and a space (e.g., test group; control group)"
+        "en": "2.5 - Specify group names separated by semicolon and a space (e.g., test group; control group)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Describe the latency type."
+        "en": "6.42 - Describe the latency type.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Question for the meta-data specialists, how to implement multiple selection of items... e.g., 6.4.1a, 6.4.1b, 6.4.1c and how to handle the further flow if there are multiple measures - e.g. multiple components or both midpoint and onset latenciesf</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

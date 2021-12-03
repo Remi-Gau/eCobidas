@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Describe your a-priori criteria for channel inclusion/exclusion"
+        "en": "7.7 - Describe your a-priori criteria for channel inclusion/exclusion<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>e.g., >> fictional >> James uses a threshold of 5 microvolts for 2nd peak in pnp complex any channel that does not detect this signal is excluded. </details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

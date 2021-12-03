@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "How many participants did each group have after exclusion? <br><br><p>Input numeric values in the same order in which groups were listed in the previous section. Values should be separated by semicolon and a space. </p>"
+        "en": "2.6 - How many participants did each group have after exclusion? <br><br><p>Input numeric values in the same order in which groups were listed in the previous section. Values should be separated by semicolon and a space. </p>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

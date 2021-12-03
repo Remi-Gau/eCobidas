@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Model of electrodes"
+        "en": "3.6 - Model of electrodes"
     },
     "responseOptions": {
         "valueType": "xsd:string",

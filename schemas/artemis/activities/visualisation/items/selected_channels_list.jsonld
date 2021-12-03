@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Which channels were selected for this visualization?"
+        "en": "8.7 - Which channels were selected for this visualization?"
     },
     "responseOptions": {
         "valueType": "xsd:string",

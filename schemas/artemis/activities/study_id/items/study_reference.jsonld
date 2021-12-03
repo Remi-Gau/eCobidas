@@ -12,7 +12,7 @@
         "inputType": "textarea"
     },
     "question": {
-        "en": "DOIs of related publications, separated by a semicolon and a space."
+        "en": "1.9 - DOIs of related publications, separated by a semicolon and a space."
     },
     "responseOptions": {
         "valueType": "xsd:string",

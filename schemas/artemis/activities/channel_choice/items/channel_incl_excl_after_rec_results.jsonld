@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Describe how you decided on your included/excluded channels on the basis of the conditions you plan to statistically compare (e.g., channels with largest difference between critical conditions)"
+        "en": "7.14 - Describe how you decided on your included/excluded channels on the basis of the conditions you plan to statistically compare (e.g., channels with largest difference between critical conditions)"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

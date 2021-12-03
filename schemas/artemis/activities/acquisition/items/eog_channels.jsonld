@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "How many EOG channels did you use to record eye movement-dependent voltage?"
+        "en": "4.19 - How many EOG channels did you use to record eye movement-dependent voltage?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

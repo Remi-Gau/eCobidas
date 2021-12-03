@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "What low pass filter (Hz, dB, octave...) have you applied during the recording?"
+        "en": "4.23 - What low pass filter (Hz, dB, octave...) have you applied during the recording?"
     },
     "responseOptions": {
         "valueType": "xsd:string",
