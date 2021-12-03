@@ -183,25 +183,24 @@ def define_choices(item, field_type: str, choices: list):
     if field_type == "multitext":
         item.set_input_type_as_multitext()
 
-    if field_type == "text":
-        item.set_input_type_as_text(3000)
-
     elif field_type == "slider":
         response_options = slider_response(choices)
         item.set_input_type_as_slider(response_options)
 
-    if field_type in ["radio", "radio_multiple", "select", "select_multiple"]:
+    elif field_type == "text":
+        item.set_input_type_as_text(3000)
+
+    if field_type in {"radio", "radio_multiple", "select", "select_multiple"}:
 
         response_options = list_responses_options(choices)
 
-        if field_type in ["radio_multiple", "select_multiple"]:
+        if field_type in {"radio_multiple", "select_multiple"}:
             response_options.set_multiple_choice(True)
 
-        if field_type in ["radio", "radio_multiple"]:
+        if field_type in {"radio", "radio_multiple"}:
             item.set_input_type_as_radio(response_options)
 
-        # if we have a dropdown menu
-        elif field_type in ["select", "select_multiple"]:
+        elif field_type in {"select", "select_multiple"}:
             item.set_input_type_as_select(response_options)
 
         if ispreset(choices):
@@ -236,7 +235,7 @@ def slider_response(choices: list):
 
     linspace(min, max, steps)
 
-    for i, opt in enumerate(linspace(min, max, steps)):
+    for opt in linspace(min, max, steps):
         response_options.add_choice(f"{opt:.3f}", f"{opt:.3f}")
 
     return response_options
