@@ -118,14 +118,13 @@ def define_unit(item, units):
     if units == "":
         return item
 
-    unitOptions = []
-    for unit in units:
-        unitOptions.append(
-            {
-                "prefLabel": {"en": unit},
-                "value": unit,
-            }
-        )
+    unitOptions = [
+        {
+            "prefLabel": {"en": unit},
+            "value": unit,
+        }
+        for unit in units
+    ]
     item.response_options.options["unitOptions"] = unitOptions
 
     return item
@@ -140,7 +139,14 @@ def define_new_item(item_info: dict):
     item.set_defaults(item_info["name"])
     item.set_description(item_info["description"])
     item.set_pref_label(item_info["pref_label"])
-    item.set_question(item_info["question"])
+
+    if "id" in item_info and item_info["id"] != "":
+        question = item_info["id"] + " - " + item_info["question"]
+    else:
+        question = item_info["question"]
+
+    item.set_question(question)
+
     item = define_choices(item, item_info["field_type"], item_info["choices"])
     item = define_unit(item, item_info["unit"])
 
@@ -152,6 +158,7 @@ def define_choices(item, field_type: str, choices: list):
     if field_type not in [
         "multitext",
         "text",
+        "textarea",
         "radio",
         "radio_multiple",
         "select",

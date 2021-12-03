@@ -86,6 +86,8 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
 
             item_info = get_item_info(this_item)
 
+            item_info["id"] = f"{activity_idx:.0f}.{item_idx:.0f}"
+
             print_item_info(activity_idx, item_idx, item_info)
 
             item = create_new_item(item_info, activity_path)
@@ -180,8 +182,6 @@ def initialize_activity(protocol, items, out_dir):
 def create_new_item(item_info: dict, activity_path: str):
 
     item = define_new_item(item_info)
-
-    print(item)
 
     item.set_URI(os.path.join("items", item.get_filename()))
 
