@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Specific radioactivity"
+        "en": "3.9 - Specific radioactivity"
     },
     "responseOptions": {
         "valueType": "xsd:float",

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Boolean that specifies if metabolite measurements are available."
+        "en": "6.10 - Boolean that specifies if metabolite measurements are available."
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

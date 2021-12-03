@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "decay correction time"
+        "en": "6.26 - decay correction time"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

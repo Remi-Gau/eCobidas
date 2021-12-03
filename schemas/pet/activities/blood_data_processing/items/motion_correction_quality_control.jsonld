@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Motion correction: quality control"
+        "en": "9.17 - Motion correction: quality control<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Less than 3mm movement.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

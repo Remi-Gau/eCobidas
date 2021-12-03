@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Boolean that specifies if plasma measurements are available."
+        "en": "6.21 - Boolean that specifies if plasma measurements are available.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Boolean that specifies if plasma measurements are available. If this is false, all of the plasma fields should be excluded</details></div>"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

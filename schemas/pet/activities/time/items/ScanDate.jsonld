@@ -12,7 +12,7 @@
         "inputType": "date"
     },
     "question": {
-        "en": "Date of scan"
+        "en": "4.1 - Date of scan"
     },
     "responseOptions": {
         "valueType": "xsd:date"

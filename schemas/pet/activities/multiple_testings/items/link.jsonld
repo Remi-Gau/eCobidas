@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Link"
+        "en": "10.9 - Link<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Fill out protocol on e.g.,www.AsPredicted.org and provide link in the publication. </details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

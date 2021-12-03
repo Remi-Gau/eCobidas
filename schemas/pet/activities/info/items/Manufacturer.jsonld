@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Scanner manufacturer"
+        "en": "1.2 - Scanner manufacturer"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

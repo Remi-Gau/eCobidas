@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Decay correction factor for each frame"
+        "en": "5.14 - Decay correction factor for each frame"
     },
     "responseOptions": {
         "valueType": "xsd:string",

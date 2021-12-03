@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Fitting description"
+        "en": "9.4 - Fitting description"
     },
     "responseOptions": {
         "valueType": "xsd:string",

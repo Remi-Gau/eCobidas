@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Metabolite correction"
+        "en": "6.20 - Metabolite correction<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Metabolite recovery correction from the HPLC, for tracers where it changes with time postinjection. If \u201ctrue\u201d please include recovery fractions from the HPLC as a column in the table with blood data (section 2.2)</details></div>"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

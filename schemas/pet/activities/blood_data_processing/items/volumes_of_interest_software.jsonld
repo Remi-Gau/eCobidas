@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Volumes of interest software"
+        "en": "9.39 - Volumes of interest software"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -27,7 +27,7 @@
             },
             {
                 "name": {
-                    "en": "Other"
+                    "en": "other"
                 },
                 "value": 1
             }

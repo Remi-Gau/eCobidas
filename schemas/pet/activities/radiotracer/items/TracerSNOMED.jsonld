@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "ID of the tracer compound from the SNOMED Ontology"
+        "en": "2.4 - ID of the tracer compound from the SNOMED Ontology<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>ID of the tracer compound from the SNOMED Ontology (subclass of Radioactive isotope). http://purl.bioontology.org/ontology/SNOMEDCT/89457008</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Partial volume correction software version"
+        "en": "9.43 - Partial volume correction software version"
     },
     "responseOptions": {
         "valueType": "xsd:string",

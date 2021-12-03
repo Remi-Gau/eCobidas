@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Partial volume correction technique"
+        "en": "9.40 - Partial volume correction technique"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -27,7 +27,7 @@
             },
             {
                 "name": {
-                    "en": "Other"
+                    "en": "other"
                 },
                 "value": 1
             }

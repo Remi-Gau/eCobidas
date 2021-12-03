@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "hematocrit value"
+        "en": "6.29 - hematocrit value"
     },
     "responseOptions": {
         "valueType": "xsd:float"

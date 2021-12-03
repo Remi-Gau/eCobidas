@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Fitting"
+        "en": "9.3 - Fitting"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

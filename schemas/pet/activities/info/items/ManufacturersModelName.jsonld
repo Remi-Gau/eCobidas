@@ -9,10 +9,10 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "textarea"
+        "inputType": "text"
     },
     "question": {
-        "en": "PET scanner model name"
+        "en": "1.3 - PET scanner model name"
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Volumes of interest"
+        "en": "9.38 - Volumes of interest"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -39,7 +39,7 @@
             },
             {
                 "name": {
-                    "en": "Other"
+                    "en": "other"
                 },
                 "value": 3
             }

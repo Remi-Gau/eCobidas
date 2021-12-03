@@ -12,138 +12,138 @@
         "inputType": "slider"
     },
     "question": {
-        "en": "Power"
+        "en": "10.5 - Power"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 100.0,
+        "maxValue": 20,
         "choices": [
             {
                 "name": {
                     "en": "50.000"
                 },
-                "value": "50.000"
+                "value": 0
             },
             {
                 "name": {
                     "en": "52.500"
                 },
-                "value": "52.500"
+                "value": 1
             },
             {
                 "name": {
                     "en": "55.000"
                 },
-                "value": "55.000"
+                "value": 2
             },
             {
                 "name": {
                     "en": "57.500"
                 },
-                "value": "57.500"
+                "value": 3
             },
             {
                 "name": {
                     "en": "60.000"
                 },
-                "value": "60.000"
+                "value": 4
             },
             {
                 "name": {
                     "en": "62.500"
                 },
-                "value": "62.500"
+                "value": 5
             },
             {
                 "name": {
                     "en": "65.000"
                 },
-                "value": "65.000"
+                "value": 6
             },
             {
                 "name": {
                     "en": "67.500"
                 },
-                "value": "67.500"
+                "value": 7
             },
             {
                 "name": {
                     "en": "70.000"
                 },
-                "value": "70.000"
+                "value": 8
             },
             {
                 "name": {
                     "en": "72.500"
                 },
-                "value": "72.500"
+                "value": 9
             },
             {
                 "name": {
                     "en": "75.000"
                 },
-                "value": "75.000"
+                "value": 10
             },
             {
                 "name": {
                     "en": "77.500"
                 },
-                "value": "77.500"
+                "value": 11
             },
             {
                 "name": {
                     "en": "80.000"
                 },
-                "value": "80.000"
+                "value": 12
             },
             {
                 "name": {
                     "en": "82.500"
                 },
-                "value": "82.500"
+                "value": 13
             },
             {
                 "name": {
                     "en": "85.000"
                 },
-                "value": "85.000"
+                "value": 14
             },
             {
                 "name": {
                     "en": "87.500"
                 },
-                "value": "87.500"
+                "value": 15
             },
             {
                 "name": {
                     "en": "90.000"
                 },
-                "value": "90.000"
+                "value": 16
             },
             {
                 "name": {
                     "en": "92.500"
                 },
-                "value": "92.500"
+                "value": 17
             },
             {
                 "name": {
                     "en": "95.000"
                 },
-                "value": "95.000"
+                "value": 18
             },
             {
                 "name": {
                     "en": "97.500"
                 },
-                "value": "97.500"
+                "value": 19
             },
             {
                 "name": {
                     "en": "100.000"
                 },
-                "value": "100.000"
+                "value": 20
             }
         ],
         "multipleChoice": false

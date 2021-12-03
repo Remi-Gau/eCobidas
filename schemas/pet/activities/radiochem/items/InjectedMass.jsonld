@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Total mass of radiolabeled compound injected into subject."
+        "en": "3.4 - Total mass of radiolabeled compound injected into subject."
     },
     "responseOptions": {
         "valueType": "xsd:float",

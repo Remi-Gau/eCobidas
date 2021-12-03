@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Motion correction: interpolation"
+        "en": "9.15 - Motion correction: interpolation"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/interpolations.jsonld"
 }

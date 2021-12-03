@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Specific radioactivity measurement time"
+        "en": "3.10 - Specific radioactivity measurement time"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

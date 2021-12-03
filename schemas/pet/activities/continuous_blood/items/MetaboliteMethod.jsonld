@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Method used to measure metabolites"
+        "en": "6.11 - Method used to measure metabolites"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

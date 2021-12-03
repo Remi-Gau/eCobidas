@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Radioisotope labelling tracer."
+        "en": "2.6 - Radioisotope labelling tracer."
     },
     "responseOptions": {
         "valueType": "xsd:integer",

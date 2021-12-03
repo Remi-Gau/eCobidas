@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Name of the tracer compound used"
+        "en": "2.2 - Name of the tracer compound used"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

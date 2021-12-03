@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Partial volume correction software"
+        "en": "9.42 - Partial volume correction software"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -27,7 +27,7 @@
             },
             {
                 "name": {
-                    "en": "Other"
+                    "en": "other"
                 },
                 "value": 1
             }

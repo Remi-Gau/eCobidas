@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Metabolite data labels"
+        "en": "6.13 - Metabolite data labels"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

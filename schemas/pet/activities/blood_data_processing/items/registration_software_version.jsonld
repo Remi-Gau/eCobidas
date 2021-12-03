@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Registration software version"
+        "en": "9.28 - Registration software version"
     },
     "responseOptions": {
         "valueType": "xsd:string",

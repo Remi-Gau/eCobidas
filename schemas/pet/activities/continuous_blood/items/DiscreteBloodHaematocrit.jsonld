@@ -12,138 +12,138 @@
         "inputType": "slider"
     },
     "question": {
-        "en": "Measured haematocrit, i.e. the volume of erythrocytes divided by the volume of whole blood."
+        "en": "6.8 - Measured haematocrit, i.e. the volume of erythrocytes divided by the volume of whole blood."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 1.0,
+        "maxValue": 20,
         "choices": [
             {
                 "name": {
                     "en": "0.000"
                 },
-                "value": "0.000"
+                "value": 0
             },
             {
                 "name": {
                     "en": "0.050"
                 },
-                "value": "0.050"
+                "value": 1
             },
             {
                 "name": {
                     "en": "0.100"
                 },
-                "value": "0.100"
+                "value": 2
             },
             {
                 "name": {
                     "en": "0.150"
                 },
-                "value": "0.150"
+                "value": 3
             },
             {
                 "name": {
                     "en": "0.200"
                 },
-                "value": "0.200"
+                "value": 4
             },
             {
                 "name": {
                     "en": "0.250"
                 },
-                "value": "0.250"
+                "value": 5
             },
             {
                 "name": {
                     "en": "0.300"
                 },
-                "value": "0.300"
+                "value": 6
             },
             {
                 "name": {
                     "en": "0.350"
                 },
-                "value": "0.350"
+                "value": 7
             },
             {
                 "name": {
                     "en": "0.400"
                 },
-                "value": "0.400"
+                "value": 8
             },
             {
                 "name": {
                     "en": "0.450"
                 },
-                "value": "0.450"
+                "value": 9
             },
             {
                 "name": {
                     "en": "0.500"
                 },
-                "value": "0.500"
+                "value": 10
             },
             {
                 "name": {
                     "en": "0.550"
                 },
-                "value": "0.550"
+                "value": 11
             },
             {
                 "name": {
                     "en": "0.600"
                 },
-                "value": "0.600"
+                "value": 12
             },
             {
                 "name": {
                     "en": "0.650"
                 },
-                "value": "0.650"
+                "value": 13
             },
             {
                 "name": {
                     "en": "0.700"
                 },
-                "value": "0.700"
+                "value": 14
             },
             {
                 "name": {
                     "en": "0.750"
                 },
-                "value": "0.750"
+                "value": 15
             },
             {
                 "name": {
                     "en": "0.800"
                 },
-                "value": "0.800"
+                "value": 16
             },
             {
                 "name": {
                     "en": "0.850"
                 },
-                "value": "0.850"
+                "value": 17
             },
             {
                 "name": {
                     "en": "0.900"
                 },
-                "value": "0.900"
+                "value": 18
             },
             {
                 "name": {
                     "en": "0.950"
                 },
-                "value": "0.950"
+                "value": 19
             },
             {
                 "name": {
                     "en": "1.000"
                 },
-                "value": "1.000"
+                "value": 20
             }
         ],
         "multipleChoice": false

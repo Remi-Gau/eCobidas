@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Error of free fraction measurement"
+        "en": "6.23 - Error of free fraction measurement"
     },
     "responseOptions": {
         "valueType": "xsd:float"

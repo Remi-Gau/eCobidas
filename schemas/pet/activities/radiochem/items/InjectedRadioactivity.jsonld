@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Injected radioactivity"
+        "en": "3.3 - Injected radioactivity"
     },
     "responseOptions": {
         "valueType": "xsd:float",

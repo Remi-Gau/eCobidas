@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Phantom type"
+        "en": "7.3 - Phantom type"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

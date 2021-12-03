@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Blood sampling device read"
+        "en": "7.1 - Blood sampling device read"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

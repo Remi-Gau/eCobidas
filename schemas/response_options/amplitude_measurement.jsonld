@@ -4,7 +4,7 @@
     "@id": "amplitude_measurement.jsonld",
     "valueType": "xsd:integer",
     "minValue": 0,
-    "maxValue": 6,
+    "maxValue": 5,
     "choices": [
         {
             "name": {
@@ -26,27 +26,21 @@
         },
         {
             "name": {
-                "en": "each time point separately"
+                "en": "each time point analysed separately"
             },
             "value": 3
         },
         {
             "name": {
-                "en": "time window around peak"
+                "en": "factor scores based on factor analysis"
             },
             "value": 4
         },
         {
             "name": {
-                "en": "factor scores based on factor analysis"
-            },
-            "value": 5
-        },
-        {
-            "name": {
                 "en": "other"
             },
-            "value": 6
+            "value": 5
         }
     ]
 }

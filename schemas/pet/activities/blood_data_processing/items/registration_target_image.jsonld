@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Registration target image"
+        "en": "9.21 - Registration target image"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Volumes of interest mask"
+        "en": "9.36 - Volumes of interest mask"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -27,7 +27,7 @@
             },
             {
                 "name": {
-                    "en": "Other"
+                    "en": "other"
                 },
                 "value": 1
             }

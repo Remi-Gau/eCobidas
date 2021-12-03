@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Partial volume correction assumptions"
+        "en": "9.41 - Partial volume correction assumptions"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -33,7 +33,7 @@
             },
             {
                 "name": {
-                    "en": "Other"
+                    "en": "other"
                 },
                 "value": 2
             }
