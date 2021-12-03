@@ -118,10 +118,13 @@ def define_unit(item, units):
     if units == "":
         return item
 
-    unitOptions = [{
-                "prefLabel": {"en": unit},
-                "value": unit,
-            } for unit in units]
+    unitOptions = [
+        {
+            "prefLabel": {"en": unit},
+            "value": unit,
+        }
+        for unit in units
+    ]
     item.response_options.options["unitOptions"] = unitOptions
 
     return item
