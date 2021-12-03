@@ -22,7 +22,7 @@ Offline filters		What was the direction of the low-pass filter?			radio	forwards
 Offline filters		What notch filter (eg. 50Hz) have you applied after the recording?			radio	50 Hz | 60 Hz | other	offline_notch_filter_type	which_filters.includes(2)	21	1	1	Preprocessing	5
 Offline filters		Specify the notch filter you applied:			text		offline_notch_filter_type_details	offline_notch_filter_type == 2	22	1	1	Preprocessing	5
 Downsampling		Did you downsample your data?			radio	preset:boolean	downsample_data	1	23	1	1	Preprocessing	5
-Downsampling		What software did you use in step 1?			select	preset:meeg_analysis_softwares	downsample_software	downsample_data == 1 && same_software == 0	24	1	1	Preprocessing	5
+Downsampling		What software did you use for downsampling?			select	preset:meeg_analysis_softwares	downsample_software	downsample_data == 1 && same_software == 0	24	1	1	Preprocessing	5
 Downsampling		Specify software version if applicable, script language if "custom script" was selected and software name and version if "other" was selected.			text		downsample_software_details	downsample_data == 1 && same_software == 0	25	1	1	Preprocessing	5
 Downsampling		If yes, what was your new sampling frequency?	Hz		float		new_sampling_frequency	downsample_data == 1	26	1	1	Preprocessing	5
 Re-referencing		Did you re-reference offline?			radio	preset:boolean	offline_reference	1	27	1	1	Preprocessing	5
@@ -32,12 +32,12 @@ Re-referencing		What was the new reference?			text		new_reference	offline_refere
 Artifacts		How many artifact elimination steps did you have?		this is a fake loop hack - we will offer up to N steps (currently only 2 while this is in development) - and then steps are only visible if a person has picked a total number of steps that is equal to or higher :)	integer		artifact_steps_number	1	31	1	1	Preprocessing	5
 Artifacts		How did you define your artifacts in step 1?			radio	visual inspection | algorithm | pre-set numerical criterion | other 	artifact_definition_1	artifact_steps_number >= 1	32	1	1	Preprocessing	5
 Artifacts		What action did you take regarding artifacts in step 1?			radio	reject bad participant | reject bad trial or bad data segment | remove bad electrode | interpolate bad electrode | correct by subtraction (blinks, EKG etc.)	artifact_action_1	artifact_steps_number >= 1	33	1	1	Preprocessing	5
-Artifacts		Specify details of your artifact procedure to the degree sufficient for replicating it. (Step 1)			text		artifact_details_1	artifact_steps_number >= 1	34	1	1	Preprocessing	5
+Artifacts		Specify details of your artifact procedure to the degree sufficient for replicating it. (Step 1)			textarea		artifact_details_1	artifact_steps_number >= 1	34	1	1	Preprocessing	5
 Artifacts		What software did you use in step 1?			select	preset:meeg_analysis_softwares	artifact software 1	artifact_steps_number >= 1 && same_software == 0	35	1	1	Preprocessing	5
 Artifacts		Specify software version if applicable, script language if "custom script" was selected and software name and version if "other" was selected.			text		artifact_software_1_details	artifact_steps_number >=1 && same_software == 0	36	1	1	Preprocessing	5
 Artifacts		How did you define your artifacts in step 2?			radio	visual inspection | algorithm | pre-set numerical criterion | other 	artifact_definition_2	artifact_steps_number >= 2	37	1	1	Preprocessing	5
 Artifacts		What action did you take regarding artifacts in step 2?			radio	reject bad participant | reject bad trial or bad data segment | remove bad electrode | interpolate bad electrode | correct by subtraction (blinks, EKG etc.)	artifact_action_2	artifact_steps_number >= 2	38	1	1	Preprocessing	5
-Artifacts		Specify details of your artifact procedure to the degree sufficient for replicating it. (Step 2)			text		artifact_details_2	artifact_steps_number >= 2	39	1	1	Preprocessing	5
+Artifacts		Specify details of your artifact procedure to the degree sufficient for replicating it. (Step 2)			textarea		artifact_details_2	artifact_steps_number >= 2	39	1	1	Preprocessing	5
 Artifacts		What software did you use in step 2?			select	preset:meeg_analysis_softwares	artifact software 2	artifact_steps_number >= 2 && same_software == 0	40	1	1	Preprocessing	5
 Artifacts		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.			text		artifact_software_2_details	artifact_steps_number >= 2 && same_software == 0	41	1	1	Preprocessing	5
 Epoching		Which analysis software do you use for epoching EEG data?			select	preset:meeg_analysis_softwares	epoch_software	same_software == 0	42	1	1	Preprocessing	5
@@ -50,5 +50,5 @@ Baseline correction		Which analysis software did you use for baseline correction
 Baseline correction		Specify software version if applicable, script language if "custom script" was selected, and software name and version if "other" was selected.			text		baseline_software_details	same_software == 0	49	1	1	Preprocessing	5
 Baseline correction		What was the baseline period beginning relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers.	ms		float		baseline_beginning	1	50	1	1	Preprocessing	5
 Baseline correction		What was the baseline period end relative to a trigger point? For timings after the trigger, use positive numbers. For timings before the trigger, use negative numbers.	ms		float		baseline_end	1	51	1	1	Preprocessing	5
-Baseline correction		baseline calculation method			radio	subtract mean of the baseline period | other	baseline_method	1	52	1	1	Preprocessing	5
-Baseline correction		Specify your baseline calculation method.			text		baseline_other_method_details	baseline_method == 1	53	1	1	Preprocessing	5
+Baseline correction		Which baseline calculation method was used?			radio	subtract mean of the baseline period | other	baseline_method	1	52	1	1	Preprocessing	5
+Baseline correction		Specify your baseline calculation method.			textarea		baseline_other_method_details	baseline_method == 1	53	1	1	Preprocessing	5

@@ -19,4 +19,4 @@ Triggers		Describe your trigger signal input. Were your triggers delivered durin
 Triggers		Were your triggers delivered to the amplifier or acquisition computer?			radio	Amplifier | Acquisition computer	trigger_signal_input_where	1	18	1	1	Hardware	3
 Triggers		Were your triggers delivered via an analogue or digital signal format?			radio	Analogue (e.g., via a parallel port, serial port, or TCP/IP) | Digital (including serial port over a USB port (arduino, LabJack U3, or similar))	trigger_signal_input_how	1	19	1	1	Hardware	3
 Other peripheral devices		Do you have other devices (eg. signal boxes, converters, other peripheral devices) to report?			radio	preset:boolean	other_peripheral_devices	1	20	1	1	Hardware	3
-Other peripheral devices		Describe which additional devices you used, and specify their manufacturers and models.			text		other_peripheral_devices_details	other_peripheral_devices == 1	21	1	1	Hardware	3
+Other peripheral devices		Describe which additional devices you used, and specify their manufacturers and models.			textarea		other_peripheral_devices_details	other_peripheral_devices == 1	21	1	1	Hardware	3

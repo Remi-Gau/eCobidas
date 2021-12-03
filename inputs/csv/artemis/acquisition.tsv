@@ -6,7 +6,7 @@ Data quality		What is the appropriate acquisition data quality measure for your 
 Data quality		What was the upper threshold of impedance that you registered in your study?	kilo-ohms		integer		impedance_threshold	acquisition_quality_measure == 0	5	1	1	Acquisition	4
 Data quality		What was the lowest impedance you registered in this study?	kilo-ohms		integer		impedance_lower_end	acquisition_quality_measure == 1	6	1	1	Acquisition	4
 Data quality		What was the highest impedance you registered in this study?	kilo-ohms		integer		impedance_higher_end	acquisition_quality_measure == 1	7	1	1	Acquisition	4
-Data quality		Report data quality measures provided by your recording system alternative to impedances.			text		impedance_alternative	acquisition_quality_measure == 2	8	1	1	Acquisition	4
+Data quality		Report data quality measures provided by your recording system alternative to impedances.			textarea		impedance_alternative	acquisition_quality_measure == 2	8	1	1	Acquisition	4
 Electrode positioning		Specify the electrode placement/naming convention used			text		electrode_location_naming_convention_other	electrode_location_naming_convention == 2	9	1	1	Acquisition	4
 Electrode positioning		Describe the custom placement of your electrodes relative to anatomical markers or electrode naming/placement systems			text		electrode_location_naming_convention_custom	electrode_location_naming_convention == 3	10	1	1	Acquisition	4
 Electrode positioning		In a later version of the app you will be able to upload here your electrode location file to report the exact position.			radio	great! | bring it on! | no need...	locations_active_channels	1	11	0	1	Acquisition	4			x,y,z	*_electrodes.tsv
