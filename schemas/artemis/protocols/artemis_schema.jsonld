@@ -69,7 +69,7 @@
                 "variableName": "hardware",
                 "isAbout": "../activities/hardware/hardware_schema.jsonld",
                 "prefLabel": {
-                    "en": "Hardware foo"
+                    "en": "Hardware"
                 },
                 "isVis": true,
                 "requiredValue": false,
