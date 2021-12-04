@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Note if differences in intensity or contrast between different stimulus conditions"
+        "en": "1.32 - Note if differences in intensity or contrast between different stimulus conditions"
     },
     "responseOptions": {
         "valueType": "xsd:string",

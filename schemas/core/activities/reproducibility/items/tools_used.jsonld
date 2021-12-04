@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Tool names, versions, and URLs"
+        "en": "1.1 - Tool names, versions, and URLs"
     },
     "responseOptions": {
         "valueType": "xsd:string",

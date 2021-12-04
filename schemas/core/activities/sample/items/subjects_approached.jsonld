@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "Number of subjects approached"
+        "en": "1.4 - Number of subjects approached"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "What was the duration of one block? (in seconds)"
+        "en": "1.4 - What was the duration of one block? (in seconds)"
     },
     "responseOptions": {
         "valueType": "xsd:float"

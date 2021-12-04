@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Stimulus characteristics (e.g., duration, frequency)"
+        "en": "1.41 - Stimulus characteristics (e.g., duration, frequency)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

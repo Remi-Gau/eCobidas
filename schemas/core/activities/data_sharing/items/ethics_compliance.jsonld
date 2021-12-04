@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Confirm that the ethics board of the host institution generating the data approves the sharing of the data made available"
+        "en": "1.6 - Confirm that the ethics board of the host institution generating the data approves the sharing of the data made available"
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Description of the screening criteria."
+        "en": "1.26 - Description of the screening criteria."
     },
     "responseOptions": {
         "valueType": "xsd:string",

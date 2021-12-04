@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Were there any screening criteria for handedness?"
+        "en": "1.24 - Were there any screening criteria for handedness?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
@@ -30,12 +30,6 @@
                     "en": "EHI"
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 2
             }
         ],
         "multipleChoice": false

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Was the block or event ordering deterministic or randomized? "
+        "en": "1.18 - Was the block or event ordering deterministic or randomized? "
     },
     "responseOptions": {
         "valueType": "xsd:integer",

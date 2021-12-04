@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "What was the intertrial interval distribution?"
+        "en": "1.8 - What was the intertrial interval distribution?"
     },
     "responseOptions": {
         "valueType": "xsd:string",

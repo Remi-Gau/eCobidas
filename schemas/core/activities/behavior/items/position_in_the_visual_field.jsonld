@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "position in the visual field"
+        "en": "1.30 - position in the visual field"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Machine CPU model, any use of parallelization"
+        "en": "1.2 - Machine CPU model, any use of parallelization"
     },
     "responseOptions": {
         "valueType": "xsd:string",

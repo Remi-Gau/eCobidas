@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Type, manufacturer and model of the delivery device"
+        "en": "1.36 - Type, manufacturer and model of the delivery device"
     },
     "responseOptions": {
         "valueType": "xsd:string",

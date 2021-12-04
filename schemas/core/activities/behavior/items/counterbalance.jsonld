@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Was the order of the stimuli counterbalanced (across runs, across participants)?"
+        "en": "1.24 - Was the order of the stimuli counterbalanced (across runs, across participants)?"
     },
     "responseOptions": {
         "valueType": "xsd:string",

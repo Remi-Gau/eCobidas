@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Provide the timing structure of the events in the task, whether a random / jittered pattern or a regular arrangement\u037e any jittering of block onsets"
+        "en": "1.6 - Provide the timing structure of the events in the task, whether a random / jittered pattern or a regular arrangement\u037e any jittering of block onsets"
     },
     "responseOptions": {
         "valueType": "xsd:string",

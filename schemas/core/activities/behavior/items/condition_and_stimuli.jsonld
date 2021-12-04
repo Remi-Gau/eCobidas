@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Clearly describe each condition and the stimuli used."
+        "en": "1.2 - Clearly describe each condition and the stimuli used.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Be sure to completely describe baseline (e.g. blank white/black screen, presence of fixation cross, or any other text), especially for resting \u00adstate studies. When possible provide images or screen snapshots of the stimuli</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Provide URL to documentation, and specify its scope"
+        "en": "1.8 - Provide URL to documentation, and specify its scope<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example worked examples, white papers...</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

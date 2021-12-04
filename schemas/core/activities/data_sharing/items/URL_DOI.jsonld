@@ -1,18 +1,18 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "amp_measure_peakwin_rationale.jsonld",
+    "@id": "URL_DOI.jsonld",
     "prefLabel": {
-        "en": "amp measure peakwin rationale"
+        "en": "URL DOI"
     },
-    "description": "amp measure peakwin rationale",
+    "description": "URL DOI",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Rationale for selecting this window length"
+        "en": "1.3 - data URL or DOI"
     },
     "responseOptions": {
         "valueType": "xsd:string",

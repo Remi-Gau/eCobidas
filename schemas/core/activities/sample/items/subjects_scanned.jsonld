@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "Number of subjects scanned"
+        "en": "1.14 - Number of subjects scanned"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

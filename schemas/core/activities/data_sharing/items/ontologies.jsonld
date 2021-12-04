@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Is the software using an established ontology?"
+        "en": "1.11 - Is the software using an established ontology?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

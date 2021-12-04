@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "Number of trials/blocks per run per condition"
+        "en": "1.3 - Number of trials/blocks per run per condition<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Specify per run, and if differing by subject, specify summary statistics (mean, range and/or standard deviation) of such counts</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

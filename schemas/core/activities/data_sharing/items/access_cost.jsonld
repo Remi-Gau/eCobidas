@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "cost of access"
+        "en": "1.5 - cost of access"
     },
     "responseOptions": {
         "valueType": "xsd:string",

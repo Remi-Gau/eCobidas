@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Mechanisms available for constructing queries on the repository (e.g. SQL, SPARQL)"
+        "en": "1.16 - Mechanisms available for constructing queries on the repository (e.g. SQL, SPARQL)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

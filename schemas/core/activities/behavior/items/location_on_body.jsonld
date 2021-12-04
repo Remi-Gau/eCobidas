@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Location on the body with reference to anatomical landmarks"
+        "en": "1.42 - Location on the body with reference to anatomical landmarks<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>location on the body with reference to anatomical landmarks, and strength (ideally with respect to some sensory or motor threshold) should be reported. The distance between the site of peripheral stimulation and brain, and skin temperature are also important as they will affect response latency independent of the experimental manipulation.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

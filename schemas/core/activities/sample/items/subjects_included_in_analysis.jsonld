@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "Number of subjects included in analysis"
+        "en": "1.17 - Number of subjects included in analysis<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>If they differ for different analyses, note the number of subjects in each particular analysis</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer"
