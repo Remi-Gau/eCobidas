@@ -5,7 +5,7 @@ Procedures applied for visualisation of waveforms only		Extra preprocessing: Ple
 Data underlying the visualization		What does the data represent?			select	single waves | difference waves | both | other	waveform_type	visualisation_type == 0	4	1	1	visualisation	8
 Data underlying the visualization		What kind of unit does the plotted data have?			select	voltage maps | voltage maps normalized data |  statistical maps based on t-score/p-value |  current source density maps | topographic maps of PCA factors |  voltage maps on percent scale | 3D voltage maps | other	waveform_unit	visualisation_type == 1	5	1	1	visualisation	8
 Data underlying the visualization		How where conditions re-combined to create a single data set used for plotting?			textarea		plotting_conditions	1	6	1	1	visualisation	8
-Which channels were selected	provide a comma-separated list of all channels (in alphabetical order)	Which channels were selected for this visualization?			text		selected_channels_list	1	7	1	1	visualisation	8
+Which channels were selected		Which channels were selected for this visualization?		Provide a comma-separated list of all channels (in alphabetical order).	text		selected_channels_list	1	7	1	1	visualisation	8
 Which channels were selected		What was the rationale for selecting these channels?			textarea		selected_channels_rationale	1	8	1	1	visualisation	8
 Which channels were selected		Were the selected channels averaged?			radio	preset:boolean	selected_channels_average	1	9	1	1	visualisation	8
 Which time window was selected		What is the beginning of the time window selected for this visualization (relative to trigger)?	ms		float		selected_time_begin	1	10	1	1	visualisation	8
