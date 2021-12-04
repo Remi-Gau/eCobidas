@@ -152,7 +152,7 @@ def define_new_item(item_info: dict):
         question = (
             question
             + "<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>"
-            + item_info["details"]
+            + str(item_info["details"])
             + "</details></div>"
         )
 
@@ -241,13 +241,14 @@ def slider_response(choices: list):
     steps = int(choices[2]) if len(choices) == 3 else 21
 
     response_options = ResponseOption()
-    response_options.set_max(min)
-    response_options.set_max(max)
+    response_options.set_max(1)
+    response_options.set_max(steps - 1)
 
     linspace(min, max, steps)
 
-    for opt in linspace(min, max, steps):
-        response_options.add_choice(f"{opt:.3f}", f"{opt:.3f}")
+    # TODO update after render off slide item has been improved
+    for i, opt in enumerate(linspace(min, max, steps)):
+        response_options.add_choice(f"{opt:.3f}", i)
 
     return response_options
 

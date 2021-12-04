@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+# https://stackoverflow.com/a/21957017
+
 from http.server import HTTPServer, SimpleHTTPRequestHandler, test
 import sys
 
