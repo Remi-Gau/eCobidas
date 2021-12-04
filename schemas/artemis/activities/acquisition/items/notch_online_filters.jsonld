@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "4.24 - What notch filter (eg. 50Hz) have you applied during the recording?"
+        "en": "4.26 - What notch filter have you applied during the recording?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example \"50Hz\"</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "6.8 - Select the a priori procedure which was used for amplitude measurement in this time window."
+        "en": "6.9 - Select the a priori procedure which was used for amplitude measurement in this time window."
     },
     "responseOptions": {
         "valueType": "xsd:integer",

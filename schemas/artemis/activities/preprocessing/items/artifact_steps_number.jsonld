@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "5.31 - How many artifact elimination steps did you have?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>this is a fake loop hack - we will offer up to N steps (currently only 2 while this is in development) - and then steps are only visible if a person has picked a total number of steps that is equal to or higher :)</details></div>"
+        "en": "5.31 - How many artifact elimination steps did you have?"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "6.40 - Latency measurement software<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>[auto selected based on the choice of 4.1.1 + allow customization] ; for discussion: adding other software + which of these systems allow latency measurement</details></div>"
+        "en": "6.41 - Latency measurement software<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>[auto selected based on the choice of 4.1.1 + allow customization] ; for discussion: adding other software + which of these systems allow latency measurement</details></div>"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_analysis_softwares.jsonld"
 }

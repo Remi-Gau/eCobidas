@@ -1,27 +1,27 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "amp_measure_end_data_driven.jsonld",
+    "@id": "online_filters_high_pass_cut_off.jsonld",
     "prefLabel": {
-        "en": "amp measure end data driven"
+        "en": "online filters high pass cut off"
     },
-    "description": "amp measure end data driven",
+    "description": "online filters high pass cut off",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "float"
     },
     "question": {
-        "en": "End of the window which was eventually used for amplitude measurement or where the effect was found. For peak measures, insert peak as both start and end."
+        "en": "4.25 - Specify the low-pass filter roll off used during recording"
     },
     "responseOptions": {
         "valueType": "xsd:float",
         "unitOptions": [
             {
                 "prefLabel": {
-                    "en": "ms"
+                    "en": "dB/octave"
                 },
-                "value": "ms"
+                "value": "dB/octave"
             }
         ]
     }

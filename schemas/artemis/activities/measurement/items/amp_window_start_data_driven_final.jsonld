@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "6.33 - Start of the window which was eventually used for amplitude measurement or where the effect was found."
+        "en": "6.34 - Start of the window which was eventually used for amplitude measurement or where the effect was found."
     },
     "responseOptions": {
         "valueType": "xsd:float",

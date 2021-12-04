@@ -1,27 +1,27 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "amp_measure_peakwin_duration.jsonld",
+    "@id": "onset_lat_area_fraction.jsonld",
     "prefLabel": {
-        "en": "amp measure peakwin duration"
+        "en": "onset lat area fraction"
     },
-    "description": "amp measure peakwin duration",
+    "description": "onset lat area fraction",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "float"
+        "inputType": "number"
     },
     "question": {
-        "en": "How wide was the window around peak?"
+        "en": "6.49 - What fraction of window area was used to determine onset latency?"
     },
     "responseOptions": {
-        "valueType": "xsd:float",
+        "valueType": "xsd:integer",
         "unitOptions": [
             {
                 "prefLabel": {
-                    "en": "ms"
+                    "en": "%"
                 },
-                "value": "ms"
+                "value": "%"
             }
         ]
     }

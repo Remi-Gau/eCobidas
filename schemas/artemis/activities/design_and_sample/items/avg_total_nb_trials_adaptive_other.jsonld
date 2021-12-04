@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "2.13 - How many trials on average was a participant presented with, in total  (including repetition of the same stimuli or trials)?"
+        "en": "2.13 - How many trials on average was a participant presented with, in total (including repetition of the same stimuli or trials)?"
     },
     "responseOptions": {
         "valueType": "xsd:float"

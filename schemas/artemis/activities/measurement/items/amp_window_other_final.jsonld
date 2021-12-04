@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "6.32 - Describe your method of selection of the final time window used to measure amplitude other than listed."
+        "en": "6.33 - Describe your method of selection of the final time window used to measure amplitude other than listed."
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

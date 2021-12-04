@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "1.23 - Are any elements in the study currently covered by a license allowing for reuse (e.g., code used to run the study, data arising from the study)"
+        "en": "1.23 - Are any elements in the study currently covered by a license allowing for reuse?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example,, code used to run the study, data arising from the study</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

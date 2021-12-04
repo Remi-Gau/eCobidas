@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "6.23 - Start of the window which was used to provide broader borders for the final time window selection."
+        "en": "6.24 - Start of the window which was used to provide broader borders for the final time window selection."
     },
     "responseOptions": {
         "valueType": "xsd:float",

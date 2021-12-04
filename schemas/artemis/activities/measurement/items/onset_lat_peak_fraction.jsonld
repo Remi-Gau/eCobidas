@@ -1,27 +1,27 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "amp_measure_overlap_length_sig_tests.jsonld",
+    "@id": "onset_lat_peak_fraction.jsonld",
     "prefLabel": {
-        "en": "amp measure overlap length sig tests"
+        "en": "onset lat peak fraction"
     },
-    "description": "amp measure overlap length sig tests",
+    "description": "onset lat peak fraction",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "number"
     },
     "question": {
-        "en": "By how many milliseconds did they overlap?"
+        "en": "6.48 - What fraction of peak amplitude was used to determine onset latency?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "unitOptions": [
             {
                 "prefLabel": {
-                    "en": "ms"
+                    "en": "%"
                 },
-                "value": "ms"
+                "value": "%"
             }
         ]
     }

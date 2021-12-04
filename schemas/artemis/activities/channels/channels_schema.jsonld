@@ -1,11 +1,11 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Activity",
-    "@id": "channel_choice_schema.jsonld",
+    "@id": "channels_schema.jsonld",
     "prefLabel": {
-        "en": "Channel choice"
+        "en": "Channels"
     },
-    "description": "channel choice",
+    "description": "channels",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
@@ -241,7 +241,7 @@
             {
                 "variableName": "analysis_montage_1_number",
                 "isAbout": "items/analysis_montage_1_number.jsonld",
-                "isVis": "channel_incl_excl_for_analysis.includes(0) ||  channel_incl_excl_for_analysis.includes(1) || channel_incl_excl_for_analysis.includes(2)  || channel_incl_excl_for_analysis.includes(4)",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -250,7 +250,7 @@
             {
                 "variableName": "analysis_montage_1_channels",
                 "isAbout": "items/analysis_montage_1_channels.jsonld",
-                "isVis": "channel_incl_excl_for_analysis.includes(0) ||  channel_incl_excl_for_analysis.includes(1) || channel_incl_excl_for_analysis.includes(2)  || channel_incl_excl_for_analysis.includes(4)",
+                "isVis": true,
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

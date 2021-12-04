@@ -1,11 +1,11 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Protocol",
-    "@id": "channel_electrode_choice_schema.jsonld",
+    "@id": "channels_schema.jsonld",
     "prefLabel": {
-        "en": "channel electrode choice"
+        "en": "channels"
     },
-    "description": "channel electrode choice",
+    "description": "channels",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "landingPage": {
@@ -18,14 +18,14 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "../activities/channel_choice/channel_choice_schema.jsonld"
+            "../activities/channels/channels_schema.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "channel_choice",
-                "isAbout": "../activities/channel_choice/channel_choice_schema.jsonld",
+                "variableName": "channels",
+                "isAbout": "../activities/channels/channels_schema.jsonld",
                 "prefLabel": {
-                    "en": "Channel choice"
+                    "en": "Channels"
                 },
                 "isVis": true,
                 "requiredValue": false,

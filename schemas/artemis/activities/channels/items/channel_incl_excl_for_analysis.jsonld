@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "7.1 - How did you decide which channels would be included/excluded from analysis<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>e.g., 2. include exclusion of O2 after discovering loose caps cause faulty contacts over this region;  e.g., 3. select channels where sensory peaks are most cleanly detected (regardless of experimental condition), prior to comparing peaks across conditions e.g., 4. after viewing the ERP per condition, selection of channels showing largest difference in time regions of interest </details></div>"
+        "en": "7.1 - How did you decide which channels would be included/excluded from analysis<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example,  2. include exclusion of O2 after discovering loose caps cause faulty contacts over this region;  3. select channels where sensory peaks are most cleanly detected (regardless of experimental condition), prior to comparing peaks across conditions 4. after viewing the ERP per condition, selection of channels showing largest difference in time regions of interest </details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

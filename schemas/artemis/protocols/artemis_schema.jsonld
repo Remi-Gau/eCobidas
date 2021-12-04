@@ -24,7 +24,7 @@
             "../activities/acquisition/acquisition_schema.jsonld",
             "../activities/preprocessing/preprocessing_schema.jsonld",
             "../activities/measurement/measurement_schema.jsonld",
-            "../activities/channel_choice/channel_choice_schema.jsonld",
+            "../activities/channels/channels_schema.jsonld",
             "../activities/visualisation/visualisation_schema.jsonld",
             "../activities/other/other_schema.jsonld"
         ],
@@ -69,7 +69,7 @@
                 "variableName": "hardware",
                 "isAbout": "../activities/hardware/hardware_schema.jsonld",
                 "prefLabel": {
-                    "en": "Hardware"
+                    "en": "Hardware foo"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -78,10 +78,10 @@
                 ]
             },
             {
-                "variableName": "channel_choice_for_analysis",
-                "isAbout": "../activities/channel_choice/channel_choice_schema.jsonld",
+                "variableName": "channels",
+                "isAbout": "../activities/channels/channels_schema.jsonld",
                 "prefLabel": {
-                    "en": "Channel choice"
+                    "en": "Channels"
                 },
                 "isVis": true,
                 "requiredValue": false,
@@ -126,7 +126,7 @@
                 ]
             },
             {
-                "variableName": "Other",
+                "variableName": "other",
                 "isAbout": "../activities/other/other_schema.jsonld",
                 "prefLabel": {
                     "en": "Other"

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "6.36 - Was the peak negative or positive?"
+        "en": "6.37 - Was the peak negative or positive?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

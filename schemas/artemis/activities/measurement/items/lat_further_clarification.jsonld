@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "6.58 - Clarify how you selected the window in to measure latency."
+        "en": "6.57 - Clarify how you selected the window in to measure latency."
     },
     "responseOptions": {
         "valueType": "xsd:string",

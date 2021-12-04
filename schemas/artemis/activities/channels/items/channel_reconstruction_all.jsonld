@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "channel_reconstruction_all.jsonld",
+    "prefLabel": {
+        "en": "channel reconstruction all"
+    },
+    "description": "channel reconstruction all",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "7.19 - Explain your missing data reconstruction implemented for all participants and all trials<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Data from all participants were experienced the same missing data, and the same reconstruction was applied to all recordings for all participants. For example,  'Due to an electrical fault in the amplifier, no signal was detected from T3, so T3 was reconstructed from the average of the two nearest electrodes',  </details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

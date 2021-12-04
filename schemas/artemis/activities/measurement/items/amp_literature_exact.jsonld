@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "6.9 - Literature references in which this exact window selection was used, separated by semicolon and space"
+        "en": "6.10 - Literature references in which this exact window selection was used, separated by semicolon and space"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

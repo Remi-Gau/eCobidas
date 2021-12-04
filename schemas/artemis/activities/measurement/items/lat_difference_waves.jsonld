@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "6.51 - Which conditions were subtracted from which? Specify how difference waves were constructed."
+        "en": "6.52 - Which conditions were subtracted from which? Specify how difference waves were constructed.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>nan</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

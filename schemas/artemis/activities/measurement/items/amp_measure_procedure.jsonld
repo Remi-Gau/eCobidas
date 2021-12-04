@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "6.35 - Select procedure which was used for amplitude measurement in this time window."
+        "en": "6.36 - Select procedure which was used for amplitude measurement in this time window."
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/amplitude_measurement.jsonld"
 }

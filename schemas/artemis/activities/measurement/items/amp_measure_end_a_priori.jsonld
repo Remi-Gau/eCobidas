@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "6.14 - Provide the end of the a priori selected time window.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>for a priori time windows only: Please provide here the end of the window which was used to measure amplitude.</details></div>"
+        "en": "6.15 - Provide the end of the a priori selected time window.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>for a priori time windows only: Please provide here the end of the window which was used to measure amplitude.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:float",

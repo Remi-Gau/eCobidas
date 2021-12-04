@@ -1,20 +1,21 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
-    "@id": "analysis_montage_4_number.jsonld",
+    "@id": "onset_lat_describe.jsonld",
     "prefLabel": {
-        "en": "analysis montage 4 number"
+        "en": "onset lat describe"
     },
-    "description": "analysis montage 4 number",
+    "description": "onset lat describe",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "number"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Analysis montage 4: Number of channels included in the analysis"
+        "en": "6.50 - Describe your onset latency calculation procedure step by step."
     },
     "responseOptions": {
-        "valueType": "xsd:integer"
+        "valueType": "xsd:string",
+        "maxLength": 300
     }
 }

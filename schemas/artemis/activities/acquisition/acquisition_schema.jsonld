@@ -34,8 +34,10 @@
             "items/eog_channels.jsonld",
             "items/other_eog_channels.jsonld",
             "items/online_filters.jsonld",
-            "items/high_online_filters.jsonld",
-            "items/low_online_filters.jsonld",
+            "items/online_filters_high_pass_cut_off.jsonld",
+            "items/online_filters_high_pass_roll_off.jsonld",
+            "items/online_filters_high_pass_cut_off.jsonld",
+            "items/online_filters_high_pass_cut_off.jsonld",
             "items/notch_online_filters.jsonld",
             "items/recording_samping_frequency.jsonld"
         ],
@@ -221,8 +223,8 @@
                 ]
             },
             {
-                "variableName": "high_online_filters",
-                "isAbout": "items/high_online_filters.jsonld",
+                "variableName": "online_filters_high_pass_cut_off",
+                "isAbout": "items/online_filters_high_pass_cut_off.jsonld",
                 "isVis": "online_filters.includes(0)",
                 "requiredValue": false,
                 "allow": [
@@ -230,8 +232,26 @@
                 ]
             },
             {
-                "variableName": "low_online_filters",
-                "isAbout": "items/low_online_filters.jsonld",
+                "variableName": "online_filters_high_pass_roll_off",
+                "isAbout": "items/online_filters_high_pass_roll_off.jsonld",
+                "isVis": "online_filters.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "online_filters_high_pass_cut_off",
+                "isAbout": "items/online_filters_high_pass_cut_off.jsonld",
+                "isVis": "online_filters.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "online_filters_high_pass_cut_off",
+                "isAbout": "items/online_filters_high_pass_cut_off.jsonld",
                 "isVis": "online_filters.includes(1)",
                 "requiredValue": false,
                 "allow": [

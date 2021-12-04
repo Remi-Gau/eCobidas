@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "7.2 - A-priori channel inclusion/exclusion type<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Reason to include/exclude this specific combination of electrodes in the main analysis.  e.g.,  1. previous N400 literature shows electrode X,  and Y  e.g., 2. this effect is predicted to appear over the frontal pole. Specify further details in Further Clarification column (e.g. references to papers)</details></div>"
+        "en": "7.2 - A-priori channel inclusion/exclusion type<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Reason to include/exclude this specific combination of electrodes in the main analysis.  For example,  1. previous N400 literature shows electrode X,  and Y  For example, 2. this effect is predicted to appear over the frontal pole. Specify further details in Further Clarification column (e.g. references to papers)</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

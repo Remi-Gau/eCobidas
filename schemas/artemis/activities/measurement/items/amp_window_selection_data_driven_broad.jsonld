@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "6.15 - Select the procedure which was used to identify start and end of the initial time window.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>for future help: vis. inspecion across all conditions also known as flattened average approach, for more details see Gaspelin and Luck or  https://doi.org/10.1371/journal.pcbi.1008286</details></div>"
+        "en": "6.16 - Select the procedure which was used to identify start and end of the initial time window.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>vis. inspecion across all conditions also known as flattened average approach, for more details see Gaspelin and Luck or  https://doi.org/10.1371/journal.pcbi.1008286</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

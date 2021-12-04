@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "6.63 - Provide the start of the window which was used for latency measurement as a result of the data-driven approach or where the effect was found (e.g. as a result of a mass univariate analysis). Measurement window: START<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>for a priori time windows only: Please provide here the start of the window which was used to measure amplitude. for data-driven time windows: Please provide the window which was used for amplitude measurement as a result of the data-driven approach or where the effect was found (e.g. as a result of a mass univariate analysis)</details></div>"
+        "en": "6.62 - Provide the start of the window which was used for latency measurement as a result of the data-driven approach or where the effect was found (e.g. as a result of a mass univariate analysis). Measurement window: START<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>for a priori time windows only: Please provide here the start of the window which was used to measure amplitude. for data-driven time windows: Please provide the window which was used for amplitude measurement as a result of the data-driven approach or where the effect was found (e.g. as a result of a mass univariate analysis)</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:float",
