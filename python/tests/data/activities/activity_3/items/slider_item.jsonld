@@ -12,70 +12,70 @@
         "inputType": "slider"
     },
     "question": {
-        "en": "This is a slider item"
+        "en": "2.2 - This is a slider item"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 100,
+        "maxValue": 9,
         "choices": [
             {
                 "name": {
-                    "en": "1.0"
+                    "en": "1.000"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "12.0"
+                    "en": "12.000"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "23.0"
+                    "en": "23.000"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "34.0"
+                    "en": "34.000"
                 },
                 "value": 3
             },
             {
                 "name": {
-                    "en": "45.0"
+                    "en": "45.000"
                 },
                 "value": 4
             },
             {
                 "name": {
-                    "en": "56.0"
+                    "en": "56.000"
                 },
                 "value": 5
             },
             {
                 "name": {
-                    "en": "67.0"
+                    "en": "67.000"
                 },
                 "value": 6
             },
             {
                 "name": {
-                    "en": "78.0"
+                    "en": "78.000"
                 },
                 "value": 7
             },
             {
                 "name": {
-                    "en": "89.0"
+                    "en": "89.000"
                 },
                 "value": 8
             },
             {
                 "name": {
-                    "en": "100.0"
+                    "en": "100.000"
                 },
                 "value": 9
             }

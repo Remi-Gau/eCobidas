@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "yes or no"
+        "en": "4.5 - yes or no"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }
