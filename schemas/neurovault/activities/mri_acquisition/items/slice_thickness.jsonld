@@ -1,0 +1,28 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "slice_thickness.jsonld",
+    "prefLabel": {
+        "en": "slice thickness"
+    },
+    "description": "slice thickness",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "3.8 - Distance between slices (includes skip or distance factor)."
+    },
+    "responseOptions": {
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Millimeters"
+                },
+                "value": "Millimeters"
+            }
+        ]
+    }
+}

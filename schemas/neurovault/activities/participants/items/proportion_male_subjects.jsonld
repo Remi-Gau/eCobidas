@@ -1,0 +1,145 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "proportion_male_subjects.jsonld",
+    "prefLabel": {
+        "en": "proportion male subjects"
+    },
+    "description": "proportion male subjects",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "slider"
+    },
+    "question": {
+        "en": "2.6 - The proportion of subjects who were male"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 19,
+        "choices": [
+            {
+                "name": {
+                    "en": "0.000"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "5.263"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "10.526"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "15.789"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "21.053"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "26.316"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "31.579"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "36.842"
+                },
+                "value": 7
+            },
+            {
+                "name": {
+                    "en": "42.105"
+                },
+                "value": 8
+            },
+            {
+                "name": {
+                    "en": "47.368"
+                },
+                "value": 9
+            },
+            {
+                "name": {
+                    "en": "52.632"
+                },
+                "value": 10
+            },
+            {
+                "name": {
+                    "en": "57.895"
+                },
+                "value": 11
+            },
+            {
+                "name": {
+                    "en": "63.158"
+                },
+                "value": 12
+            },
+            {
+                "name": {
+                    "en": "68.421"
+                },
+                "value": 13
+            },
+            {
+                "name": {
+                    "en": "73.684"
+                },
+                "value": 14
+            },
+            {
+                "name": {
+                    "en": "78.947"
+                },
+                "value": 15
+            },
+            {
+                "name": {
+                    "en": "84.211"
+                },
+                "value": 16
+            },
+            {
+                "name": {
+                    "en": "89.474"
+                },
+                "value": 17
+            },
+            {
+                "name": {
+                    "en": "94.737"
+                },
+                "value": 18
+            },
+            {
+                "name": {
+                    "en": "100.000"
+                },
+                "value": 19
+            }
+        ],
+        "multipleChoice": false
+    }
+}

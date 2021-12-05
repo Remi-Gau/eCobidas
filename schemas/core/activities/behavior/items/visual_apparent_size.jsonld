@@ -1,0 +1,28 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "visual_apparent_size.jsonld",
+    "prefLabel": {
+        "en": "visual apparent size"
+    },
+    "description": "visual apparent size",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "1.28 - Stimuli apparent size"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "degrees of visual angle"
+                },
+                "value": "degrees of visual angle"
+            }
+        ]
+    }
+}

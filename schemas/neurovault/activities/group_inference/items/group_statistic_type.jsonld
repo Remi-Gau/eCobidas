@@ -1,0 +1,67 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "group_statistic_type.jsonld",
+    "prefLabel": {
+        "en": "group statistic type"
+    },
+    "description": "group statistic type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "8.1 - Type of statistic that is the basis of the inference"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 6,
+        "choices": [
+            {
+                "name": {
+                    "en": "Z"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "T"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "F"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "X2"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "PostProb"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "NonparametricP"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "MonteCarloP"
+                },
+                "value": 6
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "SliceTiming.jsonld",
+    "prefLabel": {
+        "en": "order of acquisition"
+    },
+    "description": "order of acquisition",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "3.11 - Order of acquisition of slices"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "ascending"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "descending"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "interleaved"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

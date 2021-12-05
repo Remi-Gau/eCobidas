@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubject_transformation_type.jsonld",
+    "prefLabel": {
+        "en": "intersubject transformation type"
+    },
+    "description": "intersubject transformation type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "5.3 - Was linear or nonlinear registration used?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "linear"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "non-linear"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

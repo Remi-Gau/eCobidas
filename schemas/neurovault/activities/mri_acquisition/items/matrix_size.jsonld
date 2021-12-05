@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "matrix_size.jsonld",
+    "prefLabel": {
+        "en": "matrix size"
+    },
+    "description": "matrix size",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "3.7 - Matrix size for MRI acquisition"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

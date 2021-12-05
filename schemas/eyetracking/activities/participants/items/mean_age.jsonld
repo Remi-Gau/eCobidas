@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "The mean age of participants"
+        "en": "8.3 - The mean age of participants<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>22</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:float"

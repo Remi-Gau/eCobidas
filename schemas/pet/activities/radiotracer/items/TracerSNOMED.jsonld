@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
         "en": "2.4 - ID of the tracer compound from the SNOMED Ontology<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>ID of the tracer compound from the SNOMED Ontology (subclass of Radioactive isotope). http://purl.bioontology.org/ontology/SNOMEDCT/89457008</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

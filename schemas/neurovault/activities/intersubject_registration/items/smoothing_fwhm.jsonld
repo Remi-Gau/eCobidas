@@ -1,0 +1,28 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "smoothing_fwhm.jsonld",
+    "prefLabel": {
+        "en": "smoothing fwhm"
+    },
+    "description": "smoothing fwhm",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "5.15 - The full-width at half-maximum of the smoothing kernel"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Millimeters"
+                },
+                "value": "Millimeters"
+            }
+        ]
+    }
+}

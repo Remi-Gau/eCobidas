@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Position of the fixation cross"
+        "en": "6.3 - Position of the fixation cross"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -42,12 +42,6 @@
                     "en": "not applicable (because no fixation cross was presented)"
                 },
                 "value": 3
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 4
             }
         ],
         "multipleChoice": false

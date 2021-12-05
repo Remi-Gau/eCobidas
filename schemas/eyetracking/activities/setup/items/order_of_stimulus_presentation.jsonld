@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "The order of the stimulus presentation"
+        "en": "6.5 - The order of the stimulus presentation"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -42,12 +42,6 @@
                     "en": "not applicable (because only one stimulus was presented, e.g. 1 one video) "
                 },
                 "value": 3
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 4
             }
         ],
         "multipleChoice": false

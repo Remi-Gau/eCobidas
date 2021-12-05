@@ -1,0 +1,28 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "target_resolution.jsonld",
+    "prefLabel": {
+        "en": "target resolution"
+    },
+    "description": "target resolution",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "5.12 - Voxel size of target template"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Millimeters"
+                },
+                "value": "Millimeters"
+            }
+        ]
+    }
+}

@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Settings and locations where data were collected"
+        "en": "6.9 - Settings and locations where data were collected<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Data were collected in a soundproof room with no direct daylight</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

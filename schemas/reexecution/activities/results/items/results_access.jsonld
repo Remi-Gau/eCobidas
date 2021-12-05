@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "How are the results accessed?"
+        "en": "5.2 - How are the results accessed?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 2,
         "choices": [
             {
                 "name": {
@@ -36,12 +36,6 @@
                     "en": "Repository"
                 },
                 "value": 2
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 3
             }
         ],
         "multipleChoice": false

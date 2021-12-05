@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "ManufacturersModelName.jsonld",
+    "prefLabel": {
+        "en": "scanner model"
+    },
+    "description": "scanner model",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "3.2 - Model of MRI scanner"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

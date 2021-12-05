@@ -17,7 +17,7 @@
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 5,
         "choices": [
             {
                 "name": {
@@ -48,6 +48,12 @@
                     "en": "MIPAV"
                 },
                 "value": 4
+            },
+            {
+                "name": {
+                    "en": "snakebids"
+                },
+                "value": 5
             }
         ],
         "multipleChoice": false

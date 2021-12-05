@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "The software used to pre-process the eye-tracking data"
+        "en": "4.1 - The software used to pre-process the eye-tracking data"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/eyetracker_preproc_softwares.jsonld"
 }

@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Time, when the calibration was conducted."
+        "en": "7.3 - Time, when the calibration was conducted."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
@@ -30,12 +30,6 @@
                     "en": "recalibration during the experiment"
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 2
             }
         ],
         "multipleChoice": false

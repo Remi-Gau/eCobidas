@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "The type of monitor used"
+        "en": "3.1 - The type of monitor used"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

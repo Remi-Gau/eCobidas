@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "Manufacturer.jsonld",
+    "prefLabel": {
+        "en": "scanner make"
+    },
+    "description": "scanner make",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "3.1 - Manufacturer of MRI scanner"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "Siemens"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Philips"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "General Electric"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -12,10 +12,24 @@
         "inputType": "text"
     },
     "question": {
-        "en": "The size of the AOIs in pixel or degrees"
+        "en": "5.1 - The size of the AOIs<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>100 x 100 pixel</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 300
+        "maxLength": 300,
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "pixels"
+                },
+                "value": "pixels"
+            },
+            {
+                "prefLabel": {
+                    "en": "degrees"
+                },
+                "value": "degrees"
+            }
+        ]
     }
 }

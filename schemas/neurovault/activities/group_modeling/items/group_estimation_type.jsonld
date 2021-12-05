@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "group_estimation_type.jsonld",
+    "prefLabel": {
+        "en": "group estimation type"
+    },
+    "description": "group estimation type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "7.2 - Estimation method used for model"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "ordinary least squares"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "generalized least squares"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

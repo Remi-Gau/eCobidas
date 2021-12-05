@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "group_statistic_parameters.jsonld",
+    "prefLabel": {
+        "en": "group statistic parameters"
+    },
+    "description": "group statistic parameters",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "8.2 - Parameters of the null distribution of the test statisic.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Typically degrees of freedom (should be clear from the test statistic what these are).</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

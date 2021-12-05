@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Are the statistical tools / packages specified?"
+        "en": "4.1 - Are the statistical tools / packages specified?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

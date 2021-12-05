@@ -1,0 +1,31 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intrasubject_model_type.jsonld",
+    "prefLabel": {
+        "en": "intrasubject model type"
+    },
+    "description": "intrasubject model type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "6.1 - Type of group model used"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 0,
+        "choices": [
+            {
+                "name": {
+                    "en": "Regression"
+                },
+                "value": 0
+            }
+        ],
+        "multipleChoice": false
+    }
+}

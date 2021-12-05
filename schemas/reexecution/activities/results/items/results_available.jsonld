@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Are the complete results (derived images, summary data, etc.) available?"
+        "en": "5.1 - Are the complete results (derived images, summary data, etc.) available?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

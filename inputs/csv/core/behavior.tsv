@@ -1,50 +1,52 @@
-question	details	field_type	choices	item	neurovault	item_order	visibility	include	neurovault_or_carp	mandatory	bids_status	bids_key	activity_order	activity_pref_label				in_Carp_2012	use_case_meta-analysis	meta-analysis_comment	preamble
-What type of design was used?		radio	block design | event related design | mixed	design_type	type_of_design	1	1	1	1	1	2		1	Behavior	Design specifications	Design type		destype			describe your behavrioal design
-Clearly describe each condition and the stimuli used.	Be sure to completely describe baseline (e.g. blank white/black screen, presence of fixation cross, or any other text), especially for resting ­state studies. When possible provide images or screen snapshots of the stimuli	text		condition_and_stimuli		2	1	1	0	1			1	Behavior	Design specifications	Condition and stimuli			yes	RELEVANT TO DESCRIBE THE INCLUDED STUDIES
-Number of trials/blocks per run per condition	Specify per run, and if differing by subject, specify summary statistics (mean, range and/or standard deviation) of such counts	integer		number_experimental_units	number_of_experimental_units	3	1	1	1	1	1		1	Behavior	Design specifications	Number experimental units		ntrials
-What was the duration of one block? (in seconds)		float		block_duration	length_of_blocks	4	1	1	1	1	1		1	Behavior	Timing and duration	Block duration		blocklength
-What was the duration of one trial? (in seconds)		float		trial_duration	length_of_trials	5	1	1	1	1	1		1	Behavior	Timing and duration	Trial duration		trialdur
-Provide the timing structure of the events in the task, whether a random / jittered pattern or a regular arrangement; any jittering of block onsets		text		intertrial_interval_type		6	1	1	1	1	3		1	Behavior	Timing and duration	Intertrial interval type		ititype
-What was the intertrial interval range?		text		intertrial_interval_range		7	1	1	1	0			1	Behavior	Timing and duration	Intertrial interval range		itirange
-What was the intertrial interval distribution?		text		intertrial_interval_distribution		8	1	1	1	0			1	Behavior	Timing and duration	Intertrial interval distribution		itidist
-How many runs were used?		integer		number_of_functional_runs	number_of_imaging_runs	9	1	1	1	1	1		1	Behavior	Timing and duration	number of functional runs		nruns
-What was the duration of each imaging run in seconds?		float		duration_of_each_run	length_of_runs	10	1	1	1	1	1		1	Behavior	Timing and duration	duration of each run
-What was the software used for stimuli presentation?		select	preset:stimulus_presentation_softwares	presentation_software_name		11	1	1	1	1	3		1	Behavior	Presentation software	presentation software name		taskprog	yes	FOR DESCRIPTION
-What was the software version used for stimuli presentation?		text		presentation_software_version		12	1	1	0	1	3		1	Behavior	Presentation software	presentation software version
-What operating system was used to present the stimuli?		radio	preset:operating_systems	operating_system		13	1	1	0	1	3		1	Behavior	Presentation software	operating system
-Specify the URL of the experiment code if possible		text		url_to_code		14	1	1	0	1	3		1	Behavior	Presentation software	URL to code
-Enumerate the conditions and fully describe and reference each.	Consider using a shorthand name, e.g. AUDSTIM, VISSTIM, to refer to each condition, to clarify the distinction between a specific modelled effect and a psychological construct. Naming should reflect the distinction between instruction periods and actual stimuli, and between single parameters and contrasts of parameters	text		condition		15	1	1	0	1	1		1	Behavior	Task specification	Condition
-Specify the instructions given to subjects for each condition	Ideally copy the exact text. For resting ­state, be sure to indicate eyes­ closed, eyes­ open, any fixation. Describe if the subjects received any rewards during the task.	text		instructions		16	1	1	0	1	2		1	Behavior	Task specification	Instructions			yes	FOR INCLUSION CRITIERIA
-Specifics of stimuli used in each run.	 For example, the unique number of stimuli used, and whether/how stimuli were repeated over trials or conditions	text		stimuli		17	1	1	0	1	2		1	Behavior	Task specification	Stimuli			yes	FOR INCLUSION CRITERIA
-Was the block or event ordering deterministic or randomized? 		radio	deterministic | random | pseudorandom	randomization		18	1	1	0	1	3		1	Behavior	Task specification	Randomization
-Specify inter-trial distritbution and blocklength		text		deterministic		19	1	1	0	1			1	Behavior	Task specification	Randomization	deterministic
-Describe how and the criteria used to constrain the orders/timings		text		pseudo-random		20	1	1	0	1			1	Behavior	Task specification	Randomization	pseudo-random
-Specify the presentation hardware 		radio	back projection | in­ room display | goggles	stimulus_presentation		21	1	1	0	1	3		1	Behavior	Task specification	Stimulus presentation
-How were responses collected?		radio	motor response (button boxes) |  motor response (other) |  other	response_collection		22	1	1	0	1	3		1	Behavior	Task specification	Response collection
-Order in which tasks / runs are conducted 		text		run_order		23	1	1	0	1	2		1	Behavior	Task specification	Run order
-Was the order of the stimuli counterbalanced (across runs, across participants)?		text		counterbalance		24	1	1	0	1			1	Behavior	Counterbalance
-Stimuli apparent size	in degrees of visual angle	text		apparent_size		25	1	1	0	1			1	Behavior	Visual	Apparent size
-Viewing distance	in meters	text		viewing_distance		26	1	1	0	1			1	Behavior	Visual	Viewing distance
-Clarity (i.e.,visual contrast, intensity, etc.)		text		clarity		27	1	1	0	1			1	Behavior	Visual	clarity
-Color		text		color		28	1	1	0	1			1	Behavior	Visual	color
-site of the stimulation		radio	monocular | binocular	site_of_the_stimulation		29	1	1	0	1			1	Behavior	Visual	site of the stimulation
-position in the visual field		radio	full-field | hemifield | quadrant	position_in_the_visual_field		30	1	1	0	1			1	Behavior	Visual	position in the visual field
-Display device and method of projection (including refresh rate or response time of the monitors)		text		display_device		31	1	1	0	1			1	Behavior	Visual	display device
-Note if differences in intensity or contrast between different stimulus conditions		text		visual_other		32	1	1	0	1			1	Behavior	Visual	visual other
-Stimulus properties (e.g., frequency content, duration, onset/offset envelope, etc.)		text		description		33	1	1	0	1			1	Behavior	Auditory	description
-Intensity	e.g., relative to the subject’s individual hearing threshold, or as Sound Pressure Level [dB SPL]	text		intensity		34	1	1	0	1			1	Behavior	Auditory	intensity
-Ear of stimulation	e.g., ear inserts, panel speakers, etc.	text		ear_of_stimulation		35	1	1	0	1			1	Behavior	Auditory	Ear of stimulation
-Type, manufacturer and model of the delivery device		text		auditory_type		36	1	1	0	1			1	Behavior	Auditory	auditory type
-Further, the presence of contralateral ear masking stimulation, and its intensity, should be noted.		text		contralateral_masking		37	1	1	0	1			1	Behavior	Auditory	contralateral masking
-Stimuili database		text		stimuli_database		38	1	1	0	1			1	Behavior	Stimuli database
-calibration procedure	including software (type, version and operating system) and hardware used, should also be described. Where relevant, the rationale for selecting a specific parameter (e.g., contrast, harmonic content) should be indicated. If features were determined individually for each participant, the criteria and the psychophysical method used should be detailed.	text		calibration_procedure		39	1	1	0	1			1	Behavior	calibration procedure
-Stimulus type (e.g., electrical, air puff)		text		type		40	1	1	0	1			1	Behavior	Somatosensory	type
-Stimulus characteristics (e.g., duration, frequency)		text		characteristics		41	1	1	0	1			1	Behavior	Somatosensory	characteristics
-Location on the body with reference to anatomical landmarks	location on the body with reference to anatomical landmarks, and strength (ideally with respect to some sensory or motor threshold) should be reported. The distance between the site of peripheral stimulation and brain, and skin temperature are also important as they will affect response latency independent of the experimental manipulation.	text		location_on_body		42	1	1	0	1			1	Behavior	Somatosensory	location on body
-Was was the intensity of the stimulus? 	Ideally with respect to some sensory or motor threshold.	text		somatosensoty_intensity		43	1	1	0	1			1	Behavior	Somatosensory	somatosensoty intensity
-Describe in detail any other stimulation not involving auditory, visual or somatosensory stimuli		text		other_stimulation		44	1	1	0	1			1	Behavior	other stimulation
-		text		practice_sessions		45	1	0	0	1			1	Behavior	Practice sessions
-Were feedbacks provided to the participant?		boolean		feedbacks		46	1	1	0	1			1	Behavior	Behavioral performance	Feedbacks
-		text		errors_handling		47	1	0	0	1			1	Behavior	Behavioral performance	Errors handling
-What variables were recorded?		text	button press | response time	variables_recorded		48	1	1	0	1	3		1	Behavior	Behavioral performance	Variables recorded			yes	IMPORTANT TO DESCRIBE STUDIES OR FOR INCLUSION CRITERIA
-	Summaries of behavior sufficient to establish that subjects were performing the task as expected. For example, correct response rates and/or response times, summarized over subjects (e.g. mean, range and/or standard deviation)	text		summary_statistics		49	1	0	0	1	3		1	Behavior	Behavioral performance	Summary statistics			yes	relevant for inclusion/exclusion criteria
+question	unit	details	field_type	choices	item	neurovault	item_order	visibility	include	neurovault_or_carp	mandatory	bids_status	bids_key	activity_order	activity_pref_label				in_Carp_2012	use_case_meta-analysis	meta-analysis_comment	preamble
+What type of design was used?			radio	block design | event related design | mixed	design_type	type_of_design	1	1	1	1	1	2		1	Behavior	Design specifications	Design type		destype			describe your behavrioal design
+Clearly describe each condition and the stimuli used.		Be sure to completely describe baseline (for example, blank white/black screen, presence of fixation cross, or any other text), especially for resting ­state studies. When possible provide images or screen snapshots of the stimuli	textarea		condition_and_stimuli		2	1	1	0	1			1	Behavior	Design specifications	Condition and stimuli			yes	RELEVANT TO DESCRIBE THE INCLUDED STUDIES
+Number of trials/blocks per run per condition		Specify per run, and if differing by subject, specify summary statistics (mean, range and/or standard deviation) of such counts	integer		number_experimental_units	number_of_experimental_units	3	1	1	1	1	1		1	Behavior	Design specifications	Number experimental units		ntrials
+What was the duration of one block?	seconds		float		block_duration	length_of_blocks	4	1	1	1	1	1		1	Behavior	Timing and duration	Block duration		blocklength
+What was the duration of one trial?	seconds		float		trial_duration	length_of_trials	5	1	1	1	1	1		1	Behavior	Timing and duration	Trial duration		trialdur
+Provide the timing structure of the events in the task.		Whether a random / jittered pattern or a regular arrangement; any jittering of block onsets.	textarea		intertrial_interval_type		6	1	1	1	1	3		1	Behavior	Timing and duration	Intertrial interval type		ititype
+What was the intertrial interval range?			textarea		intertrial_interval_range		7	1	1	1	0			1	Behavior	Timing and duration	Intertrial interval range		itirange
+What was the intertrial interval distribution?			textarea		intertrial_interval_distribution		8	1	1	1	0			1	Behavior	Timing and duration	Intertrial interval distribution		itidist
+How many runs were used?			integer		number_of_functional_runs	number_of_imaging_runs	9	1	1	1	1	1		1	Behavior	Timing and duration	number of functional runs		nruns
+What was the duration of each imaging run?	seconds		float		duration_of_each_run	length_of_runs	10	1	1	1	1	1		1	Behavior	Timing and duration	duration of each run
+What was the software used for stimuli presentation?			select	preset:stimulus_presentation_softwares	presentation_software_name		11	1	1	1	1	3		1	Behavior	Presentation software	presentation software name		taskprog	yes	FOR DESCRIPTION
+What was the software version used for stimuli presentation?			textarea		presentation_software_version		12	1	1	0	1	3		1	Behavior	Presentation software	presentation software version
+What operating system was used to present the stimuli?			radio	preset:operating_systems	operating_system		13	1	1	0	1	3		1	Behavior	Presentation software	operating system
+Specify the URL of the experiment code if possible			textarea		url_to_code		14	1	1	0	1	3		1	Behavior	Presentation software	URL to code
+Enumerate the conditions and fully describe and reference each.		Consider using a shorthand name, for example, AUDSTIM, VISSTIM, to refer to each condition, to clarify the distinction between a specific modelled effect and a psychological construct. Naming should reflect the distinction between instruction periods and actual stimuli, and between single parameters and contrasts of parameters	textarea		condition		15	1	1	0	1	1		1	Behavior	Task specification	Condition
+Specify the instructions given to subjects for each condition		Ideally copy the exact text. For resting ­state, be sure to indicate eyes­ closed, eyes­ open, any fixation. Describe if the subjects received any rewards during the task.	textarea		instructions		16	1	1	0	1	2		1	Behavior	Task specification	Instructions			yes	FOR INCLUSION CRITIERIA
+Specifics of stimuli used in each run.		 For example, the unique number of stimuli used, and whether/how stimuli were repeated over trials or conditions	textarea		stimuli		17	1	1	0	1	2		1	Behavior	Task specification	Stimuli			yes	FOR INCLUSION CRITERIA
+Was the block or event ordering deterministic or randomized? 			radio	deterministic | random | pseudorandom	randomization		18	1	1	0	1	3		1	Behavior	Task specification	Randomization
+Specify inter-trial distritbution and blocklength			textarea		deterministic		19	1	1	0	1			1	Behavior	Task specification	Randomization	deterministic
+Describe how and the criteria used to constrain the orders/timings			textarea		pseudo-random		20	1	1	0	1			1	Behavior	Task specification	Randomization	pseudo-random
+Order in which tasks / runs are conducted 			textarea		run_order		21	1	1	0	1	2		1	Behavior	Task specification	Run order
+Was the order of the stimuli counterbalanced (across runs, across participants)?			textarea		counterbalance		22	1	1	0	1			1	Behavior	Counterbalance
+How were responses collected?			radio	motor response (button boxes) |  motor response (other) |  other	response_collection		23	1	1	0	1	3		1	Behavior	Task specification	Response collection
+Stimuili database			textarea		stimuli_database		24	1	1	0	1			1	Behavior	Stimuli database
+Calibration procedure		including software (type, version and operating system) and hardware used, should also be described. Where relevant, the rationale for selecting a specific parameter (for example, contrast, harmonic content) should be indicated. If features were determined individually for each participant, the criteria and the psychophysical method used should be detailed.	textarea		calibration_procedure		25	1	1	0	1			1	Behavior	calibration procedure
+What sensory modality were used?			radio_multiple	visual | auditory | somatosensory | olfactory | others	modality_used		26	1	1	0	1			1	Behavior	Task specification	Modality used
+Specify the presentation hardware 			radio	back projection | in­ room display | goggles	visual_stimulus_presentation		27	modality_used.includes(0)	1	0	1	3		1	Behavior	Visual Stimulus presentation
+Stimuli apparent size	degrees of visual angle		float		visual_apparent_size		28	modality_used.includes(0)	1	0	1			1	Behavior	Visual Apparent size
+Viewing distance	meters		float		visual_viewing_distance		29	modality_used.includes(0)	1	0	1			1	Behavior	Visual viewing distance
+Clarity		For example, visual contrast, intensity...	textarea		visual_clarity		30	modality_used.includes(0)	1	0	1			1	Behavior	Visual clarity
+Color			textarea		visual_color		31	modality_used.includes(0)	1	0	1			1	Behavior	Visual color
+Site of the stimulation			radio	monocular | binocular	visual_site		32	modality_used.includes(0)	1	0	1			1	Behavior	Visual site
+Position in the visual field			radio	full-field | hemifield | quadrant	visual_position		33	modality_used.includes(0)	1	0	1			1	Behavior	Visual position
+Display device and method of projection		- refresh rate  - response time of the monitors.	textarea		visual_display_device		34	modality_used.includes(0)	1	0	1			1	Behavior	Visual display device
+Note if differences in intensity or contrast between different stimulus conditions			textarea		visual_other		35	modality_used.includes(0)	1	0	1			1	Behavior	Visual other
+Stimulus properties		For example, frequency content, duration, onset/offset envelope...	textarea		auditory_description		36	modality_used.includes(1)	1	0	1			1	Behavior	Auditory description
+Intensity		for example, relative to the subject’s individual hearing threshold, or as Sound Pressure Level [dB SPL]	textarea		auditory_intensity		37	modality_used.includes(1)	1	0	1			1	Behavior	Auditory intensity
+Ear of stimulation			radio_multiple	both | right | left	auditory_ear_of_stimulation		38	modality_used.includes(1)	1	0	1			1	Behavior	Auditory ear of stimulation
+Type, manufacturer and model of the delivery device		for example, ear inserts, panel speakers, etc.	textarea		auditory_type		39	modality_used.includes(1)	1	0	1			1	Behavior	Auditory type
+Further, the presence of contralateral ear masking stimulation, and its intensity, should be noted.			textarea		auditory_contralateral_masking		40	modality_used.includes(1)	1	0	1			1	Behavior	Auditory contralateral masking
+Stimulus type			radio_multiple	electrical | air puff | other	somatosensoty_type		41	modality_used.includes(2)	1	0	1			1	Behavior	Somatosensory type
+Stimulus characteristics		For example, duration, frequency...	textarea		somatosensory_characteristics		42	modality_used.includes(2)	1	0	1			1	Behavior	Somatosensory characteristics
+Location on the body with reference to anatomical landmarks		location on the body with reference to anatomical landmarks, and strength (ideally with respect to some sensory or motor threshold) should be reported. The distance between the site of peripheral stimulation and brain, and skin temperature are also important as they will affect response latency independent of the experimental manipulation.	textarea		somatosensory_location		43	modality_used.includes(2)	1	0	1			1	Behavior	Somatosensory location
+Was was the intensity of the stimulus? 		Ideally with respect to some sensory or motor threshold.	textarea		somatosensoty_intensity		44	modality_used.includes(2)	1	0	1			1	Behavior	Somatosensoty intensity
+Describe in detail any olfactory stimulation used.			textarea		olfactory		45	modality_used.includes(3)						1
+Describe in detail any other stimulation not involving auditory, visual or somatosensory stimuli			textarea		other_stimulation		46	modality_used.includes(4)	1	0	1			1	Behavior	other stimulation
+Was there any practice session?			radio	preset:boolean	practice_sessions		47	1	1	0	1			1	Behavior	Practice sessions
+Were feedbacks provided to the participant?			radio	preset:boolean	feedbacks		48	1	1	0	1			1	Behavior	Behavioral performance	Feedbacks
+			textarea		errors_handling		49	1	0	0	1			1	Behavior	Behavioral performance	Errors handling
+What variables were recorded?			radio_multiple	button press | response time | others	variables_recorded		50	1	1	0	1	3		1	Behavior	Behavioral performance	Variables recorded			yes	IMPORTANT TO DESCRIBE STUDIES OR FOR INCLUSION CRITERIA
+Summaries of behavior sufficient to establish that subjects were performing the task as expected.		For example, correct response rates and/or response times, summarized over subjects (for example, mean, range and/or standard deviation)	textarea		summary_statistics		51	1	0	0	1	3		1	Behavior	Behavioral performance	Summary statistics			yes	relevant for inclusion/exclusion criteria

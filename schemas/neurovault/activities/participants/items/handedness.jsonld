@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "handedness.jsonld",
+    "prefLabel": {
+        "en": "handedness"
+    },
+    "description": "handedness",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "2.5 - Handedness of subjects"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "right"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "left"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "both"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

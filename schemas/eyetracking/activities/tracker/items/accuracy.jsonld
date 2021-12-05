@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "The accuracy of the eye-tracker"
+        "en": "2.8 - The accuracy of the eye-tracker<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>0.4</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:float"

@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "hemodynamic_response_function.jsonld",
+    "prefLabel": {
+        "en": "hemodynamic response function"
+    },
+    "description": "hemodynamic response function",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "6.4 - Nature of HRF model"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "double gamma"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Fourrier set"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "FIR"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

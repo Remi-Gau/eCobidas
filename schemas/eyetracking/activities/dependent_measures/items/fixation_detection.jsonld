@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Event detection procedure"
+        "en": "10.3 - Event detection procedure<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>I-DT fixation algorithm</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
@@ -30,12 +30,6 @@
                     "en": "velocity"
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 2
             }
         ],
         "multipleChoice": false

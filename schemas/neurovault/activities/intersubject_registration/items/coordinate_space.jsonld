@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "coordinate_space.jsonld",
+    "prefLabel": {
+        "en": "coordinate space"
+    },
+    "description": "coordinate space",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "5.10 - Name of coordinate space for registration target"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "MNI"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Talairach"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "MNI2Tal"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

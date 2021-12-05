@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "The relative size of AOIs and Content within AOIs"
+        "en": "5.4 - The relative size of AOIs and Content within AOIs"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -42,12 +42,6 @@
                     "en": " not applicable (because no AOIs/ROIs were generated) "
                 },
                 "value": 3
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 4
             }
         ],
         "multipleChoice": false

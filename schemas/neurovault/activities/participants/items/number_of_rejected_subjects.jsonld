@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "number_of_rejected_subjects.jsonld",
+    "prefLabel": {
+        "en": "number of rejected subjects"
+    },
+    "description": "number of rejected subjects",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "2.8 - Number of subjects scanned but rejected from analysis"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

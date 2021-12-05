@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Are the detailed processing parameters specified?"
+        "en": "3.6 - Are the detailed processing parameters specified?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

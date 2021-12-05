@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "The type of eye-tracking device"
+        "en": "2.4 - The type of eye-tracking device"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

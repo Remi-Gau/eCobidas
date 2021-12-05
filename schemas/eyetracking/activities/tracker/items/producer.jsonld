@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "The producer of the eye-tracker"
+        "en": "2.2 - The producer of the eye-tracker"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/eyetracker_producer.jsonld"
 }

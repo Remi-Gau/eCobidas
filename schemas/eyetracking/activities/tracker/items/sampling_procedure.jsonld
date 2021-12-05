@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "The sampling procedure used"
+        "en": "2.6 - The sampling procedure used"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

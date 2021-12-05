@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "inclusion_exclusion_criteria.jsonld",
+    "prefLabel": {
+        "en": "inclusion exclusion criteria"
+    },
+    "description": "inclusion exclusion criteria",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "2.7 - Additional inclusion/exclusion criteria, if any.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Including specific sampling strategies that limit inclusion to a specific group, such as laboratory members.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

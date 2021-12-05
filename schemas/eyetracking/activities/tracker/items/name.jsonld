@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "The eye-tracker used"
+        "en": "2.1 - The eye-tracker used"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/eyetracker_model_name.jsonld"
 }

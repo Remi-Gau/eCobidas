@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Is the subset uniquely/clearly identified?"
+        "en": "2.8 - Is the subset uniquely/clearly identified?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

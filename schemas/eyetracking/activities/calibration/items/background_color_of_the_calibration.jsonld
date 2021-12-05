@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "The background color of the calibration"
+        "en": "7.2 - The background color of the calibration"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

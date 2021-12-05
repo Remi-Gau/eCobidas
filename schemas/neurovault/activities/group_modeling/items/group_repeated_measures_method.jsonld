@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "group_repeated_measures_method.jsonld",
+    "prefLabel": {
+        "en": "group repeated measures method"
+    },
+    "description": "group repeated measures method",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "7.7 - If multiple measurements per subject, list method to account for within subject correlation, exact assumptions made about correlation/variance"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}
