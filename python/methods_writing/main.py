@@ -6,7 +6,7 @@ from template_manager import *
 
 MODALITY = "anat"
 
-OUTFILE = "dataset_descriptor-" + MODALITY + ".md"
+OUTFILE = f"dataset_descriptor-{MODALITY}.md"
 
 INPUT_PATH = os.path.join("..", "..", "inputs", "bids_template", "sub-01", "ses-01")
 
@@ -17,7 +17,7 @@ def parse_arguments(MODALITY="base"):
     :return: The object with all the parsed arguments or their default value.
     """
 
-    report = MODALITY + "_report"
+    report = f"{MODALITY}_report"
 
     # Add the parsing of arguments
     parser = argparse.ArgumentParser(

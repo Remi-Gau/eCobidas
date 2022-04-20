@@ -205,11 +205,7 @@ def get_activity_preamble(items):
     preambles = items[not_nan]
     preamble = list(preambles["preamble"].unique())
 
-    if len(preamble) > 1 or not preamble:
-        preamble = ""
-    else:
-        preamble = preamble[0]
-
+    preamble = "" if len(preamble) > 1 or not preamble else preamble[0]
     return preamble
 
 

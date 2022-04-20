@@ -181,9 +181,7 @@ def define_choices(item, field_type: str, choices: list):
         "time range",
         "date",
     ]:
-        warnings.warn(
-            "Item " + item.get_name() + " has unknown field type: " + field_type
-        )
+        warnings.warn(f"Item {item.get_name()} has unknown field type: {field_type}")
         # TODO
         # - create a log file of unknown item types
 
