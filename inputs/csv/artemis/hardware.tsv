@@ -1,22 +1,22 @@
 sub_section	preamble	question	unit	details	field_type	choices	item_pref_label	visibility	item_order	include	mandatory	activity_pref_label	activity_order	BIDS_key	BIDS_file	BIDS_status	BIDS_key_for_unit
-Preamp peripherals	In this section you will describe hardware choices such as model of amplifier, cap and electrodes used in the study, triggers and additional devices used. 	How were the EEG electrodes placed?			radio	cap or net | single electrodes	electrode_placement_type	1	1	1	1	Hardware	3	CapManufacturersModelName	*_eeg.json		
-Preamp peripherals		What kind of cap or net did you use?			radio	preset:eeg_cap_types	electrode_placement_type_cap	electrode_placement_type == 0	2	1	1	Hardware	3	CapManufacturer	*_eeg.json		
-Preamp peripherals		Please specify your cap or net manufacturer			text		cap_other	electrode_placement_type_cap == 10	3	1	1	Hardware	3		*_eeg.json		
-Preamp peripherals		Please indicate the cap or net model.			text		cap_model	electrode_placement_type == 0	4	1	1	Hardware	3	CapManufacturersModelName	*_eeg.json		
-Preamp peripherals		Manufacturer of the electrodes			text		electrode_manufacturer	1	5	1	1	Hardware	3	ManufacturersModelName	*_eeg.json		
-Preamp peripherals		Model of electrodes			text		electrode_model	1	6	1	1	Hardware	3				
-Preamp peripherals		Did electrodes have pre-amplifiers?			radio	no - passive electrodes | yes - active electrodes	electrode_preamplifiers	1	7	1	1	Hardware	3				
-Preamp peripherals		What material were electrodes made of?			radio	Ag/Ag-Cl | tin | other	electrode_material	1	8	1	1	Hardware	3				
-Preamp peripherals		Specify the material that the electrodes were made of.			text		electrode_material_other	electrode_material == 2	9	1	1	Hardware	3				
-Preamp peripherals		Type of conductive medium used other than listed.			radio	conductive gel | saline solution | adhesive paste | none (dry electrodes) | other	conductive_medium	1	10	1	1	Hardware	3				
-Preamp peripherals		Conductive medium type other than listed.			text		conductive_medium_other	conductive_medium == 4	11	1	1	Hardware	3				
-Signal Amplifiers		Make (brand) of the amplifier			radio	preset:meeg_amplifier_brands	amplifier_make	1	12	1	1	Hardware	3	ManufacturersModelName			
-Signal Amplifiers		Specify which make (brand) of the amplifiers did you use.			text		amplifier_make_other	amplifier_make == 25	13	1	1	Hardware	3				
-Signal Amplifiers		Model of amplifier			text		amplifier_model	1	14	1	1	Hardware	3	ManufacturersModelName	*_eeg.json		
-Triggers		Source of triggers			radio	photo diode | auditory trigger/voice key | combination stim tracker | presentation software trigger | other	trigger_signal_source	1	15	1	1	Hardware	3		*_eeg.json		
-Triggers		Source of triggers other than listed.			text		trigger_signal_source_other	trigger_signal_source == 4	16	1	1	Hardware	3				
-Triggers		Describe your trigger signal input. Were your triggers delivered during acquisition (e.g., triggers from photo diode simultaneously recorded while presenting trials) or added after recording (e.g. after analysis of an audio recording of spoken responses)?			radio	Online, during acquisition | Added after recording 	trigger_signal_input_when	1	17	1	1	Hardware	3	TriggerChannelCount	*_eeg.json		
-Triggers		Were your triggers delivered to the amplifier or acquisition computer?			radio	Amplifier | Acquisition computer	trigger_signal_input_where	1	18	1	1	Hardware	3				
-Triggers		Were your triggers delivered via an analogue or digital signal format?			radio	Analogue (e.g., via a parallel port, serial port, or TCP/IP) | Digital (including serial port over a USB port (arduino, LabJack U3, or similar))	trigger_signal_input_how	1	19	1	1	Hardware	3				
-Other peripheral devices		Do you have other devices (eg. signal boxes, converters, other peripheral devices) to report?			radio	preset:boolean	other_peripheral_devices	1	20	1	1	Hardware	3				
-Other peripheral devices		Describe which additional devices you used, and specify their manufacturers and models.			textarea		other_peripheral_devices_details	other_peripheral_devices == 1	21	1	1	Hardware	3				
+Preamp peripherals	In this section you will describe hardware choices such as model of amplifier, cap and electrodes used in the study, triggers and additional devices used. 	How were the EEG electrodes placed?			radio	cap or net | single electrodes	electrode_placement_type	1	1	1	1	Hardware	3	CapManufacturersModelName	*_eeg.json
+Preamp peripherals		What kind of cap or net did you use?			radio	preset:eeg_cap_types	electrode_placement_type_cap	electrode_placement_type == 0	2	1	1	Hardware	3	CapManufacturer	*_eeg.json
+Preamp peripherals		Please specify your cap or net manufacturer			text		cap_other	electrode_placement_type_cap == 10	3	1	1	Hardware	3		*_eeg.json
+Preamp peripherals		Please indicate the cap or net model.			text		cap_model	electrode_placement_type == 0	4	1	1	Hardware	3	CapManufacturersModelName	*_eeg.json
+Preamp peripherals		Manufacturer of the electrodes			text		electrode_manufacturer	1	5	1	1	Hardware	3	ManufacturersModelName	*_eeg.json
+Preamp peripherals		Model of electrodes			text		electrode_model	1	6	1	1	Hardware	3
+Preamp peripherals		Did electrodes have pre-amplifiers?			radio	no - passive electrodes | yes - active electrodes	electrode_preamplifiers	1	7	1	1	Hardware	3
+Preamp peripherals		What material were electrodes made of?			radio	Ag/Ag-Cl | tin | other	electrode_material	1	8	1	1	Hardware	3
+Preamp peripherals		Specify the material that the electrodes were made of.			text		electrode_material_other	electrode_material == 2	9	1	1	Hardware	3
+Preamp peripherals		Type of conductive medium used other than listed.			radio	conductive gel | saline solution | adhesive paste | none (dry electrodes) | other	conductive_medium	1	10	1	1	Hardware	3
+Preamp peripherals		Conductive medium type other than listed.			text		conductive_medium_other	conductive_medium == 4	11	1	1	Hardware	3
+Signal Amplifiers		Make (brand) of the amplifier			radio	preset:meeg_amplifier_brands	amplifier_make	1	12	1	1	Hardware	3	ManufacturersModelName
+Signal Amplifiers		Specify which make (brand) of the amplifiers did you use.			text		amplifier_make_other	amplifier_make == 25	13	1	1	Hardware	3
+Signal Amplifiers		Model of amplifier			text		amplifier_model	1	14	1	1	Hardware	3	ManufacturersModelName	*_eeg.json
+Triggers		Source of triggers			radio	photo diode | auditory trigger/voice key | combination stim tracker | presentation software trigger | other	trigger_signal_source	1	15	1	1	Hardware	3		*_eeg.json
+Triggers		Source of triggers other than listed.			text		trigger_signal_source_other	trigger_signal_source == 4	16	1	1	Hardware	3
+Triggers		Describe your trigger signal input. Were your triggers delivered during acquisition (e.g., triggers from photo diode simultaneously recorded while presenting trials) or added after recording (e.g. after analysis of an audio recording of spoken responses)?			radio	Online, during acquisition | Added after recording 	trigger_signal_input_when	1	17	1	1	Hardware	3	TriggerChannelCount	*_eeg.json
+Triggers		Were your triggers delivered to the amplifier or acquisition computer?			radio	Amplifier | Acquisition computer	trigger_signal_input_where	1	18	1	1	Hardware	3
+Triggers		Were your triggers delivered via an analogue or digital signal format?			radio	Analogue (e.g., via a parallel port, serial port, or TCP/IP) | Digital (including serial port over a USB port (arduino, LabJack U3, or similar))	trigger_signal_input_how	1	19	1	1	Hardware	3
+Other peripheral devices		Do you have other devices (eg. signal boxes, converters, other peripheral devices) to report?			radio	preset:boolean	other_peripheral_devices	1	20	1	1	Hardware	3
+Other peripheral devices		Describe which additional devices you used, and specify their manufacturers and models.			textarea		other_peripheral_devices_details	other_peripheral_devices == 1	21	1	1	Hardware	3

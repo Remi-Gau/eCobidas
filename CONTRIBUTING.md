@@ -113,4 +113,3 @@ locally. Or type `make download_all` to download update all the spreadsheets.
 ## Visual studio code settings
 
 Load the `ecobidas.code-workspace` file in the `.vscode` folder.
-
