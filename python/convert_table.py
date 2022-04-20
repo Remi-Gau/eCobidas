@@ -31,7 +31,7 @@ def main():
 
         df = get_metatable()
 
-        tables_to_convert = df[df["schema"].str.match(r"(^" + pattern + ".*)") == True]
+        tables_to_convert = df[df["schema"].str.match(f"(^{pattern}.*)") == True]
         tables_name = list(tables_to_convert["basename"])
         tables_to_convert = list(tables_to_convert["schema"])
 
@@ -43,9 +43,9 @@ def main():
 
             for i, activity_idx in enumerate(activities):
 
-                id = str(activity_idx) + " - " + tables_name[j].upper()
+                id = f"{str(activity_idx)} - {tables_name[j].upper()}"
 
-                print("[bold red]" + id + "[/bold red]")
+                print(f"[bold red]{id}[/bold red]")
                 writer.writerow({"item": id})
 
                 this_activity = df["activity_order"] == activities[i]

@@ -11,7 +11,7 @@ from ..item import (
 )
 
 myPath = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, myPath + "/../")
+sys.path.insert(0, f"{myPath}/../")
 
 local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
 sys.path.insert(0, local_reproschema)
@@ -26,7 +26,7 @@ def test_slider_response():
     response_options = slider_response(choices)
 
     assert len(response_options.options["choices"]) == 4
-    assert response_options.options["choices"][1]["value"] == int(1)
+    assert response_options.options["choices"][1]["value"] == 1
     assert response_options.options["minValue"] == 0
     assert response_options.options["maxValue"] == 3
 

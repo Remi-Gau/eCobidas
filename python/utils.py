@@ -172,7 +172,7 @@ def print_item_to_table(item_id: str, this_item: dict, item_info: dict, sep=" ")
 
 def print_download(repo: str, branch: str, protocol):
 
-    repo = "https://raw.githubusercontent.com/" + repo
+    repo = f"https://raw.githubusercontent.com/{repo}"
 
     s = "/"
 
