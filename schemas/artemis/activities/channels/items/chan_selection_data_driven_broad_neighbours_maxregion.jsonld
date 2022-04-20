@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "chan_selection_data_driven_broad_neighbours_maxregion.jsonld",
+    "prefLabel": {
+        "en": "chan selection data driven broad neighbours maxregion"
+    },
+    "description": "chan selection data driven broad neighbours maxregion",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "7.14 - How did you select the channels around the peak effect for analysis?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "5.24 - What software did you use for downsampling?"
+        "en": "5.30 - What software did you use for downsampling?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_analysis_softwares.jsonld"
 }

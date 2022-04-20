@@ -1,0 +1,28 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "lat_measure_window_start.jsonld",
+    "prefLabel": {
+        "en": "lat measure window start"
+    },
+    "description": "lat measure window start",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "6.73 - Provide the start of the window which was used to measure latency. Measurement window: START"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ms"
+                },
+                "value": "ms"
+            }
+        ]
+    }
+}

@@ -12,7 +12,7 @@
         "inputType": "textarea"
     },
     "question": {
-        "en": "6.45 - How did you calculate midpoint latency other than listed?"
+        "en": "6.52 - How did you calculate midpoint latency other than listed?"
     },
     "responseOptions": {
         "valueType": "xsd:string",

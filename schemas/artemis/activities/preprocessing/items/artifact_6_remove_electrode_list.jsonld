@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_6_remove_electrode_list.jsonld",
+    "prefLabel": {
+        "en": "artifact 6 remove electrode list"
+    },
+    "description": "artifact 6 remove electrode list",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "5.166 - List of channels eliminated in step 6, separated by a semicolon and a space."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

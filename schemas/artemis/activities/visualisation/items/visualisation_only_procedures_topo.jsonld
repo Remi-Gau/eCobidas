@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "visualisation_only_procedures_topo.jsonld",
+    "prefLabel": {
+        "en": "visualisation only procedures topo"
+    },
+    "description": "visualisation only procedures topo",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "8.18 - Extra preprocessing: Did you apply any procedures for visualisation purposes only (not used for analysis, e.g., smoothing filter, different baseline)?"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
+}

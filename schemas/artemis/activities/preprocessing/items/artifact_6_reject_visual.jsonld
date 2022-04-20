@@ -1,0 +1,73 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_6_reject_visual.jsonld",
+    "prefLabel": {
+        "en": "artifact 6 reject visual"
+    },
+    "description": "artifact 6 reject visual",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "5.158 - Which artifacts did you remove using visual inspection in step 6?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 7,
+        "choices": [
+            {
+                "name": {
+                    "en": "blinks"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "saccades"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "other occular"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "cardiac"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "motion and other EMG noise"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "alpha waves"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "line noise"
+                },
+                "value": 6
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 7
+            }
+        ],
+        "multipleChoice": true
+    }
+}

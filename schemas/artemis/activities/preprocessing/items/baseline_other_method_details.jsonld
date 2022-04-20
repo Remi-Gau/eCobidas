@@ -12,7 +12,7 @@
         "inputType": "textarea"
     },
     "question": {
-        "en": "5.53 - Specify your baseline calculation method.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example: 1) mean across time points across trials, subtract for each channel separately 2) mean across time points, subtract for each trial for each channel separately 3) Keep baseline and use as covariate in GLM-like approach</details></div>"
+        "en": "5.213 - Specify your baseline calculation method other than subtraction of the mean of the baseline."
     },
     "responseOptions": {
         "valueType": "xsd:string",

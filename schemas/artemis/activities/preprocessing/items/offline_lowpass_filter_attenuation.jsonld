@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "5.19 - What is the attenuation achieved in the stopband after low-pass filtering?"
+        "en": "5.25 - What is the attenuation achieved in the stopband after low-pass filtering?"
     },
     "responseOptions": {
         "valueType": "xsd:float",

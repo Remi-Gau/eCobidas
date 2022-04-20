@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "6.14 - Provide the start of the a priori selected time window.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>for a priori time windows only: Please provide here the start of the window which was used to measure amplitude.</details></div>"
+        "en": "6.19 - Provide the start of the a priori selected time window for amplitude measurement."
     },
     "responseOptions": {
         "valueType": "xsd:float",

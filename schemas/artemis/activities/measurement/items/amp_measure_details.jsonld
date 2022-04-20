@@ -12,7 +12,7 @@
         "inputType": "textarea"
     },
     "question": {
-        "en": "6.40 - Describe the procedure for amplitude measurement calculation in detail sufficient for its replication."
+        "en": "6.12 - Describe the procedure for amplitude measurement calculation in detail sufficient for its replication."
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "6.17 - How broad were the windows that were consecutively tested?"
+        "en": "6.24 - How broad were the windows that were consecutively tested?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

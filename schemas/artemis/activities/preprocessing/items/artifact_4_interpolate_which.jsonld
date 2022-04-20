@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_4_interpolate_which.jsonld",
+    "prefLabel": {
+        "en": "artifact 4 interpolate which"
+    },
+    "description": "artifact 4 interpolate which",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "5.126 - How did you select channels for interpolation in step 4?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Describe the numerical threshold or function used to define which channels should be interpolated.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

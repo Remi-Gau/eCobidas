@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "4.27 - What was your acquisition sampling rate?"
+        "en": "4.29 - What was your acquisition sampling rate?"
     },
     "responseOptions": {
         "valueType": "xsd:float",

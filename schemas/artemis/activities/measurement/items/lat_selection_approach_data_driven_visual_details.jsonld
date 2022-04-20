@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "lat_selection_approach_data_driven_visual_details.jsonld",
+    "prefLabel": {
+        "en": "lat selection approach data driven visual details"
+    },
+    "description": "lat selection approach data driven visual details",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "6.70 - Describe which conditions or combinations of conditions you used for visual inspection."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

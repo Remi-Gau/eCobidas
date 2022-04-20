@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "6.49 - What fraction of window area was used to determine onset latency?"
+        "en": "6.59 - What fraction of window area was used to determine onset latency?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

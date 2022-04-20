@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_4_reject_numerical.jsonld",
+    "prefLabel": {
+        "en": "artifact 4 reject numerical"
+    },
+    "description": "artifact 4 reject numerical",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "5.114 - Describe your numerical criterion/function and provide numerical threshold(s) in step 4."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

@@ -12,7 +12,7 @@
         "inputType": "textarea"
     },
     "question": {
-        "en": "6.52 - Which conditions were subtracted from which? Specify how difference waves were constructed.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>nan</details></div>"
+        "en": "6.48 - Which conditions were subtracted from which? Specify how difference waves were constructed."
     },
     "responseOptions": {
         "valueType": "xsd:string",

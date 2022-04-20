@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "5.9 - What is the unit in which you report the high-pass filter cut-off?"
+        "en": "5.15 - Type of high-pass filter cut-off"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

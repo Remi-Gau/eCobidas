@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "6.26 - Select the procedure which was used to identify the start and end of the final time window.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>vis. inspecion across all conditions also known as flattened average approach, for more details see Gaspelin and Luck or  https://doi.org/10.1371/journal.pcbi.1008286</details></div>"
+        "en": "6.33 - Select the procedure which was used to identify start and end of the final time window.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>vis. inspection across all conditions also known as flattened average approach, for more details see Gaspelin and Luck or  https://doi.org/10.1371/journal.pcbi.1008286</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -21,25 +21,25 @@
         "choices": [
             {
                 "name": {
-                    "en": "visual inspection of grand averages in separate conditions across participants"
+                    "en": "visual inspection of waveforms (separate or collapsed conditions)"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "visual inspection of grand average collapsed across all conditions and participants"
+                    "en": "visual inspection of global field potentials"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "consecutive significant tests"
+                    "en": "significant effects on consecutive time points/short windows"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "window around a peak"
+                    "en": "time window around a peak"
                 },
                 "value": 3
             },

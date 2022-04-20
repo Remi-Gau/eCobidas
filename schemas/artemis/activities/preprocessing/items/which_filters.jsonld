@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "5.4 - Did you apply any of the following offline (digital) filters?"
+        "en": "5.10 - Did you apply any of the following offline (digital) filters?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>This does not include filtering within automated pipelines, if you had applied any.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "6.29 - By how many milliseconds did they overlap?"
+        "en": "6.38 - By how many milliseconds did they overlap?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

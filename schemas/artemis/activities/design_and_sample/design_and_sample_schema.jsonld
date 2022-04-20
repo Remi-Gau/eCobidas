@@ -9,7 +9,7 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=2021971006' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>Please specify the experimental design and sample in this section, such as experimental condition and trial number per condition, number of participants, participant exclusion and presenting software. </p>"
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=2021971006' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>In this section you will decrobe the experimental design and sample, such as experimental condition and trial number per condition, number of participants, participant exclusion and presenting software. </p>"
     },
     "ui": {
         "shuffle": false,

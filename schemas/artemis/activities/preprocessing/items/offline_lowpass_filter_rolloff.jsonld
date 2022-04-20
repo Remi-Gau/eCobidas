@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "5.18 - Specify the offline low-pass filter roll off."
+        "en": "5.24 - Specify the offline low-pass filter roll off."
     },
     "responseOptions": {
         "valueType": "xsd:float",

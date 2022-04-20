@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "6.44 - How did you calculate the midpoint of this latency?"
+        "en": "6.51 - How did you calculate the midpoint of this latency?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

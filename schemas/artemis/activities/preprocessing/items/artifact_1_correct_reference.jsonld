@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_1_correct_reference.jsonld",
+    "prefLabel": {
+        "en": "artifact 1 correct reference"
+    },
+    "description": "artifact 1 correct reference",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "5.48 - Reference to the artifact correction algorithm used in step 1"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

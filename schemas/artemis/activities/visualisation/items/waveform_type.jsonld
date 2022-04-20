@@ -9,10 +9,10 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
-        "en": "8.4 - What does the data represent?"
+        "en": "8.4 - What do the data represent?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -33,7 +33,7 @@
             },
             {
                 "name": {
-                    "en": "both"
+                    "en": "both single and difference waves"
                 },
                 "value": 2
             },

@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "6.48 - What fraction of peak amplitude was used to determine onset latency?"
+        "en": "6.58 - What fraction of peak amplitude was used to determine onset latency?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

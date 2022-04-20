@@ -21,19 +21,19 @@
         "choices": [
             {
                 "name": {
-                    "en": "yes"
+                    "en": "no"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "no"
+                    "en": "yes"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "unsure"
+                    "en": "final decision not made yet"
                 },
                 "value": 2
             }

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "6.38 - What method did you use for peak calculation?"
+        "en": "6.10 - What method did you use for peak calculation?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

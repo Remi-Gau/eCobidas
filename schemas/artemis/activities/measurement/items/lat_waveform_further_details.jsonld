@@ -12,7 +12,7 @@
         "inputType": "textarea"
     },
     "question": {
-        "en": "6.53 - How did you calculate your waveforms for analysis? Describe in detail sufficient to allow replication.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>nan</details></div>"
+        "en": "6.49 - How did you calculate your waveforms for analysis? Describe in detail sufficient to allow replication."
     },
     "responseOptions": {
         "valueType": "xsd:string",

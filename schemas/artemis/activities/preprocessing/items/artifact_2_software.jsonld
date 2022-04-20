@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_2_software.jsonld",
+    "prefLabel": {
+        "en": "artifact 2 software"
+    },
+    "description": "artifact 2 software",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "5.62 - What software did you use for artifact removal in step 2?"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_analysis_softwares.jsonld"
+}

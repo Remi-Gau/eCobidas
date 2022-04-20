@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "preprocessing_pipeline_version.jsonld",
+    "prefLabel": {
+        "en": "preprocessing pipeline version"
+    },
+    "description": "preprocessing pipeline version",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "5.8 - Version of the automated pre-processing pipeline, if applicable"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

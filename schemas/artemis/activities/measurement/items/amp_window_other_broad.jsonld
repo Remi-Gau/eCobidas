@@ -12,7 +12,7 @@
         "inputType": "textarea"
     },
     "question": {
-        "en": "6.23 - Describe your method of selection of the initial time window used to measure amplitude other than listed."
+        "en": "6.30 - Describe your method of selection of the initial time window used to measure amplitude other than listed."
     },
     "responseOptions": {
         "valueType": "xsd:string",

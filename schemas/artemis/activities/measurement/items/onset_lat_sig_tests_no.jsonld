@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "onset_lat_sig_tests_no.jsonld",
+    "prefLabel": {
+        "en": "onset lat sig tests no"
+    },
+    "description": "onset lat sig tests no",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "6.57 - How many consecutive significant tests were required to identify an effect?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

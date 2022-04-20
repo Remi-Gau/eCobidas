@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "5.45 - What was the event type relative to which epochs were defined?"
+        "en": "5.204 - What was the event type relative to which epochs were defined?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

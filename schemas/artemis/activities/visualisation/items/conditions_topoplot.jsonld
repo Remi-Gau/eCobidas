@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "conditions_topoplot.jsonld",
+    "prefLabel": {
+        "en": "conditions topoplot"
+    },
+    "description": "conditions topoplot",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "8.20 - What do the data represent?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "single conditions"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "difference waves"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "both single and difference wave conditions"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "4.23 - Specify the high-pass filter roll off used during recording"
+        "en": "4.24 - Specify the high-pass filter roll off used during recording"
     },
     "responseOptions": {
         "valueType": "xsd:float",

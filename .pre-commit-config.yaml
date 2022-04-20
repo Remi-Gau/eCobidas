@@ -7,14 +7,14 @@ repos:
     -   id: trailing-whitespace
     -   id: check-yaml
     -   id: check-added-large-files
-    # -   id: end-of-file-fixer (removed until jsonld output does not add extra end lines)
+    -   id: end-of-file-fixer (removed until jsonld output does not add extra end lines)
 
 -   repo: https://github.com/psf/black
-    rev: 21.11b1
+    rev: 22.3.0
     hooks:
     -   id: black
 
 -   repo: https://github.com/ikamensh/flynt/
-    rev: '0.69'
+    rev: '0.76'
     hooks:
     -   id: flynt

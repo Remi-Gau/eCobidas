@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "5.49 - Specify software version if applicable, script language if \"custom script\" was selected, and software name and version if \"other\" was selected."
+        "en": "5.209 - Specify software version if applicable, script language if \"custom script\" was selected, and software name and version if \"other\" was selected."
     },
     "responseOptions": {
         "valueType": "xsd:string",
