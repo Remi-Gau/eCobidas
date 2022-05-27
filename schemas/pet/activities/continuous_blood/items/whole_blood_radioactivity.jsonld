@@ -12,10 +12,18 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Whole blood radioactivity"
+        "en": "6.30 - Whole blood radioactivity"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 3000,
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "MBq "
+                },
+                "value": "MBq "
+            }
+        ]
     }
 }

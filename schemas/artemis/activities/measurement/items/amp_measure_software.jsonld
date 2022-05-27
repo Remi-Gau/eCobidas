@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Amplitude measurement software"
+        "en": "6.3 - Amplitude measurement software"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_analysis_softwares.jsonld"
 }

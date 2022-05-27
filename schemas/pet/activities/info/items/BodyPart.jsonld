@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Name of the organ / body region scanned."
+        "en": "1.5 - Name of the organ / body region scanned."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -87,7 +87,7 @@
             },
             {
                 "name": {
-                    "en": "lung "
+                    "en": "lung"
                 },
                 "value": 11
             },

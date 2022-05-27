@@ -3,18 +3,26 @@
     "@type": "reproschema:Field",
     "@id": "offline_lowpass_filter_cutoff.jsonld",
     "prefLabel": {
-        "en": "offline_lowpass_filter_cutoff"
+        "en": "offline lowpass filter cutoff"
     },
-    "description": "offline_lowpass_filter_cutoff",
+    "description": "offline lowpass filter cutoff",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "float"
     },
     "question": {
-        "en": "Specify the offline low-pass filter cut-off (Hz)"
+        "en": "5.23 - Specify the offline low-pass filter cut-off."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Hz"
+                },
+                "value": "Hz"
+            }
+        ]
     }
 }

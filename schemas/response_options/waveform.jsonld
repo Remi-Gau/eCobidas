@@ -1,0 +1,34 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:ResponseOption",
+    "@id": "waveform.jsonld",
+    "valueType": "xsd:integer",
+    "minValue": 0,
+    "maxValue": 3,
+    "choices": [
+        {
+            "name": {
+                "en": "single waves (one condition)"
+            },
+            "value": 0
+        },
+        {
+            "name": {
+                "en": "difference waves"
+            },
+            "value": 1
+        },
+        {
+            "name": {
+                "en": "waves obtained using transformation of raw data (e.g. sPCA, source localization)"
+            },
+            "value": 2
+        },
+        {
+            "name": {
+                "en": "other"
+            },
+            "value": 3
+        }
+    ]
+}

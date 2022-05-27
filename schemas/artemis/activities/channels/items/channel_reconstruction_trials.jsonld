@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "channel_reconstruction_trials.jsonld",
+    "prefLabel": {
+        "en": "channel reconstruction trials"
+    },
+    "description": "channel reconstruction trials",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "7.21 - Explain your missing data reconstruction for a subset of trials (including order of operations, if relevant)<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Data from some some trials was reconstructed but not others. For example, in 10% of trials electrode FP1 was noisy and was replaced by the signal from FP2. This problem affected 4 participants.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Time to which molar radioactivity measurement above applies."
+        "en": "3.8 - Time to which molar radioactivity measurement above applies."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
@@ -30,12 +30,6 @@
                     "en": "scan start"
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 2
             }
         ],
         "multipleChoice": false

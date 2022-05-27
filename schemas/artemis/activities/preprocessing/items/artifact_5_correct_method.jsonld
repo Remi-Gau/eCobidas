@@ -1,0 +1,67 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_5_correct_method.jsonld",
+    "prefLabel": {
+        "en": "artifact 5 correct method"
+    },
+    "description": "artifact 5 correct method",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "5.139 - Which general method of artifact correction did you use in step 5?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 6,
+        "choices": [
+            {
+                "name": {
+                    "en": "regression-based approach (e.g., Gratton et al., 1983, Elbert et al., 1985)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "spatial-filter-based approach (e.g., Dale, 1994)"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "ICA-based approaches"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "wavelet-based"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "wavelet-enhanced ICA (e.g., Khushaba et al, 2013)"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "multiple-source-analysis-based approaches (e.g., MSEC by Berg & Scherg, 1994)"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 6
+            }
+        ],
+        "multipleChoice": false
+    }
+}

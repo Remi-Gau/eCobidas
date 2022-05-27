@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "From which repository(s) is this data listed as being available from (i.e. NITRC or OpenNeuro, etc.)?"
+        "en": "2.3 - From which repository(s) is this data listed as being available from (i.e. NITRC or OpenNeuro, etc.)?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 8,
+        "maxValue": 7,
         "choices": [
             {
                 "name": {
@@ -66,12 +66,6 @@
                     "en": "LORIS"
                 },
                 "value": 7
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 8
             }
         ],
         "multipleChoice": false

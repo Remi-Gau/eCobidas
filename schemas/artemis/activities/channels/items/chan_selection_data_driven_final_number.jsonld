@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "chan_selection_data_driven_final_number.jsonld",
+    "prefLabel": {
+        "en": "chan selection data driven final number"
+    },
+    "description": "chan selection data driven final number",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "7.24 - Number of channels selected in this step"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer"
+    }
+}

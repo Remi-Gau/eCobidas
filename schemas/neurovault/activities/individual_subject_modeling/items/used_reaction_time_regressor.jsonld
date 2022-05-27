@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Was a reaction time regressor included?"
+        "en": "6.8 - Was a reaction time regressor included?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

@@ -3,18 +3,26 @@
     "@type": "reproschema:Field",
     "@id": "offline_highpass_filter_rolloff.jsonld",
     "prefLabel": {
-        "en": "offline_highpass_filter_rolloff"
+        "en": "offline highpass filter rolloff"
     },
-    "description": "offline_highpass_filter_rolloff",
+    "description": "offline highpass filter rolloff",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "float"
     },
     "question": {
-        "en": "Specify the offline high-pass filter roll off (dB/octave)"
+        "en": "5.17 - Specify the offline high-pass filter roll off."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "dB/octave"
+                },
+                "value": "dB/octave"
+            }
+        ]
     }
 }

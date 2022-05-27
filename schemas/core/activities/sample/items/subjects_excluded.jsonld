@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "Number of subjects excluded after consenting but before data acquisition"
+        "en": "1.8 - Number of subjects excluded after consenting but before data acquisition<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Participants who could not be scanned due to anxiety, presence of metal implants</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

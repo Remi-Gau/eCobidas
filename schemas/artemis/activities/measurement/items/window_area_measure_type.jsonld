@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "window_area_measure_type.jsonld",
+    "prefLabel": {
+        "en": "window area measure type"
+    },
+    "description": "window area measure type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "6.11 - Which window area measure did you use?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "rectified"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "signed"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "integral"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

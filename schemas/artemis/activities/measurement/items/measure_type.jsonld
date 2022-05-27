@@ -12,12 +12,12 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Select an type of measurement"
+        "en": "6.2 - Select the types of measurements you conducted."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
@@ -30,12 +30,6 @@
                     "en": "latency"
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 2
             }
         ],
         "multipleChoice": true

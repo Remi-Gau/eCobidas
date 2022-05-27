@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Noise smoothness for statistical inference; this is the estimated smoothness used with Random Field Theory or a simulation-based inference method."
+        "en": "8.3 - Noise smoothness for statistical inference<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>This is the estimated smoothness used with Random Field Theory or a simulation-based inference method.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:float"

@@ -18,15 +18,9 @@ def test_make_preamble():
 
     expected = (
         "<p>"
-        + "<a href='"
-        + "google_sheet"
-        + "' target='_blank' > Source </a> | "
-        + "<a href='"
-        + "github_repo"
-        + "' target='_blank' > Github repository </a> | "
-        + "<a href='"
-        + "citation"
-        + "' target='_blank' > Reference </a>"
+        + "<a href='google_sheet' target='_blank' > Source </a> | "
+        + "<a href='github_repo' target='_blank' > Github repository </a> | "
+        + "<a href='citation' target='_blank' > Reference </a>"
         + "<br><br>"
         + "this is the preamble"
         + "</p>"

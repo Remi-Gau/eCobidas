@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Specification of stimulus-synchronization latencies"
+        "en": "2.11 - Specification of stimulus-synchronization latencies<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Delay between actual onset of a new stimulus and recorded onset of the stimulus; 0.1 </details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:float"

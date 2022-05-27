@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Type of design"
+        "en": "1.1 - Type of design"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 2,
         "choices": [
             {
                 "name": {
@@ -36,12 +36,6 @@
                     "en": "hybrid block/event"
                 },
                 "value": 2
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 3
             }
         ],
         "multipleChoice": false

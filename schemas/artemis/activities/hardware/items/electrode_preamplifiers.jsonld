@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "electrode_preamplifiers.jsonld",
+    "prefLabel": {
+        "en": "electrode preamplifiers"
+    },
+    "description": "electrode preamplifiers",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "3.7 - Did electrodes have pre-amplifiers?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "no - passive electrodes"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "yes - active electrodes"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

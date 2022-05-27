@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Specify the instructions given to subjects for each condition"
+        "en": "1.16 - Specify the instructions given to subjects for each condition<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Ideally copy the exact text. For resting \u00adstate, be sure to indicate eyes\u00ad closed, eyes\u00ad open, any fixation. Describe if the subjects received any rewards during the task.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

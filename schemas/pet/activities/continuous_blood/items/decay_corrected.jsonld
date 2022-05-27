@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "decay corrected"
+        "en": "6.25 - decay corrected"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

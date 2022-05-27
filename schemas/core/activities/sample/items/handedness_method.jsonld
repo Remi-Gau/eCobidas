@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Were there any screening criteria for handedness?"
+        "en": "1.24 - Were there any screening criteria for handedness?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -27,13 +27,13 @@
             },
             {
                 "name": {
-                    "en": "EHI"
+                    "en": "Edinburgh Handedness Inventory"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "Other"
                 },
                 "value": 2
             }

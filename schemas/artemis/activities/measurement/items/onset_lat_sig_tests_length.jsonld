@@ -1,0 +1,28 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "onset_lat_sig_tests_length.jsonld",
+    "prefLabel": {
+        "en": "onset lat sig tests length"
+    },
+    "description": "onset lat sig tests length",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "6.54 - How broad were the windows that were consecutively tested?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ms"
+                },
+                "value": "ms"
+            }
+        ]
+    }
+}

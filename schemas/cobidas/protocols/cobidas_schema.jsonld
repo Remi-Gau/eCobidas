@@ -1,7 +1,7 @@
 {
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Protocol",
-    "@id": "cobidas_mri_schema.jsonld",
+    "@id": "cobidas_schema.jsonld",
     "prefLabel": {
         "en": "COBIDAS MRI"
     },

@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Duration of stimulus presentation"
+        "en": "6.4 - Duration of stimulus presentation<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Self-paced by the participant</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

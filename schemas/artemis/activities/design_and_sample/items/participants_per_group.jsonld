@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "participants_per_group.jsonld",
     "prefLabel": {
-        "en": "participants_per_group"
+        "en": "participants per group"
     },
-    "description": "participants_per_group",
+    "description": "participants per group",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "How many participants did each experimental/comparison groups feature? "
+        "en": "2.6 - How many participants did each group have after exclusion?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Input numeric values in the same order in which groups were listed in the previous section. Values should be separated by semicolon and a space.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

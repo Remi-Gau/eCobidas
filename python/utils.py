@@ -1,5 +1,6 @@
-import os, warnings
+import os
 import pandas as pd
+from rich import print
 
 
 def get_root_dir():
@@ -35,7 +36,7 @@ def list_preset_responses():
     return list(response_options["subdir"])
 
 
-def get_landing_page(schema_info):
+def get_landing_page(schema_info: dict):
 
     DEFAULT = ["README_eCOBIDAS-en.md"]
 
@@ -58,7 +59,7 @@ def get_schema_info(this_schema):
     return df[is_this_schema]
 
 
-def get_input_file(schema_info):
+def get_input_file(schema_info: dict):
 
     input_dir = get_root_dir()
     dir = schema_info["dir"].tolist()[0]
@@ -83,6 +84,8 @@ def load_data(this_schema):
 
         input_file = this_schema
 
+    print("[bold green]" + "Loading:" + input_file + "[/bold green]" + "\n")
+
     return pd.read_csv(input_file, sep="\t")
 
 
@@ -96,19 +99,21 @@ def convert_to_int(df_field):
     return int(df_field.tolist()[0])
 
 
-def snake_case(input):
+def snake_case(input: str):
 
     return input.replace("\n", "").replace(" ", "_").replace(",", "")
 
 
-def print_info(type, pref_label, file):
+def print_info(type: str, pref_label: str, file: str):
 
     print(
         dashed_line()
         + "\n"
+        + "[bold red]"
         + type.upper()
         + ": "
         + pref_label
+        + "[/bold red]"
         + "\n"
         + file
         + "\n"
@@ -116,22 +121,58 @@ def print_info(type, pref_label, file):
     )
 
 
-def print_item_info(activity_idx, item_idx, item_info):
+def print_item_info(activity_idx, item_idx, item_info: dict):
 
-    print("Activity: " + str(activity_idx) + " Item: " + str(item_idx))
+    print(f"Activity: {int(activity_idx)} Item: {int(item_idx)}")
     print(
-        "  "
-        + item_info["name"]
-        + "   "
-        + item_info["field_type"]
-        + "   "
-        + str(item_info["visibility"])
+        f"   {item_info['name']}   {item_info['field_type']}   {item_info['visibility']}"
     )
 
 
-def print_download(repo, branch, protocol):
+def print_item_to_table(item_id: str, this_item: dict, item_info: dict, sep=" "):
 
-    repo = "https://raw.githubusercontent.com/" + repo
+    details = convert_to_str(this_item["details"])
+    if isinstance(details, float):
+        details = [str(details)]
+    if details == ["nan"]:
+        details = ""
+
+    choices = item_info["choices"]
+    if isinstance(choices, float):
+        choices = [str(choices)]
+    if "preset:boolean" in choices:
+        choices = ["yes", "no"]
+    if isinstance(choices, list):
+        choices = "- " + "\n- ".join(choices)
+    if choices == "- nan":
+        choices = ""
+
+    dict_to_print = {
+        "item": item_id,
+        "field": item_info["pref_label"],
+        "question": item_info["question"],
+        "options": choices,
+        "instructions": details,
+    }
+
+    print(
+        dict_to_print["item"]
+        + sep
+        + dict_to_print["field"]
+        + sep
+        + dict_to_print["question"]
+        + sep
+        + dict_to_print["options"]
+        + sep
+        + dict_to_print["instructions"]
+    )
+
+    return dict_to_print
+
+
+def print_download(repo: str, branch: str, protocol):
+
+    repo = f"https://raw.githubusercontent.com/{repo}"
 
     s = "/"
 

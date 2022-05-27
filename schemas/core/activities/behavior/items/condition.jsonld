@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Enumerate the conditions and fully describe and reference each."
+        "en": "1.15 - Enumerate the conditions and fully describe and reference each.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Consider using a shorthand name, for example, AUDSTIM, VISSTIM, to refer to each condition, to clarify the distinction between a specific modelled effect and a psychological construct. Naming should reflect the distinction between instruction periods and actual stimuli, and between single parameters and contrasts of parameters</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

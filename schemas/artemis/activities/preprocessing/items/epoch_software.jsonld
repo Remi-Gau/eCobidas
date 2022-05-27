@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "epoch_software.jsonld",
     "prefLabel": {
-        "en": "Epoch software"
+        "en": "epoch software"
     },
-    "description": "Epoch software",
+    "description": "epoch software",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
-        "en": "Which analysis software do you use for epoching EEG data?"
+        "en": "5.201 - Which analysis software did you use for epoching EEG data?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_analysis_softwares.jsonld"
 }

@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "electrode_location_naming_convention_other.jsonld",
+    "prefLabel": {
+        "en": "electrode location naming convention other"
+    },
+    "description": "electrode location naming convention other",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "4.9 - Specify the electrode placement/naming convention used<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Either the name of a standardized placement system (for example, 10-20) or a list of standardized electrode names (for example, [Cz, Pz])</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

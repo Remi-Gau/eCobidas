@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Ability of a repository to work in a multi-database environment, availability of API\u2019s and ability to connect to analysis pipelines"
+        "en": "1.15 - Ability of a repository to work in a multi-database environment, availability of API\u2019s and ability to connect to analysis pipelines"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

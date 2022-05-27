@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "other_peripheral_devices.jsonld",
     "prefLabel": {
-        "en": "Other peripheral devices"
+        "en": "other peripheral devices"
     },
-    "description": "Other peripheral devices",
+    "description": "other peripheral devices",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "Do you have other devices (eg. signal boxes, converters, other peripheral devices) to report?"
+        "en": "3.20 - Do you have other devices (eg. signal boxes, converters, other peripheral devices) to report?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

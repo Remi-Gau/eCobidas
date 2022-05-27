@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Specifics of stimuli used in each run."
+        "en": "1.17 - Specifics of stimuli used in each run.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br> For example, the unique number of stimuli used, and whether/how stimuli were repeated over trials or conditions</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

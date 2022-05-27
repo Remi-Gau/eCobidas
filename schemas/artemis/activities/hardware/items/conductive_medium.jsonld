@@ -3,21 +3,21 @@
     "@type": "reproschema:Field",
     "@id": "conductive_medium.jsonld",
     "prefLabel": {
-        "en": "Conductive medium"
+        "en": "conductive medium"
     },
-    "description": "Conductive medium",
+    "description": "conductive medium",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "Type of conductive medium used"
+        "en": "3.10 - Type of conductive medium used other than listed."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 4,
         "choices": [
             {
                 "name": {
@@ -39,9 +39,15 @@
             },
             {
                 "name": {
-                    "en": "none"
+                    "en": "none (dry electrodes)"
                 },
                 "value": 3
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 4
             }
         ],
         "multipleChoice": false

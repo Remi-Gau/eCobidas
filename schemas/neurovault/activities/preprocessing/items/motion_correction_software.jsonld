@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Specify software used for motion correction if different from the main package"
+        "en": "4.10 - Specify software used for motion correction if different from the main package"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/mri_softwares.jsonld"
 }

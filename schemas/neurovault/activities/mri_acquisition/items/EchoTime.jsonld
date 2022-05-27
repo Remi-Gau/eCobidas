@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Echo time (TE) in milliseconds"
+        "en": "3.13 - Echo time (TE)"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Milliseconds"
+                },
+                "value": "Milliseconds"
+            }
+        ]
     }
 }

@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Education level"
+        "en": "1.21 - Education level<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Education is essential for studies comparing patient and control groups\u037e Total years of education; Highest qualification</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

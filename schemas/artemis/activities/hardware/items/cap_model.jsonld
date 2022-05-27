@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "cap_model.jsonld",
     "prefLabel": {
-        "en": "Cap model"
+        "en": "cap model"
     },
-    "description": "Cap model",
+    "description": "cap model",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please indicate the cap or net model."
+        "en": "3.4 - Please indicate the cap or net model."
     },
     "responseOptions": {
         "valueType": "xsd:string",

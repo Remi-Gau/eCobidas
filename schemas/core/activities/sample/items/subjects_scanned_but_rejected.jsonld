@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "Number of subjects scanned but rejected from analysis"
+        "en": "1.15 - Number of subjects scanned but rejected from analysis<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Participants with excessive head motion; unfinished runs due to time/anxiety; technical errors</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

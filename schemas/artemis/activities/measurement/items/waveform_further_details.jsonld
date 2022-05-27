@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Please specify details of how the waveforms were constructed in the further clarification text. The details should be sufficient to allow replication."
+        "en": "6.7 - How did you calculate your waveforms for analysis? Describe in detail sufficient to allow replication."
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

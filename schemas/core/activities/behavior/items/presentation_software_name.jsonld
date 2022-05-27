@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "What was the software used for stimuli presentation?"
+        "en": "1.11 - What was the software used for stimuli presentation?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/stimulus_presentation_softwares.jsonld"
 }

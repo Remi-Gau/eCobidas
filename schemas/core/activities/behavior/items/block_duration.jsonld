@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "What was the duration of one block? (in seconds)"
+        "en": "1.4 - What was the duration of one block?"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "seconds"
+                },
+                "value": "seconds"
+            }
+        ]
     }
 }

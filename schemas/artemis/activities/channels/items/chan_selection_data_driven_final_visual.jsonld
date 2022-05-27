@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "chan_selection_data_driven_final_visual.jsonld",
+    "prefLabel": {
+        "en": "chan selection data driven final visual"
+    },
+    "description": "chan selection data driven final visual",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "7.19 - Which  experimental conditions did you inspect visually to select the final list of channels for this effect?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "all conditions separately"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "all conditions collapsed into one average waveform"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

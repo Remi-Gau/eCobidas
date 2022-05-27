@@ -1,0 +1,355 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "visualisation_schema.jsonld",
+    "prefLabel": {
+        "en": "visualisation"
+    },
+    "description": "visualisation",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=1616564910' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>In this section, you will describe your plots and their parameters.</p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/visualisation_type.jsonld",
+            "items/visualisation_only_procedures_line.jsonld",
+            "items/specify_visualisation_proc_line.jsonld",
+            "items/waveform_type.jsonld",
+            "items/waveform_type_single_conditions.jsonld",
+            "items/waveform_type_difference_conditions.jsonld",
+            "items/waveform_type_other_conditions.jsonld",
+            "items/waveform_channel_averaging.jsonld",
+            "items/waveform_which_channels.jsonld",
+            "items/waveform_selected_channels_list.jsonld",
+            "items/waveform_selected_channels_rationale.jsonld",
+            "items/waveform_channel_averaging_details.jsonld",
+            "items/waveform_beginning.jsonld",
+            "items/waveform_end.jsonld",
+            "items/whole_epoch.jsonld",
+            "items/waveform_selected_time_rationale.jsonld",
+            "items/waveform_additional.jsonld",
+            "items/visualisation_only_procedures_topo.jsonld",
+            "items/specify_visualisation_proc_topo.jsonld",
+            "items/conditions_topoplot.jsonld",
+            "items/conditions_topoplot_single_conditions.jsonld",
+            "items/conditions_topoplot_difference_conditions.jsonld",
+            "items/conditions_topoplot_other_conditions.jsonld",
+            "items/topoplot_type.jsonld",
+            "items/topoplot_which_channels.jsonld",
+            "items/topolot_selected_channels_list.jsonld",
+            "items/topoplot_selected_channels_rationale.jsonld",
+            "items/topoplot_window_beginning.jsonld",
+            "items/topoplot_window_end.jsonld",
+            "items/topoplot_selected_time_rationale.jsonld",
+            "items/topoplot_subdivision.jsonld",
+            "items/topoplot_subdivision_list.jsonld",
+            "items/plot_other.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "visualisation_type",
+                "isAbout": "items/visualisation_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visualisation_only_procedures_line",
+                "isAbout": "items/visualisation_only_procedures_line.jsonld",
+                "isVis": "visualisation_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "specify_visualisation_proc_line",
+                "isAbout": "items/specify_visualisation_proc_line.jsonld",
+                "isVis": "visualisation_only_procedures_line == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_type",
+                "isAbout": "items/waveform_type.jsonld",
+                "isVis": "visualisation_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_type_single_conditions",
+                "isAbout": "items/waveform_type_single_conditions.jsonld",
+                "isVis": "[0,2].includes(waveform_type)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_type_difference_conditions",
+                "isAbout": "items/waveform_type_difference_conditions.jsonld",
+                "isVis": "[1,2].includes(waveform_type)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_type_other_conditions",
+                "isAbout": "items/waveform_type_other_conditions.jsonld",
+                "isVis": "waveform_type == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_channel_averaging",
+                "isAbout": "items/waveform_channel_averaging.jsonld",
+                "isVis": "visualisation_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_which_channels",
+                "isAbout": "items/waveform_which_channels.jsonld",
+                "isVis": "visualisation_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_selected_channels_list",
+                "isAbout": "items/waveform_selected_channels_list.jsonld",
+                "isVis": "waveform_which_channels == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_selected_channels_rationale",
+                "isAbout": "items/waveform_selected_channels_rationale.jsonld",
+                "isVis": "waveform_which_channels == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_channel_averaging_details",
+                "isAbout": "items/waveform_channel_averaging_details.jsonld",
+                "isVis": "waveform_channel_averaging == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_beginning",
+                "isAbout": "items/waveform_beginning.jsonld",
+                "isVis": "visualisation_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_end",
+                "isAbout": "items/waveform_end.jsonld",
+                "isVis": "visualisation_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "whole_epoch",
+                "isAbout": "items/whole_epoch.jsonld",
+                "isVis": "visualisation_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_selected_time_rationale",
+                "isAbout": "items/waveform_selected_time_rationale.jsonld",
+                "isVis": "whole_epoch == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "waveform_additional",
+                "isAbout": "items/waveform_additional.jsonld",
+                "isVis": "visualisation_type == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visualisation_only_procedures_topo",
+                "isAbout": "items/visualisation_only_procedures_topo.jsonld",
+                "isVis": "visualisation_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "specify_visualisation_proc_topo",
+                "isAbout": "items/specify_visualisation_proc_topo.jsonld",
+                "isVis": "visualisation_only_procedures_topo == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "conditions_topoplot",
+                "isAbout": "items/conditions_topoplot.jsonld",
+                "isVis": "visualisation_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "conditions_topoplot_single_conditions",
+                "isAbout": "items/conditions_topoplot_single_conditions.jsonld",
+                "isVis": "[0,2].includes(conditions_topoplot)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "conditions_topoplot_difference_conditions",
+                "isAbout": "items/conditions_topoplot_difference_conditions.jsonld",
+                "isVis": "[1,2].includes(conditions_topoplot)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "conditions_topoplot_other_conditions",
+                "isAbout": "items/conditions_topoplot_other_conditions.jsonld",
+                "isVis": "conditions_topoplot == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "topoplot_type",
+                "isAbout": "items/topoplot_type.jsonld",
+                "isVis": "visualisation_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "topoplot_which_channels",
+                "isAbout": "items/topoplot_which_channels.jsonld",
+                "isVis": "visualisation_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "topolot_selected_channels_list",
+                "isAbout": "items/topolot_selected_channels_list.jsonld",
+                "isVis": "topoplot_which_channels == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "topoplot_selected_channels_rationale",
+                "isAbout": "items/topoplot_selected_channels_rationale.jsonld",
+                "isVis": "topoplot_which_channels == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "topoplot_window_beginning",
+                "isAbout": "items/topoplot_window_beginning.jsonld",
+                "isVis": "visualisation_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "topoplot_window_end",
+                "isAbout": "items/topoplot_window_end.jsonld",
+                "isVis": "visualisation_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "topoplot_selected_time_rationale",
+                "isAbout": "items/topoplot_selected_time_rationale.jsonld",
+                "isVis": "visualisation_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "topoplot_subdivision",
+                "isAbout": "items/topoplot_subdivision.jsonld",
+                "isVis": "visualisation_type == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "topoplot_subdivision_list",
+                "isAbout": "items/topoplot_subdivision_list.jsonld",
+                "isVis": "topoplot_subdivision == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "plot_other",
+                "isAbout": "items/plot_other.jsonld",
+                "isVis": "visualisation_type == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

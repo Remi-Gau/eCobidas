@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "number_active_channels.jsonld",
     "prefLabel": {
-        "en": "number_active_channels"
+        "en": "number active channels"
     },
-    "description": "number of channels used (active) during M/EEG recording",
+    "description": "number active channels",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "number"
     },
     "question": {
-        "en": "How many channels were active for the recording (excluding reference channels, ground channels, VEOG and HEOG)?"
+        "en": "4.12 - Number of scalp electrodes excluding reference channels, ground channel, VEOG and HEOG."
     },
     "responseOptions": {
         "valueType": "xsd:integer"

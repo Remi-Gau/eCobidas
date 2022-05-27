@@ -3,18 +3,26 @@
     "@type": "reproschema:Field",
     "@id": "lat_measure_window_start_a_priori.jsonld",
     "prefLabel": {
-        "en": "lat measure window START a priori"
+        "en": "lat measure window start a priori"
     },
-    "description": "lat measure window START a priori",
+    "description": "lat measure window start a priori",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "float"
     },
     "question": {
-        "en": "Please provide here the start of the window which was used to measure latency. Measurement window: START (ms)"
+        "en": "6.60 - Provide the start of the window which was used to measure latency. Measurement window: START<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>for a priori time windows only: Please provide here the start of the window which was used to measure amplitude. for data-driven time windows: Please provide the window which was used for amplitude measurement as a result of the data-driven approach or where the effect was found (e.g. as a result of a mass univariate analysis)</details></div>"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ms"
+                },
+                "value": "ms"
+            }
+        ]
     }
 }

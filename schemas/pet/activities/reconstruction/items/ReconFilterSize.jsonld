@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Postrecon-filter-size"
+        "en": "5.8 - Postrecon-filter-size<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Kernel size of post-recon filter (FWHM).</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
@@ -30,14 +30,16 @@
                     "en": "2 x 2 x 2"
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 2
             }
         ],
-        "multipleChoice": false
+        "multipleChoice": false,
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "mm"
+                },
+                "value": "mm"
+            }
+        ]
     }
 }

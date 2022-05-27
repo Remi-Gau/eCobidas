@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "artifact_software_2_details.jsonld",
     "prefLabel": {
-        "en": "artifact_software_2_details"
+        "en": "artifact software 2 details"
     },
-    "description": "artifact_software_2_details",
+    "description": "artifact software 2 details",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Specify software version if applicable, and software name and version if \"other\" was selected."
+        "en": "5.41 - Specify software version if applicable, script language if \"custom script\" was selected, and software name and version if \"other\" was selected."
     },
     "responseOptions": {
         "valueType": "xsd:string",

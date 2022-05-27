@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Provide a URL linking to the relevant resource (for example, a jupyter notebook implementing key analyses)"
+        "en": "1.11 - Provide a URL linking to the relevant resource.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example, a jupyter notebook implementing key analyses.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

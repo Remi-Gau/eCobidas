@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "select_boolean.jsonld",
     "prefLabel": {
-        "en": "select_boolean"
+        "en": "select boolean"
     },
-    "description": "select_boolean",
+    "description": "select boolean",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "select"
     },
     "question": {
-        "en": "select one answer"
+        "en": "5.8 - select one answer"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/boolean.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

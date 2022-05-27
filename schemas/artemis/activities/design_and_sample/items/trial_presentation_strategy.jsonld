@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "trial_presentation_strategy.jsonld",
     "prefLabel": {
-        "en": "trial_presentation_strategy"
+        "en": "trial presentation strategy"
     },
-    "description": "trial_presentation_strategy",
+    "description": "trial presentation strategy",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "What determined the number of trials each subject was presented with?"
+        "en": "2.9 - What determined the number of trials each subject was presented with?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -27,13 +27,13 @@
             },
             {
                 "name": {
-                    "en": "adaptive N of trials (please explain)"
+                    "en": "adaptive N of trials (e.g., presenting trials with behavioural errors again until correct response)"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "Other (please explain)"
+                    "en": "Other"
                 },
                 "value": 2
             }

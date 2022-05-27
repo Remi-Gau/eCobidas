@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Report on the completeness of the data"
+        "en": "1.2 - Report on the completeness of the data<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example number of subjects where all types of imaging, demographic, and behavioral data is available.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

@@ -3,19 +3,26 @@
     "@type": "reproschema:Field",
     "@id": "recording_samping_frequency.jsonld",
     "prefLabel": {
-        "en": "recording_samping_frequency"
+        "en": "recording samping frequency"
     },
-    "description": "sampling frequency at data acqusition",
+    "description": "recording samping frequency",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "float"
     },
     "question": {
-        "en": "What is your recording sampling frequency?"
+        "en": "4.29 - What was your acquisition sampling rate?"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 3000
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Hz"
+                },
+                "value": "Hz"
+            }
+        ]
     }
 }

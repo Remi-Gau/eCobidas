@@ -12,10 +12,18 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Start times for all frames relative to TimeZero"
+        "en": "4.6 - Start times for all frames relative to TimeZero"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 3000,
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "s"
+                },
+                "value": "s"
+            }
+        ]
     }
 }

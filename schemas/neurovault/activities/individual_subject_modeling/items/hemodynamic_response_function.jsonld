@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Nature of HRF model"
+        "en": "6.4 - Nature of HRF model"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 2,
         "choices": [
             {
                 "name": {
@@ -36,12 +36,6 @@
                     "en": "FIR"
                 },
                 "value": 2
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 3
             }
         ],
         "multipleChoice": false

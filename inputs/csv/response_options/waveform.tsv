@@ -1,0 +1,5 @@
+name	value
+single waves (one condition)	0
+difference waves	1
+waves obtained using transformation of raw data (e.g. sPCA, source localization)	2
+other	3

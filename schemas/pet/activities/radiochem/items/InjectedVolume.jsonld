@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Injected volume"
+        "en": "3.12 - Injected volume"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ml"
+                },
+                "value": "ml"
+            }
+        ]
     }
 }

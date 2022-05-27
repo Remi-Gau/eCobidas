@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Residual activity"
+        "en": "7.8 - Residual activity"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "MBq"
+                },
+                "value": "MBq"
+            }
+        ]
     }
 }

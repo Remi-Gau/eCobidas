@@ -1,0 +1,415 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "study_id_schema.jsonld",
+    "prefLabel": {
+        "en": "study_id"
+    },
+    "description": "study id",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=1498151197' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>This section contains information on the study, such as title, links to publications and datasets, etc.</p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/artemis_type.jsonld",
+            "items/study_title.jsonld",
+            "items/study_title_final.jsonld",
+            "items/study_working_title_exists.jsonld",
+            "items/study_working_title.jsonld",
+            "items/study_authors.jsonld",
+            "items/study_reference_exists.jsonld",
+            "items/study_reference_DOIs_exists.jsonld",
+            "items/study_reference.jsonld",
+            "items/study_reference_noDOI_exists.jsonld",
+            "items/study_reference_noDOI.jsonld",
+            "items/study_dataset_exists.jsonld",
+            "items/study_dataset_types.jsonld",
+            "items/study_dataset_types_other.jsonld",
+            "items/study_dataset_DOI_exists.jsonld",
+            "items/study_dataset_DOI.jsonld",
+            "items/study_datasets_noDOI_exists.jsonld",
+            "items/study_datasets_noDOI.jsonld",
+            "items/supplementary_materials_exists.jsonld",
+            "items/supplementary_materials.jsonld",
+            "items/specify_supplementary.jsonld",
+            "items/supplementary_link.jsonld",
+            "items/licenses_exists.jsonld",
+            "items/code_license.jsonld",
+            "items/code_license_multi.jsonld",
+            "items/code_license_other.jsonld",
+            "items/data_license.jsonld",
+            "items/data_license_multi.jsonld",
+            "items/data_license_other.jsonld",
+            "items/other_licenses.jsonld",
+            "items/study_keywords.jsonld",
+            "items/study_funding_exists.jsonld",
+            "items/study_funding.jsonld",
+            "items/study_ethics_exists.jsonld",
+            "items/study_ethics.jsonld",
+            "items/acknowledgements_exists.jsonld",
+            "items/acknowledgements.jsonld",
+            "items/citation_instructions_exists.jsonld",
+            "items/citation_instructions.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "artemis_type",
+                "isAbout": "items/artemis_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_title",
+                "isAbout": "items/study_title.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_title_final",
+                "isAbout": "items/study_title_final.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_working_title_exists",
+                "isAbout": "items/study_working_title_exists.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_working_title",
+                "isAbout": "items/study_working_title.jsonld",
+                "isVis": "study_working_title_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_authors",
+                "isAbout": "items/study_authors.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_reference_exists",
+                "isAbout": "items/study_reference_exists.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_reference_DOIs_exists",
+                "isAbout": "items/study_reference_DOIs_exists.jsonld",
+                "isVis": "study_reference_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_reference",
+                "isAbout": "items/study_reference.jsonld",
+                "isVis": "study_reference_DOIs_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_reference_noDOI_exists",
+                "isAbout": "items/study_reference_noDOI_exists.jsonld",
+                "isVis": "study_reference_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_reference_noDOI",
+                "isAbout": "items/study_reference_noDOI.jsonld",
+                "isVis": "study_reference_noDOI_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_dataset_exists",
+                "isAbout": "items/study_dataset_exists.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_dataset_types",
+                "isAbout": "items/study_dataset_types.jsonld",
+                "isVis": "study_dataset_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_dataset_types_other",
+                "isAbout": "items/study_dataset_types_other.jsonld",
+                "isVis": "study_dataset_types.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_dataset_DOI_exists",
+                "isAbout": "items/study_dataset_DOI_exists.jsonld",
+                "isVis": "study_dataset_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_dataset_DOI",
+                "isAbout": "items/study_dataset_DOI.jsonld",
+                "isVis": "study_dataset_DOI_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_datasets_noDOI_exists",
+                "isAbout": "items/study_datasets_noDOI_exists.jsonld",
+                "isVis": "study_dataset_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_datasets_noDOI",
+                "isAbout": "items/study_datasets_noDOI.jsonld",
+                "isVis": "study_datasets_noDOI_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "supplementary_materials_exists",
+                "isAbout": "items/supplementary_materials_exists.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "supplementary_materials",
+                "isAbout": "items/supplementary_materials.jsonld",
+                "isVis": "supplementary_materials_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "specify_supplementary",
+                "isAbout": "items/specify_supplementary.jsonld",
+                "isVis": "supplementary_materials_exists == 1 && supplementary_materials.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "supplementary_link",
+                "isAbout": "items/supplementary_link.jsonld",
+                "isVis": "supplementary_materials_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "licenses_exists",
+                "isAbout": "items/licenses_exists.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "code_license",
+                "isAbout": "items/code_license.jsonld",
+                "isVis": "licenses_exists.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "code_license_multi",
+                "isAbout": "items/code_license_multi.jsonld",
+                "isVis": "code_license == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "code_license_other",
+                "isAbout": "items/code_license_other.jsonld",
+                "isVis": "code_license == 4",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "data_license",
+                "isAbout": "items/data_license.jsonld",
+                "isVis": "licenses_exists.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "data_license_multi",
+                "isAbout": "items/data_license_multi.jsonld",
+                "isVis": "data_license == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "data_license_other",
+                "isAbout": "items/data_license_other.jsonld",
+                "isVis": "data_license == 4",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "other_licenses",
+                "isAbout": "items/other_licenses.jsonld",
+                "isVis": "licenses_exists.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_keywords",
+                "isAbout": "items/study_keywords.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_funding_exists",
+                "isAbout": "items/study_funding_exists.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_funding",
+                "isAbout": "items/study_funding.jsonld",
+                "isVis": "study_funding_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_ethics_exists",
+                "isAbout": "items/study_ethics_exists.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "study_ethics",
+                "isAbout": "items/study_ethics.jsonld",
+                "isVis": "study_ethics_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "acknowledgements_exists",
+                "isAbout": "items/acknowledgements_exists.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "acknowledgements",
+                "isAbout": "items/acknowledgements.jsonld",
+                "isVis": "acknowledgements_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "citation_instructions_exists",
+                "isAbout": "items/citation_instructions_exists.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "citation_instructions",
+                "isAbout": "items/citation_instructions.jsonld",
+                "isVis": "citation_instructions_exists == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

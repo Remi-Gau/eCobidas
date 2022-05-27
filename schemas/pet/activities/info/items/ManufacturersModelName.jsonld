@@ -9,29 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "PET scanner model name"
+        "en": "1.3 - PET scanner model name"
     },
     "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 1,
-        "choices": [
-            {
-                "name": {
-                    "en": " Siemens "
-                },
-                "value": 0
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 1
-            }
-        ],
-        "multipleChoice": false
+        "valueType": "xsd:string",
+        "maxLength": 300
     }
 }

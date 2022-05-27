@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "Age of participants: minimum (in years)"
+        "en": "1.12 - Age of participants: minimum"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "code_license.jsonld",
+    "prefLabel": {
+        "en": "code license"
+    },
+    "description": "code license",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.24 - License type for code. <div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>More info on licence types: https://bids-specification.readthedocs.io/en/stable/99-appendices/02-licenses.html </details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 4,
+        "choices": [
+            {
+                "name": {
+                    "en": "Public Domain"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Open Data Commons Public Domain Dedication and License"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "Creative Commons Zero 1.0 Universal"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "Multiple"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "Other"
+                },
+                "value": 4
+            }
+        ],
+        "multipleChoice": false
+    }
+}

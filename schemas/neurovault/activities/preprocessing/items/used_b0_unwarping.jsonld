@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Was B0 distortion correction used?"
+        "en": "4.5 - Was B0 distortion correction used?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

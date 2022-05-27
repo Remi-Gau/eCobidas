@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "The size of the skipped area between slices in millimeters"
+        "en": "3.9 - The size of the skipped area between slices."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Millimeters"
+                },
+                "value": "Millimeters"
+            }
+        ]
     }
 }

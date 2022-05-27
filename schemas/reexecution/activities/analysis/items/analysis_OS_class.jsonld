@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Which class of operating system was indicated?"
+        "en": "3.4 - Which class of operating system was indicated?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/operating_systems.jsonld"
 }

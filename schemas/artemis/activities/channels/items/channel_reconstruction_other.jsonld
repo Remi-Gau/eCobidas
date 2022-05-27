@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "channel_reconstruction_other.jsonld",
+    "prefLabel": {
+        "en": "channel reconstruction other"
+    },
+    "description": "channel reconstruction other",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "7.22 - Explain your missing data reconstruction for a subset of trials in a subset of participants, including order of operations"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

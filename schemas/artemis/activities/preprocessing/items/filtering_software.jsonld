@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "filtering_software.jsonld",
     "prefLabel": {
-        "en": "filtering_software"
+        "en": "filtering software"
     },
-    "description": "filtering_software",
+    "description": "filtering software",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
-        "en": "Which analysis software do you use for implementing filter on EEG data?"
+        "en": "5.11 - Which software do you use for implementing offline filters on EEG data?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_analysis_softwares.jsonld"
 }

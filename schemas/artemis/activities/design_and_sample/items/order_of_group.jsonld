@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "order_of_group.jsonld",
     "prefLabel": {
-        "en": "order_of_group"
+        "en": "order of group"
     },
-    "description": "order_of_group",
+    "description": "order of group",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Specify the order of the group"
+        "en": "2.5 - Specify group names separated by semicolon and a space (e.g., test group; control group)"
     },
     "responseOptions": {
         "valueType": "xsd:string",

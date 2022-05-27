@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Flip angle in degrees"
+        "en": "3.14 - Flip angle"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Degrees"
+                },
+                "value": "Degrees"
+            }
+        ]
     }
 }

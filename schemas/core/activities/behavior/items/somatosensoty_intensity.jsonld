@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Was was the intensity of the stimulus? "
+        "en": "1.44 - Was was the intensity of the stimulus? <div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Ideally with respect to some sensory or motor threshold.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

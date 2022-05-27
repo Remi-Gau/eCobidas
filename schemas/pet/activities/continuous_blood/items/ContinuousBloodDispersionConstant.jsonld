@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "External dispersion time constant resulting from tubing."
+        "en": "6.5 - External dispersion time constant resulting from tubing."
     },
     "responseOptions": {
         "valueType": "xsd:float"

@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Detail the area of recruitment as well as whether patients were currently in treatment"
+        "en": "1.27 - Detail the area of recruitment as well as whether patients were currently in treatment<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Detail the area of recruitment (in\u00ad vs. outpatient setting, community hospital vs. tertiary referral center etc.) as well as whether patients were currently in treatment</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

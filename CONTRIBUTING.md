@@ -5,13 +5,29 @@ Make sure to also read the
 
 ## Requirements
 
-If you are running Windows 10, you will will need to use
-[WSL2 to run a linux distribution](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+You will need to have installed.
+
+-   Python
+-   [node.js](https://nodejs.org/en/)
+-   [Git](https://git-scm.com/downloads)
+
+If you are running Windows 10, you will want to work directly in a Linux Windows
+sub-system.
+
+An simple way to do this is to install
+[Ubuntu from the Windows App store](https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71).
 
 ### Python 3.8 or above
 
 An easy way to install Python is to rely on
 [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
+
+If you are on Linux this should be enough:
+
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+```
 
 <!-- TODO
 check if virtualenv is installed in base conda
@@ -19,9 +35,9 @@ check if virtualenv is installed in base conda
 
 ### node.js
 
-A good way to To install javascript [`node.js`](<(https://nodejs.org/en/)>), is
-to install [node version manager](https://github.com/nvm-sh/nvm) (NVM) to help
-you deal with different version of `node.js`.
+A good way to To install javascript [`node.js`](https://nodejs.org/en/), is to
+install [node version manager](https://github.com/nvm-sh/nvm) (NVM) to help you
+deal with different version of `node.js`.
 
 In a terminal or in Windows WSL2, you can install NVM by typing:
 
@@ -40,8 +56,9 @@ nvm install 12
 
 ## Set up
 
-Fork and clone the repo. Preferably set up a python virtual environment. Then
-run make install.
+Fork and clone the repo. Preferably set up a python virtual environment.
+
+Then run make install.
 
 ```
 git clone https://github.com/YOUR_GITHUB_USERNAME/eCobidas.git
@@ -80,6 +97,12 @@ grep -r  "@context" schemas/neurovault | cut -d: -f1 | xargs -I fname jsonlint -
 reproschema -l DEBUG validate schemas/neurovault
 ```
 
+## Serving the local protocols and activities to test them with the reproschema-ui
+
+```
+python schemas/simple-cors-http-server.py
+```
+
 ## Editing the spreadsheets
 
 DO NOT EDIT THE DIRECTLY IN THE REPOSITORY!!!
@@ -90,7 +113,3 @@ locally. Or type `make download_all` to download update all the spreadsheets.
 ## Visual studio code settings
 
 Load the `ecobidas.code-workspace` file in the `.vscode` folder.
-
-```
-
-```

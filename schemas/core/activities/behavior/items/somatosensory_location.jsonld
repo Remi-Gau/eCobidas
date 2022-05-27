@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "somatosensory_location.jsonld",
+    "prefLabel": {
+        "en": "somatosensory location"
+    },
+    "description": "somatosensory location",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.43 - Location on the body with reference to anatomical landmarks<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>location on the body with reference to anatomical landmarks, and strength (ideally with respect to some sensory or motor threshold) should be reported. The distance between the site of peripheral stimulation and brain, and skin temperature are also important as they will affect response latency independent of the experimental manipulation.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

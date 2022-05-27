@@ -9,13 +9,35 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
-        "en": "What variables were recorded?"
+        "en": "1.50 - What variables were recorded?"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 3000
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "button press"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "response time"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "others"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": true
     }
 }

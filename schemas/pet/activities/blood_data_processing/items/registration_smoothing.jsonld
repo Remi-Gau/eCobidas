@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Registration smoothing"
+        "en": "9.24 - Registration smoothing<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>FWHM</details></div>"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "mm"
+                },
+                "value": "mm"
+            }
+        ]
     }
 }

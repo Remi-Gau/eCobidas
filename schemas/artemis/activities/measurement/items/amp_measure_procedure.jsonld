@@ -12,56 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Select procedure which was used for amplitude measurement in this time window."
+        "en": "6.8 - Select procedure which was used for amplitude measurement in this time window."
     },
-    "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 6,
-        "choices": [
-            {
-                "name": {
-                    "en": "amplitude mean"
-                },
-                "value": 0
-            },
-            {
-                "name": {
-                    "en": "amplitude peak"
-                },
-                "value": 1
-            },
-            {
-                "name": {
-                    "en": "factor scores based on factor analysis"
-                },
-                "value": 2
-            },
-            {
-                "name": {
-                    "en": "window area measure (specify e.g. rectified, signed, integral)"
-                },
-                "value": 3
-            },
-            {
-                "name": {
-                    "en": "each time point separately"
-                },
-                "value": 4
-            },
-            {
-                "name": {
-                    "en": "multiple measurement types"
-                },
-                "value": 5
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 6
-            }
-        ],
-        "multipleChoice": false
-    }
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/amplitude_measurement.jsonld"
 }

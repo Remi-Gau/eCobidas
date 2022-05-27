@@ -1,0 +1,61 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "chan_selection_data_driven_broad.jsonld",
+    "prefLabel": {
+        "en": "chan selection data driven broad"
+    },
+    "description": "chan selection data driven broad",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "7.10 - Select the procedure which was used to identify the initial set of channels which was used to make the final selection of channels in the next step."
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 5,
+        "choices": [
+            {
+                "name": {
+                    "en": "visual inspection of waveforms (separate or collapsed conditions)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "visual inspection of global field potentials"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "visual inspection of voltage maps (separate or collapsed conditions)"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "significant effects on multiple neighbouring electrodes"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "N channels arround the largest effect"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 5
+            }
+        ],
+        "multipleChoice": false
+    }
+}

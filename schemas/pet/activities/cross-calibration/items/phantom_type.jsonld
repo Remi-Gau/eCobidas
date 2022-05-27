@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Phantom type"
+        "en": "7.3 - Phantom type"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 2,
         "choices": [
             {
                 "name": {
@@ -36,12 +36,6 @@
                     "en": "EARL "
                 },
                 "value": 2
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 3
             }
         ],
         "multipleChoice": false

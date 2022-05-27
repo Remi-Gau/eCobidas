@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "baseline_software_details.jsonld",
     "prefLabel": {
-        "en": "baseline_software_details"
+        "en": "baseline software details"
     },
-    "description": "baseline_software_details",
+    "description": "baseline software details",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Specify software version if applicable, and software name and version if \"other\" was selected."
+        "en": "5.209 - Specify software version if applicable, script language if \"custom script\" was selected, and software name and version if \"other\" was selected."
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "multi_2_or_5.jsonld",
     "prefLabel": {
-        "en": "multi_2_or_5"
+        "en": "multi 2 or 5"
     },
-    "description": "multi_2_or_5",
+    "description": "multi 2 or 5",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "should appear for answers 2 or 5"
+        "en": "5.7 - should appear for answers 2 or 5"
     },
     "responseOptions": {
         "valueType": "xsd:string",

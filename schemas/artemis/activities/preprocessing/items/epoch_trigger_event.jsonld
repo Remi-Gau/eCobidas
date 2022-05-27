@@ -9,13 +9,41 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
-        "en": "What is the event for the trigger code? "
+        "en": "5.204 - What was the event type relative to which epochs were defined?"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 3000
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "stimulus onset"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "response"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "feedback onset"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
     }
 }

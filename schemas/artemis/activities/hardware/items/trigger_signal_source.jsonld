@@ -3,21 +3,21 @@
     "@type": "reproschema:Field",
     "@id": "trigger_signal_source.jsonld",
     "prefLabel": {
-        "en": "Trigger signal source"
+        "en": "trigger signal source"
     },
-    "description": "Trigger signal source",
+    "description": "trigger signal source",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "Source of the triggers"
+        "en": "3.15 - Source of triggers"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 4,
         "choices": [
             {
                 "name": {
@@ -42,6 +42,12 @@
                     "en": "presentation software trigger"
                 },
                 "value": 3
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 4
             }
         ],
         "multipleChoice": false

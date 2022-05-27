@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "The distance between participants and the screen"
+        "en": "6.10 - The distance between participants and the screen<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>0.6</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:float"

@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Clarify any constraints on uses of shared data."
+        "en": "1.7 - Clarify any constraints on uses of shared data.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example, whether users downloading the data also need ethics approval from their own institution.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

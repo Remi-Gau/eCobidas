@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Was motion correction used?"
+        "en": "4.9 - Was motion correction used?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

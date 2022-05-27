@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "which_filters.jsonld",
+    "prefLabel": {
+        "en": "which filters"
+    },
+    "description": "which filters",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "5.10 - Did you apply any of the following offline (digital) filters?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>This does not include filtering within automated pipelines, if you had applied any.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "high pass"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "low pass"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "notch"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "none"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": true
+    }
+}

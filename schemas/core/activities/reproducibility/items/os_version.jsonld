@@ -3,19 +3,19 @@
     "@type": "reproschema:Field",
     "@id": "os_version.jsonld",
     "prefLabel": {
-        "en": "os_version"
+        "en": "os version"
     },
-    "description": "os_version",
+    "description": "os version",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "operating system version"
+        "en": "1.4 - operating system version"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

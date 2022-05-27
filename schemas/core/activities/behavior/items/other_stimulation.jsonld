@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Describe in detail any other stimulation not involving auditory, visual or somatosensory stimuli"
+        "en": "1.46 - Describe in detail any other stimulation not involving auditory, visual or somatosensory stimuli"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

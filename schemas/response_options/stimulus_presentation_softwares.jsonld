@@ -8,157 +8,157 @@
     "choices": [
         {
             "name": {
-                "en": "Psychtoolbox"
+                "en": "Attention Tool 5.2 software"
             },
             "value": 0
         },
         {
             "name": {
-                "en": "PsychoPy"
+                "en": "Cogent"
             },
             "value": 1
         },
         {
             "name": {
-                "en": "Eprime"
+                "en": "EEVoke"
             },
             "value": 2
         },
         {
             "name": {
-                "en": "expyriment"
+                "en": "Eprime"
             },
             "value": 3
         },
         {
             "name": {
-                "en": "Presentation"
+                "en": "ERP system"
             },
             "value": 4
         },
         {
             "name": {
-                "en": "Cogent"
+                "en": "ERTS"
             },
             "value": 5
         },
         {
             "name": {
-                "en": "ERTS"
+                "en": "Experiment Builder"
             },
             "value": 6
         },
         {
             "name": {
-                "en": "STIM"
+                "en": "expyriment"
             },
             "value": 7
         },
         {
             "name": {
-                "en": "EEVoke"
+                "en": "Eye-Works Design, EyeWorks record"
             },
             "value": 8
         },
         {
             "name": {
-                "en": "Neurolab"
+                "en": "Eyelink"
             },
             "value": 9
         },
         {
             "name": {
-                "en": "SuperLab"
+                "en": "Gaze Tracker software"
             },
             "value": 10
         },
         {
             "name": {
-                "en": "ERP system"
+                "en": "Inquisit 3.0.5"
             },
             "value": 11
         },
         {
             "name": {
-                "en": "StimPres"
+                "en": "InsEP"
             },
             "value": 12
         },
         {
             "name": {
-                "en": "InsEP"
+                "en": "Matlab"
             },
             "value": 13
         },
         {
             "name": {
-                "en": "Other"
+                "en": "Neurolab"
             },
             "value": 14
         },
         {
             "name": {
-                "en": "Attention Tool 5.2 software"
+                "en": "OpenSesam"
             },
             "value": 15
         },
         {
             "name": {
-                "en": "Matlab"
+                "en": "PhotoRating (web application)"
             },
             "value": 16
         },
         {
             "name": {
-                "en": "Eyelink"
+                "en": "Power Point"
             },
             "value": 17
         },
         {
             "name": {
-                "en": "Power Point"
+                "en": "Presentation"
             },
             "value": 18
         },
         {
             "name": {
-                "en": "OpenSesam"
+                "en": "PsychoPy"
             },
             "value": 19
         },
         {
             "name": {
-                "en": "Experiment Builder"
+                "en": "Psychtoolbox"
             },
             "value": 20
         },
         {
             "name": {
-                "en": "Eye-Works Design, EyeWorks record"
+                "en": "Relax, Archisim"
             },
             "value": 21
         },
         {
             "name": {
-                "en": "Relax, Archisim"
+                "en": "S-CCS (simulation of a naval air-defense environment)"
             },
             "value": 22
         },
         {
             "name": {
-                "en": "S-CCS (simulation of a naval air-defense environment)"
+                "en": "Sawtooth Software"
             },
             "value": 23
         },
         {
             "name": {
-                "en": "Sawtooth Software"
+                "en": "SMI Experiment Center"
             },
             "value": 24
         },
         {
             "name": {
-                "en": "TEMPO software system (reflective Computing)"
+                "en": "SR Experiment Builder"
             },
             "value": 25
         },
@@ -170,25 +170,25 @@
         },
         {
             "name": {
-                "en": "SR Experiment Builder"
+                "en": "STIM"
             },
             "value": 27
         },
         {
             "name": {
-                "en": "SMI Experiment Center"
+                "en": "StimPres"
             },
             "value": 28
         },
         {
             "name": {
-                "en": "Inquisit 3.0.5"
+                "en": "SuperLab"
             },
             "value": 29
         },
         {
             "name": {
-                "en": "Gaze Tracker software"
+                "en": "TEMPO software system (reflective Computing)"
             },
             "value": 30
         },
@@ -224,7 +224,7 @@
         },
         {
             "name": {
-                "en": "PhotoRating (web application)"
+                "en": "Other"
             },
             "value": 36
         }

@@ -9,13 +9,35 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "select"
     },
     "question": {
-        "en": "Scanner manufacturer"
+        "en": "1.2 - Scanner manufacturer"
     },
     "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 3000
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "Siemens"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "General Electric"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "Philips"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
     }
 }

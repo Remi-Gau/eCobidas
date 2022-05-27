@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Mechanisms available for constructing queries on the repository (e.g. SQL, SPARQL)"
+        "en": "1.16 - Mechanisms available for constructing queries on the repository (e.g. SQL, SPARQL)"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

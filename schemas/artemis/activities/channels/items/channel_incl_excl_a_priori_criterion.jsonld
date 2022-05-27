@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "channel_incl_excl_a_priori_criterion.jsonld",
+    "prefLabel": {
+        "en": "channel incl excl a priori criterion"
+    },
+    "description": "channel incl excl a priori criterion",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "7.7 - Describe your a-priori criteria for channel inclusion/exclusion<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example, << fictional >> James uses a threshold of 5 microvolts for 2nd peak in pnp complex any channel that does not detect this signal is excluded. </details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Specific instructions on how to gain access to the data."
+        "en": "1.4 - Specific instructions on how to gain access to the data.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br> Specifically mention whether application must be vetted for particular intended research use (e.g. to preclude multiple users investigating the same question), or whether a research collaboration must be established</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

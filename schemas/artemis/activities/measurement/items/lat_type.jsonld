@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Describe the latency type."
+        "en": "6.50 - Describe the latency type."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -38,6 +38,6 @@
                 "value": 2
             }
         ],
-        "multipleChoice": false
+        "multipleChoice": true
     }
 }

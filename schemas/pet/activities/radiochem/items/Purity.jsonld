@@ -12,9 +12,23 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Purity of the radiolabeled compound."
+        "en": "3.11 - Purity of the radiolabeled compound."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "percent"
+                },
+                "value": "percent"
+            },
+            {
+                "prefLabel": {
+                    "en": "fraction"
+                },
+                "value": "fraction"
+            }
+        ]
     }
 }

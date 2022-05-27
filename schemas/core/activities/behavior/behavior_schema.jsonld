@@ -34,30 +34,32 @@
             "items/randomization.jsonld",
             "items/deterministic.jsonld",
             "items/pseudo-random.jsonld",
-            "items/stimulus_presentation.jsonld",
-            "items/response_collection.jsonld",
             "items/run_order.jsonld",
             "items/counterbalance.jsonld",
-            "items/apparent_size.jsonld",
-            "items/viewing_distance.jsonld",
-            "items/clarity.jsonld",
-            "items/color.jsonld",
-            "items/site_of_the_stimulation.jsonld",
-            "items/position_in_the_visual_field.jsonld",
-            "items/display_device.jsonld",
-            "items/visual_other.jsonld",
-            "items/description.jsonld",
-            "items/intensity.jsonld",
-            "items/ear_of_stimulation.jsonld",
-            "items/auditory_type.jsonld",
-            "items/contralateral_masking.jsonld",
+            "items/response_collection.jsonld",
             "items/stimuli_database.jsonld",
             "items/calibration_procedure.jsonld",
-            "items/type.jsonld",
-            "items/characteristics.jsonld",
-            "items/location_on_body.jsonld",
+            "items/modality_used.jsonld",
+            "items/visual_stimulus_presentation.jsonld",
+            "items/visual_apparent_size.jsonld",
+            "items/visual_viewing_distance.jsonld",
+            "items/visual_clarity.jsonld",
+            "items/visual_color.jsonld",
+            "items/visual_site.jsonld",
+            "items/visual_position.jsonld",
+            "items/visual_display_device.jsonld",
+            "items/visual_other.jsonld",
+            "items/auditory_description.jsonld",
+            "items/auditory_intensity.jsonld",
+            "items/auditory_ear_of_stimulation.jsonld",
+            "items/auditory_type.jsonld",
+            "items/auditory_contralateral_masking.jsonld",
+            "items/somatosensoty_type.jsonld",
+            "items/somatosensory_characteristics.jsonld",
+            "items/somatosensory_location.jsonld",
             "items/somatosensoty_intensity.jsonld",
             "items/other_stimulation.jsonld",
+            "items/practice_sessions.jsonld",
             "items/feedbacks.jsonld",
             "items/variables_recorded.jsonld"
         ],
@@ -243,24 +245,6 @@
                 ]
             },
             {
-                "variableName": "stimulus_presentation",
-                "isAbout": "items/stimulus_presentation.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "response_collection",
-                "isAbout": "items/response_collection.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
                 "variableName": "run_order",
                 "isAbout": "items/run_order.jsonld",
                 "isVis": true,
@@ -279,116 +263,8 @@
                 ]
             },
             {
-                "variableName": "apparent_size",
-                "isAbout": "items/apparent_size.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "viewing_distance",
-                "isAbout": "items/viewing_distance.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "clarity",
-                "isAbout": "items/clarity.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "color",
-                "isAbout": "items/color.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "site_of_the_stimulation",
-                "isAbout": "items/site_of_the_stimulation.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "position_in_the_visual_field",
-                "isAbout": "items/position_in_the_visual_field.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "display_device",
-                "isAbout": "items/display_device.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "visual_other",
-                "isAbout": "items/visual_other.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "description",
-                "isAbout": "items/description.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "intensity",
-                "isAbout": "items/intensity.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "ear_of_stimulation",
-                "isAbout": "items/ear_of_stimulation.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "auditory_type",
-                "isAbout": "items/auditory_type.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "contralateral_masking",
-                "isAbout": "items/contralateral_masking.jsonld",
+                "variableName": "response_collection",
+                "isAbout": "items/response_collection.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -414,8 +290,8 @@
                 ]
             },
             {
-                "variableName": "type",
-                "isAbout": "items/type.jsonld",
+                "variableName": "modality_used",
+                "isAbout": "items/modality_used.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -423,18 +299,153 @@
                 ]
             },
             {
-                "variableName": "characteristics",
-                "isAbout": "items/characteristics.jsonld",
-                "isVis": true,
+                "variableName": "visual_stimulus_presentation",
+                "isAbout": "items/visual_stimulus_presentation.jsonld",
+                "isVis": "modality_used.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "location_on_body",
-                "isAbout": "items/location_on_body.jsonld",
-                "isVis": true,
+                "variableName": "visual_apparent_size",
+                "isAbout": "items/visual_apparent_size.jsonld",
+                "isVis": "modality_used.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visual_viewing_distance",
+                "isAbout": "items/visual_viewing_distance.jsonld",
+                "isVis": "modality_used.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visual_clarity",
+                "isAbout": "items/visual_clarity.jsonld",
+                "isVis": "modality_used.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visual_color",
+                "isAbout": "items/visual_color.jsonld",
+                "isVis": "modality_used.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visual_site",
+                "isAbout": "items/visual_site.jsonld",
+                "isVis": "modality_used.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visual_position",
+                "isAbout": "items/visual_position.jsonld",
+                "isVis": "modality_used.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visual_display_device",
+                "isAbout": "items/visual_display_device.jsonld",
+                "isVis": "modality_used.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visual_other",
+                "isAbout": "items/visual_other.jsonld",
+                "isVis": "modality_used.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "auditory_description",
+                "isAbout": "items/auditory_description.jsonld",
+                "isVis": "modality_used.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "auditory_intensity",
+                "isAbout": "items/auditory_intensity.jsonld",
+                "isVis": "modality_used.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "auditory_ear_of_stimulation",
+                "isAbout": "items/auditory_ear_of_stimulation.jsonld",
+                "isVis": "modality_used.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "auditory_type",
+                "isAbout": "items/auditory_type.jsonld",
+                "isVis": "modality_used.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "auditory_contralateral_masking",
+                "isAbout": "items/auditory_contralateral_masking.jsonld",
+                "isVis": "modality_used.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "somatosensoty_type",
+                "isAbout": "items/somatosensoty_type.jsonld",
+                "isVis": "modality_used.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "somatosensory_characteristics",
+                "isAbout": "items/somatosensory_characteristics.jsonld",
+                "isVis": "modality_used.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "somatosensory_location",
+                "isAbout": "items/somatosensory_location.jsonld",
+                "isVis": "modality_used.includes(2)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -443,7 +454,7 @@
             {
                 "variableName": "somatosensoty_intensity",
                 "isAbout": "items/somatosensoty_intensity.jsonld",
-                "isVis": true,
+                "isVis": "modality_used.includes(2)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -452,6 +463,15 @@
             {
                 "variableName": "other_stimulation",
                 "isAbout": "items/other_stimulation.jsonld",
+                "isVis": "modality_used.includes(4)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "practice_sessions",
+                "isAbout": "items/practice_sessions.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

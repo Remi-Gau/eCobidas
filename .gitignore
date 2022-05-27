@@ -1,4 +1,7 @@
 lib/*
+names.csv
+
+#
 
 *.DS_Store
 
@@ -12,6 +15,7 @@ site/*
 
 # local virtual environnment
 *env/*
+Pipfile
 
 # pytest
 .pytest_cache/

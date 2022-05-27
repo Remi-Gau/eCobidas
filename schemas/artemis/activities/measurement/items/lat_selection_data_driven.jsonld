@@ -12,24 +12,18 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Select the procedure which was used for latency measurement in this time window."
+        "en": "6.56 - Select the procedure which was used for latency measurement in this time window.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Select procedure which was used for latency measurement in this time window. Please fill all time window rows (6.4.3-6.4.6)</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 1,
+        "maxValue": 0,
         "choices": [
             {
                 "name": {
                     "en": "visual inspection "
                 },
                 "value": 0
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 1
             }
         ],
         "multipleChoice": false

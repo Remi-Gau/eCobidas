@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "baseline_any.jsonld",
+    "prefLabel": {
+        "en": "baseline any"
+    },
+    "description": "baseline any",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "5.207 - Did you apply baseline correction?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>This does not include baseline correction within automated pipelines, if you had applied any.</details></div>"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
+}

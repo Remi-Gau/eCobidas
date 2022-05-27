@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Distance between slices (includes skip or distance factor) in millimeters"
+        "en": "3.8 - Distance between slices (includes skip or distance factor)."
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Millimeters"
+                },
+                "value": "Millimeters"
+            }
+        ]
     }
 }

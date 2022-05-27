@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "supplementary_materials.jsonld",
+    "prefLabel": {
+        "en": "supplementary materials"
+    },
+    "description": "supplementary materials",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.20 - Which supplementary materials are available publically?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "list of stimulus descriptions (e.g. list of objects shown in images)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "stimuli"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "codes or files with the experimental task"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": true
+    }
+}

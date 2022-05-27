@@ -3,63 +3,45 @@
     "@type": "reproschema:Field",
     "@id": "peak_lat_measure.jsonld",
     "prefLabel": {
-        "en": "Peak lat measure"
+        "en": "peak lat measure"
     },
-    "description": "Peak lat measure",
+    "description": "peak lat measure",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "select"
+        "inputType": "radio"
     },
     "question": {
-        "en": "Peak latency measure"
+        "en": "6.51 - How did you calculate the midpoint of this latency?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 6,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
-                    "en": "onset - extrapolation based on slope"
+                    "en": "simple peak"
                 },
                 "value": 0
             },
             {
                 "name": {
-                    "en": "onset - difference larger than chance"
+                    "en": "local peak"
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "onset - N consecutive significant comparisons"
+                    "en": "50% area"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "onset - fractational area (e.g. 30% area)"
-                },
-                "value": 3
-            },
-            {
-                "name": {
-                    "en": "onset - fractational peak (e.g. 50% peak)"
-                },
-                "value": 4
-            },
-            {
-                "name": {
-                    "en": "onset - other"
-                },
-                "value": 5
-            },
-            {
-                "name": {
                     "en": "other"
                 },
-                "value": 6
+                "value": 3
             }
         ],
         "multipleChoice": false

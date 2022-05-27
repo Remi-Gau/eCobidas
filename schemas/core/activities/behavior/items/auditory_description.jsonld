@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "auditory_description.jsonld",
+    "prefLabel": {
+        "en": "auditory description"
+    },
+    "description": "auditory description",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.36 - Stimulus properties<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example, frequency content, duration, onset/offset envelope...</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

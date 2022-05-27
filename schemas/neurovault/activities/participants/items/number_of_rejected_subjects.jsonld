@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "Number of subjects scanned but rejected from analysis"
+        "en": "2.8 - Number of subjects scanned but rejected from analysis"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

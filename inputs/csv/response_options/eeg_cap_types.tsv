@@ -1,12 +1,12 @@
 name	value
-Waveguard (ANT)	0
-Electrocap	1
-Quickcap (Neuroscan)	2
+Aegis Array	0
+Biosemi	1
+BrainProducts	2
 Easycap standard caps	3
-Aegis Array	4
+Electrocap	4
 Emotiv	5
-BrainProducts	6
-Biosemi	7
+Geodesic Sensor Net	6
+Quickcap (Neuroscan)	7
 TMSi	8
-Geodesic Sensor Net	9
+Waveguard (ANT)	9
 other	10

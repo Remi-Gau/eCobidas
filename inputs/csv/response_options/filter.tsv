@@ -1,0 +1,5 @@
+name	value
+FIR filter	0
+IIR filter	1
+Clean Line	2
+other and alternatives (e.g. DRL)	3

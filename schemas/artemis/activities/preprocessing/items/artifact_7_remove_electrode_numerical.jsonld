@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_7_remove_electrode_numerical.jsonld",
+    "prefLabel": {
+        "en": "artifact 7 remove electrode numerical"
+    },
+    "description": "artifact 7 remove electrode numerical",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "5.193 - Describe your numerical criterion/function for eliminating electrodes and provide numerical threshold(s) in step 7."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

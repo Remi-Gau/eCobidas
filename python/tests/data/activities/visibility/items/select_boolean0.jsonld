@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "select_boolean0.jsonld",
     "prefLabel": {
-        "en": "select_boolean==0"
+        "en": "select boolean==0"
     },
-    "description": "select_boolean==0",
+    "description": "select boolean==0",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "this should only show if you selected \u2018no\u2019"
+        "en": "5.10 - this should only show if you selected \u2018no\u2019"
     },
     "responseOptions": {
         "valueType": "xsd:string",

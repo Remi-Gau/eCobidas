@@ -1,0 +1,28 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "onset_lat_peak_fraction.jsonld",
+    "prefLabel": {
+        "en": "onset lat peak fraction"
+    },
+    "description": "onset lat peak fraction",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "number"
+    },
+    "question": {
+        "en": "6.58 - What fraction of peak amplitude was used to determine onset latency?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "%"
+                },
+                "value": "%"
+            }
+        ]
+    }
+}

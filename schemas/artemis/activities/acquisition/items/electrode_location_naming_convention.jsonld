@@ -3,21 +3,21 @@
     "@type": "reproschema:Field",
     "@id": "electrode_location_naming_convention.jsonld",
     "prefLabel": {
-        "en": "electrode_location_naming_convention"
+        "en": "electrode location naming convention"
     },
-    "description": "type of naming convention used for electrode locations",
+    "description": "electrode location naming convention",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "What type of naming convention have you used for the electrode locations?"
+        "en": "4.18 - What type of placement/naming convention have you used for the electrode locations?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -33,9 +33,15 @@
             },
             {
                 "name": {
-                    "en": "custom locations and other systems"
+                    "en": "other named system"
                 },
                 "value": 2
+            },
+            {
+                "name": {
+                    "en": "custom locations"
+                },
+                "value": 3
             }
         ],
         "multipleChoice": false

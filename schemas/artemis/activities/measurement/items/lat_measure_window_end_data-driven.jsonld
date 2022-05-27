@@ -3,18 +3,26 @@
     "@type": "reproschema:Field",
     "@id": "lat_measure_window_end_data-driven.jsonld",
     "prefLabel": {
-        "en": "lat measure window END data-driven"
+        "en": "lat measure window end data-driven"
     },
-    "description": "lat measure window END data-driven",
+    "description": "lat measure window end data-driven",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "float"
     },
     "question": {
-        "en": "Please provide end of the window which was used for latency measurement as a result of the data-driven approach or where the effect was found (e.g. as a result of a mass univariate analysis). Measurement window: END [ms]"
+        "en": "6.63 - Provide the end of the window which was used for latency measurement as a result of the data-driven approach or where the effect was found (e.g. as a result of a mass univariate analysis). Measurement window: END<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>for a priori time windows only: Please provide here the end of the window which was used to measure amplitude. for data-driven time windows: Please provide end of the window which was used for amplitude measurement as a result of the data-driven approach or where the effect was found (e.g. as a result of a mass univariate analysis)</details></div>"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ms"
+                },
+                "value": "ms"
+            }
+        ]
     }
 }

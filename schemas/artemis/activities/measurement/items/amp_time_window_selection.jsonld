@@ -12,12 +12,12 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "How was this amplitude measurement window selected?   A priori: the window is selected in advance Data-driven: the measurement window is selected based on data obtained in the current study.  In a data driven approach, either a wider window or the entire epoch are analyzed or examined to determine which will be the final measurement window. "
+        "en": "6.13 - How was the amplitude measurement window selected?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>e.g. for a priori - mean of a window decided in advance; e.g. visual inspection of an a priori decided range or window around a peak found in an a priori decided range; e.g., for data driven - mass uni analysis of the entire epoch, visual inspecion of the entire epoch or a vaguely defined (i.e. flexible) general time range. When you are making this decision, you may want to check out papers by Kriegskorte et al. (2009, https://doi.org/10.1038/nn.2303) or Gaspelin and Luck (2018, https://doi.org/10.1111/psyp.12639) on biases in time window and channel selection.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 3,
+        "maxValue": 4,
         "choices": [
             {
                 "name": {
@@ -27,21 +27,27 @@
             },
             {
                 "name": {
-                    "en": "data-driven"
+                    "en": "data-driven selection/identification of the time window from the entire epoch "
                 },
                 "value": 1
             },
             {
                 "name": {
-                    "en": "no window selection (e.g. point-by-point analysis such as mass univariate analysis)"
+                    "en": "time window was selected/identified using data-driven methods from a broader window which was selected a priori"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "selection/identification of time window in two data driven steps (e.g. time window around a peak of a visually identified broader window)"
                 },
                 "value": 3
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 4
             }
         ],
         "multipleChoice": false

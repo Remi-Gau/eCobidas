@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "total_nb_of_trials.jsonld",
     "prefLabel": {
-        "en": "total_nb_of_trials"
+        "en": "total nb of trials"
     },
-    "description": "total_nb_of_trials",
+    "description": "total nb of trials",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "number"
     },
     "question": {
-        "en": "How many trials in total was each subject presented with?"
+        "en": "2.10 - How many trials in total was each subject presented with (including repetition of the same stimuli or trials)?"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

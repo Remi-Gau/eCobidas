@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artemis_type.jsonld",
+    "prefLabel": {
+        "en": "artemis type"
+    },
+    "description": "artemis type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.1 - At the time of document creation, what is the current ARTEM-IS template for?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "Documenting a planned pipeline"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Documenting a pipeline that has been applied to study data "
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

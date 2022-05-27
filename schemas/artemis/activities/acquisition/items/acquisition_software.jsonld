@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "acquisition_software.jsonld",
     "prefLabel": {
-        "en": "acquisition_software"
+        "en": "acquisition software"
     },
     "description": "acquisition software",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "radio"
+        "inputType": "select"
     },
     "question": {
-        "en": "What software did you use for the aquisition?"
+        "en": "4.1 - What software did you use for the acquisition?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/meeg_acquisition_softwares.jsonld"
 }

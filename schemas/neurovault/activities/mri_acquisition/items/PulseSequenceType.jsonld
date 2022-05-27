@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Description of pulse sequence used for fMRI"
+        "en": "3.4 - Description of pulse sequence used for fMRI"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 6,
+        "maxValue": 5,
         "choices": [
             {
                 "name": {
@@ -54,12 +54,6 @@
                     "en": "FLASH"
                 },
                 "value": 5
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 6
             }
         ],
         "multipleChoice": false

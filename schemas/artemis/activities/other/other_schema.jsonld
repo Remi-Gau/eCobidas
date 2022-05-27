@@ -14,30 +14,10 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/supplemental_materials.jsonld",
-            "items/specify_supplemental.jsonld",
             "items/additional_comment.jsonld",
-            "items/specify_additional.jsonld"
+            "items/comment_contents.jsonld"
         ],
         "addProperties": [
-            {
-                "variableName": "supplemental_materials",
-                "isAbout": "items/supplemental_materials.jsonld",
-                "isVis": true,
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "specify_supplemental",
-                "isAbout": "items/specify_supplemental.jsonld",
-                "isVis": "supplemental_materials == 11",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
             {
                 "variableName": "additional_comment",
                 "isAbout": "items/additional_comment.jsonld",
@@ -48,8 +28,8 @@
                 ]
             },
             {
-                "variableName": "specify_additional",
-                "isAbout": "items/specify_additional.jsonld",
+                "variableName": "comment_contents",
+                "isAbout": "items/comment_contents.jsonld",
                 "isVis": "additional_comment == 1",
                 "requiredValue": false,
                 "allow": [

@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Metabolite data labels"
+        "en": "6.13 - Metabolite data labels"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -42,12 +42,6 @@
                     "en": "parentFraction SD"
                 },
                 "value": 3
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 4
             }
         ],
         "multipleChoice": false

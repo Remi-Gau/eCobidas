@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Delay time correction"
+        "en": "9.2 - Delay time correction"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

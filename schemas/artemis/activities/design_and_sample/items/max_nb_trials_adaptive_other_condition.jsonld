@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "max_nb_trials_adaptive_other_condition.jsonld",
+    "prefLabel": {
+        "en": "max nb trials adaptive other condition"
+    },
+    "description": "max nb trials adaptive other condition",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "2.18 - What was the maximum number of trials a participant was presented with, per condition  (including repetition of the same stimuli or trials)? <div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Values should be separated by semicolon and a space and given in the same order as the conditions were listed earlier. If there are multiple groups of participants, list trial counts for all conditions for one group, and then for the next one - following the ordering of groups as you specified them earlier.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

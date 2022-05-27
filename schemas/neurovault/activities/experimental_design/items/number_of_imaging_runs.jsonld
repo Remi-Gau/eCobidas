@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "Number of imaging runs acquired"
+        "en": "1.2 - Number of imaging runs acquired"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

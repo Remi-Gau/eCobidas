@@ -1,0 +1,28 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "online_filters_high_pass_roll_off.jsonld",
+    "prefLabel": {
+        "en": "online filters high pass roll off"
+    },
+    "description": "online filters high pass roll off",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "4.24 - Specify the high-pass filter roll off used during recording"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "dB/octave"
+                },
+                "value": "dB/octave"
+            }
+        ]
+    }
+}

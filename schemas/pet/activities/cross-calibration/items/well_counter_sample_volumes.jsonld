@@ -12,9 +12,23 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Well counter sample volumes"
+        "en": "7.11 - Well counter sample volumes"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ml"
+                },
+                "value": "ml"
+            },
+            {
+                "prefLabel": {
+                    "en": "\u00b5l"
+                },
+                "value": "\u00b5l"
+            }
+        ]
     }
 }

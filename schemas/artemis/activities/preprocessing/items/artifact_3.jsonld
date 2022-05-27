@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_3.jsonld",
+    "prefLabel": {
+        "en": "artifact 3"
+    },
+    "description": "artifact 3",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "5.84 - What action did you take regarding artifacts in step 3?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 4,
+        "choices": [
+            {
+                "name": {
+                    "en": "reject bad trial or bad data segment"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "correct by subtraction (blinks, EKG etc.)"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "reject channels"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "interpolate channels"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "multi-step automated approach (e.g., FASTER)"
+                },
+                "value": 4
+            }
+        ],
+        "multipleChoice": false
+    }
+}

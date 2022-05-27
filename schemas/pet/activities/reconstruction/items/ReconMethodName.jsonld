@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Reconstruction method"
+        "en": "5.4 - Reconstruction method<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Reconstruction method or algorithm.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

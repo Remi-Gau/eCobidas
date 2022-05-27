@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Length of individual trials in seconds"
+        "en": "1.6 - Length of individual trials in seconds"
     },
     "responseOptions": {
         "valueType": "xsd:float"

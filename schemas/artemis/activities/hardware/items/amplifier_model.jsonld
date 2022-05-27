@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "amplifier_model.jsonld",
     "prefLabel": {
-        "en": "Amplifier model"
+        "en": "amplifier model"
     },
-    "description": "Amplifier model",
+    "description": "amplifier model",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Model of amplifier"
+        "en": "3.14 - Model of amplifier"
     },
     "responseOptions": {
         "valueType": "xsd:string",

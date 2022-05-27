@@ -12,10 +12,18 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Time duration of each frame"
+        "en": "4.7 - Time duration of each frame"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 3000,
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "s"
+                },
+                "value": "s"
+            }
+        ]
     }
 }

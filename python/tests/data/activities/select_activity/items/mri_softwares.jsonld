@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "mri software"
+        "en": "4.6 - mri software"
     },
-    "responseOptions": "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/mri_softwares.jsonld"
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/mri_softwares.jsonld"
 }

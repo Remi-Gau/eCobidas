@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "The screen size of the used monitor"
+        "en": "3.3 - The screen size of the used monitor<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>19</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:float"

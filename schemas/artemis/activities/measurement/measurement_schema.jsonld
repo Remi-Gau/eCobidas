@@ -9,54 +9,90 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "preamble": {
-        "en": ""
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=867147534' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/artemis_checklist' target='_blank' > Github repository </a> | <a href='https://osf.io/pvrn6/' target='_blank' > Reference </a><br><br>This is a section where amplitude and latency measurement are described.</p>"
     },
     "ui": {
         "shuffle": false,
         "order": [
+            "items/measure_intro.jsonld",
             "items/measure_type.jsonld",
-            "items/amp_measured_from.jsonld",
-            "items/waveform_further_details.jsonld",
-            "items/amp_measure_procedure.jsonld",
-            "items/window_area_measure_further_clarification.jsonld",
-            "items/factor_scores_further_clarification.jsonld",
-            "items/other_further_clarification.jsonld",
-            "items/amp_time_window_selection.jsonld",
-            "items/approach_to_amp_measure_window_selection_a_priori.jsonld",
-            "items/amp_literature_references.jsonld",
-            "items/amp_further_details.jsonld",
-            "items/approach_to_amp_measure_window_selection_data_driven.jsonld",
-            "items/amp_broader_window_start.jsonld",
-            "items/amp_broader_window_end.jsonld",
-            "items/amp_measure_start_a_priori.jsonld",
-            "items/amp_measure_end_a_priori.jsonld",
-            "items/amp_measure_start_data-driven.jsonld",
-            "items/amp_measure_end_data_driven.jsonld",
             "items/amp_measure_software.jsonld",
             "items/amp_measure_software_details.jsonld",
-            "items/lat_type.jsonld",
-            "items/onset_lat_measure.jsonld",
-            "items/peak_lat_measure.jsonld",
+            "items/amp_measured_from.jsonld",
+            "items/waveform_difference_waves.jsonld",
+            "items/waveform_further_details.jsonld",
+            "items/amp_measure_procedure.jsonld",
+            "items/amp_measure_peak_positivity.jsonld",
+            "items/amp_measure_peak_method.jsonld",
+            "items/window_area_measure_type.jsonld",
+            "items/amp_measure_details.jsonld",
+            "items/amp_time_window_selection.jsonld",
+            "items/amp_window_selection_a_priori.jsonld",
+            "items/amp_literature_reference.jsonld",
+            "items/amp_literature_similar.jsonld",
+            "items/amp_theory.jsonld",
+            "items/amp_selection_other_reasons.jsonld",
+            "items/amp_measure_start_a_priori.jsonld",
+            "items/amp_measure_end_a_priori.jsonld",
+            "items/amp_window_selection_data_driven_broad.jsonld",
+            "items/amp_window_selection_data_driven_broad_visual.jsonld",
+            "items/amp_selection_data_driven_broad_visual_details.jsonld",
+            "items/amp_window_length_sig_tests_broad.jsonld",
+            "items/amp_window_overlap_sig_tests_broad.jsonld",
+            "items/amp_window_overlap_length_sig_tests_broad.jsonld",
+            "items/amp_window_no_sig_tests_broad.jsonld",
+            "items/amp_window_peakwindow_length_broad.jsonld",
+            "items/amp_window_peakwindow_length_broad.jsonld",
+            "items/amp_window_other_broad.jsonld",
+            "items/amp_window_start_data_driven_broad.jsonld",
+            "items/amp_window_end_data_driven_broad.jsonld",
+            "items/amp_window_selection_data_driven_final.jsonld",
+            "items/amp_window_selection_data_driven_final_visual.jsonld",
+            "items/amp_selection_data_driven_final_visual_details.jsonld",
+            "items/amp_window_length_sig_tests_final.jsonld",
+            "items/amp_window_overlap_sig_tests_final.jsonld",
+            "items/amp_window_overlap_length_sig_tests_final.jsonld",
+            "items/amp_window_no_sig_tests_final.jsonld",
+            "items/amp_window_peakwindow_length_final.jsonld",
+            "items/amp_window_peakwindow_length_final.jsonld",
+            "items/amp_window_other_final.jsonld",
+            "items/amp_window_start_data_driven_final.jsonld",
+            "items/amp_window_end_data_driven_final.jsonld",
+            "items/lat_measure_software.jsonld",
+            "items/lat_measure_software_details.jsonld",
             "items/lat_measured_from.jsonld",
+            "items/lat_difference_waves.jsonld",
+            "items/lat_waveform_further_details.jsonld",
+            "items/lat_type.jsonld",
+            "items/peak_lat_measure.jsonld",
+            "items/peak_lat_measure_other.jsonld",
+            "items/onset_lat_measure.jsonld",
+            "items/onset_lat_sig_tests_length.jsonld",
+            "items/onset_lat_sig_tests_overlap.jsonld",
+            "items/onset_lat_sig_tests_overlap_length.jsonld",
+            "items/onset_lat_sig_tests_no.jsonld",
+            "items/onset_lat_peak_fraction.jsonld",
+            "items/onset_lat_area_fraction.jsonld",
+            "items/onset_lat_describe.jsonld",
+            "items/other_lat_describe.jsonld",
             "items/lat_selection_approach.jsonld",
             "items/lat_selection_approach_a_priori.jsonld",
-            "items/lat_selection_literature.jsonld",
-            "items/lat_selection_rationale.jsonld",
-            "items/lat_selection_data_driven.jsonld",
+            "items/lat_literature_exact.jsonld",
+            "items/lat_literature_similar.jsonld",
+            "items/lat_theory.jsonld",
+            "items/lat_selection_other_reasons.jsonld",
+            "items/lat_selection_approach_data_driven.jsonld",
+            "items/lat_selection_approach_data_driven_visual.jsonld",
+            "items/lat_selection_approach_data_driven_visual_details.jsonld",
+            "items/lat_selection_approach_data_driven_other.jsonld",
             "items/lat_further_clarification.jsonld",
-            "items/lat_broader_time_window_start.jsonld",
-            "items/lat_broader_time_window_end.jsonld",
-            "items/lat_measure_window_start_a_priori.jsonld",
-            "items/lat_measure_window_end_a_priori.jsonld",
-            "items/lat_measure_window_start_data-driven.jsonld",
-            "items/lat_measure_window_end_data-driven.jsonld",
-            "items/lat_measure_software.jsonld",
-            "items/lat_measure_software_details.jsonld"
+            "items/lat_measure_window_start.jsonld",
+            "items/lat_measure_window_end.jsonld"
         ],
         "addProperties": [
             {
-                "variableName": "measure_type",
-                "isAbout": "items/measure_type.jsonld",
+                "variableName": "measure_intro",
+                "isAbout": "items/measure_intro.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -64,153 +100,9 @@
                 ]
             },
             {
-                "variableName": "amp_measured_from",
-                "isAbout": "items/amp_measured_from.jsonld",
-                "isVis": "measure_type == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "waveform_further_details",
-                "isAbout": "items/waveform_further_details.jsonld",
-                "isVis": "measure_type == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_measure_procedure",
-                "isAbout": "items/amp_measure_procedure.jsonld",
-                "isVis": "measure_type == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "window_area_measure_further_clarification",
-                "isAbout": "items/window_area_measure_further_clarification.jsonld",
-                "isVis": "amp_measure_procedure == 3",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "factor_scores_further_clarification",
-                "isAbout": "items/factor_scores_further_clarification.jsonld",
-                "isVis": "amp_measure_procedure == 2",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "other_further_clarification",
-                "isAbout": "items/other_further_clarification.jsonld",
-                "isVis": "amp_measure_procedure > 5",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_time_window_selection",
-                "isAbout": "items/amp_time_window_selection.jsonld",
-                "isVis": "measure_type == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "approach_to_amp_measure_window_selection_a_priori",
-                "isAbout": "items/approach_to_amp_measure_window_selection_a_priori.jsonld",
-                "isVis": "measure_type == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_literature_references",
-                "isAbout": "items/amp_literature_references.jsonld",
-                "isVis": "amp_time_window_selection == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_further_details",
-                "isAbout": "items/amp_further_details.jsonld",
-                "isVis": "amp_time_window_selection == 1 || amp_time_window_selection == 2",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "approach_to_amp_measure_window_selection_data_driven",
-                "isAbout": "items/approach_to_amp_measure_window_selection_data_driven.jsonld",
-                "isVis": "measure_type == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_broader_window_start",
-                "isAbout": "items/amp_broader_window_start.jsonld",
-                "isVis": "amp_time_window_selection == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_broader_window_end",
-                "isAbout": "items/amp_broader_window_end.jsonld",
-                "isVis": "amp_time_window_selection == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_measure_start_a_priori",
-                "isAbout": "items/amp_measure_start_a_priori.jsonld",
-                "isVis": "amp_time_window_selection == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_measure_end_a_priori",
-                "isAbout": "items/amp_measure_end_a_priori.jsonld",
-                "isVis": "amp_time_window_selection == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_measure_start_data-driven",
-                "isAbout": "items/amp_measure_start_data-driven.jsonld",
-                "isVis": "amp_time_window_selection == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "amp_measure_end_data_driven",
-                "isAbout": "items/amp_measure_end_data_driven.jsonld",
-                "isVis": "amp_time_window_selection == 1",
+                "variableName": "measure_type",
+                "isAbout": "items/measure_type.jsonld",
+                "isVis": "measure_intro == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -219,7 +111,7 @@
             {
                 "variableName": "amp_measure_software",
                 "isAbout": "items/amp_measure_software.jsonld",
-                "isVis": "measure_type == 0",
+                "isVis": "measure_type.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -228,34 +120,385 @@
             {
                 "variableName": "amp_measure_software_details",
                 "isAbout": "items/amp_measure_software_details.jsonld",
-                "isVis": "measure_type == 0",
+                "isVis": "measure_type.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "lat_type",
-                "isAbout": "items/lat_type.jsonld",
-                "isVis": "measure_type == 1",
+                "variableName": "amp_measured_from",
+                "isAbout": "items/amp_measured_from.jsonld",
+                "isVis": "measure_type.includes(0)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "onset_lat_measure",
-                "isAbout": "items/onset_lat_measure.jsonld",
-                "isVis": "measure_type == 1",
+                "variableName": "waveform_difference_waves",
+                "isAbout": "items/waveform_difference_waves.jsonld",
+                "isVis": "amp_measured_from == 1",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "peak_lat_measure",
-                "isAbout": "items/peak_lat_measure.jsonld",
-                "isVis": "measure_type == 1",
+                "variableName": "waveform_further_details",
+                "isAbout": "items/waveform_further_details.jsonld",
+                "isVis": "amp_measured_from > 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_procedure",
+                "isAbout": "items/amp_measure_procedure.jsonld",
+                "isVis": "measure_type.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_peak_positivity",
+                "isAbout": "items/amp_measure_peak_positivity.jsonld",
+                "isVis": "amp_measure_procedure == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_peak_method",
+                "isAbout": "items/amp_measure_peak_method.jsonld",
+                "isVis": "amp_measure_procedure == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "window_area_measure_type",
+                "isAbout": "items/window_area_measure_type.jsonld",
+                "isVis": "amp_measure_procedure == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_details",
+                "isAbout": "items/amp_measure_details.jsonld",
+                "isVis": "amp_measure_procedure > 4",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_time_window_selection",
+                "isAbout": "items/amp_time_window_selection.jsonld",
+                "isVis": "measure_type.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_selection_a_priori",
+                "isAbout": "items/amp_window_selection_a_priori.jsonld",
+                "isVis": "[0, 2].includes(amp_time_window_selection)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_literature_reference",
+                "isAbout": "items/amp_literature_reference.jsonld",
+                "isVis": "[0, 1].includes(amp_window_selection_a_priori)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_literature_similar",
+                "isAbout": "items/amp_literature_similar.jsonld",
+                "isVis": "amp_window_selection_a_priori == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_theory",
+                "isAbout": "items/amp_theory.jsonld",
+                "isVis": "amp_window_selection_a_priori == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_selection_other_reasons",
+                "isAbout": "items/amp_selection_other_reasons.jsonld",
+                "isVis": "amp_window_selection_a_priori == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_start_a_priori",
+                "isAbout": "items/amp_measure_start_a_priori.jsonld",
+                "isVis": "[0, 2].includes(amp_time_window_selection)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_measure_end_a_priori",
+                "isAbout": "items/amp_measure_end_a_priori.jsonld",
+                "isVis": "[0, 2].includes(amp_time_window_selection)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_selection_data_driven_broad",
+                "isAbout": "items/amp_window_selection_data_driven_broad.jsonld",
+                "isVis": "amp_time_window_selection == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_selection_data_driven_broad_visual",
+                "isAbout": "items/amp_window_selection_data_driven_broad_visual.jsonld",
+                "isVis": "[0,1].includes(amp_window_selection_data_driven_broad)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_selection_data_driven_broad_visual_details",
+                "isAbout": "items/amp_selection_data_driven_broad_visual_details.jsonld",
+                "isVis": "amp_window_selection_data_driven_broad_visual == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_length_sig_tests_broad",
+                "isAbout": "items/amp_window_length_sig_tests_broad.jsonld",
+                "isVis": "amp_window_selection_data_driven_broad == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_overlap_sig_tests_broad",
+                "isAbout": "items/amp_window_overlap_sig_tests_broad.jsonld",
+                "isVis": "amp_window_selection_data_driven_broad == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_overlap_length_sig_tests_broad",
+                "isAbout": "items/amp_window_overlap_length_sig_tests_broad.jsonld",
+                "isVis": "amp_window_selection_data_driven_broad == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_no_sig_tests_broad",
+                "isAbout": "items/amp_window_no_sig_tests_broad.jsonld",
+                "isVis": "amp_window_selection_data_driven_broad == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_peakwindow_length_broad",
+                "isAbout": "items/amp_window_peakwindow_length_broad.jsonld",
+                "isVis": "amp_window_selection_data_driven_broad == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_peakwindow_length_broad",
+                "isAbout": "items/amp_window_peakwindow_length_broad.jsonld",
+                "isVis": "amp_window_selection_data_driven_broad == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_other_broad",
+                "isAbout": "items/amp_window_other_broad.jsonld",
+                "isVis": "amp_window_selection_data_driven_broad == 4",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_start_data_driven_broad",
+                "isAbout": "items/amp_window_start_data_driven_broad.jsonld",
+                "isVis": "amp_time_window_selection == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_end_data_driven_broad",
+                "isAbout": "items/amp_window_end_data_driven_broad.jsonld",
+                "isVis": "amp_time_window_selection == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_selection_data_driven_final",
+                "isAbout": "items/amp_window_selection_data_driven_final.jsonld",
+                "isVis": "[1, 2, 3].includes(amp_time_window_selection)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_selection_data_driven_final_visual",
+                "isAbout": "items/amp_window_selection_data_driven_final_visual.jsonld",
+                "isVis": "[0,1].includes(amp_window_selection_data_driven_final)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_selection_data_driven_final_visual_details",
+                "isAbout": "items/amp_selection_data_driven_final_visual_details.jsonld",
+                "isVis": "amp_window_selection_data_driven_final_visual == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_length_sig_tests_final",
+                "isAbout": "items/amp_window_length_sig_tests_final.jsonld",
+                "isVis": "amp_window_selection_data_driven_final == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_overlap_sig_tests_final",
+                "isAbout": "items/amp_window_overlap_sig_tests_final.jsonld",
+                "isVis": "amp_window_selection_data_driven_final == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_overlap_length_sig_tests_final",
+                "isAbout": "items/amp_window_overlap_length_sig_tests_final.jsonld",
+                "isVis": "amp_window_selection_data_driven_final == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_no_sig_tests_final",
+                "isAbout": "items/amp_window_no_sig_tests_final.jsonld",
+                "isVis": "amp_window_selection_data_driven_final == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_peakwindow_length_final",
+                "isAbout": "items/amp_window_peakwindow_length_final.jsonld",
+                "isVis": "amp_window_selection_data_driven_final == 4",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_peakwindow_length_final",
+                "isAbout": "items/amp_window_peakwindow_length_final.jsonld",
+                "isVis": "amp_window_selection_data_driven_final == 4",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_other_final",
+                "isAbout": "items/amp_window_other_final.jsonld",
+                "isVis": "amp_window_selection_data_driven_final == 5",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_start_data_driven_final",
+                "isAbout": "items/amp_window_start_data_driven_final.jsonld",
+                "isVis": "[1, 2, 3].includes(amp_time_window_selection)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "amp_window_end_data_driven_final",
+                "isAbout": "items/amp_window_end_data_driven_final.jsonld",
+                "isVis": "[1, 2, 3].includes(amp_time_window_selection)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_measure_software",
+                "isAbout": "items/lat_measure_software.jsonld",
+                "isVis": "measure_type.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_measure_software_details",
+                "isAbout": "items/lat_measure_software_details.jsonld",
+                "isVis": "measure_type.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -264,7 +507,133 @@
             {
                 "variableName": "lat_measured_from",
                 "isAbout": "items/lat_measured_from.jsonld",
-                "isVis": "measure_type == 1",
+                "isVis": "measure_type.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_difference_waves",
+                "isAbout": "items/lat_difference_waves.jsonld",
+                "isVis": "lat_measured_from == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_waveform_further_details",
+                "isAbout": "items/lat_waveform_further_details.jsonld",
+                "isVis": "[2, 3].includes(lat_measured_from)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_type",
+                "isAbout": "items/lat_type.jsonld",
+                "isVis": "measure_type.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "peak_lat_measure",
+                "isAbout": "items/peak_lat_measure.jsonld",
+                "isVis": "lat_type.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "peak_lat_measure_other",
+                "isAbout": "items/peak_lat_measure_other.jsonld",
+                "isVis": "peak_lat_measure == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "onset_lat_measure",
+                "isAbout": "items/onset_lat_measure.jsonld",
+                "isVis": "lat_type.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "onset_lat_sig_tests_length",
+                "isAbout": "items/onset_lat_sig_tests_length.jsonld",
+                "isVis": "onset_lat_measure == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "onset_lat_sig_tests_overlap",
+                "isAbout": "items/onset_lat_sig_tests_overlap.jsonld",
+                "isVis": "onset_lat_measure == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "onset_lat_sig_tests_overlap_length",
+                "isAbout": "items/onset_lat_sig_tests_overlap_length.jsonld",
+                "isVis": "onset_lat_measure == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "onset_lat_sig_tests_no",
+                "isAbout": "items/onset_lat_sig_tests_no.jsonld",
+                "isVis": "onset_lat_measure == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "onset_lat_peak_fraction",
+                "isAbout": "items/onset_lat_peak_fraction.jsonld",
+                "isVis": "onset_lat_measure == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "onset_lat_area_fraction",
+                "isAbout": "items/onset_lat_area_fraction.jsonld",
+                "isVis": "onset_lat_measure == 4",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "onset_lat_describe",
+                "isAbout": "items/onset_lat_describe.jsonld",
+                "isVis": "[0, 1, 5].includes(onset_lat_measure)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "other_lat_describe",
+                "isAbout": "items/other_lat_describe.jsonld",
+                "isVis": "lat_type.includes(2)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -273,7 +642,7 @@
             {
                 "variableName": "lat_selection_approach",
                 "isAbout": "items/lat_selection_approach.jsonld",
-                "isVis": "measure_type == 1",
+                "isVis": "measure_type.includes(1)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -289,17 +658,17 @@
                 ]
             },
             {
-                "variableName": "lat_selection_literature",
-                "isAbout": "items/lat_selection_literature.jsonld",
-                "isVis": "lat_selection_approach_a_priori == 0",
+                "variableName": "lat_literature_exact",
+                "isAbout": "items/lat_literature_exact.jsonld",
+                "isVis": "[0, 1].includes(lat_selection_approach_a_priori)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "lat_selection_rationale",
-                "isAbout": "items/lat_selection_rationale.jsonld",
+                "variableName": "lat_literature_similar",
+                "isAbout": "items/lat_literature_similar.jsonld",
                 "isVis": "lat_selection_approach_a_priori == 1",
                 "requiredValue": false,
                 "allow": [
@@ -307,9 +676,54 @@
                 ]
             },
             {
-                "variableName": "lat_selection_data_driven",
-                "isAbout": "items/lat_selection_data_driven.jsonld",
+                "variableName": "lat_theory",
+                "isAbout": "items/lat_theory.jsonld",
+                "isVis": "lat_selection_approach_a_priori == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_selection_other_reasons",
+                "isAbout": "items/lat_selection_other_reasons.jsonld",
+                "isVis": "lat_selection_approach_a_priori == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_selection_approach_data_driven",
+                "isAbout": "items/lat_selection_approach_data_driven.jsonld",
                 "isVis": "lat_selection_approach == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_selection_approach_data_driven_visual",
+                "isAbout": "items/lat_selection_approach_data_driven_visual.jsonld",
+                "isVis": "[0,1].includes(lat_selection_approach_data_driven)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_selection_approach_data_driven_visual_details",
+                "isAbout": "items/lat_selection_approach_data_driven_visual_details.jsonld",
+                "isVis": "lat_selection_approach_data_driven_visual == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "lat_selection_approach_data_driven_other",
+                "isAbout": "items/lat_selection_approach_data_driven_other.jsonld",
+                "isVis": "lat_selection_approach_data_driven == 2",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
@@ -318,79 +732,25 @@
             {
                 "variableName": "lat_further_clarification",
                 "isAbout": "items/lat_further_clarification.jsonld",
-                "isVis": "lat_selection_approach == 2 || lat_selection_approach == 3",
+                "isVis": "lat_selection_approach == 3",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "lat_broader_time_window_start",
-                "isAbout": "items/lat_broader_time_window_start.jsonld",
-                "isVis": "lat_selection_approach == 1",
+                "variableName": "lat_measure_window_start",
+                "isAbout": "items/lat_measure_window_start.jsonld",
+                "isVis": "[0, 1, 3].includes(lat_selection_approach)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"
                 ]
             },
             {
-                "variableName": "lat_broader_time_window_end",
-                "isAbout": "items/lat_broader_time_window_end.jsonld",
-                "isVis": "lat_selection_approach == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "lat_measure_window_start_a_priori",
-                "isAbout": "items/lat_measure_window_start_a_priori.jsonld",
-                "isVis": "lat_selection_approach == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "lat_measure_window_end_a_priori",
-                "isAbout": "items/lat_measure_window_end_a_priori.jsonld",
-                "isVis": "lat_selection_approach == 0",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "lat_measure_window_start_data-driven",
-                "isAbout": "items/lat_measure_window_start_data-driven.jsonld",
-                "isVis": "lat_selection_approach == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "lat_measure_window_end_data-driven",
-                "isAbout": "items/lat_measure_window_end_data-driven.jsonld",
-                "isVis": "lat_selection_approach == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "lat_measure_software",
-                "isAbout": "items/lat_measure_software.jsonld",
-                "isVis": "measure_type == 1",
-                "requiredValue": false,
-                "allow": [
-                    "reproschema:Skipped"
-                ]
-            },
-            {
-                "variableName": "lat_measure_software_details",
-                "isAbout": "items/lat_measure_software_details.jsonld",
-                "isVis": "measure_type == 1",
+                "variableName": "lat_measure_window_end",
+                "isAbout": "items/lat_measure_window_end.jsonld",
+                "isVis": "[0, 1, 3].includes(lat_selection_approach)",
                 "requiredValue": false,
                 "allow": [
                     "reproschema:Skipped"

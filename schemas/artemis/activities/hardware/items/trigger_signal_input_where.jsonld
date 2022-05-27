@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "trigger_signal_input_where.jsonld",
+    "prefLabel": {
+        "en": "trigger signal input where"
+    },
+    "description": "trigger signal input where",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "3.18 - Were your triggers delivered to the amplifier or acquisition computer?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "Amplifier"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Acquisition computer"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

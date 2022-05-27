@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Was this study a comparison between subject groups?"
+        "en": "2.9 - Was this study a comparison between subject groups?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Recon-filter-type"
+        "en": "5.6 - Recon-filter-type<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Type of post-recon smoothing.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

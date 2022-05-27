@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "artifact_steps_number.jsonld",
     "prefLabel": {
-        "en": "Artifact steps number"
+        "en": "artifact steps number"
     },
-    "description": "Artifact steps number",
+    "description": "artifact steps number",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "number"
     },
     "question": {
-        "en": "How many artifact elimination steps did you have?"
+        "en": "5.37 - How many artifact elimination steps did you have?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>This section refers to artifact removal (correction, rejection) methods other than elimating participants from the sample, which should be described in the Experimental design and sample section. This section should not include artifact removal within automated pipelines already described above.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

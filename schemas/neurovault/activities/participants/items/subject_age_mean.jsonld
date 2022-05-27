@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Mean age of subjects"
+        "en": "2.2 - Mean age of subjects"
     },
     "responseOptions": {
         "valueType": "xsd:float"

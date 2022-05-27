@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "auditory_ear_of_stimulation.jsonld",
+    "prefLabel": {
+        "en": "auditory ear of stimulation"
+    },
+    "description": "auditory ear of stimulation",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.38 - Ear of stimulation"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "both"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "right"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "left"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": true
+    }
+}

@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "Number of subjects entering into the analysis"
+        "en": "2.1 - Number of subjects entering into the analysis"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

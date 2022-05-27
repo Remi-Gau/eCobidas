@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "modality_used.jsonld",
+    "prefLabel": {
+        "en": "modality used"
+    },
+    "description": "modality used",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.26 - What sensory modality were used?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 4,
+        "choices": [
+            {
+                "name": {
+                    "en": "visual"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "auditory"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "somatosensory"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "olfactory"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "others"
+                },
+                "value": 4
+            }
+        ],
+        "multipleChoice": true
+    }
+}

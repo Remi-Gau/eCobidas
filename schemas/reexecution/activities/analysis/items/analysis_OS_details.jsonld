@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Describe the operating system details (i.e. specific version) provided (i.e. MacOS 10.12.6)."
+        "en": "3.5 - Describe the operating system details (i.e. specific version) provided (i.e. MacOS 10.12.6)."
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

@@ -12,9 +12,23 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Infusion speed"
+        "en": "3.2 - Infusion speed"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ml/s"
+                },
+                "value": "ml/s"
+            },
+            {
+                "prefLabel": {
+                    "en": "unitless (Kbol) "
+                },
+                "value": "unitless (Kbol) "
+            }
+        ]
     }
 }

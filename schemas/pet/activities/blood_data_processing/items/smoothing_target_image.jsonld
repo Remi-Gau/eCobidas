@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Smoothing target image"
+        "en": "9.29 - Smoothing target image"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

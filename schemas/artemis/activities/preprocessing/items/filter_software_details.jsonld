@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "filter_software_details.jsonld",
     "prefLabel": {
-        "en": "filter_software_details"
+        "en": "filter software details"
     },
-    "description": "filter_software_details",
+    "description": "filter software details",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Specify software version if applicable, and software name and version if \"other\" was selected."
+        "en": "5.12 - Specify software version if applicable, script language if \"custom script\" was selected, and software name and version if \"other\" was selected."
     },
     "responseOptions": {
         "valueType": "xsd:string",

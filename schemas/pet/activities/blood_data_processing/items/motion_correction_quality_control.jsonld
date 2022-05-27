@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "motion_correction_quality_control.jsonld",
+    "prefLabel": {
+        "en": "moco quality control"
+    },
+    "description": "moco quality control",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "9.17 - Motion correction: quality control<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Less than 3mm movement.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

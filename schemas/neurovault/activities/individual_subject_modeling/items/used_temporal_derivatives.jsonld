@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Were temporal derivatives included?"
+        "en": "6.5 - Were temporal derivatives included?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

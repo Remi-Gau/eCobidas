@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "The orientation of slices"
+        "en": "3.10 - The orientation of slices"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

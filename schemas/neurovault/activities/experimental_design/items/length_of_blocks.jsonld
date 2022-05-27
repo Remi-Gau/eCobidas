@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "For blocked designs, length of blocks in seconds"
+        "en": "1.5 - For blocked designs, length of blocks in seconds"
     },
     "responseOptions": {
         "valueType": "xsd:float"

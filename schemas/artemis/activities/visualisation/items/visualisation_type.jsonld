@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "visualisation_type.jsonld",
+    "prefLabel": {
+        "en": "visualisation type"
+    },
+    "description": "visualisation type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "8.1 - What kind of plot did you create"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "line plot (waveforms)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "topoplot"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": true
+    }
+}

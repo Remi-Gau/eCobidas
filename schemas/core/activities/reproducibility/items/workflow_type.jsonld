@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Name of workflow system used"
+        "en": "1.6 - Name of workflow system used"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
@@ -51,7 +51,7 @@
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "snakebids"
                 },
                 "value": 5
             }

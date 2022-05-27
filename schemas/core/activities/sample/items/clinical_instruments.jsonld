@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Describe the instruments used to obtain the diagnosis and provide tests of intra\u00ad or inter-\u00adrater reliability."
+        "en": "1.28 - Describe the instruments used to obtain the diagnosis and provide tests of intra\u00ad or inter-\u00adrater reliability.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Clarify whether a \u201cclinical diagnosis\u201d or \u201cinventory diagnosis\u201d was used (if applicable). State the diagnostic system (ICD, DSM etc.) that was used</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

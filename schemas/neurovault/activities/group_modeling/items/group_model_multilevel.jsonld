@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "If more than 2-levels, describe the levels and assumptions of the model (e.g. are variances assumed equal between groups)"
+        "en": "7.5 - If more than 2-levels, describe the levels and assumptions of the model.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example, are variances assumed equal between groups.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

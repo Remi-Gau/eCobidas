@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_4_software_details.jsonld",
+    "prefLabel": {
+        "en": "artifact 4 software details"
+    },
+    "description": "artifact 4 software details",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "5.109 - Specify software version if applicable, script language if \"custom script\" was selected and software name and version if \"other\" was selected."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

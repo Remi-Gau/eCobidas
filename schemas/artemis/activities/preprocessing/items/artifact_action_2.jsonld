@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "artifact_action_2.jsonld",
     "prefLabel": {
-        "en": "Artifact action 2"
+        "en": "artifact action 2"
     },
-    "description": "Artifact action 2",
+    "description": "artifact action 2",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "What action did you take regarding artifacts in step 2?"
+        "en": "5.38 - What action did you take regarding artifacts in step 2?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

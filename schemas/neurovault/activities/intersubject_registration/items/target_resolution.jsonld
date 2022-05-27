@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Voxel size of target template in millimeters"
+        "en": "5.12 - Voxel size of target template"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Millimeters"
+                },
+                "value": "Millimeters"
+            }
+        ]
     }
 }

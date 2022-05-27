@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "waveform_selected_channels_list.jsonld",
+    "prefLabel": {
+        "en": "waveform selected channels list"
+    },
+    "description": "waveform selected channels list",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "8.10 - List of channels selected for this visualisation<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Provide a semicolon-separated list of all channels (in alphabetical order). Averaging of channels will be described later, if this option was selected.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

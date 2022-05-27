@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Field strength of MRI scanner (in Tesla)"
+        "en": "3.3 - Field strength of MRI scanner"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Tesla"
+                },
+                "value": "Tesla"
+            }
+        ]
     }
 }

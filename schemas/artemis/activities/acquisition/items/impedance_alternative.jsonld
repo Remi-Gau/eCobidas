@@ -3,19 +3,19 @@
     "@type": "reproschema:Field",
     "@id": "impedance_alternative.jsonld",
     "prefLabel": {
-        "en": "impedance_alternative"
+        "en": "impedance alternative"
     },
-    "description": "alternative measure to impedance threshold (e.g. impedance range, other non-impedance measures)",
+    "description": "impedance alternative",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Specify the data quality information in the field below."
+        "en": "4.8 - Report data quality measures provided by your recording system alternative to impedances."
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

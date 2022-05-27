@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "topoplot_which_channels.jsonld",
+    "prefLabel": {
+        "en": "topoplot which channels"
+    },
+    "description": "topoplot which channels",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "8.25 - Did you visualise all channels or a selection?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "all channels"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "selected channels"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

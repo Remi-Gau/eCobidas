@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Specification of the algorithm to calculate the pupil size"
+        "en": "11.2 - Specification of the algorithm to calculate the pupil size<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Average pupil dilation</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 5,
+        "maxValue": 4,
         "choices": [
             {
                 "name": {
@@ -48,12 +48,6 @@
                     "en": "not applicable (because no pupil measure was used) "
                 },
                 "value": 4
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 5
             }
         ],
         "multipleChoice": false

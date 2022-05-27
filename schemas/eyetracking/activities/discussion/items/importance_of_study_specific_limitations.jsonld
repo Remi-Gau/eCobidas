@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Limitations mentioned due to the eye-tracking methodology, study specific or general stated?"
+        "en": "12.1 - Limitations mentioned due to the eye-tracking methodology, study specific or general stated?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Low data quality attenuated effect sizes</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

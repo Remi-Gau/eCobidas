@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "preprocessing_pipeline_which.jsonld",
+    "prefLabel": {
+        "en": "preprocessing pipeline which"
+    },
+    "description": "preprocessing pipeline which",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "5.5 - Which automated pre-processing pipeline did you use?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 4,
+        "choices": [
+            {
+                "name": {
+                    "en": "PREP (Bigdely-Shamlo et al., 2015)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "HAPPE (Gabard-Durnam et al., 2018)"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "HAPPE+ER (Monachino et al., 2021)"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "EPOS (Rodrigues et al., 2021)"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 4
+            }
+        ],
+        "multipleChoice": false
+    }
+}

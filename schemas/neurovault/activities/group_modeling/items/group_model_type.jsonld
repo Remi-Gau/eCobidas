@@ -12,24 +12,18 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Type of group model used"
+        "en": "7.1 - Type of group model used"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 1,
+        "maxValue": 0,
         "choices": [
             {
                 "name": {
                     "en": "Regression"
                 },
                 "value": 0
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 1
             }
         ],
         "multipleChoice": false

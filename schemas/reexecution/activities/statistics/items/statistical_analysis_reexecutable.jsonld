@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Do you think a reasonably skilled statistical analyst could re-execute this statistical analysis  (including getting the specified versions of the statistical tools and operating system indicated)?"
+        "en": "4.7 - Do you think a reasonably skilled statistical analyst could re-execute this statistical analysis  (including getting the specified versions of the statistical tools and operating system indicated)?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

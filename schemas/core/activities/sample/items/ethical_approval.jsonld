@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Description of the institutional review board that granted the ethics approval"
+        "en": "1.33 - Description of the institutional review board that granted the ethics approval<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Describe approval given, including the particular institutional review board, medical ethics committee or equivalent that granted the approval. When data is shared, describe the ethics/institutional approvals required from either the author (source) or recipient</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

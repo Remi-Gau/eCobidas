@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "trigger_signal_input_how.jsonld",
+    "prefLabel": {
+        "en": "trigger signal input how"
+    },
+    "description": "trigger signal input how",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "3.19 - Were your triggers delivered via an analogue or digital signal format?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "Analogue (e.g., via a parallel port, serial port, or TCP/IP)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Digital (including serial port over a USB port (arduino, LabJack U3, or similar))"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

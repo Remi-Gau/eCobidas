@@ -12,7 +12,7 @@
         "inputType": "multitext"
     },
     "question": {
-        "en": "This is a multitext item"
+        "en": "3.2 - This is a multitext item"
     },
     "responseOptions": {
         "valueType": "xsd:string",

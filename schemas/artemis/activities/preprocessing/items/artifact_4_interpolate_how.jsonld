@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_4_interpolate_how.jsonld",
+    "prefLabel": {
+        "en": "artifact 4 interpolate how"
+    },
+    "description": "artifact 4 interpolate how",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "5.127 - Describe interpolation function and the settings you used in step 4.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Provide appropriate details and settings, as well as a reference, if appropriate.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

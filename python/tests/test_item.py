@@ -11,7 +11,7 @@ from ..item import (
 )
 
 myPath = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, myPath + "/../")
+sys.path.insert(0, f"{myPath}/../")
 
 local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
 sys.path.insert(0, local_reproschema)
@@ -26,9 +26,9 @@ def test_slider_response():
     response_options = slider_response(choices)
 
     assert len(response_options.options["choices"]) == 4
-    assert response_options.options["choices"][1]["value"] == int(1)
+    assert response_options.options["choices"][1]["value"] == 1
     assert response_options.options["minValue"] == 0
-    assert response_options.options["maxValue"] == 4
+    assert response_options.options["maxValue"] == 3
 
 
 def test_preset():
@@ -43,7 +43,7 @@ def test_preset():
 
     assert (
         item.response_options.options
-        == "https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/response_options/boolean.jsonld"
+        == "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
     )
 
 
@@ -101,10 +101,13 @@ def test_get_item_info():
         "pref_label": "item name",
         "question": "test question",
         "field_type": "radio",
+        "details": "",
+        "unit": "",
         "choices": ["choice A", "choice B"],
         "visibility": "previous_item == 2",
         "mandatory": True,
         "description": "item name",
+        "sub_section": "",
     }
 
     assert item_info == expected
@@ -132,10 +135,13 @@ def test_get_item_info_with_name():
         "pref_label": "item name",
         "question": "test question",
         "field_type": "radio",
+        "details": "",
+        "unit": "",
         "choices": ["choice A", "choice B"],
         "visibility": True,
         "mandatory": True,
         "description": "desc",
+        "sub_section": "",
     }
 
     assert item_info == expected
@@ -161,11 +167,14 @@ def test_get_item_info_with_only_name():
         "name": "TEST_1",
         "pref_label": "TEST 1",
         "question": "test question",
+        "details": "",
+        "unit": "",
         "field_type": "radio",
         "choices": ["choice A", "choice B"],
         "visibility": True,
         "mandatory": True,
         "description": "desc",
+        "sub_section": "",
     }
 
     assert item_info == expected

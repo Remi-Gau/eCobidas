@@ -1,15 +1,18 @@
-import warnings, re
+import warnings
+import re
+
 from numpy import linspace, isnan
 
 from utils import convert_to_str, convert_to_int, snake_case
 from reproschema.models.item import Item, ResponseOption
 
+from rich import print
 
-def set_item_name(this_item):
+
+def set_item_name(this_item: dict):
 
     if "item" not in this_item.keys():
         item_name = convert_to_str(this_item["item_pref_label"])
-        item_name = item_name.lower()
     elif isinstance(convert_to_str(this_item["item"]), float):
         item_name = convert_to_str(this_item["item_pref_label"])
     elif convert_to_str(this_item["item"]) == "":
@@ -23,17 +26,32 @@ def set_item_name(this_item):
     return item_name
 
 
-def get_item_info(this_item):
+def get_item_info(this_item: dict) -> dict:
+
+    sub_section = ""
+    if "sub_section" in this_item and this_item["sub_section"].any():
+        sub_section = convert_to_str(this_item["sub_section"])
 
     item_name = set_item_name(this_item)
-    if "item_pref_label" in this_item.keys():
+    if "item_pref_label" in this_item:
         pref_label = convert_to_str(this_item["item_pref_label"])
     else:
-        pref_label = item_name.replace("_", " ")
+        pref_label = item_name
+
+    pref_label = pref_label.replace("_", " ")
 
     description = pref_label
-    if "item_description" in this_item.keys() and this_item["item_description"].any():
+    if "item_description" in this_item and this_item["item_description"].any():
         description = convert_to_str(this_item["item_description"])
+
+    unit = ""
+    if "unit" in this_item and this_item["unit"].any():
+        unit = convert_to_str(this_item["unit"])
+        unit = split_choices(unit)
+
+    details = ""
+    if "details" in this_item and this_item["details"].any():
+        details = convert_to_str(this_item["details"])
 
     question = convert_to_str(this_item["question"])
     question = question.replace("\n", "")
@@ -43,8 +61,7 @@ def get_item_info(this_item):
         field_type = "int"
 
     choices = convert_to_str(this_item["choices"])
-    if type(choices) == str:
-        choices = choices.split(" | ")
+    choices = split_choices(choices)
 
     visibility = get_visibility(this_item)
 
@@ -55,14 +72,23 @@ def get_item_info(this_item):
         "pref_label": pref_label,
         "description": description,
         "question": question,
+        "details": details,
         "field_type": field_type,
         "choices": choices,
+        "unit": unit,
         "visibility": visibility,
         "mandatory": mandatory,
+        "sub_section": sub_section,
     }
 
 
-def get_visibility(this_item):
+def split_choices(choices) -> list:
+    if type(choices) == str:
+        choices = choices.split(" | ")
+    return choices
+
+
+def get_visibility(this_item: dict):
 
     visibility = convert_to_str(this_item["visibility"])
 
@@ -83,7 +109,7 @@ def get_visibility(this_item):
     return visibility
 
 
-def get_mandatory(this_item):
+def get_mandatory(this_item: dict) -> bool:
 
     mandatory = convert_to_int(this_item["mandatory"])
 
@@ -92,7 +118,24 @@ def get_mandatory(this_item):
     return mandatory
 
 
-def define_new_item(item_info):
+def define_unit(item, units):
+
+    if units == "":
+        return item
+
+    unitOptions = [
+        {
+            "prefLabel": {"en": unit},
+            "value": unit,
+        }
+        for unit in units
+    ]
+    item.response_options.options["unitOptions"] = unitOptions
+
+    return item
+
+
+def define_new_item(item_info: dict):
     """
     define jsonld for this item
     """
@@ -101,17 +144,32 @@ def define_new_item(item_info):
     item.set_defaults(item_info["name"])
     item.set_description(item_info["description"])
     item.set_pref_label(item_info["pref_label"])
-    item.set_question(item_info["question"])
+
+    question = item_info["question"]
+    if "id" in item_info and item_info["id"] != "":
+        question = item_info["id"] + " - " + question
+    if "details" in item_info and item_info["details"] != "":
+        question = (
+            question
+            + "<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>"
+            + str(item_info["details"])
+            + "</details></div>"
+        )
+
+    item.set_question(question)
+
     item = define_choices(item, item_info["field_type"], item_info["choices"])
+    item = define_unit(item, item_info["unit"])
 
     return item
 
 
-def define_choices(item, field_type, choices):
+def define_choices(item, field_type: str, choices: list):
 
     if field_type not in [
         "multitext",
         "text",
+        "textarea",
         "radio",
         "radio_multiple",
         "select",
@@ -123,9 +181,7 @@ def define_choices(item, field_type, choices):
         "time range",
         "date",
     ]:
-        warnings.warn(
-            "Item " + item.get_name() + " has unknown field type: " + field_type
-        )
+        warnings.warn(f"Item {item.get_name()} has unknown field type: {field_type}")
         # TODO
         # - create a log file of unknown item types
 
@@ -136,27 +192,24 @@ def define_choices(item, field_type, choices):
     if field_type == "multitext":
         item.set_input_type_as_multitext()
 
-    if field_type == "text":
-        item.set_input_type_as_text(3000)
-
     elif field_type == "slider":
         response_options = slider_response(choices)
         item.set_input_type_as_slider(response_options)
 
-    if field_type in ["radio", "radio_multiple", "select", "select_multiple"]:
+    elif field_type == "text":
+        item.set_input_type_as_text(3000)
+
+    if field_type in {"radio", "radio_multiple", "select", "select_multiple"}:
 
         response_options = list_responses_options(choices)
 
-        if field_type in ["radio_multiple", "select_multiple"]:
+        if field_type in {"radio_multiple", "select_multiple"}:
             response_options.set_multiple_choice(True)
 
-        if field_type in ["radio", "radio_multiple"]:
+        if field_type in {"radio", "radio_multiple"}:
             item.set_input_type_as_radio(response_options)
 
-        # if we have a dropdown menu
-        elif field_type in ["select", "select_multiple"]:
-            response_options.add_choice("other", len(choices))
-            response_options.set_max(len(choices))
+        elif field_type in {"select", "select_multiple"}:
             item.set_input_type_as_select(response_options)
 
         if ispreset(choices):
@@ -165,7 +218,7 @@ def define_choices(item, field_type, choices):
     return item
 
 
-def list_responses_options(choices):
+def list_responses_options(choices: list):
 
     response_options = ResponseOption()
 
@@ -179,23 +232,26 @@ def list_responses_options(choices):
     return response_options
 
 
-def slider_response(choices):
+def slider_response(choices: list):
 
-    min = int(choices[0])
-    max = int(choices[1])
-    steps = int(choices[2]) if len(choices) == 3 else 11
+    min = float(choices[0])
+    max = float(choices[1])
+    steps = int(choices[2]) if len(choices) == 3 else 21
 
     response_options = ResponseOption()
-    response_options.set_max(min)
-    response_options.set_max(max)
+    response_options.set_max(1)
+    response_options.set_max(steps - 1)
 
+    linspace(min, max, steps)
+
+    # TODO update after render off slide item has been improved
     for i, opt in enumerate(linspace(min, max, steps)):
-        response_options.add_choice(str(opt), i)
+        response_options.add_choice(f"{opt:.3f}", i)
 
     return response_options
 
 
-def use_preset(item, choices):
+def use_preset(item, choices: list):
 
     preset_response_file = (
         "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/"
@@ -208,5 +264,5 @@ def use_preset(item, choices):
     return item
 
 
-def ispreset(choices):
+def ispreset(choices: list):
     return isinstance(choices[0], str) and len(choices) == 1 and "preset:" in choices[0]

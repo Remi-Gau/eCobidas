@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "What operating system was used to present the stimuli?"
+        "en": "1.13 - What operating system was used to present the stimuli?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/operating_systems.jsonld"
 }

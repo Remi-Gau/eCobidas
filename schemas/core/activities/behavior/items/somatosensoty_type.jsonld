@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "somatosensoty_type.jsonld",
+    "prefLabel": {
+        "en": "somatosensoty type"
+    },
+    "description": "somatosensoty type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.41 - Stimulus type"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "electrical"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "air puff"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": true
+    }
+}

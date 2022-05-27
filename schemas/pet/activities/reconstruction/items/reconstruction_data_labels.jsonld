@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Reconstruction data labels"
+        "en": "5.18 - Reconstruction data labels"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -42,12 +42,6 @@
                     "en": "activitySD"
                 },
                 "value": 3
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 4
             }
         ],
         "multipleChoice": false

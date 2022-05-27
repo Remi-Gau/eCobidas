@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Provide the timing structure of the events in the task, whether a random / jittered pattern or a regular arrangement\u037e any jittering of block onsets"
+        "en": "1.6 - Provide the timing structure of the events in the task.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Whether a random / jittered pattern or a regular arrangement\u037e any jittering of block onsets.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

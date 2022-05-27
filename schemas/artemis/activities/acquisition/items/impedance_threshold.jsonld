@@ -3,18 +3,26 @@
     "@type": "reproschema:Field",
     "@id": "impedance_threshold.jsonld",
     "prefLabel": {
-        "en": "impedance_threshold"
+        "en": "impedance threshold"
     },
-    "description": "highest impedance threshold",
+    "description": "impedance threshold",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "number"
     },
     "question": {
-        "en": "What was the impedance upper threshold that your system tolerated (in kilo-ohms)?"
+        "en": "4.5 - What was the upper threshold of impedance that you registered in your study?"
     },
     "responseOptions": {
-        "valueType": "xsd:integer"
+        "valueType": "xsd:integer",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "kilo-ohms"
+                },
+                "value": "kilo-ohms"
+            }
+        ]
     }
 }

@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "Please provide the rationale."
+        "en": "6.55 - Provide the rationale for your procedure."
     },
     "responseOptions": {
         "valueType": "xsd:string",

@@ -36,7 +36,11 @@
             "items/clinical_criteria.jsonld",
             "items/clinical_instruments.jsonld",
             "items/matching_strategy.jsonld",
-            "items/ethical_approval.jsonld"
+            "items/population_and_recruitment_strategy.jsonld",
+            "items/ethical_approval.jsonld",
+            "items/compensation.jsonld",
+            "items/compensation_type.jsonld",
+            "items/other_demographics.jsonld"
         ],
         "addProperties": [
             {
@@ -238,8 +242,44 @@
                 ]
             },
             {
+                "variableName": "population_and_recruitment_strategy",
+                "isAbout": "items/population_and_recruitment_strategy.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
                 "variableName": "ethical_approval",
                 "isAbout": "items/ethical_approval.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "compensation",
+                "isAbout": "items/compensation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "compensation_type",
+                "isAbout": "items/compensation_type.jsonld",
+                "isVis": "compensation == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "other_demographics",
+                "isAbout": "items/other_demographics.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

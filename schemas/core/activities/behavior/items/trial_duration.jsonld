@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "What was the duration of one trial? (in seconds)"
+        "en": "1.5 - What was the duration of one trial?"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "seconds"
+                },
+                "value": "seconds"
+            }
+        ]
     }
 }

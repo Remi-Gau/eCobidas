@@ -12,9 +12,23 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Specific radioactivity"
+        "en": "3.9 - Specific radioactivity"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Bq/g"
+                },
+                "value": "Bq/g"
+            },
+            {
+                "prefLabel": {
+                    "en": "GBq/mg"
+                },
+                "value": "GBq/mg"
+            }
+        ]
     }
 }

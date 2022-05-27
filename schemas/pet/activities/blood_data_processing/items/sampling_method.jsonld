@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Sampling Method"
+        "en": "9.1 - Sampling Method"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 5,
+        "maxValue": 4,
         "choices": [
             {
                 "name": {
@@ -48,12 +48,6 @@
                     "en": "image derived"
                 },
                 "value": 4
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 5
             }
         ],
         "multipleChoice": false

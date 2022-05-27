@@ -3,21 +3,21 @@
     "@type": "reproschema:Field",
     "@id": "online_filters.jsonld",
     "prefLabel": {
-        "en": "online_filters"
+        "en": "online filters"
     },
-    "description": "filters used during the recording (simultaneously)",
+    "description": "online filters",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "Which of the following online filters have you used? (You can choose as many as used)"
+        "en": "4.21 - Which of the following online filters have you used?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 5,
         "choices": [
             {
                 "name": {
@@ -48,6 +48,12 @@
                     "en": "notch"
                 },
                 "value": 4
+            },
+            {
+                "name": {
+                    "en": "none"
+                },
+                "value": 5
             }
         ],
         "multipleChoice": true

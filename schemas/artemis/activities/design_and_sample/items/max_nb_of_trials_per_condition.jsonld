@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "max_nb_of_trials_per_condition.jsonld",
     "prefLabel": {
-        "en": "max_nb_of_trials_per_condition"
+        "en": "max nb of trials per condition"
     },
-    "description": "max_nb_of_trials_per_condition",
+    "description": "max nb of trials per condition",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Please specify the maximum number of trials analyzed per condition for any subject: "
+        "en": "2.21 - Specify the maximum number of trials analyzed per condition for any subject. <div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Values should be separated by semicolon and a space and given in the same order as the conditions were listed earlier. If there are multiple groups of participants, list trial counts for all conditions for one group, and then for the next one - following the ordering of groups as you specified them earlier.</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

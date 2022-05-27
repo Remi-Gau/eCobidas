@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Repetition time (TR) in milliseconds"
+        "en": "3.12 - Repetition time (TR)"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "Milliseconds"
+                },
+                "value": "Milliseconds"
+            }
+        ]
     }
 }

@@ -1,0 +1,7 @@
+name	value
+extrapolation based on slope	0
+difference larger than chance	1
+N consecutive significant comparisons	2
+fractational area (e.g. 30% area)	3
+fractational peak (e.g. 50% peak)	4
+other	5

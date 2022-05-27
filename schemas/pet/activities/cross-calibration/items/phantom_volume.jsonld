@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Phantom volume"
+        "en": "7.4 - Phantom volume"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "ml"
+                },
+                "value": "ml"
+            }
+        ]
     }
 }

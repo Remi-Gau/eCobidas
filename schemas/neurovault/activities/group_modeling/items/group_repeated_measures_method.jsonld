@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "If multiple measurements per subject, list method to account for within subject correlation, exact assumptions made about correlation/variance"
+        "en": "7.7 - If multiple measurements per subject, list method to account for within subject correlation, exact assumptions made about correlation/variance"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

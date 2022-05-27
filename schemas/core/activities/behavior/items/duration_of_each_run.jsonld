@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "What was the duration of each imaging run in seconds?"
+        "en": "1.10 - What was the duration of each imaging run?"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "seconds"
+                },
+                "value": "seconds"
+            }
+        ]
     }
 }

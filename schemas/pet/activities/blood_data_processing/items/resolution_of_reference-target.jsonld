@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Resolution of reference-target"
+        "en": "9.25 - Resolution of reference-target"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
@@ -30,14 +30,16 @@
                     "en": "2 x 2 x 2"
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 2
             }
         ],
-        "multipleChoice": false
+        "multipleChoice": false,
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "mm"
+                },
+                "value": "mm"
+            }
+        ]
     }
 }

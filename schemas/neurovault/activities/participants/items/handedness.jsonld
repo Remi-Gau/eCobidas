@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Handedness of subjects"
+        "en": "2.5 - Handedness of subjects"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

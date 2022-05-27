@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "Enter the publication PubMed ID (PMID)"
+        "en": "1.2 - Enter the publication PubMed ID (PMID)"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

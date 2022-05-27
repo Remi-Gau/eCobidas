@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Bodyweight"
+        "en": "3.6 - Bodyweight"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "kg "
+                },
+                "value": "kg "
+            }
+        ]
     }
 }

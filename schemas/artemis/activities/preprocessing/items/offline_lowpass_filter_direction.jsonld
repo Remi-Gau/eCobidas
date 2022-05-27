@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "offline_lowpass_filter_direction.jsonld",
+    "prefLabel": {
+        "en": "offline lowpass filter direction"
+    },
+    "description": "offline lowpass filter direction",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "5.26 - What was the direction of the low-pass filter?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "forwards"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "backwards"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "forwards and backwards"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Frame-Sequence"
+        "en": "5.11 - Frame-Sequence"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 7,
+        "maxValue": 6,
         "choices": [
             {
                 "name": {
@@ -60,12 +60,6 @@
                     "en": "3x600 (36 frames)"
                 },
                 "value": 6
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 7
             }
         ],
         "multipleChoice": false

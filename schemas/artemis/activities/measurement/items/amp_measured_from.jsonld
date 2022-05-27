@@ -12,38 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "The amplitude is measured from"
+        "en": "6.5 - The amplitude is measured from"
     },
-    "responseOptions": {
-        "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 3,
-        "choices": [
-            {
-                "name": {
-                    "en": "single waves (one condition)"
-                },
-                "value": 0
-            },
-            {
-                "name": {
-                    "en": "difference waves"
-                },
-                "value": 1
-            },
-            {
-                "name": {
-                    "en": "waves obtained using transformation of raw data (e.g. sPCA, source localization)"
-                },
-                "value": 2
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 3
-            }
-        ],
-        "multipleChoice": false
-    }
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/waveform.jsonld"
 }

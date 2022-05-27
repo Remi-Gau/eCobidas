@@ -1,5 +1,6 @@
-import os, sys
-import pandas as pd
+import os
+
+from rich import print
 
 from item import get_item_info, define_new_item
 from utils import (
@@ -66,7 +67,7 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
             protocol, items, out_dir
         )
 
-        # TODO implement once figured out wha the right schema shape is
+        # TODO implement once figured out what the right schema shape is
         # activity.schema["citation"] = ""
         # if schema_info["citation"].any():
         #     activity.schema["citation"] = schema_info["citation"].tolist()[0]
@@ -84,6 +85,8 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
             this_item = items[items["item_order"] == item_idx]
 
             item_info = get_item_info(this_item)
+
+            item_info["id"] = f"{activity_idx:.0f}.{item_idx:.0f}"
 
             print_item_info(activity_idx, item_idx, item_info)
 
@@ -131,8 +134,12 @@ def initialize_protocol(this_schema, out_dir):
 
 def initialize_activity(protocol, items, out_dir):
 
+    if len(items.activity_pref_label.unique()) == 0:
+        raise NameError("Empty activity")
+
     activity = Activity()
 
+    # TODO : make sure there is only only preferred label
     activity_pref_label = items.activity_pref_label.unique()[0]
     activity.set_pref_label(activity_pref_label)
 
@@ -172,7 +179,7 @@ def initialize_activity(protocol, items, out_dir):
     return protocol, activity, activity_path
 
 
-def create_new_item(item_info, activity_path):
+def create_new_item(item_info: dict, activity_path: str):
 
     item = define_new_item(item_info)
 
@@ -198,15 +205,11 @@ def get_activity_preamble(items):
     preambles = items[not_nan]
     preamble = list(preambles["preamble"].unique())
 
-    if len(preamble) > 1 or not preamble:
-        preamble = ""
-    else:
-        preamble = preamble[0]
-
+    preamble = "" if len(preamble) > 1 or not preamble else preamble[0]
     return preamble
 
 
-def create_response_options(schema_info, df, out_dir):
+def create_response_options(schema_info: dict, df, out_dir):
 
     responses = df.name.unique()
 

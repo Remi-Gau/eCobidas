@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "eog_channels.jsonld",
     "prefLabel": {
-        "en": "EOG_channels"
+        "en": "eog channels"
     },
-    "description": "EOG channels used to record eye movements (typically, VEOG HEOG channels)",
+    "description": "eog channels",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "radio"
     },
     "question": {
-        "en": "How many EOG channels did you use to record eye movement-dependent voltage?"
+        "en": "4.19 - How many EOG channels did you use to record eye movement-dependent voltage?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

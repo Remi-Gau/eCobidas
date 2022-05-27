@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "population_and_recruitment_strategy.jsonld",
+    "prefLabel": {
+        "en": "population and recruitment strategy"
+    },
+    "description": "population and recruitment strategy",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.30 - Population from which subjects were drawn, and how and where recruitment took place.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example, schools, clinics, etc. If possible, note if subjects are research\u00ad naive or have participated in other studies before</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

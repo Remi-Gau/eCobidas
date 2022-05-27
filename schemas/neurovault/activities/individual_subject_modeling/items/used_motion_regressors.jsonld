@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Were motion regressors included?"
+        "en": "6.7 - Were motion regressors included?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

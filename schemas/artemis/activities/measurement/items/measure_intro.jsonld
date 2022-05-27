@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "measure_intro.jsonld",
+    "prefLabel": {
+        "en": "measure intro"
+    },
+    "description": "measure intro",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "6.1 - Did you measure amplitude and/or latency for the purposes of later statistical analysis?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Select no if you did not measure latency or amplitude for the purposes of statistical analysis in the next step. For example, you may have conducted a mass univariate analysis and you did not subject locations and time windows obtained by mass univariate approach to another statistical analysis, or you may have conducted a source analysis.</details></div>"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
+}

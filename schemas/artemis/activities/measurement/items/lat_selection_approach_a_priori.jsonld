@@ -12,12 +12,12 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Select the procedure which was used for latency measurement in this time window."
+        "en": "6.63 - Select the procedure which was used for latency measurement in this time window."
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 1,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -27,9 +27,21 @@
             },
             {
                 "name": {
-                    "en": "other"
+                    "en": "based on previous literature, but not exact replication"
                 },
                 "value": 1
+            },
+            {
+                "name": {
+                    "en": "theory driven novel window selection"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "other"
+                },
+                "value": 3
             }
         ],
         "multipleChoice": false

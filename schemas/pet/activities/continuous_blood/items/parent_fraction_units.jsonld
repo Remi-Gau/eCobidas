@@ -12,12 +12,12 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Parent fraction units"
+        "en": "6.14 - Parent fraction units"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
@@ -30,12 +30,6 @@
                     "en": "fraction"
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "fraction"
-                },
-                "value": 2
             }
         ],
         "multipleChoice": false

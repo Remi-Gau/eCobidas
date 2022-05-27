@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "electrode_location_naming_convention_custom.jsonld",
+    "prefLabel": {
+        "en": "electrode location naming convention custom"
+    },
+    "description": "electrode location naming convention custom",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "text"
+    },
+    "question": {
+        "en": "4.10 - Describe the custom placement of your electrodes relative to anatomical markers or electrode naming/placement systems"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 3000
+    }
+}

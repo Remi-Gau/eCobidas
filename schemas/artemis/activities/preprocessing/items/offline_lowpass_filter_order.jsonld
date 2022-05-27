@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "offline_lowpass_filter_order.jsonld",
+    "prefLabel": {
+        "en": "offline lowpass filter order"
+    },
+    "description": "offline lowpass filter order",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "5.21 - What was the length/order of the low-pass filter?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

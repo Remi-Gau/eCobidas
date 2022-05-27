@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "artifact_removal_more_than_7.jsonld",
+    "prefLabel": {
+        "en": "artifact removal more than 7"
+    },
+    "description": "artifact removal more than 7",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "5.199 - We are sorry, but this is an early version of the web-app, and it currently includes up to 7 steps of artifact removal decisions due to technical limitations. Describe your remaining decisions in this field as detailed as you can."
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

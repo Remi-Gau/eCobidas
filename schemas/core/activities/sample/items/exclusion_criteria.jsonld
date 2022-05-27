@@ -9,13 +9,13 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Describe any screening criteria, including those applied to \u201cnormal\u201d sample such as MRI exclusion criteria"
+        "en": "1.25 - Describe any screening criteria, including those applied to \u201cnormal\u201d sample such as MRI exclusion criteria<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Only right handed; only males/females; specific moment in hormonal cycle; specific ethnicities </details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

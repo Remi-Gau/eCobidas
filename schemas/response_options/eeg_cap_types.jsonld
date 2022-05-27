@@ -8,19 +8,19 @@
     "choices": [
         {
             "name": {
-                "en": "Waveguard (ANT)"
+                "en": "Aegis Array"
             },
             "value": 0
         },
         {
             "name": {
-                "en": "Electrocap"
+                "en": "Biosemi"
             },
             "value": 1
         },
         {
             "name": {
-                "en": "Quickcap (Neuroscan)"
+                "en": "BrainProducts"
             },
             "value": 2
         },
@@ -32,7 +32,7 @@
         },
         {
             "name": {
-                "en": "Aegis Array"
+                "en": "Electrocap"
             },
             "value": 4
         },
@@ -44,13 +44,13 @@
         },
         {
             "name": {
-                "en": "BrainProducts"
+                "en": "Geodesic Sensor Net"
             },
             "value": 6
         },
         {
             "name": {
-                "en": "Biosemi"
+                "en": "Quickcap (Neuroscan)"
             },
             "value": 7
         },
@@ -62,7 +62,7 @@
         },
         {
             "name": {
-                "en": "Geodesic Sensor Net"
+                "en": "Waveguard (ANT)"
             },
             "value": 9
         },

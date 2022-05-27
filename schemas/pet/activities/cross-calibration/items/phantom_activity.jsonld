@@ -12,9 +12,17 @@
         "inputType": "float"
     },
     "question": {
-        "en": "Phantom activity"
+        "en": "7.6 - Phantom activity"
     },
     "responseOptions": {
-        "valueType": "xsd:float"
+        "valueType": "xsd:float",
+        "unitOptions": [
+            {
+                "prefLabel": {
+                    "en": "MBq"
+                },
+                "value": "MBq"
+            }
+        ]
     }
 }

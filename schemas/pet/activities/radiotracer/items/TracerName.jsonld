@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Name of the tracer compound used"
+        "en": "2.2 - Name of the tracer compound used"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
@@ -30,12 +30,6 @@
                     "en": "raclopride "
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 2
             }
         ],
         "multipleChoice": false

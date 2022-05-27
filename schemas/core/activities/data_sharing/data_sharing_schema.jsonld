@@ -14,9 +14,9 @@
     "ui": {
         "shuffle": false,
         "order": [
-            "items/material_shared.jsonld",
+            "items/Material_shared.jsonld",
             "items/data_completeness.jsonld",
-            "items/url_doi.jsonld",
+            "items/URL_DOI.jsonld",
             "items/url_access_information.jsonld",
             "items/access_cost.jsonld",
             "items/ethics_compliance.jsonld",
@@ -34,8 +34,8 @@
         ],
         "addProperties": [
             {
-                "variableName": "material_shared",
-                "isAbout": "items/material_shared.jsonld",
+                "variableName": "Material_shared",
+                "isAbout": "items/Material_shared.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -52,8 +52,8 @@
                 ]
             },
             {
-                "variableName": "url_doi",
-                "isAbout": "items/url_doi.jsonld",
+                "variableName": "URL_DOI",
+                "isAbout": "items/URL_DOI.jsonld",
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

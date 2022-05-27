@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Was linear or nonlinear registration used?"
+        "en": "5.3 - Was linear or nonlinear registration used?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
@@ -30,12 +30,6 @@
                     "en": "non-linear"
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 2
             }
         ],
         "multipleChoice": false

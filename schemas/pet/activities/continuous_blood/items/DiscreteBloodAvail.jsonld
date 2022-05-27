@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Boolean that specifies if discrete blood measurements are available."
+        "en": "6.7 - Boolean that specifies if discrete blood measurements are available.<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Boolean that specifies if discrete blood measurements are available.</details></div>"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

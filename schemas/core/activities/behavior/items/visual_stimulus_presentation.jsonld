@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "visual_stimulus_presentation.jsonld",
+    "prefLabel": {
+        "en": "visual stimulus presentation"
+    },
+    "description": "visual stimulus presentation",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.27 - Specify the presentation hardware "
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "back projection"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "in\u00ad room display"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "goggles"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

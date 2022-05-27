@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "notch_online_filters.jsonld",
     "prefLabel": {
-        "en": "notch_online_filters"
+        "en": "notch online filters"
     },
-    "description": "notch filter (AC offset or electricity-related interference) applied during recording or session",
+    "description": "notch online filters",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "What notch filter (eg. 50Hz) have you applied during the recording?"
+        "en": "4.28 - What notch filter have you applied during the recording?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example \"50Hz\"</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

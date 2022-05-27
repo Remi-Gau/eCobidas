@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "other_eog_channels.jsonld",
     "prefLabel": {
-        "en": "other_eog_channels"
+        "en": "other eog channels"
     },
-    "description": "Specify EOG channels used to record eye movements",
+    "description": "other eog channels",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "text"
     },
     "question": {
-        "en": "Specify the EOG channels you used for the recording"
+        "en": "4.20 - Specify the position of EOG channels you used for the recording<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example, where were they placed? How were they positioned in ajdunct to the rest of the electrodes?</details></div>"
     },
     "responseOptions": {
         "valueType": "xsd:string",

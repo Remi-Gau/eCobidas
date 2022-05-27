@@ -3,19 +3,19 @@
     "@type": "reproschema:Field",
     "@id": "trial_presentation_strategy_other.jsonld",
     "prefLabel": {
-        "en": "trial_presentation_strategy_other"
+        "en": "trial presentation strategy other"
     },
-    "description": "trial_presentation_strategy_other",
+    "description": "trial presentation strategy other",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "textarea"
     },
     "question": {
-        "en": "Please provide more details your trial presentation:"
+        "en": "2.12 - Explain how it was determined how many trials a participant was presented with."
     },
     "responseOptions": {
         "valueType": "xsd:string",
-        "maxLength": 3000
+        "maxLength": 300
     }
 }

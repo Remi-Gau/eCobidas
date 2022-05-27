@@ -3,16 +3,16 @@
     "@type": "reproschema:Field",
     "@id": "presenting_software.jsonld",
     "prefLabel": {
-        "en": "presenting_software"
+        "en": "presenting software"
     },
-    "description": "presenting_software",
+    "description": "presenting software",
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
         "inputType": "select"
     },
     "question": {
-        "en": "Which presenting software did you use to show your experimental task?"
+        "en": "2.22 - Which presenting software did you use to show your experimental task?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/stimulus_presentation_softwares.jsonld"
 }

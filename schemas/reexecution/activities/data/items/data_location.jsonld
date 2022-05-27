@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "From where/how am I instructed to access the data?"
+        "en": "2.2 - From where/how am I instructed to access the data?"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 2,
+        "maxValue": 1,
         "choices": [
             {
                 "name": {
@@ -30,12 +30,6 @@
                     "en": "Data available upon request from author"
                 },
                 "value": 1
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 2
             }
         ],
         "multipleChoice": false

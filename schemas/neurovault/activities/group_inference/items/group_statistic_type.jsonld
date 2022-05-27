@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Type of statistic that is the basis of the inference"
+        "en": "8.1 - Type of statistic that is the basis of the inference"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 7,
+        "maxValue": 6,
         "choices": [
             {
                 "name": {
@@ -60,12 +60,6 @@
                     "en": "MonteCarloP"
                 },
                 "value": 6
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 7
             }
         ],
         "multipleChoice": false

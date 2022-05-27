@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Were you successful at accessing the data?"
+        "en": "2.6 - Were you successful at accessing the data?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

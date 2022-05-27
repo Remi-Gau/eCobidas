@@ -9,13 +9,10 @@
     "schemaVersion": "1.0.0-rc4",
     "version": "0.0.1",
     "ui": {
-        "inputType": "text"
+        "inputType": "radio"
     },
     "question": {
-        "en": "Were feedbacks provided to the participant?"
+        "en": "1.48 - Were feedbacks provided to the participant?"
     },
-    "responseOptions": {
-        "valueType": "xsd:string",
-        "maxLength": 300
-    }
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

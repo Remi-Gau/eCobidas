@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "Is the operating system used for the statistical tool(s) specified?"
+        "en": "4.3 - Is the operating system used for the statistical tool(s) specified?"
     },
     "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
 }

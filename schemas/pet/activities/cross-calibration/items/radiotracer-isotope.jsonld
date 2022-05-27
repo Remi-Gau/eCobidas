@@ -12,12 +12,12 @@
         "inputType": "select"
     },
     "question": {
-        "en": "Radiotracer-isotope"
+        "en": "7.5 - Radiotracer-isotope"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
         "minValue": 0,
-        "maxValue": 4,
+        "maxValue": 3,
         "choices": [
             {
                 "name": {
@@ -33,21 +33,15 @@
             },
             {
                 "name": {
-                    "en": "Nitrogen-13"
+                    "en": "nitrogen-13"
                 },
                 "value": 2
             },
             {
                 "name": {
-                    "en": "Oxygen-15"
+                    "en": "oxygen-15"
                 },
                 "value": 3
-            },
-            {
-                "name": {
-                    "en": "other"
-                },
-                "value": 4
             }
         ],
         "multipleChoice": false
