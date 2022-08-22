@@ -1,0 +1,4 @@
+[submodule "cobidas_schema"]
+	path = cobidas_schema
+	url = https://github.com/ohbm/cobidas_schema.git
+	datalad-url = https://github.com/ohbm/cobidas_schema.git
