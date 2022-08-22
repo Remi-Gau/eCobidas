@@ -129,47 +129,6 @@ def print_item_info(activity_idx, item_idx, item_info: dict):
     )
 
 
-def print_item_to_table(item_id: str, this_item: dict, item_info: dict, sep=" "):
-
-    details = convert_to_str(this_item["details"])
-    if isinstance(details, float):
-        details = [str(details)]
-    if details == ["nan"]:
-        details = ""
-
-    choices = item_info["choices"]
-    if isinstance(choices, float):
-        choices = [str(choices)]
-    if "preset:boolean" in choices:
-        choices = ["yes", "no"]
-    if isinstance(choices, list):
-        choices = "- " + "\n- ".join(choices)
-    if choices == "- nan":
-        choices = ""
-
-    dict_to_print = {
-        "item": item_id,
-        "field": item_info["pref_label"],
-        "question": item_info["question"],
-        "options": choices,
-        "instructions": details,
-    }
-
-    print(
-        dict_to_print["item"]
-        + sep
-        + dict_to_print["field"]
-        + sep
-        + dict_to_print["question"]
-        + sep
-        + dict_to_print["options"]
-        + sep
-        + dict_to_print["instructions"]
-    )
-
-    return dict_to_print
-
-
 def print_download(repo: str, branch: str, protocol):
 
     repo = f"https://raw.githubusercontent.com/{repo}"
