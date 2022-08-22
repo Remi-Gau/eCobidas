@@ -1,0 +1,55 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "modality.jsonld",
+    "prefLabel": {
+        "en": "modality"
+    },
+    "description": "modality",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.1 - What type of MRI was performed ?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 4,
+        "choices": [
+            {
+                "name": {
+                    "en": "anatomical"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "functional"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "ASL"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "DWI"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "SWI"
+                },
+                "value": 4
+            }
+        ],
+        "multipleChoice": true
+    }
+}

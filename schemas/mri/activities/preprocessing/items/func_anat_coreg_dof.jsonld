@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "func_anat_coreg_dof.jsonld",
+    "prefLabel": {
+        "en": "func anat coreg dof"
+    },
+    "description": "func anat coreg dof",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "1.71 - Number of degrees of freedom for the functional - anatomical coregistration<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Type of transformation (rigid: 6 degrees of freedom, nonlinear)\u037e if nonlinear, type of transformation</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

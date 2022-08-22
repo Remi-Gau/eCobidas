@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "3d_phase_encoding.jsonld",
+    "prefLabel": {
+        "en": "3d phase encoding"
+    },
+    "description": "3d phase encoding",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.26 - Specify the 3D phase encoding direction<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For 3D, specify \u201cpartition encode\u201d (aka slice) direction</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

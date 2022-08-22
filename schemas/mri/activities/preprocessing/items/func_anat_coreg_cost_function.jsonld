@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "func_anat_coreg_cost_function.jsonld",
+    "prefLabel": {
+        "en": "func anat coreg cost function"
+    },
+    "description": "func anat coreg cost function",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.72 - Similarity metric used for functional - anatomical coregistration<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Image similarity metric</details></div>"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/cost_functions.jsonld"
+}

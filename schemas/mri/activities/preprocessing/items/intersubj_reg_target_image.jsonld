@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_target_image.jsonld",
+    "prefLabel": {
+        "en": "intersubj reg target image"
+    },
+    "description": "intersubj reg target image",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.84 - Name of target template image<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>The specific name of template image; note the domain of the template if not whole brain, i.e. cortical surface only, cerebellum only, CIFTI \u2018grayordinates\u2019 (cortical surface vertices + subcortical gray matter voxels)...</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

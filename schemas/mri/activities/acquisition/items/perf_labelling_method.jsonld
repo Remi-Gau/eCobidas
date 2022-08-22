@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "perf_labelling_method.jsonld",
+    "prefLabel": {
+        "en": "perf labelling method"
+    },
+    "description": "perf labelling method",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "1.33 - Perfusion MRI labelling method"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "continuous ASL (CASL)"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "pseudo-continuous ASL (PCASL)"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "Pulsed ALS (PASL)"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "velocity selective ASL (VSASL)"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

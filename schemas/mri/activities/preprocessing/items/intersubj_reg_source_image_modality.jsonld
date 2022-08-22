@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_source_image_modality.jsonld",
+    "prefLabel": {
+        "en": "intersubj reg source image modality"
+    },
+    "description": "intersubj reg source image modality",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.79 - What was the modality of the source volume?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "T1"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "T2*"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

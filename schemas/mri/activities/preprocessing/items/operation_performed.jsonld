@@ -1,0 +1,67 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "operation_performed.jsonld",
+    "prefLabel": {
+        "en": "operation performed"
+    },
+    "description": "operation performed",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.6 - Specify which preprocessing steps were performed"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 6,
+        "choices": [
+            {
+                "name": {
+                    "en": "brain extraction"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "anatomical image segmentation"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "realignment"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "slice timing correction"
+                },
+                "value": 3
+            },
+            {
+                "name": {
+                    "en": "functional-anatomical coregistration"
+                },
+                "value": 4
+            },
+            {
+                "name": {
+                    "en": "normalization (intersubject coregistration)"
+                },
+                "value": 5
+            },
+            {
+                "name": {
+                    "en": "smoothing"
+                },
+                "value": 6
+            }
+        ],
+        "multipleChoice": true
+    }
+}

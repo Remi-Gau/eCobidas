@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "anatomical_image_intensity_correction.jsonld",
+    "prefLabel": {
+        "en": "anatomical image intensity correction"
+    },
+    "description": "anatomical image intensity correction",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.95 - Specify the type of intensity correction of the anatomical image<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Bias field corrections for anatomical MRI</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

@@ -1,0 +1,815 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "preprocessing_schema.jsonld",
+    "prefLabel": {
+        "en": "Preprocessing"
+    },
+    "description": "preprocessing",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/modality.jsonld",
+            "items/preprocessing_software.jsonld",
+            "items/preprocessing_software_version.jsonld",
+            "items/operation_performed.jsonld",
+            "items/order_of_operation.jsonld",
+            "items/t1_stabilization.jsonld",
+            "items/bet_software.jsonld",
+            "items/bet_version.jsonld",
+            "items/bet_method.jsonld",
+            "items/bet_parameters.jsonld",
+            "items/bet_manual_edit.jsonld",
+            "items/segmentation_software.jsonld",
+            "items/segmentation_version.jsonld",
+            "items/segmentation_method.jsonld",
+            "items/segmentation_parameters.jsonld",
+            "items/stc_software.jsonld",
+            "items/stc_version.jsonld",
+            "items/stc_method.jsonld",
+            "items/stc_reference.jsonld",
+            "items/stc_interpolation.jsonld",
+            "items/moco_software.jsonld",
+            "items/moco_version.jsonld",
+            "items/non-rigid_registration.jsonld",
+            "items/moco_dof.jsonld",
+            "items/motion-susceptibility_correction_used.jsonld",
+            "items/motion-susceptibility_correction_software.jsonld",
+            "items/motion-susceptibility_correction_method.jsonld",
+            "items/moco_reference.jsonld",
+            "items/moco_cost_function.jsonld",
+            "items/moco_interpolation.jsonld",
+            "items/func_anat_coreg_software.jsonld",
+            "items/func_anat_coreg_version.jsonld",
+            "items/func_anat_coreg_method.jsonld",
+            "items/func_anat_coreg_target_volume.jsonld",
+            "items/func_anat_coreg_source_volume.jsonld",
+            "items/func_anat_coreg_dof.jsonld",
+            "items/func_anat_coreg_cost_function.jsonld",
+            "items/func_anat_coreg_interpolation_method.jsonld",
+            "items/intersubj_reg_software.jsonld",
+            "items/intersubj_reg_version.jsonld",
+            "items/intersubj_reg_method.jsonld",
+            "items/intersubj_reg_volume_surface.jsonld",
+            "items/intersubj_reg_source_image_modality.jsonld",
+            "items/intersubj_reg_preprocessing.jsonld",
+            "items/intersubj_reg_template_space.jsonld",
+            "items/intersubj_reg_target_space_modality.jsonld",
+            "items/intersubj_reg_target_space_resolution.jsonld",
+            "items/intersubj_reg_target_image.jsonld",
+            "items/intersubj_reg_extra.jsonld",
+            "items/intersubj_reg_warp_choice.jsonld",
+            "items/intersubj_reg_non_linear_type.jsonld",
+            "items/regularization_used.jsonld",
+            "items/regularization_parameters.jsonld",
+            "items/intersubj_reg_interpolation.jsonld",
+            "items/intersubj_reg_cost_function.jsonld",
+            "items/intersubj_reg_masking.jsonld",
+            "items/resampled_voxel_size.jsonld",
+            "items/anatomical_image_intensity_correction.jsonld",
+            "items/functional_image_intensity_correction.jsonld",
+            "items/intensity_normalization.jsonld",
+            "items/denoising_used.jsonld",
+            "items/noise_sources_included.jsonld",
+            "items/motion_parameters.jsonld",
+            "items/tissue_signals.jsonld",
+            "items/tissue_definition.jsonld",
+            "items/tissue_signal_definition.jsonld",
+            "items/volume_censoring_used.jsonld",
+            "items/volume_censoring_software.jsonld",
+            "items/volume_censoring_version.jsonld",
+            "items/volume_censoring_method.jsonld",
+            "items/volume_censoring_criteria.jsonld",
+            "items/interpolation.jsonld",
+            "items/smoothing_software.jsonld",
+            "items/smoothing_version.jsonld",
+            "items/smoothing_type.jsonld",
+            "items/smoothing_size.jsonld",
+            "items/filtering_approach.jsonld",
+            "items/smoothing_target_space.jsonld",
+            "items/quality_control_reports.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "modality",
+                "isAbout": "items/modality.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "preprocessing_software",
+                "isAbout": "items/preprocessing_software.jsonld",
+                "isVis": "single_preprocessing_software == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "preprocessing_software_version",
+                "isAbout": "items/preprocessing_software_version.jsonld",
+                "isVis": "single_preprocessing_software == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "operation_performed",
+                "isAbout": "items/operation_performed.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "order_of_operation",
+                "isAbout": "items/order_of_operation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "t1_stabilization",
+                "isAbout": "items/t1_stabilization.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "bet_software",
+                "isAbout": "items/bet_software.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "bet_version",
+                "isAbout": "items/bet_version.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "bet_method",
+                "isAbout": "items/bet_method.jsonld",
+                "isVis": "operation_performed.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "bet_parameters",
+                "isAbout": "items/bet_parameters.jsonld",
+                "isVis": "operation_performed.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "bet_manual_edit",
+                "isAbout": "items/bet_manual_edit.jsonld",
+                "isVis": "operation_performed.includes(0)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "segmentation_software",
+                "isAbout": "items/segmentation_software.jsonld",
+                "isVis": "operation_performed.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "segmentation_version",
+                "isAbout": "items/segmentation_version.jsonld",
+                "isVis": "operation_performed.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "segmentation_method",
+                "isAbout": "items/segmentation_method.jsonld",
+                "isVis": "operation_performed.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "segmentation_parameters",
+                "isAbout": "items/segmentation_parameters.jsonld",
+                "isVis": "operation_performed.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "stc_software",
+                "isAbout": "items/stc_software.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "stc_version",
+                "isAbout": "items/stc_version.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "stc_method",
+                "isAbout": "items/stc_method.jsonld",
+                "isVis": "operation_performed.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "stc_reference",
+                "isAbout": "items/stc_reference.jsonld",
+                "isVis": "operation_performed.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "stc_interpolation",
+                "isAbout": "items/stc_interpolation.jsonld",
+                "isVis": "operation_performed.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco_software",
+                "isAbout": "items/moco_software.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco_version",
+                "isAbout": "items/moco_version.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "non-rigid_registration",
+                "isAbout": "items/non-rigid_registration.jsonld",
+                "isVis": "operation_performed.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco_dof",
+                "isAbout": "items/moco_dof.jsonld",
+                "isVis": "operation_performed.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "motion-susceptibility_correction_used",
+                "isAbout": "items/motion-susceptibility_correction_used.jsonld",
+                "isVis": "operation_performed.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "motion-susceptibility_correction_software",
+                "isAbout": "items/motion-susceptibility_correction_software.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "motion-susceptibility_correction_method",
+                "isAbout": "items/motion-susceptibility_correction_method.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco_reference",
+                "isAbout": "items/moco_reference.jsonld",
+                "isVis": "operation_performed.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco_cost_function",
+                "isAbout": "items/moco_cost_function.jsonld",
+                "isVis": "operation_performed.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "moco_interpolation",
+                "isAbout": "items/moco_interpolation.jsonld",
+                "isVis": "operation_performed.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "func_anat_coreg_software",
+                "isAbout": "items/func_anat_coreg_software.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(4)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "func_anat_coreg_version",
+                "isAbout": "items/func_anat_coreg_version.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(4)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "func_anat_coreg_method",
+                "isAbout": "items/func_anat_coreg_method.jsonld",
+                "isVis": "operation_performed.includes(4)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "func_anat_coreg_target_volume",
+                "isAbout": "items/func_anat_coreg_target_volume.jsonld",
+                "isVis": "operation_performed.includes(4)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "func_anat_coreg_source_volume",
+                "isAbout": "items/func_anat_coreg_source_volume.jsonld",
+                "isVis": "operation_performed.includes(4)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "func_anat_coreg_dof",
+                "isAbout": "items/func_anat_coreg_dof.jsonld",
+                "isVis": "operation_performed.includes(4)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "func_anat_coreg_cost_function",
+                "isAbout": "items/func_anat_coreg_cost_function.jsonld",
+                "isVis": "operation_performed.includes(4)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "func_anat_coreg_interpolation_method",
+                "isAbout": "items/func_anat_coreg_interpolation_method.jsonld",
+                "isVis": "operation_performed.includes(4)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_software",
+                "isAbout": "items/intersubj_reg_software.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_version",
+                "isAbout": "items/intersubj_reg_version.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_method",
+                "isAbout": "items/intersubj_reg_method.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_volume_surface",
+                "isAbout": "items/intersubj_reg_volume_surface.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_source_image_modality",
+                "isAbout": "items/intersubj_reg_source_image_modality.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_preprocessing",
+                "isAbout": "items/intersubj_reg_preprocessing.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_template_space",
+                "isAbout": "items/intersubj_reg_template_space.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_target_space_modality",
+                "isAbout": "items/intersubj_reg_target_space_modality.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_target_space_resolution",
+                "isAbout": "items/intersubj_reg_target_space_resolution.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_target_image",
+                "isAbout": "items/intersubj_reg_target_image.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_extra",
+                "isAbout": "items/intersubj_reg_extra.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_warp_choice",
+                "isAbout": "items/intersubj_reg_warp_choice.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_non_linear_type",
+                "isAbout": "items/intersubj_reg_non_linear_type.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "regularization_used",
+                "isAbout": "items/regularization_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "regularization_parameters",
+                "isAbout": "items/regularization_parameters.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_interpolation",
+                "isAbout": "items/intersubj_reg_interpolation.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_cost_function",
+                "isAbout": "items/intersubj_reg_cost_function.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intersubj_reg_masking",
+                "isAbout": "items/intersubj_reg_masking.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "resampled_voxel_size",
+                "isAbout": "items/resampled_voxel_size.jsonld",
+                "isVis": "operation_performed.includes(5)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "anatomical_image_intensity_correction",
+                "isAbout": "items/anatomical_image_intensity_correction.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "functional_image_intensity_correction",
+                "isAbout": "items/functional_image_intensity_correction.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "intensity_normalization",
+                "isAbout": "items/intensity_normalization.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "denoising_used",
+                "isAbout": "items/denoising_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "noise_sources_included",
+                "isAbout": "items/noise_sources_included.jsonld",
+                "isVis": "denoising_used  == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "motion_parameters",
+                "isAbout": "items/motion_parameters.jsonld",
+                "isVis": "noise_sources_included.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "tissue_signals",
+                "isAbout": "items/tissue_signals.jsonld",
+                "isVis": "noise_sources_included.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "tissue_definition",
+                "isAbout": "items/tissue_definition.jsonld",
+                "isVis": "noise_sources_included.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "tissue_signal_definition",
+                "isAbout": "items/tissue_signal_definition.jsonld",
+                "isVis": "noise_sources_included.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "volume_censoring_used",
+                "isAbout": "items/volume_censoring_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "volume_censoring_software",
+                "isAbout": "items/volume_censoring_software.jsonld",
+                "isVis": "volume_censoring_used  == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "volume_censoring_version",
+                "isAbout": "items/volume_censoring_version.jsonld",
+                "isVis": "volume_censoring_used  == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "volume_censoring_method",
+                "isAbout": "items/volume_censoring_method.jsonld",
+                "isVis": "volume_censoring_used  == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "volume_censoring_criteria",
+                "isAbout": "items/volume_censoring_criteria.jsonld",
+                "isVis": "volume_censoring_used  == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "interpolation",
+                "isAbout": "items/interpolation.jsonld",
+                "isVis": "volume_censoring_used  == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "smoothing_software",
+                "isAbout": "items/smoothing_software.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(6)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "smoothing_version",
+                "isAbout": "items/smoothing_version.jsonld",
+                "isVis": "single_preprocessing_software == 0 && operation_performed.includes(6)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "smoothing_type",
+                "isAbout": "items/smoothing_type.jsonld",
+                "isVis": "operation_performed.includes(6)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "smoothing_size",
+                "isAbout": "items/smoothing_size.jsonld",
+                "isVis": "operation_performed.includes(6)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "filtering_approach",
+                "isAbout": "items/filtering_approach.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "smoothing_target_space",
+                "isAbout": "items/smoothing_target_space.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "quality_control_reports",
+                "isAbout": "items/quality_control_reports.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "quality_control_reports.jsonld",
+    "prefLabel": {
+        "en": "quality control reports"
+    },
+    "description": "quality control reports",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.119 - Describe quality control measures<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Summaries of subject motion (For example mean frame-wise displacement), image variance (For example DVARS), and note of any other irregularities found (For example motion or poor SNR not sufficiently severe to warrant exclusion). Should be included with any publically shared data. Summaries of subject motion, image variance, and note of any other irregularities found.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

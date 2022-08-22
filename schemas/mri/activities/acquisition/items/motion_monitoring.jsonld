@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "motion_monitoring.jsonld",
+    "prefLabel": {
+        "en": "motion monitoring"
+    },
+    "description": "motion monitoring",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.57 - For functional or diffusion acquisitions, any visual or quantitative checks for severe motion. For structural images, checks on motion or general image quality"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

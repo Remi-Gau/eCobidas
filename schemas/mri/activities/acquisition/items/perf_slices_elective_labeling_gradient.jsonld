@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "perf_slices_elective_labeling_gradient.jsonld",
+    "prefLabel": {
+        "en": "perf slice\u00ads elective labeling gradient"
+    },
+    "description": "perf slice\u00ads elective labeling gradient",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.39 - Slice\u00ads elective labeling gradient"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

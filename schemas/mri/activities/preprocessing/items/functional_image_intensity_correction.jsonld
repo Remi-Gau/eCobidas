@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "functional_image_intensity_correction.jsonld",
+    "prefLabel": {
+        "en": "functional image intensity correction"
+    },
+    "description": "functional image intensity correction",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.96 - Specify the type of intensity correction of the functional images<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Correction of odd versus even slice intensity differences attributable to interleaved EPI acquisition without gaps</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

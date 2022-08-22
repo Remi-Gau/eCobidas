@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "swi_nb_of_baseline_volumes.jsonld",
+    "prefLabel": {
+        "en": "swi nb of baseline volumes"
+    },
+    "description": "swi nb of baseline volumes",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "1.50 - Number of baseline volumes"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

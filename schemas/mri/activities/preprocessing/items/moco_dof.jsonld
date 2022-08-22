@@ -1,0 +1,31 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "moco_dof.jsonld",
+    "prefLabel": {
+        "en": "moco dof"
+    },
+    "description": "moco dof",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.26 - Number of degrees of freedom for the motion correction"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 0,
+        "choices": [
+            {
+                "name": {
+                    "en": "6 (rigid body transformation)"
+                },
+                "value": 0
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_warp_choice.jsonld",
+    "prefLabel": {
+        "en": "intersubj reg warp choice"
+    },
+    "description": "intersubj reg warp choice",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.86 - What type of registration was used?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "rigid"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "non-linear"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

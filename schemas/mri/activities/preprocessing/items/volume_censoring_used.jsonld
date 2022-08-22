@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "volume_censoring_used.jsonld",
+    "prefLabel": {
+        "en": "volume censoring used"
+    },
+    "description": "volume censoring used",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.104 - Was volume censoring applied (a.k.a. \u201cscrubbing\u201d or \u201cde-spiking\u201d)?"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
+}

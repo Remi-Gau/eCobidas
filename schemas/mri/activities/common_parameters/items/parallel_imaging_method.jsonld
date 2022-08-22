@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "parallel_imaging_method.jsonld",
+    "prefLabel": {
+        "en": "parallel imaging method"
+    },
+    "description": "parallel imaging method",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "1.29 - Description of parallel imaging method"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "GRAPPA"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "SENSE"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

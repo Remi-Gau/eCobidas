@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "perf_vsasl_ti.jsonld",
+    "prefLabel": {
+        "en": "perf vsasl ti"
+    },
+    "description": "perf vsasl ti",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "1.48 - VSASL-TI"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

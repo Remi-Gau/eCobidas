@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "noise_sources_included.jsonld",
+    "prefLabel": {
+        "en": "noise sources included"
+    },
+    "description": "noise sources included",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.99 - What type of noise sources were included?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>--> isn't this more often than not part of the GLM construction after preprocessing? (as it is now stated as part of preprocessing, but I guess that is COBIDAS-way..?)</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "physiological"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "motion"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "tissue specific signal"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "perf_label_duration.jsonld",
+    "prefLabel": {
+        "en": "perf label duration"
+    },
+    "description": "perf label duration",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "1.35 - Label Duration"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

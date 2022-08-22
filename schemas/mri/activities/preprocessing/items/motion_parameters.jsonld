@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "motion_parameters.jsonld",
+    "prefLabel": {
+        "en": "motion parameters"
+    },
+    "description": "motion parameters",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.100 - Expansion basis and order of motion parameters used "
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "1st temporal derivatives"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Volterra kernel expansion"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

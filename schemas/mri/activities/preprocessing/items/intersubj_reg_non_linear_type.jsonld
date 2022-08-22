@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_non_linear_type.jsonld",
+    "prefLabel": {
+        "en": "intersubj reg non linear type"
+    },
+    "description": "intersubj reg non linear type",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.87 - If nonlinear registration was used, describe transform method<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>if a parametric transformation is used, report resolution, For example, 10x10x10 spline control points</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "B\u00ad-splines"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "stationary velocity field"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "momentum"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "non\u00adparametric displacement field"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_extra.jsonld",
+    "prefLabel": {
+        "en": "intersubj reg extra"
+    },
+    "description": "intersubj reg extra",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.85 - Specify any additional template transformation<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example, if using a template in MNI space, but reporting coordinates in Talairach, clearly note and report method used (For example, Brett\u2019s mni2tal, Lancaster\u2019s icbm_spm2tal)</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

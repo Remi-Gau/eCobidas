@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "tissue_signal_definition.jsonld",
+    "prefLabel": {
+        "en": "tissue signal definition"
+    },
+    "description": "tissue signal definition",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.103 - Method to define signal in each tissue class"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "mean of voxels"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "first singular vector"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

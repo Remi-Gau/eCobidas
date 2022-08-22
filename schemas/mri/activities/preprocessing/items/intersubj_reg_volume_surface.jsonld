@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_volume_surface.jsonld",
+    "prefLabel": {
+        "en": "intersubj reg volume surface"
+    },
+    "description": "intersubj reg volume surface",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.78 - Was the registration volume or surface based?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "surface"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "volume"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

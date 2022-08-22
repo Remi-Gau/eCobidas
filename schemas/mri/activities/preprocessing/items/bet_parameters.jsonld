@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "bet_parameters.jsonld",
+    "prefLabel": {
+        "en": "bet parameters"
+    },
+    "description": "bet parameters",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.12 - Parameters used for the brain extraction<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example BET\u2019s fractional intensity threshold</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

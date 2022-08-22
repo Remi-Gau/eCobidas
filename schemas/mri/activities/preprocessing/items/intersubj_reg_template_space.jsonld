@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_template_space.jsonld",
+    "prefLabel": {
+        "en": "intersubj reg template space"
+    },
+    "description": "intersubj reg template space",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.81 - Name of coordinate space for registration target"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "MNI"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Talairach"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "fsaverage"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "FS_LR"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

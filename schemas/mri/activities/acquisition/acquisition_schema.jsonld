@@ -1,0 +1,475 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "acquisition_schema.jsonld",
+    "prefLabel": {
+        "en": "Acquisition"
+    },
+    "description": "acquisition",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1OvDa4c7Eg_zVNTX527j0riljSTY4WAVwXO-th93hRwc/edit?usp=sharing' target='_blank' > Source </a> | <a href='' target='_blank' > Github repository </a> | <a href='http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf' target='_blank' > Reference </a><br><br>use case specific acquisition parameters</p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/modality.jsonld",
+            "items/mock_scanning_used.jsonld",
+            "items/mock_scanning_description.jsonld",
+            "items/experimenter_personnel.jsonld",
+            "items/coil_receive.jsonld",
+            "items/func_number_of_volumes.jsonld",
+            "items/dwi_direction_optimization_used.jsonld",
+            "items/dwi_direction_optimization_type.jsonld",
+            "items/dwi_b_values.jsonld",
+            "items/dwi_nb_of_b0_images.jsonld",
+            "items/dwi_single_multi_shell.jsonld",
+            "items/dwi_cardiac_gating.jsonld",
+            "items/scanner-side_preprocessing.jsonld",
+            "items/prospective_moco_used.jsonld",
+            "items/prospective_moco_param.jsonld",
+            "items/signal_inhomogeneity_correction_used.jsonld",
+            "items/signal_inhomogeneity_correction_param.jsonld",
+            "items/distortion_correction_used.jsonld",
+            "items/scan_duration.jsonld",
+            "items/perf_labelling_method.jsonld",
+            "items/perf_background_suppression_pulses.jsonld",
+            "items/perf_label_duration.jsonld",
+            "items/perf_post_labeling_delay.jsonld",
+            "items/perf_location_of_the_labelling_plane.jsonld",
+            "items/perf_average_labelling_gradient.jsonld",
+            "items/perf_slices_elective_labeling_gradient.jsonld",
+            "items/perf_flip_angle_of_b1_pulses.jsonld",
+            "items/perf_assessment_of_inversion_efficiency.jsonld",
+            "items/perf_use_of_a_separate_labelling_coil.jsonld",
+            "items/perf_control_scan_used.jsonld",
+            "items/perf_b1_amplitude.jsonld",
+            "items/perf_pasl_ti.jsonld",
+            "items/perf_labelling_slab_thickness.jsonld",
+            "items/perf_quipss_pulses.jsonld",
+            "items/perf_vsasl_ti.jsonld",
+            "items/perf_velocity_selection_cutoff.jsonld",
+            "items/swi_nb_of_baseline_volumes.jsonld",
+            "items/swi_contrast_agent_used.jsonld",
+            "items/ContrastBolusIngredient.jsonld",
+            "items/swi_bolus_amount_and_concentration.jsonld",
+            "items/swi_injection_rate.jsonld",
+            "items/swi_post_injection_of_saline.jsonld",
+            "items/swi_injection_method.jsonld",
+            "items/motion_monitoring.jsonld",
+            "items/incidental_findings.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "modality",
+                "isAbout": "items/modality.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "mock_scanning_used",
+                "isAbout": "items/mock_scanning_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "mock_scanning_description",
+                "isAbout": "items/mock_scanning_description.jsonld",
+                "isVis": "mock_scanning_used == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "experimenter_personnel",
+                "isAbout": "items/experimenter_personnel.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "coil_receive",
+                "isAbout": "items/coil_receive.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "func_number_of_volumes",
+                "isAbout": "items/func_number_of_volumes.jsonld",
+                "isVis": "modality.includes(1)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "dwi_direction_optimization_used",
+                "isAbout": "items/dwi_direction_optimization_used.jsonld",
+                "isVis": "modality.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "dwi_direction_optimization_type",
+                "isAbout": "items/dwi_direction_optimization_type.jsonld",
+                "isVis": "modality.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "dwi_b_values",
+                "isAbout": "items/dwi_b_values.jsonld",
+                "isVis": "modality.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "dwi_nb_of_b0_images",
+                "isAbout": "items/dwi_nb_of_b0_images.jsonld",
+                "isVis": "modality.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "dwi_single_multi_shell",
+                "isAbout": "items/dwi_single_multi_shell.jsonld",
+                "isVis": "modality.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "dwi_cardiac_gating",
+                "isAbout": "items/dwi_cardiac_gating.jsonld",
+                "isVis": "modality.includes(3)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "scanner-side_preprocessing",
+                "isAbout": "items/scanner-side_preprocessing.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "prospective_moco_used",
+                "isAbout": "items/prospective_moco_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "prospective_moco_param",
+                "isAbout": "items/prospective_moco_param.jsonld",
+                "isVis": "prospective_moco_used == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "signal_inhomogeneity_correction_used",
+                "isAbout": "items/signal_inhomogeneity_correction_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "signal_inhomogeneity_correction_param",
+                "isAbout": "items/signal_inhomogeneity_correction_param.jsonld",
+                "isVis": "signal_inhomogeneity_correction_used == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "distortion_correction_used",
+                "isAbout": "items/distortion_correction_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "scan_duration",
+                "isAbout": "items/scan_duration.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_labelling_method",
+                "isAbout": "items/perf_labelling_method.jsonld",
+                "isVis": "modality.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_background_suppression_pulses",
+                "isAbout": "items/perf_background_suppression_pulses.jsonld",
+                "isVis": "modality.includes(2)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_label_duration",
+                "isAbout": "items/perf_label_duration.jsonld",
+                "isVis": "[1, 2].includes(perf_labelling_method)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_post_labeling_delay",
+                "isAbout": "items/perf_post_labeling_delay.jsonld",
+                "isVis": "[1, 2].includes(perf_labelling_method)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_location_of_the_labelling_plane",
+                "isAbout": "items/perf_location_of_the_labelling_plane.jsonld",
+                "isVis": "[1, 2].includes(perf_labelling_method)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_average_labelling_gradient",
+                "isAbout": "items/perf_average_labelling_gradient.jsonld",
+                "isVis": "perf_labelling_method == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_slices_elective_labeling_gradient",
+                "isAbout": "items/perf_slices_elective_labeling_gradient.jsonld",
+                "isVis": "perf_labelling_method == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_flip_angle_of_b1_pulses",
+                "isAbout": "items/perf_flip_angle_of_b1_pulses.jsonld",
+                "isVis": "perf_labelling_method == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_assessment_of_inversion_efficiency",
+                "isAbout": "items/perf_assessment_of_inversion_efficiency.jsonld",
+                "isVis": "perf_labelling_method == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_use_of_a_separate_labelling_coil",
+                "isAbout": "items/perf_use_of_a_separate_labelling_coil.jsonld",
+                "isVis": "perf_labelling_method == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_control_scan_used",
+                "isAbout": "items/perf_control_scan_used.jsonld",
+                "isVis": "perf_labelling_method == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_b1_amplitude",
+                "isAbout": "items/perf_b1_amplitude.jsonld",
+                "isVis": "perf_labelling_method == 0",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_pasl_ti",
+                "isAbout": "items/perf_pasl_ti.jsonld",
+                "isVis": "perf_labelling_method == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_labelling_slab_thickness",
+                "isAbout": "items/perf_labelling_slab_thickness.jsonld",
+                "isVis": "perf_labelling_method == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_quipss_pulses",
+                "isAbout": "items/perf_quipss_pulses.jsonld",
+                "isVis": "perf_labelling_method == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_vsasl_ti",
+                "isAbout": "items/perf_vsasl_ti.jsonld",
+                "isVis": "perf_labelling_method == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "perf_velocity_selection_cutoff",
+                "isAbout": "items/perf_velocity_selection_cutoff.jsonld",
+                "isVis": "perf_labelling_method == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "swi_nb_of_baseline_volumes",
+                "isAbout": "items/swi_nb_of_baseline_volumes.jsonld",
+                "isVis": "modality.includes(4)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "swi_contrast_agent_used",
+                "isAbout": "items/swi_contrast_agent_used.jsonld",
+                "isVis": "modality.includes(4)",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "ContrastBolusIngredient",
+                "isAbout": "items/ContrastBolusIngredient.jsonld",
+                "isVis": "contrast_agent_used==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "swi_bolus_amount_and_concentration",
+                "isAbout": "items/swi_bolus_amount_and_concentration.jsonld",
+                "isVis": "contrast_agent_used==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "swi_injection_rate",
+                "isAbout": "items/swi_injection_rate.jsonld",
+                "isVis": "contrast_agent_used==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "swi_post_injection_of_saline",
+                "isAbout": "items/swi_post_injection_of_saline.jsonld",
+                "isVis": "contrast_agent_used==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "swi_injection_method",
+                "isAbout": "items/swi_injection_method.jsonld",
+                "isVis": "contrast_agent_used==1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "motion_monitoring",
+                "isAbout": "items/motion_monitoring.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "incidental_findings",
+                "isAbout": "items/incidental_findings.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

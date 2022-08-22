@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intersubj_reg_preprocessing.jsonld",
+    "prefLabel": {
+        "en": "intersubj reg preprocessing"
+    },
+    "description": "intersubj reg preprocessing",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.80 - Was any additional preprocessing required?<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>Any preprocessing to images\u037e For example for T1, segmentation of gray matter\u037e for T2*, single image (specify image) or mean image</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

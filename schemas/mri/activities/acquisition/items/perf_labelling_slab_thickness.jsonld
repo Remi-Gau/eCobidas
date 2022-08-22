@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "perf_labelling_slab_thickness.jsonld",
+    "prefLabel": {
+        "en": "perf labelling slab thickness"
+    },
+    "description": "perf labelling slab thickness",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "1.46 - Labelling slab thickness"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

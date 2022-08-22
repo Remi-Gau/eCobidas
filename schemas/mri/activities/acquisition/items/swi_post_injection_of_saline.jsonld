@@ -1,0 +1,20 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "swi_post_injection_of_saline.jsonld",
+    "prefLabel": {
+        "en": "swi post injection of saline"
+    },
+    "description": "swi post injection of saline",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "float"
+    },
+    "question": {
+        "en": "1.55 - post-injection of saline<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example, 20 ml</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:float"
+    }
+}

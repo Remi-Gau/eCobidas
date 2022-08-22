@@ -1,0 +1,49 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "smoothing_target_space.jsonld",
+    "prefLabel": {
+        "en": "smoothing target space"
+    },
+    "description": "smoothing target space",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.118 - Space in which smoothing is performed"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 3,
+        "choices": [
+            {
+                "name": {
+                    "en": "native volume"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "native surface"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "MNI volume"
+                },
+                "value": 2
+            },
+            {
+                "name": {
+                    "en": "template surface"
+                },
+                "value": 3
+            }
+        ],
+        "multipleChoice": false
+    }
+}

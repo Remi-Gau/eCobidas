@@ -1,0 +1,405 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "common_parameters_schema.jsonld",
+    "prefLabel": {
+        "en": "Common parameters"
+    },
+    "description": "common parameters",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "preamble": {
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/16LhsvrEKOzkNsXGLGlYZsH9h4aZ1hyt_BORmxkndaiI/edit?usp=sharing' target='_blank' > Source </a> | <a href='' target='_blank' > Github repository </a> | <a href='http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf' target='_blank' > Reference </a><br><br>Common MRI acquisition parameters</p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/scanner_make.jsonld",
+            "items/ManufacturersModelName.jsonld",
+            "items/MagneticFieldStrength.jsonld",
+            "items/SoftwareVersions.jsonld",
+            "items/pulse_sequence_type.jsonld",
+            "items/pulse_sequence_details.jsonld",
+            "items/imaging_type.jsonld",
+            "items/number_of_shots.jsonld",
+            "items/partial_fourrier_scheme.jsonld",
+            "items/EchoTime.jsonld",
+            "items/RepetitionTime.jsonld",
+            "items/FlipAngle.jsonld",
+            "items/voxel_dimension.jsonld",
+            "items/acquisition_time.jsonld",
+            "items/time_per_volume.jsonld",
+            "items/InversionTime.jsonld",
+            "items/field_of_view.jsonld",
+            "items/in-plane_matrix_size.jsonld",
+            "items/number_of_slices.jsonld",
+            "items/slice_thickness.jsonld",
+            "items/interslice_gap.jsonld",
+            "items/3d_matrix_size.jsonld",
+            "items/slice_orientation.jsonld",
+            "items/slice_alignement.jsonld",
+            "items/PhaseEncodingDirection.jsonld",
+            "items/3d_phase_encoding.jsonld",
+            "items/phase_encoding_reversal.jsonld",
+            "items/parallel_imaging_used.jsonld",
+            "items/parallel_imaging_method.jsonld",
+            "items/acceleration_factor.jsonld",
+            "items/other_parallel_imaging_parameters.jsonld",
+            "items/readout_parameters.jsonld",
+            "items/fat_suppression.jsonld",
+            "items/shimming.jsonld",
+            "items/slice_timing.jsonld",
+            "items/location_of_the_first_slice.jsonld",
+            "items/brain_coverage.jsonld",
+            "items/brain_coverage_millimeters.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "scanner_make",
+                "isAbout": "items/scanner_make.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "ManufacturersModelName",
+                "isAbout": "items/ManufacturersModelName.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "MagneticFieldStrength",
+                "isAbout": "items/MagneticFieldStrength.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "SoftwareVersions",
+                "isAbout": "items/SoftwareVersions.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "pulse_sequence_type",
+                "isAbout": "items/pulse_sequence_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "pulse_sequence_details",
+                "isAbout": "items/pulse_sequence_details.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "imaging_type",
+                "isAbout": "items/imaging_type.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_shots",
+                "isAbout": "items/number_of_shots.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "partial_fourrier_scheme",
+                "isAbout": "items/partial_fourrier_scheme.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "EchoTime",
+                "isAbout": "items/EchoTime.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "RepetitionTime",
+                "isAbout": "items/RepetitionTime.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "FlipAngle",
+                "isAbout": "items/FlipAngle.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "voxel_dimension",
+                "isAbout": "items/voxel_dimension.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "acquisition_time",
+                "isAbout": "items/acquisition_time.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "time_per_volume",
+                "isAbout": "items/time_per_volume.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "InversionTime",
+                "isAbout": "items/InversionTime.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "field_of_view",
+                "isAbout": "items/field_of_view.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "in-plane_matrix_size",
+                "isAbout": "items/in-plane_matrix_size.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_slices",
+                "isAbout": "items/number_of_slices.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "slice_thickness",
+                "isAbout": "items/slice_thickness.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "interslice_gap",
+                "isAbout": "items/interslice_gap.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "3d_matrix_size",
+                "isAbout": "items/3d_matrix_size.jsonld",
+                "isVis": "imaging_type == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "slice_orientation",
+                "isAbout": "items/slice_orientation.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "slice_alignement",
+                "isAbout": "items/slice_alignement.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "PhaseEncodingDirection",
+                "isAbout": "items/PhaseEncodingDirection.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "3d_phase_encoding",
+                "isAbout": "items/3d_phase_encoding.jsonld",
+                "isVis": "imaging_type == 2",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "phase_encoding_reversal",
+                "isAbout": "items/phase_encoding_reversal.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "parallel_imaging_used",
+                "isAbout": "items/parallel_imaging_used.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "parallel_imaging_method",
+                "isAbout": "items/parallel_imaging_method.jsonld",
+                "isVis": "parallel_imaging_used == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "acceleration_factor",
+                "isAbout": "items/acceleration_factor.jsonld",
+                "isVis": "parallel_imaging_used == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "other_parallel_imaging_parameters",
+                "isAbout": "items/other_parallel_imaging_parameters.jsonld",
+                "isVis": "parallel_imaging_used == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "readout_parameters",
+                "isAbout": "items/readout_parameters.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "fat_suppression",
+                "isAbout": "items/fat_suppression.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "shimming",
+                "isAbout": "items/shimming.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "slice_timing",
+                "isAbout": "items/slice_timing.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "location_of_the_first_slice",
+                "isAbout": "items/location_of_the_first_slice.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "brain_coverage",
+                "isAbout": "items/brain_coverage.jsonld",
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "brain_coverage_millimeters",
+                "isAbout": "items/brain_coverage_millimeters.jsonld",
+                "isVis": "brain_coverage == 3",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "func_anat_coreg_interpolation_method.jsonld",
+    "prefLabel": {
+        "en": "func anat coreg interpolation method"
+    },
+    "description": "func anat coreg interpolation method",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "1.73 - Interpolation method used for the functional - anatomical coregistration"
+    },
+    "responseOptions": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/interpolations.jsonld"
+}

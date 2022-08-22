@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "brain_coverage_millimeters.jsonld",
+    "prefLabel": {
+        "en": "brain coverage millimeters"
+    },
+    "description": "brain coverage millimeters",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.40 - If axial and co\u00adplanar with AC\u00adPC line, the volume coverage in terms of Z in mm<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>If not whole-brain, note the nature of the partial area of coverage.</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}

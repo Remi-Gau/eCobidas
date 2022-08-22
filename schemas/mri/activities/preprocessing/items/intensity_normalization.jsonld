@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "intensity_normalization.jsonld",
+    "prefLabel": {
+        "en": "intensity normalization"
+    },
+    "description": "intensity normalization",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.97 - Type of scaling of image intensities before statistical modelling<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>For example SPM scales each run such that the mean image will have mean intracerebral intensity of 100\u037e FSL scales each run such that the mean image will have an intracerebral mode of 10,000</details></div>"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "scan by scan"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "run wide"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

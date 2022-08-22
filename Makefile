@@ -210,6 +210,7 @@ download_mri: download_tsv.sh
 convert_mri: download_mri
 	ecobidas_convert --schema mri-allseq
 	ecobidas_convert --schema mri-acq
+	ecobidas_convert --schema mri-preproc
 validate_mri: convert_mri
 	grep -r  "@context" schemas/mri | cut -d: -f1 | xargs -I fname jsonlint -q fname
 	reproschema -l DEBUG validate schemas/mri

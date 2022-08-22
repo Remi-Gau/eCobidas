@@ -1,0 +1,43 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "bet_method.jsonld",
+    "prefLabel": {
+        "en": "bet method"
+    },
+    "description": "bet method",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.11 - Method used for the brain extraction"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 2,
+        "choices": [
+            {
+                "name": {
+                    "en": "FSL BET"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Freesurfer recon-all"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "others"
+                },
+                "value": 2
+            }
+        ],
+        "multipleChoice": false
+    }
+}

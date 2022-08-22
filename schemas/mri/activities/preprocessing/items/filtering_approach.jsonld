@@ -1,0 +1,37 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "filtering_approach.jsonld",
+    "prefLabel": {
+        "en": "filtering approach"
+    },
+    "description": "filtering approach",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "1.117 - Filtering approach"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "minValue": 0,
+        "maxValue": 1,
+        "choices": [
+            {
+                "name": {
+                    "en": "fixed kernel"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "iterative smoothing until fixed FWHM"
+                },
+                "value": 1
+            }
+        ],
+        "multipleChoice": false
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "perf_velocity_selection_cutoff.jsonld",
+    "prefLabel": {
+        "en": "perf velocity selection cutoff"
+    },
+    "description": "perf velocity selection cutoff",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.49 - Choice of velocity selection cutoff (\u201cVENC\u201d)"
+    },
+    "responseOptions": {
+        "valueType": "xsd:string",
+        "maxLength": 300
+    }
+}
