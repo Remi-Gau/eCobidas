@@ -212,6 +212,7 @@ convert_mri: download_mri
 	ecobidas_convert --schema mri-design
 	ecobidas_convert --schema mri-allseq
 	ecobidas_convert --schema mri-acq
+	ecobidas_convert --schema mri-preproc
 	ecobidas_convert --schema mri-mass_univariate
 	ecobidas_convert --schema mri-multivariate
 	ecobidas_convert --schema mri-results
