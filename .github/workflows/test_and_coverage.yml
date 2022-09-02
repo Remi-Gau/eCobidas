@@ -22,7 +22,7 @@ jobs:
     - name: Clone repo
       uses: actions/checkout@v2
 
-    - name: Set up Python 3.8
+    - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: 3.8
@@ -30,7 +30,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools
-        pip install -r requirements.txt
+        pip install -r python/requirements.txt
         cd python && pip install -e . && cd ..
         mkdir -p lib && git clone https://github.com/Remi-Gau/reproschema-py.git lib/reproschema-py
         cd lib/reproschema-py && git checkout remi_schema_creator && pip install -e .

@@ -18,6 +18,7 @@
 # clone Rémi's fork of Reproschema-py and install the local package in the lib folder
 install:
 	pip install -r requirements.txt
+	pip install -r python/requirements.txt
 	cd python && pip install -e . && cd ..
 	mkdir -p lib && git clone https://github.com/Remi-Gau/reproschema-py.git lib/reproschema-py
 	cd lib/reproschema-py && git checkout eCobidas_valid && pip install -e .

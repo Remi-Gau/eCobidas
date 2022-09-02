@@ -2,4 +2,3 @@ mkdocs-material
 pymdown-extensions
 pre-commit
 nb_black==1.0.7   # to use the black linter in jupyter books
--r python/requirements.txt
