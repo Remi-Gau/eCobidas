@@ -2,6 +2,9 @@
     "ignorePatterns": [
         {
             "pattern": "^https://doi.org/.*"
+        },
+        {
+            "pattern": "^https://claim.shinyapps.io/CLAIM/"
         }
     ]
 }

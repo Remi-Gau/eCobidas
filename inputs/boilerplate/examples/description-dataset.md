@@ -24,7 +24,6 @@
                                                 'MODEL'))
 ```
 
-
 ```python
 desc = '''
         Dicoms were converted to NIfTI-1 format{software_str}.
@@ -204,8 +203,8 @@ acq_param.bval_str, acq_param.n_vecs, acq_param.mb_str);
 
 ## meeg
 
-See this [repository](https://github.com/guiomar/Armitage_BIDS_NLG) started
-by Guiomar Niso to start creating method section for MEG data sets.
+See this [repository](https://github.com/guiomar/Armitage_BIDS_NLG) started by
+Guiomar Niso to start creating method section for MEG data sets.
 
 MNE also generates some level of dataset description at the end of the BIDS
 conversion. See for example:
@@ -231,4 +230,5 @@ removed from analysis).
 See
 [here for example](https://mne.tools/mne-bids/stable/auto_examples/convert_group_studies.html#sphx-glr-auto-examples-convert-group-studies-py)
 
-Implemented by [`report.py`](https://github.com/mne-tools/mne-bids/blob/master/mne_bids/report.py).
+Implemented by
+[`report.py`](https://mne.tools/mne-bids/stable/generated/mne_bids.make_report.html).

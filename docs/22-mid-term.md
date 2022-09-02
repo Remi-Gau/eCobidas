@@ -39,11 +39,9 @@ include **all** the items listed in their guidelines.
 
 ## Links to standardized pipelines
 
-Data processed with some standardized pipelines (like
-[fMRIprep](https://fmriprep.readthedocs.io/en/stable/citing.html)) could
-facilitate filling in the checklist: ticking the box corresponding to that
-pipeline would automatically populate all the relevant fields in the
-COBIDAS-json file.
+Data processed with some standardized pipelines (like fMRIprep) could facilitate
+filling in the checklist: ticking the box corresponding to that pipeline would
+automatically populate all the relevant fields in the COBIDAS-json file.
 
 ## Standardize terminology
 

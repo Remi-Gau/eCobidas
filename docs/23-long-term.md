@@ -34,8 +34,7 @@ processing batch files as input (e.g `matlabbatch.mat` for SPM or `design.fsf`
 for FSL) and would create output files (e.g. in json format) readable by the
 checklist website, which in turn would be able to display the neuroimaging
 processing pipeline and/or the methods section for an article with the
-appropriate references (akin to what
-[fMRIprep](https://fmriprep.readthedocs.io/en/stable/citing.html) already does).
+appropriate references (akin to what fMRIprep already does).
 
 In a similar way, FSL already outputs methods description for every
 preprocessing or statistical analysis that can be used to write the methods
@@ -71,7 +70,7 @@ through SPM or facilitate data sharing (like NIDM results is supported by the
 data sharing platform [Neurovault](https://neurovault.org/) and this greatly
 facilitate uploading your results there). NIDM contains many metadata with a
 correspondence in the COBIDAS checklist (see
-[here](https://media.nature.com/original/nature-assets/sdata/2016/sdata2016102/extref/sdata2016102-s1.pdf)).
+[here](https://static-content.springer.com/esm/art%3A10.1038%2Fsdata.2016.102/MediaObjects/41597_2016_BFsdata2016102_MOESM100_ESM.pdf)).
 
 For BIDS and NIDM results, machine reading through a dataset organized as BIDS
 and NIDM results could automatically fill part of the COBIDAS checklist.
