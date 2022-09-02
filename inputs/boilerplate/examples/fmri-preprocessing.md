@@ -3,8 +3,8 @@
 <!-- TOC -->
 <!-- lint disable -->
 - [boilerplate for fMRI preprocessing](#boilerplate-for-fmri-preprocessing)
-  - [CPP SPM12 pipeline](#cpp-spm12-pipeline)
   - [fMRIprep](#fmriprep)
+  - [CPP SPM](#cpp-spm)
   - [SPM references](#spm-references)
     - [spm_realign](#spm_realign)
     - [spm_coreg](#spm_coreg)
@@ -16,7 +16,6 @@
 
 ## fMRIprep
 
-Taken from this [page](https://fmriprep.org/en/stable/citing.html).
 
 ```
 Results included in this manuscript come from preprocessing performed using

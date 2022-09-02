@@ -5,6 +5,9 @@
         },
         {
             "pattern": "^https://claim.shinyapps.io/CLAIM/"
+        },
+        {
+            "pattern": "^https://static-content.springer.com"
         }
     ]
 }
