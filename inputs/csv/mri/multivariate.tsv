@@ -1,0 +1,38 @@
+question	details	field_type	choices	item	item_order	include	mandatory	visibility	activity_order	activity_pref_label
+Independent variable type		radio	discrete | continous	variable_type	1	1	1	1	1	Multivariate	Independent variables	Variable type
+Class proportions	Class proportions in classification settings	textarea		class_proportions	2	1	1	1	1	Multivariate	Independent variables	Class proportions
+Variable dimension	For whole-brain prediction, this is a voxel count. For searchlight analyses, the exact number of voxels in the search region, not just a radius	integer		variable_dimension	3	1	1	1	1	Multivariate	Independent variables	Variable dimension
+Was any feature transformation applied?		radio	preset:boolean	feature_transformation_used	4	1	1	1	1	Multivariate	Independent variables
+What type of feature transformation was used?		textarea		feature_transformation_methods	5	1	1	feature_transformation_used ==1	1	Multivariate	Independent variables
+Was feature selection used?		radio	preset:boolean	feature_selection_used	6	1	1	1	1	Multivariate	Independent variables
+What type of feature selection was used?		textarea		feature_selection_methods	7	1	1	feature_selection_used == 1	1	Multivariate	Independent variables
+Was dimension reduction used?		radio	preset:boolean	dimension_reduction_used	8	1	1	1	1	Multivariate	Independent variables
+What type of dimension reduction was used?		textarea		dimension_reduction_methods	9	1	1	dimension_reduction_used ==1	1	Multivariate	Independent variables
+Provide dimension before and after any feature selection and/or dimension reduction		textarea		effective_variable_dimension	10	1	1	feature_selection_used == 1 || dimension_reduction_used ==1	1	Multivariate	Independent variables
+Information on how the target values relate to the population. Specify how this is taken into account in the predictive model	For example: male/female frequency or age distribution by group...	textarea		population_stratification	11	1	1	1	1	Multivariate	Independent variables	Population stratification
+Analysis type		radio	traditional multivariate (e.g: MANOVA, ...) | predictive model (e.g: MVPA, ...)	analysis_type	12	1	1	1	1	Multivariate
+Model type		radio	MANOVA | other	traditional_model_type	13	1	1	analysis_type == 0	1	Multivariate	Model	Traditional multivariate analyses
+Assumptions made on the covariance structure		radio	independence | common arbitrary covariance between groups | other	covariance_structure	14	1	1	analysis_type == 0	1	Multivariate	Model	Traditional multivariate analyses
+Statistic used to assess significance		radio	Wilk’s lambda | Hotelling­-Lawley trace | other	statistics	15	1	1	analysis_type == 0	1	Multivariate	Model	Traditional multivariate analyses
+Model type		radio	Linear discriminant analysis | support vector machines | logistic regression | other	predictive_model_type	16	1	1	analysis_type == 1	1	Multivariate	Model	Predictive models
+For kernel-based methods (i.e. SVM) report type of kernel used, type and number of parameters needed to be estimated		textarea		kernel_parameters	17	1	1	analysis_type == 1	1	Multivariate	Model	Predictive models
+Figure-of-merit optimised		textarea		figure_of_merit	18	1	1	1	1	Multivariate	Learning method	Figure-of-merit optimised
+Fitting method		textarea		fitting_method	19	1	1	1	1	Multivariate	Learning method	Fitting method
+Parameter settings, those fixed and those estimated; specify how fixed parameter values were chosen		textarea		parameters_setting	20	1	1	1	1	Multivariate	Learning method
+How the convergence of the learning method is monitored		textarea		convergence_method	21	1	1	1	1	Multivariate	Learning method
+Pipeline structure applied uniformly to all cases (e.g. that could be independently applied to a new case)		textarea		uniform_pipeline	22	1	1	1	1	Multivariate	Training procedure
+Method for hyper-parameter setting		textarea		hyper_parameter_setting	23	1	1	1	1	Multivariate	Training procedure
+Describe data splitting (cross validation)		textarea		cross_validation	24	1	1	1	1	Multivariate	Training procedure
+Response type		radio	discrete | continous	response_type	25	1	1	1	1	Multivariate
+Number of possible reponse classes 	For example, are there only 2 classes, and one can be labeled “positive” or are there are 3 or more classes?	integer		number_response_classes	26			response_type == 0	1	Multivariate
+Report accuracy	If group sizes are unequal, report balanced (or average) accuracy.	textarea		accuracy	27	1	1	number_response_classes == 2	1	Multivariate	Evaluation metrics	Discrete response
+Report precision	(1 − false discovery rate)	textarea		precision	28	1	1	number_response_classes == 2	1	Multivariate	Evaluation metrics	Discrete response
+Report recall	sensitivity	textarea		recall	29	1	1	number_response_classes == 2	1	Multivariate	Evaluation metrics	Discrete response
+Report false positive rate	(1­ - specificity)	textarea		false_positive_rate	30	1	1	number_response_classes == 2	1	Multivariate	Evaluation metrics	Discrete response
+Report F1	incorporates both precision and recall.	textarea		F1	31	1	1	number_response_classes == 2	1	Multivariate	Evaluation metrics	Discrete response
+Report receiver operating characteristic curves and area under the curve.	ROC can be summarised by area under the curve (AUC) and AUC for only high specificity (e.g. false positive rates no greater than 10%) are also useful.	textarea		roc_auc	32	1	1	number_response_classes == 2	1	Multivariate	Evaluation metrics	Discrete response
+Report the confusion matrix	Report the confusion matrix	textarea		confusion_matrix	33	1	1	number_response_classes > 2	1	Multivariate	Evaluation metrics	Discrete response
+Report Prediction R²	That is the percentage of variance explained by prediction, computed as one minus the ratio of prediction sum­-of-­squares to total sum-­of-­squares. (Note this is not the squared correlation coefficient between true and predicted values)	textarea		r_squared	34	1	1	response_type == 1	1	Multivariate	Evaluation metrics	Continuous response
+For representational similarity analysis, report the Kendall Tau statistic for each candidate model considered.		textarea		kendal_tau	35	1	1	1	1	Multivariate	Evaluation metrics	Representational similarity analysis
+When possible use formal test to obtain P­value to assess whether evaluation metric is “significant” or consistent with noise.		textarea		p_value	36	1	1	1	1	Multivariate	Evaluation metrics	Significance
+Procedure used to interpret the fit of the classifier, identifying the relative importance of the features (e.g. the weight vector in linear discriminant).		textarea		fit_interpretation	37	1	1	1	1	Multivariate	Fit interpretation

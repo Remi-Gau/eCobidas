@@ -199,7 +199,7 @@ validate_core: convert_core
 # MRI
 # ---------------------------------------------------------------------------- #
 
-mri: core clean_mri convert_mri
+mri: core clean_mri validate_mri
 
 clean_mri:
 	rm -rf $(MRI_TSV)
@@ -209,10 +209,11 @@ download_mri: download_tsv.sh
 	bash download_tsv.sh mri-
 
 convert_mri: download_mri
+	ecobidas_convert --schema mri-design
 	ecobidas_convert --schema mri-allseq
 	ecobidas_convert --schema mri-acq
-	ecobidas_convert --schema mri-preproc
-	ecobidas_convert --schema mri-model
+	ecobidas_convert --schema mri-mass_univariate
+	ecobidas_convert --schema mri-multivariate
 	ecobidas_convert --schema mri-results
 validate_mri: convert_mri
 	grep -r  "@context" schemas/mri | cut -d: -f1 | xargs -I fname jsonlint -q fname
