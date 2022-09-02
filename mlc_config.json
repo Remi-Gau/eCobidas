@@ -4,7 +4,7 @@
             "pattern": "^https://doi.org/.*"
         },
         {
-            "pattern": "^https://claim.shinyapps.io/CLAIM/"
+            "pattern": "^.*shinyapps.*"
         },
         {
             "pattern": "^https://static-content.springer.com"
