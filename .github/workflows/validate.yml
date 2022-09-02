@@ -1,13 +1,15 @@
 name: Validate eCobidas protocols and activities
 
 on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: "*"
+    push:
+      branches: [master]
+    pull_request:
+      branches: "*"
 
 jobs:
+
   build:
+
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -28,7 +30,7 @@ jobs:
           grep -r  "@context" python/conversion/tests/data | cut -d: -f1 | xargs -I fname jsonlint -q fname
 
       # Checks that the schemas are valid
-      - name: Set up Python 3.8
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: 3.8
@@ -40,7 +42,5 @@ jobs:
 
       - name: Test with pyshacl
         run: |
-          reproschema -l DEBUG validate activities
           reproschema -l DEBUG validate python/tests/data/protocols
           reproschema -l DEBUG validate python/tests/data/activities
-          reproschema -l DEBUG validate schemas
