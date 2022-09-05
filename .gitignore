@@ -1,13 +1,16 @@
 *.DS_Store
+
 .vscode/*.log
+
 .~lock*
+
 
 lib/*
 
 names.csv
 
 node_modules
-
+package.json
 package-lock.json
 
 schemas

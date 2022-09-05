@@ -1,0 +1,90 @@
+{
+    "remi-gau": {
+        "name": "Remi Gau",
+        "blog": "https://remi-gau.github.io/"
+    },
+    "cassgvp": {
+        "name": "cassgvp",
+        "blog": "https://github.com/cassgvp"
+    },
+    "joyswe": {
+        "name": "joyswe",
+        "blog": "https://github.com/joyswe"
+    },
+    "fedeadolfi": {
+        "name": "Federico Adolfi",
+        "blog": "https://github.com/fedeadolfi"
+    },
+    "sanuann": {
+        "name": "Sanu Ann Abraham",
+        "blog": "https://github.com/sanuann"
+    },
+    "nicholst": {
+        "name": "Thomas Nichols",
+        "blog": "http://www.nisox.org"
+    },
+    "akeshavan": {
+        "name": "Anisha Keshavan",
+        "blog": "https://anisha.pizza"
+    },
+    "satra": {
+        "name": "Satrajit Ghosh",
+        "blog": "http://satra.cogitatum.org"
+    },
+    "TimVanMourik": {
+        "name": "Tim van Mourik",
+        "blog": "https://github.com/TimVanMourik"
+    },
+    "m-miedema": {
+        "name": "m-miedema",
+        "blog": "https://github.com/m-miedema"
+    },
+    "davidmoreau": {
+        "name": "David Moreau",
+        "blog": "https://github.com/davidmoreau"
+    },
+    "zsjoerds": {
+        "name": "Zsuzsika Sjoerds",
+        "blog": "https://zsjoerds.com"
+    },
+    "angietep": {
+        "name": "angietep",
+        "blog": "https://github.com/angietep"
+    },
+    "martinagvilas": {
+        "name": "Martina G. Vilas",
+        "blog": "http://martinagvilas.github.io"
+    },
+    "kwiebels": {
+        "name": "Kristina Wiebels",
+        "blog": "https://github.com/kwiebels"
+    },
+    "johalgermissen": {
+        "name": "Johannes Algermissen",
+        "blog": "https://github.com/johalgermissen"
+    },
+    "DorienHuijser": {
+        "name": "Dorien Huijser",
+        "blog": "https://github.com/DorienHuijser"
+    },
+    "wdweeda": {
+        "name": "Wouter Weeda",
+        "blog": "https://github.com/wdweeda"
+    },
+    "jasminetan6032": {
+        "name": "jasminetan6032",
+        "blog": "https://github.com/jasminetan6032"
+    },
+    "MarCordero": {
+        "name": "MarCordero",
+        "blog": "https://github.com/MarCordero"
+    },
+    "CPernet": {
+        "name": "Cyril Pernet",
+        "blog": "http://www.sbirc.ed.ac.uk/cyril/"
+    },
+    "lspieser": {
+        "name": "lspieser",
+        "blog": "https://github.com/lspieser"
+    }
+}
