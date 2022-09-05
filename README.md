@@ -1,12 +1,11 @@
+[![DOI](https://img.shields.io/badge/DOI:10.17605/OSF.IO/ANVQY-blue.svg?style=flat-square)](https://doi.org/10.17605/OSF.IO/ANVQY)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-22-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 ![checklist](https://raw.githubusercontent.com/Remi-Gau/COBIDAS_chckls/master/docs/img/checklist.jpg)
 
 # COBIDAS guidelines checklist
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-22-orange.svg?style=flat-square)](#contributors-)
-
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- TOC -->
 
