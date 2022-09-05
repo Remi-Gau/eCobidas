@@ -2,3 +2,7 @@
 	path = cobidas_schema
 	url = https://github.com/ohbm/cobidas_schema.git
 	datalad-url = https://github.com/ohbm/cobidas_schema.git
+[submodule "artemis_schema"]
+	path = artemis_schema
+	url = git@github.com:INCF/artem-is.git
+	datalad-url = git@github.com:INCF/artem-is.git
