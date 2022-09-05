@@ -26,6 +26,9 @@ install:
 	npm install `cat npm-requirements.txt`
 
 
+validate_cff: ## Validate the citation file
+	cffconvert --validate
+
 # ---------------------------------------------------------------------------- #
 # 							   CONVERSION TO JSONLD
 # ---------------------------------------------------------------------------- #

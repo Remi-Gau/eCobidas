@@ -5,56 +5,58 @@ from pathlib import Path
 yaml = ruamel.yaml.YAML()
 
 
-citation_file = Path(__file__).parent.joinpath("CITATION.cff")
-
-
 def load_citation(citation_file):
+
     with open(citation_file, "r", encoding="utf8") as input_file:
         return yaml.load(input_file)
 
 
-with open(
-    Path(__file__).parent.joinpath("tributors"), "r", encoding="utf8"
-) as tributors_file:
-    tributors = json.load(tributors_file)
+if __name__ == "__main__":
 
-author_list = []
+    citation_file = Path(__file__).parent.joinpath("CITATION.cff")
 
-for count, tributor in enumerate(tributors, start=1):
+    with open(
+        Path(__file__).parent.joinpath(".tributors"), "r", encoding="utf8"
+    ) as tributors_file:
+        tributors = json.load(tributors_file)
 
-    print(count)
+    author_list = []
 
-    this_tributor = tributors[tributor]
+    for count, tributor in enumerate(tributors, start=1):
 
-    name = this_tributor["name"]
+        print(count)
 
-    given_names = name.split()[0]
+        this_tributor = tributors[tributor]
 
-    new_contrib = {
-        "given-names": given_names,
-    }
+        name = this_tributor["name"]
 
-    if family_names := " ".join(name.split()[1:]):
-        new_contrib["family-names"] = family_names
+        given_names = name.split()[0]
 
-    if "blog" in this_tributor:
-        new_contrib["website"] = this_tributor["blog"]
+        new_contrib = {
+            "given-names": given_names,
+        }
 
-    if "orcid" in this_tributor:
-        new_contrib["orcid"] = "https://orcid.org/" + this_tributor["orcid"]
+        if family_names := " ".join(name.split()[1:]):
+            new_contrib["family-names"] = family_names
 
-    if "affiliation" in this_tributor:
-        new_contrib["affiliation"] = this_tributor["affiliation"]
+        if "blog" in this_tributor:
+            new_contrib["website"] = this_tributor["blog"]
 
-    if "email" in this_tributor:
-        new_contrib["email"] = this_tributor["email"]
+        if "orcid" in this_tributor:
+            new_contrib["orcid"] = "https://orcid.org/" + this_tributor["orcid"]
 
-    print(new_contrib)
+        if "affiliation" in this_tributor:
+            new_contrib["affiliation"] = this_tributor["affiliation"]
 
-    author_list.append(new_contrib)
+        if "email" in this_tributor:
+            new_contrib["email"] = this_tributor["email"]
 
-citation = load_citation(citation_file)
-citation["authors"] = author_list
+        print(new_contrib)
 
-with open(citation_file, "w") as output_file:
-    yaml.dump(citation, output_file)
+        author_list.append(new_contrib)
+
+    citation = load_citation(citation_file)
+    citation["authors"] = author_list
+
+    with open(citation_file, "w") as output_file:
+        yaml.dump(citation, output_file)

@@ -5,9 +5,9 @@ cff-version: 1.2.0
 title: bids-specification
 
 abstract: |
-          Working repository to turn the COBIDAS guidelines
-          to report methods and results in neuroimaging
-          into a user friendly checklist.
+  Working repository to turn the COBIDAS guidelines
+  to report methods and results in neuroimaging
+  into a user friendly checklist.
 
 version: v1.0.0-dev
 
@@ -17,10 +17,10 @@ repository-code: https://github.com/Remi-Gau/COBIDAS_chckls.git
 
 message: Please cite it as below.
 
-# identifiers:
-# - description: bids-specification
-#   type: doi
-#   value: 10.5281/zenodo.3686061
+identifiers:
+- description: zenodo
+  type: doi
+  value: 10.5281/zenodo.4095367
 
 keywords:
 - checklist
@@ -28,5 +28,62 @@ keywords:
 - methods
 
 authors:
-- given-names: Rémi
+- given-names: Remi
   family-names: Gau
+  website: https://remi-gau.github.io/
+- given-names: cassgvp
+  website: https://github.com/cassgvp
+- given-names: joyswe
+  website: https://github.com/joyswe
+- given-names: Federico
+  family-names: Adolfi
+  website: https://github.com/fedeadolfi
+- given-names: Sanu
+  family-names: Ann Abraham
+  website: https://github.com/sanuann
+- given-names: Thomas
+  family-names: Nichols
+  website: http://www.nisox.org
+- given-names: Anisha
+  family-names: Keshavan
+  website: https://anisha.pizza
+- given-names: Satrajit
+  family-names: Ghosh
+  website: http://satra.cogitatum.org
+- given-names: Tim
+  family-names: van Mourik
+  website: https://github.com/TimVanMourik
+- given-names: m-miedema
+  website: https://github.com/m-miedema
+- given-names: David
+  family-names: Moreau
+  website: https://github.com/davidmoreau
+- given-names: Zsuzsika
+  family-names: Sjoerds
+  website: https://zsjoerds.com
+- given-names: angietep
+  website: https://github.com/angietep
+- given-names: Martina
+  family-names: G. Vilas
+  website: http://martinagvilas.github.io
+- given-names: Kristina
+  family-names: Wiebels
+  website: https://github.com/kwiebels
+- given-names: Johannes
+  family-names: Algermissen
+  website: https://github.com/johalgermissen
+- given-names: Dorien
+  family-names: Huijser
+  website: https://github.com/DorienHuijser
+- given-names: Wouter
+  family-names: Weeda
+  website: https://github.com/wdweeda
+- given-names: jasminetan6032
+  website: https://github.com/jasminetan6032
+- given-names: MarCordero
+  website: https://github.com/MarCordero
+- given-names: Cyril
+  family-names: Pernet
+  website: http://www.sbirc.ed.ac.uk/cyril/
+- given-names: lspieser
+  website: https://github.com/lspieser
