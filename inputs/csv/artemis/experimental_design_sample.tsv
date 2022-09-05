@@ -1,7 +1,7 @@
 sub_section	preamble	question	details	field_type	choices	item_pref_label	visibility	item_order	include	mandatory	activity_pref_label	activity_order	unit	BIDS_file	BIDS_key	BIDS_key_for_unit	BIDS_status
 Sample size	In this section you will decrobe the experimental design and sample, such as experimental condition and trial number per condition, number of participants, participant exclusion and presenting software. 	How many subjects participated in the study?		integer		sample_size_total	1	1	1	1	design_and_sample	2		participants.tsv?
 Sample size		How many participants, in total, were included in the analysis, after exclusion participants with bad data?		integer		sample_size_valid	1	2	1	1	design_and_sample	2
-Sample size		Specify reasons for excluding participants.		textarea		subject_exclusion_rationale	sample_size_total != sample_size_valid	3	1	1	design_and_sample	2
+Sample size		Specify reasons for excluding participants.		textarea		subject_exclusion_rationale	sample_size_total > sample_size_valid	3	1	1	design_and_sample	2
 Sample size		How many experimental/comparison (between-subjects) groups did the study feature? 		integer		number_of_groups	1	4	1	1	design_and_sample	2
 Sample size		Specify group names separated by semicolon and a space (e.g., test group; control group)		text		order_of_group	number_of_groups > 1	5	1	1	design_and_sample	2
 Sample size		How many participants did each group have after exclusion?	Input numeric values in the same order in which groups were listed in the previous section. Values should be separated by semicolon and a space.	text		participants_per_group	1	6	1	1	design_and_sample	2
