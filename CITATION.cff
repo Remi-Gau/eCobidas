@@ -15,9 +15,14 @@ license: GPL-3.0
 
 repository-code: https://github.com/Remi-Gau/COBIDAS_chckls.git
 
-message: Please cite it as below.
+message: "Please cite preferentially using the open science framework DOI."
 
 identifiers:
+
+- description: open science framework
+  type: doi
+  value: 10.17605/OSF.IO/ANVQY
+
 - description: zenodo
   type: doi
   value: 10.5281/zenodo.4095367
