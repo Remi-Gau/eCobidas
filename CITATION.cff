@@ -1,0 +1,32 @@
+# schema: https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md
+
+cff-version: 1.2.0
+
+title: bids-specification
+
+abstract: |
+          Working repository to turn the COBIDAS guidelines
+          to report methods and results in neuroimaging
+          into a user friendly checklist.
+
+version: v1.0.0-dev
+
+license: GPL-3.0
+
+repository-code: https://github.com/Remi-Gau/COBIDAS_chckls.git
+
+message: Please cite it as below.
+
+# identifiers:
+# - description: bids-specification
+#   type: doi
+#   value: 10.5281/zenodo.3686061
+
+keywords:
+- checklist
+- neuroimaging
+- methods
+
+authors:
+- given-names: Rémi
+  family-names: Gau
