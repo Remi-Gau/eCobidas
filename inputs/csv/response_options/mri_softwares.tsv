@@ -1,5 +1,5 @@
-name	value
-SPM	0
+name	value	RRID
+SPM	0	SCR_007037
 FSL	1
 AFNI	2
 Freesurfer	3

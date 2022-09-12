@@ -1,4 +1,4 @@
-name	value
+name	value	RRID
 Attention Tool 5.2 software	0
 Cogent	1
 EEVoke	2
@@ -12,13 +12,13 @@ Eyelink	9
 Gaze Tracker software	10
 Inquisit 3.0.5	11
 InsEP	12
-Matlab	13
+Matlab	13	SCR_001622
 Neurolab	14
-OpenSesam	15
+OpenSesame	15
 PhotoRating (web application)	16
 Power Point	17
 Presentation	18
-PsychoPy	19
+PsychoPy	19	SCR_006571
 Psychtoolbox	20
 Relax, Archisim	21
 S-CCS (simulation of a naval air-defense environment)	22
@@ -36,3 +36,4 @@ Tobii Studio Professional	33
 Tobii X1 Light eye-tracking software	34
 unipark	35
 Other	36
+Python		SCR_008394

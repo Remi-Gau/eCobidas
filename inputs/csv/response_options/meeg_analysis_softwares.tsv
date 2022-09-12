@@ -1,18 +1,21 @@
-name	value
+name	value	RRID
 BESA Research	0
 Brain Vision Analyzer	1
-Brainstorm	2
+Brainstorm	2	SCR_001761
 Cartool	3
 Curry	4
-EEGlab (+ ERPlab)	6
+EEGlab (+ ERPlab)	6	SCR_007292
 EEProbe	7
 ERP system	8
-FieldTrip 	9
+FieldTrip 	9	SCR_004849
 InstEP	10
-MNE-Python	11
+MNE-Python	11	SCR_005972
 NetStation	12
 Scan	13
 TrackWalker	14
-SPM	15
+SPM	15	SCR_007037
 Custom scripts (any language)	16
 Other	17
+Letswave	18
+MATLAB		SCR_001622
+Python		SCR_008394
