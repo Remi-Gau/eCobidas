@@ -100,7 +100,7 @@ reproschema -l DEBUG validate schemas/neurovault
 ## Serving the local protocols and activities to test them with the reproschema-ui
 
 ```
-python schemas/simple-cors-http-server.py
+python local_server.py
 ```
 
 ## Editing the spreadsheets
