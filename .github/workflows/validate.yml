@@ -20,7 +20,7 @@ jobs:
           node-version: "12.x"
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # Checks that our JSON are valid
       - name: Check for syntax errors
