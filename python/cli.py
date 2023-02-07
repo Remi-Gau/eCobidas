@@ -33,7 +33,6 @@ default_dir = os.path.join(get_root_dir(), "schemas")
     """,
 )
 def convert(schema, out_dir, repo, branch):
-
     # TODO
     # If this_schema is a file
 
@@ -46,7 +45,6 @@ def convert(schema, out_dir, repo, branch):
         schema = [schema]
 
     for this_schema in schema:
-
         # add debug parameter
         protocol = create_schema(this_schema, out_dir)
 

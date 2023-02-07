@@ -4,32 +4,27 @@ from rich import print
 
 
 def get_root_dir():
-
     this_path = os.path.dirname(os.path.abspath(__file__))
     return os.path.abspath(os.path.join(this_path, ".."))
 
 
 def get_input_dir(dir=get_root_dir()):
-
     return os.path.abspath(os.path.join(dir, "inputs", "csv"))
 
 
 def get_output_dir(this_schema, out_dir):
-
     schema_info = get_schema_info(this_schema)
 
     return os.path.abspath(os.path.join(out_dir, schema_info["dir"].tolist()[0]))
 
 
 def get_metatable():
-
     metatable_file = os.path.join(get_input_dir(), "spreadsheet_google_id.tsv")
 
     return pd.read_csv(metatable_file, sep="\t")
 
 
 def list_preset_responses():
-
     df = get_metatable()
     is_response_option = df["dir"] == "response_options"
     response_options = df[is_response_option]
@@ -37,7 +32,6 @@ def list_preset_responses():
 
 
 def get_landing_page(schema_info: dict):
-
     DEFAULT = ["README_eCOBIDAS-en.md"]
 
     if schema_info["landing page"].isna().tolist()[0]:
@@ -52,7 +46,6 @@ def get_landing_page(schema_info: dict):
 
 
 def get_schema_info(this_schema):
-
     df = get_metatable()
 
     is_this_schema = df["schema"] == this_schema
@@ -60,7 +53,6 @@ def get_schema_info(this_schema):
 
 
 def get_input_file(schema_info: dict):
-
     input_dir = get_root_dir()
     dir = schema_info["dir"].tolist()[0]
 
@@ -74,14 +66,11 @@ def get_input_file(schema_info: dict):
 
 
 def load_data(this_schema):
-
     if not os.path.isfile(this_schema):
-
         schema_info = get_schema_info(this_schema)
         input_file = get_input_file(schema_info)
 
     else:
-
         input_file = this_schema
 
     print("[bold green]" + "Loading:" + input_file + "[/bold green]" + "\n")
@@ -90,22 +79,18 @@ def load_data(this_schema):
 
 
 def convert_to_str(df_field):
-
     return df_field.tolist()[0]
 
 
 def convert_to_int(df_field):
-
     return int(df_field.tolist()[0])
 
 
 def snake_case(input: str):
-
     return input.replace("\n", "").replace(" ", "_").replace(",", "")
 
 
 def print_info(type: str, pref_label: str, file: str):
-
     print(
         dashed_line()
         + "\n"
@@ -122,7 +107,6 @@ def print_info(type: str, pref_label: str, file: str):
 
 
 def print_item_info(activity_idx, item_idx, item_info: dict):
-
     print(f"Activity: {int(activity_idx)} Item: {int(item_idx)}")
     print(
         f"   {item_info['name']}   {item_info['field_type']}   {item_info['visibility']}"
@@ -130,7 +114,6 @@ def print_item_info(activity_idx, item_idx, item_info: dict):
 
 
 def print_download(repo: str, branch: str, protocol):
-
     repo = f"https://raw.githubusercontent.com/{repo}"
 
     s = "/"

@@ -14,7 +14,6 @@ and checks that the correct jsonld are created.
 
 
 def test_create_schema():
-
     this_schema = "test"
     out_dir = os.path.join(myPath, "outputs")
 
@@ -74,7 +73,6 @@ def test_create_schema():
     ]
 
     for activity in activities:
-
         activity_name = activity["name"]
 
         this_activity_folder = os.path.join(activities_folder, activity_name)
@@ -95,7 +93,6 @@ def test_create_schema():
         item_list = activity["items"]
 
         for item in item_list:
-
             output_file = os.path.join(
                 out_dir, "tests", this_activity_folder, "items", item + ".jsonld"
             )
@@ -110,6 +107,5 @@ def test_create_schema():
 
 
 def read_json(file):
-
     with open(file, "r") as ff:
         return json.load(ff)

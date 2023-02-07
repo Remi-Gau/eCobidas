@@ -20,7 +20,6 @@ from reproschema.models.item import ResponseOption, Item
 
 
 def test_slider_response():
-
     choices = ["1", "4", "4"]
 
     response_options = slider_response(choices)
@@ -32,7 +31,6 @@ def test_slider_response():
 
 
 def test_preset():
-
     field_type = "radio"
     choices = ["preset:boolean"]
 
@@ -58,7 +56,6 @@ def test_preset():
     ],
 )
 def test_set_item_name(input, expected):
-
     this_item = pd.DataFrame({"item_pref_label": [input]})
 
     name = set_item_name(this_item)
@@ -71,7 +68,6 @@ def test_set_item_name(input, expected):
     [("", "item name", "item_name"), ("foo Bar", "item name", "foo_Bar")],
 )
 def test_set_item_name_pref_label(item_name, pref_label, expected):
-
     this_item = pd.DataFrame({"item": [item_name], "item_pref_label": [pref_label]})
 
     name = set_item_name(this_item)
@@ -80,7 +76,6 @@ def test_set_item_name_pref_label(item_name, pref_label, expected):
 
 
 def test_get_item_info():
-
     this_item = pd.DataFrame(
         {
             "visibility": ["previous_item == 2"],
@@ -114,7 +109,6 @@ def test_get_item_info():
 
 
 def test_get_item_info_with_name():
-
     this_item = pd.DataFrame(
         {
             "visibility": ["1"],
@@ -148,7 +142,6 @@ def test_get_item_info_with_name():
 
 
 def test_get_item_info_with_only_name():
-
     this_item = pd.DataFrame(
         {
             "visibility": ["1"],
@@ -192,14 +185,12 @@ def test_get_item_info_with_only_name():
     ],
 )
 def test_get_visibility(input, expected):
-
     this_item = pd.DataFrame({"visibility": [input]})
     visibility = get_visibility(this_item)
     assert visibility == expected
 
 
 def test_list_responses_options():
-
     response_options = list_responses_options(["A", "B", "C"])
 
     expected = ResponseOption()

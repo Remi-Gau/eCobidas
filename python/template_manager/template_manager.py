@@ -2,7 +2,6 @@ from jinja2 import Environment, PackageLoader, select_autoescape
 
 
 class TemplateManager:
-
     # Environment from which all templates will be loaded.
     # Required for Jinja imports
     env: Environment = None

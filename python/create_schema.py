@@ -57,7 +57,6 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
         activities = [1]
 
     for i, activity_idx in enumerate(activities):
-
         this_activity = df["activity_order"] == activities[i]
         items = df[this_activity]
         included_items = items["include"] == 1
@@ -81,7 +80,6 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
         # ID (OR preferred label)
 
         for item_idx in items_order:
-
             this_item = items[items["item_order"] == item_idx]
 
             item_info = get_item_info(this_item)
@@ -104,7 +102,6 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
 
 
 def initialize_protocol(this_schema, out_dir):
-
     schema_info = get_schema_info(this_schema)
 
     protocol_name = snake_case(schema_info["basename"].tolist()[0])
@@ -133,7 +130,6 @@ def initialize_protocol(this_schema, out_dir):
 
 
 def initialize_activity(protocol, items, out_dir):
-
     if len(items.activity_pref_label.unique()) == 0:
         raise NameError("Empty activity")
 
@@ -180,7 +176,6 @@ def initialize_activity(protocol, items, out_dir):
 
 
 def create_new_item(item_info: dict, activity_path: str):
-
     item = define_new_item(item_info)
 
     item.set_URI(os.path.join("items", item.get_filename()))
@@ -196,7 +191,6 @@ def create_new_item(item_info: dict, activity_path: str):
 
 
 def get_activity_preamble(items):
-
     if "preamble" not in items.keys():
         return ""
 
@@ -210,7 +204,6 @@ def get_activity_preamble(items):
 
 
 def create_response_options(schema_info: dict, df, out_dir):
-
     responses = df.name.unique()
 
     response_options = ResponseOption()

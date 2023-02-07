@@ -6,13 +6,11 @@ yaml = ruamel.yaml.YAML()
 
 
 def load_citation(citation_file):
-
     with open(citation_file, "r", encoding="utf8") as input_file:
         return yaml.load(input_file)
 
 
 if __name__ == "__main__":
-
     citation_file = Path(__file__).parent.joinpath("CITATION.cff")
 
     with open(
@@ -23,7 +21,6 @@ if __name__ == "__main__":
     author_list = []
 
     for count, tributor in enumerate(tributors, start=1):
-
         print(count)
 
         this_tributor = tributors[tributor]

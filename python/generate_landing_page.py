@@ -8,7 +8,6 @@ from template_manager import TemplateManager
 
 
 def main():
-
     TemplateManager.initialize()
 
     template = TemplateManager.env.get_template("landing_page.j2")
@@ -23,7 +22,6 @@ def main():
     # make sure to include artemis only once
     artemis = False
     for i in apps:
-
         details = apps_lists[apps_lists["basename"] == i]
 
         if artemis:
@@ -60,5 +58,4 @@ def main():
 
 
 if __name__ == "__main__":
-
     main()
