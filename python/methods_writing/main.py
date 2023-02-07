@@ -33,7 +33,6 @@ def parse_arguments(MODALITY="base"):
 
 
 if __name__ == "__main__":
-
     # Fetch the input arguments
     input_args = parse_arguments(MODALITY)
 

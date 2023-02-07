@@ -10,7 +10,6 @@ from rich import print
 
 
 def set_item_name(this_item: dict):
-
     if "item" not in this_item.keys():
         item_name = convert_to_str(this_item["item_pref_label"])
     elif isinstance(convert_to_str(this_item["item"]), float):
@@ -27,7 +26,6 @@ def set_item_name(this_item: dict):
 
 
 def get_item_info(this_item: dict) -> dict:
-
     sub_section = ""
     if "sub_section" in this_item and this_item["sub_section"].any():
         sub_section = convert_to_str(this_item["sub_section"])
@@ -89,7 +87,6 @@ def split_choices(choices) -> list:
 
 
 def get_visibility(this_item: dict):
-
     visibility = convert_to_str(this_item["visibility"])
 
     if visibility in ["1", 1]:
@@ -110,7 +107,6 @@ def get_visibility(this_item: dict):
 
 
 def get_mandatory(this_item: dict) -> bool:
-
     mandatory = convert_to_int(this_item["mandatory"])
 
     mandatory = mandatory >= 0
@@ -119,7 +115,6 @@ def get_mandatory(this_item: dict) -> bool:
 
 
 def define_unit(item, units):
-
     if units == "":
         return item
 
@@ -165,7 +160,6 @@ def define_new_item(item_info: dict):
 
 
 def define_choices(item, field_type: str, choices: list):
-
     if field_type not in [
         "multitext",
         "text",
@@ -200,7 +194,6 @@ def define_choices(item, field_type: str, choices: list):
         item.set_input_type_as_text(3000)
 
     if field_type in {"radio", "radio_multiple", "select", "select_multiple"}:
-
         response_options = list_responses_options(choices)
 
         if field_type in {"radio_multiple", "select_multiple"}:
@@ -219,11 +212,9 @@ def define_choices(item, field_type: str, choices: list):
 
 
 def list_responses_options(choices: list):
-
     response_options = ResponseOption()
 
     for i, opt in enumerate(choices):
-
         response_options.add_choice(opt, i)
 
     response_options.set_min(0)
@@ -233,7 +224,6 @@ def list_responses_options(choices: list):
 
 
 def slider_response(choices: list):
-
     min = float(choices[0])
     max = float(choices[1])
     steps = int(choices[2]) if len(choices) == 3 else 21
@@ -252,7 +242,6 @@ def slider_response(choices: list):
 
 
 def use_preset(item, choices: list):
-
     preset_response_file = (
         "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/"
         + choices[0].split("preset:")[1]

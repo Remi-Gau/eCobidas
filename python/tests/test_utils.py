@@ -8,7 +8,6 @@ from ..utils import get_input_file, get_schema_info, get_landing_page
     "this_schema, dir, basename", [("neurovault", "neurovault", "neurovault")]
 )
 def test_get_schema_info(this_schema, dir, basename):
-
     schema_info = get_schema_info(this_schema)
     input_file = get_input_file(schema_info)
 
@@ -30,7 +29,6 @@ def test_get_schema_info(this_schema, dir, basename):
     ],
 )
 def test_get_landing_page(this_schema, filename):
-
     schema_info = get_schema_info(this_schema)
     landing_page = get_landing_page(schema_info)
 

@@ -10,7 +10,6 @@ from template_manager import TemplateManager
 
 
 def main():
-
     TemplateManager.initialize()
 
     BASE_URL = "https://github.com/ohbm/cobidas_schema/blob/master/"
@@ -27,7 +26,6 @@ def main():
 
     items = []
     for i in files:
-
         details = response_lists[response_lists["basename"] == i]
 
         basename = details["basename"].to_string(index=False)
@@ -56,7 +54,6 @@ def main():
     # make sure to include artemis only once
     artemis = False
     for i in apps:
-
         details = apps_lists[apps_lists["basename"] == i]
 
         if artemis:
