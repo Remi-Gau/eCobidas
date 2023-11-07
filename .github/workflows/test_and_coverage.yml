@@ -25,7 +25,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.8
+        python-version: 3.12
 
     - name: Install dependencies
       run: |
@@ -36,7 +36,7 @@ jobs:
         cd lib/reproschema-py && git checkout remi_schema_creator && pip install -e .
 
     - name: Run tests and generate coverage report
-      run: pytest --cov=./ --cov-report=xml
+      run: python -m pytest python/tests --cov=./ --cov-report=xml
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
