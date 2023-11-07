@@ -16,7 +16,7 @@ us know if we missed something.
 
 ## The COBIDAS reports
 
--   [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)
+-   [for MRI and fMRI](https://doi.org/10.1101/054262 )
 
 -   [for EEG and MEG](https://osf.io/a8dhx/)
 

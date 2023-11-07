@@ -31,7 +31,7 @@ output that can be used to automatically generate parts of the methods section.
 Those apps and incoming ones are based on the following best practices
 guidelines:
 
--   [Best Practices in Data Analysis and Sharing in Neuroimaging using MRI](https://www.biorxiv.org/content/10.1101/054262v2)
+-   [Best Practices in Data Analysis and Sharing in Neuroimaging using MRI](https://doi.org/10.1101/054262 )
 -   [Best Practices in Data Analysis and Sharing in Neuroimaging using MEEG](https://osf.io/a8dhx/)
 -   [Guideline for Reporting Standards of Eye-tracking Research in Decision Sciences](https://psyarxiv.com/f6qcy/)
 -   [Guidelines for the content and format of PET brain data in publications and archives: A consensus paper](https://doi.org/10.1177/0271678X20905433)

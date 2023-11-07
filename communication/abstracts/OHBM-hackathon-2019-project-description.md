@@ -14,7 +14,7 @@ A few years ago, in order to improve the situation with respect to
 [reproducibility](https://github.com/ohbm/hackathon2019/blob/master/Tutorial_Resources.md#reproducible-neuroimaging-tools)
 in f/MRI research, the Committee on Best Practices in Data Analysis and Sharing
 ([COBIDAS](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728))
-of OHBM released a [report](https://www.biorxiv.org/content/10.1101/054262v2) to
+of OHBM released a [report](https://doi.org/10.1101/054262 ) to
 promote best practices for methods and results reporting. This was recently
 followed by a [similar initiative for EEG and MEG](https://osf.io/a8dhx/).
 
@@ -84,7 +84,7 @@ run through of the checklist.
 
 The COBIDAS report:
 
--   [for MRI and fMRI](https://www.biorxiv.org/content/10.1101/054262v2)
+-   [for MRI and fMRI](https://doi.org/10.1101/054262 )
 -   [for EEG and MEG](https://osf.io/a8dhx/)
 
 A [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS checklist (thanks
@@ -97,8 +97,3 @@ to [Cass](https://github.com/cassgvp)!!!)
 ## GitHub repo
 
 [The github repository of this project can be found here](https://github.com/Remi-Gau/COBIDAS_chckls)
-
-## Communication
-
-Come and join us on the `cobidas_checklist` channel at
-[![slack_brainhack_3](https://user-images.githubusercontent.com/6297454/47951457-5b37b780-df61-11e8-9d77-7b5a4c7af875.png)](https://brainhack-slack-invite.herokuapp.com/).

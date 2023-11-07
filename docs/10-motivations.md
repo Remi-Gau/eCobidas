@@ -12,7 +12,7 @@ suggest that few studies meet this criterion.*"
 A few years ago, in order to improve reproducibility in f/MRI research, the
 Committee on Best Practices in Data Analysis and Sharing
 ([COBIDAS](https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3728))
-of OHBM released a [report](https://www.biorxiv.org/content/10.1101/054262v2) to
+of OHBM released a [report](https://doi.org/10.1101/054262 ) to
 promote best practices for methods and results reporting. This was recently
 followed by a [similar initiative for EEG and MEG](https://osf.io/a8dhx/).
 
