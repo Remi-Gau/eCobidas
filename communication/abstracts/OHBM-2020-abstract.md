@@ -63,7 +63,7 @@ schema to allow users to browse and complete each section of the checklist.
 The development of the webapp started at the OHBM Hackathon 2019 and aims to be
 a project developed by the community for the community. All information is
 centralized on an open science framework project [2]. The current prototype of
-the webapp can be accessed at https://cobidas-checklist.herokuapp.com/#/. It is
+the webapp can be accessed athttps://ohbm.github.io/eCOBIDAS/#/. It is
 based on the 88 metadata items available to characterise a collection of
 neuroimaging results uploaded on the neurovault website [3]. This only
 constitutes a subset of the full f/MRI COBIDAS checklist and will be expanded in
