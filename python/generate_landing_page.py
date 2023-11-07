@@ -3,7 +3,7 @@ Generates a typical landing page in english for an app
 """
 
 import os
-from utils import get_metatable
+from .utils import get_metatable
 from template_manager import TemplateManager
 
 

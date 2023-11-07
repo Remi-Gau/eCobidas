@@ -3,7 +3,7 @@ import re
 
 from numpy import linspace, isnan
 
-from utils import convert_to_str, convert_to_int, snake_case
+from .utils import convert_to_str, convert_to_int, snake_case
 from reproschema.models.item import Item, ResponseOption
 
 from rich import print

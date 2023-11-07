@@ -2,8 +2,8 @@ import os
 
 from rich import print
 
-from item import get_item_info, define_new_item
-from utils import (
+from .item import get_item_info, define_new_item
+from .utils import (
     snake_case,
     print_info,
     print_item_info,

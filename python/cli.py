@@ -3,8 +3,8 @@
 # see how reproschema uses click to create command line calls `reproschema validate`
 
 import os, click
-from create_schema import create_schema
-from utils import print_download, get_root_dir, get_metatable
+from .create_schema import create_schema
+from .utils import print_download, get_root_dir, get_metatable
 
 default_dir = os.path.join(get_root_dir(), "schemas")
 
