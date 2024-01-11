@@ -7,4 +7,4 @@ black
 pandas
 click
 rich
-Jinja2==3.0.1
+Jinja2==3.1.3
