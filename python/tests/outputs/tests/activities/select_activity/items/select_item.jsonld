@@ -1,0 +1,42 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "select_item.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "prefLabel": {
+        "en": "select item"
+    },
+    "description": "This is a select item that works with a drop down menu.",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "4.3 - select item - one answer allowed"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "choices": [
+            {
+                "name": {
+                    "en": "Response option 1"
+                },
+                "value": 0
+            },
+            {
+                "name": {
+                    "en": "Response option 2"
+                },
+                "value": 1
+            },
+            {
+                "name": {
+                    "en": "Response option 3"
+                },
+                "value": 2
+            }
+        ],
+        "minValue": 0,
+        "maxValue": 2
+    }
+}

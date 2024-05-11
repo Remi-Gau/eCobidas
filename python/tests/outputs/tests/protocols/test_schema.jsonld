@@ -1,0 +1,94 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Protocol",
+    "@id": "test_schema.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "prefLabel": {
+        "en": "test"
+    },
+    "description": "test",
+    "preamble": {
+        "en": ""
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "../activities/activity_2/activity_2_schema.jsonld",
+            "../activities/activity_3/activity_3_schema.jsonld",
+            "../activities/activity_4/activity_4_schema.jsonld",
+            "../activities/select_activity/select_activity_schema.jsonld",
+            "../activities/visibility/visibility_schema.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "activity_2",
+                "isAbout": "../activities/activity_2/activity_2_schema.jsonld",
+                "prefLabel": {
+                    "en": "Activity 2"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "activity_3",
+                "isAbout": "../activities/activity_3/activity_3_schema.jsonld",
+                "prefLabel": {
+                    "en": "Activity 3"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "activity_4",
+                "isAbout": "../activities/activity_4/activity_4_schema.jsonld",
+                "prefLabel": {
+                    "en": "Activity 4"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "select_activity",
+                "isAbout": "../activities/select_activity/select_activity_schema.jsonld",
+                "prefLabel": {
+                    "en": "Select Activity"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "visibility",
+                "isAbout": "../activities/visibility/visibility_schema.jsonld",
+                "prefLabel": {
+                    "en": "Visibility"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    },
+    "landingPage": {
+        "@id": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/landing_pages/README_eCOBIDAS-en.md",
+        "inLanguage": "en"
+    }
+}

@@ -15,19 +15,14 @@
 # install the required python and node packages and
 # install the local package for ecobidas conversion
 # install the pre-commit hook
-# clone Rémi's fork of Reproschema-py and install the local package in the lib folder
+# install Reproschema-py from the lib folder
 install:
 	pip install -r requirements.txt
 	pip install -r python/requirements.txt
 	cd python && pip install -e . && cd ..
-	mkdir -p lib && git clone https://github.com/Remi-Gau/reproschema-py.git lib/reproschema-py
-	cd lib/reproschema-py && git checkout eCobidas_valid && pip install -e .
+	cd lib/reproschema-py && pip install -e .
 	pre-commit install
 	npm install `cat npm-requirements.txt`
-
-
-validate_cff: ## Validate the citation file
-	cffconvert --validate
 
 # ---------------------------------------------------------------------------- #
 # 							   CONVERSION TO JSONLD

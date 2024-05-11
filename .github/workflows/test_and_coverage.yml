@@ -31,10 +31,7 @@ jobs:
         -   name: Install dependencies
             run: |
                 python -m pip install --upgrade pip setuptools
-                pip install -r python/requirements.txt
-                cd python && pip install -e . && cd ..
-                mkdir -p lib && git clone https://github.com/Remi-Gau/reproschema-py.git lib/reproschema-py
-                cd lib/reproschema-py && git checkout remi_schema_creator && pip install -e .
+                make install
 
         -   name: Run tests and generate coverage report
             run: python -m pytest python/tests --cov=./ --cov-report=xml
