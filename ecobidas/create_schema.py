@@ -176,12 +176,11 @@ def create_response_options(schema_info: dict, df, out_dir):
 
 
 def make_preamble(schema_info, items):
-    """
-    if preamble is empty we do nothing
+    """Do nothing if preamble is empty.
+
     but otherwise we try to create an additional 'header' to the activity
     with info about the source spreadsheet, repo...
     """
-
     preamble = get_activity_preamble(items)
 
     if not preamble:

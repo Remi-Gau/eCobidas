@@ -78,7 +78,7 @@ def get_item_info(this_item: dict) -> dict:
 
 
 def split_choices(choices) -> list:
-    if type(choices) == str:
+    if isinstance(choices, str):
         choices = choices.split(" | ")
     return choices
 
@@ -128,10 +128,7 @@ def define_unit(item, units):
 
 
 def define_new_item(out_dir, item_info: dict):
-    """
-    define jsonld for this item
-    """
-
+    """Define jsonld for this item."""
     input_type = item_info["field_type"]
     if item_info["field_type"] == "int":
         input_type = "integer"

@@ -2,7 +2,7 @@ import json
 import os
 
 tested = 0
-for root, dirs, files in os.walk("schemas", topdown=True):
+for root, _, files in os.walk("schemas", topdown=True):
     for name in files:
         filename = os.path.join(root, name)
         with open(filename) as fp:

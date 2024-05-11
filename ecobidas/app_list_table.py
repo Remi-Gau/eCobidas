@@ -1,5 +1,6 @@
-"""
-Script used to generate markdown documents that list all the
+"""Script used to generate markdown documents.
+
+List all the
 - preset response options (with link to google sheet and jsonld)
 - apps (with link to google sheet, repo...)
 """

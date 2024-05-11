@@ -11,7 +11,6 @@ class TemplateManager:
 
         :return: None
         """
-
         # Set the class environment so that it relies on the right folder and also auto-escapes our custom tmp files
         cls.env = Environment(
             loader=PackageLoader("template_manager", "templates"),

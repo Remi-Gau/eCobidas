@@ -1,5 +1,3 @@
-import os
-
 import pandas as pd
 
 from ecobidas.create_schema import make_preamble

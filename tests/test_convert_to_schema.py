@@ -1,7 +1,5 @@
-"""
-Runs the conversion of the tsv in `inputs/csv/test.tsv`
-and checks that the correct jsonld are created.
-"""
+"""Runs the conversion of the tsv in `inputs/csv/test.tsv` \
+   and checks that the correct jsonld are created."""
 
 import json
 import os

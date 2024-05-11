@@ -26,4 +26,4 @@ per-file-ignores =
 	**/__init__.py: D104
 	tests/**/*.py: D103
 
-extend-ignore = B007, B008, D100, D101, D102, D103, D200, D202, D205, D400, D401, D403, E501, E712, E721, F401
+extend-ignore = D100, D101, D102, D103, E712

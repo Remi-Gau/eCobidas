@@ -12,11 +12,10 @@ INPUT_PATH = os.path.join("..", "..", "inputs", "bids_template", "sub-01", "ses-
 
 
 def parse_arguments(MODALITY="base"):
-    """Main method to parse the input arguments.
+    """Parse the input arguments.
 
     :return: The object with all the parsed arguments or their default value.
     """
-
     report = f"{MODALITY}_report"
 
     # Add the parsing of arguments

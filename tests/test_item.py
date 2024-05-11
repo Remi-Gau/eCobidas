@@ -1,6 +1,3 @@
-import os
-import sys
-
 import pandas as pd
 import pytest
 from reproschema.models.item import Item, ResponseOption
