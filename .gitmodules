@@ -6,3 +6,6 @@
 	path = artemis_schema
 	url = git@github.com:INCF/artem-is.git
 	datalad-url = git@github.com:INCF/artem-is.git
+[submodule "reproschema-py"]
+	path = reproschema-py
+	url = https://github.com/Remi-Gau/reproschema-py.git

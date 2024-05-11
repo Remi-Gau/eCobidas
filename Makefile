@@ -20,7 +20,7 @@ install:
 	pip install -r requirements.txt
 	pip install -r python/requirements.txt
 	cd python && pip install -e . && cd ..
-	cd lib/reproschema-py && pip install -e .
+	cd reproschema-py && pip install -e . && cd ..
 	pre-commit install
 	npm install `cat npm-requirements.txt`
 
