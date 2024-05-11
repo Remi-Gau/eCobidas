@@ -2,12 +2,12 @@
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "activity_4_schema.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
     "prefLabel": {
         "en": "Activity 4"
     },
     "description": "activity 4",
-    "schemaVersion": "1.0.0-rc4",
-    "version": "0.0.1",
     "preamble": {
         "en": ""
     },
@@ -22,6 +22,9 @@
             {
                 "variableName": "TEXT",
                 "isAbout": "items/TEXT.jsonld",
+                "prefLabel": {
+                    "en": "text item"
+                },
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -31,6 +34,9 @@
             {
                 "variableName": "multitext_item",
                 "isAbout": "items/multitext_item.jsonld",
+                "prefLabel": {
+                    "en": "multitext item"
+                },
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -40,6 +46,9 @@
             {
                 "variableName": "float_item",
                 "isAbout": "items/float_item.jsonld",
+                "prefLabel": {
+                    "en": "float item"
+                },
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
