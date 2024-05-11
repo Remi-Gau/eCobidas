@@ -141,8 +141,3 @@ documentation
 
 -   [main documentation](https://www.repronim.org/reproschema/)
 -   [FAQ](https://www.repronim.org/reproschema/98_FAQ/)
-
-We are also trying to extend the content of the documentation of the
-reproschema. You can keep track of this in this
-[pull request](https://github.com/ReproNim/reproschema/pull/399) and here on
-[github](https://github.com/Remi-Gau/reproschema/tree/remi-documentation/docs)
