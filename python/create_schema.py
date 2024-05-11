@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 from rich import print
 
@@ -109,22 +110,20 @@ def initialize_protocol(this_schema, out_dir):
     # are we sure we want to change the case or the protocol
     # or make it snake case?
     protocol_name = protocol_name.lower()
-    protocol = Protocol()
-    protocol.set_defaults(protocol_name)
+    protocol_path = os.path.join(out_dir, "protocols")
+    protocol = Protocol(name=protocol_name, output_dir=protocol_path)
+    protocol.set_defaults()
 
     protocol.set_landing_page(get_landing_page(schema_info))
 
     # create output directories
-    protocol_path = os.path.join(out_dir, "protocols")
-    protocol.set_directory = protocol_path
+
     if not os.path.exists(protocol_path):
         os.makedirs(protocol_path)
 
     protocol.write(protocol_path)
 
-    print_info(
-        "protocol", protocol_name, os.path.join(protocol_path, protocol.get_filename())
-    )
+    print_info("protocol", protocol_name, protocol.URI)
 
     return protocol, protocol_path
 
@@ -133,60 +132,33 @@ def initialize_activity(protocol, items, out_dir):
     if len(items.activity_pref_label.unique()) == 0:
         raise NameError("Empty activity")
 
-    activity = Activity()
-
-    # TODO : make sure there is only only preferred label
     activity_pref_label = items.activity_pref_label.unique()[0]
-    activity.set_pref_label(activity_pref_label)
-
     activity_name = snake_case(activity_pref_label)
     activity_name = activity_name.lower()
+    activity = Activity(
+        name=activity_name,
+        prefLabel=activity_pref_label,
+        output_dir=f"{out_dir}/../activities/{activity_name}/",
+    )
+
+    # TODO : make sure there is only only preferred label
+
     # TODO
     # are we sure we want to change the case of the activity
     # or make it snake case?
     # try to get the name of the activity from the correct column in the TSV
-    activity.set_defaults(activity_name)
-    activity.set_filename(activity_name)
-    activity.set_pref_label(activity_pref_label)
 
-    URI = (
-        "../activities"
-        + "/"
-        + activity.get_basename().replace("_schema", "")
-        + "/"
-        + activity.get_filename()
-    )
-    activity.set_URI(URI)
+    Path(activity.URI).parent.mkdir(parents=True, exist_ok=True)
+    (Path(activity.URI).parent / "items").mkdir(parents=True, exist_ok=True)
 
-    activity_path = os.path.join(out_dir, "activities", activity.dir)
+    print_info("activity", activity_pref_label, activity.URI)
 
-    if not os.path.exists(activity_path):
-        os.makedirs(activity_path)
-
-    if not os.path.exists(os.path.join(activity_path, "items")):
-        os.makedirs(os.path.join(activity_path, "items"))
-
-    print_info(
-        "activity",
-        activity_pref_label,
-        os.path.join(activity_path, activity.get_filename()),
-    )
-
-    return protocol, activity, activity_path
+    return protocol, activity, Path(activity.URI).parent
 
 
 def create_new_item(item_info: dict, activity_path: str):
     item = define_new_item(item_info)
-
-    item.set_URI(os.path.join("items", item.get_filename()))
-
-    # TODO
-    # add a method to the Item class so that updating visibility does not have
-    # does not have to be done manually
-    item.visible = item_info["visibility"]
-
     item.write(os.path.join(activity_path, "items"))
-
     return item
 
 

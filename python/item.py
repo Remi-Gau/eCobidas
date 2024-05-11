@@ -135,10 +135,21 @@ def define_new_item(item_info: dict):
     define jsonld for this item
     """
 
-    item = Item()
-    item.set_defaults(item_info["name"])
-    item.set_description(item_info["description"])
-    item.set_pref_label(item_info["pref_label"])
+    input_type = item_info["field_type"]
+    if item_info["field_type"] == "int":
+        input_type = "integer"
+    if item_info["field_type"] == "radio_multiple":
+        input_type = "radio"
+    if item_info["field_type"] == "select_multiple":
+        input_type = "select"
+
+    item = Item(
+        name=item_info["name"],
+        description=item_info["description"],
+        prefLabel=item_info["pref_label"],
+        input_type=input_type,
+        visible=item_info["visibility"],
+    )
 
     question = item_info["question"]
     if "id" in item_info and item_info["id"] != "":
@@ -153,57 +164,37 @@ def define_new_item(item_info: dict):
 
     item.set_question(question)
 
-    item = define_choices(item, item_info["field_type"], item_info["choices"])
+    item = define_choices(
+        item, field_type=item_info["field_type"], choices=item_info["choices"]
+    )
     item = define_unit(item, item_info["unit"])
 
     return item
 
 
 def define_choices(item, field_type: str, choices: list):
-    if field_type not in [
-        "multitext",
-        "text",
-        "textarea",
-        "radio",
-        "radio_multiple",
-        "select",
-        "select_multiple",
-        "date",
-        "float",
-        "int",
-        "slider",
-        "time range",
-        "date",
-    ]:
-        warnings.warn(f"Item {item.get_name()} has unknown field type: {field_type}")
-        # TODO
-        # - create a log file of unknown item types
-
     # in case we have one of the basic response type
     # with no response choice involved
-    item.set_basic_response_type(field_type)
+    item.set_input_type()
 
     if field_type == "multitext":
-        item.set_input_type_as_multitext()
+        return item
 
     elif field_type == "slider":
         response_options = slider_response(choices)
-        item.set_input_type_as_slider(response_options)
+        item.set_input_type(response_options)
+        return item
 
     elif field_type == "text":
-        item.set_input_type_as_text(3000)
+        return item
 
     if field_type in {"radio", "radio_multiple", "select", "select_multiple"}:
         response_options = list_responses_options(choices)
 
         if field_type in {"radio_multiple", "select_multiple"}:
-            response_options.set_multiple_choice(True)
+            response_options.multipleChoice = True
 
-        if field_type in {"radio", "radio_multiple"}:
-            item.set_input_type_as_radio(response_options)
-
-        elif field_type in {"select", "select_multiple"}:
-            item.set_input_type_as_select(response_options)
+        item.set_input_type(response_options)
 
         if ispreset(choices):
             item = use_preset(item, choices)
@@ -248,7 +239,7 @@ def use_preset(item, choices: list):
         + ".jsonld"
     )
 
-    item.response_options.options = preset_response_file
+    item.response_options.choices = preset_response_file
 
     return item
 

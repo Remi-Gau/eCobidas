@@ -19,15 +19,18 @@ sys.path.insert(0, local_reproschema)
 from reproschema.models.item import ResponseOption, Item
 
 
+from rich import print
+
+
 def test_slider_response():
     choices = ["1", "4", "4"]
 
     response_options = slider_response(choices)
 
-    assert len(response_options.options["choices"]) == 4
-    assert response_options.options["choices"][1]["value"] == 1
-    assert response_options.options["minValue"] == 0
-    assert response_options.options["maxValue"] == 3
+    assert len(response_options.choices) == 4
+    assert response_options.choices[1]["value"] == 1
+    assert response_options.minValue == 0
+    assert response_options.maxValue == 3
 
 
 def test_preset():
@@ -40,7 +43,7 @@ def test_preset():
     item = define_choices(item, field_type, choices)
 
     assert (
-        item.response_options.options
+        item.response_options.choices
         == "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
     )
 
@@ -199,4 +202,4 @@ def test_list_responses_options():
     expected.add_choice("C", 2)
     expected.set_max(2)
 
-    assert response_options.options == expected.options
+    assert response_options.choices == expected.choices
