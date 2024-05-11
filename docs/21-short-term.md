@@ -12,15 +12,15 @@ are:
 
 -   Create a set of tools and a proof of concept web-app that can:
 
-    - [x] convert a set of spreadsheet of items into a schema that represents all
+    -   [x] convert a set of spreadsheet of items into a schema that represents all
 
-    - [x] from this schema generate a checklist to be clicked through by users,
+    -   [x] from this schema generate a checklist to be clicked through by users,
 
-    - [x] outputs a set of JSON-LD files once the user is done,
+    -   [x] outputs a set of JSON-LD files once the user is done,
 
-    - [ ] generate a method section using these JSON-LD files and some boilerplate
-        template of a method section where the content of the JSON-LD files
-        could be reinjected.
+    -   [ ] generate a method section using these JSON-LD files and some boilerplate
+            template of a method section where the content of the JSON-LD files
+            could be reinjected.
 
 <hr>
 
