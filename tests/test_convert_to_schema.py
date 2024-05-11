@@ -5,25 +5,31 @@ and checks that the correct jsonld are created.
 
 import json
 import os
+from pathlib import Path
 
 from ecobidas.create_schema import create_schema
 
-myPath = os.path.dirname(os.path.abspath(__file__))
+
+def data_path():
+    return Path(__file__).parent / "data"
 
 
-def test_create_schema():
-    this_schema = "test"
-    out_dir = os.path.join(myPath, "outputs")
+def test_create_schema(tmp_path):
+    this_schema = Path(__file__).parent / "inputs" / "csv" / "tests" / "test.tsv"
 
-    create_schema(this_schema, out_dir)
+    # out_dir = Path(__file__).parent / "outputs"
+
+    print("\n")
+
+    create_schema(this_schema, tmp_path)
 
     # Check protocol
     protocol_folder = "protocols"
 
-    output_file = os.path.join(out_dir, "tests", protocol_folder, "test_schema.jsonld")
+    output_file = tmp_path / "test" / protocol_folder / "test_schema.jsonld"
     protocol_content = read_json(output_file)
 
-    data_file = os.path.join(myPath, "data", protocol_folder, "test_schema.jsonld")
+    data_file = data_path() / protocol_folder / "test_schema.jsonld"
     expected = read_json(data_file)
 
     assert protocol_content == expected
@@ -32,9 +38,6 @@ def test_create_schema():
     CHECK ACTIVITIES
     We define the items to check for each activity below
     """
-    # TODO
-    # - I suspect that that this type of loop checking could be parametrized with pytest
-    # - not checked: time range items
     activities_folder = "activities"
 
     activities = [
@@ -78,20 +81,9 @@ def test_create_schema():
 
         this_activity_folder = os.path.join(activities_folder, activity_name)
 
-        output_file = os.path.join(
-            out_dir,
-            "tests",
-            this_activity_folder,
-            activity_name + "_schema.jsonld",
-        )
+        output_file = tmp_path / "test" / this_activity_folder / f"{activity_name}_schema.jsonld"
         activity_content = read_json(output_file)
-
-        data_file = os.path.join(
-            myPath,
-            "data",
-            this_activity_folder,
-            activity_name + "_schema.jsonld",
-        )
+        data_file = data_path() / this_activity_folder / f"{activity_name}_schema.jsonld"
         expected = read_json(data_file)
 
         assert activity_content == expected
@@ -100,18 +92,9 @@ def test_create_schema():
         item_list = activity["items"]
 
         for item in item_list:
-            output_file = os.path.join(
-                out_dir,
-                "tests",
-                this_activity_folder,
-                "items",
-                item + ".jsonld",
-            )
+            output_file = tmp_path / "test" / this_activity_folder / "items" / f"{item}.jsonld"
             item_content = read_json(output_file)
-
-            data_file = os.path.join(
-                myPath, "data", this_activity_folder, "items", item + ".jsonld"
-            )
+            data_file = data_path() / this_activity_folder / "items" / f"{item}.jsonld"
             expected = read_json(data_file)
 
             assert item_content == expected

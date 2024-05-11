@@ -4,8 +4,6 @@ import pandas as pd
 
 from ecobidas.create_schema import make_preamble
 
-myPath = os.path.dirname(os.path.abspath(__file__))
-
 
 def test_make_preamble():
     items = pd.DataFrame({"preamble": ["this is the preamble"], "item": ["TEST_1"]})

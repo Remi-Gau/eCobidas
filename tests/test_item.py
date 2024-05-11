@@ -14,12 +14,6 @@ from ecobidas.item import (
     slider_response,
 )
 
-myPath = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, f"{myPath}/../")
-
-local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
-sys.path.insert(0, local_reproschema)
-
 
 def test_slider_response():
     choices = ["1", "4", "4"]

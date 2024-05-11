@@ -10,8 +10,7 @@ dependencies = [
     "pandas",
     "click",
     "rich",
-    "Jinja2",
-    "reproschema-py"
+    "Jinja2"
 ]
 description = "Statistical learning for neuroimaging in Python"
 # Version from setuptools_scm
@@ -42,7 +41,7 @@ line-length = 100
 
 [tool.codespell]
 ignore-words-list = "jist,softwares,te"
-skip = "./.git,inputs/csv/**/*.tsv,inputs/csv/**/*.json,*.svg"
+skip = "./.git,*.svg,ecobidas/inputs/csv/**/*.tsv,ecobidas/inputs/csv/**/*.json,"
 
 [tool.hatch.build.hooks.vcs]
 version-file = "ecobidas/_version.py"
@@ -60,7 +59,7 @@ profile = "black"
 skip_gitignore = true
 
 [tool.pytest.ini_options]
-addopts = "-ra --strict-config --strict-markers --doctest-modules --showlocals -s -vv --durations=0"
+addopts = "-ra --strict-config --strict-markers --doctest-modules --showlocals -s -v"
 doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"
 junit_family = "xunit2"
 minversion = "6.0"

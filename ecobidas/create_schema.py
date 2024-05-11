@@ -10,19 +10,16 @@ from .item import define_new_item, get_item_info
 from .utils import (
     get_landing_page,
     get_output_dir,
-    get_root_dir,
     get_schema_info,
     load_data,
     print_info,
     print_item_info,
+    root_dir,
     snake_case,
 )
 
-local_reproschema = os.path.join(get_root_dir(), "..", "reproschema-py", "reproschema", "models")
-# sys.path.insert(0, local_reproschema)
 
-
-def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
+def create_schema(this_schema, out_dir=None, debug=False):
     """
     Take the content of the a csv file and turns it into a reproschema protocol.
 
@@ -31,13 +28,14 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
     will be added to the protocol.
     Every new item encountered is added to the current activity.
     """
-
+    if out_dir is None:
+        out_dir = root_dir()
     # add a way to deal with this_schelma being a file
     df = load_data(this_schema)
     out_dir = get_output_dir(this_schema, out_dir)
 
     schema_info = get_schema_info(this_schema)
-
+    print(schema_info)
     if schema_info["dir"].tolist()[0] == "response_options":
         create_response_options(schema_info, df, out_dir)
         return
@@ -89,7 +87,7 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
 
             activity.append_item(item)
 
-        activity.URI = str(Path(str(activity_path).replace(out_dir, "..")) / activity.at_id)
+        activity.URI = str(activity_path).replace(str(out_dir), "..") + "/" + activity.at_id
         activity.write(activity_path)
 
         protocol.append_activity(activity)
@@ -100,7 +98,7 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
     return protocol
 
 
-def initialize_protocol(this_schema, out_dir):
+def initialize_protocol(this_schema: Path | str, out_dir: Path):
     schema_info = get_schema_info(this_schema)
 
     protocol_name = snake_case(schema_info["basename"].tolist()[0])
@@ -109,7 +107,7 @@ def initialize_protocol(this_schema, out_dir):
     # are we sure we want to change the case or the protocol
     # or make it snake case?
     protocol_name = protocol_name.lower()
-    protocol_path = os.path.join(out_dir, "protocols")
+    protocol_path = out_dir / "protocols"
 
     protocol = Protocol(name=protocol_name, output_dir=protocol_path, preamble={"en": ""})
     protocol.set_landing_page(get_landing_page(schema_info))

@@ -1,27 +1,29 @@
 import os
+from pathlib import Path
 
 import pandas as pd
 from rich import print
 
 
-def get_root_dir():
-    this_path = os.path.dirname(os.path.abspath(__file__))
-    return os.path.abspath(os.path.join(this_path, ".."))
+def root_dir() -> Path:
+    return Path(__file__).parent
 
 
-def get_input_dir(dir=get_root_dir()):
-    return os.path.abspath(os.path.join(dir, "inputs", "csv"))
+def get_input_dir(source_dir: str | Path = None) -> Path:
+    if source_dir is None:
+        source_dir = root_dir()
+    return Path(source_dir) / "inputs" / "csv"
 
 
-def get_output_dir(this_schema, out_dir):
+def get_output_dir(this_schema: str | Path, out_dir: str | Path) -> Path:
+    if Path(this_schema).is_file():
+        return Path(out_dir) / Path(this_schema).stem
     schema_info = get_schema_info(this_schema)
-
-    return os.path.abspath(os.path.join(out_dir, schema_info["dir"].tolist()[0]))
+    return Path(out_dir) / schema_info["dir"].tolist()[0]
 
 
 def get_metatable():
-    metatable_file = os.path.join(get_input_dir(), "spreadsheet_google_id.tsv")
-
+    metatable_file = get_input_dir() / "spreadsheet_google_id.tsv"
     return pd.read_csv(metatable_file, sep="\t")
 
 
@@ -49,21 +51,23 @@ def get_landing_page(schema_info: dict):
 def get_schema_info(this_schema):
     df = get_metatable()
 
+    if Path(this_schema).is_file():
+        this_schema = Path(this_schema).stem
     is_this_schema = df["schema"] == this_schema
     return df[is_this_schema]
 
 
 def get_input_file(schema_info: dict):
-    input_dir = get_root_dir()
+    input_dir = root_dir()
     dir = schema_info["dir"].tolist()[0]
 
     if schema_info["schema"].tolist()[0] == "test":
-        input_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tests")
+        input_dir = Path(__file__).parent / "tests"
 
     input_dir = get_input_dir(input_dir)
     basename = schema_info["basename"].tolist()[0]
 
-    return os.path.join(input_dir, dir, basename + ".tsv")
+    return input_dir / dir / f"{basename}.tsv"
 
 
 def load_data(this_schema):
@@ -74,7 +78,7 @@ def load_data(this_schema):
     else:
         input_file = this_schema
 
-    print("[bold green]" + "Loading:" + input_file + "[/bold green]" + "\n")
+    print(f"[bold green]Loading: {str(input_file)}[/bold green]\n")
 
     return pd.read_csv(input_file, sep="\t")
 
@@ -143,4 +147,4 @@ def print_download(repo: str, branch: str, protocol):
 
 
 def dashed_line():
-    return "\n--------------------------------------------------------------"
+    return "\n" + "-" * 62

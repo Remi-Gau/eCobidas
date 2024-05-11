@@ -7,9 +7,9 @@ import os
 import click
 
 from .create_schema import create_schema
-from .utils import get_metatable, get_root_dir, print_download
+from .utils import get_metatable, print_download, root_dir
 
-default_dir = os.path.join(get_root_dir(), "schemas")
+default_dir = os.path.join(root_dir(), "schemas")
 
 
 @click.command()
