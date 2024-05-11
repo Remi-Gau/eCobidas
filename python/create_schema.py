@@ -89,14 +89,19 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
 
             print_item_info(activity_idx, item_idx, item_info)
 
-            item = create_new_item(item_info, activity_path)
+            item = define_new_item(item_info)
+            item.write(os.path.join(activity_path, "items"))
 
             activity.append_item(item)
 
+        activity.URI = str(
+            Path(str(activity_path).replace(out_dir, "..")) / activity.at_id
+        )
         activity.write(activity_path)
 
         protocol.append_activity(activity)
 
+    print(protocol)
     protocol.write(protocol_path)
 
     return protocol
@@ -111,10 +116,14 @@ def initialize_protocol(this_schema, out_dir):
     # or make it snake case?
     protocol_name = protocol_name.lower()
     protocol_path = os.path.join(out_dir, "protocols")
-    protocol = Protocol(name=protocol_name, output_dir=protocol_path)
+    protocol = Protocol(
+        name=protocol_name, output_dir=protocol_path, preamble={"en": ""}
+    )
     protocol.set_defaults()
 
     protocol.set_landing_page(get_landing_page(schema_info))
+
+    protocol.ui.shuffle = False
 
     # create output directories
 
@@ -138,15 +147,8 @@ def initialize_activity(protocol, items, out_dir):
     activity = Activity(
         name=activity_name,
         prefLabel=activity_pref_label,
-        output_dir=f"{out_dir}/../activities/{activity_name}/",
+        output_dir=f"{out_dir}/activities/{activity_name}/",
     )
-
-    # TODO : make sure there is only only preferred label
-
-    # TODO
-    # are we sure we want to change the case of the activity
-    # or make it snake case?
-    # try to get the name of the activity from the correct column in the TSV
 
     Path(activity.URI).parent.mkdir(parents=True, exist_ok=True)
     (Path(activity.URI).parent / "items").mkdir(parents=True, exist_ok=True)
@@ -154,12 +156,6 @@ def initialize_activity(protocol, items, out_dir):
     print_info("activity", activity_pref_label, activity.URI)
 
     return protocol, activity, Path(activity.URI).parent
-
-
-def create_new_item(item_info: dict, activity_path: str):
-    item = define_new_item(item_info)
-    item.write(os.path.join(activity_path, "items"))
-    return item
 
 
 def get_activity_preamble(items):
