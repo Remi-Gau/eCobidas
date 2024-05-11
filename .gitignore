@@ -4,6 +4,8 @@
 
 .~lock*
 
+ecobidas/_version.py
+
 names.csv
 
 node_modules

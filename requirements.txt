@@ -1,3 +1,2 @@
 mkdocs-material
 pymdown-extensions
-pre-commit

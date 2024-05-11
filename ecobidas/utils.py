@@ -1,4 +1,5 @@
 import os
+
 import pandas as pd
 from rich import print
 
@@ -108,9 +109,7 @@ def print_info(type: str, pref_label: str, file: str):
 
 def print_item_info(activity_idx, item_idx, item_info: dict):
     print(f"Activity: {int(activity_idx)} Item: {int(item_idx)}")
-    print(
-        f"   {item_info['name']}   {item_info['field_type']}   {item_info['visibility']}"
-    )
+    print(f"   {item_info['name']}   {item_info['field_type']}   {item_info['visibility']}")
 
 
 def print_download(repo: str, branch: str, protocol):

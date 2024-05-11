@@ -2,8 +2,8 @@
 
 # https://stackoverflow.com/a/21957017
 
-from http.server import HTTPServer, SimpleHTTPRequestHandler, test
 import sys
+from http.server import HTTPServer, SimpleHTTPRequestHandler, test
 
 
 class CORSRequestHandler(SimpleHTTPRequestHandler):

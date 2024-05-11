@@ -1,5 +1,5 @@
-import os
 import json
+import os
 
 tested = 0
 for root, dirs, files in os.walk("schemas", topdown=True):

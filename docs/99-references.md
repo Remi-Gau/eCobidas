@@ -44,6 +44,6 @@ checklist (thanks to [Cass](https://github.com/cassgvp)!!!)
 -   [A consensus-based transparency checklist](https://www.nature.com/articles/s41562-019-0772-6)
     and its [shinyapp](http://www.shinyapps.org/apps/TransparencyChecklist/)
 
--   [Checklist for Artifical Intelligence in Medical Imaging](https://claim.shinyapps.io/CLAIM/)
+-   [Checklist for Artificial Intelligence in Medical Imaging](https://claim.shinyapps.io/CLAIM/)
 
 -   [Consensus on the reporting and experimental design of clinical and cognitive-beharioural neurofeedback studies](https://crednf.shinyapps.io/CREDnf/)

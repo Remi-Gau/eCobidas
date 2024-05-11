@@ -4,7 +4,7 @@
 #
 #   make all -Bnd | make2graph | dot -Tpng -o out.png
 #
-# witrh https://github.com/lindenb/makefile2graph
+# with https://github.com/lindenb/makefile2graph
 
 .PHONY:
 
@@ -17,12 +17,8 @@
 # install the pre-commit hook
 # install Reproschema-py from the lib folder
 install:
-	pip install -r requirements.txt
-	pip install -r python/requirements.txt
-	cd python && pip install -e . && cd ..
-	cd reproschema-py && pip install -e . && cd ..
-	pre-commit install
-	npm install `cat npm-requirements.txt`
+	pip install -e .
+	pip install -e reproschema-py
 
 # ---------------------------------------------------------------------------- #
 # 							   CONVERSION TO JSONLD

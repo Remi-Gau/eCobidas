@@ -1,12 +1,11 @@
-import sys, os, pytest
-import pandas as pd
+import os
 
-from ..utils import get_input_file, get_schema_info, get_landing_page
+import pytest
+
+from ecobidas.utils import get_input_file, get_landing_page, get_schema_info
 
 
-@pytest.mark.parametrize(
-    "this_schema, dir, basename", [("neurovault", "neurovault", "neurovault")]
-)
+@pytest.mark.parametrize("this_schema, dir, basename", [("neurovault", "neurovault", "neurovault")])
 def test_get_schema_info(this_schema, dir, basename):
     schema_info = get_schema_info(this_schema)
     input_file = get_input_file(schema_info)
@@ -14,7 +13,7 @@ def test_get_schema_info(this_schema, dir, basename):
     root = os.path.dirname(__file__)
 
     expected = os.path.abspath(
-        os.path.join(root, "..", "..", "inputs", "csv", dir, basename + ".tsv")
+        os.path.join(root, "..", "..", "inputs", "csv", dir, f"{basename}.tsv")
     )
 
     assert input_file == expected

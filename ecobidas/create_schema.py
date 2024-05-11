@@ -1,36 +1,33 @@
 import os
 from pathlib import Path
 
+from reproschema.models.activity import Activity
+from reproschema.models.item import ResponseOption
+from reproschema.models.protocol import Protocol
 from rich import print
 
-from .item import get_item_info, define_new_item
+from .item import define_new_item, get_item_info
 from .utils import (
-    snake_case,
+    get_landing_page,
+    get_output_dir,
+    get_root_dir,
+    get_schema_info,
+    load_data,
     print_info,
     print_item_info,
-    get_root_dir,
-    get_landing_page,
-    load_data,
-    get_schema_info,
-    get_output_dir,
+    snake_case,
 )
 
-from reproschema.models.activity import Activity
-from reproschema.models.protocol import Protocol
-from reproschema.models.item import ResponseOption
-
-local_reproschema = os.path.join(
-    get_root_dir(), "..", "reproschema-py", "reproschema", "models"
-)
+local_reproschema = os.path.join(get_root_dir(), "..", "reproschema-py", "reproschema", "models")
 # sys.path.insert(0, local_reproschema)
 
 
 def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
     """
-    This takes the content of the a csv file and turns it into a
-    reproschema protocol.
+    Take the content of the a csv file and turns it into a reproschema protocol.
+
     This loops through the items of the csv and creates a new reproschema
-    activity with every new checklist "section" it encouters: this new activity
+    activity with every new checklist "section" it encounters: this new activity
     will be added to the protocol.
     Every new item encountered is added to the current activity.
     """
@@ -63,9 +60,7 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
         included_items = items["include"] == 1
         items = items[included_items]
 
-        protocol, activity, activity_path = initialize_activity(
-            protocol, items, out_dir
-        )
+        protocol, activity, activity_path = initialize_activity(protocol, items, out_dir)
 
         # TODO implement once figured out what the right schema shape is
         # activity.schema["citation"] = ""
@@ -94,9 +89,7 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
 
             activity.append_item(item)
 
-        activity.URI = str(
-            Path(str(activity_path).replace(out_dir, "..")) / activity.at_id
-        )
+        activity.URI = str(Path(str(activity_path).replace(out_dir, "..")) / activity.at_id)
         activity.write(activity_path)
 
         protocol.append_activity(activity)
@@ -118,9 +111,7 @@ def initialize_protocol(this_schema, out_dir):
     protocol_name = protocol_name.lower()
     protocol_path = os.path.join(out_dir, "protocols")
 
-    protocol = Protocol(
-        name=protocol_name, output_dir=protocol_path, preamble={"en": ""}
-    )
+    protocol = Protocol(name=protocol_name, output_dir=protocol_path, preamble={"en": ""})
     protocol.set_landing_page(get_landing_page(schema_info))
     protocol.ui.shuffle = False
     protocol.write(protocol_path)
@@ -199,7 +190,10 @@ def make_preamble(schema_info, items):
         return preamble
 
     info = dict(
-        preamble=preamble, xls=schema_info["link"].tolist()[0], repo="", citation=""
+        preamble=preamble,
+        xls=schema_info["link"].tolist()[0],
+        repo="",
+        citation="",
     )
 
     if schema_info["repo"].any():

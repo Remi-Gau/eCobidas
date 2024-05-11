@@ -29,7 +29,7 @@ The image(s) were corrected for gradient nonlinearities by this scanner sequence
 
 
 This data was acquired using 2 radio-frequency excitations,
-with a phase encoding directon along i, with
+with a phase encoding direction along i, with
 an effective echo spacing  seconds and total readout
 time of , using GRAPPA parallel imaging with a factor of
 2, a partial Fourrier of

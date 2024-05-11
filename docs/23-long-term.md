@@ -10,14 +10,13 @@ Similarly we want to broaden the use-cases for the app.
 
 ### Improving default answers
 
-If some data is gathered about the content of the method section of a sample of
-articles in the litterature (see
+If some data is gathered about the content of the method section of a sample of articles in the literature
+(see
 [Carp, 2012](https://www.ncbi.nlm.nih.gov/pubmed/22796459) or the
 [eyetracking guidelines](https://psyarxiv.com/f6qcy/)), it should be possible to
-create or better organize list of response choices. It will take less time for
-users to tick a box rather than type something. Similarly we could decide to
-make the most common choices or the "better" option more prominent in a list of
-response options.
+create or better organize list of response choices.
+It will take less time for users to tick a box rather than type something.
+Similarly we could decide to make the most common choices or the "better" option more prominent in a list of response options.
 
 ### Adding a help section for each item
 
@@ -60,8 +59,8 @@ stimulus onsets...). If a data set is organized following the BIDS standard, it
 is possible to query its content using
 [pybids](https://github.com/bids-standard/pybids) or
 [bids-matlab](https://github.com/bids-standard/bids-matlab) and even write part
-of the method section relative to the acquisition usig the `reports module` of
-those pacakges (see for example
+of the method section relative to the acquisition using the `reports module` of
+those packages (see for example
 [pybids reports](https://github.com/bids-standard/pybids/tree/master/bids/reports)).
 
 **NIDM** results is a way to package mass-univariate fMRI results in a software

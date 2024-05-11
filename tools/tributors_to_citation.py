@@ -1,21 +1,20 @@
 import json
-import ruamel.yaml
 from pathlib import Path
+
+import ruamel.yaml
 
 yaml = ruamel.yaml.YAML()
 
 
 def load_citation(citation_file):
-    with open(citation_file, "r", encoding="utf8") as input_file:
+    with open(citation_file, encoding="utf8") as input_file:
         return yaml.load(input_file)
 
 
 if __name__ == "__main__":
     citation_file = Path(__file__).parent.joinpath("CITATION.cff")
 
-    with open(
-        Path(__file__).parent.joinpath(".tributors"), "r", encoding="utf8"
-    ) as tributors_file:
+    with open(Path(__file__).parent.joinpath(".tributors"), encoding="utf8") as tributors_file:
         tributors = json.load(tributors_file)
 
     author_list = []

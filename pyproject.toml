@@ -1,0 +1,67 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling", "hatch-vcs"]
+
+[project]
+authors = [{name = "Remi Gau"}]
+dependencies = [
+    "requests_cache",
+    "numpy",
+    "pandas",
+    "click",
+    "rich",
+    "Jinja2",
+    "reproschema-py"
+]
+description = "Statistical learning for neuroimaging in Python"
+# Version from setuptools_scm
+dynamic = ["version"]
+license = {text = "GPL 3.0"}
+maintainers = [{name = "Remi Gau", email = "remi.gau2@mcgill.ca"}]
+name = "ecobidas"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+# A combination of dependencies useful for developers
+dev = [
+    'tox'
+]
+# For running unit and docstring tests
+test = [
+    "coverage",
+    "pytest>=6.0.0",
+    "pytest-cov"
+]
+
+[project.scripts]
+ecobidas_convert = "cli:convert"
+
+[tool.black]
+line-length = 100
+
+[tool.codespell]
+ignore-words-list = "jist,softwares,te"
+skip = "./.git,inputs/csv/**/*.tsv,inputs/csv/**/*.json,*.svg"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "ecobidas/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ecobidas"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.isort]
+combine_as_imports = true
+line_length = 100
+profile = "black"
+skip_gitignore = true
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers --doctest-modules --showlocals -s -vv --durations=0"
+doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"
+junit_family = "xunit2"
+minversion = "6.0"
+xfail_strict = true

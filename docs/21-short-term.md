@@ -77,5 +77,4 @@ The main short term goals for the MEEG version are:
 Those 2 projects are more quite ahead already as they both started from fairly
 standardized spreadsheets.
 
-Both could benefit from a better definition of the response types and reponse
-options.
+Both could benefit from a better definition of the response types and response options.

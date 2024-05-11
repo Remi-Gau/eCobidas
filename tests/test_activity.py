@@ -1,7 +1,8 @@
-import sys, os, json
+import os
+
 import pandas as pd
 
-from ..create_schema import make_preamble
+from ecobidas.create_schema import make_preamble
 
 myPath = os.path.dirname(os.path.abspath(__file__))
 
@@ -10,7 +11,11 @@ def test_make_preamble():
     items = pd.DataFrame({"preamble": ["this is the preamble"], "item": ["TEST_1"]})
 
     schema_info = pd.DataFrame(
-        {"citation": ["citation"], "repo": ["github_repo"], "link": ["google_sheet"]}
+        {
+            "citation": ["citation"],
+            "repo": ["github_repo"],
+            "link": ["google_sheet"],
+        }
     )
 
     preamble = make_preamble(schema_info, items)

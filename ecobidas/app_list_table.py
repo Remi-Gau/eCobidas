@@ -5,8 +5,10 @@ Script used to generate markdown documents that list all the
 """
 
 import os
-from .utils import get_metatable
+
 from template_manager import TemplateManager
+
+from .utils import get_metatable
 
 
 def main():

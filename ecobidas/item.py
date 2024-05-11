@@ -1,14 +1,9 @@
-import warnings
 import re
 
-from numpy import linspace, isnan
-
-from .utils import convert_to_str, convert_to_int, snake_case
+from numpy import isnan, linspace
 from reproschema.models.item import Item, ResponseOption
 
-from rich import print
-
-from pathlib import Path
+from .utils import convert_to_int, convert_to_str, snake_case
 
 
 def set_item_name(this_item: dict):
@@ -167,9 +162,7 @@ def define_new_item(out_dir, item_info: dict):
 
     item.set_question(question)
 
-    item = define_choices(
-        item, field_type=item_info["field_type"], choices=item_info["choices"]
-    )
+    item = define_choices(item, field_type=item_info["field_type"], choices=item_info["choices"])
     item = define_unit(item, item_info["unit"])
 
     return item

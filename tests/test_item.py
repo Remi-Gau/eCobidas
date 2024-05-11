@@ -1,13 +1,17 @@
-import sys, os, pytest
-import pandas as pd
+import os
+import sys
 
-from ..item import (
+import pandas as pd
+import pytest
+from reproschema.models.item import Item, ResponseOption
+
+from ecobidas.item import (
+    define_choices,
     get_item_info,
     get_visibility,
-    define_choices,
     list_responses_options,
-    slider_response,
     set_item_name,
+    slider_response,
 )
 
 myPath = os.path.dirname(os.path.abspath(__file__))
@@ -15,11 +19,6 @@ sys.path.insert(0, f"{myPath}/../")
 
 local_reproschema = "/home/remi/github/reproschema-py/reproschema/models/"
 sys.path.insert(0, local_reproschema)
-
-from reproschema.models.item import ResponseOption, Item
-
-
-from rich import print
 
 
 def test_slider_response():
@@ -46,9 +45,6 @@ def test_preset():
         item.response_options.choices
         == "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld"
     )
-
-
-# TODO add test mandatory
 
 
 @pytest.mark.parametrize(

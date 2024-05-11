@@ -43,7 +43,7 @@ Freesurfer 1st Level – selxavg3-sess: Linear regression at each surface elemen
 using generalized least squares with a element-wise AR(1) autocorrelation model,
 drift fit with polynomial.
 
-Freesurfer 2st Level – mri_glmfit: Linear regression at each surface element,
+Freesurfer 2nd Level – mri_glmfit: Linear regression at each surface element,
 using ordinary least squares.
 
 ## FSL

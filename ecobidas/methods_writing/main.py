@@ -1,8 +1,8 @@
-import json
 import argparse
+import json
 import os
 
-from template_manager import *
+from template_manager import TemplateManager
 
 MODALITY = "anat"
 
@@ -20,14 +20,10 @@ def parse_arguments(MODALITY="base"):
     report = f"{MODALITY}_report"
 
     # Add the parsing of arguments
-    parser = argparse.ArgumentParser(
-        description="Template-based BIDS report language generation"
-    )
+    parser = argparse.ArgumentParser(description="Template-based BIDS report language generation")
 
     # Add the argument for the parent or root template name
-    parser.add_argument(
-        "-t", action="store", dest="parent_template_name", default=report
-    )
+    parser.add_argument("-t", action="store", dest="parent_template_name", default=report)
 
     return parser.parse_args()
 
@@ -64,7 +60,7 @@ if __name__ == "__main__":
     # Initialize the class responsible for rendering templates
     TemplateManager.initialize()
 
-    # Render the root patter, hierarchically rendering all the sub-patterns
+    # Render the root pattern, hierarchically rendering all the sub-patterns
     rendered_template: str = TemplateManager.render_template(
         parent_template_name, input_data=input_data
     )

@@ -1,9 +1,0 @@
-requests_cache
-numpy
-pytest
-pytest-cov
-black
-pandas
-click
-rich
-Jinja2

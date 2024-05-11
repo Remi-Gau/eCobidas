@@ -2,9 +2,12 @@
 # create another entry point for creating response files
 # see how reproschema uses click to create command line calls `reproschema validate`
 
-import os, click
+import os
+
+import click
+
 from .create_schema import create_schema
-from .utils import print_download, get_root_dir, get_metatable
+from .utils import get_metatable, get_root_dir, print_download
 
 default_dir = os.path.join(get_root_dir(), "schemas")
 

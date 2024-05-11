@@ -1,16 +1,14 @@
-import sys, os, json
-
-
-from ..create_schema import create_schema
-
-myPath = os.path.dirname(os.path.abspath(__file__))
-# sys.path.insert(0, myPath + "/../")
-
-
 """
 Runs the conversion of the tsv in `inputs/csv/test.tsv`
 and checks that the correct jsonld are created.
 """
+
+import json
+import os
+
+from ecobidas.create_schema import create_schema
+
+myPath = os.path.dirname(os.path.abspath(__file__))
 
 
 def test_create_schema():
@@ -51,7 +49,10 @@ def test_create_schema():
                 "yes_no_do_not_know",
             ],
         },
-        {"name": "activity_4", "items": ["float_item", "multitext_item", "TEXT"]},
+        {
+            "name": "activity_4",
+            "items": ["float_item", "multitext_item", "TEXT"],
+        },
         {"name": "activity_3", "items": ["integer_item", "slider_item"]},
         {"name": "activity_2", "items": ["number_of_subjects"]},
         {
@@ -78,12 +79,18 @@ def test_create_schema():
         this_activity_folder = os.path.join(activities_folder, activity_name)
 
         output_file = os.path.join(
-            out_dir, "tests", this_activity_folder, activity_name + "_schema.jsonld"
+            out_dir,
+            "tests",
+            this_activity_folder,
+            activity_name + "_schema.jsonld",
         )
         activity_content = read_json(output_file)
 
         data_file = os.path.join(
-            myPath, "data", this_activity_folder, activity_name + "_schema.jsonld"
+            myPath,
+            "data",
+            this_activity_folder,
+            activity_name + "_schema.jsonld",
         )
         expected = read_json(data_file)
 
@@ -94,7 +101,11 @@ def test_create_schema():
 
         for item in item_list:
             output_file = os.path.join(
-                out_dir, "tests", this_activity_folder, "items", item + ".jsonld"
+                out_dir,
+                "tests",
+                this_activity_folder,
+                "items",
+                item + ".jsonld",
             )
             item_content = read_json(output_file)
 
@@ -107,5 +118,5 @@ def test_create_schema():
 
 
 def read_json(file):
-    with open(file, "r") as ff:
+    with open(file) as ff:
         return json.load(ff)
