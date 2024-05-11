@@ -2,12 +2,12 @@
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Field",
     "@id": "slider_item.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
     "prefLabel": {
         "en": "slider item"
     },
     "description": "slider item",
-    "schemaVersion": "1.0.0-rc4",
-    "version": "0.0.1",
     "ui": {
         "inputType": "slider"
     },
@@ -16,8 +16,6 @@
     },
     "responseOptions": {
         "valueType": "xsd:integer",
-        "minValue": 0,
-        "maxValue": 9,
         "choices": [
             {
                 "name": {
@@ -80,6 +78,8 @@
                 "value": 9
             }
         ],
-        "multipleChoice": false
+        "multipleChoice": false,
+        "minValue": 0,
+        "maxValue": 9
     }
 }

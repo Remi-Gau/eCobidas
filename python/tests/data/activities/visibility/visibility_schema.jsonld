@@ -2,12 +2,12 @@
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "visibility_schema.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
     "prefLabel": {
         "en": "Visibility"
     },
     "description": "visibility",
-    "schemaVersion": "1.0.0-rc4",
-    "version": "0.0.1",
     "preamble": {
         "en": ""
     },
@@ -29,6 +29,9 @@
             {
                 "variableName": "base",
                 "isAbout": "items/base.jsonld",
+                "prefLabel": {
+                    "en": "base"
+                },
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -38,6 +41,9 @@
             {
                 "variableName": "base1",
                 "isAbout": "items/base1.jsonld",
+                "prefLabel": {
+                    "en": "base==1"
+                },
                 "isVis": "base==1",
                 "requiredValue": false,
                 "allow": [
@@ -47,6 +53,9 @@
             {
                 "variableName": "base0",
                 "isAbout": "items/base0.jsonld",
+                "prefLabel": {
+                    "en": "base==0"
+                },
                 "isVis": "base==0",
                 "requiredValue": false,
                 "allow": [
@@ -56,6 +65,9 @@
             {
                 "variableName": "radio_vis",
                 "isAbout": "items/radio_vis.jsonld",
+                "prefLabel": {
+                    "en": "radio vis"
+                },
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -65,6 +77,9 @@
             {
                 "variableName": "multi_gt_5",
                 "isAbout": "items/multi_gt_5.jsonld",
+                "prefLabel": {
+                    "en": "multi gt 5"
+                },
                 "isVis": "radio_vis>5",
                 "requiredValue": false,
                 "allow": [
@@ -74,6 +89,9 @@
             {
                 "variableName": "multi_lt_2",
                 "isAbout": "items/multi_lt_2.jsonld",
+                "prefLabel": {
+                    "en": "multi lt 2"
+                },
                 "isVis": "radio_vis<=2",
                 "requiredValue": false,
                 "allow": [
@@ -83,6 +101,9 @@
             {
                 "variableName": "multi_2_or_5",
                 "isAbout": "items/multi_2_or_5.jsonld",
+                "prefLabel": {
+                    "en": "multi 2 or 5"
+                },
                 "isVis": "radio_vis == 2 OR radio_vis == 5",
                 "requiredValue": false,
                 "allow": [
@@ -92,6 +113,9 @@
             {
                 "variableName": "select_boolean",
                 "isAbout": "items/select_boolean.jsonld",
+                "prefLabel": {
+                    "en": "select boolean"
+                },
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -101,6 +125,9 @@
             {
                 "variableName": "select_boolean1",
                 "isAbout": "items/select_boolean1.jsonld",
+                "prefLabel": {
+                    "en": "select boolean==1"
+                },
                 "isVis": "select_boolean==1",
                 "requiredValue": false,
                 "allow": [
@@ -110,6 +137,9 @@
             {
                 "variableName": "select_boolean0",
                 "isAbout": "items/select_boolean0.jsonld",
+                "prefLabel": {
+                    "en": "select boolean==0"
+                },
                 "isVis": "select_boolean==0",
                 "requiredValue": false,
                 "allow": [

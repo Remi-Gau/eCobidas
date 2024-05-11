@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 from rich import print
 
@@ -88,14 +89,19 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
 
             print_item_info(activity_idx, item_idx, item_info)
 
-            item = create_new_item(item_info, activity_path)
+            item = define_new_item(activity_path, item_info)
+            item.write(os.path.join(activity_path, "items"))
 
             activity.append_item(item)
 
+        activity.URI = str(
+            Path(str(activity_path).replace(out_dir, "..")) / activity.at_id
+        )
         activity.write(activity_path)
 
         protocol.append_activity(activity)
 
+    print(protocol)
     protocol.write(protocol_path)
 
     return protocol
@@ -105,26 +111,21 @@ def initialize_protocol(this_schema, out_dir):
     schema_info = get_schema_info(this_schema)
 
     protocol_name = snake_case(schema_info["basename"].tolist()[0])
+
     # TODO
     # are we sure we want to change the case or the protocol
     # or make it snake case?
     protocol_name = protocol_name.lower()
-    protocol = Protocol()
-    protocol.set_defaults(protocol_name)
-
-    protocol.set_landing_page(get_landing_page(schema_info))
-
-    # create output directories
     protocol_path = os.path.join(out_dir, "protocols")
-    protocol.set_directory = protocol_path
-    if not os.path.exists(protocol_path):
-        os.makedirs(protocol_path)
 
+    protocol = Protocol(
+        name=protocol_name, output_dir=protocol_path, preamble={"en": ""}
+    )
+    protocol.set_landing_page(get_landing_page(schema_info))
+    protocol.ui.shuffle = False
     protocol.write(protocol_path)
 
-    print_info(
-        "protocol", protocol_name, os.path.join(protocol_path, protocol.get_filename())
-    )
+    print_info("protocol", protocol_name, protocol.URI)
 
     return protocol, protocol_path
 
@@ -133,61 +134,19 @@ def initialize_activity(protocol, items, out_dir):
     if len(items.activity_pref_label.unique()) == 0:
         raise NameError("Empty activity")
 
-    activity = Activity()
-
-    # TODO : make sure there is only only preferred label
     activity_pref_label = items.activity_pref_label.unique()[0]
-    activity.set_pref_label(activity_pref_label)
-
     activity_name = snake_case(activity_pref_label)
     activity_name = activity_name.lower()
-    # TODO
-    # are we sure we want to change the case of the activity
-    # or make it snake case?
-    # try to get the name of the activity from the correct column in the TSV
-    activity.set_defaults(activity_name)
-    activity.set_filename(activity_name)
-    activity.set_pref_label(activity_pref_label)
 
-    URI = (
-        "../activities"
-        + "/"
-        + activity.get_basename().replace("_schema", "")
-        + "/"
-        + activity.get_filename()
-    )
-    activity.set_URI(URI)
-
-    activity_path = os.path.join(out_dir, "activities", activity.dir)
-
-    if not os.path.exists(activity_path):
-        os.makedirs(activity_path)
-
-    if not os.path.exists(os.path.join(activity_path, "items")):
-        os.makedirs(os.path.join(activity_path, "items"))
-
-    print_info(
-        "activity",
-        activity_pref_label,
-        os.path.join(activity_path, activity.get_filename()),
+    activity = Activity(
+        name=activity_name,
+        prefLabel=activity_pref_label,
+        output_dir=f"{out_dir}/activities/{activity_name}/",
     )
 
-    return protocol, activity, activity_path
+    print_info("activity", activity_pref_label, activity.URI)
 
-
-def create_new_item(item_info: dict, activity_path: str):
-    item = define_new_item(item_info)
-
-    item.set_URI(os.path.join("items", item.get_filename()))
-
-    # TODO
-    # add a method to the Item class so that updating visibility does not have
-    # does not have to be done manually
-    item.visible = item_info["visibility"]
-
-    item.write(os.path.join(activity_path, "items"))
-
-    return item
+    return protocol, activity, Path(activity.URI).parent
 
 
 def get_activity_preamble(items):
