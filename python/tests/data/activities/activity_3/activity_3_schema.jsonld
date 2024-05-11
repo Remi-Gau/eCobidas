@@ -2,12 +2,12 @@
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "activity_3_schema.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
     "prefLabel": {
         "en": "Activity 3"
     },
     "description": "activity 3",
-    "schemaVersion": "1.0.0-rc4",
-    "version": "0.0.1",
     "preamble": {
         "en": ""
     },
@@ -21,6 +21,9 @@
             {
                 "variableName": "integer_item",
                 "isAbout": "items/integer_item.jsonld",
+                "prefLabel": {
+                    "en": "integer item"
+                },
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [
@@ -30,6 +33,9 @@
             {
                 "variableName": "slider_item",
                 "isAbout": "items/slider_item.jsonld",
+                "prefLabel": {
+                    "en": "slider item"
+                },
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

@@ -2,12 +2,12 @@
     "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
     "@type": "reproschema:Activity",
     "@id": "activity_2_schema.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
     "prefLabel": {
         "en": "Activity 2"
     },
     "description": "activity 2",
-    "schemaVersion": "1.0.0-rc4",
-    "version": "0.0.1",
     "preamble": {
         "en": ""
     },
@@ -20,6 +20,9 @@
             {
                 "variableName": "number_of_subjects",
                 "isAbout": "items/number_of_subjects.jsonld",
+                "prefLabel": {
+                    "en": "number of subjects"
+                },
                 "isVis": true,
                 "requiredValue": false,
                 "allow": [

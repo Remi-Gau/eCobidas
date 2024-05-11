@@ -89,7 +89,7 @@ def create_schema(this_schema, out_dir=get_root_dir(), debug=False):
 
             print_item_info(activity_idx, item_idx, item_info)
 
-            item = define_new_item(item_info)
+            item = define_new_item(activity_path, item_info)
             item.write(os.path.join(activity_path, "items"))
 
             activity.append_item(item)
@@ -111,25 +111,18 @@ def initialize_protocol(this_schema, out_dir):
     schema_info = get_schema_info(this_schema)
 
     protocol_name = snake_case(schema_info["basename"].tolist()[0])
+
     # TODO
     # are we sure we want to change the case or the protocol
     # or make it snake case?
     protocol_name = protocol_name.lower()
     protocol_path = os.path.join(out_dir, "protocols")
+
     protocol = Protocol(
         name=protocol_name, output_dir=protocol_path, preamble={"en": ""}
     )
-    protocol.set_defaults()
-
     protocol.set_landing_page(get_landing_page(schema_info))
-
     protocol.ui.shuffle = False
-
-    # create output directories
-
-    if not os.path.exists(protocol_path):
-        os.makedirs(protocol_path)
-
     protocol.write(protocol_path)
 
     print_info("protocol", protocol_name, protocol.URI)
@@ -144,14 +137,12 @@ def initialize_activity(protocol, items, out_dir):
     activity_pref_label = items.activity_pref_label.unique()[0]
     activity_name = snake_case(activity_pref_label)
     activity_name = activity_name.lower()
+
     activity = Activity(
         name=activity_name,
         prefLabel=activity_pref_label,
         output_dir=f"{out_dir}/activities/{activity_name}/",
     )
-
-    Path(activity.URI).parent.mkdir(parents=True, exist_ok=True)
-    (Path(activity.URI).parent / "items").mkdir(parents=True, exist_ok=True)
 
     print_info("activity", activity_pref_label, activity.URI)
 

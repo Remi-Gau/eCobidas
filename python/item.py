@@ -8,6 +8,8 @@ from reproschema.models.item import Item, ResponseOption
 
 from rich import print
 
+from pathlib import Path
+
 
 def set_item_name(this_item: dict):
     if "item" not in this_item.keys():
@@ -130,7 +132,7 @@ def define_unit(item, units):
     return item
 
 
-def define_new_item(item_info: dict):
+def define_new_item(out_dir, item_info: dict):
     """
     define jsonld for this item
     """
@@ -149,6 +151,7 @@ def define_new_item(item_info: dict):
         prefLabel=item_info["pref_label"],
         input_type=input_type,
         visible=item_info["visibility"],
+        output_dir="items",
     )
 
     question = item_info["question"]
