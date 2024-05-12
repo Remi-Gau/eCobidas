@@ -6,7 +6,7 @@ requires = ["hatchling", "hatch-vcs"]
 authors = [{name = "Remi Gau"}]
 dependencies = [
     "requests_cache",
-    "numpy",
+    "numpy~=1.26.4",
     "pandas",
     "click",
     "rich",

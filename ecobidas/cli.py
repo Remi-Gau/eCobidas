@@ -2,33 +2,17 @@
 # create another entry point for creating response files
 # see how reproschema uses click to create command line calls `reproschema validate`
 
-import os
-
 import click
 
 from ecobidas.create_schema import create_schema
-from ecobidas.utils import get_metatable, print_download, root_dir
-
-default_dir = os.path.join(root_dir(), "schemas")
-
-# def set_verbosity(verbosity: int | list[int]) -> None:
-#     if isinstance(verbosity, list):
-#         verbosity = verbosity[0]
-#     if verbosity == 0:
-#         log.setLevel("ERROR")
-#     elif verbosity == 1:
-#         log.setLevel("WARNING")
-#     elif verbosity == 2:
-#         log.setLevel("INFO")
-#     elif verbosity == 3:
-#         log.setLevel("DEBUG")
+from ecobidas.utils import get_metatable, print_download
 
 
 @click.command()
 @click.option("--schema", default="neurovault", help="Name of the schema to create.")
 @click.option(
     "--out_dir",
-    default=default_dir,
+    default="cobidas_schema/schemas",
     help="Where the files will be written on your machine.",
 )
 @click.option(
