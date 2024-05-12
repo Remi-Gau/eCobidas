@@ -1,13 +1,4 @@
 # ---------------------------------------------------------------------------- #
-# 							         INSTALL
-# ---------------------------------------------------------------------------- #
-# install the local package for ecobidas conversion
-# install Reproschema-py from the lib folder
-install:
-	pip install -e .
-	pip install -e ./reproschema-py
-
-# ---------------------------------------------------------------------------- #
 # 							   CONVERSION TO JSONLD
 # ---------------------------------------------------------------------------- #
 
@@ -31,7 +22,6 @@ ARTEMIS_TSV =   $(wildcard ecobidas/inputs/csv/artemis/*.tsv)
 CORE_TSV =      $(wildcard ecobidas/inputs/csv/core/*.tsv)
 MRI_TSV =       $(wildcard ecobidas/inputs/csv/mri/*.tsv)
 RESPONSES_TSV = $(wildcard ecobidas/inputs/csv/response_options/*.tsv)
-
 
 all: neurovault responses pet eye rexec mri
 
