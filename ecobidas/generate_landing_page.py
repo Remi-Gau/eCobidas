@@ -2,9 +2,8 @@
 
 import os
 
-from template_manager import TemplateManager
-
-from .utils import get_metatable
+from ecobidas.template_manager import TemplateManager
+from ecobidas.utils import get_metatable
 
 
 def main():

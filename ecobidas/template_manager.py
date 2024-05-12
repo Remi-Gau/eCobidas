@@ -1,4 +1,6 @@
-from jinja2 import Environment, PackageLoader, select_autoescape
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+from ecobidas.utils import root_dir
 
 
 class TemplateManager:
@@ -15,7 +17,7 @@ class TemplateManager:
         # Set the class environment so that it relies on the right folder
         # and also auto-escapes our custom tmp files
         cls.env = Environment(
-            loader=PackageLoader("template_manager", "templates"),
+            loader=FileSystemLoader(root_dir() / "templates"),
             autoescape=select_autoescape(["html", "xml", "j2", "md"]),
         )
 
