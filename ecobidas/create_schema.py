@@ -4,7 +4,6 @@ from pathlib import Path
 from reproschema.models.activity import Activity
 from reproschema.models.item import ResponseOption
 from reproschema.models.protocol import Protocol
-from rich import print
 
 from .item import define_new_item, get_item_info
 from .utils import (
@@ -35,7 +34,7 @@ def create_schema(this_schema, out_dir=None, debug=False):
     out_dir = get_output_dir(this_schema, out_dir)
 
     schema_info = get_schema_info(this_schema)
-    print(schema_info)
+
     if schema_info["dir"].tolist()[0] == "response_options":
         create_response_options(schema_info, df, out_dir)
         return
@@ -92,7 +91,6 @@ def create_schema(this_schema, out_dir=None, debug=False):
 
         protocol.append_activity(activity)
 
-    print(protocol)
     protocol.write(protocol_path)
 
     return protocol

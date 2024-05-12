@@ -21,15 +21,15 @@ default_dir = os.path.join(root_dir(), "schemas")
 )
 @click.option(
     "--repo",
-    default="Remi-Gau/eCobidas",
+    default="ohbm/cobidas_schema",
     help="""
     Placeholder of the 'username/repo' that will host the schema representation.
-    Example: 'Remi-Gau/eCobidas'
+    Example: 'ohbm/cobidas_schema'
     """,
 )
 @click.option(
     "--branch",
-    default="dev",
+    default="main",
     help="""
     Placeholder of the 'branch' that will host the schema representation.
     Example: 'remi-dev'
@@ -41,7 +41,7 @@ def convert(schema, out_dir, repo, branch):
 
     df = get_metatable()
 
-    schema_to_run = df[df["schema"].str.match(r"(^" + schema + ".*)") == True]
+    schema_to_run = df[df["schema"].str.match(f"(^{schema}.*)") == True]
     schema = list(schema_to_run["schema"])
 
     if isinstance(schema, str):
@@ -52,7 +52,7 @@ def convert(schema, out_dir, repo, branch):
         protocol = create_schema(this_schema, out_dir)
 
         if "resp" not in this_schema:
-            print_download(repo, branch, protocol)
+            print_download(repo, branch, protocol, this_schema)
 
 
 if __name__ == "__main__":

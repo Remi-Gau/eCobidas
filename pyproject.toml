@@ -34,7 +34,7 @@ test = [
 ]
 
 [project.scripts]
-ecobidas_convert = "cli:convert"
+ecobidas_convert = "ecobidas.cli:convert"
 
 [tool.black]
 line-length = 100

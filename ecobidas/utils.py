@@ -116,7 +116,7 @@ def print_item_info(activity_idx, item_idx, item_info: dict):
     print(f"   {item_info['name']}   {item_info['field_type']}   {item_info['visibility']}")
 
 
-def print_download(repo: str, branch: str, protocol):
+def print_download(repo: str, branch: str, protocol, this_schema):
     repo = f"https://raw.githubusercontent.com/{repo}"
 
     s = "/"
@@ -131,9 +131,9 @@ def print_download(repo: str, branch: str, protocol):
                 repo,
                 branch,
                 "schemas",
-                protocol.dir,
+                this_schema,
                 "protocols",
-                protocol.get_filename(),
+                protocol.at_id,
             ]
         )
         + dashed_line()

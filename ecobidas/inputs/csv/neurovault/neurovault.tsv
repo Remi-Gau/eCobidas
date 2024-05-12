@@ -2,9 +2,9 @@ activity_pref_label	activity_order	item_order	question	unit	details	field_type	c
 Experimental design	1	1	Type of design			select	blocked | event_related | hybrid block/event		type of design	1	type of design	1	1	Describe your exeprimental design
 Experimental design	1	2	Number of imaging runs acquired			integer			number of imaging runs	1	number of imaging runs	1	2
 Experimental design	1	3	Number of blocks, trials or experimental units per imaging run			integer			number of experimental units	1	number of experimental units	1	2
-Experimental design	1	4	Length of each imaging run in seconds			float			length of runs	1	length of runs	1	2
-Experimental design	1	5	For blocked designs, length of blocks in seconds			float			length of blocks	1	length of blocks	1	2
-Experimental design	1	6	Length of individual trials in seconds			float			length of trials	1	length of trials	1	2
+Experimental design	1	4	Length of each imaging run	seconds		float			length of runs	1	length of runs	1	2
+Experimental design	1	5	For blocked designs, length of blocks	seconds		float			length of blocks	1	length of blocks	1	2
+Experimental design	1	6	Length of individual trials	seconds		float			length of trials	1	length of trials	1	2
 Experimental design	1	7	Was the design optimized for efficiency?			radio	preset:boolean		optimization	1	optimization	1	2
 Experimental design	1	8	What method was used for optimization?			textarea			optimization method	optimization == 1	optimization method	1	3
 Participants	2	1	Number of subjects entering into the analysis			integer			number of subjects	1	number of subjects	1	1	Describe your participant sample
@@ -16,13 +16,13 @@ Participants	2	6	The proportion of subjects who were male			slider	0 | 100 | 20	
 Participants	2	7	Additional inclusion/exclusion criteria, if any.		Including specific sampling strategies that limit inclusion to a specific group, such as laboratory members.	textarea			inclusion exclusion criteria	1	inclusion exclusion criteria	1	3
 Participants	2	8	Number of subjects scanned but rejected from analysis			integer			number of rejected subjects	1	number of rejected subjects	1	2
 Participants	2	9	Was this study a comparison between subject groups?			radio	preset:boolean		group comparison	1	group comparison	1	1
-Participants	2	10	A description of the groups being compared			textarea			group description	1	group description	1	2
+Participants	2	10	A description of the groups being compared			textarea			group description	group_comparison == 1	group description	1	2
 MRI acquisition	3	1	Manufacturer of MRI scanner			select	Siemens | Philips | General Electric	Manufacturer	scanner make	1	scanner make	1	1	Describe your acquisition parameters
 MRI acquisition	3	2	Model of MRI scanner			textarea		ManufacturersModelName	scanner model	1	scanner model	1	1
 MRI acquisition	3	3	Field strength of MRI scanner	Tesla		float		MagneticFieldStrength	field strength	1	field strength	1	1
 MRI acquisition	3	4	Description of pulse sequence used for fMRI			select	Gradient echo | Spin echo | Mutliband gradient echo | MPRAGE | MP2RAGE | FLASH	PulseSequenceType	pulse sequence	1	pulse sequence	1	1
 MRI acquisition	3	5	Description of parallel imaging method and parameters			textarea			parallel imaging	1	parallel imaging	1	3
-MRI acquisition	3	6	Imaging field of view in millimeters			float			field of view	1	field of view	1	2
+MRI acquisition	3	6	Imaging field of view	Millimeters		float			field of view	1	field of view	1	2
 MRI acquisition	3	7	Matrix size for MRI acquisition			integer			matrix size	1	matrix size	1	2
 MRI acquisition	3	8	Distance between slices (includes skip or distance factor).	Millimeters		float			slice thickness	1	slice thickness	1	1
 MRI acquisition	3	9	The size of the skipped area between slices.	Millimeters		float			skip factor	1	skip factor	1	2

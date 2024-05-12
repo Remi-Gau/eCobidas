@@ -34,7 +34,7 @@ if [ $# -lt 1 ]; then
     schema=$1
 fi
 
-csv_folder="./inputs/csv/"
+csv_folder="ecobidas/inputs/csv/"
 file="spreadsheet_google_id.tsv"
 input_file=$csv_folder$file
 

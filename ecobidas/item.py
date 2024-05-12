@@ -122,7 +122,7 @@ def define_unit(item, units):
         }
         for unit in units
     ]
-    item.response_options.options["unitOptions"] = unitOptions
+    item.response_options.unitOptions = unitOptions
 
     return item
 
