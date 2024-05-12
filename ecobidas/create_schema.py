@@ -5,8 +5,8 @@ from reproschema.models.activity import Activity
 from reproschema.models.item import ResponseOption
 from reproschema.models.protocol import Protocol
 
-from .item import define_new_item, get_item_info
-from .utils import (
+from ecobidas.item import define_new_item, get_item_info
+from ecobidas.utils import (
     get_landing_page,
     get_output_dir,
     get_schema_info,

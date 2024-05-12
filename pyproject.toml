@@ -10,7 +10,8 @@ dependencies = [
     "pandas",
     "click",
     "rich",
-    "Jinja2"
+    "Jinja2",
+    'loguru'
 ]
 description = "Statistical learning for neuroimaging in Python"
 # Version from setuptools_scm

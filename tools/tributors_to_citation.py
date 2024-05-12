@@ -12,9 +12,11 @@ def load_citation(citation_file):
 
 
 if __name__ == "__main__":
-    citation_file = Path(__file__).parent.joinpath("CITATION.cff")
+    citation_file = Path(__file__).parent.parent.joinpath("CITATION.cff")
 
-    with open(Path(__file__).parent.joinpath(".tributors"), encoding="utf8") as tributors_file:
+    with open(
+        Path(__file__).parent.parent.joinpath(".tributors"), encoding="utf8"
+    ) as tributors_file:
         tributors = json.load(tributors_file)
 
     author_list = []

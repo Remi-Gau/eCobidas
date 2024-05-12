@@ -6,10 +6,22 @@ import os
 
 import click
 
-from .create_schema import create_schema
-from .utils import get_metatable, print_download, root_dir
+from ecobidas.create_schema import create_schema
+from ecobidas.utils import get_metatable, print_download, root_dir
 
 default_dir = os.path.join(root_dir(), "schemas")
+
+# def set_verbosity(verbosity: int | list[int]) -> None:
+#     if isinstance(verbosity, list):
+#         verbosity = verbosity[0]
+#     if verbosity == 0:
+#         log.setLevel("ERROR")
+#     elif verbosity == 1:
+#         log.setLevel("WARNING")
+#     elif verbosity == 2:
+#         log.setLevel("INFO")
+#     elif verbosity == 3:
+#         log.setLevel("DEBUG")
 
 
 @click.command()

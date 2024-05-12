@@ -1,20 +1,23 @@
-import os
+from functools import lru_cache
 from pathlib import Path
 
 import pandas as pd
-from rich import print
+from loguru import logger
 
 
+@lru_cache
 def root_dir() -> Path:
     return Path(__file__).parent
 
 
+@lru_cache
 def get_input_dir(source_dir: str | Path = None) -> Path:
     if source_dir is None:
         source_dir = root_dir()
     return Path(source_dir) / "inputs" / "csv"
 
 
+@lru_cache
 def get_output_dir(this_schema: str | Path, out_dir: str | Path) -> Path:
     if Path(this_schema).is_file():
         return Path(out_dir) / Path(this_schema).stem
@@ -22,6 +25,7 @@ def get_output_dir(this_schema: str | Path, out_dir: str | Path) -> Path:
     return Path(out_dir) / schema_info["dir"].tolist()[0]
 
 
+@lru_cache
 def get_metatable():
     metatable_file = get_input_dir() / "spreadsheet_google_id.tsv"
     return pd.read_csv(metatable_file, sep="\t")
@@ -50,16 +54,18 @@ def get_landing_page(schema_info: dict):
 
 def get_schema_info(this_schema):
     df = get_metatable()
-
     if Path(this_schema).is_file():
         this_schema = Path(this_schema).stem
+
+    logger.debug(f"Loading data for: {this_schema}")
+
     is_this_schema = df["schema"] == this_schema
     return df[is_this_schema]
 
 
 def get_input_file(schema_info: dict):
     input_dir = root_dir()
-    dir = schema_info["dir"].tolist()[0]
+    folder = schema_info["dir"].tolist()[0]
 
     if schema_info["schema"].tolist()[0] == "test":
         input_dir = Path(__file__).parent / "tests"
@@ -67,18 +73,16 @@ def get_input_file(schema_info: dict):
     input_dir = get_input_dir(input_dir)
     basename = schema_info["basename"].tolist()[0]
 
-    return input_dir / dir / f"{basename}.tsv"
+    return input_dir / folder / f"{basename}.tsv"
 
 
 def load_data(this_schema):
-    if not os.path.isfile(this_schema):
+    input_file = this_schema
+    if not Path(this_schema).is_file():
         schema_info = get_schema_info(this_schema)
         input_file = get_input_file(schema_info)
 
-    else:
-        input_file = this_schema
-
-    print(f"[bold green]Loading: {str(input_file)}[/bold green]\n")
+    logger.info(f"Loading: {str(input_file)}\n")
 
     return pd.read_csv(input_file, sep="\t")
 
@@ -96,24 +100,15 @@ def snake_case(input: str):
 
 
 def print_info(type: str, pref_label: str, file: str):
-    print(
-        dashed_line()
-        + "\n"
-        + "[bold red]"
-        + type.upper()
-        + ": "
-        + pref_label
-        + "[/bold red]"
-        + "\n"
-        + file
-        + "\n"
-        + dashed_line()
+    logger.info(
+        dashed_line() + "\n" + type.upper() + ": " + pref_label + "\n" + file + "\n" + dashed_line()
     )
 
 
 def print_item_info(activity_idx, item_idx, item_info: dict):
-    print(f"Activity: {int(activity_idx)} Item: {int(item_idx)}")
-    print(f"   {item_info['name']}   {item_info['field_type']}   {item_info['visibility']}")
+    logger.info(
+        f"Activity: {int(activity_idx)} Item: {int(item_idx)}\t{item_info['name']}\t{item_info['field_type']}\t{item_info['visibility']}"
+    )
 
 
 def print_download(repo: str, branch: str, protocol, this_schema):
@@ -121,7 +116,7 @@ def print_download(repo: str, branch: str, protocol, this_schema):
 
     s = "/"
 
-    print(
+    logger.info(
         "\n"
         + dashed_line()
         + "\nYou can view this protocol here:\n"

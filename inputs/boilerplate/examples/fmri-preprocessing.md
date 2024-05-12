@@ -1,21 +1,6 @@
 # boilerplate for fMRI preprocessing
 
-<!-- TOC -->
-<!-- lint disable -->
-- [boilerplate for fMRI preprocessing](#boilerplate-for-fmri-preprocessing)
-  - [fMRIprep](#fmriprep)
-  - [CPP SPM](#cpp-spm)
-  - [SPM references](#spm-references)
-    - [spm_realign](#spm_realign)
-    - [spm_coreg](#spm_coreg)
-    - [spm_normalize](#spm_normalize)
-    - [spm_spm](#spm_spm)
-<!-- lint enable -->
-<!-- /TOC -->
-
-
 ## fMRIprep
-
 
 ```
 Results included in this manuscript come from preprocessing performed using

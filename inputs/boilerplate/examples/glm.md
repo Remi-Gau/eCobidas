@@ -1,15 +1,5 @@
 # boilerplate for fMRI GLM
 
-<!-- TOC -->
-<!-- lint disable -->
-- [boilerplate for fMRI GLM](#boilerplate-for-fmri-glm)
-  - [AFNI](#afni)
-  - [Freesurfer](#freesurfer)
-  - [FSL](#fsl)
-  - [SPM](#spm)
-<!-- lint enable -->
-<!-- /TOC -->
-
 taken from the
 [COBIDAS blog](https://cobidas.wordpress.com/2016/05/23/cobidas-easter-egg/)
 

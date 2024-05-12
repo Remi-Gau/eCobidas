@@ -42,7 +42,7 @@ convert_artemis: $(ARTEMIS_TSV)
 $(NEUROVAULT_TSV): tools/download_tsv.sh
 	bash tools/download_tsv.sh neurovault
 
-$(NEUROVAULT_JSON): $(NEUROVAULT_TSV)
+convert_neurovault: $(NEUROVAULT_TSV)
 	ecobidas_convert --schema neurovault --out_dir cobidas_schema/schemas
 
 # ---------------------------------------------------------------------------- #
