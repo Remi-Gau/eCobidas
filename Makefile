@@ -7,16 +7,16 @@ INPUT_DIR = $(ecobidas/inputs/csv)
 ALL_TSV = $(wildcard ecobidas/inputs/csv/*/*.tsv)
 
 NEUROVAULT_TSV =   ecobidas/inputs/csv/neurovault/neurovault.tsv
-NEUROVAULT_JSON =  schemas/neurovault/protocols/neurovault_schema.jsonld
+NEUROVAULT_JSON =  cobidas_schema/schemas/neurovault/protocols/neurovault_schema.jsonld
 
 PET_TSV =          ecobidas/inputs/csv/pet/pet.tsv
-PET_JSON =         schemas/pet/protocols/pet.jsonld
+PET_JSON =         cobidas_schema/schemas/pet/protocols/pet.jsonld
 
 EYE_TSV =          ecobidas/inputs/csv/eyetracking/eyetracking.tsv
-EYE_JSON =         schemas/eyetracking/protocols/eyetracking.jsonld
+EYE_JSON =         cobidas_schema/schemas/eyetracking/protocols/eyetracking.jsonld
 
 REEXEC_TSV =       ecobidas/inputs/csv/reexecution/reexecution.tsv
-REEXEC_JSON =      schemas/reexecution/protocols/reexecution_schema.jsonld
+REEXEC_JSON =      cobidas_schema/schemas/reexecution/protocols/reexecution_schema.jsonld
 
 ARTEMIS_TSV =   $(wildcard ecobidas/inputs/csv/artemis/*.tsv)
 CORE_TSV =      $(wildcard ecobidas/inputs/csv/core/*.tsv)
@@ -39,12 +39,6 @@ convert_artemis: $(ARTEMIS_TSV)
 # ---------------------------------------------------------------------------- #
 # NEUROVAULT
 # ---------------------------------------------------------------------------- #
-neurovault: clean_neurovault validate_neurovault
-
-clean_neurovault:
-	rm -rf $(NEUROVAULT_TSV)
-	rm -rf schemas/neurovault/
-
 $(NEUROVAULT_TSV): tools/download_tsv.sh
 	bash tools/download_tsv.sh neurovault
 
@@ -54,12 +48,6 @@ $(NEUROVAULT_JSON): $(NEUROVAULT_TSV)
 # ---------------------------------------------------------------------------- #
 # RESPONSES
 # ---------------------------------------------------------------------------- #
-responses: clean_responses validate_responses
-
-clean_responses:
-	rm -rf $(RESPONSES_TSV)
-	rm -rf schemas/response_options/
-
 download_responses: tools/download_tsv.sh
 	bash tools/download_tsv.sh resp-
 
@@ -69,12 +57,6 @@ convert_responses: download_responses
 # ---------------------------------------------------------------------------- #
 # PET
 # ---------------------------------------------------------------------------- #
-pet: clean_pet validate_pet
-
-clean_pet:
-	rm -rf $(PET_TSV)
-	rm -rf schemas/pet/
-
 $(PET_TSV): tools/download_tsv.sh
 	bash tools/download_tsv.sh pet
 
@@ -84,12 +66,6 @@ $(PET_JSON): $(PET_TSV)
 # ---------------------------------------------------------------------------- #
 # EYETRACKING
 # ---------------------------------------------------------------------------- #
-eye: clean_eye validate_eye
-
-clean_eye:
-	rm -rf $(EYE_TSV)
-	rm -rf schemas/eyetracking/
-
 $(EYE_TSV): tools/download_tsv.sh
 	bash tools/download_tsv.sh eyetracking
 
@@ -99,12 +75,6 @@ $(EYE_JSON): $(EYE_TSV)
 # ---------------------------------------------------------------------------- #
 # NIMG REEXECUTION
 # ---------------------------------------------------------------------------- #
-rexec: clean_rexec
-
-clean_rexec:
-	rm -rf $(REEXEC_TSV)
-	rm -rf schemas/reexecution/
-
 $(REEXEC_TSV): tools/download_tsv.sh
 	bash tools/download_tsv.sh reexecution
 
@@ -114,12 +84,6 @@ $(REEXEC_JSON): $(REEXEC_TSV)
 # ---------------------------------------------------------------------------- #
 # CORE
 # ---------------------------------------------------------------------------- #
-core: clean_core
-
-clean_core:
-	rm -rf $(CORE_TSV)
-	rm -rf schemas/core
-
 download_core: tools/download_tsv.sh
 	bash tools/download_tsv.sh core-
 
@@ -129,12 +93,7 @@ convert_core: download_core
 # ---------------------------------------------------------------------------- #
 # MRI
 # ---------------------------------------------------------------------------- #
-
 mri: core clean_mri
-
-clean_mri:
-	rm -rf $(MRI_TSV)
-	rm -rf schemas/mri
 
 download_mri: tools/download_tsv.sh
 	bash tools/download_tsv.sh mri-

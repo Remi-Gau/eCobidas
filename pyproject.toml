@@ -22,11 +22,9 @@ readme = "README.md"
 requires-python = ">=3.8"
 
 [project.optional-dependencies]
-# A combination of dependencies useful for developers
 dev = [
     'tox'
 ]
-# For running unit and docstring tests
 test = [
     "coverage",
     "pytest>=6.0.0",
