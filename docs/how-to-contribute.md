@@ -31,9 +31,9 @@ github offers.
 If you are unsure where to start, maybe have a read through some of those
 sections about the project. It might give you ideas.
 
--   the [motivations](./10-motivations.md) of this project
--   the [different short and long term goals](./20-goals.md)
--   the [general organization of the project](./30-general-organization.md)
+-   the [motivations](./motivations.md) of this project
+-   the [different short and long term goals](./goals.md)
+-   the [general organization of the project](./general-organization.md)
 
 Otherwise here are some suggestions of the different tasks that you can
 contribute to. If however you feel more interested to start hacking at some of
@@ -53,7 +53,7 @@ The MRI part is the more advanced at this moment but we are looking for people
 to help with the M/EEG part.
 
 The content of the spreadsheets and the work involved there is described in more
-details [here](./40-spreadsheets.md).
+details [here](./spreadsheets.md).
 
 ### Boilerplate method sections
 

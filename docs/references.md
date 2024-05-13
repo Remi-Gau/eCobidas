@@ -29,7 +29,7 @@ the background behind the COBIDAS report and giving a run through of the
 checklist.
 
 Presentation slides made about this project can be found in the
-[presentations folder](../communication/presentations).
+[presentations folder](./communication/presentations).
 
 The original [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS
 checklist (thanks to [Cass](https://github.com/cassgvp)!!!)

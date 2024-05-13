@@ -13,20 +13,29 @@ theme:
         primary: light blue
         accent: light blue
 
+exclude_docs: |
+    communication/README.md
+    communication/abstracts/OHBM-2020-abstract.md
+    communication/abstracts/OHBM-hackathon-2019-project-description.md
+    methods_writing/README.md
+
 # Pages
 nav:
 -   Welcome: index.md
--   Motivations: 10-motivations.md
+-   Motivations: motivations.md
 -   Goals:
-    -   Short term goals: 21-short-term.md
-    -   Mid term goals: 22-mid-term.md
-    -   Long term goals: 23-long-term.md
--   General organization: 30-general-organization.md
--   Working with the spreadsheets: 40-spreadsheets.md
--   Viewing the checklist: 50-how-to-render-the-checklist.md
--   How to contribute: 80-how-to-contribute.md
--   Contributors: 90-contributors.md
--   References: 99-references.md
+    -   goals.md
+    -   Short term goals: short-term.md
+    -   Mid term goals: mid-term.md
+    -   Long term goals: long-term.md
+-   General organization: general-organization.md
+-   Working with the spreadsheets: spreadsheets.md
+-   Viewing the checklist: how-to-render-the-checklist.md
+-   Apps: apps-table.md
+-   Presets responses: preset-responses.md
+-   How to contribute: how-to-contribute.md
+-   Contributing: CONTRIBUTING.md
+-   References: references.md
 
 # list of extension
 markdown_extensions:

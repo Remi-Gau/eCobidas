@@ -1,5 +1,14 @@
 # CONTRIBUTING
 
+If you contributed to the COBIDAS Checklist and your name is not listed, please
+add it by adding your details in
+[this spreadsheet](https://docs.google.com/spreadsheets/d/1v_ReviQZLNxg9T5qCYAfMiA-rZupMnWp03PSNVRGpBI/edit?usp=sharing)
+and let us know about it: we'll take care of the rest.
+
+Make sure that you are also listed as a contributor on our
+[OSF project](https://osf.io/anvqy/).
+
+
 Make sure to also read the
 [How to contribute section](https://remi-gau.github.io/eCobidas/80-how-to-contribute/).
 

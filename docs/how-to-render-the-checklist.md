@@ -4,7 +4,7 @@ This part gets a bit more "techy" but we will do our best to guide you through
 it.
 
 First make sure you are familiar with the structure of this project by reading
-the [general organization](./30-general-organization.md) documentation.
+the [general organization](./general-organization.md) documentation.
 
 ## Turn the spreadsheet into the schema
 

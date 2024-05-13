@@ -86,12 +86,12 @@ converting that into a spreadsheet that contains all the items of the future
 checklist.
 
 This step is by far the most labor intensive and has its dedicated page in the
-[documentation](./40-spreadsheets.md)
+[documentation](./spreadsheets.md)
 
 ### Converting the spreadsheet into a schema
 
 Most of that is covered in the section on
-[how the checklist is rendered](./50-how-to-render-the-checklist.md) and in the
+[how the checklist is rendered](./how-to-render-the-checklist.md) and in the
 README in the `python` folder.
 
 ## How is the Reproschema organized
