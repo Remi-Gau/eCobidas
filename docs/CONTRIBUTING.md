@@ -8,7 +8,6 @@ and let us know about it: we'll take care of the rest.
 Make sure that you are also listed as a contributor on our
 [OSF project](https://osf.io/anvqy/).
 
-
 Make sure to also read the
 [How to contribute section](https://remi-gau.github.io/eCobidas/80-how-to-contribute/).
 
@@ -123,8 +122,6 @@ locally. Or type `make download_all` to download update all the spreadsheets.
 
 Load the `ecobidas.code-workspace` file in the `.vscode` folder.
 
-# Scripts, functions and classes to generate the eCobidas schemas
-
 ## Requirements and set up
 
 You will need to have python installed.
@@ -170,8 +167,7 @@ ecobidas_convert    #<-- to create a whole protocol + activities
 
 You only need to specify:
 
--   `schema` the name of the protocol you want to convert (it can be
-    several of protocols at once),
+-   `schema` the name of the protocol you want to convert (it can be several of protocols at once),
 -   `out_dir` where the schemas is meant to be created on your computer,
 -   `repo` the URL of the repository where the schema will be hosted
 -   `branch` of the repository where the schema will be hosted
@@ -216,7 +212,7 @@ reproschema -l DEBUG validate path_to_the_file_to_validate
 
 After pushing to github:
 
-```
+```text
 https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema
 
 https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
