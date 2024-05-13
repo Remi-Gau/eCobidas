@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 
+from loguru import logger
 from reproschema.models.activity import Activity
 from reproschema.models.item import ResponseOption
 from reproschema.models.protocol import Protocol
@@ -18,7 +19,7 @@ from ecobidas.utils import (
 )
 
 
-def create_schema(this_schema, out_dir=None, debug=False):
+def create_schema(this_schema, output_dir=None, debug=False):
     """
     Take the content of the a csv file and turns it into a reproschema protocol.
 
@@ -27,19 +28,19 @@ def create_schema(this_schema, out_dir=None, debug=False):
     will be added to the protocol.
     Every new item encountered is added to the current activity.
     """
-    if out_dir is None:
-        out_dir = root_dir()
+    if output_dir is None:
+        output_dir = root_dir()
     # add a way to deal with this_schelma being a file
     df = load_data(this_schema)
-    out_dir = get_output_dir(this_schema, out_dir)
+    output_dir = get_output_dir(this_schema, output_dir)
 
     schema_info = get_schema_info(this_schema)
 
     if schema_info["dir"].tolist()[0] == "response_options":
-        create_response_options(schema_info, df, out_dir)
+        create_response_options(schema_info, df, output_dir)
         return
 
-    protocol, protocol_path = initialize_protocol(this_schema, out_dir)
+    protocol, protocol_path = initialize_protocol(this_schema, output_dir)
 
     # TODO implement once figured out wha the right schema shape is
     # protocol.schema["citation"] = ""
@@ -57,7 +58,7 @@ def create_schema(this_schema, out_dir=None, debug=False):
         included_items = items["include"] == 1
         items = items[included_items]
 
-        protocol, activity, activity_path = initialize_activity(protocol, items, out_dir)
+        protocol, activity, activity_path = initialize_activity(protocol, items, output_dir)
 
         # TODO implement once figured out what the right schema shape is
         # activity.schema["citation"] = ""
@@ -81,22 +82,24 @@ def create_schema(this_schema, out_dir=None, debug=False):
 
             print_item_info(activity_idx, item_idx, item_info)
 
-            item = define_new_item(activity_path, item_info)
+            item = define_new_item(item_info)
             item.write(os.path.join(activity_path, "items"))
 
             activity.append_item(item)
 
-        activity.URI = str(activity_path).replace(str(out_dir), "..") + "/" + activity.at_id
+        activity.URI = str(activity_path).replace(str(output_dir), "..") + "/" + activity.at_id
         activity.write(activity_path)
 
         protocol.append_activity(activity)
 
     protocol.write(protocol_path)
 
+    logger.info(f"\nProtocol saved at: {protocol_path}")
+
     return protocol
 
 
-def initialize_protocol(this_schema: Path | str, out_dir: Path):
+def initialize_protocol(this_schema: Path | str, output_dir: Path):
     schema_info = get_schema_info(this_schema)
 
     protocol_name = snake_case(schema_info["basename"].tolist()[0])
@@ -105,7 +108,7 @@ def initialize_protocol(this_schema: Path | str, out_dir: Path):
     # are we sure we want to change the case or the protocol
     # or make it snake case?
     protocol_name = protocol_name.lower()
-    protocol_path = out_dir / "protocols"
+    protocol_path = output_dir / "protocols"
 
     protocol = Protocol(name=protocol_name, output_dir=protocol_path, preamble={"en": ""})
     protocol.set_landing_page(get_landing_page(schema_info))
@@ -117,7 +120,7 @@ def initialize_protocol(this_schema: Path | str, out_dir: Path):
     return protocol, protocol_path
 
 
-def initialize_activity(protocol, items, out_dir):
+def initialize_activity(protocol, items, output_dir):
     if len(items.activity_pref_label.unique()) == 0:
         raise NameError("Empty activity")
 
@@ -128,7 +131,7 @@ def initialize_activity(protocol, items, out_dir):
     activity = Activity(
         name=activity_name,
         prefLabel=activity_pref_label,
-        output_dir=f"{out_dir}/activities/{activity_name}/",
+        output_dir=f"{output_dir}/activities/{activity_name}/",
     )
 
     print_info("activity", activity_pref_label, activity.URI)
@@ -149,7 +152,7 @@ def get_activity_preamble(items):
     return preamble
 
 
-def create_response_options(schema_info: dict, df, out_dir):
+def create_response_options(schema_info: dict, df, output_dir):
     responses = df.name.unique()
 
     response_options = ResponseOption()
@@ -162,14 +165,14 @@ def create_response_options(schema_info: dict, df, out_dir):
         response_options.add_choice(name, i)
         response_options.set_max(i)
 
-    if not os.path.exists(out_dir):
-        os.makedirs(out_dir)
-    response_options.write(out_dir)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    response_options.write(output_dir)
 
     print_info(
         "response options",
         schema_info["basename"].tolist()[0],
-        os.path.join(out_dir, response_options.get_filename()),
+        os.path.join(output_dir, response_options.get_filename()),
     )
 
 

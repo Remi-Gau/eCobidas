@@ -82,7 +82,7 @@ def load_data(this_schema):
         schema_info = get_schema_info(this_schema)
         input_file = get_input_file(schema_info)
 
-    logger.info(f"Loading: {str(input_file)}\n")
+    logger.info(f"\nLoading: {str(input_file)}\n")
 
     return pd.read_csv(input_file, sep="\t")
 
@@ -101,12 +101,12 @@ def snake_case(input: str):
 
 def print_info(type: str, pref_label: str, file: str):
     logger.info(
-        dashed_line() + "\n" + type.upper() + ": " + pref_label + "\n" + file + "\n" + dashed_line()
+        dashed_line() + "\n" + type.upper() + ": " + pref_label + "\nWill be saved at: " + file
     )
 
 
 def print_item_info(activity_idx, item_idx, item_info: dict):
-    logger.info(
+    logger.debug(
         f"Activity: {int(activity_idx)} Item: {int(item_idx)}\t{item_info['name']}\t{item_info['field_type']}\t{item_info['visibility']}"
     )
 
@@ -131,12 +131,10 @@ def print_download(repo: str, branch: str, protocol, this_schema):
                 protocol.at_id,
             ]
         )
-        + dashed_line()
-        + "\n"
+        + "\n\n"
         + "https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema"
         + "\n"
         + "https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema"
-        + dashed_line()
         + "\n\n"
     )
 

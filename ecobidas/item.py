@@ -127,7 +127,7 @@ def define_unit(item, units):
     return item
 
 
-def define_new_item(out_dir, item_info: dict):
+def define_new_item(item_info: dict):
     """Define jsonld for this item."""
     input_type = item_info["field_type"]
     if item_info["field_type"] == "int":
@@ -170,15 +170,12 @@ def define_choices(item, field_type: str, choices: list):
     # with no response choice involved
     item.set_input_type()
 
-    if field_type == "multitext":
+    if field_type in {"multitext", "text"}:
         return item
 
     elif field_type == "slider":
         response_options = slider_response(choices)
         item.set_input_type(response_options)
-        return item
-
-    elif field_type == "text":
         return item
 
     if field_type in {"radio", "radio_multiple", "select", "select_multiple"}:

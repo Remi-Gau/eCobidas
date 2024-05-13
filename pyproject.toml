@@ -11,7 +11,8 @@ dependencies = [
     "click",
     "rich",
     "Jinja2",
-    'loguru'
+    'loguru',
+    "rich_argparse"
 ]
 description = "Statistical learning for neuroimaging in Python"
 # Version from setuptools_scm
@@ -33,7 +34,7 @@ test = [
 ]
 
 [project.scripts]
-ecobidas_convert = "ecobidas.cli:convert"
+ecobidas = "ecobidas.cli:cli"
 
 [tool.black]
 line-length = 100
