@@ -7,7 +7,7 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler, test
 
 
 class CORSRequestHandler(SimpleHTTPRequestHandler):
-    def end_headers(self):
+    def end_headers(self) -> None:
         self.send_header("Access-Control-Allow-Origin", "*")
         SimpleHTTPRequestHandler.end_headers(self)
 

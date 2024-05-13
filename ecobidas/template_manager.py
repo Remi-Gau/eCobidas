@@ -9,7 +9,7 @@ class TemplateManager:
     env: Environment = None
 
     @classmethod
-    def initialize(cls):
+    def initialize(cls) -> None:
         """Initialize class variables.
 
         :return: None

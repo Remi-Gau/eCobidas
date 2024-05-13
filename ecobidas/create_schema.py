@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 
+import pandas as pd
 from loguru import logger
 from reproschema.models.activity import Activity
 from reproschema.models.item import ResponseOption
@@ -19,7 +20,9 @@ from ecobidas.utils import (
 )
 
 
-def create_schema(this_schema, output_dir=None, debug=False):
+def create_schema(
+    this_schema, output_dir: None | str | Path = None, debug: bool = False
+) -> Protocol:
     """
     Take the content of the a csv file and turns it into a reproschema protocol.
 
@@ -152,7 +155,7 @@ def get_activity_preamble(items):
     return preamble
 
 
-def create_response_options(schema_info: dict, df, output_dir):
+def create_response_options(schema_info: dict, df: pd.DataFrame, output_dir) -> None:
     responses = df.name.unique()
 
     response_options = ResponseOption()
@@ -176,7 +179,7 @@ def create_response_options(schema_info: dict, df, output_dir):
     )
 
 
-def make_preamble(schema_info, items):
+def make_preamble(schema_info, items) -> str:
     """Do nothing if preamble is empty.
 
     but otherwise we try to create an additional 'header' to the activity

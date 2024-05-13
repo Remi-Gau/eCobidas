@@ -59,6 +59,13 @@ repos:
     -   id: pretty-format-toml
         args: [--autofix, --indent, '4']
 
+# -   repo: https://github.com/pre-commit/mirrors-mypy
+#     rev: v1.8.0
+#     hooks:
+#     -   id: mypy
+#         additional_dependencies: [types-all, pandas-stubs]
+#         args: [--config-file=pyproject.toml]
+
 # Check that Python code complies with PEP8 guidelines
 # flake8 uses pydocstyle to check docstrings: https://flake8.pycqa.org/en/latest/
 # flake8-docstrings: https://pypi.org/project/flake8-docstrings/

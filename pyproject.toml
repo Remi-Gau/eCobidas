@@ -58,6 +58,33 @@ line_length = 100
 profile = "black"
 skip_gitignore = true
 
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+enable_error_code = ["ignore-without-code", "redundant-expr"]  # "truthy-bool"
+no_implicit_optional = true
+show_error_codes = true
+# strict = true
+warn_redundant_casts = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = [
+    "ecobidas._version",
+    "rich_argparse",
+    "loguru",
+    "reproschema.*",
+    "rich"
+]
+
+[[tool.mypy.overrides]]
+ignore_errors = true
+module = ['tests.*']
+
 [tool.pytest.ini_options]
 addopts = "-ra --strict-config --strict-markers --doctest-modules --showlocals -s -v"
 doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"

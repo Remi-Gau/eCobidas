@@ -3,6 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 from loguru import logger
+from reproschema.models.protocol import Protocol
 
 
 @lru_cache
@@ -26,19 +27,19 @@ def get_output_dir(this_schema: str | Path, out_dir: str | Path) -> Path:
 
 
 @lru_cache
-def get_metatable():
+def get_metatable() -> pd.DataFrame:
     metatable_file = get_input_dir() / "spreadsheet_google_id.tsv"
     return pd.read_csv(metatable_file, sep="\t")
 
 
-def list_preset_responses():
+def list_preset_responses() -> list:
     df = get_metatable()
     is_response_option = df["dir"] == "response_options"
     response_options = df[is_response_option]
     return list(response_options["subdir"])
 
 
-def get_landing_page(schema_info: dict):
+def get_landing_page(schema_info: dict) -> str:
     DEFAULT = ["README_eCOBIDAS-en.md"]
 
     if schema_info["landing page"].isna().tolist()[0]:
@@ -52,7 +53,7 @@ def get_landing_page(schema_info: dict):
     return landing_page
 
 
-def get_schema_info(this_schema):
+def get_schema_info(this_schema) -> pd.DataFrame:
     df = get_metatable()
     if Path(this_schema).is_file():
         this_schema = Path(this_schema).stem
@@ -63,7 +64,7 @@ def get_schema_info(this_schema):
     return df[is_this_schema]
 
 
-def get_input_file(schema_info: dict):
+def get_input_file(schema_info: dict) -> Path:
     input_dir = root_dir()
     folder = schema_info["dir"].tolist()[0]
 
@@ -76,7 +77,7 @@ def get_input_file(schema_info: dict):
     return input_dir / folder / f"{basename}.tsv"
 
 
-def load_data(this_schema):
+def load_data(this_schema) -> pd.DataFrame:
     input_file = this_schema
     if not Path(this_schema).is_file():
         schema_info = get_schema_info(this_schema)
@@ -91,27 +92,27 @@ def convert_to_str(df_field):
     return df_field.tolist()[0]
 
 
-def convert_to_int(df_field):
+def convert_to_int(df_field) -> int:
     return int(df_field.tolist()[0])
 
 
-def snake_case(input: str):
+def snake_case(input: str) -> str:
     return input.replace("\n", "").replace(" ", "_").replace(",", "")
 
 
-def print_info(type: str, pref_label: str, file: str):
+def print_info(type: str, pref_label: str, file: str) -> None:
     logger.info(
         dashed_line() + "\n" + type.upper() + ": " + pref_label + "\nWill be saved at: " + file
     )
 
 
-def print_item_info(activity_idx, item_idx, item_info: dict):
+def print_item_info(activity_idx, item_idx, item_info: dict) -> None:
     logger.debug(
         f"Activity: {int(activity_idx)} Item: {int(item_idx)}\t{item_info['name']}\t{item_info['field_type']}\t{item_info['visibility']}"
     )
 
 
-def print_download(repo: str, branch: str, protocol, this_schema):
+def print_download(repo: str, branch: str, protocol: Protocol, this_schema) -> None:
     repo = f"https://raw.githubusercontent.com/{repo}"
 
     s = "/"
@@ -139,5 +140,5 @@ def print_download(repo: str, branch: str, protocol, this_schema):
     )
 
 
-def dashed_line():
+def dashed_line() -> str:
     return "\n" + "-" * 62

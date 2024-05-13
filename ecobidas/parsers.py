@@ -101,6 +101,15 @@ def global_parser(formatter_class: type[HelpFormatter] = HelpFormatter) -> Argum
         formatter_class=parser.formatter_class,
     )
     update_parser.add_argument(
+        "-s",
+        "--schema",
+        help="Name of the schema to download.",
+        default="neurovault",
+        required=False,
+        type=str,
+        nargs=1,
+    )
+    update_parser.add_argument(
         "-v",
         "--verbosity",
         help="""

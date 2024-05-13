@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""Simple script to download the content of the different google spreadsheet in the inputs folder."""
+"""Download the content of the different google spreadsheet in the inputs folder."""
 import sys
-from pathlib import Path
 
 import requests
-from rich import print
+from loguru import logger
 
 from ecobidas.utils import root_dir
 
 
 # Function to download spreadsheet
-def download_spreadsheet(schema, csv_folder: Path, input_file):
+def download_spreadsheet(schema: str) -> None:
+    csv_folder = root_dir() / "inputs" / "csv"
+    input_file = csv_folder / "spreadsheet_google_id.tsv"
     # Read spreadsheet_google_id.tsv
     with open(input_file) as f:
         lines = f.readlines()
@@ -35,9 +36,8 @@ def download_spreadsheet(schema, csv_folder: Path, input_file):
         output_folder.mkdir(exist_ok=True, parents=True)
         output_file = output_folder / f"{output_filename}.tsv"
 
-        print()
-        print(f"Downloading the {subfolder} {output_filename} spreadsheet to {output_file}")
-        print(f"Google ID: {google_id}")
+        logger.info(f"\nDownloading the {subfolder} {output_filename} spreadsheet to {output_file}")
+        logger.info(f"\nGoogle ID: {google_id}")
 
         response = requests.get(
             f"https://docs.google.com/spreadsheets/d/{google_id}/export?format=tsv"
@@ -45,19 +45,16 @@ def download_spreadsheet(schema, csv_folder: Path, input_file):
         if response.status_code == 200:
             with open(output_file, "wb") as tsv_file:
                 tsv_file.write(response.content)
-            print("DONE")
+            logger.info("\nDONE")
         else:
-            print("Error downloading the spreadsheet.")
+            logger.error("Error downloading the spreadsheet.")
 
 
 # Main function
-def main():
+def main() -> None:
     # Default schema
     schema = "neurovault" if len(sys.argv) < 2 else sys.argv[1]
-    csv_folder = root_dir() / "inputs" / "csv"
-    input_file = csv_folder / "spreadsheet_google_id.tsv"
-
-    download_spreadsheet(schema, csv_folder, input_file)
+    download_spreadsheet(schema)
 
 
 if __name__ == "__main__":
