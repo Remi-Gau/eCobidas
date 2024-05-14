@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Download the content of the different google spreadsheet in the inputs folder."""
+import json
 import sys
 
+import pandas as pd
 import requests
 from loguru import logger
 
@@ -36,8 +38,11 @@ def download_spreadsheet(schema: str) -> None:
         output_folder.mkdir(exist_ok=True, parents=True)
         output_file = output_folder / f"{output_filename}.tsv"
 
-        logger.info(f"\nDownloading the {subfolder} {output_filename} spreadsheet to {output_file}")
-        logger.info(f"\nGoogle ID: {google_id}")
+        logger.info(
+            f"\nDownloading GoogleSheet https://docs.google.com/spreadsheets/d/{google_id} "
+            f"for {subfolder}/{output_filename} spreadsheet "
+            f"\nto {output_file}"
+        )
 
         response = requests.get(
             f"https://docs.google.com/spreadsheets/d/{google_id}/export?format=tsv"
@@ -45,9 +50,31 @@ def download_spreadsheet(schema: str) -> None:
         if response.status_code == 200:
             with open(output_file, "wb") as tsv_file:
                 tsv_file.write(response.content)
-            logger.info("\nDONE")
         else:
             logger.error("Error downloading the spreadsheet.")
+
+        if "resp" not in schema:
+            validate_downloaded_file(output_file)
+        logger.info("\nDONE")
+
+
+def validate_downloaded_file(file):
+    """Check that file has the right header."""
+    df = pd.read_csv(file, sep="\t")
+    df.columns
+
+    data_dictionary_file = root_dir() / "inputs" / "data-dictionary.json"
+    with open(data_dictionary_file) as f:
+        data_dictionary = json.load(f)
+
+    columns = {x for x in df.columns if "Unnamed:" not in x}
+
+    if missing_keys := set(data_dictionary.keys()) - columns:
+        logger.warning(f"\nThe following expected columns are missing: {sorted(missing_keys)}")
+    if extra_columns := columns - set(data_dictionary.keys()):
+        logger.warning(
+            f"\nThe following columns are missing from the data dictionary: {sorted(extra_columns)}"
+        )
 
 
 # Main function

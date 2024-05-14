@@ -11,25 +11,13 @@
         "Description": "whether the item should be generated and included in the activity",
         "Levels": ""
     },
-    "activity": {
-        "LongName": "",
-        "VariableName": "section",
-        "Description": "corresponds to the main section headings found in the original guideline documents or table",
-        "Levels": ""
-    },
     "activity_pref_label": {
         "LongName": "",
         "VariableName": "activity_pref_label",
         "Description": "preferred label of the activity",
         "Levels": ""
     },
-    "activity_description": {
-        "LongName": "",
-        "VariableName": "act_descrip",
-        "Description": "description of the activity",
-        "Levels": ""
-    },
-    "activity_preamble": {
+    "preamble": {
         "LongName": "",
         "VariableName": "preamble",
         "Description": "introductory text to the activity",
