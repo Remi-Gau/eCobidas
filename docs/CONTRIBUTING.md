@@ -91,7 +91,7 @@ Here is a description of the Neurovault recipe `make neurovault`.
 
 ```bash
 # remove previous runs:
-rm -rf inputs/csv/neurovault
+rm -rf inputs/neurovault
 rm -rf schemas/neurovault/
 
 # use a bash script to download the spreadsheet
@@ -178,7 +178,7 @@ You only need to specify:
 [create_schema.py](./create_schema.py).
 
 <!-- It will go through the csv files in the
-[inputs folder](../../inputs/csv/) and turn them into their corresponding
+[inputs folder](../../inputs/) and turn them into their corresponding
 protocol, activity and items. -->
 
 Additional "entry points" should be set up in `cli.py` and adapted in `setup.py`.

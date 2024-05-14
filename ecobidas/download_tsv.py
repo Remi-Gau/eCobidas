@@ -10,7 +10,7 @@ from ecobidas.utils import root_dir
 
 # Function to download spreadsheet
 def download_spreadsheet(schema: str) -> None:
-    csv_folder = root_dir() / "inputs" / "csv"
+    csv_folder = root_dir() / "inputs"
     input_file = csv_folder / "spreadsheet_google_id.tsv"
     # Read spreadsheet_google_id.tsv
     with open(input_file) as f:

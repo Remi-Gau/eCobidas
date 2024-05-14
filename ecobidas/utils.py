@@ -15,7 +15,7 @@ def root_dir() -> Path:
 def get_input_dir(source_dir: str | Path = None) -> Path:
     if source_dir is None:
         source_dir = root_dir()
-    return Path(source_dir) / "inputs" / "csv"
+    return Path(source_dir) / "inputs"
 
 
 @lru_cache

@@ -10,13 +10,13 @@ def test_get_schema_info(this_schema, dir, basename):
     schema_info = get_schema_info(this_schema)
     input_file = get_input_file(schema_info)
 
-    expected = Path(__file__).parents[1] / "ecobidas" / "inputs" / "csv" / dir / f"{basename}.tsv"
+    expected = Path(__file__).parents[1] / "ecobidas" / "inputs" / dir / f"{basename}.tsv"
 
     assert input_file == expected
 
 
 def test_get_output_dir(tmp_path):
-    this_schema = Path(__file__).parent / "inputs" / "csv" / "tests" / "test.tsv"
+    this_schema = Path(__file__).parent / "inputs" / "tests" / "test.tsv"
     get_output_dir(this_schema, out_dir=tmp_path)
 
 

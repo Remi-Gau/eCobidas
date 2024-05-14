@@ -41,7 +41,7 @@ line-length = 100
 
 [tool.codespell]
 ignore-words-list = "jist,softwares,te"
-skip = "./.git,*.svg,ecobidas/inputs/csv/**/*.tsv,ecobidas/inputs/csv/**/*.json,"
+skip = "./.git,*.svg,ecobidas/inputs/**/*.tsv,ecobidas/inputs/**/*.json,"
 
 [tool.hatch.build.hooks.vcs]
 version-file = "ecobidas/_version.py"

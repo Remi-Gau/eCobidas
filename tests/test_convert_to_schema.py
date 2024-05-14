@@ -1,4 +1,4 @@
-"""Runs the conversion of the tsv in `inputs/csv/test.tsv` \
+"""Runs the conversion of the tsv in `inputs/test.tsv` \
    and checks that the correct jsonld are created."""
 
 import json
@@ -13,7 +13,7 @@ def data_path():
 
 
 def test_create_schema(tmp_path):
-    this_schema = Path(__file__).parent / "inputs" / "csv" / "tests" / "test.tsv"
+    this_schema = Path(__file__).parent / "inputs" / "tests" / "test.tsv"
 
     # out_dir = Path(__file__).parent / "outputs"
 
