@@ -23,6 +23,8 @@ def get_output_dir(this_schema: str | Path, out_dir: str | Path) -> Path:
     if Path(this_schema).is_file():
         return Path(out_dir) / Path(this_schema).stem
     schema_info = get_schema_info(this_schema)
+    print(schema_info)
+    print(this_schema)
     return Path(out_dir) / schema_info["dir"].tolist()[0]
 
 

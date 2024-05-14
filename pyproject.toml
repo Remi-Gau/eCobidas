@@ -86,7 +86,7 @@ ignore_errors = true
 module = ['tests.*']
 
 [tool.pytest.ini_options]
-addopts = "-ra --strict-config --strict-markers --doctest-modules --showlocals -s -v"
+addopts = "-ra --strict-config --strict-markers --doctest-modules --showlocals -s -v --ignore=tools --ignore=reproschema-py --ignore=cobidas_schema --ignore=artemis_schema"
 doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"
 junit_family = "xunit2"
 minversion = "6.0"

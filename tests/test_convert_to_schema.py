@@ -13,7 +13,7 @@ def data_path():
 
 
 def test_create_schema(tmp_path):
-    this_schema = Path(__file__).parent / "inputs" / "tests" / "test.tsv"
+    this_schema = Path(__file__).parent / "inputs" / "test.tsv"
 
     # out_dir = Path(__file__).parent / "outputs"
 
