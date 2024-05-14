@@ -78,8 +78,7 @@ make install
 
 ## Downloading the spreadsheet and converting them
 
-A lot of recipe are already in the [Makefile](Makefile) to facilitate daily
-work.
+A lot of recipe are already in `tox.ini` to facilitate daily work.
 
 For example:
 
@@ -174,8 +173,7 @@ You only need to specify:
 
 ### Implementation
 
-`ecobidas_convert` calls: the highest level function that you will use to create the schema is
-[create_schema.py](./create_schema.py).
+TODO `ecobidas convert` calls: the highest level function that you will use to create the schema is ...
 
 <!-- It will go through the csv files in the
 [inputs folder](../../inputs/) and turn them into their corresponding
@@ -217,3 +215,15 @@ https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema
 
 https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
 ```
+
+
+# Source spreadsheets
+
+Content used to programmatically generate the different schemas used for the different eCOBIDAS apps.
+
+TODO The google spreadsheet can be downloaded using ...
+
+TODO The `csv` files can be turned into schemas using ...
+
+The content of the different columns is described in `data_dictionary.json` and
+the `json` files associated with each file.

@@ -140,4 +140,4 @@ If you want to know more about Reproschema, we suggest you have look at the
 documentation
 
 -   [main documentation](https://www.repronim.org/reproschema/)
--   [FAQ](https://www.repronim.org/reproschema/98_FAQ/)
+-   [FAQ](https://www.repronim.org/reproschema/FAQ/)

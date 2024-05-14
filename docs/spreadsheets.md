@@ -123,7 +123,7 @@ Here follows a description of the columns' content.
 ### Content common to all spreadsheets
 
 The description of the columns common to all spreadsheet is described in the
-[data dictionary](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/data-dictionary.json)
+[data dictionary](https://github.com/Remi-Gau/eCobidas/tree/master/ecobidas/inputs/data-dictionary.json)
 in the
 [inputs folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/).
 
