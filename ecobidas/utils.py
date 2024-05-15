@@ -50,9 +50,7 @@ def get_landing_page(schema_info: dict) -> str:
         landing_page = list(schema_info["landing page"])
 
     repo = "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/landing_pages/"
-    landing_page = repo + landing_page[0]
-
-    return landing_page
+    return repo + landing_page[0]
 
 
 def get_schema_info(this_schema) -> pd.DataFrame:
