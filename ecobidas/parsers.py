@@ -122,4 +122,33 @@ def global_parser(formatter_class: type[HelpFormatter] = HelpFormatter) -> Argum
         nargs=1,
     )
 
+    serve_parser = subparsers.add_parser(
+        "serve",
+        help="Launch a local server to serve the JSON-LD files.",
+        formatter_class=parser.formatter_class,
+    )
+    serve_parser.add_argument(
+        "-f",
+        "--folder",
+        help="""
+        Folder to serve.
+        """,
+        required=False,
+        default=None,
+        type=str,
+        nargs=1,
+    )
+    serve_parser.add_argument(
+        "-v",
+        "--verbosity",
+        help="""
+        Verbosity level.
+        """,
+        required=False,
+        choices=[0, 1, 2, 3],
+        default=2,
+        type=int,
+        nargs=1,
+    )
+
     return parser

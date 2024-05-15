@@ -7,6 +7,7 @@ from rich_argparse import RichHelpFormatter
 from ecobidas.create_schema import create_schema
 from ecobidas.download_tsv import download_spreadsheet
 from ecobidas.parsers import global_parser
+from ecobidas.serve import serve
 from ecobidas.utils import get_metatable, print_download
 
 
@@ -36,9 +37,8 @@ def cli(argv: Sequence[str] = sys.argv) -> None:
     verbosity = args.verbosity
     set_verbosity(verbosity)
 
-    schema = args.schema[0]
-
     if args.command in ["convert"]:
+        schema = args.schema[0]
         output_dir = args.output_dir
         repo = args.repo
         branch = args.branch
@@ -47,7 +47,12 @@ def cli(argv: Sequence[str] = sys.argv) -> None:
         exit(0)
 
     if args.command in ["update"]:
+        schema = args.schema[0]
         download_spreadsheet(schema=schema)
+        exit(0)
+
+    if args.command in ["serve"]:
+        serve(folder=args.folder)
         exit(0)
 
 

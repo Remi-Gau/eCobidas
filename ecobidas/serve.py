@@ -2,8 +2,11 @@
 
 # https://stackoverflow.com/a/21957017
 
-import sys
+import os
 from http.server import HTTPServer, SimpleHTTPRequestHandler, test
+from pathlib import Path
+
+from loguru import logger
 
 
 class CORSRequestHandler(SimpleHTTPRequestHandler):
@@ -12,9 +15,20 @@ class CORSRequestHandler(SimpleHTTPRequestHandler):
         SimpleHTTPRequestHandler.end_headers(self)
 
 
-if __name__ == "__main__":
+def serve(folder: str | Path = None):
+    if folder is None or not Path(folder).exists():
+        folder = (Path(__file__).parent / ".." / "cobidas_schema" / "schemas").absolute()
+
+    logger.info(f"serving {folder}")
+
+    os.chdir(folder)
+
     test(
         CORSRequestHandler,
         HTTPServer,
-        port=int(sys.argv[1]) if len(sys.argv) > 1 else 8000,
+        port=8000,
     )
+
+
+if __name__ == "__main__":
+    serve()
