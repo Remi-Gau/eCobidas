@@ -7,7 +7,7 @@
     "activity_pref_label": {
         "VariableName": "activity_pref_label",
         "Description": "preferred label of the activity",
-        "RequirementLevel": "recommended"
+        "RequirementLevel": "required"
     },
     "preamble": {
         "VariableName": "preamble",
