@@ -12,7 +12,8 @@ dependencies = [
     "rich",
     "Jinja2",
     'loguru',
-    "rich_argparse"
+    "rich_argparse",
+    "ruamel.yaml"
 ]
 description = "Statistical learning for neuroimaging in Python"
 # Version from setuptools_scm
