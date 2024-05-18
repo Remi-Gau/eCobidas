@@ -159,7 +159,9 @@ def get_activity_preamble(items: pd.DataFrame) -> str:
     return preamble
 
 
-def create_response_options(schema_info: dict, df: pd.DataFrame, output_dir: str | Path) -> None:
+def create_response_options(
+    schema_info: dict[str, str], df: pd.DataFrame, output_dir: str | Path
+) -> None:
     responses = df.name.unique()
 
     response_options = ResponseOption(valueType="xsd:integer")
@@ -176,7 +178,7 @@ def create_response_options(schema_info: dict, df: pd.DataFrame, output_dir: str
 
     print_info(
         "response options",
-        schema_info["basename"].tolist()[0],
+        schema_info["basename"],
         os.path.join(output_dir, response_options.at_id),
     )
 

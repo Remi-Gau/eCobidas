@@ -39,7 +39,7 @@ def get_item_info(this_item: dict) -> dict:
     if "item_description" in this_item and this_item["item_description"].any():
         description = convert_to_str(this_item["item_description"])
 
-    unit = ""
+    unit: str | list[str] = ""
     if "unit" in this_item and this_item["unit"].any():
         unit = convert_to_str(this_item["unit"])
         unit = split_choices(unit)
@@ -55,7 +55,7 @@ def get_item_info(this_item: dict) -> dict:
     if field_type == "integer":
         field_type = "int"
 
-    choices = convert_to_str(this_item["choices"])
+    choices: str | list[str] = convert_to_str(this_item["choices"])
     choices = split_choices(choices)
 
     visibility = get_visibility(this_item)
@@ -77,7 +77,7 @@ def get_item_info(this_item: dict) -> dict:
     }
 
 
-def split_choices(choices: str) -> list:
+def split_choices(choices: str) -> str | list[str]:
     if isinstance(choices, str):
         choices = choices.split(" | ")
     return choices

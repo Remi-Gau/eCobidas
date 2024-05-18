@@ -8,16 +8,16 @@ import pandas as pd
 import requests
 from loguru import logger
 
-from ecobidas.utils import root_dir
+from ecobidas.utils import get_input_dir, get_spreadsheets_info, root_dir
 
 
 # Function to download spreadsheet
-def download_spreadsheet(schema: str) -> None:
-    csv_folder = root_dir() / "inputs"
-    input_file = csv_folder / "spreadsheet_google_id.tsv"
-    # Read spreadsheet_google_id.tsv
-    with open(input_file) as f:
-        lines = f.readlines()
+def download_spreadsheet(schema: str, output_dir: Path = None) -> None:
+
+    if output_dir is None:
+        output_dir = get_input_dir()
+
+    spreadsheets_info = get_spreadsheets_info()
 
     # Initialize lists to store data
     google_IDs = []
@@ -25,17 +25,16 @@ def download_spreadsheet(schema: str) -> None:
     output_filenames = []
 
     # Parse the file
-    for line in lines:
-        fields = line.split("\t")
-        if fields[0].startswith(schema):
-            google_IDs.append(fields[3].strip())
-            subfolders.append(fields[1].strip())
-            output_filenames.append(fields[2].strip())
+    for spreadsheet, values in spreadsheets_info.items():
+        if spreadsheet.startswith(schema):
+            google_IDs.append(values["google_id"])
+            subfolders.append(values["dir"])
+            output_filenames.append(values["basename"])
 
     # Iterate through entries and download spreadsheets
     for google_id, subfolder, output_filename in zip(google_IDs, subfolders, output_filenames):
 
-        output_folder = csv_folder / subfolder
+        output_folder = output_dir / subfolder
         output_folder.mkdir(exist_ok=True, parents=True)
         output_file = output_folder / f"{output_filename}.tsv"
 
@@ -62,7 +61,6 @@ def download_spreadsheet(schema: str) -> None:
 def validate_downloaded_file(file: str | Path) -> None:
     """Check that file has the right header."""
     df = pd.read_csv(file, sep="\t")
-    df.columns
 
     data_dictionary_file = root_dir() / "inputs" / "data-dictionary.json"
     with open(data_dictionary_file) as f:

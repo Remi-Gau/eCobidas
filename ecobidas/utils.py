@@ -4,7 +4,6 @@ from pathlib import Path
 import pandas as pd
 from loguru import logger
 from reproschema.models.protocol import Protocol
-from rich import print
 from ruamel.yaml import YAML
 
 yaml = YAML(typ="safe")
@@ -27,9 +26,7 @@ def get_output_dir(this_schema: str | Path, output_dir: str | Path) -> Path:
     if Path(this_schema).is_file():
         return Path(output_dir) / Path(this_schema).stem
     schema_info = get_schema_info(this_schema)
-    print(schema_info)
-    print(this_schema)
-    return Path(output_dir) / schema_info["dir"].tolist()[0]
+    return Path(output_dir) / schema_info["dir"]
 
 
 @lru_cache
@@ -115,7 +112,7 @@ def print_info(type: str, pref_label: str, file: str) -> None:
     )
 
 
-def print_item_info(activity_idx: str, item_idx: str, item_info: dict) -> None:
+def print_item_info(activity_idx: str, item_idx: str, item_info: dict[str, str]) -> None:
     logger.debug(
         f"Activity: {int(activity_idx)} Item: {int(item_idx)}\t{item_info['name']}\t{item_info['field_type']}\t{item_info['visibility']}"
     )
