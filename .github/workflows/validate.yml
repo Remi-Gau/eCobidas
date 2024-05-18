@@ -36,7 +36,4 @@ jobs:
         -   name: Show tox config
             run: tox c
         -   name: Validate
-            run: |
-                make package.json
-                grep -r  "@context" tests/data/ | cut -d: -f1 | xargs -I fname jsonlint -q fname
-                tox run -e validate_all
+            run: tox run -e validate_all

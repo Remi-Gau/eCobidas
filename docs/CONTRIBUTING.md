@@ -100,7 +100,6 @@ bash download_tsv.sh neurovault
 ecobidas_convert --schema neurovault
 
 # make sure the jsonld are valid with some node.js and reproschema validation
-grep -r  "@context" schemas/neurovault | cut -d: -f1 | xargs -I fname jsonlint -q fname
 reproschema -l DEBUG validate schemas/neurovault
 ```
 
