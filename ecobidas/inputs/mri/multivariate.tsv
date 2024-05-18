@@ -24,7 +24,7 @@ Pipeline structure applied uniformly to all cases (e.g. that could be independen
 Method for hyper-parameter setting		textarea		hyper_parameter_setting	hyper_parameter_setting	23	1	1	1	1	Multivariate	Training procedure
 Describe data splitting (cross validation)		textarea		cross_validation	cross_validation	24	1	1	1	1	Multivariate	Training procedure
 Response type		radio	discrete | continous	response_type	response_type	25	1	1	1	1	Multivariate
-Number of possible reponse classes 	For example, are there only 2 classes, and one can be labeled “positive” or are there are 3 or more classes?	integer		number_response_classes	number_response_classes	26			response_type == 0	1	Multivariate
+Number of possible response classes 	For example, are there only 2 classes, and one can be labeled “positive” or are there are 3 or more classes?	integer		number_response_classes	number_response_classes	26	1	1	response_type == 0	1	Multivariate
 Report accuracy	If group sizes are unequal, report balanced (or average) accuracy.	textarea		accuracy	accuracy	27	1	1	number_response_classes == 2	1	Multivariate	Evaluation metrics	Discrete response
 Report precision	(1 − false discovery rate)	textarea		precision	precision	28	1	1	number_response_classes == 2	1	Multivariate	Evaluation metrics	Discrete response
 Report recall	sensitivity	textarea		recall	recall	29	1	1	number_response_classes == 2	1	Multivariate	Evaluation metrics	Discrete response
