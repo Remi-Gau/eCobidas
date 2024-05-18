@@ -48,12 +48,12 @@ activity_order	question	details	field_type	choices	unit	item	item_order	visibili
 5	PET voxel size		select	1 x 1 x 1 | 2 x 2 x 2	mm	pet_voxel_size	9	1	pet voxel size	pet voxel size	1	1	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	0
 5	Matrix Size		textarea	256 x 256 x 207		matrix_size	10	1	matrix size	matrix size	1	1	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	0
 5	Frame-Sequence		select	6x10 | 3x20 | 6x30 | 5x60 | 5x120 | 8x300 | 3x600 (36 frames)		frame-sequence	11	1	frame sequence	frame sequence	1	1	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	0
-5	Scale factor for each frame		array			ScaleFactor	12	1	ScaleFactor	ScaleFactor	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	ScaleFactor
-5	Scatter fraction for each frame		array			ScatterFraction	13	1	ScatterFraction	ScatterFraction	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	ScatterFraction
-5	Decay correction factor for each frame		array			DecayCorrectionFactor	14	1	DecayCorrectionFactor	DecayCorrectionFactor	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	DecayCorrectionFactor
-5	Prompt rate for each frame		array			PromptRate	15	1	PromptRate	PromptRate	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	PromptRate
-5	Random rate for each frame		array			RandomRate	16	1	RandomRate	RandomRate	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	RandomRate
-5	Singles rate for each frame		array			SinglesRate	17	1	SinglesRate	SinglesRate	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	SinglesRate
+5	Scale factor for each frame		textarea			ScaleFactor	12	1	ScaleFactor	ScaleFactor	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	ScaleFactor
+5	Scatter fraction for each frame		textarea			ScatterFraction	13	1	ScatterFraction	ScatterFraction	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	ScatterFraction
+5	Decay correction factor for each frame		textarea			DecayCorrectionFactor	14	1	DecayCorrectionFactor	DecayCorrectionFactor	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	DecayCorrectionFactor
+5	Prompt rate for each frame		textarea			PromptRate	15	1	PromptRate	PromptRate	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	PromptRate
+5	Random rate for each frame		textarea			RandomRate	16	1	RandomRate	RandomRate	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	RandomRate
+5	Singles rate for each frame		textarea			SinglesRate	17	1	SinglesRate	SinglesRate	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	SinglesRate
 5	Reconstruction data labels		select	sampleStartTime | sampleDuration | activity | activitySD		reconstruction_data_labels	18	1	reconstruction data labels	reconstruction data labels	1	1	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	0
 5	Reference paper for the attenuation correction method used.		textarea			AttenuationCorrectionMethodReference	19	1	AttenuationCorrectionMethodReference	AttenuationCorrectionMethodReference	1	2	Data Acquisition	Reconstruction		Reconstruction	Reconstruction	1	_pet.json	AttenuationCorrectionMethodReference
 6	Boolean that specifies if continuous blood measurements are available.		radio	preset:boolean		ContinuousBloodAvail	1	1	ContinuousBloodAvail	ContinuousBloodAvail	1	1	Radioligand	Continuous blood		Continuous blood	Continuous blood	1	_pet.json	ContinuousBloodAvail
@@ -88,17 +88,17 @@ activity_order	question	details	field_type	choices	unit	item	item_order	visibili
 6	Whole blood radioactivity		text		MBq 	whole_blood_radioactivity	30	MetaboliteAvail == 1	whole blood radioactivity	whole blood radioactivity	1	2	Radioligand	Whole blood		Whole blood	Whole blood	0
 6	Plasma to whole blood ratio		slider	0 | 1		plasma_to_whole_blood_ratio	31	1	plasma to whole blood ratio	plasma to whole blood ratio	1	2	Radioligand	Whole blood		Whole blood	Whole blood	0
 7	Blood sampling device read		radio	count per second | counts per minute		blood_sampling_device_read	1	1	blood sampling device read	blood sampling device read	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
-7	Blood sampling device measurement time		time range			blood_sampling_device_measurement_time	2	1	blood sampling device measurement time	blood sampling device measurement time	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
+7	Blood sampling device measurement time		timeRange			blood_sampling_device_measurement_time	2	1	blood sampling device measurement time	blood sampling device measurement time	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
 7	Phantom type		select	Uniform cylinder | ACR | EARL 		phantom_type	3	1	phantom type	phantom type	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
 7	Phantom volume		float		ml	phantom_volume	4	1	phantom volume	phantom volume	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
 7	Radiotracer-isotope		select	carbon-11 | fluorine-18 | nitrogen-13 | oxygen-15		radiotracer-isotope	5	1	radiotracer isotope	radiotracer isotope	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
 7	Phantom activity		float		MBq	phantom_activity	6	1	phantom activity	phantom activity	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
-7	Activity time		time range			activity_time	7	1	activity time	activity time	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
+7	Activity time		timeRange			activity_time	7	1	activity time	activity time	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
 7	Residual activity		float		MBq	residual_activity	8	1	residual activity	residual activity	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
-7	Residual activity time		time range			residual_activity_time	9	1	residual activity time	residual activity time	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
-7	Phantom acquisition time		time range			phantom_acquisition_time	10	1	phantom acquisition time	phantom acquisition time	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
+7	Residual activity time		timeRange			residual_activity_time	9	1	residual activity time	residual activity time	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
+7	Phantom acquisition time		timeRange			phantom_acquisition_time	10	1	phantom acquisition time	phantom acquisition time	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
 7	Well counter sample volumes		float		ml | µl	well_counter_sample_volumes	11	1	well counter sample volumes	well counter sample volumes	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
-7	Well counter measurement time		time range			well_counter_measurement_time	12	1	well counter measurement time	well counter measurement time	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
+7	Well counter measurement time		timeRange			well_counter_measurement_time	12	1	well counter measurement time	well counter measurement time	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
 7	Well counter read		radio	count per second | counts per minute		well_counter_read	13	1	well counter read	well counter read	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
 7	Phantom data		textarea			phantom_data	14	1	phantom data	phantom data	1	2	Data Acquisition	Cross-calibration		Cross-calibration	Cross-calibration	0
 8	Hardware		textarea			hardware	1	1	hardware	hardware	1	1	Data Acquisition	External Motion Correction		External Motion Correction	External Motion Correction	0
