@@ -35,16 +35,23 @@ def get_output_dir(this_schema: str | Path, output_dir: str | Path) -> Path:
 
 @lru_cache
 def get_spreadsheets_info() -> dict[str, str]:
-    # metatable_file = get_input_dir() / "spreadsheet_google_id.tsv"
-    # return pd.read_csv(metatable_file, sep="\t")
+
     with open(get_input_dir() / "spreadsheet_google_id.yml") as f:
         spreadsheets_info = yaml.load(f)
+
+    for key in spreadsheets_info:
+        if "link" not in spreadsheets_info[key] and "google_id" in spreadsheets_info[key]:
+            spreadsheets_info[key]["link"] = (
+                "https://docs.google.com/spreadsheets/d/"
+                f"{spreadsheets_info[key]['google_id']}/edit?usp=sharing"
+            )
+
     expected_keys = ["dir", "link", "citation", "app link", "google_id", "landing page", "repo"]
     for key in spreadsheets_info:
         for check in expected_keys:
             if check not in spreadsheets_info[key]:
                 spreadsheets_info[key][check] = ""
-    print(spreadsheets_info)
+
     return spreadsheets_info
 
 
