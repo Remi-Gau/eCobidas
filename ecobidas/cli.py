@@ -43,6 +43,8 @@ def cli(argv: Sequence[str] = sys.argv) -> None:
         repo = args.repo
         branch = args.branch
         # debug = getattr(args, "debug", False)
+        if isinstance(output_dir, list):
+            output_dir = output_dir[0]
         convert(schema, output_dir, repo, branch)
         exit(0)
 

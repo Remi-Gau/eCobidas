@@ -20,13 +20,13 @@ def get_input_dir(source_dir: Optional[str | Path] = None) -> Path:
 
 
 @lru_cache
-def get_output_dir(this_schema: str | Path, out_dir: str | Path) -> Path:
+def get_output_dir(this_schema: str | Path, output_dir: str | Path) -> Path:
     if Path(this_schema).is_file():
-        return Path(out_dir) / Path(this_schema).stem
+        return Path(output_dir) / Path(this_schema).stem
     schema_info = get_schema_info(this_schema)
     print(schema_info)
     print(this_schema)
-    return Path(out_dir) / schema_info["dir"].tolist()[0]
+    return Path(output_dir) / schema_info["dir"].tolist()[0]
 
 
 @lru_cache

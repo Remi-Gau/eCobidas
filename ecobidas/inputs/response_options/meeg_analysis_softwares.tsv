@@ -14,8 +14,6 @@ NetStation	12
 Scan	13
 TrackWalker	14
 SPM	15	SCR_007037
-Custom scripts (any language)	16
-Other	17
-Letswave	18
-MATLAB		SCR_001622
-Python		SCR_008394
+Letswave	16
+Custom scripts (any language)	17
+Other	18

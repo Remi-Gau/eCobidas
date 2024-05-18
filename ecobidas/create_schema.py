@@ -1,3 +1,4 @@
+import math
 import os
 from pathlib import Path
 
@@ -35,6 +36,9 @@ def create_schema(
         output_dir = root_dir()
     # add a way to deal with this_schelma being a file
     df = load_data(this_schema)
+
+    logger.debug(f"{this_schema=}; {output_dir=}")
+
     output_dir = get_output_dir(this_schema, output_dir)
 
     schema_info = get_schema_info(this_schema)
@@ -158,13 +162,13 @@ def get_activity_preamble(items):
 def create_response_options(schema_info: dict, df: pd.DataFrame, output_dir) -> None:
     responses = df.name.unique()
 
-    response_options = ResponseOption()
+    response_options = ResponseOption(valueType="xsd:integer")
     response_options.set_defaults()
-    response_options.set_filename(schema_info["basename"].tolist()[0])
-    response_options.set_type("integer")
-    response_options.unset("multipleChoice")
+    response_options.multipleChoice = False
 
     for i, name in enumerate(responses):
+        if isinstance(name, float) and math.isnan(name):
+            name = "None"
         response_options.add_choice(name, i)
         response_options.set_max(i)
 
@@ -175,7 +179,7 @@ def create_response_options(schema_info: dict, df: pd.DataFrame, output_dir) -> 
     print_info(
         "response options",
         schema_info["basename"].tolist()[0],
-        os.path.join(output_dir, response_options.get_filename()),
+        os.path.join(output_dir, response_options.at_id),
     )
 
 
