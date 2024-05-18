@@ -4,7 +4,7 @@ name: validate jsonld
 on:
     push:
         branches:
-        -   master
+        -   main
     pull_request:
         branches: '*'
     workflow_dispatch:

@@ -3,7 +3,7 @@ name: Update spreadsheet
 
 on:
     push:
-        branches: [master]
+        branches: [main]
   # to trigger update manually from the Action tab in github
     workflow_dispatch:
         inputs:
