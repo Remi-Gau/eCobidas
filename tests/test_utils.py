@@ -3,6 +3,7 @@ from pathlib import Path
 import pytest
 
 from ecobidas.utils import (
+    get_input_dir,
     get_input_file,
     get_landing_page,
     get_output_dir,
@@ -11,8 +12,15 @@ from ecobidas.utils import (
 )
 
 
+@pytest.mark.parametrize(
+    "this_schema", ["neurovault", get_input_dir() / "neurovault" / "neurovault.tsv"]
+)
+def test_get_schema_info(this_schema):
+    get_schema_info(this_schema=this_schema)
+
+
 @pytest.mark.parametrize("this_schema, dir, basename", [("neurovault", "neurovault", "neurovault")])
-def test_get_schema_info(this_schema, dir, basename):
+def test_get_schema_info_2(this_schema, dir, basename):
     schema_info = get_schema_info(this_schema)
     input_file = get_input_file(schema_info)
 
@@ -54,7 +62,7 @@ def test_get_spreadsheets_info():
         "google_id",
         "link",
         "citation",
-        "app link",
+        "app_link",
         "landing page",
         "repo",
     ]

@@ -8,7 +8,7 @@ List all the
 from pathlib import Path
 
 from ecobidas.template_manager import TemplateManager
-from ecobidas.utils import get_metatable
+from ecobidas.utils import get_spreadsheets_info
 
 
 def main(output_dir: Path | None = None) -> None:
@@ -21,25 +21,21 @@ def main(output_dir: Path | None = None) -> None:
 
     BASE_URL = "https://github.com/ohbm/cobidas_schema/blob/master/"
 
-    df = get_metatable()
+    spreadsheets_info = get_spreadsheets_info()
 
     """
     Create file for list of response options
     """
     template = TemplateManager.env.get_template("preset_response_table.j2")
 
-    response_lists = df[df["schema"].str.match(r"(^resp-.*)") == True]
-    files = list(response_lists["basename"])
+    response_lists = {key: value for key, value in spreadsheets_info.items() if "resp-" in key}
 
     items = []
-    for i in files:
-        details = response_lists[response_lists["basename"] == i]
-
-        basename = details["basename"].to_string(index=False)
-
+    for key in response_lists:
+        basename = response_lists[key]["basename"]
         an_item = dict(
             basename=basename,
-            link=details["link"].tolist()[0],
+            link=response_lists[key]["link"],
             jsonld=f"{BASE_URL}response_options/{basename}.jsonld",
         )
         items.append(an_item)
@@ -54,40 +50,30 @@ def main(output_dir: Path | None = None) -> None:
 
     template = TemplateManager.env.get_template("app_table_md.j2")
 
-    apps_lists = df[df["app link"].notnull()]
-    apps = list(apps_lists["basename"])
+    apps_lists = {
+        key: value for key, value in spreadsheets_info.items() if spreadsheets_info[key]["app_link"]
+    }
 
     items = []
-    # make sure to include artemis only once
-    artemis = False
-    for i in apps:
-        details = apps_lists[apps_lists["basename"] == i]
+    for key in apps_lists:
 
-        if artemis:
-            continue
-
-        folder = details["dir"].tolist()[0]
-        basename = details["basename"].to_string(index=False)
-
+        folder = apps_lists[key]["dir"]
+        basename = apps_lists[key]["basename"]
         if folder == basename:
             basename = ""
 
         an_item = dict(
             folder=folder,
             basename=basename,
-            app_link=details["app link"].tolist()[0],
-            xls=details["link"].tolist()[0],
+            app_link=apps_lists[key]["app_link"],
+            xls=apps_lists[key]["link"],
         )
 
-        if details["repo"].any():
-            an_item["repo"] = details["repo"].tolist()[0]
+        if apps_lists[key]["repo"]:
+            an_item["repo"] = apps_lists[key]["repo"]
 
-        if details["citation"].any():
-            an_item["citation"] = details["citation"].tolist()[0]
-
-        if an_item["folder"] == "artemis":
-            artemis = True
-            an_item["basename"] = ""
+        if apps_lists[key]["citation"]:
+            an_item["citation"] = apps_lists[key]["citation"]
 
         items.append(an_item)
 

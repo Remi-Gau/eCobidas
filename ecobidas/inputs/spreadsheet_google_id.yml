@@ -20,21 +20,18 @@ core-beh:
     dir: core
     basename: behavior
     google_id: 1P0BQcM0889YTBFSoY8-E0vfdp0psrl7vyHBAW0fSmqs
-
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
 
 core-rep:
     dir: core
     basename: reproducibility
     google_id: 1aucpZDoav8lb2QI4YlIppNBN0FwSikV-2diQmrJCI-4
-
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
 
 core-data:
     dir: core
     basename: data_sharing
     google_id: 1yoI37se8nfWKNdKBCd-VgK1zDTdf4JR--m8apZ9iPR8
-
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
 
 mri-allseq:
@@ -47,7 +44,6 @@ mri-design:
     dir: mri
     basename: design
     google_id: 1Llmi8Y-XBiH6WEeFzTefSIJXNP_vRKn_vpXEhtbQEF8
-
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
 
 mri-acq:

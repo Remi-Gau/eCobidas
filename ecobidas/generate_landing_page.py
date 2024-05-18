@@ -14,12 +14,11 @@ def main(output_dir: Path | None = None) -> None:
 
     template = TemplateManager.env.get_template("landing_page.j2")
 
-    df = get_spreadsheets_info()
+    spreadsheets_info = get_spreadsheets_info()
 
-    apps_lists = df[df["app link"].notnull()]
-    apps = list(apps_lists["basename"])
+    apps_lists = {x for x in spreadsheets_info if spreadsheets_info[x]["app_link"]}
+    apps = [x["basename"] for x in apps_lists]
 
-    # TODO refactor this as it is a duplicate from app_list_tables.py
     items = []
     # make sure to include artemis only once
     artemis = False
@@ -38,7 +37,7 @@ def main(output_dir: Path | None = None) -> None:
         an_item = dict(
             folder=folder,
             basename=basename,
-            app_link=details["app link"].tolist()[0],
+            app_link=details["app_link"].tolist()[0],
             xls=details["link"].tolist()[0],
         )
 
