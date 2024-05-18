@@ -4,12 +4,16 @@ name: Update spreadsheet
 on:
     push:
         branches: [main]
-  # to trigger update manually from the Action tab in github
+    # to trigger update manually from the Action tab in github
     workflow_dispatch:
         inputs:
             log:
                 description: update spreadsheet
                 required: false
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
 
 jobs:
     update_spreadsheet:

@@ -1,15 +1,15 @@
-question	details	field_type	choices	item_pref_label	item_order	visibility	include	mandatory	activity_order	activity_pref_label			preamble
-Tool names, versions, and URLs		textarea		tools used	1	1	1	1	1	Reproducibility	Documentation	Tools used	reproducibility aspects of your work
-Machine CPU model, any use of parallelization		textarea		infrastructure	2	1	1	1	1	Reproducibility	Documentation	Infrastructure
-operating system used for analysis		radio	preset:operating_systems	os_type	3	1	1	0	1	Reproducibility	Documentation	Infrastructure
-operating system version		textarea		os_version	4	1	1	0	1	Reproducibility	Documentation	Infrastructure
-Was a workflow system used?		radio	preset:boolean	workflow used	5	1	1	0	1	Reproducibility	Documentation	Workflow
-Name of workflow system used		select	Nipype | make | snakemake | matlab batch | MIPAV | snakebids	workflow type	6	1	1	0	1	Reproducibility	Documentation	Workflow
-Version of the workflow system used		textarea		workflow version	7	1	1	0	1	Reproducibility	Documentation	Workflow
-Provide a permanent identifie to the workflow if possible		textarea		workflow identifier	8	1	1	0	1	Reproducibility	Documentation	Workflow
-State whether detailed provenance information is available		textarea		provenance trace	9	1	1	0	1	Reproducibility	Documentation	Provenance trace
-Provide permanent identifier to the data if possible		textarea		data identifier	10	1	1	0	1	Reproducibility	Data	Data
-Provide a URL linking to the relevant resource.	For example, a jupyter notebook implementing key analyses.	textarea		literate programming	11	1	1	0	1	Reproducibility	Documentation	Literate program implementing results
-Is the documentation provided in English?		textarea		english language version	12	1	1	0	1	Reproducibility	Documentation	English language version
-Are the tools publically available?		textarea		tools availability	13	1	1	0	1	Reproducibility	Archiving	Tools availability
-Is a virtual environment to facilitate a repeated analysis available?		textarea		virtual appliances	14	1	1	0	1	Reproducibility	Archiving	Virtual appliances
+question	details	field_type	choices	item	item_pref_label	item_order	visibility	include	mandatory	activity_order	activity_pref_label			preamble
+Tool names, versions, and URLs		textarea		tools used	tools used	1	1	1	1	1	Reproducibility	Documentation	Tools used	reproducibility aspects of your work
+Machine CPU model, any use of parallelization		textarea		infrastructure	infrastructure	2	1	1	1	1	Reproducibility	Documentation	Infrastructure
+operating system used for analysis		radio	preset:operating_systems	os_type	os_type	3	1	1	0	1	Reproducibility	Documentation	Infrastructure
+operating system version		textarea		os_version	os_version	4	1	1	0	1	Reproducibility	Documentation	Infrastructure
+Was a workflow system used?		radio	preset:boolean	workflow used	workflow used	5	1	1	0	1	Reproducibility	Documentation	Workflow
+Name of workflow system used		select	Nipype | make | snakemake | matlab batch | MIPAV | snakebids	workflow type	workflow type	6	1	1	0	1	Reproducibility	Documentation	Workflow
+Version of the workflow system used		textarea		workflow version	workflow version	7	1	1	0	1	Reproducibility	Documentation	Workflow
+Provide a permanent identifie to the workflow if possible		textarea		workflow identifier	workflow identifier	8	1	1	0	1	Reproducibility	Documentation	Workflow
+State whether detailed provenance information is available		textarea		provenance trace	provenance trace	9	1	1	0	1	Reproducibility	Documentation	Provenance trace
+Provide permanent identifier to the data if possible		textarea		data identifier	data identifier	10	1	1	0	1	Reproducibility	Data	Data
+Provide a URL linking to the relevant resource.	For example, a jupyter notebook implementing key analyses.	textarea		literate programming	literate programming	11	1	1	0	1	Reproducibility	Documentation	Literate program implementing results
+Is the documentation provided in English?		textarea		english language version	english language version	12	1	1	0	1	Reproducibility	Documentation	English language version
+Are the tools publicly available?		textarea		tools availability	tools availability	13	1	1	0	1	Reproducibility	Archiving	Tools availability
+Is a virtual environment to facilitate a repeated analysis available?		textarea		virtual appliances	virtual appliances	14	1	1	0	1	Reproducibility	Archiving	Virtual appliances

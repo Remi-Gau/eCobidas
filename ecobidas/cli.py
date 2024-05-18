@@ -8,7 +8,7 @@ from ecobidas.create_schema import create_schema
 from ecobidas.download_tsv import download_spreadsheet
 from ecobidas.parsers import global_parser
 from ecobidas.serve import serve
-from ecobidas.utils import get_metatable, print_download
+from ecobidas.utils import get_spreadsheets_info, print_download
 
 
 def set_verbosity(verbosity: int | list[int]) -> None:
@@ -63,10 +63,14 @@ def convert(schema: str, output_dir: str, repo: str, branch: str) -> None:
 
     logger.debug(f"{schema=}, {output_dir=}, {repo=}, {branch=}")
 
-    df = get_metatable()
+    spreadsheets_info = get_spreadsheets_info()
 
-    schema_to_run = df[df["schema"].str.match(f"(^{schema}.*)") == True]
-    schema_list = list(schema_to_run["schema"])
+    schema_list = [x for x in spreadsheets_info if schema in x]
+
+    if not schema_list:
+        logger.error(
+            f"No known schema for: {schema=}" f"Known schemas are: {list(spreadsheets_info.keys())}"
+        )
 
     for this_schema in schema_list:
         # add debug parameter

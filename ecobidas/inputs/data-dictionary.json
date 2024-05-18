@@ -1,68 +1,57 @@
 {
     "include": {
-        "LongName": "",
         "VariableName": "include",
         "Description": "whether the item should be generated and included in the activity",
-        "Levels": ""
+        "RequirementLevel": "required"
     },
     "activity_pref_label": {
-        "LongName": "",
         "VariableName": "activity_pref_label",
         "Description": "preferred label of the activity",
-        "Levels": ""
+        "RequirementLevel": "required"
     },
     "preamble": {
-        "LongName": "",
         "VariableName": "preamble",
         "Description": "introductory text to the activity",
-        "Levels": ""
+        "RequirementLevel": "recommended"
     },
     "activity_order": {
-        "LongName": "",
         "VariableName": "",
-        "Description": "position in which the activity is supposed to be presented in a protocol",
-        "Levels": ""
+        "Description": "position in which the activity is supposed to be presented in a protocol"
     },
     "item": {
         "LongName": "name of the item",
         "VariableName": "item",
         "Description": "",
-        "Levels": ""
+        "RequirementLevel": "required"
     },
     "item_pref_label": {
-        "LongName": "",
         "VariableName": "item_pref_label",
         "Description": "preferred label of the item",
-        "Levels": ""
+        "RequirementLevel": "recommended"
     },
     "item_description": {
-        "LongName": "",
         "VariableName": "item_descrip",
         "Description": "description of the item",
-        "Levels": ""
+        "RequirementLevel": "recommended"
     },
     "item_order": {
-        "LongName": "",
         "VariableName": "",
         "Description": "Position in which the item is supposed to be presented in the activity.",
-        "Levels": ""
+        "RequirementLevel": "required"
     },
     "duplicate": {
-        "LongName": "",
         "VariableName": "",
-        "Description": "reports the number of items that have the same name in this spreadsheet",
-        "Levels": ""
+        "Description": "reports the number of items that have the same name in this spreadsheet"
     },
     "question": {
-        "LongName": "",
         "VariableName": "question",
         "Description": "question corresponding to the item",
-        "Levels": ""
+        "RequirementLevel": "required"
     },
     "field_type": {
-        "LongName": "",
         "VariableName": "resp_type",
         "Description": "type of response expected",
+        "RequirementLevel": "required",
         "Levels": [
             {
                 "Name": "integer",
@@ -91,13 +80,11 @@
         ]
     },
     "choices": {
-        "LongName": "",
         "VariableName": "choice",
         "Description": "list of possible responses",
-        "Levels": ""
+        "RequirementLevel": "required"
     },
     "mandatory": {
-        "LongName": "",
         "VariableName": "mandatory",
         "Description": "whether an answer to the item is required",
         "Default": 1,
@@ -110,23 +97,20 @@
                 "Name": 0,
                 "Description": "a response to this item is not required"
             }
-        ]
+        ],
+        "RequirementLevel": "recommended"
     },
     "visibility": {
-        "LongName": "",
         "VariableName": "vis",
         "Description": "Lists the conditions that have to be fulfilled for each item to be displayed to the user. By default, an item will be displayed. Other it will only be shown if a specific answer has been given to a previous item: in this case the expression in this cell must be a valid javascript expression like: 'previousItem === 1' ",
-        "Default": 1,
-        "Levels": ""
+        "RequirementLevel": "required"
     },
     "details": {
-        "LongName": "",
         "VariableName": "",
         "Description": "Some questions might require some additional information to be understandable by all users, so any extra information to be displayed to the users should be put the detail column.",
-        "Levels": ""
+        "RequirementLevel": "recommended"
     },
     "bids_status": {
-        "LongName": "",
         "VariableName": "",
         "Description": "list if the item can be found in a BIDS (Brain Imaging Data Structure) dataset",
         "Levels": [
@@ -149,21 +133,15 @@
         ]
     },
     "bids_file": {
-        "LongName": "",
         "VariableName": "",
-        "Description": "list the bids file in which the item can be found",
-        "Levels": ""
+        "Description": "list the bids file in which the item can be found"
     },
     "bids_key": {
-        "LongName": "",
         "VariableName": "",
-        "Description": "list the json key corresponding to this item in the bids json file",
-        "Levels": ""
+        "Description": "list the json key corresponding to this item in the bids json file"
     },
     "bids_key_for_unit": {
-        "LongName": "",
         "VariableName": "",
-        "Description": "",
-        "Levels": ""
+        "Description": ""
     }
 }

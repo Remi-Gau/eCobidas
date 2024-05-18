@@ -12,7 +12,8 @@ dependencies = [
     "rich",
     "Jinja2",
     'loguru',
-    "rich_argparse"
+    "rich_argparse",
+    "ruamel.yaml"
 ]
 description = "Statistical learning for neuroimaging in Python"
 # Version from setuptools_scm
@@ -40,8 +41,8 @@ ecobidas = "ecobidas.cli:cli"
 line-length = 100
 
 [tool.codespell]
-ignore-words-list = "jist,softwares,te"
-skip = "./.git,*.svg,ecobidas/inputs/**/*.tsv,ecobidas/inputs/**/*.json,"
+ignore-words-list = "jist,softwares,te,fwe,als"
+skip = "./.git,*.svg"
 
 [tool.hatch.build.hooks.vcs]
 version-file = "ecobidas/_version.py"
@@ -78,7 +79,8 @@ module = [
     "rich_argparse",
     "loguru",
     "reproschema.*",
-    "rich"
+    "rich",
+    "ruamel.yaml"
 ]
 
 [[tool.mypy.overrides]]
