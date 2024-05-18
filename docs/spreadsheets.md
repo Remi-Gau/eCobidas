@@ -7,8 +7,7 @@ and we try to keep a back-up in the
 [folder](https://github.com/Remi-Gau/eCobidas/tree/main/inputs).
 
 The
-[`download_tsv.sh`](https://github.com/Remi-Gau/eCobidas/tree/main/download_tsv.sh)
-bash script will directly download those spreadsheets as csv files into the
+??? will directly download those spreadsheets as csv files into the
 `inputs` folder.
 
 <!-- generate the table below using python/app_list_table.py -->

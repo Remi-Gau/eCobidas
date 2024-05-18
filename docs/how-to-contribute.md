@@ -82,7 +82,7 @@ that need to be expanded.
 ### Conversion scripts
 
 We use some
-[python code](https://github.com/Remi-Gau/eCobidas/tree/main/python) to
+[python code](https://github.com/Remi-Gau/eCobidas/tree/main/ecobidas) to
 convert the spreadsheets into the set of `jsonld` files that the user interface
 needs as inputs to display the checklists. This needs further improvement so if
 python is your jam, feel free to dive in.
@@ -94,9 +94,7 @@ automating the creation of schemas, so there are definitely some features
 waiting to be written there.
 
 There is more information on how to set things up in the
-[CONTRIBUTING.md](https://github.com/Remi-Gau/eCobidas/tree/main/CONTRIBUTING.md)
-and the readme of the
-[python package](https://github.com/Remi-Gau/eCobidas/tree/main/python/README.md).
+[CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ### User interface
 
