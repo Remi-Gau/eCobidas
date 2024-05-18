@@ -5,6 +5,10 @@ from typing import Optional
 import pandas as pd
 from loguru import logger
 from reproschema.models.protocol import Protocol
+from rich import print
+from ruamel.yaml import YAML
+
+yaml = YAML(typ="safe")
 
 
 @lru_cache
@@ -30,13 +34,22 @@ def get_output_dir(this_schema: str | Path, output_dir: str | Path) -> Path:
 
 
 @lru_cache
-def get_metatable() -> pd.DataFrame:
-    metatable_file = get_input_dir() / "spreadsheet_google_id.tsv"
-    return pd.read_csv(metatable_file, sep="\t")
+def get_spreadsheets_info() -> dict[str, str]:
+    # metatable_file = get_input_dir() / "spreadsheet_google_id.tsv"
+    # return pd.read_csv(metatable_file, sep="\t")
+    with open(get_input_dir() / "spreadsheet_google_id.yml") as f:
+        spreadsheets_info = yaml.load(f)
+    expected_keys = ["dir", "link", "citation", "app link", "google_id", "landing page", "repo"]
+    for key in spreadsheets_info:
+        for check in expected_keys:
+            if check not in spreadsheets_info[key]:
+                spreadsheets_info[key][check] = ""
+    print(spreadsheets_info)
+    return spreadsheets_info
 
 
 def list_preset_responses() -> list:
-    df = get_metatable()
+    df = get_spreadsheets_info()
     is_response_option = df["dir"] == "response_options"
     response_options = df[is_response_option]
     return list(response_options["subdir"])
@@ -55,7 +68,7 @@ def get_landing_page(schema_info: dict) -> str:
 
 
 def get_schema_info(this_schema: str | Path) -> pd.DataFrame:
-    df = get_metatable()
+    df = get_spreadsheets_info()
     if Path(this_schema).is_file():
         this_schema = Path(this_schema).stem
 

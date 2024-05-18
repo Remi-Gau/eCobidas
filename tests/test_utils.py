@@ -2,7 +2,13 @@ from pathlib import Path
 
 import pytest
 
-from ecobidas.utils import get_input_file, get_landing_page, get_output_dir, get_schema_info
+from ecobidas.utils import (
+    get_input_file,
+    get_landing_page,
+    get_output_dir,
+    get_schema_info,
+    get_spreadsheets_info,
+)
 
 
 @pytest.mark.parametrize("this_schema, dir, basename", [("neurovault", "neurovault", "neurovault")])
@@ -37,3 +43,22 @@ def test_get_landing_page(this_schema, filename):
     expected = repo + filename
 
     assert landing_page == expected
+
+
+def test_get_spreadsheets_info():
+    spreadsheets_info = get_spreadsheets_info()
+
+    expected_keys = [
+        "dir",
+        "basename",
+        "google_id",
+        "link",
+        "citation",
+        "app link",
+        "landing page",
+        "repo",
+    ]
+
+    for key in spreadsheets_info:
+        for check in expected_keys:
+            assert check in spreadsheets_info[key]

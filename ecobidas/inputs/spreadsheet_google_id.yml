@@ -1,126 +1,100 @@
 ---
 
--   schema: core-participants
+# name:
+#       dir:
+#       basename:
+#       google_id:
+#       link:
+#       citation:
+#       app link:
+#       landing page:
+#       repo:
+
+core-participants:
     dir: core
     basename: participants
     google_id: 1pshzE4tXvj294-S-rRVlf9XpczFq2bkj2P3C7xGgzjs
     link: https://docs.google.com/spreadsheets/d/1pshzE4tXvj294-S-rRVlf9XpczFq2bkj2P3C7xGgzjs/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: core-beh
+core-beh:
     dir: core
     basename: behavior
     google_id: 1P0BQcM0889YTBFSoY8-E0vfdp0psrl7vyHBAW0fSmqs
     link: https://docs.google.com/spreadsheets/d/1P0BQcM0889YTBFSoY8-E0vfdp0psrl7vyHBAW0fSmqs/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: core-rep
+core-rep:
     dir: core
     basename: reproducibility
     google_id: 1aucpZDoav8lb2QI4YlIppNBN0FwSikV-2diQmrJCI-4
     link: https://docs.google.com/spreadsheets/d/1aucpZDoav8lb2QI4YlIppNBN0FwSikV-2diQmrJCI-4/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: core-data
+core-data:
     dir: core
     basename: data_sharing
     google_id: 1yoI37se8nfWKNdKBCd-VgK1zDTdf4JR--m8apZ9iPR8
     link: https://docs.google.com/spreadsheets/d/1yoI37se8nfWKNdKBCd-VgK1zDTdf4JR--m8apZ9iPR8/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: mri-allseq
+mri-allseq:
     dir: mri
     basename: all_sequences
     google_id: 16LhsvrEKOzkNsXGLGlYZsH9h4aZ1hyt_BORmxkndaiI
     link: https://docs.google.com/spreadsheets/d/16LhsvrEKOzkNsXGLGlYZsH9h4aZ1hyt_BORmxkndaiI/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: mri-design
+mri-design:
     dir: mri
     basename: design
     google_id: 1Llmi8Y-XBiH6WEeFzTefSIJXNP_vRKn_vpXEhtbQEF8
     link: https://docs.google.com/spreadsheets/d/1Llmi8Y-XBiH6WEeFzTefSIJXNP_vRKn_vpXEhtbQEF8/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: mri-acq
+mri-acq:
     dir: mri
     basename: acquisition
     google_id: 1OvDa4c7Eg_zVNTX527j0riljSTY4WAVwXO-th93hRwc
     link: https://docs.google.com/spreadsheets/d/1OvDa4c7Eg_zVNTX527j0riljSTY4WAVwXO-th93hRwc/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: mri-preproc
+mri-preproc:
     dir: mri
     basename: preprocessing
     google_id: 1PFS6KfDC25fFad9Vf2A1v05vKQt1lHHElT3EW1ZdT9M
     link: https://docs.google.com/spreadsheets/d/1PFS6KfDC25fFad9Vf2A1v05vKQt1lHHElT3EW1ZdT9M/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: mri-mass_univariate
+mri-mass_univariate:
     dir: mri
     basename: mass_univariate
     google_id: 1nz4_eOZG5rheOnZyd8nXulsihICaYti2EuYi2jD0eFo
     link: https://docs.google.com/spreadsheets/d/1nz4_eOZG5rheOnZyd8nXulsihICaYti2EuYi2jD0eFo/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: mri-connectivity
+mri-connectivity:
     dir: mri
     basename: connectivity
     google_id: 1Sm9qu2KEKwdhl-lAEsz6TUZAQtwCBKZ263TbSAA4Jic
     link: https://docs.google.com/spreadsheets/d/1Sm9qu2KEKwdhl-lAEsz6TUZAQtwCBKZ263TbSAA4Jic/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: mri-multivariate
+mri-multivariate:
     dir: mri
     basename: multivariate
     google_id: 1QxvvhulG2fPTC98Pm1wCXgCKtrayDgzZEeh0bMkde3s
     link: https://docs.google.com/spreadsheets/d/1QxvvhulG2fPTC98Pm1wCXgCKtrayDgzZEeh0bMkde3s/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: mri-results
+mri-results:
     dir: mri
     basename: results
     google_id: 1dQqLBVgEgClXwyiviWJAEXh5gUCt5B3Meef2LhpQtxc
     link: https://docs.google.com/spreadsheets/d/1dQqLBVgEgClXwyiviWJAEXh5gUCt5B3Meef2LhpQtxc/edit?usp=sharing
     citation: http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: neurovault
+neurovault:
     dir: neurovault
     basename: neurovault
     google_id: 1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0
@@ -128,79 +102,53 @@
     citation: https://doi.org/10.3389/fninf.2015.00008
     app link: https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/ohbm/cobidas_schema/master/schemas/neurovault/protocols/neurovault_schema.jsonld
     landing page: README_eCOBIDAS-en.md
-    repo: ''
 
--   schema: deprecated-mri
+deprecated-mri:
     dir: deprecated
     basename: mri
-    google_id: ''
     link: https://docs.google.com/spreadsheets/d/1dCXP0MTK3DjY09ZFd7FXgv0Ngx16_YJwVBiXOeQbTho/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: meeg-design
+meeg-design:
     dir: meeg
     basename: design
     google_id: 1lKC-kVU6S0RhBj0OfzZS55oBEiDsZXWZRzo4gKsKKJ8
     link: https://docs.google.com/spreadsheets/d/1lKC-kVU6S0RhBj0OfzZS55oBEiDsZXWZRzo4gKsKKJ8/edit?usp=sharing
     citation: https://osf.io/a8dhx/
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: meeg-acq
+meeg-acq:
     dir: meeg
     basename: acquisition
     google_id: 1oKGdG15vJjvy-cFPBv-agso7J-Ml5c-7O24o8FdOtG0
     link: https://docs.google.com/spreadsheets/d/1oKGdG15vJjvy-cFPBv-agso7J-Ml5c-7O24o8FdOtG0/edit?usp=sharing
     citation: https://osf.io/a8dhx/
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: meeg-preproc
+meeg-preproc:
     dir: meeg
     basename: processing
     google_id: 1rClaPKaFsMVAMW1OY5H2bwYB-O889kgrtR8wNiuOLsM
     link: https://docs.google.com/spreadsheets/d/1rClaPKaFsMVAMW1OY5H2bwYB-O889kgrtR8wNiuOLsM/edit?usp=sharing
     citation: https://osf.io/a8dhx/
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: meeg-analysis
+meeg-analysis:
     dir: meeg
     basename: statistical_analysis
     google_id: 16MGHJB6Ia_uPwsvj28PPLfd9cOnsZDVHd5v6faxyEiQ
     link: https://docs.google.com/spreadsheets/d/16MGHJB6Ia_uPwsvj28PPLfd9cOnsZDVHd5v6faxyEiQ/edit?usp=sharing
     citation: https://osf.io/a8dhx/
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: meeg-reporting
+meeg-reporting:
     dir: meeg
     basename: reporting
     google_id: 1dJO6vO7bLbZfdWA9qtj_83AaXiJC0DxPvY9Coe2UCxg
     link: https://docs.google.com/spreadsheets/d/1dJO6vO7bLbZfdWA9qtj_83AaXiJC0DxPvY9Coe2UCxg/edit?usp=sharing
     citation: https://osf.io/a8dhx/
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: deprecated-meeg
+deprecated-meeg:
     dir: deprecated
     basename: meeg
-    google_id: ''
     link: https://docs.google.com/spreadsheets/d/1OhkmbtgIWdFxSVjpu6A8PWoAuqev0jY-98GFQlwBCy0/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: eyetracking
+eyetracking:
     dir: eyetracking
     basename: eyetracking
     google_id: 1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o
@@ -210,7 +158,7 @@
     landing page: 'README_eyetracker-en.md '
     repo: https://github.com/Remi-Gau/cobidas-eyetracker
 
--   schema: pet
+pet:
     dir: pet
     basename: pet
     google_id: 1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8
@@ -220,7 +168,7 @@
     landing page: README_PET-en.md
     repo: https://github.com/Remi-Gau/cobidas-PET
 
--   schema: reexecution
+reexecution:
     dir: reexecution
     basename: reexecution
     google_id: 1M9H7Bkti4OEVrYETajLbpbwY0T-QqSkpRUiwTz6-5Vc
@@ -230,242 +178,147 @@
     landing page: README_reexecute-en.md
     repo: https://github.com/Remi-Gau/cobidas_reexecute
 
--   schema: resp-mri_soft
+resp-mri_soft:
     dir: response_options
     basename: mri_softwares
     google_id: 1TT38bvZimEnfBdp4O0i2_YEnUk9J60QXAJykGSxJsjI
     link: https://docs.google.com/spreadsheets/d/1TT38bvZimEnfBdp4O0i2_YEnUk9J60QXAJykGSxJsjI/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-pres_soft
+resp-pres_soft:
     dir: response_options
     basename: stimulus_presentation_softwares
     google_id: 1Gal7vMIJk4EOa1XrKgioLyfAvQJKQQDSw3YlEAeCecA
     link: https://docs.google.com/spreadsheets/d/1Gal7vMIJk4EOa1XrKgioLyfAvQJKQQDSw3YlEAeCecA/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-multiple_comp
+resp-multiple_comp:
     dir: response_options
     basename: multiple_comparisons
     google_id: 19-030DcknqEL-aSYhG-BwosMGQo_WMvyiveita5wLv8
     link: https://docs.google.com/spreadsheets/d/19-030DcknqEL-aSYhG-BwosMGQo_WMvyiveita5wLv8/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-interp
+resp-interp:
     dir: response_options
     basename: interpolations
     google_id: 1aN4HzzZLcc_IywvuXqOzlqApl7v2NBGcHSjUTmEWlEo
     link: https://docs.google.com/spreadsheets/d/1aN4HzzZLcc_IywvuXqOzlqApl7v2NBGcHSjUTmEWlEo/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-cost_functions
+resp-cost_functions:
     dir: response_options
     basename: cost_functions
     google_id: 1MWyPZ_EpaJ8qxQJOH5Zmnibl0npcewHtDIH5Yfgtx-c
     link: https://docs.google.com/spreadsheets/d/1MWyPZ_EpaJ8qxQJOH5Zmnibl0npcewHtDIH5Yfgtx-c/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-meeg_ref
+resp-meeg_ref:
     dir: response_options
     basename: meeg_reference_electrodes
     google_id: 11GXVYHfqMOCnU7jeBR0MZQbUU1rUh2Jf8DSRAEAPsV0
     link: https://docs.google.com/spreadsheets/d/11GXVYHfqMOCnU7jeBR0MZQbUU1rUh2Jf8DSRAEAPsV0/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-meeg_analysis_soft
+resp-meeg_analysis_soft:
     dir: response_options
     basename: meeg_analysis_softwares
     google_id: 1HIZddFerYChctkUANE7AAoQXVA8B_1rKnjXpw3XkS6Q
     link: https://docs.google.com/spreadsheets/d/1HIZddFerYChctkUANE7AAoQXVA8B_1rKnjXpw3XkS6Q/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-meeg_amplifier_brands
+resp-meeg_amplifier_brands:
     dir: response_options
     basename: meeg_amplifier_brands
     google_id: 1fIw2DLSCBpNQ0WnGmbbV1G7L5bywXkNCTNP_UFroNe0
     link: https://docs.google.com/spreadsheets/d/1fIw2DLSCBpNQ0WnGmbbV1G7L5bywXkNCTNP_UFroNe0/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-meeg_acq_softwares
+resp-meeg_acq_softwares:
     dir: response_options
     basename: meeg_acquisition_softwares
     google_id: 10qiox_kb-F0RjF1vfd1B8dyZMF7kF9UoMBHrfW-IqLA
     link: https://docs.google.com/spreadsheets/d/10qiox_kb-F0RjF1vfd1B8dyZMF7kF9UoMBHrfW-IqLA/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-eeg_cap_types
+resp-eeg_cap_types:
     dir: response_options
     basename: eeg_cap_types
     google_id: 1Wy6Vts1ruSFqLZ4Ftfuq2vP4rASfZBe1RCzjHECVRL0
     link: https://docs.google.com/spreadsheets/d/1Wy6Vts1ruSFqLZ4Ftfuq2vP4rASfZBe1RCzjHECVRL0/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-boolean
+resp-boolean:
     dir: response_options
     basename: boolean
     google_id: 1l8_89p6zCrku7ETqThXZvpy6BvIwnFhPfNRIXn1bmcU
     link: https://docs.google.com/spreadsheets/d/1l8_89p6zCrku7ETqThXZvpy6BvIwnFhPfNRIXn1bmcU/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: test
+test:
     dir: tests
     basename: test
-    google_id: ''
     link: https://github.com/Remi-Gau/eCobidas/blob/main/tests/inputs/test.tsv
     citation: http://google.com
-    app link: ''
-    landing page: ''
     repo: https://github.com/Remi-Gau/eCobidas
 
--   schema: resp-ver-spm
+resp-ver-spm:
     dir: response_options
     basename: spm_version
     google_id: 1ZfxJdQ-a9Y-hoY37jZN8stPHjQmyHxQKM3wEhv8MqAo
     link: https://docs.google.com/spreadsheets/d/1ZfxJdQ-a9Y-hoY37jZN8stPHjQmyHxQKM3wEhv8MqAo/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-ver-linux
+resp-ver-linux:
     dir: response_options
     basename: linux_version
     google_id: 1UQhId75_vEBfsJOtoZK2caeiJCCWuxWwJtUxcdNa8pg
     link: https://docs.google.com/spreadsheets/d/1UQhId75_vEBfsJOtoZK2caeiJCCWuxWwJtUxcdNa8pg/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-operating_systems
+resp-operating_systems:
     dir: response_options
     basename: operating_systems
     google_id: 1tPBQArrw_vXPvR2JKURmCrW4Ldbi2Yta83QAyyqHdfs
     link: https://docs.google.com/spreadsheets/d/1tPBQArrw_vXPvR2JKURmCrW4Ldbi2Yta83QAyyqHdfs/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-ver-windows
+resp-ver-windows:
     dir: response_options
     basename: windows_version
     google_id: 1wGN4pP4tojxxqH3baEa6DbDaGjRgjebu-SuLYMhRzmw
     link: https://docs.google.com/spreadsheets/d/1wGN4pP4tojxxqH3baEa6DbDaGjRgjebu-SuLYMhRzmw/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-ver-macos
+resp-ver-macos:
     dir: response_options
     basename: macos_version
     google_id: 1fLyrEbnxj4Y-XWOfvTcaJuZNxDOHGh_nEJ1vXJdJS9E
     link: https://docs.google.com/spreadsheets/d/1fLyrEbnxj4Y-XWOfvTcaJuZNxDOHGh_nEJ1vXJdJS9E/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-eye_preproc_soft
+resp-eye_preproc_soft:
     dir: response_options
     basename: eyetracker_preproc_softwares
     google_id: 1MrDCAoQvDbKr59LT1_lJB8SnXMhxJnRDATLXciA4Jys
     link: https://docs.google.com/spreadsheets/d/1MrDCAoQvDbKr59LT1_lJB8SnXMhxJnRDATLXciA4Jys/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-eye_model
+resp-eye_model:
     dir: response_options
     basename: eyetracker_model_name
     google_id: 14Zo4ltjKOyiJ9wUd5ZybMt6MnEryMc23KAb7sspT0Ko
     link: https://docs.google.com/spreadsheets/d/14Zo4ltjKOyiJ9wUd5ZybMt6MnEryMc23KAb7sspT0Ko/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-eye_producer
+resp-eye_producer:
     dir: response_options
     basename: eyetracker_producer
     google_id: 1SxM0c3QgRprfPM8KL8SBRaUGCGKzRKFG4apZ2NwcpqM
     link: https://docs.google.com/spreadsheets/d/1SxM0c3QgRprfPM8KL8SBRaUGCGKzRKFG4apZ2NwcpqM/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-amp_meas
+resp-amp_meas:
     dir: response_options
     basename: amplitude_measurement
     google_id: 1d2MR-XUVtA-8c1OHq_Y77D8G3XQkkHUaz1dveM5IHng
     link: https://docs.google.com/spreadsheets/d/1d2MR-XUVtA-8c1OHq_Y77D8G3XQkkHUaz1dveM5IHng/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-meeg_waveform
+resp-meeg_waveform:
     dir: response_options
     basename: waveform
     google_id: 1dvWOmcoEztNnNH0QQW3b5cBELdkWRPsSdC50WnZn1xI
     link: https://docs.google.com/spreadsheets/d/1dvWOmcoEztNnNH0QQW3b5cBELdkWRPsSdC50WnZn1xI/edit?usp=sharing
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-meeg_filter
+resp-meeg_filter:
     dir: response_options
     basename: filter
     google_id: 1Hp1k6FNovwLiZSm2ev75glXesA_czwgnyyYf9c1MReE
     link: https://docs.google.com/spreadsheets/d/1Hp1k6FNovwLiZSm2ev75glXesA_czwgnyyYf9c1MReE/
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''
 
--   schema: resp-meeg_latency
+resp-meeg_latency:
     dir: response_options
     basename: latency_measurement
     google_id: 1Wy4yUuwi-RoDex_zTVGvCCjrydHGH7xZcwFBNuF4KBc
     link: https://docs.google.com/spreadsheets/d/1Wy4yUuwi-RoDex_zTVGvCCjrydHGH7xZcwFBNuF4KBc/edit#gid=0
-    citation: ''
-    app link: ''
-    landing page: ''
-    repo: ''

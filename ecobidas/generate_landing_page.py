@@ -3,7 +3,7 @@
 from pathlib import Path
 
 from ecobidas.template_manager import TemplateManager
-from ecobidas.utils import get_metatable
+from ecobidas.utils import get_spreadsheets_info
 
 
 def main(output_dir: Path | None = None) -> None:
@@ -14,7 +14,7 @@ def main(output_dir: Path | None = None) -> None:
 
     template = TemplateManager.env.get_template("landing_page.j2")
 
-    df = get_metatable()
+    df = get_spreadsheets_info()
 
     apps_lists = df[df["app link"].notnull()]
     apps = list(apps_lists["basename"])
