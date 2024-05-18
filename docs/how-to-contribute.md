@@ -47,7 +47,7 @@ format.
 The spreadsheets are hosted on this
 [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
 and we try to keep a back-up in the
-[csv folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs).
+[csv folder](https://github.com/Remi-Gau/eCobidas/tree/main/inputs).
 
 The MRI part is the more advanced at this moment but we are looking for people
 to help with the M/EEG part.
@@ -58,7 +58,7 @@ details [here](./spreadsheets.md).
 ### Boilerplate method sections
 
 We want to create
-[boilerplate method sections](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/boilerplate)
+[boilerplate method sections](https://github.com/Remi-Gau/eCobidas/tree/main/inputs/boilerplate)
 corresponding to a single item or a set of items of the checklist to automate
 methods writing once the checklist is completed. There is a lot of work to do
 there in terms of writing the boilerplate text as well as automating the methods
@@ -72,7 +72,7 @@ Boilerplate related issues listed
 If you don't understand something about the project, its goals, its
 implementation or how to use, then it's most likely that we did not do a good
 enough job at explaining and describing it.
-[Get in touch](https://github.com/Remi-Gau/eCobidas/tree/master/README.md#how-to-reach-us)
+[Get in touch](https://github.com/Remi-Gau/eCobidas/tree/main/README.md#how-to-reach-us)
 and we can work together to improve our documentation.
 
 There are also
@@ -82,7 +82,7 @@ that need to be expanded.
 ### Conversion scripts
 
 We use some
-[python code](https://github.com/Remi-Gau/eCobidas/tree/master/python) to
+[python code](https://github.com/Remi-Gau/eCobidas/tree/main/ecobidas) to
 convert the spreadsheets into the set of `jsonld` files that the user interface
 needs as inputs to display the checklists. This needs further improvement so if
 python is your jam, feel free to dive in.
@@ -94,16 +94,14 @@ automating the creation of schemas, so there are definitely some features
 waiting to be written there.
 
 There is more information on how to set things up in the
-[CONTRIBUTING.md](https://github.com/Remi-Gau/eCobidas/tree/master/CONTRIBUTING.md)
-and the readme of the
-[python package](https://github.com/Remi-Gau/eCobidas/tree/master/python/README.md).
+[CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ### User interface
 
 The [user interface](https://github.com/ReproNim/schema-ui) is Javascript based
 and uses the [Vue framework](https://vuejs.org/) and this also needs a lot of
 tweaking, so if Javascript is cup of tea:
-[get in touch!](https://github.com/Remi-Gau/eCobidas/tree/master/README.md#how-to-reach-us)
+[get in touch!](https://github.com/Remi-Gau/eCobidas/tree/main/README.md#how-to-reach-us)
 
 Here are
 [some of the issues](https://github.com/Remi-Gau/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Auser-interface)

@@ -4,11 +4,10 @@ The spreadsheets that allow us to generate the different checklists are hosted
 on this
 [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
 and we try to keep a back-up in the
-[folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs).
+[folder](https://github.com/Remi-Gau/eCobidas/tree/main/inputs).
 
 The
-[`download_tsv.sh`](https://github.com/Remi-Gau/eCobidas/tree/master/download_tsv.sh)
-bash script will directly download those spreadsheets as csv files into the
+??? will directly download those spreadsheets as csv files into the
 `inputs` folder.
 
 <!-- generate the table below using python/app_list_table.py -->
@@ -123,9 +122,9 @@ Here follows a description of the columns' content.
 ### Content common to all spreadsheets
 
 The description of the columns common to all spreadsheet is described in the
-[data dictionary](https://github.com/Remi-Gau/eCobidas/tree/master/ecobidas/inputs/data-dictionary.json)
+[data dictionary](https://github.com/Remi-Gau/eCobidas/tree/main/ecobidas/inputs/data-dictionary.json)
 in the
-[inputs folder](https://github.com/Remi-Gau/eCobidas/tree/master/inputs/).
+[inputs folder](https://github.com/Remi-Gau/eCobidas/tree/main/inputs/).
 
 Each column is described by an element in the JSON data dictionarry.
 
