@@ -67,6 +67,11 @@ def convert(schema: str, output_dir: str, repo: str, branch: str) -> None:
 
     schema_list = [x for x in spreadsheets_info if schema in x]
 
+    if not schema_list:
+        logger.error(
+            f"No known schema for: {schema=}" f"Known schemas are: {list(spreadsheets_info.keys())}"
+        )
+
     for this_schema in schema_list:
         # add debug parameter
         protocol = create_schema(this_schema, output_dir)

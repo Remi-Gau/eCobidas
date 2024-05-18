@@ -40,7 +40,7 @@ def download_spreadsheet(schema: str, output_dir: Path = None) -> None:
 
         logger.info(
             f"\nDownloading GoogleSheet https://docs.google.com/spreadsheets/d/{google_id} "
-            f"for {subfolder}/{output_filename} spreadsheet "
+            f"\nfor {subfolder}/{output_filename} spreadsheet "
             f"\nto {output_file}"
         )
 
@@ -55,7 +55,7 @@ def download_spreadsheet(schema: str, output_dir: Path = None) -> None:
 
         if "resp" not in schema:
             validate_downloaded_file(output_file)
-        logger.info("\nDONE")
+        print()
 
 
 def validate_downloaded_file(file: str | Path) -> None:
@@ -68,10 +68,23 @@ def validate_downloaded_file(file: str | Path) -> None:
 
     columns = {x for x in df.columns if "Unnamed:" not in x}
 
-    if missing_keys := set(data_dictionary.keys()) - columns:
-        logger.warning(f"\nThe following expected columns are missing: {sorted(missing_keys)}")
+    required_keys = {
+        key for key, value in data_dictionary.items() if value.get("RequirementLevel") == "required"
+    }
+    recommended_keys = {
+        key
+        for key, value in data_dictionary.items()
+        if value.get("RequirementLevel") == "recommended"
+    }
+
+    if missing_keys := required_keys - columns:
+        logger.error(f"\nThe following expected columns are missing: {sorted(missing_keys)}")
+
+    if missing_keys := recommended_keys - columns:
+        logger.warning(f"\nThe following recommended columns are missing: {sorted(missing_keys)}")
+
     if extra_columns := columns - set(data_dictionary.keys()):
-        logger.warning(
+        logger.info(
             f"\nThe following columns are missing from the data dictionary: {sorted(extra_columns)}"
         )
 

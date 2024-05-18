@@ -2,16 +2,17 @@
     "include": {
         "VariableName": "include",
         "Description": "whether the item should be generated and included in the activity",
-        "Levels": ""
+        "RequirementLevel": "required"
     },
     "activity_pref_label": {
-
         "VariableName": "activity_pref_label",
-        "Description": "preferred label of the activity"
+        "Description": "preferred label of the activity",
+        "RequirementLevel": "recommended"
     },
     "preamble": {
         "VariableName": "preamble",
-        "Description": "introductory text to the activity"
+        "Description": "introductory text to the activity",
+        "RequirementLevel": "recommended"
     },
     "activity_order": {
         "VariableName": "",
@@ -20,19 +21,23 @@
     "item": {
         "LongName": "name of the item",
         "VariableName": "item",
-        "Description": ""
+        "Description": "",
+        "RequirementLevel": "required"
     },
     "item_pref_label": {
         "VariableName": "item_pref_label",
-        "Description": "preferred label of the item"
+        "Description": "preferred label of the item",
+        "RequirementLevel": "recommended"
     },
     "item_description": {
         "VariableName": "item_descrip",
-        "Description": "description of the item"
+        "Description": "description of the item",
+        "RequirementLevel": "recommended"
     },
     "item_order": {
         "VariableName": "",
-        "Description": "Position in which the item is supposed to be presented in the activity."
+        "Description": "Position in which the item is supposed to be presented in the activity.",
+        "RequirementLevel": "required"
     },
     "duplicate": {
         "VariableName": "",
@@ -40,11 +45,13 @@
     },
     "question": {
         "VariableName": "question",
-        "Description": "question corresponding to the item"
+        "Description": "question corresponding to the item",
+        "RequirementLevel": "required"
     },
     "field_type": {
         "VariableName": "resp_type",
         "Description": "type of response expected",
+        "RequirementLevel": "required",
         "Levels": [
             {
                 "Name": "integer",
@@ -74,7 +81,8 @@
     },
     "choices": {
         "VariableName": "choice",
-        "Description": "list of possible responses"
+        "Description": "list of possible responses",
+        "RequirementLevel": "required"
     },
     "mandatory": {
         "VariableName": "mandatory",
@@ -89,16 +97,18 @@
                 "Name": 0,
                 "Description": "a response to this item is not required"
             }
-        ]
+        ],
+        "RequirementLevel": "recommended"
     },
     "visibility": {
         "VariableName": "vis",
         "Description": "Lists the conditions that have to be fulfilled for each item to be displayed to the user. By default, an item will be displayed. Other it will only be shown if a specific answer has been given to a previous item: in this case the expression in this cell must be a valid javascript expression like: 'previousItem === 1' ",
-        "Default": 1
+        "RequirementLevel": "required"
     },
     "details": {
         "VariableName": "",
-        "Description": "Some questions might require some additional information to be understandable by all users, so any extra information to be displayed to the users should be put the detail column."
+        "Description": "Some questions might require some additional information to be understandable by all users, so any extra information to be displayed to the users should be put the detail column.",
+        "RequirementLevel": "recommended"
     },
     "bids_status": {
         "VariableName": "",

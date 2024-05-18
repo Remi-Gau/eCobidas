@@ -1,28 +1,28 @@
-question	details	field_type	choices	item	item_order	include	mandatory	visibility	activity_order	activity_pref_label
-	Method for detecting movement artifacts, movement-related variation, and remediation (e.g. ‘scrubbing’, ‘de-spiking’, etc.)	char	method for detecting movement artifacts | movement-related variation | and remediation		1	1	1	1	1	Functional connectivity	Confound adjustment and filtering
-	Use of global signal regression, exact type of global signal used and how it was computed				2	1	1	1	1	Functional connectivity	Confound adjustment and filtering
-	Whether a high­ or low-pass temporal filtering is applied to data, and at which point in the analysis pipeline. Note, any temporal regression model using filtered data should have it’s regressors likewise filtered	boolean	Was high­ or low-pass temporal filtering applied to data? when?		3	1	1	1	1	Functional connectivity	Confound adjustment and filtering
-	Algorithm to estimate components	char			4	1	1	1	1	Functional connectivity	Independent Component Analysis
-	Number of components (if fixed), or algorithm for estimating number of components	char			5	1	1	1	1	Functional connectivity	Independent Component Analysis
-	If used, method to sbooleanthesize multiple runs	char			6	1	1	1	1	Functional connectivity	Independent Component Analysis
-	Sorting method of IC’s, if any	char			7	1	1	1	1	Functional connectivity	Independent Component Analysis
-	Detailed description of how components were chosen for further analysis	char			8	1	1	1	1	Functional connectivity	Independent Component Analysis
-	Definition of the seed region(s)	char			9	1	1	1	1	Functional connectivity	Dependent variable definition
-	Rationale for choosing these regions	char			10	1	1	1	1	Functional connectivity	Dependent variable definition
-	Number of ROIs	float			11	1	1	1	1	Functional connectivity	Dependent variable definition
-	How the ROI’s are defined (e.g. citable anatomical atlas; auxiliary fMRI experiments); note if ROIs overlap	char			12	1	1	1	1	Functional connectivity	Dependent variable definition
-	Assignment of signals to regions (i.e. how a time series is obtained from each region, e.g. averaging or first singular vector)	char			13	1	1	1	1	Functional connectivity	Dependent variable definition
-	Note if considering only bilateral (L+R) merged regions				14	1	1	1	1	Functional connectivity	Dependent variable definition
-	Note if considering only inter-hemispheric homotopic connectivity				15	1	1	1	1	Functional connectivity	Dependent variable definition
-	Measure of dependence used, e.g. Pearson’s (full) correlation, partial correlation, mutual information	dropdown	Pearson’s (full) correlation | partial correlation | mutual information | ...		16	1	1	1	1	Functional connectivity	Measure model
-	Use of Fisher’s Z-transform (Yes/No) and, if standardised, effective N is used to compute standard error (to account for any filtering operations on the data)	boolean	Use of Fisher’s Z-transform		17	1	1	1	1	Functional connectivity	Measure model
-	Estimator used for partial correlation	char			18	1	1	1	1	Functional connectivity	Measure model
-	Estimator used for mutual information	char			19	1	1	1	1	Functional connectivity	Measure model
-	Regression model used to remove confounding effects (Pearson or partial correlation)	dropdown	Pearson correaltion | partial correlation		20	1	1	1	1	Functional connectivity	Measure model
-	Model	char			21	1	1	1	1	Functional connectivity	Effectivity connectivity
-	Algorithm used to fit model	char			22	1	1	1	1	Functional connectivity	Effectivity connectivity
-	If per-subject model, method used to generalize inferences to population				23	1	1	1	1	Functional connectivity	Effectivity connectivity
-	Itemize models considered, and method used for model comparison	char			24	1	1	1	1	Functional connectivity	Effectivity connectivity
-	Report the ‘dependent variable’ and ‘functional connectivity measure’ used (as Statistical Modeling and Inference > Functional Connectivity > Functional Connectivity measure / model)	char	Report the ‘dependent variable’ and ‘functional connectivity measure’ used (as Statistical Modeling and Inference > Functional Connectivity > Functional Connectivity measure / model)		25	1	1	1	1	Functional connectivity	Graph analysis
-	Weighted graph analysis or Binarized graph analysis is used, clarifying the method used for thresholding (e.g. a 10% density threshold, or a statistically-defined threshold); consider the sensitivity of your findings to the particular choice of threshold used ; the method used for thresholding; consider the sensitivity of your findings to the particular choice of threshold used?	dropdown	weighted graph analysis | binarized graph		26	1	1	1	1	Functional connectivity	Graph analysis
-	Itemise the graph summaries used (e.g. clustering coefficient, efficiency, etc.), whether these are global or per-node/per-edge summaries. In particular with fMRI or EEG, clarify if measures applied to individual subject networks or group networks	char			27	1	1	1	1	Functional connectivity	Graph analysis
+question	details	field_type	choices	item	item_pref_label	item_order	include	mandatory	visibility	activity_order	activity_pref_label
+	Method for detecting movement artifacts, movement-related variation, and remediation (e.g. ‘scrubbing’, ‘de-spiking’, etc.)	char	method for detecting movement artifacts | movement-related variation | and remediation			1	1	1	1	1	Functional connectivity	Confound adjustment and filtering
+	Use of global signal regression, exact type of global signal used and how it was computed					2	1	1	1	1	Functional connectivity	Confound adjustment and filtering
+	Whether a high­ or low-pass temporal filtering is applied to data, and at which point in the analysis pipeline. Note, any temporal regression model using filtered data should have it’s regressors likewise filtered	boolean	Was high­ or low-pass temporal filtering applied to data? when?			3	1	1	1	1	Functional connectivity	Confound adjustment and filtering
+	Algorithm to estimate components	char				4	1	1	1	1	Functional connectivity	Independent Component Analysis
+	Number of components (if fixed), or algorithm for estimating number of components	char				5	1	1	1	1	Functional connectivity	Independent Component Analysis
+	If used, method to sbooleanthesize multiple runs	char				6	1	1	1	1	Functional connectivity	Independent Component Analysis
+	Sorting method of IC’s, if any	char				7	1	1	1	1	Functional connectivity	Independent Component Analysis
+	Detailed description of how components were chosen for further analysis	char				8	1	1	1	1	Functional connectivity	Independent Component Analysis
+	Definition of the seed region(s)	char				9	1	1	1	1	Functional connectivity	Dependent variable definition
+	Rationale for choosing these regions	char				10	1	1	1	1	Functional connectivity	Dependent variable definition
+	Number of ROIs	float				11	1	1	1	1	Functional connectivity	Dependent variable definition
+	How the ROI’s are defined (e.g. citable anatomical atlas; auxiliary fMRI experiments); note if ROIs overlap	char				12	1	1	1	1	Functional connectivity	Dependent variable definition
+	Assignment of signals to regions (i.e. how a time series is obtained from each region, e.g. averaging or first singular vector)	char				13	1	1	1	1	Functional connectivity	Dependent variable definition
+	Note if considering only bilateral (L+R) merged regions					14	1	1	1	1	Functional connectivity	Dependent variable definition
+	Note if considering only inter-hemispheric homotopic connectivity					15	1	1	1	1	Functional connectivity	Dependent variable definition
+	Measure of dependence used, e.g. Pearson’s (full) correlation, partial correlation, mutual information	dropdown	Pearson’s (full) correlation | partial correlation | mutual information | ...			16	1	1	1	1	Functional connectivity	Measure model
+	Use of Fisher’s Z-transform (Yes/No) and, if standardised, effective N is used to compute standard error (to account for any filtering operations on the data)	boolean	Use of Fisher’s Z-transform			17	1	1	1	1	Functional connectivity	Measure model
+	Estimator used for partial correlation	char				18	1	1	1	1	Functional connectivity	Measure model
+	Estimator used for mutual information	char				19	1	1	1	1	Functional connectivity	Measure model
+	Regression model used to remove confounding effects (Pearson or partial correlation)	dropdown	Pearson correaltion | partial correlation			20	1	1	1	1	Functional connectivity	Measure model
+	Model	char				21	1	1	1	1	Functional connectivity	Effectivity connectivity
+	Algorithm used to fit model	char				22	1	1	1	1	Functional connectivity	Effectivity connectivity
+	If per-subject model, method used to generalize inferences to population					23	1	1	1	1	Functional connectivity	Effectivity connectivity
+	Itemize models considered, and method used for model comparison	char				24	1	1	1	1	Functional connectivity	Effectivity connectivity
+	Report the ‘dependent variable’ and ‘functional connectivity measure’ used (as Statistical Modeling and Inference > Functional Connectivity > Functional Connectivity measure / model)	char	Report the ‘dependent variable’ and ‘functional connectivity measure’ used (as Statistical Modeling and Inference > Functional Connectivity > Functional Connectivity measure / model)			25	1	1	1	1	Functional connectivity	Graph analysis
+	Weighted graph analysis or Binarized graph analysis is used, clarifying the method used for thresholding (e.g. a 10% density threshold, or a statistically-defined threshold); consider the sensitivity of your findings to the particular choice of threshold used ; the method used for thresholding; consider the sensitivity of your findings to the particular choice of threshold used?	dropdown	weighted graph analysis | binarized graph			26	1	1	1	1	Functional connectivity	Graph analysis
+	Itemise the graph summaries used (e.g. clustering coefficient, efficiency, etc.), whether these are global or per-node/per-edge summaries. In particular with fMRI or EEG, clarify if measures applied to individual subject networks or group networks	char				27	1	1	1	1	Functional connectivity	Graph analysis
