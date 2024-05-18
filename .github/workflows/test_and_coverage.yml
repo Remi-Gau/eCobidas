@@ -1,7 +1,13 @@
 ---
 name: Test and coverage
 
-on: [push, pull_request]
+on:
+    push:
+        branches:
+        -   master
+    pull_request:
+        branches:
+        -   '*'
 
 env:
     FORCE_COLOR: true
@@ -21,7 +27,7 @@ jobs:
         -   name: Set up Python
             uses: actions/setup-python@v5
             with:
-                python-version: 3.12
+                python-version: 3.11
         -   name: Install dependencies
             run: pip install --upgrade pip tox
         -   name: Show tox config
