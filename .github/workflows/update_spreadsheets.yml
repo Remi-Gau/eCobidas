@@ -1,0 +1,47 @@
+---
+name: Update spreadsheet
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches:
+        -   '*'
+
+  # to trigger update manually from the Action tab in github
+    workflow_dispatch:
+        inputs:
+            log:
+                description: update spreadsheet
+                required: false
+
+jobs:
+    update_spreadsheet:
+        runs-on: ubuntu-latest
+        if: github.repository_owner == 'Remi-Gau'
+        steps:
+        -   name: Checkout repository
+            uses: actions/checkout@v4
+        -   name: Set up Python
+            uses: actions/setup-python@v5
+            with:
+                python-version: 3.11
+        -   name: Install dependencies
+            run: pip install --upgrade pip tox pre-commit
+        -   name: Show tox config
+            run: tox c
+        -   name: Update TSVs
+            run: tox run -e update
+        -   name: Clean up
+            run: |
+                pre-commit install
+                pre-commit run -a
+    # if there have been changes,
+    # a PR is created using the checkout branch for this workflow
+    # https://github.com/peter-evans/create-pull-request
+        -   name: Create Pull-Request
+            uses: peter-evans/create-pull-request@v6
+            with:
+                commit-message: Update spreadsheets
+                delete-branch: true
+                title: 'MNT: Update spreadsheets'
