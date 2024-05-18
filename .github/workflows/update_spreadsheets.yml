@@ -4,10 +4,6 @@ name: Update spreadsheet
 on:
     push:
         branches: [master]
-    pull_request:
-        branches:
-        -   '*'
-
   # to trigger update manually from the Action tab in github
     workflow_dispatch:
         inputs:
@@ -38,9 +34,9 @@ jobs:
             run: |
                 pre-commit install
                 pre-commit run -a
-    # if there have been changes,
-    # a PR is created using the checkout branch for this workflow
-    # https://github.com/peter-evans/create-pull-request
+        # if there have been changes,
+        # a PR is created using the checkout branch for this workflow
+        # https://github.com/peter-evans/create-pull-request
         -   name: Create Pull-Request
             uses: peter-evans/create-pull-request@v6
             with:
