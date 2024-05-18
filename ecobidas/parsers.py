@@ -128,13 +128,11 @@ def global_parser(formatter_class: type[HelpFormatter] = HelpFormatter) -> Argum
         formatter_class=parser.formatter_class,
     )
     serve_parser.add_argument(
-        "-f",
-        "--folder",
+        "folder",
         help="""
         Folder to serve.
         """,
-        required=False,
-        default=None,
+        default="./cobidas_schema/schemas/neurovault/protocols/",
         type=str,
         nargs=1,
     )

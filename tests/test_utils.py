@@ -17,7 +17,7 @@ def test_get_schema_info(this_schema, dir, basename):
 
 def test_get_output_dir(tmp_path):
     this_schema = Path(__file__).parent / "inputs" / "test.tsv"
-    get_output_dir(this_schema, out_dir=tmp_path)
+    get_output_dir(this_schema, output_dir=tmp_path)
 
 
 @pytest.mark.parametrize(
