@@ -6,13 +6,11 @@ from ecobidas.create_schema import make_preamble
 def test_make_preamble():
     items = pd.DataFrame({"preamble": ["this is the preamble"], "item": ["TEST_1"]})
 
-    schema_info = pd.DataFrame(
-        {
-            "citation": ["citation"],
-            "repo": ["github_repo"],
-            "link": ["google_sheet"],
-        }
-    )
+    schema_info = {
+        "citation": "citation",
+        "repo": "github_repo",
+        "link": "google_sheet",
+    }
 
     preamble = make_preamble(schema_info, items)
 

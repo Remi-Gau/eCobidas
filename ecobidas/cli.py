@@ -63,10 +63,9 @@ def convert(schema: str, output_dir: str, repo: str, branch: str) -> None:
 
     logger.debug(f"{schema=}, {output_dir=}, {repo=}, {branch=}")
 
-    df = get_spreadsheets_info()
+    spreadsheets_info = get_spreadsheets_info()
 
-    schema_to_run = df[df["schema"].str.match(f"(^{schema}.*)") == True]
-    schema_list = list(schema_to_run["schema"])
+    schema_list = [x for x in spreadsheets_info if schema in x]
 
     for this_schema in schema_list:
         # add debug parameter

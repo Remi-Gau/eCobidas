@@ -43,7 +43,7 @@ def create_schema(
 
     schema_info = get_schema_info(this_schema)
 
-    if schema_info["dir"].tolist()[0] == "response_options":
+    if schema_info["dir"] == "response_options":
         create_response_options(schema_info, df, output_dir)
         return
 
@@ -109,7 +109,7 @@ def create_schema(
 def initialize_protocol(this_schema: Path | str, output_dir: Path) -> tuple[Protocol, Path]:
     schema_info = get_schema_info(this_schema)
 
-    protocol_name = snake_case(schema_info["basename"].tolist()[0])
+    protocol_name = snake_case(schema_info["basename"])
 
     # TODO
     # are we sure we want to change the case or the protocol
@@ -181,7 +181,7 @@ def create_response_options(schema_info: dict, df: pd.DataFrame, output_dir: str
     )
 
 
-def make_preamble(schema_info: dict, items: pd.DataFrame) -> str:
+def make_preamble(schema_info: dict[str, str], items: pd.DataFrame) -> str:
     """Do nothing if preamble is empty.
 
     but otherwise we try to create an additional 'header' to the activity
@@ -194,15 +194,15 @@ def make_preamble(schema_info: dict, items: pd.DataFrame) -> str:
 
     info = dict(
         preamble=preamble,
-        xls=schema_info["link"].tolist()[0],
+        xls=schema_info["link"],
         repo="",
         citation="",
     )
 
-    if schema_info["repo"].any():
-        info["repo"] = schema_info["repo"].tolist()[0]
-    if schema_info["citation"].any():
-        info["citation"] = schema_info["citation"].tolist()[0]
+    if schema_info["repo"]:
+        info["repo"] = schema_info["repo"]
+    if schema_info["citation"]:
+        info["citation"] = schema_info["citation"]
 
     preamble = (
         "<p>"
