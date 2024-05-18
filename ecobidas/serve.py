@@ -15,7 +15,7 @@ class CORSRequestHandler(SimpleHTTPRequestHandler):
         SimpleHTTPRequestHandler.end_headers(self)
 
 
-def serve(folder: str | Path = None):
+def serve(folder: str | Path | None = None) -> None:
     if folder is None or not Path(folder).exists():
         folder = (Path(__file__).parent / ".." / "cobidas_schema" / "schemas").absolute()
 

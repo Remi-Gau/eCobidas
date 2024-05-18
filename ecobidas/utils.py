@@ -1,5 +1,6 @@
 from functools import lru_cache
 from pathlib import Path
+from typing import Optional
 
 import pandas as pd
 from loguru import logger
@@ -12,7 +13,7 @@ def root_dir() -> Path:
 
 
 @lru_cache
-def get_input_dir(source_dir: str | Path = None) -> Path:
+def get_input_dir(source_dir: Optional[str | Path] = None) -> Path:
     if source_dir is None:
         source_dir = root_dir()
     return Path(source_dir) / "inputs"
@@ -53,7 +54,7 @@ def get_landing_page(schema_info: dict) -> str:
     return repo + landing_page[0]
 
 
-def get_schema_info(this_schema) -> pd.DataFrame:
+def get_schema_info(this_schema: str | Path) -> pd.DataFrame:
     df = get_metatable()
     if Path(this_schema).is_file():
         this_schema = Path(this_schema).stem
@@ -88,7 +89,7 @@ def load_data(this_schema) -> pd.DataFrame:
     return pd.read_csv(input_file, sep="\t")
 
 
-def convert_to_str(df_field):
+def convert_to_str(df_field) -> str:
     return df_field.tolist()[0]
 
 

@@ -52,29 +52,23 @@ def cli(argv: Sequence[str] = sys.argv) -> None:
         exit(0)
 
     if args.command in ["serve"]:
-        serve(folder=args.folder)
+        folder = args.folder if args.folder is None else args.folder[0]
+        serve(folder=folder)
         exit(0)
 
 
-def convert(schema, output_dir, repo, branch):
+def convert(schema: str, output_dir: str, repo: str, branch: str) -> None:
 
     logger.debug(f"{schema=}, {output_dir=}, {repo=}, {branch=}")
 
     df = get_metatable()
 
     schema_to_run = df[df["schema"].str.match(f"(^{schema}.*)") == True]
-    schema = list(schema_to_run["schema"])
+    schema_list = list(schema_to_run["schema"])
 
-    if isinstance(schema, str):
-        schema = [schema]
-
-    for this_schema in schema:
+    for this_schema in schema_list:
         # add debug parameter
         protocol = create_schema(this_schema, output_dir)
 
         if "resp" not in this_schema:
             print_download(repo, branch, protocol, this_schema)
-
-
-if __name__ == "__main__":
-    convert()
