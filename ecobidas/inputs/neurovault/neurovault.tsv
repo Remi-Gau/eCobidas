@@ -1,5 +1,5 @@
 activity_pref_label	activity_order	item_order	question	unit	details	field_type	choices	item	item_pref_label	visibility	item_description	include	mandatory	preamble	bids_status	bids_file	bids_key	bids_key_for_unit
-Experimental design	1	1	Type of design			select	blocked | event_related | hybrid block/event		type of design	1	type of design	1	1	Describe your exeprimental design
+Experimental design	1	1	Type of design			select	blocked | event_related | hybrid block/event		type of design	1	type of design	1	1	Describe your experimental design
 Experimental design	1	2	Number of imaging runs acquired			integer			number of imaging runs	1	number of imaging runs	1	2
 Experimental design	1	3	Number of blocks, trials or experimental units per imaging run			integer			number of experimental units	1	number of experimental units	1	2
 Experimental design	1	4	Length of each imaging run	seconds		float			length of runs	1	length of runs	1	2
@@ -76,7 +76,7 @@ Individual subject modeling	6	12	Describe method used for high pass filtering			
 Individual subject modeling	6	13	What autocorrelation model was used (or 'none' if none was used)			textarea			autocorrelation model	1	autocorrelation model	1	2
 Individual subject modeling	6	14	Exactly what terms are subtracted from what?			textarea			contrast definition	1	contrast definition	1	1
 Individual subject modeling	6	15	Link to Cognitive Atlas definition of this contrast		Define these in terms of task or stimulus conditions (e.g., 'one-back task with objects versus zero-back task with objects') instead of underlying psychological concepts (e.g., 'working memory').	textarea			contrast definition cogatlas	1	contrast definition cogatlas	1	3
-Group modeling	7	1	Type of group model used			select	Regression		group model type	1	group model type	1	1	Describe the group level analyisis
+Group modeling	7	1	Type of group model used			select	Regression		group model type	1	group model type	1	1	Describe the group level analysis
 Group modeling	7	2	Estimation method used for model			select	ordinary least squares | generalized least squares		group estimation type	1	group estimation type	1	1
 Group modeling	7	3	Software used for group modeling if different from overall package			select	preset:mri_softwares		group modeling software	1	group modeling software	1	2
 Group modeling	7	4	Type of inference for group model			select	random effect | mixed effect | fixed effect		group inference type	1	group inference type	1	1

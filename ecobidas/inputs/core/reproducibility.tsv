@@ -11,5 +11,5 @@ State whether detailed provenance information is available		textarea		provenance
 Provide permanent identifier to the data if possible		textarea		data identifier	data identifier	10	1	1	0	1	Reproducibility	Data	Data
 Provide a URL linking to the relevant resource.	For example, a jupyter notebook implementing key analyses.	textarea		literate programming	literate programming	11	1	1	0	1	Reproducibility	Documentation	Literate program implementing results
 Is the documentation provided in English?		textarea		english language version	english language version	12	1	1	0	1	Reproducibility	Documentation	English language version
-Are the tools publically available?		textarea		tools availability	tools availability	13	1	1	0	1	Reproducibility	Archiving	Tools availability
+Are the tools publicly available?		textarea		tools availability	tools availability	13	1	1	0	1	Reproducibility	Archiving	Tools availability
 Is a virtual environment to facilitate a repeated analysis available?		textarea		virtual appliances	virtual appliances	14	1	1	0	1	Reproducibility	Archiving	Virtual appliances

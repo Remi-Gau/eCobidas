@@ -23,7 +23,7 @@ Specify the slice thickness 	1	millimeters			float			slice thickness		21	1	1	1	1
 Specify the interslice gap 	1	millimeters			float			interslice gap		22	1	1	1	1	Common parameters	interslice gap		2			skip_factor	gap	50
 Specify the 3D matrix size	1				float			3d matrix size		23	imaging_type == 2	1	0	1	Common parameters	3D matrix size
 Specify the slice orientation	1				select	axial | sagittal | coronal | oblique		slice orientation		24	1	1	1	1	Common parameters	Slice orientation					acquisition_orientation	orient	77	38.7
-Is acquisition aligned with scanner axes?	1		Angulation: If acquisition not aligned with scanner axes, specify angulation to AC­PC line (see Slice position procedure)		radio	preset:boolean		slice alignement		25	1	1	0	1	Common parameters	Slice alignement
+Is acquisition aligned with scanner axes?	1		Angulation: If acquisition not aligned with scanner axes, specify angulation to AC­PC line (see Slice position procedure)		radio	preset:boolean		slice alignment		25	1	1	0	1	Common parameters	Slice alignment
 Specify phase encoding direction	1				radio	A/P | P/A | L/R | S/I	PhaseEncodingDirection	phase encoding	PhaseEncodingDirection	26	1	1	0	1	Common parameters	Phase encoding		2	*_<modality_label>.json
 Specify the 3D phase encoding direction	1		For 3D, specify “partition encode” (aka slice) direction		textarea			3d phase encoding		27	imaging_type == 2	1	0	1	Common parameters	Phase encoding	3D phase encoding
 Is phase encoding reversal used?	1				radio	preset:boolean		phase encoding reversal		28	1	1	0	1	Common parameters	Phase encoding	Phase encoding reversal
