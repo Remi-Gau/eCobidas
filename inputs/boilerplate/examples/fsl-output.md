@@ -1,15 +1,5 @@
 # Automatic text outputs from FSL
 
-<!-- TOC -->
-<!-- lint disable -->
-- [Automatic text outputs from FSL](#automatic-text-outputs-from-fsl)
-  - [For pre-processing with FEAT:](#for-pre-processing-with-feat)
-  - [For first-level GLM:](#for-first-level-glm)
-  - [For second-level GLM:](#for-second-level-glm)
-  - [Split up by me (Johannes Algermissen) for which references belongs to which action:](#split-up-by-me-johannes-algermissen-for-which-references-belongs-to-which-action)
-<!-- lint enable -->
-<!-- /TOC -->
-
 ## For pre-processing with FEAT:
 
 Analysis methods FMRI data processing was carried out using FEAT (FMRI Expert

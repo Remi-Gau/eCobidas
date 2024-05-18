@@ -1,10 +1,8 @@
 # Boilerplate text
 
-The boilerplates text are organized in folders for each section of the
-checklist.
+The boilerplates text are organized in folders for each section of the checklist.
 
-The `examples` folder contains examples of boilerplate text that already exist
-out there.
+The `examples` folder contains examples of boilerplate text that already exist out there.
 
 Other examples of templating using Markdown, Python, JSON with
 [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/) : see examples

@@ -7,7 +7,7 @@
     "settings": {
         "python.pythonPath": "env/bin/python",
         "git.ignoreLimitWarning": true,
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": false,
         "python.formatting.provider": "black"
     }
 }

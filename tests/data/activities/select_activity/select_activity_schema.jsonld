@@ -1,0 +1,103 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "select_activity_schema.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "prefLabel": {
+        "en": "Select Activity"
+    },
+    "description": "select activity",
+    "preamble": {
+        "en": "<p><a href='https://github.com/Remi-Gau/eCobidas/blob/master/tests/inputs/test.tsv' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/eCobidas' target='_blank' > Github repository </a> | <a href='http://google.com' target='_blank' > Reference </a><br><br>A list of selection item</p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/radio_item.jsonld",
+            "items/radio_item_multiple_choice.jsonld",
+            "items/select_item.jsonld",
+            "items/select_item_multiple_choice.jsonld",
+            "items/yes_no_do_not_know.jsonld",
+            "items/mri_softwares.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "radio_item",
+                "isAbout": "items/radio_item.jsonld",
+                "prefLabel": {
+                    "en": "radio item"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "radio_item_multiple_choice",
+                "isAbout": "items/radio_item_multiple_choice.jsonld",
+                "prefLabel": {
+                    "en": "radio item multiple choice"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "select_item",
+                "isAbout": "items/select_item.jsonld",
+                "prefLabel": {
+                    "en": "select item"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "select_item_multiple_choice",
+                "isAbout": "items/select_item_multiple_choice.jsonld",
+                "prefLabel": {
+                    "en": "select item multiple choice"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "yes_no_do_not_know",
+                "isAbout": "items/yes_no_do_not_know.jsonld",
+                "prefLabel": {
+                    "en": "yes, no, do not know"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "mri_softwares",
+                "isAbout": "items/mri_softwares.jsonld",
+                "prefLabel": {
+                    "en": "mri softwares"
+                },
+                "isVis": "yes_no_do_not_know == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

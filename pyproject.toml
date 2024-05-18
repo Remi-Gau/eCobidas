@@ -1,0 +1,93 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling", "hatch-vcs"]
+
+[project]
+authors = [{name = "Remi Gau"}]
+dependencies = [
+    "requests_cache",
+    "numpy~=1.26.4",
+    "pandas",
+    "click",
+    "rich",
+    "Jinja2",
+    'loguru',
+    "rich_argparse"
+]
+description = "Statistical learning for neuroimaging in Python"
+# Version from setuptools_scm
+dynamic = ["version"]
+license = {text = "GPL 3.0"}
+maintainers = [{name = "Remi Gau", email = "remi.gau2@mcgill.ca"}]
+name = "ecobidas"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = [
+    'tox'
+]
+test = [
+    "coverage",
+    "pytest>=6.0.0",
+    "pytest-cov"
+]
+
+[project.scripts]
+ecobidas = "ecobidas.cli:cli"
+
+[tool.black]
+line-length = 100
+
+[tool.codespell]
+ignore-words-list = "jist,softwares,te"
+skip = "./.git,*.svg,ecobidas/inputs/**/*.tsv,ecobidas/inputs/**/*.json,"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "ecobidas/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ecobidas"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.isort]
+combine_as_imports = true
+line_length = 100
+profile = "black"
+skip_gitignore = true
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+enable_error_code = ["ignore-without-code", "redundant-expr"]  # "truthy-bool"
+no_implicit_optional = true
+show_error_codes = true
+# strict = true
+warn_redundant_casts = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = [
+    "ecobidas._version",
+    "rich_argparse",
+    "loguru",
+    "reproschema.*",
+    "rich"
+]
+
+[[tool.mypy.overrides]]
+ignore_errors = true
+module = ['tests.*']
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers --doctest-modules --showlocals -s -v --ignore=tools --ignore=reproschema-py --ignore=cobidas_schema --ignore=artemis_schema"
+doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"
+junit_family = "xunit2"
+minversion = "6.0"
+xfail_strict = true

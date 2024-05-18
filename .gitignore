@@ -4,19 +4,26 @@
 
 .~lock*
 
-
-lib/*
+ecobidas/_version.py
 
 names.csv
 
-node_modules
-package.json
+*.DS_Store
+
+.~lock*
+
+# pytest
+.pytest_cache/
+tests/outputs/**
+
+# jupyter notebook
+.ipynb_checkpoints/
+Untitled.ipynb
+
+# javascript
 package-lock.json
-
-schemas
-
-# doc
-site/*
+package.json
+node_modules
 
 Pipfile
 
@@ -36,7 +43,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/

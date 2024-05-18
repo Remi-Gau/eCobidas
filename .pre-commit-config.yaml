@@ -5,24 +5,76 @@ repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
-    -   id: trailing-whitespace
+    -   id: check-ast
+    -   id: check-case-conflict
+    -   id: check-json
+    -   id: check-merge-conflict
+    -   id: check-toml
     -   id: check-yaml
-    -   id: check-added-large-files
     -   id: end-of-file-fixer
+    -   id: mixed-line-ending
+    -   id: trailing-whitespace
 
--   repo: https://github.com/psf/black
+# Sorts Python imports alphabetically and by section with `isort`.
+-   repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+    -   id: isort
+        args: [--profile, black, --settings-path, pyproject.toml]
+
+# Automatically upgrade syntax for newer versions of the language.
+-   repo: https://github.com/asottile/pyupgrade
+    rev: v3.15.2
+    hooks:
+    -   id: pyupgrade
+        args: [--py38-plus]
+
+# Aplly black formatting to python code
+# https://github.com/psf/black
+-   repo: https://github.com/psf/black-pre-commit-mirror
     rev: 24.4.2
     hooks:
     -   id: black
+        args: [--config, pyproject.toml]
 
--   repo: https://github.com/ikamensh/flynt/
-    rev: 1.0.1
+# Checks for spelling errors
+-   repo: https://github.com/codespell-project/codespell
+    rev: v2.2.6
     hooks:
-    -   id: flynt
+    -   id: codespell
+        args: [--toml, pyproject.toml]
+        additional_dependencies: [tomli]
 
-
+# Format YAML files
 -   repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
     rev: 0.2.3
     hooks:
     -   id: yamlfmt
         args: [--mapping, '4', --sequence, '4', --offset, '0']
+
+# Format TOML files
+-   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+    rev: v2.13.0
+    hooks:
+    -   id: pretty-format-toml
+        args: [--autofix, --indent, '4']
+
+# -   repo: https://github.com/pre-commit/mirrors-mypy
+#     rev: v1.8.0
+#     hooks:
+#     -   id: mypy
+#         additional_dependencies: [types-all, pandas-stubs]
+#         args: [--config-file=pyproject.toml]
+
+# Check that Python code complies with PEP8 guidelines
+# flake8 uses pydocstyle to check docstrings: https://flake8.pycqa.org/en/latest/
+# flake8-docstrings: https://pypi.org/project/flake8-docstrings/
+# flake8-use-fstring forces to use fstrings: https://pypi.org/project/flake8-use-fstring/
+# flake8-functions checks functions quality: https://pypi.org/project/flake8-functions/
+# flake8-bugbear detects some common bugs: https://github.com/PyCQA/flake8-bugbear
+-   repo: https://github.com/pyCQA/flake8
+    rev: 7.0.0
+    hooks:
+    -   id: flake8
+        args: [--config, .flake8, --verbose, ecobidas, tests]
+        additional_dependencies: [flake8-docstrings, flake8-use-fstring, flake8-functions, flake8-bugbear]

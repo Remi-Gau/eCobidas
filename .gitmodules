@@ -4,5 +4,12 @@
 	datalad-url = https://github.com/ohbm/cobidas_schema.git
 [submodule "artemis_schema"]
 	path = artemis_schema
-	url = git@github.com:INCF/artem-is.git
-	datalad-url = git@github.com:INCF/artem-is.git
+	url = https://github.com/INCF/artem-is.git
+	datalad-url = https://github.com/INCF/artem-is.git
+[submodule "reproschema-py"]
+	path = reproschema-py
+	url = https://github.com/Remi-Gau/reproschema-py.git
+[submodule "reproschema-ui"]
+	path = reproschema-ui
+	url = https://github.com/Remi-Gau/reproschema-ui.git
+	datalad-url = https://github.com/Remi-Gau/reproschema-ui.git
