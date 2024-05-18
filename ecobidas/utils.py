@@ -78,7 +78,7 @@ def get_input_file(schema_info: dict) -> Path:
     return input_dir / folder / f"{basename}.tsv"
 
 
-def load_data(this_schema) -> pd.DataFrame:
+def load_data(this_schema: str) -> pd.DataFrame:
     input_file = this_schema
     if not Path(this_schema).is_file():
         schema_info = get_schema_info(this_schema)
@@ -89,11 +89,11 @@ def load_data(this_schema) -> pd.DataFrame:
     return pd.read_csv(input_file, sep="\t")
 
 
-def convert_to_str(df_field) -> str:
+def convert_to_str(df_field: pd.Series) -> str:
     return df_field.tolist()[0]
 
 
-def convert_to_int(df_field) -> int:
+def convert_to_int(df_field: pd.Series) -> int:
     return int(df_field.tolist()[0])
 
 
@@ -107,13 +107,13 @@ def print_info(type: str, pref_label: str, file: str) -> None:
     )
 
 
-def print_item_info(activity_idx, item_idx, item_info: dict) -> None:
+def print_item_info(activity_idx: str, item_idx: str, item_info: dict) -> None:
     logger.debug(
         f"Activity: {int(activity_idx)} Item: {int(item_idx)}\t{item_info['name']}\t{item_info['field_type']}\t{item_info['visibility']}"
     )
 
 
-def print_download(repo: str, branch: str, protocol: Protocol, this_schema) -> None:
+def print_download(repo: str, branch: str, protocol: Protocol, this_schema: str) -> None:
     repo = f"https://raw.githubusercontent.com/{repo}"
 
     s = "/"

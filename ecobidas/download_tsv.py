@@ -2,6 +2,7 @@
 """Download the content of the different google spreadsheet in the inputs folder."""
 import json
 import sys
+from pathlib import Path
 
 import pandas as pd
 import requests
@@ -58,7 +59,7 @@ def download_spreadsheet(schema: str) -> None:
         logger.info("\nDONE")
 
 
-def validate_downloaded_file(file):
+def validate_downloaded_file(file: str | Path) -> None:
     """Check that file has the right header."""
     df = pd.read_csv(file, sep="\t")
     df.columns

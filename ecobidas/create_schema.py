@@ -22,7 +22,7 @@ from ecobidas.utils import (
 
 
 def create_schema(
-    this_schema, output_dir: None | str | Path = None, debug: bool = False
+    this_schema: str, output_dir: None | str | Path = None, debug: bool = False
 ) -> Protocol:
     """
     Take the content of the a csv file and turns it into a reproschema protocol.
@@ -65,7 +65,7 @@ def create_schema(
         included_items = items["include"] == 1
         items = items[included_items]
 
-        protocol, activity, activity_path = initialize_activity(protocol, items, output_dir)
+        activity, activity_path = initialize_activity(items, output_dir)
 
         # TODO implement once figured out what the right schema shape is
         # activity.schema["citation"] = ""
@@ -106,7 +106,7 @@ def create_schema(
     return protocol
 
 
-def initialize_protocol(this_schema: Path | str, output_dir: Path):
+def initialize_protocol(this_schema: Path | str, output_dir: Path) -> tuple[Protocol, Path]:
     schema_info = get_schema_info(this_schema)
 
     protocol_name = snake_case(schema_info["basename"].tolist()[0])
@@ -127,7 +127,7 @@ def initialize_protocol(this_schema: Path | str, output_dir: Path):
     return protocol, protocol_path
 
 
-def initialize_activity(protocol, items, output_dir):
+def initialize_activity(items: pd.DataFrame, output_dir: str | Path) -> tuple[Activity, Path]:
     if len(items.activity_pref_label.unique()) == 0:
         raise NameError("Empty activity")
 
@@ -143,10 +143,10 @@ def initialize_activity(protocol, items, output_dir):
 
     print_info("activity", activity_pref_label, activity.URI)
 
-    return protocol, activity, Path(activity.URI).parent
+    return activity, Path(activity.URI).parent
 
 
-def get_activity_preamble(items):
+def get_activity_preamble(items: pd.DataFrame) -> str:
     if "preamble" not in items.keys():
         return ""
 
@@ -159,7 +159,7 @@ def get_activity_preamble(items):
     return preamble
 
 
-def create_response_options(schema_info: dict, df: pd.DataFrame, output_dir) -> None:
+def create_response_options(schema_info: dict, df: pd.DataFrame, output_dir: str | Path) -> None:
     responses = df.name.unique()
 
     response_options = ResponseOption(valueType="xsd:integer")
@@ -172,8 +172,6 @@ def create_response_options(schema_info: dict, df: pd.DataFrame, output_dir) -> 
         response_options.add_choice(name, i)
         response_options.set_max(i)
 
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
     response_options.write(output_dir)
 
     print_info(
@@ -183,7 +181,7 @@ def create_response_options(schema_info: dict, df: pd.DataFrame, output_dir) -> 
     )
 
 
-def make_preamble(schema_info, items) -> str:
+def make_preamble(schema_info: dict, items: pd.DataFrame) -> str:
     """Do nothing if preamble is empty.
 
     but otherwise we try to create an additional 'header' to the activity

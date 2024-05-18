@@ -6,7 +6,7 @@ from reproschema.models.item import Item, ResponseOption
 from .utils import convert_to_int, convert_to_str, snake_case
 
 
-def set_item_name(this_item: dict):
+def set_item_name(this_item: dict) -> str:
     if "item" not in this_item.keys():
         item_name = convert_to_str(this_item["item_pref_label"])
     elif isinstance(convert_to_str(this_item["item"]), float):
@@ -77,13 +77,14 @@ def get_item_info(this_item: dict) -> dict:
     }
 
 
-def split_choices(choices) -> list:
+def split_choices(choices: str) -> list:
     if isinstance(choices, str):
         choices = choices.split(" | ")
     return choices
 
 
-def get_visibility(this_item: dict):
+def get_visibility(this_item: dict) -> str | float | bool:
+    visibility: str | float
     visibility = convert_to_str(this_item["visibility"])
 
     if visibility in ["1", 1]:
@@ -111,8 +112,8 @@ def get_mandatory(this_item: dict) -> bool:
     return mandatory
 
 
-def define_unit(item, units):
-    if units == "":
+def define_unit(item: Item, units: str) -> Item:
+    if not units:
         return item
 
     unitOptions = [
@@ -127,7 +128,7 @@ def define_unit(item, units):
     return item
 
 
-def define_new_item(item_info: dict):
+def define_new_item(item_info: dict) -> Item:
     """Define jsonld for this item."""
     input_type = item_info["field_type"]
     if item_info["field_type"] == "int":
@@ -165,7 +166,7 @@ def define_new_item(item_info: dict):
     return item
 
 
-def define_choices(item, field_type: str, choices: list):
+def define_choices(item: Item, field_type: str, choices: list) -> Item:
     # in case we have one of the basic response type
     # with no response choice involved
     item.set_input_type()
@@ -192,7 +193,7 @@ def define_choices(item, field_type: str, choices: list):
     return item
 
 
-def list_responses_options(choices: list):
+def list_responses_options(choices: list) -> ResponseOption:
     response_options = ResponseOption()
 
     for i, opt in enumerate(choices):
@@ -204,7 +205,7 @@ def list_responses_options(choices: list):
     return response_options
 
 
-def slider_response(choices: list):
+def slider_response(choices: list) -> ResponseOption:
     min = float(choices[0])
     max = float(choices[1])
     steps = int(choices[2]) if len(choices) == 3 else 21
@@ -222,7 +223,7 @@ def slider_response(choices: list):
     return response_options
 
 
-def use_preset(item, choices: list):
+def use_preset(item: Item, choices: list) -> Item:
     preset_response_file = (
         "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/"
         + choices[0].split("preset:")[1]
@@ -234,5 +235,5 @@ def use_preset(item, choices: list):
     return item
 
 
-def ispreset(choices: list):
+def ispreset(choices: list) -> bool:
     return isinstance(choices[0], str) and len(choices) == 1 and "preset:" in choices[0]

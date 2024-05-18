@@ -6,7 +6,7 @@ from ecobidas.template_manager import TemplateManager
 from ecobidas.utils import get_metatable
 
 
-def main(output_dir: Path | None = None):
+def main(output_dir: Path | None = None) -> None:
     if output_dir is None:
         output_dir = Path() / "output"
 
