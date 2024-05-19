@@ -4,10 +4,10 @@ The spreadsheets that allow us to generate the different checklists are hosted
 on this
 [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
 and we try to keep a back-up in the
-[folder](https://github.com/Remi-Gau/eCobidas/tree/main/inputs).
+[folder](https://github.com/Remi-Gau/eCobidas/tree/main/ecobidas/inputs).
 
 The
-??? will directly download those spreadsheets as csv files into the
+?? will directly download those spreadsheets as csv files into the
 `inputs` folder.
 
 <!-- generate the table below using python/app_list_table.py -->
@@ -77,7 +77,7 @@ If some columns do not appear, it is possible that they have been hidden by
 someone else. You will simply have to click on the double black arrow at the
 limit between columns to display them back.
 
-![](./img/show_hidden_columns.png)
+![](../img/show_hidden_columns.png)
 
 ### Formatting
 

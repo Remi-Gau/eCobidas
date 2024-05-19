@@ -10,8 +10,47 @@ theme:
     name: material
     language: en
     palette:
-        primary: light blue
-        accent: light blue
+        -   media: (prefers-color-scheme)
+            toggle:
+                icon: material/brightness-auto
+                name: Switch to light mode
+        -   media: "(prefers-color-scheme: light)"
+            primary: blue
+            accent: light blue
+            scheme: default
+            toggle:
+                icon: material/brightness-7
+                name: Switch to dark mode
+        -   media: "(prefers-color-scheme: dark)"
+            primary: blue
+            accent: light blue
+            scheme: slate
+            toggle:
+                icon: material/brightness-4
+                name: Switch to system preference
+    features:
+        - announce.dismiss
+        - content.action.edit
+        - content.tooltips
+        - footnotes
+        - header.autohide
+        - navigation.footer
+        - navigation.indexes
+        - navigation.instant
+        - navigation.path
+        - navigation.sections
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - toc.follow
+    icon:
+        repo: fontawesome/brands/github
+        edit: material/pencil
+        annotation: material/arrow-right-circle
+
+edit_uri: https://github.com/Remi-Gau/eCobidas/edit/main/docs/
 
 exclude_docs: |
     communication/README.md
@@ -24,20 +63,37 @@ nav:
 -   Welcome: index.md
 -   Motivations: motivations.md
 -   Goals:
-    -   goals.md
-    -   Short term goals: short-term.md
-    -   Mid term goals: mid-term.md
-    -   Long term goals: long-term.md
--   General organization: general-organization.md
--   Working with the spreadsheets: spreadsheets.md
--   Viewing the checklist: how-to-render-the-checklist.md
--   Apps: apps-table.md
--   Presets responses: preset-responses.md
--   How to contribute: how-to-contribute.md
--   Contributing: CONTRIBUTING.md
+    -   goals/goals.md
+    -   Short term: goals/short-term.md
+    -   Mid term: goals/mid-term.md
+    -   Long term: goals/long-term.md
+-   Apps: apps.md
+-   Contributing:
+    -   contributing/CONTRIBUTING.md
+    -   How to contribute: contributing/how-to-contribute.md
+    -   General organization: contributing/general-organization.md
+    -   Spreadsheets: contributing/spreadsheets.md
+    -   Presets responses: contributing/preset-responses.md
+    -   Checklist: contributing/how-to-render-the-checklist.md
 -   References: references.md
+-   Contact: contact.md
 
 # list of extension
 markdown_extensions:
--   admonition
--   pymdownx.details
+- abbr
+- admonition
+- attr_list
+- md_in_html
+- pymdownx.details
+- pymdownx.emoji:
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+- pymdownx.snippets
+- pymdownx.superfences:
+    custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+- tables
+- toc:
+    anchorlink: true

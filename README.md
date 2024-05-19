@@ -6,13 +6,11 @@
 
 # COBIDAS guidelines checklist
 
-The main aim of this project is to improve reporting methods and results in
-neuroimaging (f/MRI, i/EEG, MEG, PET...) in order to increase transparency and
-reproducibility.
+The main aim of this project is to improve reporting methods and results
+in neuroimaging (f/MRI, i/EEG, MEG, PET...) in order to increase transparency and reproducibility.
 
-We want to do this by developing a checklist based on best practices guidelines
-that is both easy and practical to use, and that provides a computer readable
-output that can be used to automatically generate parts of the methods section.
+We want to do this by developing checklists, based on best practices, guidelines that are both easy and practical to use,
+and that provides a computer readable output that can be used to automatically generate parts of the methods section of an article.
 
 ## Prototypes
 
@@ -24,7 +22,7 @@ guidelines:
 -   [Guideline for Reporting Standards of Eye-tracking Research in Decision Sciences](https://psyarxiv.com/f6qcy/)
 -   [Guidelines for the content and format of PET brain data in publications and archives: A consensus paper](https://doi.org/10.1177/0271678X20905433)
 
-TODO add link
+
 
 ## Want to know more ?
 
@@ -38,25 +36,13 @@ Head over to our [documentation](https://remi-gau.github.io/eCobidas/)
 
 ## How to reach us
 
-If you want to be kept posted about the progress of the project, you can join
-our [google group](https://groups.google.com/d/forum/cobidas-checklist).
+See our [contact page](https://remi-gau.github.io/eCobidas/contact/).
 
-For more frequent updates and behind the scenes, come and join us on the
-`cobidas_checklist` channel on the brainhack mattermost.
-<a href="https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist"><img src="http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png" width=100px />
-Join our channel </a>
-
-Otherwise you can open a new issue on the repository itself if there is
-something you would like to discuss directly here.
 
 ## How to contribute
 
 We are looking for people to give us feedback or help us move forward.
 
-Join our working group at the
-[International Neuroinformatics Coordinating Facility](https://www.incf.org/sig/incfohbm-working-group-checklists-transparent-methods-reporting-neuroscience-ecobidas)
-
-TODO To learn more about how to contribute see...
 
 ## Contributors ✨
 

@@ -37,7 +37,7 @@ jobs:
         -   name: Clean up
             run: |
                 pre-commit install
-                pre-commit run -a
+                pre-commit run --all-files --show-diff-on-failure
         # if there have been changes,
         # a PR is created using the checkout branch for this workflow
         # https://github.com/peter-evans/create-pull-request

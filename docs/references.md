@@ -6,8 +6,6 @@ us know if we missed something.
 
 ## About the checklist
 
--   [website](https://remi-gau.github.io/eCobidas/)
-
 -   [our project on the Open-Science Framework](https://osf.io/anvqy/) with the
     [DOI:10.17605/OSF.IO/ANVQY](https://doi.org/10.17605/OSF.IO/ANVQY) is a
     where we try to centralize all the information across repos, google drive...
@@ -16,7 +14,7 @@ us know if we missed something.
 
 ## The COBIDAS reports
 
--   [for MRI and fMRI](https://doi.org/10.1101/054262 )
+-   [for MRI and fMRI](https://doi.org/10.1101/054262)
 
 -   [for EEG and MEG](https://osf.io/a8dhx/)
 

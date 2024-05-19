@@ -9,35 +9,27 @@
 
 There are many ways in which you can contribute to this project.
 
-We have a list of [milestones](https://github.com/Remi-Gau/eCobidas/milestones)
+We have a list of [milestones](../goals/goals.md)
 for the different features we would like to include in this project.
 
 Those milestones have
-[several opened issues](https://github.com/Remi-Gau/eCobidas/issues) related to
-them: have a look through those issues to see if there is any of them where you
-think you can help.
+[several opened issues](https://github.com/Remi-Gau/eCobidas/issues) related to them:
+have a look through those issues to see if there is any of them where you think you can help.
 
-We are also track the progress to our different goals using some of the
-integrated [kanban boards](https://github.com/Remi-Gau/eCobidas/projects) that
-github offers.
-
-> [Kanban boards](https://en.wikipedia.org/wiki/Kanban):
-
-> They are a great way to keep track of who is doing what, how the different
-> tasks of your project are moving along...
+We are also track the progress to our different goals
+using some of the integrated [kanban boards](https://github.com/Remi-Gau/eCobidas/projects) that github offers.
 
 ## Suggestions
 
 If you are unsure where to start, maybe have a read through some of those
 sections about the project. It might give you ideas.
 
--   the [motivations](./motivations.md) of this project
--   the [different short and long term goals](./goals.md)
+-   the [motivations](../motivations.md) of this project
+-   the [different short and long term goals](../goals//goals.md)
 -   the [general organization of the project](./general-organization.md)
 
-Otherwise here are some suggestions of the different tasks that you can
-contribute to. If however you feel more interested to start hacking at some of
-the issues related to long other goals, feel free to do so.
+Otherwise here are some suggestions of the different tasks that you can contribute to.
+If however you feel more interested to start hacking at some of the issues related to long other goals, feel free to do so.
 
 ### Spreadsheets
 
@@ -72,7 +64,7 @@ Boilerplate related issues listed
 If you don't understand something about the project, its goals, its
 implementation or how to use, then it's most likely that we did not do a good
 enough job at explaining and describing it.
-[Get in touch](https://github.com/Remi-Gau/eCobidas/tree/main/README.md#how-to-reach-us)
+[Get in touch](../contact.md)
 and we can work together to improve our documentation.
 
 There are also
@@ -101,7 +93,7 @@ There is more information on how to set things up in the
 The [user interface](https://github.com/ReproNim/schema-ui) is Javascript based
 and uses the [Vue framework](https://vuejs.org/) and this also needs a lot of
 tweaking, so if Javascript is cup of tea:
-[get in touch!](https://github.com/Remi-Gau/eCobidas/tree/main/README.md#how-to-reach-us)
+[get in touch!](../contact.md)
 
 Here are
 [some of the issues](https://github.com/Remi-Gau/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Auser-interface)
