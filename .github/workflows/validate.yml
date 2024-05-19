@@ -1,5 +1,6 @@
 ---
-name: validate jsonld
+name: Validate jsonld
+# Validate the JSON-LD in the repo and its submodules.
 
 on:
     push:

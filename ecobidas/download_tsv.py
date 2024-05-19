@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """Download the content of the different google spreadsheet in the inputs folder."""
 import json
-import sys
 from pathlib import Path
 
 import pandas as pd
 import requests
 from loguru import logger
 
-from ecobidas.utils import get_input_dir, get_spreadsheets_info, root_dir
+from ecobidas.utils import get_input_dir, get_spreadsheets_info
 
 
 # Function to download spreadsheet
@@ -60,20 +59,28 @@ def download_spreadsheet(schema: str, output_dir: Path = None) -> None:
 
 def validate_downloaded_file(file: str | Path) -> None:
     """Check that file has the right header."""
+    if file.parent.stem == "response_options":
+        return
+
+    print()
+    logger.info(f"Validating: {file}")
+
     df = pd.read_csv(file, sep="\t")
 
-    data_dictionary_file = root_dir() / "inputs" / "data-dictionary.json"
+    data_dictionary_file = get_input_dir() / "data-dictionary.json"
     with open(data_dictionary_file) as f:
         data_dictionary = json.load(f)
 
     columns = {x for x in df.columns if "Unnamed:" not in x}
 
     required_keys = {
-        key for key, value in data_dictionary.items() if value.get("RequirementLevel") == "required"
+        value["VariableName"]
+        for value in data_dictionary.values()
+        if value.get("RequirementLevel") == "required"
     }
     recommended_keys = {
-        key
-        for key, value in data_dictionary.items()
+        value["VariableName"]
+        for value in data_dictionary.values()
         if value.get("RequirementLevel") == "recommended"
     }
 
@@ -89,11 +96,11 @@ def validate_downloaded_file(file: str | Path) -> None:
         )
 
 
-# Main function
 def main() -> None:
-    # Default schema
-    schema = "neurovault" if len(sys.argv) < 2 else sys.argv[1]
-    download_spreadsheet(schema)
+    # validates files
+    tsv_files = get_input_dir().glob("*/*.tsv")
+    for file in tsv_files:
+        validate_downloaded_file(file)
 
 
 if __name__ == "__main__":

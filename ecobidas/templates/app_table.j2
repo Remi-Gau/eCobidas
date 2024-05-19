@@ -1,4 +1,4 @@
 | web app                                             | reference                                                    | spreadsheet                 | Github repository                                      |
 | --------------------------------------------------- | ------------------------------------------------------------ | --------------------------- | ------------------------------------------------------ |
-{% for app in apps %}| [{{ app.basename }}]({{ app.app_link }}) | {% if app.citation %} [link]({{ app.citation }}) {% endif %} | [spreadsheet]({{ app.link }}) | {% if app.repo %} [github]({{ app.repo }}) {% endif %} |
+{% for app in apps %}| [:material-vuejs: {{ app.basename }}]({{ app.app_link }}) | {% if app.citation %} [link]({{ app.citation }}) {% endif %} | [:material-google-drive: spreadsheet]({{ app.link }}) | {% if app.repo %} [:material-github: github]({{ app.repo }}) {% endif %} |
 {% endfor %}

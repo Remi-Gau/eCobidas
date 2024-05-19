@@ -30,3 +30,5 @@ def define_env(env):
     """
     env.macro(macros.table_apps, "MACROS___table_apps")
     env.macro(macros.table_preset_responses, "MACROS___table_preset_responses")
+    env.macro(macros.table_spreadsheets, "MACROS___table_spreadsheets")
+    env.macro(macros.table_data_dictionary, "MACROS___table_data_dictionary")

@@ -4,6 +4,8 @@ hide:
 -   toc
 ---
 
+[![DOI](https://img.shields.io/badge/DOI:10.17605/OSF.IO/ANVQY-blue.svg?style=flat-square)](https://doi.org/10.17605/OSF.IO/ANVQY)
+
 # Welcome to the eCOBIDAS documentation
 
 <!-- TODO add figures from poster / slides -->
@@ -62,7 +64,7 @@ hide:
 
     You want to report a bug or you want to help with the project?
 
-    [:octicons-arrow-right-24: Contributing](./contributing/CONTRIBUTING.md)
+    [:octicons-arrow-right-24: Contributing](./contributing/contributing.md)
 
 -   :material-email:{ .lg .middle } **Contact**
 

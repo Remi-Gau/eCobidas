@@ -1,4 +1,4 @@
--e .
+-e .[dev]
 -e ./reproschema-py
 mkdocs-material[imaging]
 mkdocs-macros-plugin

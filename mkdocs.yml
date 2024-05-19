@@ -75,12 +75,12 @@ nav:
 -   Apps: apps.md
 -   Meta-analysis: meta-analysis.md
 -   Contributing:
-    -   contributing/CONTRIBUTING.md
-    -   How to contribute: contributing/how-to-contribute.md
+    -   contributing/contributing.md
     -   General organization: contributing/general-organization.md
+    -   Setup: contributing/setup.md
     -   Spreadsheets: contributing/spreadsheets.md
-    -   Presets responses: contributing/preset-responses.md
     -   Checklist: contributing/how-to-render-the-checklist.md
+    -   Contributors: contributing/contributors.md
 -   References: references.md
 -   Contact: contact.md
 
