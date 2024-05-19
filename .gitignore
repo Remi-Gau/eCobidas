@@ -8,6 +8,8 @@ ecobidas/_version.py
 
 names.csv
 
+output
+
 *.DS_Store
 
 .~lock*

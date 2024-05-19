@@ -1,5 +1,5 @@
-from ecobidas.app_list_table import main as app_list_table_main
 from ecobidas.generate_landing_page import main as landing_page_main
+from ecobidas.macros import main as app_list_table_main
 
 
 def test_generate_table(tmp_path):

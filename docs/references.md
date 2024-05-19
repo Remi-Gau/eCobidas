@@ -1,12 +1,25 @@
+---
+hide:
+-   navigation
+-   toc
+---
+
 # References
+
+Those apps and incoming ones are based on the following best practices guidelines:
+
+-   [Best Practices in Data Analysis and Sharing in Neuroimaging using MRI](https://doi.org/10.1101/054262 )
+-   [Best Practices in Data Analysis and Sharing in Neuroimaging using MEEG](https://osf.io/a8dhx/)
+-   [Guideline for Reporting Standards of Eye-tracking Research in Decision Sciences](https://psyarxiv.com/f6qcy/)
+-   [Guidelines for the content and format of PET brain data in publications and archives: A consensus paper](https://doi.org/10.1177/0271678X20905433)
 
 There is [zotero group](https://www.zotero.org/groups/2349772/cobidas_checklist)
 where we try to keep track the relevant literature related to this project. Let
 us know if we missed something.
 
-## About the checklist
+<!-- TODO add link to repronim youtube talk -->
 
--   [website](https://remi-gau.github.io/eCobidas/)
+## About the checklist
 
 -   [our project on the Open-Science Framework](https://osf.io/anvqy/) with the
     [DOI:10.17605/OSF.IO/ANVQY](https://doi.org/10.17605/OSF.IO/ANVQY) is a
@@ -16,7 +29,7 @@ us know if we missed something.
 
 ## The COBIDAS reports
 
--   [for MRI and fMRI](https://doi.org/10.1101/054262 )
+-   [for MRI and fMRI](https://doi.org/10.1101/054262)
 
 -   [for EEG and MEG](https://osf.io/a8dhx/)
 
@@ -33,11 +46,6 @@ Presentation slides made about this project can be found in the
 
 The original [spreadsheet version](https://osf.io/qkb9t/) of the COBIDAS
 checklist (thanks to [Cass](https://github.com/cassgvp)!!!)
-
-## Related reporting guidelines
-
--   [Guideline for Reporting Standards of Eye-tracking Research in Decision Sciences](https://psyarxiv.com/f6qcy/)
--   [Guidelines for the content and format of PET brain data in publications and archives: A consensus paper](https://doi.org/10.1177/0271678X20905433)
 
 ## Related checklists
 

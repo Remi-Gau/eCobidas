@@ -13,7 +13,7 @@ version: v1.0.0-dev
 
 license: GPL-3.0
 
-repository-code: https://github.com/Remi-Gau/COBIDAS_chckls.git
+repository-code: https://github.com/Remi-Gau/eCobidas.git
 
 message: Please cite preferentially using the open science framework DOI.
 

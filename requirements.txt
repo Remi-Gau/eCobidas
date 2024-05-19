@@ -1,2 +1,5 @@
-mkdocs-material
+-e .[dev]
+-e ./reproschema-py
+mkdocs-material[imaging]
+mkdocs-macros-plugin
 pymdown-extensions

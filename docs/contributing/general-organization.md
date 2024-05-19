@@ -1,13 +1,11 @@
 # General organization
 
-The general workflow of this project is the following:
+General workflow of this project:
 
--   turning the recommendation guidelines into spreadsheets
-
--   turning the spreadsheets into a "schema" representation
-
--   using a "front-end" user-interface that will read those schema and serve a
-    web-app to the user.
+1.  turning the recommendation guidelines into google sheets
+1.  downloading the google sheets as TSVs
+1.  turning the TSVs into a "schema" representation
+1.  using a "front-end" user-interface that will read those schema and serve a web-app to the user.
 
 To execute that work, this project is organized around several "repositories":
 

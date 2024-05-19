@@ -63,7 +63,7 @@ def test_get_spreadsheets_info():
         "link",
         "citation",
         "app_link",
-        "landing page",
+        "landing_page",
         "repo",
     ]
 

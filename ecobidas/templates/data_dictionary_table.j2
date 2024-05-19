@@ -1,0 +1,4 @@
+| Column name  | Description | Requirement level |
+| ------------ | ----------- |------------------ |
+{% for entry in data_dictionary %}| {{ entry["VariableName"] }} | {{ entry["Description"] }} | {{ entry["RequirementLevel"] | upper }} |
+{% endfor %}

@@ -48,7 +48,7 @@ used to automatically generate part of the methods section of an article.
 Other potential goals (e.g. interaction with BIDS and NIDM, further integration
 with main neuroimaging softwares...) and potential applications (improving
 data-sharing and peer-review) of this project are described in this
-[repository](https://github.com/Remi-Gau/COBIDAS_chckls).
+[repository](https://github.com/Remi-Gau/eCobidas).
 
 ## Skills required to participate
 
@@ -96,4 +96,4 @@ to [Cass](https://github.com/cassgvp)!!!)
 
 ## GitHub repo
 
-[The github repository of this project can be found here](https://github.com/Remi-Gau/COBIDAS_chckls)
+[The github repository of this project can be found here](https://github.com/Remi-Gau/eCobidas)

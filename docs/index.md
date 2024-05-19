@@ -1,54 +1,77 @@
+---
+hide:
+-   navigation
+-   toc
+---
+
+[![DOI](https://img.shields.io/badge/DOI:10.17605/OSF.IO/ANVQY-blue.svg?style=flat-square)](https://doi.org/10.17605/OSF.IO/ANVQY)
+
 # Welcome to the eCOBIDAS documentation
 
-## Motivations
+<!-- TODO add figures from poster / slides -->
 
-Poor methods and results description hinders the reproducibility and the
-replicability of research. It also makes it hard to compare new and old results
-and generally increases inefficiency in the research process. This project is
-built on the hope that improving methods and results reporting could improve our
-research.
+<div style="display: flex; justify-content: center; margin: 10px">
+<iframe width="560"
+        height="315"
+        src="https://www.youtube.com/embed/bQd-e_v2iCc?si=eksuLVy1TeDQa0KD"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+</iframe>
+</div>
 
-See [here](./motivations.md) for more background information.
+<div class="grid cards" markdown>
 
-## Goals
+-   :material-account-group:{ .lg .middle } **Motivations**
 
-The short term goal of this project is to make the COBIDAS report (and other
-best practices for methods reporting) easier to use: we want to create a website
-with a clickable checklist that, at the end, automatically generates most of the
-method section of a (f)MRI / (i)EEG / MEG / PET paper.
+    ---
 
-See [here](./goals.md) for more information on our vision and general goals.
-You can also go directly to one of the following section to see a breakdown of
-those goals and see some extensions we have in mind for the project.
+    Poor methods and results description hinders the reproducibility and the replicability of research.
 
-1.  [short term goals](./short-term.md)
-1.  [intermediate goals](./mid-term.md)
-1.  [long term goals](./long-term.md)
+    This project is built on the hope that improving methods and results reporting could improve our research.
 
-If you are interested by any of those,
-[get in touch](https://github.com/Remi-Gau/eCobidas/tree/main/README.md#how-to-reach-us).
-Contributing to this project does not necessarily require super-advanced
-technical skills (except maybe a certain love for working with spreadsheet and
-wanting them to be super organized) :wink:.
+    [:octicons-arrow-right-24: Motivations](./motivations.md)
 
-## Project structure
+-   :goal:{ .lg .middle } **Goals**
 
-See [here](./general-organization.md) for more information about how this
-whole project is organized.
+    ---
 
-## Spreadsheets
+    We want to create a web-based checklists for best practices for methods reporting
+    that help automatically generates the method section of neuroimaging papers.
 
-A lot of the work for this projects starts with some (usually pretty big)
-spreadsheets.
+    [:octicons-arrow-right-24: Goals](./goals/goals.md)
 
-See [here](./spreadsheets.md) for a description of their content and what the
-work involves.
+-   :test_tube:{ .lg .middle } **Demos**
 
-## How to run the checklist
+    ---
 
-See [here](./how-to-render-the-checklist.md) for more information on how to
-work on the checklist on your own computer.
+    You want to try the checklists that already exist?
 
-## References
+    [:octicons-arrow-right-24: Available apps](./apps.md)
 
-See [here](./references.md).
+-   :material-pickaxe:{ .lg .middle } **Meta-analysis**
+
+    ---
+
+    Want to use those checklist to perform systematic literature reviews and meta-analaysis?
+
+    [:octicons-arrow-right-24: meta-analysis](./meta-analysis.md)
+
+-   :material-help:{ .lg .middle } **Contribute**
+
+    ---
+
+    You want to report a bug or you want to help with the project?
+
+    [:octicons-arrow-right-24: Contributing](./contributing/contributing.md)
+
+-   :material-email:{ .lg .middle } **Contact**
+
+    ---
+
+    You want to know more, oget in touch or being kept posted ?
+
+    [:octicons-arrow-right-24: Contact us](./contact.md)
+
+</div>

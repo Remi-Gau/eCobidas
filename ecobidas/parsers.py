@@ -10,7 +10,7 @@ from ecobidas._version import __version__
 def base_parser(formatter_class: type[HelpFormatter] = HelpFormatter) -> ArgumentParser:
     parser = ArgumentParser(
         prog="ecobidas",
-        description="MAnagement tool for the ecobidas checklisa.",
+        description="Management tool for the ecobidas checklist.",
         formatter_class=formatter_class,
     )
     parser.add_argument(

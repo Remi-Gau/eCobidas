@@ -11,6 +11,11 @@ repos:
     -   id: check-merge-conflict
     -   id: check-toml
     -   id: check-yaml
+        exclude: |
+            (?x)^(
+                docs/specification/.*
+                | mkdocs.yml
+            )$
     -   id: end-of-file-fixer
     -   id: mixed-line-ending
     -   id: trailing-whitespace
@@ -51,6 +56,11 @@ repos:
     hooks:
     -   id: yamlfmt
         args: [--mapping, '4', --sequence, '4', --offset, '0']
+        exclude: |
+            (?x)^(
+                docs/specification/.*
+                | mkdocs.yml
+            )$
 
 # Format TOML files
 -   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
@@ -76,5 +86,5 @@ repos:
     rev: 7.0.0
     hooks:
     -   id: flake8
-        args: [--config, .flake8, --verbose, ecobidas, tests]
+        args: [--config, .flake8, --verbose, ecobidas, tests, macros]
         additional_dependencies: [flake8-docstrings, flake8-use-fstring, flake8-functions, flake8-bugbear]

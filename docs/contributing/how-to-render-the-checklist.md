@@ -1,17 +1,11 @@
 # How the checklist is rendered
 
-This part gets a bit more "techy" but we will do our best to guide you through
-it.
+This part gets a bit more "techy" but we will do our best to guide you through it.
 
 First make sure you are familiar with the structure of this project by reading
 the [general organization](./general-organization.md) documentation.
 
-## Turn the spreadsheet into the schema
-
-This part is done by a bit of python code and you can find more information in
-the [README](https://github.com/Remi-Gau/eCobidas/) in the `python` folder.
-
-### Making the new schema available to the UI
+## Making the new schema available to the UI
 
 If the previous step went smoothly you now need to make the newly created files
 available on your remote repository on github so that the user-interface can
@@ -99,3 +93,13 @@ npm run serve # Run the development server locally
 ```
 
 Open your browser and go to [localhost:8080](localhost:8080)
+
+### View the results
+
+After pushing to github:
+
+```text
+https://www.repronim.org/reproschema-ui/#/?url=url-to-protocol-schema
+
+https://www.repronim.org/reproschema-ui/#/activities/0?url=url-to-activity-schema
+```

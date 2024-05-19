@@ -1,0 +1,4 @@
+| activity                                            | reference                                                        | spreadsheet                     | Preview                    |
+| --------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------- | -------------------------- |
+{% for sheet in sheets %}| {{ sheet.dir }}-{{ sheet.basename }}                | {% if sheet.citation %} [link]({{ sheet.citation }}) {% endif %} | [:material-google-drive: spreadsheet]({{ sheet.link }}) | {% if sheet.preview %} [:material-vuejs: preview]({{ sheet.preview }})  {% endif %} |
+{% endfor %}

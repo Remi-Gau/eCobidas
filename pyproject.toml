@@ -5,11 +5,8 @@ requires = ["hatchling", "hatch-vcs"]
 [project]
 authors = [{name = "Remi Gau"}]
 dependencies = [
-    "requests_cache",
     "numpy~=1.26.4",
     "pandas",
-    "click",
-    "rich",
     "Jinja2",
     'loguru',
     "rich_argparse",
@@ -42,7 +39,7 @@ line-length = 100
 
 [tool.codespell]
 ignore-words-list = "jist,softwares,te,fwe,als"
-skip = "./.git,*.svg"
+skip = "./.git,*.svg,reproschema-ui,node_modules,env,reproschema-py,htmlcov,package-lock.json"
 
 [tool.hatch.build.hooks.vcs]
 version-file = "ecobidas/_version.py"
