@@ -52,12 +52,10 @@ def get_spreadsheets_info() -> dict[str, dict[str, str]]:
 
 
 def get_landing_page(schema_info: dict[str, str]) -> str:
-    landing_page = "README_eCOBIDAS-en.md"
     if schema_info["landing_page"]:
-        landing_page = schema_info["landing_page"]
-
-    repo = "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/landing_pages/"
-    return repo + landing_page
+        return schema_info["landing_page"]
+    else:
+        return "README_eCOBIDAS-en.md"
 
 
 def get_schema_info(this_schema: str | Path) -> dict[str, str]:
