@@ -6,6 +6,8 @@ hide:
 
 # Welcome to the eCOBIDAS documentation
 
+<!-- TODO add figures from poster / slides -->
+
 <div class="grid cards" markdown>
 
 -   :material-account-group:{ .lg .middle } **Motivations**

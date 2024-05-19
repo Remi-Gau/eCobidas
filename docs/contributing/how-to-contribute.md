@@ -1,12 +1,5 @@
 # How to contribute
 
----
-
-**Join our working group at the
-[International Neuroinformatics Coordinating Facility](https://www.incf.org/sig/incfohbm-working-group-checklists-transparent-methods-reporting-neuroscience-ecobidas)**
-
----
-
 There are many ways in which you can contribute to this project.
 
 We have a list of [milestones](../goals/goals.md)

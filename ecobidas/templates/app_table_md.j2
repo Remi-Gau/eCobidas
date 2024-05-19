@@ -1,5 +1,4 @@
 | web app                                             | reference                                                    | spreadsheet                 | Github repository                                      |
 | --------------------------------------------------- | ------------------------------------------------------------ | --------------------------- | ------------------------------------------------------ |
-{% for item in items %}
-| [{{item.dir}} {{item.basename}}]({{item.app_link}}) | {% if item.citation %} [link]({{item.citation}}) {% endif %} | [spreadsheet]({{item.xls}}) | {% if item.repo %} [github]({{item.repo}}) {% endif %} |
+{% for app in apps %}| [{{ app.basename }}]({{ app.app_link }}) | {% if app.citation %} [link]({{ app.citation }}) {% endif %} | [spreadsheet]({{ app.link }}) | {% if app.repo %} [github]({{ app.repo }}) {% endif %} |
 {% endfor %} |

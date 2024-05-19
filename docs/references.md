@@ -18,6 +18,8 @@ There is [zotero group](https://www.zotero.org/groups/2349772/cobidas_checklist)
 where we try to keep track the relevant literature related to this project. Let
 us know if we missed something.
 
+<!-- TODO add link to repronim youtube talk -->
+
 ## About the checklist
 
 -   [our project on the Open-Science Framework](https://osf.io/anvqy/) with the

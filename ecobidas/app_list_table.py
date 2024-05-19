@@ -50,34 +50,8 @@ def main(output_dir: Path | None = None) -> None:
 
     template = TemplateManager.env.get_template("app_table_md.j2")
 
-    apps_lists = {
-        key: value for key, value in spreadsheets_info.items() if spreadsheets_info[key]["app_link"]
-    }
-
-    items = []
-    for key in apps_lists:
-
-        folder = apps_lists[key]["dir"]
-        basename = apps_lists[key]["basename"]
-        if folder == basename:
-            basename = ""
-
-        an_item = dict(
-            folder=folder,
-            basename=basename,
-            app_link=apps_lists[key]["app_link"],
-            xls=apps_lists[key]["link"],
-        )
-
-        if apps_lists[key]["repo"]:
-            an_item["repo"] = apps_lists[key]["repo"]
-
-        if apps_lists[key]["citation"]:
-            an_item["citation"] = apps_lists[key]["citation"]
-
-        items.append(an_item)
-
-    rendered_template = template.render(items=items)
+    apps = [value for key, value in spreadsheets_info.items() if spreadsheets_info[key]["app_link"]]
+    rendered_template = template.render(apps=apps)
     with open(output_dir / "apps_table.md", "w") as out:
         out.write(f"{rendered_template}")
 
