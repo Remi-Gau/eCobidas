@@ -12,7 +12,7 @@ and let us know about it: we'll take care of the rest.
 
 Make sure that you are also listed as a contributor on our [OSF project](https://osf.io/anvqy/).
 
-# Contributors list
+## Contributors list
 
 Thanks goes to these wonderful people
 ([emoji key](https://allcontributors.org/docs/en/emoji-key)).
