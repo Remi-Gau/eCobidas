@@ -1,14 +1,13 @@
 # Short term
 
-**The short term goal of this project is to make the COBIDAS report (and similar
-guidelines) easier to use.** We want to create a prototype website with a
-clickable checklist that, at the end, automatically generates most of the method
-section of a (f)MRI or (i)EEG / MEG or PET paper.
+**The short term goal of this project is to make the COBIDAS report (and similar guidelines) easier to use.**
+
+We want to create a prototype website with a clickable checklist that, at the end,
+automatically generates most of the method section of a (f)MRI or (i)EEG / MEG or PET paper.
 
 ---
 
-So far the common short goals of all the versions of the app (for MRI, PET...)
-are:
+So far the common short goals of all the versions of the app (for MRI, PET...) are:
 
 -   Create a set of tools and a proof of concept web-app that can:
 
@@ -23,8 +22,7 @@ are:
 
 ---
 
-For the spreadsheets that represent the recommendation guidelines, the initial
-curation process must:
+For the spreadsheets that represent the recommendation guidelines, the initial curation process must:
 
 -   :construction_site: identify high-priority items for each checklist,
 
@@ -32,14 +30,11 @@ curation process must:
     (meaning that it is only made of a single question)
     and curated (define an item name, a question, the type of response expected and an eventual list of response choices).
 
-<!-- TODO  Add link to spreadsheet doc -->
-
 ---
 
 ## MRI
 
-The current version of MRI prototype is inspired from
-[Neurovault](https://neurovault.org/), so we would have to expand from there.
+The current version of MRI prototype is inspired from [Neurovault](https://neurovault.org/), so we would have to expand from there.
 
 The goal for the MRI app would to be able to describe a typical fMRI study with:
 
@@ -49,8 +44,7 @@ The goal for the MRI app would to be able to describe a typical fMRI study with:
 
 ## M/EEG
 
-The MRI version is currently ahead and the work done there can pave the way for
-the MEEG version.
+The MRI version is currently ahead and the work done there can pave the way for the MEEG version.
 
 The MEEG COBIDAS guidelines have recently been published (see the
 [preprint](https://osf.io/a8dhx/) and

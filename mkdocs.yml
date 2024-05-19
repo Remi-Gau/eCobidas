@@ -97,3 +97,14 @@ markdown_extensions:
 - tables
 - toc:
     anchorlink: true
+
+
+extra:
+    generator: false
+    social:
+    -   icon: fontawesome/brands/github
+        link: https://github.com/Remi-Gau/eCobidas
+    # -   icon: simple-mattermost
+    #     link: https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist
+    -   icon: fontawesome/brands/google
+        link: https://groups.google.com/d/forum/cobidas-checklist

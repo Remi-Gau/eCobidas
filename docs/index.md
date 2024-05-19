@@ -33,7 +33,7 @@ hide:
 
     ---
 
-    You want to try the checkists that already exist?
+    You want to try the checklists that already exist?
 
     [:octicons-arrow-right-24: Available apps](./apps.md)
 
