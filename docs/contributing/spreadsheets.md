@@ -10,16 +10,7 @@ The
 ?? will directly download those spreadsheets as csv files into the
 `inputs` folder.
 
-<!-- generate the table below using python/app_list_table.py -->
-
-| web app                                                                                                                                                                         | reference                                                             | spreadsheet                                                                                                                       | Github repository                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| [COBIDAS MRI](https://ohbm.github.io/eCOBIDAS/#/)                                                                                                                               | [link](http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf) |                                                                                                                                   |                                                          |
-| [neurovault](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/ohbm/cobidas_schema/master/schemas/neurovault/protocols/neurovault_schema.jsonld) | [link](https://doi.org/10.3389/fninf.2015.00008)                      | [spreadsheet](https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing)               |                                                          |
-| [pet](https://remi-gau.github.io/cobidas-PET/#/)                                                                                                                                | [link](https://doi.org/10.1177/0271678X20905433)                      | [spreadsheet](https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing)               | [github](https://github.com/Remi-Gau/cobidas-PET)        |
-| [eyetracking](https://remi-gau.github.io/cobidas-eyetracker/#/)                                                                                                                 | [link](https://psyarxiv.com/f6qcy/)                                   | [spreadsheet](https://docs.google.com/spreadsheets/d/1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o/edit?usp=sharing)               | [github](https://github.com/Remi-Gau/cobidas-eyetracker) |
-| [artemis](https://remi-gau.github.io/artemis_checklist/#/)                                                                                                                      | [link](https://osf.io/pvrn6/)                                         | [spreadsheet](https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=759849853) | [github](https://github.com/Remi-Gau/artemis_checklist)  |
-| [reexecution](https://remi-gau.github.io/cobidas_reexecute/#/)                                                                                                                  | [link](https://doi.org/10.12688/f1000research.25306.2)                | [spreadsheet](https://docs.google.com/spreadsheets/d/1M9H7Bkti4OEVrYETajLbpbwY0T-QqSkpRUiwTz6-5Vc/edit?usp=sharing)               | [github](https://github.com/Remi-Gau/cobidas_reexecute)  |
+{{ MACROS___table_apps() }}                                                                                                              | [link](https://doi.org/10.12688/f1000research.25306.2)                | [spreadsheet](https://docs.google.com/spreadsheets/d/1M9H7Bkti4OEVrYETajLbpbwY0T-QqSkpRUiwTz6-5Vc/edit?usp=sharing)               | [github](https://github.com/Remi-Gau/cobidas_reexecute)  |
 
 ## To do
 
@@ -78,7 +69,6 @@ someone else. You will simply have to click on the double black arrow at the
 limit between columns to display them back.
 
 ![](../img/show_hidden_columns.png)
-
 
 ### Filtering
 

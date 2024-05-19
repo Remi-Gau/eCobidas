@@ -8,6 +8,17 @@ hide:
 
 <!-- TODO add figures from poster / slides -->
 
+<div style="display: flex; justify-content: center; margin: 10px">
+<iframe width="560"
+        height="315"
+        src="https://www.youtube.com/embed/bQd-e_v2iCc?si=eksuLVy1TeDQa0KD"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+</iframe>
+</div>
+
 <div class="grid cards" markdown>
 
 -   :material-account-group:{ .lg .middle } **Motivations**
@@ -20,7 +31,6 @@ hide:
 
     [:octicons-arrow-right-24: Motivations](./motivations.md)
 
-
 -   :goal:{ .lg .middle } **Goals**
 
     ---
@@ -30,7 +40,6 @@ hide:
 
     [:octicons-arrow-right-24: Goals](./goals/goals.md)
 
-
 -   :test_tube:{ .lg .middle } **Demos**
 
     ---
@@ -39,6 +48,13 @@ hide:
 
     [:octicons-arrow-right-24: Available apps](./apps.md)
 
+-   :material-pickaxe:{ .lg .middle } **Meta-analysis**
+
+    ---
+
+    Want to use those checklist to perform systematic literature reviews and meta-analaysis?
+
+    [:octicons-arrow-right-24: meta-analysis](./meta-analysis.md)
 
 -   :material-help:{ .lg .middle } **Contribute**
 
@@ -48,8 +64,7 @@ hide:
 
     [:octicons-arrow-right-24: Contributing](./contributing/CONTRIBUTING.md)
 
-
--   :test_tube:{ .lg .middle } **Contact**
+-   :material-email:{ .lg .middle } **Contact**
 
     ---
 

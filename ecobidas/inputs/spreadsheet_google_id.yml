@@ -28,6 +28,7 @@ neurovault:
     google_id: 1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0
     citation: https://doi.org/10.3389/fninf.2015.00008
     app_link: https://ohbm.github.io/eCOBIDAS/#/
+    repo: https://github.com/ohbm/eCOBIDAS
     landing_page: ../README_eCOBIDAS-en.html
 
 pet:

@@ -44,7 +44,6 @@ if the required information can be directly accessed
 from the metadata in some of the existing standards for data and results like:
 
 1.  the brain imaging data structure ([BIDS](http://bids.neuroimaging.io/)) used for that study,
-
 1.  the [NIDM results](http://nidm.nidash.org/specs/nidm-results_130.html) of any mass-univariate analysis performed for this study.
 
 **BIDS** is an emerging standard to organize neuroimaging data (MRI, fMRI,

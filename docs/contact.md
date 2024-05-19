@@ -15,7 +15,6 @@ hide:
 
     [Join our google group](https://groups.google.com/d/forum/cobidas-checklist){ .md-button .md-button--primary }
 
-
 -   :simple-mattermost:{ .lg .middle } **mattermost**
 
     ---
@@ -25,7 +24,6 @@ hide:
 
     [Join our mattermost channel](https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist){ .md-button .md-button--primary }
 
-
 -   **INCF**
 
     ---
@@ -33,7 +31,6 @@ hide:
     You can also join our working group at the International Neuroinformatics Coordinating Facility.
 
     [Join our INCF working group](https://www.incf.org/sig/incfohbm-working-group-checklists-transparent-methods-reporting-neuroscience-ecobidas){ .md-button .md-button--primary }
-
 
 -   :simple-github:{ .lg .middle } **GitHub**
 

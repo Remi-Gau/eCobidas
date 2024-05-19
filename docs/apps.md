@@ -4,15 +4,8 @@ hide:
 -   toc
 ---
 
+Below is the list of the existing apps we maintain,
+with links to the source spreadsheet
+and to the GitHub repository where they are hosted.
 
-| web app                                             | reference                                                    | spreadsheet                 | Github repository                                      |
-| --------------------------------------------------- | ------------------------------------------------------------ | --------------------------- | ------------------------------------------------------ |
-| [core participants](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/schemas/core/protocols/participants_schema.jsonld) |  [link](http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf)  | [spreadsheet](https://docs.google.com/spreadsheets/d/1pshzE4tXvj294-S-rRVlf9XpczFq2bkj2P3C7xGgzjs/edit?usp=sharing) |  |
-| [core behavior](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/schemas/core/protocols/behavior_schema.jsonld) |  [link](http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf)  | [spreadsheet](https://docs.google.com/spreadsheets/d/1P0BQcM0889YTBFSoY8-E0vfdp0psrl7vyHBAW0fSmqs/edit?usp=sharing) |  |
-| [mri all_sequences](https://www.repronim.org/reproschema-ui/#/?url=https://raw.githubusercontent.com/ohbm/eCOBIDAS/master/schemas/mri/protocols/all_sequences_schema.jsonld) |  [link](http://www.humanbrainmapping.org/files/2016/COBIDASreport.pdf)  | [spreadsheet](https://docs.google.com/spreadsheets/d/16LhsvrEKOzkNsXGLGlYZsH9h4aZ1hyt_BORmxkndaiI/edit?usp=sharing) |  |
-| [neurovault ](https://ohbm.github.io/eCOBIDAS/#/) |  [link](https://doi.org/10.3389/fninf.2015.00008)  | [spreadsheet](https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing) |  [github](https://github.com/ohbm/eCOBIDAS)  |
-| [eyetracking ](https://remi-gau.github.io/cobidas-eyetracker/#/) |  [link](https://psyarxiv.com/f6qcy/)  | [spreadsheet](https://docs.google.com/spreadsheets/d/1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o/edit?usp=sharing) |  [github](https://github.com/Remi-Gau/cobidas-eyetracker)  |
-| [pet ](https://remi-gau.github.io/cobidas-PET/#/) |  [link](https://doi.org/10.1177/0271678X20905433)  | [spreadsheet](https://docs.google.com/spreadsheets/d/1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8/edit?usp=sharing) |  [github](https://github.com/Remi-Gau/cobidas-PET)  |
-| [reexecution ](https://remi-gau.github.io/cobidas_reexecute/#/) |  [link](https://doi.org/10.12688/f1000research.25306.2)  | [spreadsheet](https://docs.google.com/spreadsheets/d/1M9H7Bkti4OEVrYETajLbpbwY0T-QqSkpRUiwTz6-5Vc/edit?usp=sharing) |  [github](https://github.com/Remi-Gau/cobidas_reexecute)  |
-| [artemis ](https://remi-gau.github.io/artemis_checklist/#/) |  [link](https://osf.io/pvrn6/)  | [spreadsheet](https://docs.google.com/spreadsheets/d/1dlUt8_bHsM5mERFJkVLTVWanSlms6Ba8Wos38Dhmhfo/edit?ts=60c9d280#gid=759849853) |  [github](https://github.com/Remi-Gau/artemis_checklist)  |
-|
+{{ MACROS___table_apps() }}

@@ -16,8 +16,7 @@ You will need to have installed.
 -   [node.js](https://nodejs.org/en/)
 -   [Git](https://git-scm.com/downloads)
 
-If you are running Windows 10, you will want to work directly in a Linux Windows
-sub-system.
+If you are running Windows 10, you will want to work directly in a Linux Windows sub-system.
 
 An simple way to do this is to install
 [Ubuntu from the Windows App store](https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71).
