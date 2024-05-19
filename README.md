@@ -34,6 +34,8 @@ See our [contact page](https://remi-gau.github.io/eCobidas/contact/).
 
 We are looking for people to give us feedback or help us move forward.
 
+If you are interested, check our [documentation for contributors](https://remi-gau.github.io/eCobidas/contributing/).
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people

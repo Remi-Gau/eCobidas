@@ -42,7 +42,7 @@ def get_spreadsheets_info() -> dict[str, dict[str, str]]:
                 f"{spreadsheets_info[key]['google_id']}/edit?usp=sharing"
             )
 
-    expected_keys = ["dir", "link", "citation", "app_link", "google_id", "landing page", "repo"]
+    expected_keys = ["dir", "link", "citation", "app_link", "google_id", "landing_page", "repo"]
     for key in spreadsheets_info:
         for check in expected_keys:
             if check not in spreadsheets_info[key]:
@@ -53,8 +53,8 @@ def get_spreadsheets_info() -> dict[str, dict[str, str]]:
 
 def get_landing_page(schema_info: dict[str, str]) -> str:
     landing_page = "README_eCOBIDAS-en.md"
-    if schema_info["landing page"]:
-        landing_page = schema_info["landing page"]
+    if schema_info["landing_page"]:
+        landing_page = schema_info["landing_page"]
 
     repo = "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/landing_pages/"
     return repo + landing_page

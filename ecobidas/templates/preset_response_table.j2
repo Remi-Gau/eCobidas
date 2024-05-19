@@ -1,4 +1,5 @@
 | response list | google spreadsheet | jsonld |
 | ------------- | ------------------ | ------ |
-{% for item in items %} | {{item.basename}} | [spreadsheet]({{item.link}}) | [jsonld]({{item.jsonld}}) |
+{% for item in items %}
+| {{item.basename}} | [spreadsheet]({{item.link}}) | [jsonld]({{item.jsonld}}) |
 {% endfor %}

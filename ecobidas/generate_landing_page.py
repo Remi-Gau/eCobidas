@@ -3,7 +3,6 @@
 from pathlib import Path
 
 from ecobidas.template_manager import TemplateManager
-from ecobidas.utils import get_spreadsheets_info
 
 
 def main(output_dir: Path | None = None) -> None:
@@ -14,46 +13,7 @@ def main(output_dir: Path | None = None) -> None:
 
     template = TemplateManager.env.get_template("landing_page.j2")
 
-    spreadsheets_info = get_spreadsheets_info()
-
-    apps_lists = {x for x in spreadsheets_info if spreadsheets_info[x]["app_link"]}
-    apps = [x["basename"] for x in apps_lists]
-
-    items = []
-    # make sure to include artemis only once
-    artemis = False
-    for i in apps:
-        details = apps_lists[apps_lists["basename"] == i]
-
-        if artemis:
-            continue
-
-        folder = details["dir"].tolist()[0]
-        basename = details["basename"].to_string(index=False)
-
-        if folder == basename:
-            basename = ""
-
-        an_item = dict(
-            folder=folder,
-            basename=basename,
-            app_link=details["app_link"].tolist()[0],
-            xls=details["link"].tolist()[0],
-        )
-
-        if details["repo"].any():
-            an_item["repo"] = details["repo"].tolist()[0]
-
-        if details["citation"].any():
-            an_item["citation"] = details["citation"].tolist()[0]
-
-        if an_item["folder"] == "artemis":
-            artemis = True
-            an_item["basename"] = ""
-
-        items.append(an_item)
-
-    rendered_template = template.render(items=items)
+    rendered_template = template.render()
     with open(output_dir / "landing_page.html", "w") as out:
         out.write(f"{rendered_template}")
 
