@@ -31,6 +31,7 @@ theme:
     features:
         -   announce.dismiss
         -   content.action.edit
+        -   content.code.annotate
         -   content.tooltips
         -   footnotes
         -   header.autohide
@@ -114,3 +115,5 @@ extra:
     #     link: https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist
     -   icon: fontawesome/brands/google
         link: https://groups.google.com/d/forum/cobidas-checklist
+    annotate:
+        json: [.s2]
