@@ -34,4 +34,4 @@ See our [contact page](https://ecobidas.readthedocs.io/en/latest/contact/).
 
 We are looking for people to give us feedback or help us move forward.
 
-If you are interested, check our [documentation for contributors](https://ecobidas.readthedocs.io/en/latest/contributing/).
+If you are interested, check our [documentation for contributors](https://ecobidas.readthedocs.io/en/latest/contributing/contributing/).
