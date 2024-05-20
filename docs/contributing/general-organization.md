@@ -2,64 +2,43 @@
 
 General workflow of this project:
 
+``` mermaid
+graph TD
+  A[Google Sheet] --> |tox run -e update| B[📂 ecobidas/inputs/*/*.tsv];
+  B -->|tox run -e convert| C[📂 cobidas_schema/schemas/**/*.jsonld];
+  C -->|npm run serve| D[web app];
+```
+
 1.  turning the recommendation guidelines into google sheets
 1.  downloading the google sheets as TSVs
-1.  turning the TSVs into a "schema" representation
+1.  turning the TSVs into a "Reproschema" representation as JSON-LD
 1.  using a "front-end" user-interface that will read those schema and serve a web-app to the user.
 
-To execute that work, this project is organized around several "repositories":
+To execute that work, this project is organized around several "repositories".
 
--   the [eCOBIDAS repository](https://github.com/Remi-Gau/eCobidas) centralises
-    most of the information and workflow to convert the guidelines into a
-    checklist webapp,
+A [project on the open-science framework](https://osf.io/anvqy/) allows
+to "connect" all those elements together in one place.
 
--   the [Reproschema user interface](https://github.com/ReproNim/reproschema-ui)
-    contains the "front-end" code of the user interface to render the checklist
-    webapp,
-
--   the [ReproSchema](https://github.com/ReproNim/reproschema) repository
-    contains the formal "definition" of the terms used to describe the content
-    of the checklist as a schema,
-
--   the repositories containing a) an instance of the user interface and b) a
-    schema to serve a specific checklist :
-
-    -   the [one for the MRI version](https://github.com/ohbm/cobidas) based of
-        the Neurovault metadata "checklist" hosted on the OHBM Github
-        organization and that serves this
-        [checklist](https://ohbm.github.io/eCOBIDAS/#/),
-
-    -   the one for the
-        [PET imaging version](https://github.com/Remi-Gau/cobidas-PET) that
-        serves this [checklist](https://remi-gau.github.io/cobidas-PET/#/),
-
--   the
-    [google drive](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
-    where we work synchronously on the
-    [spreadsheets](https://drive.google.com/drive/folders/1ydwALHDzl21dcef3qhkju8JKKAT3Y72V?usp=sharing),
-
--   an associated
-    [zotero library](https://www.zotero.org/groups/2349772/cobidas_checklist) to
-    keep track of references related to this project,
-
--   a [project on the open-science framework](https://osf.io/anvqy/) that allows
-    to "connect" all those elements together in one place.
+Our [google drive](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
+where we work synchronously on the [spreadsheets](https://drive.google.com/drive/folders/1ydwALHDzl21dcef3qhkju8JKKAT3Y72V?usp=sharing).
 
 ## the eCOBIDAS repository
 
-This repository hosts the workflow that will turn the reports published by the
-Committee on Best Practices in Data Analysis and Sharing (COBIDAS) of the
-organization for human brain mapping (OHBM) into a checklists for improving
-methods and results reporting in (f)MRI, (i)EEG, MEG.
+This repository hosts:
+- the workflow that will turn reporting guidelines into a web-based checklists
+- the checklist saved as TSVs
+- the documentation for the project
 
-By extension, this workflow can also be used on other types of guidelines (like
-the ones for PET imaging and eyetracking).
+See the tree below for more details.
 
 ```bash
 📂
+┣━━ 📂 .github
 ┣━━ 📂 docs
-┣━━ 📂 ecobidas
-┃   ┣━━ 📂 inputs
+┣━━ 📂 artemis_schema # (8)
+┣━━ 📂 cobidas_schema # (9)
+┣━━ 📂 ecobidas # (1)
+┃   ┣━━ 📂 inputs # (2)
 ┃   ┃   ┣━━ 📂 core
 ┃   ┃   ┣━━ 📂 eyetracking
 ┃   ┃   ┣━━ 📂 meeg
@@ -68,8 +47,8 @@ the ones for PET imaging and eyetracking).
 ┃   ┃   ┣━━ 📂 pet
 ┃   ┃   ┣━━ 📂 reexecution
 ┃   ┃   ┣━━ 📂 response_options
-┃   ┃   ┣━━ 📄 data-dictionary.json
-┃   ┃   ┗━━ 📄 spreadsheet_google_id.yml
+┃   ┃   ┣━━ 📄 data-dictionary.json # (3)
+┃   ┃   ┗━━ 📄 spreadsheet_google_id.yml # (4)
 ┃   ┣━━ 📂 templates
 ┃   ┣━━ 🐍 __init__.py
 ┃   ┣━━ 🐍 cli.py
@@ -86,7 +65,9 @@ the ones for PET imaging and eyetracking).
 ┃   ┣━━ 📂 bids_template
 ┃   ┗━━ 📂 boilerplate
 ┣━━ 📂 macros
-┣━━ 📂 schema # (1)
+┣━━ 📂 reproschema-py # (5)
+┣━━ 📂 reproschema-ui # (6)
+┣━━ 📂 schema # (7)
 ┣━━ 📂 tests
 ┣━━ 📄 CITATION.cff
 ┣━━ 📄 LICENSE
@@ -98,93 +79,92 @@ the ones for PET imaging and eyetracking).
 ┗━━ 📄 tox.ini
 ```
 
-1.  :man_raising_hand: I'm an annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be expressed in Markdown.
+<!-- ANNOTATIONS START -->
 
+1.  [python package](./setup.md#command-line-interface) to convert the TSV spreadsheets into schemas
 
+2.  checklists spreadsheets as TSV files
 
+3.  [data dictionary](./spreadsheets.md#spreadsheet-content) describing the content of the spreadsheets
 
-```text
-.
-├── .github           <-- continuous integration "scripts"
-├── activities        <-- deprecated: ignore this
-├── communication     <-- abstracts and presentations about the project
-├── docs              <-- content of the documentation
-├── inputs            <-- checklists spreadsheets as CSV files, boilerplate for method section generation
-├── schema            <-- deprecated: ignore this
-├── schemas           <-- where the schemas are kept locally
-├── python            <-- python package to convert the CSV spreadsheets into schemas
-└── tests             <-- python script to test that the schema files are valid JSON-LD
-```
+4.  configuration file describing the information for each spreadsheet (sourcce, name, ...)
 
-In the schemas folder you might find different folders some of them with the
-following names:
+6.  [Reproschema python package](https://github.com/ReproNim/reproschema-py) to help convert TSVs into JSON-LD
 
-```text
-├── protocols         <-- schema for the checklists putting together several "sections" together
-├── activities        <-- schema of the different "sections"of the checklistss with their items
-└── response_options  <-- contains the pre-set list of response options to some checklist items
-```
+6.  [Reproschema user interface](https://github.com/ReproNim/reproschema-ui)
+    contains the "front-end" code of the user interface to render the checklist webapp
 
-### Spreadsheet content and organization
+7.  deprecated: ignore this
 
-The first step of the workflow involves taking the recommendation guidelines and
-converting that into a spreadsheet that contains all the items of the future
-checklist.
+8.  [cobidas_schema](https://github.com/ohbm/cobidas_schema.git) submodule where the JSON-LD files are stored.
 
-This step is by far the most labor intensive and has its dedicated page in the
-[documentation](./spreadsheets.md)
+9.  [artemis_schema](https://github.com/INCF/artem-is.git) submodule where the TSVs and JSON-LD files of the ARTEM-IS project are stored.
 
-### Converting the spreadsheet into a schema
+<!-- ANNOTATIONS END -->
 
-Most of that is covered in the section on
-[how the checklist is rendered](./how-to-render-the-checklist.md) and in the
-README in the `python` folder.
+### Apps repository
+
+Checklist apps are deployed from their own repository
+that are made to clone an instance of the [Reproschema user interface](https://github.com/ReproNim/reproschema-ui)
+and pointing to a Reproshema protocol it's supposed to render.
+
+Each repo is listed under the `GitHub repository` column of this table.
+
+{{ MACROS___table_apps() }}
 
 ## How is the Reproschema organized
 
-The first step of the workflow involves taking a spreadsheet that contains all
-the items of the checklist and turning that into a representation that can
-efficiently link the metadata about each item to the data imputed by the user.
-We are using the [ReproSchema](https://github.com/ReproNim/reproschema)
-initiative from [ReproNim](http://www.repronim.org/) to do this. Basically, it
-means turning your 'dumb' spreadsheet into an equivalent but 'smarter'
-representation of it: a bunch of hierarchically organized json files that link
-to each other.
+In the `cobidas_schema` repository you find different folders some of them with the following names:
 
-On top of the inherent
-[advantages](https://github.com/ReproNim/reproschema#30-advantages-of-current-representation)
-of this schema representation:
+```bash
+cobidas_schema
+┣━━ 📂 response_options # (1)
+┗━━ 📂 schemas
+    ┣━━ 📂 activities # (2)
+    ┗━━ 📂 protocols # (3)
+```
 
--   its use simplifies the rendering of the checklist by using the
-    [reproschema-ui](https://github.com/ReproNim/reproschema-ui) made for it,
+<!-- ANNOTATIONS START -->
 
--   this representation allows specification of user interface option that can
-    simplify the user experience: it allows us to specify the conditions that
-    will make certain items visible or not and thus will prevent users to be
-    presented with items that are not relevant to them (e.g answer PET related
-    when they have only run an fMRI study).
+1.  contains the [preset list of response options](./spreadsheets.md#preset-responses) to some checklist items
 
-The reproschema is organized in a hierarchical manner with several levels, the
-main ones being
+2.  schema of the different "sections"of the checklistss with their items
 
-1.  The lowest level is the `item level` where there is one question for each
-    item with an expected format for the user interface: is this yes / no
-    question (boolean), a multiple choice, a float or an integer...
+3.  schema for the checklists putting together several "sections" together
 
-1.  The second level is the `activity level` that contains a set of items. In
-    the original repronim project this would constitute usually a questionnaire:
-    like all the items of the Edinburgh handedness inventory would constitute
-    one activity. In our case, we are using it to define to break a checklist
-    into sub-sections of a method section like preprocessing, design,
-    participants...
+<!-- ANNOTATIONS END -->
+
+The first steps of the workflow involves taking a spreadsheet that contains all the items of the checklist
+and turning that into a representation that can efficiently link the metadata about each item
+to the data imputed by the user.
+We are using the [ReproSchema](https://github.com/ReproNim/reproschema) initiative
+from [ReproNim](http://www.repronim.org/) to do this.
+Basically, it means turning your 'dumb' spreadsheet into an equivalent
+but 'smarter' representation of it:
+a bunch of hierarchically organized json files that link to each other.
+
+The reproschema is organized in a hierarchical manner with several levels,
+the main ones being
+
+1.  The lowest level is the `item level` where there is one question for each item
+    with an expected format for the user interface:
+    is this yes / no question (boolean), a multiple choice, a float or an integer...
+
+1.  The second level is the `activity level` that contains a set of items.
+    In the original repronim project this would constitute usually a questionnaire:
+    like all the items of the Edinburgh handedness inventory would constitute one activity.
+    In our case, we are using it to define to break a checklist into sub-sections of a method section
+    like preprocessing, design, participants...
 
 1.  The highest level is the `protocol level` that contains a set of activities.
-    At the moment this level is under-used in our checklist but could be used to
-    define activity sets for different use case: fMRI, MEEG, pre-registration...
+    At the moment this level is under-used in our checklist
+    but could be used to define activity sets for different use case:
+    fMRI, MEEG, pre-registration...
 
-If you want to know more about Reproschema, we suggest you have look at the
-documentation
+The [ReproSchema](https://github.com/ReproNim/reproschema) repository
+contains the formal "definition" of the terms used to describe the content of the checklist as a schema,
+
+If you want to know more about Reproschema, have look at its documentation
 
 -   [main documentation](https://www.repronim.org/reproschema/)
 -   [FAQ](https://www.repronim.org/reproschema/FAQ/)

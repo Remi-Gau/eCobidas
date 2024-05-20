@@ -213,7 +213,7 @@ def make_preamble(schema_info: dict[str, str], items: pd.DataFrame) -> str:
         + "' target='_blank' > Source </a> | "
         + "<a href='"
         + str(info["repo"])
-        + "' target='_blank' > Github repository </a> | "
+        + "' target='_blank' > GitHub repository </a> | "
         + "<a href='"
         + str(info["citation"])
         + "' target='_blank' > Reference </a>"

@@ -14,7 +14,7 @@ and that provides a computer readable output that can be used to automatically g
 
 ## Prototypes
 
-See our list [available apps](https://remi-gau.github.io/eCobidas/apps/).
+See our list [available apps](https://ecobidas.readthedocs.io/en/latest/apps/).
 
 ## Want to know more ?
 
@@ -24,14 +24,14 @@ You want to know more about:
 -   the different goals of the project?
 -   how it is implemented?
 
-Head over to our [documentation](https://remi-gau.github.io/eCobidas/)
+Head over to our [documentation](https://ecobidas.readthedocs.io/en/latest/)
 
 ## How to reach us
 
-See our [contact page](https://remi-gau.github.io/eCobidas/contact/).
+See our [contact page](https://ecobidas.readthedocs.io/en/latest/contact/).
 
 ## How to contribute
 
 We are looking for people to give us feedback or help us move forward.
 
-If you are interested, check our [documentation for contributors](https://remi-gau.github.io/eCobidas/contributing/).
+If you are interested, check our [documentation for contributors](https://ecobidas.readthedocs.io/en/latest/contributing/).
