@@ -35,6 +35,7 @@ jobs:
         -   name: Update TSVs
             run: tox run -e update
         -   name: Clean up
+            continue-on-error: true
             run: |
                 pre-commit install
                 pre-commit run --all-files --show-diff-on-failure

@@ -4,6 +4,9 @@ on:
     push:
         branches:
         -   main
+    pull_request:
+        branches:
+        -   '*'
 
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
@@ -22,3 +25,4 @@ jobs:
             uses: mhausenblas/mkdocs-deploy-gh-pages@master
             env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                REQUIREMENTS: requirements.txt
