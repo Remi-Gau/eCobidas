@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "b0_unwarping_software.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "prefLabel": {
+        "en": "b0 unwarping software"
+    },
+    "description": "b0 unwarping software",
+    "ui": {
+        "inputType": "select"
+    },
+    "question": {
+        "en": "4.6 - Specify software used for distortion correction if different from the main package"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "choices": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/mri_softwares.jsonld",
+        "minValue": 0,
+        "maxValue": 0
+    }
+}

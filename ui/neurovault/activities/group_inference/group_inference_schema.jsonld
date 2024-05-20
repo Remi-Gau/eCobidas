@@ -1,0 +1,64 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "group_inference_schema.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "prefLabel": {
+        "en": "Group inference"
+    },
+    "description": "group inference",
+    "preamble": {
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing' target='_blank' > Source </a> | <a href='' target='_blank' > Github repository </a> | <a href='https://doi.org/10.3389/fninf.2015.00008' target='_blank' > Reference </a><br><br>Describe your statistical inference</p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/group_statistic_type.jsonld",
+            "items/group_statistic_parameters.jsonld",
+            "items/group_smoothness_fwhm.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "group_statistic_type",
+                "isAbout": "items/group_statistic_type.jsonld",
+                "prefLabel": {
+                    "en": "group statistic type"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_statistic_parameters",
+                "isAbout": "items/group_statistic_parameters.jsonld",
+                "prefLabel": {
+                    "en": "group statistic parameters"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "group_smoothness_fwhm",
+                "isAbout": "items/group_smoothness_fwhm.jsonld",
+                "prefLabel": {
+                    "en": "group smoothness fwhm"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

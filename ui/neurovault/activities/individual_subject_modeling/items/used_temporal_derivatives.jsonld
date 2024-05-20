@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "used_temporal_derivatives.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "prefLabel": {
+        "en": "used temporal derivatives"
+    },
+    "description": "used temporal derivatives",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "6.5 - Were temporal derivatives included?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "choices": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld",
+        "minValue": 0,
+        "maxValue": 0
+    }
+}

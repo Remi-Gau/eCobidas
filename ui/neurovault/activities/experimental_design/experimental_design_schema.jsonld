@@ -1,0 +1,129 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Activity",
+    "@id": "experimental_design_schema.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "prefLabel": {
+        "en": "Experimental design"
+    },
+    "description": "experimental design",
+    "preamble": {
+        "en": "<p><a href='https://docs.google.com/spreadsheets/d/1arizMF2GnaiXz9txY5tzTU7uoA0_ENE17W5wDeUPpu0/edit?usp=sharing' target='_blank' > Source </a> | <a href='' target='_blank' > Github repository </a> | <a href='https://doi.org/10.3389/fninf.2015.00008' target='_blank' > Reference </a><br><br>Describe your experimental design</p>"
+    },
+    "ui": {
+        "shuffle": false,
+        "order": [
+            "items/type_of_design.jsonld",
+            "items/number_of_imaging_runs.jsonld",
+            "items/number_of_experimental_units.jsonld",
+            "items/length_of_runs.jsonld",
+            "items/length_of_blocks.jsonld",
+            "items/length_of_trials.jsonld",
+            "items/optimization.jsonld",
+            "items/optimization_method.jsonld"
+        ],
+        "addProperties": [
+            {
+                "variableName": "type_of_design",
+                "isAbout": "items/type_of_design.jsonld",
+                "prefLabel": {
+                    "en": "type of design"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_imaging_runs",
+                "isAbout": "items/number_of_imaging_runs.jsonld",
+                "prefLabel": {
+                    "en": "number of imaging runs"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "number_of_experimental_units",
+                "isAbout": "items/number_of_experimental_units.jsonld",
+                "prefLabel": {
+                    "en": "number of experimental units"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "length_of_runs",
+                "isAbout": "items/length_of_runs.jsonld",
+                "prefLabel": {
+                    "en": "length of runs"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "length_of_blocks",
+                "isAbout": "items/length_of_blocks.jsonld",
+                "prefLabel": {
+                    "en": "length of blocks"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "length_of_trials",
+                "isAbout": "items/length_of_trials.jsonld",
+                "prefLabel": {
+                    "en": "length of trials"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "optimization",
+                "isAbout": "items/optimization.jsonld",
+                "prefLabel": {
+                    "en": "optimization"
+                },
+                "isVis": true,
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            },
+            {
+                "variableName": "optimization_method",
+                "isAbout": "items/optimization_method.jsonld",
+                "prefLabel": {
+                    "en": "optimization method"
+                },
+                "isVis": "optimization == 1",
+                "requiredValue": false,
+                "allow": [
+                    "reproschema:Skipped"
+                ]
+            }
+        ],
+        "allow": [
+            "reproschema:AutoAdvance",
+            "reproschema:AllowExport"
+        ]
+    }
+}

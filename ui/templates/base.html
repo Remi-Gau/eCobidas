@@ -1,0 +1,52 @@
+{% from 'bootstrap4/nav.html' import render_nav_item %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{% block title %} {% endblock %}</title>
+
+    {{ bootstrap.load_css() }}
+
+    <style>
+      body {
+        background: #e8f1f9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- this is a base template using Bootstrap-Flask
+       https://bootstrap-flask.readthedocs.io/ -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+          <h1 class="pt-5 pb-2">eCOBIDAS</h1>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-nav mr-auto">
+          {{ render_nav_item('index', 'Home') }} {{ render_nav_item('about',
+          'About') }}
+        </div>
+      </nav>
+
+      {% block content %} {% endblock %}
+
+      <!-- you can delete the next line if you're not using any Bootstrap JS -->
+      {{ bootstrap.load_js() }}
+    </div>
+  </body>
+
+  <footer>
+    <div class="row">
+      <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+        <h5 class="pt-5 pb-2">eCOBIDAS</h5>
+      </div>
+    </div>
+  </footer>
+</html>

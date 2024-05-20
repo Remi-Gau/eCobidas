@@ -1,0 +1,17 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "optimization_method.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "prefLabel": {
+        "en": "optimization method"
+    },
+    "description": "optimization method",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "1.8 - What method was used for optimization?"
+    }
+}

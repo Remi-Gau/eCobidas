@@ -1,0 +1,23 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "used_motion_susceptibiity_correction.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "prefLabel": {
+        "en": "used motion susceptibiity correction"
+    },
+    "description": "used motion susceptibiity correction",
+    "ui": {
+        "inputType": "radio"
+    },
+    "question": {
+        "en": "4.14 - Was motion-susceptibility correction used?"
+    },
+    "responseOptions": {
+        "valueType": "xsd:integer",
+        "choices": "https://raw.githubusercontent.com/ohbm/cobidas_schema/master/response_options/boolean.jsonld",
+        "minValue": 0,
+        "maxValue": 0
+    }
+}

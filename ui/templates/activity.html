@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% from 'bootstrap5/form.html' import render_form %}
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 ps-md-5">
+      <h1 class="pt-5 pb-2">{{ prefLabel }}</h1>
+
+      {{ preamble }} {{ render_form(form) }}
+    </div>
+  </div>
+
+  {% endblock %}
+</div>

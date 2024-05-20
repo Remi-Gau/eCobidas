@@ -1,0 +1,17 @@
+{
+    "@context": "https://raw.githubusercontent.com/ReproNim/reproschema/1.0.0-rc4/contexts/generic",
+    "@type": "reproschema:Field",
+    "@id": "contrast_definition.jsonld",
+    "schemaVersion": "1.0.0-rc4",
+    "version": "0.0.1",
+    "prefLabel": {
+        "en": "contrast definition"
+    },
+    "description": "contrast definition",
+    "ui": {
+        "inputType": "textarea"
+    },
+    "question": {
+        "en": "6.14 - Exactly what terms are subtracted from what?"
+    }
+}

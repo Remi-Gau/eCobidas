@@ -76,6 +76,14 @@ repos:
 #         additional_dependencies: [types-all, pandas-stubs]
 #         args: [--config-file=pyproject.toml]
 
+# Check formatting of CSS and HTML
+# prettier: https://prettier.io/
+-   repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+    -   id: prettier
+        types_or: [css, html]
+
 # Check that Python code complies with PEP8 guidelines
 # flake8 uses pydocstyle to check docstrings: https://flake8.pycqa.org/en/latest/
 # flake8-docstrings: https://pypi.org/project/flake8-docstrings/
@@ -86,5 +94,5 @@ repos:
     rev: 7.0.0
     hooks:
     -   id: flake8
-        args: [--config, .flake8, --verbose, ecobidas, tests, macros]
+        args: [--config, .flake8, --verbose, ecobidas, tests, macros, ui]
         additional_dependencies: [flake8-docstrings, flake8-use-fstring, flake8-functions, flake8-bugbear]
