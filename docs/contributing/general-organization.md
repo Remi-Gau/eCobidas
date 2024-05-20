@@ -55,6 +55,55 @@ methods and results reporting in (f)MRI, (i)EEG, MEG.
 By extension, this workflow can also be used on other types of guidelines (like
 the ones for PET imaging and eyetracking).
 
+```bash
+📂
+┣━━ 📂 docs
+┣━━ 📂 ecobidas
+┃   ┣━━ 📂 inputs
+┃   ┃   ┣━━ 📂 core
+┃   ┃   ┣━━ 📂 eyetracking
+┃   ┃   ┣━━ 📂 meeg
+┃   ┃   ┣━━ 📂 mri
+┃   ┃   ┣━━ 📂 neurovault
+┃   ┃   ┣━━ 📂 pet
+┃   ┃   ┣━━ 📂 reexecution
+┃   ┃   ┣━━ 📂 response_options
+┃   ┃   ┣━━ 📄 data-dictionary.json
+┃   ┃   ┗━━ 📄 spreadsheet_google_id.yml
+┃   ┣━━ 📂 templates
+┃   ┣━━ 🐍 __init__.py
+┃   ┣━━ 🐍 cli.py
+┃   ┣━━ 🐍 create_schema.py
+┃   ┣━━ 🐍 download_tsv.py
+┃   ┣━━ 🐍 generate_landing_page.py
+┃   ┣━━ 🐍 item.py
+┃   ┣━━ 🐍 macros.py
+┃   ┣━━ 🐍 parsers.py
+┃   ┣━━ 🐍 serve.py
+┃   ┣━━ 🐍 template_manager.py
+┃   ┗━━ 🐍 utils.py
+┣━━ 📂 inputs
+┃   ┣━━ 📂 bids_template
+┃   ┗━━ 📂 boilerplate
+┣━━ 📂 macros
+┣━━ 📂 schema # (1)
+┣━━ 📂 tests
+┣━━ 📄 CITATION.cff
+┣━━ 📄 LICENSE
+┣━━ 📄 Makefile
+┣━━ 📄 mkdocs.yml
+┣━━ 📄 pyproject.toml
+┣━━ 📄 README.md
+┣━━ 📄 requirements.txt
+┗━━ 📄 tox.ini
+```
+
+1.  :man_raising_hand: I'm an annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be expressed in Markdown.
+
+
+
+
 ```text
 .
 ├── .github           <-- continuous integration "scripts"

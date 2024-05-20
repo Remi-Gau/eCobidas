@@ -37,7 +37,7 @@ def main(output_dir: Path | None = None) -> None:
     with open(output_dir / "spreadsheets_table.md", "w") as out:
         out.write(f"{table_spreadsheets()}")
 
-    with open(output_dir / "data_dcitionary_table.md", "w") as out:
+    with open(output_dir / "data_dictionary_table.md", "w") as out:
         out.write(f"{table_data_dictionary()}")
 
 
