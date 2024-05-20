@@ -4,6 +4,10 @@ name: Update spreadsheet
 on:
     push:
         branches: [main]
+    pull_request:
+        branches:
+        -   '*'
+
     # to trigger update manually from the Action tab in github
     workflow_dispatch:
         inputs:
