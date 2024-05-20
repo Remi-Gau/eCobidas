@@ -25,9 +25,9 @@ where we work synchronously on the [spreadsheets](https://drive.google.com/drive
 ## the eCOBIDAS repository
 
 This repository hosts:
-- the workflow that will turn reporting guidelines into a web-based checklists
-- the checklist saved as TSVs
-- the documentation for the project
+-   the workflow that will turn reporting guidelines into a web-based checklists
+-   the checklist saved as TSVs
+-   the documentation for the project
 
 See the tree below for more details.
 
@@ -125,13 +125,9 @@ cobidas_schema
 ```
 
 <!-- ANNOTATIONS START -->
-
 1.  contains the [preset list of response options](./spreadsheets.md#preset-responses) to some checklist items
-
 2.  schema of the different "sections"of the checklistss with their items
-
 3.  schema for the checklists putting together several "sections" together
-
 <!-- ANNOTATIONS END -->
 
 The first steps of the workflow involves taking a spreadsheet that contains all the items of the checklist

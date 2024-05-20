@@ -5,8 +5,8 @@
 You will need to have installed.
 
 -   Python
--   [node.js](https://nodejs.org/en/)
 -   [Git](https://git-scm.com/downloads)
+-   [node.js](https://nodejs.org/en/) if you want to preview your checklist locally
 
 ## Install
 

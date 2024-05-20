@@ -4,3 +4,6 @@ remark: package.json
 
 package.json:
 	npm install `cat npm-requirements.txt`
+
+serve_app:
+	cd reproschema-ui/src && npm install && npm run serve
