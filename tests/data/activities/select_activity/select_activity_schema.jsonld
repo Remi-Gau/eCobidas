@@ -9,7 +9,7 @@
     },
     "description": "select activity",
     "preamble": {
-        "en": "<p><a href='https://github.com/Remi-Gau/eCobidas/blob/main/tests/inputs/test.tsv' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/eCobidas' target='_blank' > Github repository </a> | <a href='http://google.com' target='_blank' > Reference </a><br><br>A list of selection item</p>"
+        "en": "<p><a href='https://github.com/Remi-Gau/eCobidas/blob/main/tests/inputs/test.tsv' target='_blank' > Source </a> | <a href='https://github.com/Remi-Gau/eCobidas' target='_blank' > GitHub repository </a> | <a href='http://google.com' target='_blank' > Reference </a><br><br>A list of selection item</p>"
     },
     "ui": {
         "shuffle": false,
