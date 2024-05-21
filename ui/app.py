@@ -2,7 +2,7 @@ from functools import lru_cache
 from pathlib import Path
 
 import requests
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap5
 from flask_wtf import CSRFProtect, FlaskForm
 from markupsafe import Markup, escape
@@ -31,10 +31,6 @@ bootstrap = Bootstrap5(app)
 
 # Flask-WTF requires this line
 csrf = CSRFProtect(app)
-
-
-class DyanmicForm(FlaskForm):
-    pass
 
 
 @lru_cache
@@ -117,6 +113,7 @@ def get_nav_bar_content(protocol_name, activity_name=None):
 
 @app.route("/protocol/<protocol_name>/<activity_name>", methods=["GET", "POST"])
 def activity(protocol_name, activity_name):
+
     protocol_name = escape(protocol_name)
     activity_name = escape(activity_name)
 
@@ -126,22 +123,26 @@ def activity(protocol_name, activity_name):
 
     items = get_items_for_activity(protocol_name, activity_name)
 
-    form = generate_form(items, prefix=activity_name)
+    if request.method == "POST":
 
-    if form.validate_on_submit():
+        form = generate_form(form=None, items=items, prefix=activity_name)
 
-        items = update_visbility(items, form)
+        if form.validate_on_submit():
 
-        form = generate_form(items)
+            items = update_visbility(items, form)
 
-        return render_template(
-            "protocol.html",
-            protocol_pref_label=protocol_name,
-            activity_pref_label=activity["prefLabel"][LANG],
-            activity_preamble=Markup(activity["preamble"][LANG]),
-            activities=activities,
-            form=form,
-        )
+            form = generate_form(items)
+
+            return render_template(
+                "protocol.html",
+                protocol_pref_label=protocol_name,
+                activity_pref_label=activity["prefLabel"][LANG],
+                activity_preamble=Markup(activity["preamble"][LANG]),
+                activities=activities,
+                form=form,
+            )
+
+    form = generate_form(form=None, items=items, prefix=activity_name)
 
     return render_template(
         "protocol.html",
@@ -170,7 +171,14 @@ def update_visbility(items, form):
     return items
 
 
-def generate_form(items, prefix):
+def generate_form(form=None, items=None, prefix=None):
+
+    class DyanmicForm(FlaskForm):
+        pass
+
+    if form is None:
+        form = DyanmicForm
+
     for item_name, item in items.items():
 
         validators = []
@@ -181,7 +189,7 @@ def generate_form(items, prefix):
 
         if not item["visibility"]:
             setattr(
-                DyanmicForm,
+                form,
                 item_name,
                 HiddenField(
                     Markup(question),
@@ -209,7 +217,7 @@ def generate_form(items, prefix):
                 FieldType = TextAreaField
 
             setattr(
-                DyanmicForm,
+                form,
                 item_name,
                 FieldType(
                     Markup(question),
@@ -232,7 +240,7 @@ def generate_form(items, prefix):
                 FieldType = RadioField
 
             setattr(
-                DyanmicForm,
+                form,
                 item_name,
                 FieldType(
                     Markup(question),
@@ -243,9 +251,9 @@ def generate_form(items, prefix):
                 ),
             )
 
-    setattr(DyanmicForm, "submit", SubmitField("Submit"))  # noqa B010
+    setattr(form, "submit", SubmitField("Submit"))  # noqa B010
 
-    return DyanmicForm()
+    return form()
 
 
 def get_items_for_activity(protocol_name, activity_name):
