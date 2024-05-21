@@ -84,8 +84,21 @@ def protocol(protocol_name):
     landing_page_url = protocol_url(protocol_name).parent / protocol_content["landingPage"]["@id"]
     landing_page = get_landing_page(landing_page_url)
 
+    activities = get_nav_bar_content(protocol_name)
+
+    return render_template(
+        "protocol.html",
+        protocol_pref_label=protocol_name,
+        protocol_preamble=protocol_content["preamble"][LANG],
+        activities=activities,
+        landing_page=Markup(landing_page),
+    )
+
+
+def get_nav_bar_content(protocol_name, activity_name=None):
+    protocol_content = get_protocol(protocol_name)
     activities = [
-        {"name": "Start", "link": f"/protocol/{protocol_name}"},
+        {"name": "Start", "link": "#"},
     ]
     activities.extend(
         {
@@ -94,13 +107,12 @@ def protocol(protocol_name):
         }
         for activity in protocol_content["ui"]["addProperties"]
     )
-    return render_template(
-        "protocol.html",
-        prefLabel=protocol_name,
-        preamble=protocol_content["preamble"][LANG],
-        activities=activities,
-        landing_page=Markup(landing_page),
-    )
+    if activity_name:
+        activities[0]["link"] = f"/protocol/{protocol_name}"
+        for activity in activities:
+            if activity["name"] == activity_name:
+                activity["link"] = "#"
+    return activities
 
 
 @app.route("/protocol/<protocol_name>/<activity_name>", methods=["GET", "POST"])
@@ -110,9 +122,11 @@ def activity(protocol_name, activity_name):
 
     activity = get_activity(protocol_name, activity_name)
 
+    activities = get_nav_bar_content(protocol_name, activity["prefLabel"][LANG])
+
     items = get_items_for_activity(protocol_name, activity_name)
 
-    form = generate_form(items)
+    form = generate_form(items, prefix=activity_name)
 
     if form.validate_on_submit():
 
@@ -121,16 +135,20 @@ def activity(protocol_name, activity_name):
         form = generate_form(items)
 
         return render_template(
-            "activity.html",
-            prefLabel=activity["prefLabel"][LANG],
-            preamble=Markup(activity["preamble"][LANG]),
+            "protocol.html",
+            protocol_pref_label=protocol_name,
+            activity_pref_label=activity["prefLabel"][LANG],
+            activity_preamble=Markup(activity["preamble"][LANG]),
+            activities=activities,
             form=form,
         )
 
     return render_template(
-        "activity.html",
-        prefLabel=activity["prefLabel"][LANG],
-        preamble=Markup(activity["preamble"][LANG]),
+        "protocol.html",
+        protocol_pref_label=protocol_name,
+        activity_pref_label=activity["prefLabel"][LANG],
+        activity_preamble=Markup(activity["preamble"][LANG]),
+        activities=activities,
         form=form,
     )
 
@@ -152,7 +170,7 @@ def update_visbility(items, form):
     return items
 
 
-def generate_form(items):
+def generate_form(items, prefix):
     for item_name, item in items.items():
 
         validators = []
@@ -169,6 +187,7 @@ def generate_form(items):
                     Markup(question),
                     validators=validators,
                     description=item["description"],
+                    _prefix=prefix,
                 ),
             )
             continue
@@ -197,6 +216,7 @@ def generate_form(items):
                     validators=validators,
                     description=item["description"],
                     default=default,
+                    _prefix=prefix,
                 ),
             )
 
@@ -219,6 +239,7 @@ def generate_form(items):
                     validators=validators,
                     description=item["description"],
                     choices=[key for key in item["choices"]],
+                    _prefix=prefix,
                 ),
             )
 
