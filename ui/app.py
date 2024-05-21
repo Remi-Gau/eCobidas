@@ -1,29 +1,32 @@
+import json
 from functools import lru_cache
 from pathlib import Path
+from typing import Any
 
 import requests
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap5
 from flask_wtf import CSRFProtect, FlaskForm
 from markupsafe import Markup, escape
-from modules import activity_url, get_activity, get_item, get_protocol, protocol_url
+from modules import get_item, get_protocol, protocol_url
 from rich import print
 from wtforms import (
+    DateField,
     DecimalField,
     HiddenField,
     IntegerField,
-    MultipleFileField,
     RadioField,
     SelectField,
+    SelectMultipleField,
     StringField,
     SubmitField,
     TextAreaField,
 )
 from wtforms.validators import DataRequired
 
-LANG = "en"
+LANG: str = "en"
 
-app = Flask(__name__)
+app: Flask = Flask(__name__)
 app.secret_key = "tO$&!|0wkamvVia0?n$NqIRVWOG"
 
 # Bootstrap-Flask requires this line
@@ -34,7 +37,7 @@ csrf = CSRFProtect(app)
 
 
 @lru_cache
-def query_choices(url):
+def query_choices(url: str) -> None | dict[str, Any]:
     try:
         data = requests.get(url).json()
     except Exception as exc:
@@ -44,13 +47,12 @@ def query_choices(url):
 
 
 @lru_cache
-def get_landing_page(url: Path):
+def get_landing_page(url: Path) -> None | dict[str, Any]:
     try:
         if str(url).startswith("https:"):
             data = requests.get(url)
         else:
-            with open(url) as f:
-                data = f.read()
+            data = Path(url).read_text()
     except Exception as exc:
         print(exc)
         data = None
@@ -58,22 +60,22 @@ def get_landing_page(url: Path):
 
 
 @app.route("/", methods=["GET", "POST"])
-def index():
+def index() -> str:
     return render_template("index.html")
 
 
 @app.route("/about")
-def about():
+def about() -> str:
     return render_template("about.html")
 
 
 @app.route("/new")
-def new():
+def new() -> str:
     return render_template("new_checklist.html")
 
 
 @app.route("/protocol/<protocol_name>", methods=["GET", "POST"])
-def protocol(protocol_name):
+def protocol(protocol_name: str) -> str:
 
     protocol_content = get_protocol(protocol_name)
 
@@ -91,58 +93,84 @@ def protocol(protocol_name):
     )
 
 
-def get_nav_bar_content(protocol_name, activity_name=None):
+def sort_ui_properties(properties: list[dict[str, Any]], order: list[str]) -> list[dict[str, Any]]:
+    tmp = []
+    for i in order:
+        for prop in properties:
+            if prop["isAbout"] == i:
+                tmp.append(prop)
+                break
+    return tmp
+
+
+def get_nav_bar_content(
+    protocol_name: str, activity_name: str | None = None
+) -> list[dict[str, str]]:
     protocol_content = get_protocol(protocol_name)
+
+    order = protocol_content["ui"]["order"]
+    properties = protocol_content["ui"]["addProperties"]
+    properties = sort_ui_properties(properties=properties, order=order)
+
     activities = [
-        {"name": "Start", "link": "#"},
+        {"name": "Start", "link": "#", "class": "nav-link active"},
     ]
     activities.extend(
         {
             "name": activity["prefLabel"][LANG],
             "link": f"/protocol/{protocol_name}/{activity['variableName']}",
+            "class": "nav-link",
         }
-        for activity in protocol_content["ui"]["addProperties"]
+        for activity in properties
     )
+
     if activity_name:
         activities[0]["link"] = f"/protocol/{protocol_name}"
+        activities[0]["class"] = "nav-link"
         for activity in activities:
             if activity["name"] == activity_name:
                 activity["link"] = "#"
+                activity["class"] = "nav-link active"
+
     return activities
 
 
 @app.route("/protocol/<protocol_name>/<activity_name>", methods=["GET", "POST"])
-def activity(protocol_name, activity_name):
+def activity(protocol_name, activity_name) -> str:
 
     protocol_name = escape(protocol_name)
     activity_name = escape(activity_name)
 
-    activity = get_activity(protocol_name, activity_name)
+    protocol_content = get_protocol(protocol_name)
+    properties = protocol_content["ui"]["addProperties"]
+    for activity in properties:
+        if activity["variableName"] == activity_name:
+            is_about_activity = activity["isAbout"]
+            break
+    activity_file = protocol_url(protocol_name).parent / is_about_activity
+
+    with open(activity_file) as f:
+        activity = json.load(f)
 
     activities = get_nav_bar_content(protocol_name, activity["prefLabel"][LANG])
 
-    items = get_items_for_activity(protocol_name, activity_name)
+    items = get_items_for_activity(activity_file)
 
-    if request.method == "POST":
+    form = generate_form(items=items, prefix=activity_name)
 
-        form = generate_form(form=None, items=items, prefix=activity_name)
+    if request.method == "POST" and form.validate_on_submit():
+        items = update_visibility(items, form)
 
-        if form.validate_on_submit():
+        form = generate_form(items, prefix=activity_name)
 
-            items = update_visbility(items, form)
-
-            form = generate_form(items)
-
-            return render_template(
-                "protocol.html",
-                protocol_pref_label=protocol_name,
-                activity_pref_label=activity["prefLabel"][LANG],
-                activity_preamble=Markup(activity["preamble"][LANG]),
-                activities=activities,
-                form=form,
-            )
-
-    form = generate_form(form=None, items=items, prefix=activity_name)
+        return render_template(
+            "protocol.html",
+            protocol_pref_label=protocol_name,
+            activity_pref_label=activity["prefLabel"][LANG],
+            activity_preamble=Markup(activity["preamble"][LANG]),
+            activities=activities,
+            form=form,
+        )
 
     return render_template(
         "protocol.html",
@@ -154,7 +182,7 @@ def activity(protocol_name, activity_name):
     )
 
 
-def update_visbility(items, form):
+def update_visibility(items: dict[str, Any], form):
     for item, values in items.items():
         isVis = values["isVis"]
         if isinstance(isVis, str):
@@ -171,13 +199,12 @@ def update_visbility(items, form):
     return items
 
 
-def generate_form(form=None, items=None, prefix=None):
+def generate_form(items=None, prefix=None):
 
     class DyanmicForm(FlaskForm):
         pass
 
-    if form is None:
-        form = DyanmicForm
+    form = DyanmicForm
 
     for item_name, item in items.items():
 
@@ -204,13 +231,32 @@ def generate_form(form=None, items=None, prefix=None):
 
         default = None
 
-        if input_type not in ["select", "radio", "slider"]:
+        if input_type == "date":
+
+            print(item_name)
+
+            FieldType = DateField
+
+            setattr(
+                form,
+                item_name,
+                FieldType(
+                    Markup(question),
+                    validators=validators,
+                    description=item["description"],
+                    default=default,
+                    _prefix=prefix,
+                    format="%Y-%m-%d",
+                ),
+            )
+
+        elif input_type not in ["select", "radio", "slider"]:
 
             FieldType = StringField
             if input_type == "number":
                 FieldType = IntegerField
                 default = 0
-            elif input_type in ["float", "slider"]:
+            elif input_type in ["float"]:
                 FieldType = DecimalField
                 default = 0
             elif input_type == "textarea":
@@ -233,10 +279,10 @@ def generate_form(form=None, items=None, prefix=None):
             is_multiple = item["is_multiple"]
 
             if is_multiple:
-                FieldType = MultipleFileField
+                FieldType = SelectMultipleField
             if input_type == "select":
                 FieldType = SelectField
-            elif input_type == "radio":
+            elif input_type in ["radio", "slider"]:
                 FieldType = RadioField
 
             setattr(
@@ -256,15 +302,20 @@ def generate_form(form=None, items=None, prefix=None):
     return form()
 
 
-def get_items_for_activity(protocol_name, activity_name):
-    # TODO make sure items are presented in the right order
-    activity = get_activity(protocol_name, activity_name)
+def get_items_for_activity(activity_file):
+    with open(activity_file) as f:
+        activity = json.load(f)
+
+    order = activity["ui"]["order"]
+    properties = activity["ui"]["addProperties"]
+    properties = sort_ui_properties(properties=properties, order=order)
+
     items = {}
-    for item in activity["ui"]["addProperties"]:
+    for item in properties:
 
         item_name = item["variableName"]
 
-        item_data = get_item(activity_url(protocol_name, activity_name).parent / item["isAbout"])
+        item_data = get_item(activity_file.parent / item["isAbout"])
 
         tmp = {
             "visibility": False,
