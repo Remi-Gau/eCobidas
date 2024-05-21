@@ -1,11 +1,12 @@
 from functools import lru_cache
+from pathlib import Path
 
 import requests
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 from flask_wtf import CSRFProtect, FlaskForm
 from markupsafe import Markup, escape
-from modules import activity_url, get_activity, get_item
+from modules import activity_url, get_activity, get_item, get_protocol, protocol_url
 from rich import print
 from wtforms import (
     DecimalField,
@@ -46,6 +47,20 @@ def query_choices(url):
     return data
 
 
+@lru_cache
+def get_landing_page(url: Path):
+    try:
+        if str(url).startswith("https:"):
+            data = requests.get(url)
+        else:
+            with open(url) as f:
+                data = f.read()
+    except Exception as exc:
+        print(exc)
+        data = None
+    return data
+
+
 @app.route("/", methods=["GET", "POST"])
 def index():
     return render_template("index.html")
@@ -56,7 +71,39 @@ def about():
     return render_template("about.html")
 
 
-@app.route("/<protocol_name>/<activity_name>", methods=["GET", "POST"])
+@app.route("/new")
+def new():
+    return render_template("new_checklist.html")
+
+
+@app.route("/protocol/<protocol_name>", methods=["GET", "POST"])
+def protocol(protocol_name):
+
+    protocol_content = get_protocol(protocol_name)
+
+    landing_page_url = protocol_url(protocol_name).parent / protocol_content["landingPage"]["@id"]
+    landing_page = get_landing_page(landing_page_url)
+
+    activities = [
+        {"name": "Start", "link": f"/protocol/{protocol_name}"},
+    ]
+    activities.extend(
+        {
+            "name": activity["prefLabel"][LANG],
+            "link": f"/protocol/{protocol_name}/{activity['variableName']}",
+        }
+        for activity in protocol_content["ui"]["addProperties"]
+    )
+    return render_template(
+        "protocol.html",
+        prefLabel=protocol_name,
+        preamble=protocol_content["preamble"][LANG],
+        activities=activities,
+        landing_page=Markup(landing_page),
+    )
+
+
+@app.route("/protocol/<protocol_name>/<activity_name>", methods=["GET", "POST"])
 def activity(protocol_name, activity_name):
     protocol_name = escape(protocol_name)
     activity_name = escape(activity_name)
@@ -68,15 +115,8 @@ def activity(protocol_name, activity_name):
     form = generate_form(items)
 
     if form.validate_on_submit():
-        for item, values in items.items():
-            isVis = values["isVis"]
-            if isinstance(isVis, str):
-                isVis = isVis.replace(" ", "").split("==")
-                if len(isVis) == 2:
-                    response = form[isVis[0]].data
-                    value = items[isVis[0]]["choices"].get(response)
-                    expected = int(isVis[1])
-                    items[item]["visibility"] = value == expected
+
+        items = update_visbility(items, form)
 
         form = generate_form(items)
 
@@ -93,6 +133,23 @@ def activity(protocol_name, activity_name):
         preamble=Markup(activity["preamble"][LANG]),
         form=form,
     )
+
+
+def update_visbility(items, form):
+    for item, values in items.items():
+        isVis = values["isVis"]
+        if isinstance(isVis, str):
+            isVis = isVis.replace(" ", "").split("==")
+            if len(isVis) > 2:
+                app.logger.warning("More than 1 '=='")
+            if len(isVis) < 2:
+                app.logger.warning(f"Unsupported JavaScript expression: {isVis}")
+            if len(isVis) == 2:
+                response = form[isVis[0]].data
+                value = items[isVis[0]]["choices"].get(response)
+                expected = int(isVis[1])
+                items[item]["visibility"] = value == expected
+    return items
 
 
 def generate_form(items):
@@ -118,13 +175,17 @@ def generate_form(items):
 
         input_type = item["input_type"]
 
+        default = None
+
         if input_type not in ["select", "radio", "slider"]:
 
             FieldType = StringField
             if input_type == "number":
                 FieldType = IntegerField
+                default = 0
             elif input_type in ["float", "slider"]:
                 FieldType = DecimalField
+                default = 0
             elif input_type == "textarea":
                 FieldType = TextAreaField
 
@@ -135,6 +196,7 @@ def generate_form(items):
                     Markup(question),
                     validators=validators,
                     description=item["description"],
+                    default=default,
                 ),
             )
 
