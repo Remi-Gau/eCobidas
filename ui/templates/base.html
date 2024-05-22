@@ -21,54 +21,67 @@
     <header>{% block header %}{% endblock %}</header>
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-10 mx-lg-auto mx-md-auto">
-          <h1 class="pt-5 pb-2">eCOBIDAS</h1>
-        </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <!-- TODO deal with active page -->
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">eCOBIDAS</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    New checklist
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="/protocol/neurovault"
+                        >Neurovault</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/protocol/eyetracking"
+                        >eyetracking</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/protocol/pet">PET</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/protocol/cobidas"
+                        >cobidas MRI</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
 
       <div class="row">
-        <div class="col-md-12 col-lg-10 mx-lg-auto mx-md-auto">
-          <div class="main-nav">
-            <ul class="nav nav-pills nav-fill">
-              <!-- TODO deal with active page -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-expanded="false"
-                  >New checklist</a
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="/protocol/neurovault"
-                      >Neurovault</a
-                    >
-                  </li>
-                  <li><a class="dropdown-item" href="/protocol/pet">PET</a></li>
-                  <li>
-                    <a class="dropdown-item" href="/protocol/eyetracking"
-                      >eyetracking</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/protocol/cobidas"
-                      >cobidas MRI</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
-              </li>
-            </ul>
-          </div>
-
+        <div class="col-md-12 col-lg-12 mx-lg-auto mx-md-auto">
           {% block content %} {% endblock %}
         </div>
       </div>

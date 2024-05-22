@@ -235,8 +235,6 @@ def slider_response(choices: list) -> ResponseOption:
     response_options.set_max(1)
     response_options.set_max(steps - 1)
 
-    linspace(min, max, steps)
-
     # TODO update after render off slide item has been improved
     for i, opt in enumerate(linspace(min, max, steps)):
         response_options.add_choice(f"{opt:.3f}", i)

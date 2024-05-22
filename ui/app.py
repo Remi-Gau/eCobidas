@@ -114,9 +114,11 @@ def generate_form(items=None, prefix=None):
 
     for item_name, item in items.items():
 
-        render_kw = {"style": "border-color: red; border-width: 2px;"}
-        if item["is_answered"]:
-            render_kw = {"style": "border-color: green; border-width: 2px;"}
+        render_kw = (
+            {"style": "border-color: green; border-width: 2px;"}
+            if item["is_answered"]
+            else {"style": "border-color: red; border-width: 2px;"}
+        )
 
         validators = []
         if item["required"]:
@@ -143,8 +145,6 @@ def generate_form(items=None, prefix=None):
 
         if input_type == "date":
 
-            print(item_name)
-
             FieldType = DateField
 
             setattr(
@@ -166,10 +166,19 @@ def generate_form(items=None, prefix=None):
             FieldType = StringField
             if input_type == "number":
                 FieldType = IntegerField
-            elif input_type in ["float"]:
+            elif input_type == "float":
                 FieldType = DecimalField
             elif input_type == "textarea":
                 FieldType = TextAreaField
+
+            if input_type in ["number", "float"]:
+                minimum = item["min"]
+                maximum = item["max"]
+                validators.append(NumberRange(min=minimum, max=maximum))
+                if minimum is not None and maximum is not None:
+                    question += f" ({minimum=}, {maximum=})"
+                elif minimum is not None:
+                    question += f" ({minimum=})"
 
             setattr(
                 form,
@@ -214,31 +223,52 @@ def generate_form(items=None, prefix=None):
 
         else:
 
-            is_multiple = item["is_multiple"]
-
-            if is_multiple:
-                FieldType = SelectMultipleField
-            elif input_type == "select":
-                FieldType = SelectField
-            elif input_type == "radio":
-                FieldType = RadioField
-
-            setattr(
-                form,
-                item_name,
-                FieldType(
-                    Markup(question),
-                    validators=validators,
-                    description=item["description"],
-                    choices=item["choices"],
-                    _prefix=prefix,
-                    render_kw=render_kw,
-                ),
-            )
+            form = add_choice_based_items(form, prefix, item_name, item)
 
     setattr(form, "submit", SubmitField("Save"))  # noqa B010
 
     return form()
+
+
+def add_choice_based_items(form, prefix, item_name, item):
+
+    question = f"{item['question']} {item['unit']}"
+
+    input_type = item["input_type"]
+
+    render_kw = (
+        {"style": "border-color: green; border-width: 2px;"}
+        if item["is_answered"]
+        else {"style": "border-color: red; border-width: 2px;"}
+    )
+
+    validators = []
+    if item["required"]:
+        validators.append(DataRequired())
+
+    is_multiple = item["is_multiple"]
+
+    if is_multiple:
+        FieldType = SelectMultipleField
+    elif input_type == "select":
+        FieldType = SelectField
+    elif input_type == "radio":
+        FieldType = RadioField
+
+    setattr(
+        form,
+        item_name,
+        FieldType(
+            Markup(question),
+            validators=validators,
+            description=item["description"],
+            choices=item["choices"],
+            _prefix=prefix,
+            render_kw=render_kw,
+        ),
+    )
+
+    return form
 
 
 @lru_cache
@@ -275,17 +305,27 @@ def get_items_for_activity(activity_file):
         if item["requiredValue"]:
             tmp["required"] = True
 
-        try:
-            unit = f"({item_data['responseOptions']['unitOptions'][0]['prefLabel'][LANG]})"
-        except KeyError:
-            unit = ""
-        tmp["unit"] = unit
+        if response_options := item_data.get("responseOptions"):
+            try:
+                unit = f"({response_options['unitOptions'][0]['prefLabel'][LANG]})"
+            except KeyError:
+                unit = ""
+            tmp["unit"] = unit
 
-        try:
-            is_multiple = item_data["responseOptions"].get("multipleChoice", False)
-        except KeyError:
-            is_multiple = False
-        tmp["is_multiple"] = is_multiple
+            tmp["min"] = response_options.get("minValue")
+            tmp["max"] = response_options.get("maxValue")
+
+            try:
+                is_multiple = response_options.get("multipleChoice", False)
+            except KeyError:
+                is_multiple = False
+            tmp["is_multiple"] = is_multiple
+
+        else:
+            tmp["unit"] = ""
+            tmp["min"] = None
+            tmp["max"] = None
+            tmp["is_multiple"] = None
 
         items[item_name] = tmp
 
