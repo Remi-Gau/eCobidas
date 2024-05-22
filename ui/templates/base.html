@@ -8,16 +8,17 @@
 
     {{ bootstrap.load_css() }}
 
-    <style>
-      body {
-        background: #e8f1f9;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
   </head>
 
   <body>
     <!-- this is a base template using Bootstrap-Flask
        https://bootstrap-flask.readthedocs.io/ -->
+
+    <header>{% block header %}{% endblock %}</header>
 
     <div class="container">
       <div class="row">
@@ -28,43 +29,45 @@
 
       <div class="row">
         <div class="col-md-12 col-lg-10 mx-lg-auto mx-md-auto">
-          <ul class="nav nav-pills nav-fill" style="background: #d2e8fc">
-            <!-- TODO deal with active page -->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-expanded="false"
-                >New checklist</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="/protocol/neurovault"
-                    >Neurovault</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="/protocol/pet">PET</a></li>
-                <li>
-                  <a class="dropdown-item" href="/protocol/eyetracking"
-                    >eyetracking</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/protocol/cobidas"
-                    >cobidas MRI</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
-            </li>
-          </ul>
+          <div class="main-nav">
+            <ul class="nav nav-pills nav-fill">
+              <!-- TODO deal with active page -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >New checklist</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/protocol/neurovault"
+                      >Neurovault</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="/protocol/pet">PET</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/protocol/eyetracking"
+                      >eyetracking</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/protocol/cobidas"
+                      >cobidas MRI</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+            </ul>
+          </div>
 
           {% block content %} {% endblock %}
         </div>
