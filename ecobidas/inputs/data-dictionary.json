@@ -80,7 +80,7 @@
     },
     "choices": {
         "VariableName": "choices",
-        "Description": "list of possible responses",
+        "Description": "List of possible responses. Options are separated by a pipe '|'. For integers, floats, and sliders, the values represent min | max | step. If they are not provided, it should be assumed that they ar None or null.",
         "RequirementLevel": "required"
     },
     "mandatory": {

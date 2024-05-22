@@ -1,5 +1,6 @@
 import re
 
+from loguru import logger
 from numpy import isnan, linspace
 from reproschema.models.item import Item, ResponseOption
 
@@ -172,6 +173,26 @@ def define_choices(item: Item, field_type: str, choices: list) -> Item:
     item.set_input_type()
 
     if field_type in {"multitext", "text"}:
+        return item
+
+    if field_type in {"int", "float"}:
+        if field_type == "int":
+            field_type = "integer"
+
+        response_options = ResponseOption()
+        response_options.set_valueType(field_type)
+
+        if choices and isinstance(choices, list):
+            min_value = int(choices[0])
+            response_options.set_min(min_value)
+            if len(choices) > 1:
+                max_value = int(choices[1])
+                response_options.set_max(max_value)
+        else:
+            logger.warning(f"No min or max value defined for {field_type} item.")
+
+        item.set_input_type(response_options)
+
         return item
 
     elif field_type == "slider":

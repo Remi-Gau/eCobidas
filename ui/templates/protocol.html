@@ -21,6 +21,19 @@
     <div class="col-md-9 col-lg-9">
       {% if landing_page %} {{ landing_page }} {% else %}
       <h3>{{ activity_pref_label }}</h3>
+      <p>
+        <progress
+          id="progress"
+          style="width: 75%"
+          value="{{ completed_items }}"
+          max="{{ nb_items }}"
+        ></progress>
+        <br />
+        <label style="font-size: 80%" for="progress"
+          >{{ completed_items }} / {{ nb_items }} items completed</label
+        >
+      </p>
+
       {{ activity_preamble }} {{ render_form(form) }} {% endif %}
     </div>
   </div>

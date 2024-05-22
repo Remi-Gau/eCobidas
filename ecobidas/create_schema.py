@@ -90,6 +90,7 @@ def create_schema(
             print_item_info(activity_idx, item_idx, item_info)
 
             item = define_new_item(item_info)
+
             item.write(os.path.join(activity_path, "items"))
 
             activity.append_item(item)

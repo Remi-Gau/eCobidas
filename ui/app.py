@@ -382,9 +382,13 @@ def activity(protocol_name, activity_name) -> str:
     form = generate_form(items=items, prefix=activity_name)
 
     if request.method == "POST" and form.is_submitted():
+
         items = update_visibility(items, form)
         items = update_format(items, form)
         form = generate_form(items, prefix=activity_name)
+
+        completed_items = sum(bool(i["is_answered"]) for i in items.values())
+        nb_items = sum(bool(i["visibility"]) for i in items.values())
 
         return render_template(
             "protocol.html",
@@ -393,7 +397,12 @@ def activity(protocol_name, activity_name) -> str:
             activity_preamble=Markup(activity["preamble"][LANG]),
             activities=activities,
             form=form,
+            nb_items=nb_items,
+            completed_items=completed_items,
         )
+
+    completed_items = sum(bool(i["is_answered"]) for i in items.values())
+    nb_items = sum(bool(i["visibility"]) for i in items.values())
 
     return render_template(
         "protocol.html",
@@ -402,6 +411,8 @@ def activity(protocol_name, activity_name) -> str:
         activity_preamble=Markup(activity["preamble"][LANG]),
         activities=activities,
         form=form,
+        nb_items=nb_items,
+        completed_items=completed_items,
     )
 
 
