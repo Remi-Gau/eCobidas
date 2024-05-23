@@ -2,9 +2,10 @@ import json
 from pathlib import Path
 from typing import Any
 
-from flask import Flask, render_template, request
+import pandas as pd
+from flask import Flask, flash, redirect, render_template, request
 from flask_bootstrap import Bootstrap5
-from flask_wtf import CSRFProtect
+from flask_wtf import CSRFProtect, FlaskForm
 from markupsafe import Markup, escape
 from modules import (
     LANG,
@@ -16,14 +17,23 @@ from modules import (
     protocol_url,
     update_format,
 )
+from rich import print
+from werkzeug.utils import secure_filename
+from wtforms import MultipleFileField, SubmitField
 
 test_config = None
+
+UPLOAD_FOLDER = Path(__file__).parent / "tmp"
+UPLOAD_FOLDER.mkdir(parents=True, exist_ok=True)
+ALLOWED_EXTENSIONS = {"tsv", "json"}
 
 # create and configure the app
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_mapping(
     SECRET_KEY="tO$&!|0wkamvVia0?n$NqIRVWOG",
     DATABASE=Path(app.instance_path) / "flaskr.sqlite",
+    UPLOAD_FOLDER=UPLOAD_FOLDER,
+    MAX_CONTENT_LENGTH=16 * 1000 * 1000,
 )
 
 if test_config is None:
@@ -153,9 +163,45 @@ def index() -> str:
     return render_template("index.html")
 
 
-@app.route("/about")
+def allowed_file(filename):
+    return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
+class UploadForm(FlaskForm):
+    participants = MultipleFileField("Upload participants.tsv and participants.json")
+    submit = SubmitField("Upload")
+
+
+@app.route("/about", methods=["GET", "POST"])
 def about() -> str:
-    return render_template("about.html")
+    form = UploadForm()
+    if request.method == "POST" and form.is_submitted():
+        print(f"{form.participants.data=}")
+        print(f"{form.participants.name=}")
+        if len(form.participants.data) != 2:
+            flash("2 files must be uploaded.", "error")
+            return redirect(request.url)
+        if all(file.filename != "participants.json" for file in form.participants.data):
+            flash("No 'participants.json' was uploaded.", "error")
+            return redirect(request.url)
+        if all(file.filename != "participants.tsv" for file in form.participants.data):
+            flash("No 'participants.tsv' was uploaded.", "error")
+            return redirect(request.url)
+        for file in form.participants.data:
+            if allowed_file(file.filename):
+                filename = secure_filename(file.filename)
+                file.save(Path(app.config["UPLOAD_FOLDER"]) / filename)
+
+        participants_tsv = pd.read_csv(
+            Path(app.config["UPLOAD_FOLDER"]) / "participants.tsv", sep="\t"
+        )
+        with open(Path(app.config["UPLOAD_FOLDER"]) / "participants.json") as f:
+            participants_json = json.load(f)
+
+        print(participants_tsv)
+        print(participants_json)
+
+    return render_template("about.html", form=form)
 
 
 @app.route("/new")

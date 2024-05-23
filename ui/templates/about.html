@@ -1,1 +1,9 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% from 'bootstrap5/form.html' import render_form %}
+{% block content %} {% with messages =
+get_flashed_messages(with_categories=true) %} {% if messages %}
+<ul class="flashes">
+  {% for message in messages %}
+  <li>{{ message }}</li>
+  {% endfor %}
+</ul>
+{% endif %} {% endwith %} {{ render_form(form) }} {% endblock %}
