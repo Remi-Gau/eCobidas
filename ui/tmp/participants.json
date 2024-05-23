@@ -1,15 +1,22 @@
 {
-  "dominant_hand": {
-    "LongName": "dominant_hand",
+  "sex": {
+    "LongName": "sex",
+    "Description": "String value indicating phenotypical sex.",
+    "TermURL": "http://purl.obolibrary.org/obo/PATO_0001894",
     "Levels": {
-      "left": {
-        "Description": "left",
-        "TermURL": "http://purl.bioontology.org/ontology/SNOMEDCT/87683000"
+      "F": {
+        "Description": "Female",
+        "TermURL": "http://purl.obolibrary.org/obo/PATO_0000383"
       },
-      "right": {
-        "Description": "right",
-        "TermURL": "http://purl.bioontology.org/ontology/SNOMEDCT/46669005"
+      "M": {
+        "Description": "Male",
+        "TermURL": "http://purl.obolibrary.org/obo/PATO_0000384"
       }
     }
+  },
+  "age": {
+    "LongName": "age",
+    "Units": "year",
+    "TermURL": "http://purl.obolibrary.org/obo/PATO_0000011"
   }
 }

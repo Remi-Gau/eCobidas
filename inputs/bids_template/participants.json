@@ -1,29 +1,53 @@
 {
     "age": {
-        "LongName": "",
-        "Description": "age of the participant",
-        "Levels": [],
-        "Units": "years",
-        "TermURL": ""
+        "Annotations": {
+            "IsAbout": {
+                "TermURL": "nb:Age",
+                "Label": ""
+            },
+            "Transformation": {
+                "TermURL": "nb:FromInt",
+                "Label": "integer data"
+            },
+            "MissingValues": [
+                "",
+                "n/a",
+                " "
+            ]
+        },
+        "Description": "There should have been a description here, but there wasn't. :("
+    },
+    "participant_id": {
+        "Annottations": {
+            "IsAbout": {
+                "TermURL": "nb:ParticipantID",
+                "Label": ""
+            },
+            "Identifies": "participant"
+        },
+        "Description": "There should have been a description here, but there wasn't. :("
     },
     "sex": {
-        "LongName": "",
-        "Description": "sex of the participant as reported by the participant",
-        "Levels": {
-            "m": "male",
-            "f": "female"
+        "Annotations": {
+            "IsAbout": {
+                "TermURL": "nb:Sex",
+                "Label": ""
+            },
+            "Levels": {
+                "F": {
+                    "TermURL": "snomed:248152002",
+                    "Label": ""
+                },
+                "M": {
+                    "TermURL": "snomed:248153007",
+                    "Label": ""
+                },
+                "M,": {
+                    "TermURL": "snomed:248153007",
+                    "Label": ""
+                }
+            }
         },
-        "Units": "",
-        "TermURL": ""
-    },
-    "handedness": {
-        "LongName": "",
-        "Description": "handedness of the participant as reported by the participant",
-        "Levels": {
-            "l": "left",
-            "r": "right"
-        },
-        "Units": "",
-        "TermURL": ""
+        "Description": "There should have been a description here, but there wasn't. :("
     }
 }
