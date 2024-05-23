@@ -1,10 +1,10 @@
 {
-    "TaskName": "",
-    "SamplingFrequency": [],
-    "EEGChannelCount": [],
-    "EOGChannelCount": [],
-    "ECGChannelCount": [],
-    "EMGChannelCount": [],
-    "EEGReference": "",
-    "PowerLineFrequency": []
+  "TaskName": "",
+  "SamplingFrequency": [],
+  "EEGChannelCount": [],
+  "EOGChannelCount": [],
+  "ECGChannelCount": [],
+  "EMGChannelCount": [],
+  "EEGReference": "",
+  "PowerLineFrequency": []
 }

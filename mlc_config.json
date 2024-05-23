@@ -1,19 +1,19 @@
 {
-    "ignorePatterns": [
-        {
-            "pattern": "^https://doi.org/.*"
-        },
-        {
-            "pattern": "^.*shinyapps.*"
-        },
-        {
-            "pattern": "^https://static-content.springer.com"
-        },
-        {
-            "pattern": "^https://twitter.com/.*$"
-        },
-        {
-            "pattern": "^https://neurovault.org/.*$"
-        }
-    ]
+  "ignorePatterns": [
+    {
+      "pattern": "^https://doi.org/.*"
+    },
+    {
+      "pattern": "^.*shinyapps.*"
+    },
+    {
+      "pattern": "^https://static-content.springer.com"
+    },
+    {
+      "pattern": "^https://twitter.com/.*$"
+    },
+    {
+      "pattern": "^https://neurovault.org/.*$"
+    }
+  ]
 }

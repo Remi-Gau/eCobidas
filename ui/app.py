@@ -5,21 +5,21 @@ from typing import Any
 import pandas as pd
 from flask import Flask, flash, redirect, render_template, request
 from flask_bootstrap import Bootstrap5
-from flask_wtf import CSRFProtect, FlaskForm
-from markupsafe import Markup, escape
-from modules import (
+from flask_wtf import CSRFProtect
+from markupsafe import Markup
+from rich import print
+from werkzeug.utils import secure_filename
+
+from .forms import UploadForm, generate_form
+from .modules import (
     LANG,
-    generate_form,
-    get_items_for_activity,
     get_landing_page,
     get_nav_bar_content,
     get_protocol,
+    prep_activity_page,
     protocol_url,
     update_format,
 )
-from rich import print
-from werkzeug.utils import secure_filename
-from wtforms import MultipleFileField, SubmitField
 
 test_config = None
 
@@ -88,95 +88,16 @@ def protocol(protocol_name: str) -> str:
     )
 
 
-@app.route("/protocol/<protocol_name>/<activity_name>", methods=["GET", "POST"])
-def activity(protocol_name, activity_name) -> str:
+@app.get("/protocol/<protocol_name>/<activity_name>")
+def activity_get(protocol_name, activity_name) -> str:
 
-    protocol_name = escape(protocol_name)
-    activity_name = escape(activity_name)
-
-    protocol_content = get_protocol(protocol_name)
-    properties = protocol_content["ui"]["addProperties"]
-    for activity in properties:
-        if activity["variableName"] == activity_name:
-            is_about_activity = activity["isAbout"]
-            break
-    activity_file = protocol_url(protocol_name).parent / is_about_activity
+    activities, activity, items = prep_activity_page(protocol_name, activity_name)
 
     upload_form = None
     if protocol_name == "neurovault" and activity_name == "participants":
         upload_form = UploadForm()
 
-    with open(activity_file) as f:
-        activity = json.load(f)
-
-    activities = get_nav_bar_content(protocol_name, activity["prefLabel"][LANG])
-
-    items = get_items_for_activity(activity_file)
-
     form = generate_form(items=items, prefix=activity_name)
-
-    if request.method == "POST":
-
-        if upload_form.is_submitted():
-
-            if len(upload_form.participants.data) != 2:
-                flash("2 files must be uploaded.")
-                return redirect(request.url)
-            if all(file.filename != "participants.json" for file in upload_form.participants.data):
-                flash("No 'participants.json' was uploaded.")
-                return redirect(request.url)
-            if all(file.filename != "participants.tsv" for file in upload_form.participants.data):
-                flash("No 'participants.tsv' was uploaded.")
-                return redirect(request.url)
-
-            for file in upload_form.participants.data:
-                if allowed_file(file.filename):
-                    filename = secure_filename(file.filename)
-                    file.save(Path(app.config["UPLOAD_FOLDER"]) / filename)
-
-            participants_tsv = pd.read_csv(
-                Path(app.config["UPLOAD_FOLDER"]) / "participants.tsv", sep="\t"
-            )
-            with open(Path(app.config["UPLOAD_FOLDER"]) / "participants.json") as f:
-                participants_json = json.load(f)
-
-            if not participants_json.get("participant_id") or not participants_json[
-                "participant_id"
-            ].get("Annotations"):
-                flash(
-                    Markup(
-                        "The 'participants.json' was not annotated. "
-                        "Annotate your data with "
-                        "the <a href='https://annotate.neurobagel.org/' class='alert-link'>neurobagel online annotation tool</a>"
-                    )
-                )
-                return redirect(request.url)
-
-            print(participants_tsv)
-            print(participants_json)
-
-        elif form.is_submitted():
-
-            items = update_visibility(items, form)
-
-            items = update_format(items, form)
-
-            form = generate_form(items, prefix=activity_name)
-
-            completed_items = sum(bool(i["is_answered"]) for i in items.values())
-            nb_items = sum(bool(i["visibility"]) for i in items.values())
-
-            return render_template(
-                "protocol.html",
-                protocol_pref_label=protocol_name,
-                activity_pref_label=activity["prefLabel"][LANG],
-                activity_preamble=Markup(activity["preamble"][LANG]),
-                activities=activities,
-                form=form,
-                nb_items=nb_items,
-                completed_items=completed_items,
-                upload_form=upload_form,
-            )
 
     completed_items = sum(bool(i["is_answered"]) for i in items.values())
     nb_items = sum(bool(i["visibility"]) for i in items.values())
@@ -192,6 +113,92 @@ def activity(protocol_name, activity_name) -> str:
         completed_items=completed_items,
         upload_form=upload_form,
     )
+
+
+@app.post("/protocol/<protocol_name>/<activity_name>")
+def activity_post(protocol_name, activity_name) -> str:
+
+    activities, activity, items = prep_activity_page(protocol_name, activity_name)
+
+    upload_form = None
+    if protocol_name == "neurovault" and activity_name == "participants":
+        upload_form = UploadForm()
+
+    form = generate_form(items=items, prefix=activity_name)
+
+    if upload_form.is_submitted():
+
+        nb_files_uploaded = len(upload_form.participants.data)
+        participants_json_uploaded = any(
+            file.filename == "participants.json" for file in upload_form.participants.data
+        )
+        participants_tsv_uploaded = any(
+            file.filename == "participants.tsv" for file in upload_form.participants.data
+        )
+
+        if nb_files_uploaded != 2:
+            message = "2 files must be uploaded."
+        if not participants_json_uploaded:
+            message = "No 'participants.json' was uploaded."
+        if not participants_tsv_uploaded:
+            message = "No 'participants.tsv' was uploaded."
+
+        if (
+            nb_files_uploaded != 2
+            or not participants_json_uploaded
+            or not participants_tsv_uploaded
+        ):
+            flash(message)
+            return redirect(request.url)
+
+        for file in upload_form.participants.data:
+            if allowed_file(file.filename):
+                filename = secure_filename(file.filename)
+                file.save(Path(app.config["UPLOAD_FOLDER"]) / filename)
+
+        participants_tsv = pd.read_csv(
+            Path(app.config["UPLOAD_FOLDER"]) / "participants.tsv", sep="\t"
+        )
+        with open(Path(app.config["UPLOAD_FOLDER"]) / "participants.json") as f:
+            participants_json = json.load(f)
+
+        if not participants_json.get("participant_id") or not participants_json[
+            "participant_id"
+        ].get("Annotations"):
+            flash(
+                Markup(
+                    "The 'participants.json' was not annotated. "
+                    "Annotate your data with "
+                    "the <a href='https://annotate.neurobagel.org/' class='alert-link'>neurobagel online annotation tool</a>"
+                )
+            )
+            return redirect(request.url)
+
+        print(participants_tsv)
+        print(participants_json)
+
+    elif form.is_submitted():
+
+        items = update_visibility(items, form)
+
+        items = update_format(items, form)
+
+        form = generate_form(items, prefix=activity_name)
+
+        completed_items = sum(bool(i["is_answered"]) for i in items.values())
+        nb_items = sum(bool(i["visibility"]) for i in items.values())
+
+        return render_template(
+            "protocol.html",
+            protocol_pref_label=protocol_name,
+            activity_pref_label=activity["prefLabel"][LANG],
+            activity_preamble=Markup(activity["preamble"][LANG]),
+            activities=activities,
+            form=form,
+            nb_items=nb_items,
+            completed_items=completed_items,
+            upload_form=upload_form,
+        )
 
 
 @app.errorhandler(404)
@@ -211,11 +218,6 @@ def index() -> str:
 
 def allowed_file(filename):
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
-
-
-class UploadForm(FlaskForm):
-    participants = MultipleFileField("Upload participants.tsv and participants.json")
-    submit = SubmitField("Upload")
 
 
 @app.route("/about")
