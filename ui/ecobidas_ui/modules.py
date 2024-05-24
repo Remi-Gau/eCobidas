@@ -13,7 +13,7 @@ LANG: str = "en"
 
 def protocol_url(protocol_name: Path) -> Path:
     return (
-        Path(__file__).parents[1]
+        Path(__file__).parents[2]
         / "cobidas_schema"
         / "schemas"
         / protocol_name

@@ -1,6 +1,8 @@
 [flake8]
 exclude =
     .git,
+	./env
+	**/env
 
 docstring-convention = numpy
 max-line-length = 150

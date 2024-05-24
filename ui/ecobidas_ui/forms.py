@@ -60,9 +60,7 @@ def generate_form(items=None, prefix=None):
         default = None
 
         if input_type == "date":
-
             FieldType = DateField
-
             setattr(
                 form,
                 item_name,

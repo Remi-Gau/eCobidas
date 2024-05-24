@@ -11,11 +11,6 @@ repos:
     -   id: check-merge-conflict
     -   id: check-toml
     -   id: check-yaml
-        exclude: |
-            (?x)^(
-                docs/specification/.*
-                | mkdocs.yml
-            )$
     -   id: end-of-file-fixer
     -   id: mixed-line-ending
     -   id: trailing-whitespace
@@ -32,7 +27,7 @@ repos:
     rev: v3.15.2
     hooks:
     -   id: pyupgrade
-        args: [--py38-plus]
+        args: [--py311-plus]
 
 # Aplly black formatting to python code
 # https://github.com/psf/black
@@ -56,11 +51,6 @@ repos:
     hooks:
     -   id: yamlfmt
         args: [--mapping, '4', --sequence, '4', --offset, '0']
-        exclude: |
-            (?x)^(
-                docs/specification/.*
-                | mkdocs.yml
-            )$
 
 # Format TOML files
 -   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
@@ -94,5 +84,5 @@ repos:
     rev: 7.0.0
     hooks:
     -   id: flake8
-        args: [--config, .flake8, --verbose, ecobidas, tests, macros]
+        args: [--config, .flake8, --verbose, ecobidas_ui, tests]
         additional_dependencies: [flake8-docstrings, flake8-use-fstring, flake8-functions, flake8-bugbear]

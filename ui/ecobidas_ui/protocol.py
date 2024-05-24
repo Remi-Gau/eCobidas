@@ -3,15 +3,8 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
-from flask import Flask, flash, redirect, render_template, request
-from flask_bootstrap import Bootstrap5
-from flask_wtf import CSRFProtect
-from markupsafe import Markup
-from rich import print
-from werkzeug.utils import secure_filename
-
-from .forms import UploadForm, generate_form
-from .modules import (
+from ecobidas_ui.forms import UploadForm, generate_form
+from ecobidas_ui.modules import (
     LANG,
     get_landing_page,
     get_nav_bar_content,
@@ -20,37 +13,14 @@ from .modules import (
     protocol_url,
     update_format,
 )
+from flask import Blueprint, current_app, flash, redirect, render_template, request
+from markupsafe import Markup
+from rich import print
+from werkzeug.utils import secure_filename
 
-test_config = None
+bp = Blueprint("protocol", __name__, url_prefix="/protocol")
 
-UPLOAD_FOLDER = Path(__file__).parent / "tmp"
-UPLOAD_FOLDER.mkdir(parents=True, exist_ok=True)
 ALLOWED_EXTENSIONS = {"tsv", "json"}
-
-# create and configure the app
-app = Flask(__name__, instance_relative_config=True)
-app.config.from_mapping(
-    SECRET_KEY="tO$&!|0wkamvVia0?n$NqIRVWOG",
-    DATABASE=Path(app.instance_path) / "flaskr.sqlite",
-    UPLOAD_FOLDER=UPLOAD_FOLDER,
-    MAX_CONTENT_LENGTH=16 * 1000 * 1000,
-)
-
-if test_config is None:
-    # load the instance config, if it exists, when not testing
-    app.config.from_pyfile("config.py", silent=True)
-else:
-    # load the test config if passed in
-    app.config.from_mapping(test_config)
-
-# ensure the instance folder exists
-Path(app.instance_path).mkdir(parents=True, exist_ok=True)
-
-# Bootstrap-Flask requires this line
-bootstrap = Bootstrap5(app)
-
-# Flask-WTF requires this line
-csrf = CSRFProtect(app)
 
 
 def update_visibility(items: dict[str, Any], form):
@@ -58,10 +28,10 @@ def update_visibility(items: dict[str, Any], form):
         isVis = values["isVis"]
         if isinstance(isVis, str):
             isVis = isVis.replace(" ", "").split("==")
-            if len(isVis) > 2:
-                app.logger.warning("More than 1 '=='")
-            if len(isVis) < 2:
-                app.logger.warning(f"Unsupported JavaScript expression: {isVis}")
+            # if len(isVis) > 2:
+            # app.logger.warning("More than 1 '=='")
+            # if len(isVis) < 2:
+            # app.logger.warning(f"Unsupported JavaScript expression: {isVis}")
             if len(isVis) == 2 and form[isVis[0]].data:
                 response = int(form[isVis[0]].data)
                 expected = int(isVis[1])
@@ -69,7 +39,7 @@ def update_visibility(items: dict[str, Any], form):
     return items
 
 
-@app.route("/protocol/<protocol_name>", methods=["GET", "POST"])
+@bp.route("/protocol/<protocol_name>", methods=["GET", "POST"])
 def protocol(protocol_name: str) -> str:
 
     protocol_content = get_protocol(protocol_name)
@@ -88,14 +58,14 @@ def protocol(protocol_name: str) -> str:
     )
 
 
-@app.get("/protocol/<protocol_name>/<activity_name>")
+@bp.get("/protocol/<protocol_name>/<activity_name>")
 def activity_get(protocol_name, activity_name) -> str:
 
     activities, activity, items = prep_activity_page(protocol_name, activity_name)
 
     upload_form = None
     if protocol_name == "neurovault" and activity_name == "participants":
-        upload_form = UploadForm()
+        upload_form = UploadForm(prefix="upload-")
 
     form = generate_form(items=items, prefix=activity_name)
 
@@ -115,18 +85,18 @@ def activity_get(protocol_name, activity_name) -> str:
     )
 
 
-@app.post("/protocol/<protocol_name>/<activity_name>")
+@bp.post("/protocol/<protocol_name>/<activity_name>")
 def activity_post(protocol_name, activity_name) -> str:
 
     activities, activity, items = prep_activity_page(protocol_name, activity_name)
 
     upload_form = None
     if protocol_name == "neurovault" and activity_name == "participants":
-        upload_form = UploadForm()
+        upload_form = UploadForm(prefix="upload-")
 
     form = generate_form(items=items, prefix=activity_name)
 
-    if upload_form.is_submitted():
+    if upload_form and upload_form.participants.data:
 
         nb_files_uploaded = len(upload_form.participants.data)
         participants_json_uploaded = any(
@@ -154,12 +124,12 @@ def activity_post(protocol_name, activity_name) -> str:
         for file in upload_form.participants.data:
             if allowed_file(file.filename):
                 filename = secure_filename(file.filename)
-                file.save(Path(app.config["UPLOAD_FOLDER"]) / filename)
+                file.save(Path(current_app.config["UPLOAD_FOLDER"]) / filename)
 
         participants_tsv = pd.read_csv(
-            Path(app.config["UPLOAD_FOLDER"]) / "participants.tsv", sep="\t"
+            Path(current_app.config["UPLOAD_FOLDER"]) / "participants.tsv", sep="\t"
         )
-        with open(Path(app.config["UPLOAD_FOLDER"]) / "participants.json") as f:
+        with open(Path(current_app.config["UPLOAD_FOLDER"]) / "participants.json") as f:
             participants_json = json.load(f)
 
         if not participants_json.get("participant_id") or not participants_json[
@@ -167,9 +137,10 @@ def activity_post(protocol_name, activity_name) -> str:
         ].get("Annotations"):
             flash(
                 Markup(
-                    "The 'participants.json' was not annotated. "
+                    "<p>The 'participants.json' was not annotated. "
                     "Annotate your data with "
-                    "the <a href='https://annotate.neurobagel.org/' class='alert-link'>neurobagel online annotation tool</a>"
+                    "the <a href='https://annotate.neurobagel.org/' "
+                    "class='alert-link'>neurobagel online annotation tool</a></p>"
                 )
             )
             return redirect(request.url)
@@ -201,35 +172,5 @@ def activity_post(protocol_name, activity_name) -> str:
         )
 
 
-@app.errorhandler(404)
-def page_not_found(e):
-    return render_template("404.html"), 404
-
-
-@app.errorhandler(500)
-def internal_server_error(e):
-    return render_template("500.html"), 500
-
-
-@app.route("/", methods=["GET", "POST"])
-def index() -> str:
-    return render_template("index.html")
-
-
 def allowed_file(filename):
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
-
-
-@app.route("/about")
-def about() -> str:
-    return render_template("about.html")
-
-
-@app.route("/new")
-def new() -> str:
-    return render_template("new_checklist.html")
-
-
-# keep this as is
-if __name__ == "__main__":
-    app.run(debug=True)
