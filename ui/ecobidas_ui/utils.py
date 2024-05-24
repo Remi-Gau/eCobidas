@@ -154,7 +154,7 @@ def get_items_for_activity(activity_file):
         tmp["input_type"] = item_data["ui"]["inputType"]
 
         tmp["description"] = (
-            "<details><summary>Details</summary>"
+            "<details class='text-secondary'><summary>Details</summary>"
             "<ul>"
             f"<li>item name: {item_data.get('description')}</li>"
             "</ul>"

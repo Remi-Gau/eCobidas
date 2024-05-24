@@ -1,7 +1,7 @@
 from logging.config import dictConfig
 from pathlib import Path
 
-from flask import Flask, render_template
+from flask import Flask, flash, render_template
 from flask_bootstrap import Bootstrap5
 from flask_wtf import CSRFProtect
 
@@ -66,6 +66,16 @@ def create_app(test_config=None):
 
     @app.route("/", methods=["GET", "POST"])
     def index() -> str:
+        return render_template("index.html")
+
+    @app.route("/export")
+    def export() -> str:
+        flash("Not implemented yet!")
+        return render_template("index.html")
+
+    @app.route("/generate")
+    def generate() -> str:
+        flash("Not implemented yet!")
         return render_template("index.html")
 
     @app.errorhandler(404)

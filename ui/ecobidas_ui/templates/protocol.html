@@ -21,6 +21,20 @@
             >
           </li>
           {% endfor %}
+          <a href="{{ url_for('export') }}"
+            ><li class="nav-item">
+              <button type="button" class="btn btn-outline-primary my-1">
+                Export
+              </button>
+            </li></a
+          >
+          <a href="{{ url_for('generate') }}"
+            ><li class="nav-item">
+              <button type="button" class="btn btn-outline-primary my-1">
+                Generate method
+              </button>
+            </li></a
+          >
         </ul>
       </div>
     </div>
