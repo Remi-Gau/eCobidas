@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "4.5 - yes or no"
+        "en": "yes or no"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

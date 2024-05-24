@@ -12,7 +12,7 @@
         "inputType": "float"
     },
     "question": {
-        "en": "3.3 - This is a float item"
+        "en": "This is a float item"
     },
     "responseOptions": {
         "valueType": "xsd:float"

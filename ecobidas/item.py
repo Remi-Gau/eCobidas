@@ -148,18 +148,11 @@ def define_new_item(item_info: dict) -> Item:
         output_dir="items",
     )
 
-    question = item_info["question"]
-    if "id" in item_info and item_info["id"] != "":
-        question = item_info["id"] + " - " + question
-    if "details" in item_info and item_info["details"] != "":
-        question = (
-            question
-            + "<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>"
-            + str(item_info["details"])
-            + "</details></div>"
-        )
+    item.set_question(item_info["question"])
 
-    item.set_question(question)
+    if "details" in item_info and item_info["details"] != "":
+        item.schema["details"] = {"en": f"{item_info['details']}"}
+        item.schema_order.append("details")
 
     item = define_choices(item, field_type=item_info["field_type"], choices=item_info["choices"])
     item = define_unit(item, item_info["unit"])

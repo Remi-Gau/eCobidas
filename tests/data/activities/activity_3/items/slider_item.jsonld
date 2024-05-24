@@ -12,7 +12,7 @@
         "inputType": "slider"
     },
     "question": {
-        "en": "2.2 - This is a slider item"
+        "en": "This is a slider item"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

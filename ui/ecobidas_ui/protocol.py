@@ -4,8 +4,9 @@ from typing import Any
 
 import pandas as pd
 from ecobidas_ui.forms import UploadForm, generate_form
-from ecobidas_ui.modules import (
+from ecobidas_ui.utils import (
     LANG,
+    allowed_file,
     get_landing_page,
     get_nav_bar_content,
     get_protocol,
@@ -19,8 +20,6 @@ from rich import print
 from werkzeug.utils import secure_filename
 
 bp = Blueprint("protocol", __name__, url_prefix="/protocol")
-
-ALLOWED_EXTENSIONS = {"tsv", "json"}
 
 
 def update_visibility(items: dict[str, Any], form):
@@ -39,7 +38,7 @@ def update_visibility(items: dict[str, Any], form):
     return items
 
 
-@bp.route("/protocol/<protocol_name>", methods=["GET", "POST"])
+@bp.route("/<protocol_name>", methods=["GET", "POST"])
 def protocol(protocol_name: str) -> str:
 
     protocol_content = get_protocol(protocol_name)
@@ -58,7 +57,7 @@ def protocol(protocol_name: str) -> str:
     )
 
 
-@bp.get("/protocol/<protocol_name>/<activity_name>")
+@bp.get("/<protocol_name>/<activity_name>")
 def activity_get(protocol_name, activity_name) -> str:
 
     activities, activity, items = prep_activity_page(protocol_name, activity_name)
@@ -85,7 +84,7 @@ def activity_get(protocol_name, activity_name) -> str:
     )
 
 
-@bp.post("/protocol/<protocol_name>/<activity_name>")
+@bp.post("/<protocol_name>/<activity_name>")
 def activity_post(protocol_name, activity_name) -> str:
 
     activities, activity, items = prep_activity_page(protocol_name, activity_name)
@@ -170,7 +169,3 @@ def activity_post(protocol_name, activity_name) -> str:
             completed_items=completed_items,
             upload_form=upload_form,
         )
-
-
-def allowed_file(filename):
-    return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS

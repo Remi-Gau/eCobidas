@@ -10,6 +10,12 @@ from rich import print
 
 LANG: str = "en"
 
+ALLOWED_EXTENSIONS = {"tsv", "json"}
+
+
+def allowed_file(filename):
+    return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
+
 
 def protocol_url(protocol_name: Path) -> Path:
     return (
@@ -130,7 +136,7 @@ def get_items_for_activity(activity_file):
     properties = sort_ui_properties(properties=properties, order=order)
 
     items = {}
-    for item in properties:
+    for i, item in enumerate(properties):
 
         item_name = item["variableName"]
 
@@ -144,9 +150,20 @@ def get_items_for_activity(activity_file):
             "is_answered": False,
         }
 
-        tmp["description"] = item_data.get("description")
-        tmp["question"] = item_data["question"][LANG]
+        tmp["question"] = f"{i + 1} - {item_data['question'][LANG]}"
         tmp["input_type"] = item_data["ui"]["inputType"]
+
+        tmp["description"] = (
+            "<details><summary>Details</summary>"
+            "<ul>"
+            f"<li>item name: {item_data.get('description')}</li>"
+            "</ul>"
+            "</details>"
+        )
+        details = ""
+        if item_data.get("details"):
+            details = item_data["details"].get(LANG)
+            tmp["description"] = f"{details}<br>{tmp['description']}"
 
         if item["isVis"] == 1:
             tmp["visibility"] = True

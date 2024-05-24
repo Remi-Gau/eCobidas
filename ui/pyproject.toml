@@ -9,7 +9,8 @@ dependencies = [
     "Flask-WTF",
     "bootstrap-flask",
     "pandas",
-    "rich"
+    "rich",
+    "requests"
 ]
 description = "UI for eCOBIDAS"
 license = {text = "GPL 3.0"}

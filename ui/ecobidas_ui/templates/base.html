@@ -12,6 +12,11 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='style.css') }}"
     />
+
+    <script
+      src="https://kit.fontawesome.com/bfb65bff1f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -38,38 +43,38 @@
     </svg>
 
     <section class="content">
-      <header>{% block header %}{% endblock %}</header>
-
-      {% with messages = get_flashed_messages() %} {% if messages %} {% for
-      message in messages %}
-      <div
-        class="alert alert-warning alert-link alert-dismissible fade show"
-        role="alert"
-      >
-        <div class="d-flex">
-          <svg
-            class="bi me-2"
-            width="24"
-            height="24"
-            role="img"
-            aria-label="Warning:"
-          >
-            <use xlink:href="#exclamation-triangle-fill" />
-          </svg>
-          <div class="mx-3">{{ message }}</div>
+      <div class="container">
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for
+        message in messages %}
+        <div
+          class="alert alert-warning alert-link alert-dismissible fade show"
+          role="alert"
+        >
+          <div class="d-flex">
+            <svg
+              class="bi me-2"
+              width="24"
+              height="24"
+              role="img"
+              aria-label="Warning:"
+            >
+              <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div class="mx-3">{{ message }}</div>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
         </div>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="alert"
-          aria-label="Close"
-        ></button>
+        {% endfor %} {% endif %} {% endwith %}
       </div>
-      {% endfor %} {% endif %} {% endwith %}
     </section>
 
     <div class="container">
-      <div class="container">
+      <div class="container bg-primary">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
           <!-- TODO deal with active page -->
           <div class="container-fluid">
@@ -120,7 +125,18 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/about">About</a>
+                  <a
+                    class="nav-link {{ 'active' if request.path == url_for('auth.login') }}"
+                    href="{{ url_for('auth.login') }}"
+                    >Login</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link {{ 'active' if request.path == url_for('about') }}"
+                    href="{{ url_for('about') }}"
+                    >About</a
+                  >
                 </li>
               </ul>
             </div>
@@ -140,10 +156,26 @@
   </body>
 
   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
-          <h5 class="pt-5 pb-2">eCOBIDAS</h5>
+    <div class="container mt-5">
+      <div class="row d-flex">
+        <div
+          class="col-md-12 col-lg-12 bg-primary text-white d-flex justify-content-between align-items-center"
+        >
+          <h6 class="m-3">
+            eCobidas <i class="fa-solid fa-copyright mx-3"></i>
+          </h6>
+          <div>
+            <a
+              class="link-light mx-3"
+              href="https://groups.google.com/d/forum/cobidas-checklist"
+              ><i class="fa-brands fa-google"></i
+            ></a>
+            <a
+              class="link-light mx-3"
+              href="https://github.com/Remi-Gau/eCobidas"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
         </div>
       </div>
     </div>

@@ -85,8 +85,6 @@ def create_schema(
 
             item_info = get_item_info(this_item)
 
-            item_info["id"] = f"{activity_idx:.0f}.{item_idx:.0f}"
-
             print_item_info(activity_idx, item_idx, item_info)
 
             item = define_new_item(item_info)
