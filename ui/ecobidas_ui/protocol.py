@@ -2,17 +2,19 @@ import json
 from pathlib import Path
 from typing import Any
 
-import pandas as pd
-from ecobidas_ui.forms import UploadForm, generate_form
+from ecobidas_ui.forms import UploadBoldJsonForm, UploadParticipantsForm, generate_form
 from ecobidas_ui.utils import (
     LANG,
     allowed_file,
+    extract_values_participants,
     get_landing_page,
     get_nav_bar_content,
     get_protocol,
     prep_activity_page,
     protocol_url,
     update_format,
+    validate_participants_json,
+    validate_participants_tsv,
 )
 from flask import Blueprint, current_app, flash, redirect, render_template, request
 from markupsafe import Markup
@@ -31,7 +33,11 @@ def update_visibility(items: dict[str, Any], form):
         if not value:
             value = None
         string_to_eval = f"{key} = {value}"
-        exec(string_to_eval)
+        try:
+            exec(string_to_eval)
+        except Exception as exc:
+            print(f"Could not execute '{string_to_eval}' as a valid python statement.")
+            print(exc)
 
     # evaluate visibility
     for item, values in items.items():
@@ -41,7 +47,7 @@ def update_visibility(items: dict[str, Any], form):
                 items[item]["visibility"] = eval(isVis)
             except Exception as exc:
                 # actually log this
-                print(f"Could not evaluate '{eval(isVis)}' as a valid python expression")
+                print(f"Could not evaluate '{eval(isVis)}' as a valid python expression.")
                 print(exc)
                 items[item]["visibility"] = False
 
@@ -72,9 +78,9 @@ def activity_get(protocol_name, activity_name) -> str:
 
     activities, activity, items = prep_activity_page(protocol_name, activity_name)
 
-    upload_form = None
-    if protocol_name == "neurovault" and activity_name == "participants":
-        upload_form = UploadForm(prefix="upload-")
+    upload_participants_form, upload_acquisition_form = generate_additional_forms(
+        protocol_name, activity_name
+    )
 
     form = generate_form(items=items, prefix=activity_name)
 
@@ -90,7 +96,8 @@ def activity_get(protocol_name, activity_name) -> str:
         form=form,
         nb_items=nb_items,
         completed_items=completed_items,
-        upload_form=upload_form,
+        upload_participants_form=upload_participants_form,
+        upload_acquisition_form=upload_acquisition_form,
     )
 
 
@@ -99,51 +106,38 @@ def activity_post(protocol_name, activity_name) -> str:
 
     activities, activity, items = prep_activity_page(protocol_name, activity_name)
 
-    upload_form = None
-    if protocol_name == "neurovault" and activity_name == "participants":
-        upload_form = UploadForm(prefix="upload-")
+    upload_participants_form, upload_acquisition_form = generate_additional_forms(
+        protocol_name, activity_name
+    )
 
     form = generate_form(items=items, prefix=activity_name)
 
-    if upload_form and upload_form.participants.data:
+    if (
+        upload_participants_form
+        and upload_participants_form.is_submitted()
+        and upload_participants_form.participants.data
+    ):
 
-        nb_files_uploaded = len(upload_form.participants.data)
-        participants_json_uploaded = any(
-            file.filename == "participants.json" for file in upload_form.participants.data
-        )
-        participants_tsv_uploaded = any(
-            file.filename == "participants.tsv" for file in upload_form.participants.data
-        )
-
-        if nb_files_uploaded != 2:
-            message = "2 files must be uploaded."
-        if not participants_json_uploaded:
-            message = "No 'participants.json' was uploaded."
-        if not participants_tsv_uploaded:
-            message = "No 'participants.tsv' was uploaded."
-
-        if (
-            nb_files_uploaded != 2
-            or not participants_json_uploaded
-            or not participants_tsv_uploaded
-        ):
+        if message := validate_participants_form(upload_participants_form):
             flash(message)
             return redirect(request.url)
 
-        for file in upload_form.participants.data:
+        for file in upload_participants_form.participants.data:
             if allowed_file(file.filename):
                 filename = secure_filename(file.filename)
                 file.save(Path(current_app.config["UPLOAD_FOLDER"]) / filename)
 
-        participants_tsv = pd.read_csv(
-            Path(current_app.config["UPLOAD_FOLDER"]) / "participants.tsv", sep="\t"
-        )
-        with open(Path(current_app.config["UPLOAD_FOLDER"]) / "participants.json") as f:
-            participants_json = json.load(f)
+        tsv_file = Path(current_app.config["UPLOAD_FOLDER"]) / "participants.tsv"
+        if not validate_participants_tsv(tsv_file):
+            flash(
+                Markup(
+                    "<p>The 'participants.tsv' does not seem to be valid: 'participant_id' column is missing.</p>"
+                )
+            )
+            return redirect(request.url)
 
-        if not participants_json.get("participant_id") or not participants_json[
-            "participant_id"
-        ].get("Annotations"):
+        json_file = Path(current_app.config["UPLOAD_FOLDER"]) / "participants.json"
+        if not validate_participants_json(json_file):
             flash(
                 Markup(
                     "<p>The 'participants.json' was not annotated. "
@@ -154,28 +148,115 @@ def activity_post(protocol_name, activity_name) -> str:
             )
             return redirect(request.url)
 
-        print(participants_tsv)
-        print(participants_json)
+        form.number_of_subjects.data = extract_values_participants(
+            tsv_file, value="number_of_subjects"
+        )
+        form.subject_age_mean.data = extract_values_participants(tsv_file, value="subject_age_mean")
+        form.subject_age_min.data = extract_values_participants(tsv_file, value="subject_age_min")
+        form.subject_age_max.data = extract_values_participants(tsv_file, value="subject_age_max")
+
+        # TODO
+        form.proportion_male_subjects.data = 0.5
+
+        items = update_visibility(items, form)
+        items = update_format(items, form)
+        form = generate_form(items, prefix=activity_name)
+
+        form.number_of_subjects.data = extract_values_participants(
+            tsv_file, target="number_of_subjects"
+        )
+        form.subject_age_mean.data = extract_values_participants(
+            tsv_file, target="subject_age_mean"
+        )
+        form.subject_age_min.data = extract_values_participants(tsv_file, vtarget="subject_age_min")
+        form.subject_age_max.data = extract_values_participants(tsv_file, target="subject_age_max")
+        form.proportion_male_subjects.data = 0.5
+
+    if upload_acquisition_form.validate_on_submit():
+
+        f = upload_acquisition_form.bold_json.data
+        filename = secure_filename(f.filename)
+
+        if not allowed_file(filename):
+            message = "No '_bold.json' was uploaded."
+            flash(message)
+            return redirect(request.url)
+
+        f.save(Path(current_app.instance_path) / filename)
+
+        with open(Path(current_app.instance_path) / filename) as f:
+            bold_json = json.load(f)
+
+        for key in bold_json:
+            if key in form:
+                form[key].data = bold_json[key]
+
+        items = update_visibility(items, form)
+        items = update_format(items, form)
+        form = generate_form(items, prefix=activity_name)
+
+        for key in bold_json:
+            if key in form:
+                form[key].data = bold_json[key]
 
     elif form.is_submitted():
 
         items = update_visibility(items, form)
-
         items = update_format(items, form)
-
         form = generate_form(items, prefix=activity_name)
 
-        completed_items = sum(bool(i["is_answered"]) for i in items.values())
-        nb_items = sum(bool(i["visibility"]) for i in items.values())
+    completed_items = sum(bool(i["is_answered"]) for i in items.values())
+    nb_items = sum(bool(i["visibility"]) for i in items.values())
 
-        return render_template(
-            "protocol.html",
-            protocol_pref_label=protocol_name,
-            activity_pref_label=activity["prefLabel"][LANG],
-            activity_preamble=Markup(activity["preamble"][LANG]),
-            activities=activities,
-            form=form,
-            nb_items=nb_items,
-            completed_items=completed_items,
-            upload_form=upload_form,
-        )
+    return render_template(
+        "protocol.html",
+        protocol_pref_label=protocol_name,
+        activity_pref_label=activity["prefLabel"][LANG],
+        activity_preamble=Markup(activity["preamble"][LANG]),
+        activities=activities,
+        form=form,
+        nb_items=nb_items,
+        completed_items=completed_items,
+        upload_participants_form=upload_participants_form,
+        upload_acquisition_form=upload_acquisition_form,
+    )
+
+
+def validate_participants_form(upload_participants_form):
+    nb_files_uploaded = len(upload_participants_form.participants.data)
+    participants_json_uploaded = any(
+        file.filename == "participants.json" for file in upload_participants_form.participants.data
+    )
+    participants_tsv_uploaded = any(
+        file.filename == "participants.tsv" for file in upload_participants_form.participants.data
+    )
+
+    if nb_files_uploaded != 2:
+        message = "2 files must be uploaded."
+    if not participants_json_uploaded:
+        message = "No 'participants.json' was uploaded."
+    if not participants_tsv_uploaded:
+        message = "No 'participants.tsv' was uploaded."
+
+    if nb_files_uploaded != 2 or not participants_json_uploaded or not participants_tsv_uploaded:
+
+        return message
+
+    else:
+        return ""
+
+
+def generate_additional_forms(protocol_name, activity_name):
+
+    upload_participants_form = None
+    upload_acquisition_form = None
+
+    if protocol_name != "neurovault":
+        return upload_participants_form, upload_acquisition_form
+
+    if activity_name == "participants":
+        upload_participants_form = UploadParticipantsForm(prefix="upload-")
+    if activity_name == "mri_acquisition":
+        upload_acquisition_form = UploadBoldJsonForm(prefix="mri_acquisition-")
+
+    return upload_participants_form, upload_acquisition_form

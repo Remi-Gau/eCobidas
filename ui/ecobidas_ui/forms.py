@@ -1,4 +1,5 @@
 from flask_wtf import FlaskForm
+from flask_wtf.file import FileField, FileRequired
 from markupsafe import Markup
 from wtforms import (
     DateField,
@@ -16,9 +17,14 @@ from wtforms import (
 from wtforms.validators import DataRequired, NumberRange
 
 
-class UploadForm(FlaskForm):
+class UploadParticipantsForm(FlaskForm):
     participants = MultipleFileField("Upload participants.tsv and participants.json")
     submit = SubmitField("Upload")
+
+
+class UploadBoldJsonForm(FlaskForm):
+    bold_json = FileField("Upload bold.json", validators=[FileRequired()])
+    submit_bold_json = SubmitField("Upload")
 
 
 def generate_form(items=None, prefix=None):

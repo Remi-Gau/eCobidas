@@ -14,7 +14,7 @@
     "Description": "There should have been a description here, but there wasn't. :("
   },
   "participant_id": {
-    "Annottations": {
+    "Annotations": {
       "IsAbout": {
         "TermURL": "nb:ParticipantID",
         "Label": ""

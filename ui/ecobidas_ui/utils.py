@@ -4,17 +4,18 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
+import pandas as pd
 import requests
 from markupsafe import escape
 from rich import print
 
 LANG: str = "en"
 
-ALLOWED_EXTENSIONS = {"tsv", "json"}
+ALLOWED_EXTENSIONS = {".tsv", ".json"}
 
 
 def allowed_file(filename):
-    return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
+    return Path(filename).suffix in ALLOWED_EXTENSIONS
 
 
 def protocol_url(protocol_name: Path) -> Path:
@@ -217,3 +218,40 @@ def get_choices(item_data):
     except KeyError:
         choices = {}
     return choices
+
+
+def validate_participants_json(file: Path):
+    with open(file) as f:
+        participants_json = json.load(f)
+    return bool(
+        participants_json.get("participant_id")
+        and participants_json["participant_id"].get("Annotations")
+    )
+
+
+def validate_participants_tsv(file: Path):
+    df = pd.read_csv(file, sep="\t")
+    return "participant_id" in df.columns
+
+
+def extract_values_participants(df, json_content, target):
+    if isinstance(df, Path):
+        df = pd.read_csv(df, sep="\t")
+
+    if target == "number_of_subjects":
+        return len(df)
+
+    column = next(
+        (
+            key
+            for key, value in json_content.items()
+            if value["Annotations"]["IsAbout"]["TermURL"] == "nb:Age"
+        ),
+        None,
+    )
+    if target == "subject_age_mean":
+        return df[column].mean()
+    if target == "subject_age_min":
+        return df[column].min()
+    if target == "subject_age_max":
+        return df[column].max()
