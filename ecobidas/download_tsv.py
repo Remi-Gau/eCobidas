@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Download the content of the different google spreadsheet in the inputs folder."""
+import ast
 import json
 from pathlib import Path
 
@@ -94,6 +95,25 @@ def validate_downloaded_file(file: str | Path) -> None:
         logger.info(
             f"\nThe following columns are missing from the data dictionary: {sorted(extra_columns)}"
         )
+
+    invalid_vis = []
+    visibility = df.visibility.values
+    for vis in visibility:
+        if not is_valid_python(vis):
+            invalid_vis.append(vis)
+    if invalid_vis:
+        logger.warning(f"\nThe following visibility are not valid python:\n{invalid_vis}")
+
+
+def is_valid_python(code):
+    try:
+        ast.parse(code)
+    except SyntaxError:
+        return False
+    except ValueError as exc:
+        print(f"{exc}: {code}")
+        return True
+    return True
 
 
 def main() -> None:

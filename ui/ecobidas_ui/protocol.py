@@ -23,18 +23,28 @@ bp = Blueprint("protocol", __name__, url_prefix="/protocol")
 
 
 def update_visibility(items: dict[str, Any], form):
+    """Evaluate visibility condition of each item and make item visible if necessary."""
+    # assign response to a variable with same name as the item it comees from
+    for key, value in form.data.items():
+        if key not in items:
+            continue
+        if not value:
+            value = None
+        string_to_eval = f"{key} = {value}"
+        exec(string_to_eval)
+
+    # evaluate visibility
     for item, values in items.items():
         isVis = values["isVis"]
         if isinstance(isVis, str):
-            isVis = isVis.replace(" ", "").split("==")
-            # if len(isVis) > 2:
-            # app.logger.warning("More than 1 '=='")
-            # if len(isVis) < 2:
-            # app.logger.warning(f"Unsupported JavaScript expression: {isVis}")
-            if len(isVis) == 2 and form[isVis[0]].data:
-                response = int(form[isVis[0]].data)
-                expected = int(isVis[1])
-                items[item]["visibility"] = response == expected
+            try:
+                items[item]["visibility"] = eval(isVis)
+            except Exception as exc:
+                # actually log this
+                print(f"Could not evaluate '{eval(isVis)}' as a valid python expression")
+                print(exc)
+                items[item]["visibility"] = False
+
     return items
 
 
