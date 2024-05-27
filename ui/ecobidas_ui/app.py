@@ -2,7 +2,7 @@ import logging
 import sys
 from pathlib import Path
 
-from ecobidas_ui import auth, db, protocols, public
+from ecobidas_ui import auth, db, generate, protocols, public
 from ecobidas_ui._version import version
 from ecobidas_ui.extensions import bootstrap, csrf_protect
 
@@ -37,11 +37,6 @@ def create_app(config_object="ecobidas_ui.settings"):
         flash("'Export' not implemented yet!", category="warning")
         return render_template("public/index.html")
 
-    @app.route("/generate")
-    def generate() -> str:
-        flash("'Generate' Not implemented yet!", category="warning")
-        return render_template("public/index.html")
-
     return app
 
 
@@ -59,6 +54,7 @@ def register_blueprints(app):
     app.register_blueprint(public.views.blueprint)
     app.register_blueprint(auth.views.blueprint)
     app.register_blueprint(protocols.views.blueprint)
+    app.register_blueprint(generate.views.blueprint)
     return None
 
 
@@ -71,7 +67,7 @@ def register_errorhandlers(app):
         error_code = getattr(error, "code", 500)
         return render_template(f"{error_code}.html"), error_code
 
-    for errcode in [401, 404, 500]:
+    for errcode in [401, 404, 405, 500]:
         app.errorhandler(errcode)(render_error)
     return None
 

@@ -258,12 +258,16 @@ def generate_extra_forms(protocol_name, activity_name) -> tuple[FlaskForm | None
     upload_participants_form = None
     upload_acquisition_form = None
 
-    if protocol_name != "neurovault":
+    if protocol_name not in ["neurovault", "cobidas"]:
         return upload_participants_form, upload_acquisition_form
 
-    if activity_name == "participants":
+    if (protocol_name == "neurovault" and activity_name == "participants") or (
+        protocol_name == "cobidas" and activity_name == "sample"
+    ):
         upload_participants_form = UploadParticipantsForm(prefix="upload-")
-    if activity_name == "mri_acquisition":
+    if (protocol_name == "neurovault" and activity_name == "mri_acquisition") or (
+        protocol_name == "cobidas" and activity_name == "common_parameters"
+    ):
         upload_acquisition_form = UploadBoldJsonForm(prefix="mri_acquisition-")
 
     return upload_participants_form, upload_acquisition_form

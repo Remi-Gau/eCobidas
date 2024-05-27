@@ -1,0 +1,17 @@
+<h2 class="pt-3 pb-2">Institution</h2>
+{% include 'generate/institution.html' %}
+
+<h2 class="pt-3 pb-2">Acquisition</h2>
+
+<h2 class="pt-3 pb-2">Scanner</h2>
+{% include 'generate/device_info.html' %} {% include
+'generate/mri/acquisition/scanner_hardware.html' %}
+
+<h3 class="pt-2 pb-1">Anatomical scans</h3>
+{% include 'generate/mri/acquisition/info.html' %}
+
+<h3 class="pt-2 pb-1">Functional scans</h3>
+{% include 'generate/task_name.html' %} {% include
+'generate/mri/acquisition/info.html' %}
+
+<h2 class="pt-3 pb-2">Preprocessing</h2>

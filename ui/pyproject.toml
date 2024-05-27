@@ -14,7 +14,8 @@ dependencies = [
     "requests",
     "Flask-Caching",
     "Flask-DebugToolbar",
-    "environs"
+    "environs",
+    "markdownify"
 ]
 description = "UI for eCOBIDAS"
 license = {text = "GPL 3.0"}
