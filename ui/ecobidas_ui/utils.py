@@ -6,6 +6,7 @@ from typing import Any
 
 import pandas as pd
 import requests
+from flask import flash
 from markupsafe import escape
 from rich import print
 
@@ -255,3 +256,10 @@ def extract_values_participants(df, json_content, target):
         return df[column].min()
     if target == "subject_age_max":
         return df[column].max()
+
+
+def flash_errors(form, category="warning"):
+    """Flash all errors for a form."""
+    for field, errors in form.errors.items():
+        for error in errors:
+            flash(f"{getattr(form, field).label.text} - {error}", category)

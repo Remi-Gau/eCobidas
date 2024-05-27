@@ -69,8 +69,17 @@ def protocol(protocol_name: str) -> str:
         protocol_pref_label=protocol_name,
         protocol_preamble=protocol_content["preamble"][LANG],
         activities=activities,
-        landing_page=Markup(landing_page),
+        landing_page=landing_page,
+        show_export_button=show_export_button(protocol_name),
     )
+
+
+def show_export_button(protocol_name):
+    print(protocol_name)
+    if protocol_name in ["neurovault", "cobidas"]:
+        return True
+    else:
+        return False
 
 
 @bp.get("/<protocol_name>/<activity_name>")
@@ -91,13 +100,14 @@ def activity_get(protocol_name, activity_name) -> str:
         "protocol.html",
         protocol_pref_label=protocol_name,
         activity_pref_label=activity["prefLabel"][LANG],
-        activity_preamble=Markup(activity["preamble"][LANG]),
+        activity_preamble=activity["preamble"][LANG],
         activities=activities,
         form=form,
         nb_items=nb_items,
         completed_items=completed_items,
         upload_participants_form=upload_participants_form,
         upload_acquisition_form=upload_acquisition_form,
+        show_export_button=show_export_button(protocol_name),
     )
 
 
@@ -142,7 +152,7 @@ def activity_post(protocol_name, activity_name) -> str:
                 Markup(
                     "<p>The 'participants.json' was not annotated. "
                     "Annotate your data with "
-                    "the <a href='https://annotate.neurobagel.org/' "
+                    "the <a href='https://annotate.neurobagel.org/' target='_blank'"
                     "class='alert-link'>neurobagel online annotation tool</a></p>"
                 )
             )
@@ -212,13 +222,14 @@ def activity_post(protocol_name, activity_name) -> str:
         "protocol.html",
         protocol_pref_label=protocol_name,
         activity_pref_label=activity["prefLabel"][LANG],
-        activity_preamble=Markup(activity["preamble"][LANG]),
+        activity_preamble=activity["preamble"][LANG],
         activities=activities,
         form=form,
         nb_items=nb_items,
         completed_items=completed_items,
         upload_participants_form=upload_participants_form,
         upload_acquisition_form=upload_acquisition_form,
+        show_export_button=show_export_button(protocol_name),
     )
 
 

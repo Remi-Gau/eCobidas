@@ -7,10 +7,14 @@ authors = [{name = "Remi Gau"}]
 dependencies = [
     "flask",
     "Flask-WTF",
+    "Flask-Assets",
     "bootstrap-flask",
     "pandas",
     "rich",
-    "requests"
+    "requests",
+    "Flask-Caching",
+    "Flask-DebugToolbar",
+    "environs"
 ]
 description = "UI for eCOBIDAS"
 license = {text = "GPL 3.0"}

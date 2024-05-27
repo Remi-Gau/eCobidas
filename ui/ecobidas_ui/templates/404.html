@@ -1,14 +1,16 @@
-{% extends 'base.html' %}
+{% extends 'layout/base.html' %}
 <!--  -->
-{% block title %} 404 Error - Page Not Found {% endblock %}
+{% block title %}404 Error - Page Not Found{% endblock %}
 <!--  -->
 {% block content %}
 <div class="container">
   <div class="row">
-    <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
-      <h1 class="pt-5 pb-2">Page not found (Error 404)</h1>
-      <img src="https://http.cat/404" />
-      <p><a href="{{ url_for('index') }}">Go to home page</a></p>
+    <div class="col-md-12 col-lg-12 d-flex flex-column align-items-center">
+      <img class="my-2" src="https://http.cat/404" />
+      <p class="my-2">Sorry, that page doesn't exist.</p>
+      <p class="my-2">
+        Want to <a href="{{ url_for('public.home') }}">go home</a> instead?
+      </p>
     </div>
   </div>
 </div>
