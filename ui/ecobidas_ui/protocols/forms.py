@@ -1,12 +1,11 @@
 from flask_wtf import FlaskForm
-from flask_wtf.file import FileField, FileRequired
+from flask_wtf.file import FileAllowed, FileField, FileRequired, MultipleFileField
 from markupsafe import Markup
 from wtforms import (
     DateField,
     DecimalField,
     HiddenField,
     IntegerField,
-    MultipleFileField,
     RadioField,
     SelectField,
     SelectMultipleField,
@@ -18,16 +17,25 @@ from wtforms.validators import DataRequired, NumberRange
 
 
 class UploadParticipantsForm(FlaskForm):
-    participants = MultipleFileField("Upload participants.tsv and participants.json")
+    participants = MultipleFileField(
+        "Upload participants.tsv and participants.json",
+        validators=[
+            FileRequired(),
+            FileAllowed(["tsv", "json"], "File must be '.tsv' and '.json' files."),
+        ],
+    )
     submit = SubmitField("Upload")
 
 
 class UploadBoldJsonForm(FlaskForm):
-    bold_json = FileField("Upload bold.json", validators=[FileRequired()])
+    bold_json = FileField(
+        "Upload bold.json",
+        validators=[FileRequired(), FileAllowed(["json"], "The file must be a '.json' file.")],
+    )
     submit_bold_json = SubmitField("Upload")
 
 
-def generate_form(items=None, prefix=None):
+def generate_form(items=None, prefix=None, obj=None) -> FlaskForm:
 
     class DyanmicForm(FlaskForm):
         pass
@@ -115,12 +123,6 @@ def generate_form(items=None, prefix=None):
 
         elif input_type == "slider":
 
-            # FieldType = DecimalRangeField
-            # render_kw["value"]= "50.0"
-            # render_kw["min"]= "0.0"
-            # render_kw["max"]= "100.0"
-            # render_kw["step"]= "0.5"
-
             min_label = float(item["choices"][0][1])
             max_label = float(item["choices"][-1][1])
 
@@ -147,10 +149,10 @@ def generate_form(items=None, prefix=None):
 
     setattr(form, "submit", SubmitField("Save"))  # noqa B010
 
-    return form()
+    return form(obj=obj)
 
 
-def add_choice_based_items(form, prefix, item_name, item):
+def add_choice_based_items(form: FlaskForm, prefix: str, item_name: str, item: dict) -> FlaskForm:
 
     question = f"{item['question']} {item['unit']}"
 

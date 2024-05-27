@@ -1,8 +1,11 @@
 import logging
 import sys
 
-from ecobidas_ui import auth, db, protocol, public
-from ecobidas_ui.extensions import bootstrap, cache, csrf_protect, debug_toolbar
+from ecobidas_ui import auth, db, protocols, public
+from ecobidas_ui._version import version
+from ecobidas_ui.extensions import bootstrap, csrf_protect
+
+# from ecobidas_ui.extensions import cache, debug_toolbar
 from ecobidas_ui.initializers.assets import init_assets
 from flask import Flask, flash, render_template
 
@@ -22,15 +25,19 @@ def create_app(config_object="ecobidas_ui.settings"):
     register_errorhandlers(app)
     configure_logger(app)
 
+    @app.context_processor
+    def inject_version():
+        return dict(version=version)
+
     @app.route("/export")
     def export() -> str:
-        flash("Not implemented yet!")
-        return render_template("index.html")
+        flash("'Export' not implemented yet!", category="warning")
+        return render_template("public/index.html")
 
     @app.route("/generate")
     def generate() -> str:
-        flash("Not implemented yet!")
-        return render_template("index.html")
+        flash("'Generate' Not implemented yet!", category="warning")
+        return render_template("public/index.html")
 
     return app
 
@@ -39,16 +46,16 @@ def register_extensions(app):
     """Register Flask extensions."""
     bootstrap.init_app(app)
     csrf_protect.init_app(app)
-    cache.init_app(app)
-    debug_toolbar.init_app(app)
+    # cache.init_app(app)
+    # debug_toolbar.init_app(app)
     return None
 
 
 def register_blueprints(app):
     """Register Flask blueprints."""
     app.register_blueprint(public.views.blueprint)
-    app.register_blueprint(auth.bp)
-    app.register_blueprint(protocol.bp)
+    app.register_blueprint(auth.views.blueprint)
+    app.register_blueprint(protocols.views.blueprint)
     return None
 
 

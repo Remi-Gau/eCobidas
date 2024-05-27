@@ -55,7 +55,7 @@ def get_landing_page(schema_info: dict[str, str]) -> str:
     if schema_info["landing_page"]:
         return schema_info["landing_page"]
     else:
-        return "../README_eCOBIDAS-en.md"
+        return "../README_eCOBIDAS-en.html"
 
 
 def get_schema_info(this_schema: str | Path) -> dict[str, str]:

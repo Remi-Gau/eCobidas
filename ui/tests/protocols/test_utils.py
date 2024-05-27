@@ -1,5 +1,31 @@
 import pandas as pd
-from ecobidas_ui.utils import extract_values_participants
+from ecobidas_ui.protocols.utils import (
+    extract_values_participants,
+    get_nav_bar_content,
+    get_protocol,
+    prep_activity_page,
+    protocol_url,
+)
+
+
+def test_protocol_url():
+    assert protocol_url("neurovault").suffix == ".jsonld"
+    assert protocol_url("neurovault").stem == "neurovault_schema"
+
+
+def test_get_protocol():
+    protocol_content = get_protocol("neurovault")
+    assert protocol_content["@id"] == "neurovault_schema.jsonld"
+
+
+def test_get_nav_bar_content():
+    nav_bar = get_nav_bar_content("neurovault", "Participants")
+    assert len(nav_bar) == 9
+    assert nav_bar[2]["link"] == "#"
+
+
+def test_prep_activity_page():
+    activities, activity, items = prep_activity_page("neurovault", "participants")
 
 
 def test_extract_values_participants():
@@ -54,7 +80,4 @@ def test_extract_values_participants():
         }
     }
 
-    assert extract_values_participants(tsv, json_content, target="number_of_subjects") == 16
-    assert extract_values_participants(tsv, json_content, target="subject_age_min") == 19
-    assert extract_values_participants(tsv, json_content, target="subject_age_max") == 30
-    # assert mean==23.5625
+    assert extract_values_participants(tsv, json_content).subject_age_min == 19

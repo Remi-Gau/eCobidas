@@ -88,7 +88,7 @@
         ]
     },
     "landingPage": {
-        "@id": "../README_eCOBIDAS-en.md",
+        "@id": "../README_eCOBIDAS-en.html",
         "inLanguage": "en"
     }
 }

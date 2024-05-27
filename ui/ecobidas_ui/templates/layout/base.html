@@ -6,8 +6,10 @@
 
     <title>{% block title %} {% endblock %}</title>
 
-    <!-- favicon.ico -->
-    <!-- <link rel="shortcut icon" href='favicon.ico'"> -->
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
 
     {{ bootstrap.load_css() }} {% assets "css" %}
     <link rel="stylesheet" href="{{ ASSET_URL }}" />
@@ -34,15 +36,15 @@
       </div>
     </div>
 
-    {% with messages = get_flashed_messages() %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
     <!--  -->
     {% if messages %}
     <!--  -->
-    {% for message in messages %}
+    {% for category, message in messages %}
     <section class="content">
       <div class="container">
         <div
-          class="alert alert-warning alert-link alert-dismissible fade show"
+          class="alert alert-{{ category }} alert-link alert-dismissible fade show"
           role="alert"
         >
           <div class="d-flex">
@@ -51,9 +53,15 @@
               width="24"
               height="24"
               role="img"
-              aria-label="Warning:"
+              aria-label="{{ category }}:"
             >
+              {% if category == 'success' %}
+              <use xlink:href="#check-circle-fill" />
+              {% elif category == 'warning' %}
               <use xlink:href="#exclamation-triangle-fill" />
+              {% else %}
+              <use xlink:href="#info-fill" />
+              {% endif %}
             </svg>
             <div class="mx-3">{{ message }}</div>
           </div>

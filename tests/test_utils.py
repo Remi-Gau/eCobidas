@@ -38,8 +38,8 @@ def test_get_output_dir(tmp_path):
     "this_schema, filename",
     [
         ("neurovault", "../README_eCOBIDAS-en.html"),
-        ("test", "../README_eCOBIDAS-en.md"),
-        ("pet", "../README_PET-en.md"),
+        ("test", "../README_eCOBIDAS-en.html"),
+        ("pet", "../README_PET-en.html"),
     ],
 )
 def test_get_landing_page(this_schema, filename):

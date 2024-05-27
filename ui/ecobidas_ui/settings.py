@@ -25,4 +25,4 @@ PROTOTYPE = True
 
 SECRET_KEY = env.str("SECRET_KEY")
 
-CACHE_TYPE = "flask_caching.backends.SimpleCache"  # Can be "MemcachedCache", "RedisCache", etc.
+# CACHE_TYPE = "flask_caching.backends.SimpleCache"  # Can be "MemcachedCache", "RedisCache", etc.
