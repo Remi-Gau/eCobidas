@@ -1,5 +1,6 @@
 import logging
 import sys
+from pathlib import Path
 
 from ecobidas_ui import auth, db, protocols, public
 from ecobidas_ui._version import version
@@ -13,7 +14,9 @@ from flask import Flask, flash, render_template
 def create_app(config_object="ecobidas_ui.settings"):
 
     # create and configure the app
-    app = Flask(__name__, instance_relative_config=True)
+    app = Flask(
+        __name__, instance_relative_config=True, instance_path=Path(__file__).parent / "instance"
+    )
 
     app.config.from_object(config_object)
 

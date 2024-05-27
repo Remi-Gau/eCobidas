@@ -2,7 +2,13 @@ import json
 from pathlib import Path
 from typing import Any
 
-from ecobidas_ui.protocols.forms import UploadBoldJsonForm, UploadParticipantsForm, generate_form
+from ecobidas_ui.protocols.forms import (
+    UploadBoldJsonForm,
+    UploadParticipantsForm,
+    generate_form,
+    validate_participants_json,
+    validate_participants_tsv,
+)
 from ecobidas_ui.protocols.utils import (
     LANG,
     allowed_file,
@@ -13,8 +19,6 @@ from ecobidas_ui.protocols.utils import (
     prep_activity_page,
     protocol_url,
     update_format,
-    validate_participants_json,
-    validate_participants_tsv,
 )
 from flask import Blueprint, current_app, flash, redirect, render_template, request
 from flask_wtf import FlaskForm
@@ -24,10 +28,10 @@ from werkzeug.utils import secure_filename
 blueprint = Blueprint("protocol", __name__, url_prefix="/protocol")
 
 
-def update_visibility(items: dict[str, Any], form):
+def update_visibility(items: dict[str, Any], form_data):
     """Evaluate visibility condition of each item and make item visible if necessary."""
     # assign response to a variable with same name as the item it comees from
-    for key, value in form.data.items():
+    for key, value in form_data.items():
         if key not in items:
             continue
         if not value:
@@ -126,13 +130,13 @@ def activity_post(protocol_name, activity_name) -> str:
         and upload_participants_form.validate_on_submit()
     ):
 
-        if message := validate_participants_form(upload_participants_form):
-            flash(message, category="warning")
-            return redirect(request.url)
-
         data = upload_participants_form.participants.data
         if not isinstance(data, list):
             data = [data]
+
+        if message := validate_participants_form(data):
+            flash(message, category="warning")
+            return redirect(request.url)
 
         for file in data:
             if allowed_file(file.filename):
@@ -162,6 +166,7 @@ def activity_post(protocol_name, activity_name) -> str:
             )
             return redirect(request.url)
 
+        #  TODO values in fields for participant data are not updated.
         form, items, fields = process_participants_form(
             form, activity_name, items, tsv_file, json_file
         )
@@ -192,7 +197,10 @@ def activity_post(protocol_name, activity_name) -> str:
                 return redirect(request.url)
 
         form, items, fields = process_acquisition_form(
-            form, activity_name, items, filename=Path(current_app.instance_path) / uploaded_files[0]
+            form,
+            activity_name,
+            items,
+            filename=Path(current_app.config["UPLOAD_FOLDER"]) / uploaded_files[0],
         )
 
         if not fields:
@@ -205,7 +213,7 @@ def activity_post(protocol_name, activity_name) -> str:
 
     elif form.is_submitted():
 
-        form, items = update_items_and_forms(form, items, activity_name)
+        form, items = update_items_and_forms(form.data, items, activity_name)
 
     completed_items = sum(bool(i["is_answered"]) for i in items.values())
     nb_items = sum(bool(i["visibility"]) for i in items.values())
@@ -225,22 +233,18 @@ def activity_post(protocol_name, activity_name) -> str:
     )
 
 
-def validate_participants_form(upload_participants_form):
-    nb_files_uploaded = len(upload_participants_form.participants.data)
+def validate_participants_form(data):
+    nb_files_uploaded = len(data)
     if nb_files_uploaded != 2:
         message = f"2 files must be uploaded. Received: {nb_files_uploaded}"
         return message
 
-    participants_json_uploaded = any(
-        file.filename == "participants.json" for file in upload_participants_form.participants.data
-    )
+    participants_json_uploaded = any(file.filename == "participants.json" for file in data)
     if not participants_json_uploaded:
         message = "No 'participants.json' was uploaded."
         return message
 
-    participants_tsv_uploaded = any(
-        file.filename == "participants.tsv" for file in upload_participants_form.participants.data
-    )
+    participants_tsv_uploaded = any(file.filename == "participants.tsv" for file in data)
     if not participants_tsv_uploaded:
         message = "No 'participants.tsv' was uploaded."
         return message
@@ -278,7 +282,7 @@ def process_acquisition_form(form: FlaskForm, activity_name: str, items, filenam
             continue
         fields.append(key)
 
-    form, items = update_items_and_forms(form, items, activity_name, obj=found)
+    form, items = update_items_and_forms(form.data, items, activity_name, obj=found)
 
     return form, items, fields
 
@@ -302,13 +306,18 @@ def process_participants_form(form: FlaskForm, activity_name: str, items, tsv_fi
             continue
         fields.append(key)
 
-    form, items = update_items_and_forms(form, items, activity_name, obj=found)
+    form, items = update_items_and_forms(form.data, items, activity_name, obj=found)
 
     return form, items, fields
 
 
-def update_items_and_forms(form: FlaskForm, items, activity_name: str, obj=None):
-    items = update_visibility(items, form)
-    items = update_format(items, form)
+def update_items_and_forms(form_data: dict, items, activity_name: str, obj=None):
+    if obj is not None:
+        for key in obj.__dir__():
+            if key in form_data:
+                form_data[key] = getattr(obj, key)
+
+    items = update_visibility(items, form_data)
+    items = update_format(items, form_data)
     form = generate_form(items, prefix=activity_name, obj=obj)
     return form, items

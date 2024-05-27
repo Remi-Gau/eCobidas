@@ -1,4 +1,4 @@
-import pandas as pd
+import pytest
 from ecobidas_ui.protocols.utils import (
     extract_values_participants,
     get_nav_bar_content,
@@ -24,60 +24,10 @@ def test_get_nav_bar_content():
     assert nav_bar[2]["link"] == "#"
 
 
-def test_prep_activity_page():
-    activities, activity, items = prep_activity_page("neurovault", "participants")
+@pytest.mark.parametrize("activity_name", ["participants", "mri_acquisition"])
+def test_prep_activity_page(activity_name):
+    activities, activity, items = prep_activity_page("neurovault", activity_name)
 
 
-def test_extract_values_participants():
-    tsv = pd.DataFrame(
-        {
-            "age": [
-                26,
-                24,
-                27,
-                20,
-                22,
-                26,
-                24,
-                21,
-                26,
-                21,
-                24,
-                22,
-                21,
-                30,
-                24,
-                19,
-            ],
-            "sex": [
-                "F",
-                "M",
-                "F",
-                "F",
-                "M,",
-                "F",
-                "M",
-                "M",
-                "M",
-                "F",
-                "F",
-                "F",
-                "F",
-                "F",
-                "F",
-                "M",
-            ],
-        }
-    )
-
-    json_content = {
-        "age": {
-            "Annotations": {
-                "IsAbout": {"TermURL": "nb:Age", "Label": ""},
-                "Transformation": {"TermURL": "nb:FromInt", "Label": "integer data"},
-                "MissingValues": ["", "n/a", " "],
-            }
-        }
-    }
-
-    assert extract_values_participants(tsv, json_content).subject_age_min == 19
+def test_extract_values_participants(participants_df, participants_json):
+    assert extract_values_participants(participants_df, participants_json).subject_age_min == 19

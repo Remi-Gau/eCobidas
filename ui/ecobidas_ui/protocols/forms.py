@@ -1,3 +1,7 @@
+import json
+from pathlib import Path
+
+import pandas as pd
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileAllowed, FileField, FileRequired, MultipleFileField
 from markupsafe import Markup
@@ -25,6 +29,21 @@ class UploadParticipantsForm(FlaskForm):
         ],
     )
     submit = SubmitField("Upload")
+
+
+def validate_participants_json(participants_json: Path | str | dict):
+    if not isinstance(participants_json, dict):
+        with open(Path(participants_json)) as f:
+            participants_json = json.load(f)
+    return bool(
+        participants_json.get("participant_id")
+        and participants_json["participant_id"].get("Annotations")
+    )
+
+
+def validate_participants_tsv(file: Path | pd.DataFrame):
+    df = pd.read_csv(file, sep="\t")
+    return "participant_id" in df.columns
 
 
 class UploadBoldJsonForm(FlaskForm):

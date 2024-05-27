@@ -101,9 +101,10 @@ def get_nav_bar_content(
     return activities
 
 
-def update_format(items: dict[str, Any], form):
+def update_format(items: dict[str, Any], form_data):
+
     for i in items:
-        if form[i].data:
+        if form_data[i]:
             items[i]["is_answered"] = True
     return items
 
@@ -234,20 +235,6 @@ def get_choices(item_data):
     return choices
 
 
-def validate_participants_json(file: Path):
-    with open(file) as f:
-        participants_json = json.load(f)
-    return bool(
-        participants_json.get("participant_id")
-        and participants_json["participant_id"].get("Annotations")
-    )
-
-
-def validate_participants_tsv(file: Path):
-    df = pd.read_csv(file, sep="\t")
-    return "participant_id" in df.columns
-
-
 def extract_values_participants(df, json_content):
 
     if isinstance(df, Path):
@@ -268,10 +255,11 @@ def extract_values_participants(df, json_content):
 class Found:
 
     def __init__(self, df, age_column) -> None:
-        self.number_of_subjects = len(df)
-        self.subject_age_mean = df[age_column].mean()
+        self.number_of_subjects = int(len(df))
+        self.subject_age_mean = float(df[age_column].mean())
         self.subject_age_min = df[age_column].min()
         self.subject_age_max = df[age_column].max()
+        # TODO Actually compute the percent male
         self.proportion_male_subjects = None
 
 
