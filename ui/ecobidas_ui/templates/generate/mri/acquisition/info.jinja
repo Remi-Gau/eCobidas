@@ -1,0 +1,13 @@
+The anatomical MRI data were collected with following parameters.
+<!--  -->
+{% include 'generate/mri/acquisition/sequence.html' %}
+<!--  -->
+{% include 'generate/mri/acquisition/inplane_spatial_encoding.html' %}
+<!--  -->
+{% include 'generate/mri/acquisition/rf_contrasts.html' %}
+<!--  -->
+{% include 'generate/mri/acquisition/slice_acceleration.html' %}
+<!--  -->
+{% include 'generate/mri/acquisition/timing_parameters.html' %}
+<!--  -->
+({{ n_slices }} slices acquired in XXXX order; field of view, FOV={{ fov }}mm; matrix size={{ ms }}; voxel size={{ vs }}mm).

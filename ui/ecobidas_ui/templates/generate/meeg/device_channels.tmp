@@ -1,2 +1,2 @@
-Data was collected with {{EEGChannelCount}} EEG channels, {{EOGChannelCount}} EOG channels,
-{{ECGChannelCount}} ECG channels and {{EMGChannelCount}} EMG channels recorded simultaneously.
+Data was collected with {{ EEGChannelCount }} EEG channels, {{ EOGChannelCount }} EOG channels,
+{{ ECGChannelCount }} ECG channels and {{ EMGChannelCount }} EMG channels recorded simultaneously.
