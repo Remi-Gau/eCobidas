@@ -28,38 +28,6 @@ from werkzeug.utils import secure_filename
 blueprint = Blueprint("protocol", __name__, url_prefix="/protocol")
 
 
-def update_visibility(items: dict[str, Any], form_data):
-    """Evaluate visibility condition of each item and make item visible if necessary."""
-    # assign response to a variable with same name as the item it comees from
-    for key, value in form_data.items():
-        if key not in items:
-            continue
-        if not value:
-            value = None
-        string_to_eval = f"{key} = {value}"
-        try:
-            exec(string_to_eval)
-        except Exception as exc:
-            current_app.logger.error(
-                f"Could not execute '{string_to_eval}' as a valid python statement.\n{exc}"
-            )
-
-    # evaluate visibility
-    for item, values in items.items():
-        isVis = values["isVis"]
-        if isinstance(isVis, str):
-            try:
-                items[item]["visibility"] = eval(isVis)
-            except Exception as exc:
-                # actually log this
-                current_app.logger.error(
-                    f"Could not evaluate '{eval(isVis)}' as a valid python expression.\n{exc}"
-                )
-                items[item]["visibility"] = False
-
-    return items
-
-
 @blueprint.route("/<protocol_name>", methods=["GET", "POST"])
 def protocol(protocol_name: str) -> str:
 
@@ -81,10 +49,7 @@ def protocol(protocol_name: str) -> str:
 
 
 def show_export_button(protocol_name):
-    if protocol_name in ["neurovault", "cobidas"]:
-        return True
-    else:
-        return False
+    return protocol_name in ["neurovault", "cobidas"]
 
 
 @blueprint.get("/<protocol_name>/<activity_name>")
@@ -196,11 +161,11 @@ def activity_post(protocol_name, activity_name) -> str:
                 flash(message, category="warning")
                 return redirect(request.url)
 
-        form, items, fields = process_acquisition_form(
-            form,
+        form, items, fields = process_upload_form(
+            form.data,
             activity_name,
             items,
-            filename=Path(current_app.config["UPLOAD_FOLDER"]) / uploaded_files[0],
+            JsonMeta(Path(current_app.config["UPLOAD_FOLDER"]) / uploaded_files[0]),
         )
 
         if not fields:
@@ -233,6 +198,27 @@ def activity_post(protocol_name, activity_name) -> str:
     )
 
 
+def generate_extra_forms(protocol_name, activity_name) -> tuple[FlaskForm | None]:
+
+    upload_participants_form = None
+    upload_acquisition_form = None
+
+    if protocol_name not in ["neurovault", "cobidas"]:
+        return upload_participants_form, upload_acquisition_form
+
+    if (protocol_name == "neurovault" and activity_name == "participants") or (
+        protocol_name == "cobidas" and activity_name == "sample"
+    ):
+        upload_participants_form = UploadParticipantsForm(prefix="upload-")
+
+    if (protocol_name == "neurovault" and activity_name == "mri_acquisition") or (
+        protocol_name == "cobidas" and activity_name == "common_parameters"
+    ):
+        upload_acquisition_form = UploadBoldJsonForm(prefix="mri_acquisition-")
+
+    return upload_participants_form, upload_acquisition_form
+
+
 def validate_participants_form(data):
     nb_files_uploaded = len(data)
     if nb_files_uploaded != 2:
@@ -253,65 +239,23 @@ def validate_participants_form(data):
         return ""
 
 
-def generate_extra_forms(protocol_name, activity_name) -> tuple[FlaskForm | None]:
-
-    upload_participants_form = None
-    upload_acquisition_form = None
-
-    if protocol_name not in ["neurovault", "cobidas"]:
-        return upload_participants_form, upload_acquisition_form
-
-    if (protocol_name == "neurovault" and activity_name == "participants") or (
-        protocol_name == "cobidas" and activity_name == "sample"
-    ):
-        upload_participants_form = UploadParticipantsForm(prefix="upload-")
-    if (protocol_name == "neurovault" and activity_name == "mri_acquisition") or (
-        protocol_name == "cobidas" and activity_name == "common_parameters"
-    ):
-        upload_acquisition_form = UploadBoldJsonForm(prefix="mri_acquisition-")
-
-    return upload_participants_form, upload_acquisition_form
-
-
-def process_acquisition_form(form: FlaskForm, activity_name: str, items, filename):
-    """Use uploaded bold.json to prefill the form."""
-    with open(filename) as f:
-        bold_json = json.load(f)
-
-    found = JsonMeta(bold_json)
-
-    fields = []
-    for key in found.__dir__():
-        if not getattr(found, key) or key not in form:
-            continue
-        fields.append(key)
-
-    form, items = update_items_and_forms(form.data, items, activity_name, obj=found)
-
-    return form, items, fields
-
-
 class JsonMeta:
 
-    def __init__(self, json_content) -> None:
-
+    def __init__(self, json_file) -> None:
+        with open(json_file) as f:
+            json_content = json.load(f)
         for key in json_content:
             self.__setattr__(key, json_content[key])
 
 
 def process_participants_form(form: FlaskForm, activity_name: str, items, tsv_file, json_file):
-    json_content = json.load(open(json_file))
+    found = extract_values_participants(tsv_file, json_content=json.load(open(json_file)))
+    return process_upload_form(form.data, activity_name, items, found)
 
-    found = extract_values_participants(tsv_file, json_content=json_content)
 
-    fields = []
-    for key in found.__dir__():
-        if not getattr(found, key) or key not in form:
-            continue
-        fields.append(key)
-
-    form, items = update_items_and_forms(form.data, items, activity_name, obj=found)
-
+def process_upload_form(form_data, activity_name, items, found):
+    form, items = update_items_and_forms(form_data, items, activity_name, obj=found)
+    fields = [key for key in found.__dir__() if getattr(found, key) and key in form]
     return form, items, fields
 
 
@@ -325,3 +269,35 @@ def update_items_and_forms(form_data: dict, items, activity_name: str, obj=None)
     items = update_format(items, form_data)
     form = generate_form(items, prefix=activity_name, obj=obj)
     return form, items
+
+
+def update_visibility(items: dict[str, Any], form_data):
+    """Evaluate visibility condition of each item and make item visible if necessary."""
+    # assign response to a variable with same name as the item it comees from
+    for key, value in form_data.items():
+        if key not in items:
+            continue
+        if not value:
+            value = None
+        string_to_eval = f"{key} = {value}"
+        try:
+            exec(string_to_eval)
+        except Exception as exc:
+            current_app.logger.error(
+                f"Could not execute '{string_to_eval}' as a valid python statement.\n{exc}"
+            )
+
+    # evaluate visibility
+    for item, values in items.items():
+        isVis = values["isVis"]
+        if isinstance(isVis, str):
+            try:
+                items[item]["visibility"] = eval(isVis)
+            except Exception as exc:
+                # actually log this
+                current_app.logger.error(
+                    f"Could not evaluate '{eval(isVis)}' as a valid python expression.\n{exc}"
+                )
+                items[item]["visibility"] = False
+
+    return items
