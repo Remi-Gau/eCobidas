@@ -83,10 +83,10 @@ repos:
     hooks:
     -   id: prettier
         types_or: [css, html, json]
-        exclude: |
-            (?x)^(
-                ui/ecobidas_ui/static/css/font-awesome.min.css
-            )$
+        # exclude: |
+        #     (?x)^(
+        #         ui/ecobidas_ui/static/css/font-awesome.min.css
+        #     )$
 
 # Check formatting HTML / Jinja
 # -   repo: https://github.com/thibaudcolas/curlylint

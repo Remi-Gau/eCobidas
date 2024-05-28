@@ -3,6 +3,7 @@ exclude =
     .git,
 	./env
 	**/env
+	ecobidas/_version.py
 
 docstring-convention = numpy
 max-line-length = 150

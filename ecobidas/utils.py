@@ -100,8 +100,8 @@ def convert_to_int(df_field: pd.Series) -> int:
     return int(df_field.tolist()[0])
 
 
-def snake_case(input: str) -> str:
-    return input.replace("\n", "").replace(" ", "_").replace(",", "")
+def snake_case(input_str: str) -> str:
+    return input_str.replace("\n", "").replace(" ", "_").replace(",", "")
 
 
 def print_info(type: str, pref_label: str, file: str) -> None:

@@ -1,7 +1,7 @@
-<h2 class="pt-3 pb-2">Institution</h2>
+<h2 class="display-6 pt-3 pb-2">Institution</h2>
 {% include 'generate/institution.jinja' %}
 
-<h2 class="pt-3 pb-2">Acquisition</h2>
+<h2 class="display-6 pt-3 pb-2">Acquisition</h2>
 
 <h2 class="pt-3 pb-2">Scanner</h2>
 {% include 'generate/device_info.jinja' %}
@@ -12,8 +12,11 @@
 {% include 'generate/mri/acquisition/info.jinja' %}
 
 <h3 class="pt-2 pb-1">Functional scans</h3>
-{% include 'generate/task_name.jinja' %} 
+{% include 'generate/task_name.jinja' %}
 <!--  -->
 {% include 'generate/mri/acquisition/info.jinja' %}
 
-<h2 class="pt-3 pb-2">Preprocessing</h2>
+<h2 class="display-6 pt-3 pb-2">Preprocessing</h2>
+{% include 'generate/mri/preprocessing/preprocessing.jinja' %}
+
+<h2 class="display-6 pt-3 pb-2">Analysis</h2>

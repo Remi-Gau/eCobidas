@@ -20,19 +20,19 @@ def download_spreadsheet(schema: str, output_dir: Path = None) -> None:
     spreadsheets_info = get_spreadsheets_info()
 
     # Initialize lists to store data
-    google_IDs = []
+    google_ids = []
     subfolders = []
     output_filenames = []
 
     # Parse the file
     for spreadsheet, values in spreadsheets_info.items():
         if spreadsheet.startswith(schema):
-            google_IDs.append(values["google_id"])
+            google_ids.append(values["google_id"])
             subfolders.append(values["dir"])
             output_filenames.append(values["basename"])
 
     # Iterate through entries and download spreadsheets
-    for google_id, subfolder, output_filename in zip(google_IDs, subfolders, output_filenames):
+    for google_id, subfolder, output_filename in zip(google_ids, subfolders, output_filenames):
 
         output_folder = output_dir / subfolder
         output_folder.mkdir(exist_ok=True, parents=True)

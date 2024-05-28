@@ -2,7 +2,7 @@ from ecobidas_ui import settings
 from flask_assets import Bundle, Environment
 
 # consolidated css bundle
-css_bundle = Bundle("css/font-awesome.min.css")
+css_bundle = Bundle("css/main.css")
 
 
 def init_assets(app):

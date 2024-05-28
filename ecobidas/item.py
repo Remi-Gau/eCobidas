@@ -117,14 +117,14 @@ def define_unit(item: Item, units: str) -> Item:
     if not units:
         return item
 
-    unitOptions = [
+    unit_options = [
         {
             "prefLabel": {"en": unit},
             "value": unit,
         }
         for unit in units
     ]
-    item.response_options.unitOptions = unitOptions
+    item.response_options.unitOptions = unit_options
 
     return item
 

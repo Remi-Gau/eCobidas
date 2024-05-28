@@ -45,8 +45,8 @@ def test_preset():
         ("item name", "item_name"),
     ],
 )
-def test_set_item_name(input, expected):
-    this_item = pd.DataFrame({"item_pref_label": [input]})
+def test_set_item_name(input_str, expected):
+    this_item = pd.DataFrame({"item_pref_label": [input_str]})
 
     name = set_item_name(this_item)
 
@@ -174,8 +174,8 @@ def test_get_item_info_with_only_name():
         ("javascript expression", "javascript expression"),
     ],
 )
-def test_get_visibility(input, expected):
-    this_item = pd.DataFrame({"visibility": [input]})
+def test_get_visibility(input_value, expected):
+    this_item = pd.DataFrame({"visibility": [input_value]})
     visibility = get_visibility(this_item)
     assert visibility == expected
 
