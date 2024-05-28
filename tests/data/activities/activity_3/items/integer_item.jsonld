@@ -12,7 +12,7 @@
         "inputType": "number"
     },
     "question": {
-        "en": "2.1 - This is an integer item"
+        "en": "This is an integer item"
     },
     "responseOptions": {
         "valueType": "xsd:integer"

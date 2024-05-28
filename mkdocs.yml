@@ -10,51 +10,51 @@ theme:
     name: material
     language: en
     palette:
-        -   media: (prefers-color-scheme)
-            toggle:
-                icon: material/brightness-auto
-                name: Switch to light mode
-        -   media: "(prefers-color-scheme: light)"
-            primary: blue
-            accent: light blue
-            scheme: default
-            toggle:
-                icon: material/brightness-7
-                name: Switch to dark mode
-        -   media: "(prefers-color-scheme: dark)"
-            primary: blue
-            accent: light blue
-            scheme: slate
-            toggle:
-                icon: material/brightness-4
-                name: Switch to system preference
+    -   media: (prefers-color-scheme)
+        toggle:
+            icon: material/brightness-auto
+            name: Switch to light mode
+    -   media: '(prefers-color-scheme: light)'
+        primary: blue
+        accent: light blue
+        scheme: default
+        toggle:
+            icon: material/brightness-7
+            name: Switch to dark mode
+    -   media: '(prefers-color-scheme: dark)'
+        primary: blue
+        accent: light blue
+        scheme: slate
+        toggle:
+            icon: material/brightness-4
+            name: Switch to system preference
     features:
-        -   announce.dismiss
-        -   content.action.edit
-        -   content.code.annotate
-        -   content.tooltips
-        -   footnotes
-        -   header.autohide
-        -   navigation.footer
-        -   navigation.indexes
-        -   navigation.instant
-        -   navigation.path
-        -   navigation.sections
-        -   navigation.tabs
-        -   navigation.tabs.sticky
-        -   navigation.top
-        -   search.suggest
-        -   search.highlight
-        -   toc.follow
+    -   announce.dismiss
+    -   content.action.edit
+    -   content.code.annotate
+    -   content.tooltips
+    -   footnotes
+    -   header.autohide
+    -   navigation.footer
+    -   navigation.indexes
+    -   navigation.instant
+    -   navigation.path
+    -   navigation.sections
+    -   navigation.tabs
+    -   navigation.tabs.sticky
+    -   navigation.top
+    -   search.suggest
+    -   search.highlight
+    -   toc.follow
     icon:
         repo: fontawesome/brands/github
         edit: material/pencil
         annotation: material/arrow-right-circle
 
 plugins:
-    -   search
-    -   macros:
-            module_name: macros/main
+-   search
+-   macros:
+        module_name: macros/main
 
 edit_uri: https://github.com/Remi-Gau/eCobidas/edit/main/docs/
 
@@ -98,9 +98,9 @@ markdown_extensions:
 -   pymdownx.snippets
 -   pymdownx.superfences:
         custom_fences:
-            - name: mermaid
-              class: mermaid
-              format: !!python/name:pymdownx.superfences.fence_code_format
+        -   name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
 -   tables
 -   toc:
         anchorlink: true

@@ -15,16 +15,17 @@ def data_path():
 def test_create_schema(tmp_path):
     this_schema = Path(__file__).parent / "inputs" / "test.tsv"
 
-    # out_dir = Path(__file__).parent / "outputs"
+    out_dir = Path(__file__).parent / "outputs"
+    # out_dir = tmp_path
 
     print("\n")
 
-    create_schema(this_schema, tmp_path)
+    create_schema(this_schema, out_dir)
 
     # Check protocol
     protocol_folder = "protocols"
 
-    output_file = tmp_path / "test" / protocol_folder / "test_schema.jsonld"
+    output_file = out_dir / "test" / protocol_folder / "test_schema.jsonld"
     protocol_content = read_json(output_file)
 
     data_file = data_path() / protocol_folder / "test_schema.jsonld"
@@ -79,7 +80,7 @@ def test_create_schema(tmp_path):
 
         this_activity_folder = os.path.join(activities_folder, activity_name)
 
-        output_file = tmp_path / "test" / this_activity_folder / f"{activity_name}_schema.jsonld"
+        output_file = out_dir / "test" / this_activity_folder / f"{activity_name}_schema.jsonld"
         activity_content = read_json(output_file)
         data_file = data_path() / this_activity_folder / f"{activity_name}_schema.jsonld"
         expected = read_json(data_file)
@@ -90,7 +91,7 @@ def test_create_schema(tmp_path):
         item_list = activity["items"]
 
         for item in item_list:
-            output_file = tmp_path / "test" / this_activity_folder / "items" / f"{item}.jsonld"
+            output_file = out_dir / "test" / this_activity_folder / "items" / f"{item}.jsonld"
             item_content = read_json(output_file)
             data_file = data_path() / this_activity_folder / "items" / f"{item}.jsonld"
             expected = read_json(data_file)

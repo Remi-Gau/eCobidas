@@ -9,7 +9,3 @@
 [submodule "reproschema-py"]
 	path = reproschema-py
 	url = https://github.com/Remi-Gau/reproschema-py.git
-[submodule "reproschema-ui"]
-	path = reproschema-ui
-	url = https://github.com/Remi-Gau/reproschema-ui.git
-	datalad-url = https://github.com/Remi-Gau/reproschema-ui.git

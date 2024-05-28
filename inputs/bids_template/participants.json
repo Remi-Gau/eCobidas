@@ -1,29 +1,49 @@
 {
-    "age": {
-        "LongName": "",
-        "Description": "age of the participant",
-        "Levels": [],
-        "Units": "years",
-        "TermURL": ""
+  "age": {
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Age",
+        "Label": ""
+      },
+      "Transformation": {
+        "TermURL": "nb:FromInt",
+        "Label": "integer data"
+      },
+      "MissingValues": ["", "n/a", " "]
     },
-    "sex": {
-        "LongName": "",
-        "Description": "sex of the participant as reported by the participant",
-        "Levels": {
-            "m": "male",
-            "f": "female"
-        },
-        "Units": "",
-        "TermURL": ""
+    "Description": "There should have been a description here, but there wasn't. :("
+  },
+  "participant_id": {
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:ParticipantID",
+        "Label": ""
+      },
+      "Identifies": "participant"
     },
-    "handedness": {
-        "LongName": "",
-        "Description": "handedness of the participant as reported by the participant",
-        "Levels": {
-            "l": "left",
-            "r": "right"
+    "Description": "There should have been a description here, but there wasn't. :("
+  },
+  "sex": {
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Sex",
+        "Label": ""
+      },
+      "Levels": {
+        "F": {
+          "TermURL": "snomed:248152002",
+          "Label": ""
         },
-        "Units": "",
-        "TermURL": ""
-    }
+        "M": {
+          "TermURL": "snomed:248153007",
+          "Label": ""
+        },
+        "M,": {
+          "TermURL": "snomed:248153007",
+          "Label": ""
+        }
+      }
+    },
+    "Description": "There should have been a description here, but there wasn't. :("
+  }
 }

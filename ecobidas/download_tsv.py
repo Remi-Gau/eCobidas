@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Download the content of the different google spreadsheet in the inputs folder."""
+import ast
 import json
 from pathlib import Path
 
@@ -19,19 +20,19 @@ def download_spreadsheet(schema: str, output_dir: Path = None) -> None:
     spreadsheets_info = get_spreadsheets_info()
 
     # Initialize lists to store data
-    google_IDs = []
+    google_ids = []
     subfolders = []
     output_filenames = []
 
     # Parse the file
     for spreadsheet, values in spreadsheets_info.items():
         if spreadsheet.startswith(schema):
-            google_IDs.append(values["google_id"])
+            google_ids.append(values["google_id"])
             subfolders.append(values["dir"])
             output_filenames.append(values["basename"])
 
     # Iterate through entries and download spreadsheets
-    for google_id, subfolder, output_filename in zip(google_IDs, subfolders, output_filenames):
+    for google_id, subfolder, output_filename in zip(google_ids, subfolders, output_filenames):
 
         output_folder = output_dir / subfolder
         output_folder.mkdir(exist_ok=True, parents=True)
@@ -94,6 +95,25 @@ def validate_downloaded_file(file: str | Path) -> None:
         logger.info(
             f"\nThe following columns are missing from the data dictionary: {sorted(extra_columns)}"
         )
+
+    invalid_vis = []
+    visibility = df.visibility.values
+    for vis in visibility:
+        if not is_valid_python(vis):
+            invalid_vis.append(vis)
+    if invalid_vis:
+        logger.warning(f"\nThe following visibility are not valid python:\n{invalid_vis}")
+
+
+def is_valid_python(code):
+    try:
+        ast.parse(code)
+    except SyntaxError:
+        return False
+    except ValueError as exc:
+        print(f"{exc}: {code}")
+        return True
+    return True
 
 
 def main() -> None:

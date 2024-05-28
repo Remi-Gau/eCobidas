@@ -12,7 +12,7 @@
         "inputType": "text"
     },
     "question": {
-        "en": "5.5 - should appear for answers greater than 5"
+        "en": "should appear for answers greater than 5"
     },
     "responseOptions": {
         "valueType": "xsd:string",

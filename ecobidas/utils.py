@@ -55,7 +55,7 @@ def get_landing_page(schema_info: dict[str, str]) -> str:
     if schema_info["landing_page"]:
         return schema_info["landing_page"]
     else:
-        return "../README_eCOBIDAS-en.md"
+        return "../README_eCOBIDAS-en.html"
 
 
 def get_schema_info(this_schema: str | Path) -> dict[str, str]:
@@ -100,8 +100,8 @@ def convert_to_int(df_field: pd.Series) -> int:
     return int(df_field.tolist()[0])
 
 
-def snake_case(input: str) -> str:
-    return input.replace("\n", "").replace(" ", "_").replace(",", "")
+def snake_case(input_str: str) -> str:
+    return input_str.replace("\n", "").replace(" ", "_").replace(",", "")
 
 
 def print_info(type: str, pref_label: str, file: str) -> None:

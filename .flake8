@@ -1,13 +1,16 @@
 [flake8]
 exclude =
     .git,
+	./env
+	**/env
+	ecobidas/_version.py
 
 docstring-convention = numpy
 max-line-length = 150
 max_complexity = 15
 max_function_length = 150
 max_parameters_amount = 10
-max_returns_amount = 4
+max_returns_amount = 7
 
 # ----------------------- errors to include / exclude -----------------------
 

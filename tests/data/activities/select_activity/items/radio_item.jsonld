@@ -12,7 +12,7 @@
         "inputType": "radio"
     },
     "question": {
-        "en": "4.1 - radio item - one answer allowed"
+        "en": "radio item - one answer allowed"
     },
     "responseOptions": {
         "valueType": "xsd:integer",

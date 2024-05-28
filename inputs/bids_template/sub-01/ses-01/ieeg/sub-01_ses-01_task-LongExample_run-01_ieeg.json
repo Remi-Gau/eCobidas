@@ -1,45 +1,45 @@
 {
-    "TaskName": "",
-    "SamplingFrequency": "",
-    "PowerLineFrequency": "",
-    "SoftwareFilters": "",
-    "DCOffsetCorrection": "",
-    "HardwareFilters": {
-        "HighpassFilter": {
-            "CutoffFrequency": []
-        },
-        "LowpassFilter": {
-            "CutoffFrequency": []
-        }
+  "TaskName": "",
+  "SamplingFrequency": "",
+  "PowerLineFrequency": "",
+  "SoftwareFilters": "",
+  "DCOffsetCorrection": "",
+  "HardwareFilters": {
+    "HighpassFilter": {
+      "CutoffFrequency": []
     },
-    "Manufacturer": "",
-    "ManufacturersModelName": "",
-    "TaskDescription": "",
-    "Instructions": "",
-    "CogAtlasID": "",
-    "CogPOID": "",
-    "InstitutionName": "",
-    "InstitutionAddress": "",
-    "DeviceSerialNumber": "",
-    "ECOGChannelCount": "",
-    "SEEGChannelCount": "",
-    "EEGChannelCount": "",
-    "EOGChannelCount": "",
-    "ECGChannelCount": "",
-    "EMGChannelCount": "",
-    "MiscChannelCount": "",
-    "TriggerChannelCount": "",
-    "RecordingDuration": "",
-    "RecordingType": "",
-    "EpochLength": "",
-    "SubjectArtefactDescription": "",
-    "SoftwareVersions": "",
-    "iEEGReference": "",
-    "ElectrodeManufacturer": "",
-    "ElectrodeManufacturersModelName": "",
-    "iEEGGround": "",
-    "iEEGPlacementScheme": "",
-    "iEEGElectrodeGroups": "",
-    "ElectricalStimulation": "",
-    "ElectricalStimulationParameters": ""
+    "LowpassFilter": {
+      "CutoffFrequency": []
+    }
+  },
+  "Manufacturer": "",
+  "ManufacturersModelName": "",
+  "TaskDescription": "",
+  "Instructions": "",
+  "CogAtlasID": "",
+  "CogPOID": "",
+  "InstitutionName": "",
+  "InstitutionAddress": "",
+  "DeviceSerialNumber": "",
+  "ECOGChannelCount": "",
+  "SEEGChannelCount": "",
+  "EEGChannelCount": "",
+  "EOGChannelCount": "",
+  "ECGChannelCount": "",
+  "EMGChannelCount": "",
+  "MiscChannelCount": "",
+  "TriggerChannelCount": "",
+  "RecordingDuration": "",
+  "RecordingType": "",
+  "EpochLength": "",
+  "SubjectArtefactDescription": "",
+  "SoftwareVersions": "",
+  "iEEGReference": "",
+  "ElectrodeManufacturer": "",
+  "ElectrodeManufacturersModelName": "",
+  "iEEGGround": "",
+  "iEEGPlacementScheme": "",
+  "iEEGElectrodeGroups": "",
+  "ElectricalStimulation": "",
+  "ElectricalStimulationParameters": ""
 }

@@ -1,5 +1,6 @@
 import re
 
+from loguru import logger
 from numpy import isnan, linspace
 from reproschema.models.item import Item, ResponseOption
 
@@ -116,14 +117,14 @@ def define_unit(item: Item, units: str) -> Item:
     if not units:
         return item
 
-    unitOptions = [
+    unit_options = [
         {
             "prefLabel": {"en": unit},
             "value": unit,
         }
         for unit in units
     ]
-    item.response_options.unitOptions = unitOptions
+    item.response_options.unitOptions = unit_options
 
     return item
 
@@ -147,18 +148,11 @@ def define_new_item(item_info: dict) -> Item:
         output_dir="items",
     )
 
-    question = item_info["question"]
-    if "id" in item_info and item_info["id"] != "":
-        question = item_info["id"] + " - " + question
-    if "details" in item_info and item_info["details"] != "":
-        question = (
-            question
-            + "<div style='font-size: 70%; text-align:left;'><details> <summary> details </summary> <br>"
-            + str(item_info["details"])
-            + "</details></div>"
-        )
+    item.set_question(item_info["question"])
 
-    item.set_question(question)
+    if "details" in item_info and item_info["details"] != "":
+        item.schema["details"] = {"en": f"{item_info['details']}"}
+        item.schema_order.append("details")
 
     item = define_choices(item, field_type=item_info["field_type"], choices=item_info["choices"])
     item = define_unit(item, item_info["unit"])
@@ -172,6 +166,26 @@ def define_choices(item: Item, field_type: str, choices: list) -> Item:
     item.set_input_type()
 
     if field_type in {"multitext", "text"}:
+        return item
+
+    if field_type in {"int", "float"}:
+        if field_type == "int":
+            field_type = "integer"
+
+        response_options = ResponseOption()
+        response_options.set_valueType(field_type)
+
+        if choices and isinstance(choices, list):
+            min_value = int(choices[0])
+            response_options.set_min(min_value)
+            if len(choices) > 1:
+                max_value = int(choices[1])
+                response_options.set_max(max_value)
+        else:
+            logger.warning(f"No min or max value defined for {field_type} item.")
+
+        item.set_input_type(response_options)
+
         return item
 
     elif field_type == "slider":
@@ -213,8 +227,6 @@ def slider_response(choices: list) -> ResponseOption:
     response_options = ResponseOption()
     response_options.set_max(1)
     response_options.set_max(steps - 1)
-
-    linspace(min, max, steps)
 
     # TODO update after render off slide item has been improved
     for i, opt in enumerate(linspace(min, max, steps)):

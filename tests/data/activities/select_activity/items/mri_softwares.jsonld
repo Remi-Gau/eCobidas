@@ -12,7 +12,7 @@
         "inputType": "select"
     },
     "question": {
-        "en": "4.6 - mri software"
+        "en": "mri software"
     },
     "responseOptions": {
         "valueType": "xsd:integer",
