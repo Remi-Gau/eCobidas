@@ -39,7 +39,7 @@ def test_preset():
 
 
 @pytest.mark.parametrize(
-    "input, expected",
+    "input_str, expected",
     [
         ("_i[t]em-n:a m!e", "_item-na_me"),  # alphanumeric with _ and - only
         ("item name", "item_name"),
@@ -164,7 +164,7 @@ def test_get_item_info_with_only_name():
 
 
 @pytest.mark.parametrize(
-    "input, expected",
+    "input_value, expected",
     [
         (float("nan"), True),
         ("1", True),
