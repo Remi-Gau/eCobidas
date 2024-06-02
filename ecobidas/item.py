@@ -63,6 +63,12 @@ def get_item_info(this_item: dict) -> dict:
 
     mandatory = get_mandatory(this_item)
 
+    message = None
+    if "validation" in this_item and this_item["validation"].any():
+        tokens = convert_to_str(this_item["validation"]).split(",")
+        if len(tokens) > 1:
+            message = {"message": tokens[1].strip(), "jsExpression": tokens[0].strip()}
+
     return {
         "name": item_name,
         "pref_label": pref_label,
@@ -75,6 +81,7 @@ def get_item_info(this_item: dict) -> dict:
         "visibility": visibility,
         "mandatory": mandatory,
         "sub_section": sub_section,
+        "message": message
     }
 
 

@@ -151,5 +151,11 @@
             "reproschema:AutoAdvance",
             "reproschema:AllowExport"
         ]
-    }
+    },
+    "messages": [
+        {
+            "message": "Radio vis must be greater than Foo.",
+            "jsExpression": "multi_2_or_5 < radio_vis"
+        }
+    ]
 }

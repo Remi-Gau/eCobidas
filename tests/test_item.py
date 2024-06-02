@@ -93,6 +93,7 @@ def test_get_item_info():
         "mandatory": True,
         "description": "item name",
         "sub_section": "",
+        "message": None
     }
 
     assert item_info == expected
@@ -126,6 +127,7 @@ def test_get_item_info_with_name():
         "mandatory": True,
         "description": "desc",
         "sub_section": "",
+        "message": None        
     }
 
     assert item_info == expected
@@ -158,6 +160,7 @@ def test_get_item_info_with_only_name():
         "mandatory": True,
         "description": "desc",
         "sub_section": "",
+                "message": None    
     }
 
     assert item_info == expected

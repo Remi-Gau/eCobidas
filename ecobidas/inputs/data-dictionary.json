@@ -202,5 +202,15 @@
     "VariableName": "mri_type",
     "Description": "Mention the type of MRI this item is applicable to.",
     "RequirementLevel": "optional"
+  },
+  "validation": {
+    "VariableName": "validation",
+    "Description": "Extra validation to perform on the item value. For example, `item_1 > item_2, Item 1 must be less then item 2.` means that the alert `'Item 1 must be less then item 2.'` will be displayed if `item_1 > item_2`. Comma act as separator between the cvheck to perform and alert to display.",
+    "RequirementLevel": "optional"
+  },
+  "UUID": {
+    "VariableName": "UUID",
+    "Description": "Unique identifier of the item.",
+    "RequirementLevel": "optional"
   }
 }

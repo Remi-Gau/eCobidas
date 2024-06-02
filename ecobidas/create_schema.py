@@ -85,6 +85,9 @@ def create_schema(
 
             item_info = get_item_info(this_item)
 
+            if "message" in item_info and item_info["message"]:
+                activity.messages.append(item_info["message"])
+
             print_item_info(activity_idx, item_idx, item_info)
 
             item = define_new_item(item_info)
@@ -138,6 +141,7 @@ def initialize_activity(items: pd.DataFrame, output_dir: str | Path) -> tuple[Ac
         name=activity_name,
         prefLabel=activity_pref_label,
         output_dir=f"{output_dir}/activities/{activity_name}/",
+        messages = []
     )
 
     print_info("activity", activity_pref_label, activity.URI)

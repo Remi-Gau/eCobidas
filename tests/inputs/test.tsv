@@ -1,4 +1,4 @@
-activity_order	include	activity	activity_pref_label	preamble	item	item_pref_label	item_description	item_order	mandatory	visibility	skip	question	field_type	choices
+activity_order	include	activity	activity_pref_label	preamble	item	item_pref_label	item_description	item_order	mandatory	visibility	skip	question	field_type	choices	validation
 1	1		Activity 2			number of subjects	number of subjects	1	1	1	1	Number of subjects entering into the analysis	integer
 2	1		Activity 3	same activity		integer item	integer item	1	1	1	1	This is an integer item	integer
 2	1		Activity 3	different preamble		slider item	slider item	2	1	1	1	This is a slider item	slider	1 | 100 | 10
@@ -17,7 +17,7 @@ activity_order	include	activity	activity_pref_label	preamble	item	item_pref_labe
 5	1		Visibility			radio_vis		4	1	1	1	select one or several answer	radio_multiple	1 | 2 | 3 | 4 | 5 | 6
 5	1		Visibility			multi_gt_5		5	1	radio_vis>5	1	should appear for answers greater than 5	text
 5	1		Visibility			multi_lt_2		6	1	radio_vis<=2	1	should appear for answers less than 2	text
-5	1		Visibility			multi_2_or_5		7	1	radio_vis == 2 OR radio_vis == 5	1	should appear for answers 2 or 5	text
+5	1		Visibility			multi_2_or_5		7	1	radio_vis == 2 OR radio_vis == 5	1	should appear for answers 2 or 5	text		multi_2_or_5 < radio_vis,  Radio vis must be greater than Foo. 
 5	1		Visibility			select_boolean		8	1	1	1	select one answer	select	preset:boolean
 5	1		Visibility			select_boolean==1		9	1	select_boolean==1	1	this should only show if you selected ‘yes’	text
 5	1		Visibility			select_boolean==0		10	1	select_boolean==0	1	this should only show if you selected ‘no’	text
