@@ -31,7 +31,7 @@ If you are unsure where to start, we list some of the possibilities in the secti
 
     ---
 
-    We want to create [boilerplate method sections](https://github.com/Remi-Gau/eCobidas/tree/main/inputs/boilerplate)
+    We want to create boilerplate method sections
     corresponding to a single item or a set of items of the checklist
     to automate methods writing once the checklist is completed.
 

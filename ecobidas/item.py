@@ -81,7 +81,7 @@ def get_item_info(this_item: dict) -> dict:
         "visibility": visibility,
         "mandatory": mandatory,
         "sub_section": sub_section,
-        "message": message
+        "message": message,
     }
 
 

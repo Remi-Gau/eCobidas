@@ -141,7 +141,7 @@ def initialize_activity(items: pd.DataFrame, output_dir: str | Path) -> tuple[Ac
         name=activity_name,
         prefLabel=activity_pref_label,
         output_dir=f"{output_dir}/activities/{activity_name}/",
-        messages = []
+        messages=[],
     )
 
     print_info("activity", activity_pref_label, activity.URI)
