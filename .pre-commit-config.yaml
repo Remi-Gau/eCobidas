@@ -91,7 +91,7 @@ repos:
 # flake8-functions checks functions quality: https://pypi.org/project/flake8-functions/
 # flake8-bugbear detects some common bugs: https://github.com/PyCQA/flake8-bugbear
 -   repo: https://github.com/pyCQA/flake8
-    rev: 7.0.0
+    rev: 7.1.0
     hooks:
     -   id: flake8
         args: [--config, .flake8, --verbose, ecobidas, tests, macros]
