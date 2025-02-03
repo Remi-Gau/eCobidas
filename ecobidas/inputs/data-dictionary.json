@@ -180,7 +180,7 @@
   },
   "percent_reported": {
     "VariableName": "percent_reported",
-    "Description": "Frequency at which items are present in the eyetracking literature (see the [preprint](https://psyarxiv.com/f6qcy/))",
+    "Description": "Frequency at which items are present in the eyetracking literature (see the [preprint](https://doi.org/10.3758/s13428-023-02187-1))",
     "RequirementLevel": "optional"
   },
   "use_case_meta-analysis": {
