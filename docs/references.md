@@ -10,7 +10,7 @@ Those apps and incoming ones are based on the following best practices guideline
 
 -   [Best Practices in Data Analysis and Sharing in Neuroimaging using MRI](https://doi.org/10.1101/054262 )
 -   [Best Practices in Data Analysis and Sharing in Neuroimaging using MEEG](https://osf.io/a8dhx/)
--   [Guideline for Reporting Standards of Eye-tracking Research in Decision Sciences](https://psyarxiv.com/f6qcy/)
+-   [Guideline for Reporting Standards of Eye-tracking Research in Decision Sciences](https://doi.org/10.3758/s13428-023-02187-1)
 -   [Guidelines for the content and format of PET brain data in publications and archives: A consensus paper](https://doi.org/10.1177/0271678X20905433)
 
 There is [zotero group](https://www.zotero.org/groups/2349772/cobidas_checklist)

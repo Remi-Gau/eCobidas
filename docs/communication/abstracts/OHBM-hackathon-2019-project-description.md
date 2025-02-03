@@ -18,9 +18,7 @@ of OHBM released a [report](https://doi.org/10.1101/054262 ) to
 promote best practices for methods and results reporting. This was recently
 followed by a [similar initiative for EEG and MEG](https://osf.io/a8dhx/).
 
-So far these guidelines do not seem to have been widely adopted and anecdotal
-evidence
-([see that twitter poll and thread](https://treeverse.app/view/Xf3jfvIZ))
+So far these guidelines do not seem to have been widely adopted and anecdotal evidence
 suggests that even among people who know about the report few of them use it to
 write or review papers. One likely reason for this might be the unwieldy nature
 of the report. Anyone who has used this checklist tends to agree that it is a

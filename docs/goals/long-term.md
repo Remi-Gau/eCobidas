@@ -11,7 +11,7 @@ Similarly we want to broaden the use-cases for the app.
 
 If some data is gathered about the content of the method section of a sample of articles in the literature
 (see
-[Carp, 2012](https://www.ncbi.nlm.nih.gov/pubmed/22796459) or the [eyetracking guidelines](https://psyarxiv.com/f6qcy/)),
+[Carp, 2012](https://www.ncbi.nlm.nih.gov/pubmed/22796459) or the [eyetracking guidelines](https://doi.org/10.3758/s13428-023-02187-1)),
 it should be possible to create or better organize list of response choices.
 It will take less time for users to tick a box rather than type something.
 Similarly we could decide to make the most common choices or the "better" option more prominent in a list of response options.

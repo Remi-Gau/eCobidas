@@ -17,7 +17,7 @@ eyetracking:
     dir: eyetracking
     basename: eyetracking
     google_id: 1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o
-    citation: https://psyarxiv.com/f6qcy/
+    citation: https://doi.org/10.3758/s13428-023-02187-1
     app_link: https://remi-gau.github.io/cobidas-eyetracker/#/
     landing_page: ../README_eyetracker-en.html
     repo: https://github.com/Remi-Gau/cobidas-eyetracker

@@ -25,7 +25,7 @@ It was then followed by a [similar initiative for EEG and MEG](https://osf.io/a8
 
 Contrary to what the most optimistic people might have thought,
 these guidelines do not seem to have been widely adopted
-and anecdotal evidence ([see that twitter poll and thread](https://treeverse.app/view/Xf3jfvIZ)) suggests that,
+and anecdotal evidence suggests that,
 even among people who know about the report, few of them use it to write or review papers.
 
 A [survey from ISMRM](https://ismrm.github.io/rrsg/QuestionnaireSummary/)
