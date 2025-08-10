@@ -8,11 +8,11 @@ from .utils import convert_to_int, convert_to_str, snake_case
 
 
 def set_item_name(this_item: dict) -> str:
-    if "item" not in this_item.keys():
-        item_name = convert_to_str(this_item["item_pref_label"])
-    elif isinstance(convert_to_str(this_item["item"]), float):
-        item_name = convert_to_str(this_item["item_pref_label"])
-    elif convert_to_str(this_item["item"]) == "":
+    if (
+        "item" not in this_item
+        or isinstance(convert_to_str(this_item["item"]), float)
+        or convert_to_str(this_item["item"]) == ""
+    ):
         item_name = convert_to_str(this_item["item_pref_label"])
     else:
         item_name = convert_to_str(this_item["item"])

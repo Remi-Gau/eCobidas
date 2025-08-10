@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Download the content of the different google spreadsheet in the inputs folder."""
+
 import ast
 import json
 from pathlib import Path
@@ -12,8 +13,7 @@ from ecobidas.utils import get_input_dir, get_spreadsheets_info
 
 
 # Function to download spreadsheet
-def download_spreadsheet(schema: str, output_dir: Path = None) -> None:
-
+def download_spreadsheet(schema: str, output_dir: Path | None = None) -> None:
     if output_dir is None:
         output_dir = get_input_dir()
 
@@ -33,7 +33,6 @@ def download_spreadsheet(schema: str, output_dir: Path = None) -> None:
 
     # Iterate through entries and download spreadsheets
     for google_id, subfolder, output_filename in zip(google_ids, subfolders, output_filenames):
-
         output_folder = output_dir / subfolder
         output_folder.mkdir(exist_ok=True, parents=True)
         output_file = output_folder / f"{output_filename}.tsv"
@@ -48,7 +47,7 @@ def download_spreadsheet(schema: str, output_dir: Path = None) -> None:
             f"https://docs.google.com/spreadsheets/d/{google_id}/export?format=tsv"
         )
         if response.status_code == 200:
-            with open(output_file, "wb") as tsv_file:
+            with output_file.open("wb") as tsv_file:
                 tsv_file.write(response.content)
         else:
             logger.error("Error downloading the spreadsheet.")
@@ -69,7 +68,7 @@ def validate_downloaded_file(file: str | Path) -> None:
     df = pd.read_csv(file, sep="\t")
 
     data_dictionary_file = get_input_dir() / "data-dictionary.json"
-    with open(data_dictionary_file) as f:
+    with data_dictionary_file.open() as f:
         data_dictionary = json.load(f)
 
     columns = {x for x in df.columns if "Unnamed:" not in x}
@@ -96,11 +95,8 @@ def validate_downloaded_file(file: str | Path) -> None:
             f"\nThe following columns are missing from the data dictionary: {sorted(extra_columns)}"
         )
 
-    invalid_vis = []
-    visibility = df.visibility.values
-    for vis in visibility:
-        if not is_valid_python(vis):
-            invalid_vis.append(vis)
+    visibility = df.visibility.to_numpy()
+    invalid_vis = [vis for vis in visibility if not is_valid_python(vis)]
     if invalid_vis:
         logger.warning(f"\nThe following visibility are not valid python:\n{invalid_vis}")
 

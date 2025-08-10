@@ -28,23 +28,23 @@ def main(output_dir: Path | None = None) -> None:
         output_dir = Path() / "output"
     output_dir.mkdir(exist_ok=True, parents=True)
 
-    with open(output_dir / "preset_responses_table.md", "w") as out:
+    with (output_dir / "preset_responses_table.md").open("w") as out:
         out.write(f"{table_preset_responses()}")
 
-    with open(output_dir / "apps_table.md", "w") as out:
+    with (output_dir / "apps_table.md").open("w") as out:
         out.write(f"{table_apps()}")
 
-    with open(output_dir / "spreadsheets_table.md", "w") as out:
+    with (output_dir / "spreadsheets_table.md").open("w") as out:
         out.write(f"{table_spreadsheets()}")
 
-    with open(output_dir / "data_dictionary_table.md", "w") as out:
+    with (output_dir / "data_dictionary_table.md").open("w") as out:
         out.write(f"{table_data_dictionary()}")
 
 
 def table_data_dictionary() -> str:
     """Create markdown table for list of apps."""
     data_dictionary_file = get_input_dir() / "data-dictionary.json"
-    with open(data_dictionary_file) as f:
+    with data_dictionary_file.open() as f:
         data_dictionary = list(json.load(f).values())
     data_dictionary = sorted(data_dictionary, key=itemgetter("VariableName"))
     for i, _ in enumerate(data_dictionary):
@@ -74,9 +74,9 @@ def table_spreadsheets() -> str:
     for i, value in enumerate(sheets):
         if "meeg" in value["dir"]:
             continue
-        sheets[i][
-            "preview"
-        ] = f"{PREVIEW_BASE}{BASE_RAW_URL}/{value['dir']}/activities/{value['basename']}/{value['basename']}_schema.jsonld"
+        sheets[i]["preview"] = (
+            f"{PREVIEW_BASE}{BASE_RAW_URL}/{value['dir']}/activities/{value['basename']}/{value['basename']}_schema.jsonld"
+        )
 
     TemplateManager.initialize()
     template = TemplateManager.env.get_template("spreadsheet_table.j2")
@@ -86,7 +86,7 @@ def table_spreadsheets() -> str:
 def table_apps() -> str:
     """Create markdown table for spreadsheets that are not apps or preset responses."""
     spreadsheets_info = get_spreadsheets_info()
-    apps = [value for key, value in spreadsheets_info.items() if spreadsheets_info[key]["app_link"]]
+    apps = [value for key, value in spreadsheets_info.items() if value["app_link"]]
     apps = sorted(apps, key=itemgetter("basename"))
 
     TemplateManager.initialize()

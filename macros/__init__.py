@@ -10,7 +10,7 @@ from .main import define_env
 __all__ = [
     "define_env",
     "table_apps",
+    "table_data_dictionary",
     "table_preset_responses",
     "table_spreadsheets",
-    "table_data_dictionary",
 ]

@@ -1,5 +1,4 @@
 import math
-import os
 from pathlib import Path
 
 import pandas as pd
@@ -59,8 +58,8 @@ def create_schema(
     if debug:
         activities = [1]
 
-    for i, activity_idx in enumerate(activities):
-        this_activity = df["activity_order"] == activities[i]
+    for activity_idx in activities:
+        this_activity = df["activity_order"] == activity_idx
         items = df[this_activity]
         included_items = items["include"] == 1
         items = items[included_items]
@@ -85,14 +84,14 @@ def create_schema(
 
             item_info = get_item_info(this_item)
 
-            if "message" in item_info and item_info["message"]:
+            if item_info.get("message"):
                 activity.messages.append(item_info["message"])
 
-            print_item_info(activity_idx, item_idx, item_info)
+            print_item_info(str(activity_idx), item_idx, item_info)
 
             item = define_new_item(item_info)
 
-            item.write(os.path.join(activity_path, "items"))
+            item.write(Path(activity_path) / "items")
 
             activity.append_item(item)
 
@@ -150,7 +149,7 @@ def initialize_activity(items: pd.DataFrame, output_dir: str | Path) -> tuple[Ac
 
 
 def get_activity_preamble(items: pd.DataFrame) -> str:
-    if "preamble" not in items.keys():
+    if "preamble" not in items:
         return ""
 
     not_nan = items["preamble"].notna()
@@ -182,7 +181,7 @@ def create_response_options(
     print_info(
         "response options",
         schema_info["basename"],
-        os.path.join(output_dir, response_options.at_id),
+        str(Path(output_dir) / response_options.at_id),
     )
 
 
@@ -197,12 +196,12 @@ def make_preamble(schema_info: dict[str, str], items: pd.DataFrame) -> str:
     if not preamble:
         return preamble
 
-    info = dict(
-        preamble=preamble,
-        xls=schema_info["link"],
-        repo="",
-        citation="",
-    )
+    info = {
+        "preamble": preamble,
+        "xls": schema_info["link"],
+        "repo": "",
+        "citation": "",
+    }
 
     if schema_info["repo"]:
         info["repo"] = schema_info["repo"]

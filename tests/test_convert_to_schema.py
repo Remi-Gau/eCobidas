@@ -1,8 +1,8 @@
 """Runs the conversion of the tsv in `inputs/test.tsv` \
-   and checks that the correct jsonld are created."""
+   and checks that the correct jsonld are created.
+"""
 
 import json
-import os
 from pathlib import Path
 
 from ecobidas.create_schema import create_schema
@@ -78,7 +78,7 @@ def test_create_schema(tmp_path):
     for activity in activities:
         activity_name = activity["name"]
 
-        this_activity_folder = os.path.join(activities_folder, activity_name)
+        this_activity_folder = Path(activities_folder) / activity_name
 
         output_file = out_dir / "test" / this_activity_folder / f"{activity_name}_schema.jsonld"
         activity_content = read_json(output_file)
@@ -99,6 +99,6 @@ def test_create_schema(tmp_path):
             assert item_content == expected
 
 
-def read_json(file):
-    with open(file) as ff:
+def read_json(file: Path):
+    with file.open() as ff:
         return json.load(ff)
