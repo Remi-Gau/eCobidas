@@ -1,5 +1,4 @@
 import math
-import os
 from pathlib import Path
 
 import pandas as pd
@@ -59,7 +58,7 @@ def create_schema(
     if debug:
         activities = [1]
 
-    for _i, activity_idx in enumerate(activities):
+    for activity_idx in activities:
         this_activity = df["activity_order"] == activity_idx
         items = df[this_activity]
         included_items = items["include"] == 1
@@ -88,11 +87,11 @@ def create_schema(
             if item_info.get("message"):
                 activity.messages.append(item_info["message"])
 
-            print_item_info(activity_idx, item_idx, item_info)
+            print_item_info(str(activity_idx), item_idx, item_info)
 
             item = define_new_item(item_info)
 
-            item.write(os.path.join(activity_path, "items"))
+            item.write(Path(activity_path) / "items")
 
             activity.append_item(item)
 
@@ -182,7 +181,7 @@ def create_response_options(
     print_info(
         "response options",
         schema_info["basename"],
-        os.path.join(output_dir, response_options.at_id),
+        str(Path(output_dir) / response_options.at_id),
     )
 
 

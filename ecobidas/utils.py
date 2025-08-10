@@ -32,7 +32,7 @@ def get_output_dir(this_schema: str | Path, output_dir: str | Path) -> Path:
 @lru_cache
 def get_spreadsheets_info() -> dict[str, dict[str, str]]:
     """Load info about all the spreadsheets."""
-    with open(get_input_dir() / "spreadsheet_google_id.yml") as f:
+    with (get_input_dir() / "spreadsheet_google_id.yml").open() as f:
         spreadsheets_info = yaml.load(f)
 
     for key in spreadsheets_info:

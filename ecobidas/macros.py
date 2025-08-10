@@ -28,23 +28,23 @@ def main(output_dir: Path | None = None) -> None:
         output_dir = Path() / "output"
     output_dir.mkdir(exist_ok=True, parents=True)
 
-    with open(output_dir / "preset_responses_table.md", "w") as out:
+    with (output_dir / "preset_responses_table.md").open("w") as out:
         out.write(f"{table_preset_responses()}")
 
-    with open(output_dir / "apps_table.md", "w") as out:
+    with (output_dir / "apps_table.md").open("w") as out:
         out.write(f"{table_apps()}")
 
-    with open(output_dir / "spreadsheets_table.md", "w") as out:
+    with (output_dir / "spreadsheets_table.md").open("w") as out:
         out.write(f"{table_spreadsheets()}")
 
-    with open(output_dir / "data_dictionary_table.md", "w") as out:
+    with (output_dir / "data_dictionary_table.md").open("w") as out:
         out.write(f"{table_data_dictionary()}")
 
 
 def table_data_dictionary() -> str:
     """Create markdown table for list of apps."""
     data_dictionary_file = get_input_dir() / "data-dictionary.json"
-    with open(data_dictionary_file) as f:
+    with data_dictionary_file.open() as f:
         data_dictionary = list(json.load(f).values())
     data_dictionary = sorted(data_dictionary, key=itemgetter("VariableName"))
     for i, _ in enumerate(data_dictionary):

@@ -112,11 +112,8 @@ ignore = [
     "PD901",  # https://github.com/astral-sh/ruff/issues/7710
     "N803",
     "N806",
-    "PD",
-    "PERF",
     "PIE790",
     "PLR2004",
-    "PTH",
     "UP038",  # https://github.com/astral-sh/ruff/issues/7871
     "RUF005",
     # Avoid linter rules conflicting with the formatter
