@@ -5,11 +5,11 @@ There are many ways in which you can contribute to this project.
 We have a list of [milestones](../goals/goals.md) for the different features we would like to include in this project.
 
 Those milestones have
-[several opened issues](https://github.com/Remi-Gau/eCobidas/issues) related to them:
+[several opened issues](https://github.com/ohbm/eCobidas/issues) related to them:
 have a look through those issues to see if there is any of them where you think you can help.
 
 We are also track the progress to our different goals
-using some of the integrated [kanban boards](https://github.com/Remi-Gau/eCobidas/projects) that github offers.
+using some of the integrated [kanban boards](https://github.com/ohbm/eCobidas/projects) that github offers.
 
 ## What to contribute
 
@@ -35,7 +35,7 @@ If you are unsure where to start, we list some of the possibilities in the secti
     corresponding to a single item or a set of items of the checklist
     to automate methods writing once the checklist is completed.
 
-    [:octicons-arrow-right-24: Boilerplate related issues](https://github.com/Remi-Gau/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate)
+    [:octicons-arrow-right-24: Boilerplate related issues](https://github.com/ohbm/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Aboilerplate)
 
 -   :fontawesome-solid-arrow-pointer:{ .lg .middle } **User interface**
 
@@ -45,7 +45,7 @@ If you are unsure where to start, we list some of the possibilities in the secti
     and uses the [Vue framework](https://vuejs.org/) and this also needs a lot of tweaking,
     so if Javascript is cup of tea: [get in touch!](../contact.md)
 
-    [:octicons-arrow-right-24: UI related issues](https://github.com/Remi-Gau/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Auser-interface)
+    [:octicons-arrow-right-24: UI related issues](https://github.com/ohbm/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Auser-interface)
 
 -   :material-magnify-expand:{ .lg .middle } **Documentation**
 
@@ -55,6 +55,6 @@ If you are unsure where to start, we list some of the possibilities in the secti
     then it's most likely that we did not do a good enough job at explaining and describing it.
     [Get in touch](../contact.md) and we can work together to improve our documentation.
 
-    [:octicons-arrow-right-24: Documentation related issues](https://github.com/Remi-Gau/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Adocumentation)
+    [:octicons-arrow-right-24: Documentation related issues](https://github.com/ohbm/eCobidas/issues?q=is%3Aissue+is%3Aopen+label%3Adocumentation)
 
 </div>

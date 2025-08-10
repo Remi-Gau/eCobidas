@@ -19,7 +19,7 @@ concurrency:
 jobs:
     update_spreadsheet:
         runs-on: ubuntu-latest
-        if: github.repository_owner == 'Remi-Gau'
+        if: github.repository_owner == 'ohbm'
         steps:
         -   name: Checkout repository
             uses: actions/checkout@v4

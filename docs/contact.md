@@ -39,6 +39,6 @@ hide:
     Otherwise you can open a new issue on the repository itself if there is
     something you would like to discuss directly here.
 
-    [Open an issue on GitHub](https://github.com/Remi-Gau/eCobidas/issues/new){ .md-button .md-button--primary }
+    [Open an issue on GitHub](https://github.com/ohbm/eCobidas/issues/new){ .md-button .md-button--primary }
 
 </div>

@@ -1,8 +1,8 @@
 ---
 # Project information
 site_name: eCOBIDAS
-repo_name: Remi-Gau/eCobidas
-repo_url: https://github.com/Remi-Gau/eCobidas
+repo_name: ohbm/eCobidas
+repo_url: https://github.com/ohbm/eCobidas
 # docs_dir: alternative_path # docs/ is the default folder
 
 # This will use Material them
@@ -56,7 +56,7 @@ plugins:
 -   macros:
         module_name: macros/main
 
-edit_uri: https://github.com/Remi-Gau/eCobidas/edit/main/docs/
+edit_uri: https://github.com/ohbm/eCobidas/edit/main/docs/
 
 exclude_docs: |
     communication/README.md
@@ -110,7 +110,7 @@ extra:
     generator: false
     social:
     -   icon: fontawesome/brands/github
-        link: https://github.com/Remi-Gau/eCobidas
+        link: https://github.com/ohbm/eCobidas
     # -   icon: simple-mattermost
     #     link: https://mattermost.brainhack.org/brainhack/channels/cobidas_checklist
     -   icon: fontawesome/brands/google

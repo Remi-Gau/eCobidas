@@ -9,7 +9,7 @@
 
     The spreadsheets that allow us to generate the different checklists are hosted on this
     [google drive folder](https://drive.google.com/drive/folders/1wg5k-6pSB3mQm_a30abX6qb-lzTn_S-Y?usp=sharing)
-    and we back them up as TSVs in the [main repo of the project](https://github.com/Remi-Gau/eCobidas).
+    and we back them up as TSVs in the [main repo of the project](https://github.com/ohbm/eCobidas).
 
     [:octicons-arrow-right-24: Back up the google sheets](./setup.md#update-the-tsvs)
 
@@ -96,7 +96,7 @@ to see only the items corresponding to one or more main sections
 ## Spreadsheet content
 
 The description of the columns common to all spreadsheet is described in the
-[data dictionary](https://github.com/Remi-Gau/eCobidas/tree/main/ecobidas/inputs/data-dictionary.json).
+[data dictionary](https://github.com/ohbm/eCobidas/tree/main/ecobidas/inputs/data-dictionary.json).
 
 Each column is described by an element in the JSON data dictionarry.
 
