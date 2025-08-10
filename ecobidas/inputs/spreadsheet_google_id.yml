@@ -18,7 +18,7 @@ eyetracking:
     basename: eyetracking
     google_id: 1aQZINzS24oYDgu6PZ8djqZQZ2s2eNs2xP6kyzHokU8o
     citation: https://doi.org/10.3758/s13428-023-02187-1
-    app_link: https://remi-gau.github.io/cobidas-eyetracker/#/
+    app_link: https://ohbm.github.io/cobidas-eyetracker/#/
     landing_page: ../README_eyetracker-en.html
     repo: https://github.com/ohbm/cobidas-eyetracker
 
@@ -36,7 +36,7 @@ pet:
     basename: pet
     google_id: 1HS-1KOP8nE7C3MHiyRmQ6hd823cBZnCRVq0UryXvDc8
     citation: https://doi.org/10.1177/0271678X20905433
-    app_link: https://remi-gau.github.io/cobidas-PET/#/
+    app_link: https://ohbm.github.io/cobidas-PET/#/
     landing_page: ../README_PET-en.html
     repo: https://github.com/ohbm/cobidas-PET
 
@@ -45,7 +45,7 @@ reexecution:
     basename: reexecution
     google_id: 1M9H7Bkti4OEVrYETajLbpbwY0T-QqSkpRUiwTz6-5Vc
     citation: https://doi.org/10.12688/f1000research.25306.2
-    app_link: https://remi-gau.github.io/cobidas_reexecute/#/
+    app_link: https://ohbm.github.io/cobidas_reexecute/#/
     landing_page: ../README_reexecute-en.html
     repo: https://github.com/ohbm/cobidas_reexecute
 
