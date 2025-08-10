@@ -74,9 +74,9 @@ def table_spreadsheets() -> str:
     for i, value in enumerate(sheets):
         if "meeg" in value["dir"]:
             continue
-        sheets[i][
-            "preview"
-        ] = f"{PREVIEW_BASE}{BASE_RAW_URL}/{value['dir']}/activities/{value['basename']}/{value['basename']}_schema.jsonld"
+        sheets[i]["preview"] = (
+            f"{PREVIEW_BASE}{BASE_RAW_URL}/{value['dir']}/activities/{value['basename']}/{value['basename']}_schema.jsonld"
+        )
 
     TemplateManager.initialize()
     template = TemplateManager.env.get_template("spreadsheet_table.j2")
@@ -86,7 +86,7 @@ def table_spreadsheets() -> str:
 def table_apps() -> str:
     """Create markdown table for spreadsheets that are not apps or preset responses."""
     spreadsheets_info = get_spreadsheets_info()
-    apps = [value for key, value in spreadsheets_info.items() if spreadsheets_info[key]["app_link"]]
+    apps = [value for key, value in spreadsheets_info.items() if value["app_link"]]
     apps = sorted(apps, key=itemgetter("basename"))
 
     TemplateManager.initialize()

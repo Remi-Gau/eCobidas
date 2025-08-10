@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Download the content of the different google spreadsheet in the inputs folder."""
+
 import ast
 import json
 from pathlib import Path
@@ -12,8 +13,7 @@ from ecobidas.utils import get_input_dir, get_spreadsheets_info
 
 
 # Function to download spreadsheet
-def download_spreadsheet(schema: str, output_dir: Path = None) -> None:
-
+def download_spreadsheet(schema: str, output_dir: Path | None = None) -> None:
     if output_dir is None:
         output_dir = get_input_dir()
 
@@ -33,7 +33,6 @@ def download_spreadsheet(schema: str, output_dir: Path = None) -> None:
 
     # Iterate through entries and download spreadsheets
     for google_id, subfolder, output_filename in zip(google_ids, subfolders, output_filenames):
-
         output_folder = output_dir / subfolder
         output_folder.mkdir(exist_ok=True, parents=True)
         output_file = output_folder / f"{output_filename}.tsv"

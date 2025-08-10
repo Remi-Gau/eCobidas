@@ -32,7 +32,7 @@ def cli(argv: Sequence[str] = sys.argv) -> None:
     args, unknowns = parser.parse_known_args(argv[1:])
     if unknowns:
         logger.error(f"The following arguments are unknown: {unknowns}")
-        exit(1)
+        sys.exit(1)
 
     verbosity = args.verbosity
     set_verbosity(verbosity)
@@ -46,21 +46,20 @@ def cli(argv: Sequence[str] = sys.argv) -> None:
         if isinstance(output_dir, list):
             output_dir = output_dir[0]
         convert(schema, output_dir, repo, branch)
-        exit(0)
+        sys.exit(0)
 
     if args.command in ["update"]:
         schema = args.schema[0]
         download_spreadsheet(schema=schema)
-        exit(0)
+        sys.exit(0)
 
     if args.command in ["serve"]:
         folder = args.folder if args.folder is None else args.folder[0]
         serve(folder=folder)
-        exit(0)
+        sys.exit(0)
 
 
 def convert(schema: str, output_dir: str, repo: str, branch: str) -> None:
-
     logger.debug(f"{schema=}, {output_dir=}, {repo=}, {branch=}")
 
     spreadsheets_info = get_spreadsheets_info()
@@ -69,7 +68,7 @@ def convert(schema: str, output_dir: str, repo: str, branch: str) -> None:
 
     if not schema_list:
         logger.error(
-            f"No known schema for: {schema=}" f"Known schemas are: {list(spreadsheets_info.keys())}"
+            f"No known schema for: {schema=}Known schemas are: {list(spreadsheets_info.keys())}"
         )
 
     for this_schema in schema_list:

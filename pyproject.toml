@@ -34,9 +34,6 @@ test = [
 [project.scripts]
 ecobidas = "ecobidas.cli:cli"
 
-[tool.black]
-line-length = 100
-
 [tool.codespell]
 ignore-words-list = "jist,softwares,te,fwe,als,nd"
 skip = "./.git,*.svg,reproschema-ui,node_modules,env,reproschema-py,htmlcov,package-lock.json,ecobidas/inputs/neurovault/neurovault.tsv"
@@ -49,12 +46,6 @@ packages = ["ecobidas"]
 
 [tool.hatch.version]
 source = "vcs"
-
-[tool.isort]
-combine_as_imports = true
-line_length = 100
-profile = "black"
-skip_gitignore = true
 
 [tool.mypy]
 check_untyped_defs = true
@@ -90,3 +81,101 @@ doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"
 junit_family = "xunit2"
 minversion = "6.0"
 xfail_strict = true
+
+[tool.ruff]
+indent-width = 4
+line-length = 100
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+indent-style = "space"
+line-ending = "auto"
+quote-style = "double"
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint]
+fixable = ["ALL"]
+ignore = [
+    "ARG005",
+    "B904",
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D105",
+    "D205",
+    "D301",
+    "E741",
+    "ERA001",
+    "FURB105",
+    "PD901",  # https://github.com/astral-sh/ruff/issues/7710
+    "N803",
+    "N806",
+    "PD",
+    "PERF",
+    "PIE790",
+    "PLR2004",
+    "PTH",
+    "UP038",  # https://github.com/astral-sh/ruff/issues/7871
+    "RUF005",
+    # Avoid linter rules conflicting with the formatter
+    # https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
+    "COM812",
+    "COM819",
+    "E111",
+    "E114",
+    "E117",
+    "Q000",
+    "Q001",
+    "Q002",
+    "Q003",
+    "W191"
+]
+# List of all the ruff rules (includes why the rule matters)
+# https://docs.astral.sh/ruff/rules/
+select = [
+    "ARG",
+    "B",
+    "C4",
+    "C90",
+    "D",
+    "E",
+    "ERA",
+    "F",
+    "FLY",
+    "FURB",
+    "I",
+    "N",
+    "NPY",
+    "PERF",
+    "PIE",
+    "PTH",
+    "PD",
+    "PGH",
+    "PLR",
+    "RUF",
+    "SIM",
+    "UP",
+    "W"
+]
+unfixable = []
+
+[tool.ruff.lint.mccabe]
+max-complexity = 23
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["D104", "E402"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.pylint]
+# https://docs.astral.sh/ruff/settings/#lint_pylint_max-args
+max-args = 27
+# https://docs.astral.sh/ruff/settings/#lint_pylint_max-branches
+max-branches = 22
+# https://docs.astral.sh/ruff/settings/#lint_pylint_max-returns
+max-returns = 8
+# https://docs.astral.sh/ruff/settings/#lint_pylint_max-statements
+max-statements = 93
